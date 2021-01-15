@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BIZMATES PROGRAM Level 1 - Rank A - Lesson 2</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+      .page-1,
+      .page-2,
+      .page-3 {
+        width: 892px;
+        height: 1262px;
+        overflow: hidden;
+        position: relative;
+      }
+      .bg {
+        position: absolute;
+        width: 892.75px;
+        height: 1262.5px;
+        z-index: -1;
+      }
+      .b {
+        font-weight: bold;
+      }
+      .i {
+        font-family: italic;
+      }
+      .u-sup {
+        border-bottom: solid 1.5px black;
+        display: inline-block;
+        line-height: 14px;
+      }
+      .program-rank {
+        position: absolute;
+        top: 41px;
+        left: 62px;
+        color: #ffffff;
+        font-size: 15px;
+      }
+      .program-rank .level {
+        margin-left: 25px;
+      }
+      .line {
+        margin: 0 12px;
+      }
+      .title {
+        position: absolute;
+        top: 80px;
+        left: 55px;
+        font-size: 27px;
+      }
+      .lesson-number {
+        position: absolute;
+        left: 823px;
+        top: 66px;
+        font-size: 13px;
+        color: #ffffff;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+      .sub-text {
+        font-family: 'Arial' !important;
+      }
+      .section {
+        position: absolute;
+        left: 55px;
+        color: #1f789f;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .section.see {
+        top: 190px;
+      }
+      .section.try {
+        top: 625px;
+      }
+      .section.act {
+        top: 1061px;
+      }
+      .divider {
+        color: #d9d9d9;
+        font-size: 15px;
+        position: absolute;
+        left: 469px;
+      }
+      .divider.d1 {
+        top: 573px;
+      }
+      .divider.d2 {
+        top: 1010px;
+      }
+      .text {
+        font-family: 'Trebuchet MS';
+      }
+
+      /* See */
+      .see-content {
+        margin-left: 144.5px;
+        margin-top: 190px;
+        font-size: 15px;
+      }
+      .see-content p {
+        margin: 0 auto;
+      }
+      .see-content .col {
+        width: fit-content;
+        margin-right: 35px;
+      }
+      .see-content .text {
+        font-family: 'Trebuchet MS';
+        line-height: 26px;
+        margin-top: 4px;
+      }
+      sup {
+        font-size: 10px;
+        line-height: 16px;
+        display: inline-block;
+      }
+      .see-content .example {
+        margin-top: 55px;
+      }
+      .example .conversation {
+        font-family: 'Trebuchet MS';
+        line-height: 26px;
+        margin-top: 4px;
+      }
+      .example .sentence {
+        margin-left: 23px;
+      }
+
+      /* Try */
+      .try-content {
+        position: absolute;
+        top: 625px;
+        left: 144.5px;
+        font-size: 15px;
+      }
+      .try-content .list-title {
+        margin-top: 8px;
+        margin-bottom: 2px;
+      }
+      .try-content .list-title-2 {
+        margin-top: 30px;
+        margin-bottom: 2px;
+      }
+      .try-content ul {
+        list-style-type: decimal;
+        margin: 3px 0px 0px 18px;
+        padding: 0;
+        line-height: 26px;
+      }
+      .try-content li {
+        padding-left: 13px;
+      }
+      .try-content .sub-text.mg {
+        margin-top: 28px;
+      }
+      .try-content .name-1 {
+        position: absolute;
+        left: 467px;
+        top: 37px;
+      }
+      .try-content .name-2 {
+        position: absolute;
+        width: 150px;
+        left: 467px;
+        top: 194px;
+      }
+      .try-content .desc {
+        position: absolute;
+        top: 36px;
+        left: 2px;
+        width: max-content;
+      }
+      .try-content .dash-list ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 18px;
+      }
+      .try-content .dash-list li::before {
+        display: inline-block;
+        content: '-';
+        width: 6px;
+        margin-right: 4px;
+        margin-left: -1em;
+      }
+
+      /* Act */
+      .act-content {
+        position: absolute;
+        top: 1061px;
+        left: 144.5px;
+        font-size: 15px;
+      }
+      .act-content ul {
+        margin: 3px 0px 0px 18px;
+        padding: 0;
+        line-height: 26px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 120px;
+        width: 340px;
+      }
+      .act-content li {
+        padding-left: 8px;
+      }
+
+      .footer {
+        font-size: 9px;
+        position: absolute;
+        top: 1210px;
+        left: 532px;
+      }
+
+      /* Page-2 */
+      .page-2 .title {
+        top: 78px;
+        left: 156px;
+      }
+      .page-2 .section.see {
+        top: 587px;
+      }
+      .page-2 .see-content {
+        margin-top: 580px;
+        margin-left: 145px;
+      }
+      .page-2 .see-content .text p:nth-child(1) {
+        margin-top: 28px;
+      }
+      .page-2 .see-content .text p:nth-child(2) {
+        margin-top: 26px;
+      }
+      .page-2 .see-content .text p:nth-child(3) {
+        margin-top: 28px;
+      }
+      .page-2 .see-content .text p {
+        margin-top: 25.5px;
+      }
+      .page-2 .see-content .example {
+        margin-top: 60px;
+        margin-left: -20px;
+      }
+      .page-2 .example .sentence {
+        margin-left: 16px;
+      }
+      .page-2 .example .conversation div,
+      .page-2 .example .sentence div {
+        margin-bottom: 24px;
+      }
+
+      /* Page 3 */
+      .page-3 .section.try {
+        top: 170px;
+      }
+      .page-3 .try-content {
+        top: 170px;
+        left: 128px;
+      }
+      .page-3 .try-content .list-title {
+        margin-top: 60px;
+      }
+      .page-3 .try-content .list-title-2 {
+        margin-top: 56px;
+      }
+      .page-3 .try-content ul {
+        margin: 24px 0px 0px 15px;
+      }
+      .page-3 .try-content ul li {
+        margin: 23px 0;
+      }
+      .page-3 .try-content .sub-text.mg {
+        margin-top: 55px;
+      }
+      .page-3 .try-content .name-1 {
+        left: 483px;
+        top: 64px;
+      }
+      .page-3 .try-content .name-2 {
+        left: 483px;
+        top: 332px;
+      }
+      .page-3 .try-content .desc {
+        top: 11px;
+        margin-left: 0px;
+      }
+      .page-3 .try-content .desc li {
+        margin: 31px 0;
+      }
+      .page-3 .divider.d2 {
+        top: 864px;
+      }
+      .page-3 .section.act {
+        top: 917.5px;
+      }
+      .page-3 .act-content {
+        top: 917.5px;
+        left: 125px;
+      }
+      .page-3 .act-content ul {
+        list-style-type: none;
+        margin-top: 30px;
+        height: 220px;
+        width: 382px;
+      }
+      .page-3 .act-content ul li {
+        margin: 13px 0;
+      }
+      .page-3 .act-content .text {
+        margin-left: -5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Page 1 -->
+    <div class="page-1">
+      <img class="bg" alt="" src="bg1.png" />
+
+      <!-- HEADER -->
+      <div class="program-rank">
+        BIZMATES PROGRAM
+        <span class="level">LEVEL 1<span class="line">I</span>RANK A<span class="line">I</span>LESSON 2</span>
+      </div>
+      <div class="title">MY, YOUR, HIS, HER, ITS, OUR, THEIR</div>
+      <div class="lesson-number">2</div>
+
+      <!-- SEE SECTION -->
+      <div class="section see">SEE</div>
+      <div class="see-content">
+        <div class="row">
+          <div class="col">
+            <span class="sub-text b">Somebody’s <u>&nbsp;n.&nbsp;</u> ...</span>
+            <div class="text">
+              <p><u>My weakness</u> is grammar.</p>
+              <p><u>Your husband</u> is a nice guy.</p>
+              <p>Tim is my colleague. <u>His English</u> is good.</p>
+              <p>Mary is my boss. <u>Her team</u> is big.</p>
+              <p>My computer is slow. <u>Its memory</u> is full</p>
+              <p>Drive Tech is our client. <u>Their office</u> is in Tokyo.</p>
+            </div>
+          </div>
+          <div class="col">
+            <span class="sub-text">Questions</span>
+            <div class="text">
+              <p>Is my sentence correct?</p>
+              <p>How is your family</p>
+              <p>What is his hobby?</p>
+              <p>Is her team busy?</p>
+              <p>What is its product number?</p>
+              <p>Is their office far?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="example">
+          <span class="sub-text b">Example</span>
+          <div class="conversation row">
+            <div class="name">
+              <div>Mary:</div>
+              <div>Ken:</div>
+              <div>Mary:</div>
+              <div>Ken:</div>
+            </div>
+            <div class="sentence">
+              <div>How is your wife, Ken? Is she well?</div>
+              <div>She is fine. Today is our wedding anniversary.</div>
+              <div>Congratulations! What is your plan?</div>
+              <div>Well... I don’t know. My wife is busy today.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider d1">▼▼▼</div>
+
+      <!-- TRY SECTION -->
+      <div class="section try">TRY</div>
+      <div class="try-content text">
+        <span class="sub-text"
+          >Answer these questions from your trainer. The trainer may change the underlined words.</span
+        >
+        <p class="list-title">About a company</p>
+        <ul>
+          <li>What kind of company is <u>Drive Tech?</u></li>
+          <li>What are their main products?</li>
+          <li>Is their <u>market share</u> <u>big?</u></li>
+          <li>Are their prices <u>high?</u></li>
+        </ul>
+
+        <p class="list-title-2">About an employee</p>
+        <ul>
+          <li>What is <u>Eric</u>’s <u>full name?</u></li>
+          <li>What is <u>his</u> <u>job title?</u></li>
+          <li>Is <u>his</u> native language <u>English?</u></li>
+          <li>Is <u>his</u> hobby <u>gardening?</u></li>
+        </ul>
+
+        <div class="sub-text mg">Now, ask your trainer questions. You can change the underlined words.</div>
+
+        <div class="name-1 dash-list">
+          <p><u>Drive Tech</u></p>
+          <ul class="desc">
+            <li>car parts manufacturer</li>
+            <li>main product: engines, wheels</li>
+            <li>market share: 33%</li>
+            <li>prices: low</li>
+          </ul>
+        </div>
+
+        <div class="name-2 dash-list">
+          <p><u>Eric Wells</u></p>
+          <ul class="desc">
+            <li>job title: sales manager</li>
+            <li>native language: French</li>
+            <li>hobby: driving</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider d2">▼▼▼</div>
+
+      <!-- ACT SECTION -->
+      <div class="section act">ACT</div>
+      <div class="act-content">
+        <span class="sub-text"
+          >Talk about yourself, a colleague and a company you know. Include the topics below.</span
+        >
+        <ul class="text">
+          <li>full name</li>
+          <li>job title</li>
+          <li>family</li>
+          <li>hobby</li>
+          <li>business</li>
+          <li>main product</li>
+          <li>market share</li>
+          <li>prices</li>
+        </ul>
+      </div>
+
+      <div class="footer">Bizmates Program Level 1 - Rank A - Lesson 2 – I, you, he, she, it, we, they</div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page-2">
+      <img class="bg" alt="bg2" src="bg2.png" />
+
+      <!-- HEADER -->
+      <div class="program-rank">
+        BIZMATES PROGRAM
+        <span class="level">LEVEL 1<span class="line">I</span>RANK A<span class="line">I</span>LESSON 2</span>
+      </div>
+      <div class="title">MY, YOUR, HIS, HER, ITS, OUR, THEIR</div>
+      <div class="lesson-number">2</div>
+
+      <!-- SEE SECTION -->
+      <div class="section see">SEE</div>
+      <div class="see-content">
+        <div class="row">
+          <div class="col">
+            <span class="sub-text b">Somebody’s <u>&nbsp;n.&nbsp;</u> ...</span>
+            <div class="text">
+              <p><u>My weakness</u> is grammar.</p>
+              <p><u>Your husband</u> is a nice guy.</p>
+              <p>Tim is my colleague. <u>His English</u> is good.</p>
+              <p>Mary is my boss. <u>Her team</u> is big.</p>
+              <p>My computer is slow. <u>Its memory</u> is full</p>
+              <p>Drive Tech is our client. <u>Their office</u> is in Tokyo.</p>
+            </div>
+          </div>
+          <div class="col">
+            <span class="sub-text">Questions</span>
+            <div class="text">
+              <p>Is my sentence correct?</p>
+              <p>How is your family</p>
+              <p>What is his hobby?</p>
+              <p>Is her team busy?</p>
+              <p>What is its product number?</p>
+              <p>Is their office far?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="example">
+          <span class="sub-text b">Example</span>
+          <div class="conversation row">
+            <div class="name">
+              <div>Mary:</div>
+              <div>Ken:</div>
+              <div>Mary:</div>
+              <div>Ken:</div>
+            </div>
+            <div class="sentence">
+              <div>How is your wife, Ken? Is she well?</div>
+              <div>She is fine. Today is our wedding anniversary.</div>
+              <div>Congratulations! What is your plan?</div>
+              <div>Well... I don’t know. My wife is busy today.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">Bizmates Program Level 1 - Rank A - Lesson 2 – I, you, he, she, it, we, they</div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page-3">
+      <img class="bg" alt="bg3" src="bg3.png" />
+
+      <!-- HEADER -->
+      <div class="program-rank">
+        BIZMATES PROGRAM
+        <span class="level">LEVEL 1<span class="line">I</span>RANK A<span class="line">I</span>LESSON 2</span>
+      </div>
+      <div class="lesson-number">2</div>
+
+      <!-- TRY SECTION -->
+      <div class="section try">TRY</div>
+      <div class="try-content text">
+        <span class="sub-text"
+          >Answer these questions from your trainer. The trainer may change the underlined words.</span
+        >
+        <p class="list-title">About a company</p>
+        <ul>
+          <li>What kind of company is <u>Drive Tech?</u></li>
+          <li>What are their main products?</li>
+          <li>Is their <u>market share</u> <u>big?</u></li>
+          <li>Are their prices <u>high?</u></li>
+        </ul>
+
+        <p class="list-title-2">About an employee</p>
+        <ul>
+          <li>What is <u>Eric</u>’s <u>full name?</u></li>
+          <li>What is <u>his</u> <u>job title?</u></li>
+          <li>Is <u>his</u> native language <u>English?</u></li>
+          <li>Is <u>his</u> hobby <u>gardening?</u></li>
+        </ul>
+
+        <div class="sub-text mg">Now, ask your trainer questions. You can change the underlined words.</div>
+
+        <div class="name-1 text dash-list">
+          <p><u>Drive Tech</u></p>
+          <ul class="desc">
+            <li>car parts manufacturer</li>
+            <li>main product: engines, wheels</li>
+            <li>market share: 33%</li>
+            <li>prices: low</li>
+          </ul>
+        </div>
+
+        <div class="name-2 text dash-list">
+          <p><u>Eric Wells</u></p>
+          <ul class="desc">
+            <li>job title: sales manager</li>
+            <li>native language: French</li>
+            <li>hobby: driving</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider d2">▼▼▼</div>
+
+      <!-- ACT SECTION -->
+      <div class="section act">ACT</div>
+      <div class="act-content">
+        <span class="sub-text"
+          >Talk about yourself, a colleague and a company you know. Include the topics below.</span
+        >
+        <ul class="text">
+          <li>full name</li>
+          <li>job title</li>
+          <li>family</li>
+          <li>hobby</li>
+          <li>business</li>
+          <li>main product</li>
+          <li>market share</li>
+          <li>prices</li>
+        </ul>
+      </div>
+
+      <div class="footer">Bizmates Program Level 1 - Rank A - Lesson 2 – I, you, he, she, it, we, they</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+}
+
+.page-1,
+.page-2,
+.page-3 {
+  width: 892px;
+  height: 1262px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  width: 892.75px;
+  height: 1262.5px;
+  z-index: -1;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.i {
+  font-family: italic;
+}
+
+.u-sup {
+  border-bottom: solid 1.5px black;
+  display: inline-block;
+  line-height: 14px;
+}
+
+.program-rank {
+  position: absolute;
+  top: 41px;
+  left: 62px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.program-rank .level {
+  margin-left: 25px;
+}
+
+.line {
+  margin: 0 12px;
+}
+
+.title {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-size: 27px;
+}
+
+.lesson-number {
+  position: absolute;
+  left: 823px;
+  top: 66px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Trebuchet MS";
+}
+
+.sub-text {
+  font-family: "Arial" !important;
+}
+
+.section {
+  position: absolute;
+  left: 55px;
+  color: #1f789f;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.section.see {
+  top: 190px;
+}
+
+.section.try {
+  top: 625px;
+}
+
+.section.act {
+  top: 1134px;
+}
+
+.divider {
+  color: #d9d9d9;
+  font-size: 15px;
+  position: absolute;
+  left: 469px;
+}
+
+.divider.d1 {
+  top: 573px;
+}
+
+.divider.d2 {
+  top: 1084px;
+}
+
+.text {
+  font-family: "Trebuchet MS";
+}
+
+.ja {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #595959;
+}
+
+sup {
+  font-size: 10px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+/* See */
+.see-content {
+  margin-left: 144.5px;
+  margin-top: 190px;
+  font-size: 15px;
+}
+
+.see-content p {
+  margin: 0 auto;
+}
+
+.see-content p:last-child {
+  margin-bottom: 30px;
+}
+
+.see-content .col {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 48px;
+  min-width: 310px;
+}
+
+.see-content .text {
+  font-family: "Trebuchet MS";
+  line-height: 26px;
+  margin-top: 4px;
+}
+
+.see-content .text-title {
+  font-family: "Trebuchet MS";
+}
+
+.see-content .example {
+  margin-top: 25px;
+}
+
+.see-content .example .conversation {
+  line-height: 26px;
+  margin-top: 4px;
+}
+
+.see-content .example .sentence {
+  margin-left: 23px;
+  width: 650px;
+}
+
+/* Try */
+.try-content {
+  position: absolute;
+  top: 625px;
+  left: 144.5px;
+  font-size: 15px;
+}
+
+.try-content ul {
+  list-style-type: decimal;
+  margin: 3px 0px 0px 18px;
+  padding: 0;
+  line-height: 26px;
+  max-width: 300px;
+}
+
+.try-content li {
+  padding-left: 13px;
+}
+
+.try-content .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.try-content .name {
+  position: relative;
+}
+
+.try-content .name p {
+  position: absolute;
+}
+
+.try-content .name p:first-child {
+  top: 59px;
+  left: 115px;
+}
+
+.try-content .name p:nth-child(2) {
+  top: 155px;
+  left: 58px;
+}
+
+.try-content .name p:nth-child(3) {
+  top: -65px;
+  left: 368px;
+}
+
+.try-content .name p:nth-child(4) {
+  top: 39px;
+  left: 372px;
+}
+
+.try-content .name p:nth-child(5) {
+  top: 127px;
+  left: 376px;
+}
+
+.try-content .name p:nth-child(6) {
+  top: -41px;
+  left: 640px;
+}
+
+.try-content .name p:nth-child(7) {
+  top: 35px;
+  left: 640px;
+}
+
+.try-content .name p:nth-child(8) {
+  top: 149px;
+  left: 640px;
+}
+
+/* Act */
+.act-content {
+  position: absolute;
+  top: 1134px;
+  left: 144.5px;
+  font-size: 15px;
+  width: 720px;
+}
+
+.act-content .sub-text {
+  line-height: 22px;
+}
+
+.footer {
+  font-size: 9px;
+  position: absolute;
+  top: 1210px;
+  left: 532px;
+}
+
+/* Page-2 */
+.page-2 .title {
+  top: 72px;
+  left: 50px;
+  word-spacing: 3px;
+}
+
+.page-2 .title .ja {
+  font-size: 27px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.page-2 .section.see {
+  top: 386px;
+}
+
+.page-2 .see-content {
+  margin-top: 392px;
+  margin-left: 148px;
+}
+
+.page-2 .see-content .col {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 48px;
+}
+
+.page-2 .see-content .col div:nth-child(4) {
+  margin-bottom: 64px;
+}
+
+.page-2 .see-content .text p {
+  margin-top: 27px;
+}
+
+.page-2 .see-content .text p:last-child {
+  margin-bottom: 57px;
+}
+
+.page-2 .example {
+  margin-top: 15px;
+  margin-left: -22px;
+}
+
+.page-2 .example .conversation {
+  margin-top: 6px;
+}
+
+.page-2 .example .sentence {
+  margin-left: 24px;
+}
+
+.page-2 .example .conversation div,
+.page-2 .example .sentence div {
+  margin-bottom: 24px;
+}
+
+/* Page 3 */
+.page-3 .section.try {
+  top: 170px;
+}
+
+.page-3 .try-content {
+  top: 170px;
+  left: 128px;
+}
+
+.page-3 .try-content ul {
+  margin: 28px 0px 0px 16px;
+}
+
+.page-3 .try-content li {
+  margin: 24px 0;
+}
+
+.page-3 .try-content .name {
+  margin-top: 19px;
+  margin-left: -5px;
+}
+
+.page-3 .try-content .name p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.page-3 .divider.d2 {
+  top: 827px;
+}
+
+.page-3 .section.act {
+  top: 865px;
+}
+
+.page-3 .act-content {
+  top: 865px;
+  left: 125px;
+}
+
+.page-3 .act-content .ja {
+  margin: 8px auto;
+}

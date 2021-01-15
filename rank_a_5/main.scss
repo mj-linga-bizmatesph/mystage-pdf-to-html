@@ -1,0 +1,325 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Arial';
+$ja-font: 'Noto Sans JP';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $title-font;
+}
+.page-1,
+.page-2,
+.page-3 {
+  width: 892px;
+  height: 1262px;
+  overflow: hidden;
+  position: relative;
+}
+.bg {
+  position: absolute;
+  width: 892.75px;
+  height: 1262.5px;
+  z-index: -1;
+}
+.b {
+  font-weight: bold;
+}
+.i {
+  font-family: italic;
+}
+.u-sup {
+  border-bottom: solid 1.5px black;
+  display: inline-block;
+  line-height: 14px;
+}
+.program-rank {
+  position: absolute;
+  top: 41px;
+  left: 62px;
+  color: #ffffff;
+  font-size: 15px;
+
+  .level {
+    margin-left: 25px;
+  }
+}
+.line {
+  margin: 0 12px;
+}
+.title {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-size: 27px;
+}
+.lesson-number {
+  position: absolute;
+  left: 823px;
+  top: 66px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  font-family: $text-font;
+}
+.sub-text {
+  font-family: $title-font !important;
+}
+.section {
+  position: absolute;
+  left: 55px;
+  color: #1f789f;
+  font-weight: bold;
+  font-size: 15px;
+
+  &.see {
+    top: 190px;
+  }
+  &.try {
+    top: 625px;
+  }
+  &.act {
+    top: 1134px;
+  }
+}
+.divider {
+  color: #d9d9d9;
+  font-size: 15px;
+  position: absolute;
+  left: 469px;
+
+  &.d1 {
+    top: 573px;
+  }
+  &.d2 {
+    top: 1084px;
+  }
+}
+
+.text {
+  font-family: $text-font;
+}
+.ja {
+  font-family: $ja-font, sans-serif;
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #595959;
+}
+sup {
+  font-size: 10px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+/* See */
+.see-content {
+  margin-left: 144.5px;
+  margin-top: 190px;
+  font-size: 15px;
+
+  p {
+    margin: 0 auto;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  .col {
+    width: fit-content;
+    margin-right: 48px;
+    min-width: 310px;
+  }
+  .text {
+    font-family: $text-font;
+    line-height: 26px;
+    margin-top: 4px;
+  }
+  .text-title {
+    font-family: $text-font;
+  }
+  .example {
+    margin-top: 25px;
+
+    .conversation {
+      line-height: 26px;
+      margin-top: 4px;
+    }
+    .sentence {
+      margin-left: 23px;
+      width: 650px;
+    }
+  }
+}
+
+/* Try */
+.try-content {
+  position: absolute;
+  top: 625px;
+  left: 144.5px;
+  font-size: 15px;
+
+  ul {
+    list-style-type: decimal;
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: 26px;
+    max-width: 300px;
+  }
+  li {
+    padding-left: 13px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .name {
+    position: relative;
+    p {
+      position: absolute;
+      &:first-child {
+        top: 59px;
+        left: 115px;
+      }
+      &:nth-child(2) {
+        top: 155px;
+        left: 58px;
+      }
+      &:nth-child(3) {
+        top: -65px;
+        left: 368px;
+      }
+      &:nth-child(4) {
+        top: 39px;
+        left: 372px;
+      }
+      &:nth-child(5) {
+        top: 127px;
+        left: 376px;
+      }
+      &:nth-child(6) {
+        top: -41px;
+        left: 640px;
+      }
+      &:nth-child(7) {
+        top: 35px;
+        left: 640px;
+      }
+      &:nth-child(8) {
+        top: 149px;
+        left: 640px;
+      }
+    }
+  }
+}
+
+/* Act */
+.act-content {
+  position: absolute;
+  top: 1134px;
+  left: 144.5px;
+  font-size: 15px;
+  width: 720px;
+
+  .sub-text {
+    line-height: 22px;
+  }
+}
+.footer {
+  font-size: 9px;
+  position: absolute;
+  top: 1210px;
+  left: 532px;
+}
+
+/* Page-2 */
+.page-2 {
+  .title {
+    top: 72px;
+    left: 50px;
+    word-spacing: 3px;
+    .ja {
+      font-size: 27px;
+      color: #000000;
+      font-weight: bold;
+      margin-right: 3px;
+    }
+  }
+  .section.see {
+    top: 386px;
+  }
+  .see-content {
+    margin-top: 392px;
+    margin-left: 148px;
+
+    .col {
+      width: fit-content;
+      margin-right: 48px;
+      div:nth-child(4) {
+        margin-bottom: 64px;
+      }
+    }
+    .text {
+      p {
+        margin-top: 27px;
+        &:last-child {
+          margin-bottom: 57px;
+        }
+      }
+    }
+  }
+  .example {
+    margin-top: 15px;
+    margin-left: -22px;
+
+    .conversation {
+      margin-top: 6px;
+    }
+    .sentence {
+      margin-left: 24px;
+    }
+    .conversation div,
+    .sentence div {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+/* Page 3 */
+.page-3 {
+  .section.try {
+    top: 170px;
+  }
+  .try-content {
+    top: 170px;
+    left: 128px;
+
+    ul {
+      margin: 28px 0px 0px 16px;
+    }
+    li {
+      margin: 24px 0;
+    }
+    .name {
+      margin-top: 19px;
+      margin-left: -5px;
+      p {
+        width: fit-content;
+      }
+    }
+  }
+  .divider.d2 {
+    top: 827px;
+  }
+  .section.act {
+    top: 865px;
+  }
+  .act-content {
+    top: 865px;
+    left: 125px;
+    .ja {
+      margin: 8px auto;
+    }
+  }
+}

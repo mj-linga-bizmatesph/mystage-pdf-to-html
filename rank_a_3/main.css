@@ -115,6 +115,23 @@ body {
   top: 1020px;
 }
 
+.sub-head {
+  position: absolute;
+  top: 125px;
+  left: 47px;
+}
+
+.sub-head .subtitle {
+  font-family: "Noto Sans JP";
+  color: #257a9e;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sub-head p {
+  margin: 3px auto;
+}
+
 .text {
   font-family: "Trebuchet MS";
 }
@@ -134,9 +151,17 @@ sup {
 
 /* See */
 .see-content {
-  margin-left: 144.5px;
-  margin-top: 190px;
+  margin-left: 126.5px;
+  margin-top: 177px;
   font-size: 15px;
+}
+
+.see-content .blue-section {
+  background-color: #cce0ec;
+  padding-top: 13px;
+  padding-left: 18.5px;
+  height: 176px;
+  padding-bottom: 15px;
 }
 
 .see-content p {
@@ -166,7 +191,8 @@ sup {
 }
 
 .see-content .example {
-  margin-top: 25px;
+  margin-top: 38px;
+  margin-left: 18.5px;
 }
 
 .see-content .example .conversation {
@@ -174,8 +200,18 @@ sup {
   margin-top: 4px;
 }
 
-.see-content .example .sentence {
-  margin-left: 23px;
+.see-content .example .conversation .row p {
+  display: inline-block;
+  margin: -0.5px 0px;
+}
+
+.see-content .example .conversation .row p:first-child {
+  width: 52px;
+  word-wrap: break-word;
+}
+
+.see-content .example .conversation .row p:last-child {
+  max-width: 690px;
 }
 
 /* Try */
@@ -191,7 +227,7 @@ sup {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
-  max-width: 300px;
+  max-width: 315px;
 }
 
 .try-content li {
@@ -225,8 +261,12 @@ sup {
   position: absolute;
   top: 20px;
   left: 10px;
-  width: 34px;
   text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 80px;
+  word-wrap: break-word;
 }
 
 .try-content .name p:first-child {
@@ -325,13 +365,94 @@ sup {
   font-size: 9px;
   position: absolute;
   top: 1210px;
-  left: 532px;
+  left: 616px;
 }
 
-/* Page-2 */
+/* Page 2 */
 .page-2 .title {
-  top: 80px;
-  left: 215px;
+  top: 72px;
+  left: 50px;
+}
+
+.page-2 .title .ja {
+  font-size: 27px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.page-2 .lesson-points {
+  position: absolute;
+  top: 180px;
+  padding: 2px 0px 0px 47px;
+  height: 131px;
+  width: 690px;
+  background: #cce0ec;
+}
+
+.page-2 .lesson-points.ja {
+  color: #257a9e;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+}
+
+.page-2 .lesson-points div {
+  margin-bottom: 24px;
+}
+
+.page-2 .lesson-points div p {
+  margin: 2px auto;
+  line-height: 22px;
+}
+
+.page-2 .lesson-points div p:first-child {
+  color: #000000;
+  font-size: 15px;
+}
+
+.page-2 .lesson-points p {
+  margin: 8px auto;
+}
+
+.page-2 .arrow-part {
+  position: absolute;
+  top: 338px;
+  left: 125px;
+  max-width: 740px;
+}
+
+.page-2 .arrow-part .subtitle {
+  font-size: 15px;
+  color: #000000;
+}
+
+.page-2 .arrow-part p {
+  margin: 4px auto;
+  font-size: 12px;
+}
+
+.page-2 .arrow-part p span {
+  display: block;
+  margin: 4.5px auto;
+}
+
+.page-2 .arrow-part div {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.page-2 .arrow-part div:before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-top: 6.5px solid transparent;
+  border-bottom: 6.5px solid transparent;
+  border-left: 12px solid #257a9e;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-2 .section.see {
@@ -339,8 +460,12 @@ sup {
 }
 
 .page-2 .see-content {
-  margin-top: 592px;
-  margin-left: 146px;
+  margin-top: 579px;
+  margin-left: 126px;
+}
+
+.page-2 .see-content .blue-section {
+  height: 326px;
 }
 
 .page-2 .see-content .col {
@@ -351,29 +476,32 @@ sup {
   max-width: 310px;
 }
 
-.page-2 .see-content .text p {
-  margin-top: 28px;
+.page-2 .see-content .col .text:nth-child(-n+4) {
+  margin-bottom: 44px;
 }
 
-.page-2 .see-content .text p:last-child {
-  margin-bottom: 59px;
+.page-2 .see-content .col .text.no-subtext {
+  margin-top: 83px;
+}
+
+.page-2 .see-content .sub-text.ja {
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+.page-2 .see-content .text .ja {
+  color: #257a9e;
+  margin: 5.5px auto;
+  line-height: 16px;
 }
 
 .page-2 .example {
-  margin-top: -2px;
-  margin-left: -20px;
+  margin-top: 24px;
+  margin-left: 0px;
 }
 
 .page-2 .example .conversation {
   margin-top: 8px;
-}
-
-.page-2 .example .sentence {
-  margin-left: 16px;
-}
-
-.page-2 .example .conversation div, .page-2 .example .sentence div {
-  margin-bottom: 24px;
 }
 
 /* Page 3 */
@@ -381,38 +509,65 @@ sup {
   top: 170px;
 }
 
+.page-3 .sub-head {
+  top: 72px;
+}
+
 .page-3 .try-content {
   top: 170px;
   left: 128px;
 }
 
-.page-3 .try-content ul {
-  margin: 26px 0px 0px 15px;
+.page-3 .try-content .ja, .page-3 .try-content p {
+  margin: 0px auto;
 }
 
-.page-3 .try-content li {
-  margin: 23px 0;
+.page-3 .try-content span:nth-child(-n + 2) {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.page-3 .try-content .wrapper ul.list {
+  list-style: none;
+  margin: 18px 0px 0px 16px;
+  line-height: 25px;
+  counter-reset: ulCounter;
+}
+
+.page-3 .try-content .wrapper ul.list li:not(.ja) {
+  counter-increment: ulCounter;
+  list-style: none;
+}
+
+.page-3 .try-content .wrapper ul.list li:not(.ja):before {
+  content: counter(ulCounter) ".";
+  position: absolute;
+  left: 0px;
+}
+
+.page-3 .try-content .wrapper ul.list li.ja:before {
+  content: '';
 }
 
 .page-3 .try-content .name p {
-  left: 28px;
+  left: 10px;
 }
 
 .page-3 .try-content .name p:first-child {
-  top: 98px;
+  top: 84px;
 }
 
 .page-3 .try-content .name p:nth-child(2) {
-  top: 248px;
+  top: 234px;
 }
 
 .page-3 .try-content .name p:nth-child(3) {
-  top: 388px;
+  top: 374px;
 }
 
 .page-3 .try-content table {
-  margin-top: 48px;
-  margin-left: 118px;
+  margin-top: 20px;
+  margin-left: 102px;
 }
 
 .page-3 .try-content table th {
@@ -450,6 +605,10 @@ sup {
   margin-left: 5px;
 }
 
+.page-3 .try-content .sub-text.ja {
+  margin-top: 8px;
+}
+
 .page-3 .divider.d2 {
   top: 826px;
 }
@@ -459,15 +618,35 @@ sup {
 }
 
 .page-3 .act-content {
-  top: 878px;
+  top: 876px;
   left: 125px;
 }
 
-.page-3 .act-content ul {
-  margin-left: 20px;
+.page-3 .act-content p.ja {
+  margin: 6px 0px;
 }
 
-.page-3 .act-content li {
-  margin-bottom: 26px;
-  padding-left: 12px;
+.page-3 .act-content ul {
+  margin: 0px 0px 0px 20px;
+  line-height: 25px;
+  counter-reset: ulCounter;
+}
+
+.page-3 .act-content ul li:not(.ja) {
+  counter-increment: ulCounter;
+  list-style: none;
+}
+
+.page-3 .act-content ul li:not(.ja):before {
+  content: counter(ulCounter) ".";
+  position: absolute;
+  left: 0px;
+}
+
+.page-3 .act-content ul li {
+  list-style: none;
+}
+
+.page-3 .act-content ul li.ja:before {
+  content: '';
 }

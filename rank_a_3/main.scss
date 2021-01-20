@@ -2,6 +2,10 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
+$primary: #257a9e;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+
 body {
   margin: 0;
   padding: 0;
@@ -97,7 +101,20 @@ body {
     top: 1020px;
   }
 }
-
+.sub-head {
+  position: absolute;
+  top: 125px;
+  left: 47px;
+  .subtitle {
+    font-family: $ja-font;
+    color: $primary;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  p {
+    margin: 3px auto;
+  }
+}
 .text {
   font-family: $text-font;
 }
@@ -115,10 +132,17 @@ sup {
 
 /* See */
 .see-content {
-  margin-left: 144.5px;
-  margin-top: 190px;
+  margin-left: 126.5px;
+  margin-top: 177px;
   font-size: 15px;
   
+  .blue-section {
+    background-color: $primary-light;
+    padding-top: 13px;
+    padding-left: 18.5px;
+    height: 176px;
+    padding-bottom: 15px;
+  }
   p {
     margin: 0 auto;
     &:last-child {
@@ -139,14 +163,25 @@ sup {
     font-family: $text-font;
   }
   .example {
-    margin-top: 25px;
+    margin-top: 38px;
+    margin-left: 18.5px;
 
     .conversation {
       line-height: 26px;
       margin-top: 4px;
-    }
-    .sentence {
-      margin-left: 23px;
+      .row {
+        p {
+          display: inline-block;
+          margin: -0.5px 0px;
+          &:first-child {
+            width: 52px;
+            word-wrap: break-word;
+          }
+          &:last-child {
+            max-width: 690px;
+          }
+        }
+      }
     }
   }
 }
@@ -163,7 +198,7 @@ sup {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: 26px;
-    max-width: 300px;
+    max-width: 315px;
   }
   li {
     padding-left: 13px;
@@ -184,8 +219,10 @@ sup {
       position: absolute;
       top: 20px;
       left: 10px;
-      width: 34px;
       text-align: center;
+      width: max-content;
+      max-width: 80px;
+      word-wrap: break-word;
       &:first-child {
         top: 26px;
       }
@@ -269,46 +306,124 @@ sup {
   font-size: 9px;
   position: absolute;
   top: 1210px;
-  left: 532px;
+  left: 616px;
 }
 
-/* Page-2 */
+/* Page 2 */
 .page-2 {
   .title {
-    top: 80px;
-    left: 215px;
+    top: 72px;
+    left: 50px;
+    .ja {
+      font-size: 27px;
+      color: #000000;
+      font-weight: bold;
+      margin-right: 3px;
+    }
+  }
+  .lesson-points {
+    position: absolute;
+    top: 180px;
+    padding: 2px 0px 0px 47px;
+    height: 131px;
+    width: 690px;
+    background: $primary-light;
+    &.ja {
+      color: $primary;
+      font-size: 12px;
+      letter-spacing: 0.1px;
+    }
+    div {
+      margin-bottom: 24px;
+      p {
+        margin: 2px auto;
+        line-height: 22px;
+        &:first-child {
+          color: #000000;
+          font-size: 15px;
+        }
+      }
+    }
+    p {
+      margin: 8px auto;
+    }
+  }
+  .arrow-part {
+    position: absolute;
+    top: 338px;
+    left: 125px;
+    max-width: 740px;
+    .subtitle {
+      font-size: 15px;
+      color: #000000;
+    }
+    p {
+      margin: 4px auto;
+      font-size: 12px;
+      span {
+        display: block;
+        margin: 4.5px auto;
+      }
+    }
+    div {
+      margin-bottom: 30px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: -38px;
+        top: 6px;
+        width: 0;
+        height: 0;
+        border-top: 6.5px solid transparent;
+        border-bottom: 6.5px solid transparent;
+        border-left: 12px solid $primary;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
   }
   .section.see {
     top: 587px;
   }
   .see-content {
-    margin-top: 592px;
-    margin-left: 146px;
+    margin-top: 579px;
+    margin-left: 126px;
 
+    .blue-section {
+      height: 326px;
+    }
     .col {
       width: fit-content;
       margin-right: 60px;
       max-width: 310px;
+      .text {
+        &:nth-child(-n+4) {
+          margin-bottom: 44px;
+        }
+        &.no-subtext {
+          margin-top: 83px;
+        }
+      }
     }
-    .text p {
-      margin-top: 28px;
-      &:last-child {
-        margin-bottom: 59px;
+    .sub-text.ja {
+      margin-top: 2px;
+      font-size: 13px;
+    }
+    .text {
+      .ja {
+        color: $primary;
+        margin: 5.5px auto;
+        line-height: 16px;
       }
     }
   }
   .example {
-    margin-top: -2px;
-    margin-left: -20px;
+    margin-top: 24px;
+    margin-left: 0px;
 
     .conversation {
       margin-top: 8px;
-    }
-    .sentence {
-      margin-left: 16px;
-    }
-    .conversation div, .sentence div {
-      margin-bottom: 24px;
     }
   }
 }
@@ -318,31 +433,59 @@ sup {
   .section.try {
     top: 170px;
   }
+  .sub-head {
+    top: 72px;
+  }
   .try-content {
     top: 170px;
     left: 128px;
 
-    ul {
-      margin: 26px 0px 0px 15px;
+    .ja, p {
+      margin: 0px auto;
     }
-    li {
-      margin: 23px 0;
+    span:nth-child(-n + 2) {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .wrapper {
+      ul.list {
+        list-style: none;
+        margin: 18px 0px 0px 16px;
+        line-height: 25px;
+        counter-reset: ulCounter;
+        li:not(.ja) {
+          counter-increment: ulCounter;
+          list-style: none;
+          &:before {
+            content: counter(ulCounter) '.';
+            position: absolute;
+            left: 0px;
+          }
+        }
+        li {
+          &.ja {
+            &:before {
+              content: '';
+            }
+          }
+        }
+      }
     }
     .name p {
-      left: 28px;
+      left: 10px;
       &:first-child {
-        top: 98px;
+        top: 84px;
       }
       &:nth-child(2) {
-        top: 248px;
+        top: 234px;
       }
       &:nth-child(3) {
-        top: 388px;
+        top: 374px;
       }
     }
     table {
-      margin-top: 48px;
-      margin-left: 118px;
+      margin-top: 20px;
+      margin-left: 102px;
 
       th {
         padding-left: 10px;
@@ -375,6 +518,9 @@ sup {
         }
       }
     }
+    .sub-text.ja {
+      margin-top: 8px;
+    }
   }
   .divider.d2 {
     top: 826px;
@@ -383,15 +529,32 @@ sup {
     top: 878px;
   }
   .act-content {
-    top: 878px;
+    top: 876px;
     left: 125px;
-
-    ul {
-      margin-left: 20px;
+    p.ja {
+      margin: 6px 0px;
     }
-    li {
-      margin-bottom: 26px;
-      padding-left: 12px;
+    ul {
+      margin: 0px 0px 0px 20px;
+      line-height: 25px;
+      counter-reset: ulCounter;
+      li:not(.ja) {
+        counter-increment: ulCounter;
+        list-style: none;
+        &:before {
+          content: counter(ulCounter) '.';
+          position: absolute;
+          left: 0px;
+        }
+      }
+      li {
+        list-style: none;
+        &.ja {
+          &:before {
+            content: '';
+          }
+        }
+      }
     }
   }
 }

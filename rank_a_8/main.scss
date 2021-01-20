@@ -2,6 +2,9 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
+$primary: #257A9E;
+$primary-dark: #083051;
+
 body {
   margin: 0;
   padding: 0;
@@ -78,10 +81,10 @@ body {
     top: 190px;
   }
   &.try {
-    top: 625px;
+    top: 548px;
   }
   &.act {
-    top: 1134px;
+    top: 981px;
   }
 }
 .divider {
@@ -91,10 +94,10 @@ body {
   left: 469px;
 
   &.d1 {
-    top: 573px;
+    top: 497px;
   }
   &.d2 {
-    top: 1084px;
+    top: 930px;
   }
 }
 .sub-head {
@@ -103,11 +106,12 @@ body {
   left: 47px;
   .subtitle {
     font-family: $ja-font;
-    color: #257A9E;
+    color: $primary;
     font-weight: bold;
+    font-size: 15px;
   }
   p {
-    margin: 2px auto;
+    margin: 3px auto;
   }
 }
 .text {
@@ -133,14 +137,10 @@ sup {
 
   p {
     margin: 0 auto;
-    &:last-child {
-      margin-bottom: 30px;
-    }
   }
   .col {
-    width: fit-content;
-    margin-right: 48px;
-    min-width: 310px;
+    width: 340px;
+    margin-right: 20px;
   }
   .text {
     font-family: $text-font;
@@ -151,7 +151,7 @@ sup {
     font-family: $text-font;
   }
   .example {
-    margin-top: 25px;
+    margin-top: 55px;
 
     .conversation {
       line-height: 26px;
@@ -159,13 +159,13 @@ sup {
       .row {
         p {
           display: inline-block;
-          margin: 0px;
+          margin: -0.5px 0px;
           &:first-child {
             width: 52px;
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 640px;
+            max-width: 690px;
           }
         }
       }
@@ -176,16 +176,22 @@ sup {
 /* Try */
 .try-content {
   position: absolute;
-  top: 625px;
+  top: 548px;
   left: 144.5px;
   font-size: 15px;
 
-  ul {
-    list-style-type: decimal;
-    margin: 3px 0px 0px 18px;
-    padding: 0;
-    line-height: 26px;
-    max-width: 300px;
+  .list-col {
+    display: flex;
+    ul {
+      margin: 3px 0px 0px 18px;
+      padding: 0;
+      line-height: 26px;
+      list-style: none;
+      &:first-child {
+        list-style: disc;
+        width: 310px;
+      }
+    }
   }
   li {
     padding-left: 13px;
@@ -195,41 +201,46 @@ sup {
     flex-direction: column;
     align-items: stretch;
   }
-  .name {
-    position: relative;
-    p {
-      position: absolute;
+  table {
+    margin-top: 34px;
+    margin-left: -16px;
+    border-spacing: 0px;
+    line-height: 18px;
+
+    th, td {
+      max-width: 196px;
+      width: 196px;
+      word-wrap: break-word;
+      border: 1px solid #000000;
+      padding: 5px 8px;
+    }  
+    tr {
+      background-color: #d4e6f0;
+      border: 1px solid #000000;
       &:first-child {
-        top: 59px;
-        left: 115px;
+        background-color: $primary-dark;
+        color: #ffffff;
+        height: 30px;
       }
       &:nth-child(2) {
-        top: 155px;
-        left: 58px;
+        height: 86px;
       }
       &:nth-child(3) {
-        top: -65px;
-        left: 368px;
+        background-color: #2078A0;
+        color: #ffffff;
+        height: 28px;
       }
-      &:nth-child(4) {
-        top: 39px;
-        left: 372px;
-      }
-      &:nth-child(5) {
-        top: 127px;
-        left: 376px;
-      }
-      &:nth-child(6) {
-        top: -41px;
-        left: 640px;
-      }
-      &:nth-child(7) {
-        top: 35px;
-        left: 640px;
-      }
-      &:nth-child(8) {
-        top: 149px;
-        left: 640px;
+      &:nth-child(n+4) {
+        counter-increment: rowNumber;
+        td {
+          padding-left: 32px;
+          position: relative;
+          &:before {
+            position: absolute;
+            left: 8px;
+            content: counter(rowNumber) '.'; 
+          }
+        }
       }
     }
   }
@@ -238,13 +249,24 @@ sup {
 /* Act */
 .act-content {
   position: absolute;
-  top: 1134px;
+  top: 981px;
   left: 144.5px;
   font-size: 15px;
   width: 720px;
 
   .sub-text {
     line-height: 22px;
+  }
+  ul {
+    list-style: none;
+    margin: 3px 0px 0px 0px;
+    padding: 0;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 590px;
   }
 }
 .footer {
@@ -259,7 +281,7 @@ sup {
   .title {
     top: 72px;
     left: 50px;
-    word-spacing: 3px;
+    word-spacing: 1px;
     .ja {
       font-size: 27px;
       color: #000000;
@@ -271,13 +293,16 @@ sup {
     position: absolute;
     top: 188px;
     left: 47px;
+    width: 678px;
     &.ja {
-      color: #257A9E; 
+      color: $primary;
+      font-size: 12px;
+      letter-spacing: 0.10px;
     }
     div {
-      margin-bottom: 18px;
+      margin-bottom: 12px;
       p {
-        margin: 3px auto;
+        margin: 2px auto;
         &:first-child {
           color: #000000;
           font-size: 15px;
@@ -285,41 +310,50 @@ sup {
       }
     }
     p {
+      line-height: 22px;
       margin: 12px auto;
     }
   }
+  .arrow-part {
+    position: absolute;
+    top: 250px;
+    left: 125px;
+    .subtitle {
+      font-size: 15px;
+      color: #000000;
+    }
+    p {
+      margin: 4.5px auto;
+      font-size: 12px;
+    }
+    div {
+      margin-bottom: 28px;
+    }
+  }
   .section.see {
-    top: 386px;
+    top: 447px;
   }
   .see-content {
-    margin-top: 392px;
+    margin-top: 453px;
     margin-left: 148px;
 
-    .col {
-      width: fit-content;
-      margin-right: 48px;
-    }
-    .row .ja {
-      margin-top: 4px;
+    .sub-text.ja {
+      margin-top: 8px;
+      font-size: 13px;
     }
     .text {
       .ja {
-        margin-top: 0px;
-        color: #257A9E;
-      }
-      p {
-        &:last-child {
-          margin-bottom: 37px;
-        }
+        color: $primary;
+        margin: 0px auto;
       }
     }
   }
   .example {
-    margin-top: 10px;
+    margin-top: 26px;
     margin-left: -22px;
 
     .conversation {
-      margin-top: 0px;
+      margin-top: 4px;
     }
   }
 }
@@ -341,8 +375,8 @@ sup {
       margin-bottom: 5px;
     }
     ul {
-      list-style: none;
-      margin: 24px 0px 0px 16px;
+      list-style: none !important;
+      margin: 10px 0px 0px 16px;
       counter-reset: ulCounter;
       li:not(.ja) {
         counter-increment: ulCounter;
@@ -355,32 +389,37 @@ sup {
       }
       li {
         &.ja {
-          margin-top: -2px;
           &:before {
             content: '';
           }
         }
       }
     }
-    .name {
-      margin-top: 19px;
-      margin-left: -5px;
-      p {
-        width: fit-content;
+    table {
+      margin-top: 10px;
+      margin-left: -4px;
+      .ja {
+        color: $primary;
+      }
+      tr:first-child,
+      tr:nth-child(3) {
+        .ja {
+          color: #ffffff;
+        }
       }
     }
   }
   .divider.d2 {
-    top: 827px;
+    top: 703px;
   }
   .section.act {
-    top: 865px;
+    top: 753px;
   }
   .act-content {
-    top: 865px;
+    top: 753px;
     left: 125px;
-    .ja {
-      margin: 8px auto;
+    p.ja {
+      margin: 8px 0px;
     }
   }
 }

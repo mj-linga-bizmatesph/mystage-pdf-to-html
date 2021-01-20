@@ -2,6 +2,9 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
+$primary: #257A9E;
+$primary-dark: #083051;
+
 body {
   margin: 0;
   padding: 0;
@@ -78,7 +81,7 @@ body {
     top: 190px;
   }
   &.try {
-    top: 625px;
+    top: 650px;
   }
   &.act {
     top: 1134px;
@@ -91,7 +94,7 @@ body {
   left: 469px;
 
   &.d1 {
-    top: 573px;
+    top: 599px;
   }
   &.d2 {
     top: 1084px;
@@ -103,11 +106,12 @@ body {
   left: 47px;
   .subtitle {
     font-family: $ja-font;
-    color: #257A9E;
+    color: $primary;
     font-weight: bold;
+    font-size: 15px;
   }
   p {
-    margin: 2px auto;
+    margin: 3px auto;
   }
 }
 .text {
@@ -131,16 +135,16 @@ sup {
   margin-top: 190px;
   font-size: 15px;
 
+  .details {
+    margin-top: 32px;
+  }
   p {
     margin: 0 auto;
-    &:last-child {
-      margin-bottom: 30px;
-    }
   }
   .col {
     width: fit-content;
-    margin-right: 48px;
-    min-width: 310px;
+    margin-right: 14px;
+    max-width: 220px;
   }
   .text {
     font-family: $text-font;
@@ -151,7 +155,7 @@ sup {
     font-family: $text-font;
   }
   .example {
-    margin-top: 25px;
+    margin-top: 55px;
 
     .conversation {
       line-height: 26px;
@@ -159,7 +163,7 @@ sup {
       .row {
         p {
           display: inline-block;
-          margin: 0px;
+          margin: -0.5px 0px;
           &:first-child {
             width: 52px;
             word-wrap: break-word;
@@ -176,7 +180,7 @@ sup {
 /* Try */
 .try-content {
   position: absolute;
-  top: 625px;
+  top: 650px;
   left: 144.5px;
   font-size: 15px;
 
@@ -185,7 +189,7 @@ sup {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: 26px;
-    max-width: 300px;
+    max-width: 350px;
   }
   li {
     padding-left: 13px;
@@ -196,42 +200,41 @@ sup {
     align-items: stretch;
   }
   .name {
-    position: relative;
+    position: absolute;
+    top: 124px;
     p {
       position: absolute;
+      max-width: 120px;
+      text-align: right;
       &:first-child {
-        top: 59px;
-        left: 115px;
+        top: 92px;
+        left: 0px;
       }
       &:nth-child(2) {
-        top: 155px;
+        top: 162px;
         left: 58px;
       }
       &:nth-child(3) {
-        top: -65px;
-        left: 368px;
+        top: -95px;
+        left: 390px;
       }
       &:nth-child(4) {
-        top: 39px;
-        left: 372px;
+        top: 24px;
+        left: 295px;
       }
       &:nth-child(5) {
-        top: 127px;
-        left: 376px;
+        top: 129px;
+        left: 372px;
       }
       &:nth-child(6) {
-        top: -41px;
-        left: 640px;
-      }
-      &:nth-child(7) {
-        top: 35px;
-        left: 640px;
-      }
-      &:nth-child(8) {
-        top: 149px;
-        left: 640px;
+        top: -35px;
+        left: 648px;
       }
     }
+  }
+  .sub-text.mg {
+    position: absolute;
+    top: 382px;
   }
 }
 
@@ -245,6 +248,17 @@ sup {
 
   .sub-text {
     line-height: 22px;
+  }
+  ul {
+    list-style: none;
+    margin: 3px 0px 0px 0px;
+    padding: 0;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 590px;
   }
 }
 .footer {
@@ -271,13 +285,16 @@ sup {
     position: absolute;
     top: 188px;
     left: 47px;
+    width: 678px;
     &.ja {
-      color: #257A9E; 
+      color: $primary;
+      font-size: 12px;
+      letter-spacing: 0.10px;
     }
     div {
-      margin-bottom: 18px;
+      margin-bottom: 12px;
       p {
-        margin: 3px auto;
+        margin: 2px auto;
         &:first-child {
           color: #000000;
           font-size: 15px;
@@ -285,32 +302,49 @@ sup {
       }
     }
     p {
+      line-height: 22px;
       margin: 12px auto;
     }
   }
+  .arrow-part {
+    position: absolute;
+    top: 326px;
+    left: 125px;
+    .subtitle {
+      font-size: 15px;
+      color: #000000;
+    }
+    p {
+      margin: 4.5px auto;
+      font-size: 12px;
+    }
+    div {
+      margin-bottom: 32px;
+    }
+  }
   .section.see {
-    top: 386px;
+    top: 582px;
   }
   .see-content {
-    margin-top: 392px;
+    margin-top: 588px;
     margin-left: 148px;
 
     .col {
       width: fit-content;
-      margin-right: 48px;
+      max-width: 198px;
     }
-    .row .ja {
-      margin-top: 4px;
+    .sub-text.ja {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    .details {
+      margin-top: 10px;
     }
     .text {
+      margin-top: 12px;
       .ja {
-        margin-top: 0px;
-        color: #257A9E;
-      }
-      p {
-        &:last-child {
-          margin-bottom: 37px;
-        }
+        color: $primary;
+        margin: 5px auto;
       }
     }
   }
@@ -319,7 +353,7 @@ sup {
     margin-left: -22px;
 
     .conversation {
-      margin-top: 0px;
+      margin-top: 4px;
     }
   }
 }
@@ -355,32 +389,77 @@ sup {
       }
       li {
         &.ja {
-          margin-top: -2px;
           &:before {
             content: '';
           }
         }
+        &:nth-child(5) {
+          margin-bottom: 0px;
+        }
       }
     }
     .name {
-      margin-top: 19px;
-      margin-left: -5px;
+      top: 338px;
+      left: 15px;
       p {
-        width: fit-content;
+        &:first-child {
+          left: 6px;
+        }
+        &:nth-child(2) {
+          top: 166px;
+          left: 32px;
+        }
+        &:nth-child(3) {
+          top: -100px;
+          left: 348px;
+        }
+        &:nth-child(4) {
+          top: 8px;
+          left: 332px;
+        }
+        &:nth-child(5) {
+          top: 112px;
+          left: 260px;
+        }
+        &:nth-child(6) {
+          text-align: left;
+          top: -28px;
+          left: 650px;
+          span {
+            text-align: left;
+          }
+        }
+        span {
+          text-align: right;
+          min-width: 90px;
+        }
       }
+    }
+    .sub-text.mg {
+      top: 611px;
     }
   }
   .divider.d2 {
-    top: 827px;
+    top: 857px;
   }
   .section.act {
-    top: 865px;
+    top: 904px;
   }
   .act-content {
-    top: 865px;
+    top: 904px;
     left: 125px;
-    .ja {
-      margin: 8px auto;
+    p.ja {
+      margin: 8px 0px;
+    }
+    ul {
+      margin: 26px 0px 0px 16px;
+      height: 200px;
+      li {
+        padding-left: 16px;
+        &:nth-child(odd) {
+          list-style-type: disc;
+        }
+      }
     }
   }
 }

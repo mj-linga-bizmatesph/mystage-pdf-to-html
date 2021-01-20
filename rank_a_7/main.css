@@ -93,7 +93,7 @@ body {
 }
 
 .section.try {
-  top: 625px;
+  top: 650px;
 }
 
 .section.act {
@@ -108,7 +108,7 @@ body {
 }
 
 .divider.d1 {
-  top: 573px;
+  top: 599px;
 }
 
 .divider.d2 {
@@ -125,10 +125,11 @@ body {
   font-family: "Noto Sans JP";
   color: #257A9E;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .sub-head p {
-  margin: 2px auto;
+  margin: 3px auto;
 }
 
 .text {
@@ -155,20 +156,20 @@ sup {
   font-size: 15px;
 }
 
-.see-content p {
-  margin: 0 auto;
+.see-content .details {
+  margin-top: 32px;
 }
 
-.see-content p:last-child {
-  margin-bottom: 30px;
+.see-content p {
+  margin: 0 auto;
 }
 
 .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 48px;
-  min-width: 310px;
+  margin-right: 14px;
+  max-width: 220px;
 }
 
 .see-content .text {
@@ -182,7 +183,7 @@ sup {
 }
 
 .see-content .example {
-  margin-top: 25px;
+  margin-top: 55px;
 }
 
 .see-content .example .conversation {
@@ -192,7 +193,7 @@ sup {
 
 .see-content .example .conversation .row p {
   display: inline-block;
-  margin: 0px;
+  margin: -0.5px 0px;
 }
 
 .see-content .example .conversation .row p:first-child {
@@ -207,7 +208,7 @@ sup {
 /* Try */
 .try-content {
   position: absolute;
-  top: 625px;
+  top: 650px;
   left: 144.5px;
   font-size: 15px;
 }
@@ -217,7 +218,7 @@ sup {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .try-content li {
@@ -238,51 +239,49 @@ sup {
 }
 
 .try-content .name {
-  position: relative;
+  position: absolute;
+  top: 124px;
 }
 
 .try-content .name p {
   position: absolute;
+  max-width: 120px;
+  text-align: right;
 }
 
 .try-content .name p:first-child {
-  top: 59px;
-  left: 115px;
+  top: 92px;
+  left: 0px;
 }
 
 .try-content .name p:nth-child(2) {
-  top: 155px;
+  top: 162px;
   left: 58px;
 }
 
 .try-content .name p:nth-child(3) {
-  top: -65px;
-  left: 368px;
+  top: -95px;
+  left: 390px;
 }
 
 .try-content .name p:nth-child(4) {
-  top: 39px;
-  left: 372px;
+  top: 24px;
+  left: 295px;
 }
 
 .try-content .name p:nth-child(5) {
-  top: 127px;
-  left: 376px;
+  top: 129px;
+  left: 372px;
 }
 
 .try-content .name p:nth-child(6) {
-  top: -41px;
-  left: 640px;
+  top: -35px;
+  left: 648px;
 }
 
-.try-content .name p:nth-child(7) {
-  top: 35px;
-  left: 640px;
-}
-
-.try-content .name p:nth-child(8) {
-  top: 149px;
-  left: 640px;
+.try-content .sub-text.mg {
+  position: absolute;
+  top: 382px;
 }
 
 /* Act */
@@ -296,6 +295,24 @@ sup {
 
 .act-content .sub-text {
   line-height: 22px;
+}
+
+.act-content ul {
+  list-style: none;
+  margin: 3px 0px 0px 0px;
+  padding: 0;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 20px;
+  width: 590px;
 }
 
 .footer {
@@ -323,18 +340,21 @@ sup {
   position: absolute;
   top: 188px;
   left: 47px;
+  width: 678px;
 }
 
 .page-2 .lesson-points.ja {
   color: #257A9E;
+  font-size: 12px;
+  letter-spacing: 0.10px;
 }
 
 .page-2 .lesson-points div {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .page-2 .lesson-points div p {
-  margin: 3px auto;
+  margin: 2px auto;
 }
 
 .page-2 .lesson-points div p:first-child {
@@ -343,15 +363,36 @@ sup {
 }
 
 .page-2 .lesson-points p {
+  line-height: 22px;
   margin: 12px auto;
 }
 
+.page-2 .arrow-part {
+  position: absolute;
+  top: 326px;
+  left: 125px;
+}
+
+.page-2 .arrow-part .subtitle {
+  font-size: 15px;
+  color: #000000;
+}
+
+.page-2 .arrow-part p {
+  margin: 4.5px auto;
+  font-size: 12px;
+}
+
+.page-2 .arrow-part div {
+  margin-bottom: 32px;
+}
+
 .page-2 .section.see {
-  top: 386px;
+  top: 582px;
 }
 
 .page-2 .see-content {
-  margin-top: 392px;
+  margin-top: 588px;
   margin-left: 148px;
 }
 
@@ -359,20 +400,25 @@ sup {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 48px;
+  max-width: 198px;
 }
 
-.page-2 .see-content .row .ja {
-  margin-top: 4px;
+.page-2 .see-content .sub-text.ja {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.page-2 .see-content .details {
+  margin-top: 10px;
+}
+
+.page-2 .see-content .text {
+  margin-top: 12px;
 }
 
 .page-2 .see-content .text .ja {
-  margin-top: 0px;
   color: #257A9E;
-}
-
-.page-2 .see-content .text p:last-child {
-  margin-bottom: 37px;
+  margin: 5px auto;
 }
 
 .page-2 .example {
@@ -381,7 +427,7 @@ sup {
 }
 
 .page-2 .example .conversation {
-  margin-top: 0px;
+  margin-top: 4px;
 }
 
 /* Page 3 */
@@ -420,38 +466,88 @@ sup {
   left: 0px;
 }
 
-.page-3 .try-content ul li.ja {
-  margin-top: -2px;
-}
-
 .page-3 .try-content ul li.ja:before {
   content: '';
 }
 
-.page-3 .try-content .name {
-  margin-top: 19px;
-  margin-left: -5px;
+.page-3 .try-content ul li:nth-child(5) {
+  margin-bottom: 0px;
 }
 
-.page-3 .try-content .name p {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.page-3 .try-content .name {
+  top: 338px;
+  left: 15px;
+}
+
+.page-3 .try-content .name p:first-child {
+  left: 6px;
+}
+
+.page-3 .try-content .name p:nth-child(2) {
+  top: 166px;
+  left: 32px;
+}
+
+.page-3 .try-content .name p:nth-child(3) {
+  top: -100px;
+  left: 348px;
+}
+
+.page-3 .try-content .name p:nth-child(4) {
+  top: 8px;
+  left: 332px;
+}
+
+.page-3 .try-content .name p:nth-child(5) {
+  top: 112px;
+  left: 260px;
+}
+
+.page-3 .try-content .name p:nth-child(6) {
+  text-align: left;
+  top: -28px;
+  left: 650px;
+}
+
+.page-3 .try-content .name p:nth-child(6) span {
+  text-align: left;
+}
+
+.page-3 .try-content .name p span {
+  text-align: right;
+  min-width: 90px;
+}
+
+.page-3 .try-content .sub-text.mg {
+  top: 611px;
 }
 
 .page-3 .divider.d2 {
-  top: 827px;
+  top: 857px;
 }
 
 .page-3 .section.act {
-  top: 865px;
+  top: 904px;
 }
 
 .page-3 .act-content {
-  top: 865px;
+  top: 904px;
   left: 125px;
 }
 
-.page-3 .act-content .ja {
-  margin: 8px auto;
+.page-3 .act-content p.ja {
+  margin: 8px 0px;
+}
+
+.page-3 .act-content ul {
+  margin: 26px 0px 0px 16px;
+  height: 200px;
+}
+
+.page-3 .act-content ul li {
+  padding-left: 16px;
+}
+
+.page-3 .act-content ul li:nth-child(odd) {
+  list-style-type: disc;
 }

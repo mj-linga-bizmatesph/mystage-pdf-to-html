@@ -20,6 +20,10 @@ body {
   z-index: -1;
 }
 
+.header {
+  font-family: "Arial";
+}
+
 .b {
   font-weight: bold;
 }
@@ -466,6 +470,7 @@ sup {
 .page-3 .try-content table {
   margin-top: 10px;
   margin-left: -4px;
+  z-index: 2;
 }
 
 .page-3 .try-content table .ja {

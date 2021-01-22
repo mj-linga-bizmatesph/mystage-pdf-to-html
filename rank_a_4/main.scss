@@ -2,6 +2,12 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
+$primary: #257a9e;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+
+$left-pixel: 126.5px;
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +26,9 @@ body {
   width: 892.75px;
   height: 1262.5px;
   z-index: -1;
+}
+.header {
+  font-family: $title-font;
 }
 .b {
   font-weight: bold;

@@ -25,6 +25,9 @@ body {
   height: 1262.5px;
   z-index: -1;
 }
+.header {
+  font-family: $title-font;
+}
 .b {
   font-weight: bold;
 }
@@ -58,9 +61,11 @@ body {
 }
 .lesson-number {
   position: absolute;
-  left: 823px;
+  min-width: 15px;
+  left: 819px;
   top: 66px;
   font-size: 13px;
+  text-align: center;
   color: #ffffff;
 }
 .row {
@@ -217,11 +222,14 @@ sup {
        border: none;
        border-bottom: 1px solid #000000;
       }
-      &:nth-child(2) {
+      &:nth-child(even) {
         background-color: $primary;
       }
-      &:nth-child(3) {
+      &:nth-child(odd) {
         background-color: $primary-dark;
+      }
+      &:first-child {
+        background: #ffffff;
       }
     }
 
@@ -273,7 +281,7 @@ sup {
   font-size: 9px;
   position: absolute;
   top: 1210px;
-  left: 616px;
+  left: 516px;
 }
 
 /* Page 2 */

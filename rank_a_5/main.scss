@@ -2,24 +2,35 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
+$primary: #257a9e;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+
+$left-pixel: 126.5px;
+
 body {
   margin: 0;
   padding: 0;
-  font-family: $title-font;
+  font-family: $text-font;
 }
 .page-1,
 .page-2,
 .page-3 {
   width: 892px;
-  height: 1262px;
+  min-height: 1200px;
+  height: fit-content;
   overflow: hidden;
   position: relative;
+  padding-bottom: 62px;
 }
 .bg {
   position: absolute;
   width: 892.75px;
   height: 1262.5px;
   z-index: -1;
+}
+.header {
+  font-family: $title-font;
 }
 .b {
   font-weight: bold;
@@ -69,37 +80,32 @@ body {
 }
 .section {
   position: absolute;
-  left: 55px;
+  left: -71.5px;
   color: #1f789f;
   font-weight: bold;
   font-size: 15px;
+  font-family: $title-font;
 
   &.see {
-    top: 190px;
+    top: 13px;
   }
-  &.try {
-    top: 625px;
-  }
-  &.act {
-    top: 1134px;
+  &.try, &.act {
+    top: 0px;
   }
 }
 .divider {
   color: #d9d9d9;
   font-size: 15px;
-  position: absolute;
+  position: relative;
   left: 469px;
 
-  &.d1 {
-    top: 573px;
-  }
-  &.d2 {
-    top: 1084px;
+  &.d1, &.d2 {
+    margin-top: 30px;
   }
 }
 .sub-head {
-  position: absolute;
-  top: 125px;
+  position: relative;
+  margin-top: 128px;
   left: 47px;
   .subtitle {
     font-family: $ja-font;
@@ -109,9 +115,6 @@ body {
   p {
     margin: 2px auto;
   }
-}
-.text {
-  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif;
@@ -127,31 +130,40 @@ sup {
 
 /* See */
 .see-content {
-  margin-left: 144.5px;
-  margin-top: 190px;
+  position: relative;
+  margin-left: $left-pixel;
+  margin-top: 178px;
   font-size: 15px;
 
+  .blue-section {
+    background-color: none;
+    padding-top: 13px;
+    width: 80%;
+    padding-left: 18.5px;
+    height: fit-content;
+    padding-bottom: 10px;
+  }
   p {
     margin: 0 auto;
-    &:last-child {
-      margin-bottom: 30px;
-    }
   }
   .col {
     width: fit-content;
     margin-right: 48px;
     min-width: 310px;
-  }
-  .text {
-    font-family: $text-font;
-    line-height: 26px;
-    margin-top: 4px;
+    .text {
+      line-height: 26px;
+      margin-top: 4px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
   .text-title {
     font-family: $text-font;
   }
   .example {
-    margin-top: 25px;
+    margin-top: 37px;
+    margin-left: 18.5px;
 
     .conversation {
       line-height: 26px;
@@ -175,9 +187,10 @@ sup {
 
 /* Try */
 .try-content {
-  position: absolute;
-  top: 625px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 34px;
+  margin-left: $left-pixel;
+  padding-left: 18.5px;
   font-size: 15px;
 
   ul {
@@ -197,6 +210,7 @@ sup {
   }
   .name {
     position: relative;
+    height: 280px;
     p {
       position: absolute;
       &:first-child {
@@ -237,9 +251,10 @@ sup {
 
 /* Act */
 .act-content {
-  position: absolute;
-  top: 1134px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: $left-pixel;
+  padding-left: 18px;
   font-size: 15px;
   width: 720px;
 
@@ -250,7 +265,7 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  top: 1210px;
+  bottom: 43px;
   left: 616px;
 }
 
@@ -268,9 +283,9 @@ sup {
     }
   }
   .lesson-points {
-    position: absolute;
-    top: 188px;
-    left: 47px;
+    padding-top: 4px;
+    margin-top: 10px;
+    padding: 6px 0px 0px 47px;
     &.ja {
       color: #257A9E; 
     }
@@ -288,16 +303,15 @@ sup {
       margin: 12px auto;
     }
   }
-  .section.see {
-    top: 386px;
-  }
   .see-content {
-    margin-top: 392px;
-    margin-left: 148px;
+    margin-top: 86px;
 
     .col {
       width: fit-content;
       margin-right: 48px;
+      .text:not(:last-child) {
+        margin-bottom: 37px;
+      }
     }
     .row .ja {
       margin-top: 4px;
@@ -307,78 +321,49 @@ sup {
         margin-top: 0px;
         color: #257A9E;
       }
-      p {
-        &:last-child {
-          margin-bottom: 37px;
-        }
-      }
     }
   }
   .example {
-    margin-top: 10px;
-    margin-left: -22px;
+    margin-left: 0px;
 
     .conversation {
-      margin-top: 0px;
+      margin-top: 4px;
     }
   }
 }
 
 /* Page 3 */
 .page-3 {
-  .section.try {
-    top: 170px;
-  }
   .sub-head {
-    top: 72px;
+    margin-top: 75px;
   }
   .try-content {
-    top: 170px;
-    left: 128px;
+    margin-top: 52px;
+    padding-left: 0px;
 
     span:nth-child(-n+2) {
       display: block;
       margin-bottom: 5px;
     }
     ul {
-      list-style: none;
+      list-style-type: decimal;
       margin: 24px 0px 0px 16px;
-      counter-reset: ulCounter;
-      li:not(.ja) {
-        counter-increment: ulCounter;
-        list-style: none;
-        &:before {
-          content:counter(ulCounter) '.';
-          position: absolute;
-          left: 0px;
-        }
-      }
       li {
-        &.ja {
-          margin-top: -2px;
-          &:before {
-            content: '';
-          }
+        span {
+          display: block;
         }
       }
     }
     .name {
-      margin-top: 19px;
+      margin-top: -3px;
       margin-left: -5px;
       p {
         width: fit-content;
       }
     }
   }
-  .divider.d2 {
-    top: 827px;
-  }
-  .section.act {
-    top: 865px;
-  }
   .act-content {
-    top: 865px;
-    left: 125px;
+    padding-left: 0px;
     .ja {
       margin: 8px auto;
     }

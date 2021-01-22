@@ -1,16 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial";
+  font-family: "Trebuchet MS";
 }
 
 .page-1,
 .page-2,
 .page-3 {
   width: 892px;
-  height: 1262px;
+  min-height: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
   position: relative;
+  padding-bottom: 62px;
 }
 
 .bg {
@@ -18,6 +22,10 @@ body {
   width: 892.75px;
   height: 1262.5px;
   z-index: -1;
+}
+
+.header {
+  font-family: "Arial";
 }
 
 .b {
@@ -82,42 +90,39 @@ body {
 
 .section {
   position: absolute;
-  left: 55px;
+  left: -71.5px;
   color: #1f789f;
   font-weight: bold;
   font-size: 15px;
+  font-family: "Arial";
 }
 
 .section.see {
-  top: 190px;
+  top: 13px;
 }
 
-.section.try {
-  top: 625px;
-}
-
-.section.act {
-  top: 955px;
+.section.try, .section.act {
+  top: -1px;
 }
 
 .divider {
   color: #d9d9d9;
   font-size: 15px;
-  position: absolute;
+  position: relative;
   left: 469px;
 }
 
 .divider.d1 {
-  top: 573px;
+  margin-top: 31px;
 }
 
 .divider.d2 {
-  top: 904px;
+  margin-top: 32px;
 }
 
 .sub-head {
-  position: absolute;
-  top: 125px;
+  position: relative;
+  margin-top: 128px;
   left: 47px;
 }
 
@@ -130,10 +135,6 @@ body {
 
 .sub-head p {
   margin: 3px auto;
-}
-
-.text {
-  font-family: "Trebuchet MS";
 }
 
 .ja {
@@ -151,6 +152,7 @@ sup {
 
 /* See */
 .see-content {
+  position: relative;
   margin-left: 126.5px;
   margin-top: 177px;
   font-size: 15px;
@@ -215,9 +217,10 @@ sup {
 
 /* Try */
 .try-content {
-  position: absolute;
-  top: 625px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 34px;
+  margin-left: 126.5px;
+  padding-left: 18px;
   font-size: 15px;
 }
 
@@ -236,13 +239,10 @@ sup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  position: relative;
 }
 
 .try-content .sub-text.mg {
@@ -250,29 +250,22 @@ sup {
 }
 
 .try-content .name-1 {
-  position: absolute;
-  left: 304px;
-  top: 53px;
+  margin-left: 34px;
+  margin-top: 38px;
 }
 
 .try-content .name-2 {
-  position: absolute;
-  width: 150px;
-  left: 518px;
-  top: 53px;
+  margin-left: 32px;
+  margin-top: 38px;
 }
 
 .try-content .desc {
-  position: absolute;
-  left: 56px;
-  top: 38px;
-  width: 140px;
+  margin-top: -10px;
+  margin-left: 56px;
 }
 
 .try-content .dash-list ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   line-height: 18px;
 }
 
@@ -286,11 +279,14 @@ sup {
 
 /* Act */
 .act-content {
-  position: absolute;
-  top: 955px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 36px;
+  margin-left: 126.5px;
+  padding-left: 18px;
   font-size: 15px;
-  width: 720px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .act-content ul {
@@ -315,8 +311,8 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  top: 1210px;
-  left: 616px;
+  bottom: 43px;
+  left: 532px;
 }
 
 /* Page 2 */
@@ -334,8 +330,7 @@ sup {
 }
 
 .page-2 .lesson-points {
-  position: absolute;
-  top: 186px;
+  margin-top: 16px;
   padding: 2px 0px 0px 47px;
   height: 50px;
   width: 687px;
@@ -367,9 +362,9 @@ sup {
 }
 
 .page-2 .arrow-part {
-  position: absolute;
-  top: 250px;
-  left: 125px;
+  margin-top: 17px;
+  margin-left: 125px;
+  word-spacing: 3px;
 }
 
 .page-2 .arrow-part .subtitle {
@@ -383,8 +378,11 @@ sup {
 }
 
 .page-2 .arrow-part div {
-  margin-bottom: 32px;
   position: relative;
+}
+
+.page-2 .arrow-part div:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .page-2 .arrow-part div:before {
@@ -401,12 +399,8 @@ sup {
   vertical-align: middle;
 }
 
-.page-2 .section.see {
-  top: 588px;
-}
-
 .page-2 .see-content {
-  margin-top: 578px;
+  margin-top: 25px;
   margin-left: 125px;
 }
 
@@ -447,17 +441,13 @@ sup {
 }
 
 /* Page 3 */
-.page-3 .section.try {
-  top: 170px;
-}
-
 .page-3 .sub-head {
-  top: 72px;
+  margin-top: 75px;
 }
 
 .page-3 .try-content {
-  top: 170px;
-  left: 128px;
+  margin-top: 52px;
+  padding-left: 0px;
 }
 
 .page-3 .try-content span:nth-child(-n + 2) {
@@ -466,25 +456,18 @@ sup {
 }
 
 .page-3 .try-content .wrapper ul {
-  list-style: none !important;
-  margin: 23px 0px 0px 16px;
+  list-style-type: decimal;
+  margin: 26px 0px 0px 16px;
   line-height: 25px;
-  counter-reset: ulCounter;
 }
 
-.page-3 .try-content .wrapper ul li:not(.ja) {
-  counter-increment: ulCounter;
-  list-style: none;
+.page-3 .try-content .wrapper ul li span {
+  display: block;
 }
 
-.page-3 .try-content .wrapper ul li:not(.ja):before {
-  content: counter(ulCounter) ".";
-  position: absolute;
-  left: 0px;
-}
-
-.page-3 .try-content .wrapper ul li.ja:before {
-  content: '';
+.page-3 .try-content .dash-list ul {
+  list-style-type: none;
+  line-height: unset;
 }
 
 .page-3 .try-content .dash-list p {
@@ -492,16 +475,18 @@ sup {
 }
 
 .page-3 .try-content .dash-list.name-1 {
-  left: 292px;
+  margin-top: 12px;
+  margin-left: 26px;
 }
 
 .page-3 .try-content .dash-list.name-2 {
-  left: 536px;
+  margin-top: 12px;
+  margin-left: 50px;
 }
 
 .page-3 .try-content .dash-list .desc {
-  top: 58px;
-  left: 48px;
+  margin-top: 0px;
+  margin-left: 60px;
 }
 
 .page-3 .try-content .dash-list .ja {
@@ -512,17 +497,13 @@ sup {
   margin-top: 52px;
 }
 
-.page-3 .divider.d2 {
-  top: 709.75px;
-}
-
-.page-3 .section.act {
-  top: 762.45px;
+.page-3 .try-content .sub-text.ja {
+  margin-top: 6px;
+  font-size: 13px;
 }
 
 .page-3 .act-content {
-  top: 762.45px;
-  left: 125px;
+  padding-left: 0px;
 }
 
 .page-3 .act-content p.ja {

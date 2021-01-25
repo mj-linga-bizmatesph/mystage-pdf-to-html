@@ -2,30 +2,28 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
-$primary: #257a9e;
+$primary: #257A9E;
 $primary-dark: #083051;
-$primary-light: #cce0ec;
-
-$left-pixel: 126.5px;
+$primary-light: #CCE0EC;
 
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
+  font-family: $title-font;
 }
 .page-1,
 .page-2,
 .page-3 {
-  width: 892.75px;
-  min-height: 1200px;
-  height: fit-content;
+  width: 892px;
+  height: 1262px;
   overflow: hidden;
   position: relative;
-  padding-bottom: 62px;
-  background-image: url('../bg_header.png'), url('../bg_footer.png');
-  background-position: top, bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
+}
+.bg {
+  position: absolute;
+  width: 892.75px;
+  height: 1262.5px;
+  z-index: -1;
 }
 .header {
   font-family: $title-font;
@@ -63,9 +61,11 @@ body {
 }
 .lesson-number {
   position: absolute;
-  left: 823px;
+  min-width: 15px;
+  left: 819px;
   top: 66px;
   font-size: 13px;
+  text-align: center;
   color: #ffffff;
 }
 .row {
@@ -78,36 +78,37 @@ body {
 }
 .section {
   position: absolute;
-  left: -71.5px;
+  left: 55px;
   color: #1f789f;
   font-weight: bold;
   font-size: 15px;
-  font-family: $title-font;
 
   &.see {
-    top: 13px;
+    top: 190px;
   }
-  &.try,
+  &.try {
+    top: 572px;
+  }
   &.act {
-    top: -1px;
+    top: 1110px;
   }
 }
 .divider {
   color: #d9d9d9;
   font-size: 15px;
-  position: relative;
+  position: absolute;
   left: 469px;
 
   &.d1 {
-    margin-top: 31px;
+    top: 522px;
   }
   &.d2 {
-    margin-top: 32px;
+    top: 1061px;
   }
 }
 .sub-head {
-  position: relative;
-  margin-top: 128px;
+  position: absolute;
+  top: 125px;
   left: 47px;
   .subtitle {
     font-family: $ja-font;
@@ -118,6 +119,9 @@ body {
   p {
     margin: 3px auto;
   }
+}
+.text {
+  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif;
@@ -133,8 +137,7 @@ sup {
 
 /* See */
 .see-content {
-  position: relative;
-  margin-left: $left-pixel;
+  margin-left: 126.5px;
   margin-top: 177px;
   font-size: 15px;
 
@@ -142,26 +145,27 @@ sup {
     background-color: $primary-light;
     padding-top: 13px;
     padding-left: 18.5px;
-    height: fit-content;
-    padding-bottom: 36px;
+    height: 145px;
   }
   p {
     margin: 0 auto;
-  }
-  .col1,
-  .col2,
-  .col4 {
-    width: 23.9%;
-  }
-  .col3 {
-    width: 25.1%;
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
   .text {
+    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
+    span {
+      margin-right: 20px;
+    }
+  }
+  .text-title {
+    font-family: $text-font;
   }
   .example {
-    margin-top: 18px;
+    margin-top: 34px;
     margin-left: 18.5px;
 
     .conversation {
@@ -186,87 +190,98 @@ sup {
 
 /* Try */
 .try-content {
-  position: relative;
-  margin-top: 34px;
-  margin-left: $left-pixel;
-  padding-left: 18px;
+  position: absolute;
+  top: 572px;
+  left: 144.5px;
   font-size: 15px;
 
   ul {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: 26px;
-    list-style-type: decimal;
+    list-style: decimal;
   }
   li {
     padding-left: 13px;
   }
   .wrapper {
     display: flex;
+    flex-direction: column;
     align-items: stretch;
-    position: relative;
   }
-  .sub-text.mg {
-    margin-top: 20px;
-  }
-  .shape {
-    width: 55.25px;
-    position: absolute;
-    margin-left: -12px;
-  }
-  .name-1 {
-    margin-left: 34px;
+  table {
     margin-top: 38px;
-  }
-  .name-2 {
-    margin-left: 32px;
-    margin-top: 38px;
-  }
-  .desc {
-    margin-top: -10px;
-    margin-left: 56px;
-  }
-  .dash-list {
-    ul {
-      list-style: none;
-      line-height: 18px;
+    margin-left: -6px;
+    border-spacing: 0px;
+    line-height: 18px;
+
+    th {
+      color: #ffffff;
+      &:first-child {
+       background-color: #ffffff;
+       border: none;
+       border-bottom: 1px solid #000000;
+      }
+      &:nth-child(even) {
+        background-color: $primary;
+      }
+      &:nth-child(odd) {
+        background-color: $primary-dark;
+      }
+      &:first-child {
+        background: #ffffff;
+      }
     }
-    li::before {
-      display: inline-block;
-      content: '-';
-      width: 6px;
-      margin-right: 4px;
-      margin-left: -1em;
+
+    th, td {
+      max-width: 235px;
+      word-wrap: break-word;
+      border: 1px solid #000000;
+      padding: 5px 8px;
+    }  
+    tr {
+      background-color: #d4e6f0;
+      border: 1px solid #000000;
+      td {
+        &:first-child {
+          background-color: $primary-dark;
+          color: #ffffff;
+          width: 180px;
+        }
+        &:nth-child(n+2) {
+          width: 235px;
+        }
+      }
     }
   }
 }
 
 /* Act */
 .act-content {
-  position: relative;
-  margin-top: 36px;
-  margin-left: $left-pixel;
-  padding-left: 18px;
+  position: absolute;
+  top: 1110px;
+  left: 144.5px;
   font-size: 15px;
-  height: fit-content;
+  width: 720px;
 
+  span {
+    margin-right: 25px;
+  }
   ul {
-    margin: 3px 0px 0px 18px;
+    list-style: none;
+    margin: 3px 0px 0px 0px;
     padding: 0;
     line-height: 26px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  li {
-    padding-left: 8px;
-  }
 }
 .footer {
   font-size: 9px;
   position: absolute;
-  bottom: 43px;
-  left: 532px;
+  top: 1210px;
+  left: 516px;
 }
 
 /* Page 2 */
@@ -283,15 +298,15 @@ sup {
     }
   }
   .lesson-points {
-    margin-top: 16px;
+    position: absolute;
+    top: 186px;
     padding: 2px 0px 0px 47px;
-    height: 50px;
     width: 687px;
     background: $primary-light;
     &.ja {
       color: $primary;
       font-size: 12px;
-      letter-spacing: 0.1px;
+      letter-spacing: 0.10px;
     }
     div {
       margin-bottom: 12px;
@@ -309,9 +324,9 @@ sup {
     }
   }
   .arrow-part {
-    margin-top: 17px;
-    margin-left: 125px;
-    word-spacing: 3px;
+    position: absolute;
+    top: 371px;
+    left: 125px;
     .subtitle {
       font-size: 15px;
       color: #000000;
@@ -321,45 +336,50 @@ sup {
       font-size: 12px;
     }
     div {
+      margin-bottom: 28px;
       position: relative;
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
       &:before {
         content: '';
         position: absolute;
         left: -38px;
-        top: 7px;
-        width: 0;
-        height: 0;
+        top: 5px;
+        width: 0; 
+        height: 0; 
         border-top: 6.5px solid transparent;
         border-bottom: 6.5px solid transparent;
-        border-left: 12px solid $primary;
+        border-left: 12px solid $primary;  
         display: inline-block;
         vertical-align: middle;
       }
     }
   }
+  .section.see {
+    top: 588px;
+  }
   .see-content {
-    margin-top: 25px;
+    margin-top: 581px;
     margin-left: 125px;
 
     .blue-section {
-      padding: 12px 0px 6px 16px;
-      height: fit-content;
-      .col2 {
-        margin-left: 5px;
-        width: 23.2%;
-      }
-      .col3 {
-        width: 27.5%;
+      padding-left: 23px;
+      padding-top: 12px;
+      height: 230px;
+      .col {
+        margin-top: 3px;
       }
     }
     .sub-text.ja {
-      margin-top: 2px;
+      margin-top: 8px;
       font-size: 13px;
     }
     .text {
+      margin-bottom: 8px;
+      span {
+        min-width: 220px;
+        max-width: 250px;
+        display: inline-block;
+        margin-right: 0px;
+      }
       .ja {
         color: $primary;
         margin: 0px auto;
@@ -367,7 +387,7 @@ sup {
     }
   }
   .example {
-    margin-top: 16px;
+    margin-top: 22px;
     margin-left: 0px;
 
     .conversation {
@@ -378,72 +398,84 @@ sup {
 
 /* Page 3 */
 .page-3 {
+  .section.try {
+    top: 170px;
+  }
   .sub-head {
-    margin-top: 75px;
+    top: 72px;
   }
   .try-content {
-    margin-top: 52px;
-    padding-left: 0px;
+    top: 170px;
+    left: 128px;
 
-    span:nth-child(-n + 2) {
+    span:nth-child(-n+2) {
       display: block;
       margin-bottom: 5px;
     }
-    .wrapper {
-      ul {
-        list-style-type: decimal;
-        margin: 26px 0px 0px 16px;
-        line-height: 25px;
-        li {
-          span {
-            display: block;
+    ul {
+      list-style: none !important;
+      margin: 16px 0px 0px 16px;
+      line-height: 25px;
+      counter-reset: ulCounter;
+      li:not(.ja) {
+        counter-increment: ulCounter;
+        list-style: none;
+        &:before {
+          content:counter(ulCounter) '.';
+          position: absolute;
+          left: 0px;
+        }
+      }
+      li {
+        &.ja {
+          &:before {
+            content: '';
           }
         }
       }
     }
-    .dash-list {
-      ul {
-        list-style-type: none;
-        line-height: unset;
-      }
-      p {
-        margin-bottom: 0px;
-      }
-      &.name-1 {
-        margin-top: 12px;
-        margin-left: 26px;
-      }
-      &.name-2 {
-        margin-top: 12px;
-        margin-left: 50px;
-      }
-      .desc {
-        margin-top: 0px;
-        margin-left: 60px;
-      }
+    table {
+      margin-top: 2px;
+      margin-left: 10px;
+      line-height: 16px;
       .ja {
-        margin: 6px auto;
+        color: $primary;
       }
-    }
-    .sub-text.mg {
-      margin-top: 52px;
-    }
-    .sub-text.ja {
-      margin-top: 6px;
-      font-size: 13px;
+      tr:first-child,
+      td:first-child {
+        .ja {
+          color: #ffffff;
+        }
+      }
+      td {
+        &:nth-child(2) {
+          width: 240px;
+          max-width: 240px;
+        }
+        &:nth-child(3) {
+          width: 245px;
+          max-width: 245px;
+        }
+      }
     }
   }
+  .divider.d2 {
+    top: 703px;
+  }
+  .section.act {
+    top: 987px;
+  }
   .act-content {
-    padding-left: 0px;
+    top: 987px;
+    left: 125px;
     p.ja {
-      margin: 6px 0px;
+      margin: 8px 0px;
     }
     ul {
       margin: 26px 0px 0px 16px;
-      height: fit-content;
+      height: 120px;
       li {
         padding-left: 16px;
-        list-style-type: none;
         &:nth-child(odd) {
           list-style-type: disc;
         }

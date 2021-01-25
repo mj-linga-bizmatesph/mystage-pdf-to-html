@@ -1,23 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial";
+  font-family: "Trebuchet MS";
 }
 
 .page-1,
 .page-2,
 .page-3 {
-  width: 892px;
+  width: 892.75px;
   height: 1262px;
   overflow: hidden;
   position: relative;
-}
-
-.bg {
-  position: absolute;
-  width: 892.75px;
-  height: 1262.5px;
-  z-index: -1;
+  padding-bottom: 62px;
+  background-image: url("../bg_header.png"), url("../bg_footer.png");
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -86,41 +84,51 @@ body {
 
 .section {
   position: absolute;
-  left: 55px;
+  left: -71.5px;
   color: #1f789f;
   font-weight: bold;
   font-size: 15px;
+  font-family: "Arial";
 }
 
 .section.see {
-  top: 190px;
+  top: 13px;
 }
 
-.section.try {
-  top: 625px;
-}
-
-.section.act {
-  top: 1085px;
+.section.try, .section.act {
+  top: -1px;
 }
 
 .divider {
   color: #d9d9d9;
   font-size: 15px;
-  position: absolute;
+  position: relative;
   left: 469px;
 }
 
 .divider.d1 {
-  top: 573px;
+  margin-top: 31px;
 }
 
 .divider.d2 {
-  top: 1032px;
+  margin-top: 32px;
 }
 
-.text {
-  font-family: "Trebuchet MS";
+.sub-head {
+  position: relative;
+  margin-top: 128px;
+  left: 47px;
+}
+
+.sub-head .subtitle {
+  font-family: "Noto Sans JP";
+  color: #257a9e;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sub-head p {
+  margin: 3px auto;
 }
 
 .ja {
@@ -138,17 +146,24 @@ sup {
 
 /* See */
 .see-content {
-  margin-left: 144.5px;
-  margin-top: 190px;
+  position: relative;
+  margin-left: 126.5px;
+  margin-top: 177px;
   font-size: 15px;
+}
+
+.see-content .blue-section {
+  background-color: #cce0ec;
+  padding-top: 13px;
+  padding-left: 18.5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 18px;
 }
 
 .see-content p {
   margin: 0 auto;
-}
-
-.see-content p:last-child {
-  margin-bottom: 30px;
 }
 
 .see-content .col {
@@ -160,18 +175,18 @@ sup {
   max-width: 310px;
 }
 
+.see-content .col .text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .see-content .text {
-  font-family: "Trebuchet MS";
   line-height: 26px;
   margin-top: 4px;
 }
 
-.see-content .text-title {
-  font-family: "Trebuchet MS";
-}
-
 .see-content .example {
-  margin-top: 25px;
+  margin-top: 34px;
+  margin-left: 18.5px;
 }
 
 .see-content .example .conversation {

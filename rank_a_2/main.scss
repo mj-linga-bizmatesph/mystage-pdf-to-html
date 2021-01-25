@@ -16,18 +16,16 @@ body {
 .page-1,
 .page-2,
 .page-3 {
-  width: 892px;
+  width: 892.75px;
   min-height: 1200px;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-}
-.bg {
-  position: absolute;
-  width: 892.75px;
-  height: 1262.5px;
-  z-index: -1;
+  background-image: url('../bg_header.png'), url('../bg_footer.png');
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .header {
   font-family: $title-font;
@@ -210,6 +208,11 @@ sup {
   }
   .sub-text.mg {
     margin-top: 28px;
+  }
+  .shape {
+    width: 55.25px;
+    position: absolute;
+    margin-left: -12px;
   }
   .name-1 {
     position: absolute;

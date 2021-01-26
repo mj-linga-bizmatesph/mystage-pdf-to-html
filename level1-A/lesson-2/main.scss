@@ -189,7 +189,7 @@ sup {
     margin-top: 8px;
     margin-bottom: 2px;
   }
-  .try-content .list-title-2 {
+  .list-title-2 {
     margin-top: 30px;
     margin-bottom: 2px;
   }
@@ -210,9 +210,13 @@ sup {
     margin-top: 28px;
   }
   .shape {
-    width: 55.25px;
+    width: 62.25px;
     position: absolute;
-    margin-left: -12px;
+    left: -100px;
+    top: 0px;
+    &.man {
+      width: 55.25px;
+    }
   }
   .name-1 {
     position: absolute;
@@ -405,27 +409,18 @@ sup {
     }
     .wrapper {
       ul {
-        list-style: none !important;
+        list-style-type: decimal;
         margin: 4px 0px 0px 16px;
         line-height: 25px;
-        counter-reset: ulCounter;
-        li:not(.ja) {
-          counter-increment: ulCounter;
-          list-style: none;
-          &:before {
-            content: counter(ulCounter) '.';
-            position: absolute;
-            left: 0px;
-          }
-        }
         li {
-          &.ja {
-            &:before {
-              content: '';
-            }
+          span {
+            display: block;
           }
         }
       }
+    }
+    .shape {
+      top: 26px;
     }
     .dash-list {
       p {
@@ -441,7 +436,7 @@ sup {
       }
       .desc {
         margin-left: 0px;
-        margin-top: 20px;
+        margin-top: 15px;
       }
       .ja {
         margin: 6px auto;
@@ -455,6 +450,7 @@ sup {
     }
   }
   .act-content {
+    margin-top: 30px;
     padding-left: 0px;
     p.ja {
       margin: 6px 0px;

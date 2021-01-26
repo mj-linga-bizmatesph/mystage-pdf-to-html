@@ -253,6 +253,14 @@ sup {
           align-items: stretch;
 }
 
+.try-content .shape {
+  width: 510px;
+  position: absolute;
+  top: -55px;
+  left: 130px;
+  z-index: -1;
+}
+
 .try-content .name {
   position: relative;
   height: 230px;
@@ -332,8 +340,8 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  top: 1210px;
-  left: 616px;
+  bottom: 43px;
+  left: 532px;
 }
 
 /* Page 2 */
@@ -490,6 +498,10 @@ sup {
 
 .page-3 .try-content ul li:nth-child(5) {
   margin-bottom: 0px;
+}
+
+.page-3 .try-content .shape {
+  top: -48px;
 }
 
 .page-3 .try-content .name {

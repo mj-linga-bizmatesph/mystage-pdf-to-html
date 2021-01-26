@@ -151,9 +151,8 @@ sup {
 }
 
 .see-content .blue-section {
-  background-color: none;
+  background-color: #cce0ec;
   padding-top: 13px;
-  width: 80%;
   padding-left: 18.5px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -170,7 +169,6 @@ sup {
   width: -moz-fit-content;
   width: fit-content;
   margin-right: 48px;
-  min-width: 310px;
 }
 
 .see-content .col .text {
@@ -180,6 +178,37 @@ sup {
 
 .see-content .col .text:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.see-content .col.shapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 28px;
+}
+
+.see-content .shape {
+  padding-bottom: 16px;
+}
+
+.see-content .shape.at {
+  width: 42px;
+}
+
+.see-content .shape.in {
+  width: 53px;
+}
+
+.see-content .shape.on {
+  width: 51.5px;
 }
 
 .see-content .text-title {
@@ -242,6 +271,13 @@ sup {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.try-content .wrapper .shape.lots {
+  width: 745.5px;
+  position: absolute;
+  top: 44px;
+  z-index: -1;
 }
 
 .try-content .name {
@@ -330,8 +366,10 @@ sup {
 
 .page-2 .lesson-points {
   padding-top: 4px;
-  margin-top: 10px;
-  padding: 6px 0px 0px 47px;
+  margin-top: 16px;
+  padding: 2px 0px 20px 47px;
+  background: #cce0ec;
+  width: 688px;
 }
 
 .page-2 .lesson-points.ja {
@@ -356,7 +394,7 @@ sup {
 }
 
 .page-2 .see-content {
-  margin-top: 86px;
+  margin-top: 50px;
 }
 
 .page-2 .see-content .col {
@@ -368,6 +406,10 @@ sup {
 
 .page-2 .see-content .col .text:not(:last-child) {
   margin-bottom: 37px;
+}
+
+.page-2 .see-content .shape {
+  padding-bottom: 80px;
 }
 
 .page-2 .see-content .row .ja {
@@ -409,6 +451,10 @@ sup {
 
 .page-3 .try-content ul li span {
   display: block;
+}
+
+.page-3 .try-content .shape.lots {
+  top: 232px;
 }
 
 .page-3 .try-content .name {

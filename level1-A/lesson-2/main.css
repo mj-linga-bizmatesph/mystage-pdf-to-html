@@ -216,7 +216,7 @@ sup {
   margin-bottom: 2px;
 }
 
-.try-content .try-content .list-title-2 {
+.try-content .list-title-2 {
   margin-top: 30px;
   margin-bottom: 2px;
 }
@@ -246,9 +246,14 @@ sup {
 }
 
 .try-content .shape {
-  width: 55.25px;
+  width: 62.25px;
   position: absolute;
-  margin-left: -12px;
+  left: -100px;
+  top: 0px;
+}
+
+.try-content .shape.man {
+  width: 55.25px;
 }
 
 .try-content .name-1 {
@@ -474,25 +479,17 @@ sup {
 }
 
 .page-3 .try-content .wrapper ul {
-  list-style: none !important;
+  list-style-type: decimal;
   margin: 4px 0px 0px 16px;
   line-height: 25px;
-  counter-reset: ulCounter;
 }
 
-.page-3 .try-content .wrapper ul li:not(.ja) {
-  counter-increment: ulCounter;
-  list-style: none;
+.page-3 .try-content .wrapper ul li span {
+  display: block;
 }
 
-.page-3 .try-content .wrapper ul li:not(.ja):before {
-  content: counter(ulCounter) ".";
-  position: absolute;
-  left: 0px;
-}
-
-.page-3 .try-content .wrapper ul li.ja:before {
-  content: '';
+.page-3 .try-content .shape {
+  top: 26px;
 }
 
 .page-3 .try-content .dash-list p {
@@ -511,7 +508,7 @@ sup {
 
 .page-3 .try-content .dash-list .desc {
   margin-left: 0px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .page-3 .try-content .dash-list .ja {
@@ -527,6 +524,7 @@ sup {
 }
 
 .page-3 .act-content {
+  margin-top: 30px;
   padding-left: 0px;
 }
 

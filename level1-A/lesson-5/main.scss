@@ -134,9 +134,8 @@ sup {
   font-size: 15px;
 
   .blue-section {
-    background-color: none;
+    background-color: $primary-light;
     padding-top: 13px;
-    width: 80%;
     padding-left: 18.5px;
     height: fit-content;
     padding-bottom: 10px;
@@ -147,13 +146,31 @@ sup {
   .col {
     width: fit-content;
     margin-right: 48px;
-    min-width: 310px;
     .text {
       line-height: 26px;
       margin-top: 4px;
       &:not(:last-child) {
         margin-bottom: 30px;
       }
+    }
+    &.shapes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 28px;
+    }
+  }
+  .shape {
+    padding-bottom: 16px;
+    &.at {
+      width: 42px;
+    }
+    &.in {
+      width: 53px;
+    }
+    &.on {
+      width: 51.5px;
     }
   }
   .text-title {
@@ -205,6 +222,13 @@ sup {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    .shape.lots {
+      width: 745.5px;
+      position: absolute;
+      top: 44px;
+      z-index: -1;
+    }
   }
   .name {
     position: relative;
@@ -282,8 +306,10 @@ sup {
   }
   .lesson-points {
     padding-top: 4px;
-    margin-top: 10px;
-    padding: 6px 0px 0px 47px;
+    margin-top: 16px;
+    padding: 2px 0px 20px 47px;
+    background: $primary-light;
+    width: 688px;
     &.ja {
       color: #257A9E; 
     }
@@ -302,7 +328,7 @@ sup {
     }
   }
   .see-content {
-    margin-top: 86px;
+    margin-top: 50px;
 
     .col {
       width: fit-content;
@@ -310,6 +336,9 @@ sup {
       .text:not(:last-child) {
         margin-bottom: 37px;
       }
+    }
+    .shape {
+      padding-bottom: 80px;
     }
     .row .ja {
       margin-top: 4px;
@@ -351,6 +380,9 @@ sup {
           display: block;
         }
       }
+    }
+    .shape.lots {
+      top: 232px;
     }
     .name {
       margin-top: -3px;

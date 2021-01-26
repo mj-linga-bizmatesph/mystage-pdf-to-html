@@ -6,10 +6,12 @@ $primary: #257A9E;
 $primary-dark: #083051;
 $primary-light: #CCE0EC;
 
+$left-pixel: 126.5px;
+
 body {
   margin: 0;
   padding: 0;
-  font-family: $title-font;
+  font-family: $text-font;
 }
 .page-1,
 .page-2,
@@ -70,44 +72,42 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  font-family: $text-font;
 }
 .sub-text {
   font-family: $title-font !important;
 }
 .section {
   position: absolute;
-  left: 55px;
+  left: -71.5px;
   color: #1f789f;
   font-weight: bold;
   font-size: 15px;
+  font-family: $title-font;
 
   &.see {
-    top: 190px;
+    top: 13px;
   }
-  &.try {
-    top: 572px;
-  }
+  &.try,
   &.act {
-    top: 1110px;
+    top: -1px;
   }
 }
 .divider {
   color: #d9d9d9;
   font-size: 15px;
-  position: absolute;
+  position: relative;
   left: 469px;
 
   &.d1 {
-    top: 522px;
+    margin-top: 31px;
   }
   &.d2 {
-    top: 1061px;
+    margin-top: 10px;
   }
 }
 .sub-head {
-  position: absolute;
-  top: 125px;
+  position: relative;
+  margin-top: 128px;
   left: 47px;
   .subtitle {
     font-family: $ja-font;
@@ -118,9 +118,6 @@ body {
   p {
     margin: 3px auto;
   }
-}
-.text {
-  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif;
@@ -136,7 +133,8 @@ sup {
 
 /* See */
 .see-content {
-  margin-left: 126.5px;
+  position: relative;
+  margin-left: $left-pixel;
   margin-top: 177px;
   font-size: 15px;
 
@@ -144,24 +142,23 @@ sup {
     background-color: $primary-light;
     padding-top: 13px;
     padding-left: 18.5px;
-    height: 145px;
+    height: fit-content;
+    padding-bottom: 20px;
   }
   p {
     margin: 0 auto;
-    &:last-child {
+  }
+  .text {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
   .text {
-    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
     span {
       margin-right: 20px;
     }
-  }
-  .text-title {
-    font-family: $text-font;
   }
   .example {
     margin-top: 34px;
@@ -189,9 +186,10 @@ sup {
 
 /* Try */
 .try-content {
-  position: absolute;
-  top: 572px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 34px;
+  margin-left: $left-pixel;
+  padding-left: 18px;
   font-size: 15px;
 
   ul {
@@ -202,6 +200,13 @@ sup {
   }
   li {
     padding-left: 13px;
+  }
+  .shape {
+    width: 55.25px;
+    position: absolute;
+    top: -96px;
+    z-index: -1;
+    right: 0px;
   }
   .wrapper {
     display: flex;
@@ -216,6 +221,7 @@ sup {
 
     th {
       color: #ffffff;
+      text-align: left;
       &:first-child {
        background-color: #ffffff;
        border: none;
@@ -237,6 +243,7 @@ sup {
       word-wrap: break-word;
       border: 1px solid #000000;
       padding: 5px 8px;
+      position: relative;
     }  
     tr {
       background-color: #d4e6f0;
@@ -257,11 +264,12 @@ sup {
 
 /* Act */
 .act-content {
-  position: absolute;
-  top: 1110px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 36px;
+  margin-left: $left-pixel;
+  padding-left: 18px;
   font-size: 15px;
-  width: 720px;
+  height: fit-content;
 
   span {
     margin-right: 25px;
@@ -279,7 +287,7 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  top: 1210px;
+  bottom: 43px;
   left: 516px;
 }
 
@@ -297,15 +305,14 @@ sup {
     }
   }
   .lesson-points {
-    position: absolute;
-    top: 186px;
-    padding: 2px 0px 0px 47px;
+    margin-top: 16px;
+    padding: 2px 0px 1px 47px;
     width: 687px;
     background: $primary-light;
     &.ja {
       color: $primary;
       font-size: 12px;
-      letter-spacing: 0.10px;
+      letter-spacing: 0.1px;
     }
     div {
       margin-bottom: 12px;
@@ -323,9 +330,9 @@ sup {
     }
   }
   .arrow-part {
-    position: absolute;
-    top: 371px;
-    left: 125px;
+    margin-top: 17px;
+    margin-left: 125px;
+    word-spacing: 3px;
     .subtitle {
       font-size: 15px;
       color: #000000;
@@ -335,34 +342,30 @@ sup {
       font-size: 12px;
     }
     div {
-      margin-bottom: 28px;
       position: relative;
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
       &:before {
         content: '';
         position: absolute;
         left: -38px;
-        top: 5px;
-        width: 0; 
-        height: 0; 
+        top: 7px;
+        width: 0;
+        height: 0;
         border-top: 6.5px solid transparent;
         border-bottom: 6.5px solid transparent;
-        border-left: 12px solid $primary;  
+        border-left: 12px solid $primary;
         display: inline-block;
         vertical-align: middle;
       }
     }
   }
-  .section.see {
-    top: 588px;
-  }
   .see-content {
-    margin-top: 581px;
+    margin-top: 25px;
     margin-left: 125px;
 
     .blue-section {
-      padding-left: 23px;
-      padding-top: 12px;
-      height: 230px;
       .col {
         margin-top: 3px;
       }
@@ -397,39 +400,23 @@ sup {
 
 /* Page 3 */
 .page-3 {
-  .section.try {
-    top: 170px;
-  }
   .sub-head {
-    top: 72px;
+    margin-top: 75px;
   }
   .try-content {
-    top: 170px;
-    left: 128px;
+    margin-top: 52px;
+    padding-left: 0px;
 
     span:nth-child(-n+2) {
       display: block;
       margin-bottom: 5px;
     }
     ul {
-      list-style: none !important;
       margin: 16px 0px 0px 16px;
       line-height: 25px;
-      counter-reset: ulCounter;
-      li:not(.ja) {
-        counter-increment: ulCounter;
-        list-style: none;
-        &:before {
-          content:counter(ulCounter) '.';
-          position: absolute;
-          left: 0px;
-        }
-      }
       li {
-        &.ja {
-          &:before {
-            content: '';
-          }
+        span {
+          display: block;
         }
       }
     }
@@ -458,15 +445,13 @@ sup {
       }
     }
   }
-  .divider.d2 {
-    top: 703px;
-  }
-  .section.act {
-    top: 987px;
+  .divider {
+    &.d2 {
+      margin-top: 20px;
+    }
   }
   .act-content {
-    top: 987px;
-    left: 125px;
+    padding-left: 0px;
     p.ja {
       margin: 8px 0px;
     }

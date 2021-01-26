@@ -242,6 +242,10 @@ sup {
           align-items: stretch;
 }
 
+.try-content .shape {
+  height: 132px;
+}
+
 .try-content .name {
   position: relative;
   margin-top: 22px;
@@ -249,8 +253,8 @@ sup {
 }
 
 .try-content .name div {
-  width: 200px;
-  margin-right: 40px;
+  width: 210px;
+  margin-right: 30px;
 }
 
 .try-content .name div:nth-child(1) p:nth-child(1) {
@@ -269,20 +273,16 @@ sup {
   margin-left: 30px;
 }
 
-.try-content .name p {
-  top: 22px;
-}
-
-.try-content .name p:nth-child(2) {
-  margin-top: 160px;
-}
-
 /* Act */
 .act-content {
-  position: absolute;
-  top: 1085px;
-  left: 144.5px;
+  position: relative;
+  margin-top: 36px;
+  margin-left: 126.5px;
+  padding-left: 18px;
   font-size: 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .act-content .sub-text {
@@ -319,16 +319,89 @@ sup {
 
 /* Page-2 */
 .page-2 .title {
-  top: 80px;
-  left: 145px;
+  top: 72px;
+  left: 50px;
+  word-spacing: 1px;
 }
 
-.page-2 .section.see {
-  top: 587px;
+.page-2 .title .ja {
+  font-size: 27px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.page-2 .lesson-points {
+  margin-top: 16px;
+  padding: 2px 0px 1px 47px;
+  width: 687px;
+  background: #cce0ec;
+}
+
+.page-2 .lesson-points.ja {
+  color: #257a9e;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+}
+
+.page-2 .lesson-points div {
+  margin-bottom: 12px;
+}
+
+.page-2 .lesson-points div p {
+  margin: 2px auto;
+}
+
+.page-2 .lesson-points div p:first-child {
+  color: #000000;
+  font-size: 15px;
+}
+
+.page-2 .lesson-points p {
+  line-height: 22px;
+  margin: 12px auto;
+}
+
+.page-2 .arrow-part {
+  margin-top: 20px;
+  margin-left: 125px;
+  word-spacing: 3px;
+}
+
+.page-2 .arrow-part .subtitle {
+  font-size: 15px;
+  color: #000000;
+}
+
+.page-2 .arrow-part p {
+  margin: 4.5px auto;
+  font-size: 12px;
+}
+
+.page-2 .arrow-part div {
+  position: relative;
+}
+
+.page-2 .arrow-part div:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.page-2 .arrow-part div:before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-top: 6.5px solid transparent;
+  border-bottom: 6.5px solid transparent;
+  border-left: 12px solid #257a9e;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-2 .see-content {
-  margin-top: 592px;
+  margin-top: 25px;
   margin-left: 146px;
 }
 
@@ -340,81 +413,97 @@ sup {
   max-width: 310px;
 }
 
-.page-2 .see-content .text p {
-  margin-top: 27.5px;
+.page-2 .see-content .sub-text.ja {
+  margin-top: 2px;
+  font-size: 13px;
 }
 
-.page-2 .see-content .text p:last-child {
-  margin-bottom: 58px;
+.page-2 .see-content .text .ja {
+  color: #257a9e;
+  margin: 0px auto;
+}
+
+.page-2 .see-content .text.no-sub {
+  margin-top: 44px;
 }
 
 .page-2 .example {
-  margin-top: -8px;
+  margin-top: 24px;
+  margin-left: 0px;
 }
 
 .page-2 .example .conversation {
-  margin-top: 6px;
-}
-
-.page-2 .example .sentence {
-  margin-left: 16px;
-}
-
-.page-2 .example .conversation div,
-.page-2 .example .sentence div {
-  margin-bottom: 24px;
+  margin-top: 4px;
 }
 
 /* Page 3 */
-.page-3 .section.try {
-  top: 170px;
+.page-3 .sub-head {
+  margin-top: 75px;
 }
 
 .page-3 .try-content {
-  top: 170px;
-  left: 128px;
+  margin-top: 52px;
+  padding-left: 0px;
+}
+
+.page-3 .try-content span:nth-child(-n + 2) {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .page-3 .try-content ul {
   margin: 28px 0px 0px 15px;
 }
 
-.page-3 .try-content li {
-  margin: 25px 0;
+.page-3 .try-content ul li span {
+  display: block;
 }
 
 .page-3 .try-content .name {
-  margin-top: 10px;
   margin-left: 10px;
 }
 
-.page-3 .try-content .name p:nth-child(2) {
-  margin-top: 165px;
+.page-3 .try-content .name span.ja {
+  margin-left: -5px;
 }
 
-.page-3 .divider.d2 {
-  top: 748px;
-}
-
-.page-3 .section.act {
-  top: 800px;
+.page-3 .try-content .name p {
+  margin: 0 auto;
 }
 
 .page-3 .act-content {
-  top: 800px;
-  left: 125px;
+  width: 680px;
+  padding-left: 0px;
+}
+
+.page-3 .act-content p.ja {
+  margin: 6px 0px;
 }
 
 .page-3 .act-content ul {
+  margin-top: 16px;
   list-style-type: none;
-  margin-top: 48px;
-  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .page-3 .act-content li {
-  margin: 13px 0;
   padding-left: 0px;
-  width: 144px;
+  width: 130px;
+  margin-bottom: 5px;
+}
+
+.page-3 .act-content li span {
+  display: block;
 }
 
 .page-3 .act-content .text {

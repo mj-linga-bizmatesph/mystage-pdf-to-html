@@ -63,9 +63,11 @@ body {
 }
 .lesson-number {
   position: absolute;
-  left: 823px;
+  min-width: 15px;
+  left: 818px;
   top: 66px;
   font-size: 13px;
+  text-align: center;
   color: #ffffff;
 }
 .row {
@@ -79,7 +81,7 @@ body {
 .section {
   position: absolute;
   left: -71.5px;
-  color: #1f789f;
+  color: #2078a0;
   font-weight: bold;
   font-size: 15px;
   font-family: $title-font;
@@ -87,9 +89,11 @@ body {
   &.see {
     top: 13px;
   }
-  &.try,
+  &.try {
+    top: 0px;
+  }
   &.act {
-    top: -1px;
+    top: 2px;
   }
 }
 .divider {
@@ -98,11 +102,9 @@ body {
   position: relative;
   left: 469px;
 
-  &.d1 {
-    margin-top: 31px;
-  }
+  &.d1,
   &.d2 {
-    margin-top: 32px;
+    margin-top: 33px;
   }
 }
 .sub-head {
@@ -119,11 +121,17 @@ body {
     margin: 3px auto;
   }
 }
+.text {
+  font-family: $text-font;
+}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
   font-weight: bold;
   color: #595959;
+}
+.primary-text {
+  color: $primary;
 }
 sup {
   font-size: 10px;
@@ -143,25 +151,30 @@ sup {
     padding-top: 13px;
     padding-left: 18.5px;
     height: fit-content;
-    padding-bottom: 36px;
+    padding-bottom: 16px;
   }
   p {
     margin: 0 auto;
+    .tab {
+      display: inline-block;
+      width: 260px;
+    }
   }
-  .col1,
-  .col2,
-  .col4 {
-    width: 23.9%;
-  }
-  .col3 {
-    width: 25.1%;
+  .col {
+    width: fit-content;
+    margin-right: 48px;
+    min-width: 310px;
+    .text:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   .text {
+    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
   }
   .example {
-    margin-top: 18px;
+    margin-top: 37px;
     margin-left: 18.5px;
 
     .conversation {
@@ -176,7 +189,7 @@ sup {
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 640px;
+            max-width: 690px;
           }
         }
       }
@@ -189,55 +202,28 @@ sup {
   position: relative;
   margin-top: 34px;
   margin-left: $left-pixel;
-  padding-left: 18px;
+  padding-left: 18.5px;
   font-size: 15px;
 
   ul {
+    list-style-type: decimal;
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: 26px;
-    list-style-type: decimal;
   }
   li {
     padding-left: 13px;
+    p {
+      margin: 0 auto;
+    }
   }
   .wrapper {
     display: flex;
+    flex-direction: column;
     align-items: stretch;
-    position: relative;
   }
   .sub-text.mg {
-    margin-top: 20px;
-  }
-  .shape {
-    width: 55.25px;
-    position: absolute;
-    margin-left: -12px;
-  }
-  .name-1 {
-    margin-left: 34px;
-    margin-top: 38px;
-  }
-  .name-2 {
-    margin-left: 32px;
-    margin-top: 38px;
-  }
-  .desc {
-    margin-top: -10px;
-    margin-left: 56px;
-  }
-  .dash-list {
-    ul {
-      list-style: none;
-      line-height: 18px;
-    }
-    li::before {
-      display: inline-block;
-      content: '-';
-      width: 6px;
-      margin-right: 4px;
-      margin-left: -1em;
-    }
+    margin-top: 25px;
   }
 }
 
@@ -246,20 +232,19 @@ sup {
   position: relative;
   margin-top: 36px;
   margin-left: $left-pixel;
-  padding-left: 18px;
-  font-size: 15px;
-  height: fit-content;
+  padding-left: 18.5px;
 
+  .sub-text {
+    line-height: 22px;
+  }
   ul {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: 26px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  li {
-    padding-left: 8px;
+    list-style-type: decimal;
+    li {
+      padding-left: 13px;
+    }
   }
 }
 .footer {
@@ -276,7 +261,7 @@ sup {
   .title {
     top: 72px;
     left: 50px;
-    word-spacing: 1px;
+    word-spacing: 3px;
     .ja {
       font-size: 27px;
       color: #000000;
@@ -285,35 +270,42 @@ sup {
     }
   }
   .lesson-points {
-    margin-top: 16px;
+    margin-top: 14px;
     padding: 2px 0px 0px 47px;
-    height: 50px;
+    height: fit-content;
     width: 687px;
+    padding-bottom: 4px;
     background: $primary-light;
     &.ja {
       color: $primary;
-      font-size: 12px;
+      font-weight: normal;
       letter-spacing: 0.1px;
     }
-    div {
-      margin-bottom: 12px;
+    .subtitle {
       p {
-        margin: 2px auto;
+        margin: 3px auto;
+        font-size: 12px;
         &:first-child {
-          color: #000000;
           font-size: 15px;
+          color: #000000;
         }
       }
     }
+    .col {
+      margin-right: 36px;
+    }
     p {
-      line-height: 22px;
-      margin: 12px auto;
+      margin: 16px auto;
+    }
+    li {
+      list-style: none;
+      padding-left: 12px;
+      margin: 16px auto;
     }
   }
   .arrow-part {
-    margin-top: 17px;
+    margin-top: 18px;
     margin-left: 125px;
-    word-spacing: 3px;
     .subtitle {
       font-size: 15px;
       color: #000000;
@@ -321,17 +313,21 @@ sup {
     p {
       margin: 4.5px auto;
       font-size: 12px;
+      .tab {
+        margin-right: 32px;
+      }
+    }
+    .dark-blue {
+      color: $primary-dark;
+      letter-spacing: 0.1px;
     }
     div {
       position: relative;
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
       &:before {
         content: '';
         position: absolute;
         left: -38px;
-        top: 7px;
+        top: 5px;
         width: 0;
         height: 0;
         border-top: 6.5px solid transparent;
@@ -343,38 +339,25 @@ sup {
     }
   }
   .see-content {
-    margin-top: 25px;
-    margin-left: 125px;
+    margin-top: 36px;
 
     .blue-section {
-      padding: 12px 0px 6px 16px;
-      height: fit-content;
-      .col2 {
-        margin-left: 5px;
-        width: 23.2%;
-      }
-      .col3 {
-        width: 27.5%;
-      }
+      padding-bottom: 1px;
     }
-    .sub-text.ja {
-      margin-top: 2px;
-      font-size: 13px;
+    .row .ja {
+      margin-top: 4px;
     }
     .text {
+      margin-top: 8px;
       .ja {
-        color: $primary;
-        margin: 0px auto;
+        margin-top: 0px;
+        color: #257a9e;
       }
     }
   }
   .example {
-    margin-top: 16px;
+    margin-top: 24px;
     margin-left: 0px;
-
-    .conversation {
-      margin-top: 4px;
-    }
   }
 }
 
@@ -391,64 +374,24 @@ sup {
       display: block;
       margin-bottom: 5px;
     }
-    .wrapper {
-      ul {
-        list-style-type: decimal;
-        margin: 26px 0px 0px 16px;
-        line-height: 25px;
-        li {
-          span {
-            display: block;
-          }
-        }
-      }
+    ul {
+      margin: 24px 0px 0px 16px;
     }
-    .dash-list {
-      ul {
-        list-style-type: none;
-        line-height: unset;
-      }
-      p {
-        margin-bottom: 0px;
-      }
-      &.name-1 {
-        margin-top: 12px;
-        margin-left: 26px;
-      }
-      &.name-2 {
-        margin-top: 12px;
-        margin-left: 50px;
-      }
-      .desc {
-        margin-top: 0px;
-        margin-left: 60px;
-      }
-      .ja {
-        margin: 6px auto;
-      }
-    }
-    .sub-text.mg {
-      margin-top: 52px;
-    }
-    .sub-text.ja {
-      margin-top: 6px;
-      font-size: 13px;
-    }
+  }
+  .sub-text.ja {
+    margin-top: 8px;
   }
   .act-content {
     padding-left: 0px;
-    p.ja {
-      margin: 6px 0px;
+    font-size: 15px;
+    .ja {
+      margin: 8px auto;
     }
     ul {
-      margin: 26px 0px 0px 16px;
-      height: fit-content;
-      li {
-        padding-left: 16px;
-        list-style-type: none;
-        &:nth-child(odd) {
-          list-style-type: disc;
-        }
+      line-height: 24px;
+      margin-top: 30px;
+      .ja {
+        margin: 2px auto;
       }
     }
   }

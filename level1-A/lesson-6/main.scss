@@ -253,10 +253,12 @@ sup {
   }
 }
 .footer {
-  font-size: 9px;
+  font-size: 9.5px;
   position: absolute;
+  width: 345px;
+  text-align: right;
   bottom: 43px;
-  left: 616px;
+  left: 492px;
 }
 
 /* Page 2 */
@@ -374,28 +376,15 @@ sup {
       margin-bottom: 5px;
     }
     ul {
-      list-style: none;
       margin: 24px 0px 0px 16px;
-      counter-reset: ulCounter;
-      li:not(.ja) {
-        counter-increment: ulCounter;
-        list-style: none;
-        &:before {
-          content: counter(ulCounter) '.';
-          position: absolute;
-          left: 0px;
-        }
-      }
+      line-height: 23px;
       li {
-        &.ja {
-          margin-top: -2px;
-          &:before {
-            content: '';
-          }
-        }
-        &:nth-child(5) {
-          margin-bottom: 0px;
-        }
+       span {
+         display: block;
+       }
+       &:nth-child(5) {
+         margin-bottom: 0px;
+       }
       }
     }
   }

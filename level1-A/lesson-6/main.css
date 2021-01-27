@@ -300,10 +300,12 @@ sup {
 }
 
 .footer {
-  font-size: 9px;
+  font-size: 9.5px;
   position: absolute;
+  width: 345px;
+  text-align: right;
   bottom: 43px;
-  left: 616px;
+  left: 492px;
 }
 
 /* Page 2 */
@@ -439,28 +441,12 @@ sup {
 }
 
 .page-3 .try-content ul {
-  list-style: none;
   margin: 24px 0px 0px 16px;
-  counter-reset: ulCounter;
+  line-height: 23px;
 }
 
-.page-3 .try-content ul li:not(.ja) {
-  counter-increment: ulCounter;
-  list-style: none;
-}
-
-.page-3 .try-content ul li:not(.ja):before {
-  content: counter(ulCounter) ".";
-  position: absolute;
-  left: 0px;
-}
-
-.page-3 .try-content ul li.ja {
-  margin-top: -2px;
-}
-
-.page-3 .try-content ul li.ja:before {
-  content: '';
+.page-3 .try-content ul li span {
+  display: block;
 }
 
 .page-3 .try-content ul li:nth-child(5) {

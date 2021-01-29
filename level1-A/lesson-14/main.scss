@@ -2,7 +2,7 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
-$primary: #257A9E;
+$primary: #257a9e;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
@@ -17,7 +17,8 @@ body {
 .page-2,
 .page-3 {
   width: 892.75px;
-  height: 1262px;
+  min-height: 1200px;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
@@ -62,9 +63,11 @@ body {
 }
 .lesson-number {
   position: absolute;
-  left: 823px;
+  min-width: 15px;
+  left: 818px;
   top: 66px;
   font-size: 13px;
+  text-align: center;
   color: #ffffff;
 }
 .row {
@@ -78,7 +81,7 @@ body {
 .section {
   position: absolute;
   left: -71.5px;
-  color: #1f789f;
+  color: #2078a0;
   font-weight: bold;
   font-size: 15px;
   font-family: $title-font;
@@ -86,9 +89,11 @@ body {
   &.see {
     top: 13px;
   }
-  &.try,
+  &.try {
+    top: 0px;
+  }
   &.act {
-    top: -1px;
+    top: 2px;
   }
 }
 .divider {
@@ -97,11 +102,9 @@ body {
   position: relative;
   left: 469px;
 
-  &.d1 {
-    margin-top: 31px;
-  }
+  &.d1,
   &.d2 {
-    margin-top: 32px;
+    margin-top: 33px;
   }
 }
 .sub-head {
@@ -118,11 +121,17 @@ body {
     margin: 3px auto;
   }
 }
+.text {
+  font-family: $text-font;
+}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
   font-weight: bold;
   color: #595959;
+}
+.primary-text {
+  color: $primary;
 }
 sup {
   font-size: 10px;
@@ -142,21 +151,30 @@ sup {
     padding-top: 13px;
     padding-left: 18.5px;
     height: fit-content;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
   }
   p {
     margin: 0 auto;
+    .tab {
+      display: inline-block;
+      min-width: 300px;
+      margin-right: 20px;
+    }
   }
   .col {
-    width: 340px;
+    width: fit-content;
     margin-right: 20px;
+    min-width: 68px;
+    margin-bottom: 28px;
   }
   .text {
+    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
   }
   .example {
-    margin-top: 38px;
+    margin-top: 35px;
+    margin-left: 18.5px;
 
     .conversation {
       line-height: 26px;
@@ -183,81 +201,28 @@ sup {
   position: relative;
   margin-top: 34px;
   margin-left: $left-pixel;
-  padding-left: 18px;
+  padding-left: 18.5px;
   font-size: 15px;
 
-  .list-col {
-    display: flex;
-    ul {
-      margin: 3px 0px 0px 18px;
-      padding: 0;
-      line-height: 26px;
-      list-style: none;
-      &:first-child {
-        list-style: decimal;
-        width: fit-content;
-        margin-right: 40px;
-      }
-    }
-    .shapes {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-    }
+  ul {
+    list-style-type: decimal;
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: 26px;
   }
   li {
     padding-left: 13px;
+    p {
+      margin: 0 auto;
+    }
   }
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-  .shape {
-    width: 80px;
-  }
-  table {
-    margin-top: 34px;
-    margin-left: -16px;
-    border-spacing: 0px;
-    line-height: 18px;
-
-    th, td {
-      max-width: 196px;
-      width: 196px;
-      word-wrap: break-word;
-      border: 1px solid #000000;
-      padding: 5px 8px;
-    }  
-    tr {
-      background-color: #d4e6f0;
-      border: 1px solid #000000;
-      &:first-child {
-        background-color: $primary-dark;
-        color: #ffffff;
-        height: 30px;
-      }
-      &:nth-child(2) {
-        height: 86px;
-      }
-      &:nth-child(3) {
-        background-color: #2078A0;
-        color: #ffffff;
-        height: 28px;
-      }
-      &:nth-child(n+4) {
-        counter-increment: rowNumber;
-        td {
-          padding-left: 32px;
-          position: relative;
-          &:before {
-            position: absolute;
-            left: 8px;
-            content: counter(rowNumber) '.'; 
-          }
-        }
-      }
-    }
+  .sub-text.mg {
+    margin-top: 25px;
   }
 }
 
@@ -266,23 +231,19 @@ sup {
   position: relative;
   margin-top: 36px;
   margin-left: $left-pixel;
-  padding-left: 18px;
-  font-size: 15px;
-  height: fit-content;
+  padding-left: 18.5px;
 
   .sub-text {
     line-height: 22px;
   }
   ul {
-    list-style: none;
-    margin: 3px 0px 0px 0px;
+    margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: 26px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 20px;
-    width: 590px;
+    list-style-type: decimal;
+    li {
+      padding-left: 13px;
+    }
   }
 }
 .footer {
@@ -300,7 +261,7 @@ sup {
   .title {
     top: 72px;
     left: 50px;
-    word-spacing: 1px;
+    word-spacing: 3px;
     .ja {
       font-size: 27px;
       color: #000000;
@@ -309,35 +270,44 @@ sup {
     }
   }
   .lesson-points {
-    margin-top: 16px;
+    margin-top: 14px;
     padding: 2px 0px 0px 47px;
-    height: 50px;
+    height: fit-content;
     width: 687px;
+    padding-bottom: 4px;
     background: $primary-light;
     &.ja {
       color: $primary;
-      font-size: 12px;
+      font-weight: normal;
       letter-spacing: 0.1px;
     }
-    div {
-      margin-bottom: 12px;
+    .subtitle {
       p {
-        margin: 2px auto;
+        margin: 3px auto;
+        font-size: 12px;
         &:first-child {
-          color: #000000;
           font-size: 15px;
+          color: #000000;
         }
       }
     }
+    .col {
+      margin-right: 36px;
+    }
     p {
-      line-height: 22px;
-      margin: 12px auto;
+      margin: 16px auto;
+    }
+    li {
+      list-style: none;
+      padding-left: 12px;
+      margin: 16px auto;
     }
   }
   .arrow-part {
     margin-top: 17px;
     margin-left: 125px;
     word-spacing: 3px;
+    font-weight: normal;
     .subtitle {
       font-size: 15px;
       color: #000000;
@@ -349,7 +319,7 @@ sup {
     div {
       position: relative;
       &:not(:last-child) {
-        margin-bottom: 32px;
+        margin-bottom: 28px;
       }
       &:before {
         content: '';
@@ -367,26 +337,28 @@ sup {
     }
   }
   .see-content {
-    margin-top: 28px;
-    margin-left: 125px;
+    margin-top: 34px;
 
-    .sub-text.ja {
-      margin-top: 8px;
-      font-size: 13px;
+    .blue-section {
+      padding-bottom: 8px;
+    }
+    .sub-text .ja {
+      margin-top: 2px;
+    }
+    .row .ja {
+      margin-top: 4px;
     }
     .text {
+      margin-top: 8px;
       .ja {
-        color: $primary;
-        margin: 0px auto;
+        margin-top: 0px;
+        color: #257a9e;
       }
     }
   }
   .example {
-    margin-top: 26px;
-
-    .conversation {
-      margin-top: 4px;
-    }
+    margin-top: 30px;
+    margin-left: 0px;
   }
 }
 
@@ -399,37 +371,30 @@ sup {
     margin-top: 52px;
     padding-left: 0px;
 
-    span:nth-child(-n+2) {
+    span:nth-child(-n + 2) {
       display: block;
       margin-bottom: 5px;
     }
     ul {
-      margin: 10px 0px 0px 16px;
-      li {
-        span {
-          display: block;
-        }
-      }
+      margin: 24px 0px 0px 16px;
     }
-    table {
-      margin-top: 10px;
-      margin-left: -4px;
-      z-index: 2;
-      .ja {
-        color: $primary;
-      }
-      tr:first-child,
-      tr:nth-child(3) {
-        .ja {
-          color: #ffffff;
-        }
-      }
-    }
+  }
+  .sub-text.ja {
+    margin-top: 8px;
   }
   .act-content {
     padding-left: 0px;
-    p.ja {
-      margin: 8px 0px;
+    font-size: 15px;
+    .ja {
+      margin: 8px auto;
+    }
+    ul {
+      line-height: 24px;
+      margin-top: 30px;
+      max-width: 670px;
+      .ja {
+        margin: 2px auto;
+      }
     }
   }
 }

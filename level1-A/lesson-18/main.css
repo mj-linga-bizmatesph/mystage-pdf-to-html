@@ -181,7 +181,7 @@ li p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 
 .see-content p {
@@ -196,7 +196,25 @@ li p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 60px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.see-content ul {
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 12px auto 0px;
+}
+
+.see-content ul li {
+  list-style-type: decimal;
+  padding: 6px 40px 26px;
 }
 
 .see-content .sub-text {
@@ -208,7 +226,7 @@ li p {
 }
 
 .see-content .example {
-  margin-top: 30px;
+  margin-top: 32px;
   margin-left: 18.5px;
 }
 
@@ -228,7 +246,7 @@ li p {
 }
 
 .see-content .example .conversation .row p:last-child {
-  max-width: 690px;
+  max-width: 650px;
 }
 
 /* Try */
@@ -319,7 +337,7 @@ li p {
 
 .page-2 .lesson-points {
   margin-top: 14px;
-  padding: 2px 0px 4px 47px;
+  padding: 2px 0px 6px 47px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -354,7 +372,7 @@ li p {
 }
 
 .page-2 .arrow-part {
-  margin-top: 17px;
+  margin-top: 20px;
   margin-left: 125px;
   word-spacing: 3px;
   font-weight: normal;
@@ -363,6 +381,10 @@ li p {
 .page-2 .arrow-part .subtitle {
   font-size: 15px;
   color: #000000;
+}
+
+.page-2 .arrow-part .bracket {
+  margin-top: 24px;
 }
 
 .page-2 .arrow-part p {
@@ -393,23 +415,23 @@ li p {
 }
 
 .page-2 .see-content {
-  margin-top: 44px;
+  margin-top: 42px;
 }
 
 .page-2 .see-content .blue-section {
   padding-bottom: 8px;
 }
 
+.page-2 .see-content .col.weather {
+  margin-top: 100px;
+}
+
 .page-2 .see-content .row .ja {
   color: #257a9e;
 }
 
-.page-2 .see-content .col {
-  min-width: 180px;
-}
-
 .page-2 .example {
-  margin-top: 30px;
+  margin-top: 36px;
   margin-left: 0px;
 }
 

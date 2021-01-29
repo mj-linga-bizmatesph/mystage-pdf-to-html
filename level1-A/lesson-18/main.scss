@@ -158,7 +158,7 @@ li p {
     padding-top: 13px;
     padding-left: 18.5px;
     height: fit-content;
-    padding-bottom: 26px;
+    padding-bottom: 24px;
   }
   p {
     margin: 0 auto;
@@ -168,7 +168,18 @@ li p {
   }
   .col {
     width: fit-content;
-    margin-right: 60px;
+    margin-right: 10px;
+    position: relative;
+  }
+  ul {
+    width: 160px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 12px auto 0px;
+    li {
+      list-style-type: decimal;
+      padding: 6px 40px 26px;
+    }
   }
   .sub-text {
     margin-bottom: 4px;
@@ -177,7 +188,7 @@ li p {
     }
   }
   .example {
-    margin-top: 30px;
+    margin-top: 32px;
     margin-left: 18.5px;
 
     .conversation {
@@ -192,7 +203,7 @@ li p {
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 690px;
+            max-width: 650px;
           }
         }
       }
@@ -274,7 +285,7 @@ li p {
   }
   .lesson-points {
     margin-top: 14px;
-    padding: 2px 0px 4px 47px;
+    padding: 2px 0px 6px 47px;
     height: fit-content;
     width: 687px;
     background: $primary-light;
@@ -303,13 +314,16 @@ li p {
     }
   }
   .arrow-part {
-    margin-top: 17px;
+    margin-top: 20px;
     margin-left: 125px;
     word-spacing: 3px;
     font-weight: normal;
     .subtitle {
       font-size: 15px;
       color: #000000;
+    }
+    .bracket {
+      margin-top: 24px;
     }
     p {
       margin: 4.5px auto;
@@ -336,20 +350,20 @@ li p {
     }
   }
   .see-content {
-    margin-top: 44px;
+    margin-top: 42px;
 
     .blue-section {
       padding-bottom: 8px;
     }
+    .col.weather {
+      margin-top: 100px;
+    }
     .row .ja {
       color: #257a9e;
     }
-    .col {
-      min-width: 180px;
-    }
   }
   .example {
-    margin-top: 30px;
+    margin-top: 36px;
     margin-left: 0px;
   }
 }

@@ -257,6 +257,11 @@ sup {
   width: 670px;
 }
 
+.try-content li span:not(.ja) {
+  padding-left: 1.3em;
+  text-indent: -19px;
+}
+
 .try-content .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +420,11 @@ sup {
 .page-2 .arrow-part div .tab {
   display: inline-block;
   width: 175px;
+  margin-left: 0px;
+}
+
+.page-2 .arrow-part div .tab b {
+  color: #2078a0;
 }
 
 .page-2 .see-content {

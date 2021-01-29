@@ -257,6 +257,11 @@ sup {
   width: 670px;
 }
 
+.try-content li span:not(.ja) {
+  padding-left: 1.3em;
+  text-indent: -19px;
+}
+
 .try-content .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

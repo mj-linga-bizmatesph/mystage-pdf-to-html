@@ -220,6 +220,10 @@ sup {
     span {
       display: block;
       width: 670px;
+      &:not(.ja) {
+        padding-left: 1.3em; 
+        text-indent: -19px;
+      }
     }
   }
   .wrapper {
@@ -241,9 +245,6 @@ sup {
 
   .sub-text {
     line-height: 22px;
-  }
-  .ja {
-    
   }
   ul {
     list-style-type: decimal;

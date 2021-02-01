@@ -121,9 +121,6 @@ body {
     margin: 3px auto;
   }
 }
-.text {
-  font-family: $text-font;
-}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
@@ -268,27 +265,23 @@ sup {
   }
   .lesson-points {
     margin-top: 16px;
-    padding: 2px 0px 0px 47px;
+    padding: 2px 0px 2px 47px;
     width: 687px;
     background: $primary-light;
     &.ja {
       color: $primary;
-      font-size: 12px;
+      font-weight: normal;
       letter-spacing: 0.1px;
     }
-    div {
-      margin-bottom: 12px;
+    .subtitle {
       p {
-        margin: 2px auto;
+        margin: 3px auto;
+        font-size: 12px;
         &:first-child {
           color: #000000;
           font-size: 15px;
         }
       }
-    }
-    p {
-      line-height: 22px;
-      margin: 12px auto;
     }
   }
   .arrow-part {

@@ -121,9 +121,6 @@ body {
     margin: 3px auto;
   }
 }
-.text {
-  font-family: $text-font;
-}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
@@ -168,7 +165,6 @@ sup {
     margin-bottom: 28px;
   }
   .text {
-    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
   }
@@ -291,17 +287,6 @@ sup {
           color: #000000;
         }
       }
-    }
-    .col {
-      margin-right: 36px;
-    }
-    p {
-      margin: 16px auto;
-    }
-    li {
-      list-style: none;
-      padding-left: 12px;
-      margin: 16px auto;
     }
   }
   .arrow-part {

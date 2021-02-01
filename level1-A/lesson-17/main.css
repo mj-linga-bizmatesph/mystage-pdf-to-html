@@ -90,6 +90,11 @@ body {
 
 .sub-text p {
   margin: 0px 0px 1px;
+  line-height: unset !important;
+}
+
+.sub-text .ja {
+  margin-top: 5px;
 }
 
 .section {
@@ -141,10 +146,6 @@ body {
   margin: 3px auto;
 }
 
-.text {
-  font-family: "Trebuchet MS";
-}
-
 .ja {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 12.5px;
@@ -192,6 +193,14 @@ li p {
   line-height: 26px;
 }
 
+.see-content .sub-text {
+  margin-bottom: 4px;
+}
+
+.see-content .sub-text:not(:first-child) {
+  margin-top: 28px;
+}
+
 .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -222,14 +231,6 @@ li p {
 .see-content ul li {
   list-style-type: decimal;
   padding: 6px 40px 26px;
-}
-
-.see-content .sub-text {
-  margin-bottom: 4px;
-}
-
-.see-content .sub-text:not(:first-child) {
-  margin-top: 28px;
 }
 
 .see-content .example {
@@ -372,12 +373,6 @@ li p {
   margin: 16px 0px 4px;
 }
 
-.page-2 .lesson-points li {
-  list-style: none;
-  padding-left: 12px;
-  margin: 16px auto;
-}
-
 .page-2 .arrow-part {
   margin-top: 24px;
   margin-left: 125px;
@@ -454,10 +449,6 @@ li p {
 
 .page-3 .try-content ul {
   margin: 24px 0px 0px 16px;
-}
-
-.page-3 .sub-text .ja {
-  margin-top: 5px;
 }
 
 .page-3 .sub-text.mg .ja {

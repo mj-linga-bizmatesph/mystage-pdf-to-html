@@ -73,7 +73,6 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  font-family: $text-font;
 }
 .sub-text {
   font-family: $title-font !important;
@@ -126,7 +125,7 @@ body {
     font-size: 15px;
   }
   p {
-    margin: 3px auto;
+    margin: 5px auto;
   }
 }
 .ja {
@@ -159,7 +158,7 @@ li p {
     padding-top: 13px;
     padding-left: 18.5px;
     height: fit-content;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   p {
     margin: 0 auto;
@@ -167,22 +166,11 @@ li p {
       line-height: 26px;
     }
   }
-  .sub-text {
-    margin-bottom: 4px;
-    &:not(:first-child) {
-      margin-top: 28px;
-    }
-  }
   .col {
     width: fit-content;
+    min-width: 250px;
     margin-right: 10px;
     position: relative;
-  }
-  .shape {
-    width: 134px;
-    position: absolute;
-    top: 12px;
-    left: 40px;
   }
   ul {
     width: 160px;
@@ -192,6 +180,12 @@ li p {
     li {
       list-style-type: decimal;
       padding: 6px 40px 26px;
+    }
+  }
+  .sub-text {
+    margin-bottom: 4px;
+    &:not(:first-child) {
+      margin-top: 28px;
     }
   }
   .example {
@@ -210,7 +204,7 @@ li p {
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 690px;
+            max-width: 650px;
           }
         }
       }
@@ -292,40 +286,32 @@ li p {
   }
   .lesson-points {
     margin-top: 14px;
-    padding: 2px 0px 6px 47px;
+    padding: 2px 20px 4px 47px;
     height: fit-content;
-    width: 687px;
+    width: 750px;
     background: $primary-light;
-    &.ja {
+    .subtitle {
+      font-size: 15px;
+      color: #000000;
+      font-weight: bold;
+    }
+    p {
       color: $primary;
       font-weight: normal;
       letter-spacing: 0.1px;
-    }
-    .subtitle {
-      p {
-        margin: 3px auto;
-        font-size: 12px;
-        &:first-child {
-          font-size: 15px;
-          color: #000000;
-        }
-      }
-    }
-    p {
-      margin: 16px 0px 4px;
+      margin: 3px auto;
+      font-size: 12px;
+      line-height: 22px;
     }
   }
   .arrow-part {
-    margin-top: 24px;
+    margin-top: 32px;
     margin-left: 125px;
     word-spacing: 3px;
     font-weight: normal;
     .subtitle {
       font-size: 15px;
       color: #000000;
-    }
-    .bracket {
-      margin-top: 24px;
     }
     p {
       margin: 4.5px auto;
@@ -357,15 +343,18 @@ li p {
     .blue-section {
       padding-bottom: 8px;
     }
-    .col.weather {
-      margin-top: 100px;
+    .col {
+      min-width: 420px;
+    }
+    .sub-text .ja {
+      margin-top: 8px;
     }
     .row .ja {
       color: #257a9e;
     }
   }
   .example {
-    margin-top: 30px;
+    margin-top: 26px;
     margin-left: 0px;
   }
 }

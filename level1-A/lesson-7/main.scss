@@ -118,9 +118,6 @@ body {
     margin: 3px auto;
   }
 }
-.text {
-  font-family: $text-font;
-}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
@@ -159,12 +156,8 @@ sup {
     max-width: 220px;
   }
   .text {
-    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
-  }
-  .text-title {
-    font-family: $text-font;
   }
   .example {
     margin-top: 37px;

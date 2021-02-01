@@ -80,6 +80,10 @@ body {
   margin: 0px 0px 1px;
   p {
     margin: 0px 0px 1px;
+    line-height: unset !important;
+  }
+  .ja {
+    margin-top: 5px;
   }
 }
 .section {
@@ -124,9 +128,6 @@ body {
   p {
     margin: 3px auto;
   }
-}
-.text {
-  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif;
@@ -293,14 +294,6 @@ li p {
         }
       }
     }
-    p {
-      margin: 16px 0px 4px;
-    }
-    li {
-      list-style: none;
-      padding-left: 12px;
-      margin: 16px auto;
-    }
   }
   .arrow-part {
     margin-top: 17px;
@@ -347,6 +340,9 @@ li p {
     .col {
       min-width: 180px;
     }
+    .sub-text .ja {
+      margin-top: 8px;
+    }
   }
   .example {
     margin-top: 30px;
@@ -365,9 +361,6 @@ li p {
     ul {
       margin: 24px 0px 0px 16px;
     }
-  }
-  .sub-text .ja {
-    margin-top: 5px;
   }
   .sub-text.mg .ja {
     margin-top: 8px;

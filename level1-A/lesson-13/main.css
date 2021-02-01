@@ -136,10 +136,6 @@ body {
   margin: 3px auto;
 }
 
-.text {
-  font-family: "Trebuchet MS";
-}
-
 .ja {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 12.5px;
@@ -311,33 +307,25 @@ sup {
 
 .page-2 .lesson-points {
   margin-top: 16px;
-  padding: 2px 0px 0px 47px;
+  padding: 2px 0px 2px 47px;
   width: 687px;
   background: #cce0ec;
 }
 
 .page-2 .lesson-points.ja {
   color: #257a9e;
-  font-size: 12px;
+  font-weight: normal;
   letter-spacing: 0.1px;
 }
 
-.page-2 .lesson-points div {
-  margin-bottom: 12px;
+.page-2 .lesson-points .subtitle p {
+  margin: 3px auto;
+  font-size: 12px;
 }
 
-.page-2 .lesson-points div p {
-  margin: 2px auto;
-}
-
-.page-2 .lesson-points div p:first-child {
+.page-2 .lesson-points .subtitle p:first-child {
   color: #000000;
   font-size: 15px;
-}
-
-.page-2 .lesson-points p {
-  line-height: 22px;
-  margin: 12px auto;
 }
 
 .page-2 .arrow-part {

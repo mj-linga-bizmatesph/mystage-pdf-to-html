@@ -2,7 +2,7 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
-$primary: #257a9e;
+$primary: #257A9E;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
@@ -17,7 +17,8 @@ body {
 .page-2,
 .page-3 {
   width: 892.75px;
-  height: 1262px;
+  min-height: 1200px;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
@@ -70,6 +71,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  font-family: $text-font;
 }
 .sub-text {
   font-family: $title-font !important;
@@ -141,27 +143,21 @@ sup {
     padding-top: 13px;
     padding-left: 18.5px;
     height: fit-content;
-    padding-bottom: 18px;
+    padding-bottom: 16px;
   }
   p {
     margin: 0 auto;
   }
   .col {
-    width: fit-content;
-    margin-right: 48px;
-    min-width: 310px;
-    max-width: 310px;
-    .text:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    width: 340px;
+    margin-right: 20px;
   }
   .text {
     line-height: 26px;
     margin-top: 4px;
   }
   .example {
-    margin-top: 34px;
-    margin-left: 18.5px;
+    margin-top: 38px;
 
     .conversation {
       line-height: 26px;
@@ -175,7 +171,7 @@ sup {
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 640px;
+            max-width: 690px;
           }
         }
       }
@@ -191,12 +187,24 @@ sup {
   padding-left: 18px;
   font-size: 15px;
 
-  ul {
-    list-style-type: decimal;
-    margin: 3px 0px 0px 18px;
-    padding: 0;
-    line-height: 26px;
-    max-width: 300px;
+  .list-col {
+    display: flex;
+    ul {
+      margin: 3px 0px 0px 18px;
+      padding: 0;
+      line-height: 26px;
+      list-style: none;
+      &:first-child {
+        list-style: decimal;
+        width: fit-content;
+        margin-right: 40px;
+      }
+    }
+    .shapes {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
   }
   li {
     padding-left: 13px;
@@ -207,30 +215,47 @@ sup {
     align-items: stretch;
   }
   .shape {
-    height: 132px;
+    width: 80px;
   }
-  .name {
-    position: relative;
-    margin-top: 22px;
-    margin-left: -5px;
+  table {
+    margin-top: 34px;
+    margin-left: -16px;
+    border-spacing: 0px;
+    line-height: 18px;
 
-    div {
-      width: 210px;
-      margin-right: 30px;
-      &:nth-child(1) {
-        p:nth-child(1) {
-          margin-left: 50px;
-        }
+    th, td {
+      max-width: 196px;
+      width: 196px;
+      word-wrap: break-word;
+      border: 1px solid #000000;
+      padding: 5px 8px;
+    }  
+    tr {
+      background-color: #d4e6f0;
+      border: 1px solid #000000;
+      &:first-child {
+        background-color: $primary-dark;
+        color: #ffffff;
+        height: 30px;
       }
       &:nth-child(2) {
-        margin-right: 88px;
-        p:nth-child(1) {
-          margin-left: 62px;
-        }
+        height: 86px;
       }
       &:nth-child(3) {
-        p:nth-child(1) {
-          margin-left: 30px;
+        background-color: #2078A0;
+        color: #ffffff;
+        height: 28px;
+      }
+      &:nth-child(n+4) {
+        counter-increment: rowNumber;
+        td {
+          padding-left: 32px;
+          position: relative;
+          &:before {
+            position: absolute;
+            left: 8px;
+            content: counter(rowNumber) '.'; 
+          }
         }
       }
     }
@@ -250,17 +275,15 @@ sup {
     line-height: 22px;
   }
   ul {
-    margin: 3px 0px 0px 18px;
+    list-style: none;
+    margin: 3px 0px 0px 0px;
     padding: 0;
     line-height: 26px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 60px;
+    height: 20px;
     width: 590px;
-  }
-  li {
-    padding-left: 8px;
   }
 }
 .footer {
@@ -273,7 +296,7 @@ sup {
   font-family: $title-font;
 }
 
-/* Page-2 */
+/* Page 2 */
 .page-2 {
   .title {
     top: 72px;
@@ -288,7 +311,8 @@ sup {
   }
   .lesson-points {
     margin-top: 16px;
-    padding: 2px 0px 1px 47px;
+    padding: 2px 0px 0px 47px;
+    height: 50px;
     width: 687px;
     background: $primary-light;
     &.ja {
@@ -312,7 +336,7 @@ sup {
     }
   }
   .arrow-part {
-    margin-top: 20px;
+    margin-top: 17px;
     margin-left: 125px;
     word-spacing: 3px;
     .subtitle {
@@ -326,7 +350,7 @@ sup {
     div {
       position: relative;
       &:not(:last-child) {
-        margin-bottom: 2px;
+        margin-bottom: 32px;
       }
       &:before {
         content: '';
@@ -344,16 +368,11 @@ sup {
     }
   }
   .see-content {
-    margin-top: 25px;
-    margin-left: 146px;
+    margin-top: 28px;
+    margin-left: 125px;
 
-    .col {
-      width: fit-content;
-      margin-right: 48px;
-      max-width: 310px;
-    }
     .sub-text.ja {
-      margin-top: 2px;
+      margin-top: 8px;
       font-size: 13px;
     }
     .text {
@@ -361,14 +380,10 @@ sup {
         color: $primary;
         margin: 0px auto;
       }
-      &.no-sub {
-        margin-top: 44px;
-      }
     }
   }
   .example {
-    margin-top: 24px;
-    margin-left: 0px;
+    margin-top: 26px;
 
     .conversation {
       margin-top: 4px;
@@ -385,52 +400,37 @@ sup {
     margin-top: 52px;
     padding-left: 0px;
 
-    span:nth-child(-n + 2) {
+    span:nth-child(-n+2) {
       display: block;
       margin-bottom: 5px;
     }
     ul {
-      margin: 28px 0px 0px 15px;
+      margin: 10px 0px 0px 16px;
       li {
         span {
           display: block;
         }
       }
     }
-    .name {
-      margin-left: 10px;
-      span.ja {
-        margin-left: -5px;
+    table {
+      margin-top: 10px;
+      margin-left: -4px;
+      z-index: 2;
+      .ja {
+        color: $primary;
       }
-      p {
-        margin: 0 auto;
+      tr:first-child,
+      tr:nth-child(3) {
+        .ja {
+          color: #ffffff;
+        }
       }
     }
   }
   .act-content {
-    width: 680px;
     padding-left: 0px;
     p.ja {
-      margin: 6px 0px;
-    }
-    ul {
-      margin-top: 16px;
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: fit-content;
-    }
-    li {
-      padding-left: 0px;
-      width: 130px;
-      margin-bottom: 5px;
-      span {
-        display: block;
-      }
-    }
-    .text {
-      margin-left: 0px;
+      margin: 8px 0px;
     }
   }
 }

@@ -17,7 +17,8 @@ body {
 .page-2,
 .page-3 {
   width: 892.75px;
-  height: 1262px;
+  min-height: 1200px;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;

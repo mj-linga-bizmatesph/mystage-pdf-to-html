@@ -41,14 +41,22 @@ body {
 
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
+  font-size: 0px;
+}
+
+.program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #248bb0;
   font-size: 15px;
 }
 
 .program-rank .level {
-  margin-left: 25px;
+  padding: 3px 12px 3px 13px;
+  background-color: #339999;
+  font-size: 15px;
 }
 
 .line {
@@ -89,6 +97,7 @@ body {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
+  font-weight: bold;
   font-size: 15px;
   font-family: "Arial";
 }
@@ -591,4 +600,36 @@ sup {
 
 .page-3 .act-content .wrapper {
   margin-top: 30px;
+}
+
+/* Clear styles */
+.clearfix {
+  clear: both;
+}
+
+/* floating styles */
+.float-right {
+  float: right;
+}
+
+/* Sizes - right */
+.r60 {
+  right: 60px;
+}
+
+.r40 {
+  right: 40px;
+}
+
+/* Sizes - top */
+.t40 {
+  top: 40px;
+}
+
+.t60 {
+  top: 60px;
+}
+
+.t90 {
+  top: 90px;
 }

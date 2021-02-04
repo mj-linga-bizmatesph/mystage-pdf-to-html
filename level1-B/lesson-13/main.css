@@ -189,7 +189,7 @@ sup {
 
 .see-content p .tab {
   display: inline-block;
-  width: 350px;
+  width: 420PX;
 }
 
 .see-content .col {
@@ -289,84 +289,6 @@ sup {
   margin-top: 25px;
 }
 
-.try-content .outline {
-  position: relative;
-}
-
-.try-content .outline img {
-  height: 265px;
-  left: 527px;
-  position: absolute;
-}
-
-.try-content .outline span {
-  position: absolute;
-  left: 570px;
-}
-
-.try-content .outline span.a {
-  top: 15px;
-}
-
-.try-content .outline span.a-sub {
-  top: 8px;
-}
-
-.try-content .outline span.b {
-  font-weight: normal;
-  top: 65px;
-}
-
-.try-content .outline span.b-sub {
-  top: 56px;
-}
-
-.try-content .outline span.c {
-  top: 119.5px;
-}
-
-.try-content .outline span.c-sub {
-  top: 110px;
-}
-
-.try-content .outline span.d {
-  top: 178px;
-}
-
-.try-content .outline span.d-sub {
-  top: 168.5px;
-}
-
-.try-content .outline span.e {
-  top: 226px;
-}
-
-.try-content .outline span.e-sub {
-  top: 217px;
-}
-
-.try-content .outline div {
-  position: absolute;
-  left: 510px;
-}
-
-.try-content .outline div.a {
-  top: 44px;
-}
-
-.try-content .outline div.b {
-  font-weight: normal;
-  top: 89px;
-}
-
-.try-content .outline div.c {
-  top: 154px;
-}
-
-.try-content .outline div.d {
-  top: 202px;
-}
-
 /* Act */
 .act-content {
   position: relative;
@@ -405,6 +327,11 @@ sup {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.act-content .tab {
+  display: inline-block;
+  width: 350px;
 }
 
 .footer {
@@ -517,6 +444,18 @@ sup {
 
 .page-2 .arrow-part div .tab b {
   color: #2078a0;
+}
+
+.page-2 .arrow-part div .no-arrow:before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border: none !important;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-2 .arrow-part .left-example {

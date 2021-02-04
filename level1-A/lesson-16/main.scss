@@ -43,13 +43,20 @@ body {
 }
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 0px;
 
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: #248bb0;
+    font-size: 15px;
+  }
   .level {
-    margin-left: 25px;
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
   }
 }
 .line {
@@ -80,6 +87,10 @@ body {
   margin: 0px 0px 1px;
   p {
     margin: 0px 0px 1px;
+    line-height: unset !important;
+  }
+  .ja {
+    margin-top: 5px;
   }
 }
 .section {
@@ -125,9 +136,6 @@ body {
     margin: 3px auto;
   }
 }
-.text {
-  font-family: $text-font;
-}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
@@ -162,19 +170,16 @@ li p {
   }
   p {
     margin: 0 auto;
-    .tab {
-      display: inline-block;
-      min-width: 300px;
-      margin-right: 20px;
+    &:not(.sub-text) {
+      line-height: 26px;
     }
   }
   .col {
     width: fit-content;
     margin-right: 60px;
-    line-height: 26px;
-    margin-top: 4px;
   }
   .sub-text {
+    margin-bottom: 4px;
     &:not(:first-child) {
       margin-top: 28px;
     }
@@ -296,14 +301,6 @@ li p {
         }
       }
     }
-    p {
-      margin: 16px 0px 4px;
-    }
-    li {
-      list-style: none;
-      padding-left: 12px;
-      margin: 16px auto;
-    }
   }
   .arrow-part {
     margin-top: 17px;
@@ -344,15 +341,14 @@ li p {
     .blue-section {
       padding-bottom: 8px;
     }
-    .sub-text .ja {
-      margin-top: 4px;
-    }
     .row .ja {
       color: #257a9e;
     }
     .col {
-      margin-top: 8px;
       min-width: 180px;
+    }
+    .sub-text .ja {
+      margin-top: 8px;
     }
   }
   .example {

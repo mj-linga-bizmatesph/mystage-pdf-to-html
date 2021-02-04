@@ -43,13 +43,20 @@ body {
 }
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 0px;
 
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: #248bb0;
+    font-size: 15px;
+  }
   .level {
-    margin-left: 25px;
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
   }
 }
 .line {
@@ -80,6 +87,10 @@ body {
   margin: 0px 0px 1px;
   p {
     margin: 0px 0px 1px;
+    line-height: unset !important;
+  }
+  .ja {
+    margin-top: 5px;
   }
 }
 .section {
@@ -124,9 +135,6 @@ body {
   p {
     margin: 3px auto;
   }
-}
-.text {
-  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif;
@@ -297,16 +305,8 @@ li p {
         }
       }
     }
-    .col {
-      margin-right: 36px;
-    }
     p {
       margin: 16px 0px 4px;
-    }
-    li {
-      list-style: none;
-      padding-left: 12px;
-      margin: 16px auto;
     }
   }
   .arrow-part {
@@ -353,9 +353,6 @@ li p {
     .blue-section {
       padding-bottom: 8px;
     }
-    .sub-text .ja {
-      margin-top: 4px;
-    }
     .row .ja {
       color: #257a9e;
     }
@@ -381,9 +378,6 @@ li p {
     ul {
       margin: 24px 0px 0px 16px;
     }
-  }
-  .sub-text .ja {
-    margin-top: 5px;
   }
   .sub-text.mg .ja {
     margin-top: 8px;

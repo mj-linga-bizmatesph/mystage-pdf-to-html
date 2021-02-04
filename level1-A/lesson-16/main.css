@@ -41,14 +41,22 @@ body {
 
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
+  font-size: 0px;
+}
+
+.program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #248bb0;
   font-size: 15px;
 }
 
 .program-rank .level {
-  margin-left: 25px;
+  padding: 3px 12px 3px 13px;
+  background-color: #339999;
+  font-size: 15px;
 }
 
 .line {
@@ -90,6 +98,11 @@ body {
 
 .sub-text p {
   margin: 0px 0px 1px;
+  line-height: unset !important;
+}
+
+.sub-text .ja {
+  margin-top: 5px;
 }
 
 .section {
@@ -141,10 +154,6 @@ body {
   margin: 3px auto;
 }
 
-.text {
-  font-family: "Trebuchet MS";
-}
-
 .ja {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 12.5px;
@@ -188,10 +197,8 @@ li p {
   margin: 0 auto;
 }
 
-.see-content p .tab {
-  display: inline-block;
-  min-width: 300px;
-  margin-right: 20px;
+.see-content p:not(.sub-text) {
+  line-height: 26px;
 }
 
 .see-content .col {
@@ -199,8 +206,10 @@ li p {
   width: -moz-fit-content;
   width: fit-content;
   margin-right: 60px;
-  line-height: 26px;
-  margin-top: 4px;
+}
+
+.see-content .sub-text {
+  margin-bottom: 4px;
 }
 
 .see-content .sub-text:not(:first-child) {
@@ -343,16 +352,6 @@ li p {
   color: #000000;
 }
 
-.page-2 .lesson-points p {
-  margin: 16px 0px 4px;
-}
-
-.page-2 .lesson-points li {
-  list-style: none;
-  padding-left: 12px;
-  margin: 16px auto;
-}
-
 .page-2 .arrow-part {
   margin-top: 17px;
   margin-left: 125px;
@@ -400,17 +399,16 @@ li p {
   padding-bottom: 8px;
 }
 
-.page-2 .see-content .sub-text .ja {
-  margin-top: 4px;
-}
-
 .page-2 .see-content .row .ja {
   color: #257a9e;
 }
 
 .page-2 .see-content .col {
-  margin-top: 8px;
   min-width: 180px;
+}
+
+.page-2 .see-content .sub-text .ja {
+  margin-top: 8px;
 }
 
 .page-2 .example {

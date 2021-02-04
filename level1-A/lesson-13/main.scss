@@ -43,13 +43,20 @@ body {
 }
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 0px;
 
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: #248bb0;
+    font-size: 15px;
+  }
   .level {
-    margin-left: 25px;
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
   }
 }
 .line {
@@ -120,9 +127,6 @@ body {
   p {
     margin: 3px auto;
   }
-}
-.text {
-  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif;
@@ -268,27 +272,23 @@ sup {
   }
   .lesson-points {
     margin-top: 16px;
-    padding: 2px 0px 0px 47px;
+    padding: 2px 0px 2px 47px;
     width: 687px;
     background: $primary-light;
     &.ja {
       color: $primary;
-      font-size: 12px;
+      font-weight: normal;
       letter-spacing: 0.1px;
     }
-    div {
-      margin-bottom: 12px;
+    .subtitle {
       p {
-        margin: 2px auto;
+        margin: 3px auto;
+        font-size: 12px;
         &:first-child {
           color: #000000;
           font-size: 15px;
         }
       }
-    }
-    p {
-      line-height: 22px;
-      margin: 12px auto;
     }
   }
   .arrow-part {

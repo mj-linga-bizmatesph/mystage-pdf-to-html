@@ -41,14 +41,22 @@ body {
 
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
+  font-size: 0px;
+}
+
+.program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #248bb0;
   font-size: 15px;
 }
 
 .program-rank .level {
-  margin-left: 25px;
+  padding: 3px 12px 3px 13px;
+  background-color: #339999;
+  font-size: 15px;
 }
 
 .line {
@@ -90,6 +98,11 @@ body {
 
 .sub-text p {
   margin: 0px 0px 1px;
+  line-height: unset !important;
+}
+
+.sub-text .ja {
+  margin-top: 5px;
 }
 
 .section {
@@ -139,10 +152,6 @@ body {
 
 .sub-head p {
   margin: 3px auto;
-}
-
-.text {
-  font-family: "Trebuchet MS";
 }
 
 .ja {
@@ -344,18 +353,8 @@ li p {
   color: #000000;
 }
 
-.page-2 .lesson-points .col {
-  margin-right: 36px;
-}
-
 .page-2 .lesson-points p {
   margin: 16px 0px 4px;
-}
-
-.page-2 .lesson-points li {
-  list-style: none;
-  padding-left: 12px;
-  margin: 16px auto;
 }
 
 .page-2 .arrow-part {
@@ -411,10 +410,6 @@ li p {
   padding-bottom: 8px;
 }
 
-.page-2 .see-content .sub-text .ja {
-  margin-top: 4px;
-}
-
 .page-2 .see-content .row .ja {
   color: #257a9e;
 }
@@ -441,10 +436,6 @@ li p {
 
 .page-3 .try-content ul {
   margin: 24px 0px 0px 16px;
-}
-
-.page-3 .sub-text .ja {
-  margin-top: 5px;
 }
 
 .page-3 .sub-text.mg .ja {

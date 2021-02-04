@@ -43,13 +43,20 @@ body {
 }
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 0px;
 
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: #248bb0;
+    font-size: 15px;
+  }
   .level {
-    margin-left: 25px;
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
   }
 }
 .line {
@@ -121,9 +128,6 @@ body {
     margin: 3px auto;
   }
 }
-.text {
-  font-family: $text-font;
-}
 .ja {
   font-family: $ja-font, sans-serif;
   font-size: 12.5px;
@@ -168,7 +172,6 @@ sup {
     margin-bottom: 28px;
   }
   .text {
-    font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
   }
@@ -291,17 +294,6 @@ sup {
           color: #000000;
         }
       }
-    }
-    .col {
-      margin-right: 36px;
-    }
-    p {
-      margin: 16px auto;
-    }
-    li {
-      list-style: none;
-      padding-left: 12px;
-      margin: 16px auto;
     }
   }
   .arrow-part {

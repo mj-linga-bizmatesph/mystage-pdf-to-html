@@ -104,7 +104,6 @@ body {
 .sub-head .subtitle {
   font-family: "Noto Sans JP";
   color: #257a9e;
-  font-weight: bold;
   font-size: 15px;
 }
 
@@ -112,10 +111,8 @@ body {
   margin: 3px auto;
 }
 
-.sub-head p:nth-child(n + 3) {
-  color: #257a9e;
-  font-size: 12px;
-  line-height: 22px;
+.sub-head p:not(.subtitle) {
+  font-weight: normal;
 }
 
 .ja {
@@ -144,6 +141,7 @@ sup {
   padding: 0;
   line-height: 26px;
   position: relative;
+  width: 710px;
 }
 
 .lesson-list ul:before {
@@ -173,7 +171,7 @@ sup {
 }
 
 .lesson-list p {
-  margin: 0px 0px 0px 8px;
+  margin: 0px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,41 +184,6 @@ sup {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.image {
-  position: absolute;
-  right: 58px;
-  top: 390px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  z-index: 2;
-}
-
-.image .shape {
-  width: 320px;
-  display: block;
-}
-
-.image .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.image .name p {
-  padding-left: 38px;
-  padding-right: 25px;
-  margin: 2px 0px;
-  text-align: center;
-}
-
-.image .name p span {
-  display: block;
 }
 
 .footer {
@@ -251,7 +214,7 @@ sup {
 }
 
 .page-2 .lesson-list {
-  margin-top: 260px;
+  margin-top: 238px;
 }
 
 .page-2 .sub-text.ja {
@@ -259,13 +222,9 @@ sup {
 }
 
 .page-2 ul .sub-text.ja {
-  font-size: 14px;
+  font-size: 15px;
   color: #257a9e;
   margin: 0px 0px 0px 4px;
-}
-
-.page-2 ul li span {
-  display: block;
 }
 
 /* Page 3 */
@@ -282,15 +241,11 @@ sup {
 }
 
 .page-3 .lesson-list {
-  margin-top: 210px;
+  margin-top: 232px;
 }
 
 .page-3 ul .sub-text.ja {
   font-size: 14px;
   color: #257a9e;
   margin: 0px 0px 0px 4px;
-}
-
-.page-3 ul li span {
-  display: block;
 }

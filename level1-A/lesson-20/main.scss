@@ -90,15 +90,12 @@ body {
   .subtitle {
     font-family: $ja-font;
     color: $primary;
-    font-weight: bold;
     font-size: 15px;
   }
   p {
     margin: 3px auto;
-    &:nth-child(n + 3) {
-      color: $primary;
-      font-size: 12px;
-      line-height: 22px;
+    &:not(.subtitle) {
+      font-weight: normal;
     }
   }
 }
@@ -125,6 +122,7 @@ sup {
     padding: 0;
     line-height: 26px;
     position: relative;
+    width: 710px;
     &:before {
       content: '';
       position: absolute;
@@ -149,36 +147,11 @@ sup {
     padding-left: 9px;
   }
   p {
-    margin: 0px 0px 0px 8px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     span {
       flex: 1;
-    }
-  }
-}
-.image {
-  position: absolute;
-  right: 58px;
-  top: 390px;
-  width: fit-content;
-  z-index: 2;
-
-  .shape {
-    width: 320px;
-    display: block;
-  }
-  .name {
-    display: flex;
-    justify-content: space-between;
-    p {
-      padding-left: 38px;
-      padding-right: 25px;
-      margin: 2px 0px;
-      text-align: center;
-      span {
-        display: block;
-      }
     }
   }
 }
@@ -209,21 +182,16 @@ sup {
     top: 680px;
   }
   .lesson-list {
-    margin-top: 260px;
+    margin-top: 238px;
   }
   .sub-text.ja {
     margin: 8px 0px 0px 0px;
   }
   ul {
     .sub-text.ja {
-      font-size: 14px;
+      font-size: 15px;
       color: $primary;
       margin: 0px 0px 0px 4px;
-    }
-    li {
-      span {
-        display: block;
-      }
     }
   }
 }
@@ -241,18 +209,13 @@ sup {
     }
   }
   .lesson-list {
-    margin-top: 210px;
+    margin-top: 232px;
   }
   ul {
     .sub-text.ja {
       font-size: 14px;
       color: $primary;
       margin: 0px 0px 0px 4px;
-    }
-    li {
-      span {
-        display: block;
-      }
     }
   }
 }

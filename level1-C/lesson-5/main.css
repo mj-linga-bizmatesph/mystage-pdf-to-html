@@ -39,14 +39,22 @@ body {
 
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
+  font-size: 0px;
+}
+
+.program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #248bb0;
   font-size: 15px;
 }
 
 .program-rank .level {
-  margin-left: 25px;
+  padding: 3px 12px 3px 13px;
+  background-color: #339999;
+  font-size: 15px;
 }
 
 .line {
@@ -209,6 +217,10 @@ sup {
   margin-top: 4px;
 }
 
+.see-content .text:not(:last-child) {
+  margin-bottom: 22px;
+}
+
 .see-content .text-title {
   font-family: "Trebuchet MS";
 }
@@ -318,5 +330,5 @@ sup {
   font-size: 9px;
   position: absolute;
   bottom: 43px;
-  left: 583px;
+  left: 570px;
 }

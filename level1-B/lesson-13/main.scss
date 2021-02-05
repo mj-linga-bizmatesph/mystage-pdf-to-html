@@ -164,7 +164,7 @@ sup {
     margin: 0 auto;
     .tab {
       display: inline-block;
-      width: 420PX;
+      width: 420px;
     }
   }
   .col {
@@ -195,7 +195,7 @@ sup {
           display: inline-block;
           margin: -0.5px 0px;
           &:first-child {
-            width: 52px;
+            width: 57px;
             word-wrap: break-word;
           }
           &:last-child {
@@ -332,9 +332,10 @@ sup {
     p {
       margin: 4.5px auto;
       font-size: 12px;
-      span {
-        margin-left: 20px;
-      }
+    }
+    .emphasize {
+      font-size: 14px;
+      letter-spacing: 2px;
     }
     .dark-blue {
       color: $primary-dark;
@@ -416,7 +417,7 @@ sup {
     }
 
     .tab {
-      width: 300px;
+      width: 420px;
     }
     .row .ja {
       margin-top: 4px;
@@ -536,4 +537,9 @@ sup {
 }
 .t90 {
   top: 90px;
+}
+
+/* Sizes - margin-left */
+.ml0 {
+  margin-left: 0px;
 }

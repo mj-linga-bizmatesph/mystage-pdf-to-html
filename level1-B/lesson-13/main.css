@@ -189,7 +189,7 @@ sup {
 
 .see-content p .tab {
   display: inline-block;
-  width: 420PX;
+  width: 420px;
 }
 
 .see-content .col {
@@ -230,7 +230,7 @@ sup {
 }
 
 .see-content .example .conversation .row p:first-child {
-  width: 52px;
+  width: 57px;
   word-wrap: break-word;
 }
 
@@ -400,8 +400,9 @@ sup {
   font-size: 12px;
 }
 
-.page-2 .arrow-part p span {
-  margin-left: 20px;
+.page-2 .arrow-part .emphasize {
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 .page-2 .arrow-part .dark-blue {
@@ -493,7 +494,7 @@ sup {
 }
 
 .page-2 .see-content .tab {
-  width: 300px;
+  width: 420px;
 }
 
 .page-2 .see-content .row .ja {
@@ -632,4 +633,9 @@ sup {
 
 .t90 {
   top: 90px;
+}
+
+/* Sizes - margin-left */
+.ml0 {
+  margin-left: 0px;
 }

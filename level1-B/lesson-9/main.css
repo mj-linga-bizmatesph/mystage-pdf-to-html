@@ -41,14 +41,22 @@ body {
 
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
+  font-size: 0px;
+}
+
+.program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #248bb0;
   font-size: 15px;
 }
 
 .program-rank .level {
-  margin-left: 25px;
+  padding: 3px 12px 3px 13px;
+  background-color: #339999;
+  font-size: 15px;
 }
 
 .line {
@@ -346,7 +354,7 @@ sup {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 687px;
+  width: 783px;
   padding-bottom: 4px;
   background: #cce0ec;
 }
@@ -425,6 +433,33 @@ sup {
 
 .page-2 .arrow-part div .tab b {
   color: #2078a0;
+}
+
+.page-2 .image-part {
+  /* margin-top: 20px; */
+  position: relative;
+  margin-left: 87px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.page-2 .image-part .arrow {
+  width: 568px;
+  height: 40px;
+}
+
+.page-2 .image-part .line {
+  width: 5px;
+  right: 221px;
+  position: absolute;
+  margin-top: 0px;
+  height: 45px;
+}
+
+.page-2 .image-part div p {
+  right: 218px;
+  position: absolute;
+  top: 35px;
 }
 
 .page-2 .see-content {

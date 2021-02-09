@@ -334,6 +334,10 @@ sup {
   width: 350px;
 }
 
+.act-content .indent {
+  margin-left: 14px;
+}
+
 .footer {
   font-size: 9px;
   position: absolute;
@@ -618,8 +622,7 @@ sup {
 }
 
 .page-3 .act-content .indent {
-  line-height: 0px;
-  margin: 0 auto 0 7px;
+  margin-left: 14px;
 }
 
 /* Clear styles */
@@ -657,4 +660,9 @@ sup {
 /* line height */
 .lh0 {
   line-height: 0px;
+}
+
+/* padding top */
+.pt2 {
+  padding-top: 2px;
 }

@@ -276,6 +276,9 @@ sup {
     display: inline-block;
     width: 350px;
   }
+  .indent {
+    margin-left:14px
+  }
 }
 .footer {
   font-size: 9px;
@@ -519,8 +522,7 @@ sup {
       margin-top: 30px;
     }
     .indent {
-      line-height: 0px;
-      margin: 0 auto 0 7px;
+      margin-left:14px
     }
   }
 }
@@ -555,6 +557,11 @@ sup {
 }
 
 /* line height */
-.lh0{
+.lh0 {
   line-height: 0px;
+}
+
+/* padding top */
+.pt2 {
+  padding-top: 2px;
 }

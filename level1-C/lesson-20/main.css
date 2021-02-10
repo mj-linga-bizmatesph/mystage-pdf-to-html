@@ -24,16 +24,6 @@ body {
   font-weight: bold;
 }
 
-.i {
-  font-family: italic;
-}
-
-.u-sup {
-  border-bottom: solid 1.5px black;
-  display: inline-block;
-  line-height: 14px;
-}
-
 .program-rank {
   position: absolute;
   top: 40px;
@@ -75,46 +65,9 @@ body {
   color: #ffffff;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .sub-text {
   font-family: "Arial" !important;
   line-height: 26px;
-}
-
-.sub-head {
-  position: absolute;
-  top: 125px;
-  left: 47px;
-  width: 760px;
-}
-
-.sub-head .subtitle {
-  font-family: "Noto Sans JP";
-  color: #257a9e;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.ja {
-  font-family: "Noto Sans JP", sans-serif !important;
-  font-size: 12.5px;
-  font-weight: bold;
-  color: #595959;
-}
-
-sup {
-  font-size: 10px;
-  line-height: 16px;
-  display: inline-block;
 }
 
 .lesson-list {

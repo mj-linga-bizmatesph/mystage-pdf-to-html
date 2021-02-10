@@ -32,22 +32,22 @@ body {
   font-weight: bold;
 }
 .program-rank {
-    position: absolute;
-    top: 40px;
-    left: 48px;
-    color: #ffffff;
-    font-size: 0px;
-  
-    .type {
-      padding: 3px 16px 3px 14px;
-      background-color: #248bb0;
-      font-size: 15px;
-    }
-    .level {
-      padding: 3px 12px 3px 13px;
-      background-color: #339999;
-      font-size: 15px;
-    }
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  color: #ffffff;
+  font-size: 0px;
+
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: #248bb0;
+    font-size: 15px;
+  }
+  .level {
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
+  }
 }
 .line {
   margin: 0 12px;
@@ -60,7 +60,7 @@ body {
 }
 .lesson-number {
   position: absolute;
-  left: 818px;
+  left: 823px;
   top: 66px;
   font-size: 13px;
   color: #ffffff;
@@ -101,7 +101,7 @@ body {
     margin-top: 14px;
   }
   &.d2 {
-    margin-top: 5px;
+    margin-top: 30px;
   }
 }
 .text {
@@ -140,7 +140,7 @@ body {
     margin-right: 20px;
   }
   .col2 {
-    padding-right: 56px;
+    padding-right: 50px;
   }
     .text {
     font-family: $text-font;
@@ -233,5 +233,5 @@ body {
   font-size: 9px;
   position: absolute;
   bottom: 43px;
-  left: 571px;
+  left: 612px;
 }

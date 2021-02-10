@@ -28,14 +28,6 @@ body {
 .b {
   font-weight: bold;
 }
-.i {
-  font-family: italic;
-}
-.u-sup {
-  border-bottom: solid 1.5px black;
-  display: inline-block;
-  line-height: 14px;
-}
 .program-rank {
     position: absolute;
     top: 40px;
@@ -72,38 +64,10 @@ body {
   text-align: center;
   color: #ffffff;
 }
-.row {
-  display: flex;
-  flex-direction: row;
-}
 .sub-text{
   font-family: $title-font !important;
   line-height: 26px;
 }
-.sub-head {
-  position: absolute;
-  top: 125px;
-  left: 47px;
-  width: 760px;
-  .subtitle {
-    font-family: $ja-font;
-    color: $primary;
-    font-weight: bold;
-    font-size: 15px;
-  }
-}
-.ja {
-  font-family: $ja-font, sans-serif !important;
-  font-size: 12.5px;
-  font-weight: bold;
-  color: #595959;
-}
-sup {
-  font-size: 10px;
-  line-height: 16px;
-  display: inline-block;
-}
-
 .lesson-list {
   font-family: $text-font;
   font-size: 15px;

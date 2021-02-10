@@ -27,16 +27,6 @@ body {
   font-weight: bold;
 }
 
-.i {
-  font-family: italic;
-}
-
-.u-sup {
-  border-bottom: solid 1.5px black;
-  display: inline-block;
-  line-height: 14px;
-}
-
 .program-rank {
   position: absolute;
   top: 40px;
@@ -47,7 +37,7 @@ body {
 
 .program-rank .type {
   padding: 3px 16px 3px 14px;
-  background-color: #248bb0;
+  background-color: #257a9e;
   font-size: 15px;
 }
 
@@ -127,42 +117,8 @@ body {
   margin-top: 30px;
 }
 
-.sub-head {
-  position: relative;
-  margin-top: 128px;
-  left: 47px;
-}
-
-.sub-head .subtitle {
-  font-family: "Noto Sans JP";
-  color: #257a9e;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.sub-head p {
-  margin: 3px auto;
-}
-
 .text {
   font-family: "Trebuchet MS";
-}
-
-.ja {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 12.5px;
-  font-weight: bold;
-  color: #595959;
-}
-
-.primary-text {
-  color: #257a9e;
-}
-
-sup {
-  font-size: 10px;
-  line-height: 16px;
-  display: inline-block;
 }
 
 /* See */
@@ -221,34 +177,6 @@ sup {
   margin-bottom: 22px;
 }
 
-.see-content .text-title {
-  font-family: "Trebuchet MS";
-}
-
-.see-content .example {
-  margin-top: 37px;
-  margin-left: 18.5px;
-}
-
-.see-content .example .conversation {
-  line-height: 26px;
-  margin-top: 4px;
-}
-
-.see-content .example .conversation .row p {
-  display: inline-block;
-  margin: -0.5px 0px;
-}
-
-.see-content .example .conversation .row p:first-child {
-  width: 52px;
-  word-wrap: break-word;
-}
-
-.see-content .example .conversation .row p:last-child {
-  max-width: 640px;
-}
-
 /* Try */
 .try-content {
   position: relative;
@@ -280,10 +208,6 @@ sup {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-}
-
-.try-content .sub-text.mg {
-  margin-top: 25px;
 }
 
 /* Act */

@@ -1,10 +1,7 @@
 $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
-$ja-font: 'Noto Sans JP';
 
 $primary: #257a9e;
-$primary-dark: #083051;
-$primary-light: #cce0ec;
 
 $left-pixel: 126.5px;
 
@@ -31,31 +28,23 @@ body {
 .b {
   font-weight: bold;
 }
-.i {
-  font-family: italic;
-}
-.u-sup {
-  border-bottom: solid 1.5px black;
-  display: inline-block;
-  line-height: 14px;
-}
 .program-rank {
-    position: absolute;
-    top: 40px;
-    left: 48px;
-    color: #ffffff;
-    font-size: 0px;
-  
-    .type {
-      padding: 3px 16px 3px 14px;
-      background-color: #248bb0;
-      font-size: 15px;
-    }
-    .level {
-      padding: 3px 12px 3px 13px;
-      background-color: #339999;
-      font-size: 15px;
-    }
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  color: #ffffff;
+  font-size: 0px;
+
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: $primary;
+    font-size: 15px;
+  }
+  .level {
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
+  }
 }
 .line {
   margin: 0 12px;
@@ -112,36 +101,8 @@ body {
     margin-top: 30px;
   }
 }
-.sub-head {
-  position: relative;
-  margin-top: 128px;
-  left: 47px;
-  .subtitle {
-    font-family: $ja-font;
-    color: $primary;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  p {
-    margin: 3px auto;
-  }
-}
 .text {
   font-family: $text-font;
-}
-.ja {
-  font-family: $ja-font, sans-serif;
-  font-size: 12.5px;
-  font-weight: bold;
-  color: #595959;
-}
-.primary-text {
-  color: $primary;
-}
-sup {
-  font-size: 10px;
-  line-height: 16px;
-  display: inline-block;
 }
 
 /* See */
@@ -152,7 +113,6 @@ sup {
   font-size: 15px;
 
   .blue-section {
-    // background-color: $primary-light;
     padding-top: 13px;
     padding-left: 18.5px;
     height: fit-content;
@@ -179,37 +139,12 @@ sup {
   .col2 {
     padding-right: 55px;
   }
-    .text {
+  .text {
     font-family: $text-font;
     line-height: 26px;
     margin-top: 4px;
     &:not(:last-child) {
       margin-bottom: 22px;
-    }
-  }
-  .text-title {
-    font-family: $text-font;
-  }
-  .example {
-    margin-top: 37px;
-    margin-left: 18.5px;
-
-    .conversation {
-      line-height: 26px;
-      margin-top: 4px;
-      .row {
-        p {
-          display: inline-block;
-          margin: -0.5px 0px;
-          &:first-child {
-            width: 52px;
-            word-wrap: break-word;
-          }
-          &:last-child {
-            max-width: 640px;
-          }
-        }
-      }
     }
   }
 }
@@ -235,9 +170,6 @@ sup {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-  }
-  .sub-text.mg {
-    margin-top: 25px;
   }
 }
 

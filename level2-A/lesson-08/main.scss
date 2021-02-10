@@ -72,7 +72,7 @@ ul {
   position: absolute;
   left: 20px;
   top: 180px;
-  width: 160px;
+  width: 170px;
   font-size: 15px;
   
   div {
@@ -95,12 +95,12 @@ ul {
 .try-content {
   position: relative;
   margin-left: $left-pixel;
-  padding-right: 20px;
+  padding-right: 16px;
   padding-top: 4px;
   font-size: 18px;
   background-image: linear-gradient(to right,#fff, #fff, #E6E6E6);
   border-radius: 10px;
-  width: calc(100% - #{$left-pixel} - 24px);
+  width: calc(100% - #{$left-pixel} - 20px);
 }
 
 /* See */
@@ -129,50 +129,14 @@ ul {
 
 /* Try */
 .try-content {
-  margin-top: 83px;
-  ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 120px;
-  }
+  margin-top: 104px;
 }
 
 /* Act */
 .act-content {
-  margin-top: 26px;
+  margin-top: 36px;
   height: fit-content;
   min-height: 26px;
-
-  table {
-    margin-top: 5px;
-    font-size: 14px;
-    border-spacing: 0px;
-    padding-bottom: 5px;
-    th, td {
-      max-width: 120px;
-      min-width: 80px;
-      word-wrap: break-word;
-      padding: 4px 7px;
-      border: 1px solid #ffffff;
-    }
-    th {
-      background-color: #cdb925;
-      color: #ffffff;
-      &:first-child {
-        background-color: transparent;
-      }
-    }
-    td {
-      text-align: right;
-      &:first-child {
-        padding: 2px;
-        width: 260px;
-        font-weight: bold;
-        text-align: left;
-      }
-    }
-  }
 }
 
 .footer {

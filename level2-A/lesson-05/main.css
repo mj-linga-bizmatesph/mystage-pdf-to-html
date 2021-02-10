@@ -109,8 +109,8 @@ ul li {
   padding-right: 20px;
   padding-top: 4px;
   font-size: 18px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#E6E6E6));
-  background-image: linear-gradient(to right, #fff, #fff, #E6E6E6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
+  background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
   width: calc(100% - 218px - 24px);
 }
@@ -142,20 +142,33 @@ ul li {
 
 /* Try */
 .try-content {
-  margin-top: 83px;
+  margin-top: 212px;
 }
 
-.try-content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 120px;
+.try-content table {
+  margin-top: 5px;
+  font-size: 15px;
+  border-spacing: 0px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.try-content table th, .try-content table td {
+  max-width: 140px;
+  min-width: 60px;
+  word-wrap: break-word;
+  border: 1px solid #ffffff;
+}
+
+.try-content table th {
+  background-color: #cdb925;
+  text-align: left;
+  padding: 4px 6px;
+  font-weight: normal;
+}
+
+.try-content table td {
+  padding: 8px;
 }
 
 /* Act */
@@ -165,41 +178,6 @@ ul li {
   height: -moz-fit-content;
   height: fit-content;
   min-height: 26px;
-}
-
-.act-content table {
-  margin-top: 5px;
-  font-size: 14px;
-  border-spacing: 0px;
-  padding-bottom: 5px;
-}
-
-.act-content table th, .act-content table td {
-  max-width: 120px;
-  min-width: 80px;
-  word-wrap: break-word;
-  padding: 4px 7px;
-  border: 1px solid #ffffff;
-}
-
-.act-content table th {
-  background-color: #cdb925;
-  color: #ffffff;
-}
-
-.act-content table th:first-child {
-  background-color: transparent;
-}
-
-.act-content table td {
-  text-align: right;
-}
-
-.act-content table td:first-child {
-  padding: 2px;
-  width: 260px;
-  font-weight: bold;
-  text-align: left;
 }
 
 .footer {

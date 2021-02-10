@@ -2,20 +2,21 @@ $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
 $ja-font: 'Noto Sans JP';
 
-$primary: #257A9E;
+$primary: #257a9e;
 $primary-dark: #083051;
-$primary-light: #CCE0EC;
+$primary-light: #cce0ec;
 
 body {
   margin: 0;
   padding: 0;
-  font-family: $title-font;
+  font-family: $text-font;
 }
 .page-1,
 .page-2,
 .page-3 {
   width: 892.75px;
-  height: 1262px;
+  min-height: 1200px;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
@@ -40,13 +41,20 @@ body {
 }
 .program-rank {
   position: absolute;
-  top: 41px;
-  left: 62px;
+  top: 40px;
+  left: 48px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 0px;
 
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: #248bb0;
+    font-size: 15px;
+  }
   .level {
-    margin-left: 25px;
+    padding: 3px 12px 3px 13px;
+    background-color: #339999;
+    font-size: 15px;
   }
 }
 .line {
@@ -61,7 +69,7 @@ body {
 .lesson-number {
   position: absolute;
   min-width: 15px;
-  left: 819px;
+  left: 818px;
   top: 66px;
   font-size: 13px;
   text-align: center;
@@ -70,7 +78,6 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  font-family: $text-font;
 }
 .sub-text {
   font-family: $title-font !important;
@@ -88,15 +95,12 @@ body {
   }
   p {
     margin: 3px auto;
-    &:nth-child(n+3) {
+    &:nth-child(n + 3) {
       color: $primary;
       font-size: 12px;
       line-height: 22px;
     }
   }
-}
-.text {
-  font-family: $text-font;
 }
 .ja {
   font-family: $ja-font, sans-serif !important;
@@ -121,25 +125,25 @@ sup {
     padding: 0;
     line-height: 26px;
     position: relative;
-      &:before {
-        content: '';
-        position: absolute;
-        left: -16px;
-        top: 7px;
-        width: 0; 
-        height: 0; 
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 11px solid #000000;  
-        display: inline-block;
-        vertical-align: middle;
-      }
-      &.initial {
-        margin-top: 30px;
-      }
-      .sub-text {
-        margin-left: 4px;
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      left: -16px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 11px solid #000000;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &.initial {
+      margin-top: 30px;
+    }
+    .sub-text {
+      margin-left: 4px;
+    }
   }
   li {
     padding-left: 9px;
@@ -153,28 +157,57 @@ sup {
     }
   }
 }
+.image {
+  position: absolute;
+  right: 58px;
+  top: 390px;
+  width: fit-content;
+  z-index: 2;
+
+  .shape {
+    width: 320px;
+    display: block;
+  }
+  .name {
+    display: flex;
+    justify-content: space-between;
+    p {
+      padding-left: 38px;
+      padding-right: 25px;
+      margin: 2px 0px;
+      text-align: center;
+      span {
+        display: block;
+      }
+    }
+  }
+}
 
 .footer {
   font-size: 9px;
   position: absolute;
-  top: 1210px;
-  left: 616px;
-}
-
-.title {
-  top: 72px;
-  left: 50px;
-  word-spacing: 1px;
-  .ja {
-    font-size: 27px;
-    color: #000000;
-    font-weight: bold;
-    margin-right: 3px;
-  }
+  width: 345px;
+  text-align: right;
+  bottom: 43px;
+  left: 492px;
+  font-family: $title-font;
 }
 
 /* Page 2 */
 .page-2 {
+  .title {
+    top: 72px;
+    left: 50px;
+    .ja {
+      font-size: 27px;
+      color: #000000;
+      font-weight: bold;
+      margin-right: 3px;
+    }
+  }
+  .image {
+    top: 680px;
+  }
   .lesson-list {
     margin-top: 260px;
   }
@@ -197,6 +230,16 @@ sup {
 
 /* Page 3 */
 .page-3 {
+  .title {
+    top: 72px;
+    left: 50px;
+    .ja {
+      font-size: 27px;
+      color: #000000;
+      font-weight: bold;
+      margin-right: 3px;
+    }
+  }
   .lesson-list {
     margin-top: 210px;
   }

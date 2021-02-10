@@ -23,10 +23,6 @@ body {
   font-weight: bold;
 }
 
-.i {
-  font-style: italic;
-}
-
 .title {
   position: absolute;
   top: 59px;
@@ -80,15 +76,11 @@ ul li {
   padding-left: 8px;
 }
 
-.red {
-  color: red;
-}
-
 .biz-tip {
   position: absolute;
   left: 20px;
   top: 180px;
-  width: 170px;
+  width: 167px;
   font-size: 15px;
 }
 
@@ -96,12 +88,18 @@ ul li {
   height: 213px;
 }
 
-.biz-tip p {
-  margin-bottom: 0px;
-}
-
 .biz-tip ul {
   margin-left: 15px;
+  list-style-type: disc;
+  font-size: 14.5px;
+}
+
+.biz-tip ul li {
+  padding-left: 0px;
+}
+
+.biz-tip p {
+  margin-bottom: 0px;
 }
 
 .biz-tip .sub-text {
@@ -111,6 +109,10 @@ ul li {
 
 .biz-tip .text {
   margin-top: 18px;
+}
+
+.biz-tip .red {
+  color: red;
 }
 
 .see-content,
@@ -157,21 +159,9 @@ ul li {
   margin-top: 126px;
 }
 
-.try-content p {
-  margin: 0 auto;
-}
-
-.try-content .example {
-  margin-bottom: 20px;
-}
-
-.try-content .example .red {
-  font-size: 16.5px;
-}
-
 /* Act */
 .act-content {
-  margin-top: 38px;
+  margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

@@ -48,9 +48,8 @@ body {
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  line-height: 44px;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  line-height: 43px;
+  font-size: 21.5px;
   padding-left: 6px;
   background-image: url('/images/02-section-arrow.png');
   background-size: 100%;
@@ -58,7 +57,7 @@ body {
   height: 50px;
   width: 206px;
 
-  &.act {
+  &.try, &.act {
     top: -7px;
   }
 }

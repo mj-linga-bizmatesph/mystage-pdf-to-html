@@ -82,6 +82,7 @@ body {
 }
 .sub-text {
   font-family: $title-font !important;
+  font-weight: bold;
 }
 .section {
   position: absolute;
@@ -245,7 +246,8 @@ sup {
   margin-top: 36px;
   margin-left: $left-pixel;
   padding-left: 18.5px;
-
+  font-size: 15px;
+  
   .sub-text {
     line-height: 22px;
   }

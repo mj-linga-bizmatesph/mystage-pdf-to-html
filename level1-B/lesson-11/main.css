@@ -91,6 +91,7 @@ body {
 
 .sub-text {
   font-family: "Arial" !important;
+  font-weight: bold;
 }
 
 .section {
@@ -373,6 +374,7 @@ sup {
   margin-top: 36px;
   margin-left: 126.5px;
   padding-left: 18.5px;
+  font-size: 15px;
 }
 
 .act-content .sub-text {
@@ -410,8 +412,11 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
+  width: 345px;
+  text-align: right;
   bottom: 43px;
-  left: 598px;
+  left: 492px;
+  font-family: "Arial";
 }
 
 /* Page 2 */

@@ -82,6 +82,7 @@ body {
 }
 .sub-text {
   font-family: $title-font !important;
+  font-weight: bold;
 }
 .section {
   position: absolute;
@@ -251,6 +252,7 @@ sup {
   margin-top: 36px;
   margin-left: $left-pixel;
   padding-left: 18.5px;
+  font-size: 15px;
 
   .sub-text {
     line-height: 22px;
@@ -280,8 +282,11 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
+  width: 345px;
+  text-align: right;
   bottom: 43px;
-  left: 598px;
+  left: 492px;
+  font-family: $title-font;
 }
 
 /* Page 2 */

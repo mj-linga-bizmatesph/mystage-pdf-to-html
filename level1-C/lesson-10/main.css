@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS";
+}
+
+.page-1 {
+  width: 892.75px;
+  height: 1262px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image: url("/images/bg-header.png"), url("/images/bg-footer.png");
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-family: "Arial";
+}
+
+.b {
+  font-weight: bold;
+}
+
+.program-rank {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  color: #ffffff;
+  font-size: 0px;
+}
+
+.program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #248bb0;
+  font-size: 15px;
+}
+
+.program-rank .level {
+  padding: 3px 12px 3px 13px;
+  background-color: #339999;
+  font-size: 15px;
+}
+
+.line {
+  margin: 0 12px;
+}
+
+.title {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-size: 27px;
+}
+
+.lesson-number {
+  position: absolute;
+  min-width: 15px;
+  left: 818px;
+  top: 66px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sub-text {
+  font-family: "Arial" !important;
+  line-height: 26px;
+}
+
+.lesson-list {
+  font-family: "Trebuchet MS";
+  font-size: 15px;
+  margin-top: 240px;
+  margin-left: 149px;
+  margin-right: 15px;
+}
+
+.lesson-list .sub-text.test {
+  position: absolute;
+  left: 60px;
+  color: #257a9e;
+}
+
+.lesson-list .text {
+  margin-top: 30px;
+  display: block;
+}
+
+.lesson-list span {
+  display: block;
+  line-height: 24px;
+}
+
+.footer {
+  font-size: 9px;
+  position: absolute;
+  width: 345px;
+  text-align: right;
+  bottom: 43px;
+  left: 492px;
+  font-family: "Arial";
+}

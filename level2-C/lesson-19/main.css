@@ -105,10 +105,14 @@ ul li {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 117px;
+  min-height: 160px;
   background: url("/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.biz-tip .text:last-child {
+  min-height: 117px;
 }
 
 .biz-tip .red {
@@ -116,13 +120,13 @@ ul li {
 }
 
 .biz-tip ul {
-  margin-top: -15px;
-  margin-left: 14px;
+  position: absolute;
+  bottom: 0px;
+  left: 7px;
 }
 
 .biz-tip ul li {
   padding-left: 0px;
-  line-height: 17px;
 }
 
 .see-content,
@@ -142,6 +146,7 @@ ul li {
 /* See */
 .see-content {
   margin-top: 116px;
+  margin-bottom: 40px;
 }
 
 .see-content .conversation {
@@ -169,14 +174,9 @@ ul li {
   font-weight: normal;
 }
 
-.see-content .conversation .row.phrase p {
-  display: block;
-  margin: 0px 0px;
-}
-
 /* Try */
 .try-content {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* Act */

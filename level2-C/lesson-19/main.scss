@@ -92,21 +92,25 @@ ul {
     padding: 7px 7px 32px 12px;
     width: 168px;
     height: fit-content;
-    min-height: 117px;
+    min-height: 160px;
     background: url('/images/biz-tip-container.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    &:last-child {
+      min-height: 117px;
+    }
   }
   .red {
     color: red;
   }
-
   ul {
-    margin-top: -15px;
-    margin-left: 14px;
+    position: absolute;
+    bottom: 0px;
+    left: 7px;
+
     li {
-     padding-left: 0px;
-     line-height: 17px;
+      padding-left: 0px;
     }
   }
 }
@@ -127,6 +131,7 @@ ul {
 /* See */
 .see-content {
   margin-top: 116px;
+  margin-bottom: 40px;
 
   .conversation {
     margin-bottom: 22px;
@@ -149,18 +154,12 @@ ul {
         font-weight: normal;
       }
     }
-    .row.phrase {
-      p {
-        display: block;
-        margin: 0px 0px;
-      }
-    }
   }
 }
 
 /* Try */
 .try-content {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* Act */

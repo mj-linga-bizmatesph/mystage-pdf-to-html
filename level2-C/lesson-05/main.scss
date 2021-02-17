@@ -70,9 +70,9 @@ ul {
 
 .biz-tip {
   position: absolute;
-  left: 20px;
-  top: 180px;
-  width: 170px;
+  left: 8px;
+  top: 175px;
+  width: 168px;
   font-size: 15px;
   
   div {
@@ -81,9 +81,21 @@ ul {
   .sub-text {
     color: #ffffff;
     font-size: 18px;
+    padding: 5px 11px 5px 12px;
+    width: 164px;
+    background: url('/images/biz-tip-title.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
   .text {
-    margin-top: 18px;
+    margin-top: 6px;
+    padding: 7px 7px 32px 12px;
+    width: 168px;
+    height: fit-content;
+    min-height: 117px;
+    background: url('/images/biz-tip-container.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
   .red {
     color: red;
@@ -123,23 +135,13 @@ ul {
           font-style: italic;
         }
       }
-      p.sub {
-        min-width: 200px;
-        font-weight: normal;
-      }
-    }
-    .row.phrase {
-      p {
-        display: block;
-        margin: 0px 0px;
-      }
     }
   }
 }
 
 /* Try */
 .try-content {
-  margin-top: 127px;
+  margin-top: 110px;
 }
 
 /* Act */

@@ -115,6 +115,21 @@ ul li {
   color: red;
 }
 
+.biz-tip .text:not(:last-child) {
+  min-height: 130px;
+}
+
+.biz-tip ul {
+  position: absolute;
+  bottom: 40px;
+  list-style-type: disc;
+  left: 10px;
+}
+
+.biz-tip ul li {
+  padding-left: 0px;
+}
+
 .see-content,
 .act-content,
 .try-content {

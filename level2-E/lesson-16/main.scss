@@ -100,6 +100,19 @@ ul {
   .red {
     color: red;
   }
+  .text:not(:last-child) {
+    min-height: 130px;
+  }
+  ul {
+    position: absolute;
+    bottom: 40px;
+    list-style-type: disc;
+    left: 10px;
+
+    li {
+      padding-left: 0px;
+    }
+  }
 }
 
 .see-content,

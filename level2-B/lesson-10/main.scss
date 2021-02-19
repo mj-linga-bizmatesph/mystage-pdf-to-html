@@ -63,7 +63,7 @@ ul {
       font-size: 26px;
     }
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -84,6 +84,31 @@ ul {
   }
   p {
     margin: 2px auto;
+  }
+  table {
+    margin-top: 5px;
+    font-size: 15px;
+    border-spacing: 0px;
+    padding-bottom: 5px;
+    position: relative;
+    left: -30px;
+    th, td {
+      max-width: 130px;
+      min-width: 130px;
+      word-wrap: break-word;
+      padding: 4px 7px;
+      border: 1px solid #ffffff;
+      text-align: center;
+    }
+    th {
+      background-color: #cdb925;
+      color: #ffffff;
+    } 
+    td {
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
   }
 }
 

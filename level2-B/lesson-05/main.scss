@@ -100,6 +100,9 @@ ul {
   .red {
     color: red;
   }
+  .red.p {
+    display: block;
+  }
 }
 
 .see-content,
@@ -135,17 +138,19 @@ ul {
           font-style: italic;
         }
       }
-      p.sub {
-        min-width: 500px;
-        font-weight: normal;
-      }
     }
   }
 }
 
 /* Try */
 .try-content {
-  margin-top: 45px;
+  margin-top: 60px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+  }
 }
 
 /* Act */
@@ -153,6 +158,27 @@ ul {
   margin-top: 36px;
   height: fit-content;
   min-height: 26px;
+
+  table {
+    margin-top: 5px;
+    font-size: 15px;
+    border-spacing: 0px;
+    padding-bottom: 5px;
+    th, td {
+      max-width: 176px;
+      min-width: 176px;
+      word-wrap: break-word;
+      padding: 4px 7px;
+      border: 1px solid #ffffff;
+    }
+    th {
+      background-color: #cdb925;
+      color: #ffffff;
+    }
+    td {
+      text-align: center;
+    }
+  }
 }
 
 .footer {

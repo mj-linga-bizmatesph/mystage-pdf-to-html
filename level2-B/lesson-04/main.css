@@ -66,16 +66,6 @@ body {
   top: -6px;
 }
 
-ul {
-  margin: 2px 0px 0px 18px;
-  padding: 0;
-  list-style-type: decimal;
-}
-
-ul li {
-  padding-left: 6px;
-}
-
 .biz-tip {
   position: absolute;
   left: 8px;
@@ -86,10 +76,6 @@ ul li {
 
 .biz-tip div {
   height: 213px;
-}
-
-.biz-tip div:first-child {
-  height: 260px;
 }
 
 .biz-tip .sub-text {
@@ -109,7 +95,7 @@ ul li {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 160px;
+  min-height: 117px;
   background: url("/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -119,24 +105,12 @@ ul li {
   color: red;
 }
 
-.biz-tip .p {
-  font-weight: normal;
-}
-
-.biz-tip .p .i {
-  letter-spacing: normal;
-}
-
-.biz-tip .i {
-  font-style: italic;
-  font-weight: normal;
-  letter-spacing: -1px;
-}
-
 .biz-tip ul {
+  margin: 2px 0px 0px 18px;
+  padding: 0;
   list-style-type: disc;
   position: absolute;
-  bottom: 0px;
+  bottom: 38px;
   left: 10px;
 }
 
@@ -185,7 +159,38 @@ ul li {
 
 /* Try */
 .try-content {
-  margin-top: 125px;
+  margin-top: 60px;
+}
+
+.try-content table {
+  margin-top: 5px;
+  font-size: 15px;
+  border-spacing: 0px;
+  padding-bottom: 5px;
+  left: -15px;
+  position: relative;
+}
+
+.try-content table th, .try-content table td {
+  max-width: 150px;
+  min-width: 145px;
+  word-wrap: break-word;
+  padding: 4px 7px;
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+
+.try-content table th:first-child, .try-content table td:first-child {
+  min-width: 95px;
+}
+
+.try-content table th {
+  background-color: #cdb925;
+  font-weight: normal;
+}
+
+.try-content table td {
+  text-align: left;
 }
 
 /* Act */

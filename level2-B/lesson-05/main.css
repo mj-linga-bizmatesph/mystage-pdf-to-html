@@ -88,10 +88,6 @@ ul li {
   height: 213px;
 }
 
-.biz-tip div:first-child {
-  height: 260px;
-}
-
 .biz-tip .sub-text {
   color: #ffffff;
   font-size: 18px;
@@ -109,7 +105,7 @@ ul li {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 160px;
+  min-height: 117px;
   background: url("/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -119,29 +115,8 @@ ul li {
   color: red;
 }
 
-.biz-tip .p {
-  font-weight: normal;
-}
-
-.biz-tip .p .i {
-  letter-spacing: normal;
-}
-
-.biz-tip .i {
-  font-style: italic;
-  font-weight: normal;
-  letter-spacing: -1px;
-}
-
-.biz-tip ul {
-  list-style-type: disc;
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
-}
-
-.biz-tip ul li {
-  padding-left: 0px;
+.biz-tip .red.p {
+  display: block;
 }
 
 .see-content,
@@ -185,7 +160,20 @@ ul li {
 
 /* Try */
 .try-content {
-  margin-top: 125px;
+  margin-top: 60px;
+}
+
+.try-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 120px;
 }
 
 /* Act */
@@ -195,6 +183,30 @@ ul li {
   height: -moz-fit-content;
   height: fit-content;
   min-height: 26px;
+}
+
+.act-content table {
+  margin-top: 5px;
+  font-size: 15px;
+  border-spacing: 0px;
+  padding-bottom: 5px;
+}
+
+.act-content table th, .act-content table td {
+  max-width: 176px;
+  min-width: 176px;
+  word-wrap: break-word;
+  padding: 4px 7px;
+  border: 1px solid #ffffff;
+}
+
+.act-content table th {
+  background-color: #cdb925;
+  color: #ffffff;
+}
+
+.act-content table td {
+  text-align: center;
 }
 
 .footer {

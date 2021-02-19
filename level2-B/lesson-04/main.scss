@@ -58,15 +58,6 @@ body {
     top: -6px;
   }
 }
-ul {
-  margin: 2px 0px 0px 18px;
-  padding: 0;
-  list-style-type: decimal;
-
-  li {
-    padding-left: 6px;
-  }
-}
 
 .biz-tip {
   position: absolute;
@@ -99,6 +90,19 @@ ul {
   }
   .red {
     color: red;
+  }
+  
+  ul {
+    margin: 2px 0px 0px 18px;
+    padding: 0;
+    list-style-type: disc;
+    position: absolute;
+    bottom: 38px;
+    left: 10px;
+
+    li {
+      padding-left: 0px;
+    }
   }
 }
 
@@ -135,17 +139,40 @@ ul {
           font-style: italic;
         }
       }
-      p.sub {
-        min-width: 500px;
-        font-weight: normal;
-      }
     }
   }
 }
 
 /* Try */
 .try-content {
-  margin-top: 45px;
+  margin-top: 60px;
+
+  table {
+    margin-top: 5px;
+    font-size: 15px;
+    border-spacing: 0px;
+    padding-bottom: 5px;
+    left: -15px;
+    position: relative;
+    th, td {
+      max-width: 150px;
+      min-width: 145px;
+      word-wrap: break-word;
+      padding: 4px 7px;
+      border: 1px solid #ffffff;
+      text-align: left;
+      &:first-child {
+        min-width: 95px;
+      }
+    }
+    th {
+      background-color: #cdb925;
+      font-weight: normal;
+    }
+    td {
+      text-align: left;
+    }
+  }
 }
 
 /* Act */

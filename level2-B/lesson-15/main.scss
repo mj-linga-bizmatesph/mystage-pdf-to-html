@@ -77,6 +77,9 @@ ul {
   
   div {
     height: 213px;
+    &:first-child {
+      height: 260px;
+    }
   }
   .sub-text {
     color: #ffffff;
@@ -92,7 +95,7 @@ ul {
     padding: 7px 7px 32px 12px;
     width: 168px;
     height: fit-content;
-    min-height: 117px;
+    min-height: 160px;
     background: url('/images/biz-tip-container.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -100,16 +103,22 @@ ul {
   .red {
     color: red;
   }
+  .p {
+    font-weight: normal;
+    .i {
+      letter-spacing: normal;
+    }
+  }
   .i {
     font-style: italic;
-    display: block;
     font-weight: normal;
+    letter-spacing: -1px;
   }
   ul {
+    list-style-type: disc;
     position: absolute;
-    bottom: 38px;
-    padding-bottom: -3px;
-    left: 6px;
+    bottom: 0px;
+    left: 10px;
     
     li {
       padding-left: 0px;
@@ -156,7 +165,7 @@ ul {
 
 /* Try */
 .try-content {
-  margin-top: 70px;
+  margin-top: 125px;
 }
 
 /* Act */

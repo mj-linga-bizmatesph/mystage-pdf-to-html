@@ -181,30 +181,6 @@ body {
   font-family: "Trebuchet MS";
 }
 
-.see-content .example {
-  margin-top: 37px;
-  margin-left: 18.5px;
-}
-
-.see-content .example .conversation {
-  line-height: 26px;
-  margin-top: 4px;
-}
-
-.see-content .example .conversation .row p {
-  display: inline-block;
-  margin: -0.5px 0px;
-}
-
-.see-content .example .conversation .row p:first-child {
-  width: 52px;
-  word-wrap: break-word;
-}
-
-.see-content .example .conversation .row p:last-child {
-  max-width: 640px;
-}
-
 /* Try */
 .try-content {
   position: relative;

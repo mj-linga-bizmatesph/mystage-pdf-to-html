@@ -35,6 +35,9 @@ body {
 .i {
   font-family: italic;
 }
+.u {
+  text-decoration: underline;
+}
 .program-rank {
   position: absolute;
   top: 40px;
@@ -212,9 +215,14 @@ ul {
       color: #ffffff;
       font-size: 15px;
       padding: 5px;
+
+      &:first-child {
+        width: 300px;
+      }
     }
     td {
       text-align: left;
+      font-weight: bold;
       padding: 4px;
       background-color: $background-grey;
     }

@@ -31,6 +31,10 @@ body {
   font-family: italic;
 }
 
+.u {
+  text-decoration: underline;
+}
+
 .program-rank {
   position: absolute;
   top: 40px;
@@ -233,8 +237,13 @@ ul li {
   padding: 5px;
 }
 
+.act-content table th:first-child {
+  width: 200px;
+}
+
 .act-content table td {
   text-align: left;
+  font-weight: bold;
   padding: 4px;
   background-color: #f2f2f2;
 }

@@ -1,0 +1,258 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Arial';
+
+$primary: #2078a0;
+$primary-light: #d4e6f0;
+$primary-dark: #267aa1;
+$background-grey: #f2f2f2;
+
+$left-pixel: 126.5px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+}
+.page-1 {
+  width: 892.75px;
+  min-height: 1200px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image: url('/images/bg-header.png'),
+    url('/images/04-bg-footer.png');
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header {
+  font-family: $title-font;
+}
+.b {
+  font-weight: bold;
+}
+.i {
+  font-family: italic;
+}
+.u {
+  text-decoration: underline;
+}
+.program-rank {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  color: #ffffff;
+  font-size: 0px;
+
+  .type {
+    padding: 3px 16px 3px 14px;
+    background-color: $primary;
+    font-size: 15px;
+  }
+  .level {
+    padding: 3px 12px 3px 13px;
+    background-color: #e56a62;
+    font-size: 15px;
+  }
+}
+.line {
+  margin: 0 12px;
+}
+.title {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-size: 27px;
+}
+.lesson-number {
+  position: absolute;
+  min-width: 15px;
+  left: 818px;
+  top: 66px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.sub-text {
+  font-family: $title-font !important;
+  line-height: 22px;
+  margin: 0 auto;
+}
+.section {
+  position: absolute;
+  left: -71.5px;
+  color: $primary;
+  font-weight: bold;
+  font-family: $title-font;
+  top: 2px;
+}
+.divider {
+  color: #d9d9d9;
+  position: relative;
+  left: 469px;
+
+  &.d1 {
+    margin-top: 8px;
+  }
+  &.d2 {
+    margin-top: 28px;
+  }
+}
+ul {
+  margin: 3px 0px 0px 18px;
+  padding: 0;
+  line-height: 26px;
+
+  li {
+    padding-left: 8px;
+  }
+}
+
+.see-content,
+.act-content,
+.try-content {
+  position: relative;
+  margin-left: $left-pixel;
+  padding-left: 18.5px;
+  padding-right: 42px;
+  font-size: 15px;
+}
+
+/* Words and Phrases Content */
+.words-phrase-content {
+  position: relative;
+  margin-top: 155px;
+  padding: 2px 0px 0px 47px;
+  height: 144.5px;
+  width: 100%;
+  background: $primary-light;
+  font-size: 15px;
+
+  .section {
+    margin-left: $left-pixel;
+    width: 80px;
+    line-height: 1.8em;
+    margin-top: 16px !important;
+  }
+
+  .pointers {
+    margin-top: 20px !important;
+    margin-left: $left-pixel;
+
+    .arrow-part {
+      position: relative;
+      width: 85%;
+      &:before {
+        content: '';
+        position: absolute;
+        left: -26px;
+        top: 7px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 7.5px solid $primary;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      span {
+        color: $primary-dark;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* See */
+.see-content {
+  margin-top: 36px;
+  .article {
+    margin-top: 5px;
+    line-height: 1.7em;
+    margin-bottom: 29px;
+
+    span.highlight {
+      color: $primary-dark;
+      font-weight: bold;
+    }
+  }
+  .col {
+    width: fit-content;
+    margin-right: 16px;
+    position: relative;
+    line-height: 26px;
+    
+    span.highlight {
+      color: $primary-dark;
+      font-weight: bold;
+    }
+    p {
+      margin: 2px auto 24px;
+
+      &.name {
+        width:70px
+      }
+    }
+  }
+}
+
+/* Try */
+.try-content {
+  margin-top: 5px;
+
+  ul {
+    list-style-type: decimal;
+  }
+}
+
+/* Act */
+.act-content {
+  margin-top: 5px;
+  height: fit-content;
+
+  table {
+    margin-top: 5px;
+    font-size: 14px;
+    border-spacing: 0px;
+    padding-bottom: 5px;
+    min-width: 700px;
+    th,
+    td {
+      max-width: 120px;
+      min-width: 80px;
+      word-wrap: break-word;
+      border: 1px solid #ffffff;
+    }
+    th {
+      background-color: $primary;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 5px;
+
+      &:first-child {
+        width: 400px;
+      }
+    }
+    td {
+      text-align: left;
+      padding: 4px;
+      background-color: $background-grey;
+    }
+  }
+}
+
+.footer {
+  font-size: 9px;
+  position: absolute;
+  width: 345px;
+  text-align: right;
+  bottom: 43px;
+  left: 492px;
+  font-family: $title-font;
+}

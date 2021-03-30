@@ -215,13 +215,9 @@ ul {
       color: #ffffff;
       font-size: 15px;
       padding: 5px;
-
-      &:first-child {
-        width: 400px;
-      }
     }
     td {
-      text-align: left;
+      text-align: center;
       padding: 4px;
       background-color: $background-grey;
     }

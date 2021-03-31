@@ -32,9 +32,6 @@ body {
 .b {
   font-weight: bold;
 }
-.i {
-  font-family: italic;
-}
 .program-rank {
   position: absolute;
   top: 40px;
@@ -178,6 +175,9 @@ ul {
       color: $primary-dark;
       font-weight: bold;
     }
+    .sub-text.b {
+      font-family: $text-font !important;
+    }
   }
 }
 
@@ -218,6 +218,7 @@ ul {
       text-align: left;
       padding: 4px;
       background-color: $background-grey;
+      height: 70px;
     }
   }
 }

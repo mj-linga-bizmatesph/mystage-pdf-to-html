@@ -28,6 +28,12 @@ body {
 .b {
   font-weight: bold;
 }
+.i {
+  font-family: italic;
+}
+.u {
+  text-decoration: underline;
+}
 .program-rank {
   position: absolute;
   top: 40px;
@@ -65,18 +71,17 @@ body {
   color: #ffffff;
 }
 .sub-text {
+  font-family: $title-font !important;
   line-height: 22px;
-  margin: -17px auto;
-  margin-left: 10px;
-  width: 595px;
+  margin: 0 auto;
 }
 .section {
-  position: relative;
-  left: -105px;
+  position: absolute;
+  left: -71.5px;
   color: $primary;
   font-weight: bold;
   font-family: $title-font;
-  top: 4px;
+  top: 2px;
 }
 
 /* Review Content */
@@ -86,30 +91,30 @@ body {
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: 15px;
-  margin-top: 240px;
+}
 
+/* Review Content */
+.review-content {
+  margin-top: 220px;
   ul {
-    padding: 35px 0px 50px 8px;
+    list-style: none;
+    margin-top: 12px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
     li {
-      display: flex;
-      margin-bottom: 20px;
-      font-weight: bold;
+      margin: 12.5px 0px;
 
       p {
-        width: 270px;
-      }
-      span {
-        width: 20px;
-        margin: auto 55px auto 0px;
-      }
-      p::before {
-        content: "";
-        border: 1px solid;
-        padding: 1px 10px 0px;;
-        border-color: #2078a0;
-        border-width: 3.5px;
-        margin-right: 15px;
+        margin-block-start: 0 !important;
+        margin-block-end: 0 !important;
+
+        &:last-child {
+          color: $primary;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -117,10 +122,10 @@ body {
 
 .footer {
   font-size: 9px;
-  position: relative;
+  position: absolute;
   width: 345px;
   text-align: right;
-  bottom: 53px;
+  bottom: 43px;
   left: 492px;
   font-family: $title-font;
 }

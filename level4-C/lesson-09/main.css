@@ -27,10 +27,6 @@ body {
   font-weight: bold;
 }
 
-.i {
-  font-family: italic;
-}
-
 .program-rank {
   position: absolute;
   top: 40px;
@@ -202,6 +198,10 @@ ul li {
   padding-left: 0px;
 }
 
+.see-content ul li span {
+  font-weight: bold;
+}
+
 /* Try */
 .try-content {
   margin-top: 0px;
@@ -254,6 +254,6 @@ ul li {
   width: 355px;
   text-align: right;
   bottom: 43px;
-  left: 492px;
+  left: 488px;
   font-family: "Arial";
 }

@@ -27,10 +27,6 @@ body {
   font-weight: bold;
 }
 
-.i {
-  font-family: italic;
-}
-
 .program-rank {
   position: absolute;
   top: 40px;
@@ -192,6 +188,10 @@ ul li {
 .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
+}
+
+.see-content .article .sub-text.b {
+  font-family: "Trebuchet MS" !important;
 }
 
 /* Try */

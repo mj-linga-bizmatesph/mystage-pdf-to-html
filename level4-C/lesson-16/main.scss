@@ -32,12 +32,6 @@ body {
 .b {
   font-weight: bold;
 }
-.i {
-  font-family: italic;
-}
-.u {
-  text-decoration: underline;
-}
 .program-rank {
   position: absolute;
   top: 40px;
@@ -79,9 +73,11 @@ body {
   flex-direction: row;
 }
 .sub-text {
-  font-family: $title-font !important;
   line-height: 22px;
   margin: 0 auto;
+}
+.sub-text.b {
+  font-family: $text-font !important;
 }
 .section {
   position: absolute;
@@ -215,36 +211,6 @@ ul {
 .act-content {
   margin-top: 5px;
   height: fit-content;
-
-  table {
-    margin-top: 5px;
-    font-size: 14px;
-    border-spacing: 0px;
-    padding-bottom: 5px;
-    min-width: 700px;
-    th,
-    td {
-      max-width: 120px;
-      min-width: 80px;
-      word-wrap: break-word;
-      border: 1px solid #ffffff;
-    }
-    th {
-      background-color: $primary;
-      color: #ffffff;
-      font-size: 15px;
-      padding: 5px;
-
-      &:first-child {
-        width: 400px;
-      }
-    }
-    td {
-      text-align: left;
-      padding: 4px;
-      background-color: $background-grey;
-    }
-  }
 }
 
 .footer {

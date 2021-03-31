@@ -32,9 +32,6 @@ body {
 .b {
   font-weight: bold;
 }
-.i {
-  font-family: italic;
-}
 .program-rank {
   position: absolute;
   top: 40px;
@@ -75,8 +72,10 @@ body {
   display: flex;
   flex-direction: row;
 }
-.sub-text {
+.sub-text.b {
   font-family: $title-font !important;
+}
+.sub-text {
   line-height: 22px;
   margin: 0 auto;
 }

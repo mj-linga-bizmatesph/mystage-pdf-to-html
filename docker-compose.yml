@@ -8,4 +8,4 @@ services:
     volumes:
       - .:/usr/share/nginx/html
     ports:
-      - "8211:80"
+      - "${LOCAL_TCP_PORT}:80"

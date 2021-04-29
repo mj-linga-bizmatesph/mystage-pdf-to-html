@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+
+  mystage-materials:
+    container_name: pdf-html
+    build: .
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - "8211:80"

@@ -13,16 +13,20 @@ body {
   padding: 0;
   font-family: $text-font;
 }
-.page-1,
-.page-2,
-.page-3 {
-  width: 892.75px;
-  min-height: 1200px;
+.html-page-1,
+.html-page-2,
+.html-page-3 {
+  width: 100%;
+  min-width: 320px;
+  max-width: 810px;
+  min-height: 1100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'), url('/images/bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -44,19 +48,19 @@ body {
 .program-rank {
   position: absolute;
   top: 40px;
-  left: 48px;
+  left: 6%;
   color: #ffffff;
   font-size: 0px;
 
-  .type {
+   .type {
     padding: 3px 16px 3px 14px;
-    background-color: #248bb0;
-    font-size: 15px;
+    background-color: #257a9e;
+    font-size: clamp(8px, 2vw, 15px);
   }
   .level {
     padding: 3px 12px 3px 13px;
     background-color: #339999;
-    font-size: 15px;
+    font-size: clamp(8px, 2vw, 15px);
   }
 }
 .line {
@@ -64,15 +68,15 @@ body {
 }
 .title {
   position: absolute;
-  top: 80px;
-  left: 55px;
-  font-size: 27px;
+  top: 7%;
+  left: 6%;
+  font-size: clamp(15px, 1.8vw, 27px);
 }
 .lesson-number {
   position: absolute;
-  left: 819px;
-  top: 66px;
-  font-size: 13px;
+  left: 91%;
+  padding-top: 7.5%;
+  font-size:clamp(8px, 2vw, 13px);
   color: #ffffff;
 }
 .row {
@@ -89,7 +93,7 @@ body {
   left: -71.5px;
   color: #2078a0;
   font-weight: bold;
-  font-size: 15px;
+  font-size: clamp(10px, 2vw, 15px);
   font-family: $title-font;
 
   &.see {
@@ -106,7 +110,7 @@ body {
   color: #d9d9d9;
   font-size: 15px;
   position: relative;
-  left: 469px;
+  left: 50%;
 
   &.d1,
   &.d2 {
@@ -115,13 +119,13 @@ body {
 }
 .sub-head {
   position: relative;
-  margin-top: 128px;
-  left: 47px;
+  margin-top: clamp(30px, 17%, 128px);
+  left: 6%;
   .subtitle {
     font-family: $ja-font;
     color: $primary;
     font-weight: bold;
-    font-size: 15px;
+    font-size: clamp(10px, 2vw, 15px);
   }
   p {
     margin: 3px auto;
@@ -132,7 +136,7 @@ body {
 }
 .ja {
   font-family: $ja-font, sans-serif;
-  font-size: 12.5px;
+  font-size: clamp(10px, 2vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
@@ -148,9 +152,10 @@ sup {
 /* See */
 .see-content {
   position: relative;
-  margin-left: $left-pixel;
-  margin-top: 177px;
-  font-size: 15px;
+  margin-left: clamp(1px, 15%, 126.5px);
+  padding-left: 18.5px;
+  margin-top: clamp(30px, 20%, 230px);
+  font-size: clamp(10px, 2vw, 15px);
 
   .blue-section {
     background-color: $primary-light;
@@ -168,8 +173,8 @@ sup {
   }
   .col {
     width: fit-content;
-    margin-right: 48px;
-    min-width: 310px;
+    margin-right: 0;
+    min-width: 51%;
     .text:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -198,7 +203,7 @@ sup {
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 640px;
+            max-width: 87%;
           }
         }
       }
@@ -210,9 +215,9 @@ sup {
 .try-content {
   position: relative;
   margin-top: 34px;
-  margin-left: $left-pixel;
+  margin-left: clamp(1px, 15%, 126.5px);
   padding-left: 18.5px;
-  font-size: 15px;
+  font-size: clamp(10px, 2vw, 15px);
 
   ul {
     list-style-type: decimal;
@@ -227,7 +232,7 @@ sup {
     }
     span {
       display: block;
-      width: 670px;
+      width: 96%;
     }
   }
   .wrapper {
@@ -244,9 +249,9 @@ sup {
 .act-content {
   position: relative;
   margin-top: 36px;
-  margin-left: $left-pixel;
+  margin-left: clamp(1px, 15%, 126.5px);
   padding-left: 18.5px;
-  font-size: 15px;
+  font-size: clamp(10px, 2vw, 15px);
   
   .sub-text {
     line-height: 22px;
@@ -277,13 +282,21 @@ sup {
 }
 
 /* Page 2 */
-.page-2 {
+.html-page-2 {
+  .ja {
+    font-size: clamp(10px, 1.5vw, 15px);
+  }
+  .sub-head {
+    .ja {
+      font-size: clamp(8px, 1.5vw, 15px);
+    }
+  }
   .title {
     top: 72px;
     left: 50px;
     word-spacing: 3px;
     .ja {
-      font-size: 27px;
+      font-size: clamp(12px, 1.8vw, 27px);
       color: #000000;
       font-weight: bold;
       margin-right: 3px;
@@ -298,7 +311,7 @@ sup {
     background: $primary-light;
     &.ja {
       color: $primary;
-      font-size: 12px;
+      font-size: clamp(8px, 1.5vw, 12px);
       letter-spacing: 0.1px;
     }
     div {
@@ -306,7 +319,7 @@ sup {
         margin: 3px auto;
         &:first-child {
           color: #000000;
-          font-size: 15px;
+          font-size: clamp(10px, 2vw, 15px);
         }
       }
     }
@@ -318,12 +331,12 @@ sup {
     margin-top: 20px;
     margin-left: 125px;
     .subtitle {
-      font-size: 15px;
+      font-size: clamp(10px, 2vw, 15px);
       color: #000000;
     }
     p {
       margin: 4.5px auto;
-      font-size: 12px;
+      font-size: clamp(10px, 2vw, 12px);
       span {
         margin-left: 160px;
       }
@@ -389,7 +402,7 @@ sup {
     margin-top: 7px;
     margin-left: 125px;
     .subtitle {
-      font-size: 15px;
+      font-size: clamp(10px, 2vw, 15px);
       color: #000000;
     }
     span {
@@ -431,7 +444,7 @@ sup {
 }
 
 /* Page 3 */
-.page-3 {
+.html-page-3 {
   .sub-head {
     margin-top: 75px;
   }
@@ -474,7 +487,7 @@ sup {
   }
   .act-content {
     padding-left: 0px;
-    font-size: 15px;
+    font-size: clamp(10px, 2vw, 15px);
     .ja {
       margin: 8px auto;
     }
@@ -497,5 +510,100 @@ sup {
     .wrapper {
       margin-top: 30px;
     }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footer {
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    left: clamp(-55px, 20%, -71.5px);
+  }
+  .footer {
+    bottom: 2%;
+    left: 64%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .section {
+    left: clamp(-45px, 20%, -71.5px);
+  }
+  .program-rank {
+    top: 0;
+    padding-top: 6%;
+  }
+  .title {
+    top:0;
+    padding-top: 12%;
+  }
+  .html-page-3 {
+    .sub-head {
+      .ja {
+        font-size: clamp(8px, 1.5vw, 12.5px);
+      }
+    }
+  }
+  .html-page-2 {
+    .title {
+      left: 6%;
+      top: -7px;
+    }
+    .sub-head {
+      top: 3.5%;
+    }
+  }
+  .footer {
+    left: 59%;
+    bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .html-page-1 {
+    max-width: unset;
+  }
+  .example {
+    font-size: clamp(6px, 2vw, 15px);
+  }
+  .section {
+    left: clamp(-30px, 15%, -71.5px);
+  }
+  .program-rank {
+    top: 0;
+    padding-top: 6%;
+    .type, .level {
+      padding: 3px 10px;
+      font-size: clamp(6px, 2vw, 15px);
+    }
+  }
+  .title {
+    top:0;
+    padding-top: 12%;
+  }
+  .footer {
+    left: 59%;
+    bottom: 1%;
+  }
+  .see-content {
+    .wrapper {
+      padding-bottom: 0;
+    }
+    .col2 {
+      padding-right:10px
+    }
+  }
+  .act-content, .try-content {
+    margin-top:20px
   }
 }

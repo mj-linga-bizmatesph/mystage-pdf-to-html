@@ -216,10 +216,10 @@ body {
 }
 
 .html-material-1a .image .name p {
-  padding-left: 38px;
-  padding-right: 25px;
+  width: 40%;
   margin: 2px 0px;
   text-align: center;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-material-1a .image .name p span {
@@ -301,6 +301,7 @@ body {
   .html-material-1a .page-2,
   .html-material-1a .page-3 {
     min-height: unset;
+    padding-bottom: 82px;
   }
   .lesson-number {
     left: clamp(330px, 90vw, 818px) !important;
@@ -314,7 +315,8 @@ body {
     right: clamp(0px, 4vw, 58px) !important;
   }
   .image .shape {
-    width: 40vw !important;
+    width: 38vw !important;
+    min-width: 150px;
   }
   .title {
     top: clamp(40px, 10vw, 80px) !important;
@@ -325,23 +327,30 @@ body {
     left: clamp(30px, 4.1vw, 55px) !important;
   }
   .lesson-list {
-    margin-top: clamp(100px, 22vw, 260px) !important;
+    margin-top: clamp(40px, 20vw, 260px) !important;
   }
   /* Page 2 */
   .page-2 .lesson-list {
-    margin-top: clamp(120px, 30vw, 260px) !important;
+    margin-top: clamp(130px, 30vw, 260px) !important;
+  }
+  .page-2 .image {
+    top: clamp(340px, 74vw, 680px) !important;
+  }
+  /* Page 3 */
+  .page-3 .lesson-list {
+    margin-top: clamp(120px, 22vw, 260px) !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .html-material-1a .program-rank {
     position: absolute;
-    top: clamp(20px, 4vw, 40px);
-    left: clamp(23px, 4vw, 48px);
+    top: clamp(20px, 4vw, 40px) !important;
+    left: clamp(23px, 4vw, 48px) !important;
   }
   .html-material-1a .title {
-    top: clamp(45px, 8vw, 80px);
-    left: clamp(30px, 4.1vw, 55px);
+    top: clamp(45px, 8vw, 80px) !important;
+    left: clamp(30px, 4.1vw, 55px) !important;
   }
   .html-material-1a .lesson-number {
     left: clamp(330px, 89vw, 818px) !important;
@@ -357,11 +366,17 @@ body {
     border-right: 4px solid transparent;
     border-top: 8px solid #000000;
   }
+  .html-material-1a .type {
+    padding: 2px 8px 2px 7px !important;
+  }
+  .html-material-1a .level {
+    padding: 2px 6px 2px 7px !important;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .html-material-1a .lesson-number {
-    left: clamp(330px, 90.5vw, 818px) !important;
-    top: clamp(24px, 7.4vw, 66px) !important;
+    left: clamp(326px, 90.6vw, 400px) !important;
+    top: clamp(24px, 7.2vw, 66px) !important;
   }
 }

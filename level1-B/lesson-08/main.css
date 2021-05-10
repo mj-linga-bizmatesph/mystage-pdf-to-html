@@ -236,7 +236,7 @@ sup {
 }
 
 .see-content .example .conversation .row p:last-child {
-  max-width: 640px;
+  max-width: 87%;
 }
 
 /* Try */
@@ -265,7 +265,7 @@ sup {
 
 .try-content li span {
   display: block;
-  width: 670px;
+  width: 95%;
 }
 
 .try-content li span:not(.ja) {
@@ -340,7 +340,7 @@ sup {
 
 /* Page 2 */
 .html-page-2 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(9px, 1.5vw, 15px);
 }
 
 .html-page-2 .sub-head .ja {

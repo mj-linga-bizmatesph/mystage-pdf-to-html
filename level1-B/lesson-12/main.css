@@ -200,8 +200,6 @@ sup {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 48px;
-  min-width: 310px;
 }
 
 .see-content .col .text:not(:last-child) {
@@ -239,7 +237,7 @@ sup {
 }
 
 .see-content .example .conversation .row p:last-child {
-  max-width: 640px;
+  max-width: 87%;
 }
 
 /* Try */
@@ -342,16 +340,16 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  width: 345px;
+  width: 353px;
   text-align: right;
   bottom: 43px;
-  left: 492px;
+  left: 450px;
   font-family: "Arial";
 }
 
 /* Page 2 */
 .html-page-2 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-2 .sub-head .ja {
@@ -407,7 +405,7 @@ sup {
 }
 
 .html-page-2 .arrow-part .subtitle {
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
   color: #000000;
 }
 
@@ -483,7 +481,8 @@ sup {
 
 .html-page-2 .arrow-part div .no-arrow .graph {
   position: relative;
-  height: 190px;
+  height: 100%;
+  width: 100%;
   right: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -524,7 +523,7 @@ sup {
 }
 
 .html-page-2 .see-content .tab {
-  width: 300px;
+  width: 50%;
 }
 
 .html-page-2 .see-content .row .ja {
@@ -552,7 +551,7 @@ sup {
 
 /* Page 3 */
 .html-page-3 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-3 .sub-head {
@@ -692,6 +691,7 @@ sup {
 @media screen and (max-width: 820px) {
   .footer {
     bottom: 3%;
+    left: 54%;
   }
 }
 
@@ -701,7 +701,8 @@ sup {
   }
   .footer {
     bottom: 2%;
-    left: 64%;
+    left: 48%;
+    width: 50%;
   }
 }
 
@@ -728,8 +729,9 @@ sup {
     top: 3.5%;
   }
   .footer {
-    left: 59%;
+    left: 48%;
     bottom: 2%;
+    width: 50%;
   }
 }
 

@@ -284,7 +284,7 @@ sup {
 /* Page 2 */
 .html-page-2 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .sub-head {
     .ja {
@@ -293,7 +293,7 @@ sup {
   }
   .title {
     top: 72px;
-    left: 50px;
+    left: 6%;
     word-spacing: 3px;
     .ja {
       font-size: clamp(12px, 1.8vw, 27px);
@@ -401,7 +401,7 @@ sup {
 /* Page 3 */
 .html-page-3 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .sub-head {
     margin-top: clamp(30px, 13%, 122px);

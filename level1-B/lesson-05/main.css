@@ -231,12 +231,12 @@ sup {
 }
 
 .see-content .example .conversation .row p:first-child {
-  width: 52px;
+  width: 10%;
   word-wrap: break-word;
 }
 
 .see-content .example .conversation .row p:last-child {
-  max-width: 640px;
+  max-width: 87%;
 }
 
 /* Try */
@@ -335,7 +335,7 @@ sup {
 
 /* Page 2 */
 .html-page-2 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-2 .sub-head .ja {
@@ -344,7 +344,7 @@ sup {
 
 .html-page-2 .title {
   top: 72px;
-  left: 50px;
+  left: 6%;
   word-spacing: 3px;
 }
 
@@ -391,7 +391,7 @@ sup {
 }
 
 .html-page-2 .arrow-part .subtitle {
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
   color: #000000;
 }
 
@@ -469,7 +469,7 @@ sup {
 
 /* Page 3 */
 .html-page-3 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-3 .sub-head {

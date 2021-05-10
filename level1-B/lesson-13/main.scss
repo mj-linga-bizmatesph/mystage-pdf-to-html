@@ -125,7 +125,7 @@ body {
     font-family: $ja-font;
     color: $primary;
     font-weight: bold;
-    font-size: clamp(10px, 2vw, 15px);
+    font-size: clamp(8px, 1.8vw, 15px);
   }
   p {
     margin: 3px auto;
@@ -297,7 +297,7 @@ sup {
 /* Page 2 */
 .html-page-2 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .sub-head {
     .ja {
@@ -349,10 +349,10 @@ sup {
     }
     p {
       margin: 4.5px auto;
-      font-size: clamp(10px, 2vw, 12px);
+      font-size: clamp(8px, 1.8vw, 12px);
     }
     .emphasize {
-      font-size: clamp(10px, 2vw, 14px);
+      font-size: clamp(8px, 1.8vw, 14px);
       letter-spacing: 2px;
     }
     .dark-blue {
@@ -461,7 +461,7 @@ sup {
 /* Page 3 */
 .html-page-3 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .sub-head {
     margin-top: clamp(30px, 13%, 122px);

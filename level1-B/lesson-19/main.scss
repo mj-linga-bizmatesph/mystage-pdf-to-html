@@ -201,11 +201,11 @@ sup {
           display: inline-block;
           margin: -0.5px 0px;
           &:first-child {
-            width: 57px;
+            width: 10%;
             word-wrap: break-word;
           }
           &:last-child {
-            max-width: 640px;
+            max-width: 87%;
           }
         }
       }
@@ -297,12 +297,7 @@ sup {
 /* Page 2 */
 .html-page-2 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
-  }
-  .sub-head {
-    .ja {
-      font-size: clamp(8px, 1.5vw, 15px);
-    }
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .title {
     top: 72px;
@@ -344,7 +339,7 @@ sup {
     margin-top: 20px;
     margin-left: 125px;
     .subtitle {
-      font-size: clamp(10px, 2vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
       color: #000000;
     }
     p {
@@ -477,8 +472,11 @@ sup {
 
 /* Page 3 */
 .html-page-3 {
+  .ja {
+    font-size: clamp(8px, 1.5vw, 15px);
+  }
   .sub-head {
-    margin-top: 75px;
+    margin-top: 10%;
   }
   .try-content {
     margin-top: 52px;

@@ -240,7 +240,7 @@ sup {
 }
 
 .see-content .example .conversation .row p:last-child {
-  max-width: 640px;
+  max-width: 87%;
 }
 
 /* Try */
@@ -269,7 +269,7 @@ sup {
 
 .try-content li span {
   display: block;
-  width: 670px;
+  width: 100%;
 }
 
 .try-content .wrapper {
@@ -348,7 +348,7 @@ sup {
 
 .html-page-2 .title {
   top: 72px;
-  left: 50px;
+  left: 6%;
   word-spacing: 3px;
 }
 
@@ -395,7 +395,7 @@ sup {
 }
 
 .html-page-2 .arrow-part .subtitle {
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
   color: #000000;
 }
 
@@ -446,7 +446,7 @@ sup {
 
 .html-page-2 .arrow-part div .col p {
   margin: 4.5px auto;
-  font-size: 12px;
+  font-size: clamp(10px, 2vw, 12px);
 }
 
 .html-page-2 .arrow-part div .col:last-child {
@@ -494,7 +494,7 @@ sup {
 
 /* Page 3 */
 .html-page-3 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-3 .sub-head {
@@ -618,6 +618,12 @@ sup {
     top: 0;
     padding-top: 12%;
   }
+  .example .ja {
+    font-size: clamp(8px, 1.5vw, 15px);
+  }
+  .text .ja {
+    font-size: clamp(8px, 1.5vw, 15px);
+  }
   .html-page-3 .sub-head .ja {
     font-size: clamp(8px, 1.5vw, 12.5px);
   }
@@ -627,6 +633,9 @@ sup {
   }
   .html-page-2 .sub-head {
     top: 3.5%;
+  }
+  .html-page-2 .arrow-part div .col {
+    margin-right: 0px;
   }
   .see-content .col .text p span {
     position: absolute;

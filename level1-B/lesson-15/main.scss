@@ -297,7 +297,7 @@ sup {
 /* Page 2 */
 .html-page-2 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .sub-head {
     .ja {
@@ -344,12 +344,12 @@ sup {
     margin-top: 20px;
     margin-left: 125px;
     .subtitle {
-      font-size: clamp(10px, 2vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
       color: #000000;
     }
     p {
       margin: 4.5px auto;
-      font-size: clamp(10px, 2vw, 12px);
+      font-size: clamp(8px, 1.8vw, 12px);
         
     }
     .emphasize {
@@ -464,8 +464,13 @@ sup {
 
 /* Page 3 */
 .html-page-3 {
+  .ja {
+    font-size: clamp(8px, 1.5vw, 15px);
+  }
   .sub-head {
-    margin-top: 75px;
+    .ja {
+      font-size: clamp(8px, 1.5vw, 15px);
+    }
   }
   .try-content {
     margin-top: 52px;

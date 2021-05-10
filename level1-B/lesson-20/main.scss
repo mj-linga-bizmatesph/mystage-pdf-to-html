@@ -92,7 +92,7 @@ body {
   .subtitle {
     font-family: $ja-font;
     color: $primary;
-    font-size: 15px;
+    font-size: clamp(10px, 2vw, 15px);
   }
   p {
     margin: 3px auto;
@@ -162,7 +162,7 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  width: 345px;
+  width: 312px;
   text-align: right;
   bottom: 43px;
   left: 492px;
@@ -172,12 +172,7 @@ sup {
 /* Page 2 */
 .html-page-2 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
-  }
-  .sub-head {
-    .ja {
-      font-size: clamp(8px, 1.5vw, 15px);
-    }
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .title {
     top: 72px;
@@ -209,6 +204,9 @@ sup {
 
 /* Page 3 */
 .html-page-3 {
+  .ja {
+    font-size: clamp(8px, 1.5vw, 15px);
+  }
   .title {
     top: 6%;
     left: 6%;

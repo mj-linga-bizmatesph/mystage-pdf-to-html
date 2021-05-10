@@ -395,7 +395,7 @@ sup {
 }
 
 .html-page-2 .arrow-part .subtitle {
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
   color: #000000;
 }
 
@@ -522,8 +522,12 @@ sup {
 }
 
 /* Page 3 */
-.html-page-3 .sub-head {
-  margin-top: 75px;
+.html-page-3 .ja {
+  font-size: clamp(8px, 1.5vw, 15px);
+}
+
+.html-page-3 .sub-head .ja {
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-3 .try-content {

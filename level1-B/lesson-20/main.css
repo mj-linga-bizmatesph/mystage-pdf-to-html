@@ -104,7 +104,7 @@ body {
 .sub-head .subtitle {
   font-family: "Noto Sans JP";
   color: #257a9e;
-  font-size: 15px;
+  font-size: clamp(10px, 2vw, 15px);
 }
 
 .sub-head p {
@@ -189,7 +189,7 @@ sup {
 .footer {
   font-size: 9px;
   position: absolute;
-  width: 345px;
+  width: 312px;
   text-align: right;
   bottom: 43px;
   left: 492px;
@@ -198,10 +198,6 @@ sup {
 
 /* Page 2 */
 .html-page-2 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
-}
-
-.html-page-2 .sub-head .ja {
   font-size: clamp(8px, 1.5vw, 15px);
 }
 
@@ -236,6 +232,10 @@ sup {
 }
 
 /* Page 3 */
+.html-page-3 .ja {
+  font-size: clamp(8px, 1.5vw, 15px);
+}
+
 .html-page-3 .title {
   top: 6%;
   left: 6%;

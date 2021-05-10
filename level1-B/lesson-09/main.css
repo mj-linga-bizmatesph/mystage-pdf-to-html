@@ -198,10 +198,10 @@ sup {
   width: -moz-fit-content;
   width: fit-content;
   margin-right: 0;
-  min-width: 100%;
+  min-width: 41%;
 }
 
-.see-content .col .text:not(:last-child) {
+.see-content .col .sub-text:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -340,7 +340,7 @@ sup {
 
 /* Page 2 */
 .html-page-2 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-2 .sub-head .ja {
@@ -349,7 +349,7 @@ sup {
 
 .html-page-2 .title {
   top: 72px;
-  left: 50px;
+  left: 6%;
   word-spacing: 3px;
 }
 
@@ -402,7 +402,7 @@ sup {
 
 .html-page-2 .arrow-part p {
   margin: 4.5px auto;
-  font-size: clamp(10px, 2vw, 12px);
+  font-size: clamp(8px, 1.5vw, 12px);
 }
 
 .html-page-2 .arrow-part p span {
@@ -439,7 +439,7 @@ sup {
 
 .html-page-2 .arrow-part div .tab {
   display: inline-block;
-  width: 175px;
+  width: 33%;
   margin-left: 0px;
 }
 
@@ -457,21 +457,21 @@ sup {
 
 .html-page-2 .image-part .arrow {
   width: 87%;
-  height: 40px;
+  height: 100%;
 }
 
 .html-page-2 .image-part .line {
   width: 5px;
-  right: 30.5%;
+  right: 30%;
   position: absolute;
   margin-top: 0px;
-  height: 45px;
+  height: 100%;
 }
 
 .html-page-2 .image-part div p {
   right: 30%;
   position: absolute;
-  top: 35px;
+  top: 90%;
   font-size: clamp(10px, 1.5vw, 15px);
 }
 
@@ -512,7 +512,7 @@ sup {
 
 /* Page 3 */
 .html-page-3 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-3 .sub-head {

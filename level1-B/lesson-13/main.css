@@ -138,7 +138,7 @@ body {
   font-family: "Noto Sans JP";
   color: #257a9e;
   font-weight: bold;
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
 }
 
 .sub-head p {
@@ -351,7 +351,7 @@ sup {
 
 /* Page 2 */
 .html-page-2 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-2 .sub-head .ja {
@@ -413,11 +413,11 @@ sup {
 
 .html-page-2 .arrow-part p {
   margin: 4.5px auto;
-  font-size: clamp(10px, 2vw, 12px);
+  font-size: clamp(8px, 1.8vw, 12px);
 }
 
 .html-page-2 .arrow-part .emphasize {
-  font-size: clamp(10px, 2vw, 14px);
+  font-size: clamp(8px, 1.8vw, 14px);
   letter-spacing: 2px;
 }
 
@@ -538,7 +538,7 @@ sup {
 
 /* Page 3 */
 .html-page-3 .ja {
-  font-size: clamp(10px, 1.5vw, 15px);
+  font-size: clamp(8px, 1.5vw, 15px);
 }
 
 .html-page-3 .sub-head {

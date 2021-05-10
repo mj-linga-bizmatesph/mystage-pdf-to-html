@@ -174,7 +174,7 @@ sup {
   .col {
     width: fit-content;
     margin-right: 0;
-    min-width: 51%;
+    min-width: 50%;
     .text:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -284,16 +284,11 @@ sup {
 /* Page 2 */
 .html-page-2 {
   .ja {
-    font-size: clamp(10px, 1.5vw, 15px);
-  }
-  .sub-head {
-    .ja {
-      font-size: clamp(8px, 1.5vw, 15px);
-    }
+    font-size: clamp(8px, 1.5vw, 15px);
   }
   .title {
     top: 72px;
-    left: 50px;
+    left: 6%;
     word-spacing: 3px;
     .ja {
       font-size: clamp(12px, 1.8vw, 27px);
@@ -304,7 +299,7 @@ sup {
   }
   .lesson-points {
     margin-top: 14px;
-    padding: 2px 0px 0px 47px;
+    padding: 2px 0px 0px 6%;
     height: fit-content;
     width: 687px;
     padding-bottom: 4px;
@@ -331,12 +326,12 @@ sup {
     margin-top: 20px;
     margin-left: 125px;
     .subtitle {
-      font-size: clamp(10px, 2vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
       color: #000000;
     }
     p {
       margin: 4.5px auto;
-      font-size: clamp(10px, 2vw, 12px);
+      font-size: clamp(8px, 1.8vw, 12px);
       span {
         margin-left: 160px;
       }
@@ -445,11 +440,14 @@ sup {
 
 /* Page 3 */
 .html-page-3 {
+  .ja {
+    font-size: clamp(8px, 1.5vw, 15px);
+  }
   .sub-head {
-    margin-top: 75px;
+    margin-top: 10%;
   }
   .try-content {
-    margin-top: 52px;
+    margin-top: 8%;
     padding-left: 0px;
 
     span:nth-child(-n + 2) {

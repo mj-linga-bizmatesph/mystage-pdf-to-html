@@ -6,23 +6,24 @@ $primary: #257a9e;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
-$left-pixel: 126.5px;
+$left-pixel: clamp(50px, 14%, 126.5px);
 
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 .page-1,
 .page-2,
 .page-3 {
-  width: 892.75px;
-  min-height: 1200px;
-  height: fit-content;
+ width: 100%;
+    min-width: 360px;
+    max-width: 892.75px;
+    min-height: 1200px;
+    height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'), url('/images/bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -37,7 +38,7 @@ body {
 .u-sup {
   border-bottom: solid 1.5px black;
   display: inline-block;
-  line-height: 14px;
+  line-height: clamp(6px, 1.5vw, 14px);
 }
 .program-rank {
   position: absolute;
@@ -49,12 +50,12 @@ body {
   .type {
     padding: 3px 16px 3px 14px;
     background-color: #248bb0;
-    font-size: 15px;
+    font-size: clamp(7px, 1.8vw, 15px);
   }
   .level {
     padding: 3px 12px 3px 13px;
     background-color: #339999;
-    font-size: 15px;
+    font-size: clamp(7px, 1.8vw, 15px);
   }
 }
 .line {
@@ -64,14 +65,14 @@ body {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: 27px;
+  font-size: clamp(12px, 3vw, 27px);
 }
 .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
   top: 66px;
-  font-size: 13px;
+  font-size: clamp(8px, 1.8vw, 13px);
   text-align: center;
   color: #ffffff;
 }
@@ -92,10 +93,10 @@ body {
 }
 .section {
   position: absolute;
-  left: -71.5px;
+  left: calc(-16% + 54px);
   color: #2078a0;
   font-weight: bold;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
   font-family: $title-font;
 
   &.see {
@@ -110,9 +111,10 @@ body {
 }
 .divider {
   color: #d9d9d9;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
-  left: 469px;
+  text-align: center;
+  margin-left: 84px;
 
   &.d1,
   &.d2 {
@@ -127,7 +129,7 @@ body {
     font-family: $ja-font;
     color: $primary;
     font-weight: bold;
-    font-size: 15px;
+    font-size: clamp(6px, 1.8vw, 15px);
   }
   p {
     margin: 5px auto;
@@ -135,7 +137,7 @@ body {
 }
 .ja {
   font-family: $ja-font, sans-serif;
-  font-size: 12.5px;
+  font-size: clamp(5.5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
@@ -143,8 +145,8 @@ body {
   color: $primary;
 }
 sup {
-  font-size: 10px;
-  line-height: 16px;
+  font-size: clamp(6px, 1.6vw, 10px);
+  line-height: clamp(8px, 1.8vw, 16px);
   display: inline-block;
 }
 li p {
@@ -156,7 +158,7 @@ li p {
   position: relative;
   margin-left: $left-pixel;
   margin-top: 177px;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 
   .blue-section {
     background-color: $primary-light;
@@ -168,7 +170,7 @@ li p {
   p {
     margin: 0 auto;
     &:not(.sub-text) {
-      line-height: 26px;
+      line-height: clamp(12px, 3vw, 26px);
     }
   }
   .col {
@@ -198,7 +200,7 @@ li p {
     margin-left: 18.5px;
 
     .conversation {
-      line-height: 26px;
+      line-height: clamp(12px, 3vw, 26px);
       margin-top: 4px;
       .row {
         p {
@@ -223,13 +225,13 @@ li p {
   margin-top: 34px;
   margin-left: $left-pixel;
   padding-left: 18.5px;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 
   ul {
     list-style-type: decimal;
     margin: 3px 0px 0px 18px;
     padding: 0;
-    line-height: 26px;
+    line-height: clamp(12px, 3vw, 26px);
     width: 650px;
   }
   li {
@@ -251,15 +253,15 @@ li p {
   margin-top: 36px;
   margin-left: $left-pixel;
   padding-left: 18.5px;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 
   .sub-text {
-    line-height: 22px;
+    line-height: clamp(12px, 2.8vw, 22px);
   }
   ul {
     margin: 3px 0px 0px 18px;
     padding: 0;
-    line-height: 26px;
+    line-height: clamp(12px, 3vw, 26px);
     list-style-type: decimal;
     li {
       padding-left: 13px;
@@ -267,7 +269,7 @@ li p {
   }
 }
 .footer {
-  font-size: 9px;
+  font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;
   text-align: right;
@@ -283,7 +285,7 @@ li p {
     left: 50px;
     word-spacing: 3px;
     .ja {
-      font-size: 27px;
+      font-size: clamp(12px, 3vw, 27px);
       color: #000000;
       font-weight: bold;
       margin-right: 3px;
@@ -296,7 +298,7 @@ li p {
     width: 750px;
     background: $primary-light;
     .subtitle {
-      font-size: 15px;
+      font-size: clamp(6px, 1.8vw, 15px);
       color: #000000;
       font-weight: bold;
     }
@@ -305,8 +307,8 @@ li p {
       font-weight: normal;
       letter-spacing: 0.1px;
       margin: 3px auto;
-      font-size: 12px;
-      line-height: 22px;
+      font-size: clamp(5px, 1.5vw, 12px);
+      line-height: clamp(12px, 2.8vw, 22px);
     }
   }
   .arrow-part {
@@ -315,12 +317,12 @@ li p {
     word-spacing: 3px;
     font-weight: normal;
     .subtitle {
-      font-size: 15px;
+      font-size: clamp(6px, 1.8vw, 15px);
       color: #000000;
     }
     p {
       margin: 4.5px auto;
-      font-size: 12px;
+      font-size: clamp(5px, 1.5vw, 12px);
     }
     div {
       position: relative;

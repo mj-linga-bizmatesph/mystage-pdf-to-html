@@ -9,18 +9,19 @@ $primary-light: #cce0ec;
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 .page-1,
 .page-2,
 .page-3 {
-  width: 892.75px;
-  min-height: 1200px;
-  height: fit-content;
+ width: 100%;
+    min-width: 360px;
+    max-width: 892.75px;
+    min-height: 1200px;
+    height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'), url('/images/bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -35,7 +36,7 @@ body {
 .u-sup {
   border-bottom: solid 1.5px black;
   display: inline-block;
-  line-height: 14px;
+  line-height: clamp(6px, 1.5vw, 14px);
 }
 .program-rank {
   position: absolute;
@@ -47,12 +48,12 @@ body {
   .type {
     padding: 3px 16px 3px 14px;
     background-color: #248bb0;
-    font-size: 15px;
+    font-size: clamp(7px, 1.8vw, 15px);
   }
   .level {
     padding: 3px 12px 3px 13px;
     background-color: #339999;
-    font-size: 15px;
+    font-size: clamp(7px, 1.8vw, 15px);
   }
 }
 .line {
@@ -62,14 +63,14 @@ body {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: 27px;
+  font-size: clamp(12px, 3vw, 27px);
 }
 .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
   top: 66px;
-  font-size: 13px;
+  font-size: clamp(8px, 1.8vw, 13px);
   text-align: center;
   color: #ffffff;
 }
@@ -88,7 +89,7 @@ body {
   .subtitle {
     font-family: $ja-font;
     color: $primary;
-    font-size: 15px;
+    font-size: clamp(6px, 1.8vw, 15px);
   }
   p {
     margin: 3px auto;
@@ -99,26 +100,26 @@ body {
 }
 .ja {
   font-family: $ja-font, sans-serif !important;
-  font-size: 12.5px;
+  font-size: clamp(5.5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
 sup {
-  font-size: 10px;
-  line-height: 16px;
+  font-size: clamp(6px, 1.6vw, 10px);
+  line-height: clamp(8px, 1.8vw, 16px);
   display: inline-block;
 }
 
 .lesson-list {
   font-family: $text-font;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
   margin-top: 189px;
   margin-left: 149px;
   ul {
     list-style-type: decimal;
     margin: 24.5px 0px 0px 18px;
     padding: 0;
-    line-height: 26px;
+    line-height: clamp(12px, 3vw, 26px);
     position: relative;
     width: 710px;
     &:before {
@@ -155,7 +156,7 @@ sup {
 }
 
 .footer {
-  font-size: 9px;
+  font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;
   text-align: right;
@@ -170,7 +171,7 @@ sup {
     top: 72px;
     left: 50px;
     .ja {
-      font-size: 27px;
+      font-size: clamp(12px, 3vw, 27px);
       color: #000000;
       font-weight: bold;
       margin-right: 3px;
@@ -187,7 +188,7 @@ sup {
   }
   ul {
     .sub-text.ja {
-      font-size: 15px;
+      font-size: clamp(6px, 1.8vw, 15px);
       color: $primary;
       margin: 0px 0px 0px 4px;
     }
@@ -200,7 +201,7 @@ sup {
     top: 72px;
     left: 50px;
     .ja {
-      font-size: 27px;
+      font-size: clamp(12px, 3vw, 27px);
       color: #000000;
       font-weight: bold;
       margin-right: 3px;

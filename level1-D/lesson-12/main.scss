@@ -23,7 +23,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 
-  .header {
+  .header, .footer {
     font-family: $title-font;
   }
   .b {
@@ -54,7 +54,7 @@ body {
     position: absolute;
     top: 7%;
     left: 6%;
-    font-size: clamp(15px, 1.8vw, 27px);;
+    font-size: 27px;
   }
   .lesson-number {
     position: absolute;
@@ -91,7 +91,7 @@ body {
   }
   .divider {
     color: #d9d9d9;
-    font-size: 15px;
+    font-size:clamp(8px, 2vw, 15px);
     position: relative;
     left: 50%;
   
@@ -216,6 +216,9 @@ body {
   .html-page-1 {
     .footer {
       bottom: 3%;
+    }
+    .title {
+      font-size: clamp(20px, 2.2vw, 27px);
     }
   }
 }

@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-page-1 .header {
+.html-page-1 .header, .html-page-1 .footer {
   font-family: "Arial";
 }
 
@@ -105,6 +105,9 @@ body {
 @media screen and (max-width: 960px) {
   .html-page-1 .footer {
     bottom: 3%;
+  }
+  .html-page-1 .title {
+    font-size: clamp(20px, 2.2vw, 27px);
   }
 }
 

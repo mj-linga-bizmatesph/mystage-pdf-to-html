@@ -52,7 +52,7 @@ body {
     position: absolute;
     top: 7%;
     left: 6%;
-    font-size: clamp(15px, 1.8vw, 27px);;
+    font-size: 27px;
   }
   .lesson-number {
     position: absolute;
@@ -96,6 +96,9 @@ body {
   .html-page-1 {
     .footer {
       bottom: 3%;
+    }
+    .title {
+      font-size: clamp(20px, 2.2vw, 27px);
     }
   }
 }

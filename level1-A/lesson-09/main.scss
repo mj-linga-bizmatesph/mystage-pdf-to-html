@@ -74,11 +74,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    min-width: 15px;
-    left: 819px;
-    top: 66px;
+    left: 92.1%;
+    margin-top: 7.4%;
     font-size: clamp(8px, 1.8vw, 13px);
-    text-align: center;
     color: #ffffff;
   }
   .row {
@@ -494,10 +492,6 @@ body {
       min-height: unset;
       padding-bottom: 82px;
     }
-    .lesson-number {
-      left: clamp(330px, 89.7vw, 823px);
-      top: clamp(26px, 7.2vw, 66px);
-    }
     .see-content {
       margin-top: clamp(75px, 20vw, 177px);
       .blue-section {
@@ -686,15 +680,6 @@ body {
           left: -28px;
         }
       }
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .html-material-1a {
-    .lesson-number {
-      left: clamp(330px, 92vw, 823px);
-      top: clamp(24px, 7.4vw, 66px);
     }
   }
 }

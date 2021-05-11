@@ -78,8 +78,8 @@ body {
 
 .html-material-1a .lesson-number {
   position: absolute;
-  left: 823px;
-  top: 66px;
+  left: 92.1%;
+  margin-top: 7.4%;
   font-size: clamp(8px, 1.8vw, 13px);
   color: #ffffff;
 }
@@ -547,10 +547,6 @@ body {
     min-height: unset;
     padding-bottom: 82px;
   }
-  .html-material-1a .lesson-number {
-    left: clamp(330px, 89.7vw, 823px);
-    top: clamp(26px, 7.2vw, 66px);
-  }
   .html-material-1a .see-content {
     margin-top: clamp(75px, 20vw, 177px);
   }
@@ -727,12 +723,5 @@ body {
     border-bottom: 5px solid transparent;
     border-left: 8px solid #257a9e;
     left: -28px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .html-material-1a .lesson-number {
-    left: clamp(330px, 92vw, 823px);
-    top: clamp(24px, 7.4vw, 66px);
   }
 }

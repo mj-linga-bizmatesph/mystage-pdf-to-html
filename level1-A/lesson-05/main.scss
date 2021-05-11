@@ -250,35 +250,43 @@ body {
         position: absolute;
         &:first-child {
           top: 59px;
-          left: 115px;
+          top: 21%;
+          left: 13%;
         }
         &:nth-child(2) {
           top: 155px;
-          left: 58px;
+          top: 55.35%;
+          left: 7%;
         }
         &:nth-child(3) {
           top: -65px;
-          left: 368px;
+          top: -23%;
+          left: 49%;
         }
         &:nth-child(4) {
           top: 39px;
-          left: 372px;
+          top: 14%;
+          left: 49.1%;
         }
         &:nth-child(5) {
           top: 127px;
-          left: 376px;
+          top: 45%;
+          left: 49.5%;
         }
         &:nth-child(6) {
           top: -41px;
-          left: 640px;
+          top: -14.60%;
+          left: 84.75%
         }
         &:nth-child(7) {
           top: 35px;
-          left: 640px;
+          top: 12.5%;
+          left: 84.75%
         }
         &:nth-child(8) {
           top: 149px;
-          left: 640px;
+          top: 53%;
+          left: 84.75%
         }
       }
     }
@@ -462,20 +470,14 @@ body {
       .sub-text.mg {
         margin-top: clamp(12px, 2.4vw, 20px);
       }
-      .name-1 {
-        margin-left: clamp(15px, 3.2vw, 34px);
-        margin-top: clamp(20px, 3.8vw, 38px);
+      .name {
+        height: clamp(65px, 28vw, 280px);
+        min-height: 120px;
       }
-      .name-2 {
-        margin-left: clamp(15px, 3.2vw, 34px);
-        margin-top: clamp(20px, 3.8vw, 38px);
-      }
-      .dash-list ul {
-        line-height: clamp(11px, 2.4vw, 18px);
-      }
-      .shape {
-        width: 100%;
-        height: auto;
+      .shape.lots {
+        width: 81.5vw !important;
+        min-width: 326px;
+        top: clamp(24px, 4.8vw, 44px) !important;
       }
       .desc {
         margin-left: clamp(28px, 4.5vw, 56px);
@@ -532,21 +534,12 @@ body {
       }
       .try-content {
         margin-top: clamp(26px, 4.3vw, 52px);
-        .list-title,
-        .list-title-2 {
-          margin-top: clamp(18px, 3.6vw, 36px);
-        }
-        .dash-list {
-          .desc {
-            margin-left: clamp(22px, 4.6vw, 60px);
-          }
-          &.name-1,
-          &.name-2 {
-            margin-left: unset;
-          }
-        }
         .sub-text.mg {
           margin-top: clamp(26px, 4.3vw, 52px);
+        }
+        .shape.lots {
+          top: clamp(135px, 29vw, 232px) !important;
+          left: 5px;
         }
       }
     }

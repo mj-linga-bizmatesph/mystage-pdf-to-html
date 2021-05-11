@@ -219,33 +219,41 @@ body {
       display: flex;
       align-items: stretch;
     }
+    .wrapper-main {
+      display: flex;
+    }
     .sub-text.mg {
       margin-top: 28px;
     }
     .shape {
       width: 62.25px;
-      position: absolute;
-      left: -100px;
-      top: 0px;
+      margin-top: 15px;
       &.man {
         width: 55.25px;
       }
     }
+    .col {
+      width: fit-content;
+      max-width: 350px;
+      margin-right: 60px;
+      position: relative;
+    }
+    .col-2 {
+      display: flex;
+      flex-direction: column;
+    }
     .name-1 {
-      position: absolute;
-      left: 467px;
-      top: 37px;
+      height: fit-content;
+      position: relative;
     }
     .name-2 {
-      position: absolute;
-      width: 150px;
-      left: 467px;
-      top: 194px;
+      height: fit-content;
+      position: relative;
     }
     .desc {
       position: absolute;
-      top: 36px;
-      left: 2px;
+      top: 8px;
+      left: 100px;
       width: max-content;
     }
     .dash-list {
@@ -436,28 +444,21 @@ body {
           }
         }
       }
-      .shape {
-        top: 26px;
+      .shape:not(.man) {
+        margin-bottom: 150px;
+      }
+      .col-2 {
+        margin-top: 35px;
       }
       .dash-list {
-        p {
-          margin-bottom: 0px;
-        }
-        &.name-1 {
-          left: 483px;
-          top: 76px;
-        }
-        &.name-2 {
-          left: 483px;
-          top: 346px;
-        }
-        .desc {
-          margin-left: 0px;
-          margin-top: 15px;
-        }
         .ja {
           margin: 6px auto;
         }
+      }
+      .desc ul {
+        list-style: none;
+        margin-left: 4px;
+        line-height: 18px;
       }
       .sub-text.mg {
         margin-top: 28px;
@@ -527,22 +528,24 @@ body {
       .sub-text.mg {
         margin-top: clamp(12px, 2.4vw, 20px);
       }
-      .name-1 {
-        margin-left: clamp(15px, 3.2vw, 34px);
-        margin-top: clamp(20px, 3.8vw, 38px);
-      }
-      .name-2 {
-        margin-left: clamp(15px, 3.2vw, 34px);
-        margin-top: clamp(20px, 3.8vw, 38px);
-      }
       .dash-list ul {
         line-height: clamp(11px, 2.4vw, 18px);
       }
       .shape {
-        width: 7vw;
+        width: 7vw !important;
+        min-width: 30px;
+      }
+      .desc ul {
+        line-height: clamp(9px, 2.0vw, 18px) !important;
+      }
+      .col {
+        margin-right: clamp(30px, 4.3vw, 60px);
+      }
+      .col-2 {
+        margin-top: clamp(18px, 3.6vw, 36px) !important;
       }
       .desc {
-        margin-left: clamp(28px, 4.5vw, 56px);
+        left: clamp(40px, 9vw, 100px);
       }
     }
     .act-content {
@@ -591,17 +594,13 @@ body {
         .list-title, .list-title-2 {
           margin-top: clamp(18px, 3.6vw, 36px);
         }
-        .dash-list {
-          .desc {
-            margin-left: clamp(22px, 4.6vw, 60px);
-          }
-          &.name-1,
-          &.name-2 {
-            margin-left: unset;
-          }
-        }
         .sub-text.mg {
           margin-top: clamp(26px, 4.3vw, 52px);
+        }
+        .shape {
+          &:not(.man) {
+            margin-bottom: clamp(80px, 19vw, 150px) !important;
+          }
         }
       }
       .act-content ul {

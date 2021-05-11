@@ -221,6 +221,9 @@ body {
       flex-flow: row wrap;
       align-items: stretch;
     }
+    ul {
+      flex: 1;
+    }
     .shape {
       width: 52px;
     }
@@ -228,7 +231,8 @@ body {
       position: relative;
       display: flex;
       flex-direction: column;
-      margin: 28px 30px 0px 5px;
+      justify-content: space-between;
+      margin: 0px 30px 0px 5px;
       div {
         margin-top: 4px;
         p {
@@ -242,10 +246,12 @@ body {
       }
     }
     table {
+      flex: 1 0 21%;
       margin-top: 7px;
       border-collapse: collapse;
       max-width: 276px;
       border: 2px solid #ffffff;
+      width: 100%;
 
       tr {
         &:first-child {
@@ -467,8 +473,9 @@ body {
         th {
           padding-left: 10px;
           padding-top: 10px;
+          padding-bottom: 10px;
           text-align: left;
-          height: 48px;
+          height: fit-content;
           vertical-align: text-top;
           line-height: clamp(10px, 2.2vw, 16px);
           .ja {
@@ -556,22 +563,19 @@ body {
       .sub-text.mg {
         margin-top: clamp(12px, 2.4vw, 20px);
       }
-      .name-1 {
-        margin-left: clamp(15px, 3.2vw, 34px);
-        margin-top: clamp(20px, 3.8vw, 38px);
-      }
-      .name-2 {
-        margin-left: clamp(15px, 3.2vw, 34px);
-        margin-top: clamp(20px, 3.8vw, 38px);
-      }
-      .dash-list ul {
-        line-height: clamp(11px, 2.4vw, 18px);
+      .name {
+        margin-right: clamp(14px, 2.6vw, 30px);
       }
       .shape {
-        width: 7vw;
+        width: 6.5vw;
       }
-      .desc {
-        margin-left: clamp(28px, 4.5vw, 56px);
+      table {
+        ul {
+          line-height: clamp(12px, 3vw, 21px) !important;
+        }
+        li {
+          padding-left: clamp(4px, 1.4vw, 10px) !important;
+        }
       }
     }
     .act-content {
@@ -609,6 +613,9 @@ body {
           }
           .col {
             margin: 0px 0px;
+            .text:not(:last-child) {
+              margin-bottom: clamp(20px, 4vw, 40px);
+            }
           }
         }
       }
@@ -621,18 +628,6 @@ body {
       }
       .try-content {
         margin-top: clamp(26px, 4.3vw, 52px);
-        .list-title, .list-title-2 {
-          margin-top: clamp(18px, 3.6vw, 36px);
-        }
-        .dash-list {
-          .desc {
-            margin-left: clamp(22px, 4.6vw, 60px);
-          }
-          &.name-1,
-          &.name-2 {
-            margin-left: unset;
-          }
-        }
         .sub-text.mg {
           margin-top: clamp(26px, 4.3vw, 52px);
         }

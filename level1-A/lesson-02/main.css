@@ -253,38 +253,62 @@ body {
           align-items: stretch;
 }
 
+.html-material-1a .try-content .wrapper-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .html-material-1a .try-content .sub-text.mg {
   margin-top: 28px;
 }
 
 .html-material-1a .try-content .shape {
   width: 62.25px;
-  position: absolute;
-  left: -100px;
-  top: 0px;
+  margin-top: 15px;
 }
 
 .html-material-1a .try-content .shape.man {
   width: 55.25px;
 }
 
+.html-material-1a .try-content .col {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 350px;
+  margin-right: 60px;
+  position: relative;
+}
+
+.html-material-1a .try-content .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .html-material-1a .try-content .name-1 {
-  position: absolute;
-  left: 467px;
-  top: 37px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
 }
 
 .html-material-1a .try-content .name-2 {
-  position: absolute;
-  width: 150px;
-  left: 467px;
-  top: 194px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
 }
 
 .html-material-1a .try-content .desc {
   position: absolute;
-  top: 36px;
-  left: 2px;
+  top: 8px;
+  left: 100px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -501,31 +525,22 @@ body {
   display: block;
 }
 
-.html-material-1a .page-3 .try-content .shape {
-  top: 26px;
+.html-material-1a .page-3 .try-content .shape:not(.man) {
+  margin-bottom: 150px;
 }
 
-.html-material-1a .page-3 .try-content .dash-list p {
-  margin-bottom: 0px;
-}
-
-.html-material-1a .page-3 .try-content .dash-list.name-1 {
-  left: 483px;
-  top: 76px;
-}
-
-.html-material-1a .page-3 .try-content .dash-list.name-2 {
-  left: 483px;
-  top: 346px;
-}
-
-.html-material-1a .page-3 .try-content .dash-list .desc {
-  margin-left: 0px;
-  margin-top: 15px;
+.html-material-1a .page-3 .try-content .col-2 {
+  margin-top: 35px;
 }
 
 .html-material-1a .page-3 .try-content .dash-list .ja {
   margin: 6px auto;
+}
+
+.html-material-1a .page-3 .try-content .desc ul {
+  list-style: none;
+  margin-left: 4px;
+  line-height: 18px;
 }
 
 .html-material-1a .page-3 .try-content .sub-text.mg {
@@ -604,22 +619,24 @@ body {
   .html-material-1a .try-content .sub-text.mg {
     margin-top: clamp(12px, 2.4vw, 20px);
   }
-  .html-material-1a .try-content .name-1 {
-    margin-left: clamp(15px, 3.2vw, 34px);
-    margin-top: clamp(20px, 3.8vw, 38px);
-  }
-  .html-material-1a .try-content .name-2 {
-    margin-left: clamp(15px, 3.2vw, 34px);
-    margin-top: clamp(20px, 3.8vw, 38px);
-  }
   .html-material-1a .try-content .dash-list ul {
     line-height: clamp(11px, 2.4vw, 18px);
   }
   .html-material-1a .try-content .shape {
-    width: 7vw;
+    width: 7vw !important;
+    min-width: 30px;
+  }
+  .html-material-1a .try-content .desc ul {
+    line-height: clamp(9px, 2vw, 18px) !important;
+  }
+  .html-material-1a .try-content .col {
+    margin-right: clamp(30px, 4.3vw, 60px);
+  }
+  .html-material-1a .try-content .col-2 {
+    margin-top: clamp(18px, 3.6vw, 36px) !important;
   }
   .html-material-1a .try-content .desc {
-    margin-left: clamp(28px, 4.5vw, 56px);
+    left: clamp(40px, 9vw, 100px);
   }
   .html-material-1a .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
@@ -664,14 +681,11 @@ body {
   .html-material-1a .page-3 .try-content .list-title, .html-material-1a .page-3 .try-content .list-title-2 {
     margin-top: clamp(18px, 3.6vw, 36px);
   }
-  .html-material-1a .page-3 .try-content .dash-list .desc {
-    margin-left: clamp(22px, 4.6vw, 60px);
-  }
-  .html-material-1a .page-3 .try-content .dash-list.name-1, .html-material-1a .page-3 .try-content .dash-list.name-2 {
-    margin-left: unset;
-  }
   .html-material-1a .page-3 .try-content .sub-text.mg {
     margin-top: clamp(26px, 4.3vw, 52px);
+  }
+  .html-material-1a .page-3 .try-content .shape:not(.man) {
+    margin-bottom: clamp(80px, 19vw, 150px) !important;
   }
   .html-material-1a .page-3 .act-content ul {
     max-height: clamp(100px, 24vw, 220px);

@@ -261,6 +261,12 @@ body {
           align-items: stretch;
 }
 
+.html-material-1a .try-content ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .html-material-1a .try-content .shape {
   width: 52px;
 }
@@ -274,7 +280,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 28px 30px 0px 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 30px 0px 5px;
 }
 
 .html-material-1a .try-content .name div {
@@ -291,10 +300,14 @@ body {
 }
 
 .html-material-1a .try-content table {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 21%;
+          flex: 1 0 21%;
   margin-top: 7px;
   border-collapse: collapse;
   max-width: 276px;
   border: 2px solid #ffffff;
+  width: 100%;
 }
 
 .html-material-1a .try-content table tr:first-child {
@@ -545,8 +558,11 @@ body {
 .html-material-1a .page-3 .try-content table th {
   padding-left: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
-  height: 48px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   vertical-align: text-top;
   line-height: clamp(10px, 2.2vw, 16px);
 }
@@ -641,22 +657,17 @@ body {
   .html-material-1a .try-content .sub-text.mg {
     margin-top: clamp(12px, 2.4vw, 20px);
   }
-  .html-material-1a .try-content .name-1 {
-    margin-left: clamp(15px, 3.2vw, 34px);
-    margin-top: clamp(20px, 3.8vw, 38px);
-  }
-  .html-material-1a .try-content .name-2 {
-    margin-left: clamp(15px, 3.2vw, 34px);
-    margin-top: clamp(20px, 3.8vw, 38px);
-  }
-  .html-material-1a .try-content .dash-list ul {
-    line-height: clamp(11px, 2.4vw, 18px);
+  .html-material-1a .try-content .name {
+    margin-right: clamp(14px, 2.6vw, 30px);
   }
   .html-material-1a .try-content .shape {
-    width: 7vw;
+    width: 6.5vw;
   }
-  .html-material-1a .try-content .desc {
-    margin-left: clamp(28px, 4.5vw, 56px);
+  .html-material-1a .try-content table ul {
+    line-height: clamp(12px, 3vw, 21px) !important;
+  }
+  .html-material-1a .try-content table li {
+    padding-left: clamp(4px, 1.4vw, 10px) !important;
   }
   .html-material-1a .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
@@ -696,20 +707,14 @@ body {
   .html-material-1a .page-2 .see-content .blue-section .col {
     margin: 0px 0px;
   }
+  .html-material-1a .page-2 .see-content .blue-section .col .text:not(:last-child) {
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
   .html-material-1a .page-3 .sub-head {
     margin-top: clamp(42px, 7.8vw, 75px);
   }
   .html-material-1a .page-3 .try-content {
     margin-top: clamp(26px, 4.3vw, 52px);
-  }
-  .html-material-1a .page-3 .try-content .list-title, .html-material-1a .page-3 .try-content .list-title-2 {
-    margin-top: clamp(18px, 3.6vw, 36px);
-  }
-  .html-material-1a .page-3 .try-content .dash-list .desc {
-    margin-left: clamp(22px, 4.6vw, 60px);
-  }
-  .html-material-1a .page-3 .try-content .dash-list.name-1, .html-material-1a .page-3 .try-content .dash-list.name-2 {
-    margin-left: unset;
   }
   .html-material-1a .page-3 .try-content .sub-text.mg {
     margin-top: clamp(26px, 4.3vw, 52px);

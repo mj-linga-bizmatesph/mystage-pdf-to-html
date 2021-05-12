@@ -6,8 +6,8 @@ body {
 
 .html-material-1b {
   width: 100%;
-  min-width: 320px;
-  max-width: 810px;
+  min-width: 360px;
+  max-width: 893px;
   min-height: 1100px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -57,7 +57,7 @@ body {
   position: absolute;
   top: 7%;
   left: 6%;
-  font-size: clamp(15px, 1.8vw, 27px);
+  font-size: clamp(12px, 3vw, 27px);
 }
 
 .lesson-number {
@@ -98,7 +98,7 @@ body {
 }
 
 .footer {
-  font-size: 9px;
+  font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;
   text-align: right;

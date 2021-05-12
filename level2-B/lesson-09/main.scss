@@ -135,7 +135,7 @@ ul {
         margin: 0px 0px;
         &:first-child {
           min-width: 48px;
-          max-width: 100px;
+          max-width: 100%;
           word-wrap: break-word;
           font-weight: bold;
         }
@@ -216,7 +216,10 @@ ul {
         height: 140px !important;
       }
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 5px;
+      }
+      .bottom-part {
+        min-height: 95px;
       }
       .sub-text {
         padding: 3px 8px !important;

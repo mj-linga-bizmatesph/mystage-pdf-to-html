@@ -111,8 +111,8 @@ ul {
     margin: 2px 0px 0px 18px;
     padding: 0;
     list-style-type: disc;
-    position: absolute;
-    bottom: 38px;
+    position: relative;
+    bottom: 50%;
     left: 10px;
 
     li {
@@ -162,16 +162,16 @@ ul {
 /* Try */
 .try-content {
   margin-top: 12%;
+  
   table {
     margin-top: 5px;
-    font-size: 15px;
+    font-size: clamp(8px, 1.6vw, 15px);
     border-spacing: 0px;
     padding-bottom: 5px;
-    left: -15px;
+    left: 0;
     position: relative;
+    width: 100%;
     th, td {
-      max-width: 150px;
-      min-width: 145px;
       word-wrap: break-word;
       padding: 4px 7px;
       border: 1px solid #ffffff;
@@ -208,14 +208,11 @@ ul {
 
 @media screen and (max-width: 960px) {
   .html-material-2b {
-    .biz-tip .text {
-      // min-height: 105px;
-    }
     .biz-tip {
-      ul {
-        bottom: 4%;
-        left: 1px;
-      }
+      // ul {
+      //   bottom: 111px;
+      //   left: 8px;
+      // }
     }
   }
 }
@@ -225,11 +222,18 @@ ul {
     .sub-text {
       padding-right: 7px !important;
     }
-    .biz-tip .text {
-      // min-height: 60px;
+    .biz-tip {
+      ul {
+        bottom: 44%;
+        left: 7px;
+      }
+      .text {
+        min-height: 100px;
+      }
     }
+
     .try-content {
-      margin-top: 14%;
+      margin-top: 20%;
     }
   }
 }
@@ -241,8 +245,8 @@ ul {
         height: 200px;
       }
       ul {
-        bottom: 4%;
-        left: 1px;
+        bottom: 48%;
+        left: 7px;
       }
     }
     .title {
@@ -262,7 +266,12 @@ ul {
       min-width: 32px !important;
     }
     .try-content {
-      margin-top: 10%;
+      margin-top: 20%;
+      table {
+        td, th {
+          padding: 2px !important;
+        }
+      }
     }
     .biz-tip {
       div {
@@ -270,14 +279,15 @@ ul {
       }
       .text {
         padding: 4px 8px 12px;
+        min-height: 106px;
       }
       .sub-text {
         padding: 3px 8px !important;
       }
-      // ul {
-      //   bottom: 4%;
-      //   left: 1px;
-      // }
+      ul {
+        bottom: 54%;
+        left: 2px;
+      }
     }
   }
 }
@@ -288,21 +298,28 @@ ul {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-      margin-top: 18%;
+      margin-top: 23%;
+      table {
+        th, td {
+          &:first-child {
+            min-width: 0px;
+          }
+        }
+      }
     }
     .biz-tip {
       top: 100px;
-      // .text {
-      //   padding: 4px 8px 12px;
-      //   min-height: 105px;
-      // }
       .sub-text {
         padding: 3px 8px !important;
       }
-      // ul {
-      //   bottom: 4%;
-      //   left: 1px;
-      // }
+      .text {
+        padding: 4px 8px 12px;
+        min-height: 106px;
+      }
+      ul {
+        bottom: 83px;
+        left: 2px;
+      }
     }
     .section {
       left: calc(#{$left-pixel} - 240px);

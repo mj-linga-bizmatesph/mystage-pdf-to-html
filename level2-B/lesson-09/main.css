@@ -153,7 +153,7 @@ ul li {
 
 .see-content .conversation .row p:first-child {
   min-width: 48px;
-  max-width: 100px;
+  max-width: 100%;
   word-wrap: break-word;
   font-weight: bold;
 }
@@ -226,7 +226,10 @@ ul li {
     height: 140px !important;
   }
   .html-material-2b .biz-tip .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px 5px;
+  }
+  .html-material-2b .biz-tip .bottom-part {
+    min-height: 95px;
   }
   .html-material-2b .biz-tip .sub-text {
     padding: 3px 8px !important;

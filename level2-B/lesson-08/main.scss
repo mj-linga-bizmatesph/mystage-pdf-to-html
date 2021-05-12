@@ -212,14 +212,14 @@ ul {
       min-width: 32px !important;
     }
     .try-content {
-      margin-top: 10%;
+      margin-top: 13%;
     }
     .biz-tip {
       div {
         height: 140px !important;
       }
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 20px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -240,6 +240,7 @@ ul {
       top: 100px;
       .text {
         padding: 4px 8px 12px;
+        min-height: 96px;
       }
       .sub-text {
         padding: 3px 8px !important;

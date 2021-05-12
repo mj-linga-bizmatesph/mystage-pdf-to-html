@@ -8,203 +8,291 @@ $left-pixel: 126.5px;
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
-.page-1 {
-  width: 892.75px;
-  min-height: 1200px;
+.html-page-1 {
+  width:100%;
+  min-width:320px;
+  max-width:810px;
+  min-height: 1100px;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'), url('/images/bg-footer.png');
+  background-image:url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.header {
-  font-family: $title-font;
-}
-.b {
-  font-weight: bold;
-}
-.program-rank {
-  position: absolute;
-  top: 40px;
-  left: 48px;
-  color: #ffffff;
-  font-size: 0px;
 
-  .type {
-    padding: 3px 16px 3px 14px;
-    background-color: $primary;
-    font-size: 15px;
+  .header, .footer {
+    font-family: $title-font;
   }
-  .level {
-    padding: 3px 12px 3px 13px;
-    background-color: #339999;
-    font-size: 15px;
+  .b {
+    font-weight: bold;
   }
-}
-.line {
-  margin: 0 12px;
-}
-.title {
-  position: absolute;
-  top: 80px;
-  left: 55px;
-  font-size: 27px;
-}
-.lesson-number {
-  position: absolute;
-  left: 823px;
-  top: 66px;
-  font-size: 13px;
-  color: #ffffff;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  font-family: $text-font;
-}
-.sub-text {
-  font-family: $title-font !important;
-}
-.section {
-  position: absolute;
-  left: -71.5px;
-  color: #2078a0;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: $title-font;
-
-  &.see {
-    top: 13px;
-  }
-  &.try {
-    top: 0px;
-  }
-  &.act {
-    top: 2px;
-  }
-}
-.divider {
-  color: #d9d9d9;
-  font-size: 15px;
-  position: relative;
-  left: 469px;
-
-  &.d1 {
-    margin-top: 14px;
-  }
-  &.d2 {
-    margin-top: 30px;
-  }
-}
-.text {
-  font-family: $text-font;
-}
-
-/* See */
-.see-content {
-  position: relative;
-  margin-left: $left-pixel;
-  margin-top: 230px;
-  font-size: 15px;
-
-  .wrapper {
-    padding-top: 13px;
-    padding-left: 18.5px;
-    height: fit-content;
-    padding-bottom: 20px;
-  }
-  p {
-    margin: 0 auto;
-    .tab {
-      display: inline-block;
-      width: 180px;
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    color: #ffffff;
+    font-size: 0px;
+  
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $primary;
+      font-size:clamp(8px, 2vw, 15px);
+    }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: #339999;
+      font-size:clamp(8px, 2vw, 15px);
     }
   }
-  .col {
-    width: fit-content;
-    margin-right: 48px;
-    min-width: 310px;
-    .text:not(:last-child) {
-      margin-bottom: 30px;
+  .line {
+    margin: 0 12px;
+  }
+  .title {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    font-size: 27px;
+  }
+  .lesson-number {
+    position: absolute;
+    left: 92%;
+    padding-top: 7.5%;
+    font-size:clamp(8px, 2vw, 13px);
+    color: #ffffff;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    font-family: $text-font;
+  }
+  .sub-text {
+    font-family: $title-font !important;
+  }
+  .section {
+    position: absolute;
+    left: -71.5px;
+    color: #2078a0;
+    font-weight: bold;
+    font-size:clamp(10px, 2vw, 15px);
+    font-family: $title-font;
+  
+    &.see {
+      top: 13px;
+    }
+    &.try {
+      top: 0px;
+    }
+    &.act {
+      top: 2px;
     }
   }
-  .col1 {
-    margin-right: 25px;
-  }
-  .col2 {
-    padding-right: 50px;
+  .divider {
+    color: #d9d9d9;
+    font-size:clamp(8px, 2vw, 15px);
+    position: relative;
+    left: 50%;
+  
+    &.d1 {
+      margin-top: 14px;
+    }
+    &.d2 {
+      margin-top: 30px;
+    }
   }
   .text {
     font-family: $text-font;
-    line-height: 26px;
-    margin-top: 4px;
-    &:not(:last-child) {
-      margin-bottom: 22px;
+  }
+  
+  /* See */
+  .see-content {
+    position: relative;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    margin-top:clamp(30px, 30%, 230px);
+    font-size:clamp(10px, 2vw, 15px);
+  
+    .wrapper {
+      padding-top: 13px;
+      
+      height: fit-content;
+      padding-bottom: 20px;
+    }
+    p {
+      margin: 0 auto;
+      .tab {
+        display: inline-block;
+        width: 180px;
+      }
+    }
+    .col {
+      width: fit-content;
+      margin-right: 48px;
+      min-width: 310px;
+      .text:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    .col1 {
+      margin-right: 25px;
+    }
+    .col2 {
+      padding-right: 50px;
+    }
+    .text {
+      font-family: $text-font;
+      line-height: 26px;
+      margin-top: 4px;
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
     }
   }
-}
+  
+  /* Try */
+  .try-content {
+    position: relative;
+    margin-top: 30px;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    font-size:clamp(10px, 2vw, 15px);
 
-/* Try */
-.try-content {
-  position: relative;
-  margin-top: 30px;
-  margin-left: $left-pixel;
-  padding-left: 18.5px;
-  font-size: 15px;
-
-  ul {
-    list-style-type: decimal;
-    margin: 3px 0px 0px 18px;
-    padding: 0;
-    line-height: 26px;
-  }
-  li {
-    padding-left: 10px;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-/* Act */
-.act-content {
-  position: relative;
-  margin-top: 30px;
-  margin-left: $left-pixel;
-  padding-left: 18.5px;
-  font-size: 15px;
-
-  .sub-text {
-    line-height: 25px;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
     ul {
+      list-style-type: decimal;
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: 26px;
-      list-style: none;
-      &:first-child {
-        list-style: disc;
-      }
-      li{
-        padding-left: 10px;
+    }
+    li {
+      padding-left: 10px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  /* Act */
+  .act-content {
+    position: relative;
+    margin-top: 30px;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    font-size:clamp(10px, 2vw, 15px);
+
+    .sub-text {
+      line-height: 25px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      ul {
+        margin: 3px 0px 0px 18px;
+        padding: 0;
+        line-height: 26px;
+        list-style: none;
+        &:first-child {
+          list-style: disc;
+        }
+        li{
+          padding-left: 10px;
+        }
       }
     }
   }
+  .footer {
+    font-size: 9px;
+    position: absolute;
+    bottom: 43px;
+    left: 70%;
+  }  
 }
-.footer {
-  font-size: 9px;
-  position: absolute;
-  bottom: 43px;
-  left: 590px;
+
+@media screen and (max-width: 960px){
+  .html-page-1 {
+    .footer {
+      bottom: 3%;
+    }
+    .title {
+      font-size: clamp(20px, 2.2vw, 27px);
+    }
+  }
+}
+
+@media screen and (max-width: 820px){
+  .html-page-1 {
+    .footer {
+      bottom: 3%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .html-page-1 {
+    .section {
+      left: clamp(-55px, 20%, -71.5px);
+    }
+    .footer {
+      bottom: 2%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .html-page-1 {
+    .section {
+      left: clamp(-45px, 20%, -71.5px);
+    }
+    .program-rank {
+      top: 0;
+      padding-top: 6%;
+    }
+    .title {
+      top:0;
+      padding-top: 12%;
+    }
+    .footer {
+      left: 59%;
+      bottom: 2%;
+    }
+  }
+}
+
+@media screen and (max-width: 420px){
+  .html-page-1 {
+    .section {
+      left: clamp(-30px, 15%, -71.5px);
+    }
+    .program-rank {
+      top: 0;
+      padding-top: 6%;
+      .type, .level {
+        padding: 3px 10px;
+        font-size: clamp(6px, 2vw, 15px);
+      }
+    }
+    .title {
+      top:0;
+      padding-top: 12%;
+    }
+    .footer {
+      left: 59%;
+      bottom: 1%;
+    }
+    .see-content {
+      .wrapper {
+        padding-bottom: 0;
+      }
+      .col2 {
+        padding-right:10px
+      }
+    }
+    .act-content, .try-content {
+      margin-top:20px
+    }
+  }
 }

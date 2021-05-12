@@ -73,7 +73,7 @@ body {
 }
 
 .html-material-3a ul li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: clamp(18px, 2vw, 24px);
 }
 
 .html-material-3a .test-content {
@@ -81,7 +81,7 @@ body {
   margin-top: clamp(20px, 17%, 116px);
   margin-left: clamp(120px, 28%, 218px);
   padding: 6px 16px 6px 0px;
-  font-size: clamp(11px, 2vw, 18px);
+  font-size: clamp(9px, 2vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
@@ -89,7 +89,7 @@ body {
 }
 
 .html-material-3a .test-content .sub-text {
-  font-size: clamp(9px, 2.2vw, 20px);
+  font-size: clamp(10px, 2.2vw, 20px);
   font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .html-material-3a .test-content .description {
-  font-size: clamp(11px, 2vw, 20px);
+  font-size: clamp(10px, 2vw, 20px);
 }
 
 .html-material-3a .part-2 {

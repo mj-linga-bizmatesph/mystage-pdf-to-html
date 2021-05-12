@@ -172,7 +172,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .html-material-2a .try-content {
-    margin-top: 22%;
+    margin-top: 10%;
   }
   .html-material-2a .biz-tip div {
     height: 165px;
@@ -181,22 +181,15 @@ body {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
-@media screen and (max-width: 600px) {
-  .html-material-2a {
-    min-height: calc(100vh - 62px);
-  }
-  .html-material-2a .section {
-    left: clamp(-158px, calc(-28% - 45px), -100px);
-    padding-top: 5px;
-  }
-  .html-material-2a .see-content .conversation .row p:first-child {
-    min-width: 32px !important;
+@media screen and (max-width: 420px) {
+  .html-material-2a .title {
+    top: clamp(26px, 7.3vw, 32px) !important;
   }
   .html-material-2a .try-content {
-    margin-top: 22%;
+    margin-top: 33%;
   }
-  .html-material-2a .biz-tip div {
-    height: 140px !important;
+  .html-material-2a .biz-tip {
+    top: 100px;
   }
   .html-material-2a .biz-tip .text {
     padding: 4px 8px 12px;
@@ -204,24 +197,7 @@ body {
   .html-material-2a .biz-tip .sub-text {
     padding: 3px 8px !important;
   }
-}
-@media screen and (max-width: 420px) {
-  .html-material-2b .title {
-    top: clamp(26px, 7.3vw, 32px) !important;
-  }
-  .html-material-2b .try-content {
-    margin-top: 18%;
-  }
-  .html-material-2b .biz-tip {
-    top: 100px;
-  }
-  .html-material-2b .biz-tip .text {
-    padding: 4px 8px 12px;
-  }
-  .html-material-2b .biz-tip .sub-text {
-    padding: 3px 8px !important;
-  }
-  .html-material-2b .section {
+  .html-material-2a .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
   }
 }/*# sourceMappingURL=main.css.map */

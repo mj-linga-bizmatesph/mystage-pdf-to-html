@@ -2,102 +2,144 @@ $text-font: 'Calibri';
 
 $primary: #2078a0;
 
-$left-pixel: 218px;
+$left-pixel: clamp(120px, 28%, 218px);
 
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
-.page-1 {
-  width: 810px;
+.html-material-3b {
+  width: 100%;
+  min-width: 360px;
+  max-width: 810px;
   min-height: 1018px;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/03-bg-review.png'), url('/images/03-bg-footer.png');
-  background-position: top, bottom;
-  background-size: contain;
+  background-image: url('/images/03-review-logo.png'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-position: 94% 94%, top, bottom;
+  background-size: 10%, 100% auto, 100%;
   background-repeat: no-repeat;
-}
-.b {
-  font-weight: bold;
-}
-.title {
-  position: absolute;
-  top: 59px;
-  left: 9px;
-  font-size: 21px;
-  color: #ffffff;
-}
-.section {
-  position: absolute;
-  left: -209px;
-  top: -4px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  line-height: 43px;
-  font-size: 21.5px;
-  padding-left: 6px;
-  background-image: url('/images/03-section-arrow.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 206px;
-}
-ul {
-  margin: 2px 0px 0px 16px;
-  padding: 0;
-  list-style: none;
+  font-family: $text-font;
 
-  li {
-    padding-left: 6px;
-    position: relative;
-    &:before {
-      content: '\25A0';
-      position: absolute;
-      left: -15px;
-      top: -7px;
-      font-size: 26px;
-    }
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
-  }
-}
-
-.part1-content,
-.part2-content {
-  position: relative;
-  margin-top: 116px;
-  margin-left: $left-pixel;
-  padding: 6px 16px 6px 0px;
-  font-size: 18px;
-  background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
-  border-radius: 10px;
-  width: calc(100% - #{$left-pixel} - 20px);
-
-  .sub-text {
-    font-size: 21px;
+  .b {
     font-weight: bold;
   }
-  p {
-    margin: 0px auto;
+  .title {
+    position: absolute;
+    top: 59px;
+    left: 9px;
+    font-size: clamp(10.5px, 2.4vw, 21px);
+    color: #ffffff;
+  }
+  .section {
+    position: absolute;
+    left: calc(-28% - 44px);
+    top: -4px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 9px;
+    font-size: clamp(12px, 2.4vw, 21.5px);
+    padding-left: 6px;
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-section-arrow.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 35%;
+    min-width: 113px;
+    max-width: 206px;
+  }
+  ul {
+    margin: 2px 0px 0px 16px;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding-left: 6px;
+      position: relative;
+      &:before {
+        content: '■';
+        position: absolute;
+        left: -15px;
+        top: -7px;
+        font-size: clamp(16px, 2.4vw, 26px);
+      }
+      &:not(:last-child) {
+        margin-bottom: clamp(18px, 2vw, 24px);
+      }
+    }
+  }
+
+  .part1-content,
+  .part2-content {
+    position: relative;
+    margin-top: 116px;
+    margin-left: $left-pixel;
+    padding: 6px 16px 6px 0px;
+    font-size: clamp(14px, 2.4vw, 18px);
+    background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
+    border-radius: 10px;
+    width: calc(100% - #{$left-pixel} - 20px);
+  
+    .sub-text {
+      font-size: clamp(12px, 2.4vw, 21.5px);
+      font-weight: bold;
+    }
+    p {
+      margin: 0px auto;
+    }
+  }
+  
+  .part2-content {
+    margin-top: 48px;
+    padding-top: 4px;
+    font-size: clamp(12px, 2.4vw, 20px);
+  }
+
+  .footer {
+    font-size: clamp(12px, 2vw, 18px);
+    position: absolute;
+    text-align: right;
+    bottom: 3px;
+    right: 3px;
   }
 }
 
-.part2-content {
-  margin-top: 48px;
-  padding-top: 4px;
-  font-size: 20px;
+@media screen and (max-width: 960px) {
+  .html-material-3b {
+    width: 100vw !important;
+  }
 }
 
-.footer {
-  font-size: 18px;
-  position: absolute;
-  text-align: right;
-  bottom: 3px;
-  right: 3px;
+@media screen and (max-width: 768px) {
+  .html-material-3b {
+    .title {
+      top: clamp(30px, 7.3vw, 59px);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-material-3b {
+    min-height: calc(100vh - 62px);
+    .section {
+      left: clamp(-158px, calc(-28% - 34px), -100px);
+      padding-top: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-material-3b {
+    .title {
+      top: clamp(26px, 7.3vw, 32px) !important;
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+    }
+  }
 }

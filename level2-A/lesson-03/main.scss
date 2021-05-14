@@ -216,19 +216,41 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .html-material-2a {
-    .title {
-      top: clamp(26px, 7.3vw, 32px) !important;
-    }
     .try-content {
-      margin-top: 10%;
+      margin-top: 20%;
     }
     .act-content {
       table {
         font-size: 8px;
         th, td {
-          max-width: 22px !important;
+          max-width: 105px !important;
+          min-width: 15px;
+        }
+        td {
+          &:first-child {
+            width: 100px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-material-2a {
+    .title {
+      top: clamp(26px, 7.3vw, 32px) !important;
+    }
+    .try-content {
+      margin-top: 42%;
+    }
+    .act-content {
+      table {
+        font-size: 8px;
+        th, td {
+          max-width: 28px !important;
           min-width: 15px;
         }
         td {

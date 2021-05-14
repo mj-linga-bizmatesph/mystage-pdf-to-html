@@ -201,18 +201,33 @@ body {
   right: 3px;
 }
 
-@media screen and (max-width: 375px) {
-  .html-material-2a .title {
-    top: clamp(26px, 7.3vw, 32px) !important;
-  }
+@media screen and (max-width: 768px) {
   .html-material-2a .try-content {
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .html-material-2a .act-content table {
     font-size: 8px;
   }
   .html-material-2a .act-content table th, .html-material-2a .act-content table td {
-    max-width: 22px !important;
+    max-width: 105px !important;
+    min-width: 15px;
+  }
+  .html-material-2a .act-content table td:first-child {
+    width: 100px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .html-material-2a .title {
+    top: clamp(26px, 7.3vw, 32px) !important;
+  }
+  .html-material-2a .try-content {
+    margin-top: 42%;
+  }
+  .html-material-2a .act-content table {
+    font-size: 8px;
+  }
+  .html-material-2a .act-content table th, .html-material-2a .act-content table td {
+    max-width: 28px !important;
     min-width: 15px;
   }
   .html-material-2a .act-content table td:first-child {

@@ -106,7 +106,7 @@ body {
 
 .divider {
   color: #d9d9d9;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 50%;
 }
@@ -265,6 +265,9 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+  .html-material-1b {
+    min-height: unset;
+  }
   .html-material-1b .footer {
     bottom: 3%;
   }

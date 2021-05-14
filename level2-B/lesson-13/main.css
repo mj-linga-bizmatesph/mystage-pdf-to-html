@@ -91,7 +91,7 @@ ul li {
 }
 
 .biz-tip div {
-  height: 213px;
+  margin-bottom: 15px;
 }
 
 .biz-tip .sub-text {
@@ -127,7 +127,7 @@ ul li {
   padding: 0;
   list-style-type: disc;
   position: relative;
-  bottom: 61%;
+  bottom: 132px;
   left: 10px;
 }
 
@@ -241,7 +241,7 @@ ul li {
     padding-right: 7px !important;
   }
   .html-material-2b .biz-tip ul {
-    bottom: 57%;
+    bottom: 123px;
     left: 8px;
   }
   .html-material-2b .biz-tip .text {
@@ -254,9 +254,6 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-2b .biz-tip div {
-    height: 200px;
-  }
   .html-material-2b .biz-tip ul {
     bottom: 128px;
     left: 7px;
@@ -280,14 +277,11 @@ ul li {
   .html-material-2b .try-content {
     margin-top: 26%;
   }
-  .html-material-2b .biz-tip div {
-    height: 165px;
-  }
   .html-material-2b .biz-tip .text {
     padding: 4px 8px 22px;
   }
   .html-material-2b .biz-tip .bottom-part {
-    min-height: 64%;
+    min-height: 100px;
   }
   .html-material-2b .biz-tip .sub-text {
     padding: 3px 8px !important;

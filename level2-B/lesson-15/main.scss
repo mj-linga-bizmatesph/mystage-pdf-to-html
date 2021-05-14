@@ -82,7 +82,7 @@ ul {
   font-size: clamp(9px, 1.8vw, 15px);
   
   div {
-    height: 252px;
+    margin-bottom: 15px;
   }
   .sub-text {
     color: #ffffff;
@@ -172,7 +172,7 @@ ul {
 
 /* Try */
 .try-content {
-  margin-top: 12%;
+  margin-top: 14%;
   
   table {
     margin-top: 5px;
@@ -224,6 +224,9 @@ ul {
         left: 8px;
       }
     }
+    .try-content {
+      margin-top: 16%;
+    }
   }
 }
 
@@ -233,9 +236,6 @@ ul {
       padding-right: 7px;
     }
     .biz-tip {
-      div {
-        height: 220px;
-      }
       ul {
         bottom: 122px;
         left: 8px;
@@ -245,7 +245,6 @@ ul {
         padding: 7px 7px 8px 12px;
       }
     }
-
     .try-content {
       margin-top: 20%;
     }
@@ -255,9 +254,6 @@ ul {
 @media screen and (max-width: 768px) {
   .html-material-2b {
     .biz-tip {
-      div {
-        height: 200px;
-      }
       .text {
         min-height: 150px;
       }
@@ -268,6 +264,9 @@ ul {
     }
     .title {
       top: clamp(30px, 7.3vw, 59px);
+    }
+    .try-content {
+      margin-top: 24%;
     }
   }
 }
@@ -283,21 +282,18 @@ ul {
       min-width: 32px;
     }
     .try-content {
-      margin-top: 24%;
+      margin-top: 26%;
     }
     .biz-tip {
-      div {
-        height: 175px;
-      }
       .text {
-        padding: 4px 8px 22px;
-        min-height: 116px;
+        padding: 4px 8px 12px;
+        min-height: 125px;
       }
       .sub-text {
         padding: 3px 8px;
       }
       ul {
-        bottom: 93px;
+        bottom: 94px;
         left: 2px;
       }
     }
@@ -311,7 +307,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   .html-material-2b {
     .title {
       top: clamp(26px, 7.3vw, 32px);
@@ -321,9 +317,6 @@ ul {
     }
     .biz-tip {
       top: 100px;
-      div {
-        height: 180px;
-      }
       .text {
         &:not(:last-child) {
           padding: 4px 8px 35px;

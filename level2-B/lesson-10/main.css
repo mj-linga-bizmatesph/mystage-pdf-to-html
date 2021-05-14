@@ -131,6 +131,9 @@ ul li:not(:last-child) {
 }
 
 @media screen and (max-width: 768px) {
+  .html-material-2b {
+    min-height: unset;
+  }
   .html-material-2b .title {
     top: clamp(30px, 7.3vw, 59px);
   }
@@ -140,10 +143,17 @@ ul li:not(:last-child) {
   .html-material-2b table td, .html-material-2b table th {
     padding: 2px !important;
   }
+  .section {
+    left: clamp(-158px, calc(-28% - 34px), -100px);
+    padding-top: 5px;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .html-material-2b .title {
     top: clamp(26px, 7.3vw, 32px) !important;
+  }
+  .html-material-2b .section {
+    left: calc(clamp(125px, 28%, 218px) - 240px);
   }
 }

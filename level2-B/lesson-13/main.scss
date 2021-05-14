@@ -82,7 +82,7 @@ ul {
   font-size: clamp(9px, 1.8vw, 15px);
   
   div {
-    height: 213px;
+    margin-bottom: 15px;
   }
   .sub-text {
     color: #ffffff;
@@ -112,7 +112,7 @@ ul {
     padding: 0;
     list-style-type: disc;
     position: relative;
-    bottom: 61%;
+    bottom: 132px;
     left: 10px;
 
     li {
@@ -226,7 +226,7 @@ ul {
     }
     .biz-tip {
       ul {
-        bottom: 57%;
+        bottom: 123px;
         left: 8px;
       }
       .text {
@@ -244,9 +244,6 @@ ul {
 @media screen and (max-width: 768px) {
   .html-material-2b {
     .biz-tip {
-      div {
-        height: 200px;
-      }
       ul {
         bottom: 128px;
         left: 7px;
@@ -272,14 +269,11 @@ ul {
       margin-top: 26%;
     }
     .biz-tip {
-      div {
-        height: 165px;
-      }
       .text {
         padding: 4px 8px 22px;
       }
       .bottom-part {
-        min-height: 64%;
+        min-height: 100px;
       }
       .sub-text {
         padding: 3px 8px !important;

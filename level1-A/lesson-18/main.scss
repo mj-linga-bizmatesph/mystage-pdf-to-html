@@ -117,8 +117,7 @@ body {
     color: #d9d9d9;
     font-size: clamp(6px, 1.8vw, 15px);
     position: relative;
-    text-align: center;
-    margin-left: 84px;
+    left: 52%;
 
     &.d1,
     &.d2 {
@@ -272,12 +271,12 @@ body {
     }
   }
   .footer {
-    font-size: clamp(5px, 1.4vw, 9px);
+    font-size: clamp(4.5px, 1.2vw, 9px);
     position: absolute;
-    width: 345px;
+    width: fit-content;
     text-align: right;
-    bottom: 43px;
-    left: 492px;
+    bottom: 3.4%;
+    left: 55%;
     font-family: $title-font;
   }
 
@@ -406,7 +405,6 @@ body {
     .page-2,
     .page-3 {
       min-height: unset;
-      padding-bottom: 82px;
     }
     .see-content {
       margin-top: clamp(75px, 20vw, 177px);
@@ -450,11 +448,6 @@ body {
           width: unset !important;
         }
       }
-    }
-    .footer {
-      left: unset;
-      right: 15px;
-      width: fit-content;
     }
 
     /* Page 2 */

@@ -186,12 +186,12 @@ body {
   }
 
   .footer {
-    font-size: clamp(5px, 1.4vw, 9px);
+    font-size: clamp(4.5px, 1.2vw, 9px);
     position: absolute;
-    width: 345px;
+    width: fit-content;
     text-align: right;
-    bottom: 43px;
-    left: 492px;
+    bottom: 3.4%;
+    left: 55%;
     font-family: $title-font;
   }
 
@@ -266,7 +266,6 @@ body {
     .page-2,
     .page-3 {
       min-height: unset;
-      padding-bottom: 82px;
     }
   }
   .lesson-list {
@@ -322,6 +321,9 @@ body {
     .title {
       top: clamp(45px, 8vw, 80px) !important;
       left: clamp(30px, 4.1vw, 55px) !important;
+    }
+    .footer {
+      bottom: clamp(20px, 3.8vw, 43px);
     }
   }
 }

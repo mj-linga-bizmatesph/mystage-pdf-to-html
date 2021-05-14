@@ -124,8 +124,7 @@ body {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
-  text-align: center;
-  margin-left: 84px;
+  left: 52%;
 }
 
 .html-material-1a .divider.d1, .html-material-1a .divider.d2 {
@@ -295,12 +294,14 @@ body {
 }
 
 .html-material-1a .footer {
-  font-size: clamp(5px, 1.4vw, 9px);
+  font-size: clamp(4.5px, 1.2vw, 9px);
   position: absolute;
-  width: 345px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: right;
-  bottom: 43px;
-  left: 492px;
+  bottom: 3.4%;
+  left: 55%;
   font-family: "Arial";
 }
 
@@ -462,7 +463,6 @@ body {
   .html-material-1a .page-2,
   .html-material-1a .page-3 {
     min-height: unset;
-    padding-bottom: 82px;
   }
   .html-material-1a .see-content {
     margin-top: clamp(75px, 20vw, 177px);
@@ -506,13 +506,6 @@ body {
   }
   .html-material-1a .act-content ul:first-child {
     width: unset !important;
-  }
-  .html-material-1a .footer {
-    left: unset;
-    right: 15px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
   .html-material-1a .page-2 .sub-head {
     margin-top: clamp(35px, 16vw, 128px);

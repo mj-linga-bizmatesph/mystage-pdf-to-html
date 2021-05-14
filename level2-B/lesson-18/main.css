@@ -165,6 +165,7 @@ ul li {
 /* Try */
 .try-content {
   margin-top: 12%;
+  height: 10rem;
 }
 
 .try-content ul {
@@ -175,8 +176,8 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   height: 120px;
 }
 
@@ -216,6 +217,9 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  .html-material-2b .try-content {
+    height: unset;
+  }
   .html-material-2b .biz-tip div {
     height: 165px;
   }
@@ -236,7 +240,7 @@ ul li {
     min-width: 32px !important;
   }
   .html-material-2b .try-content {
-    margin-top: 10%;
+    margin-top: 13%;
   }
   .html-material-2b .biz-tip div {
     height: 140px !important;

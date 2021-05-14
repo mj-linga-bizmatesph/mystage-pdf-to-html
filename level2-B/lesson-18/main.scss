@@ -150,10 +150,11 @@ ul {
 /* Try */
 .try-content {
   margin-top: 12%;
+  height: 10rem;
   ul {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 120px;
   }
 }
@@ -198,6 +199,9 @@ ul {
 
 @media screen and (max-width: 768px) {
   .html-material-2b {
+    .try-content {
+      height: unset;
+    }
     .biz-tip div {
       height: 165px;
     }
@@ -218,7 +222,7 @@ ul {
       min-width: 32px !important;
     }
     .try-content {
-      margin-top: 10%;
+      margin-top: 13%;
     }
     .biz-tip {
       div {

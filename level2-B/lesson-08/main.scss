@@ -216,10 +216,10 @@ ul {
     }
     .biz-tip {
       div {
-        height: 140px !important;
+        height: 135px;
       }
       .text {
-        padding: 4px 8px 20px;
+        padding: 4px 8px 10px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -241,6 +241,9 @@ ul {
       .text {
         padding: 4px 8px 12px;
         min-height: 96px;
+      }
+      div {
+        height: 145px;
       }
       .sub-text {
         padding: 3px 8px !important;

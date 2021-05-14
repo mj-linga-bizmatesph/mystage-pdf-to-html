@@ -226,10 +226,10 @@ ul li {
     margin-top: 13%;
   }
   .html-material-2b .biz-tip div {
-    height: 140px !important;
+    height: 135px;
   }
   .html-material-2b .biz-tip .text {
-    padding: 4px 8px 20px;
+    padding: 4px 8px 10px;
   }
   .html-material-2b .biz-tip .sub-text {
     padding: 3px 8px !important;
@@ -249,6 +249,9 @@ ul li {
   .html-material-2b .biz-tip .text {
     padding: 4px 8px 12px;
     min-height: 96px;
+  }
+  .html-material-2b .biz-tip div {
+    height: 145px;
   }
   .html-material-2b .biz-tip .sub-text {
     padding: 3px 8px !important;

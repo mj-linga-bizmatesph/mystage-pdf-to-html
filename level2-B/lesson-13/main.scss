@@ -210,9 +210,11 @@ ul {
   .html-material-2b {
     .biz-tip {
       ul {
-        // bottom: 111px;
         left: 8px;
       }
+    }
+    .try-content {
+      margin-top: 15%;
     }
   }
 }
@@ -234,7 +236,7 @@ ul {
     }
 
     .try-content {
-      margin-top: 20%;
+      margin-top: 25%;
     }
   }
 }
@@ -249,9 +251,6 @@ ul {
         bottom: 128px;
         left: 7px;
       }
-     /*  .text {
-        min-height: 80px;
-      } */
     }
     .title {
       top: clamp(30px, 7.3vw, 59px);
@@ -286,7 +285,7 @@ ul {
         padding: 3px 8px !important;
       }
       ul {
-        bottom: 64%;
+        bottom: 108px;
         left: 2px;
       }
     }
@@ -300,13 +299,13 @@ ul {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 465px) {
   .html-material-2b {
     .title {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-      margin-top: 18%;
+      margin-top: 24%;
     }
     .biz-tip {
       top: 100px;

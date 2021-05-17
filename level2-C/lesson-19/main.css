@@ -91,7 +91,7 @@ ul li {
 }
 
 .biz-tip div {
-  height: 213px;
+  margin-bottom: 15px;
 }
 
 .biz-tip .sub-text {
@@ -214,9 +214,6 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-2c .biz-tip div {
-    height: 165px;
-  }
   .html-material-2c .title {
     top: clamp(30px, 7.3vw, 59px);
   }
@@ -245,9 +242,6 @@ ul li {
   }
   .html-material-2c .try-content {
     margin-top: 10%;
-  }
-  .html-material-2c .biz-tip div {
-    height: 140px;
   }
   .html-material-2c .biz-tip div:last-child .text {
     min-height: 130px;

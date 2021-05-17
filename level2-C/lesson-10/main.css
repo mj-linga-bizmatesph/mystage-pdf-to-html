@@ -40,7 +40,7 @@ body {
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  padding-top: 7px;
+  padding-top: 9px;
   font-size: clamp(12px, 2.4vw, 21.5px);
   padding-left: 6px;
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/02-section-arrow.png");
@@ -105,6 +105,9 @@ ul li:not(:last-child) {
 }
 
 @media screen and (max-width: 768px) {
+  .html-material-2c {
+    min-height: unset;
+  }
   .html-material-2c .title {
     top: clamp(30px, 7.3vw, 59px);
   }
@@ -121,9 +124,15 @@ ul li:not(:last-child) {
 
 @media screen and (max-width: 420px) {
   .html-material-2c .title {
-    top: clamp(26px, 7.3vw, 32px) !important;
+    top: clamp(26px, 7.3vw, 32px);
   }
   .html-material-2c .section {
     left: calc(-28% - 50px);
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 731px) {
+  .html-material-2c .section {
+    left: calc(-28% - 35px);
   }
 }

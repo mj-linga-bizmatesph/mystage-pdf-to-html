@@ -82,7 +82,7 @@ ul {
   font-size: clamp(9px, 1.8vw, 15px);
   
   div {
-    height: 213px;
+    margin-bottom: 15px;
   }
   .sub-text {
     color: #ffffff;
@@ -167,31 +167,19 @@ ul {
   right: 3px;
 }
 
-
-@media screen and (max-width: 960px) {
-  .html-material-2c {
-    .biz-tip .text {
-      min-height: 80px;
-    }
-  }
-}
-
 @media screen and (max-width: 820px) {
   .html-material-2c {
     .sub-text {
       padding-right: 7px;
     }
     .biz-tip .text {
-      min-height: 50px;
+      min-height: 80px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .html-material-2c {
-    .biz-tip div {
-      height: 165px;
-    }
     .title {
       top: clamp(30px, 7.3vw, 59px);
     }
@@ -212,9 +200,6 @@ ul {
       margin-top: 10%;
     }
     .biz-tip {
-      div {
-        height: 140px;
-      }
       .text {
         padding: 4px 8px 20px;
       }

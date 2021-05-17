@@ -101,6 +101,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .html-material-2c {
+    min-height: unset;
     .title {
       top: clamp(30px, 7.3vw, 59px);
     }

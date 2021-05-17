@@ -105,6 +105,9 @@ ul li:not(:last-child) {
 }
 
 @media screen and (max-width: 768px) {
+  .html-material-2c {
+    min-height: unset;
+  }
   .html-material-2c .title {
     top: clamp(30px, 7.3vw, 59px);
   }

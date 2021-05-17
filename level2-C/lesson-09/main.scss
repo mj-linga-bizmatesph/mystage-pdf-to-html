@@ -81,7 +81,7 @@ ul {
   font-size: clamp(9px, 1.8vw, 15px);
   
   div {
-    height: 213px;
+    margin-bottom: 15px;
   }
   .sub-text {
     color: #ffffff;
@@ -188,32 +188,24 @@ ul {
   right: 3px;
 }
 
-@media screen and (max-width: 960px) {
-  .html-material-2c {
-    .biz-tip .text {
-      min-height: 80px;
-    }
-  }
-}
-
 @media screen and (max-width: 820px) {
   .html-material-2c {
     .sub-text {
       padding-right: 7px;
     }
     .biz-tip .text {
-      min-height: 50px;
+      min-height: 80px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .html-material-2c {
-    .see-content .conversation .subject p {
-      top: -12px;
-    }
-    .biz-tip div {
-      height: 165px;
+    .see-content .conversation .subject {
+      margin-bottom: -6px;
+      p {
+        top: -12px;
+      }
     }
     .title {
       top: clamp(30px, 7.3vw, 59px);
@@ -229,16 +221,16 @@ ul {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
     }
-    .see-content .conversation .subject p {
-      top: -9px;
+    .see-content .conversation .subject {
+      margin-bottom: -10px;
+      p {
+        top: -9px;
+      }
     }
     .try-content {
       margin-top: 10%;
     }
     .biz-tip {
-      div {
-        height: 140px;
-      }
       .text {
         padding: 4px 8px 12px;
       }
@@ -257,9 +249,12 @@ ul {
     .try-content {
       margin-top: 15%;
     }
-    .see-content .conversation .subject p {
-      top: -10px;
-      font-size: 9px;
+    .see-content .conversation .subject {
+      margin-bottom: -18px;
+      p {
+        top: -10px;
+        font-size: 9px;
+      }
     }
     .biz-tip {
       top: 100px;

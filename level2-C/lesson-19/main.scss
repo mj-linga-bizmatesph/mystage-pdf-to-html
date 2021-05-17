@@ -82,7 +82,7 @@ ul {
   font-size: clamp(9px, 1.8vw, 15px);
   
   div {
-    height: 213px;
+    margin-bottom: 15px;
   }
   .sub-text {
     color: #ffffff;
@@ -204,9 +204,6 @@ ul {
 
 @media screen and (max-width: 768px) {
   .html-material-2c {
-    .biz-tip div {
-      height: 165px;
-    }
     .title {
       top: clamp(30px, 7.3vw, 59px);
     }
@@ -244,7 +241,6 @@ ul {
     }
     .biz-tip {
       div {
-        height: 140px;
         &:last-child {
           .text {
             min-height: 130px;

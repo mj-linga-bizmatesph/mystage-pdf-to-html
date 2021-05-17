@@ -19,13 +19,16 @@ body {
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  /* See */
+  /* Try */
+  /* Act */
 }
 
-.b {
+.html-material-2b .b {
   font-weight: bold;
 }
 
-.title {
+.html-material-2b .title {
   position: absolute;
   top: 59px;
   left: 9px;
@@ -33,7 +36,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-2b .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,11 +46,11 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-2b .sub-text {
   margin: 0 auto;
 }
 
-.section {
+.html-material-2b .section {
   position: absolute;
   left: calc(-28% - 44px);
   top: -4px;
@@ -66,21 +69,21 @@ body {
   max-width: 206px;
 }
 
-.section.try, .section.act {
+.html-material-2b .section.try, .html-material-2b .section.act {
   top: -6px;
 }
 
-ul {
+.html-material-2b ul {
   margin: 2px 0px 0px 18px;
   padding: 0;
   list-style-type: decimal;
 }
 
-ul li {
+.html-material-2b ul li {
   padding-left: 6px;
 }
 
-.biz-tip {
+.html-material-2b .biz-tip {
   position: absolute;
   left: 8px;
   top: calc(min(24vw, 175px));
@@ -90,11 +93,11 @@ ul li {
   font-size: clamp(9px, 1.8vw, 15px);
 }
 
-.biz-tip div {
+.html-material-2b .biz-tip div {
   margin-bottom: 15px;
 }
 
-.biz-tip .sub-text {
+.html-material-2b .biz-tip .sub-text {
   color: #ffffff;
   font-size: clamp(11px, 2vw, 18px);
   padding: 5px 11px 5px 12px;
@@ -105,7 +108,7 @@ ul li {
   background-repeat: no-repeat;
 }
 
-.biz-tip .text {
+.html-material-2b .biz-tip .text {
   margin-top: 6px;
   padding: 7px 7px 38px 12px;
   width: 100%;
@@ -118,11 +121,11 @@ ul li {
   background-repeat: no-repeat;
 }
 
-.biz-tip .red {
+.html-material-2b .biz-tip .red {
   color: red;
 }
 
-.biz-tip ul {
+.html-material-2b .biz-tip ul {
   margin: 2px 0px 0px 18px;
   padding: 0;
   list-style-type: disc;
@@ -131,13 +134,13 @@ ul li {
   left: 10px;
 }
 
-.biz-tip ul li {
+.html-material-2b .biz-tip ul li {
   padding-left: 0px;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-2b .see-content,
+.html-material-2b .act-content,
+.html-material-2b .try-content {
   position: relative;
   margin-left: clamp(120px, 28%, 218px);
   padding-right: 20px;
@@ -149,38 +152,36 @@ ul li {
   width: calc(100% - clamp(120px, 28%, 218px) - 24px);
 }
 
-/* See */
-.see-content {
+.html-material-2b .see-content {
   margin-top: 17%;
   margin-top: clamp(20px, 17%, 116px);
 }
 
-.see-content .conversation {
+.html-material-2b .see-content .conversation {
   margin-bottom: 22px;
 }
 
-.see-content .conversation .row p {
+.html-material-2b .see-content .conversation .row p {
   display: inline-block;
   margin: 0px 0px;
 }
 
-.see-content .conversation .row p:first-child {
+.html-material-2b .see-content .conversation .row p:first-child {
   min-width: 9%;
   max-width: 100px;
   word-wrap: break-word;
   font-weight: bold;
 }
 
-.see-content .conversation .row p:last-child {
+.html-material-2b .see-content .conversation .row p:last-child {
   font-style: italic;
 }
 
-/* Try */
-.try-content {
+.html-material-2b .try-content {
   margin-top: 12%;
 }
 
-.try-content table {
+.html-material-2b .try-content table {
   margin-top: 5px;
   font-size: clamp(8px, 1.6vw, 15px);
   border-spacing: 0px;
@@ -190,28 +191,27 @@ ul li {
   width: 100%;
 }
 
-.try-content table th, .try-content table td {
+.html-material-2b .try-content table th, .html-material-2b .try-content table td {
   word-wrap: break-word;
   padding: 4px 7px;
   border: 1px solid #ffffff;
   text-align: left;
 }
 
-.try-content table th:first-child, .try-content table td:first-child {
+.html-material-2b .try-content table th:first-child, .html-material-2b .try-content table td:first-child {
   min-width: 95px;
 }
 
-.try-content table th {
+.html-material-2b .try-content table th {
   background-color: #cdb925;
   font-weight: normal;
 }
 
-.try-content table td {
+.html-material-2b .try-content table td {
   text-align: left;
 }
 
-/* Act */
-.act-content {
+.html-material-2b .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -219,7 +219,7 @@ ul li {
   min-height: 26px;
 }
 
-.footer {
+.html-material-2b .footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
   text-align: right;

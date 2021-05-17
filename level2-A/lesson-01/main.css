@@ -83,7 +83,7 @@ body {
   font-size: clamp(9px, 1.8vw, 15px);
 }
 .html-material-2a .biz-tip div {
-  height: 213px;
+  margin-bottom: 15px;
 }
 .html-material-2a .biz-tip .sub-text {
   color: #ffffff;
@@ -175,18 +175,21 @@ body {
     margin-top: 10%;
   }
   .html-material-2a .biz-tip div {
-    height: 165px;
+    margin-bottom: 15px;
   }
   .html-material-2a .title {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
 @media screen and (max-width: 420px) {
+  .html-material-2a .page-1 {
+    min-height: unset;
+  }
   .html-material-2a .title {
     top: clamp(26px, 7.3vw, 32px) !important;
   }
   .html-material-2a .try-content {
-    margin-top: 33%;
+    margin-top: 25%;
   }
   .html-material-2a .biz-tip {
     top: 100px;

@@ -21,11 +21,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.b {
+.html-material-2c .b {
   font-weight: bold;
 }
 
-.title {
+.html-material-2c .title {
   position: absolute;
   top: 59px;
   left: 9px;
@@ -33,7 +33,7 @@ body {
   color: #ffffff;
 }
 
-.section {
+.html-material-2c .section {
   position: absolute;
   left: calc(-28% - 44px);
   top: -4px;
@@ -52,18 +52,18 @@ body {
   max-width: 206px;
 }
 
-ul {
+.html-material-2c ul {
   margin: 2px 0px 0px 16px;
   padding: 0;
   list-style: none;
 }
 
-ul li {
+.html-material-2c ul li {
   padding-left: 6px;
   position: relative;
 }
 
-ul li:before {
+.html-material-2c ul li:before {
   content: "\25A0";
   position: absolute;
   left: -15px;
@@ -71,11 +71,11 @@ ul li:before {
   font-size: clamp(16px, 2.4vw, 26px);
 }
 
-ul li:not(:last-child) {
+.html-material-2c ul li:not(:last-child) {
   margin-bottom: clamp(15px, 2vw, 20px);
 }
 
-.test-content {
+.html-material-2c .test-content {
   position: relative;
   margin-top: clamp(20px, 17%, 116px);
   margin-left: clamp(120px, 28%, 218px);
@@ -87,16 +87,16 @@ ul li:not(:last-child) {
   width: calc(100% - clamp(120px, 28%, 218px) - 20px);
 }
 
-.test-content .sub-text {
+.html-material-2c .test-content .sub-text {
   font-size: clamp(10px, 2.4vw, 20px);
   font-weight: bold;
 }
 
-.test-content p {
+.html-material-2c .test-content p {
   margin: 2px auto;
 }
 
-.footer {
+.html-material-2c .footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
   text-align: right;
@@ -106,7 +106,7 @@ ul li:not(:last-child) {
 
 @media screen and (max-width: 768px) {
   .html-material-2c {
-    min-height: unset;
+    min-height: calc(100vh - 62px);
   }
   .html-material-2c .title {
     top: clamp(30px, 7.3vw, 59px);
@@ -115,7 +115,7 @@ ul li:not(:last-child) {
 
 @media screen and (max-width: 600px) {
   .html-material-2c {
-    min-height: calc(100vh - 62px);
+    min-height: calc(100vh - 52px);
   }
   .html-material-2c .section {
     left: calc(-28% - 30px);

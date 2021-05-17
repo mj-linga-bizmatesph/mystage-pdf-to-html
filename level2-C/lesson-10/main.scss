@@ -22,86 +22,87 @@ body {
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-.b {
-  font-weight: bold;
-}
-.title {
-  position: absolute;
-  top: 59px;
-  left: 9px;
-  font-size: clamp(10.5px, 2.4vw, 21px);
-  color: #ffffff;
-}
-.section {
-  position: absolute;
-  left: calc(-28% - 44px);
-  top: -4px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 7px;
-  font-size: clamp(12px, 2.4vw, 21.5px);
-  padding-left: 6px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/02-section-arrow.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 35%;
-  min-width: 113px;
-  max-width: 206px;
-}
-ul {
-  margin: 2px 0px 0px 16px;
-  padding: 0;
-  list-style: none;
 
-  li {
-    padding-left: 6px;
-    position: relative;
-    &:before {
-      content:"\25A0";
-      position: absolute;
-      left: -15px;
-      top: -7px;
-      font-size: clamp(16px, 2.4vw, 26px);
-    }
-    &:not(:last-child) {
-      margin-bottom: clamp(15px, 2vw, 20px);
-    }
-  }
-}
-
-.test-content {
-  position: relative;
-  margin-top: clamp(20px, 17%, 116px);
-  margin-left: $left-pixel;
-  padding: 6px 16px 6px 0px;
-  font-size: clamp(11px, 2vw, 18px);
-  background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
-  border-radius: 10px;
-  width: calc(100% - #{$left-pixel} - 20px);
-
-  .sub-text {
-    font-size: clamp(10px, 2.4vw, 20px);
+  .b {
     font-weight: bold;
   }
-  p {
-    margin: 2px auto;
+  .title {
+    position: absolute;
+    top: 59px;
+    left: 9px;
+    font-size: clamp(10.5px, 2.4vw, 21px);
+    color: #ffffff;
   }
-}
+  .section {
+    position: absolute;
+    left: calc(-28% - 44px);
+    top: -4px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    font-size: clamp(12px, 2.4vw, 21.5px);
+    padding-left: 6px;
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/02-section-arrow.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 35%;
+    min-width: 113px;
+    max-width: 206px;
+  }
+  ul {
+    margin: 2px 0px 0px 16px;
+    padding: 0;
+    list-style: none;
 
-.footer {
-  font-size: clamp(12px, 2vw, 18px);
-  position: absolute;
-  text-align: right;
-  bottom: 3px;
-  right: 3px;
+    li {
+      padding-left: 6px;
+      position: relative;
+      &:before {
+        content:"\25A0";
+        position: absolute;
+        left: -15px;
+        top: -7px;
+        font-size: clamp(16px, 2.4vw, 26px);
+      }
+      &:not(:last-child) {
+        margin-bottom: clamp(15px, 2vw, 20px);
+      }
+    }
+  }
+
+  .test-content {
+    position: relative;
+    margin-top: clamp(20px, 17%, 116px);
+    margin-left: $left-pixel;
+    padding: 6px 16px 6px 0px;
+    font-size: clamp(11px, 2vw, 18px);
+    background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
+    border-radius: 10px;
+    width: calc(100% - #{$left-pixel} - 20px);
+
+    .sub-text {
+      font-size: clamp(10px, 2.4vw, 20px);
+      font-weight: bold;
+    }
+    p {
+      margin: 2px auto;
+    }
+  }
+
+  .footer {
+    font-size: clamp(12px, 2vw, 18px);
+    position: absolute;
+    text-align: right;
+    bottom: 3px;
+    right: 3px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .html-material-2c {
-    min-height: unset;
+    min-height: calc(100vh - 62px);
     .title {
       top: clamp(30px, 7.3vw, 59px);
     }
@@ -110,7 +111,7 @@ ul {
 
 @media screen and (max-width: 600px) {
   .html-material-2c {
-    min-height: calc(100vh - 62px);
+    min-height: calc(100vh - 52px);
     .section {
       left: calc(-28% - 30px);
     }

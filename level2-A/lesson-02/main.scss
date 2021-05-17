@@ -236,6 +236,9 @@ body {
 
 @media screen and (max-width: 420px) {
   .html-material-2a {
+    .page-1 {
+      min-height: unset;
+    }
     .title {
       top: clamp(26px, 7.3vw, 32px) !important;
     }

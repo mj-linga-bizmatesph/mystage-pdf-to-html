@@ -13,8 +13,8 @@ body {
   padding: 0;
   font-family: $text-font;
 }
-.page-1 {
-  width: 892.75px;
+.html-material-4b {
+/*   width: 892.75px;
   min-height: 1200px;
   height: fit-content;
   overflow: hidden;
@@ -22,6 +22,19 @@ body {
   padding-bottom: 62px;
   background-image: url('/images/bg-header.png'),
     url('/images/04-bg-footer.png');
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat; */
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
+  min-height: 1200px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image:url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), 
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -38,19 +51,19 @@ body {
 .program-rank {
   position: absolute;
   top: 40px;
-  left: 48px;
+  left: 6%;
   color: #ffffff;
   font-size: 0px;
 
   .type {
     padding: 3px 16px 3px 14px;
     background-color: $primary;
-    font-size: 15px;
+    font-size:clamp(8px, 2vw, 15px);
   }
   .level {
     padding: 3px 12px 3px 13px;
     background-color: #e56a62;
-    font-size: 15px;
+    font-size:clamp(8px, 2vw, 15px);
   }
 }
 .line {
@@ -59,16 +72,21 @@ body {
 .title {
   position: absolute;
   top: 80px;
-  left: 55px;
-  font-size: 27px;
+  left: 6%;
+  font-size: clamp(12px, 3vw, 27px);
 }
 .lesson-number {
-  position: absolute;
+  /* position: absolute;
   min-width: 15px;
   left: 818px;
   top: 66px;
   font-size: 13px;
   text-align: center;
+  color: #ffffff; */
+  position: absolute;
+  left: 92%;
+  padding-top: 7.5%;
+  font-size:clamp(8px, 2vw, 13px);
   color: #ffffff;
 }
 .row {
@@ -91,7 +109,7 @@ body {
 .divider {
   color: #d9d9d9;
   position: relative;
-  left: 469px;
+  left: 50%;
 
   &.d1 {
     margin-top: 8px;
@@ -117,21 +135,24 @@ ul {
   margin-left: $left-pixel;
   padding-left: 18.5px;
   padding-right: 54px;
-  font-size: 15px;
+  font-size:clamp(10px, 2vw, 15px);
 }
 
 /* Words and Phrases Content */
 .words-phrase-content {
   position: relative;
-  margin-top: 155px;
+  // margin-top: 155px;
+  margin-top: 17.4%;
   padding: 2px 0px 0px 41px;
   height: 144.5px;
   width: calc(100% - 41px);
   background: $primary-light;
-  font-size: 15px;
+  // font-size: 15px;
+  font-size:clamp(10px, 2vw, 15px);
 
   .section {
-    margin-left: $left-pixel;
+    // margin-left: $left-pixel;
+    margin-left: clamp(1px, 15%, $left-pixel);
     width: 80px;
     line-height: 1.8em;
     margin-top: 16px !important;
@@ -139,11 +160,12 @@ ul {
 
   .pointers {
     margin-top: 20px !important;
-    margin-left: $left-pixel;
+    // margin-left: $left-pixel;
+    margin-left: clamp(1px, 15%, $left-pixel);
 
     .arrow-part {
       position: relative;
-      padding-right: 70px;
+      padding-right: 0px;
       &:before {
         content: '';
         position: absolute;
@@ -168,7 +190,12 @@ ul {
 
 /* See */
 .see-content {
+  position: relative;
+  margin-left: clamp(1px, 15%, $left-pixel);
+  // margin-top:clamp(30px, 30%, 230px);
   margin-top: 38px;
+  font-size:clamp(10px, 2vw, 15px);
+
   .article {
     margin-top: 3px;
     line-height: 1.7em;
@@ -183,7 +210,12 @@ ul {
 
 /* Try */
 .try-content {
+  // margin-top: 30px;
+  position: relative;
   margin-top: 30px;
+  margin-left: clamp(1px, 15%, $left-pixel);
+  padding-left: 18.5px;
+  font-size:clamp(10px, 2vw, 15px);
 
   ul {
     list-style-type: decimal;
@@ -192,8 +224,13 @@ ul {
 
 /* Act */
 .act-content {
+  // margin-top: 26px;
+  // height: fit-content;
+  position: relative;
   margin-top: 26px;
-  height: fit-content;
+  margin-left: clamp(1px, 15%, $left-pixel);
+  padding-left: 18.5px;
+  font-size:clamp(10px, 2vw, 15px);
   
   p {
     margin: 2px auto;
@@ -201,10 +238,11 @@ ul {
   }
   table {
     margin-top: 32px;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size:clamp(10px, 2vw, 14px);
     border-spacing: 0px;
     padding-bottom: 5px;
-    min-width: 695px;
+    min-width: 100%;
     th,
     td {
       max-width: 120px;
@@ -215,7 +253,8 @@ ul {
     th {
       background-color: $primary;
       color: #ffffff;
-      font-size: 15px;
+      // font-size: 15px;
+      font-size:clamp(10px, 2vw, 15px);
       padding: 5px;
     }
     td {
@@ -228,11 +267,107 @@ ul {
 }
 
 .footer {
-  font-size: 9px;
+  font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;
   text-align: right;
   bottom: 43px;
   left: 492px;
   font-family: $title-font;
+}
+
+
+@media screen and (max-width: 960px){
+  .html-material-4b {
+    min-height: unset;
+    .footer {
+       bottom: 3%;
+       left: 52%;
+    }
+  }
+}
+
+@media screen and (max-width: 820px){
+  .html-material-4b {
+    .footer {
+      bottom: 3%;
+      left: 49%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .html-material-4b {
+    .section {
+      left: clamp(-55px, 20%, -71.5px);
+    }
+    .footer {
+      bottom: 2%;
+      left: 56%;
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .html-material-4b {
+    .act-content table td {
+      padding: 2px;
+    }
+    .section {
+      left: clamp(-45px, 20%, -71.5px);
+    }
+    .program-rank {
+      top: 0;
+      padding-top: 6%;
+    }
+    .title {
+      top:0;
+      padding-top: 12%;
+    }
+   .footer {
+      left: 50%;
+      bottom: 1%;
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 420px){
+  .html-material-4b {
+    .section {
+      left: clamp(-30px, 15%, -71.5px);
+    }
+    .words {
+      left: clamp(-30px, 15%, -71.5px);
+    }
+    .program-rank {
+      top: 0;
+      padding-top: 6%;
+      .type, .level {
+        padding: 3px 10px;
+        font-size: clamp(6px, 2vw, 15px);
+      }
+    }
+    .title {
+      top:0;
+      padding-top: 12%;
+    }
+    .footer {
+      left: 56%;
+      bottom: 1%;
+      width: 28%;
+    }
+    .see-content {
+      .wrapper {
+        padding-bottom: 0;
+      }
+      .col2 {
+        padding-right:10px
+      }
+    }
+    .act-content, .try-content {
+      margin-top:20px
+    }
+  }
 }

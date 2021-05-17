@@ -124,9 +124,15 @@ ul li:not(:last-child) {
 
 @media screen and (max-width: 420px) {
   .html-material-2c .title {
-    top: clamp(26px, 7.3vw, 32px) !important;
+    top: clamp(26px, 7.3vw, 32px);
   }
   .html-material-2c .section {
     left: calc(-28% - 50px);
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 731px) {
+  .html-material-2c .section {
+    left: calc(-28% - 35px);
   }
 }

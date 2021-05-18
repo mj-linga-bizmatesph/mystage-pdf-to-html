@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1 {
-  width: 892.75px;
+.html-material-4a {
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -17,21 +18,26 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Trebuchet MS";
+  /* Words and Phrases Content */
+  /* See */
+  /* Try */
+  /* Act */
 }
 
-.header {
+.html-material-4a .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-4a .b {
   font-weight: bold;
 }
 
-.i {
+.html-material-4a .i {
   font-family: italic;
 }
 
-.program-rank {
+.html-material-4a .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -39,40 +45,38 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-4a .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.program-rank .level {
+.html-material-4a .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.line {
+.html-material-4a .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-4a .title {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: 27px;
+  font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
+.html-material-4a .lesson-number {
   position: absolute;
-  min-width: 15px;
-  left: 818px;
-  top: 66px;
-  font-size: 13px;
-  text-align: center;
+  left: 92.2%;
+  margin-top: 7.4%;
+  font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
-.row {
+.html-material-4a .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,13 +86,13 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-4a .sub-text {
   font-family: "Arial" !important;
-  line-height: 22px;
+  line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
 
-.section {
+.html-material-4a .section {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
@@ -97,154 +101,227 @@ body {
   top: 2px;
 }
 
-.divider {
+.html-material-4a .divider {
   color: #d9d9d9;
+  font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
-  left: 469px;
+  left: 52%;
 }
 
-.divider.d1 {
+.html-material-4a .divider.d1 {
   margin-top: 8px;
 }
 
-.divider.d2 {
+.html-material-4a .divider.d2 {
   margin-top: 28px;
 }
 
-ul {
+.html-material-4a ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
-  line-height: 26px;
+  line-height: clamp(12px, 3vw, 26px);
 }
 
-ul li {
+.html-material-4a ul li {
   padding-left: 8px;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-4a .see-content,
+.html-material-4a .act-content,
+.html-material-4a .try-content {
   position: relative;
-  margin-left: 126.5px;
+  margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 }
 
-/* Words and Phrases Content */
-.words-phrase-content {
+.html-material-4a .words-phrase-content {
   position: relative;
-  margin-top: 155px;
+  margin-top: clamp(70px, 18%, 155px);
   padding: 2px 0px 0px 47px;
-  height: 144.5px;
-  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: clamp(24px, 7.6vw, 72px);
+  padding-left: clamp(32px, 6vw, 47px);
   background: #d4e6f0;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 }
 
-.words-phrase-content .section {
-  margin-left: 126.5px;
-  width: 80px;
+.html-material-4a .words-phrase-content .section {
+  margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
-  margin-top: 16px !important;
+  margin-top: clamp(10px, 2.6vw, 18px) !important;
 }
 
-.words-phrase-content .pointers {
-  margin-top: 20px !important;
-  margin-left: 126.5px;
+.html-material-4a .words-phrase-content .pointers {
+  margin-top: clamp(12px, 2.8vw, 20px) !important;
+  margin-left: clamp(50px, 14%, 126.5px);
 }
 
-.words-phrase-content .pointers .arrow-part {
+.html-material-4a .words-phrase-content .pointers .arrow-part {
   position: relative;
 }
 
-.words-phrase-content .pointers .arrow-part:before {
+.html-material-4a .words-phrase-content .pointers .arrow-part:before {
   content: '';
   position: absolute;
-  left: -26px;
-  top: 7px;
+  left: -20px;
+  top: 5px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 7.5px solid #2078a0;
+  border-top: 8px solid #2078a0;
   display: inline-block;
   vertical-align: middle;
 }
 
-.words-phrase-content .pointers .arrow-part span {
+.html-material-4a .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* See */
-.see-content {
+.html-material-4a .see-content {
   margin-top: 36px;
 }
 
-.see-content .article {
+.html-material-4a .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
 
-.see-content .article span.highlight {
+.html-material-4a .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* Try */
-.try-content {
+.html-material-4a .try-content {
   margin-top: 30px;
 }
 
-.try-content ul {
+.html-material-4a .try-content ul {
   list-style-type: decimal;
 }
 
-/* Act */
-.act-content {
+.html-material-4a .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.act-content table {
+.html-material-4a .act-content table {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: clamp(6px, 1.5vw, 14px);
   border-spacing: 0px;
   padding-bottom: 5px;
-  min-width: 700px;
+  width: 100%;
 }
 
-.act-content table th,
-.act-content table td {
+.html-material-4a .act-content table th,
+.html-material-4a .act-content table td {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
 
-.act-content table th {
+.html-material-4a .act-content table th {
   background-color: #2078a0;
   color: #ffffff;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
   padding: 5px;
 }
 
-.act-content table td {
+.html-material-4a .act-content table td {
   text-align: left;
   padding: 4px;
   background-color: #f2f2f2;
 }
 
-.footer {
-  font-size: 9px;
+.html-material-4a .footer {
+  font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
-  width: 345px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: right;
   bottom: 43px;
-  left: 492px;
+  right: 6.2%;
   font-family: "Arial";
+}
+
+@media screen and (max-width: 900px) {
+  .html-material-4a {
+    min-height: unset;
+  }
+  .html-material-4a .see-content {
+    margin-top: clamp(22px, 3.8vw, 36px);
+  }
+  .html-material-4a .see-content .article {
+    margin-bottom: clamp(20px, 3.7vw, 29px);
+  }
+  .html-material-4a .try-content {
+    margin-top: clamp(20px, 3.7vw, 30px);
+    padding-left: clamp(11px, 2.4vw, 18px);
+  }
+  .html-material-4a .try-content ul {
+    margin-left: clamp(11px, 2.4vw, 18px);
+  }
+  .html-material-4a .try-content li {
+    padding-left: clamp(9px, 1.8vw, 13px);
+  }
+  .html-material-4a .act-content {
+    margin-top: clamp(20px, 3.8vw, 36px);
+  }
+  .html-material-4a .footer {
+    bottom: clamp(20px, 5.2vw, 43px);
+    right: 5% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-material-4a .program-rank {
+    position: absolute;
+    top: clamp(20px, 4vw, 40px);
+    left: clamp(23px, 4vw, 48px);
+  }
+  .html-material-4a .title {
+    top: clamp(45px, 8.4vw, 80px);
+    left: clamp(30px, 4.1vw, 55px);
+  }
+  .html-material-4a .divider.d1, .html-material-4a .divider.d2 {
+    margin-top: clamp(18px, 3.4vw, 28px);
+  }
+  .html-material-4a .section {
+    left: calc(-16% + 30px);
+  }
+  .html-material-4a .section.words {
+    left: calc(-14% + 30px);
+  }
+  .html-material-4a .arrow-part:before {
+    left: -4.5% !important;
+    top: 0.6vw !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-material-4a .type {
+    padding: 2px 8px 2px 7px !important;
+  }
+  .html-material-4a .level {
+    padding: 2px 6px 2px 7px !important;
+  }
+  .html-material-4a .line {
+    margin: 0 6px;
+    vertical-align: middle;
+  }
+  .html-material-4a .arrow-part:before {
+    border-left: 3.5px solid transparent !important;
+    border-right: 3.5px solid transparent !important;
+    border-top: 5.5px solid #2078a0 !important;
+  }
 }

@@ -78,9 +78,9 @@ body {
 
 .html-material-1a .lesson-number {
   position: absolute;
-  left: 91.6%;
+  left: 91.65%;
   margin-top: 7.4%;
-  font-size: clamp(8px, 1.8vw, 13px);
+  font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
@@ -335,8 +335,8 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 3.4%;
-  left: 55%;
+  bottom: 43px;
+  right: 6.2%;
   font-family: "Arial";
 }
 
@@ -511,11 +511,11 @@ body {
   }
   .html-material-1a .see-content .shape {
     width: 18vw;
-    min-width: 50px;
+    min-width: 95px;
   }
   .html-material-1a .see-content ul li {
-    padding-bottom: clamp(18px, 3.6vw, 26px) !important;
-    padding-left: clamp(20px, 3.6vw, 40px);
+    padding-bottom: clamp(20px, 3.6vw, 26px) !important;
+    padding-left: clamp(20px, 3.4vw, 40px);
   }
   .html-material-1a .try-content {
     margin-top: clamp(20px, 3.8vw, 34px);
@@ -578,6 +578,10 @@ body {
   .html-material-1a .page-3 .act-content .list-col ul {
     margin-left: 0px;
   }
+  .html-material-1a .footer {
+    bottom: clamp(20px, 5.2vw, 43px);
+    right: 5% !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -624,9 +628,6 @@ body {
   .html-material-1a .page-3 .sub-head {
     left: clamp(27px, 3.8vw, 47px);
   }
-  .html-material-1a .footer {
-    bottom: clamp(20px, 3.8vw, 43px);
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -642,6 +643,9 @@ body {
   .html-material-1a .line {
     margin: 0 6px;
     vertical-align: middle;
+  }
+  .html-material-1a .see-content ul {
+    width: 125px !important;
   }
   .html-material-1a .page-2 .arrow-part div:before {
     border-top: 5px solid transparent;

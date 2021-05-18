@@ -74,9 +74,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 92.1%;
+    left: 92.2%;
     margin-top: 7.4%;
-    font-size: clamp(8px, 1.8vw, 13px);
+    font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
   .row {
@@ -187,7 +187,7 @@ body {
               word-wrap: break-word;
             }
             &:last-child {
-              max-width: 640px;
+              width: 100%;
             }
           }
         }
@@ -234,28 +234,28 @@ body {
         max-width: 120px;
         text-align: right;
         &:first-child {
-          top: 92px;
+          top: 40%;
           left: 0px;
         }
         &:nth-child(2) {
-          top: 162px;
-          left: 58px;
+          top: 70.43%;
+          left: 7.75%;
         }
         &:nth-child(3) {
-          top: -95px;
-          left: 390px;
+          top: -41.30%;
+          left: 52%;
         }
         &:nth-child(4) {
-          top: 24px;
-          left: 295px;
+          top: 10.43%;
+          left: 39.33%;
         }
         &:nth-child(5) {
-          top: 129px;
-          left: 372px;
+          top: 56.09%;
+          left: 49.6%;
         }
         &:nth-child(6) {
-          top: -35px;
-          left: 648px;
+          top: -15.22%;
+          left: 86.4%;
         }
       }
     }
@@ -284,7 +284,7 @@ body {
       flex-direction: column;
       flex-wrap: wrap;
       height: 20px;
-      width: 590px;
+      width: 100%;
     }
   }
   .footer {
@@ -292,8 +292,8 @@ body {
     position: absolute;
     width: fit-content;
     text-align: right;
-    bottom: 3.4%;
-    left: 55%;
+    bottom: 43px;
+    right: 6.2%;
     font-family: $title-font;
   }
 
@@ -437,28 +437,28 @@ body {
         height: 250px;
         p {
           &:first-child {
-            left: 6px;
+            left: .08%;
           }
           &:nth-child(2) {
-            top: 166px;
-            left: 32px;
+            top: 66.4%;
+            left: 4.17%;
           }
           &:nth-child(3) {
-            top: -100px;
-            left: 348px;
+            top: -40%;
+            left: 45.31%;
           }
           &:nth-child(4) {
-            top: 8px;
-            left: 332px;
+            top: 3.2%;
+            left: 43.23%;
           }
           &:nth-child(5) {
-            top: 112px;
-            left: 260px;
+            top: 44.8%;
+            left: 33.85%;
           }
           &:nth-child(6) {
             text-align: left;
-            top: -28px;
-            left: 650px;
+            top: -11.2%;
+            left: 84.64%;
             span {
               text-align: left;
             }
@@ -529,6 +529,19 @@ body {
       .sub-text.mg {
         margin-top: clamp(12px, 2.4vw, 20px);
       }
+      .name {
+        height: clamp(50px, 28vw, 230px);
+        min-height: 100px;
+        p {
+          max-width: clamp(40px, 16%, 120px);
+        }
+      }
+      .shape {
+        width: 57vw !important;
+        min-width: 230px;
+        top: clamp(-55px, -5.2vw, -15px);
+        left: clamp(20px, 17%, 130px);
+      }
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
@@ -576,9 +589,6 @@ body {
       }
       .try-content {
         margin-top: clamp(26px, 4.3vw, 52px);
-        .sub-text.mg {
-          margin-top: clamp(26px, 4.3vw, 52px);
-        }
         ul {
           margin-top: clamp(12px, 3vw, 24px);
         }
@@ -589,6 +599,25 @@ body {
           margin-left: 0px;
         }
       }
+      .shape {
+        // top: clamp(-48px, -5.3vw, -88px) !important;
+        top: clamp(-20px, -8.3vw, -48px) !important;
+        width: 57vw !important;
+        min-width: 210px;
+      }
+      .name {
+        margin-top: clamp(42px, 8.8vw, 62px) !important;
+        height: clamp(60px, 26vw, 250px) !important;
+        min-height: 120px;
+        left: clamp(8px, 1.8vw, 16px) !important;
+        p span {
+          min-width: clamp(50px, 8.5vw, 90px) !important;
+        }
+      }
+    }
+    .footer {
+      bottom: clamp(20px, 5.2vw, 43px);
+      right: 5% !important;
     }
   }
 }
@@ -642,9 +671,6 @@ body {
       .sub-head {
         left: clamp(27px, 3.8vw, 47px);
       }
-    }
-    .footer {
-      bottom: clamp(20px, 3.8vw, 43px);
     }
   }
 }

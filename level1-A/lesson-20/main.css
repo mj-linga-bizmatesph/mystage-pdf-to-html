@@ -75,9 +75,9 @@ body {
 
 .html-material-1a .lesson-number {
   position: absolute;
-  left: 91.6%;
+  left: 91.65%;
   margin-top: 7.4%;
-  font-size: clamp(8px, 1.8vw, 13px);
+  font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
@@ -196,8 +196,8 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 3.4%;
-  left: 55%;
+  bottom: 43px;
+  right: 6.2%;
   font-family: "Arial";
 }
 
@@ -285,6 +285,10 @@ body {
   .page-3 .lesson-list {
     margin-top: clamp(120px, 22vw, 260px) !important;
   }
+  .footer {
+    bottom: clamp(20px, 5.2vw, 43px);
+    right: 5% !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -296,9 +300,6 @@ body {
   .html-material-1a .title {
     top: clamp(45px, 8vw, 80px) !important;
     left: clamp(30px, 4.1vw, 55px) !important;
-  }
-  .html-material-1a .footer {
-    bottom: clamp(20px, 3.8vw, 43px);
   }
 }
 

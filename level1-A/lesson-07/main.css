@@ -78,9 +78,9 @@ body {
 
 .html-material-1a .lesson-number {
   position: absolute;
-  left: 92.1%;
+  left: 92.2%;
   margin-top: 7.4%;
-  font-size: clamp(8px, 1.8vw, 13px);
+  font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .html-material-1a .see-content .example .conversation .row p:last-child {
-  max-width: 640px;
+  width: 100%;
 }
 
 .html-material-1a .try-content {
@@ -277,33 +277,33 @@ body {
 }
 
 .html-material-1a .try-content .name p:first-child {
-  top: 92px;
+  top: 40%;
   left: 0px;
 }
 
 .html-material-1a .try-content .name p:nth-child(2) {
-  top: 162px;
-  left: 58px;
+  top: 70.43%;
+  left: 7.75%;
 }
 
 .html-material-1a .try-content .name p:nth-child(3) {
-  top: -95px;
-  left: 390px;
+  top: -41.30%;
+  left: 52%;
 }
 
 .html-material-1a .try-content .name p:nth-child(4) {
-  top: 24px;
-  left: 295px;
+  top: 10.43%;
+  left: 39.33%;
 }
 
 .html-material-1a .try-content .name p:nth-child(5) {
-  top: 129px;
-  left: 372px;
+  top: 56.09%;
+  left: 49.6%;
 }
 
 .html-material-1a .try-content .name p:nth-child(6) {
-  top: -35px;
-  left: 648px;
+  top: -15.22%;
+  left: 86.4%;
 }
 
 .html-material-1a .try-content .sub-text.mg {
@@ -337,7 +337,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 20px;
-  width: 590px;
+  width: 100%;
 }
 
 .html-material-1a .footer {
@@ -347,8 +347,8 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 3.4%;
-  left: 55%;
+  bottom: 43px;
+  right: 6.2%;
   font-family: "Arial";
 }
 
@@ -517,33 +517,33 @@ body {
 }
 
 .html-material-1a .page-3 .try-content .name p:first-child {
-  left: 6px;
+  left: .08%;
 }
 
 .html-material-1a .page-3 .try-content .name p:nth-child(2) {
-  top: 166px;
-  left: 32px;
+  top: 66.4%;
+  left: 4.17%;
 }
 
 .html-material-1a .page-3 .try-content .name p:nth-child(3) {
-  top: -100px;
-  left: 348px;
+  top: -40%;
+  left: 45.31%;
 }
 
 .html-material-1a .page-3 .try-content .name p:nth-child(4) {
-  top: 8px;
-  left: 332px;
+  top: 3.2%;
+  left: 43.23%;
 }
 
 .html-material-1a .page-3 .try-content .name p:nth-child(5) {
-  top: 112px;
-  left: 260px;
+  top: 44.8%;
+  left: 33.85%;
 }
 
 .html-material-1a .page-3 .try-content .name p:nth-child(6) {
   text-align: left;
-  top: -28px;
-  left: 650px;
+  top: -11.2%;
+  left: 84.64%;
 }
 
 .html-material-1a .page-3 .try-content .name p:nth-child(6) span {
@@ -620,6 +620,19 @@ body {
   .html-material-1a .try-content .sub-text.mg {
     margin-top: clamp(12px, 2.4vw, 20px);
   }
+  .html-material-1a .try-content .name {
+    height: clamp(50px, 28vw, 230px);
+    min-height: 100px;
+  }
+  .html-material-1a .try-content .name p {
+    max-width: clamp(40px, 16%, 120px);
+  }
+  .html-material-1a .try-content .shape {
+    width: 57vw !important;
+    min-width: 230px;
+    top: clamp(-55px, -5.2vw, -15px);
+    left: clamp(20px, 17%, 130px);
+  }
   .html-material-1a .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
   }
@@ -662,9 +675,6 @@ body {
   .html-material-1a .page-3 .try-content {
     margin-top: clamp(26px, 4.3vw, 52px);
   }
-  .html-material-1a .page-3 .try-content .sub-text.mg {
-    margin-top: clamp(26px, 4.3vw, 52px);
-  }
   .html-material-1a .page-3 .try-content ul {
     margin-top: clamp(12px, 3vw, 24px);
   }
@@ -673,6 +683,24 @@ body {
   }
   .html-material-1a .page-3 .act-content .list-col ul {
     margin-left: 0px;
+  }
+  .html-material-1a .page-3 .shape {
+    top: clamp(-20px, -8.3vw, -48px) !important;
+    width: 57vw !important;
+    min-width: 210px;
+  }
+  .html-material-1a .page-3 .name {
+    margin-top: clamp(42px, 8.8vw, 62px) !important;
+    height: clamp(60px, 26vw, 250px) !important;
+    min-height: 120px;
+    left: clamp(8px, 1.8vw, 16px) !important;
+  }
+  .html-material-1a .page-3 .name p span {
+    min-width: clamp(50px, 8.5vw, 90px) !important;
+  }
+  .html-material-1a .footer {
+    bottom: clamp(20px, 5.2vw, 43px);
+    right: 5% !important;
   }
 }
 
@@ -719,9 +747,6 @@ body {
   }
   .html-material-1a .page-3 .sub-head {
     left: clamp(27px, 3.8vw, 47px);
-  }
-  .html-material-1a .footer {
-    bottom: clamp(20px, 3.8vw, 43px);
   }
 }
 

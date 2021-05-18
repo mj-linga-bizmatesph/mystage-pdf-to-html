@@ -4,9 +4,9 @@ body {
   font-family: "Trebuchet MS";
 }
 
-.html-page-1,
-.html-page-2,
-.html-page-3 {
+.page-1,
+.page-2,
+.page-3 {
   width: 100%;
   min-width: 320px;
   max-width: 810px;
@@ -197,62 +197,62 @@ sup {
 }
 
 /* Page 2 */
-.html-page-2 .ja {
+.page-2 .ja {
   font-size: clamp(8px, 1.5vw, 15px);
 }
 
-.html-page-2 .title {
+.page-2 .title {
   top: 72px;
   left: 6%;
 }
 
-.html-page-2 .title .ja {
+.page-2 .title .ja {
   font-size: clamp(12px, 1.8vw, 27px);
   color: #000000;
   font-weight: bold;
   margin-right: 3px;
 }
 
-.html-page-2 .image {
+.page-2 .image {
   top: 680px;
 }
 
-.html-page-2 .lesson-list {
+.page-2 .lesson-list {
   margin-top: 37%;
 }
 
-.html-page-2 .sub-text.ja {
+.page-2 .sub-text.ja {
   margin: 8px 0px 0px 0px;
 }
 
-.html-page-2 ul .sub-text.ja {
+.page-2 ul .sub-text.ja {
   font-size: clamp(10px, 1.8vw, 15px);
   color: #257a9e;
   margin: 0px 0px 0px 4px;
 }
 
 /* Page 3 */
-.html-page-3 .ja {
+.page-3 .ja {
   font-size: clamp(8px, 1.5vw, 15px);
 }
 
-.html-page-3 .title {
+.page-3 .title {
   top: 6%;
   left: 6%;
 }
 
-.html-page-3 .title .ja {
+.page-3 .title .ja {
   font-size: clamp(12px, 1.8vw, 27px);
   color: #000000;
   font-weight: bold;
   margin-right: 3px;
 }
 
-.html-page-3 .lesson-list {
+.page-3 .lesson-list {
   margin-top: 30%;
 }
 
-.html-page-3 ul .sub-text.ja {
+.page-3 ul .sub-text.ja {
   font-size: clamp(8px, 2vw, 14px);
   color: #257a9e;
   margin: 0px 0px 0px 4px;
@@ -295,14 +295,14 @@ sup {
     top: 0% !important;
     padding-top: 12%;
   }
-  .html-page-3 .sub-head .ja {
+  .page-3 .sub-head .ja {
     font-size: clamp(8px, 1.5vw, 12.5px);
   }
-  .html-page-2 .title {
+  .page-2 .title {
     left: 6%;
     top: -7px;
   }
-  .html-page-2 .sub-head {
+  .page-2 .sub-head {
     top: 3.5%;
   }
   .sub-head {
@@ -316,7 +316,7 @@ sup {
 }
 
 @media screen and (max-width: 420px) {
-  .html-page-1 {
+  .page-1 {
     max-width: unset;
   }
   .example {
@@ -393,14 +393,14 @@ sup {
     top:0;
     padding-top: 12%;
   }
-  .html-page-3 {
+  .page-3 {
     .sub-head {
       .ja {
         font-size: clamp(8px, 1.5vw, 12.5px);
       }
     }
   }
-  .html-page-2 {
+  .page-2 {
     .title {
       left: 6%;
       top: -7px;
@@ -417,7 +417,7 @@ sup {
 }
 
 @media screen and (max-width: 420px){
-  .html-page-1 {
+  .page-1 {
     max-width: unset;
   }
   .example {

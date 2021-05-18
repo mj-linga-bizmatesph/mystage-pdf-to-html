@@ -4,9 +4,9 @@ body {
   font-family: "Arial";
 }
 
-.html-page-1,
-.html-page-2,
-.html-page-3 {
+.page-1,
+.page-2,
+.page-3 {
   width: 100%;
   min-width: 320px;
   max-width: 810px;
@@ -214,36 +214,36 @@ sup {
 }
 
 /* Page 2 */
-.html-page-2 .lesson-list {
+.page-2 .lesson-list {
   margin-top: 32%;
 }
 
-.html-page-2 .sub-text.ja {
+.page-2 .sub-text.ja {
   margin: 8px 0px 0px 0px;
 }
 
-.html-page-2 ul .sub-text.ja {
+.page-2 ul .sub-text.ja {
   font-size: clamp(10px, 2vw, 14px);
   color: #257A9E;
   margin: 0px 0px 0px 4px;
 }
 
-.html-page-2 ul li span {
+.page-2 ul li span {
   display: block;
 }
 
 /* Page 3 */
-.html-page-3 .lesson-list {
+.page-3 .lesson-list {
   margin-top: 210px;
 }
 
-.html-page-3 ul .sub-text.ja {
+.page-3 ul .sub-text.ja {
   font-size: clamp(10px, 2vw, 14px);
   color: #257A9E;
   margin: 0px 0px 0px 4px;
 }
 
-.html-page-3 ul li span {
+.page-3 ul li span {
   display: block;
 }
 
@@ -260,7 +260,7 @@ sup {
 }
 
 @media screen and (max-width: 820px) {
-  .html-page-2 .sub-head {
+  .page-2 .sub-head {
     top: 7%;
   }
   .footer {
@@ -270,13 +270,13 @@ sup {
 }
 
 @media screen and (max-width: 768px) {
-  .html-page-2 .sub-head {
+  .page-2 .sub-head {
     top: 7%;
   }
-  .html-page-3 .sub-head {
+  .page-3 .sub-head {
     top: 8%;
   }
-  .html-page-3 .lesson-list {
+  .page-3 .lesson-list {
     margin-top: 30%;
   }
   .footer {
@@ -286,13 +286,13 @@ sup {
 }
 
 @media screen and (max-width: 600px) {
-  .html-page-3 .lesson-list {
+  .page-3 .lesson-list {
     margin-top: 34%;
   }
   .sub-head {
     top: 7%;
   }
-  .html-page-2 .lesson-list {
+  .page-2 .lesson-list {
     margin-top: 38%;
   }
   .footer {
@@ -302,7 +302,7 @@ sup {
 }
 
 @media screen and (max-width: 420px) {
-  .html-page-1 {
+  .page-1 {
     max-width: unset;
   }
   .sub-head {

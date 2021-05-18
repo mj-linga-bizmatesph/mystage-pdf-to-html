@@ -5,17 +5,6 @@ body {
 }
 
 .html-material-4b {
-  /*   width: 892.75px;
-  min-height: 1200px;
-  height: fit-content;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'),
-    url('/images/04-bg-footer.png');
-  background-position: top, bottom;
-  background-size: contain;
-  background-repeat: no-repeat; */
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -30,21 +19,25 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  /* Words and Phrases Content */
+  /* See */
+  /* Try */
+  /* Act */
 }
 
-.header {
+.html-material-4b .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-4b .b {
   font-weight: bold;
 }
 
-.i {
+.html-material-4b .i {
   font-family: italic;
 }
 
-.program-rank {
+.html-material-4b .program-rank {
   position: absolute;
   top: 40px;
   left: 6%;
@@ -52,37 +45,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-4b .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.program-rank .level {
+.html-material-4b .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.line {
+.html-material-4b .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-4b .title {
   position: absolute;
   top: 80px;
   left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
-  /* position: absolute;
-  min-width: 15px;
-  left: 818px;
-  top: 66px;
-  font-size: 13px;
-  text-align: center;
-  color: #ffffff; */
+.html-material-4b .lesson-number {
   position: absolute;
   left: 92%;
   padding-top: 7.5%;
@@ -90,7 +76,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-4b .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,13 +86,13 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-4b .sub-text {
   font-family: "Arial" !important;
   line-height: 22px;
   margin: 0 auto;
 }
 
-.section {
+.html-material-4b .section {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
@@ -115,33 +101,33 @@ body {
   top: 2px;
 }
 
-.divider {
+.html-material-4b .divider {
   color: #d9d9d9;
   position: relative;
   left: 50%;
 }
 
-.divider.d1 {
+.html-material-4b .divider.d1 {
   margin-top: 8px;
 }
 
-.divider.d2 {
+.html-material-4b .divider.d2 {
   margin-top: 28px;
 }
 
-ul {
+.html-material-4b ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
 }
 
-ul li {
+.html-material-4b ul li {
   padding-left: 8px;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-4b .see-content,
+.html-material-4b .act-content,
+.html-material-4b .try-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
@@ -149,8 +135,7 @@ ul li {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-/* Words and Phrases Content */
-.words-phrase-content {
+.html-material-4b .words-phrase-content {
   position: relative;
   margin-top: 17.4%;
   padding: 2px 0px 0px 41px;
@@ -160,24 +145,24 @@ ul li {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.words-phrase-content .section {
+.html-material-4b .words-phrase-content .section {
   margin-left: clamp(1px, 15%, 126.5px);
   width: 80px;
   line-height: 1.8em;
   margin-top: 16px !important;
 }
 
-.words-phrase-content .pointers {
+.html-material-4b .words-phrase-content .pointers {
   margin-top: 20px !important;
   margin-left: clamp(1px, 15%, 126.5px);
 }
 
-.words-phrase-content .pointers .arrow-part {
+.html-material-4b .words-phrase-content .pointers .arrow-part {
   position: relative;
   padding-right: 0px;
 }
 
-.words-phrase-content .pointers .arrow-part:before {
+.html-material-4b .words-phrase-content .pointers .arrow-part:before {
   content: '';
   position: absolute;
   left: -20px;
@@ -191,32 +176,30 @@ ul li {
   vertical-align: middle;
 }
 
-.words-phrase-content .pointers .arrow-part span {
+.html-material-4b .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* See */
-.see-content {
+.html-material-4b .see-content {
   position: relative;
   margin-left: clamp(1px, 15%, 126.5px);
   margin-top: 38px;
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.see-content .article {
+.html-material-4b .see-content .article {
   margin-top: 3px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
 
-.see-content .article span.highlight {
+.html-material-4b .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* Try */
-.try-content {
+.html-material-4b .try-content {
   position: relative;
   margin-top: 30px;
   margin-left: clamp(1px, 15%, 126.5px);
@@ -224,12 +207,11 @@ ul li {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.try-content ul {
+.html-material-4b .try-content ul {
   list-style-type: decimal;
 }
 
-/* Act */
-.act-content {
+.html-material-4b .act-content {
   position: relative;
   margin-top: 26px;
   margin-left: clamp(1px, 15%, 126.5px);
@@ -237,12 +219,12 @@ ul li {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.act-content p {
+.html-material-4b .act-content p {
   margin: 2px auto;
   line-height: 24px;
 }
 
-.act-content table {
+.html-material-4b .act-content table {
   margin-top: 32px;
   font-size: clamp(10px, 2vw, 14px);
   border-spacing: 0px;
@@ -250,29 +232,29 @@ ul li {
   min-width: 100%;
 }
 
-.act-content table th,
-.act-content table td {
+.html-material-4b .act-content table th,
+.html-material-4b .act-content table td {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
 
-.act-content table th {
+.html-material-4b .act-content table th {
   background-color: #2078a0;
   color: #ffffff;
   font-size: clamp(10px, 2vw, 15px);
   padding: 5px;
 }
 
-.act-content table td {
+.html-material-4b .act-content table td {
   color: #d0cece;
   text-align: left;
   padding: 6px;
   background-color: #f2f2f2;
 }
 
-.footer {
+.html-material-4b .footer {
   font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;
@@ -300,6 +282,9 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  .html-material-4b .words-phrase-content .pointers .arrow-part:before {
+    left: -15px;
+  }
   .html-material-4b .section {
     left: clamp(-55px, 20%, -71.5px);
   }
@@ -311,6 +296,13 @@ ul li {
 }
 
 @media screen and (max-width: 600px) {
+  .html-material-4b .words-phrase-content .pointers .arrow-part:before {
+    left: -11px;
+    top: 4px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #2078a0;
+  }
   .html-material-4b .act-content table td {
     padding: 2px;
   }

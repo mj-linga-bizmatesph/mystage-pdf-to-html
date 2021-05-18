@@ -10,14 +10,15 @@ body {
   font-family: $text-font;
 }
 .html-material-4b {
-  width: 892.75px;
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
   min-height: 1200px;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'),
-    url('/images/04-bg-footer.png');
+  background-image:url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 92%;
+    left: 91.5%;
     padding-top: 7.5%;
     font-size:clamp(8px, 2vw, 13px);
     color: #ffffff;
@@ -84,25 +85,20 @@ body {
 
   /* Review Content */
   .review-content {
-    // position: relative;
-    // margin-left: $left-pixel;
-    // padding-left: 18.5px;
-    // padding-right: 42px;
-    // font-size: 15px;
     position: relative;
-    margin-left: $left-pixel;
+    margin-left: clamp(1px, 15%, $left-pixel);
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size:clamp(10px, 2vw, 15px);
+    font-size: clamp(10px, 2vw, 15px);
   }
 
   /* Review Content */
   .review-content {
-    margin-top: 240px;
+    margin-top: 24.7%;
     img {
       margin-top: 20px;
-      width: 880px;
-      margin-left: -130px;
+      width: 125%;
+      margin-left: -20%;
     }
   }
 
@@ -119,7 +115,6 @@ body {
 
 @media screen and (max-width: 960px){
   .html-material-4b {
-    min-height: unset;
     .footer {
        bottom: 3%;
        left: 55%;
@@ -137,11 +132,9 @@ body {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .html-material-4b {
-    .words-phrase-content .pointers .arrow-part:before {
-      left: -15px;
-    }
+    min-height: calc(100vh - 62px);
     .section {
       left: clamp(-55px, 20%, -71.5px);
     }
@@ -153,18 +146,8 @@ body {
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .html-material-4b {
-    .words-phrase-content .pointers .arrow-part:before {
-      left: -11px;
-      top: 4px;
-      border-left: 3px solid transparent;
-      border-right: 3px solid transparent;
-      border-top: 6px solid #2078a0;
-    }
-    .act-content table td {
-      padding: 2px;
-    }
     .section {
       left: clamp(-45px, 20%, -71.5px);
     }
@@ -184,12 +167,15 @@ body {
   }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (device-aspect-ratio: 40/71) {
+  .html-material-4b {
+    min-height: calc(100vh - 0px);
+  }
+}
+
+@media screen and (max-width: 420px) {
   .html-material-4b {
     .section {
-      left: clamp(-30px, 15%, -71.5px);
-    }
-    .words {
       left: clamp(-30px, 15%, -71.5px);
     }
     .program-rank {
@@ -206,19 +192,8 @@ body {
     }
     .footer {
       left: 56%;
-      bottom: 1%;
+      bottom: 2%;
       width: 39%;
-    }
-    .see-content {
-      .wrapper {
-        padding-bottom: 0;
-      }
-      .col2 {
-        padding-right:10px
-      }
-    }
-    .act-content, .try-content {
-      margin-top:20px
     }
   }
 }

@@ -5,7 +5,9 @@ body {
 }
 
 .html-material-4b {
-  width: 892.75px;
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -13,7 +15,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url("/images/bg-header.png"), url("/images/04-bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -70,7 +72,7 @@ body {
 
 .html-material-4b .lesson-number {
   position: absolute;
-  left: 92%;
+  left: 91.5%;
   padding-top: 7.5%;
   font-size: clamp(8px, 2vw, 13px);
   color: #ffffff;
@@ -93,20 +95,20 @@ body {
 
 .html-material-4b .review-content {
   position: relative;
-  margin-left: 126.5px;
+  margin-left: clamp(1px, 15%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(10px, 2vw, 15px);
 }
 
 .html-material-4b .review-content {
-  margin-top: 240px;
+  margin-top: 24.7%;
 }
 
 .html-material-4b .review-content img {
   margin-top: 20px;
-  width: 880px;
-  margin-left: -130px;
+  width: 125%;
+  margin-left: -20%;
 }
 
 .html-material-4b .footer {
@@ -120,9 +122,6 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .html-material-4b {
-    min-height: unset;
-  }
   .html-material-4b .footer {
     bottom: 3%;
     left: 55%;
@@ -138,8 +137,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-4b .words-phrase-content .pointers .arrow-part:before {
-    left: -15px;
+  .html-material-4b {
+    min-height: calc(100vh - 62px);
   }
   .html-material-4b .section {
     left: clamp(-55px, 20%, -71.5px);
@@ -152,16 +151,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-4b .words-phrase-content .pointers .arrow-part:before {
-    left: -11px;
-    top: 4px;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-top: 6px solid #2078a0;
-  }
-  .html-material-4b .act-content table td {
-    padding: 2px;
-  }
   .html-material-4b .section {
     left: clamp(-45px, 20%, -71.5px);
   }
@@ -180,11 +169,14 @@ body {
   }
 }
 
+@media screen and (device-aspect-ratio: 40 / 71) {
+  .html-material-4b {
+    min-height: calc(100vh - 0px);
+  }
+}
+
 @media screen and (max-width: 420px) {
   .html-material-4b .section {
-    left: clamp(-30px, 15%, -71.5px);
-  }
-  .html-material-4b .words {
     left: clamp(-30px, 15%, -71.5px);
   }
   .html-material-4b .program-rank {
@@ -201,16 +193,7 @@ body {
   }
   .html-material-4b .footer {
     left: 56%;
-    bottom: 1%;
+    bottom: 2%;
     width: 39%;
-  }
-  .html-material-4b .see-content .wrapper {
-    padding-bottom: 0;
-  }
-  .html-material-4b .see-content .col2 {
-    padding-right: 10px;
-  }
-  .html-material-4b .act-content, .html-material-4b .try-content {
-    margin-top: 20px;
   }
 }

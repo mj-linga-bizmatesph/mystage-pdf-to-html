@@ -233,6 +233,12 @@ body {
     .page-3 {
       min-height: unset;
     }
+    .try-content {
+      margin-top: clamp(20px, 3.8vw, 34px);
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
+    }
   }
   .lesson-list {
     ul.initial {

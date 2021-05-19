@@ -112,10 +112,10 @@ body {
     position: relative;
     left: 50%;
 
-    &.d1,
-    &.d2 {
-      margin-top: 33px;
-    }
+     &.d1,
+     &.d2 {
+       margin-top: clamp(18px, 3.6vw, 31px);
+     }
   }
   .sub-head {
     position: relative;
@@ -187,7 +187,7 @@ body {
       font-family: $text-font;
     }
     .example {
-      margin-top: 37px;
+      margin-top: 18px;
       margin-left: 18.5px;
 
       .conversation {
@@ -336,8 +336,10 @@ body {
         letter-spacing: 0.1px;
       }
       div {
-        margin-bottom: 30px;
         position: relative;
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
         &:before {
           content: '';
           position: absolute;
@@ -380,7 +382,7 @@ body {
       }
     }
     .example {
-      margin-top: 28px;
+      margin-top: 16px;
       margin-left: 0px;
       margin-bottom: 15px;
       .conversation .row p:first-child {
@@ -464,6 +466,12 @@ body {
     .page-2,
     .page-3 {
       min-height: unset;
+    }
+    .try-content {
+      margin-top: clamp(20px, 3.8vw, 34px);
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
     }
     .see-content .blue-section {
       padding-bottom: clamp(14px, 3.8vw, 36px);

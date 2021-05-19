@@ -256,6 +256,12 @@ body {
   .html-material-1b .page-3 {
     min-height: unset;
   }
+  .html-material-1b .try-content {
+    margin-top: clamp(20px, 3.8vw, 34px);
+  }
+  .html-material-1b .act-content {
+    margin-top: clamp(20px, 3.8vw, 36px);
+  }
   .lesson-list ul.initial {
     margin-top: clamp(18px, 3.6vw, 30px);
   }

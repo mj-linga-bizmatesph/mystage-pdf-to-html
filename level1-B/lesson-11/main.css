@@ -86,7 +86,7 @@ body {
 
 .html-material-1b .lesson-number {
   position: absolute;
-  left: 92%;
+  left: 91.5%;
   padding-top: 7.5%;
   font-size: clamp(8px, 1.8vw, 13px);
   color: #ffffff;
@@ -136,7 +136,7 @@ body {
 }
 
 .html-material-1b .divider.d1, .html-material-1b .divider.d2 {
-  margin-top: 33px;
+  margin-top: clamp(18px, 3.6vw, 31px);
 }
 
 .html-material-1b .sub-head {
@@ -225,7 +225,7 @@ body {
 }
 
 .html-material-1b .see-content .example {
-  margin-top: 37px;
+  margin-top: 18px;
   margin-left: 18.5px;
 }
 
@@ -303,10 +303,10 @@ body {
 }
 
 .html-material-1b .try-content .outline img {
-  height: 265px;
   left: 75%;
   position: absolute;
   width: 5%;
+  height: auto;
 }
 
 .html-material-1b .try-content .outline span {
@@ -315,44 +315,44 @@ body {
 }
 
 .html-material-1b .try-content .outline span.a {
-  top: 15px;
+  margin-top: 2%;
 }
 
 .html-material-1b .try-content .outline span.a-sub {
-  top: 8px;
+  margin-top: 1%;
 }
 
 .html-material-1b .try-content .outline span.b {
   font-weight: normal;
-  top: 65px;
+  margin-top: 8.5%;
 }
 
 .html-material-1b .try-content .outline span.b-sub {
-  top: 56px;
+  margin-top: 7.2%;
 }
 
 .html-material-1b .try-content .outline span.c {
-  top: 119.5px;
+  margin-top: 16%;
 }
 
 .html-material-1b .try-content .outline span.c-sub {
-  top: 110px;
+  margin-top: 14.5%;
 }
 
 .html-material-1b .try-content .outline span.d {
-  top: 178px;
+  margin-top: 22%;
 }
 
 .html-material-1b .try-content .outline span.d-sub {
-  top: 168.5px;
+  margin-top: 21%;
 }
 
 .html-material-1b .try-content .outline span.e {
-  top: 226px;
+  margin-top: 30%;
 }
 
 .html-material-1b .try-content .outline span.e-sub {
-  top: 217px;
+  margin-top: 29%;
 }
 
 .html-material-1b .try-content .outline div {
@@ -361,20 +361,20 @@ body {
 }
 
 .html-material-1b .try-content .outline div.a {
-  top: 44px;
+  margin-top: 5.8%;
 }
 
 .html-material-1b .try-content .outline div.b {
   font-weight: normal;
-  top: 89px;
+  margin-top: 11.7%;
 }
 
 .html-material-1b .try-content .outline div.c {
-  top: 154px;
+  margin-top: 20.2%;
 }
 
 .html-material-1b .try-content .outline div.d {
-  top: 202px;
+  margin-top: 26.5%;
 }
 
 .html-material-1b .act-content {
@@ -504,8 +504,11 @@ body {
 }
 
 .html-material-1b .page-2 .arrow-part div {
-  margin-bottom: 30px;
   position: relative;
+}
+
+.html-material-1b .page-2 .arrow-part div:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .html-material-1b .page-2 .arrow-part div:before {
@@ -597,7 +600,7 @@ body {
 }
 
 .html-material-1b .page-2 .example {
-  margin-top: 28px;
+  margin-top: 16px;
   margin-left: 0px;
   margin-bottom: 15px;
 }
@@ -692,12 +695,14 @@ body {
 
 .html-material-1b .float-right {
   float: right;
-  font-size: clamp(10px, 2vw, 15px);
-  margin-right: 10px;
+  font-size: clamp(8px, 1.8vw, 15px);
+  margin-right: 9%;
+  width: 10%;
+  margin-top: -3%;
 }
 
 .html-material-1b .r60 {
-  right: 60px;
+  margin-right: 15%;
 }
 
 .html-material-1b .r40 {
@@ -705,11 +710,15 @@ body {
 }
 
 .html-material-1b .t40 {
-  top: 40px;
+  top: clamp(10px, 10vh, 40px);
+  width: 28% !important;
+  margin-left: 6%;
+  margin-top: -2%;
 }
 
 .html-material-1b .t60 {
-  top: 60px;
+  top: clamp(10px, 10vh, 68px);
+  margin-left: 6%;
 }
 
 .html-material-1b .t90 {
@@ -725,6 +734,12 @@ body {
   .html-material-1b .page-2,
   .html-material-1b .page-3 {
     min-height: unset;
+  }
+  .html-material-1b .try-content {
+    margin-top: clamp(20px, 3.8vw, 34px);
+  }
+  .html-material-1b .act-content {
+    margin-top: clamp(20px, 3.8vw, 36px);
   }
   .html-material-1b .see-content .blue-section {
     padding-bottom: clamp(14px, 3.8vw, 36px);
@@ -778,6 +793,12 @@ body {
   .html-material-1b .section {
     left: clamp(-55px, 20%, -71.5px);
   }
+  .html-material-1b .t40 {
+    top: clamp(10px, 10vh, 50px);
+  }
+  .html-material-1b .t60 {
+    top: clamp(10px, 10vh, 74px);
+  }
   .html-material-1b .page-2 .title {
     top: clamp(60px, 7.8vw, 72px);
   }
@@ -802,6 +823,12 @@ body {
   }
   .html-material-1b .section {
     left: clamp(-45px, 20%, -71.5px);
+  }
+  .html-material-1b .t40 {
+    top: clamp(10px, 14vh, 60px);
+  }
+  .html-material-1b .t60 {
+    top: clamp(10px, 13vh, 77px);
   }
   .html-material-1b .program-rank {
     top: 0;

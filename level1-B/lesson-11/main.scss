@@ -75,7 +75,7 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 92%;
+    left: 91.5%;
     padding-top: 7.5%;
     font-size: clamp(8px, 1.8vw, 13px);
     color: #ffffff;
@@ -112,10 +112,10 @@ body {
     position: relative;
     left: 50%;
 
-    &.d1,
-    &.d2 {
-      margin-top: 33px;
-    }
+     &.d1,
+     &.d2 {
+       margin-top: clamp(18px, 3.6vw, 31px);
+     }
   }
   .sub-head {
     position: relative;
@@ -189,7 +189,7 @@ body {
       font-family: $text-font;
     }
     .example {
-      margin-top: 37px;
+      margin-top: 18px;
       margin-left: 18.5px;
 
       .conversation {
@@ -251,44 +251,44 @@ body {
     .outline {
       position: relative;
       img {
-        height: 265px;
         left: 75%;
         position: absolute;
         width: 5%;
+        height: auto;
       }
       span {
         position: absolute;
         left: 81%;
         &.a {
-          top: 15px;
+          margin-top: 2%;
         }
         &.a-sub {
-          top: 8px;
+          margin-top: 1%;
         }
         &.b {
           font-weight: normal;
-          top: 65px;
+          margin-top: 8.5%;
         }
         &.b-sub {
-          top: 56px;
+          margin-top: 7.2%;
         }
         &.c {
-          top: 119.5px;
+          margin-top: 16%;
         }
         &.c-sub {
-          top: 110px;
+          margin-top: 14.5%;
         }
         &.d {
-          top: 178px;
+          margin-top: 22%;
         }
         &.d-sub {
-          top: 168.5px;
+          margin-top: 21%;
         }
         &.e {
-          top: 226px;
+          margin-top: 30%;
         }
         &.e-sub {
-          top: 217px;
+          margin-top: 29%;
         }
       }
 
@@ -296,17 +296,17 @@ body {
         position: absolute;
         left: 73%;
         &.a {
-          top: 44px;
+          margin-top: 5.8%;
         }
         &.b {
           font-weight: normal;
-          top: 89px;
+          margin-top: 11.7%;
         }
         &.c {
-          top: 154px;
+          margin-top: 20.2%;
         }
         &.d {
-          top: 202px;
+          margin-top: 26.5%;
         }
       }
     }
@@ -415,8 +415,10 @@ body {
         color: $primary;
       }
       div {
-        margin-bottom: 30px;
         position: relative;
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
         &:before {
           content: '';
           position: absolute;
@@ -496,7 +498,7 @@ body {
       }
     }
     .example {
-      margin-top: 28px;
+      margin-top: 16px;
       margin-left: 0px;
       margin-bottom: 15px;
     }
@@ -582,13 +584,16 @@ body {
   /* floating styles */
   .float-right {
     float: right;
-    font-size: clamp(10px, 2vw, 15px);
-    margin-right: 10px;
+    font-size: clamp(8px, 1.8vw, 15px);
+    margin-right: 9%;
+    width: 10%;
+    margin-top: -3%;
   }
 
   /* Sizes - right */
   .r60 {
-    right: 60px;
+    // right: 60px;
+    margin-right: 15%;
   }
   .r40 {
     right: 40px;
@@ -596,10 +601,14 @@ body {
 
   /* Sizes - top */
   .t40 {
-    top: 40px;
+    top: clamp(10px, 10vh, 40px);
+    width: 28% !important;
+    margin-left: 6%;
+    margin-top: -2%;
   }
   .t60 {
-    top: 60px;
+    top: clamp(10px, 10vh, 68px);
+    margin-left: 6%;
   }
   .t90 {
     top: 90px;
@@ -612,6 +621,12 @@ body {
     .page-2,
     .page-3 {
       min-height: unset;
+    }
+    .try-content {
+      margin-top: clamp(20px, 3.8vw, 34px);
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
     }
     .see-content .blue-section {
       padding-bottom: clamp(14px, 3.8vw, 36px);
@@ -676,6 +691,13 @@ body {
     .section {
       left: clamp(-55px, 20%, -71.5px);
     }
+    .t40 {
+      top: clamp(10px, 10vh, 50px);
+    }
+    .t60 {
+      top: clamp(10px, 10vh, 74px);
+    }
+   
     /* Page 2 */
     .page-2 {
       .title {
@@ -701,6 +723,12 @@ body {
   .html-material-1b {
     .section {
       left: clamp(-45px, 20%, -71.5px);
+    }
+    .t40 {
+      top: clamp(10px, 14vh, 60px);
+    }
+    .t60 {
+      top: clamp(10px, 13vh, 77px);
     }
     .program-rank {
       top: 0;

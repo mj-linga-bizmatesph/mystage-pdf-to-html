@@ -82,7 +82,7 @@ body {
 
 .html-material-1b .lesson-number {
   position: absolute;
-  left: 91.5%;
+  left: 91.3%;
   padding-top: 7.5%;
   font-size: clamp(8px, 1.8vw, 13px);
   color: #ffffff;
@@ -132,7 +132,7 @@ body {
 }
 
 .html-material-1b .divider.d1, .html-material-1b .divider.d2 {
-  margin-top: 33px;
+  margin-top: clamp(18px, 3.6vw, 31px);
 }
 
 .html-material-1b .sub-head {
@@ -222,7 +222,7 @@ body {
 }
 
 .html-material-1b .see-content .example {
-  margin-top: 37px;
+  margin-top: 18px;
   margin-left: 18.5px;
 }
 
@@ -403,8 +403,11 @@ body {
 }
 
 .html-material-1b .page-2 .arrow-part div {
-  margin-bottom: 30px;
   position: relative;
+}
+
+.html-material-1b .page-2 .arrow-part div:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .html-material-1b .page-2 .arrow-part div:before {
@@ -453,7 +456,7 @@ body {
 }
 
 .html-material-1b .page-2 .example {
-  margin-top: 28px;
+  margin-top: 16px;
   margin-left: 0px;
   margin-bottom: 15px;
 }
@@ -551,6 +554,12 @@ body {
   .html-material-1b .page-2,
   .html-material-1b .page-3 {
     min-height: unset;
+  }
+  .html-material-1b .try-content {
+    margin-top: clamp(20px, 3.8vw, 34px);
+  }
+  .html-material-1b .act-content {
+    margin-top: clamp(20px, 3.8vw, 36px);
   }
   .html-material-1b .see-content .blue-section {
     padding-bottom: clamp(14px, 3.8vw, 36px);

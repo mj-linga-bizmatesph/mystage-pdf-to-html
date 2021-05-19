@@ -112,10 +112,10 @@ body {
     position: relative;
     left: 50%;
 
-    &.d1,
-    &.d2 {
-      margin-top: 33px;
-    }
+     &.d1,
+     &.d2 {
+       margin-top: clamp(18px, 3.6vw, 31px);
+     }
   }
   .sub-head {
     position: relative;
@@ -188,7 +188,7 @@ body {
       font-family: $text-font;
     }
     .example {
-      margin-top: 37px;
+      margin-top: 18px;
       margin-left: 18.5px;
 
       .conversation {
@@ -345,8 +345,10 @@ body {
         letter-spacing: 0.1px;
       }
       div {
-        margin-bottom: 30px;
         position: relative;
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
         &:before {
           content: '';
           position: absolute;
@@ -374,27 +376,16 @@ body {
       }
     }
     .image-part {
-      /* margin-top: 20px; */
       position: relative;
-      margin-left: 87px;
+      margin-left: 2%;
       margin-top: -20px;
-      margin-bottom: 30px;
+      margin-bottom: -20px;
+
         .arrow {
           width: 87%;
-          height: 100%;
-        }
-        .line {
-          width: 5px;
-          right: 30%;
-          position: absolute;
-          margin-top: 0px;
-          height: 100%;
-        }
-        div p {
-          right: 30%;
-          position: absolute;
-          top: 90%;
-          font-size: clamp(10px, 2vw, 12px);
+          height: auto;
+          position: relative;
+          top: 3vh;
         }
     }
     .see-content {
@@ -423,7 +414,7 @@ body {
       }
     }
     .example {
-      margin-top: 28px;
+      margin-top: 16px;
       margin-left: 0px;
       margin-bottom: 15px;
     }
@@ -509,6 +500,12 @@ body {
     .page-3 {
       min-height: unset;
     }
+    .try-content {
+      margin-top: clamp(20px, 3.8vw, 34px);
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
+    }
     .see-content .blue-section {
       padding-bottom: clamp(14px, 3.8vw, 36px);
       padding-left: clamp(1px, 2.4vw, 18.5px);
@@ -563,27 +560,6 @@ body {
   .html-material-1b {
     .footer {
       bottom: 3%;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .html-material-1b {
-    .section {
-      left: clamp(-55px, 20%, -71.5px);
-    }
-    /* Page 2 */
-    .page-2 {
-      .title {
-        top: clamp(60px, 7.8vw, 72px);
-      }
-      .arrow-part div:not(:last-child) {
-        margin-bottom: clamp(18px, 3.6vw, 32px);
-      }
-    }
-    .footer {
-      bottom: 2%;
-      left: 62%;
     }
   }
 }

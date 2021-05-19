@@ -111,10 +111,10 @@ body {
     position: relative;
     left: 50%;
 
-    &.d1,
-    &.d2 {
-      margin-top: 33px;
-    }
+     &.d1,
+     &.d2 {
+       margin-top: clamp(18px, 3.6vw, 31px);
+     }
   }
   .sub-head {
     position: relative;
@@ -191,7 +191,7 @@ body {
       font-family: $text-font;
     }
     .example {
-      margin-top: 37px;
+      margin-top: 18px;
       margin-left: 18.5px;
 
       .conversation {
@@ -407,7 +407,7 @@ body {
       }
     }
     .example {
-      margin-top: 28px;
+      margin-top: 16px;
       margin-left: 0px;
       margin-bottom: 15px;
     }
@@ -489,6 +489,12 @@ body {
     .page-3 {
       min-height: unset;
     }
+    .try-content {
+      margin-top: clamp(20px, 3.8vw, 34px);
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
+    }
     .see-content .blue-section {
       padding-bottom: clamp(14px, 3.8vw, 36px);
       padding-left: clamp(11px, 2.4vw, 18.5px);
@@ -562,9 +568,6 @@ body {
     .page-2 {
       .title {
         top: clamp(60px, 7.8vw, 72px);
-      }
-      .arrow-part div:not(:last-child) {
-        margin-bottom: clamp(18px, 3.6vw, 32px);
       }
       .arrow-part {
         div .col {

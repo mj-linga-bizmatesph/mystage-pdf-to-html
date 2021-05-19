@@ -79,7 +79,7 @@ body {
     margin-top: clamp(20px, 17%, 116px);
     margin-left: $left-pixel;
     padding: 6px 16px 6px 0px;
-    font-size: clamp(9px, 2vw, 18px);
+    font-size: clamp(9px, 2.1vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 20px);
@@ -109,6 +109,16 @@ body {
   }
 }
 
+@media screen and (max-width: 820px) {
+  .html-material-2e {
+    min-height: 125.68vw;
+    padding-bottom: 82px;
+    .test-content {
+      padding-right: clamp(8px, 2vw, 16px);
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .html-material-2e {
     .title {
@@ -119,7 +129,6 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-2e {
-    min-height: calc(100vh - 62px);
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;

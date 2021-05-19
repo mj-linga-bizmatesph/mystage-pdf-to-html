@@ -129,7 +129,7 @@ body {
     margin-left: $left-pixel;
     padding-right: 20px;
     padding-top: 4px;
-    font-size: clamp(9px, 2vw, 18px);
+    font-size: clamp(9px, 2.1vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 24px);
@@ -166,7 +166,7 @@ body {
 
   /* Try */
   .try-content {
-    margin-top: clamp(30px, 10%, 60px);
+    margin-top: clamp(20px, 10%, 60px);
   }
 
   /* Act */
@@ -187,11 +187,16 @@ body {
 
 @media screen and (max-width: 820px) {
   .html-material-2e {
+    min-height: 125.68vw;
     .sub-text {
       padding-right: 7px !important;
     }
     .biz-tip .text {
-      min-height: 80px;
+      padding-bottom: clamp(20px, 6vw, 32px) !important;
+      min-height: calc(max(12vw, 50px));
+    }
+    .see-content .conversation .row p:first-child {
+      min-width: clamp(30px, 7.3vw, 60px) !important;
     }
   }
 }
@@ -211,17 +216,14 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-2e {
-    min-height: calc(100vh - 62px);
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
     }
-    .see-content .conversation .row p:first-child {
-      min-width: 32px !important;
-    }
+    
     .biz-tip {
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -237,9 +239,6 @@ body {
     }
     .biz-tip {
       top: 100px;
-      .text {
-        padding: 4px 8px 12px;
-      }
       .sub-text {
         padding: 3px 8px !important;
       }

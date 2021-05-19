@@ -258,9 +258,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-3c {
-    min-height: calc(100vh - 62px);
-  }
   .html-material-3c .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;

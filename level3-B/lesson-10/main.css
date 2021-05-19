@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 59px;
   left: 9px;
-  font-size: clamp(10.5px, 2.4vw, 21px);
+  font-size: clamp(9.5px, 2.4vw, 21px);
   color: #ffffff;
 }
 
@@ -79,10 +79,10 @@ body {
 .html-material-3b .part1-content,
 .html-material-3b .part2-content {
   position: relative;
-  margin-top: 116px;
+  margin-top: clamp(20px, 17%, 116px);
   margin-left: clamp(120px, 28%, 218px);
   padding: 6px 16px 6px 0px;
-  font-size: clamp(14px, 2.4vw, 18px);
+  font-size: clamp(9px, 2.1vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
@@ -91,7 +91,7 @@ body {
 
 .html-material-3b .part1-content .sub-text,
 .html-material-3b .part2-content .sub-text {
-  font-size: clamp(12px, 2.4vw, 21.5px);
+  font-size: clamp(9.5px, 2.4vw, 20px);
   font-weight: bold;
 }
 
@@ -103,7 +103,11 @@ body {
 .html-material-3b .part2-content {
   margin-top: 48px;
   padding-top: 4px;
-  font-size: clamp(12px, 2.4vw, 20px);
+  font-size: clamp(9.5px, 2.4vw, 20px);
+}
+
+.html-material-3b .part2-content p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .html-material-3b .footer {
@@ -114,9 +118,10 @@ body {
   right: 3px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 820px) {
   .html-material-3b {
-    width: 100vw !important;
+    min-height: 125.68vw;
+    padding-bottom: 82px;
   }
 }
 
@@ -127,9 +132,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-3b {
-    min-height: calc(100vh - 62px);
-  }
   .html-material-3b .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;

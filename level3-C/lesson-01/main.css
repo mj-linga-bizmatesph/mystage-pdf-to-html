@@ -303,6 +303,13 @@ body {
   .html-material-3c .biz-tip .sub-text {
     padding: 3px 8px !important;
   }
+  .html-material-3c .biz-tip ul {
+    top: clamp(55px, 7.3vw, 70px);
+    padding-left: 0;
+  }
+  .html-material-3c .biz-tip ul li {
+    margin-right: 3px;
+  }
   .html-material-3c .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
   }

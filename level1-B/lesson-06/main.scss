@@ -6,7 +6,7 @@ $primary: #257a9e;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
-$left-pixel: 126.5px;
+$left-pixel: clamp(50px, 14%, 126.5px);
 
 body {
   margin: 0;
@@ -202,7 +202,7 @@ body {
               word-wrap: break-word;
             }
             &:last-child {
-              max-width: 87%;
+              max-width: 88%;
             }
           }
         }
@@ -231,7 +231,7 @@ body {
       }
       span {
         display: block;
-        width: 670px;
+        width: 95%;
       }
     }
     .wrapper {

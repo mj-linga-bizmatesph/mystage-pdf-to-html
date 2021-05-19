@@ -6,7 +6,7 @@ $primary: #257a9e;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
-$left-pixel: 126.5px;
+$left-pixel: clamp(50px, 14%, 126.5px);
 
 body {
   margin: 0;
@@ -203,7 +203,7 @@ body {
               word-wrap: break-word;
             }
             &:last-child {
-              max-width: 87%;
+              max-width: 88%;
             }
           }
         }
@@ -326,12 +326,12 @@ body {
       margin-top: 20px;
       margin-left: 125px;
       .subtitle {
-        font-size: clamp(10px, 2vw, 15px);
+        font-size: clamp(8px, 2vw, 15px);
         color: #000000;
       }
       p {
         margin: 4.5px auto;
-        font-size: clamp(10px, 2vw, 12px);
+        font-size: clamp(6.5px, 1.8vw, 15px);
         span {
           margin-left: 160px;
         }
@@ -391,7 +391,7 @@ body {
       margin-top: 7px;
       margin-left: 125px;
       .subtitle {
-        font-size: clamp(10px, 2vw, 15px);
+        font-size: clamp(8px, 2vw, 15px);
         color: #000000;
       }
       span {

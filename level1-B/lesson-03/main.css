@@ -237,12 +237,12 @@ body {
 }
 
 .html-material-1b .see-content .example .conversation .row p:first-child {
-  width: 52px;
+  width: 8%;
   word-wrap: break-word;
 }
 
 .html-material-1b .see-content .example .conversation .row p:last-child {
-  max-width: 87%;
+  max-width: 88%;
 }
 
 .html-material-1b .try-content {
@@ -396,14 +396,14 @@ body {
 }
 
 .html-material-1b .page-2 .arrow-part .subtitle {
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(8px, 2vw, 15px);
   color: #000000;
   margin-left: -9px;
 }
 
 .html-material-1b .page-2 .arrow-part p {
   margin: 4.5px auto;
-  font-size: clamp(10px, 2vw, 12px);
+  font-size: clamp(6.5px, 1.8vw, 15px);
 }
 
 .html-material-1b .page-2 .arrow-part p span {

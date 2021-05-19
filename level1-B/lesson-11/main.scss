@@ -6,7 +6,7 @@ $primary: #257a9e;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
-$left-pixel: 126.5px;
+$left-pixel: clamp(50px, 14%, 126.5px);
 
 body {
   margin: 0;
@@ -204,7 +204,7 @@ body {
               word-wrap: break-word;
             }
             &:last-child {
-              max-width: 87%;
+              max-width: 88%;
             }
           }
         }
@@ -397,12 +397,12 @@ body {
       margin-top: 20px;
       margin-left: 125px;
       .subtitle {
-        font-size: clamp(10px, 2vw, 15px);
+        font-size: clamp(8px, 2vw, 15px);
         color: #000000;
       }
       p {
         margin: 4.5px auto;
-        font-size: clamp(10px, 2vw, 12px);
+        font-size: clamp(6.5px, 1.8vw, 15px);
         span {
           margin-left: 20px;
         }
@@ -445,16 +445,16 @@ body {
       .left-example {
         float: left;
         line-height: 160%;
-        font-size: clamp(8px, 1.5vw, 15px);
+        font-size: clamp(6.5px, 1.5vw, 15px);
         letter-spacing: 1px;
       }
       .right-example {
         float: right;
         line-height: 160%;
         position: relative;
-        width: 45%;
+        width: 47%;
         letter-spacing: 1px;
-        font-size: clamp(8px, 1.5vw, 15px);
+        font-size: clamp(6.5px, 1.5vw, 15px);
       }
       .span-right-arrow {
         clear: both;
@@ -462,7 +462,7 @@ body {
 
         img {
           position: relative;
-          left: 5%;
+          left: 7%;
           top: 10px;
           height: 80%;
           width: 10%;
@@ -683,6 +683,11 @@ body {
       }
       .arrow-part div:not(:last-child) {
         margin-bottom: clamp(18px, 3.6vw, 32px);
+      }
+      .arrow-part .span-right-arrow img {
+        position: relative;
+        left: 4%;
+        width: 7%;
       }
     }
     .footer {

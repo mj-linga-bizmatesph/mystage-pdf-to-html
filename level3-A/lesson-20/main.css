@@ -73,7 +73,7 @@ body {
 }
 
 .html-material-3a ul li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: clamp(18px, 2vw, 24px);
 }
 
 .html-material-3a .test-content {

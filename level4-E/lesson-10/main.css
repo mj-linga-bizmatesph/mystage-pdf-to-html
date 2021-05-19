@@ -1,10 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1 {
+.html-material-4e {
+  font-family: "Trebuchet MS";
+  /* Review Content */
+}
+
+.html-material-4e .page-1 {
   width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
@@ -19,15 +23,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.header {
+.html-material-4e .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-4e .b {
   font-weight: bold;
 }
 
-.program-rank {
+.html-material-4e .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -35,30 +39,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-4e .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: 15px;
 }
 
-.program-rank .level {
+.html-material-4e .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: 15px;
 }
 
-.line {
+.html-material-4e .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-4e .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: 27px;
 }
 
-.lesson-number {
+.html-material-4e .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
@@ -68,7 +72,7 @@ body {
   color: #ffffff;
 }
 
-.sub-text {
+.html-material-4e .sub-text {
   line-height: 22px;
   margin: -17px auto;
   margin-left: 0px;
@@ -76,12 +80,12 @@ body {
   text-align: justify;
 }
 
-.sub-text:not(:nth-child(2)) {
+.html-material-4e .sub-text:not(:nth-child(2)) {
   margin-top: 30px;
   margin-bottom: 80px;
 }
 
-.section {
+.html-material-4e .section {
   position: relative;
   left: -105px;
   color: #2078a0;
@@ -90,12 +94,11 @@ body {
   top: 4px;
 }
 
-.section:not(:first-child) {
+.html-material-4e .section:not(:first-child) {
   top: 50px;
 }
 
-/* Review Content */
-.review-content {
+.html-material-4e .review-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
@@ -104,7 +107,7 @@ body {
   margin-top: 245px;
 }
 
-.review-content table {
+.html-material-4e .review-content table {
   margin-top: 50px;
   font-size: 14px;
   border-spacing: 0px;
@@ -112,8 +115,8 @@ body {
   min-width: 700px;
 }
 
-.review-content table th,
-.review-content table td {
+.html-material-4e .review-content table th,
+.html-material-4e .review-content table td {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
@@ -121,7 +124,7 @@ body {
   height: 60px;
 }
 
-.review-content table th {
+.html-material-4e .review-content table th {
   background-color: #2078a0;
   color: #ffffff;
   font-size: 15px;
@@ -129,13 +132,13 @@ body {
   border-bottom: 4px solid;
 }
 
-.review-content table td {
+.html-material-4e .review-content table td {
   text-align: center;
   padding: 4px;
   background-color: #f2f2f2;
 }
 
-.review-content table td:first-child {
+.html-material-4e .review-content table td:first-child {
   text-align: left;
   background-color: #2078a0;
   color: #ffffff;
@@ -143,7 +146,7 @@ body {
   padding-left: 10px;
 }
 
-.footer {
+.html-material-4e .footer {
   font-size: 9px;
   position: absolute;
   width: 345px;

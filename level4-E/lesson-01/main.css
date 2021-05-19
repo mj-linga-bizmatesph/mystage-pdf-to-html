@@ -1,10 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1 {
+.html-material-4e {
+  font-family: "Trebuchet MS";
+  /* Words and Phrases Content */
+  /* See */
+  /* Try */
+  /* Act */
+}
+
+.html-material-4e .page-1 {
   width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
@@ -19,15 +26,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.header {
+.html-material-4e .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-4e .b {
   font-weight: bold;
 }
 
-.program-rank {
+.html-material-4e .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -35,30 +42,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-4e .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: 15px;
 }
 
-.program-rank .level {
+.html-material-4e .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: 15px;
 }
 
-.line {
+.html-material-4e .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-4e .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: 27px;
 }
 
-.lesson-number {
+.html-material-4e .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
@@ -68,7 +75,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-4e .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,16 +85,16 @@ body {
           flex-direction: row;
 }
 
-.sub-text.b {
+.html-material-4e .sub-text.b {
   font-family: "Arial" !important;
 }
 
-.sub-text {
+.html-material-4e .sub-text {
   line-height: 22px;
   margin: 0 auto;
 }
 
-.section {
+.html-material-4e .section {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
@@ -96,33 +103,33 @@ body {
   top: 2px;
 }
 
-.divider {
+.html-material-4e .divider {
   color: #d9d9d9;
   position: relative;
   left: 469px;
 }
 
-.divider.d1 {
+.html-material-4e .divider.d1 {
   margin-top: 8px;
 }
 
-.divider.d2 {
+.html-material-4e .divider.d2 {
   margin-top: 28px;
 }
 
-ul {
+.html-material-4e ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
 }
 
-ul li {
+.html-material-4e ul li {
   padding-left: 8px;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-4e .see-content,
+.html-material-4e .act-content,
+.html-material-4e .try-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
@@ -130,8 +137,7 @@ ul li {
   font-size: 15px;
 }
 
-/* Words and Phrases Content */
-.words-phrase-content {
+.html-material-4e .words-phrase-content {
   position: relative;
   margin-top: 155px;
   padding: 2px 0px 0px 47px;
@@ -141,24 +147,24 @@ ul li {
   font-size: 15px;
 }
 
-.words-phrase-content .section {
+.html-material-4e .words-phrase-content .section {
   margin-left: 126.5px;
   width: 80px;
   line-height: 1.8em;
   margin-top: 16px !important;
 }
 
-.words-phrase-content .pointers {
+.html-material-4e .words-phrase-content .pointers {
   margin-top: 20px !important;
   margin-left: 126.5px;
 }
 
-.words-phrase-content .pointers .arrow-part {
+.html-material-4e .words-phrase-content .pointers .arrow-part {
   position: relative;
   width: 85%;
 }
 
-.words-phrase-content .pointers .arrow-part:before {
+.html-material-4e .words-phrase-content .pointers .arrow-part:before {
   content: '';
   position: absolute;
   left: -26px;
@@ -172,45 +178,42 @@ ul li {
   vertical-align: middle;
 }
 
-.words-phrase-content .pointers .arrow-part span {
+.html-material-4e .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* See */
-.see-content {
+.html-material-4e .see-content {
   margin-top: 36px;
 }
 
-.see-content .article {
+.html-material-4e .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
 
-.see-content .article span.highlight {
+.html-material-4e .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* Try */
-.try-content {
+.html-material-4e .try-content {
   margin-top: 0px;
 }
 
-.try-content ul {
+.html-material-4e .try-content ul {
   list-style-type: decimal;
 }
 
-/* Act */
-.act-content {
+.html-material-4e .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.act-content table {
+.html-material-4e .act-content table {
   margin-top: 15px;
   font-size: 14px;
   border-spacing: 0px;
@@ -218,15 +221,15 @@ ul li {
   min-width: 700px;
 }
 
-.act-content table th,
-.act-content table td {
+.html-material-4e .act-content table th,
+.html-material-4e .act-content table td {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
 
-.act-content table th {
+.html-material-4e .act-content table th {
   height: 45px;
   background-color: #2078a0;
   color: #ffffff;
@@ -234,14 +237,14 @@ ul li {
   padding: 5px;
 }
 
-.act-content table td {
+.html-material-4e .act-content table td {
   height: 80px;
   text-align: left;
   padding: 4px;
   background-color: #f2f2f2;
 }
 
-.footer {
+.html-material-4e .footer {
   font-size: 9px;
   position: absolute;
   width: 345px;

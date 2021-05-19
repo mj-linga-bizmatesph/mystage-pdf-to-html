@@ -1,10 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1 {
+.html-material-4e {
+  font-family: "Trebuchet MS";
+  /* Review Content */
+}
+
+.html-material-4e .page-1 {
   width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
@@ -19,15 +23,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.header {
+.html-material-4e .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-4e .b {
   font-weight: bold;
 }
 
-.program-rank {
+.html-material-4e .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -35,30 +39,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-4e .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: 15px;
 }
 
-.program-rank .level {
+.html-material-4e .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: 15px;
 }
 
-.line {
+.html-material-4e .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-4e .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: 27px;
 }
 
-.lesson-number {
+.html-material-4e .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
@@ -68,14 +72,14 @@ body {
   color: #ffffff;
 }
 
-.sub-text {
+.html-material-4e .sub-text {
   line-height: 22px;
   margin: -17px auto;
   margin-left: 0px;
   width: 595px;
 }
 
-.section {
+.html-material-4e .section {
   position: relative;
   left: -105px;
   color: #2078a0;
@@ -84,12 +88,11 @@ body {
   top: 4px;
 }
 
-.section.review:nth-child(4) {
+.html-material-4e .section.review:nth-child(4) {
   margin-top: 50px;
 }
 
-/* Review Content */
-.review-content {
+.html-material-4e .review-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
@@ -98,7 +101,7 @@ body {
   margin-top: 220px;
 }
 
-.review-content ul {
+.html-material-4e .review-content ul {
   list-style: none;
   margin-top: 12px;
   padding: 0;
@@ -113,23 +116,23 @@ body {
       flex-wrap: wrap;
 }
 
-.review-content ul li {
+.html-material-4e .review-content ul li {
   margin: 12.5px 0px;
 }
 
-.review-content ul li p {
+.html-material-4e .review-content ul li p {
   -webkit-margin-before: 0 !important;
           margin-block-start: 0 !important;
   -webkit-margin-after: 0 !important;
           margin-block-end: 0 !important;
 }
 
-.review-content ul li p:last-child {
+.html-material-4e .review-content ul li p:last-child {
   color: #2078a0;
   font-weight: bold;
 }
 
-.footer {
+.html-material-4e .footer {
   font-size: 9px;
   position: absolute;
   width: 345px;

@@ -1,10 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1 {
+.html-material-4e {
+  font-family: "Trebuchet MS";
+  /* Words and Phrases Content */
+  /* See */
+  /* Try */
+  /* Act */
+}
+
+.html-material-4e .page-1 {
   width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
@@ -19,15 +26,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.header {
+.html-material-4e .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-4e .b {
   font-weight: bold;
 }
 
-.program-rank {
+.html-material-4e .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -35,30 +42,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-4e .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: 15px;
 }
 
-.program-rank .level {
+.html-material-4e .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: 15px;
 }
 
-.line {
+.html-material-4e .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-4e .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: 27px;
 }
 
-.lesson-number {
+.html-material-4e .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
@@ -68,7 +75,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-4e .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,16 +85,16 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-4e .sub-text {
   line-height: 22px;
   margin: 0 auto;
 }
 
-.sub-text.b {
+.html-material-4e .sub-text.b {
   font-family: "Trebuchet MS" !important;
 }
 
-.section {
+.html-material-4e .section {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
@@ -96,33 +103,33 @@ body {
   top: 2px;
 }
 
-.divider {
+.html-material-4e .divider {
   color: #d9d9d9;
   position: relative;
   left: 469px;
 }
 
-.divider.d1 {
+.html-material-4e .divider.d1 {
   margin-top: 8px;
 }
 
-.divider.d2 {
+.html-material-4e .divider.d2 {
   margin-top: 28px;
 }
 
-ul {
+.html-material-4e ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
 }
 
-ul li {
+.html-material-4e ul li {
   padding-left: 8px;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-4e .see-content,
+.html-material-4e .act-content,
+.html-material-4e .try-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
@@ -130,8 +137,7 @@ ul li {
   font-size: 15px;
 }
 
-/* Words and Phrases Content */
-.words-phrase-content {
+.html-material-4e .words-phrase-content {
   position: relative;
   margin-top: 155px;
   padding: 2px 0px 0px 47px;
@@ -141,23 +147,23 @@ ul li {
   font-size: 15px;
 }
 
-.words-phrase-content .section {
+.html-material-4e .words-phrase-content .section {
   margin-left: 126.5px;
   width: 80px;
   line-height: 1.8em;
   margin-top: 16px !important;
 }
 
-.words-phrase-content .pointers {
+.html-material-4e .words-phrase-content .pointers {
   margin-top: 20px !important;
   margin-left: 126.5px;
 }
 
-.words-phrase-content .pointers .arrow-part {
+.html-material-4e .words-phrase-content .pointers .arrow-part {
   position: relative;
 }
 
-.words-phrase-content .pointers .arrow-part:before {
+.html-material-4e .words-phrase-content .pointers .arrow-part:before {
   content: '';
   position: absolute;
   left: -26px;
@@ -171,28 +177,27 @@ ul li {
   vertical-align: middle;
 }
 
-.words-phrase-content .pointers .arrow-part span {
+.html-material-4e .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
 
-/* See */
-.see-content {
+.html-material-4e .see-content {
   margin-top: 36px;
 }
 
-.see-content .article {
+.html-material-4e .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
 
-.see-content .article span.highlight {
+.html-material-4e .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
 
-.see-content .col {
+.html-material-4e .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -201,37 +206,35 @@ ul li {
   line-height: 26px;
 }
 
-.see-content .col span.highlight {
+.html-material-4e .see-content .col span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
 
-.see-content .col p {
+.html-material-4e .see-content .col p {
   margin: 2px auto 24px;
 }
 
-.see-content .col p.name {
+.html-material-4e .see-content .col p.name {
   width: 70px;
 }
 
-/* Try */
-.try-content {
+.html-material-4e .try-content {
   margin-top: 10px;
 }
 
-.try-content ul {
+.html-material-4e .try-content ul {
   list-style-type: decimal;
 }
 
-/* Act */
-.act-content {
+.html-material-4e .act-content {
   margin-top: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.footer {
+.html-material-4e .footer {
   font-size: 9px;
   position: absolute;
   width: 345px;

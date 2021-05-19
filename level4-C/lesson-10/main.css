@@ -4,8 +4,9 @@ body {
   font-family: "Trebuchet MS";
 }
 
-.page-1 {
-  width: 892.75px;
+.html-material-4c {
+  width: 100%;
+  max-width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -13,109 +14,91 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url("/images/bg-header.png"), url("/images/04-bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  /* Review Content */
 }
-
-.header {
+.html-material-4c .header {
   font-family: "Arial";
 }
-
-.b {
+.html-material-4c .b {
   font-weight: bold;
 }
-
-.program-rank {
+.html-material-4c .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
   color: #ffffff;
   font-size: 0px;
 }
-
-.program-rank .type {
+.html-material-4c .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
-
-.program-rank .level {
+.html-material-4c .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
-
-.line {
+.html-material-4c .line {
   margin: 0 12px;
 }
-
-.title {
+.html-material-4c .title {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: 27px;
+  font-size: clamp(7px, 2.8vw, 27px);
 }
-
-.lesson-number {
+.html-material-4c .lesson-number {
   position: absolute;
   min-width: 15px;
   left: 818px;
   top: 66px;
-  font-size: 13px;
+  font-size: clamp(7px, 1.8vw, 13px);
   text-align: center;
   color: #ffffff;
 }
-
-.sub-text {
+.html-material-4c .sub-text {
   line-height: 22px;
   margin: -17px auto;
   margin-left: 10px;
-  width: 595px;
+  width: 95%;
 }
-
-.section {
+.html-material-4c .section {
   position: relative;
-  left: -105px;
+  left: -90px;
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
   top: 4px;
 }
-
-/* Review Content */
-.review-content {
+.html-material-4c .review-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
   margin-top: 240px;
 }
-
-.review-content ul {
+.html-material-4c .review-content ul {
   padding: 35px 0px 50px 8px;
 }
-
-.review-content ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.html-material-4c .review-content ul li {
   display: flex;
   margin-bottom: 20px;
   font-weight: bold;
 }
-
-.review-content ul li p {
+.html-material-4c .review-content ul li p {
   width: 270px;
 }
-
-.review-content ul li span {
+.html-material-4c .review-content ul li span {
   width: 20px;
   margin: auto 55px auto 0px;
 }
-
-.review-content ul li p::before {
+.html-material-4c .review-content ul li p::before {
   content: "";
   border: 1px solid;
   padding: 1px 10px 0px;
@@ -123,13 +106,65 @@ body {
   border-width: 3.5px;
   margin-right: 15px;
 }
-
-.footer {
-  font-size: 9px;
-  position: relative;
-  width: 345px;
+.html-material-4c .footer {
+  font-size: clamp(4.5px, 1.1vw, 9px);
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: right;
-  bottom: 53px;
-  left: 492px;
+  bottom: 43px;
+  right: 6.2%;
   font-family: "Arial";
 }
+
+@media screen and (max-width: 768px) {
+  .html-material-4c .program-rank,
+.html-material-4c .title,
+.html-material-4c .lesson-number {
+    left: 20px;
+  }
+  .html-material-4c .review-content {
+    margin-top: 160px;
+    margin-left: 95px;
+  }
+  .html-material-4c .review-content ul li span {
+    width: auto;
+    margin: auto 33px auto 0px;
+  }
+  .html-material-4c .review-content ul li p {
+    width: 270px;
+  }
+  .html-material-4c .review-content ul li p::before {
+    padding: 1px 8px 0px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .html-material-4c .program-rank,
+.html-material-4c .title,
+.html-material-4c .lesson-number {
+    left: 20px;
+  }
+  .html-material-4c .section {
+    left: -45px;
+  }
+  .html-material-4c .review-content {
+    margin-top: 160px;
+    margin-left: 50px;
+  }
+  .html-material-4c .review-content ul li span {
+    width: auto;
+    margin: auto 33px auto 0px;
+  }
+  .html-material-4c .review-content ul li p {
+    width: 270px;
+  }
+  .html-material-4c .review-content ul li p::before {
+    padding: 1px 4px 0px;
+    margin-right: 2px;
+  }
+  .html-material-4c .footer {
+    bottom: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */

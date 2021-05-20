@@ -65,7 +65,7 @@ body {
 }
 
 .html-material-3c .test-content .sub-text {
-  font-size: clamp(14px, 2.4vw, 20px);
+  font-size: clamp(10px, 2.4vw, 20px);
 }
 
 .html-material-3c .test-content p {
@@ -100,7 +100,7 @@ body {
 .html-material-3c .test-content.part-2 {
   margin-top: clamp(18px, 2.4vw, 26px);
   padding-top: 4px;
-  font-size: clamp(12px, 2.4vw, 20px);
+  font-size: clamp(11px, 2vw, 20px);
 }
 
 .html-material-3c .test-content.part-2 a {
@@ -117,9 +117,10 @@ body {
   right: 3px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 820px) {
   .html-material-3c {
-    width: 100vw !important;
+    min-height: 125.68vw;
+    padding-bottom: 82px;
   }
 }
 

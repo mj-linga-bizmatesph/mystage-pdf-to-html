@@ -102,7 +102,7 @@ body {
       padding: 7px 7px 16px 12px;
       width: 100%;
       height: fit-content;
-      min-height: calc(min(24vw, 180px));
+      min-height: 133px;
       background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -135,7 +135,7 @@ body {
     padding-right: 20px;
     padding-top: 4px;
     font-size: 18px;
-    font-size: clamp(9px, 2vw, 18px);
+    font-size: clamp(9px, 2.1vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 24px);
@@ -153,7 +153,7 @@ body {
           display: block;
           margin: 0px 0px;
           &:first-child {
-            min-width: 54px;
+            min-width: 74px;
             word-wrap: break-word;
             font-weight: bold;
           }
@@ -169,14 +169,13 @@ body {
     }
     img {
       width:100%;
-      height:85%;
       margin-left: calc(min(24vw, 15px));
     }
   }
 
   /* Try */
   .try-content {
-    margin-top: clamp(65px, 14%, 90px);
+    margin-top: clamp(40px, 12%, 90px);
 
     ul {
       li {
@@ -229,17 +228,18 @@ body {
   }
 }
 
-@media screen and (max-width: 960px) {
-  .html-material-3c {
-    width: 100% !important;
-  }
-}
-
 @media screen and (max-width: 820px) {
   .html-material-3c {
     min-height: 125.68vw;
     .sub-text {
       padding-right: 7px !important;
+    }
+    .biz-tip .text {
+      padding-bottom: clamp(24px, 6vw, 32px) !important;
+      min-height: calc(max(12vw, 50px));
+    }
+    .try-content img {
+      width: 30vw !important;
     }
   }
 }
@@ -258,12 +258,9 @@ body {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
     }
-    .see-content .conversation .row p:first-child {
-      min-width: 32px !important;
-    }
     .biz-tip {
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -279,9 +276,6 @@ body {
     }
     .biz-tip {
       top: 100px;
-      .text {
-        padding: 4px 8px 12px;
-      }
       .sub-text {
         padding: 3px 8px !important;
       }

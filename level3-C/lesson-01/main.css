@@ -111,12 +111,12 @@ body {
 
 .html-material-3c .biz-tip .text {
   margin-top: 6px;
-  padding: 7px 7px 16px 12px;
+  padding: 7px 7px 32px 12px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: calc(min(24vw, 180px));
+  min-height: 117px;
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -127,15 +127,13 @@ body {
 }
 
 .html-material-3c .biz-tip ul {
-  position: absolute;
-  top: calc(min(13vw, 99px));
+  margin: 2px 0px 0px 18px;
+  padding: 0;
   list-style-type: inherit;
-  padding-left: 10px;
-  margin-right: -20px;
 }
 
 .html-material-3c .biz-tip ul li {
-  padding-left: 0px;
+  padding-left: 6px;
   line-height: 1.1;
 }
 
@@ -147,7 +145,7 @@ body {
   padding-right: 20px;
   padding-top: 4px;
   font-size: 18px;
-  font-size: clamp(9px, 2vw, 18px);
+  font-size: clamp(9px, 2.1vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
@@ -168,7 +166,7 @@ body {
 }
 
 .html-material-3c .see-content .conversation .row p:first-child {
-  min-width: 54px;
+  min-width: 74px;
   max-width: 100px;
   word-wrap: break-word;
   font-weight: bold;
@@ -179,7 +177,7 @@ body {
 }
 
 .html-material-3c .try-content {
-  margin-top: clamp(75px, 14%, 120px);
+  margin-top: clamp(60px, 14%, 120px);
 }
 
 .html-material-3c .try-content ul {
@@ -249,12 +247,6 @@ body {
   right: 3px;
 }
 
-@media screen and (max-width: 960px) {
-  .html-material-3c {
-    width: 100% !important;
-  }
-}
-
 @media screen and (max-width: 820px) {
   .html-material-3c {
     min-height: 125.68vw;
@@ -262,9 +254,19 @@ body {
   .html-material-3c .sub-text {
     padding-right: 7px !important;
   }
+  .html-material-3c .biz-tip .text {
+    padding-bottom: clamp(24px, 6vw, 32px) !important;
+    min-height: calc(max(12vw, 50px));
+  }
+  .html-material-3c .see-content .conversation .row p:first-child {
+    min-width: clamp(38px, 8.2vw, 74px) !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .html-material-3c .biz-tip ul {
+    margin-left: 10px;
+  }
   .html-material-3c .title {
     top: clamp(30px, 7.3vw, 59px);
   }
@@ -275,15 +277,12 @@ body {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
-  .html-material-3c .see-content .conversation .row p:first-child {
-    min-width: 32px !important;
-  }
   .html-material-3c table td,
   .html-material-3c table th {
     padding: 2px !important;
   }
   .html-material-3c .biz-tip .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px;
   }
   .html-material-3c .biz-tip .sub-text {
     padding: 3px 8px !important;
@@ -296,9 +295,6 @@ body {
   }
   .html-material-3c .biz-tip {
     top: 100px;
-  }
-  .html-material-3c .biz-tip .text {
-    padding: 4px 8px 12px;
   }
   .html-material-3c .biz-tip .sub-text {
     padding: 3px 8px !important;

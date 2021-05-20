@@ -106,9 +106,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-2c {
-    min-height: calc(100vh - 62px);
-  }
   .html-material-2c .title {
     top: clamp(30px, 7.3vw, 59px);
   }
@@ -116,8 +113,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-2c {
-    min-height: 125.68vw;
-    min-height: calc(100vh - 52px);
+    min-height: 212vw;
   }
   .html-material-2c .section {
     left: calc(-28% - 30px);

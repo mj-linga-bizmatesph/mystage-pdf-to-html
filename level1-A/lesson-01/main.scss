@@ -298,7 +298,7 @@ body {
     .lesson-points {
       margin-top: 16px;
       padding: 2px 0px 0px 47px;
-      height: 50px;
+      height: fit-content;
       width: fit-content;
       max-width: 687px;
       background: $primary-light;
@@ -540,9 +540,6 @@ body {
       }
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
-      }
-      .lesson-points {
-        height: clamp(32px, 6.4vw, 50px);
       }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);

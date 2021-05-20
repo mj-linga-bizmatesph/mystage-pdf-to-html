@@ -11,7 +11,6 @@ $left-pixel: clamp(50px, 14%, 126.5px);
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 .html-material-1b {
   font-family: $text-font;
@@ -137,7 +136,7 @@ body {
   }
   .ja {
     font-family: $ja-font, sans-serif;
-    font-size: clamp(5.5px, 1.4vw, 12.5px);
+    font-size: clamp(5px, 1.4vw, 12.5px);
     font-weight: bold;
     color: #595959;
   }

@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.html-material-4e {
+  font-family: "Trebuchet MS";
+  /* Words and Phrases Content */
+  /* See */
+  /* Try */
+  /* Act */
+}
+
+.html-material-4e .page-1 {
+  width: 892.75px;
+  min-height: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image: url("/images/bg-header.png"), url("/images/04-bg-footer.png");
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.html-material-4e .header {
+  font-family: "Arial";
+}
+
+.html-material-4e .b {
+  font-weight: bold;
+}
+
+.html-material-4e .u {
+  text-decoration: underline;
+}
+
+.html-material-4e .program-rank {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  color: #ffffff;
+  font-size: 0px;
+}
+
+.html-material-4e .program-rank .type {
+  padding: 3px 16px 3px 14px;
+  background-color: #2078a0;
+  font-size: 15px;
+}
+
+.html-material-4e .program-rank .level {
+  padding: 3px 12px 3px 13px;
+  background-color: #e56a62;
+  font-size: 15px;
+}
+
+.html-material-4e .line {
+  margin: 0 12px;
+}
+
+.html-material-4e .title {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-size: 27px;
+  width: 200px;
+}
+
+.html-material-4e .lesson-number {
+  position: absolute;
+  min-width: 15px;
+  left: 818px;
+  top: 66px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.html-material-4e .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.html-material-4e .sub-text {
+  font-family: "Arial" !important;
+  line-height: 22px;
+  margin: 0 auto;
+}
+
+.html-material-4e .section {
+  position: absolute;
+  left: -71.5px;
+  color: #2078a0;
+  font-weight: bold;
+  font-family: "Arial";
+  top: 2px;
+}
+
+.html-material-4e .divider {
+  color: #d9d9d9;
+  position: relative;
+  left: 469px;
+}
+
+.html-material-4e .divider.d1 {
+  margin-top: -25px;
+}
+
+.html-material-4e .divider.d2 {
+  margin-top: 0px;
+}
+
+.html-material-4e ul {
+  margin: 3px 0px 0px 18px;
+  padding: 0;
+  line-height: 26px;
+}
+
+.html-material-4e ul li {
+  padding-left: 8px;
+}
+
+.html-material-4e .see-content,
+.html-material-4e .act-content,
+.html-material-4e .try-content {
+  position: relative;
+  margin-left: 126.5px;
+  padding-left: 18.5px;
+  padding-right: 42px;
+  font-size: 15px;
+}
+
+.html-material-4e .words-phrase-content {
+  position: relative;
+  margin-top: 155px;
+  padding: 2px 0px 0px 47px;
+  height: 144.5px;
+  width: 100%;
+  background: #d4e6f0;
+  font-size: 15px;
+}
+
+.html-material-4e .words-phrase-content .section {
+  margin-left: 126.5px;
+  width: 80px;
+  line-height: 1.8em;
+  margin-top: 16px !important;
+}
+
+.html-material-4e .words-phrase-content .pointers {
+  margin-top: 20px !important;
+  margin-left: 126.5px;
+}
+
+.html-material-4e .words-phrase-content .pointers .arrow-part {
+  position: relative;
+  width: 85%;
+}
+
+.html-material-4e .words-phrase-content .pointers .arrow-part:before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7.5px solid #2078a0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.html-material-4e .words-phrase-content .pointers .arrow-part span {
+  color: #267aa1;
+  font-weight: bold;
+}
+
+.html-material-4e .see-content {
+  margin-top: 36px;
+}
+
+.html-material-4e .see-content .article {
+  margin-top: 5px;
+  line-height: 1.7em;
+  margin-bottom: 29px;
+}
+
+.html-material-4e .see-content .article span.highlight {
+  color: #267aa1;
+  font-weight: bold;
+}
+
+.html-material-4e .see-content .article .sub-text.b {
+  font-family: "Trebuchet MS" !important;
+}
+
+.html-material-4e .try-content {
+  margin-top: 0px;
+}
+
+.html-material-4e .try-content ul {
+  list-style-type: decimal;
+}
+
+.html-material-4e .act-content {
+  margin-top: 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.html-material-4e .act-content table {
+  margin-top: 5px;
+  font-size: 14px;
+  border-spacing: 0px;
+  padding-bottom: 5px;
+  min-width: 700px;
+}
+
+.html-material-4e .act-content table th,
+.html-material-4e .act-content table td {
+  max-width: 120px;
+  min-width: 80px;
+  word-wrap: break-word;
+  border: 1px solid #ffffff;
+}
+
+.html-material-4e .act-content table th {
+  background-color: #2078a0;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.html-material-4e .act-content table td {
+  text-align: left;
+  padding: 4px;
+  background-color: #f2f2f2;
+  height: 35px;
+}
+
+.html-material-4e .footer {
+  font-size: 9px;
+  position: absolute;
+  width: 345px;
+  text-align: right;
+  bottom: 43px;
+  left: 492px;
+  font-family: "Arial";
+}

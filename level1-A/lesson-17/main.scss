@@ -6,398 +6,599 @@ $primary: #257a9e;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
 
-$left-pixel: 126.5px;
+$left-pixel: clamp(50px, 14%, 126.5px);
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.html-material-1a {
   font-family: $text-font;
-}
-.page-1,
-.page-2,
-.page-3 {
-  width: 892.75px;
-  min-height: 1200px;
-  height: fit-content;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'), url('/images/bg-footer.png');
-  background-position: top, bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.header {
-  font-family: $title-font;
-}
-.b {
-  font-weight: bold;
-}
 
-.u-sup {
-  border-bottom: solid 1.5px black;
-  display: inline-block;
-  line-height: 14px;
-}
-.program-rank {
-  position: absolute;
-  top: 40px;
-  left: 48px;
-  color: #ffffff;
-  font-size: 0px;
-
-  .type {
-    padding: 3px 16px 3px 14px;
-    background-color: #248bb0;
-    font-size: 15px;
-  }
-  .level {
-    padding: 3px 12px 3px 13px;
-    background-color: #339999;
-    font-size: 15px;
-  }
-}
-.line {
-  margin: 0 12px;
-}
-.title {
-  position: absolute;
-  top: 80px;
-  left: 55px;
-  font-size: 27px;
-}
-.lesson-number {
-  position: absolute;
-  min-width: 15px;
-  left: 818px;
-  top: 66px;
-  font-size: 13px;
-  text-align: center;
-  color: #ffffff;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  font-family: $text-font;
-}
-.sub-text {
-  font-family: $title-font !important;
-  margin: 0px 0px 1px;
-  p {
-    margin: 0px 0px 1px;
-    line-height: unset !important;
-  }
-  .ja {
-    margin-top: 5px;
-  }
-}
-.section {
-  position: absolute;
-  left: -71.5px;
-  color: #2078a0;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: $title-font;
-
-  &.see {
-    top: 13px;
-  }
-  &.try {
-    top: 0px;
-  }
-  &.act {
-    top: 2px;
-  }
-}
-.divider {
-  color: #d9d9d9;
-  font-size: 15px;
-  position: relative;
-  left: 469px;
-
-  &.d1,
-  &.d2 {
-    margin-top: 33px;
-  }
-}
-.sub-head {
-  position: relative;
-  margin-top: 128px;
-  left: 47px;
-  .subtitle {
-    font-family: $ja-font;
-    color: $primary;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  p {
-    margin: 3px auto;
-  }
-}
-.ja {
-  font-family: $ja-font, sans-serif;
-  font-size: 12.5px;
-  font-weight: bold;
-  color: #595959;
-}
-.primary-text {
-  color: $primary;
-}
-sup {
-  font-size: 10px;
-  line-height: 16px;
-  display: inline-block;
-}
-li p {
-  margin: 0 auto;
-}
-
-/* See */
-.see-content {
-  position: relative;
-  margin-left: $left-pixel;
-  margin-top: 177px;
-  font-size: 15px;
-
-  .blue-section {
-    background-color: $primary-light;
-    padding-top: 13px;
-    padding-left: 18.5px;
+  .page-1,
+  .page-2,
+  .page-3 {
+    width: 100%;
+    min-width: 360px;
+    max-width: 892.75px;
+    min-height: 1200px;
     height: fit-content;
-    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 62px;
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
+      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-position: top, bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-  p {
-    margin: 0 auto;
-    &:not(.sub-text) {
-      line-height: 26px;
+  .header {
+    font-family: $title-font;
+  }
+  .b {
+    font-weight: bold;
+  }
+
+  .u-sup {
+    border-bottom: solid 1.5px black;
+    display: inline-block;
+    line-height: clamp(6px, 1.5vw, 14px);
+  }
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    color: #ffffff;
+    font-size: 0px;
+
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: #248bb0;
+      font-size: clamp(7px, 1.8vw, 15px);
     }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: #339999;
+      font-size: clamp(7px, 1.8vw, 15px);
+    }
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .title {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    font-size: clamp(12px, 3vw, 27px);
+  }
+  .lesson-number {
+    position: absolute;
+    left: 91.65%;
+    margin-top: 7.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    font-family: $text-font;
   }
   .sub-text {
-    margin-bottom: 4px;
-    &:not(:first-child) {
-      margin-top: 28px;
+    font-family: $title-font !important;
+    margin: 0px 0px 1px;
+    p {
+      margin: 0px 0px 1px;
+      line-height: unset !important;
+    }
+    .ja {
+      margin-top: 5px;
     }
   }
-  .col {
-    width: fit-content;
-    margin-right: 10px;
-    position: relative;
-  }
-  .shape {
-    width: 134px;
+  .section {
     position: absolute;
-    top: 12px;
-    left: 40px;
-  }
-  ul {
-    width: 160px;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 12px auto 0px;
-    li {
-      list-style-type: decimal;
-      padding: 6px 40px 26px;
+    left: calc(-16% + 54px);
+    color: #2078a0;
+    font-weight: bold;
+    font-size: clamp(6px, 1.8vw, 15px);
+    font-family: $title-font;
+
+    &.see {
+      top: 13px;
+    }
+    &.try {
+      top: 0px;
+    }
+    &.act {
+      top: 2px;
     }
   }
-  .example {
-    margin-top: 36px;
-    margin-left: 18.5px;
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(6px, 1.8vw, 15px);
+    position: relative;
+    left: 52%;
 
-    .conversation {
-      line-height: 26px;
-      margin-top: 4px;
-      .row {
-        p {
-          display: inline-block;
-          margin: -0.5px 0px;
-          &:first-child {
-            width: 52px;
-            word-wrap: break-word;
-          }
-          &:last-child {
-            max-width: 690px;
+    &.d1,
+    &.d2 {
+      margin-top: 33px;
+    }
+  }
+  .sub-head {
+    position: relative;
+    margin-top: 128px;
+    left: 47px;
+    .subtitle {
+      font-family: $ja-font;
+      color: $primary;
+      font-weight: bold;
+      font-size: clamp(6px, 1.8vw, 15px);
+    }
+    p {
+      margin: 3px auto;
+    }
+  }
+  .ja {
+    font-family: $ja-font, sans-serif;
+    font-size: clamp(5px, 1.4vw, 12.5px);
+    font-weight: bold;
+    color: #595959;
+  }
+  .primary-text {
+    color: $primary;
+  }
+  sup {
+    font-size: clamp(6px, 1.6vw, 10px);
+    line-height: clamp(8px, 1.8vw, 16px);
+    display: inline-block;
+  }
+  li p {
+    margin: 0 auto;
+  }
+
+  /* See */
+  .see-content {
+    position: relative;
+    margin-left: $left-pixel;
+    margin-top: 177px;
+    font-size: clamp(6px, 1.8vw, 15px);
+
+    .blue-section {
+      background-color: $primary-light;
+      padding-top: 13px;
+      padding-left: 18.5px;
+      height: fit-content;
+      padding-bottom: 10px;
+    }
+    p {
+      margin: 0 auto;
+      &:not(.sub-text) {
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .sub-text {
+      margin-bottom: 4px;
+      &:not(:first-child) {
+        margin-top: 28px;
+      }
+    }
+    .col {
+      width: fit-content;
+      margin-right: 10px;
+      position: relative;
+    }
+    .shape {
+      width: 134px;
+      position: absolute;
+      top: 12px;
+      left: 40px;
+    }
+    ul {
+      width: 160px;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 12px auto 0px;
+      li {
+        list-style-type: decimal;
+        padding: 6px 40px 26px;
+      }
+    }
+    .example {
+      margin-top: 36px;
+      margin-left: 18.5px;
+
+      .conversation {
+        line-height: clamp(12px, 3vw, 26px);
+        margin-top: 4px;
+        .row {
+          p {
+            display: inline-block;
+            margin: -0.5px 0px;
+            &:first-child {
+              width: 52px;
+              word-wrap: break-word;
+            }
+            &:last-child {
+              max-width: 690px;
+            }
           }
         }
       }
     }
   }
-}
 
-/* Try */
-.try-content {
-  position: relative;
-  margin-top: 34px;
-  margin-left: $left-pixel;
-  padding-left: 18.5px;
-  font-size: 15px;
+  /* Try */
+  .try-content {
+    position: relative;
+    margin-top: 34px;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    font-size: clamp(6px, 1.8vw, 15px);
 
-  ul {
-    list-style-type: decimal;
-    margin: 3px 0px 0px 18px;
-    padding: 0;
-    line-height: 26px;
-    width: 650px;
-  }
-  li {
-    padding-left: 13px;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .sub-text.mg {
-    margin-top: 32px;
-  }
-}
-
-/* Act */
-.act-content {
-  position: relative;
-  margin-top: 36px;
-  margin-left: $left-pixel;
-  padding-left: 18.5px;
-  font-size: 15px;
-
-  .sub-text {
-    line-height: 22px;
-  }
-  ul {
-    margin: 3px 0px 0px 18px;
-    padding: 0;
-    line-height: 26px;
-    list-style-type: decimal;
+    ul {
+      list-style-type: decimal;
+      margin: 3px 0px 0px 18px;
+      padding: 0;
+      line-height: clamp(12px, 3vw, 26px);
+      max-width: 650px;
+    }
     li {
       padding-left: 13px;
     }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .sub-text.mg {
+      margin-top: 32px;
+    }
   }
-}
-.footer {
-  font-size: 9px;
-  position: absolute;
-  width: 345px;
-  text-align: right;
-  bottom: 43px;
-  left: 492px;
-  font-family: $title-font;
-}
 
-/* Page 2 */
-.page-2 {
-  .title {
-    top: 72px;
-    left: 50px;
-    word-spacing: 3px;
-    .ja {
-      font-size: 27px;
-      color: #000000;
-      font-weight: bold;
-      margin-right: 3px;
+  /* Act */
+  .act-content {
+    position: relative;
+    margin-top: 36px;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    font-size: clamp(6px, 1.8vw, 15px);
+
+    .sub-text {
+      line-height: clamp(12px, 2.8vw, 22px);
+    }
+    ul {
+      margin: 3px 0px 0px 18px;
+      padding: 0;
+      line-height: clamp(12px, 3vw, 26px);
+      list-style-type: decimal;
+      li {
+        padding-left: 13px;
+      }
     }
   }
-  .lesson-points {
-    margin-top: 14px;
-    padding: 2px 0px 6px 47px;
-    height: fit-content;
-    width: 687px;
-    background: $primary-light;
-    &.ja {
-      color: $primary;
-      font-weight: normal;
-      letter-spacing: 0.1px;
+  .footer {
+    font-size: clamp(4.5px, 1.2vw, 9px);
+    position: absolute;
+    width: fit-content;
+    text-align: right;
+    bottom: 43px;
+    right: 6.2%;
+    font-family: $title-font;
+  }
+
+  /* Page 2 */
+  .page-2 {
+    .title {
+      top: 72px;
+      left: 50px;
+      word-spacing: 3px;
+      .ja {
+        font-size: clamp(12px, 3vw, 27px);
+        color: #000000;
+        font-weight: bold;
+        margin-right: 3px;
+      }
     }
-    .subtitle {
+    .lesson-points {
+      margin-top: 14px;
+      padding: 2px 0px 6px 47px;
+      height: fit-content;
+      max-width: 687px;
+      background: $primary-light;
+      &.ja {
+        color: $primary;
+        font-weight: normal;
+        letter-spacing: 0.1px;
+      }
+      .subtitle {
+        p {
+          margin: 3px auto;
+          font-size: clamp(5px, 1.5vw, 12px);
+          &:first-child {
+            font-size: clamp(6px, 1.8vw, 15px);
+            color: #000000;
+          }
+        }
+      }
       p {
-        margin: 3px auto;
-        font-size: 12px;
-        &:first-child {
-          font-size: 15px;
-          color: #000000;
+        margin: 16px 0px 4px;
+      }
+    }
+    .arrow-part {
+      margin-top: 24px;
+      margin-left: 125px;
+      word-spacing: 3px;
+      font-weight: normal;
+      .subtitle {
+        font-size: clamp(6px, 1.8vw, 15px);
+        color: #000000;
+      }
+      .bracket {
+        margin-top: 24px;
+      }
+      p {
+        margin: 4.5px auto;
+        font-size: clamp(5px, 1.5vw, 12px);
+      }
+      div {
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 28px;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          left: -38px;
+          top: 5px;
+          width: 0;
+          height: 0;
+          border-top: 6.5px solid transparent;
+          border-bottom: 6.5px solid transparent;
+          border-left: 12px solid $primary;
+          display: inline-block;
+          vertical-align: middle;
         }
       }
     }
-    p {
-      margin: 16px 0px 4px;
-    }
-  }
-  .arrow-part {
-    margin-top: 24px;
-    margin-left: 125px;
-    word-spacing: 3px;
-    font-weight: normal;
-    .subtitle {
-      font-size: 15px;
-      color: #000000;
-    }
-    .bracket {
-      margin-top: 24px;
-    }
-    p {
-      margin: 4.5px auto;
-      font-size: 12px;
-    }
-    div {
-      position: relative;
-      &:not(:last-child) {
-        margin-bottom: 28px;
-      }
-      &:before {
-        content: '';
-        position: absolute;
-        left: -38px;
-        top: 5px;
-        width: 0;
-        height: 0;
-        border-top: 6.5px solid transparent;
-        border-bottom: 6.5px solid transparent;
-        border-left: 12px solid $primary;
-        display: inline-block;
-        vertical-align: middle;
-      }
-    }
-  }
-  .see-content {
-    margin-top: 38px;
+    .see-content {
+      margin-top: 38px;
 
-    .blue-section {
-      padding-bottom: 8px;
+      .blue-section {
+        padding-bottom: 8px;
+      }
+      .col.weather {
+        margin-top: 100px;
+      }
+      .row .ja {
+        color: #257a9e;
+      }
     }
-    .col.weather {
-      margin-top: 100px;
-    }
-    .row .ja {
-      color: #257a9e;
+    .example {
+      margin-top: 30px;
+      margin-left: 0px;
     }
   }
-  .example {
-    margin-top: 30px;
-    margin-left: 0px;
+
+  /* Page 3 */
+  .page-3 {
+    .sub-head {
+      margin-top: 75px;
+    }
+    .try-content {
+      margin-top: 52px;
+      padding-left: 0px;
+      ul {
+        margin: 24px 0px 0px 16px;
+      }
+    }
+    .sub-text.mg .ja {
+      margin-top: 8px;
+    }
+    .act-content {
+      padding-left: 0px;
+      ul {
+        line-height: 24px;
+        margin-top: 30px;
+        max-width: 670px;
+        .ja {
+          margin: 2px auto;
+        }
+      }
+    }
   }
 }
 
-/* Page 3 */
-.page-3 {
-  .sub-head {
-    margin-top: 75px;
-  }
-  .try-content {
-    margin-top: 52px;
-    padding-left: 0px;
-    ul {
-      margin: 24px 0px 0px 16px;
+@media screen and (max-width: 900px) {
+  .html-material-1a {
+    .page-1,
+    .page-2,
+    .page-3 {
+      min-height: unset;
+    }
+    .see-content {
+      margin-top: clamp(75px, 20vw, 177px);
+      .blue-section {
+        padding-bottom: clamp(14px, 3.8vw, 36px);
+        padding-left: clamp(11px, 2.4vw, 18.5px);
+        padding-top: clamp(9px, 1.8vw, 13px);
+      }
+      .tab {
+        width: clamp(65px, 18vw, 180px) !important;
+      }
+      .col .text:not(:last-child) {
+        margin-bottom: clamp(18px, 3.6vw, 30px) !important;
+      }
+      .example {
+        margin-top: clamp(11px, 2.4vw, 18px);
+        margin-left: clamp(11px, 2.4vw, 18.5px);
+        .row p:first-child {
+          width: clamp(26px, 6vw, 52px) !important;
+        }
+      }
+      .shape {
+        width: 18vw;
+        min-width: 95px;
+      }
+      ul li {
+        padding-bottom: clamp(20px, 3.6vw, 26px) !important;
+        padding-left: clamp(20px, 3.4vw, 40px);
+      }
+    }
+    .try-content {
+      margin-top: clamp(20px, 3.8vw, 34px);
+      padding-left: clamp(11px, 2.4vw, 18px);
+      ul {
+        margin-left: clamp(11px, 2.4vw, 18px);
+      }
+      li {
+        padding-left: clamp(9px, 1.8vw, 13px);
+      }
+      .sub-text.mg {
+        margin-top: clamp(12px, 2.4vw, 20px);
+      }
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
+      ul {
+        margin-top: clamp(14px, 2.6vw, 26px) !important;
+        &:first-child {
+          width: unset !important;
+        }
+      }
+    }
+
+    /* Page 2 */
+    .page-2 {
+      .sub-head {
+        margin-top: clamp(50px, 16vw, 128px);
+      }
+      .arrow-part {
+        margin-left: clamp(35px, 15.9vw, 125px);
+        .bracket {
+          margin-top: clamp(12px, 2.8vw, 24px);
+        }
+      }
+      .see-content {
+        margin-left: clamp(35px, 15.9vw, 125px);
+        margin-top: clamp(26px, 4.3vw, 56px);
+        .blue-section {
+          padding-bottom: clamp(14px, 3.8vw, 36px);
+          padding-left: clamp(11px, 2.4vw, 18.5px);
+          padding-top: clamp(9px, 1.8vw, 13px);
+          .row {
+            justify-content: space-between;
+          }
+          .col {
+            margin: 0px 0px;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    /* Page 3 */
+    .page-3 {
+      .sub-head {
+        margin-top: clamp(42px, 7.8vw, 75px);
+      }
+      .try-content {
+        margin-top: clamp(26px, 4.3vw, 52px);
+        .sub-text.mg {
+          margin-top: clamp(26px, 4.3vw, 52px);
+        }
+      }
+      .act-content .list-col {
+        margin-top: clamp(5px, 2.5vw, 31px);
+        ul {
+          margin-left: 0px;
+        }
+      }
+    }
+    .footer {
+      bottom: clamp(20px, 5.2vw, 43px);
+      right: 5% !important;
     }
   }
-  .sub-text.mg .ja {
-    margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .html-material-1a {
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: clamp(23px, 4vw, 48px);
+    }
+    .title {
+      top: clamp(45px, 8vw, 80px);
+      left: clamp(30px, 4.1vw, 55px);
+    }
+    .divider {
+      &.d1,
+      &.d2 {
+        margin-top: clamp(18px, 3.6vw, 31px);
+      }
+    }
+    .section {
+      left: calc(-16% + 30px);
+    }
+    .blue-section {
+      .row {
+        justify-content: space-between;
+        .col {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    /* Page 2 */
+    .page-2 {
+      .title {
+        top: clamp(40px, 7.8vw, 72px);
+        left: clamp(27px, 3.8vw, 50px);
+      }
+      .sub-head {
+        left: clamp(27px, 3.8vw, 47px);
+      }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+      }
+      .arrow-part div:not(:last-child) {
+        margin-bottom: clamp(18px, 3.6vw, 32px);
+      }
+    }
+    /* Page 3 */
+    .page-3 {
+      .sub-head {
+        left: clamp(27px, 3.8vw, 47px);
+      }
+    }
   }
-  .act-content {
-    padding-left: 0px;
-    ul {
-      line-height: 24px;
-      margin-top: 30px;
-      max-width: 670px;
-      .ja {
-        margin: 2px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .html-material-1a {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .see-content ul {
+      width: 125px !important;
+    }
+
+    /* Page 2 */
+    .page-2 {
+      .arrow-part div {
+        &:before {
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 8px solid #257a9e;
+          left: -28px;
+        }
       }
     }
   }

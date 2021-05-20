@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -21,9 +20,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
 .html-material-2a .b {
   font-weight: bold;
 }
+
 .html-material-2a .title {
   position: absolute;
   top: 59px;
@@ -31,6 +32,7 @@ body {
   font-size: clamp(10.5px, 2.4vw, 21px);
   color: #ffffff;
 }
+
 .html-material-2a .section {
   position: absolute;
   left: calc(-28% - 44px);
@@ -49,42 +51,51 @@ body {
   min-width: 113px;
   max-width: 206px;
 }
+
 .html-material-2a ul {
   margin: 2px 0px 0px 16px;
   padding: 0;
   list-style: none;
 }
+
 .html-material-2a ul li {
   padding-left: 6px;
   position: relative;
 }
+
 .html-material-2a ul li:before {
-  content: "■";
+  content: "\25A0";
   position: absolute;
   left: -15px;
   top: -7px;
   font-size: clamp(16px, 2.4vw, 26px);
 }
+
 .html-material-2a ul li:not(:last-child) {
   margin-bottom: clamp(15px, 2vw, 20px);
 }
+
 .html-material-2a .test-content {
   position: relative;
   margin-top: clamp(20px, 17%, 116px);
   margin-left: clamp(120px, 28%, 218px);
   padding: 6px 16px 6px 0px;
   font-size: clamp(11px, 2vw, 18px);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
   width: calc(100% - clamp(120px, 28%, 218px) - 20px);
 }
+
 .html-material-2a .test-content .sub-text {
   font-size: clamp(10px, 2.4vw, 20px);
   font-weight: bold;
 }
+
 .html-material-2a .test-content p {
   margin: 2px auto;
 }
+
 .html-material-2a .footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
@@ -101,6 +112,7 @@ body {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
+
 @media screen and (max-width: 600px) {
   .html-material-2a {
     min-height: calc(100vh - 52px);
@@ -109,6 +121,7 @@ body {
     left: calc(-28% - 30px);
   }
 }
+
 @media screen and (max-width: 420px) {
   .html-material-2a .title {
     top: clamp(26px, 7.3vw, 32px);
@@ -117,8 +130,9 @@ body {
     left: calc(-28% - 50px);
   }
 }
+
 @media only screen and (min-width: 411px) and (max-width: 731px) {
   .html-material-2a .section {
     left: calc(-28% - 35px);
   }
-}/*# sourceMappingURL=main.css.map */
+}

@@ -6,6 +6,7 @@ body {
 
 .html-material-4c {
   width: 100%;
+  min-width: 370px;
   max-width: 892.75px;
   min-height: 400px;
   height: -webkit-fit-content;
@@ -25,6 +26,12 @@ body {
 }
 .html-material-4c .b {
   font-weight: bold;
+}
+.html-material-4c .i {
+  font-family: italic;
+}
+.html-material-4c .u {
+  text-decoration: underline;
 }
 .html-material-4c .program-rank {
   position: absolute;
@@ -50,15 +57,13 @@ body {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: clamp(7px, 2.8vw, 27px);
+  font-size: clamp(12px, 3vw, 27px);
 }
 .html-material-4c .lesson-number {
   position: absolute;
-  min-width: 15px;
-  left: 818px;
-  top: 66px;
+  left: 91.65%;
+  margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
-  text-align: center;
   color: #ffffff;
 }
 .html-material-4c .sub-text {
@@ -74,11 +79,11 @@ body {
 }
 .html-material-4c .review-content {
   position: relative;
-  margin-left: 126.5px;
+  margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(7px, 1.8vw, 15px);
-  margin-top: 150px;
+  margin-top: 20%;
 }
 .html-material-4c .review-content ul {
   list-style: none;
@@ -114,14 +119,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-4c .program-rank,
-.html-material-4c .title,
-.html-material-4c .lesson-number {
-    left: 20px;
+  .html-material-4c .program-rank {
+    position: absolute;
+    top: clamp(20px, 4vw, 40px);
+    left: clamp(23px, 4vw, 48px);
   }
-  .html-material-4c .review-content {
-    margin-top: 160px;
-    margin-left: 95px;
+  .html-material-4c .title {
+    top: clamp(45px, 8.4vw, 80px);
+    left: clamp(30px, 4.1vw, 55px);
+  }
+  .html-material-4c .section {
+    left: -55.5px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -131,11 +139,7 @@ body {
     left: 20px;
   }
   .html-material-4c .section {
-    left: -45px;
-  }
-  .html-material-4c .review-content {
-    margin-top: 160px;
-    margin-left: 50px;
+    left: -30.5px;
   }
   .html-material-4c .footer {
     bottom: 15px;

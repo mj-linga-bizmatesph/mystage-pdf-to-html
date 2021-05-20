@@ -64,7 +64,7 @@ body {
 }
 .html-material-4c .lesson-number {
   position: absolute;
-  left: 92.2%;
+  left: 91.65%;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
@@ -184,7 +184,7 @@ body {
   margin: 2px auto 24px;
 }
 .html-material-4c .see-content .col p.name {
-  width: 70px;
+  width: auto;
 }
 .html-material-4c .try-content {
   margin-top: 30px;
@@ -198,31 +198,6 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-.html-material-4c .act-content table {
-  margin-top: 5px;
-  font-size: clamp(6px, 1.5vw, 14px);
-  border-spacing: 0px;
-  padding-bottom: 5px;
-  width: 100%;
-}
-.html-material-4c .act-content table th,
-.html-material-4c .act-content table td {
-  max-width: 120px;
-  min-width: 80px;
-  word-wrap: break-word;
-  border: 1px solid #ffffff;
-}
-.html-material-4c .act-content table th {
-  background-color: #2078a0;
-  color: #ffffff;
-  font-size: clamp(7px, 1.8vw, 15px);
-  padding: 5px;
-}
-.html-material-4c .act-content table td {
-  text-align: left;
-  padding: 4px;
-  background-color: #f2f2f2;
 }
 .html-material-4c .footer {
   font-size: clamp(4.5px, 1.1vw, 9px);

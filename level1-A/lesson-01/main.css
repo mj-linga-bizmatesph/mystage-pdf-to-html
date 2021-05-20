@@ -149,7 +149,7 @@ body {
 
 .html-material-1a .ja {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(5.5px, 1.4vw, 12.5px);
+  font-size: clamp(5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
@@ -346,7 +346,10 @@ body {
   margin-top: 16px;
   padding: 2px 0px 0px 47px;
   height: 50px;
-  width: 687px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 687px;
   background: #cce0ec;
 }
 
@@ -610,13 +613,13 @@ body {
     margin-top: clamp(14px, 2.6vw, 26px) !important;
   }
   .html-material-1a .page-2 .sub-head {
-    margin-top: clamp(35px, 16vw, 128px);
+    margin-top: clamp(50px, 16vw, 128px);
   }
   .html-material-1a .page-2 .arrow-part {
     margin-left: clamp(35px, 15.9vw, 125px);
   }
   .html-material-1a .page-2 .lesson-points {
-    height: clamp(32px, 4.8vw, 50px);
+    height: clamp(32px, 6.4vw, 50px);
   }
   .html-material-1a .page-2 .see-content {
     margin-left: clamp(35px, 15.9vw, 125px);

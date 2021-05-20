@@ -150,7 +150,7 @@ body {
 
 .html-material-1a .ja {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(5.5px, 1.4vw, 12.5px);
+  font-size: clamp(5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
@@ -371,7 +371,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 678px;
+  max-width: 678px;
   background: #cce0ec;
 }
 
@@ -643,7 +643,7 @@ body {
     width: unset !important;
   }
   .html-material-1a .page-2 .sub-head {
-    margin-top: clamp(35px, 16vw, 128px);
+    margin-top: clamp(50px, 16vw, 128px);
   }
   .html-material-1a .page-2 .arrow-part {
     margin-left: clamp(35px, 15.9vw, 125px);

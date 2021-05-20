@@ -236,7 +236,7 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
-    max-width: 40%;
+    max-width: 34%;
   }
 }
 
@@ -263,7 +263,7 @@ body {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
     .footer {
-      bottom: clamp(20px, 5.2vw, 43px);
+      bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
     }
   }

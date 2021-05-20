@@ -1,13 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1,
-.page-2,
-.page-3 {
-  width: 892.75px;
+.html-material-1a {
+  font-family: "Trebuchet MS";
+  /* Page 2 */
+  /* Page 3 */
+}
+
+.html-material-1a .page-1,
+.html-material-1a .page-2,
+.html-material-1a .page-3 {
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
   min-height: 1200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -15,27 +22,27 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url("/images/bg-header.png"), url("/images/bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.header {
+.html-material-1a .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-1a .b {
   font-weight: bold;
 }
 
-.u-sup {
+.html-material-1a .u-sup {
   border-bottom: solid 1.5px black;
   display: inline-block;
-  line-height: 14px;
+  line-height: clamp(6px, 1.5vw, 14px);
 }
 
-.program-rank {
+.html-material-1a .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -43,40 +50,38 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-1a .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #248bb0;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.program-rank .level {
+.html-material-1a .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.line {
+.html-material-1a .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-1a .title {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: 27px;
+  font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
+.html-material-1a .lesson-number {
   position: absolute;
-  min-width: 15px;
-  left: 818px;
-  top: 66px;
-  font-size: 13px;
-  text-align: center;
+  left: 91.65%;
+  margin-top: 7.4%;
+  font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
-.row {
+.html-material-1a .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,63 +91,66 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-1a .sub-text {
   font-family: "Arial" !important;
 }
 
-.sub-head {
+.html-material-1a .sub-head {
   position: absolute;
   top: 125px;
   left: 47px;
-  width: 760px;
+  max-width: 760px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.sub-head .subtitle {
+.html-material-1a .sub-head .subtitle {
   font-family: "Noto Sans JP";
   color: #257a9e;
   font-weight: bold;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 }
 
-.sub-head p {
+.html-material-1a .sub-head p {
   margin: 3px auto;
 }
 
-.sub-head p:nth-child(n + 3) {
+.html-material-1a .sub-head p:nth-child(n + 3) {
   color: #257a9e;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: clamp(5px, 1.5vw, 12px);
+  line-height: clamp(12px, 2.8vw, 22px);
 }
 
-.ja {
+.html-material-1a .ja {
   font-family: "Noto Sans JP", sans-serif !important;
-  font-size: 12.5px;
+  font-size: clamp(5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
 
-sup {
-  font-size: 10px;
-  line-height: 16px;
+.html-material-1a sup {
+  font-size: clamp(6px, 1.6vw, 10px);
+  line-height: clamp(8px, 1.8vw, 16px);
   display: inline-block;
 }
 
-.lesson-list {
+.html-material-1a .lesson-list {
   font-family: "Trebuchet MS";
-  font-size: 15px;
-  margin-top: 189px;
-  margin-left: 149px;
+  font-size: clamp(6px, 1.8vw, 15px);
+  margin-top: clamp(120px, 21vw, 189px);
+  margin-left: clamp(50px, 16%, 149px);
 }
 
-.lesson-list ul {
+.html-material-1a .lesson-list ul {
   list-style-type: decimal;
   margin: 24.5px 0px 0px 18px;
   padding: 0;
-  line-height: 26px;
+  line-height: clamp(12px, 3vw, 26px);
   position: relative;
 }
 
-.lesson-list ul:before {
+.html-material-1a .lesson-list ul:before {
   content: '';
   position: absolute;
   left: -16px;
@@ -156,19 +164,19 @@ sup {
   vertical-align: middle;
 }
 
-.lesson-list ul.initial {
+.html-material-1a .lesson-list ul.initial {
   margin-top: 30px;
 }
 
-.lesson-list ul .sub-text {
+.html-material-1a .lesson-list ul .sub-text {
   margin-left: 4px;
 }
 
-.lesson-list li {
+.html-material-1a .lesson-list li {
   padding-left: 9px;
 }
 
-.lesson-list p {
+.html-material-1a .lesson-list p {
   margin: 0px 0px 0px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,13 +186,13 @@ sup {
           justify-content: space-between;
 }
 
-.lesson-list p span {
+.html-material-1a .lesson-list p span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.image {
+.html-material-1a .image {
   position: absolute;
   right: 58px;
   top: 390px;
@@ -194,12 +202,12 @@ sup {
   z-index: 2;
 }
 
-.image .shape {
+.html-material-1a .image .shape {
   width: 320px;
   display: block;
 }
 
-.image .name {
+.html-material-1a .image .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,85 +216,158 @@ sup {
           justify-content: space-between;
 }
 
-.image .name p {
-  padding-left: 38px;
-  padding-right: 25px;
+.html-material-1a .image .name p {
+  width: 40%;
   margin: 2px 0px;
   text-align: center;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.image .name p span {
+.html-material-1a .image .name p span {
   display: block;
 }
 
-.footer {
-  font-size: 9px;
+.html-material-1a .footer {
+  font-size: clamp(4.5px, 1.2vw, 9px);
   position: absolute;
-  width: 345px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: right;
   bottom: 43px;
-  left: 492px;
+  right: 6.2%;
   font-family: "Arial";
 }
 
-/* Page 2 */
-.page-2 .title {
+.html-material-1a .page-2 .title {
   top: 72px;
   left: 50px;
 }
 
-.page-2 .title .ja {
-  font-size: 27px;
+.html-material-1a .page-2 .title .ja {
+  font-size: clamp(12px, 3vw, 27px);
   color: #000000;
   font-weight: bold;
   margin-right: 3px;
 }
 
-.page-2 .image {
+.html-material-1a .page-2 .image {
   top: 680px;
 }
 
-.page-2 .lesson-list {
+.html-material-1a .page-2 .lesson-list {
   margin-top: 260px;
 }
 
-.page-2 .sub-text.ja {
+.html-material-1a .page-2 .sub-text.ja {
   margin: 8px 0px 0px 0px;
 }
 
-.page-2 ul .sub-text.ja {
-  font-size: 14px;
+.html-material-1a .page-2 ul .sub-text.ja {
+  font-size: clamp(6px, 1.8vw, 14px);
   color: #257a9e;
   margin: 0px 0px 0px 4px;
 }
 
-.page-2 ul li span {
+.html-material-1a .page-2 ul li span {
   display: block;
 }
 
-/* Page 3 */
-.page-3 .title {
+.html-material-1a .page-3 .title {
   top: 72px;
   left: 50px;
 }
 
-.page-3 .title .ja {
-  font-size: 27px;
+.html-material-1a .page-3 .title .ja {
+  font-size: clamp(12px, 3vw, 27px);
   color: #000000;
   font-weight: bold;
   margin-right: 3px;
 }
 
-.page-3 .lesson-list {
+.html-material-1a .page-3 .lesson-list {
   margin-top: 210px;
 }
 
-.page-3 ul .sub-text.ja {
-  font-size: 14px;
+.html-material-1a .page-3 ul .sub-text.ja {
+  font-size: clamp(6px, 1.8vw, 14px);
   color: #257a9e;
   margin: 0px 0px 0px 4px;
 }
 
-.page-3 ul li span {
+.html-material-1a .page-3 ul li span {
   display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .html-material-1a .page-1,
+  .html-material-1a .page-2,
+  .html-material-1a .page-3 {
+    min-height: unset;
+  }
+  .lesson-list ul.initial {
+    margin-top: clamp(18px, 3.6vw, 30px);
+  }
+  .image {
+    top: clamp(220px, 46vw, 390px) !important;
+    right: clamp(0px, 4vw, 58px) !important;
+  }
+  .image .shape {
+    width: 38vw !important;
+    min-width: 150px;
+  }
+  .title {
+    top: clamp(40px, 10vw, 80px) !important;
+    left: clamp(30px, 4.1vw, 55px) !important;
+  }
+  .sub-head {
+    top: clamp(62px, 16vw, 128px) !important;
+    left: clamp(30px, 4.1vw, 55px) !important;
+  }
+  .lesson-list {
+    margin-top: clamp(40px, 20vw, 260px) !important;
+  }
+  /* Page 2 */
+  .page-2 .lesson-list {
+    margin-top: clamp(130px, 34vw, 260px) !important;
+  }
+  .page-2 .image {
+    top: clamp(340px, 74vw, 680px) !important;
+  }
+  /* Page 3 */
+  .page-3 .lesson-list {
+    margin-top: clamp(120px, 22vw, 260px) !important;
+  }
+  .footer {
+    bottom: clamp(20px, 5.2vw, 43px) !important;
+    right: 5% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-material-1a .program-rank {
+    position: absolute;
+    top: clamp(20px, 4vw, 40px) !important;
+    left: clamp(23px, 4vw, 48px) !important;
+  }
+  .html-material-1a .title {
+    top: clamp(45px, 8vw, 80px) !important;
+    left: clamp(30px, 4.1vw, 55px) !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-material-1a .lesson-list ul:before {
+    left: -12px;
+    top: 2px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #000000;
+  }
+  .html-material-1a .type {
+    padding: 2px 8px 2px 7px !important;
+  }
+  .html-material-1a .level {
+    padding: 2px 6px 2px 7px !important;
+  }
 }

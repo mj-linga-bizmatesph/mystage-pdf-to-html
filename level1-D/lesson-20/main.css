@@ -1,105 +1,161 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
-.page-1 {
-  width: 892.75px;
-  height: 1262px;
+.html-page-1 {
+  width: 100%;
+  min-width: 320px;
+  max-width: 810px;
+  min-height: 950px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url("/images/bg-header.png"), url("/images/bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.header {
+.html-page-1 .header, .html-page-1 .footer {
   font-family: "Arial";
 }
 
-.b {
+.html-page-1 .b {
   font-weight: bold;
 }
 
-.program-rank {
+.html-page-1 .program-rank {
   position: absolute;
   top: 40px;
-  left: 48px;
+  left: 6%;
   color: #ffffff;
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-page-1 .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #257a9e;
-  font-size: 15px;
+  font-size: clamp(8px, 2vw, 15px);
 }
 
-.program-rank .level {
+.html-page-1 .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
-  font-size: 15px;
+  font-size: clamp(8px, 2vw, 15px);
 }
 
-.line {
+.html-page-1 .line {
   margin: 0 12px;
 }
 
-.title {
+.html-page-1 .title {
   position: absolute;
-  top: 80px;
-  left: 55px;
+  top: 7%;
+  left: 6%;
   font-size: 27px;
 }
 
-.lesson-number {
+.html-page-1 .lesson-number {
   position: absolute;
-  min-width: 15px;
-  left: 818px;
-  top: 66px;
-  font-size: 13px;
-  text-align: center;
+  left: 91.2%;
+  padding-top: 7.5%;
+  font-size: clamp(8px, 2vw, 13px);
   color: #ffffff;
 }
 
-.sub-text {
+.html-page-1 .sub-text {
   font-family: "Arial" !important;
-  line-height: 26px;
 }
 
-.lesson-list {
+.html-page-1 .lesson-list {
   font-family: "Trebuchet MS";
-  font-size: 15px;
-  margin-top: 240px;
-  margin-left: 149px;
+  font-size: clamp(8px, 2vw, 15px);
+  margin-top: clamp(30px, 30%, 230px);
+  margin-left: clamp(1px, 15%, 149px);
   margin-right: 15px;
 }
 
-.lesson-list .sub-text.test {
+.html-page-1 .lesson-list .sub-text.test {
   position: absolute;
   left: 60px;
   color: #257a9e;
 }
 
-.lesson-list .text {
-  margin-top: 30px;
+.html-page-1 .lesson-list .text {
+  margin-top: clamp(15px, 1.8vw, 30px);
   display: block;
 }
 
-.lesson-list span {
+.html-page-1 .lesson-list span {
   display: block;
   line-height: 24px;
 }
 
-.footer {
+.html-page-1 .footer {
   font-size: 9px;
   position: absolute;
-  width: 345px;
-  text-align: right;
   bottom: 43px;
-  left: 492px;
-  font-family: "Arial";
+  left: 70%;
+}
+
+@media screen and (max-width: 960px) {
+  .html-page-1 .footer {
+    bottom: 3%;
+  }
+  .html-page-1 .title {
+    font-size: clamp(20px, 2.2vw, 27px);
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .html-page-1 .footer {
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-page-1 .footer {
+    bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-page-1 .program-rank {
+    top: 0;
+    padding-top: 6%;
+  }
+  .html-page-1 .title {
+    top: 0;
+    padding-top: 12%;
+  }
+  .html-page-1 .footer {
+    left: 59%;
+    bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-page-1 .program-rank {
+    top: 0;
+    padding-top: 6%;
+  }
+  .html-page-1 .program-rank .type, .html-page-1 .program-rank .level {
+    padding: 3px 10px;
+    font-size: clamp(6px, 2vw, 15px);
+  }
+  .html-page-1 .title {
+    top: 0;
+    padding-top: 12%;
+  }
+  .html-page-1 .sub-text.test {
+    left: clamp(1px, 15%, 20px) !important;
+  }
+  .html-page-1 .footer {
+    left: 59%;
+    bottom: 1%;
+  }
 }

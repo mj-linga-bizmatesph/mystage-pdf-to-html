@@ -226,8 +226,8 @@ body {
   .footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
-    width: fit-content;
-    text-align: right;
+    width: 240px;
+    text-align: left;
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
@@ -317,6 +317,19 @@ body {
         border-right: 3.5px solid transparent !important;
         border-top: 5.5px solid $primary !important;
       }
+    }
+    .footer {
+      width: 120px;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-material-4c {
+    .footer {
+      width: 100px;
+      text-align: left;
     }
   }
 }

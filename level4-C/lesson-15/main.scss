@@ -314,3 +314,12 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  .html-material-4c {
+    .footer {
+      width: 143px;
+      text-align: left;
+    }
+  }
+}

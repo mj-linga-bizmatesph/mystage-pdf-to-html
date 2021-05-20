@@ -281,4 +281,10 @@ body {
     border-right: 3.5px solid transparent !important;
     border-top: 5.5px solid #2078a0 !important;
   }
+}
+@media screen and (max-width: 420px) {
+  .html-material-4c .footer {
+    width: 140px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */

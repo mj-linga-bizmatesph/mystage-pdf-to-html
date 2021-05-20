@@ -66,6 +66,7 @@ body {
     position: absolute;
     left: 91.65%;
     margin-top: 7.4%;
+    top: 0px;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
@@ -127,6 +128,7 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
+    max-width: 34%;
   }
 }
 
@@ -142,7 +144,7 @@ body {
     }
     
     .footer {
-      bottom: clamp(20px, 5.2vw, 43px);
+      bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
     }
   }

@@ -80,13 +80,13 @@ body {
     margin-top: clamp(20px, 17%, 116px);
     margin-left: $left-pixel;
     padding: 6px 16px 6px 0px;
-    font-size: clamp(11px, 2vw, 18px);
+    font-size: clamp(9px, 2vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 20px);
   
     .sub-text {
-      font-size: clamp(10px, 2.4vw, 20px);
+      font-size: clamp(9.5px, 2.4vw, 20px);
       font-weight: bold;
     }
     p {
@@ -97,7 +97,7 @@ body {
   .part2-content {
     margin-top: 48px;
     padding-top: 4px;
-    font-size: clamp(10px, 2.4vw, 20px);
+    font-size: clamp(9.5px, 2.4vw, 20px);
     p:not(:last-child) {
       margin-bottom: 20px;
     }

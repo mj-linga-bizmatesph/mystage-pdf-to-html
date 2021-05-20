@@ -218,10 +218,10 @@ body {
 
 .html-material-4e .act-content table {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: clamp(6px, 1.5vw, 14px);
   border-spacing: 0px;
   padding-bottom: 5px;
-  min-width: 700px;
+  min-width: 100%;
 }
 
 .html-material-4e .act-content table th,
@@ -235,7 +235,7 @@ body {
 .html-material-4e .act-content table th {
   background-color: #2078a0;
   color: #ffffff;
-  font-size: 15px;
+  font-size: clamp(7px, 1.5vw, 15px);
   padding: 5px;
   border-bottom: 4px solid;
 }
@@ -317,6 +317,7 @@ body {
   }
   .html-material-4e .act-content table th {
     padding: 2px;
+    border-bottom: 2px solid;
   }
   .html-material-4e .act-content table td {
     padding: 3px;

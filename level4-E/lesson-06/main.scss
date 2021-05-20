@@ -199,10 +199,10 @@ body {
 
     table {
       margin-top: 5px;
-      font-size: 14px;
+      font-size: clamp(6px, 1.5vw, 14px);
       border-spacing: 0px;
       padding-bottom: 5px;
-      min-width: 700px;
+      min-width: 100%;
       th,
       td {
         max-width: 120px;
@@ -213,7 +213,7 @@ body {
       th {
         background-color: $primary;
         color: #ffffff;
-        font-size: 15px;
+        font-size: clamp(7px, 1.5vw, 15px);
         padding: 5px;
         border-bottom: 4px solid;
       }
@@ -300,6 +300,7 @@ body {
     .act-content table {
       th {
         padding: 2px;
+        border-bottom: 2px solid;
       }
       td {
         padding: 3px;

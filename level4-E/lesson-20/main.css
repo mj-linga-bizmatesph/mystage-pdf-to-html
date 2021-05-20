@@ -73,7 +73,6 @@ body {
 .html-material-4e .lesson-number {
   position: absolute;
   left: 91.65%;
-  top: 0px;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
@@ -87,11 +86,11 @@ body {
 
 .html-material-4e .section {
   position: relative;
-  left: -71.5px;
+  left: -85.5px;
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
-  top: 19px;
+  top: 16px;
 }
 
 .html-material-4e .review-content {
@@ -177,7 +176,8 @@ body {
     left: clamp(30px, 4.1vw, 55px);
   }
   .html-material-4e .section {
-    left: calc(-16% + 30px);
+    left: calc(-28% + 30px);
+    top: 8px;
   }
   .html-material-4e .section.words {
     left: calc(-14% + 30px);

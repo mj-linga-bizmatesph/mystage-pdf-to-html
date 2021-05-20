@@ -226,7 +226,7 @@ body {
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: clamp(12px, 3vw, 26px);
-      width: 650px;
+      max-width: 650px;
     }
     li {
       padding-left: 13px;
@@ -445,7 +445,6 @@ body {
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
       ul {
-        margin-top: clamp(14px, 2.6vw, 26px) !important;
         &:first-child {
           width: unset !important;
         }

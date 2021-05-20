@@ -240,7 +240,7 @@ body {
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: clamp(12px, 3vw, 26px);
-      width: 650px;
+      max-width: 650px;
     }
     li {
       padding-left: 13px;
@@ -474,6 +474,9 @@ body {
       }
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
+        .bracket {
+          margin-top: clamp(12px, 2.8vw, 24px);
+        }
       }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);

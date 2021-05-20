@@ -307,6 +307,7 @@ body {
   max-width: 276px;
   border: 2px solid #ffffff;
   width: 100%;
+  display: table-cell;
 }
 
 .html-material-1a .try-content table tr:first-child {
@@ -413,7 +414,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 10px;
-  width: 690px;
+  max-width: 690px;
   background: #cce0ec;
 }
 
@@ -439,6 +440,7 @@ body {
 
 .html-material-1a .page-2 .lesson-points p {
   margin: 8px auto;
+  font-size: clamp(5px, 1.5vw, 12px);
 }
 
 .html-material-1a .page-2 .arrow-part {

@@ -88,7 +88,8 @@ body {
     position: absolute;
     top: 125px;
     left: 47px;
-    width: 760px;
+    max-width: 760px;
+    height: fit-content;
     .subtitle {
       font-family: $ja-font;
       color: $primary;
@@ -296,7 +297,7 @@ body {
   /* Page 2 */
   .page-2 {
     .lesson-list {
-      margin-top: clamp(130px, 30vw, 260px) !important;
+      margin-top: clamp(130px, 34vw, 260px) !important;
     }
     .image {
       top: clamp(340px, 74vw, 680px) !important;

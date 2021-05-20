@@ -256,7 +256,7 @@ body {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
-  width: 650px;
+  max-width: 650px;
 }
 
 .html-material-1a .try-content li {
@@ -507,9 +507,6 @@ body {
   }
   .html-material-1a .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
-  }
-  .html-material-1a .act-content ul {
-    margin-top: clamp(14px, 2.6vw, 26px) !important;
   }
   .html-material-1a .act-content ul:first-child {
     width: unset !important;

@@ -207,7 +207,6 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 250px;
   margin-right: 10px;
   position: relative;
 }
@@ -274,7 +273,7 @@ body {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
-  width: 650px;
+  max-width: 650px;
 }
 
 .html-material-1a .try-content li {
@@ -457,7 +456,7 @@ body {
 }
 
 .html-material-1a .page-3 .act-content ul {
-  line-height: 24px;
+  line-height: clamp(12px, 3vw, 24px);
   margin-top: 30px;
   max-width: 670px;
 }
@@ -591,6 +590,7 @@ body {
   }
   .html-material-1a .blue-section .row .col {
     margin-right: 15px;
+    min-width: unset !important;
   }
   .html-material-1a .page-2 .title {
     top: clamp(40px, 7.8vw, 72px);

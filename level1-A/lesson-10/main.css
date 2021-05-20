@@ -99,7 +99,10 @@ body {
   position: absolute;
   top: 125px;
   left: 47px;
-  width: 760px;
+  max-width: 760px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .html-material-1a .sub-head .subtitle {
@@ -326,7 +329,7 @@ body {
   }
   /* Page 2 */
   .page-2 .lesson-list {
-    margin-top: clamp(130px, 30vw, 260px) !important;
+    margin-top: clamp(130px, 34vw, 260px) !important;
   }
   .page-2 .image {
     top: clamp(340px, 74vw, 680px) !important;

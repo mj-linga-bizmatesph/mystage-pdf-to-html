@@ -205,6 +205,7 @@ body {
             }
             &:last-child {
               width: 100%;
+              padding-right: 2px;
             }
           }
         }
@@ -290,7 +291,7 @@ body {
     margin-left: $left-pixel;
     padding-left: 18px;
     font-size: clamp(6px, 1.8vw, 15px);
-    width: 720px;
+    max-width: 720px;
 
     .sub-text {
       line-height: clamp(12px, 2.8vw, 22px);

@@ -249,6 +249,7 @@ body {
 
 .html-material-1a .see-content .example .conversation .row p:last-child {
   width: 100%;
+  padding-right: 2px;
 }
 
 .html-material-1a .try-content {
@@ -346,7 +347,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18px;
   font-size: clamp(6px, 1.8vw, 15px);
-  width: 720px;
+  max-width: 720px;
 }
 
 .html-material-1a .act-content .sub-text {

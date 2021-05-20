@@ -99,7 +99,10 @@ body {
   position: absolute;
   top: 125px;
   left: 47px;
-  width: 760px;
+  max-width: 760px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .html-material-1a .sub-head .subtitle {
@@ -279,14 +282,14 @@ body {
   }
   /* Page 2 */
   .page-2 .lesson-list {
-    margin-top: clamp(130px, 30vw, 260px) !important;
+    margin-top: clamp(130px, 34vw, 260px) !important;
   }
   /* Page 3 */
   .page-3 .lesson-list {
     margin-top: clamp(120px, 22vw, 260px) !important;
   }
   .footer {
-    bottom: clamp(20px, 5.2vw, 43px);
+    bottom: clamp(20px, 5.2vw, 43px) !important;
     right: 5% !important;
   }
 }

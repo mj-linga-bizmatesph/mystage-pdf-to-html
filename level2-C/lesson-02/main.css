@@ -185,6 +185,8 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+  .html-material-2c {
+  }
   .html-material-2c .sub-text {
     padding-right: 7px !important;
   }
@@ -200,9 +202,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-2c {
-    min-height: calc(100vh - 62px);
-  }
   .html-material-2c .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;

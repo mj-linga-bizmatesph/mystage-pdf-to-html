@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Calibri";
 }
 
 .html-material-2c {
+  font-family: "Calibri";
   width: 100%;
   min-width: 360px;
   max-width: 810px;
@@ -19,13 +19,16 @@ body {
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  /* See */
+  /* Try */
+  /* Act */
 }
 
-.b {
+.html-material-2c .b {
   font-weight: bold;
 }
 
-.title {
+.html-material-2c .title {
   position: absolute;
   top: 59px;
   left: 9px;
@@ -33,7 +36,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-2c .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,11 +46,11 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-2c .sub-text {
   margin: 0 auto;
 }
 
-.section {
+.html-material-2c .section {
   position: absolute;
   left: calc(-28% - 44px);
   top: -4px;
@@ -66,21 +69,21 @@ body {
   max-width: 206px;
 }
 
-.section.try, .section.act {
+.html-material-2c .section.try, .html-material-2c .section.act {
   top: -6px;
 }
 
-ul {
+.html-material-2c ul {
   margin: 2px 0px 0px 18px;
   padding: 0;
   list-style-type: decimal;
 }
 
-ul li {
+.html-material-2c ul li {
   padding-left: 6px;
 }
 
-.biz-tip {
+.html-material-2c .biz-tip {
   position: absolute;
   left: 8px;
   top: calc(min(24vw, 175px));
@@ -90,11 +93,11 @@ ul li {
   font-size: clamp(9px, 1.8vw, 15px);
 }
 
-.biz-tip div {
+.html-material-2c .biz-tip div {
   margin-bottom: 15px;
 }
 
-.biz-tip .sub-text {
+.html-material-2c .biz-tip .sub-text {
   color: #ffffff;
   font-size: clamp(11px, 2vw, 18px);
   padding: 5px 11px 5px 12px;
@@ -105,7 +108,7 @@ ul li {
   background-repeat: no-repeat;
 }
 
-.biz-tip .text {
+.html-material-2c .biz-tip .text {
   margin-top: 6px;
   padding: 7px 7px 32px 12px;
   width: 100%;
@@ -118,13 +121,13 @@ ul li {
   background-repeat: no-repeat;
 }
 
-.biz-tip .red {
+.html-material-2c .biz-tip .red {
   color: red;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-2c .see-content,
+.html-material-2c .act-content,
+.html-material-2c .try-content {
   position: relative;
   margin-left: clamp(120px, 28%, 218px);
   padding-right: 20px;
@@ -136,39 +139,36 @@ ul li {
   width: calc(100% - clamp(120px, 28%, 218px) - 24px);
 }
 
-/* See */
-.see-content {
+.html-material-2c .see-content {
   margin-top: 17%;
   margin-top: clamp(20px, 17%, 116px);
 }
 
-.see-content .conversation {
+.html-material-2c .see-content .conversation {
   margin-bottom: 22px;
 }
 
-.see-content .conversation .row p {
+.html-material-2c .see-content .conversation .row p {
   display: inline-block;
   margin: 0px 0px;
 }
 
-.see-content .conversation .row p:first-child {
+.html-material-2c .see-content .conversation .row p:first-child {
   min-width: 9%;
   max-width: 100px;
   word-wrap: break-word;
   font-weight: bold;
 }
 
-.see-content .conversation .row p:last-child {
+.html-material-2c .see-content .conversation .row p:last-child {
   font-style: italic;
 }
 
-/* Try */
-.try-content {
+.html-material-2c .try-content {
   margin-top: 12%;
 }
 
-/* Act */
-.act-content {
+.html-material-2c .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -176,7 +176,7 @@ ul li {
   min-height: 26px;
 }
 
-.footer {
+.html-material-2c .footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
   text-align: right;
@@ -201,7 +201,7 @@ ul li {
 
 @media screen and (max-width: 600px) {
   .html-material-2c {
-    min-height: calc(100vh - 62px);
+    min-height: unset;
   }
   .html-material-2c .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);

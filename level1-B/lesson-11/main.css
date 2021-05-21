@@ -207,7 +207,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 23%;
+  min-width: 48%;
 }
 
 .html-material-1b .see-content .col .text:not(:last-child) {
@@ -393,7 +393,7 @@ body {
   list-style-type: decimal;
   margin: 3px 0px 0px 18px;
   padding: 0;
-  line-height: clamp(12px, 3vw, 26px);
+  line-height: clamp(8px, 2vw, 22px);
 }
 
 .html-material-1b .act-content li {
@@ -542,8 +542,9 @@ body {
 .html-material-1b .page-2 .arrow-part .left-example {
   float: left;
   line-height: 160%;
-  font-size: clamp(6.5px, 1.5vw, 15px);
+  font-size: clamp(5px, 1.5vw, 15px);
   letter-spacing: 1px;
+  margin-right: 7%;
 }
 
 .html-material-1b .page-2 .arrow-part .right-example {
@@ -552,17 +553,10 @@ body {
   position: relative;
   width: 47%;
   letter-spacing: 1px;
-  font-size: clamp(6.5px, 1.5vw, 15px);
-}
-
-.html-material-1b .page-2 .arrow-part .span-right-arrow {
-  clear: both;
-  position: relative;
+  font-size: clamp(5px, 1.5vw, 15px);
 }
 
 .html-material-1b .page-2 .arrow-part .span-right-arrow img {
-  position: relative;
-  left: 7%;
   top: 10px;
   height: 80%;
   width: 10%;
@@ -696,7 +690,6 @@ body {
 .html-material-1b .float-right {
   float: right;
   font-size: clamp(8px, 1.8vw, 15px);
-  margin-right: 9%;
   width: 10%;
   margin-top: -3%;
 }
@@ -752,9 +745,6 @@ body {
   .html-material-1b .page-2 .arrow-part {
     margin-left: clamp(35px, 15.9vw, 125px);
   }
-  .html-material-1b .page-2 .lesson-points {
-    height: clamp(50px, 4.8vw, 50px);
-  }
   .html-material-1b .page-2 .see-content {
     margin-left: clamp(35px, 15.9vw, 125px);
   }
@@ -762,6 +752,9 @@ body {
     padding-bottom: clamp(14px, 3.8vw, 36px);
     padding-left: clamp(1px, 2.4vw, 18.5px);
     padding-top: clamp(9px, 1.8vw, 13px);
+  }
+  .html-material-1b .page-2 .left-example {
+    margin-right: 7%;
   }
   .html-material-1b .page-3 .try-content {
     margin-top: clamp(26px, 4.3vw, 52px);
@@ -806,9 +799,19 @@ body {
     margin-bottom: clamp(18px, 3.6vw, 32px);
   }
   .html-material-1b .page-2 .arrow-part .span-right-arrow img {
-    position: relative;
-    left: 4%;
-    width: 7%;
+    width: 5%;
+  }
+  .html-material-1b .page-2 .right-example {
+    letter-spacing: .7px;
+  }
+  .html-material-1b .page-2 .left-example {
+    letter-spacing: .7px;
+    margin-right: 0%;
+    width: 35%;
+  }
+  .html-material-1b .page-2 .lesson-points {
+    padding-left: clamp(27px, 3.8vw, 47px);
+    padding-bottom: 2px;
   }
   .html-material-1b .footer {
     bottom: 2%;
@@ -845,9 +848,6 @@ body {
   .html-material-1b .page-2 .title {
     left: 6%;
     top: -7px;
-  }
-  .html-material-1b .page-2 .sub-head {
-    top: 3.5%;
   }
   .html-material-1b .page-3 .sub-head {
     margin-top: clamp(60px, 7.8vw, 75px);

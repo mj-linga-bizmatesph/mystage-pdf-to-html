@@ -297,8 +297,9 @@ body {
       }
     }
     .lesson-points {
-      margin-top: 16px;
+      margin-top: 14px;
       padding: 2px 0px 0px 6%;
+      height: fit-content;
       width: 687px;
       padding-bottom: 4px;
       background: $primary-light;
@@ -489,9 +490,6 @@ body {
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
       }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
-      }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
         .blue-section {
@@ -550,6 +548,10 @@ body {
       .arrow-part div:not(:last-child) {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+        padding-bottom: 2px;
+      }
     }
     .footer {
       bottom: 2%;
@@ -580,9 +582,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */

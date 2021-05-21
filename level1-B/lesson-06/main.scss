@@ -168,13 +168,12 @@ body {
       margin: 0 auto;
       .tab {
         display: inline-block;
-        // width: 180px;
-        margin-left: 10px;
+        margin-left: 5px;
       }
     }
     .col {
       width: fit-content;
-      min-width: 48%;
+      min-width: 45%;
       .text:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -260,7 +259,7 @@ body {
       list-style-type: decimal;
       margin: 3px 0px 0px 18px;
       padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
+      line-height: clamp(8px, 2vw, 22px);
     }
     li {
       padding-left: 13px;
@@ -372,8 +371,7 @@ body {
       }
 
       .tab {
-        // width: 170px;
-        margin-left: 10px;
+        margin-left: 5px;
       }
       .row .ja {
         margin-top: 4px;
@@ -494,9 +492,6 @@ body {
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
       }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
-      }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
         .blue-section {
@@ -552,6 +547,9 @@ body {
       .arrow-part div:not(:last-child) {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+      }
     }
     .footer {
       bottom: 2%;
@@ -582,9 +580,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */
@@ -628,7 +623,7 @@ body {
         padding-bottom: 0;
       }
       .col2 {
-        padding-right:10px
+        padding-right:0px
       }
     }
     .act-content, .try-content {

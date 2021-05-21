@@ -258,7 +258,7 @@ body {
       list-style-type: decimal;
       margin: 3px 0px 0px 18px;
       padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
+      line-height: clamp(8px, 2vw, 22px);
     }
     li {
       padding-left: 13px;
@@ -488,9 +488,6 @@ body {
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
       }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
-      }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
         .blue-section {
@@ -549,6 +546,9 @@ body {
       .row.sub .col {
         min-width: 100% !important;
       }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+      }
     }
     .footer {
       bottom: 2%;
@@ -579,9 +579,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */

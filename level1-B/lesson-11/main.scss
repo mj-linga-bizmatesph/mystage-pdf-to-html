@@ -173,9 +173,7 @@ body {
     }
     .col {
       width: fit-content;
-      // margin-right: 48px;
-      // min-width: 100%;
-      min-width: 23%;
+      min-width: 48%;
       .text:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -327,7 +325,7 @@ body {
       list-style-type: decimal;
       margin: 3px 0px 0px 18px;
       padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
+      line-height: clamp(8px, 2vw, 22px);
     }
     li {
       padding-left: 13px;
@@ -447,8 +445,9 @@ body {
       .left-example {
         float: left;
         line-height: 160%;
-        font-size: clamp(6.5px, 1.5vw, 15px);
+        font-size: clamp(5px, 1.5vw, 15px);
         letter-spacing: 1px;
+        margin-right: 7%;
       }
       .right-example {
         float: right;
@@ -456,15 +455,15 @@ body {
         position: relative;
         width: 47%;
         letter-spacing: 1px;
-        font-size: clamp(6.5px, 1.5vw, 15px);
+        font-size: clamp(5px, 1.5vw, 15px);
       }
       .span-right-arrow {
-        clear: both;
-        position: relative;
+        // clear: both;
+        // position: relative;
 
         img {
-          position: relative;
-          left: 7%;
+          // position: relative;
+          // left: 7%;
           top: 10px;
           height: 80%;
           width: 10%;
@@ -585,7 +584,7 @@ body {
   .float-right {
     float: right;
     font-size: clamp(8px, 1.8vw, 15px);
-    margin-right: 9%;
+    // margin-right: 9%;
     width: 10%;
     margin-top: -3%;
   }
@@ -641,9 +640,6 @@ body {
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
       }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
-      }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
         .blue-section {
@@ -651,6 +647,9 @@ body {
           padding-left: clamp(1px, 2.4vw, 18.5px);
           padding-top: clamp(9px, 1.8vw, 13px);
         }
+      }
+      .left-example {
+        margin-right: 7%;
       }
     }
 
@@ -707,9 +706,20 @@ body {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
       .arrow-part .span-right-arrow img {
-        position: relative;
-        left: 4%;
-        width: 7%;
+        // position: relative;
+        width: 5%;
+      }
+      .right-example {
+        letter-spacing: .7px;
+      }
+      .left-example {
+        letter-spacing: .7px;
+        margin-right: 0%;
+        width: 35%;
+      }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+        padding-bottom: 2px;
       }
     }
     .footer {
@@ -747,9 +757,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */

@@ -311,7 +311,7 @@ body {
   list-style-type: decimal;
   margin: 3px 0px 0px 18px;
   padding: 0;
-  line-height: clamp(12px, 3vw, 26px);
+  line-height: clamp(8px, 2vw, 22px);
 }
 
 .html-material-1b .act-content li {
@@ -360,13 +360,15 @@ body {
 }
 
 .html-material-1b .page-2 .lesson-points {
-  margin-top: 14px;
+  margin-top: 16px;
   padding: 2px 0px 0px 47px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 783px;
-  padding-bottom: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 687px;
   background: #cce0ec;
 }
 
@@ -578,7 +580,7 @@ body {
 }
 
 .html-material-1b .page-3 .act-content .wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -607,9 +609,6 @@ body {
   }
   .html-material-1b .page-2 .arrow-part {
     margin-left: clamp(35px, 15.9vw, 125px);
-  }
-  .html-material-1b .page-2 .lesson-points {
-    height: clamp(50px, 4.8vw, 50px);
   }
   .html-material-1b .page-2 .see-content {
     margin-left: clamp(35px, 15.9vw, 125px);
@@ -642,6 +641,29 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .html-material-1b {
+    /* Page 2 */
+  }
+  .html-material-1b .section {
+    left: clamp(-55px, 20%, -71.5px);
+  }
+  .html-material-1b .page-2 .title {
+    top: clamp(60px, 7.8vw, 72px);
+  }
+  .html-material-1b .page-2 .arrow-part div:not(:last-child) {
+    margin-bottom: clamp(18px, 3.6vw, 32px);
+  }
+  .html-material-1b .page-2 .lesson-points {
+    padding-left: clamp(27px, 3.8vw, 47px);
+    padding-bottom: 2px;
+  }
+  .html-material-1b .footer {
+    bottom: 2%;
+    left: 64%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .html-material-1b {
     /* Page 2 */
@@ -665,9 +687,6 @@ body {
   .html-material-1b .page-2 .title {
     left: 6%;
     top: -7px;
-  }
-  .html-material-1b .page-2 .sub-head {
-    top: 3.5%;
   }
   .html-material-1b .page-3 .sub-head {
     margin-top: clamp(60px, 7.8vw, 75px);

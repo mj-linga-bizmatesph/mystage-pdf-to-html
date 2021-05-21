@@ -298,9 +298,10 @@ body {
     }
     .lesson-points {
       margin-top: 16px;
-      padding: 2px 0px 0px 6%;
-      width: 687px;
-      padding-bottom: 4px;
+      padding: 2px 0px 0px 47px;
+      height: fit-content;
+      width: fit-content;
+      max-width: 687px;
       background: $primary-light;
       &.ja {
         color: $primary;
@@ -475,6 +476,9 @@ body {
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
+      ul {
+        margin-top: clamp(14px, 2.6vw, 26px) !important;
+      }
     }
     .see-content .blue-section {
       padding-bottom: clamp(14px, 3.8vw, 36px);
@@ -488,9 +492,6 @@ body {
       }
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
-      }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
       }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
@@ -550,6 +551,9 @@ body {
       .arrow-part div:not(:last-child) {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+      }
     }
     .footer {
       bottom: 2%;
@@ -580,9 +584,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */

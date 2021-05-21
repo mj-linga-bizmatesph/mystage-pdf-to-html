@@ -306,7 +306,7 @@ body {
   list-style-type: decimal;
   margin: 3px 0px 0px 18px;
   padding: 0;
-  line-height: clamp(12px, 3vw, 26px);
+  line-height: clamp(8px, 2vw, 22px);
 }
 
 .html-material-1b .act-content li {
@@ -574,9 +574,6 @@ body {
   .html-material-1b .page-2 .arrow-part {
     margin-left: clamp(35px, 15.9vw, 125px);
   }
-  .html-material-1b .page-2 .lesson-points {
-    height: clamp(50px, 4.8vw, 50px);
-  }
   .html-material-1b .page-2 .see-content {
     margin-left: clamp(35px, 15.9vw, 125px);
   }
@@ -625,6 +622,10 @@ body {
   .html-material-1b .page-2 .arrow-part div:not(:last-child) {
     margin-bottom: clamp(18px, 3.6vw, 32px);
   }
+  .html-material-1b .page-2 .lesson-points {
+    padding-left: clamp(27px, 3.8vw, 47px);
+    padding-bottom: 2px;
+  }
   .html-material-1b .footer {
     bottom: 2%;
     left: 64%;
@@ -654,9 +655,6 @@ body {
   .html-material-1b .page-2 .title {
     left: 6%;
     top: -7px;
-  }
-  .html-material-1b .page-2 .sub-head {
-    top: 3.5%;
   }
   .html-material-1b .page-3 .sub-head {
     margin-top: clamp(60px, 7.8vw, 75px);

@@ -263,13 +263,14 @@ body {
       list-style-type: decimal;
       margin: 3px 0px 0px 18px;
       padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
+      line-height: clamp(8px, 2vw, 22px);
     }
     li {
       padding-left: 13px;
       width: 95%;
       span {
         display: block;
+        font-size: clamp(5px, 1.4vw, 12.5px);
       }
     }
     .wrapper {
@@ -514,9 +515,6 @@ body {
           }
         }
       }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
-      }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
         .blue-section {
@@ -566,6 +564,15 @@ body {
     }
     /* Page 2 */
     .page-2 {
+      .col {
+        &:first-child {
+          min-width: 25%;
+        }
+        &:nth-child(2) {
+          margin-left: -13px;
+          margin-right: 2px;
+        }
+      }
       .title {
         top: clamp(60px, 7.8vw, 72px);
       }
@@ -574,6 +581,9 @@ body {
           margin-right: 20px;
           min-width: 33%;
         }
+      }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
       }
     }
     .footer {
@@ -605,9 +615,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */

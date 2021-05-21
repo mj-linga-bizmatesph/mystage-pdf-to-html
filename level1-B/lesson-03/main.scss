@@ -172,7 +172,7 @@ body {
     }
     .col {
       width: fit-content;
-      min-width: 310px;
+      min-width: 100%;
       .text:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -371,11 +371,12 @@ body {
       margin-left: 125px;
 
       .blue-section {
-        padding-bottom: 10px;
+        padding: 12px 0px 6px 16px;
+        height: fit-content;
       }
 
       .tab {
-        width: 10%;
+        width: 8%;
       }
       .row .ja {
         margin-top: 4px;
@@ -483,10 +484,12 @@ body {
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
-    .see-content .blue-section {
-      padding-bottom: clamp(14px, 3.8vw, 36px);
-      padding-left: clamp(1, 2.4vw, 18.5px);
-      padding-top: clamp(9px, 1.8vw, 13px);
+    .see-content {
+      .blue-section {
+        padding-bottom: clamp(14px, 3.8vw, 36px);
+        padding-left: clamp(11px, 2.4vw, 18.5px);
+        padding-top: clamp(9px, 1.8vw, 13px);
+      }
     }
     /* Page 2 */
     .page-2 {
@@ -496,14 +499,11 @@ body {
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
       }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
-      }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
         .blue-section {
           padding-bottom: clamp(14px, 3.8vw, 36px);
-          padding-left: clamp(1, 2.4vw, 18.5px);
+          padding-left: clamp(11px, 2.4vw, 18.5px);
           padding-top: clamp(9px, 1.8vw, 13px);
         }
       }
@@ -554,6 +554,9 @@ body {
       .arrow-part div:not(:last-child) {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
+      .lesson-points {
+        padding-left: clamp(27px, 3.8vw, 47px);
+      }
     }
     .footer {
       bottom: 2%;
@@ -584,9 +587,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */
@@ -634,7 +634,7 @@ body {
       }
     }
     .act-content, .try-content {
-      margin-top:20px
+      margin-top: 20px
     }
     /* Page 2 */
     .page-2 {

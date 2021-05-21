@@ -6,7 +6,6 @@ $primary: #257a9e;
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 .html-material-1b {
   width: 100%;
@@ -21,80 +20,82 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.header {
-  font-family: $title-font;
-}
-.b {
-  font-weight: bold;
-}
-.program-rank {
-  position: absolute;
-  top: 40px;
-  left: 6%;
-  color: #ffffff;
-  font-size: 0px;
-
-  .type {
-    padding: 3px 16px 3px 14px;
-    background-color: $primary;
-    font-size:clamp(8px, 2vw, 15px);
-  }
-  .level {
-    padding: 3px 12px 3px 13px;
-    background-color: #339999;
-    font-size:clamp(8px, 2vw, 15px);
-  }
-}
-.line {
-  margin: 0 12px;
-}
-.title {
-  position: absolute;
-  top: 7%;
-  left: 6%;
-  font-size: clamp(12px, 3vw, 27px);
-}
-.lesson-number {
-  position: absolute;
-  left: 91.5%;
-  padding-top: 7.5%;
-  font-size:clamp(8px, 2vw, 13px);
-  color: #ffffff;
-}
-.sub-text{
-  font-family: $title-font !important;
-  line-height: 26px;
-}
-.lesson-list {
   font-family: $text-font;
-  font-size:clamp(10px, 2vw, 15px);
-  margin-top: 29%;
-  margin-left: 18%;
-  margin-right: 15px;
-  .sub-text.test {
-    position: absolute;
-    left: 7%;
-    color: $primary;
-  }
-  .text {
-    margin-top: 30px;
-    display: block;
-  }
-  span {
-    display: block;
-    line-height: 24px;
-  }
-}
 
-.footer {
-  font-size: clamp(5px, 1.4vw, 9px);
-  position: absolute;
-  width: 345px;
-  text-align: right;
-  bottom: 43px;
-  left: 50%;
-  font-family: $title-font;
+  .header {
+    font-family: $title-font;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    color: #ffffff;
+    font-size: 0px;
+  
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $primary;
+      font-size:clamp(8px, 2vw, 15px);
+    }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: #339999;
+      font-size:clamp(8px, 2vw, 15px);
+    }
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .title {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    font-size: clamp(12px, 3vw, 27px);
+  }
+  .lesson-number {
+    position: absolute;
+    left: 91.5%;
+    padding-top: 7.5%;
+    font-size:clamp(8px, 2vw, 13px);
+    color: #ffffff;
+  }
+  .sub-text{
+    font-family: $title-font !important;
+    line-height: 26px;
+  }
+  .lesson-list {
+    font-family: $text-font;
+    font-size:clamp(10px, 2vw, 15px);
+    margin-top: 29%;
+    margin-left: 18%;
+    margin-right: 15px;
+    .sub-text.test {
+      position: absolute;
+      left: 7%;
+      color: $primary;
+    }
+    .text {
+      margin-top: 30px;
+      display: block;
+    }
+    span {
+      display: block;
+      line-height: 24px;
+    }
+  }
+  
+  .footer {
+    font-size: clamp(5px, 1.4vw, 9px);
+    position: absolute;
+    width: 345px;
+    text-align: right;
+    bottom: 43px;
+    left: 50%;
+    font-family: $title-font;
+  }  
 }
 
 @media screen and (max-width: 960px){

@@ -24,18 +24,23 @@ body {
   /* Try */
   /* Act */
 }
+
 .html-material-4c .header {
   font-family: "Arial";
 }
+
 .html-material-4c .b {
   font-weight: bold;
 }
+
 .html-material-4c .i {
   font-family: italic;
 }
+
 .html-material-4c .fwb {
   font-weight: 600;
 }
+
 .html-material-4c .program-rank {
   position: absolute;
   top: 40px;
@@ -43,25 +48,30 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
+
 .html-material-4c .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 .html-material-4c .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 .html-material-4c .line {
   margin: 0 12px;
 }
+
 .html-material-4c .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
+
 .html-material-4c .lesson-number {
   position: absolute;
   left: 91.65%;
@@ -69,15 +79,23 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
+
 .html-material-4c .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .html-material-4c .sub-text {
   font-family: "Arial" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
+
 .html-material-4c .section {
   position: absolute;
   left: -71.5px;
@@ -86,26 +104,32 @@ body {
   font-family: "Arial";
   top: 2px;
 }
+
 .html-material-4c .divider {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 52%;
 }
+
 .html-material-4c .divider.d1 {
   margin-top: 8px;
 }
+
 .html-material-4c .divider.d2 {
   margin-top: 28px;
 }
+
 .html-material-4c ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
+
 .html-material-4c ul li {
   padding-left: 8px;
 }
+
 .html-material-4c .see-content,
 .html-material-4c .act-content,
 .html-material-4c .try-content {
@@ -115,6 +139,7 @@ body {
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
+
 .html-material-4c .words-phrase-content {
   position: relative;
   margin-top: clamp(70px, 18%, 155px);
@@ -127,21 +152,25 @@ body {
   background: #d4e6f0;
   font-size: clamp(6px, 1.8vw, 15px);
 }
+
 .html-material-4c .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 18px) !important;
   max-width: 100px;
 }
+
 .html-material-4c .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
 }
+
 .html-material-4c .words-phrase-content .pointers .arrow-part {
   position: relative;
 }
+
 .html-material-4c .words-phrase-content .pointers .arrow-part:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   top: 5px;
@@ -153,22 +182,27 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+
 .html-material-4c .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
+
 .html-material-4c .see-content {
   margin-top: 36px;
 }
+
 .html-material-4c .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
+
 .html-material-4c .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
+
 .html-material-4c .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -176,28 +210,35 @@ body {
   margin-right: 16px;
   position: relative;
 }
+
 .html-material-4c .see-content .col span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
+
 .html-material-4c .see-content .col p {
   margin: 2px auto 24px;
 }
+
 .html-material-4c .see-content .col p.name {
   width: auto;
 }
+
 .html-material-4c .try-content {
   margin-top: 30px;
 }
+
 .html-material-4c .try-content ul {
   list-style-type: decimal;
 }
+
 .html-material-4c .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
+
 .html-material-4c .footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -238,6 +279,7 @@ body {
     right: 5% !important;
   }
 }
+
 @media screen and (max-width: 768px) {
   .html-material-4c .program-rank {
     position: absolute;
@@ -262,6 +304,7 @@ body {
     top: 0.6vw !important;
   }
 }
+
 @media screen and (max-width: 600px) {
   .html-material-4c .type {
     padding: 2px 8px 2px 7px !important;
@@ -282,9 +325,10 @@ body {
     border-top: 5.5px solid #2078a0 !important;
   }
 }
+
 @media screen and (max-width: 420px) {
   .html-material-4c .footer {
     width: 140px;
     text-align: left;
   }
-}/*# sourceMappingURL=main.css.map */
+}

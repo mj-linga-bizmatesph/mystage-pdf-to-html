@@ -213,7 +213,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-3d {
-    min-height: calc(100vh - 62px);
+    min-height: 125.68vw;
   }
   .html-material-3d .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);

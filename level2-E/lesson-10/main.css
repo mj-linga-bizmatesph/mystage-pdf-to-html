@@ -19,7 +19,7 @@ body {
   background-position: 94% 94%, top, bottom;
   background-size: 10%, 100% auto, 100%;
   background-repeat: no-repeat;
-  font-family: "Calibri";
+  font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
 
 .html-material-2e .b {
@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 59px;
   left: 9px;
-  font-size: clamp(10.5px, 2.4vw, 21px);
+  font-size: clamp(9px, 2.4vw, 21px);
   color: #ffffff;
 }
 

@@ -192,7 +192,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-2b {
-    min-height: calc(100vh - 62px);
+    min-height: unset;
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
@@ -219,7 +219,6 @@ body {
 
 @media screen and (max-width: 420px) {
   .html-material-2b {
-    min-height: unset;
     .title {
       top: clamp(26px, 7.3vw, 32px) !important;
     }

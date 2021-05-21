@@ -217,7 +217,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-2b {
-    min-height: calc(100vh - 62px);
+    min-height: unset;
   }
   .html-material-2b .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);

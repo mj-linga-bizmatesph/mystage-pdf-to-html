@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
 .html-material-1b {
@@ -19,17 +18,21 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Trebuchet MS";
+  /* See */
+  /* Try */
+  /* Act */
 }
 
-.header {
+.html-material-1b .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-1b .b {
   font-weight: bold;
 }
 
-.program-rank {
+.html-material-1b .program-rank {
   position: absolute;
   top: 40px;
   left: 6%;
@@ -37,30 +40,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-1b .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #257a9e;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.program-rank .level {
+.html-material-1b .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.line {
+.html-material-1b .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-1b .title {
   position: absolute;
   top: 7%;
   left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
+.html-material-1b .lesson-number {
   position: absolute;
   left: 92%;
   padding-top: 7.5%;
@@ -68,7 +71,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-1b .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,11 +82,11 @@ body {
   font-family: "Trebuchet MS";
 }
 
-.sub-text {
+.html-material-1b .sub-text {
   font-family: "Arial" !important;
 }
 
-.section {
+.html-material-1b .section {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
@@ -92,46 +95,45 @@ body {
   font-family: "Arial";
 }
 
-.section.see {
+.html-material-1b .section.see {
   top: 13px;
 }
 
-.section.try {
+.html-material-1b .section.try {
   top: 0px;
 }
 
-.section.act {
+.html-material-1b .section.act {
   top: 2px;
 }
 
-.divider {
+.html-material-1b .divider {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 50%;
 }
 
-.divider.d1 {
+.html-material-1b .divider.d1 {
   margin-top: 14px;
 }
 
-.divider.d2 {
+.html-material-1b .divider.d2 {
   margin-top: 30px;
 }
 
-.text {
+.html-material-1b .text {
   font-family: "Trebuchet MS";
 }
 
-/* See */
-.see-content {
+.html-material-1b .see-content {
   position: relative;
   margin-left: clamp(1px, 15%, 126.5px);
   margin-top: clamp(30px, 30%, 230px);
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.see-content .wrapper {
+.html-material-1b .see-content .wrapper {
   padding-top: 13px;
   padding-left: 18.5px;
   height: -webkit-fit-content;
@@ -140,16 +142,16 @@ body {
   padding-bottom: 20px;
 }
 
-.see-content p {
+.html-material-1b .see-content p {
   margin: 0 auto;
 }
 
-.see-content p .tab {
+.html-material-1b .see-content p .tab {
   display: inline-block;
   width: 180px;
 }
 
-.see-content .col {
+.html-material-1b .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -157,34 +159,33 @@ body {
   min-width: 310px;
 }
 
-.see-content .col .text:not(:last-child) {
+.html-material-1b .see-content .col .text:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.see-content .col1 {
+.html-material-1b .see-content .col1 {
   margin-right: 20px;
 }
 
-.see-content .col2 {
+.html-material-1b .see-content .col2 {
   padding-right: 50px;
 }
 
-.see-content .text {
+.html-material-1b .see-content .text {
   font-family: "Trebuchet MS";
   line-height: 26px;
   margin-top: 4px;
 }
 
-.see-content .text:not(:last-child) {
+.html-material-1b .see-content .text:not(:last-child) {
   margin-bottom: 22px;
 }
 
-.see-content .text-title {
+.html-material-1b .see-content .text-title {
   font-family: "Trebuchet MS";
 }
 
-/* Try */
-.try-content {
+.html-material-1b .try-content {
   position: relative;
   margin-top: 30px;
   margin-left: clamp(1px, 15%, 126.5px);
@@ -192,18 +193,18 @@ body {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.try-content ul {
+.html-material-1b .try-content ul {
   list-style-type: decimal;
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
 }
 
-.try-content li {
+.html-material-1b .try-content li {
   padding-left: 13px;
 }
 
-.try-content .wrapper {
+.html-material-1b .try-content .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,8 +217,7 @@ body {
           align-items: stretch;
 }
 
-/* Act */
-.act-content {
+.html-material-1b .act-content {
   position: relative;
   margin-top: 30px;
   margin-left: clamp(1px, 15%, 126.5px);
@@ -225,11 +225,11 @@ body {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.act-content .sub-text {
+.html-material-1b .act-content .sub-text {
   line-height: 25px;
 }
 
-.act-content .wrapper {
+.html-material-1b .act-content .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,22 +242,22 @@ body {
           align-items: stretch;
 }
 
-.act-content .wrapper ul {
+.html-material-1b .act-content .wrapper ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
   list-style: none;
 }
 
-.act-content .wrapper ul:first-child {
+.html-material-1b .act-content .wrapper ul:first-child {
   list-style: disc;
 }
 
-.act-content .wrapper ul li {
+.html-material-1b .act-content .wrapper ul li {
   padding-left: 13px;
 }
 
-.footer {
+.html-material-1b .footer {
   font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   bottom: 43px;

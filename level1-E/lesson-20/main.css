@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
 .html-material-1e {
@@ -19,21 +18,23 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Trebuchet MS";
+  /* TEST */
 }
 
-.header {
+.html-material-1e .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-1e .b {
   font-weight: bold;
 }
 
-.i {
+.html-material-1e .i {
   font-family: italic;
 }
 
-.program-rank {
+.html-material-1e .program-rank {
   position: absolute;
   top: 40px;
   left: 6%;
@@ -41,30 +42,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-1e .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.program-rank .level {
+.html-material-1e .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.line {
+.html-material-1e .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-1e .title {
   position: absolute;
   top: 7%;
   left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
+.html-material-1e .lesson-number {
   position: absolute;
   left: 91.5%;
   padding-top: 7.5%;
@@ -72,7 +73,7 @@ body {
   color: #ffffff;
 }
 
-.section {
+.html-material-1e .section {
   position: absolute;
   left: -12%;
   color: #2078a0;
@@ -81,8 +82,7 @@ body {
   top: .5%;
 }
 
-/* TEST */
-.test-content {
+.html-material-1e .test-content {
   position: relative;
   font-family: "Trebuchet MS";
   font-size: clamp(10px, 2vw, 15px);
@@ -91,7 +91,7 @@ body {
   margin-right: 15px;
 }
 
-.test-content ul {
+.html-material-1e .test-content ul {
   list-style: none;
   margin-top: 12px;
   padding: 0;
@@ -106,16 +106,16 @@ body {
       flex-wrap: wrap;
 }
 
-.test-content ul li {
+.html-material-1e .test-content ul li {
   margin: 12.5px 0px;
 }
 
-.test-content p {
+.html-material-1e .test-content p {
   margin: 0px auto;
   line-height: 26px;
 }
 
-.footer {
+.html-material-1e .footer {
   font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;

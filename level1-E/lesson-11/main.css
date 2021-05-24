@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
 .html-material-1e {
@@ -19,21 +18,25 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Trebuchet MS";
+  /* See */
+  /* Try */
+  /* Act */
 }
 
-.header {
+.html-material-1e .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-1e .b {
   font-weight: bold;
 }
 
-.i {
+.html-material-1e .i {
   font-family: italic;
 }
 
-.program-rank {
+.html-material-1e .program-rank {
   position: absolute;
   top: 40px;
   left: 6%;
@@ -41,30 +44,30 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-1e .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.program-rank .level {
+.html-material-1e .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
   font-size: clamp(8px, 2vw, 15px);
 }
 
-.line {
+.html-material-1e .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-1e .title {
   position: absolute;
   top: 7%;
   left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
+.html-material-1e .lesson-number {
   position: absolute;
   left: 91.5%;
   padding-top: 7.5%;
@@ -72,7 +75,7 @@ body {
   color: #ffffff;
 }
 
-.row {
+.html-material-1e .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,13 +85,13 @@ body {
           flex-direction: row;
 }
 
-.sub-text {
+.html-material-1e .sub-text {
   font-family: "Arial" !important;
   line-height: 22px;
   margin: 0 auto;
 }
 
-.section {
+.html-material-1e .section {
   position: absolute;
   left: -71.5px;
   color: #2078a0;
@@ -97,34 +100,34 @@ body {
   font-family: "Arial";
 }
 
-.divider {
+.html-material-1e .divider {
   color: #d9d9d9;
   position: relative;
   left: 50%;
   font-size: clamp(6px, 1.8vw, 15px);
 }
 
-.divider.d1 {
+.html-material-1e .divider.d1 {
   margin-top: 8px;
 }
 
-.divider.d2 {
+.html-material-1e .divider.d2 {
   margin-top: 28px;
 }
 
-ul {
+.html-material-1e ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: 26px;
 }
 
-ul li {
+.html-material-1e ul li {
   padding-left: 8px;
 }
 
-.see-content,
-.act-content,
-.try-content {
+.html-material-1e .see-content,
+.html-material-1e .act-content,
+.html-material-1e .try-content {
   position: relative;
   margin-left: 126.5px;
   padding-left: 18.5px;
@@ -132,15 +135,14 @@ ul li {
   font-size: 15px;
 }
 
-/* See */
-.see-content {
+.html-material-1e .see-content {
   position: relative;
   margin-left: clamp(1px, 15%, 126.5px);
   margin-top: 28.5%;
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.see-content .col {
+.html-material-1e .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -149,12 +151,11 @@ ul li {
   line-height: 26px;
 }
 
-.see-content .col p {
+.html-material-1e .see-content .col p {
   margin: 2px auto 24px;
 }
 
-/* Try */
-.try-content {
+.html-material-1e .try-content {
   position: relative;
   margin-top: 30px;
   margin-left: clamp(1px, 15%, 126.5px);
@@ -162,12 +163,11 @@ ul li {
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.try-content ul {
+.html-material-1e .try-content ul {
   list-style-type: decimal;
 }
 
-/* Act */
-.act-content {
+.html-material-1e .act-content {
   position: relative;
   margin-top: 30px;
   margin-left: clamp(1px, 15%, 126.5px);
@@ -178,7 +178,7 @@ ul li {
   height: fit-content;
 }
 
-.footer {
+.html-material-1e .footer {
   font-size: clamp(5px, 1.4vw, 9px);
   position: absolute;
   width: 345px;

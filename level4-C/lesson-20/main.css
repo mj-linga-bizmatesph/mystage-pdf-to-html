@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
 }
 
 .html-material-4c {
@@ -19,20 +18,26 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Trebuchet MS";
   /* Review Content */
 }
+
 .html-material-4c .header {
   font-family: "Arial";
 }
+
 .html-material-4c .b {
   font-weight: bold;
 }
+
 .html-material-4c .i {
   font-family: italic;
 }
+
 .html-material-4c .u {
   text-decoration: underline;
 }
+
 .html-material-4c .program-rank {
   position: absolute;
   top: 40px;
@@ -40,25 +45,30 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
+
 .html-material-4c .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 .html-material-4c .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 .html-material-4c .line {
   margin: 0 12px;
 }
+
 .html-material-4c .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
+
 .html-material-4c .lesson-number {
   position: absolute;
   left: 91.65%;
@@ -66,10 +76,12 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
+
 .html-material-4c .sub-text {
   width: 95%;
   margin-top: -15px;
 }
+
 .html-material-4c .section {
   position: relative;
   left: -90px;
@@ -77,6 +89,7 @@ body {
   font-weight: bold;
   font-family: "Arial";
 }
+
 .html-material-4c .review-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
@@ -85,27 +98,38 @@ body {
   font-size: clamp(7px, 1.8vw, 15px);
   margin-top: 20%;
 }
+
 .html-material-4c .review-content ul {
   list-style: none;
   margin-top: 12px;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .html-material-4c .review-content ul li {
   margin: 12.5px 0px;
 }
+
 .html-material-4c .review-content ul li p {
   -webkit-margin-before: 0 !important;
           margin-block-start: 0 !important;
   -webkit-margin-after: 0 !important;
           margin-block-end: 0 !important;
 }
+
 .html-material-4c .review-content ul li p:last-child {
   color: #2078a0;
   font-weight: bold;
 }
+
 .html-material-4c .footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -132,6 +156,7 @@ body {
     left: -55.5px;
   }
 }
+
 @media screen and (max-width: 420px) {
   .html-material-4c .section {
     left: -30.5px;
@@ -139,4 +164,4 @@ body {
   .html-material-4c .footer {
     bottom: 15px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

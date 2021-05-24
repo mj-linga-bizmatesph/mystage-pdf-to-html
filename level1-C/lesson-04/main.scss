@@ -8,7 +8,6 @@ $left-pixel: 126.5px;
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 .html-material-1b {
   width: 100%;
@@ -23,195 +22,197 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.header {
-  font-family: $title-font;
-}
-.b {
-  font-weight: bold;
-}
-.program-rank {
-  position: absolute;
-  top: 40px;
-  left: 6%;
-  color: #ffffff;
-  font-size: 0px;
-
-  .type {
-    padding: 3px 16px 3px 14px;
-    background-color: $primary;
-    font-size:clamp(8px, 2vw, 15px);
-  }
-  .level {
-    padding: 3px 12px 3px 13px;
-    background-color: #339999;
-    font-size:clamp(8px, 2vw, 15px);
-  }
-}
-.line {
-  margin: 0 12px;
-}
-.title {
-  position: absolute;
-  top: 7%;
-  left: 6%;
-  font-size: clamp(12px, 3vw, 27px);
-}
-.lesson-number {
-  position: absolute;
-  left: 92%;
-  padding-top: 7.5%;
-  font-size:clamp(8px, 2vw, 13px);
-  color: #ffffff;
-}
-.row {
-  display: flex;
-  flex-direction: row;
   font-family: $text-font;
-}
-.sub-text {
-  font-family: $title-font !important;
-}
-.section {
-  position: absolute;
-  left: -71.5px;
-  color: #2078a0;
-  font-weight: bold;
-  font-size:clamp(10px, 2vw, 15px);
-  font-family: $title-font;
 
-  &.see {
-    top: 13px;
+  .header {
+    font-family: $title-font;
   }
-  &.try {
-    top: 0px;
+  .b {
+    font-weight: bold;
   }
-  &.act {
-    top: 2px;
-  }
-}
-.divider {
-  color: #d9d9d9;
-  font-size: clamp(6px, 1.8vw, 15px);
-  position: relative;
-  left: 50%;
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    color: #ffffff;
+    font-size: 0px;
 
-  &.d1 {
-    margin-top: 14px;
-  }
-  &.d2 {
-    margin-top: 30px;
-  }
-}
-.text {
-  font-family: $text-font;
-}
-
-/* See */
-.see-content {
-  position: relative;
-  margin-left: clamp(1px, 15%, $left-pixel);
-  margin-top:clamp(30px, 30%, 230px);
-  font-size:clamp(10px, 2vw, 15px);
-
-  .wrapper {
-    padding-top: 13px;
-    padding-left: 18.5px;
-    height: fit-content;
-    padding-bottom: 20px;
-  }
-  p {
-    margin: 0 auto;
-    .tab {
-      display: inline-block;
-      width: 180px;
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $primary;
+      font-size:clamp(8px, 2vw, 15px);
+    }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: #339999;
+      font-size:clamp(8px, 2vw, 15px);
     }
   }
-  .col {
-    width: fit-content;
-    margin-right: 48px;
-    min-width: 310px;
-    .text:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  .line {
+    margin: 0 12px;
   }
-  .col1 {
-    margin-right: 20px;
+  .title {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    font-size: clamp(12px, 3vw, 27px);
   }
-  .col2 {
-    padding-right: 50px;
+  .lesson-number {
+    position: absolute;
+    left: 92%;
+    padding-top: 7.5%;
+    font-size:clamp(8px, 2vw, 13px);
+    color: #ffffff;
   }
-    .text {
-    font-family: $text-font;
-    line-height: 26px;
-    margin-top: 4px;
-    &:not(:last-child) {
-      margin-bottom: 22px;
-    }
-  }
-  .text-title {
-    font-family: $text-font;
-  }
-}
-
-/* Try */
-.try-content {
-  position: relative;
-  margin-top: 30px;
-  margin-left: clamp(1px, 15%, $left-pixel);
-  padding-left: 18.5px;
-  font-size:clamp(10px, 2vw, 15px);
-
-  ul {
-    list-style-type: decimal;
-    margin: 3px 0px 0px 18px;
-    padding: 0;
-    line-height: 26px;
-  }
-  li {
-    padding-left: 13px;
-  }
-  .wrapper {
+  .row {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    font-family: $text-font;
   }
-}
-
-/* Act */
-.act-content {
-  position: relative;
-  margin-top: 30px;
-  margin-left: clamp(1px, 15%, $left-pixel);
-  padding-left: 18.5px;
-  font-size:clamp(10px, 2vw, 15px);
-
   .sub-text {
-    line-height: 25px;
+    font-family: $title-font !important;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  .section {
+    position: absolute;
+    left: -71.5px;
+    color: #2078a0;
+    font-weight: bold;
+    font-size:clamp(10px, 2vw, 15px);
+    font-family: $title-font;
+
+    &.see {
+      top: 13px;
+    }
+    &.try {
+      top: 0px;
+    }
+    &.act {
+      top: 2px;
+    }
+  }
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(6px, 1.8vw, 15px);
+    position: relative;
+    left: 50%;
+
+    &.d1 {
+      margin-top: 14px;
+    }
+    &.d2 {
+      margin-top: 30px;
+    }
+  }
+  .text {
+    font-family: $text-font;
+  }
+
+  /* See */
+  .see-content {
+    position: relative;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    margin-top:clamp(30px, 30%, 230px);
+    font-size:clamp(10px, 2vw, 15px);
+
+    .wrapper {
+      padding-top: 13px;
+      padding-left: 18.5px;
+      height: fit-content;
+      padding-bottom: 20px;
+    }
+    p {
+      margin: 0 auto;
+      .tab {
+        display: inline-block;
+        width: 180px;
+      }
+    }
+    .col {
+      width: fit-content;
+      margin-right: 48px;
+      min-width: 310px;
+      .text:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    .col1 {
+      margin-right: 20px;
+    }
+    .col2 {
+      padding-right: 50px;
+    }
+      .text {
+      font-family: $text-font;
+      line-height: 26px;
+      margin-top: 4px;
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+    .text-title {
+      font-family: $text-font;
+    }
+  }
+
+  /* Try */
+  .try-content {
+    position: relative;
+    margin-top: 30px;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    font-size:clamp(10px, 2vw, 15px);
+
     ul {
+      list-style-type: decimal;
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: 26px;
-      list-style: none;
-      &:first-child {
-        list-style: disc;
-      }
-      li{
-        padding-left: 13px;
+    }
+    li {
+      padding-left: 13px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  /* Act */
+  .act-content {
+    position: relative;
+    margin-top: 30px;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    font-size:clamp(10px, 2vw, 15px);
+
+    .sub-text {
+      line-height: 25px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      ul {
+        margin: 3px 0px 0px 18px;
+        padding: 0;
+        line-height: 26px;
+        list-style: none;
+        &:first-child {
+          list-style: disc;
+        }
+        li{
+          padding-left: 13px;
+        }
       }
     }
   }
-}
-.footer {
-  font-size: clamp(5px, 1.4vw, 9px);
-  position: absolute;
-  bottom: 43px;
-  left: 61%;
+  .footer {
+    font-size: clamp(5px, 1.4vw, 9px);
+    position: absolute;
+    bottom: 43px;
+    left: 61%;
+  }
 }
 
 @media screen and (max-width: 960px){

@@ -203,7 +203,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 23%;
+  min-width: 25%;
 }
 
 .html-material-1b .see-content .col .text:not(:last-child) {
@@ -269,6 +269,7 @@ body {
 
 .html-material-1b .try-content li span {
   display: block;
+  width: 95%;
 }
 
 .html-material-1b .try-content .wrapper {
@@ -638,6 +639,10 @@ body {
   }
   .html-material-1b .page-2 .title {
     top: clamp(60px, 7.8vw, 72px);
+  }
+  .html-material-1b .page-2 .blue-section .ja {
+    font-size: clamp(5px, 1.6vw, 13px) !important;
+    letter-spacing: -2px !important;
   }
   .html-material-1b .page-2 .arrow-part div:not(:last-child) {
     margin-bottom: clamp(18px, 3.6vw, 32px);

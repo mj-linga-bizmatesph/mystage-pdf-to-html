@@ -158,7 +158,7 @@ body {
 
 .html-material-1b .ja {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(5px, 1.4vw, 12.5px);
+  font-size: clamp(5.5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
@@ -204,7 +204,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin-right: 0;
-  min-width: 41%;
+  min-width: 39%;
 }
 
 .html-material-1b .see-content .col .sub-text:not(:last-child) {
@@ -237,7 +237,7 @@ body {
 }
 
 .html-material-1b .see-content .example .conversation .row p:first-child {
-  width: 7%;
+  width: 8%;
   word-wrap: break-word;
 }
 
@@ -728,7 +728,7 @@ body {
     max-width: unset;
   }
   .html-material-1b .example {
-    font-size: clamp(6px, 2vw, 15px);
+    font-size: clamp(6px, 2vw, 15px) !important;
   }
   .html-material-1b .section {
     left: clamp(-30px, 15%, -71.5px);

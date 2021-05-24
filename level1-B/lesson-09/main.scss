@@ -137,7 +137,7 @@ body {
   }
   .ja {
     font-family: $ja-font, sans-serif;
-    font-size: clamp(5px, 1.4vw, 12.5px);
+    font-size: clamp(5.5px, 1.4vw, 12.5px);
     font-weight: bold;
     color: #595959;
   }
@@ -174,7 +174,7 @@ body {
     .col {
       width: fit-content;
       margin-right: 0;
-      min-width: 41%;
+      min-width: 39%;
       .sub-text:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -199,7 +199,7 @@ body {
             display: inline-block;
             margin: -0.5px 0px;
             &:first-child {
-              width: 7%;
+              width: 8%;
               word-wrap: break-word;
             }
             &:last-child {
@@ -659,7 +659,7 @@ body {
       max-width: unset;
     }
     .example {
-      font-size: clamp(6px, 2vw, 15px);
+      font-size: clamp(6px, 2vw, 15px) !important;
     }
     .section {
       left: clamp(-30px, 15%, -71.5px);

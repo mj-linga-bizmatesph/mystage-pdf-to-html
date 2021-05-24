@@ -517,13 +517,10 @@ body {
     /* Page 2 */
     .page-2 {
       .sub-head {
-        margin-top: clamp(35px, 16vw, 128px);
+        margin-top: clamp(80px, 16vw, 128px);
       }
       .arrow-part {
         margin-left: clamp(35px, 15.9vw, 125px);
-      }
-      .lesson-points {
-        height: clamp(50px, 4.8vw, 50px);
       }
       .see-content {
         margin-left: clamp(35px, 15.9vw, 125px);
@@ -613,9 +610,6 @@ body {
       .title {
         left: 6%;
         top: -7px;
-      }
-      .sub-head {
-        top: 3.5%;
       }
     }
     /* Page 3 */

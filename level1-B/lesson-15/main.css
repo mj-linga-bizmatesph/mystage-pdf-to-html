@@ -453,7 +453,8 @@ body {
 .html-material-1b .page-2 .see-content .text .ja {
   margin-top: 0px;
   color: #257a9e;
-  font-size: clamp(6.5px, 1.6vw, 13px);
+  font-size: clamp(5.5px, 1.6vw, 13px);
+  letter-spacing: -1px;
 }
 
 .html-material-1b .page-2 .example {
@@ -596,7 +597,7 @@ body {
     margin-top: -10px !important;
   }
   .html-material-1b .page-2 .sub-head {
-    margin-top: clamp(35px, 16vw, 128px);
+    margin-top: clamp(70px, 16vw, 128px);
   }
   .html-material-1b .page-2 .arrow-part {
     margin-left: clamp(35px, 15.9vw, 125px);

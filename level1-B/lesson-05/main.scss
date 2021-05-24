@@ -212,39 +212,38 @@ body {
     }
   }
 
-  /* Try */
-  .try-content {
-    position: relative;
-    margin-top: 34px;
-    margin-left: clamp(1px, 15%, 126.5px);
-    padding-left: 18.5px;
-    font-size: clamp(6px, 1.8vw, 15px);
+ /* Try */
+ .try-content {
+  position: relative;
+  margin-top: 34px;
+  margin-left: clamp(1px, 15%, 126.5px);
+  padding-left: 18.5px;
+  font-size: clamp(6px, 1.8vw, 15px);
 
-    ul {
-      list-style-type: decimal;
-      margin: 3px 0px 0px 18px;
-      padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
+  ul {
+    list-style-type: decimal;
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  li {
+    padding-left: 13px;
+    &:nth-child(5) {
+      margin-bottom: 25px;
     }
-    li {
-      padding-left: 13px;
-      &:nth-child(5) {
-        margin-bottom: 25px;
-      }
-      span {
-        display: block;
-        width: 670px;
-      }
-    }
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .sub-text.mg {
-      margin-top: 25px;
+    span {
+      display: block;
     }
   }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sub-text.mg {
+    margin-top: 25px;
+  }
+}
 
   /* Act */
   .act-content {

@@ -173,9 +173,7 @@ body {
     }
     .col {
       width: fit-content;
-      // margin-right: 48px;
-      // min-width: 100%;
-      min-width: 23%;
+      min-width: 25%;
       .text:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -233,6 +231,7 @@ body {
       }
       span {
         display: block;
+        width: 95%;
       }
     }
     .wrapper {
@@ -575,6 +574,12 @@ body {
     .page-2 {
       .title {
         top: clamp(60px, 7.8vw, 72px);
+      }
+      .blue-section {
+        .ja {
+          font-size: clamp(5px, 1.6vw, 13px) !important;
+          letter-spacing: -2px !important;
+        }
       }
       .arrow-part div:not(:last-child) {
         margin-bottom: clamp(18px, 3.6vw, 32px);

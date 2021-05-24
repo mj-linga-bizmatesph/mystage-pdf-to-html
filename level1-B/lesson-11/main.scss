@@ -394,7 +394,7 @@ body {
       margin-top: 20px;
       margin-left: 125px;
       .subtitle {
-        font-size: clamp(8px, 2vw, 15px);
+        font-size: clamp(6px, 2vw, 15px);
         color: #000000;
       }
       p {
@@ -729,16 +729,17 @@ body {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
       .arrow-part .span-right-arrow img {
-        // position: relative;
-        width: 5%;
+        width: 6%;
+        margin: 3% auto;
       }
       .right-example {
-        letter-spacing: .7px;
+        letter-spacing: .7px !important;
+        width: 50%;
       }
       .left-example {
-        letter-spacing: .7px;
-        margin-right: 0%;
-        width: 35%;
+        letter-spacing: .7px !important;
+        margin-right: 0% !important;
+        width: 40%;
       }
       .lesson-points {
         padding-left: clamp(27px, 3.8vw, 47px);

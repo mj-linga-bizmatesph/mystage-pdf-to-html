@@ -158,7 +158,7 @@ body {
 
 .html-material-1b .ja {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(5px, 1.4vw, 12.5px);
+  font-size: clamp(5.5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
@@ -652,7 +652,7 @@ body {
   }
   .html-material-1b .page-2 .lesson-points {
     padding-left: clamp(27px, 3.8vw, 47px);
-    padding-bottom: 2px;
+    padding-right: 10px;
   }
   .html-material-1b .footer {
     bottom: 2%;

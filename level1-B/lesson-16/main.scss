@@ -455,6 +455,9 @@ body {
       margin-top: 16px;
       margin-left: 0px;
       margin-bottom: 15px;
+      .conversation .row p:first-child {
+        width: 9%;
+      }
     }
   }
 

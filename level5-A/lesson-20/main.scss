@@ -103,92 +103,41 @@ body {
     }
   }
   ul {
-    margin: 3px 0px 0px 18px;
+    margin: 3px 0px 0px 0px;
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
-
-    li {
-      padding-left: 8px;
-    }
   }
 
-  .see-content,
-  .act-content,
-  .try-content {
+  // Test
+  .test-content {
     position: relative;
     margin-left: $left-pixel;
     padding-left: 18.5px;
     padding-right: 60px;
     font-size: clamp(6px, 1.8vw, 15px);
-  }
+    margin-top: 20%;
+    line-height: clamp(12px, 3vw, 26px);
 
-  // Words and Phrases Content
-  .words-phrase-content {
-    position: relative;
-    margin-top: clamp(70px, 18%, 155px);
-    padding-top: 2px;
-    height: fit-content;
-    padding-right: 60px;
-    padding-left: $left-pixel;
-    min-height: calc(min(145px, 18vw));
-    background: $primary-light;
-    font-size: clamp(6px, 1.8vw, 15px);
-
-    .section {
-      margin-left: $left-pixel;
-      line-height: 1.8em;
-      margin-top: clamp(10px, 2.6vw, 16px) !important;
-    }
-
-    .pointers {
-      margin-top: clamp(12px, 2.8vw, 20px) !important;
-      padding-left: 18.5px !important;
-
-      .author {
+    ul {
+      margin-top: 28px;
+      li {
+        list-style-type: none;
+        margin-bottom: 30px;
+        &::before {
+          position: absolute;
+          display: inline;
+          content: "";
+          border: 2px solid;
+          padding: 0.625em 0.575em;
+        }
         p {
           margin: 0 auto;
+          margin-left: 40px;
           &:first-child {
-            color: $primary;
-          }
-          &:last-child {
-            margin-left: 2%;
+            font-weight: bold;
           }
         }
       }
-    }
-  }
-
-  // See
-  .see-content {
-    margin-top: 36px;
-    .article {
-      margin-top: 5px;
-      line-height: 1.7em;
-      margin-bottom: 29px;
-
-      span.highlight {
-        color: $primary-dark;
-        font-weight: bold;
-      }
-    }
-  }
-
-  // Try
-  .try-content {
-    margin-top: 30px;
-
-    ul {
-      list-style-type: decimal;
-    }
-  }
-
-  // Act
-  .act-content {
-    margin-top: 36px;
-    height: fit-content;
-    p:not(.sub-text) {
-      margin: 2px auto;
-      line-height: clamp(12px, 3vw, 26px);
     }
   }
 
@@ -209,24 +158,14 @@ body {
     section {
       padding-right: clamp(22px, 4.6vw, 60px) !important;
     }
-    .see-content {
-      margin-top: clamp(22px, 3.8vw, 36px);
-      .article {
-        margin-bottom: clamp(20px, 3.7vw, 29px);
-      }
-    }
-    .try-content {
-      margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
-      ul {
-        margin-left: clamp(11px, 2.4vw, 18px);
-      }
+    ul {
+      margin-top: clamp(18px, 3.4vw, 28px) !important;
       li {
-        padding-left: clamp(9px, 1.8vw, 13px);
+        margin-bottom: clamp(18px, 3.4vw, 30px) !important;
+        p {
+         margin-left: clamp(18px, 5vw, 40px) !important;
+        }
       }
-    }
-    .act-content {
-      margin-top: clamp(20px, 3.8vw, 36px);
     }
     footer {
       bottom: clamp(16px, 4.8vw, 43px);
@@ -254,9 +193,6 @@ body {
     }
     .section {
       left: calc(-16% + 30px);
-    }
-    .section.words {
-      left: calc(-14% + 30px);
     }
   }
 }

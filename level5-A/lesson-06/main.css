@@ -20,10 +20,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
-  /* Words and Phrases Content */
-  /* See */
-  /* Try */
-  /* Act */
 }
 
 .html-lesson-wrapper header {
@@ -250,6 +246,7 @@ body {
   .html-lesson-wrapper footer {
     bottom: clamp(16px, 4.8vw, 43px);
     right: 5% !important;
+    max-width: 34%;
   }
 }
 
@@ -284,8 +281,5 @@ body {
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
-  }
-  .html-lesson-wrapper footer {
-    max-width: 34%;
   }
 }

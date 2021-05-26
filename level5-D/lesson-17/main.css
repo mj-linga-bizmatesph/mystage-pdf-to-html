@@ -67,7 +67,9 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  left: 91.8%;
+  left: 91.65%;
+  width: 1.9%;
+  text-align: center;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;

@@ -65,9 +65,11 @@ body {
     left: 55px;
     font-size: clamp(12px, 3vw, 27px);
   }
-  .lesson-number {
+.lesson-number {
     position: absolute;
     left: 91.65%;
+    width: 1.9%;
+    text-align: center;
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;

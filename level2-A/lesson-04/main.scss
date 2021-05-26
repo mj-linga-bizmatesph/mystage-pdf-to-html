@@ -1,4 +1,4 @@
-$text-font: 'Calibri';
+$text-font: 'Calibri', 'PT Sans', 'Trebuchet MS';
 
 $primary: #2078a0;
 
@@ -7,7 +7,6 @@ $left-pixel: clamp(120px, 28%, 218px);
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 
 .html-material-2a {
@@ -23,7 +22,8 @@ body {
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  
+  font-family: $text-font;
+
   .b {
     font-weight: bold;
   }
@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 59px;
     left: 9px;
-    font-size: clamp(10.5px, 2.4vw, 21px);
+    font-size: clamp(9px, 2.4vw, 21px);
     color: #ffffff;
   }
   .row {
@@ -196,7 +196,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-2a {
-    min-height: calc(100vh - 62px);
+    min-height: 125.68vw;
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;

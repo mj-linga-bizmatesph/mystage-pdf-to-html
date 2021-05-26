@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Calibri";
 }
 
 .html-material-2d {
@@ -19,6 +18,7 @@ body {
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  font-family: "Calibri", "PT Sans", "Trebuchet MS";
   /* See */
   /* Try */
   /* Act */
@@ -32,7 +32,7 @@ body {
   position: absolute;
   top: 59px;
   left: 9px;
-  font-size: clamp(10.5px, 2.4vw, 21px);
+  font-size: clamp(9px, 2.4vw, 21px);
   color: #ffffff;
 }
 

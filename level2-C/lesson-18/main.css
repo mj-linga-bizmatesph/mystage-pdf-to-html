@@ -4,7 +4,7 @@ body {
 }
 
 .html-material-2c {
-  font-family: "Calibri";
+  font-family: "Calibri", "PT Sans", "Trebuchet MS";
   width: 100%;
   min-width: 360px;
   max-width: 810px;
@@ -32,7 +32,7 @@ body {
   position: absolute;
   top: 59px;
   left: 9px;
-  font-size: clamp(10.5px, 2.4vw, 21px);
+  font-size: clamp(9px, 2.4vw, 21px);
   color: #ffffff;
 }
 

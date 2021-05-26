@@ -8,7 +8,6 @@ $left-pixel: 126.5px;
 body {
   margin: 0;
   padding: 0;
-  font-family: $text-font;
 }
 .html-material-1e {
   width: 100%;
@@ -23,151 +22,151 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.header {
-  font-family: $title-font;
-}
-.b {
-  font-weight: bold;
-}
-.i {
-  font-family: italic;
-}
-.program-rank {
-  position: absolute;
-  top: 40px;
-  left: 6%;
-  color: #ffffff;
-  font-size: 0px;
-
-  .type {
-    padding: 3px 16px 3px 14px;
-    background-color: $primary;
-    font-size:clamp(8px, 2vw, 15px);
+  font-family: $text-font;
+  .header {
+    font-family: $title-font;
   }
-  .level {
-    padding: 3px 12px 3px 13px;
-    background-color: #339999;
-    font-size:clamp(8px, 2vw, 15px);
+  .b {
+    font-weight: bold;
   }
-}
-.line {
-  margin: 0 12px;
-}
-.title {
-  position: absolute;
-  top: 7%;
-  left: 6%;
-  font-size: clamp(12px, 3vw, 27px);
-}
-.lesson-number {
-  position: absolute;
-  left: 92%;
-  padding-top: 7.5%;
-  font-size:clamp(8px, 2vw, 13px);
-  color: #ffffff;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.sub-text {
-  font-family: $title-font !important;
-  line-height: 22px;
-  margin: 0 auto;
-}
-.section {
-  position: absolute;
-  left: -71.5px;
-  color: #2078a0;
-  font-weight: bold;
-  font-size:clamp(10px, 2vw, 15px);
-  font-family: $title-font;
-}
-.divider {
-  color: #d9d9d9;
-  position: relative;
-  left: 50%;
-  font-size: clamp(6px, 1.8vw, 15px);
-
-  &.d1 {
-    margin-top: 8px;
+  .i {
+    font-family: italic;
   }
-  &.d2 {
-    margin-top: 28px;
-  }
-}
-ul {
-  margin: 3px 0px 0px 18px;
-  padding: 0;
-  line-height: 26px;
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    color: #ffffff;
+    font-size: 0px;
 
-  li {
-    padding-left: 8px;
-  }
-}
-
-.see-content,
-.act-content,
-.try-content {
-  position: relative;
-  margin-left: $left-pixel;
-  padding-left: 18.5px;
-  padding-right: 48px;
-  font-size: 15px;
-}
-
-/* See */
-.see-content {
-  position: relative;
-  margin-left: clamp(1px, 15%, $left-pixel);
-  margin-top: 28.5%;
-  font-size:clamp(10px, 2vw, 15px);
-
-  .col {
-    width: fit-content;
-    margin-right: 16px;
-    position: relative;
-    line-height: 26px;
-    p {
-      margin: 2px auto 24px;
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $primary;
+      font-size:clamp(8px, 2vw, 15px);
+    }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: #339999;
+      font-size:clamp(8px, 2vw, 15px);
     }
   }
-}
+  .line {
+    margin: 0 12px;
+  }
+  .title {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    font-size: clamp(12px, 3vw, 27px);
+  }
+  .lesson-number {
+    position: absolute;
+    left: 92%;
+    padding-top: 7.5%;
+    font-size:clamp(8px, 2vw, 13px);
+    color: #ffffff;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .sub-text {
+    font-family: $title-font !important;
+    line-height: 22px;
+    margin: 0 auto;
+  }
+  .section {
+    position: absolute;
+    left: -71.5px;
+    color: #2078a0;
+    font-weight: bold;
+    font-size:clamp(10px, 2vw, 15px);
+    font-family: $title-font;
+  }
+  .divider {
+    color: #d9d9d9;
+    position: relative;
+    left: 50%;
+    font-size: clamp(6px, 1.8vw, 15px);
 
-/* Try */
-.try-content {
-  position: relative;
-  margin-top: 30px;
-  margin-left: clamp(1px, 15%, $left-pixel);
-  padding-left: 18.5px;
-  font-size:clamp(10px, 2vw, 15px);
-
+    &.d1 {
+      margin-top: 8px;
+    }
+    &.d2 {
+      margin-top: 28px;
+    }
+  }
   ul {
-    list-style-type: decimal;
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: 26px;
+
+    li {
+      padding-left: 8px;
+    }
+  }
+
+  .see-content,
+  .act-content,
+  .try-content {
+    position: relative;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    padding-right: 48px;
+    font-size: 15px;
+  }
+
+  /* See */
+  .see-content {
+    position: relative;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    margin-top: 28.5%;
+    font-size:clamp(10px, 2vw, 15px);
+
+    .col {
+      width: fit-content;
+      margin-right: 16px;
+      position: relative;
+      line-height: 26px;
+      p {
+        margin: 2px auto 24px;
+      }
+    }
+  }
+
+  /* Try */
+  .try-content {
+    position: relative;
+    margin-top: 30px;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    font-size:clamp(10px, 2vw, 15px);
+
+    ul {
+      list-style-type: decimal;
+    }
+  }
+
+  /* Act */
+  .act-content {
+    position: relative;
+    margin-top: 30px;
+    margin-left: clamp(1px, 15%, $left-pixel);
+    padding-left: 18.5px;
+    font-size:clamp(10px, 2vw, 15px);
+    height: fit-content;
+  }
+
+  .footer {
+    font-size: clamp(5px, 1.4vw, 9px);
+    position: absolute;
+    width: 345px;
+    text-align: right;
+    bottom: 43px;
+    left: 57%;
+    font-family: $title-font;
   }
 }
-
-/* Act */
-.act-content {
-  position: relative;
-  margin-top: 30px;
-  margin-left: clamp(1px, 15%, $left-pixel);
-  padding-left: 18.5px;
-  font-size:clamp(10px, 2vw, 15px);
-  height: fit-content;
-}
-
-.footer {
-  font-size: clamp(5px, 1.4vw, 9px);
-  position: absolute;
-  width: 345px;
-  text-align: right;
-  bottom: 43px;
-  left: 57%;
-  font-family: $title-font;
-}
-
 @media screen and (max-width: 960px){
   .html-material-1e {
     min-height: unset;

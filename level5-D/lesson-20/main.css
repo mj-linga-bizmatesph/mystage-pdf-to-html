@@ -68,7 +68,7 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  left: 91.65%;
+  left: 91.8%;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
@@ -91,7 +91,7 @@ body {
 }
 
 .html-lesson-wrapper .section {
-  position: relative;
+  position: absolute;
   left: -71.5px;
   color: #2078a0;
   font-weight: bold;
@@ -128,6 +128,10 @@ body {
   font-size: clamp(6px, 1.8vw, 15px);
   margin-top: 20%;
   line-height: clamp(12px, 3vw, 26px);
+}
+
+.html-lesson-wrapper .test-content:not(:first-child) {
+  margin-top: 5%;
 }
 
 .html-lesson-wrapper .test-content ul {

@@ -390,7 +390,7 @@ body {
 }
 
 .html-material-1b .page-2 .arrow-part .subtitle {
-  font-size: clamp(8px, 2vw, 15px);
+  font-size: clamp(7px, 1.8vw, 15px);
   color: #000000;
 }
 
@@ -472,7 +472,7 @@ body {
 }
 
 .html-material-1b .page-2 .no-arrow-sub .subtitle {
-  font-size: clamp(8px, 2vw, 15px);
+  font-size: clamp(7px, 1.8vw, 15px);
   color: #000000;
 }
 
@@ -747,6 +747,9 @@ body {
     /* Page 2 */
     /* Page 3 */
   }
+  .html-material-1b .sub-head p {
+    padding-right: 10%;
+  }
   .html-material-1b .page-1 {
     max-width: unset;
   }
@@ -786,6 +789,9 @@ body {
     border-bottom: 5px solid transparent;
     border-left: 8px solid #257a9e;
     left: -28px;
+  }
+  .html-material-1b .page-2 .no-arrow-sub span {
+    margin-left: 0px;
   }
   .html-material-1b .page-3 .sub-head {
     margin-top: clamp(42px, 7.8vw, 75px);

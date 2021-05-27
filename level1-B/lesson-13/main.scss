@@ -137,7 +137,7 @@ body {
   }
   .ja {
     font-family: $ja-font, sans-serif;
-    font-size: clamp(5.5px, 1.4vw, 12.5px);
+    font-size: clamp(5px, 1.4vw, 12.5px);
     font-weight: bold;
     color: #595959;
   }
@@ -584,7 +584,6 @@ body {
       }
       .lesson-points {
         padding-left: clamp(27px, 3.8vw, 47px);
-        padding-right: 10px;
       }
     }
     .footer {
@@ -629,6 +628,9 @@ body {
 
 @media screen and (max-width: 420px) {
   .html-material-1b {
+    .sub-head p {
+      padding-right: 10%;
+    }
     .page-1 {
       max-width: unset;
     }
@@ -673,6 +675,11 @@ body {
           border-bottom: 5px solid transparent;
           border-left: 8px solid #257a9e;
           left: -28px;
+        }
+      }
+      .lesson-points {
+        p {
+          margin-right: 50% !important;
         }
       }
     }

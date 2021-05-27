@@ -203,7 +203,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 45%;
+  min-width: 50%;
 }
 
 .html-material-1b .see-content .col .text:not(:last-child) {
@@ -726,6 +726,9 @@ body {
   .html-material-1b .see-content .col2 {
     padding-right: 0px;
   }
+  .html-material-1b .see-content .blue-section .text .ja {
+    font-size: clamp(5.5px, 1.5vw, 13px);
+  }
   .html-material-1b .act-content, .html-material-1b .try-content {
     margin-top: 20px;
   }
@@ -734,6 +737,13 @@ body {
     border-bottom: 5px solid transparent;
     border-left: 8px solid #257a9e;
     left: -28px;
+  }
+  .html-material-1b .page-2 .blue-section p.ja {
+    font-size: clamp(5px, 1vw, 12px);
+    letter-spacing: -1px;
+  }
+  .html-material-1b .page-2 .lesson-points p {
+    margin-right: 50% !important;
   }
   .html-material-1b .page-3 .sub-head {
     margin-top: clamp(42px, 7.8vw, 75px);

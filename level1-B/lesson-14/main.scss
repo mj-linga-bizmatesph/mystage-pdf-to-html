@@ -326,7 +326,7 @@ body {
       margin-top: 20px;
       margin-left: 125px;
       .subtitle {
-        font-size: clamp(8px, 2vw, 15px);
+        font-size: clamp(7px, 1.8vw, 15px);
         color: #000000;
       }
       p {
@@ -393,7 +393,7 @@ body {
       margin-top: 7px;
       margin-left: 125px;
       .subtitle {
-        font-size: clamp(8px, 2vw, 15px);
+        font-size: clamp(7px, 1.8vw, 15px);
         color: #000000;
       }
       span {
@@ -673,6 +673,9 @@ body {
 
 @media screen and (max-width: 420px) {
   .html-material-1b {
+    .sub-head p {
+      padding-right: 10%;
+    }
     .page-1 {
       max-width: unset;
     }
@@ -717,6 +720,11 @@ body {
           border-bottom: 5px solid transparent;
           border-left: 8px solid #257a9e;
           left: -28px;
+        }
+      }
+      .no-arrow-sub {
+        span {
+          margin-left: 0px;
         }
       }
     }

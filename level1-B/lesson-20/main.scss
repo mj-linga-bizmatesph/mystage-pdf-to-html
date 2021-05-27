@@ -154,6 +154,7 @@ body {
     }
     li {
       padding-left: 9px;
+      width: 95%;
     }
     p {
       margin: 0px 0px 0px 8px;
@@ -285,6 +286,14 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-material-1b {
+    .page-2 {
+      .sub-head p {
+        &:not(.subtitle) {
+          font-size: clamp(5px, 1.5vw, 12px) !important;
+          margin-right: 60%;
+        }
+      }
+    }
     .lesson-list ul:before {
       left: -12px;
       top: 2px;

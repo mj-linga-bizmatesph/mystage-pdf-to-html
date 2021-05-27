@@ -180,6 +180,7 @@ body {
 
 .html-material-1b .lesson-list li {
   padding-left: 9px;
+  width: 95%;
 }
 
 .html-material-1b .lesson-list p {
@@ -296,6 +297,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .html-material-1b .page-2 .sub-head .ja {
+    font-size: clamp(5px, 1.5vw, 12px) !important;
+    margin-right: 60%;
+  }
   .html-material-1b .lesson-list ul:before {
     left: -12px;
     top: 2px;

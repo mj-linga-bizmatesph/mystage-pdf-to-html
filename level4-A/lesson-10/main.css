@@ -22,23 +22,18 @@ body {
   /* Review Content */
   /* Review Content */
 }
-
 .html-material-4a .header {
   font-family: "Arial";
 }
-
 .html-material-4a .b {
   font-weight: bold;
 }
-
 .html-material-4a .i {
   font-family: italic;
 }
-
 .html-material-4a .u {
   text-decoration: underline;
 }
-
 .html-material-4a .program-rank {
   position: absolute;
   top: 40px;
@@ -46,30 +41,25 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
-
 .html-material-4a .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
 .html-material-4a .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
 .html-material-4a .line {
   margin: 0 12px;
 }
-
 .html-material-4a .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
-
 .html-material-4a .lesson-number {
   position: absolute;
   left: 91.65%;
@@ -77,13 +67,11 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
 .html-material-4a .sub-text {
   font-family: "Arial" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
-
 .html-material-4a .section {
   position: absolute;
   left: -71.5px;
@@ -92,7 +80,6 @@ body {
   font-family: "Arial";
   top: 2px;
 }
-
 .html-material-4a .review-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
@@ -100,16 +87,13 @@ body {
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
-
 .html-material-4a .review-content {
   margin-top: 240px;
 }
-
 .html-material-4a .review-content img {
   margin-top: 80px;
   width: 650px;
 }
-
 .html-material-4a .footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -139,7 +123,6 @@ body {
     right: 5% !important;
   }
 }
-
 @media screen and (max-width: 768px) {
   .html-material-4a .program-rank {
     position: absolute;
@@ -157,7 +140,6 @@ body {
     left: calc(-14% + 30px);
   }
 }
-
 @media screen and (max-width: 600px) {
   .html-material-4a .type {
     padding: 2px 8px 2px 7px !important;
@@ -169,4 +151,4 @@ body {
     margin: 0 6px;
     vertical-align: middle;
   }
-}
+}/*# sourceMappingURL=main.css.map */

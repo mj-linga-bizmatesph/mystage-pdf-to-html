@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.html-material-4a {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -246,7 +246,7 @@ body {
     }
   }
   
-  .footer {
+  footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
@@ -259,7 +259,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-material-4a {
+  .html-lesson-wrapper {
     min-height: unset !important;
     .see-content {
       margin-top: clamp(22px, 3.8vw, 36px);
@@ -289,14 +289,14 @@ body {
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
-    .footer {
+    footer {
       bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .html-material-4a {
+  .html-lesson-wrapper {
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px);
@@ -328,7 +328,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-4a {
+  .html-lesson-wrapper {
     .type {
       padding: 2px 8px 2px 7px !important;
     }

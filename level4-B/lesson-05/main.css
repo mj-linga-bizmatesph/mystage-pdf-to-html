@@ -25,19 +25,15 @@ body {
   /* Try */
   /* Act */
 }
-
 .html-material-4b .header {
   font-family: "Arial";
 }
-
 .html-material-4b .b {
   font-weight: bold;
 }
-
 .html-material-4b .i {
   font-family: italic;
 }
-
 .html-material-4b .program-rank {
   position: absolute;
   top: 40px;
@@ -45,30 +41,25 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
-
 .html-material-4b .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
 .html-material-4b .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
 .html-material-4b .line {
   margin: 0 12px;
 }
-
 .html-material-4b .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
-
 .html-material-4b .lesson-number {
   position: absolute;
   left: 92.2%;
@@ -76,23 +67,15 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
 .html-material-4b .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .html-material-4b .sub-text {
   font-family: "Arial" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
-
 .html-material-4b .section {
   position: absolute;
   left: -71.5px;
@@ -101,32 +84,26 @@ body {
   font-family: "Arial";
   top: 2px;
 }
-
 .html-material-4b .divider {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 52%;
 }
-
 .html-material-4b .divider.d1 {
   margin-top: 8px;
 }
-
 .html-material-4b .divider.d2 {
   margin-top: 28px;
 }
-
 .html-material-4b ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
-
 .html-material-4b ul li {
   padding-left: 8px;
 }
-
 .html-material-4b .see-content,
 .html-material-4b .act-content,
 .html-material-4b .try-content {
@@ -136,7 +113,6 @@ body {
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
-
 .html-material-4b .words-phrase-content {
   position: relative;
   margin-top: clamp(70px, 18%, 155px);
@@ -149,25 +125,21 @@ body {
   background: #d4e6f0;
   font-size: clamp(6px, 1.8vw, 15px);
 }
-
 .html-material-4b .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 18px) !important;
   max-width: 100px;
 }
-
 .html-material-4b .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
 }
-
 .html-material-4b .words-phrase-content .pointers .arrow-part {
   position: relative;
 }
-
 .html-material-4b .words-phrase-content .pointers .arrow-part:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: 5px;
@@ -179,42 +151,34 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-
 .html-material-4b .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
-
 .html-material-4b .see-content {
   margin-top: 36px;
 }
-
 .html-material-4b .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
-
 .html-material-4b .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
-
 .html-material-4b .try-content {
   margin-top: 30px;
 }
-
 .html-material-4b .try-content ul {
   list-style-type: decimal;
 }
-
 .html-material-4b .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-
 .html-material-4b .act-content table {
   margin-top: 5px;
   font-size: clamp(6px, 1.5vw, 14px);
@@ -222,7 +186,6 @@ body {
   padding-bottom: 5px;
   min-width: 100%;
 }
-
 .html-material-4b .act-content table th,
 .html-material-4b .act-content table td {
   max-width: 120px;
@@ -230,21 +193,18 @@ body {
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
-
 .html-material-4b .act-content table th {
   background-color: #2078a0;
   color: #ffffff;
   font-size: clamp(7px, 1.8vw, 15px);
   padding: 5px;
 }
-
 .html-material-4b .act-content table td {
   color: #d0cece;
   text-align: left;
   padding: 6px;
   background-color: #f2f2f2;
 }
-
 .html-material-4b .footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -285,7 +245,6 @@ body {
     right: 5% !important;
   }
 }
-
 @media screen and (max-width: 768px) {
   .html-material-4b .program-rank {
     position: absolute;
@@ -310,7 +269,6 @@ body {
     top: 0.6vw !important;
   }
 }
-
 @media screen and (max-width: 600px) {
   .html-material-4b .type {
     padding: 2px 8px 2px 7px !important;
@@ -336,4 +294,4 @@ body {
   .html-material-4b .act-content table td {
     padding: 3px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

@@ -1,42 +1,52 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial";
 }
 
-.page-1,
-.page-2,
-.page-3 {
-  width: 892.75px;
-  height: 1262px;
+.html-material-1b {
+  font-family: "Trebuchet MS";
+  /* Page 2 */
+  /* Page 3 */
+}
+
+.html-material-1b .page-1,
+.html-material-1b .page-2,
+.html-material-1b .page-3 {
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
+  min-height: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url("/images/bg-header.png"), url("/images/bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.header {
+.html-material-1b .header {
   font-family: "Arial";
 }
 
-.b {
+.html-material-1b .b {
   font-weight: bold;
 }
 
-.i {
+.html-material-1b .i {
   font-family: italic;
 }
 
-.u-sup {
+.html-material-1b .u-sup {
   border-bottom: solid 1.5px black;
   display: inline-block;
-  line-height: 14px;
+  line-height: clamp(6px, 1.5vw, 14px);
 }
 
-.program-rank {
+.html-material-1b .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
@@ -44,40 +54,38 @@ body {
   font-size: 0px;
 }
 
-.program-rank .type {
+.html-material-1b .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #248bb0;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.program-rank .level {
+.html-material-1b .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
-  font-size: 15px;
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.line {
+.html-material-1b .line {
   margin: 0 12px;
 }
 
-.title {
+.html-material-1b .title {
   position: absolute;
   top: 80px;
   left: 55px;
-  font-size: 27px;
+  font-size: clamp(12px, 3vw, 27px);
 }
 
-.lesson-number {
+.html-material-1b .lesson-number {
   position: absolute;
-  min-width: 15px;
-  left: 819px;
-  top: 66px;
-  font-size: 13px;
-  text-align: center;
+  left: 91.6%;
+  margin-top: 7.4%;
+  font-size: clamp(8px, 1.8vw, 13px);
   color: #ffffff;
 }
 
-.row {
+.html-material-1b .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,67 +96,67 @@ body {
   font-family: "Trebuchet MS";
 }
 
-.sub-text {
+.html-material-1b .sub-text {
   font-family: "Arial" !important;
 }
 
-.sub-head {
+.html-material-1b .sub-head {
   position: absolute;
-  top: 125px;
-  left: 47px;
+  top: 10%;
+  left: 6%;
   width: 760px;
 }
 
-.sub-head .subtitle {
+.html-material-1b .sub-head .subtitle {
   font-family: "Noto Sans JP";
   color: #257A9E;
   font-weight: bold;
-  font-size: 15px;
+  font-size: clamp(6px, 1.8vw, 15px);
 }
 
-.sub-head p {
+.html-material-1b .sub-head p {
   margin: 3px auto;
 }
 
-.sub-head p:nth-child(n+3) {
+.html-material-1b .sub-head p:nth-child(n+3) {
   color: #257A9E;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: clamp(5px, 1.5vw, 12px);
+  line-height: clamp(12px, 2.8vw, 22px);
 }
 
-.text {
+.html-material-1b .text {
   font-family: "Trebuchet MS";
 }
 
-.ja {
+.html-material-1b .ja {
   font-family: "Noto Sans JP", sans-serif !important;
-  font-size: 12.5px;
+  font-size: clamp(5px, 1.4vw, 12.5px);
   font-weight: bold;
   color: #595959;
 }
 
-sup {
-  font-size: 10px;
-  line-height: 16px;
+.html-material-1b sup {
+  font-size: clamp(6px, 1.6vw, 10px);
+  line-height: clamp(8px, 1.8vw, 16px);
   display: inline-block;
 }
 
-.lesson-list {
+.html-material-1b .lesson-list {
   font-family: "Trebuchet MS";
-  font-size: 15px;
-  margin-top: 189px;
-  margin-left: 149px;
+  font-size: clamp(6px, 1.8vw, 15px);
+  margin-top: clamp(120px, 21vw, 189px);
+  margin-left: clamp(50px, 16%, 149px);
 }
 
-.lesson-list ul {
+.html-material-1b .lesson-list ul {
   list-style-type: decimal;
   margin: 24.5px 0px 0px 18px;
   padding: 0;
-  line-height: 26px;
+  line-height: clamp(12px, 3vw, 26px);
   position: relative;
 }
 
-.lesson-list ul:before {
+.html-material-1b .lesson-list ul:before {
   content: '';
   position: absolute;
   left: -16px;
@@ -162,19 +170,20 @@ sup {
   vertical-align: middle;
 }
 
-.lesson-list ul.initial {
+.html-material-1b .lesson-list ul.initial {
   margin-top: 30px;
 }
 
-.lesson-list ul .sub-text {
+.html-material-1b .lesson-list ul .sub-text {
   margin-left: 4px;
 }
 
-.lesson-list li {
+.html-material-1b .lesson-list li {
   padding-left: 9px;
+  width: 95%;
 }
 
-.lesson-list p {
+.html-material-1b .lesson-list p {
   margin: 0px 0px 0px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,62 +193,125 @@ sup {
           justify-content: space-between;
 }
 
-.lesson-list p span {
+.html-material-1b .lesson-list p span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.footer {
-  font-size: 9px;
+.html-material-1b .footer {
+  font-size: clamp(4.5px, 1.2vw, 9px);
   position: absolute;
-  top: 1210px;
-  left: 616px;
+  left: 66%;
+  bottom: 2%;
 }
 
-.title {
+.html-material-1b .title {
   top: 72px;
-  left: 50px;
+  left: 55px;
   word-spacing: 1px;
 }
 
-.title .ja {
-  font-size: 27px;
+.html-material-1b .title .ja {
+  font-size: clamp(12px, 3vw, 27px);
   color: #000000;
   font-weight: bold;
   margin-right: 3px;
 }
 
-/* Page 2 */
-.page-2 .lesson-list {
-  margin-top: 260px;
+.html-material-1b .page-2 .lesson-list {
+  margin-top: 32%;
 }
 
-.page-2 .sub-text.ja {
+.html-material-1b .page-2 .sub-text.ja {
   margin: 8px 0px 0px 0px;
 }
 
-.page-2 ul .sub-text.ja {
-  font-size: 14px;
+.html-material-1b .page-2 ul .sub-text.ja {
+  font-size: clamp(6px, 1.8vw, 14px);
   color: #257A9E;
   margin: 0px 0px 0px 4px;
 }
 
-.page-2 ul li span {
+.html-material-1b .page-2 ul li span {
   display: block;
 }
 
-/* Page 3 */
-.page-3 .lesson-list {
+.html-material-1b .page-3 .lesson-list {
   margin-top: 210px;
 }
 
-.page-3 ul .sub-text.ja {
-  font-size: 14px;
+.html-material-1b .page-3 ul .sub-text.ja {
+  font-size: clamp(6px, 1.8vw, 14px);
   color: #257A9E;
   margin: 0px 0px 0px 4px;
 }
 
-.page-3 ul li span {
+.html-material-1b .page-3 ul li span {
   display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .html-material-1b .page-1,
+  .html-material-1b .page-2,
+  .html-material-1b .page-3 {
+    min-height: unset;
+  }
+  .html-material-1b .try-content {
+    margin-top: clamp(20px, 3.8vw, 34px);
+  }
+  .html-material-1b .act-content {
+    margin-top: clamp(20px, 3.8vw, 36px);
+  }
+  .lesson-list ul.initial {
+    margin-top: clamp(18px, 3.6vw, 30px);
+  }
+  .title {
+    top: clamp(40px, 10vw, 80px) !important;
+  }
+  .sub-head {
+    top: clamp(62px, 16vw, 128px) !important;
+    left: clamp(30px, 4.1vw, 55px) !important;
+  }
+  .lesson-list {
+    margin-top: clamp(40px, 20vw, 260px) !important;
+  }
+  .page-2 .lesson-list {
+    margin-top: clamp(130px, 30vw, 260px) !important;
+  }
+  .page-3 .lesson-list {
+    margin-top: clamp(120px, 22vw, 260px) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-material-1b .program-rank {
+    position: absolute;
+    top: clamp(20px, 4vw, 40px) !important;
+    left: clamp(23px, 4vw, 48px) !important;
+  }
+  .html-material-1b .title {
+    top: clamp(45px, 8vw, 80px) !important;
+    left: clamp(30px, 4.1vw, 55px) !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-material-1b .page-2 .sub-head .ja {
+    font-size: clamp(5px, 1.5vw, 12px) !important;
+    margin-right: 60%;
+  }
+  .html-material-1b .lesson-list ul:before {
+    left: -12px;
+    top: 2px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #000000;
+  }
+  .html-material-1b .type {
+    padding: 2px 8px 2px 7px !important;
+  }
+  .html-material-1b .level {
+    padding: 2px 6px 2px 7px !important;
+  }
 }

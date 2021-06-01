@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.html-material-3d {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 810px;
@@ -22,11 +22,11 @@ body {
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
 
-.html-material-3d .b {
+.html-lesson-wrapper .b {
   font-weight: bold;
 }
 
-.html-material-3d .title {
+.html-lesson-wrapper .title {
   position: absolute;
   top: 59px;
   left: 9px;
@@ -34,7 +34,7 @@ body {
   color: #ffffff;
 }
 
-.html-material-3d .section {
+.html-lesson-wrapper .section {
   position: absolute;
   left: calc(-28% - 44px);
   top: -4px;
@@ -53,18 +53,18 @@ body {
   max-width: 206px;
 }
 
-.html-material-3d ul {
+.html-lesson-wrapper ul {
   margin: 2px 0px 0px 16px;
   padding: 0;
   list-style: none;
 }
 
-.html-material-3d ul li {
+.html-lesson-wrapper ul li {
   padding-left: 6px;
   position: relative;
 }
 
-.html-material-3d ul li:before {
+.html-lesson-wrapper ul li:before {
   content: '■';
   position: absolute;
   left: -15px;
@@ -72,12 +72,12 @@ body {
   font-size: clamp(16px, 2.4vw, 26px);
 }
 
-.html-material-3d ul li:not(:last-child) {
+.html-lesson-wrapper ul li:not(:last-child) {
   margin-bottom: clamp(18px, 2vw, 24px);
 }
 
-.html-material-3d .part1-content,
-.html-material-3d .part2-content {
+.html-lesson-wrapper .part1-content,
+.html-lesson-wrapper .part2-content {
   position: relative;
   margin-top: clamp(20px, 17%, 116px);
   margin-left: clamp(120px, 28%, 218px);
@@ -89,28 +89,28 @@ body {
   width: calc(100% - clamp(120px, 28%, 218px) - 20px);
 }
 
-.html-material-3d .part1-content .sub-text,
-.html-material-3d .part2-content .sub-text {
+.html-lesson-wrapper .part1-content .sub-text,
+.html-lesson-wrapper .part2-content .sub-text {
   font-size: clamp(9.5px, 2.4vw, 20px);
   font-weight: bold;
 }
 
-.html-material-3d .part1-content p,
-.html-material-3d .part2-content p {
+.html-lesson-wrapper .part1-content p,
+.html-lesson-wrapper .part2-content p {
   margin: 0px auto;
 }
 
-.html-material-3d .part2-content {
+.html-lesson-wrapper .part2-content {
   margin-top: 48px;
   padding-top: 4px;
   font-size: clamp(9.5px, 2.4vw, 20px);
 }
 
-.html-material-3d .part2-content p:not(:last-child) {
+.html-lesson-wrapper .part2-content p:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.html-material-3d .footer {
+.html-lesson-wrapper footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
   text-align: right;
@@ -119,32 +119,32 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .html-material-3d {
+  .html-lesson-wrapper {
     width: 100vw !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-3d .title {
+  .html-lesson-wrapper .title {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-3d {
+  .html-lesson-wrapper {
     min-height: 125.68vw;
   }
-  .html-material-3d .section {
+  .html-lesson-wrapper .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .html-material-3d .title {
+  .html-lesson-wrapper .title {
     top: clamp(26px, 7.3vw, 32px) !important;
   }
-  .html-material-3d .section {
+  .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
   }
 }

@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-.html-material-4c {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 370px;
   max-width: 892.75px;
@@ -21,76 +21,63 @@ body {
   font-family: "Trebuchet MS";
   /* Review Content */
 }
-
-.html-material-4c .header {
+.html-lesson-wrapper header {
   font-family: "Arial";
 }
-
-.html-material-4c .b {
+.html-lesson-wrapper .b {
   font-weight: bold;
 }
-
-.html-material-4c .i {
+.html-lesson-wrapper .i {
   font-family: italic;
 }
-
-.html-material-4c .u {
+.html-lesson-wrapper .u {
   text-decoration: underline;
 }
-
-.html-material-4c .program-rank {
+.html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
   color: #ffffff;
   font-size: 0px;
 }
-
-.html-material-4c .program-rank .type {
+.html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
-.html-material-4c .program-rank .level {
+.html-lesson-wrapper .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
-.html-material-4c .line {
+.html-lesson-wrapper .line {
   margin: 0 12px;
 }
-
-.html-material-4c .title {
+.html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
-
-.html-material-4c .lesson-number {
+.html-lesson-wrapper .lesson-number {
   position: absolute;
   left: 91.65%;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
-.html-material-4c .sub-text {
+.html-lesson-wrapper .sub-text {
   width: 95%;
   margin-top: -15px;
 }
-
-.html-material-4c .section {
+.html-lesson-wrapper .section {
   position: relative;
   left: -90px;
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
 }
-
-.html-material-4c .review-content {
+.html-lesson-wrapper .review-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
@@ -98,39 +85,28 @@ body {
   font-size: clamp(7px, 1.8vw, 15px);
   margin-top: 20%;
 }
-
-.html-material-4c .review-content ul {
+.html-lesson-wrapper .review-content ul {
   list-style: none;
   margin-top: 12px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-
-.html-material-4c .review-content ul li {
+.html-lesson-wrapper .review-content ul li {
   margin: 12.5px 0px;
 }
-
-.html-material-4c .review-content ul li p {
+.html-lesson-wrapper .review-content ul li p {
   -webkit-margin-before: 0 !important;
           margin-block-start: 0 !important;
   -webkit-margin-after: 0 !important;
           margin-block-end: 0 !important;
 }
-
-.html-material-4c .review-content ul li p:last-child {
+.html-lesson-wrapper .review-content ul li p:last-child {
   color: #2078a0;
   font-weight: bold;
 }
-
-.html-material-4c .footer {
+.html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
   width: -webkit-fit-content;
@@ -143,25 +119,24 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-4c .program-rank {
+  .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);
     left: clamp(23px, 4vw, 48px);
   }
-  .html-material-4c .title {
+  .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
     left: clamp(30px, 4.1vw, 55px);
   }
-  .html-material-4c .section {
+  .html-lesson-wrapper .section {
     left: -55.5px;
   }
 }
-
 @media screen and (max-width: 420px) {
-  .html-material-4c .section {
+  .html-lesson-wrapper .section {
     left: -30.5px;
   }
-  .html-material-4c .footer {
+  .html-lesson-wrapper footer {
     bottom: 15px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

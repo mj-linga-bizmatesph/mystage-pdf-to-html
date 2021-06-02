@@ -22,11 +22,11 @@ body {
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
 
-.html-lesson-wrapper .b {
+.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper aside, .html-lesson-wrapper footer {
   font-weight: bold;
 }
 
-.html-lesson-wrapper .title {
+.html-lesson-wrapper header {
   position: absolute;
   top: 59px;
   left: 9px;
@@ -81,7 +81,7 @@ body {
   padding-left: 6px;
 }
 
-.html-lesson-wrapper .biz-tip {
+.html-lesson-wrapper aside {
   position: absolute;
   left: 8px;
   top: calc(min(24vw, 175px));
@@ -91,11 +91,11 @@ body {
   font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.html-lesson-wrapper .biz-tip div {
+.html-lesson-wrapper aside div {
   margin-bottom: 15px;
 }
 
-.html-lesson-wrapper .biz-tip .sub-text {
+.html-lesson-wrapper aside .sub-text {
   color: #ffffff;
   font-size: clamp(11px, 2vw, 18px);
   padding: 5px 11px 5px 12px;
@@ -106,7 +106,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-lesson-wrapper .biz-tip .text {
+.html-lesson-wrapper aside .text {
   margin-top: 6px;
   padding: 7px 7px 16px 12px;
   width: 100%;
@@ -119,7 +119,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-lesson-wrapper .biz-tip .red {
+.html-lesson-wrapper aside .red {
   color: red;
 }
 
@@ -226,7 +226,7 @@ body {
   .html-lesson-wrapper .sub-text {
     padding-right: 7px !important;
   }
-  .html-lesson-wrapper .biz-tip .text {
+  .html-lesson-wrapper aside .text {
     padding-bottom: clamp(24px, 6vw, 32px) !important;
     min-height: calc(max(12vw, 50px));
   }
@@ -236,7 +236,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-lesson-wrapper .title {
+  .html-lesson-wrapper header {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
@@ -250,22 +250,22 @@ body {
   .html-lesson-wrapper table th {
     padding: 2px !important;
   }
-  .html-lesson-wrapper .biz-tip .text {
+  .html-lesson-wrapper aside .text {
     padding: 4px 8px;
   }
-  .html-lesson-wrapper .biz-tip .sub-text {
+  .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .html-lesson-wrapper .title {
+  .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px) !important;
   }
-  .html-lesson-wrapper .biz-tip {
+  .html-lesson-wrapper aside {
     top: 100px;
   }
-  .html-lesson-wrapper .biz-tip .sub-text {
+  .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
   }
   .html-lesson-wrapper .section {

@@ -24,10 +24,10 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b {
+  .b, header, aside, footer {
     font-weight: bold;
   }
-  .title {
+  header {
     position: absolute;
     top: 59px;
     left: 9px;
@@ -74,7 +74,7 @@ body {
     }
   }
 
-  .biz-tip {
+  aside {
     position: absolute;
     left: 8px;
     top: calc(min(24vw, 175px));
@@ -187,7 +187,7 @@ body {
     .sub-text {
       padding-right: 7px !important;
     }
-    .biz-tip .text {
+    aside .text {
       padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
     }
@@ -199,12 +199,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
-    .biz-tip {
+    aside {
       ul {
         margin-left: 10px;
       }
     }
-    .title {
+    header {
       top: clamp(30px, 7.3vw, 59px);
     }
   }
@@ -219,7 +219,7 @@ body {
     .see-content .conversation .row p:first-child {
       min-width: 32px !important;
     }
-    .biz-tip {
+    aside {
       .text {
         padding: 4px 8px;
       }
@@ -232,10 +232,10 @@ body {
 
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
-    .title {
+    header {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
-    .biz-tip {
+    aside {
       top: 100px;
       .sub-text {
         padding: 3px 8px !important;

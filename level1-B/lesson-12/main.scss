@@ -152,7 +152,7 @@ body {
     display: inline-block;
   }
 
-  /* See */
+  // See
   .see-content {
     position: relative;
     margin-left: clamp(1px, 15%, 126.5px);
@@ -214,7 +214,7 @@ body {
     }
   }
 
- /* Try */
+ // Try
  .try-content {
   position: relative;
   margin-top: 34px;
@@ -247,7 +247,7 @@ body {
   }
 }
 
-  /* Act */
+  // Act
   .act-content {
     position: relative;
     margin-top: 36px;
@@ -286,7 +286,7 @@ body {
     font-family: $title-font;
   }
 
-  /* Page 2 */
+  // Page 2
   .page-2 {
     .sub-head {
       margin-top: clamp(35px, 16vw, 150px);
@@ -462,7 +462,7 @@ body {
     }
   }
 
-  /* Page 3 */
+  // Page 3
   .page-3 {
     .sub-head {
       margin-top: 75px;
@@ -540,17 +540,17 @@ body {
     }
   }
 
-  /* Clear styles */
+  // Clear styles
   .clearfix {
     clear: both;
   }
 
-  /* floating styles */
+  // Floating styles
   .float-right {
     float: right;
   }
 
-  /* Sizes - right */
+  // Sizes - right
   .r60 {
     right: 60px;
   }
@@ -558,7 +558,7 @@ body {
     right: 40px;
   }
 
-  /* Sizes - top */
+  // Sizes - top
   .t40 {
     top: 40px;
   }
@@ -569,7 +569,6 @@ body {
     top: 90px;
   }
 
-  /* line height */
   .lh0{
     line-height: 0px;
   }
@@ -611,7 +610,7 @@ body {
       padding-left: clamp(1px, 2.4vw, 18.5px);
       padding-top: clamp(9px, 1.8vw, 13px);
     }
-    /* page 1 */
+    // Page 1
     .page-1 {
       .act-content {
         .wrapper {
@@ -630,7 +629,7 @@ body {
         }
       }
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .sub-head {
         margin-top: clamp(35px, 22vw, 150px);
@@ -648,7 +647,7 @@ body {
       }
     }
 
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .try-content {
         margin-top: clamp(26px, 4.3vw, 52px);
@@ -685,7 +684,7 @@ body {
     .section {
       left: clamp(-55px, 20%, -71.5px);
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .title {
         top: clamp(60px, 7.8vw, 72px);
@@ -722,14 +721,14 @@ body {
       left: 59%;
       bottom: 2%;
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .title {
         left: 6%;
         top: -7px;
       }
     }
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .sub-head {
         margin-top: clamp(60px, 7.8vw, 75px);
@@ -776,7 +775,7 @@ body {
     .act-content, .try-content {
       margin-top:20px
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .arrow-part div {
         &:before {
@@ -787,7 +786,7 @@ body {
         }
       }
     }
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .sub-head {
         margin-top: clamp(42px, 7.8vw, 75px);

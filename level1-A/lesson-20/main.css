@@ -5,8 +5,6 @@ body {
 
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
-  /* Page 2 */
-  /* Page 3 */
 }
 
 .html-lesson-wrapper .page-1,
@@ -76,6 +74,8 @@ body {
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   left: 91.65%;
+  width: 1.9%;
+  text-align: center;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
@@ -280,11 +280,9 @@ body {
   .lesson-list {
     margin-top: clamp(40px, 20vw, 260px) !important;
   }
-  /* Page 2 */
   .page-2 .lesson-list {
     margin-top: clamp(130px, 34vw, 260px) !important;
   }
-  /* Page 3 */
   .page-3 .lesson-list {
     margin-top: clamp(120px, 22vw, 260px) !important;
   }

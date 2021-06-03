@@ -143,7 +143,7 @@ body {
     display: inline-block;
   }
 
-  /* See */
+  // See
   .see-content {
     position: relative;
     margin-left: $left-pixel;
@@ -196,7 +196,7 @@ body {
     }
   }
 
-  /* Try */
+  // Try
   .try-content {
     position: relative;
     margin-top: 34px;
@@ -253,7 +253,7 @@ body {
     }
   }
 
-  /* Act */
+  // Act
   .act-content {
     position: relative;
     margin-top: 36px;
@@ -284,7 +284,7 @@ body {
     font-family: $title-font;
   }
 
-  /* Page 2 */
+  // Page 2
   .page-2 {
     .title {
       top: 72px;
@@ -392,7 +392,7 @@ body {
     }
   }
 
-  /* Page 3 */
+  // Page 3
   .page-3 {
     .sub-head {
       margin-top: 75px;
@@ -535,7 +535,7 @@ body {
       }
     }
 
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .sub-head {
         margin-top: clamp(50px, 16vw, 128px);
@@ -563,7 +563,7 @@ body {
       }
     }
 
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .sub-head {
         margin-top: clamp(42px, 7.8vw, 75px);
@@ -611,7 +611,7 @@ body {
       left: calc(-16% + 30px);
     }
 
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .title {
         top: clamp(40px, 7.8vw, 72px);
@@ -627,7 +627,7 @@ body {
         margin-bottom: clamp(18px, 3.6vw, 32px);
       }
     }
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .sub-head {
         left: clamp(27px, 3.8vw, 47px);
@@ -649,7 +649,7 @@ body {
       vertical-align: middle;
     }
 
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .arrow-part div {
         &:before {

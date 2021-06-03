@@ -152,7 +152,7 @@ body {
     display: inline-block;
   }
 
-  /* See */
+  // See
   .see-content {
     position: relative;
     margin-left: clamp(1px, 15%, 126.5px);
@@ -212,7 +212,7 @@ body {
     }
   }
 
-  /* Try */
+  // Try
   .try-content {
     position: relative;
     margin-top: 34px;
@@ -245,7 +245,7 @@ body {
     }
   }
 
-  /* Act */
+  // Act
   .act-content {
     position: relative;
     margin-top: 36px;
@@ -281,7 +281,7 @@ body {
     left: 616px;
   }
 
-  /* Page 2 */
+  // Page 2
   .page-2 {
     .sub-head {
       margin-top: clamp(35px, 16vw, 128px);
@@ -393,7 +393,7 @@ body {
     }
   }
 
-  /* Page 3 */
+  // Page 3
   .page-3 {
     .sub-head {
       margin-top: 75px;
@@ -500,7 +500,7 @@ body {
       padding-left: clamp(1px, 2.4vw, 18.5px);
       padding-top: clamp(9px, 1.8vw, 13px);
     }
-    /* page 1 */
+    // Page 1
     .page-1 {
       .act-content {
         .wrapper {
@@ -516,7 +516,7 @@ body {
         }
       }
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .sub-head {
         margin-top: clamp(80px, 16vw, 128px);
@@ -534,7 +534,7 @@ body {
       }
     }
 
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .try-content {
         margin-top: clamp(26px, 4.3vw, 52px);
@@ -571,7 +571,7 @@ body {
     .section {
       left: clamp(-55px, 20%, -71.5px);
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .title {
         top: clamp(60px, 7.8vw, 72px);
@@ -607,14 +607,14 @@ body {
       left: 59%;
       bottom: 2%;
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .title {
         left: 6%;
         top: -7px;
       }
     }
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .sub-head {
         margin-top: clamp(60px, 7.8vw, 75px);
@@ -661,7 +661,7 @@ body {
     .act-content, .try-content {
       margin-top:20px
     }
-    /* Page 2 */
+    // Page 2
     .page-2 {
       .arrow-part div {
         &:before {
@@ -672,7 +672,7 @@ body {
         }
       }
     }
-    /* Page 3 */
+    // Page 3
     .page-3 {
       .sub-head {
         margin-top: clamp(42px, 7.8vw, 75px);

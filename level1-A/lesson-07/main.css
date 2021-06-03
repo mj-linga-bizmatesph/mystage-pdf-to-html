@@ -5,11 +5,6 @@ body {
 
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
-  /* See */
-  /* Try */
-  /* Act */
-  /* Page 2 */
-  /* Page 3 */
 }
 
 .html-lesson-wrapper .page-1,
@@ -579,10 +574,6 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-lesson-wrapper {
-    /* Page 2 */
-    /* Page 3 */
-  }
   .html-lesson-wrapper .page-1,
   .html-lesson-wrapper .page-2,
   .html-lesson-wrapper .page-3 {
@@ -707,10 +698,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-lesson-wrapper {
-    /* Page 2 */
-    /* Page 3 */
-  }
   .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);
@@ -753,9 +740,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-lesson-wrapper {
-    /* Page 2 */
-  }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }

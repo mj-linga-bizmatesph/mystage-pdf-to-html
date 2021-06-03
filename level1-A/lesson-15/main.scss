@@ -13,7 +13,7 @@ body {
   padding: 0;
 }
 
-.html-material-1a {
+.html-lesson-wrapper {
   font-family: $text-font;
 
   .page-1,
@@ -33,7 +33,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -75,6 +75,8 @@ body {
   .lesson-number {
     position: absolute;
     left: 91.65%;
+    width: 1.9%;
+    text-align: center;
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
@@ -262,7 +264,7 @@ body {
       }
     }
   }
-  .footer {
+  footer {
     font-size: clamp(4.5px, 1.2vw, 9px);
     position: absolute;
     width: fit-content;
@@ -402,7 +404,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-material-1a {
+  .html-lesson-wrapper {
     .page-1,
     .page-2,
     .page-3 {
@@ -495,14 +497,14 @@ body {
         }
       }
     }
-    .footer {
+    footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .html-material-1a {
+  .html-lesson-wrapper {
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px);
@@ -556,7 +558,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-1a {
+  .html-lesson-wrapper {
     .type {
       padding: 2px 8px 2px 7px !important;
     }

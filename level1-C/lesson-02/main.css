@@ -34,7 +34,7 @@ body {
 
 .html-lesson-wrapper .program-rank {
   position: absolute;
-  top: 40px;
+  top: 3.45%;
   left: 6%;
   color: #ffffff;
   font-size: 0px;
@@ -266,7 +266,7 @@ body {
   left: 60%;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
   }

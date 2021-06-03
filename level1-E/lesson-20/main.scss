@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.html-material-1e {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 893px;
@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -35,7 +35,7 @@ body {
   }
   .program-rank {
     position: absolute;
-    top: 40px;
+    top: 3.45%;
     left: 6%;
     color: #ffffff;
     font-size: 0px;
@@ -62,18 +62,20 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 91.5%;
+    left: 91.65%;
+    width: 1.9%;
+    text-align: center;
     padding-top: 7.5%;
-    font-size:clamp(8px, 2vw, 13px);
+    font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
   .section {
     position: absolute;
-    left: -12%;
+    left: -14%;
     color: $primary;
     font-weight: bold;
     font-family: $title-font;
-    top: .5%;
+    top: .8%;
   }
 
   /* TEST */
@@ -82,7 +84,7 @@ body {
     font-family: $text-font;
     font-size:clamp(10px, 2vw, 15px);
     margin-top: 29%;
-    margin-left: 16%;
+    margin-left: 18%;
     margin-right: 15px;
 
     ul {
@@ -94,7 +96,8 @@ body {
       flex-wrap: wrap;
 
       li {
-        margin: 12.5px 0px;
+        margin-top: clamp(6.5px, 1.8vw, 12.5px);
+        margin-bottom: clamp(6.5px, 1.8vw, 12.5px);
       }
     }
 
@@ -104,7 +107,7 @@ body {
     }
   }
 
-  .footer {
+  footer {
     font-size: clamp(5px, 1.4vw, 9px);
     position: absolute;
     width: 345px;
@@ -115,18 +118,18 @@ body {
   }
 }
 
-
-@media screen and (max-width: 960px){
-  .html-material-1e {
-    .footer {
+@media screen and (max-width: 900px){
+  .html-lesson-wrapper {
+    min-height: unset;
+    footer {
       bottom: 3%;
     }
   }
 }
 
 @media screen and (max-width: 820px){
-  .html-material-1e {
-    .footer {
+  .html-lesson-wrapper {
+    footer {
       bottom: 3%;
       left: 50%;
     }
@@ -134,8 +137,8 @@ body {
 }
 
 @media screen and (max-width: 768px){
-  .html-material-1e {
-    .footer {
+  .html-lesson-wrapper {
+    footer {
       bottom: 2%;
       left: 58%;
       width: 40%;
@@ -144,8 +147,8 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-1e {
-    .footer {
+  .html-lesson-wrapper {
+    footer {
       left: 64%;
       bottom: 2%;
       width: 32%;
@@ -154,8 +157,8 @@ body {
 }
 
 @media screen and (max-width: 420px){
-  .html-material-1e {
-    .footer {
+  .html-lesson-wrapper {
+    footer {
       left: 56%;
       bottom: 2%;
     }

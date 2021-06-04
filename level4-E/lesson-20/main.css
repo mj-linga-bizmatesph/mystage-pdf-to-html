@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-.html-material-4e {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -19,58 +19,46 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
-  /* Review Content */
-  /* Review Content */
 }
-
-.html-material-4e .header {
+.html-lesson-wrapper header {
   font-family: "Arial";
 }
-
-.html-material-4e .b {
+.html-lesson-wrapper .b {
   font-weight: bold;
 }
-
-.html-material-4e .i {
+.html-lesson-wrapper .i {
   font-family: italic;
 }
-
-.html-material-4e .u {
+.html-lesson-wrapper .u {
   text-decoration: underline;
 }
-
-.html-material-4e .program-rank {
+.html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
   left: 48px;
   color: #ffffff;
   font-size: 0px;
 }
-
-.html-material-4e .program-rank .type {
+.html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
-.html-material-4e .program-rank .level {
+.html-lesson-wrapper .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
-.html-material-4e .line {
+.html-lesson-wrapper .line {
   margin: 0 12px;
 }
-
-.html-material-4e .title {
+.html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
-
-.html-material-4e .lesson-number {
+.html-lesson-wrapper .lesson-number {
   position: absolute;
   left: 91.65%;
   margin-top: 7.4%;
@@ -78,14 +66,12 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
-.html-material-4e .sub-text {
+.html-lesson-wrapper .sub-text {
   font-family: "Arial" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
-
-.html-material-4e .section {
+.html-lesson-wrapper .section {
   position: relative;
   left: -85.5px;
   color: #2078a0;
@@ -93,51 +79,38 @@ body {
   font-family: "Arial";
   top: 16px;
 }
-
-.html-material-4e .review-content {
+.html-lesson-wrapper .review-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
-
-.html-material-4e .review-content {
+.html-lesson-wrapper .review-content {
   margin-top: 240px;
 }
-
-.html-material-4e .review-content ul {
+.html-lesson-wrapper .review-content ul {
   list-style: none;
   margin-top: 12px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-
-.html-material-4e .review-content ul li {
+.html-lesson-wrapper .review-content ul li {
   margin: 12.5px 0px;
 }
-
-.html-material-4e .review-content ul li p {
+.html-lesson-wrapper .review-content ul li p {
   -webkit-margin-before: 0 !important;
           margin-block-start: 0 !important;
   -webkit-margin-after: 0 !important;
           margin-block-end: 0 !important;
 }
-
-.html-material-4e .review-content ul li p:last-child {
+.html-lesson-wrapper .review-content ul li p:last-child {
   color: #2078a0;
   font-weight: bold;
 }
-
-.html-material-4e .footer {
+.html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
   width: -webkit-fit-content;
@@ -151,50 +124,48 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-material-4e {
+  .html-lesson-wrapper {
     min-height: unset;
   }
-  .html-material-4e .review-content {
+  .html-lesson-wrapper .review-content {
     margin-top: clamp(100px, 28%, 240px);
   }
-  .html-material-4e .review-content ul li {
+  .html-lesson-wrapper .review-content ul li {
     margin-top: clamp(7px, 1.8vw, 12px);
     margin-bottom: clamp(7px, 1.8vw, 12px);
   }
-  .html-material-4e .footer {
+  .html-lesson-wrapper footer {
     bottom: clamp(16px, 4.8vw, 43px);
     right: 5% !important;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .html-material-4e .program-rank {
+  .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);
     left: clamp(23px, 4vw, 48px);
   }
-  .html-material-4e .title {
+  .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
     left: clamp(30px, 4.1vw, 55px);
   }
-  .html-material-4e .section {
+  .html-lesson-wrapper .section {
     left: calc(-28% + 30px);
     top: 8px;
   }
-  .html-material-4e .section.words {
+  .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
   }
 }
-
 @media screen and (max-width: 600px) {
-  .html-material-4e .type {
+  .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }
-  .html-material-4e .level {
+  .html-lesson-wrapper .level {
     padding: 2px 6px 2px 7px !important;
   }
-  .html-material-4e .line {
+  .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
   }
-}
+}/*# sourceMappingURL=main.css.map */

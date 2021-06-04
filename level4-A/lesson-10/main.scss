@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.html-material-4a {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -17,13 +17,14 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('/images/bg-header.png'), url('/images/04-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), 
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -83,7 +84,7 @@ body {
     top: 2px;
   }
   
-  /* Review Content */
+  // Review Content
   .review-content {
     position: relative;
     margin-left: $left-pixel;
@@ -92,7 +93,7 @@ body {
     font-size: clamp(6px, 1.8vw, 15px);
   }
   
-  /* Review Content */
+  // Review Content
   .review-content {
     margin-top: 240px;
     img {
@@ -101,7 +102,7 @@ body {
     }
   }
   
-  .footer {
+  footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
@@ -114,7 +115,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-material-4a {
+  .html-lesson-wrapper {
     min-height: unset;
     .review-content {
       margin-top: clamp(100px, 28%, 240px);
@@ -123,14 +124,14 @@ body {
         width: 100%;
       }
     }
-    .footer {
+    footer {
       bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .html-material-4a {
+  .html-lesson-wrapper {
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px);
@@ -150,7 +151,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-4a {
+  .html-lesson-wrapper {
     .type {
       padding: 2px 8px 2px 7px !important;
     }

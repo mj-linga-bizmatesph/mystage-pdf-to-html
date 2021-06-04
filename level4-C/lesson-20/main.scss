@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.html-material-4c {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 370px;
   max-width: 892.75px;
@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -82,7 +82,7 @@ body {
     font-family: $title-font;
   }
 
-  /* Review Content */
+  // Review Content
   .review-content {
     position: relative;
     margin-left: clamp(50px, 14%, 126.5px);
@@ -115,7 +115,7 @@ body {
     }
   }
 
-  .footer {
+  footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
@@ -127,7 +127,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-4c {
+  .html-lesson-wrapper {
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px);
@@ -144,11 +144,11 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-  .html-material-4c {
+  .html-lesson-wrapper {
     .section {
       left: -30.5px;
     }
-    .footer {
+    footer {
       bottom: 15px;
     }
   }

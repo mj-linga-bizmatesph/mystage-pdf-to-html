@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.html-material-4e {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -88,7 +88,7 @@ body {
     top: 20px;
   }
 
-  /* Review Content */
+  // Review Content
   .review-content {
     position: relative;
     margin-left: $left-pixel;
@@ -97,7 +97,7 @@ body {
     font-size: clamp(6px, 1.8vw, 15px);
   }
 
-  /* Review Content */
+  // Review Content
   .review-content {
     margin-top: 240px;
 
@@ -136,7 +136,7 @@ body {
       }
     }
   }
-  .footer {
+  footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: 345px;
@@ -149,7 +149,7 @@ body {
 
 
 @media screen and (max-width: 900px) {
-  .html-material-4e {
+  .html-lesson-wrapper {
     min-height: unset;
     .review-content {
       margin-top: clamp(100px, 28%, 240px);
@@ -157,16 +157,16 @@ body {
   }
 }
 @media screen and (max-width: 820px) {
-  .html-material-4e {
+  .html-lesson-wrapper {
     min-height: unset;
-    .footer {
+    footer {
       left: 10px;
       bottom: 19px;
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .html-material-4e {
+  .html-lesson-wrapper {
     .review-content { 
       table {
         th,
@@ -203,7 +203,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-4e {
+  .html-lesson-wrapper {
     .type {
       padding: 2px 8px 2px 7px !important;
     }

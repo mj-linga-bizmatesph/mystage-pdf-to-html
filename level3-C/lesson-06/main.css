@@ -4,7 +4,7 @@ body {
   line-height: normal;
 }
 
-.html-material-3c {
+.html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 810px;
@@ -20,16 +20,13 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
-  /* See */
-  /* Try */
-  /* Act */
 }
 
-.html-material-3c .b {
+.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper aside, .html-lesson-wrapper footer {
   font-weight: bold;
 }
 
-.html-material-3c .title {
+.html-lesson-wrapper header {
   position: absolute;
   top: 59px;
   left: 9px;
@@ -37,7 +34,7 @@ body {
   color: #ffffff;
 }
 
-.html-material-3c .row {
+.html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,11 +44,11 @@ body {
           flex-direction: row;
 }
 
-.html-material-3c .sub-text {
+.html-lesson-wrapper .sub-text {
   margin: 0 auto;
 }
 
-.html-material-3c .section {
+.html-lesson-wrapper .section {
   position: absolute;
   left: calc(-28% - 44px);
   top: -4px;
@@ -70,21 +67,21 @@ body {
   max-width: 206px;
 }
 
-.html-material-3c .section.try, .html-material-3c .section.act {
+.html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
   top: -6px;
 }
 
-.html-material-3c ul {
+.html-lesson-wrapper ul {
   margin: 2px 0px 0px 18px;
   padding: 0;
   list-style-type: decimal;
 }
 
-.html-material-3c ul li {
+.html-lesson-wrapper ul li {
   padding-left: 6px;
 }
 
-.html-material-3c .biz-tip {
+.html-lesson-wrapper aside {
   position: absolute;
   left: 8px;
   top: calc(min(24vw, 175px));
@@ -94,11 +91,11 @@ body {
   font-size: clamp(7px, 1.8vw, 15px);
 }
 
-.html-material-3c .biz-tip div {
+.html-lesson-wrapper aside div {
   height: 213px;
 }
 
-.html-material-3c .biz-tip .sub-text {
+.html-lesson-wrapper aside .sub-text {
   color: #ffffff;
   font-size: clamp(11px, 2vw, 18px);
   padding: 5px 11px 5px 12px;
@@ -109,7 +106,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-material-3c .biz-tip .text {
+.html-lesson-wrapper aside .text {
   margin-top: 6px;
   padding: 7px 7px 16px 12px;
   width: 100%;
@@ -122,15 +119,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-material-3c .biz-tip .red {
+.html-lesson-wrapper aside .red {
   color: red;
 }
 
-.html-material-3c .biz-tip .i {
+.html-lesson-wrapper aside .i {
   font-style: italic;
 }
 
-.html-material-3c .biz-tip ul {
+.html-lesson-wrapper aside ul {
   position: absolute;
   top: calc(min(13vw, 99px));
   list-style-type: inherit;
@@ -138,14 +135,14 @@ body {
   margin-right: -20px;
 }
 
-.html-material-3c .biz-tip ul li {
+.html-lesson-wrapper aside ul li {
   padding-left: 0px;
   line-height: 1.1;
 }
 
-.html-material-3c .see-content,
-.html-material-3c .act-content,
-.html-material-3c .try-content {
+.html-lesson-wrapper .see-content,
+.html-lesson-wrapper .act-content,
+.html-lesson-wrapper .try-content {
   position: relative;
   margin-left: clamp(120px, 28%, 218px);
   padding-right: 20px;
@@ -158,69 +155,69 @@ body {
   width: calc(100% - clamp(120px, 28%, 218px) - 24px);
 }
 
-.html-material-3c .see-content {
+.html-lesson-wrapper .see-content {
   margin-top: clamp(20px, 17%, 116px);
 }
 
-.html-material-3c .see-content .conversation {
+.html-lesson-wrapper .see-content .conversation {
   margin-bottom: 22px;
 }
 
-.html-material-3c .see-content .conversation .row {
+.html-lesson-wrapper .see-content .conversation .row {
   padding-top: 5px;
 }
 
-.html-material-3c .see-content .conversation .row p {
+.html-lesson-wrapper .see-content .conversation .row p {
   display: block;
   margin: 0px 0px;
 }
 
-.html-material-3c .see-content .conversation .row p:first-child {
+.html-lesson-wrapper .see-content .conversation .row p:first-child {
   min-width: 74px;
   word-wrap: break-word;
   font-weight: bold;
 }
 
-.html-material-3c .see-content .col1 {
+.html-lesson-wrapper .see-content .col1 {
   width: 55%;
 }
 
-.html-material-3c .see-content .col2 {
+.html-lesson-wrapper .see-content .col2 {
   width: 45%;
 }
 
-.html-material-3c .see-content img {
+.html-lesson-wrapper .see-content img {
   width: 100%;
   height: 85%;
   margin-left: calc(min(24vw, 15px));
 }
 
-.html-material-3c .try-content {
+.html-lesson-wrapper .try-content {
   margin-top: clamp(65px, 14%, 90px);
 }
 
-.html-material-3c .try-content ul li {
+.html-lesson-wrapper .try-content ul li {
   font-style: italic;
 }
 
-.html-material-3c .try-content .col {
+.html-lesson-wrapper .try-content .col {
   padding: 20px 0px 0px 0px;
 }
 
-.html-material-3c .try-content .col img {
+.html-lesson-wrapper .try-content .col img {
   width: 90%;
 }
 
-.html-material-3c .try-content .col img:last-child {
+.html-lesson-wrapper .try-content .col img:last-child {
   margin-left: calc(min(24vw, 10px));
 }
 
-.html-material-3c .try-content .col .left {
+.html-lesson-wrapper .try-content .col .left {
   position: relative;
   left: -30px;
 }
 
-.html-material-3c .act-content {
+.html-lesson-wrapper .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -228,7 +225,7 @@ body {
   min-height: 26px;
 }
 
-.html-material-3c .act-content ul li:last-child {
+.html-lesson-wrapper .act-content ul li:last-child {
   list-style-type: none;
   font-size: clamp(12px, 2vw, 16.5px);
   font-style: italic;
@@ -236,12 +233,12 @@ body {
   word-wrap: break-word;
 }
 
-.html-material-3c .act-content ul li a {
+.html-lesson-wrapper .act-content ul li a {
   font-size: clamp(6px, 1.8vw, 16.5px);
   color: #119f9f;
 }
 
-.html-material-3c .footer {
+.html-lesson-wrapper footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
   text-align: right;
@@ -250,48 +247,48 @@ body {
 }
 
 @media screen and (max-width: 820px) {
-  .html-material-3c {
+  .html-lesson-wrapper {
     min-height: 125.68vw;
   }
-  .html-material-3c .sub-text {
+  .html-lesson-wrapper .sub-text {
     padding-right: 7px !important;
   }
-  .html-material-3c .biz-tip .text {
+  .html-lesson-wrapper aside .text {
     padding-bottom: clamp(24px, 6vw, 32px) !important;
     min-height: calc(max(12vw, 50px));
   }
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-3c .title {
+  .html-lesson-wrapper header {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-3c .section {
+  .html-lesson-wrapper .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
-  .html-material-3c .biz-tip .text {
+  .html-lesson-wrapper aside .text {
     padding: 4px 8px;
   }
-  .html-material-3c .biz-tip .sub-text {
+  .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .html-material-3c .title {
+  .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px) !important;
   }
-  .html-material-3c .biz-tip {
+  .html-lesson-wrapper aside {
     top: 100px;
   }
-  .html-material-3c .biz-tip .sub-text {
+  .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
   }
-  .html-material-3c .section {
+  .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
   }
 }

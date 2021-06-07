@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-.html-material-1b {
+.html-lesson-wrapper {
   font-family: $text-font;
 
   .page-1,
@@ -30,7 +30,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .header {
+  header {
     font-family: $title-font;
   }
   .b {
@@ -73,7 +73,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 91.6%;
+    left: 91.65%;
+    width: 1.9%;
+    text-align: center;
     margin-top: 7.4%;
     font-size: clamp(8px, 1.8vw, 13px);
     color: #ffffff;
@@ -101,7 +103,7 @@ body {
       margin: 3px auto;
       &:nth-child(n+3) {
         color: $primary;
-        font-size: clamp(5px, 1.5vw, 12px);
+        font-size: clamp(6px, 1.6vw, 13px);
         line-height: clamp(12px, 2.8vw, 22px);
       }
     }
@@ -166,7 +168,7 @@ body {
     }
   }
 
-  .footer {
+  footer {
     font-size: clamp(4.5px, 1.2vw, 9px);
     position: absolute;
     left: 66%;
@@ -185,7 +187,7 @@ body {
     }
   }
 
-  /* Page 2 */
+  // Page 2
   .page-2 {
     .lesson-list {
       margin-top: 32%;
@@ -207,7 +209,7 @@ body {
     }
   }
 
-  /* Page 3 */
+  // Page 3
   .page-3 {
     .lesson-list {
       margin-top: 210px;
@@ -228,7 +230,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-material-1b {
+  .html-lesson-wrapper {
     .page-1,
     .page-2,
     .page-3 {
@@ -271,7 +273,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-material-1b {
+  .html-lesson-wrapper {
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px) !important;
@@ -285,7 +287,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-material-1b {
+  .html-lesson-wrapper {
     .page-2 {
       .sub-head .ja {
         font-size: clamp(5px, 1.5vw, 12px) !important;

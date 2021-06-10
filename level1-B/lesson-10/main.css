@@ -47,7 +47,7 @@ body {
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
-  left: 48px;
+  left: 6%;
   color: #ffffff;
   font-size: 0px;
 }
@@ -71,7 +71,7 @@ body {
 .html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
-  left: 55px;
+  left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
 
@@ -109,7 +109,7 @@ body {
 
 .html-lesson-wrapper .sub-head .subtitle {
   font-family: "Noto Sans JP";
-  color: #257A9E;
+  color: #257a9e;
   font-weight: bold;
   font-size: clamp(6px, 1.8vw, 15px);
 }
@@ -118,8 +118,8 @@ body {
   margin: 3px auto;
 }
 
-.html-lesson-wrapper .sub-head p:nth-child(n+3) {
-  color: #257A9E;
+.html-lesson-wrapper .sub-head p:nth-child(n + 3) {
+  color: #257a9e;
   font-size: clamp(6px, 1.6vw, 13px);
   line-height: clamp(12px, 2.8vw, 22px);
 }
@@ -207,8 +207,6 @@ body {
 }
 
 .html-lesson-wrapper .title {
-  top: 72px;
-  left: 55px;
   word-spacing: 1px;
 }
 
@@ -229,7 +227,7 @@ body {
 
 .html-lesson-wrapper .page-2 ul .sub-text.ja {
   font-size: clamp(6px, 1.8vw, 14px);
-  color: #257A9E;
+  color: #257a9e;
   margin: 0px 0px 0px 4px;
 }
 
@@ -243,7 +241,7 @@ body {
 
 .html-lesson-wrapper .page-3 ul .sub-text.ja {
   font-size: clamp(6px, 1.8vw, 14px);
-  color: #257A9E;
+  color: #257a9e;
   margin: 0px 0px 0px 4px;
 }
 
@@ -257,6 +255,12 @@ body {
   .html-lesson-wrapper .page-3 {
     min-height: unset;
   }
+  .html-lesson-wrapper .program-rank {
+    top: clamp(20px, 4.4vw, 40px);
+  }
+  .html-lesson-wrapper .title {
+    top: clamp(42px, 9.2vw, 80px);
+  }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.8vw, 34px);
   }
@@ -266,12 +270,8 @@ body {
   .lesson-list ul.initial {
     margin-top: clamp(18px, 3.6vw, 30px);
   }
-  .title {
-    top: clamp(40px, 10vw, 80px) !important;
-  }
   .sub-head {
-    top: clamp(62px, 16vw, 128px) !important;
-    left: clamp(30px, 4.1vw, 55px) !important;
+    top: clamp(62px, 14vw, 128px) !important;
   }
   .lesson-list {
     margin-top: clamp(40px, 20vw, 260px) !important;
@@ -281,18 +281,6 @@ body {
   }
   .page-3 .lesson-list {
     margin-top: clamp(120px, 22vw, 260px) !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .html-lesson-wrapper .program-rank {
-    position: absolute;
-    top: clamp(20px, 4vw, 40px) !important;
-    left: clamp(23px, 4vw, 48px) !important;
-  }
-  .html-lesson-wrapper .title {
-    top: clamp(45px, 8vw, 80px) !important;
-    left: clamp(30px, 4.1vw, 55px) !important;
   }
 }
 

@@ -16,7 +16,8 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image:url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -30,20 +31,20 @@ body {
   }
   .program-rank {
     position: absolute;
-    top: 3.45%;
+    top: 40px;
     left: 6%;
     color: #ffffff;
     font-size: 0px;
-  
+
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $primary;
-      font-size:clamp(8px, 2vw, 15px);
+      font-size: clamp(8px, 2vw, 15px);
     }
     .level {
       padding: 3px 12px 3px 13px;
       background-color: #339999;
-      font-size:clamp(8px, 2vw, 15px);
+      font-size: clamp(8px, 2vw, 15px);
     }
   }
   .line {
@@ -51,7 +52,7 @@ body {
   }
   .title {
     position: absolute;
-    top: 7%;
+    top: 80px;
     left: 6%;
     font-size: clamp(12px, 3vw, 27px);
   }
@@ -64,13 +65,13 @@ body {
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
-  .sub-text{
+  .sub-text {
     font-family: $title-font !important;
     line-height: 26px;
   }
   .lesson-list {
     font-family: $text-font;
-    font-size:clamp(10px, 2vw, 15px);
+    font-size: clamp(10px, 2vw, 15px);
     margin-top: 29%;
     margin-left: 18%;
     margin-right: 15px;
@@ -88,60 +89,30 @@ body {
       line-height: 24px;
     }
   }
-  
+
   footer {
-    font-size: clamp(5px, 1.4vw, 9px);
+    font-size: clamp(4.5px, 1.2vw, 9px);
     position: absolute;
-    width: 345px;
-    text-align: right;
     bottom: 43px;
-    left: 50%;
+    right: 6.2%;
+    text-align: right;
     font-family: $title-font;
-  }  
+  }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
     footer {
-      bottom: 3%;
+      bottom: clamp(16px, 4vw, 43px);
+      right: 5% !important;
+      max-width: 34%;
     }
-  }
-}
-
-@media screen and (max-width: 820px){
-  .html-lesson-wrapper {
-    footer {
-      bottom: 3%;
+    .program-rank {
+      top: clamp(20px, 4.4vw, 40px);
     }
-  }
-}
-
-@media screen and (max-width: 768px){
-  .html-lesson-wrapper {
-    footer {
-      bottom: 2%;
-      left: 58%;
-      width: 40%;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .html-lesson-wrapper {
-    footer {
-      left: 64%;
-      bottom: 2%;
-      width: 32%;
-    }
-  }
-}
-
-@media screen and (max-width: 420px){
-  .html-lesson-wrapper {
-    footer {
-      left: 56%;
-      bottom: 2%;
+    .title {
+      top: clamp(42px, 9.2vw, 80px);
     }
   }
 }

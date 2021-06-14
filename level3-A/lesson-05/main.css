@@ -197,6 +197,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .html-lesson-wrapper aside {
+    width: 20.65%;
+  }
   .html-lesson-wrapper aside ul {
     margin-left: 10px;
   }

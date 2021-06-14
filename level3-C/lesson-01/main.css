@@ -85,7 +85,6 @@ body {
   position: absolute;
   left: 8px;
   top: calc(min(24vw, 175px));
-  width: 20.65%;
   min-width: 75px;
   max-width: 168px;
   font-size: clamp(7px, 1.8vw, 15px);
@@ -268,6 +267,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .html-lesson-wrapper aside {
+    width: 20.65%;
+  }
   .html-lesson-wrapper aside ul {
     margin-left: 10px;
   }

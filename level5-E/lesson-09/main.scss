@@ -145,6 +145,9 @@ body {
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       padding-left: 18.5px !important;
+      p {
+        margin-bottom: 1em;
+      }
 
       .author {
         p {

@@ -21,11 +21,9 @@ body {
   background-repeat: no-repeat;
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
-
 .html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper aside, .html-lesson-wrapper footer {
   font-weight: bold;
 }
-
 .html-lesson-wrapper header {
   position: absolute;
   top: 59px;
@@ -33,7 +31,6 @@ body {
   font-size: clamp(9px, 2.4vw, 21px);
   color: #ffffff;
 }
-
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,11 +40,9 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-
 .html-lesson-wrapper .sub-text {
   margin: 0 auto;
 }
-
 .html-lesson-wrapper .section {
   position: absolute;
   left: calc(-28% - 44px);
@@ -66,21 +61,17 @@ body {
   min-width: 113px;
   max-width: 206px;
 }
-
 .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
   top: -6px;
 }
-
 .html-lesson-wrapper ul {
   margin: 2px 0px 0px 18px;
   padding: 0;
   list-style-type: decimal;
 }
-
 .html-lesson-wrapper ul li {
   padding-left: 6px;
 }
-
 .html-lesson-wrapper aside {
   position: absolute;
   left: 8px;
@@ -89,11 +80,9 @@ body {
   max-width: 168px;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
 .html-lesson-wrapper aside div {
   margin-bottom: 15px;
 }
-
 .html-lesson-wrapper aside .sub-text {
   color: #ffffff;
   font-size: clamp(11px, 2vw, 18px);
@@ -104,7 +93,6 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
   padding: 7px 7px 16px 12px;
@@ -117,11 +105,9 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
 .html-lesson-wrapper aside .red {
   color: red;
 }
-
 .html-lesson-wrapper .see-content,
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content {
@@ -136,41 +122,33 @@ body {
   border-radius: 10px;
   width: calc(100% - clamp(120px, 28%, 218px) - 24px);
 }
-
 .html-lesson-wrapper .see-content {
   margin-top: clamp(20px, 17%, 116px);
 }
-
 .html-lesson-wrapper .see-content .conversation {
   margin-bottom: 22px;
 }
-
 .html-lesson-wrapper .see-content .conversation .row p {
   display: inline-block;
   margin: 0px 0px;
 }
-
 .html-lesson-wrapper .see-content .conversation .row p:first-child {
   min-width: 54px;
   max-width: 100px;
   word-wrap: break-word;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-content .conversation .row p:last-child {
   font-style: italic;
 }
-
 .html-lesson-wrapper .see-content .shape {
   height: calc(min(25vw, 237px));
   margin: 0 auto;
   display: block;
 }
-
 .html-lesson-wrapper .try-content {
   margin-top: clamp(60px, 14%, 120px);
 }
-
 .html-lesson-wrapper .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
@@ -178,7 +156,6 @@ body {
   height: fit-content;
   min-height: 26px;
 }
-
 .html-lesson-wrapper .act-content table {
   margin-top: 5px;
   border-spacing: 0px;
@@ -186,14 +163,12 @@ body {
   width: 100%;
   font-size: clamp(8px, 1.6vw, 11px);
 }
-
 .html-lesson-wrapper .act-content table th,
 .html-lesson-wrapper .act-content table td {
   max-width: 120px;
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
-
 .html-lesson-wrapper .act-content table th {
   background-color: #f5800b;
   color: #ffffff;
@@ -202,16 +177,13 @@ body {
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
-
 .html-lesson-wrapper .act-content table td {
   text-align: left;
   padding: 4px;
 }
-
 .html-lesson-wrapper .act-content table td:nth-child(2) {
   min-width: 10vw;
 }
-
 .html-lesson-wrapper footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
@@ -235,7 +207,6 @@ body {
     min-width: clamp(30px, 7.3vw, 60px) !important;
   }
 }
-
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper aside {
     width: 20.65%;
@@ -244,14 +215,13 @@ body {
     top: clamp(30px, 7.3vw, 59px);
   }
 }
-
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
   .html-lesson-wrapper table td,
-  .html-lesson-wrapper table th {
+.html-lesson-wrapper table th {
     padding: 2px !important;
   }
   .html-lesson-wrapper aside .text {
@@ -261,7 +231,6 @@ body {
     padding: 3px 8px !important;
   }
 }
-
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px) !important;

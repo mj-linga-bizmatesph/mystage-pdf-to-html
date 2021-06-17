@@ -95,7 +95,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -71.5px;
+  left: calc(-16% + 52px);
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
@@ -152,7 +152,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .section {
-  margin-left: clamp(50px, 14%, 126.5px);
+  left: 55px;
   line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 16px) !important;
 }
@@ -275,7 +275,7 @@ body {
     left: calc(-16% + 30px);
   }
   .html-lesson-wrapper .section.words {
-    left: calc(-14% + 30px);
+    left: clamp(30px, 4.1vw, 55px);
   }
 }
 

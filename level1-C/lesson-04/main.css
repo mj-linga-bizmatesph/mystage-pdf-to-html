@@ -31,7 +31,7 @@ body {
 
 .html-lesson-wrapper .program-rank {
   position: absolute;
-  top: 3.45%;
+  top: 40px;
   left: 6%;
   color: #ffffff;
   font-size: 0px;
@@ -55,7 +55,7 @@ body {
 
 .html-lesson-wrapper .title {
   position: absolute;
-  top: 7%;
+  top: 80px;
   left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
@@ -257,10 +257,12 @@ body {
 }
 
 .html-lesson-wrapper footer {
-  font-size: clamp(5px, 1.4vw, 9px);
+  font-size: clamp(4.5px, 1.2vw, 9px);
   position: absolute;
   bottom: 43px;
-  left: 61%;
+  right: 6.2%;
+  text-align: right;
+  font-family: "Arial";
 }
 
 @media screen and (max-width: 900px) {
@@ -268,13 +270,15 @@ body {
     min-height: unset;
   }
   .html-lesson-wrapper footer {
-    bottom: 3%;
+    bottom: clamp(16px, 4vw, 43px);
+    right: 5% !important;
+    max-width: 34%;
   }
-}
-
-@media screen and (max-width: 820px) {
-  .html-lesson-wrapper footer {
-    bottom: 3%;
+  .html-lesson-wrapper .program-rank {
+    top: clamp(20px, 4.4vw, 40px);
+  }
+  .html-lesson-wrapper .title {
+    top: clamp(42px, 9.2vw, 80px);
   }
 }
 
@@ -282,28 +286,11 @@ body {
   .html-lesson-wrapper .section {
     left: clamp(-55px, 20%, -71.5px);
   }
-  .html-lesson-wrapper footer {
-    bottom: 2%;
-    left: 57%;
-    width: 41%;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
     left: clamp(-45px, 20%, -71.5px);
-  }
-  .html-lesson-wrapper .program-rank {
-    top: 0;
-    padding-top: 6%;
-  }
-  .html-lesson-wrapper .title {
-    top: 0;
-    padding-top: 12%;
-  }
-  .html-lesson-wrapper footer {
-    left: 59%;
-    bottom: 2%;
   }
 }
 
@@ -311,21 +298,10 @@ body {
   .html-lesson-wrapper .section {
     left: clamp(-30px, 15%, -71.5px);
   }
-  .html-lesson-wrapper .program-rank {
-    top: 0;
-    padding-top: 6%;
-  }
-  .html-lesson-wrapper .program-rank .type, .html-lesson-wrapper .program-rank .level {
+  .html-lesson-wrapper .program-rank .type,
+  .html-lesson-wrapper .program-rank .level {
     padding: 3px 10px;
     font-size: clamp(6px, 2vw, 15px);
-  }
-  .html-lesson-wrapper .title {
-    top: 0;
-    padding-top: 12%;
-  }
-  .html-lesson-wrapper footer {
-    left: 59%;
-    bottom: 1%;
   }
   .html-lesson-wrapper .see-content .wrapper {
     padding-bottom: 0;
@@ -333,7 +309,8 @@ body {
   .html-lesson-wrapper .see-content .col2 {
     padding-right: 10px;
   }
-  .html-lesson-wrapper .act-content, .html-lesson-wrapper .try-content {
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content {
     margin-top: 20px;
   }
 }

@@ -78,7 +78,6 @@ body {
     position: absolute;
     left: 8px;
     top: calc(min(24vw, 175px));
-    width: 20.65%;
     min-width: 75px;
     max-width: 168px;
     font-size: clamp(7px, 1.8vw, 15px);
@@ -139,7 +138,7 @@ body {
         top: -2px;
         width: calc(100% + 5px);
         margin-bottom: 0px;
-        background-image: url('/images/3-C-17_email_header.png');
+        background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/3-C-17_email_header.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 30px;
@@ -240,6 +239,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
+    aside {
+      width: 20.65%;
+    }
     header {
       top: clamp(30px, 7.3vw, 59px);
     }

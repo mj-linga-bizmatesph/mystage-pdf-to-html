@@ -194,8 +194,8 @@ body {
     left: clamp(30px, 4.1vw, 55px);
   }
   .html-lesson-wrapper .section {
-    left: calc(-28% + 30px);
-    top: 8px;
+    left: calc(-20% + 30px);
+    top: 16px;
   }
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
@@ -206,6 +206,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .html-lesson-wrapper .section {
+    left: -40.5px;
+    top: 9px;
+  }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }

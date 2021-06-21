@@ -138,16 +138,13 @@ body {
       left: clamp(30px, 4.1vw, 55px);
     }
     .section {
-      left: -55.5px;
+      left: -40.5px;
     }
   }
 }
 
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
-    .section {
-      left: -30.5px;
-    }
     footer {
       bottom: 15px;
     }

@@ -215,6 +215,7 @@ td {
 
     &.office-act-1 {
       margin-top: clamp(20px, 6.5vw, 29px);
+      margin-bottom: clamp(20px, 6.5vw, 29px);
     }
 
     .legend {
@@ -857,6 +858,12 @@ td {
       background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
+  .blue-line {
+    width: 15px;
+    height: 2px;
+    border-bottom: 2px solid $primary-blue;
+    margin-bottom: 5px;
+  }
   .table {
     width: 100%;
 
@@ -878,7 +885,7 @@ td {
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
   }
 }

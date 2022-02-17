@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
-// $noto-sans: "Noto Sans JP";
 $noto-sans: 'Noto Sans';
 
 $primary-blue: #1287cd;
@@ -450,12 +449,15 @@ td {
           &.akiko-2 {
             left: 21%;
           }
+          &.glen-1 {
+            right: 18%;
+          }
         }
         &.glen-1 {
           background-image: url(#{$s3}/0-speech-glen-1.png);
-          margin-top: 13%;
+          margin-top: 12%;
           right: 19%;
-          padding: 1.5% 4.5% 2% 1.5%;
+          padding: 1.5% 4.5% 3% 1.5%;
 
           .eng {
             font-size: clamp(8px, 2vw, 14px);

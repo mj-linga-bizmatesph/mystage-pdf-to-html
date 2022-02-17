@@ -463,13 +463,16 @@ td {
   .html-lesson-wrapper .office-section .conversation .speech.akiko-2 {
     left: 21%;
   }
+  .html-lesson-wrapper .office-section .conversation .speech.glen-1 {
+    right: 18%;
+  }
 }
 
 .html-lesson-wrapper .office-section .conversation .speech.glen-1 {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-speech-glen-1.png);
-  margin-top: 13%;
+  margin-top: 12%;
   right: 19%;
-  padding: 1.5% 4.5% 2% 1.5%;
+  padding: 1.5% 4.5% 3% 1.5%;
 }
 
 .html-lesson-wrapper .office-section .conversation .speech.glen-1 .eng {

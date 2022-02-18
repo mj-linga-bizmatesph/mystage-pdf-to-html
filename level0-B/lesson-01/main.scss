@@ -13,8 +13,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-// $s3: "/level0-A/lesson-01/images";
-$s3: '../../images';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;

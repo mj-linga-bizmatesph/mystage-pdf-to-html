@@ -125,7 +125,7 @@ body {
   height: fit-content;
   padding-right: 60px;
   padding-left: clamp(50px, 14%, 126.5px);
-  min-height: calc(min(145px, 18vw));
+  min-height: min(145px, 18vw);
   background: #d4e6f0;
   font-size: clamp(6px, 1.8vw, 15px);
 }

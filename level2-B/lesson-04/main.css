@@ -74,7 +74,7 @@ body {
 .html-lesson-wrapper aside {
   position: absolute;
   left: 8px;
-  top: calc(min(24vw, 175px));
+  top: min(24vw, 175px);
   width: 20.65%;
   min-width: 82px;
   max-width: 168px;
@@ -230,7 +230,7 @@ body {
     min-height: 125.68vw;
   }
   .html-lesson-wrapper .section {
-    left: clamp(-158px, calc(-28% - 34px), -100px);
+    left: clamp(-158px, -28% - 34px, -100px);
     padding-top: 5px;
   }
   .html-lesson-wrapper .see-content .conversation .row p:first-child {

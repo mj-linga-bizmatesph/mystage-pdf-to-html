@@ -527,7 +527,7 @@ body {
     min-width: 30px;
   }
   .html-lesson-wrapper .try-content .desc ul {
-    line-height: clamp(9px, 2.0vw, 18px) !important;
+    line-height: clamp(9px, 2vw, 18px) !important;
   }
   .html-lesson-wrapper .try-content .col {
     margin-right: clamp(30px, 4.3vw, 60px);

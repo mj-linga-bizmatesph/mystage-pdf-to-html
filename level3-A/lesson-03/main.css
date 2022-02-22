@@ -74,7 +74,7 @@ body {
 .html-lesson-wrapper aside {
   position: absolute;
   left: 8px;
-  top: calc(min(24vw, 175px));
+  top: min(24vw, 175px);
   min-width: 75px;
   max-width: 168px;
   font-size: clamp(7px, 1.8vw, 15px);
@@ -196,7 +196,7 @@ body {
   }
   .html-lesson-wrapper aside .text {
     padding-bottom: clamp(24px, 6vw, 32px) !important;
-    min-height: calc(max(12vw, 50px));
+    min-height: max(12vw, 50px);
   }
   .html-lesson-wrapper .see-content .conversation .row p:first-child {
     min-width: clamp(30px, 7.3vw, 60px) !important;
@@ -215,7 +215,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
-    left: clamp(-158px, calc(-28% - 34px), -100px);
+    left: clamp(-158px, -28% - 34px, -100px);
     padding-top: 5px;
   }
   .html-lesson-wrapper table td,

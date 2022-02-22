@@ -108,7 +108,7 @@ body {
 }
 .html-lesson-wrapper .see-content {
   position: relative;
-  margin-left: clamp(1px, 15%, $left-pixel);
+  margin-left: clamp(1px, 15%, 126.5px);
   margin-top: clamp(30px, 30%, 230px);
   font-size: clamp(10px, 2vw, 15px);
 }
@@ -157,7 +157,7 @@ body {
 .html-lesson-wrapper .try-content {
   position: relative;
   margin-top: 30px;
-  margin-left: clamp(1px, 15%, $left-pixel);
+  margin-left: clamp(1px, 15%, 126.5px);
   padding-left: 18.5px;
   font-size: clamp(10px, 2vw, 15px);
 }
@@ -185,7 +185,7 @@ body {
 .html-lesson-wrapper .act-content {
   position: relative;
   margin-top: 30px;
-  margin-left: clamp(1px, 15%, $left-pixel);
+  margin-left: clamp(1px, 15%, 126.5px);
   padding-left: 18.5px;
   font-size: clamp(10px, 2vw, 15px);
 }

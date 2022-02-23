@@ -141,6 +141,7 @@ td {
 
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(16px, 4.5vw, 26px);
+  font-family: "Noto Sans";
 }
 
 .html-lesson-wrapper .title-section .sub-title {
@@ -442,7 +443,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .eng {
-  font-size: clamp(8px, 2vw, 16px);
+  font-size: clamp(8px, 2.2vw, 16px);
   text-align: center;
   border-radius: 3px;
   font-family: "Noto Sans";

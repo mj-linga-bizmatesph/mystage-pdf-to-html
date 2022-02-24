@@ -108,7 +108,7 @@ td {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: -1.3px;
   color: #7f8288;
   font-family: "Noto Sans";
   font-size: clamp(7px, 1.8vw, 11px);
@@ -120,11 +120,11 @@ td {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.5%;
+  right: 6.6%;
   width: 1.9%;
   text-align: center;
-  margin-top: 0.5%;
-  font-size: clamp(20px, 6vw, 30px);
+  margin-top: 0.8%;
+  font-size: clamp(17px, 4.5vw, 26px);
   color: #ffffff;
 }
 
@@ -142,11 +142,12 @@ td {
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(16px, 4.5vw, 26px);
   font-family: "Noto Sans";
+  margin-bottom: 0.5%;
 }
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -0.5px;
+  letter-spacing: -1.3px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -162,7 +163,7 @@ td {
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
-  left: 28%;
+  left: 26%;
 }
 
 .html-lesson-wrapper .instructions .title {
@@ -173,7 +174,7 @@ td {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -0.5px;
+  letter-spacing: -1.3px;
 }
 
 .html-lesson-wrapper .office-section.office-see-1 {
@@ -227,10 +228,10 @@ td {
 
 .html-lesson-wrapper .office-section .name {
   position: absolute;
-  border-radius: clamp(5px, 1vw, 10px);
-  border: 1px solid black;
+  border-radius: clamp(4px, 1vw, 7px);
+  border: 0.25px solid #231f20;
   background: white;
-  padding: 1.3% 1.8%;
+  padding: 1.6% 2.5%;
   font-size: clamp(7px, 2vw, 10px);
   color: #2d356b;
 }
@@ -241,8 +242,8 @@ td {
 }
 
 .html-lesson-wrapper .office-section .name.ken-1 {
-  right: 15%;
-  margin-top: 38%;
+  right: 13%;
+  margin-top: 34%;
 }
 
 .html-lesson-wrapper .office-section .name.akiko-2 {
@@ -579,7 +580,7 @@ td {
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -0.5px;
+  letter-spacing: -1.3px;
   color: #7f8288;
 }
 

@@ -260,11 +260,11 @@ hr {
 
   .section-1-convo {
     margin-top: 30px;
-    width: clamp(310px, 86vw, 540px);
+    width: 100%;
     min-height: clamp(230px, 60vw, 380px);
     position: relative;
     background-position: top, bottom;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(#{$s3}/0-section1-convo.png);
 
@@ -378,7 +378,7 @@ hr {
         padding-bottom: clamp(0.2px, 1vw, 6.5px);
         padding-right: clamp(6px, 2vw, 13.5px);
         background-color: #ffffff;
-        font-size: clamp(6px, 1vw, 10px);
+        font-size: clamp(6px, 2vw, 10px);
         border-style: solid;
         border-color: #d0d2d3;
         border-width: 0.5px;
@@ -398,7 +398,7 @@ hr {
         padding-bottom: clamp(0.2px, 1vw, 6.5px);
         padding-right: clamp(6px, 2vw, 13.5px);
         background-color: #ffffff;
-        font-size: clamp(6px, 1vw, 10px);
+        font-size: clamp(6px, 2vw, 10px);
         border-style: solid;
         border-color: #d0d2d3;
         border-width: 0.5px;
@@ -733,6 +733,7 @@ hr {
 
       .try-2-row-1 {
         margin-bottom: clamp(30px, 12vw, 100px);
+        position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
@@ -748,14 +749,16 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .bubble {
+          position: absolute;
+          right: 0;
           font-size: clamp(10px, 2.6vw, 21px);
-          padding-top: clamp(20.4px, 4.9vw, 40px);
+          padding-top: clamp(20.4px, 6vw, 40px);
           padding-left: clamp(20px, 4vw, 40px);
           padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          margin-left: clamp(238px, 65vw, 390px);
+          padding-right: clamp(29px, 3vw, 6px);
           margin-top: clamp(-50px, -50vw, -22px);
-          width: clamp(40px, 10.3vw, 100px);
+          text-align: center;
+          width: clamp(50px, 16.3vw, 130px);
           color: #2d356b;
           min-height: clamp(60px, 40vw, 330px);
           position: absolute;
@@ -767,6 +770,7 @@ hr {
 
       .try-2-row-2 {
         margin-bottom: clamp(30px, 12vw, 100px);
+        position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
@@ -784,13 +788,14 @@ hr {
         }
         .bubble {
           font-size: clamp(10px, 2.6vw, 21px);
-          padding-top: clamp(15.4px, 4.9vw, 30px);
-          padding-left: clamp(19px, 4vw, 30px);
+          position: absolute;
+          right: 0;
+          padding-top: clamp(20.4px, 4.5vw, 30px);
+          padding-left: clamp(19px, 5vw, 30px);
           padding-bottom: clamp(7px, 2vw, 6px);
           padding-right: clamp(29px, 2vw, 6px);
-          margin-left: clamp(230px, 62vw, 360px);
           margin-top: clamp(-50px, -50vw, -22px);
-          width: clamp(47px, 14.3vw, 130px);
+          width: clamp(70px, 16.3vw, 150px);
           color: #2d356b;
           min-height: clamp(60px, 40vw, 350px);
           position: absolute;
@@ -802,6 +807,7 @@ hr {
 
       .try-2-row-3 {
         margin-bottom: clamp(50px, 12vw, 100px);
+        position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
@@ -822,11 +828,12 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .bubble {
-          padding-top: clamp(17.4px, 4.9vw, 30px);
-          padding-left: clamp(17px, 4vw, 40px);
+          position: absolute;
+          right: 0;
+          padding-top: clamp(17.4px, 4vw, 30px);
+          padding-left: clamp(17px, 5vw, 40px);
           padding-bottom: clamp(7px, 2vw, 6px);
           padding-right: clamp(29px, 2vw, 6px);
-          margin-left: clamp(215px, 58vw, 340px);
           margin-top: clamp(-50px, -50vw, -22px);
           width: clamp(70px, 16.3vw, 150px);
           color: #2d356b;
@@ -850,6 +857,7 @@ hr {
       }
 
       .try-2-row-4 {
+        position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
@@ -870,13 +878,13 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .bubble {
-          padding-top: clamp(17.4px, 4.9vw, 30px);
+          position: absolute;
+          right: 0;
+          padding-top: clamp(17.4px, 4vw, 30px);
           padding-left: clamp(17px, 4vw, 40px);
           padding-bottom: clamp(7px, 2vw, 6px);
           padding-right: clamp(29px, 2vw, 6px);
-          margin-left: clamp(215px, 58vw, 340px);
           margin-top: clamp(-50px, -50vw, -22px);
-
           width: clamp(70px, 16.3vw, 150px);
           color: #2d356b;
           min-height: clamp(70px, 40vw, 330px);
@@ -1096,7 +1104,7 @@ hr {
             padding-bottom: clamp(0.2px, 1vw, 5px);
             padding-right: clamp(6px, 2vw, 12px);
             background-color: #ffffff;
-            font-size: clamp(6px, 1vw, 10px);
+            font-size: clamp(6px, 2vw, 10px);
             border-style: solid;
             border-color: #d0d2d3;
             border-width: 0.5px;
@@ -1116,7 +1124,7 @@ hr {
             padding-bottom: clamp(0.2px, 1vw, 5px);
             padding-right: clamp(6px, 2vw, 12px);
             background-color: #ffffff;
-            font-size: clamp(6px, 1vw, 10px);
+            font-size: clamp(6px, 2vw, 10px);
             border-style: solid;
             border-color: #d0d2d3;
             border-width: 0.5px;
@@ -1262,7 +1270,7 @@ hr {
             padding-bottom: clamp(0.2px, 1vw, 5px);
             padding-right: clamp(6px, 2vw, 12px);
             background-color: #ffffff;
-            font-size: clamp(6px, 1vw, 10px);
+            font-size: clamp(6px, 2vw, 10px);
             border-style: solid;
             border-color: #d0d2d3;
             border-width: 0.5px;
@@ -1282,7 +1290,7 @@ hr {
             padding-bottom: clamp(0.2px, 1vw, 5px);
             padding-right: clamp(6px, 2vw, 12px);
             background-color: #ffffff;
-            font-size: clamp(6px, 1vw, 10px);
+            font-size: clamp(6px, 2vw, 10px);
             border-style: solid;
             border-color: #d0d2d3;
             border-width: 0.5px;

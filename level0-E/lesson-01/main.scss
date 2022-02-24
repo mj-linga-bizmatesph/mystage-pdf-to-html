@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
-// $noto-sans: "Noto Sans JP";
 $noto-sans: 'Noto Sans';
 
 $primary-blue: #1287cd;
@@ -80,7 +79,6 @@ td {
   .u-blue {
     text-decoration: underline;
     color: $primary-blue;
-    // border-bottom: 1px solid $primary-blue;
   }
   .primary-blue {
     color: $primary-blue;
@@ -369,7 +367,6 @@ td {
     &.see-3 {
       margin-top: 7%;
 
-      //see-content.legend
       .legend {
         margin-top: 7%;
       }
@@ -387,7 +384,6 @@ td {
     }
 
     .phrases-section {
-      //base
       .yellow {
         background: #ffe200;
       }

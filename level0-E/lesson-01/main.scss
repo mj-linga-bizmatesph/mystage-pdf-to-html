@@ -161,10 +161,10 @@ td {
     padding: clamp(10px, 3vw, 16px) clamp(20px, 6vw, 32px);
     width: 100%;
     box-sizing: border-box;
+    font-family: $noto-sans;
 
     .title {
       font-size: clamp(16px, 4.5vw, 26px);
-      font-family: $noto-sans;
       margin-bottom: 0.5%;
     }
     .sub-title {

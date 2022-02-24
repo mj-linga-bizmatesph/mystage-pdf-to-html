@@ -1147,6 +1147,7 @@ hr {
               padding-right: 20px;
               color: #1288cd;
               font-size: clamp(10px, 2.1vw, 14px);
+              font-weight: bold;
             }
 
             .akiko-line-1 {
@@ -1155,7 +1156,7 @@ hr {
 
             .number-right {
               margin-left: 10px;
-              padding: clamp(3px, 0.2vw, 6px) clamp(6px, 0.5vw, 6px);
+              padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
               color: white;
               font-size: clamp(10px, 2.1vw, 14px);
               font-weight: bold;

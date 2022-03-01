@@ -1,7 +1,6 @@
-$text-font: "Trebuchet MS";
-$title-font: "Arial";
-// $noto-sans: "Noto Sans JP";
-$noto-sans: "Noto Sans";
+$text-font: 'Trebuchet MS';
+$title-font: 'Arial';
+$noto-sans: 'Noto Sans';
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -12,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: "/level0-A/images";
+$s3: 'http://127.0.0.1:8887';
 
 body {
   margin: 0;
@@ -69,6 +68,9 @@ td {
   .noto-sans {
     font-family: $noto-sans;
   }
+  .exclude-letter-spacing {
+    letter-spacing: normal;
+  }
   .b {
     font-weight: bold;
   }
@@ -80,7 +82,6 @@ td {
   .u-blue {
     text-decoration: underline;
     color: $primary-blue;
-    // border-bottom: 1px solid $primary-blue;
   }
   .primary-blue {
     color: $primary-blue;
@@ -92,23 +93,37 @@ td {
     margin-top: clamp(1px, 1vw, 5px);
 
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
+        clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px)
+        clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
+      background: -webkit-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
+      background: -o-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
+      background: -moz-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
@@ -117,50 +132,73 @@ td {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(10px, 2vw, 14px);
+    font-size: clamp(9px, 2vw, 14px);
   }
   .jap {
-    letter-spacing: -2px;
+    letter-spacing: -1.3px;
     color: $subtext-color;
     font-family: $noto-sans;
-    font-size: clamp(8px, 2vw, 11px);
+    font-size: clamp(7px, 1.8vw, 11px);
   }
   .line {
     margin: 0 12px;
   }
   .lesson-number {
     position: absolute;
-    right: 7%;
+    right: 6.6%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: 0.8%;
+    font-size: clamp(17px, 4.5vw, 26px);
+    color: #ffffff;
+  }
+  .eng {
+    font-weight: bold;
+    font-size: clamp(9px, 2vw, 14px);
+  }
+  .jap {
+    letter-spacing: -0.5px;
+    color: $subtext-color;
+    font-family: $noto-sans;
+    font-size: clamp(7px, 1.8vw, 11px);
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .lesson-number {
+    position: absolute;
+    right: 6.5%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
-    font-size: clamp(20px, 6vw, 35px);
+    font-size: clamp(18px, 4vw, 28px);
     color: #ffffff;
   }
 
-  // Title
   .title-section {
     position: absolute;
     top: clamp(30px, 8vw, 50px);
     background-color: $primary-blue;
     color: white;
-    padding: clamp(15px, 3.5vw, 20px) clamp(25px, 4.8vw, 30px) clamp(9px, 3vw, 15px);
+    padding: clamp(10px, 3vw, 16px) clamp(20px, 6vw, 32px);
     width: 100%;
     box-sizing: border-box;
+    font-family: $noto-sans;
 
     .title {
       font-size: clamp(16px, 4.5vw, 26px);
+      margin-bottom: 0.5%;
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -2px;
+      letter-spacing: -1.3px;
     }
   }
   .arrow {
     @extend .b;
     text-transform: uppercase;
     font-size: clamp(12px, 2.3vw, 16px);
-    padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
+    padding: 2.4% 3.5%;
     background-repeat: no-repeat;
     background-size: contain;
     font-family: $noto-sans;
@@ -169,7 +207,7 @@ td {
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
-    left: 28%;
+    left: clamp(28%, 50vw, 26%);
 
     .title {
       font-size: clamp(12px, 3.5vw, 18px);
@@ -178,20 +216,20 @@ td {
     .sub-title {
       font-size: clamp(9px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -2px;
+      letter-spacing: -1.3px;
     }
   }
 
   //office section
   .office-section {
     &.office-see-1 {
-      margin-top: clamp(20px, 6.5vw, 29px);
+      margin-top: 6%;
     }
     &.office-act-1 {
-      margin-top: clamp(20px, 6.5vw, 29px);
+      margin-top: 6%;
     }
     &.office-try-4 {
-      margin-top: clamp(23px, 6.5vw, 35px);
+      margin-top: 10%;
     }
 
     .legend {
@@ -201,7 +239,8 @@ td {
         &.right {
           @extend .b;
           font-size: clamp(18px, 3vw, 25px);
-          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px) clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
+          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px)
+            clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
           background-color: #ebebeb;
           margin-top: 2px;
           color: #2d356b;
@@ -232,10 +271,10 @@ td {
     .name {
       @extend .b;
       position: absolute;
-      border-radius: clamp(5px, 1vw, 10px);
-      border: 1px solid black;
+      border-radius: clamp(4px, 1vw, 7px);
+      border: 0.25px solid #231f20;
       background: white;
-      padding: clamp(5px, 1.5vw, 9px) clamp(9px, 1.5vw, 14px);
+      padding: 1% 1.2%;
       font-size: clamp(7px, 2vw, 10px);
       color: #2d356b;
 
@@ -331,7 +370,12 @@ td {
   }
 
   .plus {
-    font-size: 32px;
+    display: flex;
+    align-content: center;
+    & > img {
+      width: auto;
+      height: clamp(10px, 5vw, 15px);
+    }
   }
 
   // See-content
@@ -339,30 +383,77 @@ td {
     margin-left: $side-margin;
     margin-right: $side-margin;
 
+    .phrase-alts {
+      display: grid;
+      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+      gap: 13px;
+
+      &.half {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .alt-box {
+        padding: 15px;
+        border: 1px solid $primary-blue;
+      }
+
+      .alt {
+        display: flex;
+        align-items: baseline;
+      }
+
+      .alt:not(:last-child) {
+        margin-bottom: clamp(10px, 2vw, 20px);
+      }
+
+      .choice {
+        margin-left: clamp(5px, 1vw, 9px);
+        p {
+          margin: 0;
+          white-space: nowrap;
+          font-family: $noto-sans;
+        }
+      }
+
+      .choice-eng {
+        font-size: clamp(9px, 2vw, 18px);
+      }
+
+      .choice-jap {
+        font-size: clamp(6.7px, 1.8vw, 13px);
+        letter-spacing: -2px;
+      }
+    }
+
     &.see-1 {
-      margin-top: clamp(110px, 28vw, 173.2px);
+      margin-top: 29%;
     }
 
     &.see-2,
     &.see-3 {
-      margin-top: clamp(20px, 5vw, 33px);
+      margin-top: 5.5%;
 
       //see-content.legend
       & .legend {
-        margin-top: clamp(25px, 5vw, 38px);
+        margin-top: 7%;
+      }
+    }
+
+    &.see-2 {
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+    }
+
+    &.see-3 {
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
       }
     }
 
     .arrow.see {
-      @extend .b;
-      text-transform: uppercase;
       color: $primary-blue;
-      font-size: clamp(12px, 2.3vw, 16px);
       background-image: url(#{$s3}/0-see-arrow.png);
-      padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
-      background-repeat: no-repeat;
-      background-size: contain;
-      font-family: $noto-sans;
     }
 
     .phrases-section {
@@ -377,25 +468,44 @@ td {
         background: #ffb2b0;
       }
 
-      .yellow-piece {
-        background: url(#{$s3}/0-yellow-piece.png);
-      }
-      .blue-piece {
-        background: url(#{$s3}/0-blue-piece.png);
-      }
-      .red-piece {
-        background: url(#{$s3}/0-red-piece.png);
-      }
-      .green-piece {
-        background: url(#{$s3}/0-green-piece.png);
-      }
       .yellow-piece,
       .green-piece,
       .red-piece,
       .blue-piece {
         background-position: center;
-        background-size: contain;
+        background-size: auto 100%;
         background-repeat: no-repeat;
+      }
+      .yellow-piece {
+        background-image: url(#{$s3}/0-yellow-piece.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 226, 0, 1) 80%,
+            rgba(255, 255, 255, 0) 80%
+          );
+        background-position: right;
+      }
+      .blue-piece {
+        background-image: url(#{$s3}/0-blue-piece.png);
+      }
+      .red-piece {
+        background-image: url(#{$s3}/0-red-piece.png),
+          linear-gradient(
+            90deg,
+            rgb(255, 178, 176) 80%,
+            rgba(255, 255, 255, 0) 80%
+          );
+        background-position: right;
+      }
+      .green-piece {
+        background-image: url(#{$s3}/0-green-piece.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(195, 232, 230, 1) 20%
+          );
+
+        background-position: left;
       }
 
       .icon {
@@ -451,7 +561,7 @@ td {
         }
 
         .steve-1 {
-          margin-top: 5%;
+          margin-top: 3%;
           display: grid;
           grid-template-columns: 1fr min-content;
 
@@ -481,48 +591,6 @@ td {
           padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         }
       }
-
-      .phrase-alts {
-        display: grid;
-        grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-        gap: 13px;
-
-        &.half {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .alt-box {
-          padding: 15px;
-          border: 1px solid $primary-blue;
-        }
-
-        .alt {
-          display: flex;
-          align-items: baseline;
-        }
-
-        .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
-        }
-
-        .choice {
-          margin-left: clamp(5px, 1vw, 9px);
-          p {
-            margin: 0;
-            white-space: nowrap;
-            font-family: $noto-sans;
-          }
-        }
-
-        .choice-eng {
-          font-size: clamp(9px, 2vw, 18px);
-        }
-
-        .choice-jap {
-          font-size: clamp(6.7px, 1.8vw, 13px);
-          letter-spacing: -2px;
-        }
-      }
     }
   }
   .try-content {
@@ -530,9 +598,10 @@ td {
     margin-right: $side-margin;
 
     &.try-1,
+    &.try-2,
     &.try-3,
     &.try-4 {
-      margin-top: 32px;
+      margin-top: 6%;
     }
 
     &.try-1 {
@@ -548,7 +617,7 @@ td {
 
         .combination {
           align-items: center;
-          margin-bottom: clamp(5px, 2vw, 10px);
+          margin-bottom: 8%;
 
           & > div:not(:last-child) {
             margin-right: clamp(5px, 2vw, 10px);
@@ -558,8 +627,6 @@ td {
     }
 
     &.try-2 {
-      margin-top: 50px;
-
       .table {
         margin-top: 13%;
         font-family: $noto-sans;
@@ -572,17 +639,24 @@ td {
           }
         }
         tr > td:nth-child(1) {
-          @extend .primary-blue;
+          @extend .primary-blue, .b;
+          font-family: $noto-sans;
+          font-size: clamp(10px, 3vw, 16px);
+        }
+        tr > td:nth-child(2) {
+          width: 1%;
+        }
+        tr > td:nth-child(3) {
+          padding-bottom: 5%;
+          text-align: center;
         }
       }
     }
 
     &.try-3 {
-      margin-top: 50px;
-
       .combinations {
         grid-template-columns: 1fr 1fr min-content;
-        margin-top: clamp(20px, 5vw, 32px);
+        margin-top: 5%;
 
         .combination-icon {
           height: clamp(119px, 20vw, 180px);
@@ -592,10 +666,10 @@ td {
         .combination {
           align-items: center;
           justify-content: center;
-          margin-bottom: clamp(5px, 2vw, 10px);
+          margin-bottom: 13%;
 
           & > div:not(:last-child) {
-            margin-right: clamp(5px, 2vw, 10px);
+            margin-right: 4%;
           }
         }
       }
@@ -646,6 +720,9 @@ td {
           margin-top: 38.5%;
         }
       }
+      .blue-line {
+        margin-top: 6%;
+      }
     }
 
     .arrow.try {
@@ -666,16 +743,28 @@ td {
     margin-right: $side-margin;
     &.act-1,
     &.act-2 {
-      margin-top: 32px;
+      margin-top: 7%;
     }
     &.act-2 {
       margin-bottom: 50px;
+    }
+
+    &.act-1 {
+      .blue-line {
+        margin-top: 5%;
+      }
     }
 
     .arrow.act {
       color: white;
       background-image: url(#{$s3}/0-act-arrow.png);
     }
+  }
+  .blue-line {
+    width: 15px;
+    height: 2px;
+    border-bottom: 2px solid $primary-blue;
+    margin-bottom: 5px;
   }
   .table {
     width: 100%;
@@ -687,15 +776,18 @@ td {
       padding-right: 10px;
       white-space: nowrap;
       width: 1%;
+      padding-top: 0.8%;
     }
 
     .eng {
       font-family: $noto-sans;
       font-weight: normal;
       font-size: clamp(12px, 3.5vw, 18px);
+      margin-bottom: 1%;
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
+      margin-bottom: 3.8%;
     }
   }
 }

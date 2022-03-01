@@ -20,15 +20,12 @@ body {
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
-
 .html-lesson-wrapper header {
   font-family: "Arial";
 }
-
 .html-lesson-wrapper .b {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
@@ -36,30 +33,25 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
-
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #257a9e;
   font-size: clamp(8px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
   font-size: clamp(8px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .line {
   margin: 0 12px;
 }
-
 .html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
   left: 6%;
   font-size: clamp(12px, 3vw, 27px);
 }
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   left: 91.65%;
@@ -69,12 +61,10 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
 .html-lesson-wrapper .sub-text {
   font-family: "Arial" !important;
   line-height: 26px;
 }
-
 .html-lesson-wrapper .lesson-list {
   font-family: "Trebuchet MS";
   font-size: clamp(10px, 2vw, 15px);
@@ -82,23 +72,19 @@ body {
   margin-left: 18%;
   margin-right: 15px;
 }
-
 .html-lesson-wrapper .lesson-list .sub-text.test {
   position: absolute;
   left: 7%;
   color: #257a9e;
 }
-
 .html-lesson-wrapper .lesson-list .text {
   margin-top: 30px;
   display: block;
 }
-
 .html-lesson-wrapper .lesson-list span {
   display: block;
   line-height: 24px;
 }
-
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.2vw, 9px);
   position: absolute;

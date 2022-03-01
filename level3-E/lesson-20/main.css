@@ -107,7 +107,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
-    left: clamp(-158px, calc(-28% - 34px), -100px);
+    left: clamp(-158px, -28% - 34px, -100px);
     padding-top: 5px;
   }
 }

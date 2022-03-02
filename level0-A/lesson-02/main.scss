@@ -207,7 +207,7 @@ td {
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
-    left: clamp(28%, 50vw, 26%);
+    left: 27%;
 
     .title {
       font-size: clamp(12px, 3.5vw, 18px);
@@ -422,6 +422,7 @@ td {
       .choice-jap {
         font-size: clamp(6.7px, 1.8vw, 13px);
         letter-spacing: -2px;
+        color: $subtext-color;
       }
     }
 

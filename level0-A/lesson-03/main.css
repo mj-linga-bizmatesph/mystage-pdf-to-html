@@ -211,7 +211,7 @@ td {
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
-  left: clamp(28%, 50vw, 26%);
+  left: 27%;
 }
 
 .html-lesson-wrapper .instructions .title {
@@ -445,6 +445,7 @@ td {
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
   letter-spacing: -2px;
+  color: #7f8288;
 }
 
 .html-lesson-wrapper .see-content.see-1 {
@@ -520,6 +521,7 @@ td {
 
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
   background-image: url(http://127.0.0.1:8887/0-blue-piece.png);
+  background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .red-piece {
@@ -616,7 +618,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .steve-1 .phrase:not(:last-child) {
-  margin-right: 20px;
+  margin-right: clamp(5px, 1.5vw, 10px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .steve-1 .phrases-wrapper {

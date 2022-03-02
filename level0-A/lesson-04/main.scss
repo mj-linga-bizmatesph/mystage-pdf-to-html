@@ -334,6 +334,30 @@ td {
         }
       }
     }
+
+    &.office-act-1 {
+      margin-top: 6%;
+
+      .name {
+        &.akiko {
+          right: 27%;
+          margin-top: 32%;
+        }
+        &.steve {
+          margin-top: 31%;
+          left: 25%;
+        }
+      }
+
+      .bubble {
+        &.steve {
+          background-image: url(#{$s3}/0-4-speech-bubble-steve-1.png);
+          padding: 3% 7% 6% 6%;
+          margin-top: 4%;
+          left: 33%;
+        }
+      }
+    }
   }
 
   //number
@@ -671,6 +695,28 @@ td {
     }
 
     &.try-1 {
+      .combinations {
+        grid-template-columns: 1fr 1fr min-content;
+        margin-top: 8%;
+
+        .combination-icon {
+          height: clamp(119px, 20vw, 180px);
+          width: clamp(119px, 20vw, 180px);
+        }
+
+        .combination {
+          align-items: center;
+          justify-content: left;
+          margin-bottom: 13%;
+
+          & > div:not(:last-child) {
+            margin-right: 4%;
+          }
+        }
+      }
+    }
+
+    &.try-2 {
       .table-wrapper-section {
         margin-top: 15%;
         .table-wrapper {
@@ -681,10 +727,11 @@ td {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 3px;
+            padding-top: 6px;
           }
           .table-img {
             width: 34%;
+            text-align: right;
           }
 
           &:not(:last-child) {
@@ -721,28 +768,6 @@ td {
       }
     }
 
-    &.try-2 {
-      .combinations {
-        grid-template-columns: 1fr 1fr min-content;
-        margin-top: 8%;
-
-        .combination-icon {
-          height: clamp(119px, 20vw, 180px);
-          width: clamp(119px, 20vw, 180px);
-        }
-
-        .combination {
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 13%;
-
-          & > div:not(:last-child) {
-            margin-right: 4%;
-          }
-        }
-      }
-    }
-
     &.try-3 {
       .table-wrapper-section {
         margin-top: 15%;
@@ -754,11 +779,12 @@ td {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 3px;
+            padding-top: 6px;
           }
           .table-img {
-            width: 34%;
-            text-align: right;
+            width: 38%;
+            text-align: center;
+            padding-right: 1%;
           }
 
           &:not(:last-child) {

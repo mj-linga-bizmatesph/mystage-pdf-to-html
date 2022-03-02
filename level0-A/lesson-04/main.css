@@ -83,7 +83,7 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-1 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .name {
   font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ td {
   color: #1287cd;
 }
 
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
+.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
   color: #1287cd;
 }
 
@@ -333,6 +333,27 @@ td {
   padding: 2% 1% 10% 2%;
   margin-top: 6%;
   right: 12%;
+}
+
+.html-lesson-wrapper .office-section.office-act-1 {
+  margin-top: 6%;
+}
+
+.html-lesson-wrapper .office-section.office-act-1 .name.akiko {
+  right: 27%;
+  margin-top: 32%;
+}
+
+.html-lesson-wrapper .office-section.office-act-1 .name.steve {
+  margin-top: 31%;
+  left: 25%;
+}
+
+.html-lesson-wrapper .office-section.office-act-1 .bubble.steve {
+  background-image: url(http://127.0.0.1:8887/0-4-speech-bubble-steve-1.png);
+  padding: 3% 7% 6% 6%;
+  margin-top: 4%;
+  left: 33%;
 }
 
 .html-lesson-wrapper .number {
@@ -683,83 +704,84 @@ td {
   margin-top: 6%;
 }
 
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section {
-  margin-top: 15%;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper {
-  width: 100%;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper p {
-  margin: 0;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
-  padding-top: 3px;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-img {
-  width: 34%;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 5%;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 25vw, 100%);
-  padding-left: 5%;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table {
-  font-family: "Noto Sans";
-  border-collapse: collapse;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table td {
-  font-size: clamp(10px, 3vw, 18px);
-}
-
-.html-lesson-wrapper .try-content.try-1 .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-}
-
-.html-lesson-wrapper .try-content.try-1 .table td:nth-child(2) {
-  padding-bottom: 7%;
-}
-
-.html-lesson-wrapper .try-content.try-2 .combinations {
+.html-lesson-wrapper .try-content.try-1 .combinations {
   -ms-grid-columns: 1fr 1fr min-content;
       grid-template-columns: 1fr 1fr -webkit-min-content;
       grid-template-columns: 1fr 1fr min-content;
   margin-top: 8%;
 }
 
-.html-lesson-wrapper .try-content.try-2 .combinations .combination-icon {
+.html-lesson-wrapper .try-content.try-1 .combinations .combination-icon {
   height: clamp(119px, 20vw, 180px);
   width: clamp(119px, 20vw, 180px);
 }
 
-.html-lesson-wrapper .try-content.try-2 .combinations .combination {
+.html-lesson-wrapper .try-content.try-1 .combinations .combination {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-bottom: 13%;
 }
 
-.html-lesson-wrapper .try-content.try-2 .combinations .combination > div:not(:last-child) {
+.html-lesson-wrapper .try-content.try-1 .combinations .combination > div:not(:last-child) {
   margin-right: 4%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section {
+  margin-top: 15%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
+  width: 100%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper p {
+  margin: 0;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 6px;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
+  width: 34%;
+  text-align: right;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
+  margin-bottom: 5%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper img {
+  max-width: clamp(44%, 25vw, 100%);
+  padding-left: 5%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table {
+  font-family: "Noto Sans";
+  border-collapse: collapse;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table td {
+  font-size: clamp(10px, 3vw, 18px);
+}
+
+.html-lesson-wrapper .try-content.try-2 .table td img {
+  max-width: clamp(44%, 16vw, 100%);
+  margin-bottom: 20px;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table .name {
+  font-size: clamp(10px, 3vw, 16px);
+  white-space: nowrap;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table td:nth-child(2) {
+  padding-bottom: 7%;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section {
@@ -776,12 +798,13 @@ td {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 3px;
+  padding-top: 6px;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img {
-  width: 34%;
-  text-align: right;
+  width: 38%;
+  text-align: center;
+  padding-right: 1%;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {

@@ -357,6 +357,11 @@ td {
   font-family: "Noto Sans";
 }
 
+.html-lesson-wrapper .office-section.office-act-1 .bubble.steve .eng {
+  font-weight: normal;
+  font-size: clamp(9px, 2.3vw, 16px);
+}
+
 .html-lesson-wrapper .number {
   border-radius: 50%;
   background: #1287cd;

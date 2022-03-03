@@ -356,6 +356,11 @@ td {
           margin-top: 4%;
           left: 33%;
           font-family: $noto-sans;
+
+          .eng {
+            font-weight: normal;
+            font-size: clamp(9px, 2.3vw, 16px);
+          }
         }
       }
     }

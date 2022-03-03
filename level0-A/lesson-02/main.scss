@@ -393,7 +393,7 @@ td {
       }
 
       .alt-box {
-        padding: 15px;
+        padding: clamp(7px, 3vw, 15px);
         border: 1px solid $primary-blue;
       }
 
@@ -461,12 +461,15 @@ td {
       //base
       .yellow {
         background: #ffe200;
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue {
         background: #c3e8e6;
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .red {
         background: #ffb2b0;
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
 
       .yellow-piece,
@@ -485,9 +488,19 @@ td {
             rgba(255, 255, 255, 0) 80%
           );
         background-position: right;
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue-piece {
-        background-image: url(#{$s3}/0-blue-piece.png);
+        background-image: url(#{$s3}/0-blue-piece.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgb(231, 243, 250) 20%
+          );
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
+        background-position: left;
       }
       .red-piece {
         background-image: url(#{$s3}/0-red-piece.png),
@@ -496,6 +509,8 @@ td {
             rgb(255, 178, 176) 80%,
             rgba(255, 255, 255, 0) 80%
           );
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         background-position: right;
       }
       .green-piece {
@@ -505,6 +520,8 @@ td {
             rgba(255, 255, 255, 0) 20%,
             rgba(195, 232, 230, 1) 20%
           );
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
 
         background-position: left;
       }
@@ -553,9 +570,6 @@ td {
           .icon {
             margin-right: 40px;
           }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
           .phrase:not(:last-child) {
             margin-right: 20px;
           }
@@ -569,11 +583,8 @@ td {
           .icon {
             margin-right: 40px;
           }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
           .phrase:not(:last-child) {
-            margin-right: 20px;
+            margin-right: clamp(10px, 4vw, 20px);
           }
           .phrases-wrapper {
             display: flex;
@@ -588,9 +599,10 @@ td {
         display: flex;
         justify-content: space-between;
 
-        & .eng {
-          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-        }
+        // & .eng {
+        //   padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px)
+        //     clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        // }
       }
     }
   }

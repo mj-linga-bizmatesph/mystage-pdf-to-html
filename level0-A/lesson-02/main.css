@@ -490,27 +490,27 @@ td {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
-  padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+  padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #e7f3fa));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #e7f3fa 20%);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
+  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .red-piece {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
-  padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+  padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .green-piece {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
+  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
 
@@ -564,11 +564,11 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .akiko-1 .icon {
-  margin-right: 40px;
+  margin-right: clamp(20px, 4.5vw, 40px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .akiko-1 .phrase:not(:last-child) {
-  margin-right: 20px;
+  margin-right: clamp(10px, 3.5vw, 20px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .steve-1 {
@@ -581,11 +581,11 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .steve-1 .icon {
-  margin-right: 40px;
+  margin-right: clamp(20px, 4.5vw, 40px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .steve-1 .phrase:not(:last-child) {
-  margin-right: clamp(10px, 4vw, 20px);
+  margin-right: clamp(10px, 3.5vw, 20px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .steve-1 .phrases-wrapper {

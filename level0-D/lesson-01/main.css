@@ -26,6 +26,13 @@ td {
   height: auto;
 }
 
+.small-line {
+  height: 2px;
+  width: 16px;
+  background: #1287cd;
+  margin-bottom: 1.5vw;
+}
+
 .trebuchet {
   font-family: "Trebuchet MS";
 }
@@ -356,8 +363,8 @@ td {
   margin-top: clamp(1rem, 9vw, 3.5rem);
   display: -ms-grid;
   display: grid;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: clamp(3px, 0.5vw, 10px);
+          column-gap: clamp(3px, 0.5vw, 10px);
   width: 100%;
   height: 100%;
   -ms-grid-columns: auto auto auto;
@@ -856,7 +863,7 @@ td {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .image-area {
-  margin-bottom: 3vw;
+  margin-bottom: 1vw;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .dan-speech {

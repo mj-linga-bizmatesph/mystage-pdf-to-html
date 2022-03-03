@@ -46,6 +46,13 @@ td {
   height: auto;
 }
 
+.small-line {
+  height: 2px;
+  width: 16px;
+  background: $primary-blue;
+  margin-bottom: 1.5vw;
+}
+
 .trebuchet {
   font-family: $text-font;
 }
@@ -371,7 +378,7 @@ td {
       .akiko-table {
         margin-top: clamp(1rem, 9vw, 3.5rem);
         display: grid;
-        column-gap: 10px;
+        column-gap: clamp(3px, 0.5vw, 10px);
         width: 100%;
         height: 100%;
         grid-template-columns: auto auto auto;
@@ -833,7 +840,7 @@ td {
       margin: clamp(20px, 6.5vw, 29px) 0 clamp(20px, 17vw, 7rem);
 
       .image-area {
-        margin-bottom: 3vw;
+        margin-bottom: 1vw;
       }
 
       .dan-speech {

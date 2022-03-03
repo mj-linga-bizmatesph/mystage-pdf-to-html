@@ -515,7 +515,7 @@ td {
             rgba(255, 255, 255, 0) 80%
           );
         background-position: right;
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px)
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
           clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue-piece {
@@ -526,7 +526,7 @@ td {
             rgb(231, 243, 250) 20%
           );
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left;
       }
       .red-piece {
@@ -536,7 +536,7 @@ td {
             rgb(255, 178, 176) 80%,
             rgba(255, 255, 255, 0) 80%
           );
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px)
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
           clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         background-position: right;
       }
@@ -548,7 +548,7 @@ td {
             rgba(195, 232, 230, 1) 20%
           );
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
@@ -563,7 +563,7 @@ td {
           ),
           url(#{$s3}/0-green-piece-start.png);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3vw, 25px);
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
       }

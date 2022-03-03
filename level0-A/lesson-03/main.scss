@@ -651,7 +651,7 @@ td {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 3px;
+            padding-top: 5px;
           }
           .table-img {
             width: 34%;

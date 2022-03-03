@@ -775,17 +775,17 @@ td {
   margin-bottom: 20px;
 }
 
+.html-lesson-wrapper .try-content.try-2 .table td:nth-child(2) {
+  padding-bottom: 6%;
+}
+
 .html-lesson-wrapper .try-content.try-2 .table .name {
   font-size: clamp(10px, 3vw, 16px);
   white-space: nowrap;
 }
 
-.html-lesson-wrapper .try-content.try-2 .table td:nth-child(2) {
-  padding-bottom: 7%;
-}
-
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper {
@@ -808,7 +808,7 @@ td {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 5%;
+  margin-bottom: 12%;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper img {
@@ -907,5 +907,5 @@ td {
 
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
-  margin-bottom: 3.6%;
+  margin-bottom: 3.8%;
 }

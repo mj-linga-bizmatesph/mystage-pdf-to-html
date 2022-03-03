@@ -418,7 +418,7 @@ td {
       }
 
       .alt-box {
-        padding: 15px;
+        padding: clamp(7px, 2vw, 15px);
         border: 1px solid $primary-blue;
 
         &.blue {
@@ -450,7 +450,7 @@ td {
 
       .choice-jap {
         font-size: clamp(6.7px, 1.8vw, 13px);
-        letter-spacing: -2px;
+        letter-spacing: -0.5px;
         color: $subtext-color;
       }
     }
@@ -472,6 +472,12 @@ td {
         background: #ffb2b0;
       }
 
+      .yellow,
+      .blue,
+      .red {
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+      }
+
       .yellow-piece,
       .green-piece,
       .red-piece,
@@ -489,9 +495,18 @@ td {
             rgba(255, 255, 255, 0) 80%
           );
         background-position: right;
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue-piece {
-        background-image: url(#{$s3}/0-blue-piece.png);
+        background-image: url(#{$s3}/0-blue-piece.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgb(231, 243, 250) 20%
+          );
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left;
       }
       .red-piece {
@@ -501,6 +516,8 @@ td {
             rgb(255, 178, 176) 80%,
             rgba(255, 255, 255, 0) 80%
           );
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         background-position: right;
       }
       .green-piece {
@@ -510,11 +527,13 @@ td {
             rgba(255, 255, 255, 0) 20%,
             rgba(195, 232, 230, 1) 20%
           );
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
       .green-piece-complete {
-        background-image: url(http://127.0.0.1:8887/0-green-piece-end.png),
+        background-image: url(#{$s3}/0-green-piece-end.png),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 8%,
@@ -522,7 +541,9 @@ td {
             #c3e8e6 80%,
             rgba(255, 255, 255, 0) 80%
           ),
-          url(http://127.0.0.1:8887/0-green-piece-start.png);
+          url(#{$s3}/0-green-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
       }
@@ -562,34 +583,9 @@ td {
         min-width: 100%;
       }
 
-      .conversation {
-        .steve-1 {
-          margin-top: 3%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-          .phrase:not(:last-child) {
-            margin-right: clamp(5px, 1.5vw, 10px);
-          }
-          .phrases-wrapper {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            margin-right: 2%;
-          }
-        }
-      }
-
       .legend {
         display: flex;
         justify-content: space-between;
-
-        & .eng {
-          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-        }
       }
     }
 
@@ -619,13 +615,10 @@ td {
           grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
 
           .icon {
-            margin-right: 40px;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            margin-right: clamp(20px, 4.5vw, 40px);
           }
           .phrase:not(:last-child) {
-            margin-right: 20px;
+            margin-right: clamp(10px, 3.5vw, 20px);
           }
         }
       }
@@ -646,14 +639,10 @@ td {
           grid-template-columns: 1fr min-content;
 
           .icon {
-            margin-right: 40px;
+            margin-right: clamp(20px, 4.5vw, 40px);
           }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-
           .jap {
-            letter-spacing: -2px;
+            letter-spacing: -0.5px;
           }
 
           .phrases-wrapper {
@@ -661,7 +650,7 @@ td {
             justify-content: right;
 
             .phrase:not(:last-child) {
-              margin-right: 20px;
+              margin-right: clamp(10px, 3.5vw, 20px);
             }
 
             .phrase:last-child {
@@ -669,6 +658,10 @@ td {
             }
           }
         }
+      }
+
+      .alt-box.left .alt {
+        margin-bottom: 3%;
       }
     }
 

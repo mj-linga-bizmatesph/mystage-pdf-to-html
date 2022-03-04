@@ -158,7 +158,11 @@ hr {
 
     .title {
       font-size: clamp(13px, 3.6vw, 23px);
-      padding-bottom: clamp(20px, 7vw, 50px);
+      margin-bottom: 4px;
+    }
+    .title-below{
+      font-size: clamp(13px, 3.6vw, 23px);
+      margin-bottom: 10px;
     }
     .sub-title {
       font-size: clamp(10px, 2.3vw, 15px);
@@ -316,7 +320,7 @@ hr {
   }
 
   .section-2-content {
-    margin-top: clamp(40px, 21vw, 70px);
+    margin-top: clamp(35px, 15vw, 50px);
 
     .wrapper-with-akiko {
       display: grid;
@@ -551,7 +555,7 @@ hr {
 
       .akiko-right-view {
         left: 2%;
-        margin-top: clamp(30px, 12vw, 50px);
+        margin-top: clamp(20px, 7vw, 30px);
         width: clamp(120px, 30vw, 191px);
         min-height: clamp(130px, 37vw, 191px);
         position: absolute;
@@ -571,6 +575,7 @@ hr {
           }
 
           ul li > .number {
+            @extend .b;
             border-radius: 50%;
             background: $primary-blue;
             color: white;
@@ -582,11 +587,12 @@ hr {
             font-family: $noto-sans;
             font-size: clamp(11px, 4vw, 16px);
             z-index: 1;
-            padding-left: clamp(5px, 1.4vw, 7px);
-            padding-right: clamp(5px, 1.4vw, 7px);
+            padding-left: clamp(5px, 1.4vw, 6px);
+            padding-right: clamp(5px, 1.4vw, 6px);
           }
 
           ul li > .number-white {
+            @extend .b;
             border: 1px solid $primary-blue;
             border-radius: 50%;
             background: white;
@@ -599,8 +605,8 @@ hr {
             font-family: $noto-sans;
             font-size: clamp(11px, 4vw, 16px);
             z-index: 1;
-            padding-left: clamp(5px, 1.4vw, 7px);
-            padding-right: clamp(5px, 1.4vw, 7px);
+            padding-left: clamp(5px, 1.4vw, 6px);
+            padding-right: clamp(5px, 1.4vw, 6px);
           }
 
           ul li > .plus {
@@ -622,10 +628,10 @@ hr {
             width: clamp(11px, 4vw, 20px);
             height: clamp(11px, 4vw, 20px);
             line-height: clamp(11px, 4vw, 20px);
-            font-size: clamp(9.5px, 2.5vw, 14px);
+            font-size: clamp(9.5px, 2.5vw, 16px);
             text-align: center;
-            padding-left: clamp(3px, 1.4vw, 7px);
-            padding-right: clamp(3px, 1.4vw, 7px);
+            padding-left: clamp(3px, 1.4vw, 6px);
+            padding-right: clamp(3px, 1.4vw, 6px);
           }
         }
 
@@ -650,11 +656,14 @@ hr {
             font-family: $noto-sans;
             font-size: clamp(11px, 4vw, 16px);
             z-index: 1;
-            padding-left: clamp(5px, 1.4vw, 7px);
-            padding-right: clamp(5px, 1.4vw, 7px);
+            padding-left: clamp(5px, 1.4vw, 6px);
+            padding-right: clamp(5px, 1.4vw, 6px);
+
+            
           }
 
           ul li > .number-white {
+            @extend .b;
             border: 1px solid $primary-blue;
             border-radius: 50%;
             background: white;
@@ -667,8 +676,8 @@ hr {
             font-family: $noto-sans;
             font-size: clamp(11px, 4vw, 16px);
             z-index: 1;
-            padding-left: clamp(5px, 1.4vw, 7px);
-            padding-right: clamp(5px, 1.4vw, 7px);
+            padding-left: clamp(5px, 1.4vw, 6px);
+            padding-right: clamp(5px, 1.4vw, 6px);
           }
 
           ul li > .plus {
@@ -690,10 +699,10 @@ hr {
             width: clamp(11px, 4vw, 20px);
             height: clamp(11px, 4vw, 20px);
             line-height: clamp(11px, 4vw, 20px);
-            font-size: clamp(9.5px, 2.5vw, 14px);
+            font-size: clamp(9.5px, 2.5vw, 16px);
             text-align: center;
-            padding-left: clamp(3px, 1.4vw, 7px);
-            padding-right: clamp(3px, 1.4vw, 7px);
+            padding-left: clamp(3px, 1.4vw, 6px);
+            padding-right: clamp(3px, 1.4vw, 6px);
           }
         }
       }
@@ -712,7 +721,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -743,7 +752,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -774,7 +783,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -805,7 +814,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -836,7 +845,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -867,7 +876,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -898,7 +907,7 @@ hr {
           font-size: clamp(11px, 2.3vw, 18px);
         }
         .you {
-          margin-left: clamp(25px, 9vw, 35px);
+          margin-left: clamp(20px, 6vw, 35px);
           font-size: clamp(11px, 2.1vw, 18px);
         }
         .underline {
@@ -1057,7 +1066,7 @@ hr {
         }
 
         .alt-box {
-          padding: 15px;
+          padding: clamp(11px, 3vw, 15px);
           border: 1px solid $primary-blue;
         }
 
@@ -1128,7 +1137,7 @@ hr {
 
       .akiko-right-view {
         left: 4.5%;
-        margin-top: clamp(40px, 8vw, 20px);
+        margin-top: clamp(15px, 8vw, 35px);
         width: clamp(140px, 37vw, 191px);
         min-height: clamp(130px, 37vw, 191px);
         position: absolute;
@@ -1207,7 +1216,7 @@ hr {
             font-size: clamp(11px, 2.3vw, 18px);
           }
           .you {
-            margin-left: clamp(25px, 9vw, 35px);
+            margin-left: clamp(20px, 6vw, 35px);
             font-size: clamp(11px, 2.7vw, 18px);
           }
           .underline {
@@ -1243,7 +1252,7 @@ hr {
             font-size: clamp(11px, 2.3vw, 18px);
           }
           .you {
-            margin-left: clamp(25px, 9vw, 35px);
+            margin-left: clamp(20px, 6vw, 35px);
             font-size: clamp(11px, 2.7vw, 18px);
           }
           .underline {
@@ -1279,7 +1288,7 @@ hr {
             font-size: clamp(11px, 2.3vw, 18px);
           }
           .you {
-            margin-left: clamp(25px, 9vw, 35px);
+            margin-left: clamp(20px, 6vw, 35px);
             font-size: clamp(11px, 2.7vw, 18px);
           }
           .underline {
@@ -1315,7 +1324,7 @@ hr {
             font-size: clamp(11px, 2.3vw, 18px);
           }
           .you {
-            margin-left: clamp(25px, 9vw, 35px);
+            margin-left: clamp(20px, 6vw, 35px);
             font-size: clamp(11px, 2.7vw, 18px);
           }
           .underline {
@@ -1351,7 +1360,7 @@ hr {
             font-size: clamp(11px, 2.3vw, 18px);
           }
           .you {
-            margin-left: clamp(25px, 9vw, 35px);
+            margin-left: clamp(20px, 6vw, 35px);
             font-size: clamp(11px, 2.7vw, 18px);
           }
           .underline {
@@ -1387,7 +1396,7 @@ hr {
             font-size: clamp(11px, 2.3vw, 18px);
           }
           .you {
-            margin-left: clamp(25px, 9vw, 35px);
+            margin-left: clamp(20px, 6vw, 35px);
             font-size: clamp(11px, 2.7vw, 18px);
           }
           .underline {
@@ -1424,10 +1433,10 @@ hr {
         margin-top: clamp(49px, 14vw, 80px);
         .eng {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 14px);
+          font-size: clamp(8.3px, 2.2vw, 14px);
         }
         .jap {
-          font-size: clamp(6px, 1.5vw, 11px);
+          font-size: clamp(6.3px, 1.7vw, 11px);
           color: $subtext-color;
           letter-spacing: -2px;
         }
@@ -1450,6 +1459,14 @@ hr {
       .convo-text-content {
         margin-top: clamp(30px, 8vw, 40px);
 
+        .underline{
+          text-decoration: underline;
+          text-decoration-color: $primary-blue; 
+          color: white;
+          margin-bottom: clamp(5px, 1vw, 10px);
+
+        }
+
         b {
           font-size: clamp(10px, 2.3vw, 16px);
         }
@@ -1465,7 +1482,7 @@ hr {
           margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -2px;
+          letter-spacing: -1.5px;
           margin-top: 13px;
         }
 
@@ -1479,8 +1496,8 @@ hr {
           margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1px;
-          margin-top: 25px;
+          letter-spacing: -0.5px;
+          margin-top: 9px;
         }
 
         .div-5 {

@@ -67,7 +67,7 @@ hr {
   font-family: "Noto Sans";
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .section-2-content .phrase-alts .number, .html-lesson-wrapper .section-2-content .phrase-alts .number-white, .html-lesson-wrapper .section-2-content .phrase-alts .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .number, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .letter, .html-lesson-wrapper .see-3 .see3-content .phrase-alts .number, .html-lesson-wrapper .see-3 .see3-content .phrase-alts .letter, .html-lesson-wrapper .try-3 .try-3-content .akiko-combinations .akiko-first-combinations ul li > .letter {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .section-2-content .phrase-alts .number, .html-lesson-wrapper .section-2-content .phrase-alts .number-white, .html-lesson-wrapper .section-2-content .phrase-alts .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .number, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .number-white, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .number, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .number-white, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .letter, .html-lesson-wrapper .see-3 .see3-content .phrase-alts .number, .html-lesson-wrapper .see-3 .see3-content .phrase-alts .letter, .html-lesson-wrapper .try-3 .try-3-content .akiko-combinations .akiko-first-combinations ul li > .letter {
   font-weight: bold;
 }
 
@@ -132,7 +132,12 @@ hr {
 
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(13px, 3.6vw, 23px);
-  padding-bottom: clamp(20px, 7vw, 50px);
+  margin-bottom: 4px;
+}
+
+.html-lesson-wrapper .title-section .title-below {
+  font-size: clamp(13px, 3.6vw, 23px);
+  margin-bottom: 10px;
 }
 
 .html-lesson-wrapper .title-section .sub-title {
@@ -291,7 +296,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content {
-  margin-top: clamp(40px, 21vw, 70px);
+  margin-top: clamp(35px, 15vw, 50px);
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko {
@@ -535,7 +540,7 @@ hr {
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-right-view {
   left: 2%;
-  margin-top: clamp(30px, 12vw, 50px);
+  margin-top: clamp(20px, 7vw, 30px);
   width: clamp(120px, 30vw, 191px);
   min-height: clamp(130px, 37vw, 191px);
   position: absolute;
@@ -567,8 +572,8 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(11px, 4vw, 16px);
   z-index: 1;
-  padding-left: clamp(5px, 1.4vw, 7px);
-  padding-right: clamp(5px, 1.4vw, 7px);
+  padding-left: clamp(5px, 1.4vw, 6px);
+  padding-right: clamp(5px, 1.4vw, 6px);
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .number-white {
@@ -584,8 +589,8 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(11px, 4vw, 16px);
   z-index: 1;
-  padding-left: clamp(5px, 1.4vw, 7px);
-  padding-right: clamp(5px, 1.4vw, 7px);
+  padding-left: clamp(5px, 1.4vw, 6px);
+  padding-right: clamp(5px, 1.4vw, 6px);
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .plus {
@@ -606,10 +611,10 @@ hr {
   width: clamp(11px, 4vw, 20px);
   height: clamp(11px, 4vw, 20px);
   line-height: clamp(11px, 4vw, 20px);
-  font-size: clamp(9.5px, 2.5vw, 14px);
+  font-size: clamp(9.5px, 2.5vw, 16px);
   text-align: center;
-  padding-left: clamp(3px, 1.4vw, 7px);
-  padding-right: clamp(3px, 1.4vw, 7px);
+  padding-left: clamp(3px, 1.4vw, 6px);
+  padding-right: clamp(3px, 1.4vw, 6px);
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations {
@@ -634,8 +639,8 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(11px, 4vw, 16px);
   z-index: 1;
-  padding-left: clamp(5px, 1.4vw, 7px);
-  padding-right: clamp(5px, 1.4vw, 7px);
+  padding-left: clamp(5px, 1.4vw, 6px);
+  padding-right: clamp(5px, 1.4vw, 6px);
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .number-white {
@@ -651,8 +656,8 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(11px, 4vw, 16px);
   z-index: 1;
-  padding-left: clamp(5px, 1.4vw, 7px);
-  padding-right: clamp(5px, 1.4vw, 7px);
+  padding-left: clamp(5px, 1.4vw, 6px);
+  padding-right: clamp(5px, 1.4vw, 6px);
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .akiko-second-combinations ul li > .plus {
@@ -673,10 +678,10 @@ hr {
   width: clamp(11px, 4vw, 20px);
   height: clamp(11px, 4vw, 20px);
   line-height: clamp(11px, 4vw, 20px);
-  font-size: clamp(9.5px, 2.5vw, 14px);
+  font-size: clamp(9.5px, 2.5vw, 16px);
   text-align: center;
-  padding-left: clamp(3px, 1.4vw, 7px);
-  padding-right: clamp(3px, 1.4vw, 7px);
+  padding-left: clamp(3px, 1.4vw, 6px);
+  padding-right: clamp(3px, 1.4vw, 6px);
 }
 
 .html-lesson-wrapper .try-2 .try2-content {
@@ -694,7 +699,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -728,7 +733,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content-1 .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -762,7 +767,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content-2 .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -796,7 +801,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content-3 .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -830,7 +835,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content-4 .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -864,7 +869,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content-5 .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -898,7 +903,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content-6 .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.1vw, 18px);
 }
 
@@ -1057,7 +1062,7 @@ hr {
 }
 
 .html-lesson-wrapper .see-3 .see3-content .phrase-alts .alt-box {
-  padding: 15px;
+  padding: clamp(11px, 3vw, 15px);
   border: 1px solid #1287cd;
 }
 
@@ -1127,7 +1132,7 @@ hr {
 
 .html-lesson-wrapper .try-3 .try-3-content .akiko-right-view {
   left: 4.5%;
-  margin-top: clamp(40px, 8vw, 20px);
+  margin-top: clamp(15px, 8vw, 35px);
   width: clamp(140px, 37vw, 191px);
   min-height: clamp(130px, 37vw, 191px);
   position: absolute;
@@ -1203,7 +1208,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content .first-line .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.7vw, 18px);
 }
 
@@ -1240,7 +1245,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-1 .first-line .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.7vw, 18px);
 }
 
@@ -1277,7 +1282,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-2 .first-line .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.7vw, 18px);
 }
 
@@ -1314,7 +1319,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-3 .first-line .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.7vw, 18px);
 }
 
@@ -1351,7 +1356,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-4 .first-line .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.7vw, 18px);
 }
 
@@ -1388,7 +1393,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-5 .first-line .you {
-  margin-left: clamp(25px, 9vw, 35px);
+  margin-left: clamp(20px, 6vw, 35px);
   font-size: clamp(11px, 2.7vw, 18px);
 }
 
@@ -1422,11 +1427,11 @@ hr {
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text .eng {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 14px);
+  font-size: clamp(8.3px, 2.2vw, 14px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text .jap {
-  font-size: clamp(6px, 1.5vw, 11px);
+  font-size: clamp(6.3px, 1.7vw, 11px);
   color: #7f8288;
   letter-spacing: -2px;
 }
@@ -1444,6 +1449,14 @@ hr {
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
+}
+
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1287cd;
+          text-decoration-color: #1287cd;
+  color: white;
+  margin-bottom: clamp(5px, 1vw, 10px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content b {
@@ -1464,7 +1477,7 @@ hr {
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   margin-top: 13px;
 }
 
@@ -1478,8 +1491,8 @@ hr {
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
-  margin-top: 25px;
+  letter-spacing: -0.5px;
+  margin-top: 9px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-5 {

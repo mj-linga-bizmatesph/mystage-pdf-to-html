@@ -21,6 +21,16 @@ td {
   display: flex;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid .half {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
 .justify-left {
   -webkit-box-pack: left !important;
       -ms-flex-pack: left !important;
@@ -83,7 +93,7 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .name, .html-lesson-wrapper .part-cloud .choice .choice-letter, .html-lesson-wrapper .part-cloud .choice .choice-phrase {
   font-weight: bold;
 }
 
@@ -271,29 +281,6 @@ td {
   color: #2d356b;
 }
 
-.html-lesson-wrapper .office-section .name.akiko-2 {
-  left: 41%;
-  margin-top: 25%;
-}
-
-.html-lesson-wrapper .office-section .name.nick-2 {
-  left: 28%;
-  margin-top: 25%;
-}
-
-.html-lesson-wrapper .office-section .conversation .bubble {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .html-lesson-wrapper .office-section .conversation .speech {
   position: absolute;
   display: -webkit-box;
@@ -307,53 +294,137 @@ td {
   background-size: contain;
 }
 
-.html-lesson-wrapper .office-section.office-see-1 {
+.html-lesson-wrapper .office-section.office-part-1 {
   margin-top: 6%;
 }
 
-.html-lesson-wrapper .office-section.office-see-1 .name.akiko {
-  right: 27%;
-  margin-top: 32%;
+.html-lesson-wrapper .office-section.office-part-1 .name.akiko {
+  left: 22%;
+  margin-top: 39%;
 }
 
-.html-lesson-wrapper .office-section.office-see-1 .name.steve {
-  margin-top: 31%;
-  left: 25%;
+.html-lesson-wrapper .office-section.office-part-1 .name.steve {
+  margin-top: 33%;
+  right: 33%;
 }
 
-.html-lesson-wrapper .office-section.office-see-1 .speech.steve {
-  background-image: url(http://127.0.0.1:8887/0-4-speech-steve-1.png);
-  padding: 2% 1% 6% 3%;
+.html-lesson-wrapper .office-section.office-part-1 .speech.steve {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-steve-1.png);
+  padding: 6.5% 3% 11% 4%;
+  margin-top: 3%;
+  left: 50%;
+}
+
+.html-lesson-wrapper .office-section.office-part-1 .speech.akiko {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-akiko-1.png);
+  padding: 7% 5% 10% 7%;
+  margin-top: 5%;
+  left: 6%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-1 {
+  margin-top: 11%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-1 .name.akiko {
+  left: 22%;
+  margin-top: 39%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-1 .name.steve {
+  margin-top: 32.5%;
+  right: 17%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-1 .speech.akiko {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
+  padding: 9% 5% 9% 5%;
+  margin-top: 0%;
+  left: 16%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-2 {
+  margin-top: 11%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-2 .name.akiko {
+  left: 24%;
+  margin-top: 38.5%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-2 .name.steve {
+  margin-top: 32.5%;
+  right: 17%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-2 .speech.akiko {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
+  padding: 7% 6% 12% 11%;
   margin-top: 4%;
-  left: 15%;
+  left: 17%;
 }
 
-.html-lesson-wrapper .office-section.office-see-1 .speech.akiko {
-  background-image: url(http://127.0.0.1:8887/0-4-speech-akiko-1.png);
-  padding: 2% 1% 10% 2%;
-  margin-top: 6%;
-  right: 12%;
+.html-lesson-wrapper .office-section.office-part-2-3 {
+  margin-top: 11%;
 }
 
-.html-lesson-wrapper .office-section.office-act-1 {
-  margin-top: 6%;
+.html-lesson-wrapper .office-section.office-part-2-3 .name.akiko {
+  right: 22%;
+  margin-top: 40.5%;
 }
 
-.html-lesson-wrapper .office-section.office-act-1 .name.akiko {
-  right: 27%;
-  margin-top: 32%;
+.html-lesson-wrapper .office-section.office-part-2-3 .name.steve {
+  margin-top: 41%;
+  left: 20%;
 }
 
-.html-lesson-wrapper .office-section.office-act-1 .name.steve {
-  margin-top: 31%;
-  left: 25%;
+.html-lesson-wrapper .office-section.office-part-2-3 .speech.steve {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
+  padding: 10% 6% 11% 4%;
+  margin-top: 1%;
+  left: 11%;
 }
 
-.html-lesson-wrapper .office-section.office-act-1 .bubble.steve {
-  background-image: url(http://127.0.0.1:8887/0-4-speech-bubble-steve-1.png);
-  padding: 3% 7% 6% 6%;
+.html-lesson-wrapper .office-section.office-part-2-4 {
+  margin-top: 11%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-4 .name.akiko {
+  right: 8%;
+  margin-top: 29%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-4 .name.steve {
+  margin-top: 41%;
+  left: 20%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-4 .speech.steve {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
+  padding: 8% 6% 13% 8%;
+  margin-top: 1%;
+  left: 12%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-5 {
+  margin-top: 11%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-5 .name.akiko {
+  margin-top: 41%;
+  left: 20%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-5 .name.steve {
+  right: 8%;
+  margin-top: 29%;
+}
+
+.html-lesson-wrapper .office-section.office-part-2-5 .speech.akiko {
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
+  padding: 8% 9% 16% 10%;
   margin-top: 4%;
-  left: 33%;
+  left: 12%;
 }
 
 .html-lesson-wrapper .number {
@@ -873,6 +944,81 @@ td {
 }
 
 .html-lesson-wrapper .act-content .arrow.act {
+  color: white;
+  background-image: url(http://127.0.0.1:8887/0-act-arrow.png);
+}
+
+.html-lesson-wrapper .part-cloud {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  font-size: clamp(7px, 3vw, 14px);
+}
+
+.html-lesson-wrapper .part-cloud .choice .choice-letter {
+  padding-right: clamp(10px, 4vw, 20px);
+}
+
+.html-lesson-wrapper .part-content {
+  margin-left: clamp(18px, 5vw, 32px);
+  margin-right: clamp(18px, 5vw, 32px);
+}
+
+.html-lesson-wrapper .part-content.part-1 {
+  margin-top: 29%;
+}
+
+.html-lesson-wrapper .part-content.part-1 .blue-line {
+  margin-top: 5%;
+}
+
+.html-lesson-wrapper .part-content.part-1 .table {
+  font-family: "Noto Sans";
+}
+
+.html-lesson-wrapper .part-content.part-1 .table .jap {
+  margin-bottom: 3.6%;
+}
+
+.html-lesson-wrapper .part-content.part-1 .table .name {
+  width: 14%;
+}
+
+.html-lesson-wrapper .part-content.part-1 .table .name ~ td > .eng {
+  margin-bottom: 4%;
+}
+
+.html-lesson-wrapper .part-content.part-2 {
+  margin-top: 7%;
+}
+
+.html-lesson-wrapper .part-content.part-2 .office-part-2-1 .part-cloud {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.html-lesson-wrapper .part-content.part-2 .blue-line {
+  margin-top: 5%;
+}
+
+.html-lesson-wrapper .part-content.part-2 .table {
+  font-family: "Noto Sans";
+}
+
+.html-lesson-wrapper .part-content.part-2 .table .jap {
+  margin-bottom: 3.6%;
+}
+
+.html-lesson-wrapper .part-content.part-2 .table .name {
+  width: 14%;
+}
+
+.html-lesson-wrapper .part-content.part-2 .table .name ~ td > .eng {
+  margin-bottom: 4%;
+}
+
+.html-lesson-wrapper .part-content .arrow.part {
   color: white;
   background-image: url(http://127.0.0.1:8887/0-act-arrow.png);
 }

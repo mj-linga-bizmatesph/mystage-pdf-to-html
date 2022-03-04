@@ -34,6 +34,14 @@ td {
   display: flex;
 }
 
+.grid {
+  display: grid;
+
+  .half {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .justify-left {
   justify-content: left !important;
 }
@@ -279,24 +287,8 @@ td {
       padding: 1% 1.6%;
       font-size: clamp(7px, 2vw, 10px);
       color: #2d356b;
-
-      &.akiko-2 {
-        left: 41%;
-        margin-top: 25%;
-      }
-      &.nick-2 {
-        left: 28%;
-        margin-top: 25%;
-      }
     }
     .conversation {
-      .bubble {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
       .speech {
         position: absolute;
         display: flex;
@@ -305,56 +297,152 @@ td {
         background-size: contain;
       }
     }
-    &.office-see-1 {
+    &.office-part-1 {
       margin-top: 6%;
 
       .name {
         &.akiko {
-          right: 27%;
-          margin-top: 32%;
+          left: 22%;
+          margin-top: 39%;
         }
         &.steve {
-          margin-top: 31%;
-          left: 25%;
+          margin-top: 33%;
+          right: 33%;
         }
       }
 
       .speech {
         &.steve {
-          background-image: url(#{$s3}/0-4-speech-steve-1.png);
-          padding: 2% 1% 6% 3%;
-          margin-top: 4%;
-          left: 15%;
+          background-image: url(#{$s3}/0-5-speech-bubble-steve-1.png);
+          padding: 6.5% 3% 11% 4%;
+          margin-top: 3%;
+          left: 50%;
         }
         &.akiko {
-          background-image: url(#{$s3}/0-4-speech-akiko-1.png);
-          padding: 2% 1% 10% 2%;
-          margin-top: 6%;
-          right: 12%;
+          background-image: url(#{$s3}/0-5-speech-bubble-akiko-1.png);
+          padding: 7% 5% 10% 7%;
+          margin-top: 5%;
+          left: 6%;
         }
       }
     }
 
-    &.office-act-1 {
-      margin-top: 6%;
+    &.office-part-2-1 {
+      margin-top: 11%;
 
       .name {
         &.akiko {
-          right: 27%;
-          margin-top: 32%;
+          left: 22%;
+          margin-top: 39%;
         }
         &.steve {
-          margin-top: 31%;
-          left: 25%;
+          margin-top: 32.5%;
+          right: 17%;
         }
       }
 
-      .bubble {
+      .speech {
+        &.akiko {
+          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+          padding: 9% 5% 9% 5%;
+          margin-top: 0%;
+          left: 16%;
+        }
+      }
+    }
+
+    &.office-part-2-2 {
+      margin-top: 11%;
+
+      .name {
+        &.akiko {
+          left: 24%;
+          margin-top: 38.5%;
+        }
         &.steve {
-          background-image: url(#{$s3}/0-4-speech-bubble-steve-1.png);
-          padding: 3% 7% 6% 6%;
+          margin-top: 32.5%;
+          right: 17%;
+        }
+      }
+
+      .speech {
+        &.akiko {
+          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+          padding: 7% 6% 12% 11%;
           margin-top: 4%;
-          left: 33%;
+          left: 17%;
+        }
+      }
+    }
+
+    &.office-part-2-3 {
+      margin-top: 11%;
+
+      .name {
+        &.akiko {
+          right: 22%;
+          margin-top: 40.5%;
+        }
+        &.steve {
+          margin-top: 41%;
+          left: 20%;
+        }
+      }
+
+      .speech {
+        &.steve {
+          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+          padding: 10% 6% 11% 4%;
+          margin-top: 1%;
+          left: 11%;
+        }
+      }
+    }
+
+    &.office-part-2-4 {
+      margin-top: 11%;
+
+      .name {
+        &.akiko {
+          right: 8%;
+          margin-top: 29%;
+        }
+        &.steve {
+          margin-top: 41%;
+          left: 20%;
+        }
+      }
+
+      .speech {
+        &.steve {
+          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+          padding: 8% 6% 13% 8%;
+          margin-top: 1%;
+          left: 12%;
+        }
+      }
+    }
+
+    &.office-part-2-5 {
+      margin-top: 11%;
+
+      .name {
+        &.akiko {
+          margin-top: 41%;
+          left: 20%;
+        }
+        &.steve {
+          right: 8%;
+          margin-top: 29%;
+        }
+      }
+
+      .speech {
+        &.akiko {
+          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+          padding: 8% 9% 16% 10%;
+          margin-top: 4%;
+          left: 12%;
         }
       }
     }
@@ -855,6 +943,84 @@ td {
       background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
+
+  .part-cloud {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: clamp(7px, 3vw, 14px);
+    .choice {
+      .choice-letter {
+        @extend .b;
+        padding-right: clamp(10px, 4vw, 20px);
+      }
+      .choice-phrase {
+        @extend .b;
+      }
+    }
+  }
+
+  .part-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    &.part-1 {
+      margin-top: 29%;
+
+      .blue-line {
+        margin-top: 5%;
+      }
+
+      .table {
+        font-family: $noto-sans;
+
+        .jap {
+          margin-bottom: 3.6%;
+        }
+        .name {
+          width: 14%;
+
+          & ~ td > .eng {
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+
+    &.part-2 {
+      margin-top: 7%;
+
+      .office-part-2-1 {
+        .part-cloud {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .blue-line {
+        margin-top: 5%;
+      }
+
+      .table {
+        font-family: $noto-sans;
+
+        .jap {
+          margin-bottom: 3.6%;
+        }
+        .name {
+          width: 14%;
+
+          & ~ td > .eng {
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+  }
+
   .blue-line {
     width: 15px;
     height: 2px;

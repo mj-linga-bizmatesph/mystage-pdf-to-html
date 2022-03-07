@@ -11,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -150,28 +150,7 @@ td {
       width: 100%;
     }
   }
-  .eng {
-    font-weight: bold;
-    font-size: clamp(9px, 2vw, 14px);
-  }
-  .jap {
-    letter-spacing: -1.3px;
-    color: $subtext-color;
-    font-family: $noto-sans;
-    font-size: clamp(7px, 1.8vw, 11px);
-  }
-  .line {
-    margin: 0 12px;
-  }
-  .lesson-number {
-    position: absolute;
-    right: 6.6%;
-    width: 1.9%;
-    text-align: center;
-    margin-top: 0.8%;
-    font-size: clamp(17px, 4.5vw, 26px);
-    color: #ffffff;
-  }
+
   .eng {
     font-weight: bold;
     font-size: clamp(9px, 2vw, 14px);
@@ -297,158 +276,8 @@ td {
         background-size: contain;
       }
     }
-    &.office-part-1 {
-      margin-top: 6%;
-
-      .name {
-        &.akiko {
-          left: 22%;
-          margin-top: 39%;
-        }
-        &.steve {
-          margin-top: 33%;
-          right: 33%;
-        }
-      }
-
-      .speech {
-        &.steve {
-          background-image: url(#{$s3}/0-5-speech-bubble-steve-1.png);
-          padding: 6.5% 3% 11% 4%;
-          margin-top: 3%;
-          left: 50%;
-        }
-        &.akiko {
-          background-image: url(#{$s3}/0-5-speech-bubble-akiko-1.png);
-          padding: 7% 5% 10% 7%;
-          margin-top: 5%;
-          left: 6%;
-        }
-      }
-    }
-
-    &.office-part-2-1 {
-      margin-top: 11%;
-
-      .name {
-        &.akiko {
-          left: 22%;
-          margin-top: 39%;
-        }
-        &.steve {
-          margin-top: 32.5%;
-          right: 17%;
-        }
-      }
-
-      .speech {
-        &.akiko {
-          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
-          padding: 9% 5% 9% 5%;
-          margin-top: 0%;
-          left: 16%;
-        }
-      }
-    }
-
-    &.office-part-2-2 {
-      margin-top: 11%;
-
-      .name {
-        &.akiko {
-          left: 24%;
-          margin-top: 38.5%;
-        }
-        &.steve {
-          margin-top: 32.5%;
-          right: 17%;
-        }
-      }
-
-      .speech {
-        &.akiko {
-          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
-          padding: 7% 6% 12% 11%;
-          margin-top: 4%;
-          left: 17%;
-        }
-      }
-    }
-
-    &.office-part-2-3 {
-      margin-top: 11%;
-
-      .name {
-        &.akiko {
-          right: 22%;
-          margin-top: 40.5%;
-        }
-        &.steve {
-          margin-top: 41%;
-          left: 20%;
-        }
-      }
-
-      .speech {
-        &.steve {
-          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
-          padding: 10% 6% 11% 4%;
-          margin-top: 1%;
-          left: 11%;
-        }
-      }
-    }
-
-    &.office-part-2-4 {
-      margin-top: 11%;
-
-      .name {
-        &.akiko {
-          right: 8%;
-          margin-top: 29%;
-        }
-        &.steve {
-          margin-top: 41%;
-          left: 20%;
-        }
-      }
-
-      .speech {
-        &.steve {
-          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
-          padding: 8% 6% 13% 8%;
-          margin-top: 1%;
-          left: 12%;
-        }
-      }
-    }
-
-    &.office-part-2-5 {
-      margin-top: 11%;
-
-      .name {
-        &.akiko {
-          margin-top: 41%;
-          left: 20%;
-        }
-        &.steve {
-          right: 8%;
-          margin-top: 29%;
-        }
-      }
-
-      .speech {
-        &.akiko {
-          background-image: url(#{$s3}/0-5-speech-bubble-part.png);
-          padding: 8% 9% 16% 10%;
-          margin-top: 4%;
-          left: 12%;
-        }
-      }
-    }
   }
 
-  //number
   .number {
     @extend .b;
     border-radius: 50%;
@@ -650,27 +479,6 @@ td {
         min-width: 100%;
       }
 
-      .conversation {
-        .steve-1 {
-          margin-top: 3%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-          .phrase:not(:last-child) {
-            margin-right: clamp(5px, 1.5vw, 10px);
-          }
-          .phrases-wrapper {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            margin-right: 2%;
-          }
-        }
-      }
-
       .legend {
         display: flex;
         justify-content: space-between;
@@ -680,233 +488,10 @@ td {
         }
       }
     }
-
-    &.see-1 {
-      margin-top: 29%;
-    }
-
-    &.see-2,
-    &.see-3,
-    &.see-4 {
-      margin-top: 5.5%;
-    }
-
-    &.see-2 {
-      .alt:not(:last-child) {
-        margin-bottom: 6%;
-      }
-
-      .legend {
-        margin-top: 7%;
-      }
-
-      .conversation {
-        .conv-1 {
-          margin-top: 5%;
-          display: grid;
-          grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-
-          .icon {
-            margin-right: 40px;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-          .phrase:not(:last-child) {
-            margin-right: 20px;
-          }
-        }
-      }
-    }
-
-    &.see-3 {
-      .alt:not(:last-child) {
-        margin-bottom: 6%;
-      }
-
-      .legend {
-        margin-top: 7%;
-      }
-      .conversation {
-        .conv-1 {
-          margin-top: 7%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .icon {
-            margin-right: 40px;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-
-          .jap {
-            letter-spacing: -2px;
-          }
-
-          .phrases-wrapper {
-            display: flex;
-            justify-content: right;
-
-            .phrase:not(:last-child) {
-              margin-right: 20px;
-            }
-
-            .phrase:last-child {
-              margin-right: clamp(26.67px, 7vw, 50px);
-            }
-          }
-        }
-      }
-    }
-
-    &.see-4 {
-      .section-wrapper {
-        display: flex;
-        margin-top: 10%;
-      }
-
-      .dialog-section {
-        margin-left: 14%;
-      }
-    }
   }
   .try-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-
-    &.try-1,
-    &.try-2,
-    &.try-3,
-    &.try-4 {
-      margin-top: 6%;
-    }
-
-    &.try-1 {
-      .combinations {
-        grid-template-columns: 1fr 1fr min-content;
-        margin-top: 8%;
-
-        .combination-icon {
-          height: clamp(119px, 20vw, 180px);
-          width: clamp(119px, 20vw, 180px);
-        }
-
-        .combination {
-          align-items: center;
-          justify-content: left;
-          margin-bottom: 13%;
-
-          & > div:not(:last-child) {
-            margin-right: 4%;
-          }
-        }
-      }
-    }
-
-    &.try-2 {
-      .table-wrapper-section {
-        margin-top: 15%;
-        .table-wrapper {
-          width: 100%;
-          p {
-            margin: 0;
-          }
-          .table-number {
-            @extend .b, .primary-blue;
-            font-size: clamp(10px, 3vw, 16px);
-            padding-top: 6px;
-          }
-          .table-img {
-            width: 34%;
-            text-align: right;
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 5%;
-          }
-          img {
-            max-width: clamp(44%, 25vw, 100%);
-            padding-left: 5%;
-          }
-        }
-      }
-
-      .table {
-        font-family: $noto-sans;
-        border-collapse: collapse;
-
-        td {
-          font-size: clamp(10px, 3vw, 18px);
-          img {
-            max-width: clamp(44%, 16vw, 100%);
-            margin-bottom: 20px;
-          }
-          &:nth-child(2) {
-            padding-bottom: 6%;
-          }
-        }
-
-        .name {
-          @extend .b;
-          font-size: clamp(10px, 3vw, 16px);
-          white-space: nowrap;
-        }
-      }
-    }
-
-    &.try-3 {
-      .table-wrapper-section {
-        margin-top: 10%;
-        .table-wrapper {
-          width: 100%;
-          p {
-            margin: 0;
-          }
-          .table-number {
-            @extend .b, .primary-blue;
-            font-size: clamp(10px, 3vw, 16px);
-            padding-top: 6px;
-          }
-          .table-img {
-            width: 38%;
-            text-align: center;
-            padding-right: 1%;
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 12%;
-          }
-          img {
-            max-width: clamp(44%, 25vw, 100%);
-            padding-left: 5%;
-          }
-        }
-      }
-
-      .table {
-        font-family: $noto-sans;
-        border-collapse: collapse;
-
-        td {
-          font-size: clamp(10px, 3vw, 18px);
-          img {
-            max-width: clamp(44%, 16vw, 100%);
-            margin-bottom: 20px;
-          }
-        }
-
-        .name {
-          @extend .b;
-          font-size: clamp(10px, 3vw, 16px);
-          white-space: nowrap;
-        }
-
-        td:nth-child(2) {
-          padding-bottom: 7%;
-        }
-      }
-    }
 
     .arrow.try {
       color: white;
@@ -924,19 +509,6 @@ td {
   .act-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-    &.act-1,
-    &.act-2 {
-      margin-top: 7%;
-    }
-    &.act-2 {
-      margin-bottom: 50px;
-    }
-
-    &.act-1 {
-      .blue-line {
-        margin-top: 5%;
-      }
-    }
 
     .arrow.act {
       color: white;
@@ -963,58 +535,6 @@ td {
     margin-left: $side-margin;
     margin-right: $side-margin;
 
-    &.part-1 {
-      margin-top: 29%;
-
-      .blue-line {
-        margin-top: 5%;
-      }
-
-      .table {
-        font-family: $noto-sans;
-
-        .jap {
-          margin-bottom: 3.6%;
-        }
-        .name {
-          width: 14%;
-
-          & ~ td > .eng {
-            margin-bottom: 4%;
-          }
-        }
-      }
-    }
-
-    &.part-2 {
-      margin-top: 7%;
-
-      .office-part-2-1 {
-        .part-cloud {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-
-      .blue-line {
-        margin-top: 5%;
-      }
-
-      .table {
-        font-family: $noto-sans;
-
-        .jap {
-          margin-bottom: 3.6%;
-        }
-        .name {
-          width: 14%;
-
-          & ~ td > .eng {
-            margin-bottom: 4%;
-          }
-        }
-      }
-    }
-
     .arrow.part {
       color: white;
       background-image: url(#{$s3}/0-act-arrow.png);
@@ -1022,7 +542,7 @@ td {
   }
 
   .blue-line {
-    width: 15px;
+    width: 16px;
     height: 2px;
     border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
@@ -1049,6 +569,207 @@ td {
     .jap {
       font-size: clamp(9px, 2vw, 13px);
       margin-bottom: 3.8%;
+    }
+  }
+}
+
+//individual differences
+.part-1 {
+  margin-top: 29%;
+
+  .blue-line {
+    margin-top: 5%;
+  }
+
+  .table {
+    font-family: $noto-sans;
+
+    .jap {
+      margin-bottom: 3.6%;
+    }
+    .name {
+      width: 14%;
+
+      & ~ td > .eng {
+        margin-bottom: 4%;
+      }
+    }
+  }
+
+  .office-part-1 {
+    margin-top: 6%;
+
+    .name {
+      &.akiko {
+        left: 22%;
+        margin-top: 39%;
+      }
+      &.steve {
+        margin-top: 33%;
+        right: 33%;
+      }
+    }
+
+    .speech {
+      &.steve {
+        background-image: url(#{$s3}/0-5-speech-bubble-steve-1.png);
+        padding: 6.5% 3% 11% 4%;
+        margin-top: 3%;
+        left: 50%;
+      }
+      &.akiko {
+        background-image: url(#{$s3}/0-5-speech-bubble-akiko-1.png);
+        padding: 7% 5% 10% 7%;
+        margin-top: 5%;
+        left: 6%;
+      }
+    }
+  }
+}
+
+.part-2 {
+  margin-top: 7%;
+
+  .office-part-2-1 {
+    margin-top: 11%;
+
+    .part-cloud {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .name {
+      &.akiko {
+        left: 22%;
+        margin-top: 39%;
+      }
+      &.steve {
+        margin-top: 32.5%;
+        right: 17%;
+      }
+    }
+
+    .speech {
+      &.akiko {
+        background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+        padding: 9% 5% 9% 5%;
+        margin-top: 0%;
+        left: 16%;
+      }
+    }
+  }
+
+  .office-part-2-2 {
+    margin-top: 11%;
+
+    .name {
+      &.akiko {
+        left: 24%;
+        margin-top: 38.5%;
+      }
+      &.steve {
+        margin-top: 32.5%;
+        right: 17%;
+      }
+    }
+
+    .speech {
+      &.akiko {
+        background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+        padding: 7% 6% 12% 11%;
+        margin-top: 4%;
+        left: 17%;
+      }
+    }
+  }
+
+  .office-part-2-3 {
+    margin-top: 11%;
+
+    .name {
+      &.akiko {
+        right: 22%;
+        margin-top: 40.5%;
+      }
+      &.steve {
+        margin-top: 41%;
+        left: 20%;
+      }
+    }
+
+    .speech {
+      &.steve {
+        background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+        padding: 10% 6% 11% 4%;
+        margin-top: 1%;
+        left: 11%;
+      }
+    }
+  }
+
+  .office-part-2-4 {
+    margin-top: 11%;
+
+    .name {
+      &.akiko {
+        right: 8%;
+        margin-top: 29%;
+      }
+      &.steve {
+        margin-top: 41%;
+        left: 20%;
+      }
+    }
+
+    .speech {
+      &.steve {
+        background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+        padding: 8% 6% 13% 8%;
+        margin-top: 1%;
+        left: 12%;
+      }
+    }
+  }
+
+  .office-part-2-5 {
+    margin-top: 11%;
+
+    .name {
+      &.akiko {
+        margin-top: 41%;
+        left: 20%;
+      }
+      &.steve {
+        right: 8%;
+        margin-top: 29%;
+      }
+    }
+
+    .speech {
+      &.akiko {
+        background-image: url(#{$s3}/0-5-speech-bubble-part.png);
+        padding: 8% 9% 16% 10%;
+        margin-top: 4%;
+        left: 12%;
+      }
+    }
+  }
+
+  .blue-line {
+    margin-top: 2%;
+  }
+
+  .table {
+    font-family: $noto-sans;
+
+    .jap {
+      margin-bottom: 3.6%;
+    }
+    .name {
+      width: 14%;
+
+      & ~ td > .eng {
+        margin-bottom: 4%;
+      }
     }
   }
 }

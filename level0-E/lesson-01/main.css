@@ -273,7 +273,7 @@ td {
 .html-lesson-wrapper .office-section .conversation .bubble.akiko-1 {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-e-1-speech-bubble-akiko.png);
   left: 6%;
-  padding: 10% 12% 6% 16%;
+  padding: 11% 10% 6% 16%;
   margin-top: 0.8%;
 }
 
@@ -394,7 +394,7 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .red-piece,
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
   background-position: center;
-  background-size: auto 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -472,7 +472,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .akiko-1 .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+  padding: clamp(7px, 2vw, 10px) clamp(11px, 3vw, 17px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .conversation .akiko-1 .phrase:not(:last-child) {
@@ -615,6 +615,10 @@ td {
 
 .html-lesson-wrapper .try-content.try-1 .combinations .combination > div:not(:last-child) {
   margin-right: 11%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .instructions {
+  margin-right: 20px;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section {

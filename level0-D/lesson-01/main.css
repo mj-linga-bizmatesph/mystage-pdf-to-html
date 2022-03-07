@@ -139,7 +139,7 @@ td {
   width: 1.9%;
   text-align: center;
   margin-top: 0.5%;
-  font-size: clamp(20px, 2vw, 40px);
+  font-size: clamp(20px, 2vw, 31px);
   color: #ffffff;
 }
 
@@ -268,7 +268,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .see-2-section {
-  margin-top: clamp(20px, 6.5vw, 29px);
+  margin-top: clamp(20px, 6.5vw, 4rem);
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-section {
@@ -508,7 +508,7 @@ td {
 }
 
 .html-lesson-wrapper .try-content .try-1-content {
-  margin: clamp(20px, 6.5vw, 29px) 0 clamp(20px, 5vw, 1rem);
+  margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,15 +800,15 @@ td {
 }
 
 .html-lesson-wrapper .try-content .try-4-content .image {
-  padding: 0 7vw;
+  padding: 0 clamp(0.5rem, 7vw, 1.8rem);
 }
 
 .html-lesson-wrapper .try-content .try-4-content .image-1 {
-  padding: 0 5vw;
+  padding: 0 clamp(0.5rem, 7vw, 1.8rem);
 }
 
 .html-lesson-wrapper .try-content .try-4-content .image-2 {
-  padding: 0 3vw;
+  padding: 0 clamp(0.5rem, 3vw, 0.7rem);
 }
 
 .html-lesson-wrapper .try-content .try-4-content .text {

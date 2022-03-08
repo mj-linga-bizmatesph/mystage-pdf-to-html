@@ -11,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -257,15 +257,6 @@ td {
       padding: 1% 1.6%;
       font-size: clamp(7px, 2vw, 10px);
       color: #2d356b;
-
-      &.akiko-2 {
-        left: 41%;
-        margin-top: 25%;
-      }
-      &.nick-2 {
-        left: 28%;
-        margin-top: 25%;
-      }
     }
     .conversation {
       .bubble {
@@ -281,36 +272,6 @@ td {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-      }
-    }
-
-    &.office-act-1 {
-      margin-top: 6%;
-
-      .name {
-        &.akiko {
-          right: 27%;
-          margin-top: 32%;
-        }
-        &.steve {
-          margin-top: 31%;
-          left: 25%;
-        }
-      }
-
-      .bubble {
-        &.steve {
-          background-image: url(#{$s3}/0-4-speech-bubble-steve-1.png);
-          padding: 3% 7% 6% 6%;
-          margin-top: 4%;
-          left: 33%;
-          font-family: $noto-sans;
-
-          .eng {
-            font-weight: normal;
-            font-size: clamp(9px, 2.3vw, 16px);
-          }
-        }
       }
     }
   }
@@ -622,19 +583,6 @@ td {
   .act-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-    &.act-1,
-    &.act-2 {
-      margin-top: 7%;
-    }
-    &.act-2 {
-      margin-bottom: 50px;
-    }
-
-    &.act-1 {
-      .blue-line {
-        margin-top: 5%;
-      }
-    }
 
     .arrow.act {
       color: white;
@@ -693,16 +641,12 @@ td {
 
     .speech {
       &.steve {
-        background-image: url(#{$s3}/0-6-s1-speech-steve.png);
-        padding: 1% 2% 7% 2%;
-        margin-top: 3%;
-        right: 22%;
+        margin-top: 4%;
+        right: 23%;
       }
       &.akiko {
-        background-image: url(#{$s3}/0-6-s1-speech-akiko.png);
-        padding: 1% 2% 5% 2%;
-        margin-top: 4%;
-        left: 24%;
+        margin-top: 3.8%;
+        left: 26%;
       }
     }
   }
@@ -834,8 +778,38 @@ td {
 }
 
 .try-3 {
+  .combinations {
+    grid-template-columns: 1fr 1fr min-content;
+    margin-top: 8%;
+
+    .combination-icon {
+      height: clamp(119px, 20vw, 180px);
+      width: clamp(119px, 20vw, 180px);
+      margin-right: clamp(15px, 4vw, 30px);
+    }
+
+    .combination {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 13%;
+
+      & > div:not(:last-child) {
+        margin-right: 4%;
+      }
+    }
+  }
+}
+
+.try-4 {
   .table-wrapper-section {
     margin-top: 10%;
+
+    .jap {
+      font-family: $noto-sans;
+      font-size: clamp(9px, 2vw, 13px);
+      color: $subtext-color;
+    }
+
     .table-wrapper {
       width: 100%;
       p {
@@ -845,9 +819,10 @@ td {
         @extend .b, .primary-blue;
         font-size: clamp(10px, 3vw, 16px);
         padding-top: 6px;
+        padding-left: clamp(5px, 3vw, 10px);
       }
       .table-img {
-        width: 38%;
+        width: 40%;
         text-align: center;
         padding-right: 1%;
       }
@@ -882,6 +857,53 @@ td {
 
     td:nth-child(2) {
       padding-bottom: 7%;
+    }
+  }
+}
+
+.act-1,
+.act-2 {
+  margin-top: 7%;
+}
+.act-2 {
+  margin-bottom: 50px;
+}
+
+.act-1 {
+  .blue-line {
+    margin-top: 5%;
+  }
+
+  .office-act-1 {
+    margin-top: 6%;
+
+    .name {
+      &.akiko {
+        left: 34%;
+        margin-top: 32%;
+      }
+      &.steve {
+        margin-top: 31%;
+        right: 12%;
+      }
+    }
+
+    .bubble {
+      &.akiko {
+        margin-top: 6%;
+        left: 15%;
+        font-family: $noto-sans;
+
+        .eng,
+        .jap {
+          font-weight: normal;
+          font-size: clamp(9px, 2.5vw, 16px);
+        }
+
+        .jap {
+          letter-spacing: -2px;
+        }
+      }
     }
   }
 }

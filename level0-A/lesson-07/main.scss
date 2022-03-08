@@ -510,6 +510,7 @@ td {
         @extend .b;
         text-align: center;
         font-size: clamp(10px, 2vw, 14px);
+        font-family: $noto-sans;
 
         img {
           height: clamp(70px, 20vw, 100px);
@@ -637,7 +638,7 @@ td {
   }
 
   .legend {
-    margin-top: 7%;
+    margin-top: 4%;
   }
 
   .phrase-alts {
@@ -714,6 +715,10 @@ td {
   .combinations {
     grid-template-columns: min-content 1fr 1fr;
     margin-top: 8%;
+
+    & > div:last-child {
+      margin-left: 4%;
+    }
 
     .combination-icon {
       height: clamp(119px, 20vw, 180px);

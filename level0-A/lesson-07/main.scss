@@ -310,6 +310,12 @@ td {
     text-align: center;
   }
 
+  .text {
+    @extend .b, .primary-blue, .fs-16;
+    white-space: nowrap;
+    font-family: $noto-sans;
+  }
+
   .plus {
     display: flex;
     align-content: center;
@@ -326,7 +332,7 @@ td {
 
     .phrase-alts {
       display: grid;
-      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+      grid-template-columns: min-content 1fr;
       gap: 13px;
 
       &.half {
@@ -634,6 +640,10 @@ td {
     margin-top: 7%;
   }
 
+  .phrase-alts {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .phrases-section {
     margin-bottom: 8%;
   }
@@ -662,7 +672,7 @@ td {
   }
 
   .legend {
-    margin-top: 7%;
+    margin-top: 4%;
   }
 
   .phrases-section {
@@ -679,10 +689,6 @@ td {
       display: grid;
       grid-template-columns: 1fr min-content;
 
-      // .icon {
-      //   margin-right: clamp(20px, 4.5vw, 40px);
-      // }
-
       .phrase .eng {
         font-size: clamp(8px, 2.2vw, 15px);
       }
@@ -690,6 +696,10 @@ td {
         margin-right: -2px;
       }
     }
+  }
+
+  .alt:not(:last-child) {
+    margin-bottom: 4% !important;
   }
 }
 
@@ -718,81 +728,24 @@ td {
       & > div:not(:last-child) {
         margin-right: 4%;
       }
-
-      .text {
-        @extend .b, .primary-blue, .fs-16;
-        white-space: nowrap;
-      }
     }
   }
 }
 
 .try-2 {
-  .table-wrapper-section {
-    margin-top: 15%;
-    .table-wrapper {
-      width: 100%;
-      p {
-        margin: 0;
-      }
-      .table-number {
-        @extend .b, .primary-blue;
-        font-size: clamp(10px, 3vw, 16px);
-        padding-top: 6px;
-      }
-      .table-img {
-        width: 34%;
-        text-align: right;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 5%;
-      }
-      img {
-        max-width: clamp(44%, 25vw, 100%);
-        padding-left: 5%;
-      }
-    }
-  }
-
-  .table {
-    font-family: $noto-sans;
-    border-collapse: collapse;
-
-    td {
-      font-size: clamp(10px, 3vw, 18px);
-      img {
-        max-width: clamp(44%, 16vw, 100%);
-        margin-bottom: 20px;
-      }
-      &:nth-child(2) {
-        padding-bottom: 6%;
-      }
-    }
-
-    .name {
-      @extend .b;
-      font-size: clamp(10px, 3vw, 16px);
-      white-space: nowrap;
-    }
-  }
-}
-
-.try-3 {
   .combinations {
-    grid-template-columns: 1fr 1fr min-content;
-    margin-top: 8%;
+    grid-template-columns: 1fr min-content;
+    margin-top: 13%;
 
     .combination-icon {
       height: clamp(119px, 20vw, 180px);
       width: clamp(119px, 20vw, 180px);
-      margin-right: clamp(15px, 4vw, 30px);
     }
 
     .combination {
       align-items: center;
       justify-content: center;
-      margin-bottom: 13%;
+      margin-bottom: 7%;
 
       & > div:not(:last-child) {
         margin-right: 4%;
@@ -801,9 +754,9 @@ td {
   }
 }
 
-.try-4 {
+.try-3 {
   .table-wrapper-section {
-    margin-top: 10%;
+    margin-top: 14%;
 
     .jap {
       font-family: $noto-sans;
@@ -823,17 +776,15 @@ td {
         padding-left: clamp(5px, 3vw, 10px);
       }
       .table-img {
-        width: 40%;
         text-align: center;
-        padding-right: 1%;
+        padding-top: 2%;
       }
 
       &:not(:last-child) {
-        margin-bottom: 12%;
+        margin-bottom: 9%;
       }
       img {
         max-width: clamp(44%, 25vw, 100%);
-        padding-left: 5%;
       }
     }
   }
@@ -855,10 +806,16 @@ td {
       font-size: clamp(10px, 3vw, 16px);
       white-space: nowrap;
     }
-
-    td:nth-child(2) {
-      padding-bottom: 7%;
+    tr:not(:last-child) td:nth-child(2) {
+      padding-bottom: 5%;
     }
+  }
+}
+
+.try-4 {
+  img {
+    margin-top: 10%;
+    max-width: clamp(44%, 69vw, 100%);
   }
 }
 
@@ -878,28 +835,11 @@ td {
   .office-act-1 {
     margin-top: 6%;
 
-    .name {
-      &.akiko {
-        left: 34%;
-        margin-top: 32%;
-      }
-      &.steve {
-        margin-top: 31%;
-        right: 12%;
-      }
-    }
-
     .bubble {
       &.akiko {
         margin-top: 6%;
-        left: 15%;
+        left: 30%;
         font-family: $noto-sans;
-
-        .eng,
-        .jap {
-          font-weight: normal;
-          font-size: clamp(9px, 2.5vw, 16px);
-        }
 
         .jap {
           letter-spacing: -2px;

@@ -66,7 +66,7 @@ td {
   font-family: "Arial";
 }
 
-.html-lesson-wrapper .fs-16, .html-lesson-wrapper .try-1 .combinations .combination .text, .try-1 .combinations .combination .html-lesson-wrapper .text {
+.html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
   font-size: clamp(12px, 2.3vw, 16px);
 }
 
@@ -83,7 +83,7 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-1 .combinations .combination .text, .try-1 .combinations .combination .html-lesson-wrapper .text, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .try-2 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-2 .table .name, .try-2 .table .html-lesson-wrapper .name, .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number, .try-4 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-4 .table .name, .try-4 .table .html-lesson-wrapper .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-3 .table .name, .try-3 .table .html-lesson-wrapper .name {
   font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ td {
   color: #1287cd;
 }
 
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-1 .combinations .combination .text, .try-1 .combinations .combination .html-lesson-wrapper .text, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .try-2 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number, .try-4 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number {
+.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .text, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number {
   color: #1287cd;
 }
 
@@ -302,6 +302,11 @@ td {
   text-align: center;
 }
 
+.html-lesson-wrapper .text {
+  white-space: nowrap;
+  font-family: "Noto Sans";
+}
+
 .html-lesson-wrapper .plus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,9 +328,9 @@ td {
 .html-lesson-wrapper .see-content .phrase-alts {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [one] min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
   gap: 13px;
 }
 
@@ -617,6 +622,11 @@ td {
   margin-top: 7%;
 }
 
+.see-2 .phrase-alts {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
 .see-2 .phrases-section {
   margin-bottom: 8%;
 }
@@ -647,7 +657,7 @@ td {
 }
 
 .see-3 .legend {
-  margin-top: 7%;
+  margin-top: 4%;
 }
 
 .see-3 .phrases-section {
@@ -673,6 +683,10 @@ td {
 
 .see-3 .conversation .conv-1 .phrase:not(:last-child) {
   margin-right: -2px;
+}
+
+.see-3 .alt:not(:last-child) {
+  margin-bottom: 4% !important;
 }
 
 .try-1,
@@ -708,151 +722,95 @@ td {
   margin-right: 4%;
 }
 
-.try-1 .combinations .combination .text {
-  white-space: nowrap;
+.try-2 .combinations {
+  -ms-grid-columns: 1fr min-content;
+      grid-template-columns: 1fr -webkit-min-content;
+      grid-template-columns: 1fr min-content;
+  margin-top: 13%;
 }
 
-.try-2 .table-wrapper-section {
-  margin-top: 15%;
-}
-
-.try-2 .table-wrapper-section .table-wrapper {
-  width: 100%;
-}
-
-.try-2 .table-wrapper-section .table-wrapper p {
-  margin: 0;
-}
-
-.try-2 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
-  padding-top: 6px;
-}
-
-.try-2 .table-wrapper-section .table-wrapper .table-img {
-  width: 34%;
-  text-align: right;
-}
-
-.try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 5%;
-}
-
-.try-2 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 25vw, 100%);
-  padding-left: 5%;
-}
-
-.try-2 .table {
-  font-family: "Noto Sans";
-  border-collapse: collapse;
-}
-
-.try-2 .table td {
-  font-size: clamp(10px, 3vw, 18px);
-}
-
-.try-2 .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
-}
-
-.try-2 .table td:nth-child(2) {
-  padding-bottom: 6%;
-}
-
-.try-2 .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-}
-
-.try-3 .combinations {
-  -ms-grid-columns: 1fr 1fr min-content;
-      grid-template-columns: 1fr 1fr -webkit-min-content;
-      grid-template-columns: 1fr 1fr min-content;
-  margin-top: 8%;
-}
-
-.try-3 .combinations .combination-icon {
+.try-2 .combinations .combination-icon {
   height: clamp(119px, 20vw, 180px);
   width: clamp(119px, 20vw, 180px);
-  margin-right: clamp(15px, 4vw, 30px);
 }
 
-.try-3 .combinations .combination {
+.try-2 .combinations .combination {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 13%;
+  margin-bottom: 7%;
 }
 
-.try-3 .combinations .combination > div:not(:last-child) {
+.try-2 .combinations .combination > div:not(:last-child) {
   margin-right: 4%;
 }
 
-.try-4 .table-wrapper-section {
-  margin-top: 10%;
+.try-3 .table-wrapper-section {
+  margin-top: 14%;
 }
 
-.try-4 .table-wrapper-section .jap {
+.try-3 .table-wrapper-section .jap {
   font-family: "Noto Sans";
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
 }
 
-.try-4 .table-wrapper-section .table-wrapper {
+.try-3 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
 
-.try-4 .table-wrapper-section .table-wrapper p {
+.try-3 .table-wrapper-section .table-wrapper p {
   margin: 0;
 }
 
-.try-4 .table-wrapper-section .table-wrapper .table-number {
+.try-3 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 6px;
   padding-left: clamp(5px, 3vw, 10px);
 }
 
-.try-4 .table-wrapper-section .table-wrapper .table-img {
-  width: 40%;
+.try-3 .table-wrapper-section .table-wrapper .table-img {
   text-align: center;
-  padding-right: 1%;
+  padding-top: 2%;
 }
 
-.try-4 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 12%;
+.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
+  margin-bottom: 9%;
 }
 
-.try-4 .table-wrapper-section .table-wrapper img {
+.try-3 .table-wrapper-section .table-wrapper img {
   max-width: clamp(44%, 25vw, 100%);
-  padding-left: 5%;
 }
 
-.try-4 .table {
+.try-3 .table {
   font-family: "Noto Sans";
   border-collapse: collapse;
 }
 
-.try-4 .table td {
+.try-3 .table td {
   font-size: clamp(10px, 3vw, 18px);
 }
 
-.try-4 .table td img {
+.try-3 .table td img {
   max-width: clamp(44%, 16vw, 100%);
   margin-bottom: 20px;
 }
 
-.try-4 .table .name {
+.try-3 .table .name {
   font-size: clamp(10px, 3vw, 16px);
   white-space: nowrap;
 }
 
-.try-4 .table td:nth-child(2) {
-  padding-bottom: 7%;
+.try-3 .table tr:not(:last-child) td:nth-child(2) {
+  padding-bottom: 5%;
+}
+
+.try-4 img {
+  margin-top: 10%;
+  max-width: clamp(44%, 69vw, 100%);
 }
 
 .act-1,
@@ -872,26 +830,10 @@ td {
   margin-top: 6%;
 }
 
-.act-1 .office-act-1 .name.akiko {
-  left: 34%;
-  margin-top: 32%;
-}
-
-.act-1 .office-act-1 .name.steve {
-  margin-top: 31%;
-  right: 12%;
-}
-
 .act-1 .office-act-1 .bubble.akiko {
   margin-top: 6%;
-  left: 15%;
+  left: 30%;
   font-family: "Noto Sans";
-}
-
-.act-1 .office-act-1 .bubble.akiko .eng,
-.act-1 .office-act-1 .bubble.akiko .jap {
-  font-weight: normal;
-  font-size: clamp(9px, 2.5vw, 16px);
 }
 
 .act-1 .office-act-1 .bubble.akiko .jap {

@@ -494,67 +494,6 @@ td {
           justify-content: space-between;
 }
 
-.html-lesson-wrapper .see-content.see-2, .html-lesson-wrapper .see-content.see-3, .html-lesson-wrapper .see-content.see-4 {
-  margin-top: 5.5%;
-}
-
-.html-lesson-wrapper .see-content.see-3 .alt:not(:last-child) {
-  margin-bottom: 6%;
-}
-
-.html-lesson-wrapper .see-content.see-3 .legend {
-  margin-top: 7%;
-}
-
-.html-lesson-wrapper .see-content.see-3 .conversation .conv-1 {
-  margin-top: 7%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
-}
-
-.html-lesson-wrapper .see-content.see-3 .conversation .conv-1 .icon {
-  margin-right: clamp(20px, 4.5vw, 40px);
-}
-
-.html-lesson-wrapper .see-content.see-3 .conversation .conv-1 .jap {
-  letter-spacing: -0.5px;
-}
-
-.html-lesson-wrapper .see-content.see-3 .conversation .conv-1 .phrases-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-.html-lesson-wrapper .see-content.see-3 .conversation .conv-1 .phrases-wrapper .phrase:not(:last-child) {
-  margin-right: clamp(10px, 3.5vw, 20px);
-}
-
-.html-lesson-wrapper .see-content.see-3 .conversation .conv-1 .phrases-wrapper .phrase:last-child {
-  margin-right: clamp(26.67px, 7vw, 50px);
-}
-
-.html-lesson-wrapper .see-content.see-3 .alt-box.left .alt {
-  margin-bottom: 3%;
-}
-
-.html-lesson-wrapper .see-content.see-4 .section-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10%;
-}
-
-.html-lesson-wrapper .see-content.see-4 .dialog-section {
-  margin-left: 14%;
-}
-
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
@@ -697,6 +636,14 @@ td {
   margin-right: clamp(15px, 4.5vw, 30px);
 }
 
+.see-3 {
+  margin-top: 5%;
+}
+
+.see-3 .phrases-section {
+  margin-top: 8%;
+}
+
 .try-1,
 .try-2,
 .try-3,
@@ -817,6 +764,7 @@ td {
 }
 
 .try-4 .table-wrapper-section .jap {
+  margin-left: 5%;
   font-family: "Noto Sans";
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;

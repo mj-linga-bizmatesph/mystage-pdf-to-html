@@ -504,64 +504,6 @@ td {
         justify-content: space-between;
       }
     }
-
-    &.see-2,
-    &.see-3,
-    &.see-4 {
-      margin-top: 5.5%;
-    }
-
-    &.see-3 {
-      .alt:not(:last-child) {
-        margin-bottom: 6%;
-      }
-
-      .legend {
-        margin-top: 7%;
-      }
-      .conversation {
-        .conv-1 {
-          margin-top: 7%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .icon {
-            margin-right: clamp(20px, 4.5vw, 40px);
-          }
-          .jap {
-            letter-spacing: -0.5px;
-          }
-
-          .phrases-wrapper {
-            display: flex;
-            justify-content: right;
-
-            .phrase:not(:last-child) {
-              margin-right: clamp(10px, 3.5vw, 20px);
-            }
-
-            .phrase:last-child {
-              margin-right: clamp(26.67px, 7vw, 50px);
-            }
-          }
-        }
-      }
-
-      .alt-box.left .alt {
-        margin-bottom: 3%;
-      }
-    }
-
-    &.see-4 {
-      .section-wrapper {
-        display: flex;
-        margin-top: 10%;
-      }
-
-      .dialog-section {
-        margin-left: 14%;
-      }
-    }
   }
   .try-content {
     margin-left: $side-margin;
@@ -696,6 +638,14 @@ td {
   }
 }
 
+.see-3 {
+  margin-top: 5%;
+
+  .phrases-section {
+    margin-top: 8%;
+  }
+}
+
 .try-1,
 .try-2,
 .try-3,
@@ -805,6 +755,7 @@ td {
     margin-top: 10%;
 
     .jap {
+      margin-left: 5%;
       font-family: $noto-sans;
       font-size: clamp(9px, 2vw, 13px);
       color: $subtext-color;

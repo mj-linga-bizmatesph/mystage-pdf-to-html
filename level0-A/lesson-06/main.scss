@@ -620,7 +620,7 @@ td {
     }
 
     .conv-2 {
-      margin-top: 5%;
+      margin-top: -5%;
       display: grid;
       grid-template-columns: 1fr min-content;
 
@@ -658,9 +658,13 @@ td {
     grid-template-columns: min-content 1fr 1fr;
     margin-top: 8%;
 
+    & > div:not(:first-child) {
+      margin-top: 15%;
+    }
+
     .combination-icon {
-      height: clamp(119px, 20vw, 180px);
-      width: clamp(119px, 20vw, 180px);
+      height: auto;
+      width: clamp(119px, 32vw, 191px);
       margin-right: clamp(15px, 4vw, 30px);
     }
 
@@ -700,6 +704,7 @@ td {
       img {
         max-width: clamp(44%, 25vw, 100%);
         padding-left: 5%;
+        margin-top: -13%;
       }
     }
   }
@@ -730,11 +735,15 @@ td {
 .try-3 {
   .combinations {
     grid-template-columns: 1fr 1fr min-content;
-    margin-top: 8%;
+    margin-top: 13%;
+
+    & > div:not(:last-child) {
+      margin-top: 5%;
+    }
 
     .combination-icon {
-      height: clamp(119px, 20vw, 180px);
-      width: clamp(119px, 20vw, 180px);
+      height: auto;
+      width: clamp(119px, 32vw, 191px);
       margin-right: clamp(15px, 4vw, 30px);
     }
 
@@ -752,7 +761,7 @@ td {
 
 .try-4 {
   .table-wrapper-section {
-    margin-top: 10%;
+    margin-top: 12%;
 
     .jap {
       margin-left: 5%;

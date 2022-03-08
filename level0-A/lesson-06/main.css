@@ -616,7 +616,7 @@ td {
 }
 
 .see-2 .conversation .conv-2 {
-  margin-top: 5%;
+  margin-top: -5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr min-content;
@@ -658,9 +658,13 @@ td {
   margin-top: 8%;
 }
 
+.try-1 .combinations > div:not(:first-child) {
+  margin-top: 15%;
+}
+
 .try-1 .combinations .combination-icon {
-  height: clamp(119px, 20vw, 180px);
-  width: clamp(119px, 20vw, 180px);
+  height: auto;
+  width: clamp(119px, 32vw, 191px);
   margin-right: clamp(15px, 4vw, 30px);
 }
 
@@ -707,6 +711,7 @@ td {
 .try-2 .table-wrapper-section .table-wrapper img {
   max-width: clamp(44%, 25vw, 100%);
   padding-left: 5%;
+  margin-top: -13%;
 }
 
 .try-2 .table {
@@ -736,12 +741,16 @@ td {
   -ms-grid-columns: 1fr 1fr min-content;
       grid-template-columns: 1fr 1fr -webkit-min-content;
       grid-template-columns: 1fr 1fr min-content;
-  margin-top: 8%;
+  margin-top: 13%;
+}
+
+.try-3 .combinations > div:not(:last-child) {
+  margin-top: 5%;
 }
 
 .try-3 .combinations .combination-icon {
-  height: clamp(119px, 20vw, 180px);
-  width: clamp(119px, 20vw, 180px);
+  height: auto;
+  width: clamp(119px, 32vw, 191px);
   margin-right: clamp(15px, 4vw, 30px);
 }
 
@@ -760,7 +769,7 @@ td {
 }
 
 .try-4 .table-wrapper-section {
-  margin-top: 10%;
+  margin-top: 12%;
 }
 
 .try-4 .table-wrapper-section .jap {

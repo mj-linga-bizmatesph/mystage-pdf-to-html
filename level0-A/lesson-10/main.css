@@ -66,7 +66,7 @@ td {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-header.png), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-footer.png);
+  background-image: url(http://127.0.0.1:8887/0-bg-header.png), url(http://127.0.0.1:8887/0-bg-footer.png);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ td {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.5%;
+  right: 8%;
   width: 1.9%;
   text-align: center;
   margin-top: 0.5%;
@@ -375,7 +375,7 @@ td {
 
 .html-lesson-wrapper .see-content .arrow.see {
   color: #1287cd;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-see-arrow.png);
+  background-image: url(http://127.0.0.1:8887/0-see-arrow.png);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .yellow {
@@ -401,25 +401,25 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(http://127.0.0.1:8887/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(http://127.0.0.1:8887/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png);
+  background-image: url(http://127.0.0.1:8887/0-blue-piece.png);
   background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .red-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(http://127.0.0.1:8887/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(http://127.0.0.1:8887/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .green-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
+  background-image: url(http://127.0.0.1:8887/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
+  background-image: url(http://127.0.0.1:8887/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
   background-position: left;
 }
 
@@ -490,7 +490,7 @@ td {
 
 .html-lesson-wrapper .try-content .arrow.try {
   color: white;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-try-arrow.png);
+  background-image: url(http://127.0.0.1:8887/0-try-arrow.png);
 }
 
 .html-lesson-wrapper .try-content .combinations {
@@ -511,7 +511,7 @@ td {
 
 .html-lesson-wrapper .act-content .arrow.act {
   color: white;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+  background-image: url(http://127.0.0.1:8887/0-act-arrow.png);
 }
 
 .html-lesson-wrapper .part-cloud {
@@ -533,7 +533,7 @@ td {
 
 .html-lesson-wrapper .part-content .arrow.part {
   color: white;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+  background-image: url(http://127.0.0.1:8887/0-act-arrow.png);
 }
 
 .html-lesson-wrapper .blue-line {
@@ -608,17 +608,13 @@ td {
 }
 
 .part-1 .office-section .speech.steve {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-steve-1.png);
-  padding: 6.5% 3% 11% 4%;
-  margin-top: 3%;
-  left: 50%;
+  margin-top: 8.5%;
+  right: 12%;
 }
 
 .part-1 .office-section .speech.akiko {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-akiko-1.png);
-  padding: 7% 5% 10% 7%;
-  margin-top: 5%;
-  left: 6%;
+  margin-top: 10%;
+  left: 9%;
 }
 
 .part-2 {
@@ -645,7 +641,7 @@ td {
 }
 
 .part-2 .office-section .speech.akiko {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-part.png);
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
   padding: 9% 5% 9% 5%;
   margin-top: 0%;
   left: 16%;
@@ -666,7 +662,7 @@ td {
 }
 
 .part-2 .office-section .speech.akiko {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-part.png);
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
   padding: 7% 6% 12% 11%;
   margin-top: 4%;
   left: 17%;
@@ -687,7 +683,7 @@ td {
 }
 
 .part-2 .office-section .speech.steve {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-part.png);
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
   padding: 10% 6% 11% 4%;
   margin-top: 1%;
   left: 11%;
@@ -708,7 +704,7 @@ td {
 }
 
 .part-2 .office-section .speech.steve {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-part.png);
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
   padding: 8% 6% 13% 8%;
   margin-top: 1%;
   left: 12%;
@@ -729,7 +725,7 @@ td {
 }
 
 .part-2 .office-section .speech.akiko {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-5-speech-bubble-part.png);
+  background-image: url(http://127.0.0.1:8887/0-5-speech-bubble-part.png);
   padding: 8% 9% 16% 10%;
   margin-top: 4%;
   left: 12%;

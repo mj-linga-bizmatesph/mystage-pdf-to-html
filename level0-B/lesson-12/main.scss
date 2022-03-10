@@ -176,7 +176,7 @@ hr {
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
-    left: 28%;
+    left: 22%;
 
     .title {
       font-size: clamp(12px, 3.5vw, 18px);
@@ -238,12 +238,12 @@ hr {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.png);
     }
   }
   .act-content {
-    margin-left: $side-margin;
-    margin-right: $side-margin;
+    margin-left: clamp(0px, 5vw, 0px);
+    margin-right: clamp(18px, 5vw, 32px);
 
     &.act-1 {
       margin-top: 32px;
@@ -266,7 +266,7 @@ hr {
     background-position: top, bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(#{$s3}/0-B-Bg12.png);
+    background-image: url($#{$s3}/0-b-12-s1bg.png);
 
     .s1-bubble1 {
       margin-left: clamp(15px, 5vw, 25px);
@@ -302,11 +302,11 @@ hr {
     }
 
     .s1-bubble2 {
-      left: 67%;
-    margin-top: clamp(74px, 2.3vw, 10px);
+      left: 70%;
+    margin-top: clamp(83px, 2.3vw, 10px);
     width: clamp(147px, 1.2vw, 90px);
-    min-height: 102px;
-      position: absolute;
+    min-height: 64px;
+    position: absolute;
       background-position: top, bottom;
       background-size: contain;
       background-repeat: no-repeat;
@@ -316,34 +316,34 @@ hr {
     }
 
     .bubble2-text {
-      padding-top: clamp(3.2px, 2.9vw, 15px);
-      padding-left: clamp(9px, 3vw, 15px);
-      padding-bottom: clamp(0.2px, 1vw, 15px);
-      padding-right: clamp(6px, 2.2vw, 15px);
-      font-size: clamp(8px, 2vw, 14px);
+      padding-top: clamp(-9.8px, 2.9vw, 11px);
+      padding-left: clamp(26px, 3vw, 15px);
+    padding-bottom: clamp(0.2px, 1vw, 15px);
+    padding-right: clamp(6px, 2.2vw, 15px);
+    font-size: clamp(8px, 2vw, 14px);
 
       .eng {
         font-weight: bold;
-        font-size: clamp(8px, 2vw, 14px);
+    font-size: clamp(5px, 2vw, 12px);
       }
 
       .jap {
-        font-size: clamp(6px, 1.5vw, 11px);
+        font-size: clamp(6px, 1.5vw, 9px);
         color: $subtext-color;
         letter-spacing: $jap-letter-spacing;
       }
     }
 
     .s1-bubble3 {
-      margin-left: clamp(120px, 5vw, 25px);
-    margin-top: clamp(67px, 2.3vw, 10px);
-    width: clamp(85px, 35vw, 230px);
-    min-height: clamp(130px, 50vw, 230px);
+      margin-left: clamp(108px, 5vw, 25px);
+      margin-top: clamp(82px, 2.3vw, 10px);
+      width: clamp(113px, 35vw, 261px);
+      min-height: clamp(164px, 54vw, 246px);
       position: absolute;
       background-position: top, bottom;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url(#{$s3}/0-convo-bubble3.png);
+      background-image: url($#{$s3}/0-b-12-bubblechat3.png);
       display: flex;
       flex-direction: column;
     }
@@ -370,9 +370,9 @@ hr {
     .s1-name {
       span {
         position: absolute;
-        left: 8.9%;
-        margin-top: clamp(145px, 36.3vw, 145px);
-        border-radius: 7px;
+    left: 13.9%;
+    margin-top: clamp(227px, 36.3vw, 145px);
+    border-radius: 7px;
         padding-top: clamp(0.2px, 1vw, 6.5px);
         padding-left: clamp(7px, 2vw, 13.5px);
         padding-bottom: clamp(0.2px, 1vw, 6.5px);
@@ -390,8 +390,8 @@ hr {
       span {
         position: absolute;
         color: #2d356b;
-        left: 74%;
-        margin-top: clamp(138px, 32.3vw, 100px);
+        left: 69%;
+    margin-top: clamp(227px, 32.3vw, 188px);
         border-radius: 7px;
         padding-top: clamp(0.2px, 1vw, 6.5px);
         padding-left: clamp(6px, 2vw, 13.5px);
@@ -454,7 +454,7 @@ hr {
 
           .box-2 {
             width: clamp(100px, 30vw, 152.8px);
-            background: url(#{$s3}/0-yellow-piece.png);
+            // background: url(#{$s3}/0-yellow-piece.png);
             text-align: center;
             background-position: center;
             background-size: cover;
@@ -509,8 +509,8 @@ hr {
     }
 
     .b1-legend {
-      width: clamp(80px, 15vw, 121px);
-      background: url(#{$s3}/0-D-1-yellow-piece.png);
+      width: clamp(80px, 15vw, 87px);
+      background: url($#{$s3}/0-b-12-yellow.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -521,7 +521,7 @@ hr {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(#{$s3}/0-D-1-pink-piece.png);
+      background-image: url($#{$s3}/0-b-12-pink.png);
       font-size: clamp(10px, 2.2vw, 16px);
     }
 
@@ -532,7 +532,7 @@ hr {
 
       & .eng {
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-        font-size: clamp(11px, 1.8vw, 16px);
+        font-size: clamp(18px, 1.8vw, 24px);
       }
     }
 
@@ -618,7 +618,7 @@ hr {
     .akiko-right-view {
       width: clamp(197.26px, 37vw, 170px);
       min-height: clamp(197.26px, 37vw, 191px);
-      margin-left: clamp(345px, 37vw, 191px);
+      margin-left: clamp(291px, 37vw, 191px);
       position: absolute;
       background-position: top, bottom;
       background-size: contain;
@@ -629,11 +629,12 @@ hr {
     .akiko-combinations {
       .akiko-first-combinations {
         position: relative;
-        left: 50px;
-        margin-left: clamp(10px, 30vw, 10px);
+    left: -21px;
+    margin-left: clamp(10px, 30vw, 10px);
         ul > li {
           list-style-type: none;
           margin-bottom: 10px;
+          color: $primary-blue;
         }
 
         ul li > .number {
@@ -738,7 +739,7 @@ hr {
     margin-top: clamp(40px, 16vw, 100px);
 
     .try-2-row-1 {
-      margin-bottom: clamp(30px, 12vw, 100px);
+      margin-bottom: clamp(142px, 12vw, 131px);
       position: relative;
       .number {
         color: $primary-blue;
@@ -763,21 +764,21 @@ hr {
         right: 0;
         font-size: clamp(10px, 2.6vw, 21px);
         padding-top: clamp(20.4px, 6vw, 40px);
-        padding-left: clamp(20px, 4vw, 40px);
+        padding-left: clamp(20px, 4vw, 2px);
         padding-bottom: clamp(7px, 2vw, 6px);
         padding-right: clamp(29px, 3vw, 6px);
-        margin-top: clamp(-50px, -50vw, -22px);
+        margin-top: clamp(-97px, -50vw, -22px);
         width: clamp(50px, 16.3vw, 130px);
-        min-height: clamp(100px, 100px, 100px);
+        min-height: clamp(122px, 129px, 125px);
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-b-12-ladypark.png);
+    background-image: url($#{$s3}/0-b-12-parkG.png);
       }
     }
 
     .try-2-row-2 {
-      margin-bottom: clamp(30px, 12vw, 100px);
-      position: relative;
+      margin-bottom: clamp(123px, 22vw, 149px);
+    position: relative;
       .number {
         color: $primary-blue;
         font-size: clamp(11px, 3.3vw, 19px);
@@ -797,24 +798,24 @@ hr {
       }
       .bubble {
         position: absolute;
-        right: 0;
+        right: -18px;
         font-size: clamp(10px, 2.6vw, 21px);
-        padding-top: clamp(20.4px, 6vw, 40px);
-        padding-left: clamp(20px, 4vw, 40px);
+        padding-top: clamp(-54.6px, 6vw, 22px);
+        padding-left: clamp(-13px, 4vw, 0px);
         padding-bottom: clamp(7px, 2vw, 6px);
-        padding-right: clamp(29px, 3vw, 6px);
-        margin-top: clamp(-50px, -50vw, -22px);
-        width: clamp(50px, 16.3vw, 130px);
-        min-height: clamp(100px, 100px, 100px);
+        padding-right: clamp(0px, 4vw, 6px);
+        margin-top: clamp(-140px, -50vw, -22px);
+        width: clamp(175px, 16.3vw, 160px);
+        min-height: clamp(174.89px, 100px, 100px);
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-B-12-lunchguy.png);
+    background-image: url($#{$s3}/0-b-12-lunch.png);
       }
     }
 
     .try-2-row-3 {
-      margin-bottom: clamp(30px, 12vw, 100px);
-      position: relative;
+      margin-bottom: clamp(51px, 25vw, 142px);
+    position: relative;
       .number {
         color: $primary-blue;
         font-size: clamp(11px, 3.3vw, 19px);
@@ -834,20 +835,20 @@ hr {
       }
       .bubble {
         position: absolute;
-        right: 0;
-        font-size: clamp(10px, 2.6vw, 21px);
-        padding-top: clamp(20.4px, 6vw, 40px);
-        padding-left: clamp(20px, 4vw, 40px);
-        padding-bottom: clamp(7px, 2vw, 6px);
-        padding-right: clamp(29px, 3vw, 6px);
-        margin-top: clamp(-50px, -50vw, -22px);
-        text-align: center;
-        width: clamp(50px, 16.3vw, 130px);
-        min-height: clamp(100px, 100px, 100px);
-        margin-left: clamp(400px, 4vw, 300px);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-B-12-relaxkagirl.png);
+    right: -26px;
+    font-size: clamp(10px, 2.6vw, 21px);
+    padding-top: clamp(-2.6px, 6vw, 40px);
+    padding-left: clamp(38px, 4vw, 40px);
+    padding-bottom: clamp(11px, 2vw, 6px);
+    padding-right: clamp(29px, 3vw, 6px);
+    margin-top: clamp(-109px, -50vw, -22px);
+    text-align: center;
+    width: clamp(50px, 16.3vw, 130px);
+    min-height: clamp(138px, 100px, 100px);
+    margin-left: clamp(422px, 4vw, 384px);
+    background-size: contain;
+    background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-b-12-relax.png);
 
         .rotate-1 {
           transform: rotate(10deg);
@@ -884,19 +885,19 @@ hr {
       }
       .bubble {
         position: absolute;
-        right: 0;
+        right: -21px;
         font-size: clamp(10px, 2.6vw, 21px);
         padding-top: clamp(20.4px, 6vw, 40px);
         padding-left: clamp(20px, 4vw, 40px);
-        padding-bottom: clamp(7px, 2vw, 6px);
-        padding-right: clamp(29px, 3vw, 6px);
-        margin-top: clamp(-50px, -50vw, -22px);
+        padding-bottom: clamp(29px, 2vw, 19px);
+        padding-right: clamp(46px, 3vw, 6px);
+        margin-top: clamp(-134px, -50vw, -22px);
         width: clamp(50px, 16.3vw, 130px);
         min-height: clamp(100px, 100px, 100px);
         margin-left: clamp(400px, 4vw, 300px);
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-B-12-compgirl.png);
+        background-image: url(#{$s3}/0-b-12-vdeo.png);
 
         .rotate-1 {
           padding-left: clamp(9px, 2.5vw, 25px);
@@ -928,23 +929,20 @@ hr {
       .line {
         color: #141821;
       }
-      .underline {
-        margin-left: clamp(55px, 14vw, 95px);
-        font-size: clamp(11px, 3.3vw, 19px);
-      }
+      
       .bubble {
         position: absolute;
-        padding-top: clamp(17.4px, 4vw, 30px);
-        padding-left: clamp(90px, 4vw, 40px);
-        padding-bottom: clamp(7px, 2vw, 6px);
-        padding-right: clamp(29px, 2vw, 6px);
-        margin-top: clamp(-50px, -50vw, -22px);
-        margin-left: clamp(400px, 4vw, 300px);
-        width: clamp(70px, 16.3vw, 150px);
-        min-height: clamp(100px, 100px, 100px);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-B-12-dinnergirl.png);
+    padding-top: clamp(17.4px, 4vw, 30px);
+    padding-left: clamp(118px, 4vw, 40px);
+    padding-bottom: clamp(7px, 2vw, 6px);
+    padding-right: clamp(29px, 2vw, 6px);
+    margin-top: clamp(-102px, -50vw, -22px);
+    margin-left: clamp(356px, 4vw, 300px);
+    width: clamp(70px, 16.3vw, 150px);
+    min-height: clamp(131px, 100px, 100px);
+    background-size: contain;
+    background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-b-12-dinner.png);
 
         .rotate-1 {
           padding-left: clamp(9px, 2.5vw, 25px);
@@ -961,32 +959,78 @@ hr {
     }
   }
 }
+  .try-3{
+    .conversation-text{
+      
+      margin-left:clamp(10px, 2.2vw, 21px);
+      .convo-3,
+      .convo-4,
+      .convo-5{
+        margin-top: 30px;
+      }
+    .number-left{
+      color: $primary-blue;
+    }
+    .convo-wrap-akiko{
+      
+      .akiko-line-1{
+        margin-top: 30px;
+        margin-left:clamp(20px, 2.2vw, 21px);
+      }
+    
+
+    }
+    .convo-wrap-helen{
+      margin-bottom: 30px;
+      margin-left: 50px;
+      .text-under{
+        margin-left: 41px;
+      }
+      .underline{
+        color: $primary-blue;
+        text-decoration: underline;
+      }
+      .underline1{
+        color: $primary-blue;
+        text-decoration: underline;
+        margin-left: 39px;
+      }
+    }
+
+    }
+    
+
+  }
+
+
   .japsub1 {
     position: absolute;
-    color: #7f8288;
-    margin-left: 160px;
-    margin-top: clamp(120px, 1vw, 30px);
+    margin-top: clamp(96px, 1vw, 30px);
+    margin-left: clamp(160px, 10.9vw, 71px);
+    font-size: clamp(8px, 1.7vw, 13px);
+    color: $subtext-color;
+    letter-spacing: $jap-letter-spacing;
   }
   .cont {
     font-family: Noto Sans;
     font-weight: bold;
     position: absolute;
-    margin-left: clamp(160px, 3.5vw, 30px);
-    margin-top: clamp(90px, 1vw, 30px);
+    margin-left: clamp(167px, 3.5vw, 30px);
+    margin-top: clamp(65px, 1vw, 30px);
   }
   .cont1 {
     font-family: Noto Sans;
     font-weight: bold;
     position: absolute;
-    margin-left: clamp(250px, 3.5vw, 30px);
-    margin-top: clamp(90px, 1vw, 30px);
+    margin-left: clamp(274px, 3.5vw, 107px);
+    margin-top: clamp(65px, 1vw, 30px)
   }
   .cont2 {
     font-family: Noto Sans;
     font-weight: bold;
     position: absolute;
-    margin-left: clamp(350px, 3.5vw, 30px);
-    margin-top: clamp(90px, 1vw, 30px);
+    margin-left: clamp(404px, 9.5vw, 180px);
+    margin-top: clamp(65px, 1vw, 30px)
   }
 .conversation-text{
   margin-top: clamp(50px, 10vw, 80px);
@@ -996,7 +1040,7 @@ hr {
       margin-bottom: clamp(20px, 10vw, 20px);
     }
       }
-      
+
 .act-1 {
   .act-1-content {
     .conversation {
@@ -1007,7 +1051,7 @@ hr {
       background-position: top, bottom;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url(#{$s3}/0-B-12-calen.png);
+      background-image: url(#{$s3}/0-b-12-act1bg.png);
 
       .bubble {
         margin-left: clamp(15px, 5vw, 19px);
@@ -1033,6 +1077,7 @@ hr {
             font-size: clamp(6px, 1.5vw, 10px);
             color: $subtext-color;
             letter-spacing: -0.5px;
+            margin-left: 10px;
           }
         }
       }
@@ -1079,10 +1124,11 @@ hr {
     .converstation-text {
       .text-under{
         
-        margin-left:clamp(86px, 2vw, 10px) ;
+      margin-left:clamp(86px, 2vw, 10px) ;
       }
       margin-top: clamp(0px, 1.3vw, 20px);
-      width: 111%;
+    width: 127%;
+    margin-left: -30px;
 
       .convo,
       .convo1,
@@ -1099,7 +1145,7 @@ hr {
           color: #141821;
         }
         .japanese {
-          margin-left: clamp(70px, 10.9vw, 90px);
+          margin-left: clamp(84px, 10.9vw, 71px);
           font-size: clamp(8px, 1.7vw, 13px);
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
@@ -1111,7 +1157,6 @@ hr {
 
 .act-2 {
   .act-2-space {
-    background-color: red;
     margin-bottom: 80px;
   }
 }

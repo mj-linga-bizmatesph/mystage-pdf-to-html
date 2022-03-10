@@ -204,7 +204,7 @@ td {
     left: 27%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(11px, 2.8vw, 18px);
       color: #141821;
     }
     .sub-title {
@@ -833,7 +833,11 @@ td {
           }
 
           img {
-            max-width: clamp(83%, 28vw, 100%);
+            max-width: clamp(48%, 14vw, 100%);
+
+            &.large {
+              max-width: clamp(93%, 28vw, 100%);
+            }
           }
         }
       }
@@ -903,7 +907,6 @@ td {
 
         .table-wrapper {
           width: 100%;
-
           p {
             margin: 0;
           }
@@ -915,15 +918,18 @@ td {
           }
           .table-img {
             text-align: center;
-            padding-top: 6%;
+            padding-top: 2%;
           }
 
-          &:not(:last-child) .table-img {
-            padding-bottom: 6%;
+          &:not(:last-child) {
+            margin-bottom: 4%;
           }
-
           img {
-            max-width: clamp(81%, 72vw, 100%);
+            max-width: clamp(33%, 30vw, 100%);
+
+            &.large {
+              max-width: clamp(55%, 25vw, 100%);
+            }
           }
         }
       }
@@ -970,12 +976,12 @@ td {
 
       .speech {
         .eng {
-          font-size: clamp(9px, 2.3vw, 16px);
+          font-size: clamp(9px, 2.3vw, 14px);
         }
 
         &.akiko {
-          margin-top: 9%;
-          right: 36.5%;
+          margin-top: 4%;
+          right: 18.1%;
         }
       }
     }

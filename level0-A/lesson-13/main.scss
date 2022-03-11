@@ -11,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -161,7 +161,7 @@ td {
   }
   .lesson-number {
     position: absolute;
-    right: 6.5%;
+    right: 8%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
@@ -204,7 +204,7 @@ td {
     left: 27%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(11px, 3vw, 18px);
       color: #141821;
     }
     .sub-title {
@@ -411,7 +411,8 @@ td {
       .green-piece-complete,
       .blue-piece-complete,
       .green-piece-male,
-      .yellow-piece-female {
+      .yellow-piece-female,
+      .gray-piece {
         background-position: center;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -429,6 +430,13 @@ td {
       }
       .blue-piece {
         background-image: url(#{$s3}/0-blue-piece.png),
+          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ebeef1 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left;
+      }
+      .gray-piece {
+        background-image: url(#{$s3}/0-gray-piece.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 20%,
@@ -626,7 +634,7 @@ td {
           }
           &.steve {
             margin-top: 19%;
-            left: 11.5%;
+            left: 10%;
           }
         }
       }
@@ -685,7 +693,7 @@ td {
       margin-top: 7%;
 
       .alt:not(:last-child) {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
       }
 
       .legend {
@@ -709,24 +717,6 @@ td {
           .icon {
             margin-right: clamp(10px, 3.5vw, 20px);
           }
-          .phrase .eng {
-            font-size: clamp(8px, 2.2vw, 15px);
-          }
-          .phrase {
-            margin-right: clamp(5px, 2vw, 10px);
-          }
-        }
-
-        .conv-2 {
-          margin-top: -5%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .phrases-wrapper {
-            display: flex;
-            justify-content: right;
-          }
-
           .phrase .eng {
             font-size: clamp(8px, 2.2vw, 15px);
           }
@@ -911,16 +901,25 @@ td {
     .office-act-1 {
       margin-top: 6%;
 
+      .calendar {
+        padding: 0 11%;
+        box-sizing: border-box;
+        margin-top: 8%;
+      }
+
       .speech {
         .eng {
-          font-size: clamp(9px, 2.3vw, 16px);
+          font-size: clamp(9px, 2.3vw, 14px);
         }
 
         &.akiko {
           margin-top: 9%;
-          right: 36.5%;
+          left: 19.5%;
         }
       }
+    }
+    .table .jap {
+      margin-bottom: 3.3%;
     }
   }
 }

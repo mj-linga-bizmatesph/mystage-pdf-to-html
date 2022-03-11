@@ -491,7 +491,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .icon div {
-  margin-top: clamp(8px, 2vw, 14px);
+  margin-top: 2%;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrases {
@@ -741,7 +741,7 @@ td {
 
 .try-2 img {
   max-width: clamp(81%, 73vw, 100%);
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .try-3 .table-wrapper-section {
@@ -770,7 +770,7 @@ td {
 
 .try-3 .table-wrapper-section .table-wrapper .table-img {
   text-align: center;
-  padding-top: 6%;
+  padding-top: 3%;
 }
 
 .try-3 .table-wrapper-section .table-wrapper:not(:last-child) .table-img {
@@ -813,15 +813,12 @@ td {
   margin-bottom: 50px;
 }
 
-.act-1 .blue-line {
-  margin-top: 5%;
-}
-
 .act-1 .office-act-1 {
   margin-top: 6%;
 }
 
 .act-1 .table-wrapper {
+  margin-top: 5%;
   width: 100%;
 }
 

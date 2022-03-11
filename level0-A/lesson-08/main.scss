@@ -521,7 +521,7 @@ td {
           width: auto;
         }
         div {
-          margin-top: clamp(8px, 2vw, 14px);
+          margin-top: 2%;
         }
       }
       .phrases {
@@ -748,7 +748,7 @@ td {
 .try-2 {
   img {
     max-width: clamp(81%, 73vw, 100%);
-    margin-top: 5%;
+    margin-top: 10%;
   }
 }
 
@@ -776,7 +776,7 @@ td {
       }
       .table-img {
         text-align: center;
-        padding-top: 6%;
+        padding-top: 3%;
       }
 
       &:not(:last-child) .table-img {
@@ -821,15 +821,12 @@ td {
 }
 
 .act-1 {
-  .blue-line {
-    margin-top: 5%;
-  }
-
   .office-act-1 {
     margin-top: 6%;
   }
 
   .table-wrapper {
+    margin-top: 5%;
     width: 100%;
     p {
       margin: 0;

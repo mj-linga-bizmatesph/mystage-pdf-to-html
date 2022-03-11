@@ -44,7 +44,7 @@ hr {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(/images/0-bg-header.png), url(/images/0-bg-footer.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-header.png), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-footer.png);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -190,7 +190,7 @@ hr {
   text-transform: uppercase;
   color: #1287cd;
   font-size: clamp(12px, 2.3vw, 16px);
-  background-image: url(/images/0-see-arrow.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-see-arrow.png);
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
@@ -212,7 +212,7 @@ hr {
 
 .html-lesson-wrapper .try-content .arrow.try {
   color: white;
-  background-image: url(/images/0-try-arrow.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-try-arrow.png);
 }
 
 .html-lesson-wrapper .act-content {
@@ -230,7 +230,7 @@ hr {
 
 .html-lesson-wrapper .act-content .arrow.act {
   color: white;
-  background-image: url(/images/0-act-arrow.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
 }
 
 .html-lesson-wrapper .section-1-convo {
@@ -241,7 +241,7 @@ hr {
   background-position: top, bottom;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-s1bg.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-s1bg.png);
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 {
@@ -252,7 +252,7 @@ hr {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-convo-bubble1.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-convo-bubble1.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,7 +291,7 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-convo-bubble2.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-convo-bubble2.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +329,7 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-bubblechat3.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-bubblechat3.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +477,7 @@ hr {
 
 .html-lesson-wrapper .section2-box-content .b1-legend {
   width: clamp(80px, 15vw, 87px);
-  background: url(/images/0-b-12-yellow.png);
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-yellow.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -489,7 +489,7 @@ hr {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-pink.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-pink.png);
   font-size: clamp(10px, 2.2vw, 16px);
 }
 
@@ -598,7 +598,7 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-D-1-akikoright-icon.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-1-akikoright-icon.png);
 }
 
 .try-1 .try1-content .akiko-combinations .akiko-first-combinations {
@@ -748,7 +748,7 @@ hr {
   min-height: clamp(122px, 129px, 125px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-parkG.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-parkG.png);
 }
 
 .try-2 .try2-content .try-2-row-2 {
@@ -790,7 +790,7 @@ hr {
   min-height: clamp(174.89px, 100px, 100px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-lunch.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-lunch.png);
 }
 
 .try-2 .try2-content .try-2-row-3 {
@@ -834,7 +834,7 @@ hr {
   margin-left: clamp(422px, 4vw, 384px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-relax.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-relax.png);
 }
 
 .try-2 .try2-content .try-2-row-3 .bubble .rotate-1 {
@@ -891,7 +891,7 @@ hr {
   margin-left: clamp(400px, 4vw, 300px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-vdeo.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-vdeo.png);
 }
 
 .try-2 .try2-content .try-2-row-4 .bubble .rotate-1 {
@@ -944,7 +944,7 @@ hr {
   min-height: clamp(131px, 100px, 100px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-dinner.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-dinner.png);
 }
 
 .try-2 .try2-content .try-2-row-5 .bubble .rotate-1 {
@@ -1052,7 +1052,7 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-b-12-act1bg.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-act1bg.png);
 }
 
 .act-1 .act-1-content .conversation .bubble {
@@ -1063,7 +1063,7 @@ hr {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-cloud-bubble-white.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-cloud-bubble-white.png);
   padding-top: clamp(12px, 4.3vw, 30px);
   padding-left: clamp(16px, 4.8vw, 45px);
   padding-bottom: clamp(5.2px, 2.6vw, 15px);

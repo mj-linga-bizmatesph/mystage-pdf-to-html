@@ -266,7 +266,7 @@ hr {
     background-position: top, bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url($#{$s3}/0-b-12-s1bg.png);
+    background-image: url(#{$s3}/0-b-12-s1bg.png);
 
     .s1-bubble1 {
       margin-left: clamp(15px, 5vw, 25px);
@@ -343,7 +343,7 @@ hr {
       background-position: top, bottom;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url($#{$s3}/0-b-12-bubblechat3.png);
+      background-image: url(#{$s3}/0-b-12-bubblechat3.png);
       display: flex;
       flex-direction: column;
     }
@@ -510,7 +510,7 @@ hr {
 
     .b1-legend {
       width: clamp(80px, 15vw, 87px);
-      background: url($#{$s3}/0-b-12-yellow.png);
+      background: url(#{$s3}/0-b-12-yellow.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -521,7 +521,7 @@ hr {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($#{$s3}/0-b-12-pink.png);
+      background-image: url(#{$s3}/0-b-12-pink.png);
       font-size: clamp(10px, 2.2vw, 16px);
     }
 
@@ -772,7 +772,7 @@ hr {
         min-height: clamp(122px, 129px, 125px);
         background-size: contain;
         background-repeat: no-repeat;
-    background-image: url($#{$s3}/0-b-12-parkG.png);
+    background-image: url(#{$s3}/0-b-12-parkG.png);
       }
     }
 
@@ -809,7 +809,7 @@ hr {
         min-height: clamp(174.89px, 100px, 100px);
         background-size: contain;
         background-repeat: no-repeat;
-    background-image: url($#{$s3}/0-b-12-lunch.png);
+    background-image: url(#{$s3}/0-b-12-lunch.png);
       }
     }
 

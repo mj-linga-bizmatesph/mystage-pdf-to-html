@@ -148,7 +148,7 @@ td {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(9px, 2vw, 14px);
+    font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
     letter-spacing: -0.5px;
@@ -729,8 +729,8 @@ td {
     }
 
     .combination-icon {
-      height: clamp(119px, 20vw, 180px);
-      width: clamp(119px, 20vw, 180px);
+      height: auto;
+      width: clamp(80px, 30vw, 180px);
     }
 
     .combination {

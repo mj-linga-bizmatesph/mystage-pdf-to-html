@@ -53,7 +53,7 @@ td {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -133,24 +133,24 @@ td {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(10px, 2vw, 14px);
+    font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
     letter-spacing: -0.5px;
     color: $subtext-color;
     font-family: $noto-sans;
-    font-size: clamp(8px, 2vw, 11px);
+    font-size: clamp(7px, 1.8vw, 11px);
   }
   .line {
     margin: 0 12px;
   }
   .lesson-number {
     position: absolute;
-    left: 91.3%;
+    right: 6.5%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
-    font-size: clamp(20px, 2vw, 40px);
+    font-size: clamp(18px, 4vw, 28px);
     color: #ffffff;
   }
 
@@ -188,35 +188,18 @@ td {
     left: 28%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(9px, 2.9vw, 18px);
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(9px, 2vw, 13px);
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -0.5px;
+      letter-spacing: -1.3px;
     }
   }
 
   //office section
   .office-section {
-    &.office-see-1 {
-      margin-top: clamp(20px, 6.5vw, 29px);
-    }
-
-    &.office-try-1-group {
-      margin-top: clamp(20px, 6.5vw, 42px);
-    }
-
-    &.office-see-3 {
-      margin-top: clamp(20px, 6.5vw, 29px);
-    }
-
-    &.office-act-1 {
-      margin-top: clamp(20px, 6.5vw, 29px);
-      margin-bottom: clamp(20px, 6.5vw, 29px);
-    }
-
     .legend {
       div {
         position: absolute;
@@ -261,64 +244,6 @@ td {
       padding: clamp(5px, 1.5vw, 9px) clamp(9px, 1.5vw, 14px);
       font-size: clamp(7px, 2vw, 10px);
       color: #2d356b;
-
-      &.akiko-1 {
-        margin-top: clamp(115px, 27vw, 170px);
-        right: clamp(44px, 11vw, 80px);
-      }
-      &.steve-1 {
-        margin-top: clamp(100px, 27vw, 170px);
-        margin-left: clamp(30px, 8vw, 45px);
-      }
-      &.takashi-1 {
-        margin-top: clamp(115px, 27vw, 188px);
-        right: clamp(28px, 11vw, 0px);
-        font-size: clamp(8px, 2vw, 14px);
-      }
-      &.mizuho-1,
-      &.ken-1,
-      &.eri-1 {
-        margin-top: clamp(102px, 27vw, 157px);
-        right: clamp(28px, 11vw, 0px);
-        font-size: clamp(8px, 2vw, 14px);
-      }
-
-      &.akiko-2,
-      &.akiko-3 {
-        margin-top: clamp(100px, 27vw, 170px);
-        margin-left: clamp(30px, 8vw, 64px);
-      }
-      &.glen-1 {
-        margin-top: clamp(115px, 27vw, 170px);
-        right: clamp(44px, 11vw, 80px);
-      }
-      &.takeshi-1 {
-        margin-top: clamp(100px, 27vw, 170px);
-        margin-left: clamp(30px, 8vw, 45px);
-      }
-      &.kelly-1,
-      &.kelly-2 {
-        margin-top: clamp(115px, 27vw, 170px);
-        right: clamp(44px, 11vw, 80px);
-      }
-      &.mandy-1 {
-        margin-top: clamp(115px, 27vw, 170px);
-        right: clamp(44px, 11vw, 80px);
-      }
-      &.kenji-1 {
-        margin-top: clamp(100px, 27vw, 181px);
-        margin-left: clamp(30px, 8vw, 64px);
-      }
-      &.akiko-4 {
-        margin-top: clamp(102px, 27vw, 189px);
-        left: clamp(27px, 11vw, 65px);
-        font-size: clamp(8px, 2vw, 14px);
-      }
-      &.paula-1 {
-        margin-top: clamp(102px, 27vw, 189px);
-        right: clamp(27px, 11vw, 65px);
-        font-size: clamp(8px, 2vw, 14px);
-      }
     }
     .conversation {
       .bubble {
@@ -327,47 +252,6 @@ td {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-
-        &.akiko-1 {
-          background-image: url(#{$s3}/0-speech-bubble-akiko-1.png);
-          margin-top: 1%;
-          left: 6%;
-          padding: 5% 8% 7% 6%;
-        }
-        &.takeshi-1 {
-          background-image: url(#{$s3}/0-speech-bubble-takeshi-1.png);
-          margin-top: 5%;
-          left: 6%;
-          padding: 5% 7% 9% 3%;
-        }
-        &.akiko-2 {
-          background-image: url(#{$s3}/0-speech-bubble-akiko-2.png);
-          margin-top: 7%;
-          left: 8%;
-          padding: 5% 2% 11% 2%;
-        }
-        &.kenji-1 {
-          background-image: url(#{$s3}/0-speech-bubble-kenji-1.png);
-          padding: 3.5% 6% 12% 5%;
-          margin-top: 6%;
-          left: 9%;
-        }
-        &.akiko-3 {
-          background-image: url(#{$s3}/0-speech-bubble-akiko-3.png);
-          padding: 7% 2% 8% 3%;
-          margin-top: 2%;
-          left: 7%;
-
-          .eng {
-            font-size: clamp(8px, 2vw, 14px);
-          }
-        }
-        &.kenji-2 {
-          background-image: url(#{$s3}/0-speech-bubble-kenji-2.png);
-          padding: 6.5% 2% 9% 3%;
-          margin-top: 1%;
-          left: 9%;
-        }
       }
       .speech {
         position: absolute;
@@ -375,154 +259,6 @@ td {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-
-        &.steve-1 {
-          background-image: url(#{$s3}/0-speech-steve-1.png);
-          padding: 3% 3% 9% 3%;
-          margin-top: 10px;
-          margin-left: 16%;
-        }
-        &.akiko-1 {
-          background-image: url(#{$s3}/0-speech-akiko-1.png);
-          padding: 1.3% 6.8% 5% 3%;
-          right: 20%;
-          margin-top: 16%;
-        }
-        &.nick-1 {
-          background-image: url(#{$s3}/0-speech-nick-1.png);
-          margin-top: 4%;
-          left: 26%;
-          padding: 1.8% 2% 5% 2%;
-        }
-        &.takashi-1 {
-          background-image: url(#{$s3}/0-speech-takashi-1.png);
-          margin-top: 17%;
-          right: 24%;
-          padding: 1.8% 7% 5% 2%;
-        }
-        &.pete-1 {
-          background-image: url(#{$s3}/0-speech-pete-1.png);
-          margin-top: 5%;
-          left: 28%;
-          padding: 1.5% 3% 4% 2.5%;
-        }
-        &.mizuho-1 {
-          background-image: url(#{$s3}/0-speech-mizuho-1.png);
-          margin-top: 17%;
-          right: 23%;
-          padding: 1% 7% 5% 2%;
-        }
-        &.risa-1 {
-          background-image: url(#{$s3}/0-speech-risa-1.png);
-          margin-top: 5%;
-          left: 28%;
-          padding: 1.3% 2% 6% 3%;
-        }
-        &.ken-1 {
-          background-image: url(#{$s3}/0-speech-ken-1.png);
-          margin-top: 20%;
-          right: 23%;
-          padding: 1.5% 7% 6% 3%;
-        }
-        &.raj-1 {
-          background-image: url(#{$s3}/0-speech-raj-1.png);
-          margin-top: 7%;
-          left: 26%;
-          padding: 1.5% 3% 6% 3%;
-        }
-        &.eri-1 {
-          background-image: url(#{$s3}/0-speech-eri-1.png);
-          right: 25%;
-          margin-top: 18%;
-          padding: 1% 6% 5% 1.8%;
-        }
-        &.akiko-2 {
-          background-image: url(#{$s3}/0-speech-akiko-2.png);
-          margin-top: 13%;
-          left: 23%;
-          padding: 1% 2% 4% 2.2%;
-          .eng {
-            font-size: clamp(8px, 2vw, 14px);
-          }
-        }
-        @media only screen and(max-width: 555px) {
-          &.akiko-2 {
-            left: 21%;
-          }
-          &.glen-1 {
-            right: 18%;
-          }
-        }
-        &.glen-1 {
-          background-image: url(#{$s3}/0-speech-glen-1.png);
-          margin-top: 12%;
-          right: 19%;
-          padding: 1.5% 4.5% 3% 1.5%;
-
-          .eng {
-            font-size: clamp(8px, 2vw, 14px);
-          }
-        }
-        &.akiko-3 {
-          background-image: url(#{$s3}/0-speech-akiko-3.png);
-          margin-top: 27%;
-          left: 25%;
-          padding: 2% 3% 8% 7%;
-        }
-        &.glen-2 {
-          background-image: url(#{$s3}/0-speech-glen-2.png);
-          margin-top: 29%;
-          right: 22%;
-          padding: 9% 14% 9% 3%;
-        }
-        &.takeshi-1 {
-          background-image: url(#{$s3}/0-speech-takeshi-1.png);
-          margin-top: 17%;
-          left: 25%;
-          padding: 2% 2% 4% 6%;
-        }
-        &.kelly-1 {
-          background-image: url(#{$s3}/0-speech-kelly-1.png);
-          margin-top: 28%;
-          right: 23%;
-          padding: 2% 9% 6% 2%;
-        }
-        &.akiko-4 {
-          background-image: url(#{$s3}/0-speech-akiko-4.png);
-          margin-top: 17%;
-          left: 25%;
-          padding: 1.5% 2% 7% 6%;
-        }
-        &.kelly-2 {
-          background-image: url(#{$s3}/0-speech-kelly-2.png);
-          padding: 1.5% 9% 3% 2%;
-          margin-top: 26%;
-          right: 24%;
-        }
-        &.kenji-1 {
-          background-image: url(#{$s3}/0-speech-kenji-1.png);
-          padding: 1.3% 3% 5% 7%;
-          margin-top: 15%;
-          left: 25%;
-        }
-        &.mandy-1 {
-          background-image: url(#{$s3}/0-speech-mandy-1.png);
-          padding: 1.5% 9% 4% 3%;
-          right: 23%;
-          margin-top: 25%;
-        }
-        &.kenji-2 {
-          background-image: url(#{$s3}/0-speech-kenji-2.png);
-          padding: 2% 2% 4% 9%;
-          margin-top: 20%;
-          left: 24%;
-        }
-        &.mandy-2 {
-          background-image: url(#{$s3}/0-speech-mandy-2.png);
-          padding: 1% 8% 3% 2%;
-          margin-top: 25%;
-          right: 22%;
-        }
       }
     }
   }
@@ -567,21 +303,6 @@ td {
     margin-left: $side-margin;
     margin-right: $side-margin;
 
-    &.see-1 {
-      margin-top: clamp(110px, 28vw, 173.2px);
-    }
-
-    &.see-2,
-    &.see-3,
-    &.see-4 {
-      margin-top: clamp(20px, 5vw, 33px);
-
-      //see-content.legend
-      & .legend {
-        margin-top: clamp(25px, 5vw, 38px);
-      }
-    }
-
     .arrow.see {
       @extend .b;
       text-transform: uppercase;
@@ -607,10 +328,10 @@ td {
       }
 
       .yellow-piece {
-        background: url(#{$s3}/0-yellow-piece.png);
+        background: url(#{$s3}/0-yellow-piece.svg);
       }
       .green-piece {
-        background: url(#{$s3}/0-green-piece.png);
+        background: url(#{$s3}/0-green-piece.svg);
       }
       .yellow-piece,
       .green-piece {
@@ -652,88 +373,6 @@ td {
         font-size: clamp(7px, 2vw, 14px);
         width: min-content;
         min-width: 100%;
-      }
-
-      .conversation {
-        .steve-1 .phrases,
-        .akiko-1 .phrases {
-          justify-content: space-between;
-        }
-
-        .steve-1 {
-          margin-top: clamp(28px, 5vw, 38px);
-          display: grid;
-          grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-
-          .icon {
-            margin-right: 10px;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-        }
-
-        .akiko-1 {
-          margin-top: clamp(17px, 4vw, 27px);
-          display: grid;
-          grid-template-columns: minmax(auto, 1fr) min-content;
-
-          .icon {
-            margin-left: -6px;
-            z-index: 0;
-          }
-          .phrase {
-            z-index: 2;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
-          }
-        }
-
-        .akiko-2 {
-          margin-top: clamp(28px, 5vw, 38px);
-          display: grid;
-          grid-template-columns: min-content 1fr;
-
-          .icon {
-            margin-right: 20px;
-          }
-
-          .eng {
-            padding: 10px 27px 10px 20px;
-          }
-
-          .phrase:not(:last-child) {
-            margin-right: 20px;
-          }
-        }
-
-        .glen-1 {
-          margin-top: clamp(28px, 5vw, 38px);
-
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .phrases {
-            justify-content: space-between;
-
-            & > div:first-child {
-              margin-left: clamp(58px, 13vw, 110px);
-
-              & > .phrase {
-                margin-right: clamp(10px, 10vw, 30px);
-              }
-            }
-          }
-
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-
-          .away-from-icon {
-            margin-right: clamp(20px, 8vw, 58px);
-          }
-        }
       }
 
       .legend {
@@ -792,13 +431,6 @@ td {
     margin-left: $side-margin;
     margin-right: $side-margin;
 
-    &.try-1,
-    &.try-2,
-    &.try-3,
-    &.try-4 {
-      margin-top: 32px;
-    }
-
     .arrow.try {
       color: white;
       background-image: url(#{$s3}/0-try-arrow.png);
@@ -806,46 +438,6 @@ td {
 
     .combinations {
       display: grid;
-
-      &.combination-1 {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: clamp(20px, 5vw, 32px);
-
-        .combination-icon {
-          height: clamp(119px, 20vw, 183px);
-          width: clamp(119px, 20vw, 183px);
-        }
-
-        .combination {
-          align-items: center;
-          justify-content: center;
-          margin-bottom: clamp(14px, 2vw, 24px);
-
-          & > div:not(:last-child) {
-            margin-right: clamp(5px, 2vw, 10px);
-          }
-        }
-      }
-
-      &.combination-2 {
-        margin-top: clamp(20px, 5vw, 32px);
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-
-        .combination-icon {
-          height: clamp(119px, 20vw, 183px);
-          width: clamp(119px, 20vw, 183px);
-        }
-
-        .combination {
-          align-items: center;
-          margin-bottom: clamp(14px, 2vw, 24px);
-
-          & > div:not(:last-child) {
-            margin-right: clamp(5px, 2vw, 10px);
-          }
-        }
-      }
 
       .combination {
         display: flex;
@@ -855,13 +447,6 @@ td {
   .act-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-    &.act-1,
-    &.act-2 {
-      margin-top: 32px;
-    }
-    &.act-2 {
-      margin-bottom: 50px;
-    }
 
     .arrow.act {
       color: white;
@@ -890,12 +475,399 @@ td {
     .eng {
       font-family: $noto-sans;
       font-weight: normal;
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(11px, 2.8vw, 18px);
       margin-bottom: clamp(2px, 1vw, 5px);
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
       margin-bottom: clamp(8px, 3vw, 12px);
+    }
+  }
+}
+
+//indiv
+.html-lesson-wrapper {
+  .see-content {
+    &.see-1 {
+      margin-top: 29%;
+
+      .office-section {
+        &.office-see-1 {
+          margin-top: clamp(20px, 6.5vw, 29px);
+        }
+
+        .conversation {
+          .speech {
+            &.steve {
+              margin-top: 3%;
+              margin-left: 18%;
+            }
+            &.akiko {
+              left: 35%;
+              margin-top: 16%;
+            }
+          }
+        }
+      }
+    }
+
+    &.see-2,
+    &.see-3,
+    &.see-4 {
+      margin-top: clamp(20px, 5vw, 33px);
+    }
+
+    &.see-2 {
+      .phrases-section {
+        .conversation {
+          .steve .phrases,
+          .akiko .phrases {
+            justify-content: space-between;
+          }
+
+          .steve {
+            margin-top: clamp(28px, 5vw, 38px);
+            display: grid;
+            grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+
+            .icon {
+              margin-right: 10px;
+            }
+            .eng {
+              padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            }
+          }
+
+          .akiko {
+            margin-top: clamp(17px, 4vw, 27px);
+            display: grid;
+            grid-template-columns: minmax(auto, 1fr) min-content;
+
+            .icon {
+              margin-left: -6px;
+              z-index: 0;
+            }
+            .phrase {
+              z-index: 2;
+            }
+            .eng {
+              padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
+            }
+          }
+        }
+
+        .legend {
+          margin-top: 4%;
+        }
+      }
+    }
+
+    &.see-3 {
+      .office-section {
+        margin-top: clamp(20px, 6.5vw, 29px);
+
+        .conversation {
+          .eng {
+            font-size: clamp(7px, 1.8vw, 13px);
+          }
+
+          .bubble {
+            &.akiko {
+              margin-top: 5%;
+              left: 9%;
+            }
+          }
+
+          .speech {
+            &.akiko-1 {
+              margin-top: 13%;
+              left: 24.5%;
+            }
+            &.akiko-2 {
+              margin-top: 25.5%;
+              left: 28%;
+            }
+
+            &.glen-1 {
+              margin-top: 13%;
+              left: 45%;
+            }
+
+            &.glen-2 {
+              margin-top: 34.5%;
+              left: 36%;
+            }
+          }
+        }
+      }
+    }
+
+    &.see-4 {
+      .phrases-section {
+        .conversation {
+          .akiko {
+            margin-top: clamp(28px, 5vw, 38px);
+            display: grid;
+            grid-template-columns: min-content 1fr;
+
+            .icon {
+              margin-right: 20px;
+            }
+
+            .eng {
+              padding: 10px 27px 10px 20px;
+            }
+
+            .phrase:not(:last-child) {
+              margin-right: 20px;
+            }
+          }
+
+          .glen {
+            margin-top: clamp(28px, 5vw, 38px);
+
+            display: grid;
+            grid-template-columns: 1fr min-content;
+
+            .phrases {
+              justify-content: space-between;
+
+              & > div:first-child {
+                margin-left: clamp(58px, 13vw, 110px);
+
+                & > .phrase {
+                  margin-right: clamp(10px, 10vw, 30px);
+                }
+              }
+            }
+
+            .eng {
+              padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            }
+
+            .away-from-icon {
+              margin-right: clamp(20px, 8vw, 58px);
+            }
+          }
+        }
+
+        .legend {
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+
+  .try-content {
+    &.try-1,
+    &.try-2,
+    &.try-3,
+    &.try-4 {
+      margin-top: 32px;
+    }
+
+    &.try-1 {
+      .combinations {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: clamp(20px, 5vw, 32px);
+
+        .combination-icon {
+          height: clamp(119px, 20vw, 183px);
+          width: clamp(119px, 20vw, 183px);
+        }
+
+        .combination {
+          align-items: center;
+          justify-content: center;
+          margin-bottom: clamp(14px, 2vw, 24px);
+
+          & > div:not(:last-child) {
+            margin-right: clamp(5px, 2vw, 10px);
+          }
+        }
+      }
+    }
+
+    &.try-2 {
+      .office-section {
+        margin-top: clamp(20px, 6.5vw, 42px);
+
+        .conversation {
+          .speech {
+            &.nick {
+              margin-top: 9%;
+              left: 29%;
+            }
+            &.takashi {
+              margin-top: 22%;
+              left: 33%;
+            }
+
+            &.pete {
+              margin-top: 9.5%;
+              left: 31%;
+            }
+            &.mizuho {
+              margin-top: 21%;
+              left: 37%;
+            }
+            &.risa {
+              margin-top: 10%;
+              left: 31%;
+            }
+            &.ken {
+              margin-top: 24%;
+              left: 44%;
+            }
+            &.raj {
+              margin-top: 11%;
+              left: 28%;
+            }
+            &.eri {
+              left: 39%;
+              margin-top: 22%;
+            }
+          }
+        }
+      }
+    }
+
+    &.try-3 {
+      .combination-2 {
+        margin-top: clamp(20px, 5vw, 32px);
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        .combination-icon {
+          height: clamp(119px, 20vw, 183px);
+          width: clamp(119px, 20vw, 183px);
+        }
+
+        .combination {
+          align-items: center;
+          margin-bottom: clamp(14px, 2vw, 24px);
+
+          & > div:not(:last-child) {
+            margin-right: clamp(5px, 2vw, 10px);
+          }
+        }
+      }
+    }
+
+    &.try-4 {
+      .office-section {
+        margin-top: clamp(20px, 6.5vw, 42px);
+      }
+
+      .conversation {
+        &.conv-1 {
+          .bubble {
+            &.takeshi {
+              margin-top: 10%;
+              left: 14%;
+            }
+          }
+
+          .speech {
+            &.takeshi {
+              margin-top: 23%;
+              left: 27%;
+            }
+            &.kelly {
+              margin-top: 26%;
+              left: 48%;
+            }
+          }
+        }
+
+        &.conv-2 {
+          .bubble {
+            &.akiko {
+              margin-top: 10%;
+              left: 13%;
+            }
+          }
+
+          .speech {
+            &.akiko {
+              margin-top: 19%;
+              left: 32%;
+            }
+            &.kelly {
+              margin-top: 25.5%;
+              left: 49.5%;
+            }
+          }
+        }
+
+        &.conv-3 {
+          .bubble {
+            &.kenji {
+              margin-top: 10%;
+              left: 16%;
+            }
+          }
+
+          .speech {
+            &.kenji {
+              margin-top: 19%;
+              left: 32%;
+            }
+            &.mandy {
+              margin-top: 28%;
+              left: 44.5%;
+            }
+          }
+        }
+
+        &.conv-4 {
+          .bubble {
+            &.kenji {
+              margin-top: 12%;
+              left: 12%;
+            }
+          }
+
+          .speech {
+            &.kenji {
+              margin-top: 26%;
+              left: 34%;
+            }
+            &.mandy {
+              margin-top: 28%;
+              left: 56%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .act-content {
+    &.act-1,
+    &.act-2 {
+      margin-top: 32px;
+    }
+    &.act-2 {
+      margin-bottom: 50px;
+    }
+
+    .office-section {
+      margin-top: clamp(20px, 6.5vw, 29px);
+      margin-bottom: clamp(20px, 6.5vw, 29px);
+
+      .conversation {
+        .bubble {
+          &.akiko {
+            margin-top: 9%;
+            left: 11%;
+
+            .eng {
+              font-size: clamp(8px, 2vw, 14px);
+            }
+          }
+        }
+      }
     }
   }
 }

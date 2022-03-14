@@ -245,7 +245,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 {
-  margin-left: clamp(15px, 5vw, 25px);
+  margin-left: clamp(4px, 5vw, 0px);
   margin-top: clamp(5px, 2.3vw, 10px);
   width: clamp(130px, 35vw, 230px);
   min-height: clamp(130px, 50vw, 230px);
@@ -321,9 +321,9 @@ hr {
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble3 {
-  margin-left: clamp(108px, 5vw, 25px);
-  margin-top: clamp(82px, 2.3vw, 10px);
-  width: clamp(113px, 35vw, 261px);
+  margin-left: clamp(91px, 55vw, 87px);
+  margin-top: clamp(82px, 2.3vw, 101px);
+  width: clamp(208px, 28vw, 276px);
   min-height: clamp(164px, 54vw, 246px);
   position: absolute;
   background-position: top, bottom;
@@ -468,29 +468,32 @@ hr {
 }
 
 .html-lesson-wrapper .section2-box-content {
-  margin-top: clamp(50px, 17vw, 70px);
+  margin-top: clamp(50px, 17vw, 40px);
 }
 
 .html-lesson-wrapper .section2-box-content .legend {
-  margin-top: clamp(25px, 5vw, 38px);
+  margin-top: clamp(25px, 5vw, 40px);
 }
 
 .html-lesson-wrapper .section2-box-content .b1-legend {
-  width: clamp(80px, 15vw, 87px);
+  width: clamp(111px, 15vw, 90px);
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-yellow.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 30px;
+  text-align: center;
 }
 
 .html-lesson-wrapper .section2-box-content .b2-legend {
-  width: clamp(86px, 16vw, 131px);
+  width: clamp(155px, 100vw, 116px);
   text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-pink.png);
   font-size: clamp(10px, 2.2vw, 16px);
+  height: 30px;
 }
 
 .html-lesson-wrapper .section2-box-content .legend {
@@ -504,8 +507,8 @@ hr {
 }
 
 .html-lesson-wrapper .section2-box-content .legend .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-  font-size: clamp(18px, 1.8vw, 24px);
+  padding-top: clamp(6px, 5vw, 5px);
+  font-size: clamp(17px, 1.8vw, 10px);
 }
 
 .html-lesson-wrapper .section2-box-content .phrase-alts {
@@ -593,7 +596,7 @@ hr {
 .try-1 .try1-content .akiko-right-view {
   width: clamp(197.26px, 37vw, 170px);
   min-height: clamp(197.26px, 37vw, 191px);
-  margin-left: clamp(291px, 37vw, 191px);
+  margin-left: clamp(250px, 37vw, 191px);
   position: absolute;
   background-position: top, bottom;
   background-size: contain;
@@ -632,12 +635,12 @@ hr {
 .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .plus {
   position: relative;
   font-size: clamp(7px, 6.3vw, 32px);
-  margin-top: clamp(30x, 1.3vw, 5px);
+  margin-top: clamp(30px, 1.3vw, 5px);
 }
 
 .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .plus img {
   width: auto;
-  height: clamp(5px, 3.5vw, 15px);
+  height: clamp(10px, 3.5vw, 15px);
 }
 
 .try-1 .try1-content .akiko-combinations .akiko-first-combinations ul li > .letter {

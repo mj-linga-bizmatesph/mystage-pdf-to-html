@@ -49,7 +49,7 @@ td {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -132,10 +132,10 @@ td {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(9px, 2vw, 14px);
+    font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -1.3px;
+    letter-spacing: -0.5px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -210,11 +210,11 @@ td {
     left: 27%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(9px, 2.9vw, 18px);
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(9px, 2vw, 13px);
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
       letter-spacing: -1.3px;
     }
@@ -222,16 +222,6 @@ td {
 
   //office section
   .office-section {
-    &.office-see-1 {
-      margin-top: 6%;
-    }
-    &.office-act-1 {
-      margin-top: 6%;
-    }
-    &.office-try-4 {
-      margin-top: 10%;
-    }
-
     .legend {
       div {
         position: absolute;
@@ -310,13 +300,6 @@ td {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-
-        &.akiko-1 {
-          background-image: url(#{$s3}/0-2-speech-bubble-akiko-1.png);
-          right: 5%;
-          padding: 4% 11% 7% 6%;
-          margin-top: 0.8%;
-        }
       }
       .speech {
         position: absolute;
@@ -324,19 +307,6 @@ td {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-
-        &.steve-1 {
-          background-image: url(#{$s3}/0-2-speech-steve-1.png);
-          padding: 1.5% 3% 6% 7.5%;
-          margin-top: 18%;
-          left: 34%;
-        }
-        &.akiko-1 {
-          background-image: url(#{$s3}/0-2-speech-akiko-1.png);
-          padding: 2% 3% 10% 3%;
-          margin-top: 6%;
-          left: 6%;
-        }
       }
     }
   }
@@ -426,32 +396,6 @@ td {
       }
     }
 
-    &.see-1 {
-      margin-top: 29%;
-    }
-
-    &.see-2,
-    &.see-3 {
-      margin-top: 5.5%;
-
-      //see-content.legend
-      & .legend {
-        margin-top: 7%;
-      }
-    }
-
-    &.see-2 {
-      .alt:not(:last-child) {
-        margin-bottom: 6%;
-      }
-    }
-
-    &.see-3 {
-      .alt:not(:last-child) {
-        margin-bottom: 6%;
-      }
-    }
-
     .arrow.see {
       color: $primary-blue;
       background-image: url(#{$s3}/0-see-arrow.png);
@@ -481,7 +425,7 @@ td {
         background-repeat: no-repeat;
       }
       .yellow-piece {
-        background-image: url(#{$s3}/0-yellow-piece.png),
+        background-image: url(#{$s3}/0-yellow-piece.svg),
           linear-gradient(
             90deg,
             rgba(255, 226, 0, 1) 80%,
@@ -514,7 +458,7 @@ td {
         background-position: right;
       }
       .green-piece {
-        background-image: url(#{$s3}/0-green-piece.png),
+        background-image: url(#{$s3}/0-green-piece.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 20%,
@@ -561,20 +505,132 @@ td {
         min-width: 100%;
       }
 
-      .conversation {
-        .akiko-1 {
-          margin-top: 5%;
-          display: grid;
-          grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+      .legend {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .try-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
 
-          .icon {
-            margin-right: clamp(20px, 4.5vw, 40px);
-          }
-          .phrase:not(:last-child) {
-            margin-right: clamp(10px, 3.5vw, 20px);
+    .arrow.try {
+      color: white;
+      background-image: url(#{$s3}/0-try-arrow.png);
+    }
+
+    .combinations {
+      display: grid;
+
+      .combination {
+        display: flex;
+      }
+    }
+  }
+  .act-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .arrow.act {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+  }
+  .blue-line {
+    width: 15px;
+    height: 2px;
+    border-bottom: 2px solid $primary-blue;
+    margin-bottom: 5px;
+  }
+  .table {
+    width: 100%;
+
+    .name {
+      font-weight: bold;
+      font-size: clamp(10px, 3vw, 16px);
+      text-align: right;
+      padding-right: 10px;
+      white-space: nowrap;
+      width: 1%;
+      padding-top: 0.8%;
+    }
+
+    .eng {
+      font-family: $noto-sans;
+      font-weight: normal;
+      font-size: clamp(12px, 3.5vw, 18px);
+      margin-bottom: 1%;
+    }
+    .jap {
+      font-size: clamp(9px, 2vw, 13px);
+      margin-bottom: 3.8%;
+    }
+  }
+}
+
+//indiv
+.html-lesson-wrapper {
+  .see-content {
+    &.see-1 {
+      margin-top: 29%;
+
+      .office-section {
+        margin-top: 6%;
+
+        .conversation {
+          .speech {
+            &.steve {
+              margin-top: 20.5%;
+              left: 39%;
+            }
+            &.akiko {
+              margin-top: 8%;
+              left: 9%;
+            }
           }
         }
+      }
+    }
 
+    &.see-2,
+    &.see-3 {
+      margin-top: 5.5%;
+
+      & .legend {
+        margin-top: 7%;
+      }
+    }
+
+    &.see-2 {
+      .phrases-section {
+        .conversation {
+          .akiko {
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+
+            .icon {
+              margin-right: clamp(20px, 4.5vw, 40px);
+            }
+            .phrase:not(:last-child) {
+              margin-right: clamp(10px, 3.5vw, 20px);
+            }
+          }
+        }
+      }
+
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+    }
+
+    &.see-3 {
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+
+      .conversation {
         .steve-1 {
           margin-top: 3%;
           display: grid;
@@ -594,17 +650,10 @@ td {
           }
         }
       }
-
-      .legend {
-        display: flex;
-        justify-content: space-between;
-      }
     }
   }
-  .try-content {
-    margin-left: $side-margin;
-    margin-right: $side-margin;
 
+  .try-content {
     &.try-1,
     &.try-2,
     &.try-3,
@@ -684,71 +733,60 @@ td {
     }
 
     &.try-4 {
-      .item-label {
-        position: absolute;
-        padding: 0.5% 2%;
-        font-size: clamp(4px, 2vw, 7px);
-        border-radius: 10px;
-        background: white;
-        border: 1px solid black;
-        &.pc {
-          margin-top: 39%;
-          left: 37%;
-        }
-        &.white-board {
-          left: 27%;
-          margin-top: 25%;
-        }
-        &.plants {
-          margin-top: 58%;
-          left: 43%;
-        }
-        &.coffee-maker {
-          left: 45%;
-          margin-top: 22.5%;
-        }
-        &.shredder {
-          left: 66%;
-          margin-top: 2%;
-        }
-        &.files {
-          margin-top: 9%;
-          right: 9%;
-        }
-        &.office-supplies {
-          right: 3%;
-          margin-top: 18%;
-        }
-        &.markers {
-          margin-top: 27%;
-          right: 25%;
-        }
-        &.copier {
-          right: 10%;
-          margin-top: 38.5%;
+      .office-section {
+        margin-top: 10%;
+        .item-label {
+          position: absolute;
+          padding: 0.5% 2%;
+          font-size: clamp(4px, 2vw, 7px);
+          border-radius: 10px;
+          background: white;
+          border: 1px solid black;
+          &.pc {
+            margin-top: 39%;
+            left: 37%;
+          }
+          &.white-board {
+            left: 27%;
+            margin-top: 25%;
+          }
+          &.plants {
+            margin-top: 58%;
+            left: 43%;
+          }
+          &.coffee-maker {
+            left: 45%;
+            margin-top: 22.5%;
+          }
+          &.shredder {
+            left: 66%;
+            margin-top: 2%;
+          }
+          &.files {
+            margin-top: 9%;
+            right: 9%;
+          }
+          &.office-supplies {
+            right: 3%;
+            margin-top: 18%;
+          }
+          &.markers {
+            margin-top: 27%;
+            right: 25%;
+          }
+          &.copier {
+            right: 10%;
+            margin-top: 38.5%;
+          }
         }
       }
       .blue-line {
         margin-top: 6%;
       }
     }
-
-    .arrow.try {
-      color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
-    }
-
-    .combinations {
-      display: grid;
-
-      .combination {
-        display: flex;
-      }
-    }
   }
+
   .act-content {
-    margin-left: $side-margin;
-    margin-right: $side-margin;
     &.act-1,
     &.act-2 {
       margin-top: 7%;
@@ -758,44 +796,20 @@ td {
     }
 
     &.act-1 {
+      .office-section {
+        margin-top: 6%;
+        .conversation {
+          .bubble {
+            &.akiko {
+              left: 64%;
+              margin-top: 4%;
+            }
+          }
+        }
+      }
       .blue-line {
         margin-top: 5%;
       }
-    }
-
-    .arrow.act {
-      color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
-    }
-  }
-  .blue-line {
-    width: 15px;
-    height: 2px;
-    border-bottom: 2px solid $primary-blue;
-    margin-bottom: 5px;
-  }
-  .table {
-    width: 100%;
-
-    .name {
-      font-weight: bold;
-      font-size: clamp(10px, 3vw, 16px);
-      text-align: right;
-      padding-right: 10px;
-      white-space: nowrap;
-      width: 1%;
-      padding-top: 0.8%;
-    }
-
-    .eng {
-      font-family: $noto-sans;
-      font-weight: normal;
-      font-size: clamp(12px, 3.5vw, 18px);
-      margin-bottom: 1%;
-    }
-    .jap {
-      font-size: clamp(9px, 2vw, 13px);
-      margin-bottom: 3.8%;
     }
   }
 }

@@ -65,7 +65,7 @@ td {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -146,9 +146,9 @@ td {
       width: 100%;
     }
   }
-  .eng {
+  to apply to all .eng {
     font-weight: bold;
-    font-size: clamp(9px, 2vw, 14px);
+    font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
     letter-spacing: -0.5px;
@@ -879,8 +879,8 @@ td {
         }
 
         .combination-icon {
-          height: clamp(119px, 20vw, 180px);
-          width: clamp(119px, 20vw, 180px);
+          height: auto;
+          width: clamp(80px, 30vw, 180px);
         }
 
         .combination {

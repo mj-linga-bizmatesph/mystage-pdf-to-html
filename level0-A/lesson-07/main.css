@@ -67,7 +67,7 @@ td {
 }
 
 .html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
-  font-size: clamp(12px, 2.3vw, 16px);
+  font-size: clamp(10px, 2.3vw, 16px);
 }
 
 .html-lesson-wrapper .flip-horizontal {
@@ -126,7 +126,7 @@ td {
 
 .html-lesson-wrapper .eng {
   font-weight: bold;
-  font-size: clamp(9px, 2vw, 14px);
+  font-size: clamp(8px, 2.3vw, 14px);
 }
 
 .html-lesson-wrapper .jap {
@@ -603,7 +603,7 @@ td {
 
 .see-1 .office-see-1 .speech.sara {
   margin-top: 21%;
-  right: 27.5%;
+  left: 28.5%;
 }
 
 .see-1 .office-see-1 .speech.akiko {
@@ -709,8 +709,8 @@ td {
 }
 
 .try-1 .combinations .combination-icon {
-  height: clamp(119px, 20vw, 180px);
-  width: clamp(119px, 20vw, 180px);
+  height: auto;
+  width: clamp(80px, 30vw, 180px);
 }
 
 .try-1 .combinations .combination {
@@ -735,8 +735,8 @@ td {
 }
 
 .try-2 .combinations .combination-icon {
-  height: clamp(119px, 20vw, 180px);
-  width: clamp(119px, 20vw, 180px);
+  height: auto;
+  width: clamp(80px, 30vw, 180px);
 }
 
 .try-2 .combinations .combination {
@@ -839,6 +839,10 @@ td {
   margin-top: 6%;
   left: 30%;
   font-family: "Noto Sans";
+}
+
+.act-1 .office-act-1 .bubble.akiko .eng {
+  font-weight: normal;
 }
 
 .act-1 .office-act-1 .bubble.akiko .jap {

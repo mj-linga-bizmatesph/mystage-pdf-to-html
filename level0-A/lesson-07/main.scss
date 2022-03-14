@@ -71,7 +71,7 @@ td {
   }
 
   .fs-16 {
-    font-size: clamp(12px, 2.3vw, 16px);
+    font-size: clamp(10px, 2.3vw, 16px);
   }
   .flip-horizontal {
     -webkit-transform: scaleX(-1);
@@ -144,7 +144,7 @@ td {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(9px, 2vw, 14px);
+    font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
     letter-spacing: -0.5px;
@@ -620,7 +620,7 @@ td {
 
       &.sara {
         margin-top: 21%;
-        right: 27.5%;
+        left: 28.5%;
       }
       &.akiko {
         margin-top: 4%;
@@ -721,8 +721,8 @@ td {
     }
 
     .combination-icon {
-      height: clamp(119px, 20vw, 180px);
-      width: clamp(119px, 20vw, 180px);
+      height: auto;
+      width: clamp(80px, 30vw, 180px);
     }
 
     .combination {
@@ -743,8 +743,8 @@ td {
     margin-top: 13%;
 
     .combination-icon {
-      height: clamp(119px, 20vw, 180px);
-      width: clamp(119px, 20vw, 180px);
+      height: auto;
+      width: clamp(80px, 30vw, 180px);
     }
 
     .combination {
@@ -845,6 +845,10 @@ td {
         margin-top: 6%;
         left: 30%;
         font-family: $noto-sans;
+
+        .eng {
+          font-weight: normal;
+        }
 
         .jap {
           letter-spacing: -2px;

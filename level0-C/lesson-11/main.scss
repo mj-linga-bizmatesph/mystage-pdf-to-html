@@ -14,24 +14,19 @@ body {
   margin: 0;
   padding: 0;
 }
-
 hr {
   border-top: 1px solid #dbdcdc;
 }
-
 .m-0 {
   margin: 0;
 }
-
 .flex {
   display: flex;
 }
-
 .img-responsive {
   width: 100%;
   height: auto;
 }
-
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +36,6 @@ hr {
   -ms-flex-direction: row;
   flex-direction: row;
 }
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -56,7 +50,6 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-
   header {
     font-family: $title-font;
   }
@@ -139,7 +132,6 @@ hr {
     font-size: clamp(0.8rem, 4vw, 1.5rem);
     color: #ffffff;
   }
-
   // Title
   .title-section {
     position: absolute;
@@ -177,7 +169,6 @@ hr {
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
     left: 28%;
-
     .title {
       font-size: clamp(11px, 3vw, 18px);
       color: #141821;
@@ -193,7 +184,6 @@ hr {
   .see-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-
     &.see-1 {
       margin-top: clamp(120px, 29vw, 183.2px);
     }
@@ -202,13 +192,11 @@ hr {
     &.see-3,
     &.see-4 {
       margin-top: clamp(20px, 5vw, 33px);
-
       //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
     }
-
     .arrow.see {
       @extend .b;
       text-transform: uppercase;
@@ -233,9 +221,6 @@ hr {
     &.try-4 {
       margin-top: 32px;
     }
-
-  
-
     .arrow.try {
       color: white;
       background-image: url(#{$s3}/0-try-arrow.png);
@@ -251,13 +236,11 @@ hr {
     &.act-2 {
       margin-top: 32px;
     }
-
     .arrow.act {
       color: white;
       background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
-
   .section-1-convo {
     margin-top: clamp(30px, 8vw, 50px);
     width: clamp(310px, 86vw, 540px);
@@ -300,38 +283,37 @@ hr {
       }
     }
     .bubble-3 {
-        position: absolute;
-        top: clamp(80%, 50vw, 81.5%);
-        left: 13%;
-        .eng {
-          font-family: $text-font;
-          font-weight: bold;
-          font-size: clamp(8.6px, 2.3vw, 14px);
-        }
-        .jap {
-          font-family: $noto-sans;
-          font-size: clamp(6.3px, 1.7vw, 11px);
-          color: $subtext-color;
-          letter-spacing: $jap-letter-spacing;
-        }
+      position: absolute;
+      top: clamp(80%, 50vw, 81.5%);
+      left: 13%;
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(8.6px, 2.3vw, 14px);
       }
-
-      .bubble-4 {
-        position: absolute;
-        top: 75%;
-        left: 48%;
-        .eng {
-          font-family: $text-font;
-          font-weight: bold;
-          font-size: clamp(8.6px, 2.3vw, 14px);
-        }
-        .jap {
-          font-family: $noto-sans;
-          font-size: clamp(6.3px, 1.7vw, 11px);
-          color: $subtext-color;
-          letter-spacing: $jap-letter-spacing;
-        }
+      .jap {
+        font-family: $noto-sans;
+        font-size: clamp(6.3px, 1.7vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
       }
+    }
+    .bubble-4 {
+      position: absolute;
+      top: 75%;
+      left: 48%;
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(8.6px, 2.3vw, 14px);
+      }
+      .jap {
+        font-family: $noto-sans;
+        font-size: clamp(6.3px, 1.7vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+    }
   }
 
   .section-2-content {
@@ -349,12 +331,11 @@ hr {
         background-image: url(#{$s3}/0-C-1-akiko-icon.png);
       }
       .wrap-all-boxes {
-          position:absolute;
+        position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 25%;
         .wrap-for-flex {
           display: flex;
-
           .meeting-with-steve {
             margin-right: 6px;
             text-align: center;
@@ -377,7 +358,6 @@ hr {
             background-image: url(#{$s3}/0-C-11-last-monday.png);
           }
         }
-
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
@@ -409,7 +389,6 @@ hr {
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-C-11-last-monday.png);
       }
-
       .legend {
         justify-content: space-between;
         display: flex;
@@ -510,90 +489,88 @@ hr {
 
   .try-1 {
     .try1-content {
-        margin-top: clamp(25px, 7vw, 50px);
-        margin-left: $side-margin;
-        margin-right: $side-margin;
-        display: flex;
-        margin-top: clamp(25px, 7vw, 50px);
-        margin-left: $side-margin;
-        margin-right: $side-margin;
-        .akiko-right-view {
-          padding-right: 3vw;
-          margin-left: -30px;
-          margin-top: clamp(20px, 7vw, 30px);
-          width: clamp(100px, 30vw, 191px);
-          min-height: clamp(130px, 37vw, 211px);
-          position: relative;
-          background-position: top, bottom;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-akiko-right-view.png);
-        }
-        .akiko-combinations {
-          margin-top: 20px;
-          margin-left: 10px;
-          .combinations {
-            .row {
-                margin-bottom: clamp(8px, 3.5vw, 20px);
-                .number-bg {
-                    @extend .b;
-                    border-radius: 50%;
-                    background: $primary-blue;
-                    color: white;
-                    margin: 0;
-                    text-align: center;
-                    line-height: clamp(13px, 4vw, 24px);
-                    font-family: $noto-sans;
-                    font-size: clamp(11px, 2vw, 16px);
-                    z-index: 1;
-                    width: clamp(18px, 4vw, 24px);
-                    height: clamp(18px, 4vw, 24px);
-                    display: grid;
-                    place-items: center;
-                  }
+      margin-top: clamp(25px, 7vw, 50px);
+      margin-left: $side-margin;
+      margin-right: $side-margin;
+      display: flex;
+      margin-top: clamp(25px, 7vw, 50px);
+      margin-left: $side-margin;
+      margin-right: $side-margin;
+      .akiko-right-view {
+        padding-right: 3vw;
+        margin-left: -30px;
+        margin-top: clamp(20px, 7vw, 30px);
+        width: clamp(100px, 30vw, 191px);
+        min-height: clamp(130px, 37vw, 211px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-akiko-right-view.png);
+      }
+      .akiko-combinations {
+        margin-top: 20px;
+        margin-left: 10px;
+        .combinations {
+          .row {
+            margin-bottom: clamp(8px, 3.5vw, 20px);
+            .number-bg {
+              @extend .b;
+              border-radius: 50%;
+              background: $primary-blue;
+              color: white;
+              margin: 0;
+              text-align: center;
+              line-height: clamp(13px, 4vw, 24px);
+              font-family: $noto-sans;
+              font-size: clamp(11px, 2vw, 16px);
+              z-index: 1;
+              width: clamp(18px, 4vw, 24px);
+              height: clamp(18px, 4vw, 24px);
+              display: grid;
+              place-items: center;
+            }
+            .letter {
+              @extend .b;
+              border: 2px solid $primary-blue;
+              color: $primary-blue;
+              margin: 0;
+              text-align: center;
+              line-height: clamp(13px, 4vw, 24px);
+              font-family: $noto-sans;
+              font-size: clamp(11px, 2vw, 16px);
+              z-index: 1;
+              width: clamp(18px, 4vw, 24px);
+              height: clamp(18px, 4vw, 24px);
+              display: grid;
+              place-items: center;
+            }
 
-                  .letter {
-                    @extend .b;
-                    border: 2px solid $primary-blue;
-                    color: $primary-blue;
-                    margin: 0;
-                    text-align: center;
-                    line-height: clamp(13px, 4vw, 24px);
-                    font-family: $noto-sans;
-                    font-size: clamp(11px, 2vw, 16px);
-                    z-index: 1;
-                    width: clamp(18px, 4vw, 24px);
-                    height: clamp(18px, 4vw, 24px);
-                    display: grid;
-                    place-items: center;
-                  }
-
-                    .text{
-                        @extend .b;
-                        color: $primary-blue; 
-                        font-size: $fs-16;
-                        white-space: nowrap;
-                        float: left !important;
-                        .deadline{
-                          margin-left: 17px;
-                        }
-                    }
-                    img {
-                        width: clamp(10px, 3vw, 15px);
-                        height: clamp(10px, 3vw, 15px);
-                        margin-left: 10px;
-                        margin-right: 10px;
-                    }
+            .text {
+              @extend .b;
+              color: $primary-blue;
+              font-size: $fs-16;
+              white-space: nowrap;
+              float: left !important;
+              .deadline {
+                margin-left: 17px;
               }
+            }
+            img {
+              width: clamp(10px, 3vw, 15px);
+              height: clamp(10px, 3vw, 15px);
+              margin-left: 10px;
+              margin-right: 10px;
+            }
           }
         }
       }
+    }
   }
 
   .try-2 {
     .try2-content {
       margin-top: 70px;
-    //   margin-bottom: 500px;
       .wrap-flex-content {
         margin-bottom: clamp(200px, 49vw, 280px);
         margin-left: 8px;
@@ -655,16 +632,16 @@ hr {
           }
         }
         .image-content {
-            left: 16%;
-            margin-top: 30px;
-            width: clamp(256px, 63vw, 370px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try2-image2.svg);
-          }
+          left: 16%;
+          margin-top: 30px;
+          width: clamp(256px, 63vw, 370px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-11-try2-image2.svg);
+        }
       }
       .wrap-flex-content-2 {
         margin-bottom: clamp(210px, 53vw, 320px);
@@ -691,16 +668,16 @@ hr {
           }
         }
         .image-content {
-            left: 16%;
-            margin-top: 30px;
-            width: clamp(256px, 63vw, 370px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try2-image3.svg);
-          }
+          left: 16%;
+          margin-top: 30px;
+          width: clamp(256px, 63vw, 370px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-11-try2-image3.svg);
+        }
       }
       .wrap-flex-content-3 {
         margin-bottom: clamp(200px, 49vw, 280px);
@@ -727,16 +704,16 @@ hr {
           }
         }
         .image-content {
-            left: 16%;
-            margin-top: 30px;
-            width: clamp(256px, 63vw, 370px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try2-image4.svg);
-          }
+          left: 16%;
+          margin-top: 30px;
+          width: clamp(256px, 63vw, 370px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-11-try2-image4.svg);
+        }
       }
       .wrap-flex-content-4 {
         margin-bottom: clamp(210px, 52vw, 310px);
@@ -763,16 +740,16 @@ hr {
           }
         }
         .image-content {
-            left: 16%;
-            margin-top: 30px;
-            width: clamp(256px, 63vw, 370px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try2-image5.svg);
-          }
+          left: 16%;
+          margin-top: 30px;
+          width: clamp(256px, 63vw, 370px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-11-try2-image5.svg);
+        }
       }
       .wrap-flex-content-5 {
         margin-bottom: clamp(290px, 67vw, 450px);
@@ -799,17 +776,16 @@ hr {
           }
         }
         .image-content {
-            // left: 11%;
-            margin-left: clamp(20px, 10.5vw, 58px);
-            margin-top: 30px;
-            width: clamp(290px, 65vw, 370px);
-            min-height: clamp(190px, 46vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try2-image6.svg);
-          }
+          margin-left: clamp(20px, 10.5vw, 58px);
+          margin-top: 30px;
+          width: clamp(290px, 65vw, 370px);
+          min-height: clamp(190px, 46vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-11-try2-image6.svg);
+        }
       }
     }
   }
@@ -820,7 +796,6 @@ hr {
       .convo-content {
         margin-bottom: clamp(55px, 13vw, 80px);
       }
-
       .part-1 {
         font-size: clamp(11px, 3vw, 18px);
         .trainer {
@@ -869,7 +844,7 @@ hr {
     margin-top: clamp(35px, 15vw, 50px);
     .wrapper-with-akiko {
       display: grid;
-      grid-template-columns:  2fr min-content;
+      grid-template-columns: 2fr min-content;
       .akiko-image {
         width: clamp(95px, 18vw, 120px);
         height: clamp(80px, 23.1vw, 150px);
@@ -880,7 +855,7 @@ hr {
         background-image: url(#{$s3}/0-C-11-nick.svg);
       }
       .wrap-all-boxes {
-          position:absolute;
+        position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 30%;
         .wrap-for-flex {
@@ -1022,7 +997,6 @@ hr {
           font-family: $noto-sans;
           font-size: clamp(11px, 2vw, 16px);
           z-index: 1;
-
           width: clamp(18px, 4vw, 24px);
           height: clamp(18px, 4vw, 24px);
           display: grid;
@@ -1034,87 +1008,84 @@ hr {
 
   .try-4 {
     .try4-content {
-        margin-top: 70px;
-        .make-columns {
-          height: clamp(125px, 34vw, 210px);
-          display: grid;
-          grid-template-columns: 3fr min-content;
-          font-size: clamp(11px, 2.8vw, 18px);
-          .trainer {
-            margin-top: clamp(10px, 3vw, 18px);
-            margin-left: 8px;
-            position: relative;
-            .number {
-              color: $primary-blue;
-            }
-            .trainer-wrap {
-              margin-left: clamp(5px, 2vw, 10px);
-            }
-            .line-under {
-              margin-left: clamp(62px, 16.4vw, 103px);
-            }
+      margin-top: 70px;
+      .make-columns {
+        height: clamp(125px, 34vw, 210px);
+        display: grid;
+        grid-template-columns: 3fr min-content;
+        font-size: clamp(11px, 2.8vw, 18px);
+        .trainer {
+          margin-top: clamp(10px, 3vw, 18px);
+          margin-left: 8px;
+          position: relative;
+          .number {
+            color: $primary-blue;
           }
-          .you {
-            margin-top: clamp(15px, 4vw, 25px);
-            margin-left: clamp(36px, 8.5vw, 54px);
-            position: relative;
-  
-            .you-wrap {
-              margin-left: clamp(5px, 2vw, 10px);
-            }
-            .line-under {
-              margin-left: clamp(34.3px, 9.5vw, 58px);
-            }
-            .underline {
-              text-decoration: underline;
-              color: $primary-blue;
-            }
+          .trainer-wrap {
+            margin-left: clamp(5px, 2vw, 10px);
           }
-          
+          .line-under {
+            margin-left: clamp(62px, 16.4vw, 103px);
+          }
         }
-
-        .image-content {
-            width: clamp(110px, 34vw, 222px);
-            height: 140px;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try4-image1.svg);
+        .you {
+          margin-top: clamp(15px, 4vw, 25px);
+          margin-left: clamp(36px, 8.5vw, 54px);
+          position: relative;
+          .you-wrap {
+            margin-left: clamp(5px, 2vw, 10px);
           }
-          .image-content2 {
-            width: clamp(110px, 34vw, 222px);
-            height: 140px;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try4-image2.svg);
+          .line-under {
+            margin-left: clamp(34.3px, 9.5vw, 58px);
           }
-          .image-content3 {
-            width: clamp(110px, 34vw, 222px);
-            height: 140px;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try4-image3.svg);
+          .underline {
+            text-decoration: underline;
+            color: $primary-blue;
           }
-          .image-content4 {
-            width: clamp(110px, 34vw, 222px);
-            height: 140px;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try4-image4.svg);
-          }
-          .image-content5 {
-            width: clamp(110px, 34vw, 222px);
-            height: 140px;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-11-try4-image5.svg);
-          }
-
+        }
       }
+
+      .image-content {
+        width: clamp(110px, 34vw, 222px);
+        height: 140px;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-11-try4-image1.svg);
+      }
+      .image-content2 {
+        width: clamp(110px, 34vw, 222px);
+        height: 140px;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-11-try4-image2.svg);
+      }
+      .image-content3 {
+        width: clamp(110px, 34vw, 222px);
+        height: 140px;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-11-try4-image3.svg);
+      }
+      .image-content4 {
+        width: clamp(110px, 34vw, 222px);
+        height: 140px;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-11-try4-image4.svg);
+      }
+      .image-content5 {
+        width: clamp(110px, 34vw, 222px);
+        height: 140px;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-11-try4-image5.svg);
+      }
+    }
   }
 
   .act-content {
@@ -1129,29 +1100,27 @@ hr {
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-C-11-act1-main.svg);
-
         .bubble-text {
-            span{
-                text-decoration: underline;
-            }
-            .li-content{
-                margin-top: 15px;
-            }
-            top: 18%;
-            left: 29%;
-            position: absolute;
-            font-size: clamp(8.9px, 2.2vw, 14px);
+          span {
+            text-decoration: underline;
           }
-
+          .li-content {
+            margin-top: 15px;
+          }
+          top: 18%;
+          left: 29%;
+          position: absolute;
+          font-size: clamp(8.9px, 2.2vw, 14px);
+        }
       }
       .convo-text-content {
         margin-top: clamp(30px, 8vw, 40px);
         font-family: $noto-sans;
-        .add-margin{
-            margin-top: 25px;
+        .add-margin {
+          margin-top: 25px;
         }
         .nick-lines {
-            margin-left: clamp(4px, 1.3vw, 8px);
+          margin-left: clamp(4px, 1.3vw, 8px);
           b {
             font-size: clamp(10px, 2.3vw, 16px);
           }
@@ -1162,7 +1131,7 @@ hr {
             font-size: clamp(10px, 2.3vw, 18px);
             margin-left: clamp(27px, 6.4vw, 46px);
           }
-          .line-under-jap{
+          .line-under-jap {
             margin-left: clamp(27px, 6.4vw, 46px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
@@ -1181,37 +1150,36 @@ hr {
             margin-left: clamp(27px, 6.4vw, 46px);
           }
         }
-
         .akiko-lines {
-            b {
-              font-size: clamp(10px, 2.3vw, 16px);
-            }
-            .thank-you {
-              font-size: clamp(10px, 2.3vw, 18px);
-            }
-            .line-under {
-              font-size: clamp(10px, 2.3vw, 18px);
-              margin-left: clamp(34px, 7.9vw, 55px);
-            }
-            .line-under-jap{
-                margin-left: clamp(34px, 7.9vw, 55px);
-                font-size: clamp(9px, 1.5vw, 13px);
-                color: $subtext-color;
-                letter-spacing: -2px;
-              }
-            .div-jap {
-                margin-left: clamp(34px, 7.9vw, 55px);
-              font-size: clamp(9px, 1.5vw, 13px);
-              color: $subtext-color;
-              letter-spacing: -2px;
-              margin-top: 5px;
-            }
-            .div-eng {
-              margin-top: 15px;
-              font-size: clamp(10px, 2.3vw, 18px);
-              margin-left: clamp(34px, 7.9vw, 55px);
-            }
+          b {
+            font-size: clamp(10px, 2.3vw, 16px);
           }
+          .thank-you {
+            font-size: clamp(10px, 2.3vw, 18px);
+          }
+          .line-under {
+            font-size: clamp(10px, 2.3vw, 18px);
+            margin-left: clamp(34px, 7.9vw, 55px);
+          }
+          .line-under-jap {
+            margin-left: clamp(34px, 7.9vw, 55px);
+            font-size: clamp(9px, 1.5vw, 13px);
+            color: $subtext-color;
+            letter-spacing: -2px;
+          }
+          .div-jap {
+            margin-left: clamp(34px, 7.9vw, 55px);
+            font-size: clamp(9px, 1.5vw, 13px);
+            color: $subtext-color;
+            letter-spacing: -2px;
+            margin-top: 5px;
+          }
+          .div-eng {
+            margin-top: 15px;
+            font-size: clamp(10px, 2.3vw, 18px);
+            margin-left: clamp(34px, 7.9vw, 55px);
+          }
+        }
       }
     }
   }
@@ -1224,19 +1192,19 @@ hr {
 }
 
 @media only screen and (min-width: 150px) and(max-width: 442px) {
-    .section-2-content .wrapper-with-akiko .akiko-image {
-      margin-left: -20px !important;
-    }
-    .section-2-content .wrapper-with-helen .helen-image {
-      margin-right: -20px !important;
-    }
-    .section-3-content .wrapper-with-akiko .akiko-image {
-      margin-right: -10px !important;
-    }
-    .see-3-content .wrapper-with-helen .helen-image {
-      margin-right: -20px !important;
-    }
-    .see-3-content .wrapper-with-akiko .wrap-all-boxes {
-      margin-left: -20px !important;
-    }
+  .section-2-content .wrapper-with-akiko .akiko-image {
+    margin-left: -20px !important;
   }
+  .section-2-content .wrapper-with-helen .helen-image {
+    margin-right: -20px !important;
+  }
+  .section-3-content .wrapper-with-akiko .akiko-image {
+    margin-right: -10px !important;
+  }
+  .see-3-content .wrapper-with-helen .helen-image {
+    margin-right: -20px !important;
+  }
+  .see-3-content .wrapper-with-akiko .wrap-all-boxes {
+    margin-left: -20px !important;
+  }
+}

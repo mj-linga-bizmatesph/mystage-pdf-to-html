@@ -251,7 +251,6 @@ hr {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-convo-bubble1.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +289,6 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/0-convo-bubble2.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,26 +317,7 @@ hr {
   letter-spacing: -1px;
 }
 
-.html-lesson-wrapper .section-1-convo .s1-bubble3 {
-  left: 22%;
-  margin-top: clamp(56px, 16.3vw, 100px);
-  width: clamp(80px, 20vw, 140px);
-  min-height: 140px;
-  position: absolute;
-  background-position: top, bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(/images/0-convo-bubble3.png);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.html-lesson-wrapper .section-1-convo .bubble3-text {
+.html-lesson-wrapper .section-1-convo .bubble4-text {
   padding-top: clamp(3.2px, 1vw, 8px);
   padding-left: clamp(6px, 2vw, 12px);
   padding-bottom: clamp(0.2px, 1vw, 8px);
@@ -346,12 +325,12 @@ hr {
   font-size: clamp(6.3px, 1.8vw, 13.6px);
 }
 
-.html-lesson-wrapper .section-1-convo .bubble3-text .eng {
+.html-lesson-wrapper .section-1-convo .bubble4-text .eng {
   font-weight: bold;
   font-size: clamp(8px, 2vw, 14px);
 }
 
-.html-lesson-wrapper .section-1-convo .bubble3-text .jap {
+.html-lesson-wrapper .section-1-convo .bubble4-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
@@ -1280,6 +1259,16 @@ hr {
   margin-left: clamp(70px, 13vw, 84px);
 }
 
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko .text-under .underline,
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .text-under .underline,
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .text-under .underline,
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko .text-under .underline {
+  margin-left: clamp(1px, 1.1vw, 8px);
+  text-decoration: underline;
+  color: #1287cd;
+  font-size: clamp(9px, 2.5vw, 14px);
+}
+
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-helen,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen,
@@ -1448,6 +1437,14 @@ hr {
   margin-left: clamp(15px, 3.5vw, 30px);
 }
 
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo .english .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo1 .english .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .english .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo3 .english .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo4 .english .text-under {
+  margin-left: clamp(40px, 11vw, 87px);
+}
+
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo .line,
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo1 .line,
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .line,
@@ -1461,10 +1458,18 @@ hr {
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .japanese,
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo3 .japanese,
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo4 .japanese {
-  margin-left: clamp(50px, 10.9vw, 90px);
+  margin-left: clamp(40px, 11vw, 87px);
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
   letter-spacing: -1px;
+}
+
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo .japanese .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo1 .japanese .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .japanese .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo3 .japanese .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo4 .japanese .text-under {
+  margin-left: clamp(40px, 11vw, 87px);
 }
 
 .html-lesson-wrapper .act-2 .act-2-space {

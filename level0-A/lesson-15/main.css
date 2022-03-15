@@ -605,14 +605,9 @@ td {
   right: 33%;
 }
 
-.part-1 .office-section .speech.steve {
-  margin-top: 8.5%;
-  right: 12%;
-}
-
 .part-1 .office-section .speech.akiko {
   margin-top: 10%;
-  left: 8%;
+  left: 33%;
 }
 
 .part-2 {
@@ -653,6 +648,11 @@ td {
 .part-2 .office-part-2-4 .speech .choice .choice-letter,
 .part-2 .office-part-2-5 .speech .choice .choice-letter {
   padding-right: clamp(10px, 4vw, 20px);
+}
+
+.part-2 .office-part-2-5 .speech.akiko {
+  margin-top: 10%;
+  left: 18%;
 }
 
 .part-2 .blue-line {

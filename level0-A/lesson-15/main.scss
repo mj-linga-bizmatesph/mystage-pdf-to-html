@@ -598,13 +598,9 @@ td {
     }
 
     .speech {
-      &.steve {
-        margin-top: 8.5%;
-        right: 12%;
-      }
       &.akiko {
         margin-top: 10%;
-        left: 8%;
+        left: 33%;
       }
     }
   }
@@ -645,6 +641,15 @@ td {
         .choice-phrase {
           @extend .b;
         }
+      }
+    }
+  }
+
+  .office-part-2-5 {
+    .speech {
+      &.akiko {
+        margin-top: 10%;
+        left: 18%;
       }
     }
   }

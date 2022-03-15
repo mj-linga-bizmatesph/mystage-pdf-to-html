@@ -12,8 +12,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: '/images';
-$s4: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -215,7 +214,7 @@ hr {
       text-transform: uppercase;
       color: $primary-blue;
       font-size: clamp(12px, 2.3vw, 16px);
-      background-image: url(#{$s4}/0-see-arrow.png);
+      background-image: url(#{$s3}/0-see-arrow.png);
       padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
       background-repeat: no-repeat;
       background-size: contain;
@@ -237,7 +236,7 @@ hr {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s4}/0-try-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.png);
     }
   }
   .act-content {
@@ -253,7 +252,7 @@ hr {
 
     .arrow.act {
       color: white;
-      background-image: url(#{$s4}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
 
@@ -268,7 +267,6 @@ hr {
     background-image: url(#{$s3}/0-B-2-Asset5-2.svg);
 
     .s1-bubble1 {
-      //margin-left: clamp(95px, 5vw, 25px);
       margin-top: clamp(21px, 5.9vw, 35px);
       left: 9%;
       right: 44.2%;
@@ -279,7 +277,6 @@ hr {
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
-      //border: 1px solid red;
 
       .bubble1-text {
         padding-top: clamp(5px, 1.6vw, 9px);
@@ -313,7 +310,6 @@ hr {
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
-      //border: 1px solid red;
     }
 
     .bubble2-text {
@@ -443,7 +439,7 @@ hr {
 
           .box-2 {
             width: clamp(100px, 23vw, 152.8px);
-            background: url(#{$s4}/0-yellow-piece.png);
+            background: url(#{$s3}/0-yellow-piece.png);
             text-align: center;
             background-position: center;
             background-size: cover;
@@ -456,7 +452,7 @@ hr {
             width: clamp(74px, 17vw, 130px);
             margin-left: clamp(4px, 2vw, 7px);
             font-size: clamp(9px, 2vw, 16px);
-            background: url(#{$s4}/0-piece-blue.png);
+            background: url(#{$s3}/0-piece-blue.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -499,7 +495,7 @@ hr {
 
       .b1-legend {
         width: clamp(80px, 15vw, 121px);
-        background: url(#{$s4}/0-yellow-piece.png);
+        background: url(#{$s3}/0-yellow-piece.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -510,7 +506,7 @@ hr {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(#{$s4}/0-piece-blue.png);
+        background-image: url(#{$s3}/0-piece-blue.png);
         font-size: clamp(10px, 2.2vw, 16px);
       }
 
@@ -611,7 +607,7 @@ hr {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s4}/0-akiko-right-view.png);
+        background-image: url(#{$s3}/0-akiko-right-view.png);
       }
 
       .akiko-combinations {
@@ -758,7 +754,6 @@ hr {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-B-2-Asset6.svg);
-          //border: 2px solid red;
         }
       }
 
@@ -796,7 +791,6 @@ hr {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-B-2-Asset7.svg);
-          //border: 2px solid red;
         }
       }
 
@@ -837,7 +831,6 @@ hr {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-B-2-Asset8.svg);
-          //border: 2px solid red;
 
           .rotate-1 {
             transform: rotate(10deg);
@@ -888,7 +881,6 @@ hr {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-B-2-Asset9.svg);
-          //border: 2px solid red;
 
           .rotate-1 {
             padding-left: clamp(9px, 2.5vw, 25px);
@@ -939,7 +931,6 @@ hr {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-B-2-Asset10.svg);
-          //border: 2px solid red;
 
           .rotate-1 {
             padding-left: clamp(9px, 2.5vw, 25px);
@@ -1139,7 +1130,6 @@ hr {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-convo-group.png);
 
         .akiko {
           span {
@@ -1302,7 +1292,6 @@ hr {
           padding-left: clamp(16px, 4.8vw, 40px);
           padding-bottom: clamp(5.2px, 2.6vw, 15px);
           padding-right: clamp(6px, 1.6vw, 15px);
-          //border: 1px solid red;
 
           .bubble-text {
             .english {

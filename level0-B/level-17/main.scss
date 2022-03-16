@@ -11,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -75,7 +75,10 @@ td {
   }
 
   .fs-16 {
-    font-size: clamp(12px, 2.3vw, 16px);
+    font-size: clamp(6px, 2.6vw, 16px);
+  }
+  .fs-18 {
+    font-size: clamp(6px, 2.7vw, 18px);
   }
   .flip-horizontal {
     -webkit-transform: scaleX(-1);
@@ -675,9 +678,40 @@ td {
           }
         }
       }
+
+      .phrase-wrapper:not(:last-child()) {
+        margin-bottom: 4%;
+      }
     }
 
     &.see-3 {
+      margin-top: 8%;
+
+      .office-section {
+        margin-top: 6%;
+
+        .speech {
+          &.akiko-1 {
+            margin-top: 10.5%;
+            left: 60.5%;
+          }
+          &.akiko-2 {
+            margin-top: 30%;
+            left: 40.5%;
+          }
+          &.helen-1 {
+            margin-top: 5.5%;
+            left: 12%;
+          }
+          &.helen-2 {
+            margin-top: 19.5%;
+            left: 34.5%;
+          }
+        }
+      }
+    }
+
+    &.see-4 {
       margin-top: 7%;
 
       .alt:not(:last-child) {
@@ -685,7 +719,7 @@ td {
       }
 
       .legend {
-        margin-top: 4%;
+        margin-top: 7%;
       }
 
       .phrase-alts {
@@ -696,84 +730,25 @@ td {
         margin-bottom: 8%;
       }
 
-      .conversation {
-        .conv-2 {
-          margin-top: 12%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .phrases-wrapper {
-            display: flex;
-            justify-content: right;
-          }
-
-          .icon {
-            margin-right: clamp(20px, 4.5vw, 40px);
-          }
-          .phrase {
-            margin-right: clamp(3px, 2vw, 5px);
-          }
-        }
-      }
-    }
-
-    &.see-4 {
-      margin-top: 7%;
-
-      .alt:not(:last-child) {
-        margin-bottom: 5%;
-      }
-
-      .legend {
-        margin-top: 4%;
-      }
-
-      .phrases-section {
-        margin-bottom: 8%;
-      }
-
-      .phrases {
-        margin-top: 5%;
+      .phrase-wrapper:not(:last-child()) {
+        margin-bottom: 4%;
       }
 
       .conversation {
         .conv-1 {
           margin-top: 5%;
           display: grid;
-          grid-template-columns: min-content 1fr;
-
-          .icon {
-            margin-right: clamp(10px, 3.5vw, 20px);
-          }
-          .phrase .eng {
-            font-size: clamp(8px, 2.2vw, 15px);
-          }
-          .phrase {
-            margin-right: clamp(5px, 2vw, 10px);
-          }
-        }
-
-        .conv-2 {
-          margin-top: -5%;
-          display: grid;
           grid-template-columns: 1fr min-content;
 
           .phrases-wrapper {
-            display: flex;
-            justify-content: right;
+            margin-left: 28%;
+            margin-top: 1%;
           }
 
-          .phrase .eng {
-            font-size: clamp(8px, 2.2vw, 15px);
-          }
-          .phrase {
-            margin-right: clamp(5px, 2vw, 10px);
+          .phrase:not(:last-child) {
+            margin-right: clamp(10px, 3vw, 20px);
           }
         }
-      }
-
-      .alt:not(:last-child) {
-        margin-bottom: 6%;
       }
     }
   }
@@ -784,70 +759,6 @@ td {
     &.try-3 {
       margin-top: 6%;
     }
-
-    // &.try-1 {
-    //   .table-wrapper-section {
-    //     margin-top: 14%;
-
-    //     .jap {
-    //       font-family: $noto-sans;
-    //       font-size: clamp(9px, 2vw, 13px);
-    //       color: $subtext-color;
-    //     }
-
-    //     .table-wrapper {
-    //       width: 100%;
-
-    //       p {
-    //         margin: 0;
-    //       }
-    //       .table-number {
-    //         @extend .b, .primary-blue;
-    //         font-size: clamp(10px, 3vw, 16px);
-    //         padding-top: 6px;
-    //         padding-left: clamp(5px, 3vw, 10px);
-    //       }
-    //       .table-img {
-    //         text-align: center;
-    //         width: 35%;
-    //       }
-
-    //       &:not(:last-child) {
-    //         margin-bottom: 13%;
-    //       }
-
-    //       img {
-    //         max-width: clamp(48%, 14vw, 100%);
-
-    //         &.large {
-    //           max-width: clamp(93%, 28vw, 100%);
-    //         }
-    //       }
-    //     }
-    //   }
-
-    //   .table {
-    //     font-family: $noto-sans;
-    //     border-collapse: collapse;
-
-    //     td {
-    //       font-size: clamp(10px, 3vw, 18px);
-    //       img {
-    //         max-width: clamp(44%, 16vw, 100%);
-    //         margin-bottom: 20px;
-    //       }
-    //     }
-
-    //     .name {
-    //       @extend .b;
-    //       font-size: clamp(10px, 3vw, 16px);
-    //       white-space: nowrap;
-    //     }
-    //     tr:not(:last-child) td:nth-child(2) {
-    //       padding-bottom: 5%;
-    //     }
-    //   }
-    // }
 
     &.try-1 {
       .combinations {
@@ -880,7 +791,7 @@ td {
       }
     }
 
-    &.try-3 {
+    &.try-2 {
       .table-wrapper-section {
         margin-top: 14%;
 
@@ -892,6 +803,7 @@ td {
 
         .table-wrapper {
           width: 100%;
+
           p {
             margin: 0;
           }
@@ -902,19 +814,24 @@ td {
             padding-left: clamp(5px, 3vw, 10px);
           }
           .table-img {
-            text-align: center;
-            padding-top: 2%;
+            text-align: right;
+            width: 23%;
+            &.small {
+              img {
+                max-width: clamp(48%, 20vw, 100%);
+              }
+            }
+
+            &.medium {
+              width: 47%;
+              img {
+                max-width: clamp(98%, 40vw, 100%);
+              }
+            }
           }
 
           &:not(:last-child) {
-            margin-bottom: 4%;
-          }
-          img {
-            max-width: clamp(33%, 30vw, 100%);
-
-            &.large {
-              max-width: clamp(55%, 25vw, 100%);
-            }
+            margin-bottom: 13%;
           }
         }
       }
@@ -924,7 +841,105 @@ td {
         border-collapse: collapse;
 
         td {
-          font-size: clamp(10px, 3vw, 18px);
+          @extend .fs-18;
+          img {
+            max-width: clamp(44%, 16vw, 100%);
+            margin-bottom: 20px;
+          }
+        }
+
+        .name {
+          @extend .b;
+          font-size: clamp(10px, 3vw, 16px);
+          white-space: nowrap;
+        }
+        tr:not(:last-child) td:nth-child(2) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+
+    &.try-3 {
+      .combinations {
+        grid-template-columns: 1fr 1fr min-content;
+        margin-top: 8%;
+
+        & > div > .combination:first-child {
+          margin-top: 12%;
+        }
+
+        & > div:last-child {
+          margin-left: 4%;
+        }
+
+        .combination-icon {
+          height: auto;
+          width: clamp(80px, 30vw, 208.43px);
+        }
+
+        .combination {
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 13%;
+
+          & > div:not(:last-child) {
+            margin-right: 4%;
+          }
+        }
+      }
+    }
+
+    &.try-4 {
+      .table-wrapper-section {
+        margin-top: 14%;
+
+        .jap {
+          font-family: $noto-sans;
+          font-size: clamp(9px, 2vw, 13px);
+          color: $subtext-color;
+        }
+
+        .table-wrapper {
+          width: 100%;
+
+          p {
+            margin: 0;
+          }
+          .table-number {
+            @extend .b, .primary-blue;
+            font-size: clamp(10px, 3vw, 16px);
+            padding-top: 6px;
+            padding-left: clamp(5px, 3vw, 10px);
+          }
+          .table-img {
+            text-align: right;
+            width: 24%;
+            &.small {
+              img {
+                max-width: clamp(1%, 21vw, 100%);
+              }
+            }
+
+            &.medium {
+              width: 34%;
+              img {
+                max-width: clamp(1%, 29vw, 100%);
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 13%;
+          }
+        }
+      }
+
+      .table {
+        font-family: $noto-sans;
+        border-collapse: collapse;
+
+        td {
+          @extend .fs-18;
           img {
             max-width: clamp(44%, 16vw, 100%);
             margin-bottom: 20px;

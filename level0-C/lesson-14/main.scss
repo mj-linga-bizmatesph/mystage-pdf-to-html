@@ -1,0 +1,754 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Arial';
+$noto-sans: 'Noto Sans';
+$primary-blue: #1287cd;
+$rank-green: #009c9a;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+$jap-letter-spacing: -1px;
+$subtext-color: #7f8288;
+$side-margin: clamp(18px, 5vw, 32px);
+$fs-16: clamp(11px, 2.7vw, 16px);
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-top: 1px solid #dbdcdc;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.html-lesson-wrapper {
+  font-family: $text-font;
+  width: 100%;
+  min-width: 360px;
+  max-width: 604px;
+  min-height: 1596px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  header {
+    font-family: $title-font;
+  }
+
+  .fs-16 {
+    font-size: clamp(12px, 2.3vw, 16px);
+  }
+  .flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .noto-sans {
+    font-family: $noto-sans;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .u-sup {
+    border-bottom: solid 1.5px black;
+    display: inline-block;
+    line-height: clamp(6px, 1.5vw, 14px);
+  }
+  .u-blue {
+    border-bottom: 1px solid $primary-blue;
+  }
+  .primary-blue {
+    color: $primary-blue;
+  }
+  .program-rank {
+    position: absolute;
+    color: #ffffff;
+    font-size: 0px;
+    margin-top: clamp(1px, 1vw, 5px);
+
+    .type {
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
+        clamp(10px, 2vw, 17px);
+      background-color: $primary-blue;
+      font-size: clamp(7px, 1.8vw, 12px);
+    }
+    .level {
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px)
+        clamp(10px, 2vw, 17px);
+      font-size: clamp(7px, 1.8vw, 12px);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -webkit-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -o-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -moz-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      margin-left: -15px;
+      width: 100%;
+    }
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .lesson-number {
+    position: absolute;
+    top: 0.5vh;
+    right: 5.5%;
+    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    color: #ffffff;
+  }
+
+  // Title
+  .title-section {
+    position: absolute;
+    top: clamp(30px, 8vw, 50px);
+    background-color: $primary-blue;
+    color: white;
+    padding: clamp(15px, 2vw, 20px) clamp(25px, 4vw, 30px) clamp(9px, 2vw, 15px);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: $noto-sans;
+    .title {
+      font-size: clamp(13px, 3.6vw, 23px);
+      margin-bottom: 4px;
+    }
+    .title-below {
+      font-size: clamp(13px, 3.6vw, 23px);
+      margin-bottom: 10px;
+    }
+    .sub-title {
+      font-size: clamp(10px, 2.3vw, 15px);
+      letter-spacing: $jap-letter-spacing;
+    }
+  }
+  .arrow {
+    @extend .b;
+    text-transform: uppercase;
+    font-size: clamp(12px, 2.3vw, 16px);
+    padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $noto-sans;
+  }
+  .instructions {
+    font-family: $noto-sans;
+    position: absolute;
+    padding: clamp(0px, 0.01vw, 3px) 0px;
+    left: 28%;
+    .title {
+      font-size: clamp(11px, 3vw, 18px);
+      color: #141821;
+    }
+    .sub-title {
+      font-size: clamp(9px, 1.8vw, 13px);
+      color: $subtext-color;
+      letter-spacing: -2px;
+    }
+  }
+  // See-content
+  .see-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+    &.see-1 {
+      margin-top: clamp(120px, 29vw, 183.2px);
+    }
+    &.see-2,
+    &.see-3,
+    &.see-4 {
+      margin-top: clamp(20px, 5vw, 33px);
+
+      //see-content.legend
+      & .legend {
+        margin-top: clamp(25px, 5vw, 38px);
+      }
+    }
+    .arrow.see {
+      @extend .b;
+      text-transform: uppercase;
+      color: $primary-blue;
+      font-size: clamp(12px, 2.3vw, 16px);
+      background-image: url(#{$s3}/0-see-arrow.png);
+      padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-family: $noto-sans;
+    }
+  }
+  .try-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+    &.try-1 {
+      margin-top: 32px;
+    }
+    &.try-2,
+    &.try-3,
+    &.try-4 {
+      margin-top: 32px;
+    }
+    .arrow.try {
+      color: white;
+      background-image: url(#{$s3}/0-try-arrow.png);
+    }
+  }
+  .act-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+    &.act-1 {
+      margin-top: 32px;
+    }
+    &.act-2 {
+      margin-top: 32px;
+    }
+    .arrow.act {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+  }
+
+  .section-1-convo {
+    margin-top: clamp(30px, 8vw, 50px);
+    width: clamp(310px, 86vw, 540px);
+    min-height: clamp(230px, 60vw, 380px);
+    position: relative;
+    background-position: top, bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(#{$s3}/0-C-14-section1.svg);
+    .bubble-1 {
+      position: absolute;
+      top: 6%;
+      left: 11%;
+      .eng {
+        font-weight: bold;
+        font-size: clamp(8.1px, 2.1vw, 14px);
+        font-family: $text-font;
+      }
+      .jap {
+        font-family: $noto-sans;
+        font-size: clamp(6.4px, 1.8vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+    }
+    .bubble-2 {
+      position: absolute;
+      top: 25%;
+      left: 24.5%;
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(8.1px, 2.1vw, 14px);
+      }
+      .jap {
+        font-family: $noto-sans;
+        font-size: clamp(6.4px, 1.8vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+    }
+    .bubble-3 {
+      position: absolute;
+      top: 44.5%;
+      left: 35.2%;
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(8.1px, 2.1vw, 14px);
+      }
+      .jap {
+        font-family: $noto-sans;
+        font-size: clamp(6.4px, 1.8vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+    }
+  }
+
+  .section-2-content {
+    margin-top: clamp(35px, 15vw, 50px);
+    .wrapper-with-akiko {
+      margin-bottom: 70px;
+      height: clamp(40px, 18vw, 150px);
+      display: grid;
+      grid-template-columns: min-content 2fr;
+      .akiko-image {
+        width: 110px;
+        height: clamp(70px, 23.1vw, 150px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-1-akiko-icon.png);
+      }
+      .wrap-all-boxes {
+        position: absolute;
+        margin-top: clamp(22px, 3vw, 19px);
+        left: 28%;
+        .wrap-for-flex {
+          margin-top: clamp(10px, 7vw, 45px);
+          display: flex;
+          .i-did {
+            margin-right: 6px;
+            text-align: center;
+            background: url(#{$s3}/0-C-14-i-did.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
+            font-size: clamp(9.6px, 2.4vw, 16px);
+          }
+          .last-week {
+            margin-right: 6px;
+            font-size: clamp(9.6px, 2.4vw, 16px);
+            padding-top: clamp(7px, 2vw, 10px);
+            padding-left: clamp(11px, 3vw, 17px);
+            padding-right: clamp(17px, 5vw, 27px);
+            text-align: center;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(#{$s3}/0-C-14-last-week.png);
+          }
+        }
+        .about-it {
+          text-align: center;
+          background: url(#{$s3}/0-C-14-about-it.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
+          font-size: clamp(9.6px, 2.4vw, 16px);
+        }
+        .jap,
+        .jap-2 {
+          font-size: clamp(9px, 2vw, 13px);
+          color: $subtext-color;
+          letter-spacing: -1.8px;
+        }
+      }
+    }
+    .section2-box-content {
+      .legend {
+        margin-top: clamp(25px, 5vw, 38px);
+        display: flex;
+        margin-bottom: 1px;
+      }
+      .b1-legend {
+        text-align: center;
+        background: url(#{$s3}/0-C-14-about-it.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) clamp(17px, 5vw, 24px);
+      }
+      .b2-legend {
+        text-align: center;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) clamp(17px, 5vw, 24px);
+        background-image: url(#{$s3}/0-C-14-i-did.png);
+      }
+      .b3-legend {
+        padding-top: clamp(7px, 2vw, 10px);
+        padding-left: clamp(11px, 3vw, 17px);
+        padding-right: clamp(12.5px, 4.5vw, 20px);
+        text-align: center;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-last-week.png);
+      }
+      .legend {
+        justify-content: space-between;
+        display: flex;
+        & .eng {
+          font-size: clamp(9.6px, 2.4vw, 16px);
+        }
+      }
+      .phrase-alts {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4px;
+        .alt-box {
+          padding: 15px;
+          border: 1px solid $primary-blue;
+        }
+        .alt {
+          display: flex;
+          align-items: baseline;
+        }
+        .alt:not(:last-child) {
+          margin-bottom: clamp(5px, 1vw, 10px);
+        }
+        .choice {
+          margin-left: clamp(5px, 1vw, 9px);
+          p {
+            margin: 0;
+            white-space: nowrap;
+            font-family: $noto-sans;
+          }
+        }
+        .choice-eng {
+          font-size: clamp(9.3px, 2.4vw, 16px);
+        }
+        .choice-jap {
+          font-size: clamp(7px, 2vw, 13px);
+          letter-spacing: -1px;
+          color: $subtext-color;
+        }
+        .choice-jap-1 {
+          font-size: clamp(7px, 2vw, 13px);
+          letter-spacing: -3px;
+          color: $subtext-color;
+        }
+        //number
+        .number {
+          @extend .b;
+          border-radius: 50%;
+          background: $primary-blue;
+          color: white;
+          margin: 0;
+          text-align: center;
+          line-height: clamp(13px, 4vw, 24px);
+          font-family: $noto-sans;
+          font-size: clamp(11px, 2vw, 16px);
+          z-index: 1;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+        }
+        .number-white {
+          @extend .b;
+          border-radius: 50%;
+          background: white;
+          color: $primary-blue;
+          margin: 0;
+          text-align: center;
+          line-height: clamp(13px, 4vw, 24px);
+          font-family: $noto-sans;
+          font-size: clamp(11px, 2vw, 16px);
+          z-index: 1;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+        }
+        .third-box {
+          background-color: #e7f3fa;
+        }
+        .letter {
+          @extend .b;
+          border: 2px solid $primary-blue;
+          color: $primary-blue;
+          margin: 0;
+          text-align: center;
+          line-height: clamp(13px, 4vw, 24px);
+          font-family: $noto-sans;
+          font-size: clamp(11px, 2vw, 16px);
+          z-index: 1;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+        }
+      }
+    }
+  }
+
+  .try-1 {
+    .try1-content {
+      margin-top: clamp(35px, 10vw, 65px);
+      .image-content1 {
+        width: clamp(320px, 86vw, 524px);
+        height: clamp(180px, 51vw, 287px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try1-image1.svg);
+      }
+      .image-content2 {
+        width: clamp(320px, 86vw, 524px);
+        height: clamp(180px, 51vw, 287px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try1-image2.svg);
+      }
+      .image-content3 {
+        width: clamp(320px, 86vw, 524px);
+        height: clamp(180px, 51vw, 287px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try1-image3.svg);
+      }
+      .image-content4 {
+        width: clamp(320px, 86vw, 524px);
+        height: clamp(180px, 51vw, 287px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try1-image4.svg);
+      }
+      .image-content5 {
+        width: clamp(320px, 86vw, 524px);
+        height: clamp(180px, 51vw, 287px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try1-image5.svg);
+      }
+      .part {
+        margin-bottom: clamp(230px, 50vw, 300px);
+        .text {
+          .add-margin {
+            margin-top: 30px;
+          }
+          margin-top: clamp(23px, 4vw, 40px);
+          position: absolute;
+          left: 9%;
+          .number {
+            color: $primary-blue;
+            font-size: clamp(12px, 3vw, 18px);
+          }
+          .content {
+            margin-left: 8px;
+            font-size: clamp(12px, 3vw, 18px);
+            .line-under {
+              margin-left: clamp(19px, 4vw, 23px);
+            }
+          }
+          .underline {
+            text-decoration: underline;
+            color: $primary-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .try-2 {
+    .try2-content {
+      margin-top: 70px;
+      .image-content {
+        width: clamp(310px, 85vw, 543px);
+        height: clamp(230px, 63vw, 391px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try2-image1.svg);
+      }
+      .image-content2 {
+        width: clamp(310px, 85vw, 543px);
+        height: clamp(230px, 63vw, 391px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try2-image2.svg);
+      }
+      .image-content3 {
+        width: clamp(310px, 85vw, 543px);
+        height: clamp(230px, 63vw, 391px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-try2-image3.svg);
+      }
+      .wrap-flex-content {
+        margin-bottom: clamp(50px, 14vw, 100px);
+        margin-left: 8px;
+        position: relative;
+        .text-content {
+          margin-top: clamp(10px, 5vw, 40px);
+        }
+        .number {
+          color: $primary-blue;
+          font-size: clamp(9.5px, 2.7vw, 18px);
+        }
+        .trainer {
+          margin-left: clamp(5px, 2vw, 10px);
+          font-size: clamp(9.5px, 2.7vw, 18px);
+          b {
+            font-size: $fs-16;
+          }
+        }
+        .underline {
+          text-decoration: underline;
+          color: $primary-blue;
+          font-size: clamp(9.5px, 2.7vw, 18px);
+        }
+        .you-part {
+          margin-top: 3%;
+          b {
+            font-size: $fs-16;
+          }
+          .you {
+            margin-left: clamp(36px, 9.6vw, 56px);
+            font-size: clamp(9.5px, 2.7vw, 18px);
+          }
+          .line-under {
+            margin-left: clamp(67px, 17.3vw, 104px);
+          }
+          .new-div {
+            margin-top: 20px;
+            margin-left: clamp(67px, 17.3vw, 104px);
+            font-size: clamp(9.5px, 2.7vw, 18px);
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .act-content {
+    .act-1-content {
+      margin-bottom: clamp(50px, 12vw, 100px);
+      .act-1-convo {
+        margin-top: clamp(30px, 8vw, 50px);
+        width: clamp(310px, 86vw, 543px);
+        min-height: clamp(330px, 90vw, 577px);
+        position: relative;
+        background-position: top, bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-C-14-act1.svg);
+      }
+      margin-top: clamp(30px, 8vw, 40px);
+      font-family: $noto-sans;
+      .convo-text-content {
+        margin-top: clamp(30px, 8vw, 40px);
+        font-size: clamp(11px, 2.5vw, 18px);
+        font-family: $noto-sans;
+        .add-margin {
+          margin-top: 25px;
+        }
+        .helen-lines {
+          margin-top: 25px;
+          .line-under {
+            margin-left: clamp(41px, 9.2vw, 66px);
+          }
+          .div-jap {
+            margin-left: clamp(41px, 9.2vw, 66px);
+            font-size: clamp(9px, 1.5vw, 13px);
+            color: $subtext-color;
+            letter-spacing: -2px;
+            margin-top: 5px;
+          }
+          .div-eng {
+            font-size: clamp(10px, 2.3vw, 18px);
+            margin-left: clamp(41px, 9.2vw, 66px);
+          }
+        }
+        .akiko-lines {
+          .line-under {
+            margin-left: clamp(41px, 9.2vw, 66px);
+          }
+          .div-1 {
+            margin-left: clamp(41px, 9.2vw, 66px);
+            margin-top: 25px;
+          }
+          .div-2 {
+            margin-top: 25px;
+            margin-left: clamp(41px, 9.2vw, 66px);
+          }
+          .div-jap {
+            margin-left: clamp(41px, 9.2vw, 66px);
+            font-size: clamp(9px, 1.5vw, 13px);
+            color: $subtext-color;
+            letter-spacing: -2px;
+            margin-top: 5px;
+          }
+          .div-eng {
+            font-size: clamp(10px, 2.3vw, 18px);
+            margin-left: clamp(41px, 9.2vw, 66px);
+          }
+        }
+      }
+    }
+  }
+
+  .act-2 {
+    .act-2-space {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media only screen and (min-width: 150px) and(max-width: 442px) {
+  .section-2-content .wrapper-with-akiko .akiko-image {
+    margin-left: -20px !important;
+  }
+  .section-2-content .wrapper-with-helen .helen-image {
+    margin-right: -20px !important;
+  }
+  .section-2-content .wrap-all-boxes {
+    margin-top: 10px !important;
+  }
+  .section-3-content .wrapper-with-akiko .akiko-image {
+    margin-right: -10px !important;
+  }
+  .see-3-content .wrapper-with-helen .helen-image {
+    margin-right: -20px !important;
+  }
+  .see-3-content .wrapper-with-akiko .wrap-all-boxes {
+    margin-left: -20px !important;
+  }
+  .li-content {
+    margin-top: 7px !important;
+  }
+  .act-1-content .bubble-text1 {
+    margin-left: -4px !important;
+  }
+}

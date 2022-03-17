@@ -144,7 +144,6 @@ hr {
     color: #ffffff;
   }
 
-  // Title
   .title-section {
     position: absolute;
     top: clamp(30px, 8vw, 50px);
@@ -189,7 +188,6 @@ hr {
     }
   }
 
-  // See-content
   .see-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
@@ -203,7 +201,6 @@ hr {
     &.see-4 {
       margin-top: clamp(20px, 5vw, 33px);
 
-      //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
@@ -563,7 +560,6 @@ hr {
           color: $subtext-color;
         }
 
-        //number
         .number {
           @extend .b;
           border-radius: 50%;
@@ -1089,7 +1085,6 @@ hr {
           color: $subtext-color;
         }
 
-        //number
         .number {
           @extend .b;
           border-radius: 50%;
@@ -1176,7 +1171,7 @@ hr {
         .convo-1,
         .convo-2,
         .convo-3,
-        .convo-4 {
+        .convo-4{
           padding-bottom: 20px;
           .convo-wrap-akiko {
             padding-bottom: clamp(10px, 1vw, 20px);
@@ -1391,16 +1386,3 @@ hr {
   }
 }
 
-// @media only screen and(max-width: 375px) {
-//   .icon {
-//     margin-top: -100px !important;
-//     margin-left: 30% !important;
-//     // img {
-//     //   height: clamp(51px, 19vw, 100px);
-//     //   width: auto;
-//     // }
-//     // div {
-//     //   margin-top: clamp(8px, 2vw, 9px);
-//     // }
-//   }
-// }

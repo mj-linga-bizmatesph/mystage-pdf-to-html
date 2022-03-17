@@ -11,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -414,7 +414,8 @@ td {
       .green-piece-complete,
       .blue-piece-complete,
       .green-piece-male,
-      .yellow-piece-female {
+      .yellow-piece-female,
+      .yellow-piece-complete {
         background-position: center;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -490,6 +491,22 @@ td {
             rgba(255, 255, 255, 0) 80%
           ),
           url(#{$s3}/0-blue-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left, center, right;
+        background-size: auto 100%, auto, auto 100%;
+      }
+
+      .yellow-piece-complete {
+        background-image: url(#{$s3}/0-yellow-piece-end.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 8%,
+            #ffe200 8%,
+            #ffe200 80%,
+            rgba(255, 255, 255, 0) 80%
+          ),
+          url(#{$s3}/0-yellow-piece-start.png);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
@@ -623,21 +640,13 @@ td {
         margin-top: 6%;
 
         .speech {
-          &.akiko-1 {
-            margin-top: 8.5%;
-            left: 54.5%;
+          &.akiko {
+            margin-top: 19%;
+            left: 30.5%;
           }
-          &.akiko-2 {
-            margin-top: 32.5%;
-            left: 40.5%;
-          }
-          &.helen-1 {
-            margin-top: 4.5%;
-            left: 11.5%;
-          }
-          &.helen-2 {
-            margin-top: 20%;
-            left: 35.5%;
+          &.nick {
+            margin-top: 5.5%;
+            left: 14%;
           }
         }
       }
@@ -651,11 +660,11 @@ td {
       }
 
       .legend {
-        margin-top: 7%;
+        margin-top: 4%;
       }
 
       .phrase-alts {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: min-content 1fr min-content;
       }
 
       .phrases-section {
@@ -669,18 +678,18 @@ td {
           grid-template-columns: 1fr min-content;
 
           .phrases-wrapper {
-            margin-left: 28%;
-            margin-top: 1%;
+            display: flex;
+            justify-content: right;
           }
 
-          .phrase:not(:last-child) {
-            margin-right: clamp(10px, 3vw, 20px);
+          .phrase {
+            margin-right: 2px;
+
+            &:last-child {
+              margin-right: clamp(5px, 2vw, 10px);
+            }
           }
         }
-      }
-
-      .phrase-wrapper:not(:last-child()) {
-        margin-bottom: 4%;
       }
     }
 
@@ -797,7 +806,7 @@ td {
 
         .jap {
           font-family: $noto-sans;
-          font-size: clamp(9px, 2vw, 13px);
+          font-size: clamp(1px, 2vw, 13px);
           color: $subtext-color;
         }
 
@@ -860,36 +869,6 @@ td {
     }
 
     &.try-3 {
-      .combinations {
-        grid-template-columns: 1fr 1fr min-content;
-        margin-top: 8%;
-
-        & > div > .combination:first-child {
-          margin-top: 12%;
-        }
-
-        & > div:last-child {
-          margin-left: 4%;
-        }
-
-        .combination-icon {
-          height: auto;
-          width: clamp(80px, 30vw, 208.43px);
-        }
-
-        .combination {
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 13%;
-
-          & > div:not(:last-child) {
-            margin-right: 4%;
-          }
-        }
-      }
-    }
-
-    &.try-4 {
       .table-wrapper-section {
         margin-top: 14%;
 
@@ -976,12 +955,12 @@ td {
 
       .speech {
         .eng {
-          font-size: clamp(9px, 2.3vw, 14px);
+          font-size: clamp(1px, 2.2vw, 14px);
         }
 
         &.akiko {
-          margin-top: 4%;
-          right: 18.1%;
+          margin-top: 7%;
+          left: 46.1%;
         }
       }
     }

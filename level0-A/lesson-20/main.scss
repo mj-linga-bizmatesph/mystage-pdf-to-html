@@ -1,0 +1,470 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Arial';
+$noto-sans: 'Noto Sans';
+
+$primary-blue: #1287cd;
+$rank-green: #009c9a;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+
+$subtext-color: #7f8288;
+
+$side-margin: clamp(18px, 5vw, 32px);
+
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-top: 1px solid #dbdcdc;
+}
+
+td {
+  vertical-align: top;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.w-11 {
+  width: clamp(6.5rem, 17vw, 12rem);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-left {
+  justify-content: left !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-right {
+  justify-content: end !important;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.html-lesson-wrapper {
+  font-family: $text-font;
+  width: 100%;
+  min-width: 360px;
+  max-width: 604px;
+  min-height: 1596px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  header {
+    font-family: $title-font;
+  }
+
+  .fs-16 {
+    font-size: clamp(10px, 2.3vw, 16px);
+  }
+  .flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .center {
+    text-align: center;
+  }
+  .noto-sans {
+    font-family: $noto-sans;
+  }
+  .exclude-letter-spacing {
+    letter-spacing: normal;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .u-sup {
+    border-bottom: solid 1.5px black;
+    display: inline-block;
+    line-height: clamp(6px, 1.5vw, 14px);
+  }
+  .u-blue {
+    text-decoration: underline;
+    color: $primary-blue;
+  }
+  .primary-blue {
+    color: $primary-blue;
+  }
+  .program-rank {
+    position: absolute;
+    color: #ffffff;
+    font-size: 0px;
+    margin-top: clamp(1px, 1vw, 5px);
+
+    .type {
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
+        clamp(10px, 3vw, 17px);
+      background-color: $primary-blue;
+      font-size: clamp(7px, 1.8vw, 12px);
+    }
+    .level {
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px)
+        clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 12px);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -webkit-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -o-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -moz-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      margin-left: -15px;
+      width: 100%;
+    }
+  }
+  .eng {
+    font-weight: bold;
+    font-size: clamp(8px, 2.3vw, 14px);
+  }
+  .jap {
+    letter-spacing: -1.5px;
+    color: $subtext-color;
+    font-family: $noto-sans;
+    font-size: clamp(7px, 1.8vw, 11px);
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .lesson-number {
+    position: absolute;
+    right: 7.8%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: clamp(18px, 3.5rem, 26px);
+    color: #ffffff;
+  }
+
+  .title-section {
+    position: absolute;
+    top: clamp(30px, 8vw, 50px);
+    background-color: $primary-blue;
+    color: white;
+    padding: clamp(10px, 3vw, 16px) clamp(20px, 6vw, 32px);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: $noto-sans;
+
+    .title {
+      font-size: clamp(16px, 4.5vw, 26px);
+      margin-bottom: 0.5%;
+    }
+    .sub-title {
+      font-size: clamp(10px, 2.5vw, 15px);
+      letter-spacing: -1.3px;
+    }
+  }
+  .arrow {
+    @extend .b;
+    text-transform: uppercase;
+    font-size: clamp(12px, 2.3vw, 16px);
+    padding: 2.4% 3.5%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $noto-sans;
+  }
+  .instructions {
+    font-family: $noto-sans;
+    position: absolute;
+    padding: clamp(0px, 0.01vw, 3px) 0px;
+    left: 27%;
+
+    .title {
+      font-size: clamp(9px, 2.9vw, 18px);
+      color: #141821;
+    }
+    .sub-title {
+      font-size: clamp(7px, 2vw, 13px);
+      color: $subtext-color;
+      letter-spacing: -1.3px;
+    }
+  }
+
+  //office section
+  .office-section {
+    .legend {
+      div {
+        position: absolute;
+        &.left,
+        &.right {
+          @extend .b;
+          font-size: clamp(18px, 3vw, 25px);
+          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px)
+            clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
+          background-color: #ebebeb;
+          margin-top: 2px;
+          color: #2d356b;
+        }
+        &.right {
+          right: 0;
+          margin-right: $side-margin;
+        }
+        &.center {
+          transform: translateY(100%);
+          margin-top: -15px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 0;
+          height: auto;
+          left: 0;
+          right: 0;
+
+          & > .number {
+            font-size: clamp(15px, 4vw, 24px);
+            width: clamp(20px, 4vw, 35px);
+            height: clamp(20px, 4vw, 35px);
+            line-height: clamp(20px, 4vw, 35px);
+          }
+        }
+      }
+    }
+    .name {
+      @extend .b;
+      position: absolute;
+      border-radius: clamp(4px, 1vw, 7px);
+      border: 0.25px solid #231f20;
+      background: white;
+      padding: 1% 1.6%;
+      font-size: clamp(7px, 2vw, 10px);
+      color: #2d356b;
+    }
+    .conversation {
+      .bubble {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .speech {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .text {
+    @extend .b, .primary-blue, .fs-16, .center;
+    white-space: nowrap;
+    font-family: $noto-sans;
+  }
+  .part-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+  }
+  .blue-line {
+    width: 15px;
+    height: 2px;
+    border-bottom: 2px solid $primary-blue;
+    margin-bottom: 5px;
+  }
+  .table {
+    width: 100%;
+
+    .name {
+      font-weight: bold;
+      font-size: clamp(10px, 3vw, 16px);
+      text-align: right;
+      padding-right: 10px;
+      white-space: nowrap;
+      width: 1%;
+      padding-top: 0.8%;
+    }
+
+    .eng {
+      font-family: $noto-sans;
+      font-weight: normal;
+      font-size: clamp(10px, 2.68vw, 18px);
+      margin-bottom: 1%;
+    }
+    .jap {
+      font-size: clamp(9px, 2vw, 13px);
+      margin-bottom: 3.8%;
+    }
+  }
+}
+
+//individuals
+.part-1 {
+  margin-top: 29%;
+}
+
+.part-1, .part-2 {
+
+  font-family: $noto-sans !important;
+  .blue-line {
+    margin-top: 5%;
+  }
+  .table-conv {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    tr {
+      td {
+        padding-bottom: clamp(1rem, 1.5rem, 1.5rem);
+      }
+    }
+  }
+
+  .intro {
+    margin-top: 12px;
+    margin-bottom: 2rem;
+    .eng {
+      font-size: clamp(10px, 18px, 18px);
+      font-weight: normal;
+    }
+    .jap {
+      font-size: clamp(9px, 13px, 13px);
+    }
+  }
+
+  p.jap {
+    letter-spacing: -2px;
+  }
+  .office-part-1, .office-part-2 {
+    margin-top: 6%;
+
+    .bubble {
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(10px, 2.3vw, 15px);
+      }
+
+      .jap {
+        font-family: $noto-sans;
+        letter-spacing: -1px;
+        font-size: clamp(10px, 2.3vw, 13px);
+        line-height: clamp(10px, 13px, 14px);
+      }
+      &.akiko-1 {
+        margin-top: clamp(5%, 9%, 12%);
+        left: 35%;
+      }
+      &.akiko-2 {
+        margin-top: 14.4%;
+        left: 32.9%;
+      }
+    }
+  }
+}
+
+.part-2 {
+  margin-top: 7%;
+  .office-part-2 {
+    margin-top: 2.5rem;
+    &.top {
+      margin-top: 5rem !important;  
+    }
+  }
+  .part-2-items {
+    .bubble {
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(10px, 2.3vw, 15px);
+        .option-item {
+          display: grid;
+          grid-template-columns: min-content 1fr;
+          padding-bottom: clamp(8px, 14px, 14px);
+          .option {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+    &.item-1 {
+      .akiko {
+        margin-top: clamp(7%, 9%, 12%);
+        left: 29%;
+      }
+      .option-item {
+        width: 20rem;
+      }
+    }
+    &.item-2 {
+      .akiko {
+        margin-top: clamp(7%, 9%, 12%);
+        left: 23%;
+      }
+      .option-item {
+        width: 40rem;
+      }
+    }
+    &.item-3 {
+      .akiko {
+        margin-top: clamp(11%, 21%, 23%);
+        left: 37%;
+      }
+      .akiko-2 {
+        margin-top: clamp(5%, 7%, 13%);
+        left: 12%;
+      }
+      .option-item {
+        width: 40rem;
+      }
+    }
+    &.item-4 {
+      .akiko {
+        margin-top: clamp(10%, 16%, 20%);
+        left: 28%;
+      }
+      .option-item {
+        width: 30rem;
+      }
+    }
+    &.item-5 {
+      .akiko {
+        margin-top: clamp(6%, 10%, 15%);
+        left: 25%;
+      }
+      .option-item {
+        width: 30rem;
+      }
+    }
+  }
+}

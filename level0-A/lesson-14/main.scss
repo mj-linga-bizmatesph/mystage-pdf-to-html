@@ -917,12 +917,19 @@ td {
           font-size: clamp(9px, 2.3vw, 14px);
         }
         &.expo {
+          & * {
+            color: #2d356b !important;
+          }
           margin-top: 31%;
           left: 82.5%;
         }
         &.flight {
           margin-top: 19%;
           left: 68.5%;
+
+          & * {
+            color: #2d356b !important;
+          }
         }
         &.helen {
           margin-top: 12%;

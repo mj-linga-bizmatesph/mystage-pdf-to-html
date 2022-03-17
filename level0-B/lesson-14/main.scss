@@ -12,7 +12,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: '/images';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -265,27 +265,14 @@ hr {
     background-position: top, bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(/images/0-B-14-S1BG.png);
+    background-image: url(#{$s3}/0-b-14-s1bg.svg);
 
     .s1-bubble1 {
-        margin-left: clamp(4px, 5vw, 7px);
-        margin-top: clamp(100px, 2.3vw, 72px);
-        width: clamp(254px, 84vw, 184px);
-        min-height: clamp(66px, 11vw, 76px);
-        position: absolute;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/images/0-b-14-textakiko.png);
-      display: flex;
-      flex-direction: column;
-
       .bubble1-text {
-        padding-top: clamp(4px, 1.6vw, 19px);
-        padding-left: clamp(10px, 1.6vw, 12px);
-        padding-bottom: clamp(5.2px, 2.6vw, 15px);
-        padding-right: clamp(0px, 1.6vw, -4px);
         position: absolute;
-        display: block;
+        margin-top: clamp(32px, 17vw, 100px);
+        margin-left: clamp(7px, 5vw, 17px);
+        font-size: clamp(6.3px, 1.8vw, 13.6px);
 
         .eng {
           font-weight: bold;
@@ -301,68 +288,42 @@ hr {
     }
 
     .s1-bubble2 {
-        left: 41%;
-    margin-top: clamp(40px, 2.3vw, 10px);
-    width: clamp(177px, 46vw, 282px);
-    min-height: 230px;
-    position: absolute;
-      background-position: top, bottom;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/images/0-b-14-bubbleN1.png);
-      display: flex;
-      flex-direction: column;
-    }
+      .bubble2-text {
+        position: absolute;
+        margin-top: clamp(14px, 7vw, 39px);
+        margin-left: clamp(18px, 43vw, 260px);
+        font-size: clamp(6.3px, 1.8vw, 13.6px);
 
-    .bubble2-text {
-        padding-top: clamp(13.2px, 2.9vw, 7px);
-    padding-left: clamp(13px, 3vw, 8px);
-    padding-bottom: clamp(0.2px, 1vw, 9px);
-    padding-right: clamp(6px, 2.2vw, 0px);
-    font-size: clamp(8px, 2vw, 14px);
+        .eng {
+          font-weight: bold;
+          font-size: clamp(8px, 2vw, 14px);
+        }
 
-      .eng {
-        font-weight: bold;
-        font-size: clamp(8px, 2vw, 14px);
-      }
-
-      .jap {
-        font-size: clamp(6px, 1.5vw, 11px);
-        color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        .jap {
+          font-size: clamp(6px, 1.5vw, 11px);
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+        }
       }
     }
 
     .s1-bubble3 {
-        left: 49%;
-        margin-top: clamp(56px, 16.3vw, 100px);
-        width: clamp(130px, 20vw, 191px);
-        min-height: 140px;
+      .bubble3-text {
         position: absolute;
-      background-position: top, bottom;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/images/0-b-14-chatnick2.png);
-      display: flex;
-      flex-direction: column;
-    }
+        margin-top: clamp(15px, 17vw, 101px);
+        margin-left: clamp(23px, 47vw, 276px);
+        font-size: clamp(8px, 2vw, 13.6px);
 
-    .bubble3-text {
-        padding-top: clamp(12.2px, 1vw, 8px);
-        padding-left: clamp(6px, 2vw, 12px);
-        padding-bottom: clamp(0.2px, 1vw, 8px);
-        padding-right: clamp(6px, 2.2vw, 8px);
-        font-size: clamp(6.3px, 1.8vw, 13.6px);
+        .eng {
+          font-weight: bold;
+          font-size: clamp(8px, 2vw, 14px);
+        }
 
-      .eng {
-        font-weight: bold;
-        font-size: clamp(8px, 2vw, 14px);
-      }
-
-      .jap {
-        font-size: clamp(6px, 1.5vw, 9px);
-        color: #7f8288;
-        letter-spacing: -1px;
+        .jap {
+          font-size: clamp(6px, 1.5vw, 9px);
+          color: #7f8288;
+          letter-spacing: -1px;
+        }
       }
     }
 
@@ -423,14 +384,14 @@ hr {
         }
 
         .box-1 {
-            font-size: clamp(17px, 6.8vw, 19px);
-            background-color: #ffb3b0;
-            width: clamp(107px, 30vw, 133px);
-            padding-top: clamp(5px, 1.5vw, 9px);
-            padding-bottom: clamp(5px, 1.5vw, 9px);
-            border-radius: 3px;
-            text-align: center;
-            margin-left: 47px;
+          font-size: clamp(9px, 3vw, 19px);
+          background-color: #ffb3b0;
+          width: clamp(81px, 26vw, 133px);
+          padding-top: clamp(5px, 1.5vw, 9px);
+          padding-bottom: clamp(5px, 1.5vw, 9px);
+          border-radius: 3px;
+          text-align: center;
+          margin-left: clamp(8px, 6vw, 47px);
         }
 
         .text-1 {
@@ -440,7 +401,7 @@ hr {
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
           font-family: $noto-sans;
-    margin-left: 46px;
+          margin-left: clamp(8px, 22vw, 46px);
         }
 
         .section-2-with-akiko {
@@ -451,29 +412,37 @@ hr {
         .f2-c1 {
           display: inline-flex;
           z-index: 32px;
-          margin-top: 15px;
+          margin-top: clamp(10px, 2vw, 15px);
+          font-size: clamp(10px, 2.2vw, 17px);
+          font-family: $noto-sans;
 
           .box-2 {
-        width: clamp(81px, 22vw, 88.8px);
-    background: url(/images/0-B-14-YELLOW.svg);
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: clamp(18px, 5vw, 20px) 0;
-    font-size: clamp(10px, 2.2vw, 16px);
-    margin-left: 45px;
-          }
-
-          .box-3 {
-            width: clamp(74px, 17vw, 120px);
-            margin-left: clamp(4px, 2vw, 7px);
-            font-size: clamp(10px, 2.2vw, 16px);
-            background: url(/images/0-B-14-GREEN.svg);
+            position: absolute;
+            width: clamp(16px, 16vw, 80px);
+            background: url(#{$s3}/0-b-14-yellowpiece.svg);
+            text-align: center;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            margin-left: clamp(20px, 6vw, 48px);
+            margin-top: clamp(-1px, 0vw, -1px);
+            height: clamp(9px, 5vw, 29px);
+            padding-top: clamp(2px, 1.2vw, 5px);
+            padding-right: clamp(3px, 2vw, 0px);
+          }
+
+          .box-3 {
+            position: absolute;
+            width: clamp(118px, 16vw, 149px);
+            height: clamp(12px, 5vw, 30px);
+            margin-top: clamp(-1px, 0vw, -1px);
+            margin-left: clamp(95px, 23vw, 143px);
+            background: url(#{$s3}/0-b-14-greenpiece.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: clamp(5px, 1.2vw, 3px);
+            text-align: center;
           }
 
           .text-2 {
@@ -490,46 +459,51 @@ hr {
 
       .icon {
         font-size: clamp(10px, 2vw, 14px);
-    margin-top: -16px;
-    position: absolute;
-    margin-left: -38px;
+        margin-top: clamp(-25px, -19vw, -16px);
+        position: absolute;
+        margin-left: clamp(-38px, 0vw, -38px);
         @extend .b;
 
         img {
-            height: clamp(71px, 19vw, 100px);
-    width: auto;
-    margin-top: 23px;
-    position: absolute;
-    margin-left: -36px;
+          height: clamp(71px, 19vw, 100px);
+          width: auto;
+          margin-top: clamp(0px, 4vw, 23px);
+          position: absolute;
+          margin-left: clamp(-20px, -8vw, -38px);
         }
         div {
-            margin-top: clamp(132px, 2vw, 9px);
-            margin-left: clamp(-3px, 0.8vw, -2px);
+          margin-top: clamp(98px, 25vw, 130px);
+          margin-left: clamp(1px, 3vw, 4px);
         }
       }
     }
 
     .section2-box-content {
-      margin-top: clamp(50px, 17vw, 70px);
+      margin-top: clamp(50px, 17vw, 118px);
+      font-family: $noto-sans;
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
 
       .b1-legend {
-        width: clamp(80px, 15vw, 70px);
-    background: url(/images/0-B-14-YELLOW.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+        width: clamp(70px, 20vw, 93px);
+        background: url(#{$s3}/0-b-14-yellowpiece.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: clamp(25px, 4vw, 33px);
+        text-align: center;
+        padding-top: clamp(0px, 2vw, 8px);
       }
       .b2-legend {
-        width: clamp(86px, 16vw, 131px);
+        width: clamp(125px, 17vw, 163px);
         text-align: center;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(/images/0-B-14-GREEN.svg);
-        font-size: clamp(10px, 2.2vw, 16px);
+        background-image: url(#{$s3}/0-b-14-greenpiece.svg);
+        height: clamp(24px, 6vw, 32px);
+        padding-top: clamp(2px, 2vw, 8px);
       }
 
       .legend {
@@ -538,8 +512,7 @@ hr {
         margin-bottom: 2px;
 
         & .eng {
-            padding: clamp(20px, 2vw, 10px) clamp(13px, 3vw, 17px);
-            font-size: clamp(11px, 1.8vw, 16px);
+          font-size: clamp(14px, 2vw, 17px);
         }
       }
 
@@ -580,9 +553,9 @@ hr {
         }
 
         .choice-jap {
-            font-size: clamp(6.7px, 2.3vw, 13px);
-            letter-spacing: -3.5px;
-            color: $subtext-color;
+          font-size: clamp(6.7px, 2.3vw, 13px);
+          letter-spacing: -3.5px;
+          color: $subtext-color;
         }
 
         //number
@@ -616,343 +589,140 @@ hr {
     }
   }
 
-  // .try-1 {
-  //   .try2-content {
-  //       .conversation {
-  //           // margin-top: 30px;
-  //           // width: clamp(310px, 86vw, 540px);
-  //           // min-height: clamp(230px, 60vw, 380px);
-  //           // position: relative;
-  //           // background-position: top, bottom;
-  //           // background-size: contain;
-  //           // background-repeat: no-repeat;
-  //           // background-image: url(#{$s3}/0-b-13-t3bg.png);
-  //           // font-size: clamp(24px, 1.2vw, 20px);
-  //           margin-bottom: 10px;
-    
-  //           .akiko {
-  //             span {
-  //               position: absolute;
-  //               left: 15.7%;
-  //               margin-top: clamp(100px, 26.8vw, 176px);
-  //               border-radius: 7px;
-  //               padding-top: clamp(0.2px, 1vw, 5px);
-  //               padding-left: clamp(6px, 2vw, 12px);
-  //               padding-bottom: clamp(0.2px, 1vw, 5px);
-  //               padding-right: clamp(6px, 2vw, 12px);
-  //               background-color: #ffffff;
-  //               font-size: clamp(6px, 2vw, 10px);
-  //               border-style: solid;
-  //               border-color: #d0d2d3;
-  //               border-width: 0.5px;
-  //               color: #2d356b;
-  //             }
-  //           }
-    
-  //           .helen {
-  //             span {
-  //               position: absolute;
-  //               color: #2d356b;
-  //               left: 78.7%;
-  //               margin-top: clamp(118px, 32.3vw, 206px);
-  //               border-radius: 7px;
-  //               padding-top: clamp(0.2px, 1vw, 5px);
-  //               padding-left: clamp(6px, 2vw, 12px);
-  //               padding-bottom: clamp(0.2px, 1vw, 5px);
-  //               padding-right: clamp(6px, 2vw, 12px);
-  //               background-color: #ffffff;
-  //               font-size: clamp(18px, 2vw, 10px);
-  //               border-style: solid;
-  //               border-color: #d0d2d3;
-  //               border-width: 0.5px;
-  //             }
-  //           }
-  //         }
-    
-  //         .conversation-text {
-  //           padding-top: clamp(1px, 1.2vw, 20px);
-  //           margin-bottom: -70px;
-  //           font-family: $noto-sans;
-            
-  //           .convo-1,
-  //           .convo-2,
-  //           .convo-3,
-  //           .convo-4 {
-  //             padding-bottom: 20px;
-  //             .convo-wrap-akiko {
-  //               padding-bottom: clamp(10px, 1vw, 20px);
-  //               padding-top: clamp(6px, 1vw, 20px);
-  //               .number-left {
-  //                 padding-right: 20px;
-  //                 color: #1288cd;
-  //                 font-size: clamp(10px, 2.1vw, 14px);
-  //                 font-weight: bold;
-  //               }
-  //               .akiko-line-1 {
-  //                 font-size: clamp(18px, 2.1vw, 14px);
-  //               }
-    
-  //             }
-    
-  //             .convo-wrap-helen {
-  //               padding-bottom: clamp(49px, 1vw, 20px);
-  //               .number-left {
-  //                 padding-right: 20px;
-  //                 color: white;
-  //               }
-    
-  //               .helen-line {
-  //                 font-size: clamp(18px, 2.1vw, 14px);
-  //                 margin-left: clamp(10px, 13vw, 10px);
-  //               }
-  //               .text-under {
-  //                 margin-left: clamp(70px, 13vw, 84px);
-  //               }
-  //             }
-    
-  //             .convo-wrap-akiko-last {
-  //               padding-bottom: clamp(10px, 3vw, 20px);
-                
-  //               .akiko-line-2 {
-  //                 font-size: clamp(10px, 2.1vw, 14px);
-  //               }
-    
-  //               .letter-square {
-  //                 margin-left: 10px;
-  //                 padding-left: clamp(3px, 0.3vw, 5px);
-  //                 padding-right: clamp(4px, 0.3vw, 5px);
-  //                 color: #1288cd;
-  //                 font-size: clamp(10px, 2.1vw, 14px) !important;
-  //                 font-weight: bold;
-  //                 --size: clamp(13px, 2vw, 32px);
-  //                 left: calc(-1 * var(--size) - 10px);
-  //                 line-height: var(--size);
-  //                 width: var(--size);
-  //                 height: var(--size);
-  //                 top: 0;
-  //                 background: white;
-  //                 border: 2.3px solid #1288cd;
-  //                 text-align: center;
-  //               }
-  //             }
-  //           }
-  //         }
-  //     }
-  // }
-
-  .try-2 {
-    .try2-content {
-      padding-left: clamp(4px, 10vw, 5px);
-      margin-top: clamp(40px, 16vw, 100px);
-
-      .try-2-row-1 {
-        margin-bottom: clamp(30px, 12vw, 100px);
-        position: relative;
+  .try-1 {
+    .try1-content {
+      .conversation {
+        font-family: 'Noto Sans';
+        font-size: clamp(6.7px, 2.3vw, 16px);
+        margin-top: clamp(6.7px, 7vw, 53px);
+        .convo {
+          margin-left: 10px;
+        }
+        .jap {
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+          font-size: clamp(6.7px, 2.3vw, 12px);
+          margin-left: clamp(6px, 12vw, 98px);
+        }
+        .jap-under {
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+          font-size: clamp(6.7px, 2.3vw, 12px);
+          margin-left: clamp(6px, 12vw, 98px);
+        }
         .number {
           color: $primary-blue;
-          font-size: clamp(11px, 3.3vw, 19px);
+          padding-right: clamp(6.7px, 2.3vw, 20px);
         }
-        .you {
-          margin-left: clamp(15px, 3vw, 30px);
-          font-size: clamp(11px, 3.3vw, 19px);
+        .You {
+          margin-left: clamp(6.7px, 7vw, 58px);
         }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
+        .text-under {
+          margin-left: clamp(6px, 12vw, 98px);
+        }
+        .blue-under {
+          color: $primary-blue;
           text-decoration: underline;
-          color: $primary-blue;
-          font-size: clamp(11px, 3.3vw, 19px);
         }
-        .bubble {
-          position: absolute;
-          right: 0;
-          font-size: clamp(10px, 2.6vw, 21px);
-          padding-top: clamp(20.4px, 6vw, 40px);
-          padding-left: clamp(20px, 4vw, 40px);
-          padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 3vw, 6px);
-          margin-top: clamp(-50px, -50vw, -22px);
-          text-align: center;
-          width: clamp(50px, 16.3vw, 130px);
-          color: #2d356b;
-          min-height: clamp(60px, 40vw, 330px);
-          position: absolute;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-cloud-bubble.png);
+        .convo1 {
+          margin-top: clamp(6px, 7vw, 20px);
         }
-      }
-
-      .try-2-row-2 {
-        margin-bottom: clamp(30px, 12vw, 100px);
-        position: relative;
-        .number {
-          color: $primary-blue;
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .you {
-          margin-left: clamp(15px, 3vw, 30px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .bubble {
-          font-size: clamp(10px, 2.6vw, 21px);
-          position: absolute;
-          right: 0;
-          padding-top: clamp(20.4px, 4.5vw, 30px);
-          padding-left: clamp(19px, 5vw, 30px);
-          padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          margin-top: clamp(-50px, -50vw, -22px);
-          width: clamp(70px, 16.3vw, 150px);
-          color: #2d356b;
-          min-height: clamp(60px, 40vw, 350px);
-          position: absolute;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-cloud-bubble.png);
-        }
-      }
-
-      .try-2-row-3 {
-        margin-bottom: clamp(50px, 12vw, 100px);
-        position: relative;
-        .number {
-          color: $primary-blue;
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .you {
-          margin-left: clamp(15px, 3vw, 30px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .new-line {
-          margin-left: clamp(55px, 14vw, 95px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .bubble {
-          position: absolute;
-          right: 0;
-          padding-top: clamp(17.4px, 4vw, 30px);
-          padding-left: clamp(17px, 5vw, 40px);
-          padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          margin-top: clamp(-50px, -50vw, -22px);
-          width: clamp(70px, 16.3vw, 150px);
-          color: #2d356b;
-          min-height: clamp(70px, 40vw, 330px);
-          position: absolute;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-cloud-bubble.png);
-
-          .rotate-1 {
-            transform: rotate(10deg);
-            font-size: clamp(11px, 2.5vw, 21px);
-          }
-          .rotate-2 {
-            padding-left: clamp(12px, 2.5vw, 25px);
-            padding-top: clamp(10px, 1.9vw, 15px);
-            transform: rotate(-10deg);
-            font-size: clamp(10px, 2.2vw, 21px);
+        .t1 {
+          margin-top: clamp(6px, 7vw, 16px);
+          margin-bottom: clamp(6px, 7vw, 50px);
+          margin-left: clamp(6px, 7vw, 50px);
+          .img1 {
+            height: clamp(6px, 50vw, 208px);
+            width: clamp(6px, 68vw, 471px);
           }
         }
-      }
-
-      .try-2-row-4 {
-        position: relative;
-        .number {
-          color: $primary-blue;
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .you {
-          margin-left: clamp(15px, 3vw, 30px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .new-line {
-          margin-left: clamp(55px, 14vw, 95px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
-          font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .bubble {
-          position: absolute;
-          right: 0;
-          padding-top: clamp(17.4px, 4vw, 30px);
-          padding-left: clamp(17px, 4vw, 40px);
-          padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          margin-top: clamp(-50px, -50vw, -22px);
-          width: clamp(70px, 16.3vw, 150px);
-          color: #2d356b;
-          min-height: clamp(70px, 40vw, 330px);
-          position: absolute;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-cloud-bubble.png);
-
-          .rotate-1 {
-            padding-left: clamp(9px, 2.5vw, 25px);
-            transform: rotate(10deg);
-            font-size: clamp(11px, 2.5vw, 21px);
+        .t2 {
+          margin-top: clamp(6px, 7vw, 26px);
+          margin-bottom: clamp(6px, 15vw, 79px);
+          margin-left: clamp(6px, 16vw, 123px);
+          .img2 {
+            height: clamp(6px, 50vw, 162px);
+            width: clamp(6px, 68vw, 264px);
           }
-          .rotate-2 {
-            padding-left: clamp(12px, 2.5vw, 25px);
-            padding-top: clamp(10px, 1.9vw, 15px);
-            transform: rotate(-10deg);
-            font-size: clamp(10px, 2.2vw, 21px);
+        }
+        .t3 {
+          margin-top: clamp(6px, 7vw, 33px);
+          margin-bottom: clamp(6px, 15vw, 79px);
+          margin-left: clamp(6px, 16vw, 123px);
+          .img3 {
+            height: clamp(6px, 50vw, 192px);
+            width: clamp(6px, 68vw, 265px);
+          }
+        }
+        .t4 {
+          margin-top: clamp(6px, 7vw, 33px);
+          margin-bottom: clamp(6px, 15vw, 79px);
+          margin-left: clamp(6px, 16vw, 123px);
+          .img4 {
+            height: clamp(6px, 50vw, 168px);
+            width: clamp(6px, 68vw, 235px);
+          }
+        }
+        .t5 {
+          margin-top: clamp(6px, 7vw, 31px);
+          margin-bottom: clamp(6px, 15vw, 79px);
+          margin-left: clamp(6px, 16vw, 123px);
+          .img5 {
+            height: clamp(6px, 50vw, 173px);
+            width: clamp(6px, 68vw, 162px);
           }
         }
       }
     }
   }
-
   .see-3 {
     .see-3-content {
       padding-left: clamp(4px, 2vw, 2px);
       margin-top: clamp(30px, 8vw, 50px);
 
-      .nick-image {
-        width: clamp(70px, 16.3vw, 120px);
-        min-height: clamp(70px, 40vw, 120px);
+      .akiko-image {
+        width: clamp(70px, 16.3vw, 100px);
+        min-height: clamp(70px, 40vw, 100px);
         position: absolute;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-nick-side-view.png);
+        background-image: url(#{$s3}/0-D-1-akiko-icon.png);
 
         .name {
           position: absolute;
-          margin-top: clamp(80px, 18vw, 135px);
-          margin-left: clamp(25px, 5vw, 37px);
-          font-size: clamp(8px, 2.8vw, 20px);
+          margin-top: clamp(80px, 18vw, 112px);
+          margin-left: clamp(25px, 5vw, 34px);
+          font-size: clamp(8px, 2.8vw, 18px);
+        }
+      }
+
+      .nick-image {
+        width: clamp(70px, 16.3vw, 100px);
+        min-height: clamp(70px, 40vw, 100px);
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-b-14-nick.png);
+        margin-left: clamp(70px, 63vw, 422px);
+        margin-top: clamp(54px, 12vw, 59px);
+
+        .name {
+          position: absolute;
+          margin-top: clamp(80px, 18vw, 112px);
+          margin-left: clamp(25px, 5vw, 34px);
+          font-size: clamp(8px, 2.8vw, 18px);
         }
       }
 
       .phrase-1 {
-        margin-left: clamp(92px, 23vw, 170px);
+        margin-left: clamp(92px, 23vw, 129px);
         margin-bottom: clamp(30px, 4vw, 40px);
         display: absolute;
         display: block;
 
         .english {
-          width: clamp(103px, 18vw, 150px);
-          background-color: #ffb3b0;
+          width: clamp(103px, 18vw, 156px);
+          background-color: #c2e7e5;
           font-size: clamp(11px, 1.8vw, 16px);
           border-radius: 3px;
           padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
@@ -969,14 +739,14 @@ hr {
       }
 
       .phrase-2 {
-        margin-left: clamp(92px, 23vw, 170px);
+        margin-left: clamp(92px, 23vw, 221px);
         margin-bottom: clamp(30px, 14vw, 100px);
         display: absolute;
         display: block;
 
         .english {
-          width: clamp(80px, 15vw, 120px);
-          background-color: #e7f3fa;
+          width: clamp(80px, 15vw, 106px);
+          background-color: #ffb2b0;
           font-size: clamp(11px, 1.8vw, 16px);
           border-radius: 3px;
           padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
@@ -984,7 +754,7 @@ hr {
         }
 
         .jap {
-          font-size: clamp(8px, 1.9vw, 13px);
+          font-size: clamp(8px, 1.9vw, 11px);
           position: absolute;
           margin-top: clamp(-18px, -1.6vw, -5px);
           color: $subtext-color;
@@ -1001,12 +771,12 @@ hr {
       }
 
       .yellow {
-        background-color: #ffb3b0;
+        background-color: #c2e7e5;
         font-size: clamp(11px, 1.8vw, 16px);
         border-radius: 3px;
       }
       .blue {
-        background-color: #e7f3fa;
+        background-color: #ffb3b0;
         font-size: clamp(11px, 1.8vw, 16px);
         border-radius: 3px;
       }
@@ -1032,7 +802,7 @@ hr {
         }
 
         .alt-box {
-          padding: 15px;
+          padding: 10px;
           border: 1px solid $primary-blue;
         }
 
@@ -1059,7 +829,7 @@ hr {
         }
 
         .choice-jap {
-          font-size: clamp(6.7px, 1.8vw, 13px);
+          font-size: clamp(6.7px, 1.8vw, 12px);
           letter-spacing: -0.9px;
           color: $subtext-color;
         }
@@ -1095,76 +865,153 @@ hr {
     }
   }
 
-  .try-3 {
-    .try-3-content {
-      .conversation {
-        margin-top: 30px;
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 60vw, 380px);
-        position: relative;
+  .try-2 {
+    .try2-content {
+      margin-top: clamp(25px, 7vw, 25px);
+      margin-left: clamp(18px, 10vw, 75px);
+      margin-right: clamp(18px, 5vw, 32px);
+      margin-bottom: clamp(393px, 57vw, 402px);
+
+      .akiko-right-view {
+        width: clamp(121px, 31vw, 306px);
+        min-height: clamp(197.26px, 37vw, 193px);
+        margin-top: clamp(25px, 7vw, 25px);
+        margin-left: clamp(196px, 29vw, 202px);
+        position: absolute;
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-convo-group.png);
+        background-image: url(#{$s3}/0-D-1-akikoright-icon.png);
+      }
 
-        .akiko {
-          span {
-            position: absolute;
-            left: 15.7%;
-            margin-top: clamp(100px, 26.8vw, 176px);
-            border-radius: 7px;
-            padding-top: clamp(0.2px, 1vw, 5px);
-            padding-left: clamp(6px, 2vw, 12px);
-            padding-bottom: clamp(0.2px, 1vw, 5px);
-            padding-right: clamp(6px, 2vw, 12px);
-            background-color: #ffffff;
-            font-size: clamp(6px, 2vw, 10px);
-            border-style: solid;
-            border-color: #d0d2d3;
-            border-width: 0.5px;
-            color: #2d356b;
+      .akiko-combinations {
+        .akiko-first-combinations {
+          position: absolute;
+          margin-left: clamp(-25px, -6vw, -41px);
+          ul > li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            color: $primary-blue;
+          }
+
+          ul li > .number {
+            border-radius: 50%;
+            background: $primary-blue;
+            color: white;
+            margin: 0;
+            text-align: center;
+            width: clamp(13px, 4vw, 24px);
+            height: clamp(13px, 4vw, 24px);
+            line-height: clamp(13px, 4vw, 24px);
+            font-family: $noto-sans;
+            font-size: clamp(11px, 3vw, 16px);
+            z-index: 1;
+            padding-left: clamp(5px, 1.4vw, 7px);
+            padding-right: clamp(5px, 1.4vw, 7px);
+          }
+
+          ul li > .plus {
+            position: relative;
+            font-size: clamp(7px, 6.3vw, 32px);
+            margin-top: clamp(30px, 1.3vw, 5px);
+
+            img {
+              width: auto;
+              height: clamp(10px, 3.5vw, 15px);
+            }
+          }
+
+          ul li > .letter {
+            @extend .b;
+            border: 2px solid $primary-blue;
+            color: $primary-blue;
+            font-family: $noto-sans;
+            width: clamp(11px, 4vw, 20px);
+            height: clamp(11px, 4vw, 20px);
+            line-height: clamp(11px, 4vw, 20px);
+            font-size: clamp(11px, 3vw, 16px);
+            text-align: center;
+            padding-left: clamp(2px, 1.4vw, 7px);
+            padding-right: clamp(2px, 1.4vw, 7px);
           }
         }
 
-        .helen {
-          span {
-            position: absolute;
-            color: #2d356b;
-            left: 78.7%;
-            margin-top: clamp(118px, 32.3vw, 206px);
-            border-radius: 7px;
-            padding-top: clamp(0.2px, 1vw, 5px);
-            padding-left: clamp(6px, 2vw, 12px);
-            padding-bottom: clamp(0.2px, 1vw, 5px);
-            padding-right: clamp(6px, 2vw, 12px);
-            background-color: #ffffff;
-            font-size: clamp(6px, 2vw, 10px);
-            border-style: solid;
-            border-color: #d0d2d3;
-            border-width: 0.5px;
+        .akiko-second-combinations {
+          position: absolute;
+          margin-left: clamp(190px, 55vw, 320px);
+          ul > li {
+            list-style-type: none;
+            margin-bottom: 10px;
+          }
+
+          ul li > .number {
+            @extend .b;
+            border-radius: 50%;
+            background: $primary-blue;
+            color: white;
+            margin: 0;
+            text-align: center;
+            width: clamp(13px, 4vw, 24px);
+            height: clamp(13px, 4vw, 24px);
+            line-height: clamp(13px, 4vw, 24px);
+            font-family: $noto-sans;
+            font-size: clamp(11px, 3vw, 16px);
+            z-index: 1;
+            padding-left: clamp(5px, 1.4vw, 7px);
+            padding-right: clamp(5px, 1.4vw, 7px);
+          }
+
+          ul li > .plus {
+            position: relative;
+            font-size: clamp(7px, 6.3vw, 32px);
+            margin-top: clamp(30x, 1.3vw, 5px);
+
+            img {
+              width: auto;
+              height: clamp(5px, 3.5vw, 15px);
+            }
+          }
+
+          ul li > .letter {
+            @extend .b;
+            border: 2px solid $primary-blue;
+            color: $primary-blue;
+            font-family: $noto-sans;
+            width: clamp(11px, 4vw, 20px);
+            height: clamp(11px, 4vw, 20px);
+            line-height: clamp(11px, 4vw, 20px);
+            font-size: clamp(11px, 3vw, 16px);
+            text-align: center;
+            padding-left: clamp(2px, 1.4vw, 7px);
+            padding-right: clamp(2px, 1.4vw, 7px);
           }
         }
       }
+    }
+  }
 
+  .try-3 {
+    .try-3-content {
       .conversation-text {
         padding-top: clamp(1px, 1.2vw, 20px);
         margin-bottom: -70px;
+        margin-top: clamp(1px, 1.2vw, 20px);
+        font-family: $noto-sans;
         .convo-1,
         .convo-2,
         .convo-3,
         .convo-4 {
-          padding-bottom: 20px;
+          padding-bottom: 42px;
           .convo-wrap-akiko {
             padding-bottom: clamp(10px, 1vw, 20px);
             .number-left {
               padding-right: 20px;
               color: #1288cd;
               font-size: clamp(10px, 2.1vw, 14px);
-              font-weight: bold;
             }
 
             .akiko-line-1 {
-              font-size: clamp(10px, 2.1vw, 14px);
+              font-size: clamp(10px, 2.1vw, 18px);
             }
 
             .number-right {
@@ -1186,46 +1033,25 @@ hr {
           }
 
           .convo-wrap-helen {
-            padding-bottom: clamp(10px, 1vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: white;
-            }
+            margin-left: clamp(10px, 7vw, 60px);
 
             .helen-line {
-              font-size: clamp(10px, 2.1vw, 14px);
+              font-size: clamp(10px, 2.1vw, 18px);
             }
             .text-under {
-              margin-left: clamp(70px, 13vw, 84px);
+              margin-left: clamp(40px, 13vw, 47px);
             }
           }
 
           .convo-wrap-akiko-last {
-            padding-bottom: clamp(10px, 3vw, 20px);
+            padding-bottom: clamp(10px, 3vw, 14px);
+            margin-left: clamp(10px, 7vw, 32px);
             .number-left {
               padding-right: 20px;
               color: white;
             }
             .akiko-line-2 {
-              font-size: clamp(10px, 2.1vw, 14px);
-            }
-
-            .letter-square {
-              margin-left: 10px;
-              padding-left: clamp(3px, 0.3vw, 5px);
-              padding-right: clamp(4px, 0.3vw, 5px);
-              color: #1288cd;
-              font-size: clamp(10px, 2.1vw, 14px) !important;
-              font-weight: bold;
-              --size: clamp(13px, 2vw, 32px);
-              left: calc(-1 * var(--size) - 10px);
-              line-height: var(--size);
-              width: var(--size);
-              height: var(--size);
-              top: 0;
-              background: white;
-              border: 2.3px solid #1288cd;
-              text-align: center;
+              font-size: clamp(10px, 2.1vw, 18px);
             }
           }
         }
@@ -1243,27 +1069,32 @@ hr {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-convo-group.png);
+        background-image: url(#{$s3}/0-b-14-ACTbg.svg);
 
         .bubble {
-          margin-left: clamp(15px, 5vw, 19px);
-          margin-top: clamp(5px, 2.3vw, 10px);
+          margin-left: clamp(15px, 29vw, 274px);
+          margin-top: clamp(5px, 4vw, 35px);
           width: clamp(170px, 43.4vw, 260px);
           min-height: clamp(130px, 50vw, 260px);
           position: absolute;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-cloud-bubble-white.png);
-          padding-top: clamp(12px, 4.3vw, 30px);
-          padding-left: clamp(16px, 4.8vw, 45px);
-          padding-bottom: clamp(5.2px, 2.6vw, 15px);
-          padding-right: clamp(6px, 1.6vw, 15px);
 
           .bubble-text {
             .english {
               font-size: clamp(8px, 2vw, 14px);
+              font-weight: bold;
+            }
+            .text-under {
+              font-weight: bold;
+              font-size: clamp(8px, 2vw, 14px);
             }
             .japanese {
+              position: absolute;
+              margin-top: -1px;
+              font-size: clamp(6px, 1.5vw, 10px);
+              color: $subtext-color;
+              letter-spacing: -0.5px;
+            }
+            .jap-under {
               position: absolute;
               margin-top: -1px;
               font-size: clamp(6px, 1.5vw, 10px);
@@ -1319,7 +1150,8 @@ hr {
         .convo1,
         .convo2,
         .convo3,
-        .convo4 {
+        .convo4,
+        .convo5 {
           font-family: $noto-sans;
           margin-bottom: 20px;
           .english {
@@ -1327,7 +1159,7 @@ hr {
             margin-left: clamp(15px, 3.5vw, 30px);
           }
           .line {
-            color: #141821;
+            margin-left: clamp(15px, 8vw, 77px);
           }
           .japanese {
             margin-left: clamp(50px, 10.9vw, 90px);

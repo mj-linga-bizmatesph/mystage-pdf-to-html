@@ -803,6 +803,7 @@ td {
             padding-left: clamp(5px, 3vw, 10px);
           }
           .table-img {
+            width: 29%;
             text-align: center;
           }
 
@@ -825,7 +826,7 @@ td {
         border-collapse: collapse;
 
         td {
-          font-size: clamp(10px, 3vw, 18px);
+          font-size: clamp(1px, 3vw, 18px);
           img {
             max-width: clamp(44%, 16vw, 100%);
             margin-bottom: 20px;

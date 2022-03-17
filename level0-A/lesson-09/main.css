@@ -801,6 +801,7 @@ td {
 }
 
 .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-img {
+  width: 29%;
   text-align: center;
 }
 
@@ -822,7 +823,7 @@ td {
 }
 
 .html-lesson-wrapper .try-content.try-1 .table td {
-  font-size: clamp(10px, 3vw, 18px);
+  font-size: clamp(1px, 3vw, 18px);
 }
 
 .html-lesson-wrapper .try-content.try-1 .table td img {

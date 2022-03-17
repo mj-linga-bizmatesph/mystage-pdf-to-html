@@ -11,7 +11,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -431,7 +431,7 @@ td {
         background-position: left;
       }
       .green-piece-complete {
-        background-image: url(http://127.0.0.1:8887/0-green-piece-end.png),
+        background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 8%,
@@ -439,7 +439,7 @@ td {
             #c3e8e6 80%,
             rgba(255, 255, 255, 0) 80%
           ),
-          url(http://127.0.0.1:8887/0-green-piece-start.png);
+          url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
       }

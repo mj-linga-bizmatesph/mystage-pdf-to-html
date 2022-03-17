@@ -523,14 +523,14 @@ td {
       }
       .gray-piece-female {
         background-image: url(#{$s3}/0-gray-piece.svg),
-          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #EBEEF1 20%);
+          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ebeef1 20%);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
       .red-boxed-piece {
-        background-color: #FFB2B0;
+        background-color: #ffb2b0;
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
       }
@@ -659,7 +659,8 @@ td {
   }
 }
 
-.see-2, .see-3 {
+.see-2,
+.see-3 {
   margin-top: 7%;
 
   .alt:not(:last-child) {
@@ -692,7 +693,8 @@ td {
   }
 
   .conversation {
-    .conv-1, .conv-2 {
+    .conv-1,
+    .conv-2 {
       margin-top: 5%;
       display: grid;
       .phrases-wrapper {
@@ -717,12 +719,12 @@ td {
           margin-right: -2px;
         }
       }
-      
+
       .icon {
         padding-right: 1rem;
       }
     }
-    .conv-2{
+    .conv-2 {
       .phrases-wrapper {
         justify-content: right;
       }
@@ -784,7 +786,7 @@ td {
 
     .number,
     .plus {
-      margin-right: .5rem !important;
+      margin-right: 0.5rem !important;
     }
 
     & > div:last-child {
@@ -910,7 +912,7 @@ td {
     margin-top: 5%;
   }
   .table-conv {
-     margin-left: 1rem;
+    margin-left: 1rem;
   }
 
   p.jap {

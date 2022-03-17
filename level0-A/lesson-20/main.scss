@@ -334,8 +334,8 @@ td {
   margin-top: 29%;
 }
 
-.part-1, .part-2 {
-
+.part-1,
+.part-2 {
   font-family: $noto-sans !important;
   .blue-line {
     margin-top: 5%;
@@ -365,7 +365,8 @@ td {
   p.jap {
     letter-spacing: -2px;
   }
-  .office-part-1, .office-part-2 {
+  .office-part-1,
+  .office-part-2 {
     margin-top: 6%;
 
     .bubble {
@@ -398,7 +399,7 @@ td {
   .office-part-2 {
     margin-top: 2.5rem;
     &.top {
-      margin-top: 5rem !important;  
+      margin-top: 5rem !important;
     }
   }
   .part-2-items {

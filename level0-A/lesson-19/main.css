@@ -489,14 +489,14 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .gray-piece-female {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #EBEEF1));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #EBEEF1 20%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ebeef1));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ebeef1 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .red-boxed-piece {
-  background-color: #FFB2B0;
+  background-color: #ffb2b0;
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 }
 
@@ -636,15 +636,18 @@ td {
   right: 25.5%;
 }
 
-.see-2, .see-3 {
+.see-2,
+.see-3 {
   margin-top: 7%;
 }
 
-.see-2 .alt:not(:last-child), .see-3 .alt:not(:last-child) {
+.see-2 .alt:not(:last-child),
+.see-3 .alt:not(:last-child) {
   margin-bottom: 6%;
 }
 
-.see-2 .legend.flex-center, .see-3 .legend.flex-center {
+.see-2 .legend.flex-center,
+.see-3 .legend.flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,7 +656,8 @@ td {
           justify-content: center !important;
 }
 
-.see-2 .legend.flex-right, .see-3 .legend.flex-right {
+.see-2 .legend.flex-right,
+.see-3 .legend.flex-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,17 +666,20 @@ td {
           justify-content: right !important;
 }
 
-.see-2 .phrases-section, .see-3 .phrases-section {
+.see-2 .phrases-section,
+.see-3 .phrases-section {
   margin-bottom: 8%;
 }
 
-.see-2 .phrases .phrase-wrapper, .see-3 .phrases .phrase-wrapper {
+.see-2 .phrases .phrase-wrapper,
+.see-3 .phrases .phrase-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.see-2 .phrases .phrase-wrapper:last-child, .see-3 .phrases .phrase-wrapper:last-child {
+.see-2 .phrases .phrase-wrapper:last-child,
+.see-3 .phrases .phrase-wrapper:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,71 +688,102 @@ td {
           justify-content: center;
 }
 
-.see-2 .conversation .conv-1, .see-2 .conversation .conv-2, .see-3 .conversation .conv-1, .see-3 .conversation .conv-2 {
+.see-2 .conversation .conv-1,
+.see-2 .conversation .conv-2,
+.see-3 .conversation .conv-1,
+.see-3 .conversation .conv-2 {
   margin-top: 5%;
   display: -ms-grid;
   display: grid;
 }
 
-.see-2 .conversation .conv-1 .phrases-wrapper, .see-2 .conversation .conv-2 .phrases-wrapper, .see-3 .conversation .conv-1 .phrases-wrapper, .see-3 .conversation .conv-2 .phrases-wrapper {
+.see-2 .conversation .conv-1 .phrases-wrapper,
+.see-2 .conversation .conv-2 .phrases-wrapper,
+.see-3 .conversation .conv-1 .phrases-wrapper,
+.see-3 .conversation .conv-2 .phrases-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.see-2 .conversation .conv-1 .phrases, .see-2 .conversation .conv-2 .phrases, .see-3 .conversation .conv-1 .phrases, .see-3 .conversation .conv-2 .phrases {
+.see-2 .conversation .conv-1 .phrases,
+.see-2 .conversation .conv-2 .phrases,
+.see-3 .conversation .conv-1 .phrases,
+.see-3 .conversation .conv-2 .phrases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.see-2 .conversation .conv-1 .phrases.column, .see-2 .conversation .conv-2 .phrases.column, .see-3 .conversation .conv-1 .phrases.column, .see-3 .conversation .conv-2 .phrases.column {
+.see-2 .conversation .conv-1 .phrases.column,
+.see-2 .conversation .conv-2 .phrases.column,
+.see-3 .conversation .conv-1 .phrases.column,
+.see-3 .conversation .conv-2 .phrases.column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.see-2 .conversation .conv-1 .phrases .phrase-wrapper, .see-2 .conversation .conv-2 .phrases .phrase-wrapper, .see-3 .conversation .conv-1 .phrases .phrase-wrapper, .see-3 .conversation .conv-2 .phrases .phrase-wrapper {
+.see-2 .conversation .conv-1 .phrases .phrase-wrapper,
+.see-2 .conversation .conv-2 .phrases .phrase-wrapper,
+.see-3 .conversation .conv-1 .phrases .phrase-wrapper,
+.see-3 .conversation .conv-2 .phrases .phrase-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.see-2 .conversation .conv-1 .phrases .phrase-wrapper:last-child, .see-2 .conversation .conv-2 .phrases .phrase-wrapper:last-child, .see-3 .conversation .conv-1 .phrases .phrase-wrapper:last-child, .see-3 .conversation .conv-2 .phrases .phrase-wrapper:last-child {
+.see-2 .conversation .conv-1 .phrases .phrase-wrapper:last-child,
+.see-2 .conversation .conv-2 .phrases .phrase-wrapper:last-child,
+.see-3 .conversation .conv-1 .phrases .phrase-wrapper:last-child,
+.see-3 .conversation .conv-2 .phrases .phrase-wrapper:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.see-2 .conversation .conv-1 .phrases .phrase .eng, .see-2 .conversation .conv-2 .phrases .phrase .eng, .see-3 .conversation .conv-1 .phrases .phrase .eng, .see-3 .conversation .conv-2 .phrases .phrase .eng {
+.see-2 .conversation .conv-1 .phrases .phrase .eng,
+.see-2 .conversation .conv-2 .phrases .phrase .eng,
+.see-3 .conversation .conv-1 .phrases .phrase .eng,
+.see-3 .conversation .conv-2 .phrases .phrase .eng {
   font-size: clamp(8px, 2.2vw, 15px);
   margin-right: 8px;
 }
 
-.see-2 .conversation .conv-1 .phrases .phrase:not(:last-child), .see-2 .conversation .conv-2 .phrases .phrase:not(:last-child), .see-3 .conversation .conv-1 .phrases .phrase:not(:last-child), .see-3 .conversation .conv-2 .phrases .phrase:not(:last-child) {
+.see-2 .conversation .conv-1 .phrases .phrase:not(:last-child),
+.see-2 .conversation .conv-2 .phrases .phrase:not(:last-child),
+.see-3 .conversation .conv-1 .phrases .phrase:not(:last-child),
+.see-3 .conversation .conv-2 .phrases .phrase:not(:last-child) {
   margin-right: -2px;
 }
 
-.see-2 .conversation .conv-1 .icon, .see-2 .conversation .conv-2 .icon, .see-3 .conversation .conv-1 .icon, .see-3 .conversation .conv-2 .icon {
+.see-2 .conversation .conv-1 .icon,
+.see-2 .conversation .conv-2 .icon,
+.see-3 .conversation .conv-1 .icon,
+.see-3 .conversation .conv-2 .icon {
   padding-right: 1rem;
 }
 
-.see-2 .conversation .conv-2 .phrases-wrapper, .see-3 .conversation .conv-2 .phrases-wrapper {
+.see-2 .conversation .conv-2 .phrases-wrapper,
+.see-3 .conversation .conv-2 .phrases-wrapper {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
 
-.see-2 .phrase-alts, .see-3 .phrase-alts {
+.see-2 .phrase-alts,
+.see-3 .phrase-alts {
   margin-top: 7%;
 }
 
-.see-2 .phrase-alts .alt-box .choice-eng, .see-3 .phrase-alts .alt-box .choice-eng {
+.see-2 .phrase-alts .alt-box .choice-eng,
+.see-3 .phrase-alts .alt-box .choice-eng {
   font-size: clamp(9px, 2vw, 15px);
 }
 
-.see-2 .phrase-alts .alt-box .choice-jap, .see-3 .phrase-alts .alt-box .choice-jap {
+.see-2 .phrase-alts .alt-box .choice-jap,
+.see-3 .phrase-alts .alt-box .choice-jap {
   letter-spacing: -2px;
   line-height: clamp(0.9rem, 2vw, 1.9rem);
 }
@@ -796,7 +834,7 @@ td {
 
 .try-1 .combinations .number,
 .try-1 .combinations .plus {
-  margin-right: .5rem !important;
+  margin-right: 0.5rem !important;
 }
 
 .try-1 .combinations > div:last-child {

@@ -331,64 +331,87 @@ td {
   margin-top: 29%;
 }
 
-.part-1, .part-2 {
+.part-1,
+.part-2 {
   font-family: "Noto Sans" !important;
 }
 
-.part-1 .blue-line, .part-2 .blue-line {
+.part-1 .blue-line,
+.part-2 .blue-line {
   margin-top: 5%;
 }
 
-.part-1 .table-conv, .part-2 .table-conv {
+.part-1 .table-conv,
+.part-2 .table-conv {
   margin-left: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.part-1 .table-conv tr td, .part-2 .table-conv tr td {
+.part-1 .table-conv tr td,
+.part-2 .table-conv tr td {
   padding-bottom: clamp(1rem, 1.5rem, 1.5rem);
 }
 
-.part-1 .intro, .part-2 .intro {
+.part-1 .intro,
+.part-2 .intro {
   margin-top: 12px;
   margin-bottom: 2rem;
 }
 
-.part-1 .intro .eng, .part-2 .intro .eng {
+.part-1 .intro .eng,
+.part-2 .intro .eng {
   font-size: clamp(10px, 18px, 18px);
   font-weight: normal;
 }
 
-.part-1 .intro .jap, .part-2 .intro .jap {
+.part-1 .intro .jap,
+.part-2 .intro .jap {
   font-size: clamp(9px, 13px, 13px);
 }
 
-.part-1 p.jap, .part-2 p.jap {
+.part-1 p.jap,
+.part-2 p.jap {
   letter-spacing: -2px;
 }
 
-.part-1 .office-part-1, .part-1 .office-part-2, .part-2 .office-part-1, .part-2 .office-part-2 {
+.part-1 .office-part-1,
+.part-1 .office-part-2,
+.part-2 .office-part-1,
+.part-2 .office-part-2 {
   margin-top: 6%;
 }
 
-.part-1 .office-part-1 .bubble .eng, .part-1 .office-part-2 .bubble .eng, .part-2 .office-part-1 .bubble .eng, .part-2 .office-part-2 .bubble .eng {
+.part-1 .office-part-1 .bubble .eng,
+.part-1 .office-part-2 .bubble .eng,
+.part-2 .office-part-1 .bubble .eng,
+.part-2 .office-part-2 .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 15px);
 }
 
-.part-1 .office-part-1 .bubble .jap, .part-1 .office-part-2 .bubble .jap, .part-2 .office-part-1 .bubble .jap, .part-2 .office-part-2 .bubble .jap {
+.part-1 .office-part-1 .bubble .jap,
+.part-1 .office-part-2 .bubble .jap,
+.part-2 .office-part-1 .bubble .jap,
+.part-2 .office-part-2 .bubble .jap {
   font-family: "Noto Sans";
   letter-spacing: -1px;
   font-size: clamp(10px, 2.3vw, 13px);
   line-height: clamp(10px, 13px, 14px);
 }
 
-.part-1 .office-part-1 .bubble.akiko-1, .part-1 .office-part-2 .bubble.akiko-1, .part-2 .office-part-1 .bubble.akiko-1, .part-2 .office-part-2 .bubble.akiko-1 {
+.part-1 .office-part-1 .bubble.akiko-1,
+.part-1 .office-part-2 .bubble.akiko-1,
+.part-2 .office-part-1 .bubble.akiko-1,
+.part-2 .office-part-2 .bubble.akiko-1 {
   margin-top: clamp(5%, 9%, 12%);
   left: 35%;
 }
 
-.part-1 .office-part-1 .bubble.akiko-2, .part-1 .office-part-2 .bubble.akiko-2, .part-2 .office-part-1 .bubble.akiko-2, .part-2 .office-part-2 .bubble.akiko-2 {
+.part-1 .office-part-1 .bubble.akiko-2,
+.part-1 .office-part-2 .bubble.akiko-2,
+.part-2 .office-part-1 .bubble.akiko-2,
+.part-2 .office-part-2 .bubble.akiko-2 {
   margin-top: 14.4%;
   left: 32.9%;
 }

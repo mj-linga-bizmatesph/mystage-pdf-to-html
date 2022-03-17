@@ -674,7 +674,7 @@ td {
             margin-right: clamp(20px, 4.5vw, 40px);
           }
           .phrase:not(:last-child) {
-            margin-right: clamp(10px, 3.5vw, 20px);
+            margin-right: clamp(5px, 1.8vw, 10px);
           }
         }
 
@@ -683,11 +683,8 @@ td {
           display: grid;
           grid-template-columns: 1fr min-content;
 
-          .icon {
-            margin-right: clamp(20px, 4.5vw, 40px);
-          }
           .phrase:not(:last-child) {
-            margin-right: clamp(10px, 3.5vw, 20px);
+            margin-right: clamp(5px, 1.8vw, 10px);
           }
 
           .phrase:last-child {

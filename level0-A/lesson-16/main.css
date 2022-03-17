@@ -653,7 +653,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .phrase:not(:last-child) {
-  margin-right: clamp(10px, 3.5vw, 20px);
+  margin-right: clamp(5px, 1.8vw, 10px);
 }
 
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-2 {
@@ -665,12 +665,8 @@ td {
       grid-template-columns: 1fr min-content;
 }
 
-.html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .icon {
-  margin-right: clamp(20px, 4.5vw, 40px);
-}
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .phrase:not(:last-child) {
-  margin-right: clamp(10px, 3.5vw, 20px);
+  margin-right: clamp(5px, 1.8vw, 10px);
 }
 
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .phrase:last-child {

@@ -70,7 +70,7 @@ td {
   font-family: "Arial";
 }
 
-.html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
+.html-lesson-wrapper .fs-16, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text {
   font-size: clamp(6px, 2.6vw, 16px);
 }
 
@@ -154,7 +154,7 @@ td {
   width: 1.9%;
   text-align: center;
   margin-top: 0.5%;
-  font-size: clamp(18px, 4vw, 28px);
+  font-size: clamp(1px, 4vw, 28px);
   color: #ffffff;
 }
 
@@ -289,7 +289,6 @@ td {
   height: clamp(13px, 4vw, 24px);
   line-height: clamp(13px, 4vw, 24px);
   font-family: "Noto Sans";
-  font-size: clamp(11px, 3vw, 16px);
   z-index: 1;
 }
 
@@ -306,7 +305,6 @@ td {
   width: clamp(11px, 4vw, 20px);
   height: clamp(11px, 4vw, 20px);
   line-height: clamp(11px, 4vw, 20px);
-  font-size: clamp(11px, 3vw, 16px);
   text-align: center;
 }
 
@@ -325,7 +323,7 @@ td {
 
 .html-lesson-wrapper .plus > img {
   width: auto;
-  height: clamp(10px, 5vw, 15px);
+  height: clamp(10px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .see-content {
@@ -673,7 +671,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .icon {
-  margin-right: 5%;
+  margin-right: clamp(1px, 1.8vw, 10px);
 }
 
 .html-lesson-wrapper .see-content.see-3 {
@@ -752,9 +750,9 @@ td {
 }
 
 .html-lesson-wrapper .try-content.try-1 .combinations {
-  -ms-grid-columns: 1fr 1fr min-content;
-      grid-template-columns: 1fr 1fr -webkit-min-content;
-      grid-template-columns: 1fr 1fr min-content;
+  -ms-grid-columns: min-content 1fr 1fr;
+      grid-template-columns: -webkit-min-content 1fr 1fr;
+      grid-template-columns: min-content 1fr 1fr;
   margin-top: 8%;
 }
 
@@ -794,6 +792,12 @@ td {
   font-family: "Noto Sans";
   font-size: clamp(1px, 2vw, 13px);
   color: #7f8288;
+  margin-top: 1.5% !important;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .t2-5 .office-section .speech.akiko {
+  margin-top: 8%;
+  left: 40%;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
@@ -811,20 +815,20 @@ td {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
-  text-align: right;
-  width: 23%;
+  text-align: center;
+  width: 100%;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img.small img {
   max-width: clamp(48%, 20vw, 100%);
 }
 
-.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img.medium {
-  width: 40%;
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img.medium img {
+  max-width: clamp(1%, 52vw, 100%);
 }
 
-.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img.medium img {
-  max-width: clamp(98%, 40vw, 100%);
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img.large img {
+  max-width: clamp(1%, 65vw, 100%);
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
@@ -854,10 +858,15 @@ td {
   margin-top: 14%;
 }
 
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section img {
+  margin-bottom: 5%;
+}
+
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .jap {
   font-family: "Noto Sans";
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
+  margin-top: 1.5% !important;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper {
@@ -872,23 +881,6 @@ td {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 6px;
   padding-left: clamp(5px, 3vw, 10px);
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img {
-  text-align: right;
-  width: 24%;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img.small img {
-  max-width: clamp(1%, 21vw, 100%);
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img.medium {
-  width: 34%;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img.medium img {
-  max-width: clamp(1%, 29vw, 100%);
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {

@@ -168,7 +168,7 @@ td {
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
-    font-size: clamp(18px, 4vw, 28px);
+    font-size: clamp(1px, 4vw, 28px);
     color: #ffffff;
   }
 
@@ -295,7 +295,7 @@ td {
     height: clamp(13px, 4vw, 24px);
     line-height: clamp(13px, 4vw, 24px);
     font-family: $noto-sans;
-    font-size: clamp(11px, 3vw, 16px);
+    @extend .fs-16;
     z-index: 1;
 
     &.inverse {
@@ -313,7 +313,7 @@ td {
     width: clamp(11px, 4vw, 20px);
     height: clamp(11px, 4vw, 20px);
     line-height: clamp(11px, 4vw, 20px);
-    font-size: clamp(11px, 3vw, 16px);
+    @extend .fs-16;
     text-align: center;
   }
 
@@ -328,7 +328,7 @@ td {
     align-content: center;
     & > img {
       width: auto;
-      height: clamp(10px, 5vw, 15px);
+      height: clamp(10px, 2vw, 15px);
     }
   }
 
@@ -691,7 +691,7 @@ td {
           }
 
           .icon {
-            margin-right: 5%;
+            margin-right: clamp(1px, 1.8vw, 10px);
           }
         }
       }
@@ -775,7 +775,7 @@ td {
 
     &.try-1 {
       .combinations {
-        grid-template-columns: 1fr 1fr min-content;
+        grid-template-columns: min-content 1fr 1fr;
         margin-top: 8%;
 
         & > div > .combination:first-child {
@@ -812,6 +812,18 @@ td {
           font-family: $noto-sans;
           font-size: clamp(1px, 2vw, 13px);
           color: $subtext-color;
+          margin-top: 1.5% !important;
+        }
+
+        .t2-5 {
+          .office-section {
+            .speech {
+              &.akiko {
+                margin-top: 8%;
+                left: 40%;
+              }
+            }
+          }
         }
 
         .table-wrapper {
@@ -827,8 +839,8 @@ td {
             padding-left: clamp(5px, 3vw, 10px);
           }
           .table-img {
-            text-align: right;
-            width: 23%;
+            text-align: center;
+            width: 100%;
             &.small {
               img {
                 max-width: clamp(48%, 20vw, 100%);
@@ -836,9 +848,14 @@ td {
             }
 
             &.medium {
-              width: 40%;
               img {
-                max-width: clamp(98%, 40vw, 100%);
+                max-width: clamp(1%, 52vw, 100%);
+              }
+            }
+
+            &.large {
+              img {
+                max-width: clamp(1%, 65vw, 100%);
               }
             }
           }
@@ -876,10 +893,15 @@ td {
       .table-wrapper-section {
         margin-top: 14%;
 
+        img {
+          margin-bottom: 5%;
+        }
+
         .jap {
           font-family: $noto-sans;
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
+          margin-top: 1.5% !important;
         }
 
         .table-wrapper {
@@ -893,22 +915,6 @@ td {
             font-size: clamp(10px, 3vw, 16px);
             padding-top: 6px;
             padding-left: clamp(5px, 3vw, 10px);
-          }
-          .table-img {
-            text-align: right;
-            width: 24%;
-            &.small {
-              img {
-                max-width: clamp(1%, 21vw, 100%);
-              }
-            }
-
-            &.medium {
-              width: 34%;
-              img {
-                max-width: clamp(1%, 29vw, 100%);
-              }
-            }
           }
 
           &:not(:last-child) {

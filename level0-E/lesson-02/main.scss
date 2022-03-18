@@ -1,6 +1,10 @@
-@use 'css/level0-utils';
+@import '../../css/level0-utils';
 //individuals
 .html-lesson-wrapper {
+  .lesson-number {
+    right: 6.7%;
+  }
+
   .see-content {
     &.see-1 {
       margin-top: 29%;
@@ -9,13 +13,17 @@
         margin-top: 6%;
 
         .speech {
-          &.akiko {
-            margin-top: 9%;
-            left: 16.5%;
+          &.akiko-1 {
+            margin-top: 5%;
+            left: 14.5%;
           }
-          &.nick {
-            margin-top: 21.5%;
-            left: 51%;
+          &.akiko-2 {
+            margin-top: 16.5%;
+            left: 28.5%;
+          }
+          &.ken {
+            margin-top: 27%;
+            left: 42%;
           }
         }
       }
@@ -33,7 +41,7 @@
       }
 
       .phrase-alts {
-        grid-template-columns: min-content 1fr min-content;
+        grid-template-columns: min-content 1fr;
       }
 
       .phrases-section {
@@ -52,11 +60,7 @@
           }
 
           .phrase {
-            margin-right: 2px;
-
-            &:last-child {
-              margin-right: clamp(5px, 2vw, 10px);
-            }
+            margin-right: clamp(5px, 2vw, 10px);
           }
 
           .icon {
@@ -144,7 +148,7 @@
 
     &.try-1 {
       .combinations {
-        grid-template-columns: min-content 1fr 1fr;
+        grid-template-columns: min-content 1fr;
         margin-top: 8%;
 
         & > div > .combination:first-child {
@@ -157,14 +161,15 @@
 
         .combination-icon {
           margin-top: 5%;
+          margin-right: clamp(10px, 2vw, 20px);
           height: auto;
           width: clamp(80px, 30vw, 208.43px);
         }
 
         .combination {
           align-items: center;
-          justify-content: center;
-          margin-bottom: 13%;
+          justify-content: left;
+          margin-bottom: 6%;
 
           & > div:not(:last-child) {
             margin-right: 4%;
@@ -208,8 +213,14 @@
             padding-left: clamp(5px, 3vw, 10px);
           }
           .table-img {
+            padding-top: 3%;
             text-align: center;
             width: 100%;
+
+            img {
+              max-width: clamp(1%, 28vw, 100%);
+            }
+
             &.small {
               img {
                 max-width: clamp(48%, 20vw, 100%);
@@ -266,51 +277,28 @@
           margin-bottom: 5%;
         }
 
-        .jap {
+        .table {
           font-family: $noto-sans;
-          font-size: clamp(9px, 2vw, 13px);
-          color: $subtext-color;
-          margin-top: 1.5% !important;
-        }
+          border-collapse: collapse;
+          margin-bottom: 15%;
 
-        .table-wrapper {
-          width: 100%;
-
-          p {
-            margin: 0;
+          td {
+            @extend .fs-18;
+            img {
+              max-width: clamp(44%, 16vw, 100%);
+              margin-bottom: 20px;
+            }
           }
-          .table-number {
-            @extend .b, .primary-blue;
+
+          .name {
+            @extend .b;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 6px;
-            padding-left: clamp(5px, 3vw, 10px);
+            white-space: nowrap;
+            width: 16%;
           }
-
-          &:not(:last-child) {
-            margin-bottom: 13%;
+          tr:not(:last-child) td:nth-child(2) {
+            padding-bottom: 5%;
           }
-        }
-      }
-
-      .table {
-        font-family: $noto-sans;
-        border-collapse: collapse;
-
-        td {
-          @extend .fs-18;
-          img {
-            max-width: clamp(44%, 16vw, 100%);
-            margin-bottom: 20px;
-          }
-        }
-
-        .name {
-          @extend .b;
-          font-size: clamp(10px, 3vw, 16px);
-          white-space: nowrap;
-        }
-        tr:not(:last-child) td:nth-child(2) {
-          padding-bottom: 5%;
         }
       }
     }
@@ -338,8 +326,8 @@
         }
 
         &.akiko {
-          margin-top: 7%;
-          left: 46.1%;
+          margin-top: 44%;
+          left: 10.1%;
         }
       }
     }

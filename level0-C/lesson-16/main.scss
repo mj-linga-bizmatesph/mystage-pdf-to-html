@@ -203,10 +203,7 @@ hr {
       margin-top: 32px;
     }
     &.try-2,
-    &.try-3,
-    &.try-4,
-    &.try-5,
-    &.try-6 {
+    &.try-3{
       margin-top: 32px;
     }
     .arrow.try {
@@ -231,8 +228,8 @@ hr {
 
   .section-1-convo {
     margin-top: clamp(30px, 8vw, 50px);
-    width: clamp(310px, 86vw, 544px);
-    min-height: clamp(230px, 63vw, 395px);
+    width: clamp(310px, 90vw, 544px);
+    min-height: clamp(230px, 66vw, 395px);
     position: relative;
     background-position: top, bottom;
     background-size: contain;
@@ -532,8 +529,8 @@ hr {
       margin-top: clamp(35px, 10vw, 60px);
       .image-content {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -557,15 +554,15 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(105px, 30vw, 187px);
+          margin-top: clamp(105px, 31vw, 187px);
           left: 48%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
       }
       .image-content2 {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -589,15 +586,15 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(112px, 31.5vw, 197px);
+          margin-top: clamp(112px, 32.5vw, 197px);
           left: 48%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
       }
       .image-content3 {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -621,15 +618,15 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(148px, 41.5vw, 262px);
+          margin-top: clamp(148px, 42.5vw, 262px);
           left: 48%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
       }
       .image-content4 {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -653,15 +650,15 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(109.4px, 31vw, 195px);
+          margin-top: clamp(109.4px, 32vw, 195px);
           left: 48%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
       }
       .image-content5 {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -685,15 +682,15 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(83px, 23.5vw, 147px);
+          margin-top: clamp(83px, 24.5vw, 147px);
           left: 48%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
       }
       .image-content6 {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -717,15 +714,15 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(102px, 29vw, 183px);
+          margin-top: clamp(102px, 30vw, 183px);
           left: 50%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
       }
       .image-content7 {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 544px);
-        min-height: clamp(230px, 63vw, 395px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -749,7 +746,7 @@ hr {
         }
         .bubble-2 {
           position: absolute;
-          margin-top: clamp(106px, 30vw, 188px);
+          margin-top: clamp(106px, 31vw, 188px);
           left: 49%;
           font-size: clamp(8.3px, 2vw, 14px);
         }
@@ -839,8 +836,8 @@ hr {
     .act-1-content {
       .act-1-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 60vw, 380px);
+        width: clamp(310px, 90vw, 544px);
+        min-height: clamp(230px, 66vw, 395px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;

@@ -254,7 +254,7 @@ hr {
 
   .section-1-convo {
     margin-top: clamp(30px, 8vw, 50px);
-    width: clamp(310px, 86vw, 540px);
+    width: clamp(310px, 90vw, 540px);
     min-height: clamp(230px, 60vw, 380px);
     position: relative;
     background-position: top, bottom;
@@ -478,7 +478,7 @@ hr {
       .phrase-alts {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 4px;
+        gap: 2px;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -499,7 +499,7 @@ hr {
           }
         }
         .choice-eng {
-          font-size: clamp(8.6px, 2vw, 16px);
+          font-size: clamp(8.4px, 2vw, 16px);
         }
         .choice-jap {
           font-size: clamp(7px, 1.8vw, 13px);
@@ -1259,7 +1259,7 @@ hr {
     .act-1-content {
       .act-1-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
+        width: clamp(310px, 89vw, 540px);
         min-height: clamp(230px, 60vw, 380px);
         position: relative;
         background-position: top, bottom;

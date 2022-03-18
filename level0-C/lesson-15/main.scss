@@ -252,8 +252,8 @@ hr {
   .see-1 {
     .section-1-convo {
       margin-top: clamp(30px, 8vw, 50px);
-      width: clamp(310px, 86vw, 540px);
-      min-height: clamp(230px, 65vw, 401px);
+      width: clamp(310px, 90vw, 540px);
+      min-height: clamp(230px, 68vw, 401px);
       position: relative;
       background-position: top, bottom;
       background-size: contain;
@@ -339,8 +339,8 @@ hr {
       margin-bottom: clamp(50px, 10vw, 70px);
       .section-2-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 64vw, 402px);
+        width: clamp(310px, 90vw, 540px);
+        min-height: clamp(230px, 68vw, 402px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -396,8 +396,8 @@ hr {
       margin-bottom: clamp(50px, 10vw, 70px);
       .section-2-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 64vw, 402px);
+        width: clamp(310px, 90vw, 540px);
+        min-height: clamp(230px, 68vw, 402px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -453,8 +453,8 @@ hr {
       margin-bottom: clamp(50px, 10vw, 70px);
       .section-2-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 64vw, 402px);
+        width: clamp(310px, 90vw, 540px);
+        min-height: clamp(230px, 68vw, 402px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -512,8 +512,8 @@ hr {
       margin-bottom: clamp(50px, 10vw, 70px);
       .section-2-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 64vw, 402px);
+        width: clamp(310px, 90vw, 540px);
+        min-height: clamp(200px, 53vw, 344px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -566,11 +566,11 @@ hr {
       }
     }
     .part-2-page-5 {
-      margin-bottom: clamp(50px, 10vw, 70px);
+      margin-bottom: clamp(40px, 10vw, 70px);
       .section-2-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 64vw, 402px);
+        width: clamp(310px, 90vw, 540px);
+        min-height: clamp(200px, 53vw, 344px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -592,7 +592,7 @@ hr {
         }
       }
       .convo-text-content {
-        margin-top: clamp(30px, 8vw, 40px);
+        margin-top: clamp(20px, 8vw, 40px);
         font-size: clamp(11px, 2.5vw, 18px);
         font-family: $noto-sans;
         .convo-wrap {

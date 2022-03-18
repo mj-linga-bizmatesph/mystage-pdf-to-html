@@ -17,7 +17,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+$s3: 'http://127.0.0.1:8887';
 
 body {
   margin: 0;
@@ -207,7 +207,6 @@ td {
     font-family: $noto-sans;
   }
   .instructions {
-    margin-left: $side-margin;
     margin-right: $side-margin;
     font-family: $noto-sans;
     position: absolute;
@@ -423,9 +422,10 @@ td {
       .blue-piece-complete,
       .green-piece-male,
       .yellow-piece-female,
-      .yellow-piece-complete {
+      .yellow-piece-complete,
+      .red-piece-female {
         background-position: center;
-        background-size: auto 100%;
+        background-size: auto 105%;
         background-repeat: no-repeat;
       }
       .yellow-piece {
@@ -486,7 +486,7 @@ td {
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
+        background-size: auto 105%, auto, auto 105%;
       }
 
       .blue-piece-complete {
@@ -502,7 +502,7 @@ td {
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
+        background-size: auto 105%, auto, auto 105%;
       }
 
       .yellow-piece-complete {
@@ -518,7 +518,7 @@ td {
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
+        background-size: auto 105%, auto, auto 105%;
       }
 
       .green-piece-male {
@@ -536,6 +536,16 @@ td {
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
+      }
+
+      .red-piece-female {
+        background-image: url(#{$s3}/0-red-piece-female.png),
+          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffb2b0 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+
+        background-position: left;
+        background-size: cover;
       }
 
       .icon {

@@ -70,7 +70,7 @@ td {
   font-family: "Arial";
 }
 
-.html-lesson-wrapper .fs-16, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text {
+.html-lesson-wrapper .fs-16, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content.see-2 .phrase-alts .choice-eng {
   font-size: clamp(6px, 2.6vw, 16px);
 }
 
@@ -635,9 +635,17 @@ td {
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrase-alts {
-  -ms-grid-columns: min-content 1fr min-content;
-      grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
-      grid-template-columns: min-content 1fr min-content;
+  -ms-grid-columns: min-content min-content 1fr;
+      grid-template-columns: -webkit-min-content -webkit-min-content 1fr;
+      grid-template-columns: min-content min-content 1fr;
+}
+
+.html-lesson-wrapper .see-content.see-2 .phrase-alts .choice-jap {
+  letter-spacing: -1px;
+}
+
+.html-lesson-wrapper .see-content.see-2 .phrase-alts .ls- {
+  letter-spacing: -5px;
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrases-section {

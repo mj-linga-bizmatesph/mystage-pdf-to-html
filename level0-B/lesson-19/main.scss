@@ -664,7 +664,19 @@ td {
       }
 
       .phrase-alts {
-        grid-template-columns: min-content 1fr min-content;
+        grid-template-columns: min-content min-content 1fr;
+
+        .choice-eng {
+          @extend .fs-16;
+        }
+
+        .choice-jap {
+          letter-spacing: -1px;
+        }
+
+        .ls- {
+          letter-spacing: -5px;
+        }
       }
 
       .phrases-section {

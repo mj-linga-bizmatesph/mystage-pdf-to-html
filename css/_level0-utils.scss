@@ -80,6 +80,10 @@ td {
     font-family: $title-font;
   }
 
+  .fs-14 {
+    font-size: clamp(6px, 1.5vw, 14px);
+  }
+
   .fs-16 {
     font-size: clamp(6px, 2.6vw, 16px);
   }
@@ -154,6 +158,10 @@ td {
       margin-left: -15px;
       width: 100%;
     }
+  }
+  .at-mention {
+    color: #9ea9fc;
+    font-family: $title-font;
   }
   .eng {
     font-weight: bold;
@@ -421,6 +429,7 @@ td {
       .green-piece-complete,
       .blue-piece-complete,
       .green-piece-male,
+      .blue-piece-male,
       .yellow-piece-female,
       .yellow-piece-complete,
       .red-piece-female {
@@ -529,6 +538,14 @@ td {
         background-position: right;
       }
 
+      .blue-piece-male {
+        background-image: url(#{$s3}/0-blue-piece-male.png),
+          linear-gradient(90deg, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
+      }
+
       .yellow-piece-female {
         background-image: url(#{$s3}/0-yellow-piece-female.png),
           linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
@@ -545,7 +562,6 @@ td {
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
-        background-size: cover;
       }
 
       .icon {

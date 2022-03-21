@@ -143,9 +143,9 @@ hr {
   .lesson-number {
     position: absolute;
     top: 0vh;
-    margin-left: clamp(352px, 36vw, 544px);
+    right: 5.5%;
     font-size: clamp(0.8rem, 4vw, 1.5rem);
-    color: white;
+    color: #ffffff;
   }
 
   // Title
@@ -177,13 +177,14 @@ hr {
     font-family: $noto-sans;
   }
   .instructions {
+    font-size: clamp(9px, 2.9vw, 18px);
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
     left: 22%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(9px, 2.9vw, 18px);
       color: #141821;
       margin-left: clamp(12px, 3.5vw, 18px);
     }
@@ -276,11 +277,11 @@ hr {
       .bubble1-text {
         position: absolute;
         display: block;
-        margin-top: clamp(10px, 3vw, 23px);
+        margin-top: clamp(10px, 4vw, 23px);
         margin-left: clamp(1px, 5vw, 27px);
         .eng {
           font-weight: bold;
-          font-size: clamp(9px, 2.2vw, 14px);
+          font-size: clamp(9px, 1.5vw, 14px);
         }
 
         .jap {
@@ -292,9 +293,9 @@ hr {
     }
 
     .bubble2-text {
-      margin-left: clamp(232px, 66vw, 395px);
+      margin-left: clamp(235px, 64vw, 395px);
       position: absolute;
-      margin-top: clamp(54px, 13vw, 82px);
+      margin-top: clamp(50px, 13.5vw, 82px);
 
       .eng {
         font-weight: bold;
@@ -316,7 +317,7 @@ hr {
       font-size: clamp(9px, 1.5vw, 14px);
       margin-left: clamp(25px, 11.8vw, 73px);
       position: absolute;
-      margin-top: clamp(40px, 13vw, 76px);
+      margin-top: clamp(40px, 12vw, 76px);
 
       .eng {
         font-weight: bold;
@@ -367,45 +368,45 @@ hr {
         .f2-c1 {
           display: inline-flex;
           z-index: 32px;
-          margin-top: clamp(60px, 20vw, 60px);
-          font-family: $noto-sans;
-          font-size: clamp(10px, 2vw, 16px);
-
+          margin-top: clamp(75px, 20vw, 82px);
+          font-family: "Noto Sans";
+          font-size: clamp(10px, 2.5vw, 16px);
+          margin-left: clamp(-3px, -1vw, 0px);
           .box-1 {
-            width: clamp(65px, 11vw, 110px);
+            width: clamp(62px, 19vw, 110px);
             background: url(#{$s3}/0-b-12-yellow.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: clamp(15px, 3vw, 26px);
+            height: clamp(10px, 5vw, 26px);
             text-align: center;
-            padding-top: clamp(2px, 2vw, 6px);
+            padding-top: clamp(1px, 1.3vw, 6px);
             margin-left: clamp(-2px, -2vw, -15px);
           }
 
           .box-2 {
-            width: clamp(88px, 15vw, 140px);
+            width: clamp(86px, 25vw, 140px);
             background: url(#{$s3}/0-b-12-green.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: clamp(16px, 4vw, 27px);
+            height: clamp(7px, 5vw, 26px);
             text-align: center;
-            padding-top: clamp(2px, 2vw, 6px);
+            padding-top: clamp(1px, 1.3vw, 6px);
             margin-left: clamp(0px, 0vw, 3px);
           }
 
           .box-3 {
-            width: clamp(110px, 16vw, 150px);
+            width: clamp(97px, 26vw, 150px);
             margin-left: clamp(0px, 0vw, 4px);
             background: url(#{$s3}/0-b-12-pinkpiece.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: clamp(17px, 4vw, 26px);
-            padding-top: clamp(2px, 2vw, 6px);
+            height: clamp(15px, 5vw, 26px);
             text-align: center;
-          }
+            padding-top: clamp(1px, 1.3vw, 6px);
+            }
 
           .text-2 {
             position: absolute;
@@ -431,7 +432,7 @@ hr {
           position: absolute;
         }
         div {
-          margin-top: clamp(33px, 21vw, 107px);
+          margin-top: clamp(33px, 23vw, 107px);
           margin-left: clamp(1px, 1vw, 36px);
           position: absolute;
           right: 83%;
@@ -447,24 +448,24 @@ hr {
     }
 
     .b1-legend {
-      width: clamp(90px, 15vw, 115px);
+      width: clamp(90px, 20vw, 115px);
       background: url(#{$s3}/0-b-12-yellow.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       height: 30px;
       text-align: center;
-      height: clamp(5px, 5.2vw, 30px);
+      height: clamp(23px, 5vw, 30px);
     }
     .b2-legend {
-      width: clamp(120px, 24vw, 163px);
+      width: clamp(120px, 25.1vw, 163px);
       text-align: center;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-image: url(#{$s3}/0-b-12-pink.png);
       font-size: clamp(10px, 2.2vw, 16px);
-      height: clamp(20px, 3.2vw, 30px);
+      height: clamp(23px, 5vw, 30px);
     }
 
     .legend {
@@ -474,7 +475,7 @@ hr {
 
       & .eng {
         padding-top: clamp(6px, 5vw, 5px);
-        font-size: clamp(13px, 1.8vw, 16px);
+        font-size: clamp(11px, 2.5vw, 16px);
       }
     }
 
@@ -562,7 +563,7 @@ hr {
       width: clamp(121px, 31vw, 170px);
       min-height: clamp(197.26px, 37vw, 191px);
       margin-top: clamp(25px, 7vw, 25px);
-      margin-left: clamp(196px, 29vw, 275px);
+      margin-left: clamp(0px, 53vw, 264px);
       position: absolute;
       background-position: top, bottom;
       background-size: contain;
@@ -579,9 +580,11 @@ hr {
           list-style-type: none;
           margin-bottom: 10px;
           color: $primary-blue;
+          font-size: clamp(12px, 2vw, 18px);
         }
 
         ul li > .number {
+          font-weight: bold;
           border-radius: 50%;
           background: $primary-blue;
           color: white;
@@ -591,7 +594,7 @@ hr {
           height: clamp(13px, 4vw, 24px);
           line-height: clamp(13px, 4vw, 24px);
           font-family: $noto-sans;
-          font-size: clamp(11px, 3vw, 16px);
+          font-size: clamp(12px, 2vw, 18px);
           z-index: 1;
           padding-left: clamp(5px, 1.4vw, 7px);
           padding-right: clamp(5px, 1.4vw, 7px);
@@ -599,12 +602,12 @@ hr {
 
         ul li > .plus {
           position: relative;
-          font-size: clamp(7px, 6.3vw, 32px);
+          font-size: clamp(5px, 5vw, 32px);
           margin-top: clamp(30px, 1.3vw, 5px);
 
           img {
             width: auto;
-            height: clamp(10px, 3.5vw, 15px);
+            height: clamp(11px, 2vw, 15px);
           }
         }
 
@@ -616,7 +619,7 @@ hr {
           width: clamp(11px, 4vw, 20px);
           height: clamp(11px, 4vw, 20px);
           line-height: clamp(11px, 4vw, 20px);
-          font-size: clamp(11px, 3vw, 16px);
+          font-size: clamp(12px, 2vw, 18px);
           text-align: center;
           padding-left: clamp(2px, 1.4vw, 7px);
           padding-right: clamp(2px, 1.4vw, 7px);
@@ -632,6 +635,7 @@ hr {
         }
 
         ul li > .number {
+          font-weight: bold;
           @extend .b;
           border-radius: 50%;
           background: $primary-blue;
@@ -679,6 +683,7 @@ hr {
 
 .try-2 {
   .try2-content {
+    font-family: $noto-sans;
     padding-left: clamp(4px, 10vw, 5px);
     margin-top: clamp(40px, 16vw, 100px);
 
@@ -687,33 +692,28 @@ hr {
       position: relative;
       .number {
         color: $primary-blue;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .you {
         margin-left: clamp(15px, 3vw, 30px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .new-line {
-        margin-left: clamp(55px, 14vw, 95px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        margin-left: clamp(55px, 10.1vw, 95px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .underline {
-        margin-left: clamp(55px, 14vw, 95px);
+        margin-left: clamp(55px, 10.1vw, 95px);
         text-decoration: underline;
         color: $primary-blue;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .bubble {
         position: absolute;
-        margin-left: clamp(104px, 55vw, 361px);
-        font-size: clamp(10px, 2.6vw, 21px);
-        padding-top: clamp(20.4px, 6vw, 40px);
-        padding-left: clamp(20px, 4vw, 2px);
-        padding-bottom: clamp(7px, 2vw, 6px);
-        padding-right: clamp(29px, 3vw, 6px);
-        margin-top: clamp(-72px, -78vw, -165px);
-        width: clamp(50px, 16.3vw, 130px);
-        min-height: clamp(94px, 41vw, 84px);
+        margin-left: clamp(208px, 55vw, 330px);
+        margin-top: clamp(-102px, -20vw, 0px);
+        width: clamp(144px, 23vw, 189px);
+        min-height: clamp(68px, 20vw, 119px);
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-b-12-t2bg1.svg);
@@ -725,32 +725,27 @@ hr {
       position: relative;
       .number {
         color: $primary-blue;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .you {
         margin-left: clamp(15px, 3vw, 30px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .new-line {
-        margin-left: clamp(55px, 14vw, 95px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        margin-left: clamp(55px, 10.1vw, 95px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .underline {
-        margin-left: clamp(55px, 14vw, 95px);
+        margin-left: clamp(55px, 10.1vw, 95px);
         text-decoration: underline;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .bubble {
         position: absolute;
-        margin-left: clamp(106px, 57vw, 375px);
-        font-size: clamp(10px, 2.6vw, 21px);
-        padding-top: clamp(14px, 6vw, 29px);
-        padding-left: clamp(0px, 2vw, 15px);
-        padding-bottom: clamp(7px, 2vw, 8px);
-        padding-right: clamp(0px, 2vw, 34px);
-        margin-top: clamp(-96px, -62vw, -139px);
-        width: clamp(116px, 12.3vw, 175px);
-        min-height: clamp(24px, 19vw, 108px);
+        margin-left: clamp(200px, 56vw, 336px);
+        margin-top: clamp(-130px, -23vw, 0px);
+        width: clamp(125px, 21vw, 188px);
+        min-height: clamp(130px, 19vw, 174px);
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-b-12-t2bg2.svg);
@@ -762,47 +757,31 @@ hr {
       position: relative;
       .number {
         color: $primary-blue;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .you {
         margin-left: clamp(15px, 3vw, 30px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .new-line {
-        margin-left: clamp(55px, 14vw, 95px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        margin-left: clamp(55px, 10.1vw, 95px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .underline {
-        margin-left: clamp(55px, 14vw, 95px);
+        margin-left: clamp(55px, 10.1vw, 95px);
         text-decoration: underline;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .bubble {
         position: absolute;
-        font-size: clamp(10px, 2.6vw, 21px);
-        padding-top: clamp(-2.6px, 6vw, 40px);
-        padding-left: clamp(12px, 4vw, 21px);
-        padding-bottom: clamp(11px, 2vw, 6px);
-        padding-right: clamp(29px, 3vw, 6px);
-        margin-top: clamp(-91px, -57vw, -133px);
-        text-align: center;
-        width: clamp(50px, 16vw, 130px);
-        min-height: clamp(138px, 100px, 100px);
-        margin-left: clamp(226px, 44vw, 369px);
+        margin-top: clamp(-91px, -22vw, 0px);
+        min-width: clamp(47px, 32vw, 187px);
+        min-height: clamp(122px, 20vw, 200px);
+        margin-left: clamp(213px, 58vw, 332px);
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-b-12-t2bg3.svg);
 
-        .rotate-1 {
-          transform: rotate(10deg);
-          font-size: clamp(11px, 2.5vw, 21px);
-        }
-        .rotate-2 {
-          padding-left: clamp(12px, 2.5vw, 25px);
-          padding-top: clamp(10px, 1.9vw, 15px);
-          transform: rotate(-10deg);
-          font-size: clamp(10px, 2.2vw, 21px);
-        }
       }
     }
 
@@ -811,90 +790,56 @@ hr {
       position: relative;
       .number {
         color: $primary-blue;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .you {
         margin-left: clamp(15px, 3vw, 30px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .new-line {
-        margin-left: clamp(55px, 14vw, 95px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        margin-left: clamp(55px, 10.1vw, 95px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .underline {
-        margin-left: clamp(55px, 14vw, 95px);
+        margin-left: clamp(55px, 10.1vw, 95px);
         text-decoration: underline;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .bubble {
         position: absolute;
-        font-size: clamp(10px, 2.6vw, 21px);
-        padding-left: clamp(20px, 4vw, 40px);
-        padding-right: clamp(44px, 5vw, 6px);
-        margin-top: clamp(-107px, -1vw, -147px);
-        width: clamp(50px, 16vw, 120px);
-        min-height: clamp(77px, 62vw, 143px);
-        margin-left: clamp(211px, 57vw, 359px);
+        margin-top: clamp(-120px, -25vw, 0px);
+        min-width: clamp(131px, 31vw, 187px);
+        min-height: clamp(100px, 17vw, 140px);
+        margin-left: clamp(201px, 56vw, 332px);
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-b-12-t2bg4.svg);
-
-        .rotate-1 {
-          padding-left: clamp(9px, 2.5vw, 25px);
-          transform: rotate(10deg);
-          font-size: clamp(11px, 2.5vw, 21px);
-        }
-        .rotate-2 {
-          padding-left: clamp(12px, 2.5vw, 25px);
-          padding-top: clamp(10px, 1.9vw, 15px);
-          transform: rotate(-10deg);
-          font-size: clamp(10px, 2.2vw, 21px);
-        }
       }
     }
     .try-2-row-5 {
       position: relative;
       .number {
         color: $primary-blue;
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .you {
         margin-left: clamp(15px, 3vw, 30px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        font-size: clamp(12px, 2vw, 18px);
       }
       .new-line {
-        margin-left: clamp(55px, 14vw, 95px);
-        font-size: clamp(11px, 3.3vw, 19px);
+        margin-left: clamp(55px, 10.1vw, 95px);
+        font-size: clamp(12px, 2vw, 18px);
       }
-      .line {
-        color: #141821;
-      }
-
       .bubble {
         position: absolute;
-        padding-top: clamp(17.4px, 4vw, 30px);
-        padding-left: clamp(24px, 4vw, 40px);
-        padding-bottom: clamp(7px, 2vw, 6px);
-        padding-right: clamp(29px, 2vw, 6px);
-        margin-top: clamp(-91px, -50vw, -148px);
-        margin-left: clamp(220px, 58vw, 371px);
-        width: clamp(70px, 16.3vw, 150px);
-        min-height: clamp(91px, 14vw, 149px);
+        margin-top: clamp(-139px, -25vw, 0px);
+        margin-left: clamp(213px, 58vw, 338px);
+        width: clamp(119px, 21vw, 187px);
+        min-height: clamp(122px, 20vw, 183px);
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-b-12-t2bg5.svg);
 
-        .rotate-1 {
-          padding-left: clamp(9px, 2.5vw, 25px);
-          transform: rotate(10deg);
-          font-size: clamp(11px, 2.5vw, 21px);
-        }
-        .rotate-2 {
-          padding-left: clamp(12px, 2.5vw, 25px);
-          padding-top: clamp(10px, 1.9vw, 15px);
-          transform: rotate(-10deg);
-          font-size: clamp(10px, 2.2vw, 21px);
-        }
       }
     }
   }
@@ -908,34 +853,39 @@ hr {
       margin-bottom: 22px;
       font-size: clamp(10px, 2vw, 18px);
       .calen {
-        min-height: clamp(178px, 19vw, 186px);
-        margin-left: clamp(96px, 16vw, 162px);
-        min-width: clamp(155px, 16vw, 157px);
-        padding-top: clamp(10px, 1.5vw, 93px);
+        margin-left: clamp(106px, 21vw, 211px);
+        img{
+          height: clamp(184px, 19vw, 186px);
+          width: clamp(138px, 23vw, 157px);
+        }
       }
       .calen1 {
-        height: clamp(178px, 19vw, 186px);
-        margin-left: clamp(96px, 16vw, 162px);
-        width: clamp(155px, 16vw, 157px);
-        padding-top: clamp(10px, 1.5vw, 93px);
+        margin-left: clamp(106px, 21vw, 211px);
+        img{
+          height: clamp(184px, 19vw, 186px);
+          width: clamp(138px, 23vw, 157px);
+        }
       }
       .calen2 {
-        height: clamp(178px, 19vw, 186px);
-        margin-left: clamp(96px, 16vw, 162px);
-        width: clamp(155px, 16vw, 157px);
-        padding-top: clamp(10px, 1.5vw, 93px);
+        margin-left: clamp(106px, 21vw, 211px);
+        img{
+          height: clamp(184px, 19vw, 186px);
+          width: clamp(138px, 23vw, 157px);
+        }
       }
       .calen3 {
-        height: clamp(170px, 1.2vw, 100px);
-        margin-left: clamp(61px, 13vw, 126px);
-        width: clamp(202px, 1.5vw, 121px);
-        padding-top: clamp(10px, 1.5vw, 93px);
+        margin-left: clamp(80px, 17vw, 178px);
+        img{
+          height: clamp(161px, 23vw, 186px);
+          width: clamp(186px, 30vw, 223px);
+        }
       }
       .calen4 {
-        height: clamp(170px, 1.2vw, 100px);
-        margin-left: clamp(0px, 13vw, 126px);
-        width: clamp(202px, 1.5vw, 121px);
-        padding-top: clamp(10px, 1.5vw, 93px);
+        margin-left: clamp(72px, 13.5vw, 172px);
+        img{
+          height: clamp(148px, 24vw, 191px);
+          width: clamp(204px, 33vw, 253px);
+        }
       }
       .row {
         .blue-line {
@@ -953,22 +903,24 @@ hr {
           position: absolute;
         }
         .Trainer {
+          font-size: clamp(12px, 2vw, 18px);
           font-weight: bold;
-          margin-left: clamp(40px, 6vw, 41px);
+          margin-left: clamp(39px, 6vw, 41px);
           position: absolute;
         }
         p {
           display: inline-block;
           margin-top: 13px;
-          margin-left: clamp(101px, 9vw, 129px);
+          margin-left: clamp(90px, 14vw, 129px);
           &:first-child {
             word-wrap: break-word;
             font-weight: bold;
             margin-bottom: 20px;
-            font-size: clamp(10px, 2vw, 18px);
+            font-size: clamp(12px, 2vw, 18px);
           }
           &:last-child {
             font-family: $noto-sans;
+            font-size: clamp(12px, 2vw, 18px);
           }
         }
       }
@@ -982,8 +934,8 @@ hr {
   .act-1-content {
     margin-top: 59px;
     .PT1 {
-      height: clamp(247px, 24vw, 369px);
-      width: clamp(358px, 43vw, 532px);
+      height: clamp(247px, 46vw, 369px);
+      width: clamp(358px, 77vw, 532px);
     }
     
 
@@ -992,7 +944,7 @@ hr {
       margin-top: 20px;
       font-family: $noto-sans;
       margin-bottom: 22px;
-      font-size: clamp(10px, 2vw, 18px);
+      font-size: clamp(12px, 2vw, 18px);
       width: 96%;
 
       .row {
@@ -1009,22 +961,23 @@ hr {
           
           display: inline-block;
           margin-top: 13px;
-          margin-left: clamp(93px, 7vw, 121px);
+          margin-left: clamp(74px, 11vw, 121px);
           &:first-child {
             word-wrap: break-word;
             font-weight: bold;
             margin-bottom: 20px;
           }
           &:last-child {
+            font-size: clamp(12px, 2vw, 18px);
             font-family: $noto-sans;
           }
         }
         .jap {
           color: $subtext-color;
-          font-size: clamp(5px, 2vw, 13px);
+          font-size: clamp(7px, 2vw, 13px);
           font-weight: normal;
           letter-spacing: -2px;
-          margin-left: clamp(91px, 7vw, 107px);
+          margin-left: clamp(75px, 11vw, 121px);
           margin-top: clamp(-7px, -2vw, -38px);
         }
       }
@@ -1034,7 +987,7 @@ hr {
 
 .act-2 {
   .act-2-space {
-    margin-bottom: 80px;
+    margin-bottom: 55px;
   }
 }
 

@@ -688,9 +688,12 @@ td {
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrase-alts {
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.html-lesson-wrapper .see-content.see-2 .phrase-alts .choice p {
+  white-space: normal;
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrases-section {

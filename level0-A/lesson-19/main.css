@@ -16,7 +16,7 @@ td {
 }
 
 .w-11 {
-  width: clamp(6.5rem, 17vw, 12rem);
+  width: clamp(4.5rem, 20vw, 15rem);
 }
 
 .flex {
@@ -138,7 +138,7 @@ td {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -1.5px;
+  letter-spacing: -2px;
   color: #7f8288;
   font-family: "Noto Sans";
   font-size: clamp(7px, 1.8vw, 11px);
@@ -177,7 +177,7 @@ td {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
+  letter-spacing: -3px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -378,7 +378,6 @@ td {
 
 .html-lesson-wrapper .see-content .phrase-alts .choice p {
   margin: 0;
-  white-space: nowrap;
   font-family: "Noto Sans";
 }
 
@@ -785,7 +784,7 @@ td {
 .see-2 .phrase-alts .alt-box .choice-jap,
 .see-3 .phrase-alts .alt-box .choice-jap {
   letter-spacing: -2px;
-  line-height: clamp(0.9rem, 2vw, 1.9rem);
+  line-height: clamp(0.5rem, 2vw, 1.5rem);
 }
 
 .see-2 .conversation .conv-1 {

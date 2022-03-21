@@ -31,7 +31,7 @@ td {
 }
 
 .w-11 {
-  width: clamp(6.5rem, 17vw, 12rem);
+  width: clamp(4.5rem, 20vw, 15rem);
 }
 
 .flex {
@@ -154,7 +154,7 @@ td {
     font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -188,7 +188,7 @@ td {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      letter-spacing: -3px;
     }
   }
   .arrow {
@@ -375,7 +375,6 @@ td {
         margin-left: clamp(5px, 1vw, 9px);
         p {
           margin: 0;
-          white-space: nowrap;
           font-family: $noto-sans;
         }
       }
@@ -739,7 +738,7 @@ td {
       }
       .choice-jap {
         letter-spacing: -2px;
-        line-height: clamp(0.9rem, 2vw, 1.9rem);
+        line-height: clamp(0.5rem, 2vw, 1.5rem);
       }
     }
   }

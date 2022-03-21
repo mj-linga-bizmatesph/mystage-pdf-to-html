@@ -123,9 +123,11 @@ hr {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  top: 0vh;
-  right: 5.5%;
-  font-size: clamp(0.8rem, 4vw, 1.5rem);
+  right: 8%;
+  width: 1.9%;
+  text-align: center;
+  margin-top: 0.5%;
+  font-size: clamp(18px, 4vw, 28px);
   color: #ffffff;
 }
 
@@ -164,20 +166,18 @@ hr {
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
-  left: 22%;
+  left: 27%;
 }
 
 .html-lesson-wrapper .instructions .title {
   font-size: clamp(9px, 2.9vw, 18px);
   color: #141821;
-  margin-left: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
   letter-spacing: -0.9px;
-  margin-left: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .see-content {

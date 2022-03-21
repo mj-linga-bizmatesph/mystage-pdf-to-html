@@ -51,6 +51,10 @@ td {
   height: auto;
 }
 
+.img-responsive-clamp {
+  max-width: clamp(44%, 25vw, 100%);
+}
+
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -71,7 +75,7 @@ td {
   }
 
   .fs-16 {
-    font-size: clamp(1px, 2.5vw, 16px);
+    font-size: clamp(12px, 2.3vw, 16px);
   }
   .flip-horizontal {
     -webkit-transform: scaleX(-1);
@@ -606,252 +610,385 @@ td {
   }
 }
 
-//individuals
-.see-1 {
-  margin-top: 29%;
+.html-lesson-wrapper {
+  .see-content {
+    //individuals
+    &.see-1 {
+      margin-top: 29%;
 
-  .office-see-1 {
-    margin-top: 6%;
-
-    .speech {
-      .eng {
-        font-size: clamp(8px, 2vw, 13px);
-      }
-
-      &.sara {
-        margin-top: 21%;
-        left: 28.5%;
-      }
-      &.akiko {
-        margin-top: 4%;
-        left: 9%;
-      }
-    }
-  }
-}
-
-.see-2 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    margin-top: 4%;
-  }
-
-  .phrase-alts {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .conversation {
-    .conv-1 {
-      margin-top: 5%;
-      display: grid;
-      grid-template-columns: min-content 1fr;
-
-      .icon {
-        margin-right: clamp(20px, 4.5vw, 40px);
-      }
-      .phrase:not(:last-child) {
-        margin-right: clamp(10px, 3.5vw, 20px);
-      }
-    }
-  }
-}
-
-.see-3 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    margin-top: 4%;
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .phrases {
-    margin-top: 5%;
-  }
-
-  .conversation {
-    .conv-1 {
-      margin-top: 5%;
-      display: grid;
-      grid-template-columns: 1fr min-content;
-
-      .phrase .eng {
-        font-size: clamp(8px, 2.2vw, 15px);
-      }
-      .phrase:not(:last-child) {
-        margin-right: -2px;
-      }
-    }
-  }
-
-  .alt:not(:last-child) {
-    margin-bottom: 4% !important;
-  }
-}
-
-.try-1,
-.try-2,
-.try-3,
-.try-4 {
-  margin-top: 6%;
-}
-
-.try-1 {
-  .combinations {
-    grid-template-columns: min-content 1fr 1fr;
-    margin-top: 8%;
-
-    & > div:last-child {
-      margin-left: 4%;
-    }
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: left;
-      margin-bottom: 13%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-2 {
-  .combinations {
-    grid-template-columns: 1fr min-content;
-    margin-top: 13%;
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 7%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-3 {
-  .table-wrapper-section {
-    margin-top: 14%;
-
-    .jap {
-      font-family: $noto-sans;
-      font-size: clamp(9px, 2vw, 13px);
-      color: $subtext-color;
-    }
-
-    .table-wrapper {
-      width: 100%;
-      p {
-        margin: 0;
-      }
-      .table-number {
-        @extend .b, .primary-blue;
-        font-size: clamp(10px, 3vw, 16px);
-        padding-top: 6px;
-        padding-left: clamp(5px, 3vw, 10px);
-      }
-      .table-img {
-        text-align: center;
-        padding-top: 2%;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 9%;
-      }
-      img {
-        max-width: clamp(44%, 25vw, 100%);
-      }
-    }
-  }
-
-  .table {
-    font-family: $noto-sans;
-    border-collapse: collapse;
-
-    td {
-      font-size: clamp(10px, 3vw, 18px);
-      img {
-        max-width: clamp(44%, 16vw, 100%);
-        margin-bottom: 20px;
-      }
-    }
-
-    .name {
-      @extend .b;
-      font-size: clamp(10px, 3vw, 16px);
-      white-space: nowrap;
-    }
-    tr:not(:last-child) td:nth-child(2) {
-      padding-bottom: 5%;
-    }
-  }
-}
-
-.try-4 {
-  img {
-    margin-top: 10%;
-    max-width: clamp(44%, 69vw, 100%);
-  }
-}
-
-.act-1,
-.act-2 {
-  margin-top: 7%;
-}
-.act-2 {
-  margin-bottom: 50px;
-}
-
-.act-1 {
-  .blue-line {
-    margin-top: 5%;
-  }
-
-  .office-act-1 {
-    margin-top: 6%;
-
-    .bubble {
-      &.akiko {
+      .office-see-1 {
         margin-top: 6%;
-        left: 30%;
-        font-family: $noto-sans;
 
-        .eng {
-          font-weight: normal;
+        .speech {
+          .eng {
+            font-size: clamp(8px, 2vw, 13px);
+          }
+
+          &.akiko {
+            margin-top: 10%;
+            right: 38.5%;
+          }
+          &.steve {
+            margin-top: 3%;
+            left: 12.5%;
+          }
+        }
+      }
+    }
+
+    &.see-2 {
+      margin-top: 7%;
+
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+
+      .legend {
+        margin-top: 4%;
+      }
+
+      .phrase-alts {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .phrases-section {
+        margin-bottom: 8%;
+      }
+
+      .conversation {
+        .conv-1 {
+          margin-top: 5%;
+          display: grid;
+          grid-template-columns: min-content 1fr;
+
+          .icon {
+            margin-right: clamp(20px, 4.5vw, 40px);
+          }
+          .phrase:not(:last-child) {
+            margin-right: clamp(10px, 3vw, 20px);
+          }
         }
 
+        .conv-2 {
+          margin-top: -5%;
+          display: grid;
+          grid-template-columns: 1fr min-content;
+
+          .phrases-wrapper {
+            display: flex;
+            justify-content: right;
+          }
+
+          .icon {
+            margin-right: clamp(20px, 4.5vw, 40px);
+          }
+          .phrase {
+            margin-right: clamp(10px, 3.5vw, 20px);
+          }
+        }
+      }
+    }
+
+    &.see-3 {
+      margin-top: 7%;
+
+      .office-section {
+        margin-top: 6%;
+
+        .speech {
+          .eng {
+            font-size: clamp(8px, 2vw, 13px);
+          }
+
+          &.akiko {
+            margin-top: 13%;
+            right: 14%;
+          }
+          &.steve {
+            margin-top: 9%;
+            left: 18.5%;
+          }
+        }
+      }
+    }
+
+    &.see-4 {
+      margin-top: 7%;
+
+      .alt:not(:last-child) {
+        margin-bottom: 5%;
+      }
+
+      .legend {
+        margin-top: 4%;
+      }
+
+      .phrases-section {
+        margin-bottom: 8%;
+      }
+
+      .phrases {
+        margin-top: 5%;
+      }
+
+      .conversation {
+        .conv-1 {
+          margin-top: 5%;
+          display: grid;
+          grid-template-columns: min-content 1fr;
+
+          .icon {
+            margin-right: clamp(10px, 3.5vw, 20px);
+          }
+          .phrase .eng {
+            font-size: clamp(8px, 2.2vw, 15px);
+          }
+          .phrase {
+            margin-right: clamp(5px, 2vw, 10px);
+          }
+        }
+
+        .conv-2 {
+          margin-top: -5%;
+          display: grid;
+          grid-template-columns: 1fr min-content;
+
+          .phrases-wrapper {
+            display: flex;
+            justify-content: right;
+          }
+
+          .phrase .eng {
+            font-size: clamp(8px, 2.2vw, 15px);
+          }
+          .phrase {
+            margin-right: clamp(5px, 2vw, 10px);
+          }
+        }
+      }
+
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+    }
+  }
+
+  .try-content {
+    &.try-1,
+    &.try-2,
+    &.try-3 {
+      margin-top: 6%;
+    }
+
+    &.try-1 {
+      .table-wrapper-section {
+        margin-top: 12%;
+
         .jap {
-          letter-spacing: -2px;
+          font-family: $noto-sans;
+          font-size: clamp(9px, 2vw, 13px);
+          color: $subtext-color;
+        }
+
+        .table-wrapper {
+          width: 100%;
+
+          p {
+            margin: 0;
+          }
+          .table-number {
+            @extend .b, .primary-blue;
+            font-size: clamp(10px, 3vw, 16px);
+            padding-top: 6px;
+            padding-left: clamp(5px, 3vw, 10px);
+          }
+          .table-img {
+            width: 29%;
+            text-align: center;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 5%;
+          }
+
+          img {
+            max-width: clamp(83%, 28vw, 100%);
+          }
+
+          &:first-child img {
+            margin-top: -13%;
+          }
+        }
+      }
+
+      .table {
+        font-family: $noto-sans;
+        border-collapse: collapse;
+
+        td {
+          font-size: clamp(1px, 3vw, 18px);
+          img {
+            max-width: clamp(44%, 16vw, 100%);
+            margin-bottom: 20px;
+          }
+        }
+
+        .name {
+          @extend .b;
+          font-size: clamp(10px, 3vw, 16px);
+          white-space: nowrap;
+        }
+        tr:not(:last-child) td:nth-child(2) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+
+    &.try-2 {
+      .table-wrapper-section {
+        margin-top: 17%;
+
+        .jap {
+          font-family: $noto-sans;
+          font-size: clamp(9px, 2vw, 13px);
+          color: $subtext-color;
+        }
+
+        .table-wrapper {
+          width: 100%;
+
+          p {
+            margin: 0;
+          }
+          .table-number {
+            @extend .b, .primary-blue;
+            font-size: clamp(10px, 3vw, 16px);
+            padding-top: 6px;
+            padding-left: clamp(5px, 3vw, 10px);
+          }
+          .table-img {
+            text-align: center;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 11%;
+          }
+
+          img {
+            margin-top: -13%;
+            max-width: clamp(56%, 20vw, 100%);
+          }
+        }
+      }
+
+      .table {
+        font-family: $noto-sans;
+        border-collapse: collapse;
+
+        td {
+          font-size: clamp(10px, 3vw, 18px);
+          img {
+            max-width: clamp(44%, 16vw, 100%);
+            margin-bottom: 20px;
+          }
+        }
+
+        .name {
+          @extend .b;
+          font-size: clamp(10px, 3vw, 16px);
+          white-space: nowrap;
+        }
+        tr:not(:last-child) td:nth-child(2) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+
+    &.try-3 {
+      .table-wrapper-section {
+        margin-top: 14%;
+
+        .jap {
+          font-family: $noto-sans;
+          font-size: clamp(9px, 2vw, 13px);
+          color: $subtext-color;
+        }
+
+        .table-wrapper {
+          width: 100%;
+
+          p {
+            margin: 0;
+          }
+          .table-number {
+            @extend .b, .primary-blue;
+            font-size: clamp(10px, 3vw, 16px);
+            padding-top: 6px;
+            padding-left: clamp(5px, 3vw, 10px);
+          }
+          .table-img {
+            text-align: center;
+            padding-top: 6%;
+          }
+
+          &:not(:last-child) .table-img {
+            padding-bottom: 6%;
+          }
+
+          img {
+            max-width: clamp(81%, 72vw, 100%);
+          }
+        }
+      }
+
+      .table {
+        font-family: $noto-sans;
+        border-collapse: collapse;
+
+        td {
+          font-size: clamp(10px, 3vw, 18px);
+          img {
+            max-width: clamp(44%, 16vw, 100%);
+            margin-bottom: 20px;
+          }
+        }
+
+        .name {
+          @extend .b;
+          font-size: clamp(10px, 3vw, 16px);
+          white-space: nowrap;
+        }
+        tr:not(:last-child) td:nth-child(2) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+  }
+
+  .act-1,
+  .act-2 {
+    margin-top: 7%;
+  }
+  .act-2 {
+    margin-bottom: 50px;
+  }
+
+  .act-1 {
+    .blue-line {
+      margin-top: 5%;
+    }
+
+    .office-act-1 {
+      margin-top: 6%;
+
+      .speech {
+        .eng {
+          font-size: clamp(9px, 2.3vw, 16px);
+        }
+
+        &.akiko {
+          margin-top: 9%;
+          right: 36.5%;
         }
       }
     }

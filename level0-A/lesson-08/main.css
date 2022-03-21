@@ -44,6 +44,10 @@ td {
   height: auto;
 }
 
+.img-responsive-clamp {
+  max-width: clamp(44%, 25vw, 100%);
+}
+
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -67,7 +71,7 @@ td {
 }
 
 .html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
-  font-size: clamp(1px, 2.5vw, 16px);
+  font-size: clamp(12px, 2.3vw, 16px);
 }
 
 .html-lesson-wrapper .flip-horizontal {
@@ -83,7 +87,7 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-3 .table .name, .try-3 .table .html-lesson-wrapper .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-3 .table .name, .try-3 .table .html-lesson-wrapper .name, .html-lesson-wrapper .act-1 .table-wrapper .table-number, .act-1 .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .act-1 .table .name, .act-1 .table .html-lesson-wrapper .name {
   font-weight: bold;
 }
 
@@ -98,7 +102,7 @@ td {
   color: #1287cd;
 }
 
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .text, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number {
+.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .text, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .act-1 .table-wrapper .table-number, .act-1 .table-wrapper .html-lesson-wrapper .table-number {
   color: #1287cd;
 }
 
@@ -487,7 +491,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .icon div {
-  margin-top: clamp(8px, 2vw, 14px);
+  margin-top: 2%;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrases {
@@ -602,8 +606,8 @@ td {
 }
 
 .see-1 .office-see-1 .speech.sara {
-  margin-top: 21%;
-  left: 28.5%;
+  margin-top: 4%;
+  left: 59.5%;
 }
 
 .see-1 .office-see-1 .speech.akiko {
@@ -678,12 +682,21 @@ td {
       grid-template-columns: 1fr min-content;
 }
 
+.see-3 .conversation .conv-1 .phrases-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
 .see-3 .conversation .conv-1 .phrase .eng {
   font-size: clamp(8px, 2.2vw, 15px);
 }
 
-.see-3 .conversation .conv-1 .phrase:not(:last-child) {
-  margin-right: -2px;
+.see-3 .conversation .conv-1 .phrase {
+  margin-right: clamp(5px, 2vw, 10px);
 }
 
 .see-3 .alt:not(:last-child) {
@@ -692,15 +705,14 @@ td {
 
 .try-1,
 .try-2,
-.try-3,
-.try-4 {
+.try-3 {
   margin-top: 6%;
 }
 
 .try-1 .combinations {
-  -ms-grid-columns: min-content 1fr 1fr;
-      grid-template-columns: -webkit-min-content 1fr 1fr;
-      grid-template-columns: min-content 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr min-content;
+      grid-template-columns: 1fr 1fr -webkit-min-content;
+      grid-template-columns: 1fr 1fr min-content;
   margin-top: 8%;
 }
 
@@ -717,9 +729,9 @@ td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 13%;
 }
 
@@ -727,30 +739,9 @@ td {
   margin-right: 4%;
 }
 
-.try-2 .combinations {
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
-  margin-top: 13%;
-}
-
-.try-2 .combinations .combination-icon {
-  height: auto;
-  width: clamp(80px, 30vw, 180px);
-}
-
-.try-2 .combinations .combination {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 7%;
-}
-
-.try-2 .combinations .combination > div:not(:last-child) {
-  margin-right: 4%;
+.try-2 img {
+  max-width: clamp(81%, 73vw, 100%);
+  margin-top: 10%;
 }
 
 .try-3 .table-wrapper-section {
@@ -779,15 +770,15 @@ td {
 
 .try-3 .table-wrapper-section .table-wrapper .table-img {
   text-align: center;
-  padding-top: 2%;
+  padding-top: 3%;
 }
 
-.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 9%;
+.try-3 .table-wrapper-section .table-wrapper:not(:last-child) .table-img {
+  padding-bottom: 6%;
 }
 
 .try-3 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 25vw, 100%);
+  max-width: clamp(81%, 72vw, 100%);
 }
 
 .try-3 .table {
@@ -813,11 +804,6 @@ td {
   padding-bottom: 5%;
 }
 
-.try-4 img {
-  margin-top: 10%;
-  max-width: clamp(44%, 69vw, 100%);
-}
-
 .act-1,
 .act-2 {
   margin-top: 7%;
@@ -827,24 +813,60 @@ td {
   margin-bottom: 50px;
 }
 
-.act-1 .blue-line {
-  margin-top: 5%;
-}
-
 .act-1 .office-act-1 {
   margin-top: 6%;
 }
 
-.act-1 .office-act-1 .bubble.akiko {
-  margin-top: 6%;
-  left: 30%;
+.act-1 .table-wrapper {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.act-1 .table-wrapper p {
+  margin: 0;
+}
+
+.act-1 .table-wrapper .table-number {
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 6px;
+}
+
+.act-1 .table-wrapper .table-img {
+  text-align: center;
+  padding-top: 6%;
+}
+
+.act-1 .table-wrapper:not(:last-child) {
+  margin-bottom: 9%;
+}
+
+.act-1 .table-wrapper img {
+  max-width: clamp(81%, 72vw, 100%);
+}
+
+.act-1 .table {
   font-family: "Noto Sans";
+  border-collapse: collapse;
 }
 
-.act-1 .office-act-1 .bubble.akiko .eng {
-  font-weight: normal;
+.act-1 .table td {
+  font-size: clamp(10px, 3vw, 18px);
 }
 
-.act-1 .office-act-1 .bubble.akiko .jap {
-  letter-spacing: -2px;
+.act-1 .table td img {
+  max-width: clamp(44%, 16vw, 100%);
+  margin-bottom: 20px;
+}
+
+.act-1 .table .name {
+  font-size: clamp(10px, 3vw, 16px);
+  white-space: nowrap;
+}
+
+.act-1 .table tr:not(:last-child) td:nth-child(2) {
+  padding-bottom: 5%;
+}
+
+.act-1 .table tr:last-child td:nth-child(2) {
+  padding-bottom: 9%;
 }

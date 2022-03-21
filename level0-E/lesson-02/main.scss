@@ -41,7 +41,13 @@
       }
 
       .phrase-alts {
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: 0.8fr 1fr;
+
+        .choice {
+          p {
+            white-space: normal;
+          }
+        }
       }
 
       .phrases-section {

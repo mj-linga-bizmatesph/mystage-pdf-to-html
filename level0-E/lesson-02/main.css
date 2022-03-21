@@ -302,6 +302,7 @@ td {
   margin: 0;
   text-align: center;
   width: clamp(13px, 4vw, 24px);
+  min-width: clamp(13px, 4vw, 24px);
   height: clamp(13px, 4vw, 24px);
   line-height: clamp(13px, 4vw, 24px);
   font-family: "Noto Sans";
@@ -389,7 +390,6 @@ td {
 
 .html-lesson-wrapper .see-content .phrase-alts .choice p {
   margin: 0;
-  white-space: nowrap;
   font-family: "Noto Sans";
 }
 
@@ -676,9 +676,12 @@ td {
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrase-alts {
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
+  -ms-grid-columns: 0.8fr 1fr;
+      grid-template-columns: 0.8fr 1fr;
+}
+
+.html-lesson-wrapper .see-content.see-2 .phrase-alts .choice p {
+  white-space: normal;
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrases-section {

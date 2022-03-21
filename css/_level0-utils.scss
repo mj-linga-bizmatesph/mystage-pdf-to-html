@@ -307,6 +307,8 @@ td {
     margin: 0;
     text-align: center;
     width: clamp(13px, 4vw, 24px);
+    min-width: clamp(13px, 4vw, 24px);
+
     height: clamp(13px, 4vw, 24px);
     line-height: clamp(13px, 4vw, 24px);
     font-family: $noto-sans;
@@ -383,7 +385,6 @@ td {
         margin-left: clamp(5px, 1vw, 9px);
         p {
           margin: 0;
-          white-space: nowrap;
           font-family: $noto-sans;
         }
       }

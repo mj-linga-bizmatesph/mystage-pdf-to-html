@@ -354,7 +354,7 @@ hr {
   display: inline-flex;
   z-index: 32px;
   margin-top: clamp(75px, 20vw, 82px);
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-size: clamp(10px, 2.5vw, 16px);
   margin-left: clamp(-3px, -1vw, 0px);
 }
@@ -858,7 +858,7 @@ hr {
 .try-3 .try-3-content .conversation-text {
   margin-left: -4px;
   margin-top: 35px;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }

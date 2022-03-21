@@ -44,6 +44,10 @@ td {
   height: auto;
 }
 
+.img-responsive-clamp {
+  max-width: clamp(44%, 25vw, 100%);
+}
+
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -67,7 +71,7 @@ td {
 }
 
 .html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
-  font-size: clamp(1px, 2.5vw, 16px);
+  font-size: clamp(12px, 2.3vw, 16px);
 }
 
 .html-lesson-wrapper .flip-horizontal {
@@ -83,7 +87,7 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-3 .table .name, .try-3 .table .html-lesson-wrapper .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-1 .table .name, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .name {
   font-weight: bold;
 }
 
@@ -98,7 +102,7 @@ td {
   color: #1287cd;
 }
 
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .text, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number {
+.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .text, .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
   color: #1287cd;
 }
 
@@ -589,50 +593,50 @@ td {
   margin-bottom: 3.8%;
 }
 
-.see-1 {
+.html-lesson-wrapper .see-content.see-1 {
   margin-top: 29%;
 }
 
-.see-1 .office-see-1 {
+.html-lesson-wrapper .see-content.see-1 .office-see-1 {
   margin-top: 6%;
 }
 
-.see-1 .office-see-1 .speech .eng {
+.html-lesson-wrapper .see-content.see-1 .office-see-1 .speech .eng {
   font-size: clamp(8px, 2vw, 13px);
 }
 
-.see-1 .office-see-1 .speech.sara {
-  margin-top: 21%;
-  left: 28.5%;
+.html-lesson-wrapper .see-content.see-1 .office-see-1 .speech.akiko {
+  margin-top: 10%;
+  right: 38.5%;
 }
 
-.see-1 .office-see-1 .speech.akiko {
-  margin-top: 4%;
-  left: 9%;
+.html-lesson-wrapper .see-content.see-1 .office-see-1 .speech.steve {
+  margin-top: 3%;
+  left: 12.5%;
 }
 
-.see-2 {
+.html-lesson-wrapper .see-content.see-2 {
   margin-top: 7%;
 }
 
-.see-2 .alt:not(:last-child) {
+.html-lesson-wrapper .see-content.see-2 .alt:not(:last-child) {
   margin-bottom: 6%;
 }
 
-.see-2 .legend {
+.html-lesson-wrapper .see-content.see-2 .legend {
   margin-top: 4%;
 }
 
-.see-2 .phrase-alts {
+.html-lesson-wrapper .see-content.see-2 .phrase-alts {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.see-2 .phrases-section {
+.html-lesson-wrapper .see-content.see-2 .phrases-section {
   margin-bottom: 8%;
 }
 
-.see-2 .conversation .conv-1 {
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-1 {
   margin-top: 5%;
   display: -ms-grid;
   display: grid;
@@ -641,36 +645,16 @@ td {
       grid-template-columns: min-content 1fr;
 }
 
-.see-2 .conversation .conv-1 .icon {
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .icon {
   margin-right: clamp(20px, 4.5vw, 40px);
 }
 
-.see-2 .conversation .conv-1 .phrase:not(:last-child) {
-  margin-right: clamp(10px, 3.5vw, 20px);
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .phrase:not(:last-child) {
+  margin-right: clamp(10px, 3vw, 20px);
 }
 
-.see-3 {
-  margin-top: 7%;
-}
-
-.see-3 .alt:not(:last-child) {
-  margin-bottom: 6%;
-}
-
-.see-3 .legend {
-  margin-top: 4%;
-}
-
-.see-3 .phrases-section {
-  margin-bottom: 8%;
-}
-
-.see-3 .phrases {
-  margin-top: 5%;
-}
-
-.see-3 .conversation .conv-1 {
-  margin-top: 5%;
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-2 {
+  margin-top: -5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr min-content;
@@ -678,173 +662,326 @@ td {
       grid-template-columns: 1fr min-content;
 }
 
-.see-3 .conversation .conv-1 .phrase .eng {
-  font-size: clamp(8px, 2.2vw, 15px);
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .phrases-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
-.see-3 .conversation .conv-1 .phrase:not(:last-child) {
-  margin-right: -2px;
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .icon {
+  margin-right: clamp(20px, 4.5vw, 40px);
 }
 
-.see-3 .alt:not(:last-child) {
-  margin-bottom: 4% !important;
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .phrase {
+  margin-right: clamp(10px, 3.5vw, 20px);
 }
 
-.try-1,
-.try-2,
-.try-3,
-.try-4 {
+.html-lesson-wrapper .see-content.see-3 {
+  margin-top: 7%;
+}
+
+.html-lesson-wrapper .see-content.see-3 .office-section {
   margin-top: 6%;
 }
 
-.try-1 .combinations {
-  -ms-grid-columns: min-content 1fr 1fr;
-      grid-template-columns: -webkit-min-content 1fr 1fr;
-      grid-template-columns: min-content 1fr 1fr;
-  margin-top: 8%;
+.html-lesson-wrapper .see-content.see-3 .office-section .speech .eng {
+  font-size: clamp(8px, 2vw, 13px);
 }
 
-.try-1 .combinations > div:last-child {
-  margin-left: 4%;
+.html-lesson-wrapper .see-content.see-3 .office-section .speech.akiko {
+  margin-top: 13%;
+  right: 14%;
 }
 
-.try-1 .combinations .combination-icon {
-  height: auto;
-  width: clamp(80px, 30vw, 180px);
+.html-lesson-wrapper .see-content.see-3 .office-section .speech.steve {
+  margin-top: 9%;
+  left: 18.5%;
 }
 
-.try-1 .combinations .combination {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  margin-bottom: 13%;
+.html-lesson-wrapper .see-content.see-4 {
+  margin-top: 7%;
 }
 
-.try-1 .combinations .combination > div:not(:last-child) {
-  margin-right: 4%;
+.html-lesson-wrapper .see-content.see-4 .alt:not(:last-child) {
+  margin-bottom: 5%;
 }
 
-.try-2 .combinations {
+.html-lesson-wrapper .see-content.see-4 .legend {
+  margin-top: 4%;
+}
+
+.html-lesson-wrapper .see-content.see-4 .phrases-section {
+  margin-bottom: 8%;
+}
+
+.html-lesson-wrapper .see-content.see-4 .phrases {
+  margin-top: 5%;
+}
+
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-1 {
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+}
+
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-1 .icon {
+  margin-right: clamp(10px, 3.5vw, 20px);
+}
+
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-1 .phrase .eng {
+  font-size: clamp(8px, 2.2vw, 15px);
+}
+
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-1 .phrase {
+  margin-right: clamp(5px, 2vw, 10px);
+}
+
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-2 {
+  margin-top: -5%;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr min-content;
       grid-template-columns: 1fr -webkit-min-content;
       grid-template-columns: 1fr min-content;
-  margin-top: 13%;
 }
 
-.try-2 .combinations .combination-icon {
-  height: auto;
-  width: clamp(80px, 30vw, 180px);
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-2 .phrases-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
-.try-2 .combinations .combination {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 7%;
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-2 .phrase .eng {
+  font-size: clamp(8px, 2.2vw, 15px);
 }
 
-.try-2 .combinations .combination > div:not(:last-child) {
-  margin-right: 4%;
+.html-lesson-wrapper .see-content.see-4 .conversation .conv-2 .phrase {
+  margin-right: clamp(5px, 2vw, 10px);
 }
 
-.try-3 .table-wrapper-section {
-  margin-top: 14%;
+.html-lesson-wrapper .see-content.see-4 .alt:not(:last-child) {
+  margin-bottom: 6%;
 }
 
-.try-3 .table-wrapper-section .jap {
+.html-lesson-wrapper .try-content.try-1, .html-lesson-wrapper .try-content.try-2, .html-lesson-wrapper .try-content.try-3 {
+  margin-top: 6%;
+}
+
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section {
+  margin-top: 12%;
+}
+
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .jap {
   font-family: "Noto Sans";
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
 }
 
-.try-3 .table-wrapper-section .table-wrapper {
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
 
-.try-3 .table-wrapper-section .table-wrapper p {
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper p {
   margin: 0;
 }
 
-.try-3 .table-wrapper-section .table-wrapper .table-number {
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 6px;
   padding-left: clamp(5px, 3vw, 10px);
 }
 
-.try-3 .table-wrapper-section .table-wrapper .table-img {
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-img {
+  width: 29%;
   text-align: center;
-  padding-top: 2%;
 }
 
-.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 9%;
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper:not(:last-child) {
+  margin-bottom: 5%;
 }
 
-.try-3 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 25vw, 100%);
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper img {
+  max-width: clamp(83%, 28vw, 100%);
 }
 
-.try-3 .table {
+.html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper:first-child img {
+  margin-top: -13%;
+}
+
+.html-lesson-wrapper .try-content.try-1 .table {
   font-family: "Noto Sans";
   border-collapse: collapse;
 }
 
-.try-3 .table td {
-  font-size: clamp(10px, 3vw, 18px);
+.html-lesson-wrapper .try-content.try-1 .table td {
+  font-size: clamp(1px, 3vw, 18px);
 }
 
-.try-3 .table td img {
+.html-lesson-wrapper .try-content.try-1 .table td img {
   max-width: clamp(44%, 16vw, 100%);
   margin-bottom: 20px;
 }
 
-.try-3 .table .name {
+.html-lesson-wrapper .try-content.try-1 .table .name {
   font-size: clamp(10px, 3vw, 16px);
   white-space: nowrap;
 }
 
-.try-3 .table tr:not(:last-child) td:nth-child(2) {
+.html-lesson-wrapper .try-content.try-1 .table tr:not(:last-child) td:nth-child(2) {
   padding-bottom: 5%;
 }
 
-.try-4 img {
-  margin-top: 10%;
-  max-width: clamp(44%, 69vw, 100%);
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section {
+  margin-top: 17%;
 }
 
-.act-1,
-.act-2 {
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .jap {
+  font-family: "Noto Sans";
+  font-size: clamp(9px, 2vw, 13px);
+  color: #7f8288;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
+  width: 100%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper p {
+  margin: 0;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 6px;
+  padding-left: clamp(5px, 3vw, 10px);
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
+  text-align: center;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
+  margin-bottom: 11%;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper img {
+  margin-top: -13%;
+  max-width: clamp(56%, 20vw, 100%);
+}
+
+.html-lesson-wrapper .try-content.try-2 .table {
+  font-family: "Noto Sans";
+  border-collapse: collapse;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table td {
+  font-size: clamp(10px, 3vw, 18px);
+}
+
+.html-lesson-wrapper .try-content.try-2 .table td img {
+  max-width: clamp(44%, 16vw, 100%);
+  margin-bottom: 20px;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table .name {
+  font-size: clamp(10px, 3vw, 16px);
+  white-space: nowrap;
+}
+
+.html-lesson-wrapper .try-content.try-2 .table tr:not(:last-child) td:nth-child(2) {
+  padding-bottom: 5%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section {
+  margin-top: 14%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .jap {
+  font-family: "Noto Sans";
+  font-size: clamp(9px, 2vw, 13px);
+  color: #7f8288;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper {
+  width: 100%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper p {
+  margin: 0;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 6px;
+  padding-left: clamp(5px, 3vw, 10px);
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img {
+  text-align: center;
+  padding-top: 6%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper:not(:last-child) .table-img {
+  padding-bottom: 6%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper img {
+  max-width: clamp(81%, 72vw, 100%);
+}
+
+.html-lesson-wrapper .try-content.try-3 .table {
+  font-family: "Noto Sans";
+  border-collapse: collapse;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table td {
+  font-size: clamp(10px, 3vw, 18px);
+}
+
+.html-lesson-wrapper .try-content.try-3 .table td img {
+  max-width: clamp(44%, 16vw, 100%);
+  margin-bottom: 20px;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table .name {
+  font-size: clamp(10px, 3vw, 16px);
+  white-space: nowrap;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table tr:not(:last-child) td:nth-child(2) {
+  padding-bottom: 5%;
+}
+
+.html-lesson-wrapper .act-1,
+.html-lesson-wrapper .act-2 {
   margin-top: 7%;
 }
 
-.act-2 {
+.html-lesson-wrapper .act-2 {
   margin-bottom: 50px;
 }
 
-.act-1 .blue-line {
+.html-lesson-wrapper .act-1 .blue-line {
   margin-top: 5%;
 }
 
-.act-1 .office-act-1 {
+.html-lesson-wrapper .act-1 .office-act-1 {
   margin-top: 6%;
 }
 
-.act-1 .office-act-1 .bubble.akiko {
-  margin-top: 6%;
-  left: 30%;
-  font-family: "Noto Sans";
+.html-lesson-wrapper .act-1 .office-act-1 .speech .eng {
+  font-size: clamp(9px, 2.3vw, 16px);
 }
 
-.act-1 .office-act-1 .bubble.akiko .eng {
-  font-weight: normal;
-}
-
-.act-1 .office-act-1 .bubble.akiko .jap {
-  letter-spacing: -2px;
+.html-lesson-wrapper .act-1 .office-act-1 .speech.akiko {
+  margin-top: 9%;
+  right: 36.5%;
 }

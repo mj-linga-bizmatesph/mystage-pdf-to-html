@@ -21,6 +21,16 @@ td {
   display: flex;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid .half {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
 .justify-left {
   -webkit-box-pack: left !important;
       -ms-flex-pack: left !important;
@@ -34,9 +44,9 @@ td {
 }
 
 .justify-right {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
+  -webkit-box-pack: right !important;
+      -ms-flex-pack: right !important;
+          justify-content: right !important;
 }
 
 .img-responsive {
@@ -66,8 +76,8 @@ td {
   font-family: "Arial";
 }
 
-.html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
-  font-size: clamp(1px, 2.5vw, 16px);
+.html-lesson-wrapper .fs-16 {
+  font-size: clamp(12px, 2.3vw, 16px);
 }
 
 .html-lesson-wrapper .flip-horizontal {
@@ -83,7 +93,15 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-3 .table .name, .try-3 .table .html-lesson-wrapper .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-letter, .part-2 .office-part-2-1 .speech .choice .html-lesson-wrapper .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-2 .speech .choice .choice-letter, .part-2 .office-part-2-2 .speech .choice .html-lesson-wrapper .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-3 .speech .choice .choice-letter, .part-2 .office-part-2-3 .speech .choice .html-lesson-wrapper .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-4 .speech .choice .choice-letter, .part-2 .office-part-2-4 .speech .choice .html-lesson-wrapper .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-letter, .part-2 .office-part-2-5 .speech .choice .html-lesson-wrapper .choice-letter, .html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-phrase, .part-2 .office-part-2-1 .speech .choice .html-lesson-wrapper .choice-phrase,
+.html-lesson-wrapper .part-2 .office-part-2-2 .speech .choice .choice-phrase, .part-2 .office-part-2-2 .speech .choice .html-lesson-wrapper .choice-phrase,
+.html-lesson-wrapper .part-2 .office-part-2-3 .speech .choice .choice-phrase, .part-2 .office-part-2-3 .speech .choice .html-lesson-wrapper .choice-phrase,
+.html-lesson-wrapper .part-2 .office-part-2-4 .speech .choice .choice-phrase, .part-2 .office-part-2-4 .speech .choice .html-lesson-wrapper .choice-phrase,
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-phrase, .part-2 .office-part-2-5 .speech .choice .html-lesson-wrapper .choice-phrase {
   font-weight: bold;
 }
 
@@ -98,7 +116,7 @@ td {
   color: #1287cd;
 }
 
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .text, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number {
+.html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
 
@@ -142,7 +160,7 @@ td {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.5%;
+  right: 8%;
   width: 1.9%;
   text-align: center;
   margin-top: 0.5%;
@@ -245,19 +263,6 @@ td {
   color: #2d356b;
 }
 
-.html-lesson-wrapper .office-section .conversation .bubble {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .html-lesson-wrapper .office-section .conversation .speech {
   position: absolute;
   display: -webkit-box;
@@ -302,11 +307,6 @@ td {
   text-align: center;
 }
 
-.html-lesson-wrapper .text {
-  white-space: nowrap;
-  font-family: "Noto Sans";
-}
-
 .html-lesson-wrapper .plus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,9 +328,9 @@ td {
 .html-lesson-wrapper .see-content .phrase-alts {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
+  -ms-grid-columns: [one] min-content [two] minmax(auto, 1fr);
+      grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
+      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
   gap: 13px;
 }
 
@@ -340,7 +340,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrase-alts .alt-box {
-  padding: clamp(7px, 2vw, 15px);
+  padding: 15px;
   border: 1px solid #1287cd;
 }
 
@@ -377,7 +377,7 @@ td {
 
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -0.5px;
+  letter-spacing: -2px;
   color: #7f8288;
 }
 
@@ -398,20 +398,11 @@ td {
   background: #ffb2b0;
 }
 
-.html-lesson-wrapper .see-content .phrases-section .yellow,
-.html-lesson-wrapper .see-content .phrases-section .blue,
-.html-lesson-wrapper .see-content .phrases-section .red {
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-}
-
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece,
 .html-lesson-wrapper .see-content .phrases-section .green-piece,
 .html-lesson-wrapper .see-content .phrases-section .red-piece,
 .html-lesson-wrapper .see-content .phrases-section .blue-piece,
-.html-lesson-wrapper .see-content .phrases-section .green-piece-complete,
-.html-lesson-wrapper .see-content .phrases-section .blue-piece-complete,
-.html-lesson-wrapper .see-content .phrases-section .green-piece-male,
-.html-lesson-wrapper .see-content .phrases-section .yellow-piece-female {
+.html-lesson-wrapper .see-content .phrases-section .green-piece-complete {
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -421,64 +412,35 @@ td {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
-  padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
 
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #e7f3fa));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #e7f3fa 20%);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png);
   background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .red-piece {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
-  padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .green-piece {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .green-piece-complete {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #c3e8e6), color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+  background-image: url(http://127.0.0.1:8887/0-green-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #c3e8e6), color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0))), url(http://127.0.0.1:8887/0-green-piece-start.png);
+  background-image: url(http://127.0.0.1:8887/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%), url(http://127.0.0.1:8887/0-green-piece-start.png);
   background-position: left, center, right;
   background-size: auto 100%, auto, auto 100%;
-}
-
-.html-lesson-wrapper .see-content .phrases-section .blue-piece-complete {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #e7f3fa), color-stop(80%, #e7f3fa), color-stop(80%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-start.png);
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #e7f3fa 8%, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-start.png);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
-  background-position: left, center, right;
-  background-size: auto 100%, auto, auto 100%;
-}
-
-.html-lesson-wrapper .see-content .phrases-section .green-piece-male {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-male.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-male.png), linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
-  padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-  background-position: right;
-}
-
-.html-lesson-wrapper .see-content .phrases-section .yellow-piece-female {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-female.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ffe200));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
-  background-position: left;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .icon {
   text-align: center;
   font-size: clamp(10px, 2vw, 14px);
-  font-family: "Noto Sans";
 }
 
 .html-lesson-wrapper .see-content .phrases-section .icon img {
@@ -525,6 +487,10 @@ td {
           justify-content: space-between;
 }
 
+.html-lesson-wrapper .see-content .phrases-section .legend .eng {
+  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+}
+
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
@@ -556,8 +522,18 @@ td {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
 }
 
+.html-lesson-wrapper .part-content {
+  margin-left: clamp(18px, 5vw, 32px);
+  margin-right: clamp(18px, 5vw, 32px);
+}
+
+.html-lesson-wrapper .part-content .arrow.part {
+  color: white;
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+}
+
 .html-lesson-wrapper .blue-line {
-  width: 15px;
+  width: 16px;
   height: 2px;
   border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
@@ -589,262 +565,112 @@ td {
   margin-bottom: 3.8%;
 }
 
-.see-1 {
+.part-1 {
   margin-top: 29%;
 }
 
-.see-1 .office-see-1 {
+.part-1 .blue-line {
+  margin-top: 5%;
+}
+
+.part-1 .table {
+  font-family: "Noto Sans";
+}
+
+.part-1 .table .jap {
+  margin-bottom: 3.6%;
+}
+
+.part-1 .table .name {
+  width: 14%;
+  padding-left: 1%;
+  padding-right: 2%;
+}
+
+.part-1 .table .name ~ td > .eng {
+  margin-bottom: 4%;
+}
+
+.part-1 .office-section {
   margin-top: 6%;
 }
 
-.see-1 .office-see-1 .speech .eng {
-  font-size: clamp(8px, 2vw, 13px);
+.part-1 .office-section .name.akiko {
+  left: 22%;
+  margin-top: 39%;
 }
 
-.see-1 .office-see-1 .speech.sara {
-  margin-top: 21%;
-  left: 28.5%;
+.part-1 .office-section .name.steve {
+  margin-top: 33%;
+  right: 33%;
 }
 
-.see-1 .office-see-1 .speech.akiko {
-  margin-top: 4%;
-  left: 9%;
+.part-1 .office-section .speech.steve {
+  margin-top: 8.5%;
+  right: 12%;
 }
 
-.see-2 {
-  margin-top: 7%;
-}
-
-.see-2 .alt:not(:last-child) {
-  margin-bottom: 6%;
-}
-
-.see-2 .legend {
-  margin-top: 4%;
-}
-
-.see-2 .phrase-alts {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.see-2 .phrases-section {
-  margin-bottom: 8%;
-}
-
-.see-2 .conversation .conv-1 {
-  margin-top: 5%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
-}
-
-.see-2 .conversation .conv-1 .icon {
-  margin-right: clamp(20px, 4.5vw, 40px);
-}
-
-.see-2 .conversation .conv-1 .phrase:not(:last-child) {
-  margin-right: clamp(10px, 3.5vw, 20px);
-}
-
-.see-3 {
-  margin-top: 7%;
-}
-
-.see-3 .alt:not(:last-child) {
-  margin-bottom: 6%;
-}
-
-.see-3 .legend {
-  margin-top: 4%;
-}
-
-.see-3 .phrases-section {
-  margin-bottom: 8%;
-}
-
-.see-3 .phrases {
-  margin-top: 5%;
-}
-
-.see-3 .conversation .conv-1 {
-  margin-top: 5%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
-}
-
-.see-3 .conversation .conv-1 .phrase .eng {
-  font-size: clamp(8px, 2.2vw, 15px);
-}
-
-.see-3 .conversation .conv-1 .phrase:not(:last-child) {
-  margin-right: -2px;
-}
-
-.see-3 .alt:not(:last-child) {
-  margin-bottom: 4% !important;
-}
-
-.try-1,
-.try-2,
-.try-3,
-.try-4 {
-  margin-top: 6%;
-}
-
-.try-1 .combinations {
-  -ms-grid-columns: min-content 1fr 1fr;
-      grid-template-columns: -webkit-min-content 1fr 1fr;
-      grid-template-columns: min-content 1fr 1fr;
-  margin-top: 8%;
-}
-
-.try-1 .combinations > div:last-child {
-  margin-left: 4%;
-}
-
-.try-1 .combinations .combination-icon {
-  height: auto;
-  width: clamp(80px, 30vw, 180px);
-}
-
-.try-1 .combinations .combination {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  margin-bottom: 13%;
-}
-
-.try-1 .combinations .combination > div:not(:last-child) {
-  margin-right: 4%;
-}
-
-.try-2 .combinations {
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
-  margin-top: 13%;
-}
-
-.try-2 .combinations .combination-icon {
-  height: auto;
-  width: clamp(80px, 30vw, 180px);
-}
-
-.try-2 .combinations .combination {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 7%;
-}
-
-.try-2 .combinations .combination > div:not(:last-child) {
-  margin-right: 4%;
-}
-
-.try-3 .table-wrapper-section {
-  margin-top: 14%;
-}
-
-.try-3 .table-wrapper-section .jap {
-  font-family: "Noto Sans";
-  font-size: clamp(9px, 2vw, 13px);
-  color: #7f8288;
-}
-
-.try-3 .table-wrapper-section .table-wrapper {
-  width: 100%;
-}
-
-.try-3 .table-wrapper-section .table-wrapper p {
-  margin: 0;
-}
-
-.try-3 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
-  padding-top: 6px;
-  padding-left: clamp(5px, 3vw, 10px);
-}
-
-.try-3 .table-wrapper-section .table-wrapper .table-img {
-  text-align: center;
-  padding-top: 2%;
-}
-
-.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 9%;
-}
-
-.try-3 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 25vw, 100%);
-}
-
-.try-3 .table {
-  font-family: "Noto Sans";
-  border-collapse: collapse;
-}
-
-.try-3 .table td {
-  font-size: clamp(10px, 3vw, 18px);
-}
-
-.try-3 .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
-}
-
-.try-3 .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-}
-
-.try-3 .table tr:not(:last-child) td:nth-child(2) {
-  padding-bottom: 5%;
-}
-
-.try-4 img {
+.part-1 .office-section .speech.akiko {
   margin-top: 10%;
-  max-width: clamp(44%, 69vw, 100%);
+  left: 8%;
 }
 
-.act-1,
-.act-2 {
+.part-2 {
   margin-top: 7%;
 }
 
-.act-2 {
-  margin-bottom: 50px;
+.part-2 .office-part-2-1 {
+  margin-top: 20%;
 }
 
-.act-1 .blue-line {
-  margin-top: 5%;
+.part-2 .office-part-2-2,
+.part-2 .office-part-2-3,
+.part-2 .office-part-2-4,
+.part-2 .office-part-2-5 {
+  margin-top: 11%;
 }
 
-.act-1 .office-act-1 {
-  margin-top: 6%;
+.part-2 .office-part-2-1 .speech,
+.part-2 .office-part-2-2 .speech,
+.part-2 .office-part-2-3 .speech,
+.part-2 .office-part-2-4 .speech,
+.part-2 .office-part-2-5 .speech {
+  font-size: clamp(8px, 2.2vw, 14px);
 }
 
-.act-1 .office-act-1 .bubble.akiko {
-  margin-top: 6%;
-  left: 30%;
+.part-2 .office-part-2-1 .speech.akiko,
+.part-2 .office-part-2-2 .speech.akiko,
+.part-2 .office-part-2-3 .speech.akiko,
+.part-2 .office-part-2-4 .speech.akiko,
+.part-2 .office-part-2-5 .speech.akiko {
+  margin-top: 10%;
+  left: 29%;
+}
+
+.part-2 .office-part-2-1 .speech .choice .choice-letter,
+.part-2 .office-part-2-2 .speech .choice .choice-letter,
+.part-2 .office-part-2-3 .speech .choice .choice-letter,
+.part-2 .office-part-2-4 .speech .choice .choice-letter,
+.part-2 .office-part-2-5 .speech .choice .choice-letter {
+  padding-right: clamp(10px, 4vw, 20px);
+}
+
+.part-2 .blue-line {
+  margin-top: 2%;
+}
+
+.part-2 .table {
   font-family: "Noto Sans";
 }
 
-.act-1 .office-act-1 .bubble.akiko .eng {
-  font-weight: normal;
+.part-2 .table .jap {
+  margin-bottom: 3.6%;
 }
 
-.act-1 .office-act-1 .bubble.akiko .jap {
-  letter-spacing: -2px;
+.part-2 .table .name {
+  width: 14%;
+}
+
+.part-2 .table .name ~ td > .eng {
+  margin-bottom: 4%;
 }

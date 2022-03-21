@@ -51,6 +51,10 @@ td {
   height: auto;
 }
 
+.img-responsive-clamp {
+  max-width: clamp(44%, 25vw, 100%);
+}
+
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -71,7 +75,10 @@ td {
   }
 
   .fs-16 {
-    font-size: clamp(1px, 2.5vw, 16px);
+    font-size: clamp(6px, 2.6vw, 16px);
+  }
+  .fs-18 {
+    font-size: clamp(6px, 2.7vw, 18px);
   }
   .flip-horizontal {
     -webkit-transform: scaleX(-1);
@@ -157,7 +164,7 @@ td {
   }
   .lesson-number {
     position: absolute;
-    right: 6.5%;
+    right: 8%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
@@ -407,7 +414,8 @@ td {
       .green-piece-complete,
       .blue-piece-complete,
       .green-piece-male,
-      .yellow-piece-female {
+      .yellow-piece-female,
+      .yellow-piece-complete {
         background-position: center;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -489,6 +497,22 @@ td {
         background-size: auto 100%, auto, auto 100%;
       }
 
+      .yellow-piece-complete {
+        background-image: url(#{$s3}/0-yellow-piece-end.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 8%,
+            #ffe200 8%,
+            #ffe200 80%,
+            rgba(255, 255, 255, 0) 80%
+          ),
+          url(#{$s3}/0-yellow-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left, center, right;
+        background-size: auto 100%, auto, auto 100%;
+      }
+
       .green-piece-male {
         background-image: url(#{$s3}/0-green-piece-male.png),
           linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
@@ -517,7 +541,7 @@ td {
           width: auto;
         }
         div {
-          margin-top: clamp(8px, 2vw, 14px);
+          margin-top: 3%;
         }
       }
       .phrases {
@@ -606,252 +630,337 @@ td {
   }
 }
 
-//individuals
-.see-1 {
-  margin-top: 29%;
+.html-lesson-wrapper {
+  .see-content {
+    //individuals
+    &.see-1 {
+      margin-top: 29%;
 
-  .office-see-1 {
-    margin-top: 6%;
-
-    .speech {
-      .eng {
-        font-size: clamp(8px, 2vw, 13px);
-      }
-
-      &.sara {
-        margin-top: 21%;
-        left: 28.5%;
-      }
-      &.akiko {
-        margin-top: 4%;
-        left: 9%;
-      }
-    }
-  }
-}
-
-.see-2 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    margin-top: 4%;
-  }
-
-  .phrase-alts {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .conversation {
-    .conv-1 {
-      margin-top: 5%;
-      display: grid;
-      grid-template-columns: min-content 1fr;
-
-      .icon {
-        margin-right: clamp(20px, 4.5vw, 40px);
-      }
-      .phrase:not(:last-child) {
-        margin-right: clamp(10px, 3.5vw, 20px);
-      }
-    }
-  }
-}
-
-.see-3 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    margin-top: 4%;
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .phrases {
-    margin-top: 5%;
-  }
-
-  .conversation {
-    .conv-1 {
-      margin-top: 5%;
-      display: grid;
-      grid-template-columns: 1fr min-content;
-
-      .phrase .eng {
-        font-size: clamp(8px, 2.2vw, 15px);
-      }
-      .phrase:not(:last-child) {
-        margin-right: -2px;
-      }
-    }
-  }
-
-  .alt:not(:last-child) {
-    margin-bottom: 4% !important;
-  }
-}
-
-.try-1,
-.try-2,
-.try-3,
-.try-4 {
-  margin-top: 6%;
-}
-
-.try-1 {
-  .combinations {
-    grid-template-columns: min-content 1fr 1fr;
-    margin-top: 8%;
-
-    & > div:last-child {
-      margin-left: 4%;
-    }
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: left;
-      margin-bottom: 13%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-2 {
-  .combinations {
-    grid-template-columns: 1fr min-content;
-    margin-top: 13%;
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 7%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-3 {
-  .table-wrapper-section {
-    margin-top: 14%;
-
-    .jap {
-      font-family: $noto-sans;
-      font-size: clamp(9px, 2vw, 13px);
-      color: $subtext-color;
-    }
-
-    .table-wrapper {
-      width: 100%;
-      p {
-        margin: 0;
-      }
-      .table-number {
-        @extend .b, .primary-blue;
-        font-size: clamp(10px, 3vw, 16px);
-        padding-top: 6px;
-        padding-left: clamp(5px, 3vw, 10px);
-      }
-      .table-img {
-        text-align: center;
-        padding-top: 2%;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 9%;
-      }
-      img {
-        max-width: clamp(44%, 25vw, 100%);
-      }
-    }
-  }
-
-  .table {
-    font-family: $noto-sans;
-    border-collapse: collapse;
-
-    td {
-      font-size: clamp(10px, 3vw, 18px);
-      img {
-        max-width: clamp(44%, 16vw, 100%);
-        margin-bottom: 20px;
-      }
-    }
-
-    .name {
-      @extend .b;
-      font-size: clamp(10px, 3vw, 16px);
-      white-space: nowrap;
-    }
-    tr:not(:last-child) td:nth-child(2) {
-      padding-bottom: 5%;
-    }
-  }
-}
-
-.try-4 {
-  img {
-    margin-top: 10%;
-    max-width: clamp(44%, 69vw, 100%);
-  }
-}
-
-.act-1,
-.act-2 {
-  margin-top: 7%;
-}
-.act-2 {
-  margin-bottom: 50px;
-}
-
-.act-1 {
-  .blue-line {
-    margin-top: 5%;
-  }
-
-  .office-act-1 {
-    margin-top: 6%;
-
-    .bubble {
-      &.akiko {
+      .office-section {
         margin-top: 6%;
-        left: 30%;
-        font-family: $noto-sans;
 
-        .eng {
-          font-weight: normal;
+        .speech {
+          &.akiko {
+            margin-top: 19%;
+            left: 30.5%;
+          }
+          &.nick {
+            margin-top: 5.5%;
+            left: 14%;
+          }
+        }
+      }
+    }
+
+    &.see-2 {
+      margin-top: 7%;
+
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+
+      .legend {
+        margin-top: 4%;
+      }
+
+      .phrase-alts {
+        grid-template-columns: min-content 1fr min-content;
+      }
+
+      .phrases-section {
+        margin-bottom: 8%;
+      }
+
+      .conversation {
+        .conv-1 {
+          margin-top: 5%;
+          display: grid;
+          grid-template-columns: 1fr min-content;
+
+          .phrases-wrapper {
+            display: flex;
+            justify-content: right;
+          }
+
+          .phrase {
+            margin-right: 2px;
+
+            &:last-child {
+              margin-right: clamp(5px, 2vw, 10px);
+            }
+          }
+        }
+      }
+    }
+
+    &.see-3 {
+      margin-top: 8%;
+
+      .office-section {
+        margin-top: 6%;
+
+        .speech {
+          &.akiko-1 {
+            margin-top: 10.5%;
+            left: 60.5%;
+          }
+          &.akiko-2 {
+            margin-top: 30%;
+            left: 40.5%;
+          }
+          &.helen-1 {
+            margin-top: 5.5%;
+            left: 12%;
+          }
+          &.helen-2 {
+            margin-top: 19.5%;
+            left: 34.5%;
+          }
+        }
+      }
+    }
+
+    &.see-4 {
+      margin-top: 7%;
+
+      .alt:not(:last-child) {
+        margin-bottom: 6%;
+      }
+
+      .legend {
+        margin-top: 7%;
+      }
+
+      .phrase-alts {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .phrases-section {
+        margin-bottom: 8%;
+      }
+
+      .phrase-wrapper:not(:last-child()) {
+        margin-bottom: 4%;
+      }
+
+      .conversation {
+        .conv-1 {
+          margin-top: 5%;
+          display: grid;
+          grid-template-columns: 1fr min-content;
+
+          .phrases-wrapper {
+            margin-left: 28%;
+            margin-top: 1%;
+          }
+
+          .phrase:not(:last-child) {
+            margin-right: clamp(10px, 3vw, 20px);
+          }
+        }
+      }
+    }
+  }
+
+  .try-content {
+    &.try-1,
+    &.try-2,
+    &.try-3 {
+      margin-top: 6%;
+    }
+
+    &.try-1 {
+      .combinations {
+        grid-template-columns: 1fr 1fr min-content;
+        margin-top: 8%;
+
+        & > div > .combination:first-child {
+          margin-top: 12%;
         }
 
+        & > div:last-child {
+          margin-left: 4%;
+        }
+
+        .combination-icon {
+          margin-top: 5%;
+          height: auto;
+          width: clamp(80px, 30vw, 208.43px);
+        }
+
+        .combination {
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 13%;
+
+          & > div:not(:last-child) {
+            margin-right: 4%;
+          }
+        }
+      }
+    }
+
+    &.try-2 {
+      .table-wrapper-section {
+        margin-top: 14%;
+
         .jap {
-          letter-spacing: -2px;
+          font-family: $noto-sans;
+          font-size: clamp(1px, 2vw, 13px);
+          color: $subtext-color;
+        }
+
+        .table-wrapper {
+          width: 100%;
+
+          p {
+            margin: 0;
+          }
+          .table-number {
+            @extend .b, .primary-blue;
+            font-size: clamp(10px, 3vw, 16px);
+            padding-top: 6px;
+            padding-left: clamp(5px, 3vw, 10px);
+          }
+          .table-img {
+            text-align: right;
+            width: 23%;
+            &.small {
+              img {
+                max-width: clamp(48%, 20vw, 100%);
+              }
+            }
+
+            &.medium {
+              width: 40%;
+              img {
+                max-width: clamp(98%, 40vw, 100%);
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 13%;
+          }
+        }
+      }
+
+      .table {
+        font-family: $noto-sans;
+        border-collapse: collapse;
+
+        td {
+          @extend .fs-18;
+          img {
+            max-width: clamp(44%, 16vw, 100%);
+            margin-bottom: 20px;
+          }
+        }
+
+        .name {
+          @extend .b;
+          font-size: clamp(10px, 3vw, 16px);
+          white-space: nowrap;
+        }
+        tr:not(:last-child) td:nth-child(2) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+
+    &.try-3 {
+      .table-wrapper-section {
+        margin-top: 14%;
+
+        .jap {
+          font-family: $noto-sans;
+          font-size: clamp(9px, 2vw, 13px);
+          color: $subtext-color;
+        }
+
+        .table-wrapper {
+          width: 100%;
+
+          p {
+            margin: 0;
+          }
+          .table-number {
+            @extend .b, .primary-blue;
+            font-size: clamp(10px, 3vw, 16px);
+            padding-top: 6px;
+            padding-left: clamp(5px, 3vw, 10px);
+          }
+          .table-img {
+            text-align: right;
+            width: 24%;
+            &.small {
+              img {
+                max-width: clamp(1%, 21vw, 100%);
+              }
+            }
+
+            &.medium {
+              width: 34%;
+              img {
+                max-width: clamp(1%, 29vw, 100%);
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 13%;
+          }
+        }
+      }
+
+      .table {
+        font-family: $noto-sans;
+        border-collapse: collapse;
+
+        td {
+          @extend .fs-18;
+          img {
+            max-width: clamp(44%, 16vw, 100%);
+            margin-bottom: 20px;
+          }
+        }
+
+        .name {
+          @extend .b;
+          font-size: clamp(10px, 3vw, 16px);
+          white-space: nowrap;
+        }
+        tr:not(:last-child) td:nth-child(2) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+  }
+
+  .act-1,
+  .act-2 {
+    margin-top: 7%;
+  }
+  .act-2 {
+    margin-bottom: 50px;
+  }
+
+  .act-1 {
+    .blue-line {
+      margin-top: 5%;
+    }
+
+    .office-act-1 {
+      margin-top: 6%;
+
+      .speech {
+        .eng {
+          font-size: clamp(1px, 2.2vw, 14px);
+        }
+
+        &.akiko {
+          margin-top: 7%;
+          left: 46.1%;
         }
       }
     }

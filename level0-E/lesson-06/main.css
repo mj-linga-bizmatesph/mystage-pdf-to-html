@@ -84,7 +84,7 @@ td {
   font-size: clamp(6px, 2.6vw, 16px);
 }
 
-.html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-2 .table td, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table td {
+.html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-2 .table td {
   font-size: clamp(6px, 2.7vw, 18px);
 }
 
@@ -101,7 +101,7 @@ td {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name {
   font-weight: bold;
 }
 
@@ -636,6 +636,10 @@ td {
   margin-bottom: 3.8%;
 }
 
+.html-lesson-wrapper .ls {
+  letter-spacing: -2.5px;
+}
+
 .html-lesson-wrapper .lesson-number {
   right: 6.7%;
 }
@@ -648,19 +652,14 @@ td {
   margin-top: 6%;
 }
 
-.html-lesson-wrapper .see-content.see-1 .office-section .speech.akiko-1 {
-  margin-top: 5%;
-  left: 14.5%;
+.html-lesson-wrapper .see-content.see-1 .office-section .speech.akiko {
+  margin-top: 4.5%;
+  left: 58%;
 }
 
-.html-lesson-wrapper .see-content.see-1 .office-section .speech.akiko-2 {
-  margin-top: 16.5%;
-  left: 28.5%;
-}
-
-.html-lesson-wrapper .see-content.see-1 .office-section .speech.ken {
-  margin-top: 27%;
-  left: 42%;
+.html-lesson-wrapper .see-content.see-1 .office-section .speech.steve {
+  margin-top: 10%;
+  left: 9.5%;
 }
 
 .html-lesson-wrapper .see-content.see-2 {
@@ -675,10 +674,14 @@ td {
   margin-top: 4%;
 }
 
-.html-lesson-wrapper .see-content.see-2 .phrase-alts {
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
+.html-lesson-wrapper .see-content.see-2 .phrase-alts.first {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.html-lesson-wrapper .see-content.see-2 .phrase-alts.second {
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
 }
 
 .html-lesson-wrapper .see-content.see-2 .phrases-section {
@@ -833,11 +836,6 @@ td {
   margin-top: 1.5% !important;
 }
 
-.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .t2-5 .office-section .speech.akiko {
-  margin-top: 8%;
-  left: 40%;
-}
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
@@ -853,13 +851,13 @@ td {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
-  padding-top: 3%;
   text-align: center;
-  width: 100%;
+  width: 49.5%;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img img {
-  max-width: clamp(1%, 28vw, 100%);
+  max-width: clamp(1%, 23vw, 100%);
+  margin-top: -16%;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img.small img {
@@ -897,35 +895,6 @@ td {
   padding-bottom: 5%;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section {
-  margin-top: 14%;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section img {
-  margin-bottom: 5%;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table {
-  font-family: "Noto Sans";
-  border-collapse: collapse;
-  margin-bottom: 15%;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-  width: 16%;
-}
-
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table tr:not(:last-child) td:nth-child(2) {
-  padding-bottom: 5%;
-}
-
 .html-lesson-wrapper .act-1,
 .html-lesson-wrapper .act-2 {
   margin-top: 7%;
@@ -947,7 +916,11 @@ td {
   font-size: clamp(1px, 2.2vw, 14px);
 }
 
-.html-lesson-wrapper .act-1 .office-act-1 .speech.akiko {
-  margin-top: 44%;
-  left: 10.1%;
+.html-lesson-wrapper .act-1 .office-act-1 .speech.steve {
+  margin-top: 13%;
+  left: 29.1%;
+}
+
+.html-lesson-wrapper .act-1 .office-act-1 .speech.steve .jap:not(:last-child) {
+  margin-bottom: 5%;
 }

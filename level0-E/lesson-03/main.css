@@ -76,6 +76,10 @@ td {
   font-family: "Arial";
 }
 
+.html-lesson-wrapper .fs-14 {
+  font-size: clamp(6px, 1.5vw, 14px);
+}
+
 .html-lesson-wrapper .fs-16, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text {
   font-size: clamp(6px, 2.6vw, 16px);
 }
@@ -136,6 +140,11 @@ td {
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   margin-left: -15px;
   width: 100%;
+}
+
+.html-lesson-wrapper .at-mention {
+  color: #9ea9fc;
+  font-family: "Arial";
 }
 
 .html-lesson-wrapper .eng {
@@ -424,6 +433,7 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .green-piece-complete,
 .html-lesson-wrapper .see-content .phrases-section .blue-piece-complete,
 .html-lesson-wrapper .see-content .phrases-section .green-piece-male,
+.html-lesson-wrapper .see-content .phrases-section .blue-piece-male,
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece-female,
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece-complete,
 .html-lesson-wrapper .see-content .phrases-section .red-piece-female {
@@ -461,8 +471,8 @@ td {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .green-piece-complete {
-  background-image: url(http://127.0.0.1:8887/0-green-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #c3e8e6), color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0))), url(http://127.0.0.1:8887/0-green-piece-start.png);
-  background-image: url(http://127.0.0.1:8887/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%), url(http://127.0.0.1:8887/0-green-piece-start.png);
+  background-image: url(http://127.0.0.1:8887/0-green-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #c3e8e6), color-stop(85%, #c3e8e6), color-stop(85%, rgba(255, 255, 255, 0))), url(http://127.0.0.1:8887/0-green-piece-start.png);
+  background-image: url(http://127.0.0.1:8887/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 85%, rgba(255, 255, 255, 0) 85%), url(http://127.0.0.1:8887/0-green-piece-start.png);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left, center, right;
   background-size: auto 105%, auto, auto 105%;
@@ -491,6 +501,13 @@ td {
   background-position: right;
 }
 
+.html-lesson-wrapper .see-content .phrases-section .blue-piece-male {
+  background-image: url(http://127.0.0.1:8887/0-blue-piece-male.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #e7f3fa), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(http://127.0.0.1:8887/0-blue-piece-male.png), linear-gradient(90deg, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%);
+  padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+  background-position: right;
+}
+
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece-female {
   background-image: url(http://127.0.0.1:8887/0-yellow-piece-female.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ffe200));
   background-image: url(http://127.0.0.1:8887/0-yellow-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
@@ -503,7 +520,6 @@ td {
   background-image: url(http://127.0.0.1:8887/0-red-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffb2b0 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
-  background-size: cover;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .icon {

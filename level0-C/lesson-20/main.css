@@ -27,11 +27,11 @@ td {
 }
 
 .trebuchet {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
 }
 
 .html-lesson-wrapper {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
   width: 100%;
   min-width: 360px;
   max-width: 604px;
@@ -42,14 +42,15 @@ td {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-header.svg), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-footer.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-header.svg),
+    url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .html-lesson-wrapper header {
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -62,10 +63,19 @@ td {
 }
 
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng {
+.html-lesson-wrapper .b,
+.html-lesson-wrapper .arrow,
+.html-lesson-wrapper .office-section .legend div.left,
+.html-lesson-wrapper .office-section .legend div.right,
+.html-lesson-wrapper .office-section .name,
+.html-lesson-wrapper .number,
+.html-lesson-wrapper .letter,
+.html-lesson-wrapper .see-content .arrow.see,
+.html-lesson-wrapper .see-content .phrases-section .icon,
+.html-lesson-wrapper .see-content .phrases-section .eng {
   font-weight: bold;
 }
 
@@ -92,16 +102,20 @@ td {
 }
 
 .html-lesson-wrapper .program-rank .type {
-  padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
+    clamp(10px, 3vw, 17px);
   background-color: #1287cd;
   font-size: clamp(7px, 1.8vw, 12px);
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px) clamp(1px, 1vw, 5px)
+    clamp(10px, 3vw, 17px);
   font-size: clamp(7px, 1.8vw, 12px);
-  background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
-  background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
+  background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%),
+    linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
+  background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%),
+    linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   margin-left: -15px;
   width: 100%;
 }
@@ -114,7 +128,7 @@ td {
 .html-lesson-wrapper .jap {
   letter-spacing: -0.5px;
   color: #7f8288;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-size: clamp(7px, 1.8vw, 11px);
 }
 
@@ -140,7 +154,7 @@ td {
   padding: clamp(10px, 3vw, 16px) clamp(20px, 6vw, 32px);
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .html-lesson-wrapper .title-section .title {
@@ -158,11 +172,11 @@ td {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
 .html-lesson-wrapper .instructions {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 28%;
@@ -183,7 +197,8 @@ td {
   position: absolute;
 }
 
-.html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right {
+.html-lesson-wrapper .office-section .legend div.left,
+.html-lesson-wrapper .office-section .legend div.right {
   font-size: clamp(18px, 3vw, 25px);
   padding: 0.3% 5% 0.3% 1%;
   background-color: #ebebeb;
@@ -198,7 +213,7 @@ td {
 
 .html-lesson-wrapper .office-section .legend div.center {
   -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   margin-top: -15px;
   margin-left: auto;
   margin-right: auto;
@@ -232,8 +247,8 @@ td {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -245,8 +260,8 @@ td {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -260,7 +275,7 @@ td {
   width: clamp(13px, 4vw, 24px);
   height: clamp(13px, 4vw, 24px);
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-size: clamp(11px, 3vw, 16px);
   z-index: 1;
 }
@@ -268,7 +283,7 @@ td {
 .html-lesson-wrapper .letter {
   border: 2px solid #1287cd;
   color: #1287cd;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   width: clamp(11px, 4vw, 20px);
   height: clamp(11px, 4vw, 20px);
   line-height: clamp(11px, 4vw, 20px);
@@ -294,7 +309,7 @@ td {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
 .html-lesson-wrapper .see-content .phrases-section .yellow {
@@ -334,14 +349,14 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
 .html-lesson-wrapper .see-content .phrases-section .eng {
   font-size: clamp(8px, 2vw, 16px);
   text-align: center;
   border-radius: 3px;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
 .html-lesson-wrapper .see-content .phrases-section .jap {
@@ -357,8 +372,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .legend .eng {
@@ -369,14 +384,14 @@ td {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [one] min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+  grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
+  grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
   gap: 13px;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts.half {
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .alt-box {
@@ -389,11 +404,15 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
-.html-lesson-wrapper .see-content .phrases-section .phrase-alts .alt:not(:last-child) {
+.html-lesson-wrapper
+  .see-content
+  .phrases-section
+  .phrase-alts
+  .alt:not(:last-child) {
   margin-bottom: clamp(10px, 2vw, 20px);
 }
 
@@ -404,7 +423,7 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-eng {
@@ -453,17 +472,17 @@ td {
   padding-top: 4px;
   width: 80px;
 }
-.html-lesson-wrapper .table .part-1-content .breaker{
+.html-lesson-wrapper .table .part-1-content .breaker {
   height: 10px;
 }
-.html-lesson-wrapper table.part-2-content{
+.html-lesson-wrapper table.part-2-content {
   height: 10px;
 }
-.html-lesson-wrapper table.part-2-content .list{
+.html-lesson-wrapper table.part-2-content .list {
   width: 32px;
 }
 .html-lesson-wrapper .table .eng {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-weight: normal;
   font-size: clamp(11px, 2.8vw, 18px);
   margin-bottom: clamp(2px, 1vw, 5px);
@@ -494,27 +513,43 @@ td {
   margin-left: 25%;
   width: 50%;
 }
-.html-lesson-wrapper .act-content .office-section .conversation .bubble.part-2-2 {
+.html-lesson-wrapper
+  .act-content
+  .office-section
+  .conversation
+  .bubble.part-2-2 {
   margin-top: 12%;
   margin-left: 25%;
   width: 50%;
 }
-.html-lesson-wrapper .act-content .office-section .conversation .bubble.part-2-3 {
+.html-lesson-wrapper
+  .act-content
+  .office-section
+  .conversation
+  .bubble.part-2-3 {
   margin-top: 12%;
   margin-left: 25%;
   width: 50%;
 }
-.html-lesson-wrapper .act-content .office-section .conversation .bubble.part-2-4 {
+.html-lesson-wrapper
+  .act-content
+  .office-section
+  .conversation
+  .bubble.part-2-4 {
   margin-top: 12%;
   margin-left: 25%;
   width: 50%;
 }
-.html-lesson-wrapper .act-content .office-section .conversation .bubble.part-2-5 {
+.html-lesson-wrapper
+  .act-content
+  .office-section
+  .conversation
+  .bubble.part-2-5 {
   margin-top: 14%;
   margin-left: 25%;
   width: 50%;
 }
-.html-lesson-wrapper .img-part-2-4{
+.html-lesson-wrapper .img-part-2-4 {
   margin-top: 6%;
 }
 @media only screen and (max-width: 600px) {
@@ -523,12 +558,14 @@ td {
     width: 100%;
   }
 
-  
   /* See 2 */
-  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .red1 .jap{
+  .html-lesson-wrapper
+    .see-content.see-2
+    .phrases-section
+    .conversation
+    .red1
+    .jap {
     margin-top: 0%;
     font-size: 0.4rem;
   }
-  
 }
-

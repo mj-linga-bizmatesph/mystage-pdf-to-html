@@ -34,6 +34,14 @@ td {
   display: flex;
 }
 
+.grid {
+  display: grid;
+
+  .half {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .justify-left {
   justify-content: left !important;
 }
@@ -43,7 +51,7 @@ td {
 }
 
 .justify-right {
-  justify-content: end !important;
+  justify-content: right !important;
 }
 
 .img-responsive {
@@ -61,7 +69,7 @@ td {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
+  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -71,7 +79,7 @@ td {
   }
 
   .fs-16 {
-    font-size: clamp(1px, 2.5vw, 16px);
+    font-size: clamp(12px, 2.3vw, 16px);
   }
   .flip-horizontal {
     -webkit-transform: scaleX(-1);
@@ -142,9 +150,10 @@ td {
       width: 100%;
     }
   }
+
   .eng {
     font-weight: bold;
-    font-size: clamp(8px, 2.3vw, 14px);
+    font-size: clamp(8.5px, 2vw, 14px);
   }
   .jap {
     letter-spacing: -0.5px;
@@ -157,7 +166,7 @@ td {
   }
   .lesson-number {
     position: absolute;
-    right: 6.5%;
+    right: 8%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
@@ -259,13 +268,6 @@ td {
       color: #2d356b;
     }
     .conversation {
-      .bubble {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
       .speech {
         position: absolute;
         display: flex;
@@ -276,7 +278,6 @@ td {
     }
   }
 
-  //number
   .number {
     @extend .b;
     border-radius: 50%;
@@ -310,12 +311,6 @@ td {
     text-align: center;
   }
 
-  .text {
-    @extend .b, .primary-blue, .fs-16;
-    white-space: nowrap;
-    font-family: $noto-sans;
-  }
-
   .plus {
     display: flex;
     align-content: center;
@@ -332,7 +327,7 @@ td {
 
     .phrase-alts {
       display: grid;
-      grid-template-columns: min-content 1fr;
+      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
       gap: 13px;
 
       &.half {
@@ -340,7 +335,7 @@ td {
       }
 
       .alt-box {
-        padding: clamp(7px, 2vw, 15px);
+        padding: 15px;
         border: 1px solid $primary-blue;
 
         &.blue {
@@ -372,7 +367,7 @@ td {
 
       .choice-jap {
         font-size: clamp(6.7px, 1.8vw, 13px);
-        letter-spacing: -0.5px;
+        letter-spacing: -2px;
         color: $subtext-color;
       }
     }
@@ -394,20 +389,11 @@ td {
         background: #ffb2b0;
       }
 
-      .yellow,
-      .blue,
-      .red {
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-      }
-
       .yellow-piece,
       .green-piece,
       .red-piece,
       .blue-piece,
-      .green-piece-complete,
-      .blue-piece-complete,
-      .green-piece-male,
-      .yellow-piece-female {
+      .green-piece-complete {
         background-position: center;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -420,18 +406,9 @@ td {
             rgba(255, 255, 255, 0) 80%
           );
         background-position: right;
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue-piece {
-        background-image: url(#{$s3}/0-blue-piece.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 20%,
-            rgb(231, 243, 250) 20%
-          );
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-image: url(#{$s3}/0-blue-piece.png);
         background-position: left;
       }
       .red-piece {
@@ -441,8 +418,6 @@ td {
             rgb(255, 178, 176) 80%,
             rgba(255, 255, 255, 0) 80%
           );
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         background-position: right;
       }
       .green-piece {
@@ -452,13 +427,11 @@ td {
             rgba(255, 255, 255, 0) 20%,
             rgba(195, 232, 230, 1) 20%
           );
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
       .green-piece-complete {
-        background-image: url(#{$s3}/0-green-piece-end.png),
+        background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 8%,
@@ -466,51 +439,15 @@ td {
             #c3e8e6 80%,
             rgba(255, 255, 255, 0) 80%
           ),
-          url(#{$s3}/0-green-piece-start.png);
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+          url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
-      }
-
-      .blue-piece-complete {
-        background-image: url(#{$s3}/0-blue-piece-end.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 8%,
-            #e7f3fa 8%,
-            #e7f3fa 80%,
-            rgba(255, 255, 255, 0) 80%
-          ),
-          url(#{$s3}/0-blue-piece-start.png);
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
-        background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
-      }
-
-      .green-piece-male {
-        background-image: url(#{$s3}/0-green-piece-male.png),
-          linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-        background-position: right;
-      }
-
-      .yellow-piece-female {
-        background-image: url(#{$s3}/0-yellow-piece-female.png),
-          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
-
-        background-position: left;
       }
 
       .icon {
         @extend .b;
         text-align: center;
         font-size: clamp(10px, 2vw, 14px);
-        font-family: $noto-sans;
 
         img {
           height: clamp(70px, 20vw, 100px);
@@ -545,6 +482,10 @@ td {
       .legend {
         display: flex;
         justify-content: space-between;
+
+        & .eng {
+          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        }
       }
     }
   }
@@ -574,8 +515,19 @@ td {
       background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
+
+  .part-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+  }
+
   .blue-line {
-    width: 15px;
+    width: 16px;
     height: 2px;
     border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
@@ -606,252 +558,126 @@ td {
   }
 }
 
-//individuals
-.see-1 {
-  margin-top: 29%;
+//individual differences
+.part-content {
+  &.part-1 {
+    margin-top: 29%;
 
-  .office-see-1 {
-    margin-top: 6%;
-
-    .speech {
-      .eng {
-        font-size: clamp(8px, 2vw, 13px);
-      }
-
-      &.sara {
-        margin-top: 21%;
-        left: 28.5%;
-      }
-      &.akiko {
-        margin-top: 4%;
-        left: 9%;
-      }
-    }
-  }
-}
-
-.see-2 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    margin-top: 4%;
-  }
-
-  .phrase-alts {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .conversation {
-    .conv-1 {
+    .blue-line {
       margin-top: 5%;
-      display: grid;
-      grid-template-columns: min-content 1fr;
-
-      .icon {
-        margin-right: clamp(20px, 4.5vw, 40px);
-      }
-      .phrase:not(:last-child) {
-        margin-right: clamp(10px, 3.5vw, 20px);
-      }
-    }
-  }
-}
-
-.see-3 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    margin-top: 4%;
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .phrases {
-    margin-top: 5%;
-  }
-
-  .conversation {
-    .conv-1 {
-      margin-top: 5%;
-      display: grid;
-      grid-template-columns: 1fr min-content;
-
-      .phrase .eng {
-        font-size: clamp(8px, 2.2vw, 15px);
-      }
-      .phrase:not(:last-child) {
-        margin-right: -2px;
-      }
-    }
-  }
-
-  .alt:not(:last-child) {
-    margin-bottom: 4% !important;
-  }
-}
-
-.try-1,
-.try-2,
-.try-3,
-.try-4 {
-  margin-top: 6%;
-}
-
-.try-1 {
-  .combinations {
-    grid-template-columns: min-content 1fr 1fr;
-    margin-top: 8%;
-
-    & > div:last-child {
-      margin-left: 4%;
     }
 
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: left;
-      margin-bottom: 13%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-2 {
-  .combinations {
-    grid-template-columns: 1fr min-content;
-    margin-top: 13%;
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 7%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-3 {
-  .table-wrapper-section {
-    margin-top: 14%;
-
-    .jap {
+    .table {
       font-family: $noto-sans;
-      font-size: clamp(9px, 2vw, 13px);
-      color: $subtext-color;
+
+      .jap {
+        margin-bottom: 3.6%;
+      }
+      .name {
+        width: 14%;
+        padding-left: 1%;
+        padding-right: 2%;
+
+        & ~ td > .eng {
+          margin-bottom: 4%;
+        }
+      }
     }
 
-    .table-wrapper {
-      width: 100%;
-      p {
-        margin: 0;
-      }
-      .table-number {
-        @extend .b, .primary-blue;
-        font-size: clamp(10px, 3vw, 16px);
-        padding-top: 6px;
-        padding-left: clamp(5px, 3vw, 10px);
-      }
-      .table-img {
-        text-align: center;
-        padding-top: 2%;
-      }
+    .office-section {
+      margin-top: 6%;
 
-      &:not(:last-child) {
-        margin-bottom: 9%;
-      }
-      img {
-        max-width: clamp(44%, 25vw, 100%);
+      .speech {
+        &.helen {
+          margin-top: 12%;
+          left: 28%;
+        }
       }
     }
   }
 
-  .table {
-    font-family: $noto-sans;
-    border-collapse: collapse;
+  &.part-2 {
+    margin-top: 7%;
 
-    td {
-      font-size: clamp(10px, 3vw, 18px);
-      img {
-        max-width: clamp(44%, 16vw, 100%);
-        margin-bottom: 20px;
+    .choice {
+      td {
+        padding-bottom: 4%;
       }
     }
 
-    .name {
-      @extend .b;
-      font-size: clamp(10px, 3vw, 16px);
-      white-space: nowrap;
+    .new-line {
+      margin-left: -6%;
     }
-    tr:not(:last-child) td:nth-child(2) {
-      padding-bottom: 5%;
+
+    .office-part-2-1 {
+      margin-top: 20%;
     }
-  }
-}
 
-.try-4 {
-  img {
-    margin-top: 10%;
-    max-width: clamp(44%, 69vw, 100%);
-  }
-}
+    .office-part-2-2,
+    .office-part-2-3,
+    .office-part-2-4,
+    .office-part-2-5 {
+      margin-top: 11%;
+    }
 
-.act-1,
-.act-2 {
-  margin-top: 7%;
-}
-.act-2 {
-  margin-bottom: 50px;
-}
+    .office-part-2-1,
+    .office-part-2-2,
+    .office-part-2-3,
+    .office-part-2-4,
+    .office-part-2-5 {
+      .speech {
+        font-size: clamp(8px, 2.2vw, 14px);
 
-.act-1 {
-  .blue-line {
-    margin-top: 5%;
-  }
-
-  .office-act-1 {
-    margin-top: 6%;
-
-    .bubble {
-      &.akiko {
-        margin-top: 6%;
-        left: 30%;
-        font-family: $noto-sans;
-
-        .eng {
-          font-weight: normal;
+        &.akiko {
+          margin-top: 11%;
+          left: 31%;
         }
 
-        .jap {
-          letter-spacing: -2px;
+        .choice {
+          .choice-letter {
+            @extend .b;
+            padding-right: clamp(10px, 4vw, 20px);
+          }
+          .choice-phrase {
+            @extend .b;
+          }
+        }
+      }
+    }
+
+    .office-part-2-1 {
+      .speech {
+        &.akiko {
+          margin-top: 11%;
+          left: 34%;
+        }
+      }
+    }
+
+    .office-part-2-5 {
+      .speech {
+        &.akiko {
+          margin-top: 9%;
+          left: 28%;
+        }
+      }
+    }
+
+    .blue-line {
+      margin-top: 2%;
+    }
+
+    .table {
+      font-family: $noto-sans;
+
+      .jap {
+        margin-bottom: 3.6%;
+      }
+      .name {
+        width: 14%;
+
+        & ~ td > .eng {
+          margin-bottom: 4%;
         }
       }
     }

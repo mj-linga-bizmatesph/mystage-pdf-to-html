@@ -159,16 +159,16 @@ hr {
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
-  left: 26%;
+  left: 28%;
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(11px, 3.2vw, 18px);
+  font-size: clamp(9px, 2.9vw, 18px);
   color: #141821;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
-  font-size: clamp(9px, 2vw, 13px);
+  font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
   letter-spacing: -1.2px;
 }

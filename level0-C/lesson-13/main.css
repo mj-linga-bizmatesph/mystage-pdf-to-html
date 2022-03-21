@@ -163,14 +163,14 @@ hr {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(11px, 3vw, 18px);
+  font-size: clamp(9px, 2.9vw, 18px);
   color: #141821;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
-  font-size: clamp(9px, 1.8vw, 13px);
+  font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 .html-lesson-wrapper .see-content {
@@ -441,11 +441,11 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice-eng {
-  font-size: clamp(9.3px, 2.4vw, 16px);
+  font-size: clamp(10.1px, 1.8vw, 16px);
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice-jap {
-  font-size: clamp(7px, 2vw, 13px);
+  font-size: clamp(9px, 2.2vw, 13px);
   letter-spacing: -1px;
   color: #7f8288;
 }

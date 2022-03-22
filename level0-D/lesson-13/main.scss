@@ -10,6 +10,8 @@ $primary-light: #cce0ec;
 $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
+$fs-8: clamp(4px, 1.5vw, 8px);
+$fs-10: clamp(5px, 1.7vw, 10px);
 $fs-11: clamp(6px, 1.9vw, 11px);
 $fs-12: clamp(8px, 1.8vw, 12px);
 $fs-13: clamp(9px, 2.2vw, 13px);
@@ -168,11 +170,11 @@ td {
   }
   .lesson-number {
     position: absolute;
-    left: 91.3%;
+    left: 90.3%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
-    font-size: clamp(20px, 2vw, 31px);
+    font-size: clamp(15px, 2.5vw, 25px);
     color: #ffffff;
   }
 
@@ -243,27 +245,13 @@ td {
     &.office-see-1 {
       margin-top: clamp(20px, 6.5vw, 29px);
 
-      .akiko {
-        margin: 34.5% 0 0 7.5%;
-      }
-
-      .dan {
-        margin: 35.5% 0 0 71%;
-      }
-
-      .dan-convo-1 {
-        position: absolute;
-        margin: 4% 0 0 53%;
-      }
-
       .akiko-convo-1 {
         position: absolute;
-        margin: 13% 0 0 4%;
+        margin: 13% 0 0 17%;
       }
 
-      .akiko-convo-2 {
-        position: absolute;
-        margin: 25% 0 0 28%;
+      .mt {
+        margin-top: 12px;
       }
 
       .eng {
@@ -326,6 +314,173 @@ td {
           }
           .row-2 {
             width: 100%;
+            display: flex;
+            margin-top: 8px;
+          }
+          .row-3 {
+            .sub {
+              font-family: $noto-sans;
+              font-size: $fs-13;
+              font-size: $fs-13;
+              color: #7f8288;
+            }
+          }
+
+          .piece-mt {
+            margin-top: clamp(5px, 1.5vw, 10px);
+          }
+        }
+      }
+      .red-piece {
+        width: clamp(65px, 16vw, 116.8px);
+        margin-right: clamp(3px, 1vw, 10px);
+      }
+
+      .blue-piece {
+        width: clamp(110px, 25vw, 188.2px);
+      }
+
+      .blue-piece-1 {
+        width: clamp(50px, 12vw, 91.2px);
+      }
+
+      .piece {
+        height: clamp(30px, 9vw, 38px);
+        font-size: $fs-16;
+        font-family: $noto-sans;
+        font-weight: bold;
+      }
+
+      .akiko-table-pieces {
+        margin-top: clamp(1rem, 9vw, 1.5rem);
+        display: grid;
+        column-gap: 2%;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: auto auto;
+
+        .column-two {
+          margin-left: auto;
+        }
+      }
+
+      .akiko-table {
+        display: grid;
+        column-gap: 2%;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 49% 49%;
+      }
+
+      .table {
+        margin-top: 0.2rem;
+        border: 1px solid #1287cd;
+        padding: clamp(10px, 2.5vw, 18px) clamp(7px, 1.5vw, 11px);
+      }
+      .column-two {
+        counter-reset: orderedlist;
+      }
+      .table.column-one {
+        width: 100%;
+      }
+      .table.column-two {
+        width: 100%;
+      }
+
+      ol {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+      }
+
+      ol.column-one {
+        --li-bg: #1287cd;
+
+        li::before {
+          content: counter(orderedlist);
+          color: #fff;
+          border-radius: 50%;
+        }
+      }
+
+      ol.column-two {
+        --li-bg: #fff;
+
+        li::before {
+          color: $primary-blue;
+          border: 2px solid $primary-blue;
+          content: counter(orderedlist, upper-alpha);
+        }
+      }
+
+      li::before {
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        width: clamp(18px, 4vw, 24px);
+        height: clamp(18px, 4vw, 24px);
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background-color: var(--li-bg);
+        font-weight: bold;
+      }
+
+      li {
+        counter-increment: orderedlist;
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        align-items: start;
+        line-height: 1.25;
+        font-family: $noto-sans;
+        list-style-type: lower-alpha !important;
+
+        div {
+          div.list-title {
+            font-size: $fs-16;
+            margin-bottom: clamp(2px, 1vw, 8px);
+          }
+
+          div.list-subtitle {
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+      }
+
+      .column-two {
+        .green-piece {
+          margin-left: auto;
+        }
+      }
+    }
+
+    .see-3-section {
+      margin-top: clamp(20px, 6.5vw, 4rem);
+      .akiko-section {
+        display: flex;
+        .akiko-icon {
+          text-align: center;
+          width: 18%;
+
+          div {
+            font-family: $noto-sans;
+            font-size: clamp(8.5px, 2.4vw, 14px);
+            font-weight: bold;
+            margin-top: 3%;
+          }
+        }
+        .akiko-conversation {
+          width: 82%;
+          padding-left: 3vw;
+
+          .row-1 {
+            width: 100%;
+            display: flex;
+          }
+          .row-2 {
+            width: 100%;
             .sub {
               font-family: $noto-sans;
               font-size: $fs-13;
@@ -340,35 +495,35 @@ td {
           }
         }
       }
-      .budgets-piece {
-        width: clamp(70px, 17vw, 104.8px);
+      .red-piece {
+        width: clamp(65px, 19vw, 112.8px);
       }
 
-      .are-approved-piece {
-        width: clamp(100px, 31vw, 159px);
+      .green-piece {
+        width: clamp(105px, 28vw, 166.2px);
       }
 
-      .by-the-president-piece {
-        width: clamp(113px, 30vw, 174.2px);
-      }
-
-      .directors-meeting-piece {
-        width: clamp(153px, 45vw, 241.2px);
+      .yellow-piece {
+        width: clamp(230px, 59vw, 356px);
+        background: #ffe200;
+        border-radius: 6px;
+        text-align: center;
       }
 
       .piece {
         position: relative;
         display: grid;
         place-items: center;
+        text-align: center;
         width: 100%;
         height: clamp(30px, 9vw, 38px);
+        font-size: $fs-16;
+        font-family: $noto-sans;
+        font-weight: bold;
 
         .piece-text {
           position: absolute;
-          font-size: $fs-16;
-          font-family: $noto-sans;
-          font-weight: bold;
-          margin-left: -1vw;
+          margin-left: clamp(-1px, -1vw, -10px);
         }
 
         .piece-image {
@@ -385,7 +540,15 @@ td {
         column-gap: clamp(3px, 0.5vw, 10px);
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
+      }
+
+      .bottom-table-piece {
+        width: 100%;
+
+        .yellow-piece {
+          margin: clamp(3px, 2vw, 39px) 0 0 auto;
+        }
       }
 
       .akiko-bottom-table {
@@ -393,7 +556,7 @@ td {
         column-gap: 10px;
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
       }
 
       .table {
@@ -414,7 +577,6 @@ td {
       ol {
         margin: 0;
         padding: 0;
-        list-style: none;
         display: grid;
         grid-gap: clamp(0.1rem, 1vw, 0.5rem);
         counter-reset: orderedlist;
@@ -435,6 +597,7 @@ td {
         li::before {
           color: $primary-blue;
           border: 2px solid $primary-blue;
+          content: counter(orderedlist, upper-alpha);
         }
       }
 
@@ -444,6 +607,174 @@ td {
         li::before {
           border-radius: 50%;
           color: $primary-blue;
+        }
+      }
+
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        width: clamp(18px, 4vw, 24px);
+        height: clamp(18px, 4vw, 24px);
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background-color: var(--li-bg);
+        font-weight: bold;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        align-items: start;
+        line-height: 1.25;
+        font-family: $noto-sans;
+        list-style-type: lower-alpha !important;
+
+        div {
+          div.list-title {
+            font-size: $fs-16;
+            margin-bottom: clamp(2px, 1vw, 8px);
+          }
+
+          div.list-subtitle {
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+      }
+
+      .column-two {
+        .green-piece {
+          margin-left: auto;
+        }
+      }
+      .column-three {
+        .by-the-president-piece {
+          margin: 0 0 0 auto;
+        }
+
+        .directors-meeting-piece {
+          margin: 0 0 0 auto;
+        }
+      }
+
+      .last-piece {
+        margin: 0 0 0 auto;
+      }
+    }
+
+    .see-4-section {
+      margin-top: clamp(20px, 6.5vw, 4rem);
+      .akiko-section {
+        display: flex;
+        .akiko-icon {
+          text-align: center;
+          width: 18%;
+          padding-left: 20px;
+
+          div {
+            font-family: $noto-sans;
+            font-size: clamp(8.5px, 2.4vw, 14px);
+            font-weight: bold;
+            margin-top: 3%;
+          }
+        }
+        .akiko-conversation {
+          width: 95%;
+
+          .row-1 {
+            .row-1-pieces {
+              margin-left: auto;
+              padding: 0;
+              width: 88%;
+            }
+
+            .pieces {
+              display: flex;
+              justify-content: space-between;
+            }
+            .sub {
+              font-family: $noto-sans;
+              font-size: $fs-13;
+              font-size: $fs-13;
+              line-height: 2;
+              color: #7f8288;
+            }
+          }
+          .row-2 {
+            .yellow-piece {
+              margin-left: auto;
+            }
+          }
+
+          .piece-mt {
+            margin-top: clamp(5px, 1.5vw, 10px);
+          }
+        }
+      }
+
+      .red-piece {
+        width: clamp(53px, 45vw, 198.8px);
+      }
+
+      .green-piece {
+        width: clamp(173px, 45vw, 175.2px);
+      }
+
+      .yellow-piece-1 {
+        width: clamp(73px, 45vw, 151px);
+      }
+
+      .piece {
+        position: relative;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        width: 100%;
+        height: clamp(30px, 9vw, 38px);
+        font-size: $fs-16;
+        font-family: $noto-sans;
+        font-weight: bold;
+      }
+
+      .akiko-table {
+        margin-top: clamp(1rem, 9vw, 3.5rem);
+        display: grid;
+        column-gap: 2%;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 49% 49%;
+      }
+
+      .table {
+        margin-top: 0.2rem;
+        border: 1px solid #1287cd;
+        padding: clamp(10px, 2.5vw, 18px) clamp(7px, 1.5vw, 11px);
+      }
+      .table.column-one,
+      .table.column-two {
+        width: 100%;
+      }
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
+      }
+
+      ol.column-one,
+      ol.column-two {
+        --li-bg: #1287cd;
+
+        li::before {
+          color: #fff;
+          border-radius: 50%;
         }
       }
 
@@ -483,8 +814,8 @@ td {
       }
 
       .column-two {
-        .are-approved-piece {
-          margin: 0 auto;
+        .green-piece {
+          margin-left: auto;
         }
       }
       .column-three {
@@ -520,28 +851,144 @@ td {
 
     .try-1-content {
       margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
-
       display: flex;
 
       .akiko-icon {
         width: 40%;
-        padding-right: 2vw;
+        padding-right: clamp(30px, 6vw, 70px);
+        margin-top: 4vw;
       }
 
       .math-area {
         width: 60%;
         display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: clamp(1.5rem, 6vw, 0.8rem);
-        padding-right: clamp(40px, 4vw, 55px);
 
         .row {
           display: grid;
-          grid-template-columns: auto auto auto auto auto;
+          grid-template-columns: 15% 15% 15%;
+          align-items: center;
+          margin-bottom: clamp(10px, 2.4vw, 20px);
+
+          .number-bg,
+          .letter,
+          .number-outlined,
+          .plus-sign {
+            width: clamp(18px, 4vw, 24px);
+            height: clamp(18px, 4vw, 24px);
+            display: grid;
+            place-items: center;
+          }
+
+          div {
+            font-family: $noto-sans;
+            font-weight: bold;
+            font-size: $fs-16;
+          }
+
+          .number-bg {
+            background: $primary-blue;
+            color: white;
+            border-radius: 50%;
+            font-size: $fs-16;
+          }
+
+          .letter {
+            color: $primary-blue;
+            border: 2px solid $primary-blue;
+            font-size: $fs-16;
+          }
+
+          .number-outlined {
+            color: $primary-blue;
+            border-radius: 50%;
+            border: 1px solid $primary-blue;
+            font-size: $fs-16;
+          }
+
+          .text {
+            color: $primary-blue;
+            font-size: $fs-16;
+            font-weight: bold;
+          }
+
+          .center {
+            text-align: center;
+          }
+
+          img {
+            width: clamp(10px, 3vw, 15px);
+            height: clamp(10px, 3vw, 15px);
+          }
+        }
+      }
+    }
+
+    .try-2-content {
+      margin: clamp(20px, 10vw, 6rem) 0 clamp(20px, 5vw, 1rem);
+      padding-left: 10%;
+
+      .eng {
+        font-family: $text-font;
+        font-size: $fs-14;
+        font-weight: bold;
+        color: #2d356b;
+      }
+
+      .mt {
+        margin-top: clamp(10px, 1vw, 20px);
+      }
+
+      .jpn {
+        font-family: $noto-sans;
+        font-size: $fs-11;
+        color: #7f8288;
+      }
+
+      .speech-1 {
+        position: absolute;
+        margin: 27% 0 0 6%;
+      }
+      .speech-5 {
+        position: absolute;
+        margin: 22% 0 0 6%;
+      }
+      .speech-6 {
+        position: absolute;
+        margin: 23% 0 0 6%;
+      }
+      pre {
+        font-family: $text-font;
+        font-size: $fs-14;
+        font-weight: bold;
+      }
+
+      .row {
+        margin-bottom: clamp(0.5rem, 13vw, 3rem);
+      }
+    }
+
+    .try-3-content {
+      margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
+      display: flex;
+
+      .akiko-icon {
+        width: 40%;
+      }
+
+      .math-area {
+        width: 60%;
+        padding-left: clamp(20px, 7vw, 40px);
+
+        .row {
+          display: flex;
           align-items: center;
           margin-bottom: 2.4vw;
 
           div {
+            margin-right: clamp(2px, 1.5vw, 6px);
+          }
+
+          .small {
             width: clamp(18px, 4vw, 24px);
             height: clamp(18px, 4vw, 24px);
             display: grid;
@@ -571,6 +1018,12 @@ td {
             font-size: $fs-16;
           }
 
+          .text {
+            color: $primary-blue;
+            font-size: $fs-16;
+            font-weight: bold;
+          }
+
           img {
             width: clamp(10px, 3vw, 15px);
             height: clamp(10px, 3vw, 15px);
@@ -579,7 +1032,7 @@ td {
       }
     }
 
-    .try-2-content {
+    .try-4-content {
       margin-top: clamp(20px, 10vw, 69px);
 
       ol {
@@ -606,14 +1059,25 @@ td {
         grid-template-columns: 0 1fr;
         grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
         font-family: $noto-sans;
-        margin-bottom: clamp(1rem, 10vw, 5rem);
 
         .dialogue {
           display: flex;
         }
 
-        .trainer {
+        .big-mb {
           margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .small-mb {
+          margin-bottom: clamp(5px, 2vw, 10px);
+        }
+
+        .jpn {
+          .speech {
+            font-style: $noto-sans;
+            font-size: $fs-13;
+            color: #7f8288;
+          }
         }
 
         .person {
@@ -628,114 +1092,11 @@ td {
           width: 85%;
           font-size: $fs-18;
         }
-
-        .image {
-          margin-top: clamp(10px, 6vw, 30px);
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          position: relative;
-
-          .size-a {
-            width: clamp(200px, 47vw, 283.57px);
-          }
-
-          .size-b {
-            width: clamp(245px, 63.5vw, 384.4px);
-          }
-
-          .text-20 {
-            font-size: $fs-20;
-          }
-
-          .text-16 {
-            font-size: $fs-16;
-          }
-
-          .president {
-            position: absolute;
-            margin: clamp(5rem, 33%, 9.5rem) 0 0 clamp(1rem, 4.5%, 1.4rem);
-          }
-
-          .managers {
-            position: absolute;
-            margin: clamp(6.5rem, 28%, 9.2rem) 0 0 clamp(0.6rem, 2%, 1rem);
-          }
-
-          .employee {
-            position: absolute;
-            margin: clamp(4.8rem, 22%, 9.2rem) 0 0 clamp(0.9rem, 8%, 3rem);
-          }
-
-          .convo {
-            color: #2d356b;
-            font-family: $text-font;
-            font-weight: bold;
-          }
-
-          .upper-1 {
-            position: absolute;
-            margin: clamp(1.2rem, 5%, 2rem) 0 0 clamp(6.6rem, 30%, 9.5rem);
-          }
-
-          .lower-1 {
-            position: absolute;
-            margin: clamp(3rem, 14%, 5rem) 0 0 clamp(7rem, 30%, 10rem);
-            transform: rotate(13.8deg);
-          }
-
-          .lower-2 {
-            position: absolute;
-            margin: clamp(2.8rem, 12.5%, 4rem) 0 0 clamp(5.5rem, 25%, 10rem);
-            transform: rotate(9.29deg);
-          }
-
-          .upper-3 {
-            position: absolute;
-            margin: clamp(1rem, 5%, 1.3rem) 0 0 clamp(10.5rem, 50%, 16.8rem);
-          }
-
-          .lower-3 {
-            position: absolute;
-            margin: clamp(1.5rem, 11.5%, 3.6rem) 0 0 clamp(6.6rem, 46%, 14.8rem);
-            transform: rotate(9.29deg);
-          }
-
-          .upper-4 {
-            position: absolute;
-            margin: clamp(1rem, 7%, 2rem) 0 0 clamp(6.5rem, 28%, 16.8rem);
-            transform: rotate(11.92deg) !important;
-          }
-
-          .lower-4 {
-            position: absolute;
-            margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0
-              clamp(6.1rem, 26.2%, 14.8rem);
-            transform: rotate(-4deg) !important;
-          }
-
-          .upper-5 {
-            position: absolute;
-            margin: clamp(1rem, 5%, 2rem) 0 0 clamp(11rem, 55%, 16.8rem);
-          }
-
-          .lower-5 {
-            position: absolute;
-            margin: clamp(2rem, 12%, 4.7rem) 0 0 clamp(10.2rem, 50%, 16.2rem);
-            transform: rotate(9.29deg);
-          }
-
-          .clockwise {
-            transform: rotate(-15deg);
-          }
-          .counter-clockwise {
-            transform: rotate(8deg);
-          }
-
-          .try-2-3-name {
-            padding: clamp(5px, 1.5vw, 8px) clamp(5px, 5vw, 32px) !important;
-          }
-        }
+      }
+      .image {
+        width: 100%;
+        padding: 0 !important;
+        margin-bottom: clamp(1rem, 10vw, 5rem);
       }
     }
 
@@ -744,31 +1105,67 @@ td {
     }
 
     .try-3-content {
-      margin: clamp(3rem, 8vw, 5rem) 0 clamp(20px, 17vw, 7rem);
+      margin-top: clamp(20px, 5vw, 50px);
 
-      .step {
-        margin-bottom: clamp(2rem, 15vw, 6rem);
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
       }
 
-      .image-1 {
-        padding: 0 clamp(1rem, 3.5vw, 1.5rem);
+      .row {
+        width: 100%;
       }
 
-      .image-3 {
-        padding: 0 0 0 clamp(1rem, 3.5vw, 1.5rem);
-      }
-
-      .image-5 {
-        padding: 0 0 0 clamp(1rem, 12vw, 4.9rem);
-      }
-
-      .text {
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-18;
-        margin-top: clamp(1rem, 5vw, 1.5rem);
-        .underline {
-          color: $primary-blue;
-          text-decoration: underline;
+        font-size: $fs-16;
+        color: $primary-blue;
+        font-weight: bold;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        font-family: $noto-sans;
+        margin-bottom: clamp(0.5rem, 5vw, 3rem);
+        width: 100%;
+
+        .dialogue {
+          display: flex;
+        }
+
+        .big-mb {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .small-mb {
+          margin-bottom: clamp(5px, 2vw, 10px);
+        }
+
+        .jpn {
+          .speech {
+            font-style: $noto-sans;
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+
+        .person {
+          text-align: right;
+          font-weight: bold;
+          font-size: $fs-16;
+          width: 15%;
+        }
+
+        .speech {
+          padding-left: clamp(1px, 1vw, 5px);
+          font-size: $fs-18;
         }
       }
     }
@@ -842,15 +1239,24 @@ td {
     margin-right: $side-margin;
 
     .act-1-content {
-      margin: clamp(20px, 6.5vw, 29px) 0 clamp(20px, 17vw, 7rem);
+      margin: clamp(20px, 6.5vw, 29px) 0 clamp(20px, 17vw, 2rem);
 
       .image-area {
         margin-bottom: 1vw;
       }
 
-      .dan-speech {
+      .image-area-1 {
+        padding: 2% 8% 0;
+      }
+
+      .akiko-speech {
         position: absolute;
-        margin: 9% 0 0 52%;
+        margin: 8.5% 0 0 17%;
+      }
+
+      .akiko-speech-1 {
+        position: absolute;
+        margin: 74.5% 0 0 18%;
       }
 
       .eng {
@@ -859,9 +1265,22 @@ td {
         font-weight: bold;
       }
 
+      .eng-1 {
+        font-family: $text-font;
+        font-size: $fs-10;
+        font-weight: bold;
+        color: #2d356b;
+      }
+
       .jpn {
         font-family: $noto-sans;
         font-size: $fs-11;
+        color: #7f8288;
+      }
+
+      .jpn-1 {
+        font-family: $noto-sans;
+        font-size: $fs-8;
         color: #7f8288;
       }
 
@@ -900,6 +1319,10 @@ td {
 
       .speech {
         width: 88%;
+      }
+
+      .mt {
+        margin-top: 5px;
       }
     }
 

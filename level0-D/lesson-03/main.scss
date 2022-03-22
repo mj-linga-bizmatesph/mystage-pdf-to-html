@@ -172,7 +172,7 @@ td {
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
-    font-size: clamp(20px, 2vw, 31px);
+    font-size: clamp(18px, 4vw, 30px);
     color: #ffffff;
   }
 
@@ -253,17 +253,12 @@ td {
 
       .dan-convo-1 {
         position: absolute;
-        margin: 4% 0 0 53%;
+        margin: 3% 0 0 38%;
       }
 
       .akiko-convo-1 {
         position: absolute;
-        margin: 13% 0 0 4%;
-      }
-
-      .akiko-convo-2 {
-        position: absolute;
-        margin: 25% 0 0 28%;
+        margin: 14% 0 0 3.5%;
       }
 
       .eng {
@@ -317,8 +312,7 @@ td {
           }
         }
         .akiko-conversation {
-          width: 82%;
-          padding-left: 3vw;
+          padding-left: clamp(8.5px, 2.4vw, 24px);
 
           .row-1 {
             width: 100%;
@@ -340,20 +334,28 @@ td {
           }
         }
       }
-      .budgets-piece {
-        width: clamp(70px, 17vw, 104.8px);
+      .pink-piece {
+        width: clamp(65px, 18vw, 108.8px);
       }
 
-      .are-approved-piece {
-        width: clamp(100px, 31vw, 159px);
+      .pink-1-piece {
+        width: clamp(65px, 18vw, 108.8px);
       }
 
-      .by-the-president-piece {
-        width: clamp(113px, 30vw, 174.2px);
+      .yellow-piece {
+        width: clamp(65px, 30vw, 173px);
       }
 
-      .directors-meeting-piece {
-        width: clamp(153px, 45vw, 241.2px);
+      .yellow-1-piece {
+        width: clamp(80px, 19vw, 147px);
+      }
+
+      .green-piece {
+        width: clamp(90px, 21vw, 126.2px);
+      }
+
+      .green-1-piece {
+        width: clamp(90px, 18vw, 136.2px);
       }
 
       .piece {
@@ -361,14 +363,13 @@ td {
         display: grid;
         place-items: center;
         width: 100%;
-        height: clamp(30px, 9vw, 38px);
+        height: clamp(25px, 7vw, 38px);
 
         .piece-text {
           position: absolute;
           font-size: $fs-16;
           font-family: $noto-sans;
           font-weight: bold;
-          margin-left: -1vw;
         }
 
         .piece-image {
@@ -380,12 +381,12 @@ td {
       }
 
       .akiko-table {
-        margin-top: clamp(1rem, 9vw, 3.5rem);
+        margin-top: clamp(1rem, 9vw, 2.5rem);
         display: grid;
-        column-gap: clamp(3px, 0.5vw, 10px);
+        gap: clamp(3px, 4%, 20px);
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 48% 48%;
       }
 
       .akiko-bottom-table {
@@ -483,8 +484,8 @@ td {
       }
 
       .column-two {
-        .are-approved-piece {
-          margin: 0 auto;
+        .yellow-piece {
+          margin-left: auto;
         }
       }
       .column-three {
@@ -520,28 +521,26 @@ td {
 
     .try-1-content {
       margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
-
       display: flex;
 
       .akiko-icon {
         width: 40%;
-        padding-right: 2vw;
+        padding-right: clamp(20px, 7vw, 40px);
       }
 
       .math-area {
         width: 60%;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: clamp(1.5rem, 6vw, 0.8rem);
-        padding-right: clamp(40px, 4vw, 55px);
 
         .row {
-          display: grid;
-          grid-template-columns: auto auto auto auto auto;
+          display: flex;
           align-items: center;
-          margin-bottom: 2.4vw;
+          margin-bottom: clamp(10px, 2.4vw, 20px);
 
           div {
+            margin-right: clamp(2px, 1.5vw, 6px);
+          }
+
+          .small {
             width: clamp(18px, 4vw, 24px);
             height: clamp(18px, 4vw, 24px);
             display: grid;
@@ -571,6 +570,12 @@ td {
             font-size: $fs-16;
           }
 
+          .text {
+            color: $primary-blue;
+            font-size: $fs-16;
+            font-weight: bold;
+          }
+
           img {
             width: clamp(10px, 3vw, 15px);
             height: clamp(10px, 3vw, 15px);
@@ -580,7 +585,7 @@ td {
     }
 
     .try-2-content {
-      margin-top: clamp(20px, 10vw, 69px);
+      margin-top: clamp(50px, 10vw, 69px);
 
       ol {
         margin: 0;
@@ -606,13 +611,17 @@ td {
         grid-template-columns: 0 1fr;
         grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
         font-family: $noto-sans;
-        margin-bottom: clamp(1rem, 10vw, 5rem);
+        margin-bottom: clamp(3.5rem, 10vw, 5rem);
 
         .dialogue {
           display: flex;
         }
 
         .trainer {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .you-bottom {
           margin-bottom: clamp(10px, 4vw, 20px);
         }
 
@@ -637,11 +646,15 @@ td {
           position: relative;
 
           .size-a {
-            width: clamp(200px, 47vw, 283.57px);
+            width: 99%;
           }
 
           .size-b {
-            width: clamp(245px, 63.5vw, 384.4px);
+            width: 90%;
+          }
+
+          .size-c {
+            width: 60%;
           }
 
           .text-20 {
@@ -744,31 +757,68 @@ td {
     }
 
     .try-3-content {
-      margin: clamp(3rem, 8vw, 5rem) 0 clamp(20px, 17vw, 7rem);
+      margin: clamp(3rem, 11vw, 6rem) 0 clamp(20px, 17vw, 7rem);
 
-      .step {
-        margin-bottom: clamp(2rem, 15vw, 6rem);
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
       }
 
-      .image-1 {
-        padding: 0 clamp(1rem, 3.5vw, 1.5rem);
-      }
-
-      .image-3 {
-        padding: 0 0 0 clamp(1rem, 3.5vw, 1.5rem);
-      }
-
-      .image-5 {
-        padding: 0 0 0 clamp(1rem, 12vw, 4.9rem);
-      }
-
-      .text {
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-18;
-        margin-top: clamp(1rem, 5vw, 1.5rem);
-        .underline {
-          color: $primary-blue;
-          text-decoration: underline;
+        font-size: $fs-16;
+        color: $primary-blue;
+        font-weight: bold;
+        padding-left: 1vw;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
+        font-family: $noto-sans;
+        margin-bottom: clamp(1rem, 10vw, 5rem);
+
+        .dialogue {
+          display: flex;
+        }
+
+        .trainer {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .you-bottom {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .person {
+          width: clamp(60px, 15%, 80px);
+          text-align: right;
+          font-weight: bold;
+          font-size: $fs-16;
+        }
+
+        .speech {
+          padding-left: 1vw;
+          width: 85%;
+          font-size: $fs-18;
+        }
+
+        .image {
+          margin-top: clamp(10px, 6vw, 30px);
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 98%;
+          }
         }
       }
     }
@@ -850,7 +900,7 @@ td {
 
       .dan-speech {
         position: absolute;
-        margin: 9% 0 0 52%;
+        margin: 9.5% 0 0 15%;
       }
 
       .eng {
@@ -916,6 +966,7 @@ td {
       background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
+
   .blue-line {
     width: 15px;
     height: 2px;

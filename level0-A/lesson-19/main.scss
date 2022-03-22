@@ -31,7 +31,7 @@ td {
 }
 
 .w-11 {
-  width: clamp(4.5rem, 20vw, 15rem);
+  width: clamp(4.5rem, 14vw, 15rem);
 }
 
 .flex {
@@ -251,6 +251,7 @@ td {
             width: clamp(20px, 4vw, 35px);
             height: clamp(20px, 4vw, 35px);
             line-height: clamp(20px, 4vw, 35px);
+            min-width: clamp(20px, 4vw, 35px);
           }
         }
       }
@@ -297,6 +298,7 @@ td {
     font-family: $noto-sans;
     font-size: clamp(11px, 3vw, 16px);
     z-index: 1;
+    min-width: clamp(13px, 4vw, 24px);
 
     &.inverse {
       color: $primary-blue;
@@ -764,7 +766,7 @@ td {
 
 .see-3 {
   .phrase-alts {
-    grid-template-columns: 1fr 1.06fr !important;
+    grid-template-columns: 1fr 1.2fr !important;
     gap: 5px !important;
     .alt:not(:last-child) {
       margin-bottom: 5% !important;

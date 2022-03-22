@@ -5,6 +5,10 @@
     right: 6.7%;
   }
   .part-content {
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
     &.part-1 {
       margin-top: 29%;
 

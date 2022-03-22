@@ -17,7 +17,7 @@ $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
 
-$s3: 'http://127.0.0.1:8887';
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
@@ -661,6 +661,15 @@ td {
     .jap {
       font-size: clamp(9px, 2vw, 13px);
       margin-bottom: 3.8%;
+    }
+  }
+  .part-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
 }

@@ -243,56 +243,56 @@ hr {
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .bubble1-text {
   position: absolute;
   display: block;
-  margin-top: clamp(53px, 5vw, 71px);
-  margin-left: clamp(92px, 4vw, 91px);
+  margin-top: clamp(53px, 9vw, 78px);
+  margin-left: clamp(38px, 10vw, 68px);
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .eng {
   font-weight: bold;
-  font-size: clamp(9px, 1vw, 14px);
+  font-size: clamp(10px, 2vw, 14px);
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .sub-text {
   font-weight: bold;
-  font-size: clamp(9px, 1vw, 14px);
+  font-size: clamp(10px, 2vw, 14px);
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .jap {
-  font-size: clamp(8px, 1vw, 11px);
+  font-size: clamp(8px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .jap-under {
-  font-size: clamp(8px, 1vw, 10px);
+  font-size: clamp(8px, 1.5vw, 10px);
   color: #7f8288;
   letter-spacing: -1px;
 }
 
 .html-lesson-wrapper .bubble2-text {
-  margin-left: clamp(312px, 22vw, 326px);
+  margin-left: clamp(204px, 55vw, 337px);
   position: absolute;
-  margin-top: clamp(49px, 4vw, 69px);
+  margin-top: clamp(54px, 9vw, 75px);
 }
 
 .html-lesson-wrapper .bubble2-text .eng {
   font-weight: bold;
-  font-size: clamp(9px, 1vw, 14px);
+  font-size: clamp(10px, 2.1vw, 14px);
 }
 
 .html-lesson-wrapper .bubble2-text .sub-text {
   font-weight: bold;
-  font-size: clamp(9px, 2.2vw, 14px);
+  font-size: clamp(10px, 2.1vw, 14px);
 }
 
 .html-lesson-wrapper .bubble2-text .jap {
-  font-size: clamp(8px, 2.1vw, 11px);
+  font-size: clamp(8px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
 
 .html-lesson-wrapper .bubble2-text .jap-under {
-  font-size: clamp(6px, 2.2vw, 11px);
+  font-size: clamp(8px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
@@ -311,8 +311,8 @@ hr {
 }
 
 .html-lesson-wrapper .PT1 {
-  height: clamp(247px, 24vw, 369px);
-  width: clamp(358px, 43vw, 532px);
+  height: clamp(253px, 65vw, 379px);
+  width: clamp(335px, 90vw, 549px);
 }
 
 .html-lesson-wrapper .converstation-text {
@@ -323,19 +323,19 @@ hr {
 }
 
 .html-lesson-wrapper .converstation-text .row .akiko {
-  margin-left: 21px;
+  margin-left: clamp(18px, 2vw, 18px);
   position: absolute;
 }
 
 .html-lesson-wrapper .converstation-text .row .nick {
-  margin-left: 31px;
+  margin-left: clamp(23px, 2vw, 31px);
   position: absolute;
 }
 
 .html-lesson-wrapper .converstation-text .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: 83px;
+  margin-left: clamp(58px, 9vw, 83px);
 }
 
 .html-lesson-wrapper .converstation-text .row p:first-child {
@@ -354,12 +354,12 @@ hr {
 }
 
 .act-1 .act-1-content .PT1 {
-  height: clamp(247px, 24vw, 369px);
-  width: clamp(358px, 43vw, 532px);
+  height: clamp(247px, 50vw, 369px);
+  width: clamp(377px, 85vw, 532px);
 }
 
 .act-1 .act-1-content .conversation-img {
-  width: clamp(274px, 44vw, 416px);
+  width: clamp(287px, 74vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
@@ -367,10 +367,10 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img .bubble {
-  margin-left: clamp(43px, 10vw, 123px);
+  margin-left: clamp(74px, 14vw, 105px);
   position: absolute;
-  margin-top: clamp(11px, 6vw, 77px);
-  font-size: clamp(5px, 1vw, 14px);
+  margin-top: clamp(48px, 13vw, 94px);
+  font-size: clamp(9px, 2vw, 14px);
 }
 
 .act-1 .act-1-content .conversation-img .bubble .row {
@@ -414,19 +414,19 @@ hr {
 }
 
 .act-1 .act-1-content .converstation-text .row .akiko {
-  margin-left: 42px;
+  margin-left: clamp(40.5px, 2vw, 42px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text .row .nick {
-  margin-left: 40px;
+  margin-left: clamp(37px, 2vw, 40px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(104px, 7vw, 121px);
+  margin-left: clamp(77px, 12vw, 104px);
 }
 
 .act-1 .act-1-content .converstation-text .row p:first-child {
@@ -441,7 +441,7 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img2 {
-  width: clamp(258px, 44vw, 416px);
+  width: clamp(258px, 68vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
@@ -449,15 +449,15 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img2 .bubble {
-  margin-left: clamp(18px, 19vw, 115px);
+  margin-left: clamp(59px, 13vw, 130px);
   position: absolute;
-  margin-top: clamp(15px, 13vw, 65px);
-  font-size: clamp(5px, 2vw, 14px);
+  margin-top: clamp(42px, 10vw, 65px);
+  font-size: clamp(9px, 2vw, 14px);
 }
 
 .act-1 .act-1-content .conversation-img2 .bubble .row p {
   display: inline-block;
-  margin-top: clamp(-9px, -2.2vw, 1px);
+  margin-top: clamp(-10px, -3.2vw, 0px);
   margin-left: clamp(10px, 8vw, 23px);
 }
 
@@ -476,7 +476,7 @@ hr {
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
-  font-size: clamp(10px, 2vw, 18px);
+  font-size: clamp(9px, 2vw, 18px);
 }
 
 .act-1 .act-1-content .converstation-text2 .row .akiko {
@@ -485,14 +485,14 @@ hr {
 }
 
 .act-1 .act-1-content .converstation-text2 .row .nick {
-  margin-left: 40px;
+  margin-left: clamp(40px, 2vw, 40px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text2 .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(100px, 7vw, 102px);
+  margin-left: clamp(78px, 15vw, 102px);
 }
 
 .act-1 .act-1-content .converstation-text2 .row p:first-child {
@@ -515,15 +515,15 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img1 .bubble {
-  margin-left: clamp(2px, 13vw, 79px);
+  margin-left: clamp(48px, 10vw, 115px);
   position: absolute;
-  margin-top: clamp(15px, 13vw, 66px);
-  font-size: clamp(5px, 2vw, 14px);
+  margin-top: clamp(47px, 9vw, 65px);
+  font-size: clamp(9px, 2vw, 14px);
 }
 
 .act-1 .act-1-content .conversation-img1 .bubble .row p {
   display: inline-block;
-  margin-top: clamp(-9px, -2.2vw, 1px);
+  margin-top: clamp(-9px, -2.2vw, 0px);
   margin-left: clamp(10px, 8vw, 23px);
 }
 
@@ -542,7 +542,7 @@ hr {
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
-  font-size: clamp(10px, 2vw, 18px);
+  font-size: clamp(9px, 2vw, 18px);
 }
 
 .act-1 .act-1-content .converstation-text3 .row .akiko3 {
@@ -551,14 +551,14 @@ hr {
 }
 
 .act-1 .act-1-content .converstation-text3 .row .nick3 {
-  margin-left: 41px;
+  margin-left: clamp(37px, 2vw, 41px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text3 .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(93px, 2vw, 102px);
+  margin-left: clamp(73px, 12vw, 102px);
 }
 
 .act-1 .act-1-content .converstation-text3 .row p:first-child {
@@ -573,7 +573,7 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img3 {
-  width: clamp(303px, 44vw, 416px);
+  width: clamp(303px, 52vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
@@ -581,10 +581,10 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img3 .bubble {
-  margin-left: clamp(79px, 10vw, 144px);
+  margin-left: clamp(89px, 17vw, 144px);
   position: absolute;
-  margin-top: clamp(15px, 13vw, 84px);
-  font-size: clamp(5px, 2vw, 14px);
+  margin-top: clamp(43px, 9vw, 84px);
+  font-size: clamp(9px, 2vw, 14px);
 }
 
 .act-1 .act-1-content .conversation-img3 .bubble .row p {
@@ -612,19 +612,19 @@ hr {
 }
 
 .act-1 .act-1-content .converstation-text4 .row .akiko4 {
-  margin-left: 33px;
+  margin-left: clamp(40px, 2vw, 33px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text4 .row .steve4 {
-  margin-left: 33px;
+  margin-left: clamp(40px, 2vw, 33px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text4 .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(93px, 2vw, 102px);
+  margin-left: clamp(75px, 12vw, 105px);
 }
 
 .act-1 .act-1-content .converstation-text4 .row p:first-child {
@@ -639,7 +639,7 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img4 {
-  width: clamp(312px, 44vw, 473px);
+  width: clamp(312px, 57vw, 473px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
@@ -647,10 +647,10 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img4 .bubble {
-  margin-left: clamp(79px, 14vw, 141px);
+  margin-left: clamp(95px, 16vw, 144px);
   position: absolute;
-  margin-top: clamp(13px, 12vw, 61px);
-  font-size: clamp(5px, 2vw, 14px);
+  margin-top: clamp(36px, 8vw, 84px);
+  font-size: clamp(9px, 2vw, 14px);
 }
 
 .act-1 .act-1-content .conversation-img4 .bubble .row {
@@ -660,7 +660,7 @@ hr {
 .act-1 .act-1-content .conversation-img4 .bubble .row p {
   display: inline-block;
   margin-top: clamp(-9px, -0.2vw, 3px);
-  margin-left: clamp(10px, 8vw, 23px);
+  margin-left: clamp(10px, 2vw, 23px);
 }
 
 .act-1 .act-1-content .conversation-img4 .bubble .row p:first-child {
@@ -682,19 +682,19 @@ hr {
 }
 
 .act-1 .act-1-content .converstation-text5 .row .Akiko5 {
-  margin-left: 33px;
+  margin-left: clamp(40px, 2vw, 33px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text5 .row .Helen5 {
-  margin-left: 28px;
+  margin-left: clamp(36px, 13vw, 34px);
   position: absolute;
 }
 
 .act-1 .act-1-content .converstation-text5 .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(93px, 2vw, 102px);
+  margin-left: clamp(74px, 12vw, 105px);
 }
 
 .act-1 .act-1-content .converstation-text5 .row p:first-child {

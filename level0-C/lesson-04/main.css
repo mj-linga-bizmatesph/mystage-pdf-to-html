@@ -143,7 +143,7 @@ hr {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -170,7 +170,7 @@ hr {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
 }
 
 .html-lesson-wrapper .see-content {
@@ -264,7 +264,7 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(7px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-2 {
@@ -283,7 +283,7 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-3 {
@@ -302,7 +302,7 @@ hr {
   font-family: "Noto Sans";
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
 }
 
 .html-lesson-wrapper .section-2-content {
@@ -392,7 +392,7 @@ hr {
   padding-top: clamp(7px, 2vw, 10px);
   padding-left: clamp(11px, 3vw, 17px);
   padding-right: clamp(17px, 5vw, 27px);
-  text-align: center;
+  text-align: right;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -435,7 +435,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice {
@@ -563,7 +563,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1.7vw;
+  margin-bottom: 1.5vw;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row div {
@@ -964,7 +964,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-3-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-3-content .section2-box-content .phrase-alts .choice {
@@ -1042,7 +1042,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-3 .try-3-content {
-  margin-top: clamp(75px, 24vw, 120px);
+  margin-top: clamp(65px, 20vw, 100px);
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content {
@@ -1255,8 +1255,8 @@ hr {
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo {
   margin-top: clamp(30px, 8vw, 50px);
-  width: clamp(310px, 86vw, 540px);
-  min-height: clamp(230px, 60vw, 380px);
+  width: clamp(310px, 89vw, 540px);
+  min-height: clamp(210px, 60vw, 380px);
   position: relative;
   background-position: top, bottom;
   background-size: contain;
@@ -1265,7 +1265,6 @@ hr {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content {
-  margin-top: clamp(30px, 8vw, 40px);
   font-family: "Noto Sans";
 }
 

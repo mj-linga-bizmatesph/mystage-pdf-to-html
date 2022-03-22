@@ -5,7 +5,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: -1.5px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -388,7 +388,7 @@ hr {
         padding-top: clamp(7px, 2vw, 10px);
         padding-left: clamp(11px, 3vw, 17px);
         padding-right: clamp(17px, 5vw, 27px);
-        text-align: center;
+        text-align: right;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -415,7 +415,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -525,7 +525,7 @@ hr {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
             align-items: center;
-            margin-bottom: 1.7vw;
+            margin-bottom: 1.5vw;
             div {
               width: clamp(18px, 4vw, 24px);
               height: clamp(18px, 4vw, 24px);
@@ -853,7 +853,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -929,7 +929,7 @@ hr {
 
   .try-3 {
     .try-3-content {
-      margin-top: clamp(75px, 24vw, 120px);
+      margin-top: clamp(65px, 20vw, 100px);
       .wrap-flex-content {
         margin-bottom: clamp(45px, 12vw, 65px);
         margin-left: 8px;
@@ -1112,8 +1112,8 @@ hr {
       margin-bottom: clamp(50px, 12vw, 100px);
       .act-1-convo {
         margin-top: clamp(30px, 8vw, 50px);
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 60vw, 380px);
+        width: clamp(310px, 89vw, 540px);
+        min-height: clamp(210px, 60vw, 380px);
         position: relative;
         background-position: top, bottom;
         background-size: contain;
@@ -1121,7 +1121,6 @@ hr {
         background-image: url(#{$s3}/0-C-4-act1.svg);
       }
       .convo-text-content {
-        margin-top: clamp(30px, 8vw, 40px);
         font-family: $noto-sans;
         .akiko-lines {
           b {

@@ -363,7 +363,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);

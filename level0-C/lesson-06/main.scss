@@ -331,9 +331,9 @@ hr {
     .wrapper-with-helen {
       display: grid;
       grid-template-columns: 2fr min-content;
-      height: clamp(70px, 23vw, 125px);
+      height: clamp(70px, 22vw, 115px);
       .helen-image {
-        width: 90px;
+        width: 100px;
         height: clamp(70px, 23.1vw, 150px);
         position: relative;
         background-position: top, bottom;
@@ -343,7 +343,7 @@ hr {
       }
       .wrap-all-boxes {
         position: absolute;
-        right: 25%;
+        right: 26%;
         margin-top: clamp(12px, 3vw, 19px);
         .wrap-for-flex {
           display: flex;
@@ -380,7 +380,7 @@ hr {
       display: grid;
       grid-template-columns: clamp(90px, 20vw, 130px) 2fr;
       .akiko-image {
-        width: 90px;
+        width: 100px;
         height: clamp(70px, 23.1vw, 150px);
         position: relative;
         background-position: top, bottom;
@@ -487,7 +487,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -1047,7 +1047,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -1365,6 +1365,6 @@ hr {
   }
 
   .see-3-content .wrapper-with-akiko .wrap-all-boxes {
-    margin-left: -20px !important;
+    margin-left: -10px !important;
   }
 }

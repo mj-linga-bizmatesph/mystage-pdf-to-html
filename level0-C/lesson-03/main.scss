@@ -257,7 +257,7 @@ hr {
   }
 
   .section-1-convo {
-    margin-top: clamp(30px, 8vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     width: clamp(310px, 90vw, 540px);
     min-height: clamp(230px, 66vw, 390px);
     position: relative;
@@ -300,11 +300,13 @@ hr {
   }
 
   .section-2-content {
-    margin-top: clamp(35px, 15vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     .wrapper-with-akiko {
+      height: clamp(80px, 24vw, 140px);
       display: grid;
-      grid-template-columns: clamp(90px, 20vw, 130px) 1fr;
+      grid-template-columns: min-content 1fr;
       .akiko-image {
+        margin-right: 4px;
         width: clamp(95px, 18vw, 95px);
         height: clamp(80px, 23.1vw, 150px);
         position: relative;
@@ -348,9 +350,7 @@ hr {
       }
     }
     .section2-box-content {
-      margin-top: clamp(10px, 5vw, 20px);
       .legend {
-        margin-top: clamp(25px, 5vw, 38px);
         display: flex;
       }
       .b1-legend {
@@ -392,13 +392,12 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
           p {
             margin: 0;
-            white-space: nowrap;
             font-family: $noto-sans;
           }
         }
@@ -587,7 +586,7 @@ hr {
               font-family: $noto-sans;
               font-size: clamp(7.7px, 1.5vw, 11px);
               color: $subtext-color;
-              letter-spacing: -2px;
+              letter-spacing: -0.6px;
             }
           }
         }
@@ -639,7 +638,7 @@ hr {
               font-family: $noto-sans;
               font-size: clamp(7.7px, 1.5vw, 11px);
               color: $subtext-color;
-              letter-spacing: -2px;
+              letter-spacing: -0.9px;
             }
           }
         }
@@ -743,7 +742,7 @@ hr {
               font-family: $noto-sans;
               font-size: clamp(7.7px, 1.5vw, 11px);
               color: $subtext-color;
-              letter-spacing: -2px;
+              letter-spacing: -0.5px;
             }
           }
         }
@@ -795,7 +794,7 @@ hr {
               font-family: $noto-sans;
               font-size: clamp(7.7px, 1.5vw, 11px);
               color: $subtext-color;
-              letter-spacing: -2px;
+              letter-spacing: -0.5px;
             }
           }
         }
@@ -847,7 +846,7 @@ hr {
               font-family: $noto-sans;
               font-size: clamp(7.7px, 1.5vw, 11px);
               color: $subtext-color;
-              letter-spacing: -1px;
+              letter-spacing: -0.5px;
             }
           }
         }
@@ -899,7 +898,7 @@ hr {
               font-family: $noto-sans;
               font-size: clamp(7.7px, 1.5vw, 11px);
               color: $subtext-color;
-              letter-spacing: -1px;
+              letter-spacing: -0.5px;
             }
           }
         }
@@ -1292,9 +1291,9 @@ hr {
     margin-left: -25px !important;
   }
   .section-2-content .wrap-for-flex {
-    margin-left: -20px;
+    margin-left: -5px;
   }
   .section-2-content .wrap-all-boxes .jap {
-    margin-left: -20px;
+    margin-left: -5px;
   }
 }

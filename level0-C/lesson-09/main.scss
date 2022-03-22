@@ -230,7 +230,7 @@ hr {
   }
 
   .section-1-convo {
-    margin-top: clamp(30px, 8vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     width: clamp(310px, 90vw, 540px);
     min-height: clamp(230px, 66vw, 391px);
     position: relative;
@@ -272,7 +272,7 @@ hr {
     }
   }
   .section-2-content {
-    margin-top: clamp(35px, 15vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     .wrapper-with-akiko {
       display: grid;
       grid-template-columns: clamp(90px, 20vw, 130px) 2fr;
@@ -386,7 +386,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -569,7 +569,7 @@ hr {
           background-position: top, bottom;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-C-9-try2-image1.svg);
+          background-image: url(#{$s3}/0-C-9-try2-image1-new.svg);
         }
         .image-content2 {
           left: 5%;
@@ -580,7 +580,7 @@ hr {
           background-position: top, bottom;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-C-9-try2-image2.svg);
+          background-image: url(#{$s3}/0-C-9-try2-image2-new.svg);
         }
         .image-content3 {
           left: 5%;
@@ -591,7 +591,7 @@ hr {
           background-position: top, bottom;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-C-9-try2-image3.svg);
+          background-image: url(#{$s3}/0-C-9-try2-image3-new.svg);
         }
         .image-content4 {
           left: 5%;
@@ -602,7 +602,7 @@ hr {
           background-position: top, bottom;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-C-9-try2-image4.svg);
+          background-image: url(#{$s3}/0-C-9-try2-image4-new.svg);
         }
         .image-content5 {
           left: 5%;
@@ -613,7 +613,7 @@ hr {
           background-position: top, bottom;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-C-9-try2-image5.svg);
+          background-image: url(#{$s3}/0-C-9-try2-image5-new.svg);
         }
       }
     }

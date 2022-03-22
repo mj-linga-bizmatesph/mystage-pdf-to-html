@@ -238,7 +238,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-1-convo {
-  margin-top: clamp(30px, 8vw, 50px);
+  margin-top: clamp(20px, 6vw, 40px);
   width: clamp(310px, 90vw, 540px);
   min-height: clamp(230px, 65vw, 387px);
   position: relative;
@@ -288,8 +288,8 @@ hr {
 
 .html-lesson-wrapper .section-1-convo .bubble-3 {
   position: absolute;
-  top: clamp(80%, 50vw, 81.5%);
-  left: 13%;
+  top: clamp(79%, 80vw, 81.5%);
+  left: 12%;
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-3 .eng {
@@ -325,7 +325,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content {
-  margin-top: clamp(35px, 15vw, 50px);
+  margin-top: clamp(20px, 6vw, 40px);
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko {
@@ -334,6 +334,7 @@ hr {
   -ms-grid-columns: min-content 2fr;
       grid-template-columns: -webkit-min-content 2fr;
       grid-template-columns: min-content 2fr;
+  height: clamp(50px, 20vw, 90px);
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .akiko-image {
@@ -387,12 +388,7 @@ hr {
   letter-spacing: -1.8px;
 }
 
-.html-lesson-wrapper .section-2-content .section2-box-content {
-  margin-top: clamp(10px, 5vw, 20px);
-}
-
 .html-lesson-wrapper .section-2-content .section2-box-content .legend {
-  margin-top: clamp(25px, 5vw, 38px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +450,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice {
@@ -623,7 +619,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content {
-  margin-top: 70px;
+  margin-top: clamp(30px, 9vw, 60px);
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content {
@@ -945,7 +941,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-3-content {
-  margin-top: clamp(35px, 15vw, 50px);
+  margin-top: clamp(20px, 6vw, 40px);
 }
 
 .html-lesson-wrapper .section-3-content .wrapper-with-akiko {
@@ -954,6 +950,7 @@ hr {
   -ms-grid-columns: 2fr min-content;
       grid-template-columns: 2fr -webkit-min-content;
       grid-template-columns: 2fr min-content;
+  height: clamp(75px, 22vw, 140px);
 }
 
 .html-lesson-wrapper .section-3-content .wrapper-with-akiko .akiko-image {
@@ -1074,7 +1071,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-3-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-3-content .section2-box-content .phrase-alts .choice {
@@ -1152,7 +1149,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-4 .try4-content {
-  margin-top: 70px;
+  margin-top: clamp(15px, 6vw, 30px);
 }
 
 .html-lesson-wrapper .try-4 .try4-content .make-columns {

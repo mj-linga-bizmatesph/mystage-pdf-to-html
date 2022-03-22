@@ -329,11 +329,11 @@ hr {
   -ms-grid-columns: 2fr min-content;
       grid-template-columns: 2fr -webkit-min-content;
       grid-template-columns: 2fr min-content;
-  height: clamp(70px, 23vw, 125px);
+  height: clamp(70px, 22vw, 115px);
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-helen .helen-image {
-  width: 90px;
+  width: 100px;
   height: clamp(70px, 23.1vw, 150px);
   position: relative;
   background-position: top, bottom;
@@ -344,7 +344,7 @@ hr {
 
 .html-lesson-wrapper .section-2-content .wrapper-with-helen .wrap-all-boxes {
   position: absolute;
-  right: 25%;
+  right: 26%;
   margin-top: clamp(12px, 3vw, 19px);
 }
 
@@ -391,7 +391,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .akiko-image {
-  width: 90px;
+  width: 100px;
   height: clamp(70px, 23.1vw, 150px);
   position: relative;
   background-position: top, bottom;
@@ -527,7 +527,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice {
@@ -1222,7 +1222,7 @@ hr {
 }
 
 .html-lesson-wrapper .see-3-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .see-3-content .section2-box-content .phrase-alts .choice {
@@ -1570,7 +1570,7 @@ hr {
     margin-right: -20px !important;
   }
   .see-3-content .wrapper-with-akiko .wrap-all-boxes {
-    margin-left: -20px !important;
+    margin-left: -10px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

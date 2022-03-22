@@ -227,7 +227,7 @@ hr {
   }
 
   .section-1-convo {
-    margin-top: clamp(30px, 8vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     width: clamp(310px, 90vw, 544px);
     min-height: clamp(230px, 66vw, 395px);
     position: relative;
@@ -286,10 +286,11 @@ hr {
   }
 
   .section-2-content {
-    margin-top: clamp(35px, 15vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     .wrapper-with-akiko {
       display: grid;
       grid-template-columns: clamp(90px, 20vw, 130px) 2fr;
+      height: clamp(70px, 22vw, 120px);
       .akiko-image {
         width: 100px;
         height: clamp(70px, 23.1vw, 170px);
@@ -378,7 +379,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);

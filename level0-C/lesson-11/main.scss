@@ -242,7 +242,7 @@ hr {
     }
   }
   .section-1-convo {
-    margin-top: clamp(30px, 8vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     width: clamp(310px, 90vw, 540px);
     min-height: clamp(230px, 65vw, 387px);
     position: relative;
@@ -284,8 +284,8 @@ hr {
     }
     .bubble-3 {
       position: absolute;
-      top: clamp(80%, 50vw, 81.5%);
-      left: 13%;
+      top: clamp(79%, 80vw, 81.5%);
+      left: 12%;
       .eng {
         font-family: $text-font;
         font-weight: bold;
@@ -317,10 +317,11 @@ hr {
   }
 
   .section-2-content {
-    margin-top: clamp(35px, 15vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     .wrapper-with-akiko {
       display: grid;
       grid-template-columns: min-content 2fr;
+      height: clamp(50px, 20vw, 90px);
       .akiko-image {
         width: 90px;
         height: clamp(70px, 23.1vw, 150px);
@@ -366,9 +367,9 @@ hr {
       }
     }
     .section2-box-content {
-      margin-top: clamp(10px, 5vw, 20px);
+      // margin-top: clamp(10px, 5vw, 20px);
       .legend {
-        margin-top: clamp(25px, 5vw, 38px);
+        // margin-top: clamp(25px, 5vw, 38px);
         display: flex;
       }
       .b1-legend {
@@ -409,7 +410,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -570,7 +571,7 @@ hr {
 
   .try-2 {
     .try2-content {
-      margin-top: 70px;
+      margin-top: clamp(30px, 9vw, 60px);
       .wrap-flex-content {
         margin-bottom: clamp(200px, 49vw, 280px);
         margin-left: 8px;
@@ -841,10 +842,11 @@ hr {
   }
 
   .section-3-content {
-    margin-top: clamp(35px, 15vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     .wrapper-with-akiko {
       display: grid;
       grid-template-columns: 2fr min-content;
+      height: clamp(75px, 22vw, 140px);
       .akiko-image {
         width: clamp(95px, 18vw, 120px);
         height: clamp(80px, 23.1vw, 150px);
@@ -933,7 +935,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -1008,7 +1010,7 @@ hr {
 
   .try-4 {
     .try4-content {
-      margin-top: 70px;
+      margin-top: clamp(15px, 6vw, 30px);
       .make-columns {
         height: clamp(125px, 34vw, 210px);
         display: grid;

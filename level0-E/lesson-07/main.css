@@ -233,7 +233,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-1-convo {
-  margin-top: clamp(30px, 8vw, 50px);
+  margin-top: clamp(20px, 6vw, 40px);
   width: clamp(310px, 90vw, 540px);
   min-height: clamp(230px, 60vw, 380px);
   position: relative;
@@ -418,7 +418,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice {
@@ -580,7 +580,7 @@ hr {
 }
 
 .html-lesson-wrapper .try-2 .try2-content {
-  margin-top: 70px;
+  margin-top: clamp(20px, 6vw, 40px);
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content {
@@ -734,7 +734,7 @@ hr {
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content .trainer {
   margin-left: clamp(5px, 2vw, 10px);
-  font-size: clamp(11px, 2.8vw, 18px);
+  font-size: clamp(10px, 2.8vw, 18px);
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content .trainer .line-under {
@@ -745,7 +745,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content .underline {
   text-decoration: underline;
   color: #1287cd;
-  font-size: clamp(12px, 3vw, 18px);
+  font-size: clamp(10px, 2.8vw, 18px);
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content .add-margin {
@@ -757,8 +757,9 @@ hr {
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content .you-part .you {
-  margin-left: clamp(36px, 9.6vw, 56px);
+  margin-left: clamp(30px, 9.6vw, 56px);
   font-size: clamp(11px, 2.8vw, 18px);
+  white-space: nowrap;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content .you-part .line-under {
@@ -877,7 +878,7 @@ hr {
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-1 .eng {
   font-weight: bold;
-  font-size: clamp(8px, 2.2vw, 14px);
+  font-size: clamp(8.3px, 2.2vw, 14px);
   font-family: "Trebuchet MS";
 }
 
@@ -893,7 +894,6 @@ hr {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content {
-  margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }

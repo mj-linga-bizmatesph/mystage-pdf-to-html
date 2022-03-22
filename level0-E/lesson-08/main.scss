@@ -234,7 +234,7 @@ hr {
   }
 
   .section-1-convo {
-    margin-top: clamp(30px, 8vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     width: clamp(325px, 89.5vw, 544px);
     min-height: clamp(230px, 60vw, 362px);
     position: relative;
@@ -244,7 +244,7 @@ hr {
     background-image: url(#{$s3}/0-E-8-section1.svg);
     .bubble-1 {
       position: absolute;
-      top: 27%;
+      top: clamp(27%, 20vw, 29%);
       left: 17%;
       .eng {
         font-weight: bold;
@@ -370,7 +370,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);

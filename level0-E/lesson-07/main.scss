@@ -231,7 +231,7 @@ hr {
   }
 
   .section-1-convo {
-    margin-top: clamp(30px, 8vw, 50px);
+    margin-top: clamp(20px, 6vw, 40px);
     width: clamp(310px, 90vw, 540px);
     min-height: clamp(230px, 60vw, 380px);
     position: relative;
@@ -373,7 +373,7 @@ hr {
           align-items: baseline;
         }
         .alt:not(:last-child) {
-          margin-bottom: clamp(10px, 2vw, 20px);
+          margin-bottom: 6px;
         }
         .choice {
           margin-left: clamp(5px, 1vw, 9px);
@@ -526,7 +526,7 @@ hr {
 
   .try-2 {
     .try2-content {
-      margin-top: 70px;
+      margin-top: clamp(20px, 6vw, 40px);
       .wrap-flex-content {
         margin-bottom: clamp(210px, 54vw, 350px);
         margin-left: 8px;
@@ -662,7 +662,7 @@ hr {
         }
         .trainer {
           margin-left: clamp(5px, 2vw, 10px);
-          font-size: clamp(11px, 2.8vw, 18px);
+          font-size: clamp(10px, 2.8vw, 18px);
           .line-under {
             margin-left: clamp(65px, 17vw, 104px);
             margin-top: 3px;
@@ -671,7 +671,7 @@ hr {
         .underline {
           text-decoration: underline;
           color: $primary-blue;
-          font-size: clamp(12px, 3vw, 18px);
+          font-size: clamp(10px, 2.8vw, 18px);
         }
         .add-margin {
           margin-top: 4%;
@@ -679,8 +679,9 @@ hr {
         .you-part {
           margin-top: 4%;
           .you {
-            margin-left: clamp(36px, 9.6vw, 56px);
+            margin-left: clamp(30px, 9.6vw, 56px);
             font-size: clamp(11px, 2.8vw, 18px);
+            white-space: nowrap;
           }
           .line-under {
             margin-left: clamp(65px, 17vw, 104px);
@@ -786,7 +787,7 @@ hr {
           left: 31%;
           .eng {
             font-weight: bold;
-            font-size: clamp(8px, 2.2vw, 14px);
+            font-size: clamp(8.3px, 2.2vw, 14px);
             font-family: $text-font;
           }
           .jap {
@@ -801,7 +802,6 @@ hr {
         }
       }
       .convo-text-content {
-        margin-top: clamp(30px, 8vw, 40px);
         font-size: clamp(11px, 2.5vw, 18px);
         font-family: $noto-sans;
         .add-margin {

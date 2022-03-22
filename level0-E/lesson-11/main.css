@@ -238,7 +238,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-1-convo {
-  margin-top: clamp(30px, 8vw, 50px);
+  margin-top: clamp(20px, 6vw, 40px);
   width: clamp(310x, 90vw, 544px);
   min-height: clamp(230px, 60vw, 361px);
   position: relative;
@@ -435,7 +435,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt:not(:last-child) {
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-bottom: 6px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice {

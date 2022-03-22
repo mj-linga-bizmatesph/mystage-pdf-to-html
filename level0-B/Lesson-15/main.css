@@ -113,9 +113,11 @@ hr {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  top: 0vh;
-  right: 30px;
-  font-size: clamp(0.8rem, 4vw, 1.5rem);
+  right: 8%;
+  width: 1.9%;
+  text-align: center;
+  margin-top: 0.5%;
+  font-size: clamp(18px, 4vw, 28px);
   color: #ffffff;
 }
 
@@ -150,23 +152,22 @@ hr {
 }
 
 .html-lesson-wrapper .instructions {
+  font-size: clamp(9px, 2.9vw, 18px);
   font-family: "Noto Sans";
   position: absolute;
-  padding: clamp(1px, 0.01vw, 9px) 16px;
-  left: 21%;
+  padding: clamp(0px, 0.01vw, 3px) 0px;
+  left: 27%;
 }
 
 .html-lesson-wrapper .instructions .title {
   font-size: clamp(12px, 3.5vw, 18px);
   color: #141821;
-  margin-left: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
   letter-spacing: -0.9px;
-  margin-left: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .see-content {
@@ -243,7 +244,7 @@ hr {
   position: absolute;
   display: block;
   margin-top: clamp(53px, 5vw, 71px);
-  margin-left: clamp(48px, 4vw, 91px);
+  margin-left: clamp(92px, 4vw, 91px);
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .eng {
@@ -257,7 +258,7 @@ hr {
 }
 
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .jap {
-  font-size: clamp(8px, 1vw, 10px);
+  font-size: clamp(8px, 1vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
@@ -269,14 +270,14 @@ hr {
 }
 
 .html-lesson-wrapper .bubble2-text {
-  margin-left: clamp(216px, 22vw, 326px);
+  margin-left: clamp(312px, 22vw, 326px);
   position: absolute;
-  margin-top: clamp(49px, 9vw, 69px);
+  margin-top: clamp(49px, 4vw, 69px);
 }
 
 .html-lesson-wrapper .bubble2-text .eng {
   font-weight: bold;
-  font-size: clamp(9px, 2.2vw, 14px);
+  font-size: clamp(9px, 1vw, 14px);
 }
 
 .html-lesson-wrapper .bubble2-text .sub-text {
@@ -285,7 +286,7 @@ hr {
 }
 
 .html-lesson-wrapper .bubble2-text .jap {
-  font-size: clamp(6px, 2.1vw, 9px);
+  font-size: clamp(8px, 2.1vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
@@ -366,10 +367,10 @@ hr {
 }
 
 .act-1 .act-1-content .conversation-img .bubble {
-  margin-left: clamp(43px, 20vw, 123px);
+  margin-left: clamp(43px, 10vw, 123px);
   position: absolute;
-  margin-top: clamp(33px, 13vw, 77px);
-  font-size: clamp(5px, 2vw, 14px);
+  margin-top: clamp(11px, 6vw, 77px);
+  font-size: clamp(5px, 1vw, 14px);
 }
 
 .act-1 .act-1-content .conversation-img .bubble .row {
@@ -378,7 +379,7 @@ hr {
 
 .act-1 .act-1-content .conversation-img .bubble .row p {
   display: inline-block;
-  margin-top: clamp(-19px, -3.2vw, 1px);
+  margin-top: clamp(-24px, -3vw, 0px);
   margin-left: clamp(10px, 8vw, 23px);
 }
 
@@ -425,7 +426,7 @@ hr {
 .act-1 .act-1-content .converstation-text .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(93px, 7vw, 121px);
+  margin-left: clamp(104px, 7vw, 121px);
 }
 
 .act-1 .act-1-content .converstation-text .row p:first-child {
@@ -491,7 +492,7 @@ hr {
 .act-1 .act-1-content .converstation-text2 .row p {
   display: inline-block;
   margin-top: 13px;
-  margin-left: clamp(93px, 7vw, 102px);
+  margin-left: clamp(100px, 7vw, 102px);
 }
 
 .act-1 .act-1-content .converstation-text2 .row p:first-child {

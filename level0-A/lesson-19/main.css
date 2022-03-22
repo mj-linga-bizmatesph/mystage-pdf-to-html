@@ -16,7 +16,7 @@ td {
 }
 
 .w-11 {
-  width: clamp(4.5rem, 14vw, 15rem);
+  width: clamp(6.5rem, 20vw, 11rem);
 }
 
 .flex {
@@ -748,7 +748,7 @@ td {
 .see-2 .conversation .conv-2 .phrases .phrase .eng,
 .see-3 .conversation .conv-1 .phrases .phrase .eng,
 .see-3 .conversation .conv-2 .phrases .phrase .eng {
-  font-size: clamp(8px, 2.2vw, 15px);
+  font-size: clamp(8px, 2vw, 15px);
   margin-right: 8px;
 }
 

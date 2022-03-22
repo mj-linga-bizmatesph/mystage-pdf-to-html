@@ -31,7 +31,7 @@ td {
 }
 
 .w-11 {
-  width: clamp(4.5rem, 14vw, 15rem);
+  width: clamp(6.5rem, 20vw, 11rem);
 }
 
 .flex {
@@ -713,7 +713,7 @@ td {
           justify-content: center;
         }
         .phrase .eng {
-          font-size: clamp(8px, 2.2vw, 15px);
+          font-size: clamp(8px, 2vw, 15px);
           margin-right: 8px;
         }
         .phrase:not(:last-child) {

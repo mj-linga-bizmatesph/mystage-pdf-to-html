@@ -909,9 +909,6 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: clamp(15px, 2.4vw, 25px);
 }
 
@@ -1372,7 +1369,7 @@ td {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .mt {
-  margin-top: 15px;
+  margin-top: clamp(8px, 1vw, 15px);
 }
 
 .html-lesson-wrapper .act-content.act-1, .html-lesson-wrapper .act-content.act-2 {

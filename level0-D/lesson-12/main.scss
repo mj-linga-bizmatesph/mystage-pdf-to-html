@@ -876,7 +876,6 @@ td {
 
         .row {
           display: flex;
-          align-items: center;
           margin-bottom: clamp(15px, 2.4vw, 25px);
 
           .number-bg,
@@ -1314,7 +1313,7 @@ td {
       }
 
       .mt {
-        margin-top: 15px;
+        margin-top: clamp(8px, 1vw ,15px);
       }
     }
 

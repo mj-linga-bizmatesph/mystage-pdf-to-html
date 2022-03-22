@@ -906,6 +906,7 @@ td {
         }
 
         .speech {
+          width: 85%;
           padding-left: clamp(1px, 1vw, 5px);
           font-size: $fs-18;
         }

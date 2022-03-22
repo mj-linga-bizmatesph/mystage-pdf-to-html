@@ -224,7 +224,7 @@ td {
 }
 
 .html-lesson-wrapper .office-section.office-see-1 .mt {
-  margin-top: 12px;
+  margin-top: clamp(6px, 1vw, 12px);
 }
 
 .html-lesson-wrapper .office-section.office-see-1 .eng {
@@ -925,7 +925,7 @@ td {
 }
 
 .html-lesson-wrapper .try-content .try-1-content .mt {
-  margin-top: 5px;
+  margin-top: clamp(2.5px, 1vw, 5px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .row {

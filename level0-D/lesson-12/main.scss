@@ -944,7 +944,7 @@ td {
       }
 
       .mt {
-        margin-top: 20px;
+        margin-top: clamp(10px, 1vw, 20px);
       }
 
       .jpn {

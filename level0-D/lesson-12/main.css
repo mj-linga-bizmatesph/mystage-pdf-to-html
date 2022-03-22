@@ -977,7 +977,7 @@ td {
 }
 
 .html-lesson-wrapper .try-content .try-2-content .mt {
-  margin-top: 20px;
+  margin-top: clamp(10px, 1vw, 20px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content .jpn {

@@ -168,11 +168,11 @@ td {
   }
   .lesson-number {
     position: absolute;
-    left: 91.3%;
+    left: 91.5%;
     width: 1.9%;
     text-align: center;
     margin-top: 0.5%;
-    font-size: clamp(20px, 2vw, 31px);
+    font-size: clamp(18px, 4vw, 28px);
     color: #ffffff;
   }
 
@@ -253,17 +253,17 @@ td {
 
       .dan-convo-1 {
         position: absolute;
-        margin: 4% 0 0 53%;
+        margin: 4% 0 0 45%;
       }
 
       .akiko-convo-1 {
         position: absolute;
-        margin: 13% 0 0 4%;
+        margin: 14.5% 0 0 5%;
       }
 
       .akiko-convo-2 {
         position: absolute;
-        margin: 25% 0 0 28%;
+        margin: 25.5% 0 0 25%;
       }
 
       .eng {
@@ -302,12 +302,12 @@ td {
     }
 
     .see-2-section {
-      margin-top: clamp(20px, 6.5vw, 4rem);
+      margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 6rem);
       .akiko-section {
         display: flex;
         .akiko-icon {
           text-align: center;
-          width: 18%;
+          width: 30%;
 
           div {
             font-family: $noto-sans;
@@ -317,8 +317,7 @@ td {
           }
         }
         .akiko-conversation {
-          width: 82%;
-          padding-left: 3vw;
+          padding-left: clamp(8.5px, 2.4vw, 24px);
 
           .row-1 {
             width: 100%;
@@ -340,20 +339,28 @@ td {
           }
         }
       }
-      .budgets-piece {
-        width: clamp(70px, 17vw, 104.8px);
+      .pink-piece {
+        width: clamp(90px, 21vw, 140.8px);
       }
 
-      .are-approved-piece {
-        width: clamp(100px, 31vw, 159px);
+      .pink-1-piece {
+        width: clamp(65px, 18vw, 108.8px);
       }
 
-      .by-the-president-piece {
-        width: clamp(113px, 30vw, 174.2px);
+      .yellow-piece {
+        width: clamp(65px, 17vw, 126px);
       }
 
-      .directors-meeting-piece {
-        width: clamp(153px, 45vw, 241.2px);
+      .yellow-1-piece {
+        width: clamp(80px, 19vw, 147px);
+      }
+
+      .green-piece {
+        width: clamp(90px, 19vw, 141.2px);
+      }
+
+      .green-1-piece {
+        width: clamp(90px, 18vw, 136.2px);
       }
 
       .piece {
@@ -361,14 +368,13 @@ td {
         display: grid;
         place-items: center;
         width: 100%;
-        height: clamp(30px, 9vw, 38px);
+        height: clamp(25px, 7vw, 38px);
 
         .piece-text {
           position: absolute;
           font-size: $fs-16;
           font-family: $noto-sans;
           font-weight: bold;
-          margin-left: -1vw;
         }
 
         .piece-image {
@@ -379,21 +385,39 @@ td {
         }
       }
 
-      .akiko-table {
+      .akiko-table-pieces {
         margin-top: clamp(1rem, 9vw, 3.5rem);
         display: grid;
-        column-gap: clamp(3px, 0.5vw, 10px);
         width: 100%;
-        height: 100%;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+
+        div {
+          margin-top: auto;
+        }
+
+        .middle {
+          div {
+            margin: auto;
+          }
+
+          .top {
+            margin-bottom: 2px;
+          }
+        }
+
+        .right {
+          div {
+            margin-left: auto;
+          }
+        }
       }
 
-      .akiko-bottom-table {
+      .akiko-table {
         display: grid;
-        column-gap: 10px;
+        gap: clamp(3px, 4%, 20px);
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 48% 48%;
       }
 
       .table {
@@ -478,6 +502,7 @@ td {
           div.list-subtitle {
             font-size: $fs-13;
             color: #7f8288;
+            letter-spacing: -1.8px;
           }
         }
       }
@@ -519,29 +544,27 @@ td {
     margin-right: $side-margin;
 
     .try-1-content {
-      margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
-
+      margin: clamp(20px, 6.5vw, 4rem) 0 0;
       display: flex;
 
       .akiko-icon {
         width: 40%;
-        padding-right: 2vw;
+        padding-right: clamp(20px, 7vw, 40px);
       }
 
       .math-area {
         width: 60%;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: clamp(1.5rem, 6vw, 0.8rem);
-        padding-right: clamp(40px, 4vw, 55px);
 
         .row {
-          display: grid;
-          grid-template-columns: auto auto auto auto auto;
+          display: flex;
           align-items: center;
-          margin-bottom: 2.4vw;
+          margin-bottom: clamp(10px, 2.4vw, 20px);
 
           div {
+            margin-right: clamp(2px, 1.5vw, 6px);
+          }
+
+          .small {
             width: clamp(18px, 4vw, 24px);
             height: clamp(18px, 4vw, 24px);
             display: grid;
@@ -569,6 +592,12 @@ td {
             border-radius: 50%;
             border: 1px solid $primary-blue;
             font-size: $fs-16;
+          }
+
+          .text {
+            color: $primary-blue;
+            font-size: $fs-16;
+            font-weight: bold;
           }
 
           img {
@@ -628,113 +657,112 @@ td {
           width: 85%;
           font-size: $fs-18;
         }
+      }
 
-        .image {
-          margin-top: clamp(10px, 6vw, 30px);
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          position: relative;
+      .image {
+        margin: clamp(10px, 6vw, 30px) 0 clamp(5px, 3vw, 15px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
 
-          .size-a {
-            width: clamp(200px, 47vw, 283.57px);
-          }
+        .size-a {
+          width: clamp(200px, 47vw, 283.57px);
+        }
 
-          .size-b {
-            width: clamp(245px, 63.5vw, 384.4px);
-          }
+        .size-b {
+          width: clamp(245px, 63.5vw, 384.4px);
+        }
 
-          .text-20 {
-            font-size: $fs-20;
-          }
+        .text-20 {
+          font-size: $fs-20;
+        }
 
-          .text-16 {
-            font-size: $fs-16;
-          }
+        .text-16 {
+          font-size: $fs-16;
+        }
 
-          .president {
-            position: absolute;
-            margin: clamp(5rem, 33%, 9.5rem) 0 0 clamp(1rem, 4.5%, 1.4rem);
-          }
+        .president {
+          position: absolute;
+          margin: clamp(5rem, 33%, 9.5rem) 0 0 clamp(1rem, 4.5%, 1.4rem);
+        }
 
-          .managers {
-            position: absolute;
-            margin: clamp(6.5rem, 28%, 9.2rem) 0 0 clamp(0.6rem, 2%, 1rem);
-          }
+        .managers {
+          position: absolute;
+          margin: clamp(6.5rem, 28%, 9.2rem) 0 0 clamp(0.6rem, 2%, 1rem);
+        }
 
-          .employee {
-            position: absolute;
-            margin: clamp(4.8rem, 22%, 9.2rem) 0 0 clamp(0.9rem, 8%, 3rem);
-          }
+        .employee {
+          position: absolute;
+          margin: clamp(4.8rem, 22%, 9.2rem) 0 0 clamp(0.9rem, 8%, 3rem);
+        }
 
-          .convo {
-            color: #2d356b;
-            font-family: $text-font;
-            font-weight: bold;
-          }
+        .convo {
+          color: #2d356b;
+          font-family: $text-font;
+          font-weight: bold;
+        }
 
-          .upper-1 {
-            position: absolute;
-            margin: clamp(1.2rem, 5%, 2rem) 0 0 clamp(6.6rem, 30%, 9.5rem);
-          }
+        .upper-1 {
+          position: absolute;
+          margin: clamp(1.2rem, 5%, 2rem) 0 0 clamp(6.6rem, 30%, 9.5rem);
+        }
 
-          .lower-1 {
-            position: absolute;
-            margin: clamp(3rem, 14%, 5rem) 0 0 clamp(7rem, 30%, 10rem);
-            transform: rotate(13.8deg);
-          }
+        .lower-1 {
+          position: absolute;
+          margin: clamp(3rem, 14%, 5rem) 0 0 clamp(7rem, 30%, 10rem);
+          transform: rotate(13.8deg);
+        }
 
-          .lower-2 {
-            position: absolute;
-            margin: clamp(2.8rem, 12.5%, 4rem) 0 0 clamp(5.5rem, 25%, 10rem);
-            transform: rotate(9.29deg);
-          }
+        .lower-2 {
+          position: absolute;
+          margin: clamp(2.8rem, 12.5%, 4rem) 0 0 clamp(5.5rem, 25%, 10rem);
+          transform: rotate(9.29deg);
+        }
 
-          .upper-3 {
-            position: absolute;
-            margin: clamp(1rem, 5%, 1.3rem) 0 0 clamp(10.5rem, 50%, 16.8rem);
-          }
+        .upper-3 {
+          position: absolute;
+          margin: clamp(1rem, 5%, 1.3rem) 0 0 clamp(10.5rem, 50%, 16.8rem);
+        }
 
-          .lower-3 {
-            position: absolute;
-            margin: clamp(1.5rem, 11.5%, 3.6rem) 0 0 clamp(6.6rem, 46%, 14.8rem);
-            transform: rotate(9.29deg);
-          }
+        .lower-3 {
+          position: absolute;
+          margin: clamp(1.5rem, 11.5%, 3.6rem) 0 0 clamp(6.6rem, 46%, 14.8rem);
+          transform: rotate(9.29deg);
+        }
 
-          .upper-4 {
-            position: absolute;
-            margin: clamp(1rem, 7%, 2rem) 0 0 clamp(6.5rem, 28%, 16.8rem);
-            transform: rotate(11.92deg) !important;
-          }
+        .upper-4 {
+          position: absolute;
+          margin: clamp(1rem, 7%, 2rem) 0 0 clamp(6.5rem, 28%, 16.8rem);
+          transform: rotate(11.92deg) !important;
+        }
 
-          .lower-4 {
-            position: absolute;
-            margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0
-              clamp(6.1rem, 26.2%, 14.8rem);
-            transform: rotate(-4deg) !important;
-          }
+        .lower-4 {
+          position: absolute;
+          margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0 clamp(6.1rem, 26.2%, 14.8rem);
+          transform: rotate(-4deg) !important;
+        }
 
-          .upper-5 {
-            position: absolute;
-            margin: clamp(1rem, 5%, 2rem) 0 0 clamp(11rem, 55%, 16.8rem);
-          }
+        .upper-5 {
+          position: absolute;
+          margin: clamp(1rem, 5%, 2rem) 0 0 clamp(11rem, 55%, 16.8rem);
+        }
 
-          .lower-5 {
-            position: absolute;
-            margin: clamp(2rem, 12%, 4.7rem) 0 0 clamp(10.2rem, 50%, 16.2rem);
-            transform: rotate(9.29deg);
-          }
+        .lower-5 {
+          position: absolute;
+          margin: clamp(2rem, 12%, 4.7rem) 0 0 clamp(10.2rem, 50%, 16.2rem);
+          transform: rotate(9.29deg);
+        }
 
-          .clockwise {
-            transform: rotate(-15deg);
-          }
-          .counter-clockwise {
-            transform: rotate(8deg);
-          }
+        .clockwise {
+          transform: rotate(-15deg);
+        }
+        .counter-clockwise {
+          transform: rotate(8deg);
+        }
 
-          .try-2-3-name {
-            padding: clamp(5px, 1.5vw, 8px) clamp(5px, 5vw, 32px) !important;
-          }
+        .try-2-3-name {
+          padding: clamp(5px, 1.5vw, 8px) clamp(5px, 5vw, 32px) !important;
         }
       }
     }
@@ -744,7 +772,162 @@ td {
     }
 
     .try-3-content {
-      margin: clamp(3rem, 8vw, 5rem) 0 clamp(20px, 17vw, 7rem);
+      margin: clamp(3rem, 8vw, 5rem) 0 0px;
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
+      }
+
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        color: $primary-blue;
+        font-weight: bold;
+        padding-left: 1vw;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
+        font-family: $noto-sans;
+        margin-bottom: clamp(1rem, 10vw, 5rem);
+
+        .dialogue {
+          display: flex;
+        }
+
+        .trainer {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .person {
+          width: clamp(60px, 15%, 80px);
+          text-align: right;
+          font-weight: bold;
+          font-size: $fs-16;
+        }
+
+        .speech {
+          padding-left: 1vw;
+          width: 85%;
+          font-size: $fs-18;
+        }
+      }
+
+      .image {
+        margin: clamp(10px, 6vw, 30px) 0 clamp(5px, 3vw, 15px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .size-a {
+          width: 90%;
+        }
+
+        .size-b {
+          width: clamp(245px, 63.5vw, 384.4px);
+        }
+
+        .text-20 {
+          font-size: $fs-20;
+        }
+
+        .text-16 {
+          font-size: $fs-16;
+        }
+
+        .president {
+          position: absolute;
+          margin: clamp(5rem, 33%, 9.5rem) 0 0 clamp(1rem, 4.5%, 1.4rem);
+        }
+
+        .managers {
+          position: absolute;
+          margin: clamp(6.5rem, 28%, 9.2rem) 0 0 clamp(0.6rem, 2%, 1rem);
+        }
+
+        .employee {
+          position: absolute;
+          margin: clamp(4.8rem, 22%, 9.2rem) 0 0 clamp(0.9rem, 8%, 3rem);
+        }
+
+        .convo {
+          color: #2d356b;
+          font-family: $text-font;
+          font-weight: bold;
+        }
+
+        .upper-1 {
+          position: absolute;
+          margin: clamp(1.2rem, 5%, 2rem) 0 0 clamp(6.6rem, 30%, 9.5rem);
+        }
+
+        .lower-1 {
+          position: absolute;
+          margin: clamp(3rem, 14%, 5rem) 0 0 clamp(7rem, 30%, 10rem);
+          transform: rotate(13.8deg);
+        }
+
+        .lower-2 {
+          position: absolute;
+          margin: clamp(2.8rem, 12.5%, 4rem) 0 0 clamp(5.5rem, 25%, 10rem);
+          transform: rotate(9.29deg);
+        }
+
+        .upper-3 {
+          position: absolute;
+          margin: clamp(1rem, 5%, 1.3rem) 0 0 clamp(10.5rem, 50%, 16.8rem);
+        }
+
+        .lower-3 {
+          position: absolute;
+          margin: clamp(1.5rem, 11.5%, 3.6rem) 0 0 clamp(6.6rem, 46%, 14.8rem);
+          transform: rotate(9.29deg);
+        }
+
+        .upper-4 {
+          position: absolute;
+          margin: clamp(1rem, 7%, 2rem) 0 0 clamp(6.5rem, 28%, 16.8rem);
+          transform: rotate(11.92deg) !important;
+        }
+
+        .lower-4 {
+          position: absolute;
+          margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0 clamp(6.1rem, 26.2%, 14.8rem);
+          transform: rotate(-4deg) !important;
+        }
+
+        .upper-5 {
+          position: absolute;
+          margin: clamp(1rem, 5%, 2rem) 0 0 clamp(11rem, 55%, 16.8rem);
+        }
+
+        .lower-5 {
+          position: absolute;
+          margin: clamp(2rem, 12%, 4.7rem) 0 0 clamp(10.2rem, 50%, 16.2rem);
+          transform: rotate(9.29deg);
+        }
+
+        .clockwise {
+          transform: rotate(-15deg);
+        }
+        .counter-clockwise {
+          transform: rotate(8deg);
+        }
+
+        .try-2-3-name {
+          padding: clamp(5px, 1.5vw, 8px) clamp(5px, 5vw, 32px) !important;
+        }
+      }
 
       .step {
         margin-bottom: clamp(2rem, 15vw, 6rem);
@@ -842,7 +1025,7 @@ td {
     margin-right: $side-margin;
 
     .act-1-content {
-      margin: clamp(20px, 6.5vw, 29px) 0 clamp(20px, 17vw, 7rem);
+      margin: clamp(20px, 7vw, 45px) 0 clamp(20px, 17vw, 7rem);
 
       .image-area {
         margin-bottom: 1vw;

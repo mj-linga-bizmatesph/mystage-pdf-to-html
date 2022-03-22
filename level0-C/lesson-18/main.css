@@ -480,6 +480,9 @@ td {
 .html-lesson-wrapper .table tr td:first-child {
   text-align: right;
 }
+.html-lesson-wrapper .table tr td.name {
+  width: 70px;
+}
 
 .html-lesson-wrapper .table .name {
   font-weight: bold;

@@ -466,12 +466,21 @@ td {
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice {
   margin-left: clamp(5px, 1vw, 9px);
+  margin-bottom: -5%;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
   font-family: 'Noto Sans';
+}
+.html-lesson-wrapper
+  .see-content
+  .phrases-section
+  .phrase-alts
+  .choice
+  .choice-jap {
+  color: #7f8288;
 }
 
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-eng {
@@ -870,6 +879,7 @@ td {
 }
 .try-3 .office-section {
   margin-top: 10%;
+  margin-bottom: -18%;
 }
 .html-lesson-wrapper .try-content.try-3 .trainer span,
 .html-lesson-wrapper .try-content.try-3 .you span {
@@ -963,6 +973,9 @@ td {
   -ms-flex-pack: center;
   margin-bottom: clamp(14px, 2vw, 24px);
 }
+.html-lesson-wrapper .try-content.try-1 .combinations .combination .letters {
+  font-weight: 600;
+}
 
 .html-lesson-wrapper
   .try-content.try-1
@@ -974,6 +987,7 @@ td {
 
 .html-lesson-wrapper .try-content.try-2 .office-section {
   margin-top: clamp(20px, 6.5vw, 42px);
+  margin-bottom: -15%;
 }
 
 .html-lesson-wrapper
@@ -1151,6 +1165,7 @@ td {
 .html-lesson-wrapper .act-content .office-section {
   margin-top: clamp(20px, 6.5vw, 29px);
   margin-bottom: clamp(20px, 6.5vw, 29px);
+  margin-bottom: -10%;
 }
 
 .html-lesson-wrapper .act-content .office-section .conversation .bubble.akiko {
@@ -1166,6 +1181,7 @@ td {
   .eng {
   font-size: clamp(8px, 2vw, 14px);
 }
+
 @media only screen and (max-width: 600px) {
   /* See 2 */
   .see-2 img {
@@ -1195,11 +1211,14 @@ td {
   .right.p5 {
     font-size: 0.7rem;
   }
-
+  .html-lesson-wrapper .try-content.try-2 .you,
+  .html-lesson-wrapper .try-content.try-2 .trainer {
+    font-size: 0.8rem;
+  }
   /* See 2 */
   .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .comp-1 {
-    margin-top: 11%;
-    margin-left: 14%;
+    margin-top: 10.5%;
+    margin-left: 13%;
     position: absolute;
   }
   .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .comp-2 {
@@ -1209,16 +1228,39 @@ td {
   }
   .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .proj-1 {
     margin-top: 16%;
-    margin-left: 31%;
+    margin-left: 30%;
     position: absolute;
   }
   .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .proj-2 {
     margin-top: 29%;
-    margin-left: 31%;
+    margin-left: 30%;
     position: absolute;
   }
   .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .jap-s2 {
     margin-top: 22%;
     margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* See 2 */
+  .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .comp-1 {
+    margin-top: 10%;
+    margin-left: 13%;
+    position: absolute;
+  }
+  .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .comp-2 {
+    margin-top: 28%;
+    margin-left: 1%;
+    position: absolute;
+  }
+  .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .proj-1 {
+    margin-top: 15%;
+    margin-left: 30%;
+    position: absolute;
+  }
+  .html-lesson-wrapper .see-content .phrases-section .phrases-s2 .proj-2 {
+    margin-top: 28%;
+    margin-left: 30%;
+    position: absolute;
   }
 }

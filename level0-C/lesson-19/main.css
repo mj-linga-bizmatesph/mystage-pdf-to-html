@@ -126,7 +126,7 @@ td {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: -2.5px;
   color: #7f8288;
   font-family: 'Noto Sans';
   font-size: clamp(7px, 1.8vw, 11px);
@@ -962,6 +962,9 @@ td {
   float: right;
   padding: 10px 15px;
   background: #e7f3fa;
+}
+.html-lesson-wrapper .try-content.try-3 .phrases .phrase-topper .right-1 {
+  margin-right: 22%;
 }
 .html-lesson-wrapper .try-content.try-3 .phrases .phrase-topper .right-2 {
   margin-right: 36%;

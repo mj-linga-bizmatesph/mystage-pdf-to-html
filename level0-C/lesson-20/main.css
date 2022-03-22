@@ -478,8 +478,15 @@ td {
 .html-lesson-wrapper table.part-2-content {
   height: 10px;
 }
+.html-lesson-wrapper table.part-2-content .breaker {
+  height: 10px;
+}
 .html-lesson-wrapper table.part-2-content .list {
-  width: 32px;
+  width: 50px;
+}
+.html-lesson-wrapper table.part-2-content span {
+  display: block;
+  margin-left: -10%;
 }
 .html-lesson-wrapper .table .eng {
   font-family: 'Noto Sans';
@@ -520,7 +527,7 @@ td {
   .bubble.part-2-2 {
   margin-top: 12%;
   margin-left: 25%;
-  width: 50%;
+  width: 55%;
 }
 .html-lesson-wrapper
   .act-content
@@ -538,7 +545,7 @@ td {
   .bubble.part-2-4 {
   margin-top: 12%;
   margin-left: 25%;
-  width: 50%;
+  width: 55%;
 }
 .html-lesson-wrapper
   .act-content
@@ -546,8 +553,8 @@ td {
   .conversation
   .bubble.part-2-5 {
   margin-top: 14%;
-  margin-left: 25%;
-  width: 50%;
+  margin-left: 23%;
+  width: 55%;
 }
 .html-lesson-wrapper .img-part-2-4 {
   margin-top: 6%;

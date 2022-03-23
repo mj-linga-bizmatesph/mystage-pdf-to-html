@@ -636,6 +636,16 @@ td {
   margin-bottom: 3.8%;
 }
 
+.html-lesson-wrapper .part-content {
+  margin-left: clamp(18px, 5vw, 32px);
+  margin-right: clamp(18px, 5vw, 32px);
+}
+
+.html-lesson-wrapper .part-content .arrow.part {
+  color: white;
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+}
+
 .html-lesson-wrapper .lesson-number {
   right: 6.7%;
 }
@@ -937,4 +947,8 @@ td {
 
 .html-lesson-wrapper .act-1 .office-act-1 .speech.akiko-2 .jap:not(:last-child) {
   margin-bottom: 5%;
+}
+
+.html-lesson-wrapper .chat-color {
+  color: #2d356b;
 }

@@ -14,6 +14,7 @@ $side-margin: clamp(18px, 5vw, 32px);
 
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
+
 body {
   margin: 0;
   padding: 0;
@@ -144,6 +145,7 @@ hr {
     color: #ffffff;
   }
 
+  // Title
   .title-section {
     position: absolute;
     top: clamp(30px, 8vw, 50px);
@@ -188,6 +190,7 @@ hr {
     }
   }
 
+  // See-content
   .see-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
@@ -201,6 +204,7 @@ hr {
     &.see-4 {
       margin-top: clamp(20px, 5vw, 33px);
 
+      //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
@@ -261,14 +265,13 @@ hr {
     background-position: top, bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(#{$s3}/0-B-2-Asset5-2.svg);
+    background-image: url(#{$s3}/0-B-6-See1.svg);
 
     .s1-bubble1 {
-      margin-top: clamp(21px, 5.9vw, 35px);
-      left: 9%;
-      right: 44.2%;
-      width: clamp(130px, 37vw, 220px);
-      min-height: clamp(80px, 1.6vw, 155px);
+      margin-left: clamp(45px, 23vw, 135px);
+      margin-top: clamp(5px, 4vw, 20px);
+      width: clamp(130px, 35vw, 230px);
+      min-height: clamp(130px, 50vw, 230px);
       position: absolute;
       background-size: contain;
       background-repeat: no-repeat;
@@ -276,7 +279,7 @@ hr {
       flex-direction: column;
 
       .bubble1-text {
-        padding-top: clamp(5px, 1.6vw, 9px);
+        padding-top: clamp(5px, 1.6vw, 13px);
         padding-left: clamp(9px, 1.6vw, 15px);
         padding-bottom: clamp(5.2px, 2.6vw, 15px);
         padding-right: clamp(6px, 1.6vw, 15px);
@@ -285,11 +288,11 @@ hr {
 
         .eng {
           font-weight: bold;
-          font-size: clamp(8px, 2.5vw, 14px);
+          font-size: clamp(8px, 2vw, 14px);
         }
 
         .jap {
-          font-size: clamp(6px, 2.2vw, 12px);
+          font-size: clamp(6px, 1.5vw, 11px);
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
         }
@@ -297,10 +300,11 @@ hr {
     }
 
     .s1-bubble2 {
-      left: 51.5%;
-      margin-top: clamp(58px, 16vw, 97px);
-      width: clamp(140px, 40vw, 242px);
-      min-height: clamp(30px, 8vw, 50px);
+      //border: 1px solid red;
+      left: 60%;
+      margin-top: clamp(25px, 7vw, 43px);
+      width: clamp(140px, 38vw, 242px);
+      min-height: 230px;
       position: absolute;
       background-position: top, bottom;
       background-size: contain;
@@ -310,30 +314,11 @@ hr {
     }
 
     .bubble2-text {
-      padding-top: clamp(2.8px, 2.4vw, 11px);
+      padding-top: clamp(3.2px, 2.9vw, 15px);
       padding-left: clamp(9px, 3vw, 15px);
       padding-bottom: clamp(0.2px, 1vw, 15px);
       padding-right: clamp(6px, 2.2vw, 15px);
       font-size: clamp(8px, 2vw, 14px);
-
-      .eng {
-        font-weight: bold;
-        font-size: clamp(8px, 2.5vw, 14px);
-      }
-
-      .jap {
-        font-size: clamp(6px, 2vw, 12px);
-        color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
-      }
-    }
-
-    .bubble4-text {
-      padding-top: clamp(3.2px, 1vw, 8px);
-      padding-left: clamp(6px, 2vw, 12px);
-      padding-bottom: clamp(0.2px, 1vw, 8px);
-      padding-right: clamp(6px, 2.2vw, 8px);
-      font-size: clamp(6.3px, 1.8vw, 13.6px);
 
       .eng {
         font-weight: bold;
@@ -347,13 +332,11 @@ hr {
       }
     }
 
-
-
     .s1-name {
       span {
         position: absolute;
-        left: 20%;
-        margin-top: clamp(125px, 34vw, 205px);
+        left: 11%;
+        margin-top: clamp(125px, 36.3vw, 220px);
         border-radius: 7px;
         padding-top: clamp(0.2px, 1vw, 6.5px);
         padding-left: clamp(6px, 2vw, 13.5px);
@@ -372,8 +355,8 @@ hr {
       span {
         position: absolute;
         color: #2d356b;
-        left: 79%;
-        margin-top: clamp(140px, 38vw, 225px);
+        left: 52%;
+        margin-top: clamp(118px, 32.3vw, 200px);
         border-radius: 7px;
         padding-top: clamp(0.2px, 1vw, 6.5px);
         padding-left: clamp(6px, 2vw, 13.5px);
@@ -401,27 +384,8 @@ hr {
           display: grid;
 
           .wrapper-with-akiko {
-            padding-left: clamp(85px, 20vw, 120px);
+            padding-left: clamp(35px, 6.7vw, 55px);
           }
-        }
-
-        .box-1 {
-          font-size: clamp(11px, 1.8vw, 16px);
-          background-color: #ffb3b0;
-          width: clamp(120px, 30vw, 192px);
-          padding-top: clamp(5px, 1.5vw, 9px);
-          padding-bottom: clamp(5px, 1.5vw, 9px);
-          border-radius: 3px;
-          text-align: center;
-        }
-
-        .text-1 {
-          font-size: clamp(8px, 1.9vw, 13px);
-          position: absolute;
-          margin-top: clamp(-18px, -1.6vw, -5px);
-          color: $subtext-color;
-          letter-spacing: $jap-letter-spacing;
-          font-family: $noto-sans;
         }
 
         .section-2-with-akiko {
@@ -435,20 +399,20 @@ hr {
           margin-top: 15px;
 
           .box-2 {
-            width: clamp(100px, 23vw, 120px);
+            width: clamp(70px, 23vw, 100px);
             background: url(#{$s3}/0-yellow-piece.png);
             text-align: center;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             padding: clamp(7px, 2vw, 10px) 0;
-            font-size: clamp(9px, 2vw, 16px);
+            font-size: clamp(10px, 2.2vw, 16px);
           }
 
           .box-3 {
-            width: clamp(74px, 17vw, 130px);
+            width: clamp(75px, 18vw, 120px);
             margin-left: clamp(4px, 2vw, 7px);
-            font-size: clamp(9px, 2vw, 16px);
+            font-size: clamp(10px, 2.2vw, 16px);
             background: url(#{$s3}/0-piece-blue.png);
             background-position: center;
             background-size: cover;
@@ -469,13 +433,12 @@ hr {
 
       .icon {
         font-size: clamp(10px, 2vw, 14px);
-        margin-top: -60px;
+        margin-top: -16px;
         @extend .b;
 
         img {
-          height: clamp(65px, 14vw, 100px);
+          height: clamp(71px, 19vw, 100px);
           width: auto;
-          transform: scaleX(-1);
         }
         div {
           margin-top: clamp(8px, 2vw, 9px);
@@ -491,14 +454,14 @@ hr {
       }
 
       .b1-legend {
-        width: clamp(80px, 15vw, 80px);
+        width: clamp(60px, 10vw, 80px);
         background: url(#{$s3}/0-yellow-piece.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
       }
       .b2-legend {
-        width: clamp(90px, 16vw, 135px);
+        width: clamp(86px, 16vw, 120px);
         text-align: center;
         background-position: center;
         background-size: cover;
@@ -520,7 +483,7 @@ hr {
 
       .phrase-alts {
         display: grid;
-        grid-template-columns: 1fr clamp(185px, 42vw, 290px);
+        grid-template-columns: 1fr clamp(157px, 39vw, 280px);
         gap: 7px;
 
         &.half {
@@ -560,6 +523,7 @@ hr {
           color: $subtext-color;
         }
 
+        //number
         .number {
           @extend .b;
           border-radius: 50%;
@@ -597,19 +561,21 @@ hr {
       margin-right: $side-margin;
 
       .akiko-right-view {
-        width: clamp(140px, 37vw, 191px);
-        min-height: clamp(130px, 37vw, 191px);
+        margin-left: clamp(140px, 45vw, 300px);
+        width: clamp(110px, 34vw, 191px);
+        min-height: clamp(100px, 34vw, 191px);
         position: absolute;
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-akiko-right-view.png);
+        transform: scaleX(-1);
       }
 
       .akiko-combinations {
         .akiko-first-combinations {
           position: absolute;
-          margin-left: clamp(110px, 30vw, 180px);
+          margin-left: clamp(-35px, -20vw, 10px);
           ul > li {
             list-style-type: none;
             margin-bottom: 10px;
@@ -659,7 +625,7 @@ hr {
 
         .akiko-second-combinations {
           position: absolute;
-          margin-left: clamp(190px, 55vw, 320px);
+          margin-left: clamp(30px, 15vw, 120px);
           ul > li {
             list-style-type: none;
             margin-bottom: 10px;
@@ -717,39 +683,52 @@ hr {
       margin-top: clamp(40px, 16vw, 100px);
 
       .try-2-row-1 {
-        margin-bottom: clamp(30px, 12vw, 80px);
+        margin-bottom: clamp(30px, 12vw, 100px);
         position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .you {
-          margin-left: clamp(15px, 3vw, 30px);
+          margin-left: clamp(15px, 5vw, 30px);
+          font-size: clamp(11px, 3.3vw, 19px);
+
+          .underline {
+            margin-left: clamp(5px, 5vw, 7px);
+            text-decoration: underline;
+            color: $primary-blue;
+            font-size: clamp(11px, 3.3vw, 19px);
+          }
+
+          .bubble {
+            position: absolute;
+            left: 75%;
+            font-size: clamp(10px, 2.6vw, 21px);
+            margin-top: -12%;
+            text-align: center;
+            width: clamp(20px, 25vw, 200px);
+            color: #2d356b;
+            min-height: clamp(60px, 30vw, 180px);
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(#{$s3}/0-B-6-Try2-1.svg);
+          }
+        }
+        .trainer{
+          margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .underline {
-          margin-left: clamp(3px, 1.5vw, 10px);
-          text-decoration: underline;
-          color: $primary-blue;
+        .you-2 {
+          margin-left: clamp(15px, 7vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
-        }
-        .bubble {
-          position: absolute;
-          top:-150%;
-          left: 70%;
-          font-size: clamp(10px, 2.6vw, 21px);
-          padding-top: clamp(20.4px, 6vw, 40px);
-          padding-left: clamp(20px, 4vw, 40px);
-          padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(20px, 2vw, 4px);
-          text-align: center;
-          width: clamp(10px, 15vw, 80px);
-          color: #2d356b;
-          min-height: clamp(10px, 10vw, 65px);
-          position: absolute;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-B-2-Asset6.svg);
+
+          .underline {
+            margin-left: clamp(1px, 3vw, 2px);
+            text-decoration: underline;
+            color: $primary-blue;
+            font-size: clamp(11px, 3.3vw, 19px);
+          }
         }
       }
 
@@ -761,191 +740,281 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .you {
-          margin-left: clamp(15px, 3vw, 30px);
+          margin-left: clamp(15px, 5vw, 30px);
+          font-size: clamp(11px, 3.3vw, 19px);
+
+        }
+
+        .trainer{
+          margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .you-2 {
+          margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
+
         }
         .bubble {
-          font-size: clamp(10px, 2.6vw, 21px);
           position: absolute;
-          left: 70%;
-          padding-top: clamp(20.4px, 4.5vw, 15px);
-          padding-left: clamp(19px, 5vw, 15px);
-          padding-bottom: clamp(7px, 2vw, 3px);
-          padding-right: clamp(1px, 2vw, 3px);
-          top: -200%;
-          width: clamp(70px, 16.3vw, 150px);
+          right: 0;
+          font-size: clamp(10px, 2.6vw, 21px);
+          padding-top: clamp(20.4px, 6vw, 40px);
+          padding-left: clamp(20px, 4vw, 40px);
+          padding-bottom: clamp(7px, 2vw, 6px);
+          padding-right: clamp(29px, 3vw, 6px);
+          margin-top: clamp(-50px, -50vw, -22px);
+          text-align: center;
+          width: clamp(50px, 16.3vw, 130px);
           color: #2d356b;
-          min-height: clamp(10px, 15vw, 100px);
+          min-height: clamp(60px, 40vw, 330px);
           position: absolute;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-B-2-Asset7.svg);
         }
       }
 
       .try-2-row-3 {
-        margin-bottom: clamp(50px, 12vw, 100px);
+        margin-bottom: clamp(30px, 12vw, 100px);
         position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .you {
-          margin-left: clamp(15px, 3vw, 30px);
+          margin-left: clamp(15px, 5vw, 30px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .new-line {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .trainer{
+          margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .you-2 {
+          margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
+
         }
         .bubble {
           position: absolute;
-          left: 70%;
-          padding-top: clamp(17.4px, 4vw, 30px);
-          padding-left: clamp(17px, 5vw, 40px);
+          right: 0;
+          font-size: clamp(10px, 2.6vw, 21px);
+          padding-top: clamp(20.4px, 6vw, 40px);
+          padding-left: clamp(20px, 4vw, 40px);
           padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          top: -200%;
-          width: clamp(40px, 16.3vw, 80px);
+          padding-right: clamp(29px, 3vw, 6px);
+          margin-top: clamp(-50px, -50vw, -22px);
+          text-align: center;
+          width: clamp(50px, 16.3vw, 130px);
           color: #2d356b;
-          min-height: clamp(10px, 14vw, 130px);
+          min-height: clamp(60px, 40vw, 330px);
           position: absolute;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-B-2-Asset8.svg);
-
-          .rotate-1 {
-            transform: rotate(10deg);
-            font-size: clamp(11px, 2.5vw, 21px);
-          }
-          .rotate-2 {
-            padding-left: clamp(12px, 2.5vw, 25px);
-            padding-top: clamp(10px, 1.9vw, 15px);
-            transform: rotate(-10deg);
-            font-size: clamp(10px, 2.2vw, 21px);
-          }
         }
       }
 
       .try-2-row-4 {
+        margin-bottom: clamp(30px, 12vw, 100px);
         position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .you {
-          margin-left: clamp(15px, 3vw, 30px);
+          margin-left: clamp(15px, 5vw, 30px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .new-line {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .trainer{
+          margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .you-2 {
+          margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
+
         }
         .bubble {
           position: absolute;
-          left: 70%;
-          padding-top: clamp(17.4px, 4vw, 30px);
-          padding-left: clamp(17px, 4vw, 40px);
+          right: 0;
+          font-size: clamp(10px, 2.6vw, 21px);
+          padding-top: clamp(20.4px, 6vw, 40px);
+          padding-left: clamp(20px, 4vw, 40px);
           padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          top: -150%;
-          width: clamp(50px, 18vw, 80px);
+          padding-right: clamp(29px, 3vw, 6px);
+          margin-top: clamp(-50px, -50vw, -22px);
+          text-align: center;
+          width: clamp(50px, 16.3vw, 130px);
           color: #2d356b;
-          min-height: clamp(20px, 10vw, 50px);
+          min-height: clamp(60px, 40vw, 330px);
           position: absolute;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-B-2-Asset9.svg);
-
-          .rotate-1 {
-            padding-left: clamp(9px, 2.5vw, 25px);
-            transform: rotate(10deg);
-            font-size: clamp(11px, 2.5vw, 21px);
-          }
-          .rotate-2 {
-            padding-left: clamp(12px, 2.5vw, 25px);
-            padding-top: clamp(10px, 1.9vw, 15px);
-            transform: rotate(-10deg);
-            font-size: clamp(10px, 2.2vw, 21px);
-          }
         }
       }
+
       .try-2-row-5 {
+        margin-bottom: clamp(30px, 12vw, 100px);
         position: relative;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 3.3vw, 19px);
         }
         .you {
-          margin-left: clamp(15px, 3vw, 30px);
+          margin-left: clamp(15px, 5vw, 30px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .new-line {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .trainer{
+          margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
-        .line {
-          color: #141821;
-        }
-        .underline {
-          margin-left: clamp(55px, 14vw, 95px);
+
+        .you-2 {
+          margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
+
         }
         .bubble {
           position: absolute;
-          left: 70%;
-          padding-top: clamp(17.4px, 4vw, 30px);
-          padding-left: clamp(17px, 4vw, 40px);
+          right: 0;
+          font-size: clamp(10px, 2.6vw, 21px);
+          padding-top: clamp(20.4px, 6vw, 40px);
+          padding-left: clamp(20px, 4vw, 40px);
           padding-bottom: clamp(7px, 2vw, 6px);
-          padding-right: clamp(29px, 2vw, 6px);
-          top: -150%;
-          width: clamp(70px, 16.3vw, 100px);
+          padding-right: clamp(29px, 3vw, 6px);
+          margin-top: clamp(-50px, -50vw, -22px);
+          text-align: center;
+          width: clamp(50px, 16.3vw, 130px);
           color: #2d356b;
-          min-height: clamp(20px, 10vw, 150px);
+          min-height: clamp(60px, 40vw, 330px);
           position: absolute;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-B-2-Asset10.svg);
-
-          .rotate-1 {
-            padding-left: clamp(9px, 2.5vw, 25px);
-            transform: rotate(10deg);
-            font-size: clamp(11px, 2.5vw, 21px);
-          }
-          .rotate-2 {
-            padding-left: clamp(12px, 2.5vw, 25px);
-            padding-top: clamp(10px, 1.9vw, 15px);
-            transform: rotate(-10deg);
-            font-size: clamp(10px, 2.2vw, 21px);
-          }
         }
+      }
+
+    }
+  }
+
+  .section-4-convo {
+    margin-top: 30px;
+    width: 100%;
+    min-height: clamp(230px, 60vw, 380px);
+    position: relative;
+    background-position: top, bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(#{$s3}/0-B-6-See4.svg);
+
+    .s4-bubble1 {
+      margin-left: clamp(15px, 15vw, 90px);
+      margin-top: clamp(5px, 2.3vw, 15px);
+      width: clamp(130px, 35vw, 230px);
+      min-height: clamp(130px, 50vw, 230px);
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+
+      .bubble1-text {
+        padding-top: clamp(5px, 1.6vw, 13px);
+        padding-left: clamp(9px, 1.6vw, 15px);
+        padding-bottom: clamp(5.2px, 2.6vw, 15px);
+        padding-right: clamp(6px, 1.6vw, 15px);
+        position: absolute;
+        display: block;
+
+        .eng {
+          font-weight: bold;
+          font-size: clamp(8px, 2vw, 14px);
+        }
+
+        .jap {
+          font-size: clamp(6px, 1.5vw, 11px);
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+        }
+      }
+    }
+
+    .s4-bubble2 {
+      left: 58%;
+      margin-top: clamp(5px, 8vw, 48px);
+      width: clamp(140px, 38vw, 242px);
+      min-height: 230px;
+      position: absolute;
+      background-position: top, bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bubble2-text {
+      padding-top: clamp(3.2px, 2.9vw, 15px);
+      padding-left: clamp(9px, 3vw, 15px);
+      padding-bottom: clamp(0.2px, 1vw, 15px);
+      padding-right: clamp(6px, 2.2vw, 15px);
+      font-size: clamp(8px, 2vw, 14px);
+
+      .eng {
+        font-weight: bold;
+        font-size: clamp(8px, 2vw, 14px);
+      }
+
+      .jap {
+        font-size: clamp(6px, 1.5vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+    }
+
+    .s1-name {
+      span {
+        position: absolute;
+        left: 11%;
+        margin-top: clamp(125px, 36.3vw, 220px);
+        border-radius: 7px;
+        padding-top: clamp(0.2px, 1vw, 6.5px);
+        padding-left: clamp(6px, 2vw, 13.5px);
+        padding-bottom: clamp(0.2px, 1vw, 6.5px);
+        padding-right: clamp(6px, 2vw, 13.5px);
+        background-color: #ffffff;
+        font-size: clamp(6px, 2vw, 10px);
+        border-style: solid;
+        border-color: #d0d2d3;
+        border-width: 0.5px;
+        color: #2d356b;
+      }
+    }
+
+    .s2-name {
+      span {
+        position: absolute;
+        color: #2d356b;
+        left: 52%;
+        margin-top: clamp(118px, 32.3vw, 200px);
+        border-radius: 7px;
+        padding-top: clamp(0.2px, 1vw, 6.5px);
+        padding-left: clamp(6px, 2vw, 13.5px);
+        padding-bottom: clamp(0.2px, 1vw, 6.5px);
+        padding-right: clamp(6px, 2vw, 13.5px);
+        background-color: #ffffff;
+        font-size: clamp(6px, 2vw, 10px);
+        border-style: solid;
+        border-color: #d0d2d3;
+        border-width: 0.5px;
       }
     }
   }
 
-  .see-3 {
-    .see-3-content {
+  .see-5 {
+    .see-5-content {
       padding-left: clamp(4px, 2vw, 2px);
       margin-top: clamp(30px, 8vw, 50px);
 
@@ -955,7 +1024,7 @@ hr {
         position: absolute;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-nick-side-view.png);
+        background-image: url(#{$s3}/0-B-6-See3-Jessica.svg);
 
         .name {
           position: absolute;
@@ -967,12 +1036,12 @@ hr {
 
       .phrase-1 {
         margin-left: clamp(92px, 23vw, 170px);
-        margin-bottom: clamp(30px, 4vw, 40px);
+        margin-bottom: clamp(45px, 35vw, 100px);
         display: absolute;
         display: block;
 
         .english {
-          width: clamp(103px, 18vw, 150px);
+          width: clamp(55px, 13vw, 80px);
           background-color: #ffb3b0;
           font-size: clamp(11px, 1.8vw, 16px);
           border-radius: 3px;
@@ -1045,6 +1114,166 @@ hr {
 
       .phrase-alts {
         display: grid;
+        grid-template-columns: 1fr clamp(30px, 25vw, 10px);
+        gap: 7px;
+
+        &.half {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .alt-box {
+          padding: 15px;
+          border: 1px solid $primary-blue;
+        }
+
+        .alt {
+          display: flex;
+          align-items: baseline;
+        }
+
+        .alt:not(:last-child) {
+          margin-bottom: clamp(1px, 0.5vw, 20px);
+        }
+
+        .choice {
+          margin-left: clamp(5px, 1vw, 9px);
+          p {
+            margin: 0;
+            white-space: nowrap;
+            font-family: $noto-sans;
+          }
+        }
+
+        .choice-eng {
+          font-size: clamp(9px, 2.5vw, 18px);
+        }
+
+        .choice-jap {
+          font-size: clamp(6.7px, 1.8vw, 13px);
+          letter-spacing: -0.9px;
+          color: $subtext-color;
+        }
+
+        //number
+        .number {
+          @extend .b;
+          border-radius: 50%;
+          background: $primary-blue;
+          color: white;
+          margin: 0;
+          text-align: center;
+          width: clamp(13px, 4vw, 24px);
+          height: clamp(13px, 4vw, 24px);
+          line-height: clamp(13px, 4vw, 24px);
+          font-family: $noto-sans;
+          font-size: clamp(11px, 3vw, 16px);
+          z-index: 1;
+        }
+
+        .letter {
+          @extend .b;
+          border: 2px solid $primary-blue;
+          color: $primary-blue;
+          font-family: $noto-sans;
+          width: clamp(11px, 4vw, 20px);
+          height: clamp(11px, 4vw, 20px);
+          line-height: clamp(11px, 4vw, 20px);
+          font-size: clamp(11px, 3vw, 16px);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+
+  .see-3 {
+    .see-3-content {
+      padding-left: clamp(4px, 2vw, 2px);
+      margin-top: clamp(30px, 8vw, 50px);
+
+      .nick-image {
+        width: clamp(70px, 16.3vw, 120px);
+        min-height: clamp(70px, 40vw, 120px);
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(#{$s3}/0-B-6-See3-Jessica.svg);
+
+        .name {
+          position: absolute;
+          margin-top: clamp(80px, 18vw, 135px);
+          margin-left: clamp(25px, 5vw, 37px);
+          font-size: clamp(8px, 2.8vw, 20px);
+        }
+      }
+
+        .phrase-1 {
+          margin-left: clamp(92px, 23vw, 170px);
+          margin-bottom: clamp(30px, 4vw, 40px);
+          display: flex;
+
+          .english {
+            width: clamp(25px, 8vw, 40px);
+            background-image: url(#{$s3}/0-B-6-piece-1-pink.svg);
+            font-size: clamp(11px, 1.8vw, 16px);
+            border-radius: 3px;
+            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            font-size: clamp(11px, 1.8vw, 16px);
+          }
+
+          .english-2 {
+            margin-left: clamp(10px, 5vw, 25px);
+            width: clamp(80px, 15vw, 120px);
+            background-image: url(#{$s3}/0-B-6-piece-2.svg);
+            font-size: clamp(11px, 1.8vw, 16px);
+            border-radius: 3px;
+            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            font-size: clamp(11px, 1.8vw, 16px);
+          }
+
+          .jap {
+            font-size: clamp(8px, 1.9vw, 13px);
+            position: absolute;
+            margin-top: clamp(35px, 10vw, 60px);
+            color: $subtext-color;
+            letter-spacing: $jap-letter-spacing;
+          }
+          }
+
+
+      .phrases-container {
+        margin-top: clamp(50px, 16vw, 80px);
+      }
+
+      .legend {
+        margin-top: clamp(25px, 5vw, 38px);
+      }
+
+      .yellow {
+        background-image: url(#{$s3}/0-B-6-piece-1-pink.svg);
+        font-size: clamp(11px, 1.8vw, 16px);
+        border-radius: 3px;
+      }
+      .blue {
+        background-image: url(#{$s3}/0-B-6-piece-2.svg);
+        font-size: clamp(11px, 1.8vw, 16px);
+        border-radius: 3px;
+      }
+
+      .legend {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2px;
+
+        & .eng {
+          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+          font-size: clamp(11px, 1.8vw, 16px);
+        }
+      }
+
+      .phrase-alts {
+        display: grid;
         grid-template-columns: 1fr clamp(157px, 39vw, 280px);
         gap: 7px;
 
@@ -1085,6 +1314,7 @@ hr {
           color: $subtext-color;
         }
 
+        //number
         .number {
           @extend .b;
           border-radius: 50%;
@@ -1118,58 +1348,145 @@ hr {
   .try-3 {
     .try-3-content {
       .conversation {
-        margin-top: 30px;
-        width: clamp(310px, 86vw, 540px);
-        min-height: clamp(230px, 60vw, 380px);
-        position: relative;
-        background-position: top, bottom;
-        background-size: contain;
-        background-repeat: no-repeat;
+        margin-top: 40px;
 
-        .akiko {
-          span {
-            position: absolute;
-            left: 15.7%;
-            margin-top: clamp(100px, 26.8vw, 176px);
-            border-radius: 7px;
-            padding-top: clamp(0.2px, 1vw, 5px);
-            padding-left: clamp(6px, 2vw, 12px);
-            padding-bottom: clamp(0.2px, 1vw, 5px);
-            padding-right: clamp(6px, 2vw, 12px);
-            background-color: #ffffff;
-            font-size: clamp(6px, 2vw, 10px);
-            border-style: solid;
-            border-color: #d0d2d3;
-            border-width: 0.5px;
-            color: #2d356b;
-          }
-        }
+          .try-3-row-1{
+            display: flex;
+            .try3-col1{
+              width: clamp(50px, 35vw, 210px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              text-align: center;
+              border-radius: 4px;
 
-        .helen {
-          span {
-            position: absolute;
-            color: #2d356b;
-            left: 78.7%;
-            margin-top: clamp(118px, 32.3vw, 206px);
-            border-radius: 7px;
-            padding-top: clamp(0.2px, 1vw, 5px);
-            padding-left: clamp(6px, 2vw, 12px);
-            padding-bottom: clamp(0.2px, 1vw, 5px);
-            padding-right: clamp(6px, 2vw, 12px);
-            background-color: #ffffff;
-            font-size: clamp(6px, 2vw, 10px);
-            border-style: solid;
-            border-color: #d0d2d3;
-            border-width: 0.5px;
+              .try3-col1-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
+
+            .try3-col2{
+              width: clamp(50px, 35vw, 165px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              margin-left: 3%;
+              text-align: center;
+              border-radius: 4px;
+
+              .try3-col2-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
           }
-        }
+
+          .try-3-row-2{
+            display: flex;
+            .try3-col1{
+              width: clamp(40px, 30vw, 160px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              text-align: center;
+              border-radius: 4px;
+
+              .try3-col1-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
+
+            .try3-col2{
+              width: clamp(150px, 35vw, 210px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              margin-left: 3%;
+              text-align: center;
+              border-radius: 4px;
+
+              .try3-col2-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
+          }
+
+          .try-3-row-3{
+            display: flex;
+            .try3-col1{
+              width: clamp(30px, 25vw, 140px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              text-align: center;
+              border-radius: 4px;
+
+              .try3-col1-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
+
+            .try3-col2{
+              width: clamp(120px, 25vw, 180px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              margin-left: 3%;
+              text-align: center;
+              border-radius: 4px;
+
+              .try3-col2-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
+          }
+
+          .try-3-row-4{
+            display: flex;
+            margin-bottom: 30px;
+            .try3-col1{
+              width: clamp(100px, 50vw, 270px);
+              min-height: clamp(35px, 25vw, 35px);
+              background-color: #E7F3FA;
+              font-weight: 700;
+              margin-bottom: 10px;
+              text-align: center;
+              border-radius: 4px;
+
+              .try3-col1-text{
+                display: inline-block;
+                padding-top: clamp(9px, 4vw, 6px);
+                font-size: clamp(10px, 2.1vw, 14px);
+              }
+            }
+          }
+
       }
 
       .conversation-text {
         padding-top: clamp(1px, 1.2vw, 20px);
-        margin-bottom: -70px;
+
         .convo-1,
-        .convo-4{
+        .convo-2,
+        .convo-3,
+        .convo-4 {
           padding-bottom: 20px;
           .convo-wrap-akiko {
             padding-bottom: clamp(10px, 1vw, 20px);
@@ -1182,6 +1499,20 @@ hr {
 
             .akiko-line-1 {
               font-size: clamp(10px, 2.1vw, 14px);
+
+              .bubble{
+                position: absolute;
+                left: 62%;
+                margin-top: -11%;
+                text-align: center;
+                width: clamp(20px, 25vw, 200px);
+                color: #2d356b;
+                min-height: clamp(60px, 30vw, 180px);
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(#{$s3}/0-B-6-Try3-1.svg);
+              }
             }
 
             .number-right {
@@ -1200,16 +1531,6 @@ hr {
               border-radius: 50%;
               text-align: center;
             }
-            .text-under {
-              margin-left: clamp(70px, 13vw, 84px);
-
-              .underline {
-                margin-left: clamp(1px, 1.1vw, 8px);
-                text-decoration: underline;
-                color: $primary-blue;
-                font-size: clamp(9px, 2.5vw, 14px);
-              }
-            }
           }
 
           .convo-wrap-helen {
@@ -1221,184 +1542,12 @@ hr {
 
             .helen-line {
               font-size: clamp(10px, 2.1vw, 14px);
-            }
-            .text-under {
-              margin-left: clamp(70px, 13vw, 84px);
-            }
-          }
+              margin-left: clamp(10px, 4vw, 22px);
 
-          .convo-wrap-akiko-last {
-            padding-bottom: clamp(10px, 3vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: white;
-            }
-            .akiko-line-2 {
-              font-size: clamp(10px, 2.1vw, 14px);
-            }
-
-            .letter-square {
-              margin-left: 10px;
-              padding-left: clamp(3px, 0.3vw, 5px);
-              padding-right: clamp(4px, 0.3vw, 5px);
-              color: #1288cd;
-              font-size: clamp(10px, 2.1vw, 14px) !important;
-              font-weight: bold;
-              --size: clamp(13px, 2vw, 32px);
-              left: calc(-1 * var(--size) - 10px);
-              line-height: var(--size);
-              width: var(--size);
-              height: var(--size);
-              top: 0;
-              background: white;
-              border: 2.3px solid #1288cd;
-              text-align: center;
-            }
-          }
-        }
-
-        .convo-2{
-          padding-bottom: 20px;
-          .convo-wrap-akiko {
-            padding-bottom: clamp(10px, 1vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: #1288cd;
-              font-size: clamp(10px, 2.1vw, 14px);
-              font-weight: bold;
-            }
-
-            .akiko-line-1 {
-              font-size: clamp(10px, 2.1vw, 14px);
-            }
-
-            .number-right {
-              margin-left: 10px;
-              padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
-              color: white;
-              font-size: clamp(10px, 2.1vw, 14px);
-              font-weight: bold;
-              --size: clamp(13px, 2vw, 32px);
-              left: calc(-1 * var(--size) - 10px);
-              line-height: var(--size);
-              width: var(--size);
-              height: var(--size);
-              top: 0;
-              background: #1288cd;
-              border-radius: 50%;
-              text-align: center;
-            }
-            .text-under {
-              margin-left: clamp(70px, 13vw, 84px);
-
-              .underline {
-                margin-left: clamp(1px, 1.1vw, 8px);
-                text-decoration: underline;
+              .underline{
                 color: $primary-blue;
-                font-size: clamp(9px, 2.5vw, 14px);
-              }
-            }
-          }
-
-          .convo-wrap-helen {
-            padding-bottom: clamp(10px, 1vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: white;
-            }
-
-            .helen-line {
-              font-size: clamp(10px, 2.1vw, 14px);
-              margin-left: clamp(3px, 2vw, 4px);
-            }
-            .text-under {
-              margin-left: clamp(70px, 13vw, 84px);
-            }
-          }
-
-          .convo-wrap-akiko-last {
-            padding-bottom: clamp(10px, 3vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: white;
-            }
-            .akiko-line-2 {
-              font-size: clamp(10px, 2.1vw, 14px);
-            }
-
-            .letter-square {
-              margin-left: 10px;
-              padding-left: clamp(3px, 0.3vw, 5px);
-              padding-right: clamp(4px, 0.3vw, 5px);
-              color: #1288cd;
-              font-size: clamp(10px, 2.1vw, 14px) !important;
-              font-weight: bold;
-              --size: clamp(13px, 2vw, 32px);
-              left: calc(-1 * var(--size) - 10px);
-              line-height: var(--size);
-              width: var(--size);
-              height: var(--size);
-              top: 0;
-              background: white;
-              border: 2.3px solid #1288cd;
-              text-align: center;
-            }
-          }
-        }
-
-        .convo-3{
-          padding-bottom: 20px;
-          .convo-wrap-akiko {
-            padding-bottom: clamp(10px, 1vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: #1288cd;
-              font-size: clamp(10px, 2.1vw, 14px);
-              font-weight: bold;
-            }
-
-            .akiko-line-1 {
-              font-size: clamp(10px, 2.1vw, 14px);
-            }
-
-            .number-right {
-              margin-left: 10px;
-              padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
-              color: white;
-              font-size: clamp(10px, 2.1vw, 14px);
-              font-weight: bold;
-              --size: clamp(13px, 2vw, 32px);
-              left: calc(-1 * var(--size) - 10px);
-              line-height: var(--size);
-              width: var(--size);
-              height: var(--size);
-              top: 0;
-              background: #1288cd;
-              border-radius: 50%;
-              text-align: center;
-            }
-            .text-under {
-              margin-left: clamp(70px, 13vw, 84px);
-
-              .underline {
-                margin-left: clamp(1px, 1.1vw, 8px);
                 text-decoration: underline;
-                color: $primary-blue;
-                font-size: clamp(9px, 2.5vw, 14px);
               }
-            }
-          }
-
-          .convo-wrap-helen {
-            padding-bottom: clamp(10px, 1vw, 20px);
-            .number-left {
-              padding-right: 20px;
-              color: white;
-            }
-
-            .helen-line {
-              font-size: clamp(10px, 2.1vw, 14px);
-              margin-left: clamp(-3px, -1vw, -3px);
             }
             .text-under {
               margin-left: clamp(70px, 13vw, 84px);
@@ -1448,29 +1597,28 @@ hr {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-B-2-Asset11-1B.svg);
+        background-image: url(#{$s3}/0-B-6-Act1.svg);
 
         .bubble {
-          margin-left: clamp(15px, 5vw, 25px);
+          margin-left: clamp(15px, 5vw, 19px);
           margin-top: clamp(5px, 2.3vw, 10px);
-          width: clamp(170px, 43.4vw, 210px);
-          min-height: clamp(20px, 20vw, 100px);
+          width: clamp(170px, 43.4vw, 260px);
+          min-height: clamp(130px, 50vw, 260px);
           position: absolute;
           background-size: contain;
           background-repeat: no-repeat;
-          padding-top: clamp(3px, 3vw, 25px);
-          padding-left: clamp(16px, 4.8vw, 40px);
+          background-image: url(#{$s3}/0-cloud-bubble-white.png);
+          padding-top: clamp(12px, 4.3vw, 30px);
+          padding-left: clamp(16px, 4.8vw, 45px);
           padding-bottom: clamp(5.2px, 2.6vw, 15px);
           padding-right: clamp(6px, 1.6vw, 15px);
 
           .bubble-text {
             .english {
               font-size: clamp(8px, 2vw, 14px);
-              position: absolute;
             }
             .japanese {
               position: absolute;
-              padding-top: clamp(3px, 1.5vw, 15px);
               margin-top: -1px;
               font-size: clamp(6px, 1.5vw, 10px);
               color: $subtext-color;
@@ -1522,41 +1670,41 @@ hr {
         margin-top: clamp(0px, 1.3vw, 20px);
 
         .convo,
-        .convo1,
         .convo2,
-        .convo3,
         .convo4 {
           font-family: $noto-sans;
           margin-bottom: 20px;
           .english {
             font-size: clamp(10px, 2.3vw, 17px);
-            margin-left: clamp(15px, 3.5vw, 30px);
-
-            .text-under {
-              margin-left: clamp(40px, 11vw, 87px);
-            }
-          }
-
-          .english1 {
-            font-size: clamp(10px, 2.3vw, 17px);
-            margin-left: clamp(15px, 5vw, 30px);
-
-            .text-under {
-              margin-left: clamp(40px, 11vw, 87px);
-            }
+            margin-left: clamp(15px, 3.5vw, 37px);
           }
           .line {
             color: #141821;
           }
           .japanese {
-            margin-left: clamp(40px, 11vw, 87px);
+            margin-left: clamp(50px, 12.8vw, 100px);
             font-size: clamp(8px, 1.7vw, 13px);
             color: $subtext-color;
             letter-spacing: $jap-letter-spacing;
+          }
+        }
 
-            .text-under {
-              margin-left: clamp(40px, 11vw, 87px);
-            }
+        .convo1,
+        .convo3{
+          font-family: $noto-sans;
+          margin-bottom: 20px;
+          .english {
+            font-size: clamp(10px, 2.3vw, 17px);
+            margin-left: clamp(15px, 5vw, 45px);
+          }
+          .line {
+            color: #141821;
+          }
+          .japanese {
+            margin-left: clamp(50px, 12.8vw, 100px);
+            font-size: clamp(8px, 1.7vw, 13px);
+            color: $subtext-color;
+            letter-spacing: $jap-letter-spacing;
           }
         }
       }
@@ -1570,3 +1718,16 @@ hr {
   }
 }
 
+// @media only screen and(max-width: 375px) {
+//   .icon {
+//     margin-top: -100px !important;
+//     margin-left: 30% !important;
+//     // img {
+//     //   height: clamp(51px, 19vw, 100px);
+//     //   width: auto;
+//     // }
+//     // div {
+//     //   margin-top: clamp(8px, 2vw, 9px);
+//     // }
+//   }
+// }

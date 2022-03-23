@@ -298,7 +298,7 @@ hr {
 
     .s1-bubble2 {
       left: 51.5%;
-      margin-top: clamp(58px, 16vw, 97px);
+      margin-top: clamp(55px, 15vw, 97px);
       width: clamp(140px, 40vw, 242px);
       min-height: clamp(30px, 8vw, 50px);
       position: absolute;
@@ -435,7 +435,7 @@ hr {
           margin-top: 15px;
 
           .box-2 {
-            width: clamp(100px, 23vw, 120px);
+            width: clamp(70px, 17vw, 120px);
             background: url(#{$s3}/0-yellow-piece.png);
             text-align: center;
             background-position: center;
@@ -491,7 +491,7 @@ hr {
       }
 
       .b1-legend {
-        width: clamp(80px, 15vw, 80px);
+        width: clamp(50px, 15vw, 80px);
         background: url(#{$s3}/0-yellow-piece.png);
         background-position: center;
         background-size: cover;

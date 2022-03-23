@@ -198,6 +198,8 @@ td {
     font-family: $noto-sans;
   }
   .instructions {
+    margin-right: $side-margin;
+
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;

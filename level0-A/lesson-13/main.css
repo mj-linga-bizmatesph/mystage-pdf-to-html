@@ -186,6 +186,7 @@ td {
 }
 
 .html-lesson-wrapper .instructions {
+  margin-right: clamp(18px, 5vw, 32px);
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;

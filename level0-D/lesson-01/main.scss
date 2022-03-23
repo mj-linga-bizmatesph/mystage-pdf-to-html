@@ -61,6 +61,10 @@ td {
   margin-top: clamp(20px, 6.5vw, 38px);
 }
 
+.span-letter-spacing {
+  letter-spacing: -2.5px !important;
+}
+
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;

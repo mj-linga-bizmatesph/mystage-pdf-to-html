@@ -637,7 +637,7 @@ hr {
 .html-lesson-wrapper .try-1 .try1-content .try-1-row-2 .underline {
   margin-left: clamp(5px, 5vw, 5px);
   text-decoration: underline;
-  color: #1287cd;
+  color: black;
   font-size: clamp(11px, 3.3vw, 19px);
 }
 
@@ -681,7 +681,7 @@ hr {
 .html-lesson-wrapper .try-1 .try1-content .try-1-row-3 .underline {
   margin-left: clamp(5px, 5vw, 5px);
   text-decoration: underline;
-  color: #1287cd;
+  color: black;
   font-size: clamp(11px, 3.3vw, 19px);
 }
 
@@ -725,7 +725,7 @@ hr {
 .html-lesson-wrapper .try-1 .try1-content .try-1-row-4 .underline {
   margin-left: clamp(5px, 5vw, 5px);
   text-decoration: underline;
-  color: #1287cd;
+  color: black;
   font-size: clamp(11px, 3.3vw, 19px);
 }
 
@@ -769,7 +769,7 @@ hr {
 .html-lesson-wrapper .try-1 .try1-content .try-1-row-5 .underline {
   margin-left: clamp(5px, 5vw, 5px);
   text-decoration: underline;
-  color: #1287cd;
+  color: black;
   font-size: clamp(11px, 3.3vw, 19px);
 }
 
@@ -1051,7 +1051,7 @@ hr {
 }
 
 .html-lesson-wrapper .see-3 .see-3-content .wrap-phrase .phrase-1 .english {
-  width: clamp(98px, 16vw, 150px);
+  width: clamp(98px, 16vw, 153px);
   font-size: clamp(11px, 1.8vw, 16px);
   border-radius: 5px;
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
@@ -1100,6 +1100,7 @@ hr {
 .html-lesson-wrapper .see-3 .see-3-content .yellow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-B-3-piece-1.svg);
   font-size: clamp(11px, 1.8vw, 16px);
+  width: clamp(98px, 16vw, 153px);
   border-radius: 3px;
 }
 

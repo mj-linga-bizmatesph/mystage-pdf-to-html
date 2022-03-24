@@ -1262,6 +1262,7 @@ hr {
 .html-lesson-wrapper .see-3 .see-3-content .yellow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-B-6-piece-1-pink.svg);
   font-size: clamp(11px, 1.8vw, 16px);
+  width: clamp(15px, 10vw, 41px);
   border-radius: 3px;
 }
 

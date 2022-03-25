@@ -1,0 +1,12 @@
+@import '../../css/executive-basics';
+
+.html-lesson-wrapper {
+  .review-content {
+    margin-top: 26%;
+    .lsn {
+      li:before {
+        content: 'Lsn 1' counter(item, decimal) ': ';
+      }
+    }
+  }
+}

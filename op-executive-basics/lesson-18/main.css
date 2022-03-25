@@ -8,7 +8,7 @@ body {
   min-width: 360px;
   max-width: 100%;
   max-width: 892.75px;
-  min-height: 1200px;
+  min-height: 960px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -164,7 +164,7 @@ body {
 .html-lesson-wrapper .biz-tip-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
-  margin-top: 0.8% !important;
+  margin-top: 3% !important;
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers {
@@ -173,7 +173,7 @@ body {
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  margin-left: -12px;
+  margin-left: -3.2%;
   margin-right: 16%;
 }
 
@@ -184,8 +184,8 @@ body {
 .html-lesson-wrapper .arrow-part:before {
   content: '';
   position: absolute;
-  left: -20px;
-  top: 5px;
+  left: -1.5em;
+  top: 0.3em;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -377,10 +377,6 @@ body {
   }
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
-  }
-  .html-lesson-wrapper .arrow-part:before {
-    left: -4.5% !important;
-    top: 0.6vw !important;
   }
 }
 

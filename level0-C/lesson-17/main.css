@@ -60,12 +60,7 @@ td {
 .html-lesson-wrapper .noto-sans {
   font-family: "Noto Sans";
 }
-<<<<<<< HEAD
-
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng {
-=======
 .html-lesson-wrapper .b, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
   font-weight: bold;
 }
 .html-lesson-wrapper .u-sup {
@@ -164,10 +159,6 @@ td {
 .html-lesson-wrapper .office-section .legend div {
   position: absolute;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right {
   font-size: clamp(18px, 3vw, 25px);
   padding: 0.3% 5% 0.3% 1%;
@@ -252,10 +243,6 @@ td {
   font-size: clamp(11px, 3vw, 16px);
   text-align: center;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .plus > img {
   width: auto;
   height: clamp(10px, 5vw, 15px);
@@ -306,20 +293,12 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .icon div {
   margin-top: clamp(8px, 2vw, 14px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content .phrases-section .phrases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans";
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content .phrases-section .phrase p {
   margin: clamp(3px, 0.5vw, 5px) 0px;
 }
@@ -349,23 +328,12 @@ td {
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts {
   display: grid;
-<<<<<<< HEAD
-  -ms-grid-columns: [one] min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-=======
   grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
   grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
   gap: 13px;
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts.half {
-<<<<<<< HEAD
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-=======
   grid-template-columns: 1fr 1fr;
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .alt-box {
   padding: 15px;
@@ -379,10 +347,6 @@ td {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .alt:not(:last-child) {
   margin-bottom: clamp(10px, 2vw, 20px);
 }
@@ -394,10 +358,6 @@ td {
   white-space: nowrap;
   font-family: "Noto Sans";
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-eng {
   font-size: clamp(9px, 2vw, 18px);
 }
@@ -463,33 +423,17 @@ td {
 .html-lesson-wrapper .see-content.see-1 .office-section.office-see-1 {
   margin-top: clamp(20px, 6.5vw, 29px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-1 .office-section .conversation .speech.steve {
   margin-top: 3%;
   margin-left: 18%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-1 .office-section .conversation .speech.akiko {
   left: 35%;
   margin-top: 16%;
 }
-<<<<<<< HEAD
-
 .html-lesson-wrapper .see-content.see-2, .html-lesson-wrapper .see-content.see-3, .html-lesson-wrapper .see-content.see-4 {
   margin-top: clamp(20px, 5vw, 33px);
 }
-
-=======
-.html-lesson-wrapper .see-content.see-2, .html-lesson-wrapper .see-content.see-3, .html-lesson-wrapper .see-content.see-4 {
-  margin-top: clamp(20px, 5vw, 33px);
-}
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .phrases,
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrases {
   -webkit-box-pack: justify;
@@ -499,56 +443,28 @@ td {
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve {
   margin-top: clamp(28px, 5vw, 38px);
   display: grid;
-<<<<<<< HEAD
-  -ms-grid-columns: [one] min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-}
-
-.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .icon {
-  margin-right: 10px;
-}
-
-=======
   grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
   grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .icon {
   margin-right: 10px;
 }
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .eng {
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko {
   margin-top: clamp(17px, 4vw, 27px);
   display: grid;
-<<<<<<< HEAD
-  -ms-grid-columns: minmax(auto, 1fr) min-content;
-      grid-template-columns: minmax(auto, 1fr) -webkit-min-content;
-      grid-template-columns: minmax(auto, 1fr) min-content;
-}
-
-=======
   grid-template-columns: minmax(auto, 1fr) -webkit-min-content;
   grid-template-columns: minmax(auto, 1fr) min-content;
 }
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .icon {
   margin-left: -6px;
   z-index: 0;
 }
-<<<<<<< HEAD
-
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrase {
   z-index: 2;
 }
-
-=======
-.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrase {
-  z-index: 2;
-}
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .eng {
   padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
 }
@@ -561,42 +477,22 @@ td {
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .eng {
   font-size: clamp(7px, 1.8vw, 13px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .bubble.akiko {
   margin-top: 5%;
   left: 9%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .speech.akiko-1 {
   margin-top: 13%;
   left: 24.5%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .speech.akiko-2 {
   margin-top: 25.5%;
   left: 28%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .speech.glen-1 {
   margin-top: 13%;
   left: 45%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .speech.glen-2 {
   margin-top: 34.5%;
   left: 36%;
@@ -604,21 +500,6 @@ td {
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .akiko {
   margin-top: clamp(28px, 5vw, 38px);
   display: grid;
-<<<<<<< HEAD
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
-}
-
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .akiko .icon {
-  margin-right: 20px;
-}
-
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .akiko .eng {
-  padding: 10px 27px 10px 20px;
-}
-
-=======
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
 }
@@ -628,44 +509,20 @@ td {
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .akiko .eng {
   padding: 10px 27px 10px 20px;
 }
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .akiko .phrase:not(:last-child) {
   margin-right: 20px;
 }
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen {
   margin-top: clamp(28px, 5vw, 38px);
   display: grid;
-<<<<<<< HEAD
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
-}
-
-=======
   grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
 }
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-<<<<<<< HEAD
-
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
-  margin-left: clamp(58px, 13vw, 110px);
-}
-
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child > .phrase {
-  margin-right: clamp(10px, 10vw, 30px);
-}
-
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-}
-
-=======
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
   margin-left: clamp(58px, 13vw, 110px);
 }
@@ -675,26 +532,12 @@ td {
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .eng {
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .away-from-icon {
   margin-right: clamp(20px, 8vw, 58px);
 }
 .html-lesson-wrapper .see-content.see-4 .phrases-section .legend {
   margin-top: 5%;
 }
-<<<<<<< HEAD
-
-.html-lesson-wrapper .try-content.try-1, .html-lesson-wrapper .try-content.try-2, .html-lesson-wrapper .try-content.try-3, .html-lesson-wrapper .try-content.try-4 {
-  margin-top: 32px;
-}
-
-.html-lesson-wrapper .try-content.try-1 .combinations {
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  margin-top: clamp(20px, 5vw, 32px);
-}
-
-=======
 .html-lesson-wrapper .try-content.try-1, .html-lesson-wrapper .try-content.try-2, .html-lesson-wrapper .try-content.try-3, .html-lesson-wrapper .try-content.try-4 {
   margin-top: 32px;
 }
@@ -702,7 +545,6 @@ td {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: clamp(20px, 5vw, 32px);
 }
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-1 .combinations .combination-icon {
   height: clamp(119px, 20vw, 183px);
   width: clamp(119px, 20vw, 183px);
@@ -716,88 +558,47 @@ td {
           justify-content: center;
   margin-bottom: clamp(14px, 2vw, 24px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-1 .combinations .combination > div:not(:last-child) {
   margin-right: clamp(5px, 2vw, 10px);
 }
 .html-lesson-wrapper .try-content.try-2 .office-section {
   margin-top: clamp(20px, 6.5vw, 42px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.nick {
   margin-top: 9%;
   left: 29%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.takashi {
   margin-top: 22%;
   left: 33%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.pete {
   margin-top: 9.5%;
   left: 31%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.mizuho {
   margin-top: 21%;
   left: 37%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.risa {
   margin-top: 10%;
   left: 31%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.ken {
   margin-top: 24%;
   left: 44%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.raj {
   margin-top: 11%;
   left: 28%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-2 .office-section .conversation .speech.eri {
   left: 39%;
   margin-top: 22%;
 }
 .html-lesson-wrapper .try-content.try-3 .combination-2 {
   margin-top: clamp(20px, 5vw, 32px);
-<<<<<<< HEAD
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-=======
   grid-template-columns: 1fr 1fr;
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
   gap: 20px;
 }
 .html-lesson-wrapper .try-content.try-3 .combination-2 .combination-icon {
@@ -810,10 +611,6 @@ td {
           align-items: center;
   margin-bottom: clamp(14px, 2vw, 24px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .try-content.try-3 .combination-2 .combination > div:not(:last-child) {
   margin-right: clamp(5px, 2vw, 10px);
 }
@@ -868,10 +665,6 @@ td {
   margin-top: 28%;
   left: 56%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480
 .html-lesson-wrapper .act-content.act-1, .html-lesson-wrapper .act-content.act-2 {
   margin-top: 32px;
 }
@@ -886,14 +679,6 @@ td {
   margin-top: 9%;
   left: 11%;
 }
-<<<<<<< HEAD
-
 .html-lesson-wrapper .act-content .office-section .conversation .bubble.akiko .eng {
   font-size: clamp(8px, 2vw, 14px);
 }
-/*# sourceMappingURL=main.css.map */
-=======
-.html-lesson-wrapper .act-content .office-section .conversation .bubble.akiko .eng {
-  font-size: clamp(8px, 2vw, 14px);
-}
->>>>>>> c96696eb6080fd8d615689643f5668f256a07480

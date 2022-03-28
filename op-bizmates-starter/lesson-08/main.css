@@ -198,6 +198,7 @@ footer .footer-text {
 }
 
 .html-lesson-wrapper .program-rank {
+  font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
@@ -219,15 +220,16 @@ footer .footer-text {
 }
 
 .html-lesson-wrapper .program-rank .separator {
+  font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
   display: inline;
   margin: 0 6px;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .html-lesson-wrapper .program-rank .separator .line {
   position: absolute;
-  top: 21%;
+  top: 2%;
   right: 2%;
 }
 

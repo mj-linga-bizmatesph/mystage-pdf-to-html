@@ -1,0 +1,1046 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Arial';
+$noto-sans: 'Noto Sans';
+
+$primary-blue: #1287cd;
+$rank-green: #009c9a;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+
+$subtext-color: #7f8288;
+
+$side-margin: clamp(18px, 5vw, 32px);
+$fs-10: clamp(5px, 1.7vw, 10px);
+$fs-11: clamp(6px, 1.9vw, 11px);
+$fs-12: clamp(8px, 1.8vw, 12px);
+$fs-13: clamp(9px, 2.2vw, 13px);
+$fs-14: clamp(8.5px, 2.4vw, 14px);
+$fs-16: clamp(11px, 2.7vw, 16px);
+$fs-18: clamp(12px, 3.5vw, 18px);
+$fs-20: clamp(13px, 4vw, 20px);
+
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-top: 1px solid #dbdcdc;
+}
+
+td {
+  vertical-align: top;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.small-line {
+  height: 2px;
+  width: 16px;
+  background: $primary-blue;
+  margin-bottom: 1.5vw;
+}
+
+.trebuchet {
+  font-family: $text-font;
+}
+
+.content-mt {
+  margin-top: clamp(20px, 6.5vw, 38px);
+}
+
+.span-letter-spacing {
+  letter-spacing: -2.5px !important;
+}
+
+.html-lesson-wrapper {
+  font-family: $text-font;
+  width: 100%;
+  min-width: 360px;
+  max-width: 604px;
+  min-height: 1596px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62px;
+  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  header {
+    font-family: $title-font;
+  }
+
+  .fs-16 {
+    font-size: clamp(12px, 2.3vw, 16px);
+  }
+  .flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .noto-sans {
+    font-family: $noto-sans;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .u-sup {
+    border-bottom: solid 1.5px black;
+    display: inline-block;
+    line-height: clamp(6px, 1.5vw, 14px);
+  }
+  .u-blue {
+    text-decoration: underline;
+    color: $primary-blue;
+  }
+  .primary-blue {
+    color: $primary-blue;
+  }
+  .program-rank {
+    position: absolute;
+    color: #ffffff;
+    font-size: 0px;
+    margin-top: clamp(1px, 1vw, 5px);
+
+    .type {
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
+        clamp(10px, 3vw, 17px);
+      background-color: $primary-blue;
+      font-size: clamp(7px, 1.8vw, 12px);
+    }
+    .level {
+      padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px)
+        clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 12px);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -webkit-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -o-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      background: -moz-linear-gradient(
+          125deg,
+          $primary-blue 6%,
+          rgba(0, 0, 0, 0) 0%
+        ),
+        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+
+      margin-left: -15px;
+      width: 100%;
+    }
+  }
+  .eng {
+    font-weight: bold;
+    font-size: $fs-14;
+    font-family: $text-font;
+  }
+  .jap {
+    letter-spacing: -0.5px;
+    color: $subtext-color;
+    font-family: $noto-sans;
+    font-size: $fs-11;
+  }
+  .step {
+    margin-bottom: clamp(2rem, 9vw, 3rem);
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .lesson-number {
+    position: absolute;
+    left: 90.3%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: clamp(15px, 4vw, 25px);
+    color: #ffffff;
+  }
+
+  // Title
+  .title-section {
+    position: absolute;
+    top: clamp(30px, 8vw, 50px);
+    background-color: $primary-blue;
+    color: white;
+    padding: clamp(10px, 3vw, 16px) clamp(20px, 6vw, 32px);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: $noto-sans;
+
+    .title {
+      font-size: clamp(16px, 4.5vw, 26px);
+    }
+    .sub-title {
+      font-size: clamp(10px, 2.5vw, 15px);
+      line-height: 2.8;
+      letter-spacing: -0.5px;
+    }
+  }
+  .arrow {
+    @extend .b;
+    text-transform: uppercase;
+    font-size: $fs-16;
+    padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $noto-sans;
+  }
+  .instructions {
+    font-family: $noto-sans;
+    position: absolute;
+    padding: clamp(0px, 0.01vw, 3px) 0px;
+    left: 26%;
+    line-height: 1.6;
+
+    .title {
+      font-size: clamp(12px, 3.5vw, 18px);
+      color: #141821;
+    }
+    .sub-title {
+      font-size: $fs-13;
+      color: $subtext-color;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  //office section
+
+  .name {
+    position: absolute;
+    border: 0.25px solid #231f20;
+    border-radius: 6.67px;
+    background-color: #ffffff;
+    color: #2d356b;
+    font-weight: bold;
+    font-family: $text-font;
+    font-size: clamp(8px, 2vw, 10px);
+    padding: clamp(5px, 1.5vw, 8px) clamp(5px, 2.5vw, 15px);
+  }
+
+  .office-section {
+    font-family: $noto-sans;
+
+    &.office-see-1 {
+      margin-top: clamp(20px, 6.5vw, 29px);
+
+      .mandy-convo-1 {
+        position: absolute;
+        margin: 17.5% 0 0 29.5%;
+      }
+
+      .akiko-convo-1 {
+        position: absolute;
+        margin: 5% 0 0 6%;
+      }
+
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(8.5px, 2.4vw, 14px);
+      }
+      .jpn {
+        font-family: $noto-sans;
+        color: #76797f;
+        font-weight: normal;
+        font-size: clamp(6.5px, 1.8vw, 11px);
+        line-height: 1.8;
+      }
+    }
+  }
+
+  // See-content
+  .see-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    &.see-1 {
+      margin-top: clamp(130px, 40vw, 220.2px);
+    }
+
+    &.see-2,
+    &.see-3,
+    &.see-4 {
+      margin-top: clamp(20px, 5vw, 33px);
+
+      //see-content.legend
+      & .legend {
+        margin-top: clamp(25px, 5vw, 38px);
+      }
+    }
+
+    .see-2-section {
+      margin-top: clamp(20px, 6.5vw, 4rem);
+      .akiko-section {
+        display: flex;
+        .akiko-icon {
+          text-align: center;
+          width: 18%;
+
+          div {
+            font-family: $noto-sans;
+            font-size: clamp(8.5px, 2.4vw, 14px);
+            font-weight: bold;
+            margin-top: 3%;
+          }
+        }
+        .akiko-conversation {
+          width: 82%;
+          padding-left: 5%;
+
+          .row-1 {
+            width: 100%;
+            display: flex;
+          }
+          .row-2 {
+            width: 100%;
+            .sub {
+              font-family: $noto-sans;
+              font-size: $fs-13;
+              font-size: $fs-13;
+              color: #7f8288;
+            }
+          }
+
+          .piece-mt {
+            margin-top: clamp(2.5px, 1vw, 5px);
+          }
+        }
+      }
+
+      .green-piece {
+        width: clamp(135px, 31vw, 235.2px);
+        margin-left: auto;
+      }
+
+      .red-piece {
+        width: clamp(93px, 23vw, 170.8px);
+      }
+
+      .yellow-piece {
+        width: clamp(153px, 36vw, 269px);
+      }
+
+      .piece {
+        height: clamp(30px, 9vw, 38px);
+        font-size: $fs-16;
+        font-family: $noto-sans;
+        font-weight: bold;
+      }
+
+      .akiko-table {
+        margin-top: clamp(1rem, 9vw, 3.5rem);
+        display: grid;
+        column-gap: 1%;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 47% 52%;
+      }
+
+      .table {
+        margin-top: 0.2rem;
+        border: 1px solid #1287cd;
+        padding: clamp(10px, 2.5vw, 18px) clamp(7px, 1.5vw, 11px);
+      }
+      .table.column-one {
+        width: 100%;
+      }
+      .table.column-two {
+        width: 100%;
+      }
+
+      ol {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
+      }
+
+      ol.column-one {
+        --li-bg: #1287cd;
+
+        li::before {
+          color: #fff;
+          border-radius: 50%;
+        }
+      }
+
+      ol.column-two {
+        --li-bg: #fff;
+
+        li::before {
+          color: $primary-blue;
+          border: 2px solid $primary-blue;
+          content: counter(orderedlist, upper-alpha);
+        }
+      }
+
+      ol.column-three {
+        --li-bg: #fff;
+
+        li::before {
+          border-radius: 50%;
+          color: $primary-blue;
+        }
+      }
+
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        width: clamp(18px, 4vw, 24px);
+        height: clamp(18px, 4vw, 24px);
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background-color: var(--li-bg);
+        font-weight: bold;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        align-items: start;
+        line-height: 1.25;
+        font-family: $noto-sans;
+        list-style-type: lower-alpha !important;
+
+        div {
+          div.list-title {
+            font-size: $fs-16;
+            margin-bottom: clamp(2px, 1vw, 8px);
+          }
+
+          div.list-subtitle {
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+      }
+
+      .column-two {
+        .green-piece {
+          margin-left: auto;
+        }
+      }
+    }
+
+    .arrow.see {
+      @extend .b;
+      text-transform: uppercase;
+      color: $primary-blue;
+      font-size: $fs-16;
+      background-image: url(#{$s3}/0-see-arrow.png);
+      padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-family: $noto-sans;
+    }
+  }
+  .try-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .try-1-content {
+      margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
+      display: flex;
+
+      .akiko-icon {
+        width: 40%;
+        padding-right: clamp(20px, 7vw, 40px);
+      }
+
+      .math-area {
+        width: 60%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+
+        .row {
+          display: flex;
+          align-items: center;
+          margin-bottom: clamp(10px, 2.4vw, 20px);
+
+          div {
+            margin-right: clamp(2px, 1.5vw, 6px);
+          }
+
+          .small {
+            width: clamp(18px, 4vw, 24px);
+            height: clamp(18px, 4vw, 24px);
+            display: grid;
+            place-items: center;
+            font-family: $noto-sans;
+            font-weight: bold;
+            font-size: $fs-16;
+          }
+
+          .number-bg {
+            background: $primary-blue;
+            color: white;
+            border-radius: 50%;
+            font-size: $fs-16;
+          }
+
+          .letter {
+            color: $primary-blue;
+            border: 2px solid $primary-blue;
+            font-size: $fs-16;
+          }
+
+          .number-outlined {
+            color: $primary-blue;
+            border-radius: 50%;
+            border: 1px solid $primary-blue;
+            font-size: $fs-16;
+          }
+
+          .text {
+            color: $primary-blue;
+            font-size: $fs-16;
+            font-weight: bold;
+          }
+
+          img {
+            width: clamp(10px, 3vw, 15px);
+            height: clamp(10px, 3vw, 15px);
+          }
+
+          .plus-sign {
+            display: flex;
+            align-items: center;
+            height: clamp(18px, 4vw, 24px);
+          }
+        }
+      }
+      .math-area-1 {
+        width: 60%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+
+        .row {
+          display: flex;
+          margin-bottom: clamp(10px, 2.4vw, 20px);
+
+          div {
+            margin-right: clamp(2px, 1.5vw, 6px);
+          }
+
+          .small {
+            width: clamp(18px, 4vw, 24px);
+            height: clamp(18px, 4vw, 24px);
+            display: grid;
+            place-items: center;
+            font-family: $noto-sans;
+            font-weight: bold;
+            font-size: $fs-16;
+          }
+
+          .number-bg {
+            background: $primary-blue;
+            color: white;
+            border-radius: 50%;
+            font-size: $fs-16;
+          }
+
+          .letter {
+            color: $primary-blue;
+            border: 2px solid $primary-blue;
+            font-size: $fs-16;
+          }
+
+          .number-outlined {
+            color: $primary-blue;
+            border-radius: 50%;
+            border: 1px solid $primary-blue;
+            font-size: $fs-16;
+          }
+
+          .text {
+            color: $primary-blue;
+            font-size: $fs-16;
+            font-weight: bold;
+          }
+
+          img {
+            width: clamp(10px, 3vw, 15px);
+            height: clamp(10px, 3vw, 15px);
+          }
+
+          .plus-sign {
+            display: flex;
+            align-items: center;
+            height: clamp(18px, 4vw, 24px);
+          }
+        }
+      }
+    }
+
+    .try-2-content {
+      margin-top: clamp(40px, 10vw, 50px);
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
+      }
+
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        color: $primary-blue;
+        font-weight: bold;
+        padding-left: 0.1vw;
+      }
+
+      .size-small {
+        width: clamp(200px, 47vw, 200px);
+      }
+
+      .image {
+        display: grid;
+        place-items: center;
+      }
+
+      .row {
+        display: flex;
+        margin-bottom: 2.4vw;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
+        font-family: $noto-sans;
+        margin-bottom: clamp(0.5rem, 2vw, 1rem);
+
+        .dialogue {
+          display: flex;
+        }
+
+        .big-mb {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .small-mb {
+          margin-bottom: clamp(10px, 2vw, 20px);
+        }
+
+        .jpn {
+          .speech {
+            font-style: $noto-sans;
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+
+        .person {
+          text-align: right;
+          font-weight: bold;
+          font-size: $fs-16;
+        }
+
+        .speech {
+          padding-left: 0.1vw;
+          width: 100%;
+          font-size: $fs-18;
+        }
+      }
+    }
+    .try-3-content {
+      margin-top: clamp(40px, 10vw, 50px);
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
+      }
+
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        color: $primary-blue;
+        font-weight: bold;
+        padding-left: 1vw;
+      }
+
+      .row {
+        display: flex;
+        margin-bottom: 2.4vw;
+      }
+
+      .image {
+        margin-bottom: 2.4vw;
+      }
+
+      .speech-bubble {
+        position: absolute;
+        margin: 39% 0 0 6%;
+      }
+
+      .speech-bubble-1 {
+        position: absolute;
+        margin: 39% 0 0 21%;
+      }
+
+      .speech-bubble-2 {
+        position: absolute;
+        margin: 40% 0 0 24%;
+      }
+
+      .speech-bubble-3 {
+        position: absolute;
+        margin: 39.5% 0 0 15%;
+      }
+
+      .speech-bubble-4 {
+        position: absolute;
+        margin: 42% 0 0 15%;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
+        font-family: $noto-sans;
+        margin-bottom: clamp(0.5rem, 2vw, 1rem);
+
+        .dialogue {
+          display: flex;
+        }
+
+        .big-mb {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .small-mb {
+          margin-bottom: clamp(10px, 3vw, 20px);
+        }
+
+        .jpn {
+          .speech {
+            font-style: $noto-sans;
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+
+        .person {
+          width: clamp(60px, 15%, 80px);
+          text-align: right;
+          font-weight: bold;
+          font-size: $fs-16;
+        }
+
+        .speech {
+          padding-left: 1vw;
+          width: 85%;
+          font-size: $fs-18;
+        }
+      }
+    }
+
+    .try-4-content {
+      margin-top: clamp(20px, 10vw, 69px);
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: clamp(0.1rem, 1vw, 0.5rem);
+        counter-reset: orderedlist;
+      }
+
+      li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        font-family: $noto-sans;
+        font-size: $fs-16;
+        color: $primary-blue;
+        font-weight: bold;
+        padding-left: 1vw;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 0 1fr;
+        grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
+        font-family: $noto-sans;
+
+        .dialogue {
+          display: flex;
+        }
+
+        .big-mb {
+          margin-bottom: clamp(10px, 4vw, 20px);
+        }
+
+        .small-mb {
+          margin-bottom: clamp(5px, 2vw, 10px);
+        }
+
+        .jpn {
+          .speech {
+            font-style: $noto-sans;
+            font-size: $fs-13;
+            color: #7f8288;
+          }
+        }
+
+        .person {
+          width: clamp(60px, 15%, 80px);
+          text-align: right;
+          font-weight: bold;
+          font-size: $fs-16;
+        }
+
+        .speech {
+          padding-left: 1vw;
+          width: 85%;
+          font-size: $fs-18;
+        }
+      }
+
+      .image-area {
+        margin-bottom: clamp(1rem, 4vw, 1.8rem);
+        padding-right: 10%;
+      }
+
+      .speech-1-1 {
+        position: absolute;
+        margin: 6.5% 0 0 4%;
+      }
+
+      .speech-1-2 {
+        position: absolute;
+        margin: 14% 0 0 16%;
+      }
+
+      .speech-1-3 {
+        position: absolute;
+        margin: 5% 0 0 49.5%;
+      }
+
+      .speech-1-4 {
+        position: absolute;
+        margin: 13.5% 0 0 62.5%;
+      }
+
+      .speech-2-1 {
+        position: absolute;
+        margin: 6.5% 0 0 5%;
+      }
+
+      .speech-2-2 {
+        position: absolute;
+        margin: 12.5% 0 0 14%;
+      }
+
+      .speech-2-3 {
+        position: absolute;
+        margin: 4% 0 0 52%;
+      }
+
+      .speech-2-4 {
+        position: absolute;
+        margin: 12.5% 0 0 63%;
+      }
+
+      .speech-3-2 {
+        position: absolute;
+        margin: 13% 0 0 17.5%;
+      }
+
+      .speech-3-4 {
+        position: absolute;
+        margin: 13% 0 0 62.5%;
+      }
+
+      .speech-4-2 {
+        position: absolute;
+        margin: 12.8% 0 0 15.5%;
+      }
+
+      .speech-4-3 {
+        position: absolute;
+        margin: 4.2% 0 0 51%;
+      }
+
+      .speech-4-4 {
+        position: absolute;
+        margin: 13% 0 0 67%;
+      }
+      .eng {
+        font-family: $text-font;
+        font-size: $fs-10;
+        font-weight: bold;
+      }
+
+      .text {
+        display: flex;
+        font-family: $noto-sans;
+        font-size: $fs-18;
+        margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
+      }
+
+      .step {
+        margin-bottom: clamp(2rem, 9vw, 5rem);
+      }
+    }
+
+    .try-content-pb {
+      padding-bottom: 6vw;
+    }
+
+    .number {
+      color: $primary-blue;
+      font-size: $fs-16;
+      font-weight: bold;
+      margin-right: 1vw;
+    }
+
+    &.try-1,
+    &.try-2,
+    &.try-3,
+    &.try-4 {
+      margin-top: 32px;
+    }
+
+    .arrow.try {
+      color: white;
+      background-image: url(#{$s3}/0-try-arrow.png);
+    }
+  }
+  .act-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .act-1-content {
+      margin: clamp(20px, 6.5vw, 29px) 0 clamp(20px, 17vw, 7rem);
+
+      .image-area {
+        margin-bottom: 1vw;
+      }
+
+      .speech-bubble {
+        position: absolute;
+        margin: 11% 0 0 12%;
+      }
+
+      .eng {
+        font-family: $text-font;
+        font-size: $fs-14;
+        font-weight: bold;
+      }
+
+      .fs-12 {
+        font-size: $fs-12 !important;
+      }
+
+      .mt {
+        margin-top: 13px;
+      }
+
+      .jpn {
+        font-family: $noto-sans;
+        font-size: $fs-11;
+        color: #7f8288;
+      }
+
+      .dan {
+        position: absolute;
+        margin: 36.5% 0 0 71%;
+      }
+
+      .akiko {
+        position: absolute;
+        margin: 37% 0 0 8%;
+      }
+
+      .text {
+        display: flex;
+        font-family: $noto-sans;
+        font-size: $fs-18;
+        margin-bottom: clamp(5px, 1vw, 10px);
+      }
+
+      .jpn-text {
+        display: flex;
+        font-family: $noto-sans;
+        font-size: $fs-13;
+        margin-bottom: clamp(5px, 3vw, 25px);
+        color: #7f8288;
+      }
+
+      .bold {
+        margin-right: 0.5vw;
+        text-align: right;
+        width: 15%;
+        font-weight: bold;
+        font-size: $fs-16;
+      }
+
+      .speech {
+        width: 85%;
+      }
+    }
+
+    &.act-1,
+    &.act-2 {
+      margin-top: 32px;
+    }
+    &.act-2 {
+      margin-bottom: 50px;
+    }
+
+    .arrow.act {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+  }
+  .blue-line {
+    width: 15px;
+    height: 2px;
+    border-bottom: 2px solid $primary-blue;
+    margin-bottom: 5px;
+  }
+}

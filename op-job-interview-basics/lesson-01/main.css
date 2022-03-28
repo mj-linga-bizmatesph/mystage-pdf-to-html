@@ -79,7 +79,7 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number-two {
-  left: 91.8%;
+  left: 91.6%;
 }
 
 .html-lesson-wrapper .row {
@@ -100,6 +100,10 @@ body {
 
 .html-lesson-wrapper .magenta-color {
   color: #cc3366;
+}
+
+.html-lesson-wrapper .sub-color, .html-lesson-wrapper .try-content .example {
+  color: #7f7f7f;
 }
 
 .html-lesson-wrapper .section {
@@ -241,6 +245,8 @@ body {
 .html-lesson-wrapper .see-content table td {
   padding: 0;
   vertical-align: top;
+  padding-bottom: 2%;
+  line-height: 1.8em;
 }
 
 .html-lesson-wrapper .see-content table td:first-child {
@@ -252,8 +258,9 @@ body {
 }
 
 .html-lesson-wrapper .try-content table {
+  margin-bottom: 2%;
   margin-top: 5px;
-  font-size: clamp(6px, 1.5vw, 14px);
+  font-size: clamp(6px, 1.8vw, 15px);
   border-spacing: 0px;
   padding-bottom: 5px;
   width: 100%;
@@ -264,7 +271,7 @@ body {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
-  border: 1px solid #ffffff;
+  border: 1px solid #f2f2f2;
 }
 
 .html-lesson-wrapper .try-content table th {
@@ -276,8 +283,12 @@ body {
 
 .html-lesson-wrapper .try-content table td {
   text-align: left;
-  padding: 4px;
-  background-color: #f2f2f2;
+  padding: 1% 1% 5% 1%;
+  background-color: #fff;
+}
+
+.html-lesson-wrapper .try-content .example {
+  padding-left: 1%;
 }
 
 .html-lesson-wrapper .act-content {

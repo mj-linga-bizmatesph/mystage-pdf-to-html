@@ -409,53 +409,45 @@ body {
   }
 }
 
-.html-lesson-wrapper .half {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  width: 88%;
+.html-lesson-wrapper .see-content.part-1 {
+  margin-top: 25%;
 }
 
 .html-lesson-wrapper .see-content table td:first-child {
   width: 9em;
 }
 
+.html-lesson-wrapper .see-content ol {
+  margin: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  counter-reset: list;
+  list-style-position: inside;
+}
+
+.html-lesson-wrapper .see-content li {
+  margin-bottom: 2%;
+}
+
+.html-lesson-wrapper .see-content li span {
+  margin-left: 2%;
+}
+
 .html-lesson-wrapper .see-content .paper {
-  padding: 2%;
+  padding: 1%;
   border-color: #d8d8d8;
   border-style: solid;
   border-width: 2.25px;
+}
+
+.html-lesson-wrapper .see-content .paper:not(:last-child) {
+  margin-bottom: 3%;
 }
 
 .html-lesson-wrapper .see-content .paper p {
   margin: 0;
 }
 
-.html-lesson-wrapper .see-content .paper p:not(:last-child) {
-  margin-bottom: 5%;
-}
-
-.html-lesson-wrapper .see-content .paper ol {
-  margin: 0;
-  margin-block: 0;
-  padding-inline: 0;
-  counter-reset: list;
-  list-style-position: inside;
-  margin-bottom: 5%;
-}
-
-.html-lesson-wrapper .see-content .paper ol > li {
-  list-style: none;
-}
-
-.html-lesson-wrapper .see-content .paper ol > li:before {
-  margin-right: 2%;
-  content: counter(list, number) ") ";
-  counter-increment: list;
-}
-
-.html-lesson-wrapper .try-content table tr.blank td {
-  padding: 4%;
+.html-lesson-wrapper .see-content .paper .arrow-part {
+  margin-left: 1.5em;
 }

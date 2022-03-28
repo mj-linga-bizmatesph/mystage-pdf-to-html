@@ -86,7 +86,7 @@ $blue-green: #339999;
   .lesson-number-two {
     @extend .lesson-number;
 
-    left: 91.8%;
+    left: 91.6%;
   }
 
   .row {
@@ -107,6 +107,10 @@ $blue-green: #339999;
 
   .magenta-color {
     color: $magenta;
+  }
+
+  .sub-color {
+    color: #7f7f7f;
   }
 
   .section {
@@ -245,6 +249,8 @@ $blue-green: #339999;
       td {
         padding: 0;
         vertical-align: top;
+        padding-bottom: 2%;
+        line-height: 1.8em;
 
         &:first-child {
           @extend .b;
@@ -260,8 +266,9 @@ $blue-green: #339999;
     }
 
     table {
+      margin-bottom: 2%;
       margin-top: 5px;
-      font-size: clamp(6px, 1.5vw, 14px);
+      font-size: clamp(6px, 1.8vw, 15px);
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
@@ -271,7 +278,7 @@ $blue-green: #339999;
         max-width: 120px;
         min-width: 80px;
         word-wrap: break-word;
-        border: 1px solid #ffffff;
+        border: 1px solid #f2f2f2;
       }
 
       th {
@@ -283,9 +290,14 @@ $blue-green: #339999;
 
       td {
         text-align: left;
-        padding: 4px;
-        background-color: #f2f2f2;
+        padding: 1% 1% 5% 1%;
+        background-color: #fff;
       }
+    }
+
+    .example {
+      @extend .sub-color;
+      padding-left: 1%;
     }
   }
 

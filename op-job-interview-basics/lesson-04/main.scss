@@ -1,0 +1,17 @@
+@import '../../css/job-interview-basics';
+
+.html-lesson-wrapper {
+  .see-content {
+    table {
+      td:first-child {
+        width: 13%;
+      }
+    }
+  }
+
+  .try-content {
+    .no-wrap {
+      white-space: nowrap;
+    }
+  }
+}

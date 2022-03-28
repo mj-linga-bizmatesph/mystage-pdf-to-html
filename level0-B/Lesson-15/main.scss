@@ -192,7 +192,6 @@ hr {
     }
   }
 
-  // See-content
   .see-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
@@ -201,12 +200,9 @@ hr {
       margin-top: clamp(110px, 28vw, 173.2px);
     }
 
-    &.see-2,
-    &.see-3,
-    &.see-4 {
+    &.see-2{
       margin-top: clamp(20px, 5vw, 33px);
 
-      //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
@@ -224,24 +220,7 @@ hr {
       font-family: $noto-sans;
     }
   }
-  .try-content {
-    margin-left: $side-margin;
-    margin-right: $side-margin;
 
-    &.try-1 {
-      margin-top: 32px;
-    }
-    &.try-2,
-    &.try-3,
-    &.try-4 {
-      margin-top: 32px;
-    }
-
-    .arrow.try {
-      color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
-    }
-  }
   
   .act-content {
     margin-left: $side-margin;
@@ -515,7 +494,6 @@ hr {
           }
         }
 }
-    
     .conversation-img1{
         width: clamp(258px, 44vw, 416px);
         min-height: clamp(130px, 50vw, 230px);
@@ -713,17 +691,3 @@ hr {
     margin-bottom: 80px;
   }
 }
-
-// @media only screen and(max-width: 375px) {
-//   .icon {
-//     margin-top: -100px !important;
-//     margin-left: 30% !important;
-//     // img {
-//     //   height: clamp(51px, 19vw, 100px);
-//     //   width: auto;
-//     // }
-//     // div {
-//     //   margin-top: clamp(8px, 2vw, 9px);
-//     // }
-//   }
-// }

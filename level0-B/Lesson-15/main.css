@@ -179,11 +179,11 @@ hr {
   margin-top: clamp(110px, 28vw, 173.2px);
 }
 
-.html-lesson-wrapper .see-content.see-2, .html-lesson-wrapper .see-content.see-3, .html-lesson-wrapper .see-content.see-4 {
+.html-lesson-wrapper .see-content.see-2 {
   margin-top: clamp(20px, 5vw, 33px);
 }
 
-.html-lesson-wrapper .see-content.see-2 .legend, .html-lesson-wrapper .see-content.see-3 .legend, .html-lesson-wrapper .see-content.see-4 .legend {
+.html-lesson-wrapper .see-content.see-2 .legend {
   margin-top: clamp(25px, 5vw, 38px);
 }
 
@@ -196,24 +196,6 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Noto Sans";
-}
-
-.html-lesson-wrapper .try-content {
-  margin-left: clamp(18px, 5vw, 32px);
-  margin-right: clamp(18px, 5vw, 32px);
-}
-
-.html-lesson-wrapper .try-content.try-1 {
-  margin-top: 32px;
-}
-
-.html-lesson-wrapper .try-content.try-2, .html-lesson-wrapper .try-content.try-3, .html-lesson-wrapper .try-content.try-4 {
-  margin-top: 32px;
-}
-
-.html-lesson-wrapper .try-content .arrow.try {
-  color: white;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-try-arrow.png);
 }
 
 .html-lesson-wrapper .act-content {

@@ -143,7 +143,6 @@ hr {
     color: #ffffff;
   }
 
-  // Title
   .title-section {
     position: absolute;
     top: clamp(30px, 8vw, 50px);
@@ -189,7 +188,6 @@ hr {
     }
   }
 
-  // See-content
   .see-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
@@ -203,7 +201,6 @@ hr {
     &.see-4 {
       margin-top: clamp(20px, 5vw, 33px);
 
-      //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
@@ -555,7 +552,6 @@ hr {
           color: $subtext-color;
         }
 
-        //number
         .number {
           @extend .b;
           border-radius: 50%;
@@ -735,14 +731,12 @@ hr {
           letter-spacing: $jap-letter-spacing;
         }
       }
-
       .phrase-2 {
         margin-top: clamp(2px, 5vw, 38px);
         margin-left: clamp(146px, 45vw, 228px);
         margin-bottom: clamp(30px, 14vw, 100px);
         display: absolute;
         display: block;
-
         .english {
           font-weight: bold;
           font-family: $noto-sans;
@@ -753,7 +747,6 @@ hr {
           padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
           font-size: clamp(11px, 1.8vw, 16px);
         }
-
         .jap {
           font-size: clamp(8px, 1.9vw, 13px);
           position: absolute;
@@ -835,7 +828,6 @@ hr {
           color: $subtext-color;
         }
 
-        //number
         .number {
           @extend .b;
           border-radius: 50%;
@@ -884,7 +876,6 @@ hr {
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-D-1-akikoright-icon.png);
       }
-
       .akiko-combinations {
         .akiko-first-combinations {
           position: absolute;
@@ -1141,17 +1132,3 @@ hr {
     }
   }
 }
-
-// @media only screen and(max-width: 375px) {
-//   .icon {
-//     margin-top: -100px !important;
-//     margin-left: 30% !important;
-//     // img {
-//     //   height: clamp(51px, 19vw, 100px);
-//     //   width: auto;
-//     // }
-//     // div {
-//     //   margin-top: clamp(8px, 2vw, 9px);
-//     // }
-//   }
-// }

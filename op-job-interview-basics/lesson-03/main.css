@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 11%;
-  background-image: url("http://127.0.0.1:8887/other-programs-bg-header.png"), url("http://127.0.0.1:8887/other-programs-bg-footer.png");
+  background-image: url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png"), url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/op-bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number-two {
-  left: 91.6%;
+  left: 91.5%;
 }
 
 .html-lesson-wrapper .row {
@@ -338,10 +338,10 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 43px;
+  bottom: 1.5%;
   right: 6.2%;
   font-family: "Helvetica";
-  max-width: 44%;
+  max-width: 35%;
 }
 
 @media screen and (max-width: 900px) {
@@ -366,10 +366,6 @@ body {
   }
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
-  }
-  .html-lesson-wrapper footer {
-    bottom: clamp(16px, 4.8vw, 43px);
-    right: 5% !important;
   }
 }
 
@@ -407,6 +403,10 @@ body {
     border-right: 3.5px solid transparent !important;
     border-top-width: 5.5px !important;
   }
+}
+
+.html-lesson-wrapper .see-content .sub-text {
+  margin-bottom: 5%;
 }
 
 .html-lesson-wrapper .see-content table td:first-child {

@@ -6,6 +6,11 @@
       td:first-child {
         width: 9em;
       }
+
+      td {
+        padding: 0;
+        line-height: normal;
+      }
     }
 
     .paper {

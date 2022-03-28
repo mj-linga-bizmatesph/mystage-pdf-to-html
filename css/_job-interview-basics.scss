@@ -249,7 +249,6 @@ $blue-green: #339999;
       td {
         padding: 0;
         vertical-align: top;
-        padding-bottom: 2%;
         line-height: 1.8em;
 
         &:first-child {
@@ -266,7 +265,6 @@ $blue-green: #339999;
     }
 
     table {
-      margin-bottom: 2%;
       margin-top: 5px;
       font-size: clamp(6px, 1.8vw, 15px);
       border-spacing: 0px;
@@ -298,6 +296,7 @@ $blue-green: #339999;
     .example {
       @extend .sub-color;
       padding-left: 1%;
+      margin-bottom: 0.5%;
     }
   }
 

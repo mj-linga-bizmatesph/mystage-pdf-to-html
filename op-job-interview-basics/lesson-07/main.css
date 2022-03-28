@@ -245,7 +245,6 @@ body {
 .html-lesson-wrapper .see-content table td {
   padding: 0;
   vertical-align: top;
-  padding-bottom: 2%;
   line-height: 1.8em;
 }
 
@@ -258,7 +257,6 @@ body {
 }
 
 .html-lesson-wrapper .try-content table {
-  margin-bottom: 2%;
   margin-top: 5px;
   font-size: clamp(6px, 1.8vw, 15px);
   border-spacing: 0px;
@@ -289,6 +287,7 @@ body {
 
 .html-lesson-wrapper .try-content .example {
   padding-left: 1%;
+  margin-bottom: 0.5%;
 }
 
 .html-lesson-wrapper .act-content {
@@ -414,10 +413,6 @@ body {
 }
 
 .html-lesson-wrapper .try-content .sub-text {
-  margin-bottom: 2%;
-}
-
-.html-lesson-wrapper .try-content .example {
   margin-bottom: 2%;
 }
 

@@ -194,7 +194,6 @@ hr {
     }
   }
 
-  // See-content
   .see-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
@@ -203,9 +202,7 @@ hr {
       margin-top: clamp(110px, 41vw, 173.2px);
     }
 
-    &.see-2,
-    &.see-3,
-    &.see-4 {
+    &.see-2 {
       margin-top: clamp(20px, 5vw, 33px);
 
       //see-content.legend
@@ -234,8 +231,7 @@ hr {
       margin-top: 32px;
     }
     &.try-2,
-    &.try-3,
-    &.try-4 {
+    &.try-3 {
       margin-top: 32px;
     }
 

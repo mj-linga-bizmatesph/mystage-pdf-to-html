@@ -1,0 +1,8 @@
+@import '../../css/_op-bizmates-starter-utils.scss';
+.html-lesson-wrapper {
+  .mt-5 {
+    @media only screen and (max-width: 767px) {
+      margin-top: 1rem;
+    }
+  }
+}

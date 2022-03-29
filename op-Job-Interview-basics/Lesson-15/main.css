@@ -414,47 +414,46 @@ body {
   }
 }
 
-.html-lesson-wrapper .see-content .sub-text {
-  margin-bottom: 5%;
+.html-lesson-wrapper .see-content.part-1 {
+  margin-top: 25%;
 }
 
 .html-lesson-wrapper .see-content table td:first-child {
-  width: 13%;
+  width: 9em;
 }
 
-.html-lesson-wrapper .try-content .sub-text {
-  margin-bottom: 2%;
-}
-
-.html-lesson-wrapper .try-content table td {
-  padding: 1%;
-}
-
-.html-lesson-wrapper .try-content ol {
+.html-lesson-wrapper .see-content ol {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
+  counter-reset: list;
   list-style-position: inside;
 }
 
-.html-lesson-wrapper .try-content ol li::marker {
-  color: #cc3366;
-}
-
-.html-lesson-wrapper .try-content ol li {
+.html-lesson-wrapper .see-content li {
   margin-bottom: 2%;
 }
 
-.html-lesson-wrapper footer {
-  font-size: clamp(4.5px, 1.1vw, 9px);
-  position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: right;
-  bottom: 1.5%;
-  right: 6.2%;
-  font-family: "Helvetica";
-  max-width: 52%;
+.html-lesson-wrapper .see-content li span {
+  margin-left: 2%;
+}
+
+.html-lesson-wrapper .see-content .paper {
+  padding: 1%;
+  border-color: #d8d8d8;
+  border-style: solid;
+  border-width: 2.25px;
+}
+
+.html-lesson-wrapper .see-content .paper:not(:last-child) {
+  margin-bottom: 3%;
+}
+
+.html-lesson-wrapper .see-content .paper p {
+  margin: 0;
+}
+
+.html-lesson-wrapper .see-content .paper .arrow-part {
+  margin-left: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */

@@ -20,7 +20,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
-  /*# sourceMappingURL=main.css.map */
 }
 
 .html-lesson-wrapper header {
@@ -343,9 +342,10 @@ body {
   max-width: 35%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
   .html-lesson-wrapper {
-    min-height: unset;
+    min-height: 607px;
+    padding-bottom: 18%;
   }
   .html-lesson-wrapper .see-content {
     margin-top: clamp(22px, 3.8vw, 36px);
@@ -401,6 +401,16 @@ body {
     border-left: 3.5px solid transparent !important;
     border-right: 3.5px solid transparent !important;
     border-top-width: 5.5px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .html-lesson-wrapper {
+    width: 100%;
+    min-width: 360px;
+    max-width: 100%;
+    max-width: 892.75px;
+    min-height: 457px;
   }
 }
 

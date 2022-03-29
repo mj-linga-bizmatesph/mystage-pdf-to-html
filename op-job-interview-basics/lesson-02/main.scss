@@ -1,0 +1,58 @@
+@import '../../css/job-interview-basics';
+
+.html-lesson-wrapper {
+  .half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 88%;
+  }
+
+  .see-content {
+    table {
+      td:first-child {
+        width: 9em;
+      }
+    }
+
+    .paper {
+      padding: 2%;
+      border-color: #d8d8d8;
+      border-style: solid;
+      border-width: 2.25px;
+
+      p {
+        margin: 0;
+      }
+      p:not(:last-child) {
+        margin-bottom: 5%;
+      }
+
+      ol {
+        margin: 0;
+        margin-block: 0;
+        padding-inline: 0;
+        counter-reset: list;
+        list-style-position: inside;
+
+        margin-bottom: 5%;
+      }
+      ol > li {
+        list-style: none;
+      }
+      ol > li:before {
+        margin-right: 2%;
+        content: counter(list, number) ') ';
+        counter-increment: list;
+      }
+    }
+  }
+
+  .try-content {
+    table {
+      tr.blank td {
+        padding: 4%;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ body {
 .html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
+  max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
   height: -webkit-fit-content;
@@ -14,7 +15,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 11%;
-  background-image: url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png"), url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/op-bg-footer.png");
+  background-image: url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;

@@ -403,4 +403,56 @@ body {
     border-top-width: 5.5px !important;
   }
 }
-/*# sourceMappingURL=job-interview-basics.css.map */
+
+.html-lesson-wrapper {
+  width: 100%;
+  min-width: 360px;
+  max-width: 100%;
+  max-width: 892.75px;
+  min-height: 580px;
+}
+
+.html-lesson-wrapper .see-content .sub-text {
+  margin-bottom: 5%;
+}
+
+.html-lesson-wrapper .see-content table td:first-child {
+  width: 13%;
+}
+
+.html-lesson-wrapper .try-content .sub-text {
+  margin-bottom: 2%;
+}
+
+.html-lesson-wrapper .try-content table td {
+  padding: 1%;
+}
+
+.html-lesson-wrapper .try-content ol {
+  margin: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  list-style-position: inside;
+}
+
+.html-lesson-wrapper .try-content ol li::marker {
+  color: #cc3366;
+}
+
+.html-lesson-wrapper .try-content ol li {
+  margin-bottom: 2%;
+}
+
+.html-lesson-wrapper footer {
+  font-size: clamp(4.5px, 1.1vw, 9px);
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
+  bottom: 1.5%;
+  right: 6.2%;
+  font-family: "Helvetica";
+  max-width: 52%;
+}
+/*# sourceMappingURL=main.css.map */

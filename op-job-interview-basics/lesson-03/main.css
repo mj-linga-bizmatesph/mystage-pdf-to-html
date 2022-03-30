@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 11%;
-  background-image: url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png"), url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -337,10 +337,10 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 1.5%;
+  bottom: 2.5%;
   right: 6.2%;
   font-family: "Helvetica";
-  max-width: 35%;
+  max-width: 41%;
 }
 
 @media screen and (max-width: 900px) {

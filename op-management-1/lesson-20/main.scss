@@ -1,0 +1,196 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Helvitica';
+$primary: #cc3366;
+$primary-second: #339999;
+$primary-light: #f0d4d4;
+$text-title: #ce5c7b;
+$primary-dark: #267aa1;
+$background-grey: #f2f2f2;
+$left-pixel: clamp(50px, 14%, 126.5px);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.html-lesson-wrapper {
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: $text-font;
+
+  header {
+    font-family: $title-font;
+    margin-bottom: clamp(110px, 30vw, 270px);
+  }
+  .b {
+    font-weight: bold;
+  }
+  .i {
+    font-family: italic;
+  }
+  .u {
+    text-decoration: underline;
+  }
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    color: #ffffff;
+    font-size: 0px;
+
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $primary;
+      font-size: clamp(7px, 1.8vw, 15px);
+    }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: $primary-second;
+      font-size: clamp(7px, 1.8vw, 15px);
+      .add-space {
+        margin-left: clamp(5px, 2vw, 15px);
+      }
+    }
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .title {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    font-size: clamp(12px, 3vw, 27px);
+  }
+  .lesson-number {
+    position: absolute;
+    left: 91.5%;
+    margin-top: 7.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .sub-text {
+    font-family: $title-font !important;
+    line-height: clamp(12px, 2.8vw, 22px);
+    margin: 0 auto;
+    height: 1px;
+  }
+  .section {
+    position: absolute;
+    left: -71.5px;
+    color: $text-title;
+    font-weight: bold;
+    font-family: $title-font;
+    top: 2px;
+  }
+
+  ul {
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+    list-style-position: inside;
+    li {
+      margin-bottom: clamp(10px, 2vw, 20px);
+    }
+  }
+
+  .part-content {
+    position: relative;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(6px, 1.8vw, 15px);
+    .part-1 {
+      margin-bottom: 30px;
+      margin-left: 16px;
+    }
+    margin-bottom: clamp(50px, 13vw, 120px);
+  }
+  .part-content-2 {
+    margin-bottom: clamp(50px, 13vw, 120px);
+  }
+  // Try
+  .part-content {
+    ul {
+      list-style-type: square;
+    }
+  }
+
+  footer {
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: absolute;
+    width: fit-content;
+    text-align: right;
+    bottom: 43px;
+    right: 6.2%;
+    font-family: $title-font;
+    max-width: 34%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    min-height: unset;
+    .part-content {
+      margin-top: clamp(20px, 3.7vw, 30px);
+      padding-left: clamp(11px, 2.4vw, 18px);
+
+      .part-1{
+        margin-left: clamp(16px, 2.6vw, 18px);
+      }
+    }
+    footer {
+      bottom: clamp(16px, 4.8vw, 43px);
+      right: 5% !important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper {
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: clamp(23px, 4vw, 48px);
+    }
+    .title {
+      top: clamp(45px, 8.4vw, 80px);
+      left: clamp(30px, 4.1vw, 55px);
+    }
+    .section {
+      left: calc(-16% + 30px);
+    }
+    .section.words {
+      left: calc(-14% + 30px);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .part-content ul{
+      margin-top: -10px;
+    }
+  }
+}

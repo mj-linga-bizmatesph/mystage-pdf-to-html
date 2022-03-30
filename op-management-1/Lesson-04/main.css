@@ -198,6 +198,10 @@ body {
       grid-template-columns: 30% 70%;
 }
 
+.html-lesson-wrapper .act-content li {
+  font-style: italic;
+}
+
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -208,7 +212,7 @@ body {
   bottom: 43px;
   right: 6.2%;
   font-family: "Helvetica";
-  max-width: 34%;
+  max-width: 35%;
 }
 
 @media screen and (max-width: 900px) {

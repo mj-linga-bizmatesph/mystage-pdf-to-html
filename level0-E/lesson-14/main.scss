@@ -110,6 +110,49 @@ td {
   .primary-blue {
     color: $primary-blue;
   }
+  .blue-image-text {
+    background-color: #e7f3fa;
+    border: 1px solid $primary-blue;
+    border-radius: clamp(10px, 3vw, 25px);
+    padding: clamp(1.2rem, 4.8vw, 2rem) clamp(0.7rem, 2vw, 0.8rem);
+    position: relative !important;
+
+    ol {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-gap: clamp(1rem, 2vw, 1.5rem) !important;
+      counter-reset: orderedlist;
+    }
+
+    li::before {
+      counter-increment: orderedlist;
+      content: counter(orderedlist, upper-alpha) '. ' !important;
+      font-family: $noto-sans;
+      font-size: clamp(8px, 2.7vw, 16px) !important;
+      font-weight: bold !important;
+      color: black !important;
+    }
+
+    li {
+      display: grid !important;
+      grid-template-columns: 0 1fr !important;
+      grid-gap: clamp(1rem, 4vw, 2.5rem) !important;
+      align-items: start !important;
+      line-height: 1.25 !important;
+      font-family: $noto-sans;
+      font-size: clamp(10px, 3vw, 18px) !important;
+      list-style-type: upper-alpha !important;
+      margin: 0 !important;
+    }
+
+    .red-circle {
+      position: absolute;
+      top: clamp(0.1rem, 1.5vw, 0.6rem);
+      left: 2%;
+      width: 96%;
+    }
+  }
   .program-rank {
     position: absolute;
     color: #ffffff;

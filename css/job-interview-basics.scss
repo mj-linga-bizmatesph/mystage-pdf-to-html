@@ -21,8 +21,8 @@ $blue-green: #339999;
   overflow: hidden;
   position: relative;
   padding-bottom: 11%;
-  background-image: url('https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -85,7 +85,6 @@ $blue-green: #339999;
 
   .lesson-number-two {
     @extend .lesson-number;
-
     left: 91.5%;
   }
 
@@ -296,7 +295,7 @@ $blue-green: #339999;
     .example {
       @extend .sub-color;
       padding-left: 1%;
-      margin-bottom: 0.5%;
+      margin-bottom: 5%;
     }
   }
 
@@ -354,13 +353,12 @@ $blue-green: #339999;
     bottom: 1.5%;
     right: 6.2%;
     font-family: $helvetica;
-    max-width: 35%;
+    max-width: 55%;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 900px) {
     & {
-      min-height: 607px;
-      padding-bottom: 18%;
+      min-height: 500px !important;
     }
     .see-content {
       margin-top: clamp(22px, 3.8vw, 36px);
@@ -384,8 +382,17 @@ $blue-green: #339999;
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
+    .lesson-number {
+    left: 91.3%;
+    margin-top: 7.5%;
+    }
   }
-
+  @media screen and (max-width: 1280px) {
+    & {
+      min-height: 607px;
+      padding-bottom: 18%;
+    }
+  }
   @media screen and (max-width: 768px) {
     .program-rank {
       position: absolute;

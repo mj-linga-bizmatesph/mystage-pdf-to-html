@@ -1,12 +1,9 @@
 @import '../../css/job-interview-basics.scss';
 
 .html-lesson-wrapper {
-    @media screen and (max-width: 370px){
-        width: 100%;
-        min-width: 360px;
-        max-width: 100%;
-        max-width: 892.75px;
-        min-height: 457px;
+  @media screen and (max-width: 370px) {
+    min-height: 457px;
+  }
   .half {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,6 +12,9 @@
   }
 
   .see-content {
+   .red{
+     color: red;
+   }
     table {
       td:first-child {
         width: 9em;
@@ -61,5 +61,4 @@
       }
     }
   }
-}
 }

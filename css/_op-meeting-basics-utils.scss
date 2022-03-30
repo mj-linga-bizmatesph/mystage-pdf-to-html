@@ -55,6 +55,9 @@ footer {
     bottom: 0;
     width: 100%;
     right: 2%;
+    @media only screen and (max-width: 767px) {
+      max-width: 117px;
+    }
   }
 }
 
@@ -176,7 +179,7 @@ footer {
   overflow: hidden;
   padding-bottom: 62px;
   background-image: url(#{$s3}/other-programs-bg-header-magenta.svg),
-  url(#{$s3}/other-programs-footer-logo.svg);
+    url(#{$s3}/other-programs-footer-logo.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -316,8 +319,11 @@ footer {
     align-items: flex-start;
     width: 100%;
     .content-label {
-      width: 11%;
+      width: 15%;
       color: $text-pink;
+      @media only screen and (max-device-width: 767px) {
+        width: 11% !important;
+      }
       .content-label-text {
         font-weight: bold;
         font-family: $helvetica;
@@ -327,9 +333,10 @@ footer {
       }
     }
     &.review {
-      @media only screen and (max-device-width: 767px) {
-        .content-label {
-          width: 18% !important;
+      .content-label {
+        width: 17%;
+        @media only screen and (max-device-width: 767px) {
+          width: 19% !important;
         }
       }
     }

@@ -15,7 +15,7 @@ body .html-lesson-wrapper {
   position: relative;
   padding-bottom: 62px;
   background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/op-bg-header.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/op-bg-footer.png');
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -444,7 +444,7 @@ body footer {
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
     border-right: 3.5px solid transparent !important;
-    border-top: 5.5px solid #2078a0 !important;
+    border-top: 5.5px solid #000000 !important;
   }
 }
 

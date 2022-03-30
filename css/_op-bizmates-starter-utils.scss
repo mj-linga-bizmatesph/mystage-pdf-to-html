@@ -42,13 +42,21 @@ footer {
   position: relative;
   box-sizing: border-box;
   padding-right: 10%;
-  bottom: -50px;
   .footer-text {
     text-align: right;
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     width: 100%;
     right: 2%;
+    @media only screen and (max-width: 767px) {
+      &:not(.review) {
+        max-width: 117px;
+        bottom: -10px;
+      }
+      &.review {
+        bottom: 0;
+      }
+    }
   }
 }
 
@@ -164,10 +172,13 @@ footer {
   overflow: hidden;
   padding-bottom: 62px;
   background-image: url(#{$s3}/OP-Starter-bg-header.svg),
-    url(#{$s3}/OP-Starter-bg-footer.svg);
+    url(#{$s3}/other-programs-footer-logo-bare.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 15px;
+  }
 
   .exclude-letter-spacing {
     letter-spacing: normal;
@@ -218,13 +229,16 @@ footer {
   }
   .lesson-number {
     position: absolute;
-    right: 3.9%;
+    right: 3.8%;
     width: 1.9%;
     text-align: center;
     margin-top: 4.8%;
     font-size: clamp(9px, 2.5vw, 17px);
     color: #ffffff;
     font-weight: bold;
+    &.two {
+      right: 4%;
+    }
     @media only screen and (max-device-width: 767px) {
       margin-top: 4%;
       right: 4.3%;
@@ -281,7 +295,8 @@ footer {
       width: 8%;
       .gray-label {
         @extend .flex, .flex-right;
-        background-color: #9fa0a0;
+        background-image: url(#{$s3}/OP-Starter-title-bg.svg);
+        background-size: 100% 100%;
         font-weight: bold;
         font-family: $helvetica;
         font-size: clamp(8px, 3vw, 15px);

@@ -30,15 +30,24 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 10%;
-  bottom: -50px;
 }
 
 footer .footer-text {
   text-align: right;
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   width: 100%;
   right: 2%;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer-text:not(.review) {
+    max-width: 117px;
+    bottom: -10px;
+  }
+  footer .footer-text.review {
+    bottom: 0;
+  }
 }
 
 .img-responsive-clamp {
@@ -174,10 +183,16 @@ footer .footer-text {
   height: fit-content;
   overflow: hidden;
   padding-bottom: 62px;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-bg-header.svg), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-bg-footer.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-bg-header.svg), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo-bare.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper {
+    padding-bottom: 15px;
+  }
 }
 
 .html-lesson-wrapper .exclude-letter-spacing {
@@ -235,13 +250,17 @@ footer .footer-text {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 3.9%;
+  right: 3.8%;
   width: 1.9%;
   text-align: center;
   margin-top: 4.8%;
   font-size: clamp(9px, 2.5vw, 17px);
   color: #ffffff;
   font-weight: bold;
+}
+
+.html-lesson-wrapper .lesson-number.two {
+  right: 4%;
 }
 
 @media only screen and (max-device-width: 767px) {
@@ -325,7 +344,8 @@ footer .footer-text {
 }
 
 .html-lesson-wrapper .content-item .content-label .gray-label {
-  background-color: #9fa0a0;
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-title-bg.svg);
+  background-size: 100% 100%;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(8px, 3vw, 15px);

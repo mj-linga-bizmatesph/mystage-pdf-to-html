@@ -265,7 +265,7 @@ body {
 
 .html-lesson-wrapper .try-content table th,
 .html-lesson-wrapper .try-content table td {
-  max-width: 120px;
+  max-width: 213px;
   min-width: 80px;
   word-wrap: break-word;
   border: 1px solid #f2f2f2;
@@ -438,6 +438,18 @@ body {
 
 .html-lesson-wrapper .try-content table td {
   padding: 1%;
+}
+
+.html-lesson-wrapper .try-content table .row p {
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .try-content table .row p:first-child {
+  min-width: 9%;
+  max-width: 100px;
+  word-wrap: break-word;
+  color: red;
 }
 
 .html-lesson-wrapper .try-content ol {

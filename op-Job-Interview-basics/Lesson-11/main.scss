@@ -27,6 +27,18 @@
       td {
         padding: 1%;
       }
+      .row {
+        p {
+          display: inline-block;
+          margin: 0px 0px;
+          &:first-child {
+            min-width: 9%;
+            max-width: 100px;
+            word-wrap: break-word;
+            color: red;
+          }
+        }
+      }
     }
     ol {
       margin: 0;

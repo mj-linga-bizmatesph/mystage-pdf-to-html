@@ -21,7 +21,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Helvitica";
+  font-family: "Helvetica";
 }
 
 .html-lesson-wrapper .b {
@@ -67,7 +67,7 @@ body {
 .html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
-  left: 55px;
+  left: 48px;
   font-size: clamp(12px, 3vw, 27px);
 }
 
@@ -90,17 +90,17 @@ body {
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: "Helvitica" !important;
+  font-family: "Helvetica" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -71.5px;
-  color: #ce5c7b;
+  left: -78px;
+  color: #cc3366;
   font-weight: bold;
-  font-family: "Helvitica";
+  font-family: "Helvetica";
   top: 2px;
 }
 
@@ -240,6 +240,7 @@ body {
 }
 
 .html-lesson-wrapper footer {
+  color: #0c0c0c;
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
   width: -webkit-fit-content;
@@ -248,7 +249,7 @@ body {
   text-align: right;
   bottom: 43px;
   right: 6.2%;
-  font-family: "Helvitica";
+  font-family: "Helvetica";
   max-width: 34%;
 }
 
@@ -279,6 +280,12 @@ body {
     bottom: clamp(16px, 4.8vw, 43px);
     right: 5% !important;
   }
+  .html-lesson-wrapper .section {
+    left: calc(-16% + 45px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-14% + 48px);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -289,16 +296,16 @@ body {
   }
   .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
-    left: clamp(30px, 4.1vw, 55px);
+    left: clamp(24px, 3.1vw, 55px);
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
   }
   .html-lesson-wrapper .section {
-    left: calc(-16% + 30px);
+    left: calc(-16% + 22px);
   }
   .html-lesson-wrapper .section.words {
-    left: calc(-14% + 30px);
+    left: calc(-14% + 24px);
   }
   .html-lesson-wrapper .arrow-part:before {
     left: -3% !important;

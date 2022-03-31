@@ -1,5 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Helvitica';
+$title-font: 'Helvetica Neue';
 $primary: #cc3366;
 $primary-second: #339999;
 $primary-light: #f0d4d4;
@@ -52,9 +52,6 @@ body {
       padding: 3px 12px 3px 13px;
       background-color: $primary-second;
       font-size: clamp(7px, 1.8vw, 15px);
-      .add-space {
-        margin-left: clamp(5px, 2vw, 15px);
-      }
     }
   }
   .line {
@@ -63,13 +60,13 @@ body {
   .title {
     position: absolute;
     top: 80px;
-    left: 55px;
+    left: 48px;
     font-size: clamp(12px, 3vw, 27px);
     text-transform: uppercase;
   }
   .lesson-number {
     position: absolute;
-    left: 91%;
+    left: clamp(91.4%, 91.3vw, 91.9%);
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
@@ -85,7 +82,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -71.5px;
+    left: -78px;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -169,7 +166,6 @@ body {
     .two-columns {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      font-style: italic;
     }
     .add-left {
       margin-left: 30px;
@@ -213,6 +209,9 @@ body {
       bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
     }
+    .section {
+      left: calc(-16% + 44.3px);
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -224,7 +223,7 @@ body {
     }
     .title {
       top: clamp(45px, 8.4vw, 80px);
-      left: clamp(30px, 4.1vw, 55px);
+      left: clamp(24px, 3.1vw, 55px);
     }
     .divider {
       &.d1,
@@ -233,7 +232,7 @@ body {
       }
     }
     .section {
-      left: calc(-16% + 30px);
+      left: calc(-16% + 22px);
     }
     .section.words {
       left: calc(-14% + 30px);

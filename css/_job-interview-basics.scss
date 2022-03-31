@@ -44,6 +44,10 @@ $blue-green: #339999;
     font-family: italic;
   }
 
+  .no-wrap {
+    white-space: nowrap;
+  }
+
   .program-rank {
     position: absolute;
     top: 40px;
@@ -266,7 +270,7 @@ $blue-green: #339999;
 
     table {
       margin-top: 5px;
-      font-size: clamp(6px, 1.8vw, 15px);
+      font-size: clamp(1px, 1.5vw, 15px);
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
@@ -274,7 +278,7 @@ $blue-green: #339999;
       th,
       td {
         max-width: 120px;
-        min-width: 80px;
+        min-width: 10px;
         word-wrap: break-word;
         border: 1px solid #f2f2f2;
       }

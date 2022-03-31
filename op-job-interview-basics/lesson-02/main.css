@@ -39,6 +39,10 @@ body {
   font-family: italic;
 }
 
+.html-lesson-wrapper .no-wrap {
+  white-space: nowrap;
+}
+
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
@@ -258,7 +262,7 @@ body {
 
 .html-lesson-wrapper .try-content table {
   margin-top: 5px;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(1px, 1.5vw, 15px);
   border-spacing: 0px;
   padding-bottom: 5px;
   width: 100%;
@@ -267,7 +271,7 @@ body {
 .html-lesson-wrapper .try-content table th,
 .html-lesson-wrapper .try-content table td {
   max-width: 120px;
-  min-width: 80px;
+  min-width: 10px;
   word-wrap: break-word;
   border: 1px solid #f2f2f2;
 }

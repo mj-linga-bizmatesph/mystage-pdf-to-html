@@ -204,7 +204,7 @@ footer {
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 3vw, 25px);
-    margin-left: clamp(10px, 3vw, 25px);
+    margin-left: clamp(10px, 4vw, 60px);
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
@@ -258,8 +258,8 @@ footer {
     .title {
       font-family: $helvetica;
       font-size: clamp(18px, 4vw, 27px);
-      margin-left: clamp(10px, 3vw, 25px);
       margin-right: clamp(10px, 3vw, 25px);
+      margin-left: clamp(10px, 4vw, 60px);
       padding-top: 3%;
       padding-bottom: 6%;
       @media only screen and (max-device-width: 767px) {

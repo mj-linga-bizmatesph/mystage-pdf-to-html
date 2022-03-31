@@ -227,7 +227,7 @@ footer .footer-text {
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
-  margin-left: clamp(10px, 3vw, 25px);
+  margin-left: clamp(10px, 4vw, 60px);
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -288,8 +288,8 @@ footer .footer-text {
 .html-lesson-wrapper .header-content .title {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(18px, 4vw, 27px);
-  margin-left: clamp(10px, 3vw, 25px);
   margin-right: clamp(10px, 3vw, 25px);
+  margin-left: clamp(10px, 4vw, 60px);
   padding-top: 3%;
   padding-bottom: 6%;
 }

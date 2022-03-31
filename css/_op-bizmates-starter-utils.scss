@@ -170,7 +170,7 @@ footer {
   min-height: 960px;
   height: fit-content;
   overflow: hidden;
-  padding-bottom: 62px;
+  padding-bottom: 40px;
   background-image: url(#{$s3}/OP-Starter-bg-header.svg),
     url(#{$s3}/other-programs-footer-logo-bare.svg);
   background-position: top, bottom;
@@ -198,7 +198,7 @@ footer {
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 3vw, 25px);
-    margin-left: clamp(10px, 3vw, 25px);
+    margin-left: clamp(10px, 3vw, 37px);
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
@@ -252,7 +252,7 @@ footer {
     color: black;
     box-sizing: content-box;
     margin-top: clamp(10px, 3vw, 25px);
-    margin-left: clamp(10px, 3vw, 25px);
+    margin-left: clamp(10px, 3vw, 37px);
     margin-right: clamp(10px, 3vw, 25px);
 
     .title {

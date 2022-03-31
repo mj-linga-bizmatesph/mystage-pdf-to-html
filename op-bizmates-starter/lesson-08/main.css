@@ -182,7 +182,7 @@ footer .footer-text {
   height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
-  padding-bottom: 62px;
+  padding-bottom: 40px;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-bg-header.svg), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo-bare.svg);
   background-position: top, bottom;
   background-size: contain;
@@ -217,7 +217,7 @@ footer .footer-text {
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
-  margin-left: clamp(10px, 3vw, 25px);
+  margin-left: clamp(10px, 3vw, 37px);
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -278,7 +278,7 @@ footer .footer-text {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin-top: clamp(10px, 3vw, 25px);
-  margin-left: clamp(10px, 3vw, 25px);
+  margin-left: clamp(10px, 3vw, 37px);
   margin-right: clamp(10px, 3vw, 25px);
 }
 

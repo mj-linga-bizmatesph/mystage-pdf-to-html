@@ -4,6 +4,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.7;
   min-width: 360px;
   max-width: 100%;
   max-width: 892.75px;
@@ -13,8 +14,8 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: 62px;
-  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png");
+  padding-bottom: 9%;
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -194,8 +195,8 @@ body {
 .html-lesson-wrapper .act-content .column {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
 }
 
 .html-lesson-wrapper footer {
@@ -208,7 +209,7 @@ body {
   bottom: 43px;
   right: 6.2%;
   font-family: "Helvetica";
-  max-width: 34%;
+  max-width: 35%;
 }
 
 @media screen and (max-width: 900px) {
@@ -292,4 +293,4 @@ body {
     border-top: 5.5px solid #2078a0 !important;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=management-1.css.map */

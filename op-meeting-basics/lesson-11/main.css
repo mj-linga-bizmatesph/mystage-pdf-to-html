@@ -311,6 +311,7 @@ footer .footer-text {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 5rem;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
@@ -319,7 +320,7 @@ footer .footer-text {
   color: #cc3366;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 16px);
-  margin-top: clamp(10px, 3vw, 25px);
+  margin-top: clamp(10px, 3vw, 20px);
   padding-left: clamp(10px, 4vw, 60px);
 }
 
@@ -327,7 +328,7 @@ footer .footer-text {
   font-family: "Trebuchet MS";
   width: 75%;
   font-size: clamp(12px, 2vw, 15px);
-  margin-top: clamp(10px, 3vw, 25px);
+  margin-top: clamp(10px, 3vw, 20px);
   padding-right: clamp(15px, 14vw, 175px);
 }
 
@@ -413,7 +414,6 @@ footer .footer-text {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 3vw, 15px);
   font-weight: bold;
-  padding-bottom: 0.5rem;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
 }
@@ -424,7 +424,6 @@ footer .footer-text {
   display: flex;
   font-size: clamp(12px, 3vw, 15px);
   line-height: clamp(19px, 3vw, 24px);
-  margin-top: clamp(3px, 1vw, 4px);
 }
 
 .html-lesson-wrapper .content-item .content-div.see .dialogue .speaker {
@@ -459,7 +458,7 @@ footer .footer-text {
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 2px solid #d9d9d9;
-  padding: 1%;
+  padding: 0.5%;
   vertical-align: baseline;
 }
 

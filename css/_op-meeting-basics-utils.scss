@@ -273,20 +273,21 @@ footer {
       width: 100%;
       display: flex;
       justify-content: flex-start;
+      margin-bottom: 5rem;
       .biz-tip-label {
         width: 11%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 16px);
-        margin-top: clamp(10px, 3vw, 25px);
+        margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 4vw, 60px);
       }
       .biz-tip-content {
         font-family: $trebuchet;
         width: 75%;
         font-size: clamp(12px, 2vw, 15px);
-        margin-top: clamp(10px, 3vw, 25px);
+        margin-top: clamp(10px, 3vw, 20px);
         padding-right: clamp(15px, 14vw, 175px);
         p {
           margin: 0;
@@ -350,7 +351,6 @@ footer {
         font-family: $helvetica;
         font-size: clamp(12px, 3vw, 15px);
         font-weight: bold;
-        padding-bottom: 0.5rem;
         line-height: clamp(12px, 4vw, 22px);
         margin-top: clamp(-2px, -1vw, -3px);
       }
@@ -359,7 +359,6 @@ footer {
           display: flex;
           font-size: clamp(12px, 3vw, 15px);
           line-height: clamp(19px, 3vw, 24px);
-          margin-top: clamp(3px, 1vw, 4px);
           .speaker {
             width: 12%;
             font-weight: bold;
@@ -389,7 +388,7 @@ footer {
           td,
           th {
             border: 2px solid $tertiary-gray;
-            padding: 1%;
+            padding: 0.5%;
             vertical-align: baseline;
           }
         }

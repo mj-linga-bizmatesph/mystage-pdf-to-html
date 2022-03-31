@@ -224,6 +224,7 @@ footer .footer-text {
 }
 
 .html-lesson-wrapper .program-rank {
+  font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
@@ -232,7 +233,7 @@ footer .footer-text {
 
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-  background-color: #bd3762;
+  background-color: #cc3366;
   font-size: clamp(8px, 1.8vw, 15px);
 }
 
@@ -319,7 +320,7 @@ footer .footer-text {
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
   padding-left: clamp(10px, 4vw, 60px);
 }
@@ -345,9 +346,16 @@ footer .footer-text {
   list-style-position: inside;
 }
 
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 
@@ -455,6 +463,10 @@ footer .footer-text {
   background-color: #bd3762;
 }
 
+.html-lesson-wrapper .content-item .content-div.try .content-table th {
+  vertical-align: middle !important;
+}
+
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 2px solid #d9d9d9;
@@ -492,12 +504,18 @@ footer .footer-text {
   list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  list-style-position: inside;
+}
+
+.html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 

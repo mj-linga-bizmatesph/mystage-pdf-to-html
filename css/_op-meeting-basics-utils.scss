@@ -201,6 +201,7 @@ footer {
     color: $primary-blue;
   }
   .program-rank {
+    font-family: $helvetica;
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 3vw, 25px);
@@ -209,7 +210,7 @@ footer {
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
-      background-color: $primary-pink;
+      background-color: $text-pink;
       font-size: clamp(8px, 1.8vw, 15px);
     }
     .level {
@@ -279,7 +280,7 @@ footer {
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
-        font-size: clamp(12px, 2vw, 16px);
+        font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 4vw, 60px);
       }
@@ -298,9 +299,15 @@ footer {
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
+          li {
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 1em;
+            padding-left: 0.5em;
+          }
           li::before {
             content: '';
-            display: inline-block;
+            display: block;
             width: 0.5em;
           }
           li::marker {
@@ -385,6 +392,9 @@ footer {
             color: white;
             background-color: $primary-pink;
           }
+          th {
+            vertical-align: middle !important;
+          }
           td,
           th {
             border: 2px solid $tertiary-gray;
@@ -416,10 +426,16 @@ footer {
             padding: 0;
             list-style-type: '\25BC';
             box-sizing: content-box;
-            list-style-position: inside;
+            li {
+              list-style-position: outside;
+              text-indent: -1em;
+              margin-left: 1em;
+              padding-left: 0.5em;
+            }
+
             li::before {
               content: '';
-              display: inline-block;
+              display: block;
               width: 0.5em;
             }
             li::marker {

@@ -233,12 +233,12 @@ footer .footer-text {
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #bd3762;
-  font-size: clamp(8px, 1.8vw, 12px);
+  font-size: clamp(8px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 25px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-  font-size: clamp(8px, 1.8vw, 12px);
+  font-size: clamp(8px, 1.8vw, 15px);
   background: #339999;
   width: 100%;
   margin-left: -2%;
@@ -290,8 +290,8 @@ footer .footer-text {
   font-size: clamp(18px, 4vw, 27px);
   margin-right: clamp(10px, 3vw, 25px);
   margin-left: clamp(10px, 4vw, 60px);
-  padding-top: 3%;
-  padding-bottom: 6%;
+  padding-top: 2%;
+  padding-bottom: 7%;
 }
 
 @media only screen and (max-device-width: 767px) {

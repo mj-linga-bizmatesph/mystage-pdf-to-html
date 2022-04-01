@@ -7,6 +7,10 @@
       li:before {
         content: 'Lsn 1' counter(item, decimal) ': ';
       }
+
+      .arrows {
+        margin: 1% 0 2% 5.3em;
+      }
     }
   }
 }

@@ -344,13 +344,13 @@ $blue-green: #339999;
   }
 
   footer {
-    font-size: clamp(4.5px, 1.1vw, 9px);
+    font-size: clamp(4.5px, 1.1vw, 6px);
     position: absolute;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     text-align: right;
-    bottom: 1.5%;
+    bottom: 2.5%;
     right: 6.2%;
     font-family: $helvetica;
     max-width: 55%;

@@ -225,7 +225,7 @@ td {
 
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
@@ -363,22 +363,39 @@ td {
 
 .html-lesson-wrapper .see-content .see-2-section .green-piece {
   width: clamp(140px, 39vw, 227.2px);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-19-piece-2-2.svg);
+  background-position: left;
+}
+
+.html-lesson-wrapper .see-content .see-2-section .green-piece div {
+  padding-left: clamp(5px, 2vw, 8px);
 }
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece {
   width: clamp(83px, 23vw, 134.8px);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-19-piece-1-2.svg);
+  background-position: right;
+}
+
+.html-lesson-wrapper .see-content .see-2-section .red-piece div {
+  padding-right: clamp(5px, 2vw, 8px);
 }
 
 .html-lesson-wrapper .see-content .see-2-section .yellow-piece {
   width: clamp(95px, 25vw, 187px);
   margin-left: auto;
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-19-piece-3-2.svg);
+  background-position: left;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .piece {
-  height: clamp(30px, 9vw, 38px);
-  font-size: clamp(11px, 2.7vw, 16px);
+  height: clamp(28px, 6vw, 38px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   font-family: "Noto Sans";
   font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table {
@@ -448,7 +465,7 @@ td {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans";
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   width: clamp(18px, 4vw, 24px);
   height: clamp(18px, 4vw, 24px);
   display: -ms-grid;
@@ -474,7 +491,7 @@ td {
 }
 
 .html-lesson-wrapper .see-content .see-2-section li div div.list-title {
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   margin-bottom: clamp(2px, 1vw, 8px);
 }
 
@@ -490,7 +507,7 @@ td {
 .html-lesson-wrapper .see-content .arrow.see {
   text-transform: uppercase;
   color: #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-see-arrow.png);
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
@@ -546,32 +563,32 @@ td {
   place-items: center;
   font-family: "Noto Sans";
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area .row .number-bg {
   background: #1287cd;
   color: white;
   border-radius: 50%;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area .row .letter {
   color: #1287cd;
   border: 2px solid #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area .row .number-outlined {
   color: #1287cd;
   border-radius: 50%;
   border: 1px solid #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area .row .text {
   color: #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   font-weight: bold;
 }
 
@@ -618,32 +635,32 @@ td {
   place-items: center;
   font-family: "Noto Sans";
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area-1 .row .number-bg {
   background: #1287cd;
   color: white;
   border-radius: 50%;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area-1 .row .letter {
   color: #1287cd;
   border: 2px solid #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area-1 .row .number-outlined {
   color: #1287cd;
   border-radius: 50%;
   border: 1px solid #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-1-content .math-area-1 .row .text {
   color: #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   font-weight: bold;
 }
 
@@ -706,7 +723,7 @@ td {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans";
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   color: #1287cd;
   font-weight: bold;
 }
@@ -753,7 +770,7 @@ td {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans";
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   color: #1287cd;
   font-weight: bold;
   padding-left: 1vw;
@@ -829,7 +846,7 @@ td {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content li .speech {
@@ -844,7 +861,7 @@ td {
 
 .html-lesson-wrapper .try-content .number {
   color: #1287cd;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
   font-weight: bold;
   margin-right: 1vw;
 }
@@ -873,7 +890,7 @@ td {
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble {
   position: absolute;
-  margin: 11% 0 0 12%;
+  margin: 13% 0 0 20%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .eng {
@@ -930,7 +947,7 @@ td {
   text-align: right;
   width: 15%;
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {

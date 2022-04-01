@@ -15,11 +15,12 @@ $fs-11: clamp(6px, 1.9vw, 11px);
 $fs-12: clamp(8px, 1.8vw, 12px);
 $fs-13: clamp(9px, 2.2vw, 13px);
 $fs-14: clamp(8.5px, 2.4vw, 14px);
-$fs-16: clamp(11px, 2.7vw, 16px);
+$fs-16: clamp(9.5px, 2.2vw, 16px);
 $fs-18: clamp(12px, 3.5vw, 18px);
 $fs-20: clamp(13px, 4vw, 20px);
 
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+$local: 'http://127.0.0.1:5500/images-1';
 
 body {
   margin: 0;
@@ -328,10 +329,20 @@ td {
       .green-piece {
         width: clamp(155px, 35vw, 280.2px);
         margin-left: auto;
+        background-image: url(#{$s3}/0-E-16-piece-2-2.svg);
+        background-position: left;
+        div {
+          padding-left: clamp(5px, 2vw, 8px);
+        }
       }
 
       .red-piece {
         width: clamp(125px, 31vw, 227.8px);
+        background-image: url(#{$s3}/0-E-16-piece-1-2.svg);
+        background-position: right;
+        div {
+          padding-right: clamp(5px, 2vw, 8px);
+        }
       }
 
       .piece {
@@ -339,6 +350,8 @@ td {
         font-size: $fs-16;
         font-family: $noto-sans;
         font-weight: bold;
+        display: grid;
+        place-items: center;
       }
 
       .akiko-table {

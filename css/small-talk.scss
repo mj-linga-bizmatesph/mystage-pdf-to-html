@@ -15,7 +15,7 @@ $blue-green: #339999;
   min-width: 360px;
   max-width: 100%;
   max-width: 892.75px;
-  min-height: 1200px;
+  min-height: 960px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -72,14 +72,14 @@ $blue-green: #339999;
   .title {
     position: absolute;
     top: 80px;
-    left: 55px;
+    left: 48px;
     font-size: clamp(9.3px, 3vw, 27px);
   }
 
   .lesson-number {
     position: absolute;
-    left: 92.2%;
-    margin-top: 7.8%;
+    left: 92%;
+    margin-top: 7.5%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
@@ -116,7 +116,7 @@ $blue-green: #339999;
 
   .section {
     position: absolute;
-    left: -71.5px;
+    left: -73px;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
@@ -302,6 +302,10 @@ $blue-green: #339999;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    .aut{
+      margin-left: 75%;
+      font-weight: bold;
+      }
   }
 
   .review-content {

@@ -127,7 +127,7 @@ body {
 }
 
 .html-lesson-wrapper ul li {
-  margin-bottom: 30px;
+  margin-bottom: clamp(20px, 8vw, 30px);
   padding-left: 8px;
 }
 
@@ -165,7 +165,7 @@ body {
   bottom: 43px;
   right: 6.2%;
   font-family: "Helvetica";
-  max-width: 34%;
+  max-width: 64%;
 }
 
 @media screen and (max-width: 900px) {
@@ -181,7 +181,7 @@ body {
     margin-left: clamp(16px, 2.6vw, 18px);
   }
   .html-lesson-wrapper .part-content ul {
-    margin-left: clamp(15px, 2.4vw, 18px);
+    margin-left: clamp(21px, 4vw, 18px);
   }
   .html-lesson-wrapper .part-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
@@ -209,7 +209,7 @@ body {
     margin-top: clamp(18px, 3.4vw, 28px);
   }
   .html-lesson-wrapper .section {
-    left: calc(-16% + 22px);
+    left: calc(-16% + 24px);
   }
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);

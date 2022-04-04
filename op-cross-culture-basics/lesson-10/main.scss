@@ -110,7 +110,7 @@ body {
     line-height: clamp(12px, 3vw, 26px);
 
     li {
-      margin-bottom: 30px;
+      margin-bottom: clamp(20px, 8vw, 30px);
       padding-left: 8px;
     }
   }
@@ -146,7 +146,7 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
-    max-width: 34%;
+    max-width: 64%;
   }
 }
 
@@ -162,7 +162,7 @@ body {
         margin-left: clamp(16px, 2.6vw, 18px);
       }
       ul {
-        margin-left: clamp(15px, 2.4vw, 18px);
+        margin-left: clamp(21px, 4vw, 18px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -195,7 +195,7 @@ body {
       }
     }
     .section {
-      left: calc(-16% + 22px);
+      left: calc(-16% + 24px);
     }
     .section.words {
       left: calc(-14% + 30px);

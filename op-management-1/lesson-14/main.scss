@@ -3,7 +3,7 @@ $title-font: 'Helvetica';
 $primary: #cc3366;
 $primary-second: #339999;
 $primary-light: #f0d4d4;
-$text-title: #ce5c7b;
+$text-title: #cc3366;
 $left-pixel: clamp(50px, 14%, 126.5px);
 body {
   margin: 0;
@@ -179,7 +179,7 @@ body {
     bottom: 43px;
     right: 8.2%;
     font-family: $title-font;
-    max-width: 54%;
+    max-width: 44%;
   }
 }
 

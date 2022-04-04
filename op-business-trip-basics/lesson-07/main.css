@@ -386,7 +386,13 @@ body {
 
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {
-  border: 1.5px solid #d8d8d8;
+  border-left: 1.5px solid #d8d8d8;
+  border-right: 1.5px solid #d8d8d8;
+}
+
+.html-lesson-wrapper .try-content th:not(.no-border),
+.html-lesson-wrapper .try-content td:not(.no-border) {
+  border-bottom: 1.5px solid #d8d8d8;
 }
 
 .html-lesson-wrapper .try-content th {
@@ -398,8 +404,11 @@ body {
 }
 
 .html-lesson-wrapper .try-content td {
-  vertical-align: top;
   padding: 0.3vw 0.5vw;
+}
+
+.html-lesson-wrapper .try-content td:not(.not-vertical-center) {
+  vertical-align: top;
 }
 
 .html-lesson-wrapper .act-content {

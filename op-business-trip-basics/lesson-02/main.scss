@@ -392,7 +392,12 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
     th,
     td {
-      border: 1.5px solid #d8d8d8;
+      border-left: 1.5px solid #d8d8d8;
+      border-right: 1.5px solid #d8d8d8;
+
+      &:not(.no-border) {
+        border-bottom: 1.5px solid #d8d8d8;
+      }
     }
 
     th {
@@ -403,8 +408,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       padding: 0.3vw 0;
     }
     td {
-      vertical-align: top;
       padding: 0.3vw 0.5vw;
+      &:not(.not-vertical-center) {
+        vertical-align: top;
+      }
     }
   }
 

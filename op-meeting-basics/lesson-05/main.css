@@ -566,3 +566,11 @@ footer .footer-text {
     padding-bottom: 0;
   }
 }
+
+.review-part-1 {
+  padding-right: clamp(15px, 7vw, 55px);
+}
+
+.review-part-1 .review-box {
+  width: 100%;
+}

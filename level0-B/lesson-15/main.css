@@ -3,35 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -48,6 +19,30 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .html-lesson-wrapper header {
   font-family: "Arial";
@@ -281,306 +276,304 @@ hr {
 .html-lesson-wrapper .converstation-text .row p:last-child {
   font-family: "Noto Sans";
 }
-
-.act-1 .act-1-content {
+.html-lesson-wrapper .act-1 .act-1-content {
   margin-top: 59px;
 }
-.act-1 .act-1-content .PT1 {
+.html-lesson-wrapper .act-1 .act-1-content .PT1 {
   height: clamp(247px, 50vw, 369px);
   width: clamp(377px, 85vw, 532px);
 }
-.act-1 .act-1-content .conversation-img {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img {
   width: clamp(287px, 74vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
   font-weight: bold;
 }
-.act-1 .act-1-content .conversation-img .bubble {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble {
   margin-left: clamp(74px, 14vw, 105px);
   position: absolute;
   margin-top: clamp(48px, 13vw, 94px);
   font-size: clamp(9px, 2vw, 14px);
 }
-.act-1 .act-1-content .conversation-img .bubble .row {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble .row {
   margin-bottom: clamp(2px, 1vw, 20px);
 }
-.act-1 .act-1-content .conversation-img .bubble .row p {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble .row p {
   display: inline-block;
   margin-top: clamp(-24px, -3vw, 0px);
   margin-left: clamp(10px, 8vw, 23px);
 }
-.act-1 .act-1-content .conversation-img .bubble .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.act-1 .act-1-content .conversation-img .bubble .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .jap {
+.html-lesson-wrapper .act-1 .act-1-content .jap {
   font-size: clamp(6px, 2.1vw, 9px);
   color: #7f8288;
   letter-spacing: -1px;
 }
-.act-1 .act-1-content .jap-under {
+.html-lesson-wrapper .act-1 .act-1-content .jap-under {
   font-size: clamp(6px, 2.2vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
-.act-1 .act-1-content .converstation-text {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text {
   margin-left: -22px;
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text .row .akiko {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .row .akiko {
   margin-left: clamp(40.5px, 2vw, 42px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text .row .nick {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .row .nick {
   margin-left: clamp(37px, 2vw, 40px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text .row p {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .row p {
   display: inline-block;
   margin-top: 13px;
   margin-left: clamp(77px, 12vw, 104px);
 }
-.act-1 .act-1-content .converstation-text .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .conversation-img2 {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img2 {
   width: clamp(258px, 68vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
   font-weight: bold;
 }
-.act-1 .act-1-content .conversation-img2 .bubble {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img2 .bubble {
   margin-left: clamp(59px, 13vw, 130px);
   position: absolute;
   margin-top: clamp(42px, 10vw, 65px);
   font-size: clamp(9px, 2vw, 14px);
 }
-.act-1 .act-1-content .conversation-img2 .bubble .row p {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img2 .bubble .row p {
   display: inline-block;
   margin-top: clamp(-10px, -3.2vw, 0px);
   margin-left: clamp(10px, 8vw, 23px);
 }
-.act-1 .act-1-content .conversation-img2 .bubble .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img2 .bubble .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.act-1 .act-1-content .conversation-img2 .bubble .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img2 .bubble .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .converstation-text2 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text2 {
   margin-left: -22px;
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
   font-size: clamp(9px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text2 .row .akiko {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text2 .row .akiko {
   margin-left: 37px;
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text2 .row .nick {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text2 .row .nick {
   margin-left: clamp(40px, 2vw, 40px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text2 .row p {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text2 .row p {
   display: inline-block;
   margin-top: 13px;
   margin-left: clamp(78px, 15vw, 102px);
 }
-.act-1 .act-1-content .converstation-text2 .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text2 .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text2 .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text2 .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .conversation-img1 {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img1 {
   width: clamp(258px, 44vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
   font-weight: bold;
 }
-.act-1 .act-1-content .conversation-img1 .bubble {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img1 .bubble {
   margin-left: clamp(48px, 10vw, 115px);
   position: absolute;
   margin-top: clamp(47px, 9vw, 65px);
   font-size: clamp(9px, 2vw, 14px);
 }
-.act-1 .act-1-content .conversation-img1 .bubble .row p {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img1 .bubble .row p {
   display: inline-block;
   margin-top: clamp(-9px, -2.2vw, 0px);
   margin-left: clamp(10px, 8vw, 23px);
 }
-.act-1 .act-1-content .conversation-img1 .bubble .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img1 .bubble .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.act-1 .act-1-content .conversation-img1 .bubble .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img1 .bubble .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .converstation-text3 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text3 {
   margin-left: -22px;
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
   font-size: clamp(9px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text3 .row .akiko3 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text3 .row .akiko3 {
   margin-left: 33px;
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text3 .row .nick3 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text3 .row .nick3 {
   margin-left: clamp(37px, 2vw, 41px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text3 .row p {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text3 .row p {
   display: inline-block;
   margin-top: 13px;
   margin-left: clamp(73px, 12vw, 102px);
 }
-.act-1 .act-1-content .converstation-text3 .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text3 .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text3 .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text3 .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .conversation-img3 {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img3 {
   width: clamp(303px, 52vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
   font-weight: bold;
 }
-.act-1 .act-1-content .conversation-img3 .bubble {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img3 .bubble {
   margin-left: clamp(89px, 17vw, 144px);
   position: absolute;
   margin-top: clamp(43px, 9vw, 84px);
   font-size: clamp(9px, 2vw, 14px);
 }
-.act-1 .act-1-content .conversation-img3 .bubble .row p {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img3 .bubble .row p {
   display: inline-block;
   margin-top: clamp(-9px, -0.2vw, 3px);
   margin-left: clamp(10px, 8vw, 23px);
 }
-.act-1 .act-1-content .conversation-img3 .bubble .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img3 .bubble .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.act-1 .act-1-content .conversation-img3 .bubble .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img3 .bubble .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .converstation-text4 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text4 {
   margin-left: -22px;
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text4 .row .akiko4 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text4 .row .akiko4 {
   margin-left: clamp(40px, 2vw, 33px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text4 .row .steve4 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text4 .row .steve4 {
   margin-left: clamp(40px, 2vw, 33px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text4 .row p {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text4 .row p {
   display: inline-block;
   margin-top: 13px;
   margin-left: clamp(75px, 12vw, 105px);
 }
-.act-1 .act-1-content .converstation-text4 .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text4 .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text4 .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text4 .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .conversation-img4 {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img4 {
   width: clamp(312px, 57vw, 473px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
   font-family: "Noto Sans";
   font-weight: bold;
 }
-.act-1 .act-1-content .conversation-img4 .bubble {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble {
   margin-left: clamp(95px, 16vw, 144px);
   position: absolute;
   margin-top: clamp(36px, 8vw, 84px);
   font-size: clamp(9px, 2vw, 14px);
 }
-.act-1 .act-1-content .conversation-img4 .bubble .row {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble .row {
   margin-bottom: clamp(-7px, -9vw, 1px);
 }
-.act-1 .act-1-content .conversation-img4 .bubble .row p {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble .row p {
   display: inline-block;
   margin-top: clamp(-9px, -0.2vw, 3px);
   margin-left: clamp(10px, 2vw, 23px);
 }
-.act-1 .act-1-content .conversation-img4 .bubble .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.act-1 .act-1-content .conversation-img4 .bubble .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble .row p:last-child {
   font-family: "Noto Sans";
 }
-.act-1 .act-1-content .converstation-text5 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text5 {
   margin-left: -11px;
   margin-top: 20px;
   font-family: "Noto Sans";
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text5 .row .Akiko5 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text5 .row .Akiko5 {
   margin-left: clamp(40px, 2vw, 33px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text5 .row .Helen5 {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text5 .row .Helen5 {
   margin-left: clamp(36px, 13vw, 34px);
   position: absolute;
 }
-.act-1 .act-1-content .converstation-text5 .row p {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text5 .row p {
   display: inline-block;
   margin-top: 13px;
   margin-left: clamp(74px, 12vw, 105px);
 }
-.act-1 .act-1-content .converstation-text5 .row p:first-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text5 .row p:first-child {
   word-wrap: break-word;
   font-weight: bold;
   margin-bottom: 20px;
   font-size: clamp(10px, 2vw, 18px);
 }
-.act-1 .act-1-content .converstation-text5 .row p:last-child {
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text5 .row p:last-child {
   font-family: "Noto Sans";
 }
-
-.act-2 .act-2-space {
+.html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;
 }

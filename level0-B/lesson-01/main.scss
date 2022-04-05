@@ -19,33 +19,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -60,6 +33,28 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
 
   header {
     font-family: $title-font;
@@ -1333,17 +1328,3 @@ hr {
     }
   }
 }
-
-// @media only screen and(max-width: 375px) {
-//   .icon {
-//     margin-top: -100px !important;
-//     margin-left: 30% !important;
-//     // img {
-//     //   height: clamp(51px, 19vw, 100px);
-//     //   width: auto;
-//     // }
-//     // div {
-//     //   margin-top: clamp(8px, 2vw, 9px);
-//     // }
-//   }
-// }

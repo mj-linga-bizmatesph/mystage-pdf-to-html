@@ -3,98 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.ml-3_5 {
-  margin-left: 21%;
-}
-
-.mt-1 {
-  margin-top: 1rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.justify-left {
-  -webkit-box-pack: left !important;
-      -ms-flex-pack: left !important;
-          justify-content: left !important;
-}
-
-.justify-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-}
-
-.justify-right {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.flex-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-.flex-stretch {
-  height: 100%;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.flex-stretch-45 {
-  height: 45%;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.limit-6 {
-  max-width: clamp(45px, 12vw, 87px);
-}
-
-.remove-letter-space-2 {
-  letter-spacing: -2px !important;
-}
-
-.remove-letter-space-3 {
-  letter-spacing: -3px !important;
-}
-
-.remove-letter-space-4 {
-  letter-spacing: -4px !important;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -112,6 +20,80 @@ td {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper td {
+  vertical-align: top;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .ml-3_5 {
+  margin-left: 21%;
+}
+.html-lesson-wrapper .mt-1 {
+  margin-top: 1rem;
+}
+.html-lesson-wrapper .mt-2 {
+  margin-top: 2rem;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .justify-left {
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+}
+.html-lesson-wrapper .justify-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+.html-lesson-wrapper .justify-right {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .flex-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.html-lesson-wrapper .flex-stretch {
+  height: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.html-lesson-wrapper .flex-stretch-45 {
+  height: 45%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.html-lesson-wrapper .limit-6 {
+  max-width: clamp(45px, 12vw, 87px);
+}
+.html-lesson-wrapper .remove-letter-space-2 {
+  letter-spacing: -2px !important;
+}
+.html-lesson-wrapper .remove-letter-space-3 {
+  letter-spacing: -3px !important;
+}
+.html-lesson-wrapper .remove-letter-space-4 {
+  letter-spacing: -4px !important;
+}
 .html-lesson-wrapper header {
   font-family: "Arial";
 }
@@ -128,7 +110,7 @@ td {
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-2 .table .name, .try-2 .table .html-lesson-wrapper .name, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li:before, .try-2 .table-wrapper-section .table-wrapper .options ol .html-lesson-wrapper li:before, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .try-2 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .text, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
+.html-lesson-wrapper .b, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-2 .table .name, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li:before, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .text, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
   font-weight: bold;
 }
 .html-lesson-wrapper .u-sup {
@@ -140,7 +122,7 @@ td {
   text-decoration: underline;
   color: #1287cd;
 }
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .try-3 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li:before, .try-2 .table-wrapper-section .table-wrapper .options ol .html-lesson-wrapper li:before, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .try-2 .table-wrapper-section .table-wrapper .html-lesson-wrapper .table-number, .html-lesson-wrapper .text {
+.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li:before, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .text {
   color: #1287cd;
 }
 .html-lesson-wrapper .program-rank {
@@ -561,32 +543,30 @@ td {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: 3.8%;
 }
-
-.see-1 {
+.html-lesson-wrapper .see-1 {
   margin-top: 29%;
 }
-.see-1 .office-see-1 {
+.html-lesson-wrapper .see-1 .office-see-1 {
   margin-top: 6%;
 }
-.see-1 .office-see-1 .speech .eng {
+.html-lesson-wrapper .see-1 .office-see-1 .speech .eng {
   font-size: clamp(8px, 2vw, 14px);
 }
-.see-1 .office-see-1 .speech.nick {
+.html-lesson-wrapper .see-1 .office-see-1 .speech.nick {
   margin-top: 15.4%;
   left: 14.5%;
 }
-.see-1 .office-see-1 .speech.akiko {
+.html-lesson-wrapper .see-1 .office-see-1 .speech.akiko {
   margin-top: 27%;
   right: 11.7%;
 }
-
-.see-2 {
+.html-lesson-wrapper .see-2 {
   margin-top: 7%;
 }
-.see-2 .alt:not(:last-child) {
+.html-lesson-wrapper .see-2 .alt:not(:last-child) {
   margin-bottom: 6%;
 }
-.see-2 .legend.flex-center {
+.html-lesson-wrapper .see-2 .legend.flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,7 +574,7 @@ td {
       -ms-flex-pack: center !important;
           justify-content: center !important;
 }
-.see-2 .legend.flex-right {
+.html-lesson-wrapper .see-2 .legend.flex-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,10 +582,10 @@ td {
       -ms-flex-pack: right !important;
           justify-content: right !important;
 }
-.see-2 .phrases-section {
+.html-lesson-wrapper .see-2 .phrases-section {
   margin-bottom: 8%;
 }
-.see-2 .phrases {
+.html-lesson-wrapper .see-2 .phrases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,45 +594,44 @@ td {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.see-2 .phrases .phrase-wrapper {
+.html-lesson-wrapper .see-2 .phrases .phrase-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.see-2 .conversation .conv-1 {
+.html-lesson-wrapper .see-2 .conversation .conv-1 {
   margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
 }
-.see-2 .conversation .conv-1 .phrase .eng {
+.html-lesson-wrapper .see-2 .conversation .conv-1 .phrase .eng {
   font-size: clamp(8px, 2.2vw, 15px);
 }
-.see-2 .conversation .conv-1 .phrase:not(:last-child) {
+.html-lesson-wrapper .see-2 .conversation .conv-1 .phrase:not(:last-child) {
   margin-right: -2px;
 }
-.see-2 .conversation .conv-1 .icon {
+.html-lesson-wrapper .see-2 .conversation .conv-1 .icon {
   padding-right: 1rem;
 }
-.see-2 .phrase-alts {
+.html-lesson-wrapper .see-2 .phrase-alts {
   display: grid;
   grid-template-columns: 0.8fr 0.8fr 1fr !important;
   gap: 5px !important;
 }
-.see-2 .phrase-alts .alt-box .choice-eng {
+.html-lesson-wrapper .see-2 .phrase-alts .alt-box .choice-eng {
   font-size: clamp(9px, 2vw, 15px);
 }
-.see-2 .phrase-alts .alt:not(:last-child) {
+.html-lesson-wrapper .see-2 .phrase-alts .alt:not(:last-child) {
   margin-bottom: 4% !important;
 }
-
-.see-3 {
+.html-lesson-wrapper .see-3 {
   margin-top: 7%;
 }
-.see-3 .alt:not(:last-child) {
+.html-lesson-wrapper .see-3 .alt:not(:last-child) {
   margin-bottom: 6%;
 }
-.see-3 .legend.flex-center {
+.html-lesson-wrapper .see-3 .legend.flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,7 +639,7 @@ td {
       -ms-flex-pack: center !important;
           justify-content: center !important;
 }
-.see-3 .legend.flex-right {
+.html-lesson-wrapper .see-3 .legend.flex-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,10 +647,10 @@ td {
       -ms-flex-pack: right !important;
           justify-content: right !important;
 }
-.see-3 .phrases-section {
+.html-lesson-wrapper .see-3 .phrases-section {
   margin-bottom: 8%;
 }
-.see-3 .phrases {
+.html-lesson-wrapper .see-3 .phrases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,62 +659,60 @@ td {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.see-3 .phrases .phrase-wrapper {
+.html-lesson-wrapper .see-3 .phrases .phrase-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.see-3 .phrases .phrase-wrapper:last-child {
+.html-lesson-wrapper .see-3 .phrases .phrase-wrapper:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.see-3 .conversation .conv-1 {
+.html-lesson-wrapper .see-3 .conversation .conv-1 {
   margin-top: 5%;
   display: grid;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
 }
-.see-3 .conversation .conv-1 .phrase .eng {
+.html-lesson-wrapper .see-3 .conversation .conv-1 .phrase .eng {
   font-size: clamp(8px, 2.2vw, 15px);
   margin-right: 8px;
 }
-.see-3 .conversation .conv-1 .phrase:not(:last-child) {
+.html-lesson-wrapper .see-3 .conversation .conv-1 .phrase:not(:last-child) {
   margin-right: -2px;
 }
-.see-3 .conversation .conv-1 .icon {
+.html-lesson-wrapper .see-3 .conversation .conv-1 .icon {
   padding-right: 1rem;
 }
-.see-3 .phrase-alts {
+.html-lesson-wrapper .see-3 .phrase-alts {
   gap: 5px !important;
 }
-.see-3 .phrase-alts .alt-box .choice-eng {
+.html-lesson-wrapper .see-3 .phrase-alts .alt-box .choice-eng {
   font-size: clamp(9px, 2vw, 15px);
 }
-.see-3 .phrase-alts .alt:not(:last-child) {
+.html-lesson-wrapper .see-3 .phrase-alts .alt:not(:last-child) {
   margin-bottom: 4% !important;
 }
-
-.try-1,
-.try-2,
-.try-3 {
+.html-lesson-wrapper .try-1,
+.html-lesson-wrapper .try-2,
+.html-lesson-wrapper .try-3 {
   margin-top: 6%;
 }
-
-.try-1 .combinations {
+.html-lesson-wrapper .try-1 .combinations {
   grid-template-columns: 1fr 1fr -webkit-min-content;
   grid-template-columns: 1fr 1fr min-content;
   margin-top: 8%;
   margin-left: 2%;
 }
-.try-1 .combinations > div:last-child {
+.html-lesson-wrapper .try-1 .combinations > div:last-child {
   margin-left: 4%;
 }
-.try-1 .combinations .combination-icon {
+.html-lesson-wrapper .try-1 .combinations .combination-icon {
   height: auto;
   width: clamp(80px, 30vw, 180px);
 }
-.try-1 .combinations .combination {
+.html-lesson-wrapper .try-1 .combinations .combination {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -744,46 +721,45 @@ td {
           justify-content: left;
   margin-bottom: 13%;
 }
-.try-1 .combinations .combination > div:not(:last-child) {
+.html-lesson-wrapper .try-1 .combinations .combination > div:not(:last-child) {
   margin-right: 4%;
 }
-.try-1 .combinations .number.inverse {
+.html-lesson-wrapper .try-1 .combinations .number.inverse {
   border: 1px solid #1287cd !important;
 }
-
-.try-2 .table-wrapper-section {
+.html-lesson-wrapper .try-2 .table-wrapper-section {
   margin-top: 10%;
 }
-.try-2 .table-wrapper-section .table-wrapper {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
-.try-2 .table-wrapper-section .table-wrapper p {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper p {
   margin: 0;
 }
-.try-2 .table-wrapper-section .table-wrapper .table-number {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 5px;
   padding-left: 10px;
   width: 17px;
 }
-.try-2 .table-wrapper-section .table-wrapper .table-img {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-img {
   width: 50%;
   text-align: left;
   padding-right: 1%;
 }
-.try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
   margin-bottom: clamp(1rem, 2vw, 12%);
 }
-.try-2 .table-wrapper-section .table-wrapper img {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper img {
   max-width: clamp(44%, 50vw, 100%);
   padding-left: 5%;
 }
-.try-2 .table-wrapper-section .table-wrapper .options {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   font-size: clamp(10px, 3vw, 18px);
 }
-.try-2 .table-wrapper-section .table-wrapper .options div:last-child {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options div:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,123 +767,119 @@ td {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.try-2 .table-wrapper-section .table-wrapper .options ol {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol {
   list-style: none;
   counter-reset: item;
   text-align: left;
   padding: 0;
   margin-top: 0;
 }
-.try-2 .table-wrapper-section .table-wrapper .options ol li {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li {
   counter-increment: item;
   border-bottom: 30px solid transparent;
   display: table-row;
 }
-.try-2 .table-wrapper-section .table-wrapper .options ol li:before {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li:before {
   font-size: clamp(10px, 3vw, 18px);
   content: counter(item, lower-alpha) ". ";
   width: 1.2em;
   text-align: center;
   display: table-cell;
 }
-.try-2 .table-wrapper-section .table-wrapper .options ol li:after {
+.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ol li:after {
   white-space: pre;
   content: " ";
   clear: right;
   display: block;
 }
-.try-2 .table {
+.html-lesson-wrapper .try-2 .table {
   font-family: "Noto Sans";
   border-collapse: collapse;
 }
-.try-2 .table td {
+.html-lesson-wrapper .try-2 .table td {
   font-size: clamp(10px, 3vw, 18px);
 }
-.try-2 .table td img {
+.html-lesson-wrapper .try-2 .table td img {
   max-width: clamp(44%, 16vw, 100%);
   margin-bottom: 20px;
 }
-.try-2 .table .name {
+.html-lesson-wrapper .try-2 .table .name {
   font-size: clamp(10px, 3vw, 16px);
   white-space: nowrap;
 }
-.try-2 .table td:nth-child(3) {
+.html-lesson-wrapper .try-2 .table td:nth-child(3) {
   padding-bottom: 3%;
 }
-.try-2 .table td.you {
+.html-lesson-wrapper .try-2 .table td.you {
   padding-bottom: 7%;
 }
-
-.try-3 {
+.html-lesson-wrapper .try-3 {
   font-family: "Noto Sans" !important;
 }
-.try-3 .table-wrapper-section {
+.html-lesson-wrapper .try-3 .table-wrapper-section {
   margin-top: 15%;
 }
-.try-3 .table-wrapper-section .table-wrapper {
+.html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper {
   width: 100%;
   margin-bottom: clamp(2rem, 3vh, 3rem) !important;
 }
-.try-3 .table-wrapper-section .table-wrapper p {
+.html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper p {
   margin: 0;
 }
-.try-3 .table-wrapper-section .table-wrapper .table-number {
+.html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: clamp(5px, 2.2vw, 6px);
   padding-right: clamp(9px, 2.9vw, 15px);
 }
-.try-3 .table-wrapper-section .table-wrapper .table-img {
+.html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper .table-img {
   width: 30%;
   text-align: right;
   vertical-align: bottom;
 }
-.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
+.html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
   margin-bottom: clamp(1rem, 2vw, 3rem);
 }
-.try-3 .table-wrapper-section .table-wrapper img {
+.html-lesson-wrapper .try-3 .table-wrapper-section .table-wrapper img {
   max-width: clamp(44%, 25vw, 100%);
 }
-.try-3 .table-wrapper-section .dialog table tr:first-child td:last-child {
+.html-lesson-wrapper .try-3 .table-wrapper-section .dialog table tr:first-child td:last-child {
   padding-bottom: 1rem;
 }
-
-.act-1,
-.act-2 {
+.html-lesson-wrapper .act-1,
+.html-lesson-wrapper .act-2 {
   margin-top: 7%;
 }
-
-.act-2 {
+.html-lesson-wrapper .act-2 {
   margin-bottom: 50px;
 }
-
-.act-1 {
+.html-lesson-wrapper .act-1 {
   font-family: "Noto Sans" !important;
 }
-.act-1 .blue-line {
+.html-lesson-wrapper .act-1 .blue-line {
   margin-top: 5%;
 }
-.act-1 .table-conv {
+.html-lesson-wrapper .act-1 .table-conv {
   margin-left: 1rem;
 }
-.act-1 p.jap {
+.html-lesson-wrapper .act-1 p.jap {
   letter-spacing: -2px;
 }
-.act-1 .office-act-1 {
+.html-lesson-wrapper .act-1 .office-act-1 {
   margin-top: 6%;
 }
-.act-1 .office-act-1 .bubble.nick .eng, .act-1 .office-act-1 .bubble.akiko .eng {
+.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick .eng, .html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko .eng {
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 13px);
 }
-.act-1 .office-act-1 .bubble.nick .jap, .act-1 .office-act-1 .bubble.akiko .jap {
+.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick .jap, .html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko .jap {
   letter-spacing: -1px;
   line-height: clamp(10px, 2.8vw, 1rem);
 }
-.act-1 .office-act-1 .bubble.nick {
+.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick {
   margin-top: 16.4%;
   left: 15.9%;
 }
-.act-1 .office-act-1 .bubble.akiko {
+.html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko {
   margin-top: 21.4%;
   right: 9.9%;
 }

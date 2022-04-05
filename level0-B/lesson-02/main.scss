@@ -19,33 +19,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -60,6 +33,28 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 
   header {
     font-family: $title-font;
@@ -346,8 +341,6 @@ hr {
         letter-spacing: $jap-letter-spacing;
       }
     }
-
-
 
     .s1-name {
       span {
@@ -735,7 +728,7 @@ hr {
         }
         .bubble {
           position: absolute;
-          top:-150%;
+          top: -150%;
           left: 70%;
           font-size: clamp(10px, 2.6vw, 21px);
           padding-top: clamp(20.4px, 6vw, 40px);
@@ -1169,7 +1162,7 @@ hr {
         padding-top: clamp(1px, 1.2vw, 20px);
         margin-bottom: -70px;
         .convo-1,
-        .convo-4{
+        .convo-4 {
           padding-bottom: 20px;
           .convo-wrap-akiko {
             padding-bottom: clamp(10px, 1vw, 20px);
@@ -1257,7 +1250,7 @@ hr {
           }
         }
 
-        .convo-2{
+        .convo-2 {
           padding-bottom: 20px;
           .convo-wrap-akiko {
             padding-bottom: clamp(10px, 1vw, 20px);
@@ -1346,7 +1339,7 @@ hr {
           }
         }
 
-        .convo-3{
+        .convo-3 {
           padding-bottom: 20px;
           .convo-wrap-akiko {
             padding-bottom: clamp(10px, 1vw, 20px);
@@ -1569,4 +1562,3 @@ hr {
     }
   }
 }
-

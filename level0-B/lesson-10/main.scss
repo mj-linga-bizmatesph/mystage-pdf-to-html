@@ -18,43 +18,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.w-11 {
-  width: clamp(6.5rem, 17vw, 12rem);
-}
-
-.flex {
-  display: flex;
-}
-
-.justify-left {
-  justify-content: left !important;
-}
-
-.justify-center {
-  justify-content: center !important;
-}
-
-.justify-right {
-  justify-content: end !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -69,6 +32,43 @@ td {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .w-11 {
+    width: clamp(6.5rem, 17vw, 12rem);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-left {
+    justify-content: left !important;
+  }
+
+  .justify-center {
+    justify-content: center !important;
+  }
+
+  .justify-right {
+    justify-content: end !important;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
 
   header {
     font-family: $title-font;

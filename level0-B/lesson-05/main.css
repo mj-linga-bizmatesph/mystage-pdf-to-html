@@ -3,35 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -48,6 +19,30 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .html-lesson-wrapper header {
   font-family: "Arial";
@@ -161,7 +156,7 @@ hr {
 }
 .html-lesson-wrapper .see-content .arrow.see {
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: clamp(12px, 2.3vw, 16px);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-try-arrow.png);
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);

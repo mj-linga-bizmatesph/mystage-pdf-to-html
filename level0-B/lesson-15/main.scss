@@ -19,33 +19,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -60,6 +33,28 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 
   header {
     font-family: $title-font;
@@ -342,37 +337,79 @@ hr {
       }
     }
   }
-}
 
-.act-1 {
-  .act-1-content {
-    margin-top: 59px;
-    .PT1 {
-      height: clamp(247px, 50vw, 369px);
-      width: clamp(377px, 85vw, 532px);
-    }
-    .conversation-img {
-      width: clamp(287px, 74vw, 416px);
-      min-height: clamp(130px, 50vw, 230px);
-      position: absolute;
-      font-family: $noto-sans;
-      font-weight: bold;
-
-      .bubble {
-        margin-left: clamp(74px, 14vw, 105px);
+  .act-1 {
+    .act-1-content {
+      margin-top: 59px;
+      .PT1 {
+        height: clamp(247px, 50vw, 369px);
+        width: clamp(377px, 85vw, 532px);
+      }
+      .conversation-img {
+        width: clamp(287px, 74vw, 416px);
+        min-height: clamp(130px, 50vw, 230px);
         position: absolute;
-        margin-top: clamp(48px, 13vw, 94px);
-        font-size: clamp(9px, 2vw, 14px);
+        font-family: $noto-sans;
+        font-weight: bold;
+
+        .bubble {
+          margin-left: clamp(74px, 14vw, 105px);
+          position: absolute;
+          margin-top: clamp(48px, 13vw, 94px);
+          font-size: clamp(9px, 2vw, 14px);
+          .row {
+            margin-bottom: clamp(2px, 1vw, 20px);
+            p {
+              display: inline-block;
+              margin-top: clamp(-24px, -3vw, 0px);
+              margin-left: clamp(10px, 8vw, 23px);
+              &:first-child {
+                word-wrap: break-word;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              &:last-child {
+                font-family: $noto-sans;
+              }
+            }
+          }
+        }
+      }
+
+      .jap {
+        font-size: clamp(6px, 2.1vw, 9px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+      .jap-under {
+        font-size: clamp(6px, 2.2vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+      .converstation-text {
+        margin-left: -22px;
+        margin-top: 20px;
+        font-family: $noto-sans;
+        margin-bottom: 22px;
+        font-size: clamp(10px, 2vw, 18px);
         .row {
-          margin-bottom: clamp(2px, 1vw, 20px);
+          .akiko {
+            margin-left: clamp(40.5px, 2vw, 42px);
+            position: absolute;
+          }
+          .nick {
+            margin-left: clamp(37px, 2vw, 40px);
+            position: absolute;
+          }
           p {
             display: inline-block;
-            margin-top: clamp(-24px, -3vw, 0px);
-            margin-left: clamp(10px, 8vw, 23px);
+            margin-top: 13px;
+            margin-left: clamp(77px, 12vw, 104px);
             &:first-child {
               word-wrap: break-word;
               font-weight: bold;
               margin-bottom: 20px;
+              font-size: clamp(10px, 2vw, 18px);
             }
             &:last-child {
               font-family: $noto-sans;
@@ -380,70 +417,59 @@ hr {
           }
         }
       }
-    }
+      .conversation-img2 {
+        width: clamp(258px, 68vw, 416px);
+        min-height: clamp(130px, 50vw, 230px);
+        position: absolute;
+        font-family: 'Noto Sans';
+        font-weight: bold;
 
-    .jap {
-      font-size: clamp(6px, 2.1vw, 9px);
-      color: $subtext-color;
-      letter-spacing: $jap-letter-spacing;
-    }
-    .jap-under {
-      font-size: clamp(6px, 2.2vw, 11px);
-      color: $subtext-color;
-      letter-spacing: $jap-letter-spacing;
-    }
-    .converstation-text {
-      margin-left: -22px;
-      margin-top: 20px;
-      font-family: $noto-sans;
-      margin-bottom: 22px;
-      font-size: clamp(10px, 2vw, 18px);
-      .row {
-        .akiko {
-          margin-left: clamp(40.5px, 2vw, 42px);
+        .bubble {
+          margin-left: clamp(59px, 13vw, 130px);
           position: absolute;
-        }
-        .nick {
-          margin-left: clamp(37px, 2vw, 40px);
-          position: absolute;
-        }
-        p {
-          display: inline-block;
-          margin-top: 13px;
-          margin-left: clamp(77px, 12vw, 104px);
-          &:first-child {
-            word-wrap: break-word;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-size: clamp(10px, 2vw, 18px);
-          }
-          &:last-child {
-            font-family: $noto-sans;
+          margin-top: clamp(42px, 10vw, 65px);
+          font-size: clamp(9px, 2vw, 14px);
+          .row {
+            p {
+              display: inline-block;
+              margin-top: clamp(-10px, -3.2vw, 0px);
+              margin-left: clamp(10px, 8vw, 23px);
+              &:first-child {
+                word-wrap: break-word;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              &:last-child {
+                font-family: $noto-sans;
+              }
+            }
           }
         }
       }
-    }
-    .conversation-img2 {
-      width: clamp(258px, 68vw, 416px);
-      min-height: clamp(130px, 50vw, 230px);
-      position: absolute;
-      font-family: 'Noto Sans';
-      font-weight: bold;
-
-      .bubble {
-        margin-left: clamp(59px, 13vw, 130px);
-        position: absolute;
-        margin-top: clamp(42px, 10vw, 65px);
-        font-size: clamp(9px, 2vw, 14px);
+      .converstation-text2 {
+        margin-left: -22px;
+        margin-top: 20px;
+        font-family: $noto-sans;
+        margin-bottom: 22px;
+        font-size: clamp(9px, 2vw, 18px);
         .row {
+          .akiko {
+            margin-left: 37px;
+            position: absolute;
+          }
+          .nick {
+            margin-left: clamp(40px, 2vw, 40px);
+            position: absolute;
+          }
           p {
             display: inline-block;
-            margin-top: clamp(-10px, -3.2vw, 0px);
-            margin-left: clamp(10px, 8vw, 23px);
+            margin-top: 13px;
+            margin-left: clamp(78px, 15vw, 102px);
             &:first-child {
               word-wrap: break-word;
               font-weight: bold;
               margin-bottom: 20px;
+              font-size: clamp(10px, 2vw, 18px);
             }
             &:last-child {
               font-family: $noto-sans;
@@ -451,59 +477,59 @@ hr {
           }
         }
       }
-    }
-    .converstation-text2 {
-      margin-left: -22px;
-      margin-top: 20px;
-      font-family: $noto-sans;
-      margin-bottom: 22px;
-      font-size: clamp(9px, 2vw, 18px);
-      .row {
-        .akiko {
-          margin-left: 37px;
+      .conversation-img1 {
+        width: clamp(258px, 44vw, 416px);
+        min-height: clamp(130px, 50vw, 230px);
+        position: absolute;
+        font-family: $noto-sans;
+        font-weight: bold;
+
+        .bubble {
+          margin-left: clamp(48px, 10vw, 115px);
           position: absolute;
-        }
-        .nick {
-          margin-left: clamp(40px, 2vw, 40px);
-          position: absolute;
-        }
-        p {
-          display: inline-block;
-          margin-top: 13px;
-          margin-left: clamp(78px, 15vw, 102px);
-          &:first-child {
-            word-wrap: break-word;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-size: clamp(10px, 2vw, 18px);
-          }
-          &:last-child {
-            font-family: $noto-sans;
+          margin-top: clamp(47px, 9vw, 65px);
+          font-size: clamp(9px, 2vw, 14px);
+          .row {
+            p {
+              display: inline-block;
+              margin-top: clamp(-9px, -2.2vw, 0px);
+              margin-left: clamp(10px, 8vw, 23px);
+              &:first-child {
+                word-wrap: break-word;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              &:last-child {
+                font-family: $noto-sans;
+              }
+            }
           }
         }
       }
-    }
-    .conversation-img1 {
-      width: clamp(258px, 44vw, 416px);
-      min-height: clamp(130px, 50vw, 230px);
-      position: absolute;
-      font-family: $noto-sans;
-      font-weight: bold;
-
-      .bubble {
-        margin-left: clamp(48px, 10vw, 115px);
-        position: absolute;
-        margin-top: clamp(47px, 9vw, 65px);
-        font-size: clamp(9px, 2vw, 14px);
+      .converstation-text3 {
+        margin-left: -22px;
+        margin-top: 20px;
+        font-family: $noto-sans;
+        margin-bottom: 22px;
+        font-size: clamp(9px, 2vw, 18px);
         .row {
+          .akiko3 {
+            margin-left: 33px;
+            position: absolute;
+          }
+          .nick3 {
+            margin-left: clamp(37px, 2vw, 41px);
+            position: absolute;
+          }
           p {
             display: inline-block;
-            margin-top: clamp(-9px, -2.2vw, 0px);
-            margin-left: clamp(10px, 8vw, 23px);
+            margin-top: 13px;
+            margin-left: clamp(73px, 12vw, 102px);
             &:first-child {
               word-wrap: break-word;
               font-weight: bold;
               margin-bottom: 20px;
+              font-size: clamp(10px, 2vw, 18px);
             }
             &:last-child {
               font-family: $noto-sans;
@@ -511,59 +537,59 @@ hr {
           }
         }
       }
-    }
-    .converstation-text3 {
-      margin-left: -22px;
-      margin-top: 20px;
-      font-family: $noto-sans;
-      margin-bottom: 22px;
-      font-size: clamp(9px, 2vw, 18px);
-      .row {
-        .akiko3 {
-          margin-left: 33px;
+      .conversation-img3 {
+        width: clamp(303px, 52vw, 416px);
+        min-height: clamp(130px, 50vw, 230px);
+        position: absolute;
+        font-family: $noto-sans;
+        font-weight: bold;
+
+        .bubble {
+          margin-left: clamp(89px, 17vw, 144px);
           position: absolute;
-        }
-        .nick3 {
-          margin-left: clamp(37px, 2vw, 41px);
-          position: absolute;
-        }
-        p {
-          display: inline-block;
-          margin-top: 13px;
-          margin-left: clamp(73px, 12vw, 102px);
-          &:first-child {
-            word-wrap: break-word;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-size: clamp(10px, 2vw, 18px);
-          }
-          &:last-child {
-            font-family: $noto-sans;
+          margin-top: clamp(43px, 9vw, 84px);
+          font-size: clamp(9px, 2vw, 14px);
+          .row {
+            p {
+              display: inline-block;
+              margin-top: clamp(-9px, -0.2vw, 3px);
+              margin-left: clamp(10px, 8vw, 23px);
+              &:first-child {
+                word-wrap: break-word;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              &:last-child {
+                font-family: $noto-sans;
+              }
+            }
           }
         }
       }
-    }
-    .conversation-img3 {
-      width: clamp(303px, 52vw, 416px);
-      min-height: clamp(130px, 50vw, 230px);
-      position: absolute;
-      font-family: $noto-sans;
-      font-weight: bold;
-
-      .bubble {
-        margin-left: clamp(89px, 17vw, 144px);
-        position: absolute;
-        margin-top: clamp(43px, 9vw, 84px);
-        font-size: clamp(9px, 2vw, 14px);
+      .converstation-text4 {
+        margin-left: -22px;
+        margin-top: 20px;
+        font-family: $noto-sans;
+        margin-bottom: 22px;
+        font-size: clamp(10px, 2vw, 18px);
         .row {
+          .akiko4 {
+            margin-left: clamp(40px, 2vw, 33px);
+            position: absolute;
+          }
+          .steve4 {
+            margin-left: clamp(40px, 2vw, 33px);
+            position: absolute;
+          }
           p {
             display: inline-block;
-            margin-top: clamp(-9px, -0.2vw, 3px);
-            margin-left: clamp(10px, 8vw, 23px);
+            margin-top: 13px;
+            margin-left: clamp(75px, 12vw, 105px);
             &:first-child {
               word-wrap: break-word;
               font-weight: bold;
               margin-bottom: 20px;
+              font-size: clamp(10px, 2vw, 18px);
             }
             &:last-child {
               font-family: $noto-sans;
@@ -571,104 +597,73 @@ hr {
           }
         }
       }
-    }
-    .converstation-text4 {
-      margin-left: -22px;
-      margin-top: 20px;
-      font-family: $noto-sans;
-      margin-bottom: 22px;
-      font-size: clamp(10px, 2vw, 18px);
-      .row {
-        .akiko4 {
-          margin-left: clamp(40px, 2vw, 33px);
+      .conversation-img4 {
+        width: clamp(312px, 57vw, 473px);
+        min-height: clamp(130px, 50vw, 230px);
+        position: absolute;
+        font-family: $noto-sans;
+        font-weight: bold;
+
+        .bubble {
+          margin-left: clamp(95px, 16vw, 144px);
           position: absolute;
-        }
-        .steve4 {
-          margin-left: clamp(40px, 2vw, 33px);
-          position: absolute;
-        }
-        p {
-          display: inline-block;
-          margin-top: 13px;
-          margin-left: clamp(75px, 12vw, 105px);
-          &:first-child {
-            word-wrap: break-word;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-size: clamp(10px, 2vw, 18px);
-          }
-          &:last-child {
-            font-family: $noto-sans;
+          margin-top: clamp(36px, 8vw, 84px);
+          font-size: clamp(9px, 2vw, 14px);
+          .row {
+            margin-bottom: clamp(-7px, -9vw, 1px);
+            p {
+              display: inline-block;
+              margin-top: clamp(-9px, -0.2vw, 3px);
+              margin-left: clamp(10px, 2vw, 23px);
+              &:first-child {
+                word-wrap: break-word;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+              &:last-child {
+                font-family: $noto-sans;
+              }
+            }
           }
         }
       }
-    }
-    .conversation-img4 {
-      width: clamp(312px, 57vw, 473px);
-      min-height: clamp(130px, 50vw, 230px);
-      position: absolute;
-      font-family: $noto-sans;
-      font-weight: bold;
-
-      .bubble {
-        margin-left: clamp(95px, 16vw, 144px);
-        position: absolute;
-        margin-top: clamp(36px, 8vw, 84px);
-        font-size: clamp(9px, 2vw, 14px);
+      .converstation-text5 {
+        margin-left: -11px;
+        margin-top: 20px;
+        font-family: $noto-sans;
+        margin-bottom: 22px;
+        font-size: clamp(10px, 2vw, 18px);
         .row {
-          margin-bottom: clamp(-7px, -9vw, 1px);
+          .Akiko5 {
+            margin-left: clamp(40px, 2vw, 33px);
+            position: absolute;
+          }
+          .Helen5 {
+            margin-left: clamp(36px, 13vw, 34px);
+            position: absolute;
+          }
           p {
             display: inline-block;
-            margin-top: clamp(-9px, -0.2vw, 3px);
-            margin-left: clamp(10px, 2vw, 23px);
+            margin-top: 13px;
+            margin-left: clamp(74px, 12vw, 105px);
             &:first-child {
               word-wrap: break-word;
               font-weight: bold;
               margin-bottom: 20px;
+              font-size: clamp(10px, 2vw, 18px);
             }
             &:last-child {
               font-family: $noto-sans;
             }
-          }
-        }
-      }
-    }
-    .converstation-text5 {
-      margin-left: -11px;
-      margin-top: 20px;
-      font-family: $noto-sans;
-      margin-bottom: 22px;
-      font-size: clamp(10px, 2vw, 18px);
-      .row {
-        .Akiko5 {
-          margin-left: clamp(40px, 2vw, 33px);
-          position: absolute;
-        }
-        .Helen5 {
-          margin-left: clamp(36px, 13vw, 34px);
-          position: absolute;
-        }
-        p {
-          display: inline-block;
-          margin-top: 13px;
-          margin-left: clamp(74px, 12vw, 105px);
-          &:first-child {
-            word-wrap: break-word;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-size: clamp(10px, 2vw, 18px);
-          }
-          &:last-child {
-            font-family: $noto-sans;
           }
         }
       }
     }
   }
-}
 
-.act-2 {
-  .act-2-space {
-    margin-bottom: 80px;
+  .act-2 {
+    .act-2-space {
+      margin-bottom: 80px;
+    }
   }
 }

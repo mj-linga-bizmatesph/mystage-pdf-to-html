@@ -19,33 +19,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -60,6 +33,28 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 
   header {
     font-family: $title-font;
@@ -737,12 +732,12 @@ hr {
         position: relative;
         display: flex;
 
-        .row1-col1{
-          background: #E7F3FA;
+        .row1-col1 {
+          background: #e7f3fa;
           width: clamp(100px, 25vw, 130px);
           min-height: clamp(25px, 15vw, 40px);
 
-          .row1-col1-text{
+          .row1-col1-text {
             position: absolute;
             font-size: clamp(8px, 3vw, 16px);
             font-weight: 700;
@@ -751,13 +746,13 @@ hr {
           }
         }
 
-        .row1-col2{
-          background: #E7F3FA;
+        .row1-col2 {
+          background: #e7f3fa;
           margin-left: clamp(10px, 5vw, 17px);
           width: clamp(140px, 25vw, 175px);
           min-height: clamp(25px, 15vw, 40px);
 
-          .row1-col2-text{
+          .row1-col2-text {
             position: absolute;
             font-size: clamp(8px, 3vw, 16px);
             font-weight: 700;
@@ -772,12 +767,12 @@ hr {
         position: relative;
         display: flex;
 
-        .row2-col1{
-          background: #E7F3FA;
+        .row2-col1 {
+          background: #e7f3fa;
           width: clamp(100px, 20vw, 110px);
           min-height: clamp(25px, 15vw, 40px);
 
-          .row2-col1-text{
+          .row2-col1-text {
             position: absolute;
             font-size: clamp(8px, 3vw, 16px);
             font-weight: 700;
@@ -786,13 +781,13 @@ hr {
           }
         }
 
-        .row2-col2{
-          background: #E7F3FA;
+        .row2-col2 {
+          background: #e7f3fa;
           margin-left: clamp(10px, 5vw, 17px);
           width: clamp(110px, 20vw, 130px);
           min-height: clamp(25px, 15vw, 40px);
 
-          .row2-col2-text{
+          .row2-col2-text {
             position: absolute;
             font-size: clamp(8px, 3vw, 16px);
             font-weight: 700;
@@ -807,12 +802,12 @@ hr {
         position: relative;
         display: flex;
 
-        .row3-col1{
-          background: #E7F3FA;
+        .row3-col1 {
+          background: #e7f3fa;
           width: clamp(100px, 20vw, 110px);
           min-height: clamp(25px, 15vw, 40px);
 
-          .row3-col1-text{
+          .row3-col1-text {
             position: absolute;
             font-size: clamp(8px, 3vw, 16px);
             font-weight: 700;
@@ -821,13 +816,13 @@ hr {
           }
         }
 
-        .row3-col2{
-          background: #E7F3FA;
+        .row3-col2 {
+          background: #e7f3fa;
           margin-left: clamp(10px, 5vw, 17px);
           width: clamp(85px, 15vw, 100px);
           min-height: clamp(25px, 15vw, 40px);
 
-          .row3-col2-text{
+          .row3-col2-text {
             position: absolute;
             font-size: clamp(8px, 3vw, 16px);
             font-weight: 700;
@@ -838,136 +833,135 @@ hr {
       }
 
       .try-2-row-4 {
-
-        .row4-1{
+        .row4-1 {
           margin-bottom: clamp(40px, 16vw, 70px);
 
-          .number-left{
+          .number-left {
             color: $primary-blue;
             font-weight: 700;
           }
 
-          .trainer{
+          .trainer {
             margin-left: 2%;
             margin-bottom: clamp(40px, 16vw, 100px);
             font-size: clamp(8px, 3vw, 16px);
           }
 
-          .you{
+          .you {
             margin-left: clamp(38px, 10vw, 50px);
             margin-top: clamp(10px, 15vw, 25px);
             font-size: clamp(8px, 3vw, 16px);
 
-            .you-text{
+            .you-text {
               margin-left: clamp(1px, 1vw, 1px);
             }
           }
         }
 
-        .row4-2{
+        .row4-2 {
           margin-bottom: clamp(40px, 16vw, 70px);
 
-          .number-left{
+          .number-left {
             color: $primary-blue;
             font-weight: 700;
           }
 
-          .trainer{
+          .trainer {
             margin-left: 2%;
             margin-bottom: clamp(40px, 16vw, 100px);
             font-size: clamp(8px, 3vw, 16px);
           }
 
-          .you{
+          .you {
             font-size: clamp(8px, 3vw, 16px);
             margin-left: clamp(38px, 10vw, 50px);
             margin-top: clamp(10px, 15vw, 25px);
 
-            .you-text{
+            .you-text {
               margin-left: clamp(1px, 1vw, 1px);
             }
           }
         }
 
-        .row4-3{
+        .row4-3 {
           margin-bottom: clamp(40px, 16vw, 70px);
 
-          .number-left{
+          .number-left {
             color: $primary-blue;
             font-weight: 700;
           }
 
-          .trainer{
+          .trainer {
             margin-left: 2%;
             font-size: clamp(8px, 3vw, 16px);
             margin-bottom: clamp(40px, 16vw, 100px);
 
-            .text-under{
+            .text-under {
               font-size: clamp(8px, 3vw, 16px);
               margin-left: clamp(68px, 18vw, 94px);
             }
           }
 
-          .you{
+          .you {
             font-size: clamp(8px, 3vw, 16px);
             margin-left: clamp(38px, 10vw, 50px);
             margin-top: clamp(10px, 15vw, 25px);
 
-            .you-text{
+            .you-text {
               margin-left: clamp(1px, 1vw, 1px);
             }
           }
         }
 
-        .row4-4{
+        .row4-4 {
           margin-bottom: clamp(40px, 16vw, 70px);
 
-          .number-left{
+          .number-left {
             color: $primary-blue;
             font-weight: 700;
           }
 
-          .trainer{
+          .trainer {
             margin-left: 2%;
             margin-bottom: clamp(40px, 16vw, 100px);
             font-size: clamp(8px, 3vw, 16px);
 
-            .text-under{
+            .text-under {
               margin-left: clamp(68px, 18vw, 94px);
             }
           }
 
-          .you{
+          .you {
             font-size: clamp(8px, 3vw, 16px);
             margin-left: clamp(38px, 10vw, 50px);
             margin-top: clamp(10px, 15vw, 25px);
 
-            .you-text{
+            .you-text {
               margin-left: clamp(1px, 1vw, 1px);
             }
           }
         }
 
-        .row4-5{
+        .row4-5 {
           margin-bottom: clamp(40px, 16vw, 70px);
 
-          .number-left{
+          .number-left {
             color: $primary-blue;
             font-weight: 700;
           }
 
-          .trainer{
+          .trainer {
             margin-left: 2%;
             margin-bottom: clamp(40px, 16vw, 100px);
             font-size: clamp(8px, 3vw, 16px);
           }
 
-          .you{
+          .you {
             margin-left: clamp(38px, 10vw, 50px);
             font-size: clamp(8px, 3vw, 16px);
             margin-top: clamp(10px, 15vw, 25px);
 
-            .you-text{
+            .you-text {
               margin-left: clamp(1px, 1vw, 1px);
             }
           }
@@ -992,8 +986,6 @@ hr {
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-B-4-See3.svg);
 
-
-
         .name {
           position: absolute;
           margin-top: clamp(80px, 18vw, 135px);
@@ -1008,20 +1000,19 @@ hr {
         margin-top: clamp(15px, 6vw, 40px);
         margin-left: clamp(20px, 17vw, 100px);
 
-          .english {
-            font-size: clamp(8px, 2.5vw, 14px);
-            padding-left: clamp(5px, 1.5vw, 15px);
-            padding-top: clamp(205px, 55vw, 650px);
-          }
+        .english {
+          font-size: clamp(8px, 2.5vw, 14px);
+          padding-left: clamp(5px, 1.5vw, 15px);
+          padding-top: clamp(205px, 55vw, 650px);
+        }
 
-          .jap {
-            font-size: clamp(6px, 2.2vw, 10px);
-            position: absolute;
-            padding-left: clamp(5px, 1.5vw, 15px);
-            color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
-          }
-
+        .jap {
+          font-size: clamp(6px, 2.2vw, 10px);
+          position: absolute;
+          padding-left: clamp(5px, 1.5vw, 15px);
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+        }
       }
 
       .see-3-convo-2 {
@@ -1030,21 +1021,19 @@ hr {
         margin-top: clamp(-2px, 1vw, 15px);
         margin-left: clamp(95px, 26.8vw, 160px);
 
+        .english {
+          font-size: clamp(8px, 2.5vw, 14px);
+          padding-left: clamp(5px, 1.5vw, 15px);
+          padding-top: clamp(205px, 55vw, 650px);
+        }
 
-          .english {
-            font-size: clamp(8px, 2.5vw, 14px);
-            padding-left: clamp(5px, 1.5vw, 15px);
-            padding-top: clamp(205px, 55vw, 650px);
-          }
-
-          .jap {
-            font-size: clamp(6px, 2.2vw, 10px);
-            position: absolute;
-            padding-left: clamp(5px, 1.5vw, 15px);
-            color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
-          }
-
+        .jap {
+          font-size: clamp(6px, 2.2vw, 10px);
+          position: absolute;
+          padding-left: clamp(5px, 1.5vw, 15px);
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+        }
       }
 
       .see-3-convo-3 {
@@ -1053,20 +1042,19 @@ hr {
         margin-top: clamp(-35px, 1vw, 13px);
         margin-left: clamp(80px, 23vw, 138px);
 
-          .english {
-            font-size: clamp(8px, 2.5vw, 14px);
-            padding-left: clamp(5px, 1.5vw, 15px);
-            padding-top: clamp(205px, 55vw, 650px);
-          }
+        .english {
+          font-size: clamp(8px, 2.5vw, 14px);
+          padding-left: clamp(5px, 1.5vw, 15px);
+          padding-top: clamp(205px, 55vw, 650px);
+        }
 
-          .jap {
-            font-size: clamp(6px, 2.2vw, 10px);
-            position: absolute;
-            padding-left: clamp(5px, 1.5vw, 15px);
-            color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
-          }
-
+        .jap {
+          font-size: clamp(6px, 2.2vw, 10px);
+          position: absolute;
+          padding-left: clamp(5px, 1.5vw, 15px);
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+        }
       }
 
       .phrases-container {
@@ -1183,11 +1171,11 @@ hr {
         background-size: contain;
         background-repeat: no-repeat;
 
-        .try-3-row-1{
+        .try-3-row-1 {
           display: flex;
           margin-bottom: 20px;
 
-          .letter-A{
+          .letter-A {
             min-height: clamp(20px, 10vw, 30px);
             width: clamp(65px, 40vw, 200px);
             font-weight: 700;
@@ -1198,12 +1186,12 @@ hr {
             font-size: clamp(11px, 3vw, 16px);
           }
 
-          .letter-D{
+          .letter-D {
             margin-left: clamp(10px, 5vw, 25px);
             min-height: clamp(20px, 10vw, 30px);
             width: clamp(65px, 40vw, 200px);
             font-weight: 700;
-            background-color: #E7F3FA;
+            background-color: #e7f3fa;
             border-radius: 3px;
             padding-left: clamp(10px, 3vw, 15px);
             padding-top: clamp(13px, 3vw, 5px);
@@ -1211,27 +1199,27 @@ hr {
           }
         }
 
-        .try-3-row-2{
+        .try-3-row-2 {
           display: flex;
           margin-bottom: 20px;
 
-          .letter-B{
+          .letter-B {
             min-height: clamp(20px, 10vw, 30px);
             width: clamp(65px, 40vw, 170px);
             font-weight: 700;
-            background-color: #E7F3FA;
+            background-color: #e7f3fa;
             border-radius: 3px;
             padding-left: clamp(10px, 3vw, 15px);
             padding-top: clamp(13px, 3vw, 5px);
             font-size: clamp(11px, 3vw, 16px);
           }
 
-          .letter-E{
+          .letter-E {
             margin-left: clamp(10px, 5vw, 25px);
             min-height: clamp(20px, 10vw, 30px);
             width: clamp(65px, 40vw, 185px);
             font-weight: 700;
-            background-color: #E7F3FA;
+            background-color: #e7f3fa;
             border-radius: 3px;
             padding-left: clamp(10px, 3vw, 15px);
             padding-top: clamp(13px, 3vw, 5px);
@@ -1239,14 +1227,14 @@ hr {
           }
         }
 
-        .try-3-row-3{
+        .try-3-row-3 {
           display: flex;
 
-          .letter-C{
+          .letter-C {
             min-height: clamp(20px, 10vw, 30px);
             width: clamp(65px, 40vw, 190px);
             font-weight: 700;
-            background-color: #E7F3FA;
+            background-color: #e7f3fa;
             border-radius: 3px;
             padding-left: clamp(10px, 3vw, 15px);
             padding-top: clamp(13px, 3vw, 5px);
@@ -1276,7 +1264,7 @@ hr {
               .try-3-convo-2,
               .try-3-convo-3,
               .try-3-convo-4,
-              .try-3-convo-5{
+              .try-3-convo-5 {
                 font-size: clamp(10px, 5vw, 30px);
                 margin-left: clamp(5px, 3vw, 15px);
               }
@@ -1285,12 +1273,12 @@ hr {
             .akiko-line-1 {
               font-size: clamp(10px, 2.1vw, 14px);
 
-              .underline{
+              .underline {
                 text-decoration: underline;
                 color: $primary-blue;
               }
             }
-            .text-under{
+            .text-under {
               font-size: clamp(10px, 2.1vw, 14px);
               margin-left: clamp(70px, 13vw, 108px);
             }
@@ -1322,7 +1310,7 @@ hr {
               margin-left: clamp(15px, 10vw, 34px);
               font-size: clamp(10px, 2.1vw, 14px);
 
-              .underline{
+              .underline {
                 text-decoration: underline;
                 color: $primary-blue;
               }
@@ -1444,7 +1432,7 @@ hr {
             font-size: clamp(10px, 2.3vw, 17px);
             margin-left: clamp(15px, 3.5vw, 30px);
 
-            .text-under{
+            .text-under {
               margin-left: clamp(50px, 11.5vw, 90px);
             }
           }
@@ -1468,17 +1456,3 @@ hr {
     }
   }
 }
-
-// @media only screen and(max-width: 375px) {
-//   .icon {
-//     margin-top: -100px !important;
-//     margin-left: 30% !important;
-//     // img {
-//     //   height: clamp(51px, 19vw, 100px);
-//     //   width: auto;
-//     // }
-//     // div {
-//     //   margin-top: clamp(8px, 2vw, 9px);
-//     // }
-//   }
-// }

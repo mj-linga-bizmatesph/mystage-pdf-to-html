@@ -3,35 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -48,6 +19,30 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .html-lesson-wrapper header {
   font-family: "Arial";
@@ -1180,7 +1175,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-1 .try3-col1 {
   width: clamp(50px, 35vw, 210px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
@@ -1194,7 +1189,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-1 .try3-col2 {
   width: clamp(50px, 35vw, 165px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   margin-left: 3%;
@@ -1214,7 +1209,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-2 .try3-col1 {
   width: clamp(40px, 30vw, 160px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
@@ -1228,7 +1223,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-2 .try3-col2 {
   width: clamp(150px, 35vw, 210px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   margin-left: 3%;
@@ -1248,7 +1243,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-3 .try3-col1 {
   width: clamp(30px, 25vw, 140px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
@@ -1262,7 +1257,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-3 .try3-col2 {
   width: clamp(120px, 25vw, 180px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   margin-left: 3%;
@@ -1283,7 +1278,7 @@ hr {
 .html-lesson-wrapper .try-3 .try-3-content .conversation .try-3-row-4 .try3-col1 {
   width: clamp(100px, 50vw, 270px);
   min-height: clamp(35px, 25vw, 35px);
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;

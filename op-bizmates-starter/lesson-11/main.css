@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 this file is intended to be use Other Programs - Bizmates Starter Lessons 1-20, 
 if you want to override the specified class, go to the scss file 
@@ -12,7 +13,7 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -31,7 +32,6 @@ footer {
           box-sizing: border-box;
   padding-right: 10%;
 }
-
 footer .footer-text {
   text-align: right;
   position: absolute;
@@ -39,7 +39,6 @@ footer .footer-text {
   width: 100%;
   right: 2%;
 }
-
 @media only screen and (max-width: 767px) {
   footer .footer-text:not(.review) {
     max-width: 117px;
@@ -111,7 +110,7 @@ footer .footer-text {
   padding-bottom: 0.25rem;
 }
 
-.gray-text, .jp, .html-lesson-wrapper .header-content .header-content-grid .header-desc .jap, .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p.jp, .html-lesson-wrapper .content-item .content-div .try-content .try-title p.jp {
+.gray-text, .html-lesson-wrapper .content-item .content-div .try-content .try-title p.jp, .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p.jp, .html-lesson-wrapper .header-content .header-content-grid .header-desc .jap, .jp {
   color: #9fa0a0;
 }
 
@@ -129,7 +128,7 @@ footer .footer-text {
   position: absolute;
 }
 
-[class*='col-'] {
+[class*=col-] {
   width: 100%;
 }
 
@@ -137,41 +136,51 @@ footer .footer-text {
   .col-1 {
     width: 8.33%;
   }
+
   .col-2 {
     width: 16.66%;
   }
+
   .col-3 {
     width: 25%;
   }
+
   .col-4 {
     width: 33.33%;
   }
+
   .col-5 {
     width: 41.66%;
   }
+
   .col-6 {
     width: 50%;
   }
+
   .col-7 {
     width: 58.33%;
   }
+
   .col-8 {
     width: 66.66%;
   }
+
   .col-9 {
     width: 75%;
   }
+
   .col-10 {
     width: 83.33%;
   }
+
   .col-11 {
     width: 91.66%;
   }
+
   .col-12 {
     width: 100%;
   }
 }
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -188,30 +197,24 @@ footer .footer-text {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper {
     padding-bottom: 15px;
   }
 }
-
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-
 .html-lesson-wrapper .b {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .u-blue {
   text-decoration: underline;
   color: #1287cd;
 }
-
 .html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
-
 .html-lesson-wrapper .program-rank {
   font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
@@ -219,13 +222,11 @@ footer .footer-text {
   margin-top: clamp(10px, 3vw, 25px);
   margin-left: clamp(10px, 3vw, 37px);
 }
-
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #bd3762;
   font-size: clamp(7px, 1.8vw, 15px);
 }
-
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 25px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   font-size: clamp(7px, 1.8vw, 15px);
@@ -233,7 +234,6 @@ footer .footer-text {
   width: 100%;
   margin-left: -2%;
 }
-
 .html-lesson-wrapper .program-rank .separator {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
@@ -241,13 +241,11 @@ footer .footer-text {
   margin: 0 6px;
   font-size: 16px;
 }
-
 .html-lesson-wrapper .program-rank .separator .line {
   position: absolute;
   top: 2%;
   right: 2%;
 }
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 3.8%;
@@ -258,18 +256,15 @@ footer .footer-text {
   color: #ffffff;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .lesson-number.two {
   right: 4%;
 }
-
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 4%;
     right: 4.3%;
   }
 }
-
 .html-lesson-wrapper .header-content {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
@@ -281,18 +276,15 @@ footer .footer-text {
   margin-left: clamp(10px, 3vw, 37px);
   margin-right: clamp(10px, 3vw, 25px);
 }
-
 .html-lesson-wrapper .header-content .title {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(13px, 3vw, 19px);
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .header-content .title {
     padding-top: 0.5rem;
   }
 }
-
 .html-lesson-wrapper .header-content .header-content-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +296,6 @@ footer .footer-text {
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .header-content .header-content-grid {
     -webkit-box-orient: vertical;
@@ -313,36 +304,29 @@ footer .footer-text {
             flex-direction: column;
   }
 }
-
 .html-lesson-wrapper .header-content .header-content-grid .header-image {
   padding: clamp(5px, 3vw, 8px) 0 clamp(5px, 3vw, 8px) 0;
 }
-
 .html-lesson-wrapper .header-content .header-content-grid .header-image img {
   width: 100%;
 }
-
 .html-lesson-wrapper .header-content .header-content-grid .header-desc {
   padding: clamp(10px, 4.5vw, 20px) 0 clamp(10px, 4.5vw, 20px) clamp(10px, 4.5vw, 20px);
   font-size: clamp(8px, 3vw, 13.5px);
 }
-
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .header-content .header-content-grid .header-desc {
     padding: clamp(10px, 4.5vw, 20px);
   }
 }
-
 .html-lesson-wrapper .content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .html-lesson-wrapper .content-item .content-label {
   width: 8%;
 }
-
 .html-lesson-wrapper .content-item .content-label .gray-label {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-title-bg.svg);
   background-size: 100% 100%;
@@ -355,12 +339,10 @@ footer .footer-text {
   padding-right: clamp(3px, 1.2vw, 6px);
   color: #fff;
 }
-
 .html-lesson-wrapper .content-item .content-div {
   width: 92%;
   margin-bottom: 15px;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +351,6 @@ footer .footer-text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .content-item .content-div .conversation-exchange {
     -webkit-box-orient: vertical;
@@ -379,44 +360,35 @@ footer .footer-text {
     margin-left: 10px;
   }
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: clamp(7px, 2.5vw, 17px);
   padding-right: 3%;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item {
     padding-right: 6%;
   }
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item:first-child {
   border-right: solid 1px #9fa0a0;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item:last-child {
   padding-left: 2%;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item:last-child {
     padding-left: 0;
   }
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
   padding-bottom: clamp(10px, 2vw, 15px);
   font-family: "Helvetica", "Arial", sans-serif;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-number {
   font-size: clamp(14px, 5vw, 39px);
   line-height: clamp(13px, 4vw, 35px);
@@ -425,60 +397,46 @@ footer .footer-text {
   padding-right: clamp(7px, 2.5vw, 15px);
   letter-spacing: -3px;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p {
   margin: 0;
   font-size: clamp(7px, 2.2vw, 14px);
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p.en {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv {
-  display: -ms-grid;
   display: grid;
   margin-bottom: 3%;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv.conv-left {
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv.conv-right {
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .avatar img {
   width: clamp(18px, 9vw, 62px);
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .avatar .avatar-label {
   position: absolute;
   color: #fff;
   font-size: clamp(8px, 3vw, 15px);
-  margin-top: clamp(-4.5%, -3.2%, -1.4%);
+  margin-top: -3.2%;
   left: 10.4%;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech {
   padding-bottom: 1%;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech.left {
   padding-left: 8%;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech.right {
   padding-right: 8%;
   padding-left: 2%;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble {
   display: block;
   padding: 10px 10px 10px 15px;
@@ -491,9 +449,8 @@ footer .footer-text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble::before {
-  content: '\00a0';
+  content: " ";
   display: block;
   height: 12px;
   position: absolute;
@@ -502,42 +459,35 @@ footer .footer-text {
   transform: rotate(30deg) skew(-35deg);
   width: 15px;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble.bubble-left {
   background-color: #ffffff;
   float: left;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble.bubble-left::before {
   background-color: #ffffff;
   left: -9px;
   border-left: 1px solid #9fa0a0;
   border-bottom: 1px solid #9fa0a0;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble.bubble-right {
   background-color: #ffffff;
   left: -9px;
   border-left: 1px solid #9fa0a0;
   border-bottom: 1px solid #9fa0a0;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble.bubble-right::before {
   background-color: #fff;
   right: -9px;
   border-right: 1px solid #9fa0a0;
   border-top: 1px solid #9fa0a0;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble.empty {
   height: clamp(30px, 5vw, 61px);
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble p {
   font-size: clamp(8px, 3vw, 13px);
   margin: 0;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble .other-phrases-label {
   font-family: "Helvetica", "Arial", sans-serif;
   color: #fff !important;
@@ -551,32 +501,26 @@ footer .footer-text {
   margin-right: -10px;
   margin-left: -15px;
 }
-
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble .option {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 .html-lesson-wrapper .content-item .content-div .try-content {
   padding-left: 3%;
   padding-right: 3%;
 }
-
 .html-lesson-wrapper .content-item .content-div .try-content .try-title p {
   margin: 0;
   font-size: clamp(8px, 3vw, 14.5px);
 }
-
 .html-lesson-wrapper .content-item .content-div .try-content .try-title p.en {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .content-item .content-div .try-content .try-content-div ol.try-content-list {
   -webkit-padding-start: 20px;
           padding-inline-start: 20px;
   font-size: clamp(8px, 3vw, 14px);
 }
-
 .html-lesson-wrapper .content-item .content-div .try-content .try-content-div ul.try-content-list-ul {
   -webkit-padding-start: 20px;
           padding-inline-start: 20px;

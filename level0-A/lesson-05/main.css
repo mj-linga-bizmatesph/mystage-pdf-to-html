@@ -343,8 +343,8 @@ td {
   background-repeat: no-repeat;
 }
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 226, 0)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, rgb(255, 226, 0) 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
 }
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
@@ -352,13 +352,13 @@ td {
   background-position: left;
 }
 .html-lesson-wrapper .see-content .phrases-section .red-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 178, 176)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
 }
 .html-lesson-wrapper .see-content .phrases-section .green-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, rgb(195, 232, 230)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(195, 232, 230) 20%);
   background-position: left;
 }
 .html-lesson-wrapper .see-content .phrases-section .green-piece-complete {

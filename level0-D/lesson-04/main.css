@@ -3,53 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.small-line {
-  height: 2px;
-  width: 16px;
-  background: #1287cd;
-  margin-bottom: 1.5vw;
-}
-
-.trebuchet {
-  font-family: "Trebuchet MS";
-}
-
-.content-mt {
-  margin-top: clamp(20px, 6.5vw, 38px);
-}
-
-.span-letter-spacing {
-  letter-spacing: -2.5px !important;
-}
-
-.text-underline {
-  color: #1287cd;
-  text-decoration: underline;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -66,6 +19,43 @@ td {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper td {
+  vertical-align: top;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .small-line {
+  height: 2px;
+  width: 16px;
+  background: #1287cd;
+  margin-bottom: 1.5vw;
+}
+.html-lesson-wrapper .trebuchet {
+  font-family: "Trebuchet MS";
+}
+.html-lesson-wrapper .content-mt {
+  margin-top: clamp(20px, 6.5vw, 38px);
+}
+.html-lesson-wrapper .span-letter-spacing {
+  letter-spacing: -2.5px !important;
+}
+.html-lesson-wrapper .text-underline {
+  color: #1287cd;
+  text-decoration: underline;
 }
 .html-lesson-wrapper header {
   font-family: "Arial";

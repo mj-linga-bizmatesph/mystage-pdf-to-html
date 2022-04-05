@@ -3,51 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.w-11 {
-  width: clamp(6.5rem, 17vw, 12rem);
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.justify-left {
-  -webkit-box-pack: left !important;
-      -ms-flex-pack: left !important;
-          justify-content: left !important;
-}
-
-.justify-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-}
-
-.justify-right {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -64,6 +19,42 @@ td {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper td {
+  vertical-align: top;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .w-11 {
+  width: clamp(6.5rem, 17vw, 12rem);
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .justify-left {
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+}
+.html-lesson-wrapper .justify-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+.html-lesson-wrapper .justify-right {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
 }
 .html-lesson-wrapper header {
   font-family: "Arial";
@@ -286,143 +277,140 @@ td {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: 3.8%;
 }
-
-.part-1 {
+.html-lesson-wrapper .part-1 {
   margin-top: 29%;
 }
-
-.part-1,
-.part-2 {
+.html-lesson-wrapper .part-1,
+.html-lesson-wrapper .part-2 {
   font-family: "Noto Sans" !important;
 }
-.part-1 .blue-line,
-.part-2 .blue-line {
+.html-lesson-wrapper .part-1 .blue-line,
+.html-lesson-wrapper .part-2 .blue-line {
   margin-top: 5%;
 }
-.part-1 .table-conv,
-.part-2 .table-conv {
+.html-lesson-wrapper .part-1 .table-conv,
+.html-lesson-wrapper .part-2 .table-conv {
   margin-left: 1rem;
   margin-bottom: 1.5rem;
 }
-.part-1 .table-conv tr td,
-.part-2 .table-conv tr td {
+.html-lesson-wrapper .part-1 .table-conv tr td,
+.html-lesson-wrapper .part-2 .table-conv tr td {
   padding-bottom: 1.5rem;
 }
-.part-1 .intro,
-.part-2 .intro {
+.html-lesson-wrapper .part-1 .intro,
+.html-lesson-wrapper .part-2 .intro {
   margin-top: 12px;
   margin-bottom: 2rem;
 }
-.part-1 .intro .eng,
-.part-2 .intro .eng {
+.html-lesson-wrapper .part-1 .intro .eng,
+.html-lesson-wrapper .part-2 .intro .eng {
   font-size: 18px;
   font-weight: normal;
 }
-.part-1 .intro .jap,
-.part-2 .intro .jap {
+.html-lesson-wrapper .part-1 .intro .jap,
+.html-lesson-wrapper .part-2 .intro .jap {
   font-size: 13px;
 }
-.part-1 p.jap,
-.part-2 p.jap {
+.html-lesson-wrapper .part-1 p.jap,
+.html-lesson-wrapper .part-2 p.jap {
   letter-spacing: -2px;
 }
-.part-1 .office-part-1,
-.part-1 .office-part-2,
-.part-2 .office-part-1,
-.part-2 .office-part-2 {
+.html-lesson-wrapper .part-1 .office-part-1,
+.html-lesson-wrapper .part-1 .office-part-2,
+.html-lesson-wrapper .part-2 .office-part-1,
+.html-lesson-wrapper .part-2 .office-part-2 {
   margin-top: 6%;
 }
-.part-1 .office-part-1 .bubble .eng,
-.part-1 .office-part-2 .bubble .eng,
-.part-2 .office-part-1 .bubble .eng,
-.part-2 .office-part-2 .bubble .eng {
+.html-lesson-wrapper .part-1 .office-part-1 .bubble .eng,
+.html-lesson-wrapper .part-1 .office-part-2 .bubble .eng,
+.html-lesson-wrapper .part-2 .office-part-1 .bubble .eng,
+.html-lesson-wrapper .part-2 .office-part-2 .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 15px);
 }
-.part-1 .office-part-1 .bubble .jap,
-.part-1 .office-part-2 .bubble .jap,
-.part-2 .office-part-1 .bubble .jap,
-.part-2 .office-part-2 .bubble .jap {
+.html-lesson-wrapper .part-1 .office-part-1 .bubble .jap,
+.html-lesson-wrapper .part-1 .office-part-2 .bubble .jap,
+.html-lesson-wrapper .part-2 .office-part-1 .bubble .jap,
+.html-lesson-wrapper .part-2 .office-part-2 .bubble .jap {
   font-family: "Noto Sans";
   letter-spacing: -1px;
   font-size: clamp(10px, 2.3vw, 13px);
   line-height: 13px;
 }
-.part-1 .office-part-1 .bubble.akiko-1,
-.part-1 .office-part-2 .bubble.akiko-1,
-.part-2 .office-part-1 .bubble.akiko-1,
-.part-2 .office-part-2 .bubble.akiko-1 {
+.html-lesson-wrapper .part-1 .office-part-1 .bubble.akiko-1,
+.html-lesson-wrapper .part-1 .office-part-2 .bubble.akiko-1,
+.html-lesson-wrapper .part-2 .office-part-1 .bubble.akiko-1,
+.html-lesson-wrapper .part-2 .office-part-2 .bubble.akiko-1 {
   margin-top: 9%;
   left: 35%;
 }
-.part-1 .office-part-1 .bubble.akiko-2,
-.part-1 .office-part-2 .bubble.akiko-2,
-.part-2 .office-part-1 .bubble.akiko-2,
-.part-2 .office-part-2 .bubble.akiko-2 {
+.html-lesson-wrapper .part-1 .office-part-1 .bubble.akiko-2,
+.html-lesson-wrapper .part-1 .office-part-2 .bubble.akiko-2,
+.html-lesson-wrapper .part-2 .office-part-1 .bubble.akiko-2,
+.html-lesson-wrapper .part-2 .office-part-2 .bubble.akiko-2 {
   margin-top: 14.4%;
   left: 32.9%;
 }
-
-.part-2 {
+.html-lesson-wrapper .part-2 {
   margin-top: 7%;
 }
-.part-2 .office-part-2 {
+.html-lesson-wrapper .part-2 .office-part-2 {
   margin-top: 2.5rem;
 }
-.part-2 .office-part-2.top {
+.html-lesson-wrapper .part-2 .office-part-2.top {
   margin-top: 5rem !important;
 }
-.part-2 .part-2-items .bubble .eng {
+.html-lesson-wrapper .part-2 .part-2-items .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 15px);
 }
-.part-2 .part-2-items .bubble .eng .option-item {
+.html-lesson-wrapper .part-2 .part-2-items .bubble .eng .option-item {
   display: grid;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
   padding-bottom: 14px;
 }
-.part-2 .part-2-items .bubble .eng .option-item .option {
+.html-lesson-wrapper .part-2 .part-2-items .bubble .eng .option-item .option {
   padding-right: 2rem;
 }
-.part-2 .part-2-items.item-1 .akiko {
+.html-lesson-wrapper .part-2 .part-2-items.item-1 .akiko {
   margin-top: 9%;
   left: 29%;
 }
-.part-2 .part-2-items.item-1 .option-item {
+.html-lesson-wrapper .part-2 .part-2-items.item-1 .option-item {
   width: 20rem;
 }
-.part-2 .part-2-items.item-2 .akiko {
+.html-lesson-wrapper .part-2 .part-2-items.item-2 .akiko {
   margin-top: 9%;
   left: 23%;
 }
-.part-2 .part-2-items.item-2 .option-item {
+.html-lesson-wrapper .part-2 .part-2-items.item-2 .option-item {
   width: 40rem;
 }
-.part-2 .part-2-items.item-3 .akiko {
+.html-lesson-wrapper .part-2 .part-2-items.item-3 .akiko {
   margin-top: 21%;
   left: 37%;
 }
-.part-2 .part-2-items.item-3 .akiko-2 {
+.html-lesson-wrapper .part-2 .part-2-items.item-3 .akiko-2 {
   margin-top: 7%;
   left: 12%;
 }
-.part-2 .part-2-items.item-3 .option-item {
+.html-lesson-wrapper .part-2 .part-2-items.item-3 .option-item {
   width: 40rem;
 }
-.part-2 .part-2-items.item-4 .akiko {
+.html-lesson-wrapper .part-2 .part-2-items.item-4 .akiko {
   margin-top: 16%;
   left: 28%;
 }
-.part-2 .part-2-items.item-4 .option-item {
+.html-lesson-wrapper .part-2 .part-2-items.item-4 .option-item {
   width: 30rem;
 }
-.part-2 .part-2-items.item-5 .akiko {
+.html-lesson-wrapper .part-2 .part-2-items.item-5 .akiko {
   margin-top: 10%;
   left: 25%;
 }
-.part-2 .part-2-items.item-5 .option-item {
+.html-lesson-wrapper .part-2 .part-2-items.item-5 .option-item {
   width: 30rem;
 }

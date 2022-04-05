@@ -3,54 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-.grid .half {
-  grid-template-columns: 1fr 1fr;
-}
-
-.justify-left {
-  -webkit-box-pack: left !important;
-      -ms-flex-pack: left !important;
-          justify-content: left !important;
-}
-
-.justify-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-}
-
-.justify-right {
-  -webkit-box-pack: right !important;
-      -ms-flex-pack: right !important;
-          justify-content: right !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -68,6 +20,45 @@ td {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper td {
+  vertical-align: top;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .grid {
+  display: grid;
+}
+.html-lesson-wrapper .grid .half {
+  grid-template-columns: 1fr 1fr;
+}
+.html-lesson-wrapper .justify-left {
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+}
+.html-lesson-wrapper .justify-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+.html-lesson-wrapper .justify-right {
+  -webkit-box-pack: right !important;
+      -ms-flex-pack: right !important;
+          justify-content: right !important;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
 .html-lesson-wrapper header {
   font-family: "Arial";
 }
@@ -84,23 +75,15 @@ td {
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-phrase, .part-2 .office-part-2-1 .speech .choice .html-lesson-wrapper .choice-phrase,
+.html-lesson-wrapper .b, .html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-phrase,
 .html-lesson-wrapper .part-2 .office-part-2-2 .speech .choice .choice-phrase,
-.part-2 .office-part-2-2 .speech .choice .html-lesson-wrapper .choice-phrase,
 .html-lesson-wrapper .part-2 .office-part-2-3 .speech .choice .choice-phrase,
-.part-2 .office-part-2-3 .speech .choice .html-lesson-wrapper .choice-phrase,
 .html-lesson-wrapper .part-2 .office-part-2-4 .speech .choice .choice-phrase,
-.part-2 .office-part-2-4 .speech .choice .html-lesson-wrapper .choice-phrase,
-.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-phrase,
-.part-2 .office-part-2-5 .speech .choice .html-lesson-wrapper .choice-phrase, .html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-letter, .part-2 .office-part-2-1 .speech .choice .html-lesson-wrapper .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-phrase, .html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-letter,
 .html-lesson-wrapper .part-2 .office-part-2-2 .speech .choice .choice-letter,
-.part-2 .office-part-2-2 .speech .choice .html-lesson-wrapper .choice-letter,
 .html-lesson-wrapper .part-2 .office-part-2-3 .speech .choice .choice-letter,
-.part-2 .office-part-2-3 .speech .choice .html-lesson-wrapper .choice-letter,
 .html-lesson-wrapper .part-2 .office-part-2-4 .speech .choice .choice-letter,
-.part-2 .office-part-2-4 .speech .choice .html-lesson-wrapper .choice-letter,
-.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-letter,
-.part-2 .office-part-2-5 .speech .choice .html-lesson-wrapper .choice-letter, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-letter, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
   font-weight: bold;
 }
 .html-lesson-wrapper .u-sup {
@@ -487,93 +470,91 @@ td {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: 3.8%;
 }
-
-.part-1 {
+.html-lesson-wrapper .part-1 {
   margin-top: 29%;
 }
-.part-1 .blue-line {
+.html-lesson-wrapper .part-1 .blue-line {
   margin-top: 5%;
 }
-.part-1 .table {
+.html-lesson-wrapper .part-1 .table {
   font-family: "Noto Sans";
 }
-.part-1 .table .jap {
+.html-lesson-wrapper .part-1 .table .jap {
   margin-bottom: 3.6%;
 }
-.part-1 .table .name {
+.html-lesson-wrapper .part-1 .table .name {
   width: 14%;
   padding-left: 1%;
   padding-right: 2%;
 }
-.part-1 .table .name ~ td > .eng {
+.html-lesson-wrapper .part-1 .table .name ~ td > .eng {
   margin-bottom: 4%;
 }
-.part-1 .office-section {
+.html-lesson-wrapper .part-1 .office-section {
   margin-top: 6%;
 }
-.part-1 .office-section .name.akiko {
+.html-lesson-wrapper .part-1 .office-section .name.akiko {
   left: 22%;
   margin-top: 39%;
 }
-.part-1 .office-section .name.steve {
+.html-lesson-wrapper .part-1 .office-section .name.steve {
   margin-top: 33%;
   right: 33%;
 }
-.part-1 .office-section .speech.steve {
+.html-lesson-wrapper .part-1 .office-section .speech.steve {
   margin-top: 8.5%;
   right: 12%;
 }
-.part-1 .office-section .speech.akiko {
+.html-lesson-wrapper .part-1 .office-section .speech.akiko {
   margin-top: 10%;
   left: 8%;
 }
-
-.part-2 {
+.html-lesson-wrapper .part-2 {
   margin-top: 7%;
 }
-.part-2 .office-part-2-1 {
+.html-lesson-wrapper .part-2 .office-part-2-1 {
   margin-top: 20%;
 }
-.part-2 .office-part-2-2,
-.part-2 .office-part-2-3,
-.part-2 .office-part-2-4,
-.part-2 .office-part-2-5 {
+.html-lesson-wrapper .part-2 .office-part-2-2,
+.html-lesson-wrapper .part-2 .office-part-2-3,
+.html-lesson-wrapper .part-2 .office-part-2-4,
+.html-lesson-wrapper .part-2 .office-part-2-5 {
   margin-top: 11%;
 }
-.part-2 .office-part-2-1 .speech,
-.part-2 .office-part-2-2 .speech,
-.part-2 .office-part-2-3 .speech,
-.part-2 .office-part-2-4 .speech,
-.part-2 .office-part-2-5 .speech {
+.html-lesson-wrapper .part-2 .office-part-2-1 .speech,
+.html-lesson-wrapper .part-2 .office-part-2-2 .speech,
+.html-lesson-wrapper .part-2 .office-part-2-3 .speech,
+.html-lesson-wrapper .part-2 .office-part-2-4 .speech,
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech {
   font-size: clamp(8px, 2.2vw, 14px);
 }
-.part-2 .office-part-2-1 .speech.akiko,
-.part-2 .office-part-2-2 .speech.akiko,
-.part-2 .office-part-2-3 .speech.akiko,
-.part-2 .office-part-2-4 .speech.akiko,
-.part-2 .office-part-2-5 .speech.akiko {
+.html-lesson-wrapper .part-2 .office-part-2-1 .speech.akiko,
+.html-lesson-wrapper .part-2 .office-part-2-2 .speech.akiko,
+.html-lesson-wrapper .part-2 .office-part-2-3 .speech.akiko,
+.html-lesson-wrapper .part-2 .office-part-2-4 .speech.akiko,
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech.akiko {
   margin-top: 10%;
   left: 29%;
 }
-.part-2 .office-part-2-1 .speech .choice .choice-letter,
-.part-2 .office-part-2-2 .speech .choice .choice-letter,
-.part-2 .office-part-2-3 .speech .choice .choice-letter,
-.part-2 .office-part-2-4 .speech .choice .choice-letter,
-.part-2 .office-part-2-5 .speech .choice .choice-letter {
+.html-lesson-wrapper .part-2 .office-part-2-1 .speech .choice .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-2 .speech .choice .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-3 .speech .choice .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-4 .speech .choice .choice-letter,
+.html-lesson-wrapper .part-2 .office-part-2-5 .speech .choice .choice-letter {
   padding-right: clamp(10px, 4vw, 20px);
 }
-.part-2 .blue-line {
+.html-lesson-wrapper .part-2 .blue-line {
   margin-top: 2%;
 }
-.part-2 .table {
+.html-lesson-wrapper .part-2 .table {
   font-family: "Noto Sans";
 }
-.part-2 .table .jap {
+.html-lesson-wrapper .part-2 .table .jap {
   margin-bottom: 3.6%;
 }
-.part-2 .table .name {
+.html-lesson-wrapper .part-2 .table .name {
   width: 14%;
 }
-.part-2 .table .name ~ td > .eng {
+.html-lesson-wrapper .part-2 .table .name ~ td > .eng {
   margin-bottom: 4%;
 }

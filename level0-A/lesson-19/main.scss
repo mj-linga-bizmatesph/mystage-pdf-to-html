@@ -18,43 +18,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.w-11 {
-  width: clamp(6.5rem, 20vw, 11rem);
-}
-
-.flex {
-  display: flex;
-}
-
-.justify-left {
-  justify-content: left !important;
-}
-
-.justify-center {
-  justify-content: center !important;
-}
-
-.justify-right {
-  justify-content: end !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -69,6 +32,43 @@ td {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .w-11 {
+    width: clamp(6.5rem, 20vw, 11rem);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-left {
+    justify-content: left !important;
+  }
+
+  .justify-center {
+    justify-content: center !important;
+  }
+
+  .justify-right {
+    justify-content: end !important;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
 
   header {
     font-family: $title-font;
@@ -634,311 +634,310 @@ td {
       margin-bottom: 3.8%;
     }
   }
-}
 
-//individuals
-.see-1 {
-  margin-top: 29%;
+  .see-1 {
+    margin-top: 29%;
 
-  .office-see-1 {
-    margin-top: 6%;
+    .office-see-1 {
+      margin-top: 6%;
 
-    .speech {
-      .eng {
-        font-size: clamp(9px, 2vw, 14px);
-      }
-
-      &.akiko {
-        margin-top: 5.6%;
-        left: 12.5%;
-      }
-      &.steve {
-        margin-top: 18%;
-        right: 25.5%;
-      }
-    }
-  }
-}
-
-.see-2,
-.see-3 {
-  margin-top: 7%;
-
-  .alt:not(:last-child) {
-    margin-bottom: 6%;
-  }
-
-  .legend {
-    &.flex-center {
-      display: flex;
-      justify-content: center !important;
-    }
-    &.flex-right {
-      display: flex;
-      justify-content: right !important;
-    }
-  }
-
-  .phrases-section {
-    margin-bottom: 8%;
-  }
-
-  .phrases {
-    .phrase-wrapper {
-      display: flex;
-    }
-    .phrase-wrapper:last-child {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  .conversation {
-    .conv-1,
-    .conv-2 {
-      margin-top: 5%;
-      display: grid;
-      .phrases-wrapper {
-        display: flex;
-      }
-      .phrases {
-        display: flex;
-        &.column {
-          flex-direction: column;
+      .speech {
+        .eng {
+          font-size: clamp(9px, 2vw, 14px);
         }
-        .phrase-wrapper {
+
+        &.akiko {
+          margin-top: 5.6%;
+          left: 12.5%;
+        }
+        &.steve {
+          margin-top: 18%;
+          right: 25.5%;
+        }
+      }
+    }
+  }
+
+  .see-2,
+  .see-3 {
+    margin-top: 7%;
+
+    .alt:not(:last-child) {
+      margin-bottom: 6%;
+    }
+
+    .legend {
+      &.flex-center {
+        display: flex;
+        justify-content: center !important;
+      }
+      &.flex-right {
+        display: flex;
+        justify-content: right !important;
+      }
+    }
+
+    .phrases-section {
+      margin-bottom: 8%;
+    }
+
+    .phrases {
+      .phrase-wrapper {
+        display: flex;
+      }
+      .phrase-wrapper:last-child {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .conversation {
+      .conv-1,
+      .conv-2 {
+        margin-top: 5%;
+        display: grid;
+        .phrases-wrapper {
           display: flex;
         }
-        .phrase-wrapper:last-child {
-          justify-content: center;
+        .phrases {
+          display: flex;
+          &.column {
+            flex-direction: column;
+          }
+          .phrase-wrapper {
+            display: flex;
+          }
+          .phrase-wrapper:last-child {
+            justify-content: center;
+          }
+          .phrase .eng {
+            font-size: clamp(8px, 2vw, 15px);
+            margin-right: 8px;
+          }
+          .phrase:not(:last-child) {
+            margin-right: -2px;
+          }
         }
-        .phrase .eng {
-          font-size: clamp(8px, 2vw, 15px);
-          margin-right: 8px;
-        }
-        .phrase:not(:last-child) {
-          margin-right: -2px;
+
+        .icon {
+          padding-right: 1rem;
         }
       }
-
-      .icon {
-        padding-right: 1rem;
+      .conv-2 {
+        .phrases-wrapper {
+          justify-content: right;
+        }
       }
     }
-    .conv-2 {
-      .phrases-wrapper {
-        justify-content: right;
-      }
-    }
-  }
 
-  .phrase-alts {
-    margin-top: 7%;
-    .alt-box {
-      .choice-eng {
-        font-size: clamp(9px, 2vw, 15px);
-      }
-      .choice-jap {
-        letter-spacing: -2px;
-        line-height: clamp(0.5rem, 2vw, 1.5rem);
-      }
-    }
-  }
-}
-
-.see-2 {
-  .conversation {
-    .conv-1 {
-      grid-template-columns: min-content 1fr;
-    }
-    .conv-2 {
-      grid-template-columns: 1fr min-content;
-    }
-  }
-  .phrase-alts {
-    grid-template-columns: 1.5fr 1fr !important;
-    gap: 1rem !important;
-    .alt:not(:last-child) {
-      margin-bottom: 1% !important;
-    }
-  }
-}
-
-.see-3 {
-  .phrase-alts {
-    grid-template-columns: 1fr 1.2fr !important;
-    gap: 5px !important;
-    .alt:not(:last-child) {
-      margin-bottom: 5% !important;
-    }
-  }
-}
-
-.try-1,
-.try-2,
-.try-3 {
-  margin-top: 6%;
-}
-
-.try-1 {
-  .combinations {
-    grid-template-columns: 1fr 1.5fr;
-    margin-top: 8%;
-
-    .number,
-    .plus {
-      margin-right: 0.5rem !important;
-    }
-
-    & > div:last-child {
-      margin-left: 4%;
-    }
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-      margin-top: 2rem;
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 6%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-      .number.inverse {
-        border: 1px solid #1287cd !important;
-      }
-    }
-  }
-}
-
-.try-2 {
-  .combinations {
-    grid-template-columns: min-content 1fr 1fr;
-    margin-top: 8%;
-
-    & > div:last-child {
-      margin-left: 4%;
-    }
-
-    .combination-icon {
-      height: auto;
-      width: clamp(80px, 30vw, 180px);
-    }
-
-    .combination-div {
-      margin-top: 15%;
-    }
-
-    .combination {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 13%;
-
-      & > div:not(:last-child) {
-        margin-right: 4%;
-      }
-    }
-  }
-}
-
-.try-3 {
-  .table-wrapper-section {
-    margin-top: 10%;
-    .table-wrapper {
-      width: 100%;
-      p {
-        margin: 0;
-      }
-      .table-number {
-        @extend .b, .primary-blue;
-        font-size: clamp(10px, 3vw, 16px);
-        padding-top: clamp(5px, 2.2vw, 6px);
-        padding-right: clamp(9px, 2.9vw, 15px);
-      }
-      .table-img {
-        width: 34%;
-        text-align: right;
-        vertical-align: bottom;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: clamp(1rem, 3rem, 4rem);
-      }
-      img {
-        max-width: clamp(44%, 25vw, 100%);
-        padding-left: 5%;
+    .phrase-alts {
+      margin-top: 7%;
+      .alt-box {
+        .choice-eng {
+          font-size: clamp(9px, 2vw, 15px);
+        }
+        .choice-jap {
+          letter-spacing: -2px;
+          line-height: clamp(0.5rem, 2vw, 1.5rem);
+        }
       }
     }
   }
 
-  .table {
-    font-family: $noto-sans;
-    border-collapse: collapse;
-
-    td {
-      font-size: clamp(9px, 3vw, 17px);
-      img {
-        max-width: clamp(44%, 16vw, 100%);
-        margin-bottom: 20px;
+  .see-2 {
+    .conversation {
+      .conv-1 {
+        grid-template-columns: min-content 1fr;
+      }
+      .conv-2 {
+        grid-template-columns: 1fr min-content;
       }
     }
-
-    .name {
-      @extend .b;
-      font-size: clamp(10px, 3vw, 16px);
-      white-space: nowrap;
-    }
-
-    td:nth-child(2) {
-      padding-bottom: 7%;
+    .phrase-alts {
+      grid-template-columns: 1.5fr 1fr !important;
+      gap: 1rem !important;
+      .alt:not(:last-child) {
+        margin-bottom: 1% !important;
+      }
     }
   }
-}
 
-.act-1,
-.act-2 {
-  margin-top: 7%;
-}
-.act-2 {
-  margin-bottom: 50px;
-}
-
-.act-1 {
-  font-family: $noto-sans !important;
-  .blue-line {
-    margin-top: 5%;
-  }
-  .table-conv {
-    margin-left: 1rem;
+  .see-3 {
+    .phrase-alts {
+      grid-template-columns: 1fr 1.2fr !important;
+      gap: 5px !important;
+      .alt:not(:last-child) {
+        margin-bottom: 5% !important;
+      }
+    }
   }
 
-  p.jap {
-    letter-spacing: -2px;
-  }
-  .office-act-1 {
+  .try-1,
+  .try-2,
+  .try-3 {
     margin-top: 6%;
+  }
 
-    .bubble {
-      &.steve {
-        font-family: $noto-sans;
+  .try-1 {
+    .combinations {
+      grid-template-columns: 1fr 1.5fr;
+      margin-top: 8%;
 
-        .eng {
-          font-weight: bold;
-          font-size: clamp(10px, 2.3vw, 13px);
+      .number,
+      .plus {
+        margin-right: 0.5rem !important;
+      }
+
+      & > div:last-child {
+        margin-left: 4%;
+      }
+
+      .combination-icon {
+        height: auto;
+        width: clamp(80px, 30vw, 180px);
+        margin-top: 2rem;
+      }
+
+      .combination {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6%;
+
+        & > div:not(:last-child) {
+          margin-right: 4%;
         }
-
-        .jap {
-          letter-spacing: -1px;
-          line-height: clamp(10px, 2.8vw, 1rem);
+        .number.inverse {
+          border: 1px solid #1287cd !important;
         }
       }
-      &.steve {
-        margin-top: 7.4%;
-        left: 21.9%;
+    }
+  }
+
+  .try-2 {
+    .combinations {
+      grid-template-columns: min-content 1fr 1fr;
+      margin-top: 8%;
+
+      & > div:last-child {
+        margin-left: 4%;
+      }
+
+      .combination-icon {
+        height: auto;
+        width: clamp(80px, 30vw, 180px);
+      }
+
+      .combination-div {
+        margin-top: 15%;
+      }
+
+      .combination {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 13%;
+
+        & > div:not(:last-child) {
+          margin-right: 4%;
+        }
+      }
+    }
+  }
+
+  .try-3 {
+    .table-wrapper-section {
+      margin-top: 10%;
+      .table-wrapper {
+        width: 100%;
+        p {
+          margin: 0;
+        }
+        .table-number {
+          @extend .b, .primary-blue;
+          font-size: clamp(10px, 3vw, 16px);
+          padding-top: clamp(5px, 2.2vw, 6px);
+          padding-right: clamp(9px, 2.9vw, 15px);
+        }
+        .table-img {
+          width: 34%;
+          text-align: right;
+          vertical-align: bottom;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: clamp(1rem, 3rem, 4rem);
+        }
+        img {
+          max-width: clamp(44%, 25vw, 100%);
+          padding-left: 5%;
+        }
+      }
+    }
+
+    .table {
+      font-family: $noto-sans;
+      border-collapse: collapse;
+
+      td {
+        font-size: clamp(9px, 3vw, 17px);
+        img {
+          max-width: clamp(44%, 16vw, 100%);
+          margin-bottom: 20px;
+        }
+      }
+
+      .name {
+        @extend .b;
+        font-size: clamp(10px, 3vw, 16px);
+        white-space: nowrap;
+      }
+
+      td:nth-child(2) {
+        padding-bottom: 7%;
+      }
+    }
+  }
+
+  .act-1,
+  .act-2 {
+    margin-top: 7%;
+  }
+  .act-2 {
+    margin-bottom: 50px;
+  }
+
+  .act-1 {
+    font-family: $noto-sans !important;
+    .blue-line {
+      margin-top: 5%;
+    }
+    .table-conv {
+      margin-left: 1rem;
+    }
+
+    p.jap {
+      letter-spacing: -2px;
+    }
+    .office-act-1 {
+      margin-top: 6%;
+
+      .bubble {
+        &.steve {
+          font-family: $noto-sans;
+
+          .eng {
+            font-weight: bold;
+            font-size: clamp(10px, 2.3vw, 13px);
+          }
+
+          .jap {
+            letter-spacing: -1px;
+            line-height: clamp(10px, 2.8vw, 1rem);
+          }
+        }
+        &.steve {
+          margin-top: 7.4%;
+          left: 21.9%;
+        }
       }
     }
   }

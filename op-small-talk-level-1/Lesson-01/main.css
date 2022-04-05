@@ -4,7 +4,6 @@ body {
 }
 
 .html-lesson-wrapper {
-  line-height: 1.8;
   width: 100%;
   min-width: 360px;
   max-width: 100%;
@@ -339,7 +338,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 1.5%;
+  bottom: 2.5%;
   right: 6.2%;
   font-family: "Helvetica";
   max-width: 35%;
@@ -407,6 +406,14 @@ body {
 }
 
 .html-lesson-wrapper .see-content li {
+  line-height: 1.8;
+}
+
+.html-lesson-wrapper .try-content .space {
+  margin-top: 8%;
+}
+
+.html-lesson-wrapper .try-content li {
   line-height: 1.8;
 }
 /*# sourceMappingURL=main.css.map */

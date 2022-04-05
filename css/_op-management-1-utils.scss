@@ -1,5 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Helvetica';
+$title-font: 'Helvetica', 'Arial', san-serif;
 
 $primary: #2078a0;
 $primary-light: #d4e6f0;
@@ -46,7 +46,7 @@ body {
   .program-rank {
     position: absolute;
     top: 40px;
-    left: 48px;
+    left: 60px;
     color: #ffffff;
     font-size: 0px;
 
@@ -70,7 +70,7 @@ body {
   .title {
     position: absolute;
     top: 80px;
-    left: 55px;
+    left: 59px;
     font-size: clamp(12px, 3vw, 27px);
   }
   .lesson-number {
@@ -92,7 +92,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -71.5px;
+    left: -66px;
     color: #cc3366;
     font-weight: bold;
     font-family: $title-font;

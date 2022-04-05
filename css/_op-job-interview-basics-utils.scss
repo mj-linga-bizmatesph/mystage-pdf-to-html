@@ -47,7 +47,7 @@ body {
   .program-rank {
     position: absolute;
     top: 40px;
-    left: 48px;
+    left: 60px;
     color: #ffffff;
     font-size: 0px;
 
@@ -71,7 +71,7 @@ body {
   .title {
     position: absolute;
     top: 80px;
-    left: 47px;
+    left: 58px;
     font-size: clamp(9.3px, 3vw, 27px);
   }
 
@@ -114,7 +114,7 @@ body {
 
   .section {
     position: absolute;
-    left: -78px;
+    left: -66px;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;

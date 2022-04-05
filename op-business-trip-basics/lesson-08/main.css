@@ -24,7 +24,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper .u {
@@ -97,7 +97,7 @@ body {
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: "Helvetica" !important;
+  font-family: "Helvetica", "Arial", sans-serif !important;
   font-size: clamp(6.48px, 1.8vw, 10pt);
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
@@ -113,7 +113,7 @@ body {
   left: -71.5px;
   color: #cc3366;
   font-weight: bold;
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(6.48px, 1.8vw, 10pt);
   top: 2px;
 }
@@ -484,7 +484,7 @@ body {
   text-align: right;
   bottom: 4%;
   right: 6.2%;
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", sans-serif;
   max-width: 44%;
 }
 

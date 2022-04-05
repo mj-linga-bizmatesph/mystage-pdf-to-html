@@ -108,7 +108,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -73px;
+  left: -78px;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", "san-serif";
@@ -293,7 +293,9 @@ body {
 }
 
 .html-lesson-wrapper .act-content .aut {
-  margin-left: 75%;
+  margin-left: 71%;
+  position: absolute;
+  margin-top: 35px;
   font-weight: bold;
 }
 
@@ -366,6 +368,12 @@ body {
   }
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
+  }
+  .html-lesson-wrapper .act-content .aut {
+    margin-left: 71%;
+    position: absolute;
+    margin-top: 35px;
+    font-weight: bold;
   }
 }
 

@@ -115,7 +115,7 @@ $blue-green: #339999;
 
   .section {
     position: absolute;
-    left: -73px;
+    left: -78px;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
@@ -302,7 +302,9 @@ $blue-green: #339999;
     height: -moz-fit-content;
     height: fit-content;
     .aut{
-      margin-left: 75%;
+      margin-left: 71%;
+      position: absolute;
+      margin-top: 35px;
       font-weight: bold;
       }
   }
@@ -383,6 +385,12 @@ $blue-green: #339999;
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
+      .aut{
+        margin-left: 71%;
+        position: absolute;
+        margin-top: 35px;
+        font-weight: bold;
+        }
     }
   }
 

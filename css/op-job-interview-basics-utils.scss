@@ -1,13 +1,13 @@
-$helvetica: 'Helvetica';
+$helvetica: 'Helvetica', 'Arial', 'Sans Serif';
 $trebuchet: 'Trebuchet MS';
+$magenta: #cc3366;
+$magenta-light: #f0d4d4;
+$blue-green: #339999;
 
 body {
   margin: 0;
   padding: 0;
 }
-$magenta: #cc3366;
-$magenta-light: #f0d4d4;
-$blue-green: #339999;
 
 .html-lesson-wrapper {
   width: 100%;
@@ -71,7 +71,7 @@ $blue-green: #339999;
   .title {
     position: absolute;
     top: 80px;
-    left: 55px;
+    left: 47px;
     font-size: clamp(9.3px, 3vw, 27px);
   }
 
@@ -114,7 +114,7 @@ $blue-green: #339999;
 
   .section {
     position: absolute;
-    left: -71.5px;
+    left: -78px;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;

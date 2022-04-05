@@ -3,35 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -49,8 +20,32 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 .html-lesson-wrapper header {
-  font-family: "Arial";
+  font-family: "Noto Sans";
 }
 .html-lesson-wrapper .fs-16 {
   font-size: clamp(12px, 2.3vw, 16px);
@@ -1268,84 +1263,83 @@ hr {
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;
 }
-
 @media only screen and (max-width: 460px) {
-  .section-2-content .wrap-all-boxes .jap {
+  .html-lesson-wrapper .section-2-content .wrap-all-boxes .jap {
     margin-top: -6px !important;
   }
 }
 @media only screen and (max-width: 540px) {
-  .see3-content .wrapper-with-akiko .akiko-image {
+  .html-lesson-wrapper .see3-content .wrapper-with-akiko .akiko-image {
     left: 1px !important;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 450px) {
-  .see3-content .phrases-container .phrase-alts {
+  .html-lesson-wrapper .see3-content .phrases-container .phrase-alts {
     margin-top: -19px !important;
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 399px) {
-  .see3-content .phrases-container .phrase-alts {
+  .html-lesson-wrapper .see3-content .phrases-container .phrase-alts {
     margin-top: -21px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 350px) {
-  .see3-content .phrases-container .phrase-alts {
+  .html-lesson-wrapper .see3-content .phrases-container .phrase-alts {
     margin-top: -22px !important;
   }
 }
 @media only screen and (max-width: 310px) {
-  .try-4-content .you-second-line {
+  .html-lesson-wrapper .try-4-content .you-second-line {
     margin-left: 66px !important;
   }
 }
 @media only screen and (max-width: 320px) {
-  .see3-content .wrapper-with-akiko .akiko-image {
+  .html-lesson-wrapper .see3-content .wrapper-with-akiko .akiko-image {
     margin-left: -8px !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 550px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -10px !important;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 480px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -13px !important;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 399px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -17px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 200px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -17px !important;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 500px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .new-business-box {
     margin-top: -6px !important;
   }
 }
 @media only screen and (min-width: 380px) and (max-width: 450px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .new-business-box {
     margin-top: -6px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 380px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .new-business-box {
     margin-top: -7px !important;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 458px) {
-  .see-2 .section-2-content .wrap-all-boxes .jap {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .jap {
     margin-top: -14px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 300px) {
-  .see-2 .section-2-content .wrap-all-boxes .jap {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .jap {
     margin-top: -12px !important;
   }
 }

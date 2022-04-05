@@ -10,36 +10,10 @@ $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
 body {
   margin: 0;
   padding: 0;
-}
-
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .html-lesson-wrapper {
@@ -56,6 +30,28 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 
   header {
     font-family: $title-font;
@@ -833,24 +829,24 @@ hr {
       margin-bottom: 80px;
     }
   }
-}
 
-@media only screen and (min-width: 100px) and(max-width: 442px) {
-  .section-2-content .wrapper-with-akiko .akiko-image {
-    margin-left: -20px !important;
-  }
-  .section-2-content .wrap-for-flex {
-    margin-left: -20px;
-  }
-  .section-2-content .wrap-all-boxes .jap {
-    margin-left: -20px;
-  }
-  .section-2-content .wrap-all-boxes .wrap-for-flex {
-    .our-goal-box {
-      width: 73px;
+  @media only screen and (min-width: 100px) and(max-width: 442px) {
+    .section-2-content .wrapper-with-akiko .akiko-image {
+      margin-left: -20px !important;
     }
-    .increase-sales-box {
-      width: 73px;
+    .section-2-content .wrap-for-flex {
+      margin-left: -20px;
+    }
+    .section-2-content .wrap-all-boxes .jap {
+      margin-left: -20px;
+    }
+    .section-2-content .wrap-all-boxes .wrap-for-flex {
+      .our-goal-box {
+        width: 73px;
+      }
+      .increase-sales-box {
+        width: 73px;
+      }
     }
   }
 }

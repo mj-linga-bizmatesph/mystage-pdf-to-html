@@ -10,36 +10,10 @@ $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
 body {
   margin: 0;
   padding: 0;
-}
-
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .html-lesson-wrapper {
@@ -56,6 +30,28 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 
   header {
     font-family: $title-font;
@@ -234,8 +230,6 @@ hr {
       margin-top: 32px;
     }
 
-  
-
     .arrow.try {
       color: white;
       background-image: url(#{$s3}/0-try-arrow.png);
@@ -300,30 +294,29 @@ hr {
       }
     }
     .bubble-3 {
-        position: absolute;
-        top: 40%;
-        left: 63%;
-        .eng {
-          font-family: $text-font;
-          font-weight: bold;
-          font-size: clamp(8px, 2vw, 14px);
-        }
-        .jap {
-          font-family: $noto-sans;
-          font-size: clamp(6px, 1.5vw, 11px);
-          color: $subtext-color;
-          letter-spacing: $jap-letter-spacing;
-        }
+      position: absolute;
+      top: 40%;
+      left: 63%;
+      .eng {
+        font-family: $text-font;
+        font-weight: bold;
+        font-size: clamp(8px, 2vw, 14px);
       }
+      .jap {
+        font-family: $noto-sans;
+        font-size: clamp(6px, 1.5vw, 11px);
+        color: $subtext-color;
+        letter-spacing: $jap-letter-spacing;
+      }
+    }
   }
 
   .section-2-content {
     margin-top: clamp(35px, 15vw, 50px);
     .wrapper-with-akiko {
       display: grid;
-      grid-template-columns:  2fr min-content;
+      grid-template-columns: 2fr min-content;
       .akiko-image {
-          
         width: clamp(95px, 18vw, 120px);
         height: clamp(80px, 23.1vw, 150px);
         position: relative;
@@ -333,7 +326,7 @@ hr {
         background-image: url(#{$s3}/0-C-4-akiko-right.svg);
       }
       .wrap-all-boxes {
-          position:absolute;
+        position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 20%;
         .wrap-for-flex {
@@ -350,7 +343,6 @@ hr {
             font-size: clamp(9.6px, 2.4vw, 16px);
           }
           .approval-box {
-          
             font-size: clamp(9.6px, 2.4vw, 16px);
             padding-top: clamp(7px, 2vw, 10px);
             padding-left: clamp(11px, 3vw, 17px);
@@ -626,16 +618,16 @@ hr {
           }
         }
         .image-content {
-            margin-left: clamp(55px, 19vw, 120px);
-            margin-top: 30px;
-            width: clamp(180px, 41vw, 250px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-4-try-2-image2.svg);
-          }
+          margin-left: clamp(55px, 19vw, 120px);
+          margin-top: 30px;
+          width: clamp(180px, 41vw, 250px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-4-try-2-image2.svg);
+        }
       }
       .wrap-flex-content-2 {
         margin-bottom: clamp(190px, 45vw, 270px);
@@ -662,16 +654,16 @@ hr {
           }
         }
         .image-content {
-            margin-left: clamp(55px, 14vw, 80px);
-            margin-top: 30px;
-            width: clamp(190px, 47vw, 290px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-4-try-2-image3.svg);
-          }
+          margin-left: clamp(55px, 14vw, 80px);
+          margin-top: 30px;
+          width: clamp(190px, 47vw, 290px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-4-try-2-image3.svg);
+        }
       }
       .wrap-flex-content-3 {
         margin-bottom: clamp(205px, 50vw, 290px);
@@ -698,16 +690,16 @@ hr {
           }
         }
         .image-content {
-            margin-left: clamp(75px, 19vw, 110px);
-            margin-top: 30px;
-            width: clamp(140px, 37vw, 220px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-4-try-2-image4.svg);
-          }
+          margin-left: clamp(75px, 19vw, 110px);
+          margin-top: 30px;
+          width: clamp(140px, 37vw, 220px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-4-try-2-image4.svg);
+        }
       }
       .wrap-flex-content-4 {
         margin-bottom: clamp(165px, 37vw, 248px);
@@ -734,16 +726,16 @@ hr {
           }
         }
         .image-content {
-            margin-left: clamp(60px, 15vw, 95px);
-            margin-top: 30px;
-            width: clamp(225px, 56vw, 330px);
-            min-height: clamp(130px, 35vw, 305px);
-            position: absolute;
-            background-position: top, bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(#{$s3}/0-C-4-try-2-image5.svg);
-          }
+          margin-left: clamp(60px, 15vw, 95px);
+          margin-top: 30px;
+          width: clamp(225px, 56vw, 330px);
+          min-height: clamp(130px, 35vw, 305px);
+          position: absolute;
+          background-position: top, bottom;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-C-4-try-2-image5.svg);
+        }
       }
     }
   }
@@ -752,7 +744,7 @@ hr {
     margin-top: clamp(35px, 15vw, 50px);
     .wrapper-with-akiko {
       display: grid;
-      grid-template-columns:  2fr min-content;
+      grid-template-columns: 2fr min-content;
       .akiko-image {
         width: clamp(95px, 18vw, 120px);
         height: clamp(80px, 23.1vw, 150px);
@@ -763,7 +755,7 @@ hr {
         background-image: url(#{$s3}/0-C-4-akiko-right.svg);
       }
       .wrap-all-boxes {
-          position:absolute;
+        position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 20%;
         .wrap-for-flex {
@@ -796,17 +788,17 @@ hr {
           letter-spacing: -1.8px;
         }
         .on-the-box {
-            top: 68%;
-            left: 59%;
-            position: absolute;
-            text-align: center;
-            background: url(#{$s3}/0-C-4-on-the.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
-            font-size: clamp(9.6px, 2.4vw, 16px);
-          }
+          top: 68%;
+          left: 59%;
+          position: absolute;
+          text-align: center;
+          background: url(#{$s3}/0-C-4-on-the.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
+          font-size: clamp(9.6px, 2.4vw, 16px);
+        }
       }
     }
     .section2-box-content {
@@ -950,14 +942,14 @@ hr {
             margin-left: clamp(55px, 13.7vw, 79px);
           }
         }
-        .you-under-line{
+        .you-under-line {
           margin-top: 2px;
           margin-left: clamp(86px, 21.6vw, 127px);
           .underline {
             text-decoration: underline;
             color: $primary-blue;
           }
-        } 
+        }
       }
       .wrap-flex-content-1 {
         margin-bottom: clamp(45px, 12vw, 65px);
@@ -979,14 +971,14 @@ hr {
             margin-left: clamp(55px, 13.7vw, 79px);
           }
         }
-        .you-under-line{
+        .you-under-line {
           margin-top: 2px;
           margin-left: clamp(86px, 21.6vw, 127px);
           .underline {
             text-decoration: underline;
             color: $primary-blue;
           }
-        } 
+        }
       }
       .wrap-flex-content-2 {
         margin-bottom: clamp(45px, 12vw, 65px);
@@ -1008,14 +1000,14 @@ hr {
             margin-left: clamp(55px, 13.7vw, 79px);
           }
         }
-        .you-under-line{
+        .you-under-line {
           margin-top: 2px;
           margin-left: clamp(86px, 21.6vw, 127px);
           .underline {
             text-decoration: underline;
             color: $primary-blue;
           }
-        } 
+        }
       }
       .wrap-flex-content-3 {
         margin-bottom: clamp(45px, 12vw, 65px);
@@ -1037,14 +1029,14 @@ hr {
             margin-left: clamp(55px, 13.7vw, 79px);
           }
         }
-        .you-under-line{
+        .you-under-line {
           margin-top: 2px;
           margin-left: clamp(86px, 21.6vw, 127px);
           .underline {
             text-decoration: underline;
             color: $primary-blue;
           }
-        } 
+        }
       }
       .wrap-flex-content-4 {
         margin-bottom: clamp(45px, 12vw, 65px);
@@ -1066,14 +1058,14 @@ hr {
             margin-left: clamp(55px, 13.7vw, 79px);
           }
         }
-        .you-under-line{
+        .you-under-line {
           margin-top: 2px;
           margin-left: clamp(86px, 21.6vw, 127px);
           .underline {
             text-decoration: underline;
             color: $primary-blue;
           }
-        } 
+        }
       }
       .wrap-flex-content-5 {
         margin-bottom: clamp(45px, 12vw, 65px);
@@ -1095,14 +1087,14 @@ hr {
             margin-left: clamp(55px, 13.7vw, 79px);
           }
         }
-        .you-under-line{
+        .you-under-line {
           margin-top: 2px;
           margin-left: clamp(86px, 21.6vw, 127px);
           .underline {
             text-decoration: underline;
             color: $primary-blue;
           }
-        } 
+        }
       }
     }
   }
@@ -1237,13 +1229,13 @@ hr {
       }
     }
   }
-}
 
-@media only screen and (min-width: 150px) and(max-width: 442px) {
-  .section-2-content .wrapper-with-akiko .akiko-image {
-    margin-right: -20px !important;
-  }
-  .section-3-content .wrapper-with-akiko .akiko-image {
-    margin-right: -20px !important;
+  @media only screen and (min-width: 150px) and(max-width: 442px) {
+    .section-2-content .wrapper-with-akiko .akiko-image {
+      margin-right: -20px !important;
+    }
+    .section-3-content .wrapper-with-akiko .akiko-image {
+      margin-right: -20px !important;
+    }
   }
 }

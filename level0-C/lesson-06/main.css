@@ -3,35 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -48,6 +19,30 @@ hr {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .html-lesson-wrapper header {
   font-family: "Arial";
@@ -1290,25 +1285,20 @@ hr {
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;
 }
-
 @media only screen and (min-width: 150px) and (max-width: 442px) {
-  .section-2-content .wrapper-with-akiko .akiko-image {
+  .html-lesson-wrapper .section-2-content .wrapper-with-akiko .akiko-image {
     margin-left: -20px !important;
   }
-
-  .section-2-content .wrapper-with-helen .helen-image {
+  .html-lesson-wrapper .section-2-content .wrapper-with-helen .helen-image {
     margin-right: -20px !important;
   }
-
-  .see-3-content .wrapper-with-akiko .akiko-image {
+  .html-lesson-wrapper .see-3-content .wrapper-with-akiko .akiko-image {
     margin-left: -20px !important;
   }
-
-  .see-3-content .wrapper-with-helen .helen-image {
+  .html-lesson-wrapper .see-3-content .wrapper-with-helen .helen-image {
     margin-right: -20px !important;
   }
-
-  .see-3-content .wrapper-with-akiko .wrap-all-boxes {
+  .html-lesson-wrapper .see-3-content .wrapper-with-akiko .wrap-all-boxes {
     margin-left: -10px !important;
   }
 }

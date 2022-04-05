@@ -50,19 +50,20 @@ $blue-green: #339999;
 
   .program-rank {
     position: absolute;
-    top: 40px;
-    left: 48px;
+    top: 3.05%;
+    left: 5%;
     color: #ffffff;
     font-size: 0px;
+    white-space: nowrap;
 
     .type {
-      padding: 3px 16px 3px 14px;
+      padding: 0.7% 3% 0.7% 3%;
       background-color: $magenta;
       font-size: clamp(6.48px, 1.8vw, 15px);
     }
 
     .level {
-      padding: 3px 12px 3px 13px;
+      padding: 0.7% 3% 0.7% 3%;
       background-color: $blue-green;
       font-size: clamp(6.48px, 1.8vw, 15px);
     }
@@ -74,8 +75,8 @@ $blue-green: #339999;
 
   .title {
     position: absolute;
-    top: 80px;
-    left: 55px;
+    top: clamp(4.5%, 18vw, 6.1%);
+    left: 5%;
     font-size: clamp(9.3px, 3vw, 27px);
   }
 
@@ -119,11 +120,11 @@ $blue-green: #339999;
 
   .section {
     position: absolute;
-    left: -71.5px;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
     top: 2px;
+    left: -10.5%;
   }
 
   .divider {
@@ -176,7 +177,8 @@ $blue-green: #339999;
     font-size: clamp(6px, 1.8vw, 15px);
 
     .section {
-      margin-left: clamp(50px, 14%, 126.5px);
+      left: 0;
+      margin-left: 5%;
       line-height: 1.8em;
       margin-top: 3% !important;
     }
@@ -389,37 +391,7 @@ $blue-green: #339999;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    .program-rank {
-      position: absolute;
-      top: clamp(20px, 4vw, 40px);
-      left: clamp(23px, 4vw, 48px);
-    }
-    .title {
-      top: clamp(45px, 8.4vw, 80px);
-      left: clamp(30px, 4.1vw, 55px);
-    }
-    // .divider {
-    //   .d1,
-    //   .d2 {
-    //     margin-top: clamp(18px, 3.4vw, 28px);
-    //   }
-    // }
-    .section {
-      left: calc(-16% + 30px);
-      &.words {
-        left: calc(-14% + 30px);
-      }
-    }
-  }
-
   @media screen and (max-width: 600px) {
-    .type {
-      padding: 2px 8px 2px 7px !important;
-    }
-    .level {
-      padding: 2px 6px 2px 7px !important;
-    }
     .line {
       margin: 0 6px;
       vertical-align: middle;

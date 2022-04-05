@@ -18,27 +18,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -53,6 +32,27 @@ td {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
 
   header {
     font-family: $title-font;
@@ -500,8 +500,6 @@ td {
             justify-content: end;
             align-items: center;
             margin-right: clamp(18px, 5vw, 30px);
-          }
-          .legend {
           }
         }
       }

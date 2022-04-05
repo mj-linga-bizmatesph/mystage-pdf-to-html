@@ -220,6 +220,32 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
   }
 
+  .arrow-part-1 {
+    position: relative;
+    &:before {
+      content: '';
+      left: -1.5em;
+      top: 0.3em;
+      width: 0;
+      height: 0;
+      border-left: clamp(2px, 1vw, 5px) solid transparent;
+      border-right: clamp(2px, 1vw, 5px) solid transparent;
+      border-top: clamp(4px, 1vw, 8px) solid;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: clamp(5px, 1vw, 8px);
+    }
+
+    span {
+      color: $magenta;
+      font-weight: bold;
+    }
+
+    &.black-arrow:before {
+      border-top: 8px solid black;
+    }
+  }
+
   .see-content {
     margin-top: 36px;
 

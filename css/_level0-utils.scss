@@ -80,6 +80,10 @@ td {
     font-family: $title-font;
   }
 
+  .fs-14 {
+    font-size: clamp(6px, 1.5vw, 14px);
+  }
+
   .fs-16 {
     font-size: clamp(6px, 2.6vw, 16px);
   }
@@ -155,6 +159,10 @@ td {
       width: 100%;
     }
   }
+  .at-mention {
+    color: #9ea9fc;
+    font-family: $title-font;
+  }
   .eng {
     font-weight: bold;
     font-size: clamp(8px, 2.3vw, 14px);
@@ -207,6 +215,7 @@ td {
     font-family: $noto-sans;
   }
   .instructions {
+    margin-right: $side-margin;
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
@@ -298,6 +307,8 @@ td {
     margin: 0;
     text-align: center;
     width: clamp(13px, 4vw, 24px);
+    min-width: clamp(13px, 4vw, 24px);
+
     height: clamp(13px, 4vw, 24px);
     line-height: clamp(13px, 4vw, 24px);
     font-family: $noto-sans;
@@ -374,7 +385,6 @@ td {
         margin-left: clamp(5px, 1vw, 9px);
         p {
           margin: 0;
-          white-space: nowrap;
           font-family: $noto-sans;
         }
       }
@@ -420,10 +430,12 @@ td {
       .green-piece-complete,
       .blue-piece-complete,
       .green-piece-male,
+      .blue-piece-male,
       .yellow-piece-female,
-      .yellow-piece-complete {
+      .yellow-piece-complete,
+      .red-piece-female {
         background-position: center;
-        background-size: auto 100%;
+        background-size: auto 105%;
         background-repeat: no-repeat;
       }
       .yellow-piece {
@@ -477,14 +489,14 @@ td {
             90deg,
             rgba(255, 255, 255, 0) 8%,
             #c3e8e6 8%,
-            #c3e8e6 80%,
-            rgba(255, 255, 255, 0) 80%
+            #c3e8e6 85%,
+            rgba(255, 255, 255, 0) 85%
           ),
           url(#{$s3}/0-green-piece-start.png);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
+        background-size: auto 105%, auto, auto 105%;
       }
 
       .blue-piece-complete {
@@ -500,7 +512,7 @@ td {
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
+        background-size: auto 105%, auto, auto 105%;
       }
 
       .yellow-piece-complete {
@@ -516,7 +528,7 @@ td {
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
-        background-size: auto 100%, auto, auto 100%;
+        background-size: auto 105%, auto, auto 105%;
       }
 
       .green-piece-male {
@@ -527,9 +539,26 @@ td {
         background-position: right;
       }
 
+      .blue-piece-male {
+        background-image: url(#{$s3}/0-blue-piece-male.png),
+          linear-gradient(90deg, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
+      }
+
       .yellow-piece-female {
         background-image: url(#{$s3}/0-yellow-piece-female.png),
           linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+
+        background-position: left;
+      }
+
+      .red-piece-female {
+        background-image: url(#{$s3}/0-red-piece-female.png),
+          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffb2b0 20%);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
@@ -632,6 +661,15 @@ td {
     .jap {
       font-size: clamp(9px, 2vw, 13px);
       margin-bottom: 3.8%;
+    }
+  }
+  .part-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
     }
   }
 }

@@ -61,64 +61,51 @@ td {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .html-lesson-wrapper header {
   font-family: "Arial";
 }
-
-.html-lesson-wrapper .fs-16, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .enumeration .choices .choice, .html-lesson-wrapper .try-content.try-3 .table .table-number {
+.html-lesson-wrapper .fs-16, .html-lesson-wrapper .try-content.try-3 .table .table-number, .html-lesson-wrapper .try-content.try-3 .enumeration .choices .choice, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(6px, 2.6vw, 16px);
 }
-
 .html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-3 .table .table-sentence {
   font-size: clamp(6px, 2.9vw, 18px);
 }
-
 .html-lesson-wrapper .flip-horizontal {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 .html-lesson-wrapper .noto-sans {
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-4 .table .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .try-content.try-4 .table .name, .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .u-sup {
   border-bottom: solid 1.5px black;
   display: inline-block;
   line-height: clamp(6px, 1.5vw, 14px);
 }
-
 .html-lesson-wrapper .u-blue {
   text-decoration: underline;
   color: #1287cd;
 }
-
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .table-number, .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper .table-number {
+.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-3 .table .table-number, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
   color: #1287cd;
 }
-
 .html-lesson-wrapper .program-rank {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 5px);
 }
-
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
   background-color: #1287cd;
   font-size: clamp(7px, 1.8vw, 12px);
 }
-
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
   font-size: clamp(7px, 1.8vw, 12px);
@@ -127,23 +114,19 @@ td {
   margin-left: -15px;
   width: 100%;
 }
-
 .html-lesson-wrapper .eng {
   font-weight: bold;
   font-size: clamp(8px, 2.3vw, 14px);
 }
-
 .html-lesson-wrapper .jap {
   letter-spacing: -0.5px;
   color: #7f8288;
   font-family: "Noto Sans";
   font-size: clamp(7px, 1.8vw, 11px);
 }
-
 .html-lesson-wrapper .line {
   margin: 0 12px;
 }
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 8%;
@@ -153,7 +136,6 @@ td {
   font-size: clamp(1px, 4vw, 28px);
   color: #ffffff;
 }
-
 .html-lesson-wrapper .title-section {
   position: absolute;
   top: clamp(30px, 8vw, 50px);
@@ -165,17 +147,14 @@ td {
           box-sizing: border-box;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(16px, 4.5vw, 26px);
   margin-bottom: 0.5%;
 }
-
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
   letter-spacing: -1.3px;
 }
-
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
   font-size: clamp(12px, 2.3vw, 16px);
@@ -184,29 +163,24 @@ td {
   background-size: contain;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .instructions {
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 27%;
 }
-
 .html-lesson-wrapper .instructions .title {
   font-size: clamp(9px, 2.9vw, 18px);
   color: #141821;
 }
-
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
   letter-spacing: -1.3px;
 }
-
 .html-lesson-wrapper .office-section .legend div {
   position: absolute;
 }
-
 .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right {
   font-size: clamp(18px, 3vw, 25px);
   padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px) clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
@@ -214,12 +188,10 @@ td {
   margin-top: 2px;
   color: #2d356b;
 }
-
 .html-lesson-wrapper .office-section .legend div.right {
   right: 0;
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .office-section .legend div.center {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -231,14 +203,12 @@ td {
   left: 0;
   right: 0;
 }
-
 .html-lesson-wrapper .office-section .legend div.center > .number {
   font-size: clamp(15px, 4vw, 24px);
   width: clamp(20px, 4vw, 35px);
   height: clamp(20px, 4vw, 35px);
   line-height: clamp(20px, 4vw, 35px);
 }
-
 .html-lesson-wrapper .office-section .name {
   position: absolute;
   border-radius: clamp(4px, 1vw, 7px);
@@ -248,7 +218,6 @@ td {
   font-size: clamp(7px, 2vw, 10px);
   color: #2d356b;
 }
-
 .html-lesson-wrapper .office-section .conversation .bubble {
   position: absolute;
   display: -webkit-box;
@@ -261,7 +230,6 @@ td {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 .html-lesson-wrapper .office-section .conversation .speech {
   position: absolute;
   display: -webkit-box;
@@ -274,7 +242,6 @@ td {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 .html-lesson-wrapper .number {
   border-radius: 50%;
   background: #1287cd;
@@ -288,13 +255,11 @@ td {
   font-size: clamp(11px, 3vw, 16px);
   z-index: 1;
 }
-
 .html-lesson-wrapper .number.inverse {
   color: #1287cd;
   background-color: white;
   border: 1px solid #707070;
 }
-
 .html-lesson-wrapper .letter {
   border: 2px solid #1287cd;
   color: #1287cd;
@@ -305,7 +270,6 @@ td {
   font-size: clamp(11px, 3vw, 16px);
   text-align: center;
 }
-
 .html-lesson-wrapper .plus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,40 +277,30 @@ td {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-
 .html-lesson-wrapper .plus > img {
   width: auto;
   height: clamp(10px, 5vw, 15px);
 }
-
 .html-lesson-wrapper .see-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .see-content .phrase-alts {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [one] min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
-      grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
+  grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
+  grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
   gap: 13px;
 }
-
 .html-lesson-wrapper .see-content .phrase-alts.half {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .alt-box {
   padding: clamp(7px, 2vw, 15px);
   border: 1px solid #1287cd;
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .alt-box.blue {
   background-color: #e7f3fa;
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .alt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,54 +309,43 @@ td {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .alt:not(:last-child) {
   margin-bottom: clamp(10px, 2vw, 20px);
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .choice {
   margin-left: clamp(5px, 1vw, 9px);
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .choice-eng {
   font-size: clamp(9px, 2vw, 18px);
 }
-
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
   letter-spacing: -0.5px;
   color: #7f8288;
 }
-
 .html-lesson-wrapper .see-content .arrow.see {
   color: #1287cd;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-see-arrow.png);
 }
-
 .html-lesson-wrapper .see-content .phrases-section .yellow {
   background: #ffe200;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .blue {
   background: #c3e8e6;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .red {
   background: #ffb2b0;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .yellow,
 .html-lesson-wrapper .see-content .phrases-section .blue,
 .html-lesson-wrapper .see-content .phrases-section .red {
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
-
 .html-lesson-wrapper .see-content .phrases-section .yellow-piec .yellow-piece,
 .html-lesson-wrapper .see-content .phrases-section .green-piece,
 .html-lesson-wrapper .see-content .phrases-section .red-piece,
@@ -416,42 +359,36 @@ td {
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 226, 0)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, rgb(255, 226, 0) 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
-
 .html-lesson-wrapper .see-content .phrases-section .blue-piece {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ebeef1));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ebeef1 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .gray-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #e7f3fa));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #e7f3fa 20%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, rgb(231, 243, 250)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-gray-piece.svg), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .red-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 178, 176)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .green-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, rgb(195, 232, 230)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(195, 232, 230) 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .green-piece-complete {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #c3e8e6), color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
@@ -459,7 +396,6 @@ td {
   background-position: left, center, right;
   background-size: auto 100%, auto, auto 100%;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .blue-piece-complete {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #e7f3fa), color-stop(80%, #e7f3fa), color-stop(80%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-start.png);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #e7f3fa 8%, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-start.png);
@@ -467,53 +403,44 @@ td {
   background-position: left, center, right;
   background-size: auto 100%, auto, auto 100%;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .green-piece-male {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-male.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-male.png), linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .yellow-piece-female {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-female.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ffe200));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .icon {
   text-align: center;
   font-size: clamp(10px, 2vw, 14px);
 }
-
 .html-lesson-wrapper .see-content .phrases-section .icon img {
   height: clamp(70px, 20vw, 100px);
   width: auto;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .icon div {
   margin-top: clamp(8px, 2vw, 14px);
 }
-
 .html-lesson-wrapper .see-content .phrases-section .phrases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-content .phrases-section .phrase p {
   margin: clamp(3px, 0.5vw, 5px) 0px;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .eng {
   font-size: clamp(8px, 2vw, 16px);
   text-align: center;
   border-radius: 3px;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-content .phrases-section .jap {
   font-size: clamp(7px, 2vw, 14px);
   width: -webkit-min-content;
@@ -521,7 +448,6 @@ td {
   width: min-content;
   min-width: 100%;
 }
-
 .html-lesson-wrapper .see-content .phrases-section .legend {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,49 +456,39 @@ td {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .try-content .arrow.try {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-try-arrow.png);
 }
-
 .html-lesson-wrapper .try-content .combinations {
-  display: -ms-grid;
   display: grid;
 }
-
 .html-lesson-wrapper .try-content .combinations .combination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .html-lesson-wrapper .act-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .act-content .arrow.act {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
 }
-
 .html-lesson-wrapper .blue-line {
   width: 15px;
   height: 2px;
   border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
 }
-
 .html-lesson-wrapper .table {
   width: 100%;
 }
-
 .html-lesson-wrapper .table .name {
   font-weight: bold;
   font-size: clamp(10px, 3vw, 16px);
@@ -582,14 +498,12 @@ td {
   width: 1%;
   padding-top: 0.8%;
 }
-
 .html-lesson-wrapper .table .eng {
   font-family: "Noto Sans";
   font-weight: normal;
   font-size: clamp(10px, 2.68vw, 18px);
   margin-bottom: 1%;
 }
-
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: 3.8%;
@@ -598,105 +512,79 @@ td {
 .html-lesson-wrapper .see-content.see-1 {
   margin-top: 29%;
 }
-
 .html-lesson-wrapper .see-content.see-1 .office-see-1 {
   margin-top: 6%;
 }
-
 .html-lesson-wrapper .see-content.see-1 .office-see-1 .name.akiko {
   left: 21.8%;
   margin-top: 29.5%;
 }
-
 .html-lesson-wrapper .see-content.see-1 .office-see-1 .name.steve {
   margin-top: 29%;
   right: 21%;
 }
-
 .html-lesson-wrapper .see-content.see-1 .office-see-1 .speech.steve {
   margin-top: 4.8%;
   left: 14%;
 }
-
 .html-lesson-wrapper .see-content.see-1 .office-see-1 .speech.akiko {
   margin-top: 11.8%;
   left: 54%;
 }
-
 .html-lesson-wrapper .see-content.see-2 {
   margin-top: 7%;
 }
-
 .html-lesson-wrapper .see-content.see-2 .phrase-alts .alt:not(:last-child) {
   margin-bottom: 6%;
 }
-
 .html-lesson-wrapper .see-content.see-2 .phrase-alts .alt-box.left .alt:not(:last-child) {
   margin-bottom: 4%;
 }
-
 .html-lesson-wrapper .see-content.see-2 .legend {
   margin-top: 7%;
 }
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-1 {
   margin-top: 5%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: min-content 1fr;
-      grid-template-columns: -webkit-min-content 1fr;
-      grid-template-columns: min-content 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
 }
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .icon {
   margin-right: clamp(20px, 4.5vw, 40px);
 }
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .phrase:not(:last-child) {
   margin-right: clamp(5px, 1.8vw, 10px);
 }
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-2 {
   margin-top: -5%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
 }
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .phrase:not(:last-child) {
   margin-right: clamp(5px, 1.8vw, 10px);
 }
-
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-2 .phrase:last-child {
   margin-right: clamp(15px, 4.5vw, 30px);
 }
-
 .html-lesson-wrapper .see-content.see-3 {
   margin-top: 5%;
 }
-
 .html-lesson-wrapper .see-content.see-3 .phrases-section {
   margin-top: 8%;
 }
-
 .html-lesson-wrapper .try-content.try-1, .html-lesson-wrapper .try-content.try-2, .html-lesson-wrapper .try-content.try-3, .html-lesson-wrapper .try-content.try-4 {
   margin-top: 6%;
 }
-
 .html-lesson-wrapper .try-content.try-1 .combinations {
-  -ms-grid-columns: 1fr 1fr min-content;
-      grid-template-columns: 1fr 1fr -webkit-min-content;
-      grid-template-columns: 1fr 1fr min-content;
+  grid-template-columns: 1fr 1fr -webkit-min-content;
+  grid-template-columns: 1fr 1fr min-content;
   margin-top: 11%;
 }
-
 .html-lesson-wrapper .try-content.try-1 .combinations .combination-icon {
   height: auto;
   width: clamp(80px, 32vw, 191px);
 }
-
 .html-lesson-wrapper .try-content.try-1 .combinations .combination {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -706,89 +594,69 @@ td {
           justify-content: left;
   margin-bottom: 10%;
 }
-
 .html-lesson-wrapper .try-content.try-1 .combinations .combination > div:not(:last-child) {
   margin-right: 4%;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section {
   margin-top: 15%;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper p {
   margin: 0;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
   padding-top: 6px;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
   width: 34%;
   text-align: right;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
   margin-bottom: 7%;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper img {
   max-width: clamp(44%, 25vw, 100%);
   margin-right: 5%;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table {
   font-family: "Noto Sans";
   border-collapse: collapse;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table td {
   font-size: clamp(10px, 3vw, 18px);
 }
-
 .html-lesson-wrapper .try-content.try-2 .table td img {
   max-width: clamp(44%, 16vw, 100%);
   margin-bottom: 20px;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table td:nth-child(2) {
   padding-bottom: 6%;
 }
-
 .html-lesson-wrapper .try-content.try-2 .table .name {
   font-size: clamp(10px, 3vw, 16px);
   white-space: nowrap;
 }
-
 .html-lesson-wrapper .try-content.try-3 .enumeration {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr min-content;
-      grid-template-columns: 1fr -webkit-min-content;
-      grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
   margin-top: 13%;
 }
-
 .html-lesson-wrapper .try-content.try-3 .enumeration > div:not(:last-child) {
   margin-top: 5%;
 }
-
 .html-lesson-wrapper .try-content.try-3 .enumeration .combination-icon {
   height: auto;
   width: clamp(119px, 32vw, 191px);
   margin-right: clamp(15px, 4vw, 30px);
 }
-
 .html-lesson-wrapper .try-content.try-3 .enumeration .choices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .html-lesson-wrapper .try-content.try-3 .enumeration .choices .choice {
   background-color: #e7f3fa;
   padding: 2% 4%;
@@ -796,96 +664,75 @@ td {
   font-family: "Noto Sans";
   margin: 2%;
 }
-
 .html-lesson-wrapper .try-content.try-3 .table {
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .try-content.try-3 .table .table-number {
   padding-top: 6px;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .try-content.try-3 .table .table-sentence {
   padding-bottom: 2.4%;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section {
   margin-top: 12%;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .jap {
   margin-left: 5%;
   font-family: "Noto Sans";
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper p {
   margin: 0;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 6px;
   padding-left: clamp(5px, 3vw, 10px);
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper .table-img {
   width: 40%;
   text-align: center;
   padding-right: 1%;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper:not(:last-child) {
   margin-bottom: 12%;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table-wrapper-section .table-wrapper img {
   max-width: clamp(44%, 25vw, 100%);
   padding-left: 5%;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table {
   font-family: "Noto Sans";
   border-collapse: collapse;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table td {
   font-size: clamp(10px, 3vw, 18px);
 }
-
 .html-lesson-wrapper .try-content.try-4 .table td img {
   max-width: clamp(44%, 16vw, 100%);
   margin-bottom: 20px;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table .name {
   font-size: clamp(10px, 3vw, 16px);
   white-space: nowrap;
 }
-
 .html-lesson-wrapper .try-content.try-4 .table td:nth-child(2) {
   padding-bottom: 7%;
 }
-
 .html-lesson-wrapper .act-content.act-1, .html-lesson-wrapper .act-content.act-2 {
   margin-top: 7%;
 }
-
 .html-lesson-wrapper .act-content.act-2 {
   margin-bottom: 50px;
 }
-
 .html-lesson-wrapper .act-content.act-1 .office-section {
   margin-top: 8%;
 }
-
 .html-lesson-wrapper .act-content.act-1 .blue-line {
   margin-top: 5%;
 }
-/*# sourceMappingURL=main.css.map */

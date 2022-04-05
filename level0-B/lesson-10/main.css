@@ -57,7 +57,7 @@ body {
   height: auto;
 }
 .html-lesson-wrapper header {
-  font-family: "Arial";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
   font-size: clamp(10px, 2.3vw, 16px);
@@ -70,7 +70,7 @@ body {
   text-align: center;
 }
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
@@ -116,7 +116,7 @@ body {
 .html-lesson-wrapper .jap {
   letter-spacing: -1.5px;
   color: #7f8288;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
 }
 .html-lesson-wrapper .line {
@@ -140,7 +140,7 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(16px, 4.5vw, 26px);
@@ -156,10 +156,10 @@ body {
   padding: 2.4% 3.5%;
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .instructions {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 27%;
@@ -239,7 +239,7 @@ body {
 }
 .html-lesson-wrapper .text {
   white-space: nowrap;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .part-content {
   margin-left: clamp(18px, 5vw, 32px);
@@ -268,7 +268,7 @@ body {
   padding-top: 0.8%;
 }
 .html-lesson-wrapper .table .eng {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: normal;
   font-size: clamp(10px, 2.68vw, 18px);
   margin-bottom: 1%;
@@ -284,7 +284,7 @@ body {
 
 .part-1,
 .part-2 {
-  font-family: "Noto Sans" !important;
+  font-family: "Noto Sans", sans-serif !important;
 }
 .part-1 .blue-line,
 .part-2 .blue-line {
@@ -335,7 +335,7 @@ body {
 .part-1 .office-part-2 .bubble .jap,
 .part-2 .office-part-1 .bubble .jap,
 .part-2 .office-part-2 .bubble .jap {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   letter-spacing: -2px;
   font-size: clamp(10px, 2.3vw, 13px);
   line-height: 13px;

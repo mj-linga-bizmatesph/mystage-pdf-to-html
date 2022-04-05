@@ -6,7 +6,7 @@ on what you need.
 */
 $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -77,7 +77,7 @@ body {
   }
 
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-14 {
@@ -161,7 +161,6 @@ body {
   }
   .at-mention {
     color: #9ea9fc;
-    font-family: $title-font;
   }
   .eng {
     font-weight: bold;

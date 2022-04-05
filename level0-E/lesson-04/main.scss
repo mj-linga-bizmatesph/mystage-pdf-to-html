@@ -131,7 +131,7 @@
         margin-bottom: 8%;
       }
 
-      .phrase-wrapper:not(:last-child()) {
+      .phrase-wrapper:not(:last-child) {
         margin-bottom: 4%;
       }
 
@@ -229,6 +229,7 @@
           border-radius: clamp(1px, 1vw, 10px);
           border: 1px solid $primary-blue;
           background: #e7f3fa;
+          font-family: $noto-sans;
 
           .oblong {
             margin-left: $side-margin;
@@ -247,8 +248,10 @@
             li {
               @extend .fs-18;
               box-sizing: border-box;
-
-              &:not(:last-child()) {
+              &::marker {
+                font-weight: bold;
+              }
+              &:not(:last-child) {
                 margin-bottom: 6%;
               }
             }
@@ -293,7 +296,7 @@
           .eng:nth-child(1) {
             margin-bottom: 5%;
           }
-          .jap:not(:last-child()) {
+          .jap:not(:last-child) {
             margin-bottom: 5%;
           }
         }

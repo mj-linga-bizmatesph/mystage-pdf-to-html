@@ -116,7 +116,7 @@
         margin-bottom: 8%;
       }
 
-      .phrase-wrapper:not(:last-child()) {
+      .phrase-wrapper:not(:last-child) {
         margin-bottom: 4%;
       }
 
@@ -261,7 +261,7 @@
                 @extend .fs-18;
                 box-sizing: border-box;
 
-                &:not(:last-child()) {
+                &:not(:last-child) {
                   margin-bottom: 6%;
                 }
               }

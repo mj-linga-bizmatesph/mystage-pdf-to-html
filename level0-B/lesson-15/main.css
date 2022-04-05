@@ -45,7 +45,7 @@ body {
           flex-direction: row;
 }
 .html-lesson-wrapper header {
-  font-family: "Arial";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .fs-16 {
   font-size: clamp(12px, 2.3vw, 16px);
@@ -55,7 +55,7 @@ body {
   transform: scaleX(-1);
 }
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .b, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .arrow {
   font-weight: bold;
@@ -126,11 +126,11 @@ body {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .instructions {
   font-size: clamp(9px, 2.9vw, 18px);
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 27%;
@@ -165,7 +165,7 @@ body {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-content {
   margin-left: clamp(18px, 5vw, 32px);
@@ -235,7 +235,7 @@ body {
 }
 .html-lesson-wrapper .scene {
   margin-left: clamp(0px, 1vw, 2px);
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .scene .jap {
@@ -250,7 +250,7 @@ body {
 }
 .html-lesson-wrapper .converstation-text {
   margin-top: 20px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
@@ -274,7 +274,7 @@ body {
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .converstation-text .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content {
   margin-top: 59px;
@@ -287,7 +287,7 @@ body {
   width: clamp(287px, 74vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble {
@@ -310,7 +310,7 @@ body {
   margin-bottom: 20px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .jap {
   font-size: clamp(6px, 2.1vw, 9px);
@@ -325,7 +325,7 @@ body {
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text {
   margin-left: -22px;
   margin-top: 20px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
@@ -349,7 +349,7 @@ body {
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img2 {
   width: clamp(258px, 68vw, 416px);
@@ -375,12 +375,12 @@ body {
   margin-bottom: 20px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img2 .bubble .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text2 {
   margin-left: -22px;
   margin-top: 20px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 22px;
   font-size: clamp(9px, 2vw, 18px);
 }
@@ -404,13 +404,13 @@ body {
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text2 .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img1 {
   width: clamp(258px, 44vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img1 .bubble {
@@ -430,12 +430,12 @@ body {
   margin-bottom: 20px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img1 .bubble .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text3 {
   margin-left: -22px;
   margin-top: 20px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 22px;
   font-size: clamp(9px, 2vw, 18px);
 }
@@ -459,13 +459,13 @@ body {
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text3 .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img3 {
   width: clamp(303px, 52vw, 416px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img3 .bubble {
@@ -485,12 +485,12 @@ body {
   margin-bottom: 20px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img3 .bubble .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text4 {
   margin-left: -22px;
   margin-top: 20px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
@@ -514,13 +514,13 @@ body {
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text4 .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img4 {
   width: clamp(312px, 57vw, 473px);
   min-height: clamp(130px, 50vw, 230px);
   position: absolute;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble {
@@ -543,12 +543,12 @@ body {
   margin-bottom: 20px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img4 .bubble .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text5 {
   margin-left: -11px;
   margin-top: 20px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 22px;
   font-size: clamp(10px, 2vw, 18px);
 }
@@ -572,7 +572,7 @@ body {
   font-size: clamp(10px, 2vw, 18px);
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text5 .row p:last-child {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;

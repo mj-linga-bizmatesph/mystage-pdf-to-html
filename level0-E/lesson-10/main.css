@@ -49,55 +49,44 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .html-lesson-wrapper header {
   font-family: "Arial";
 }
-
 .html-lesson-wrapper .fs-16 {
   font-size: clamp(12px, 2.3vw, 16px);
 }
-
 .html-lesson-wrapper .flip-horizontal {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 .html-lesson-wrapper .noto-sans {
   font-family: "Noto Sans";
 }
-
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see {
+.html-lesson-wrapper .b, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .arrow {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .u-sup {
   border-bottom: solid 1.5px black;
   display: inline-block;
   line-height: clamp(6px, 1.5vw, 14px);
 }
-
 .html-lesson-wrapper .u-blue {
   border-bottom: 1px solid #1287cd;
 }
-
 .html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
-
 .html-lesson-wrapper .program-rank {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 5px);
 }
-
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px) clamp(10px, 2vw, 17px);
   background-color: #1287cd;
   font-size: clamp(7px, 1.8vw, 12px);
 }
-
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px) clamp(10px, 2vw, 17px);
   font-size: clamp(7px, 1.8vw, 12px);
@@ -106,11 +95,9 @@ hr {
   margin-left: -15px;
   width: 100%;
 }
-
 .html-lesson-wrapper .line {
   margin: 0 12px;
 }
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   top: 0.5vh;
@@ -118,7 +105,6 @@ hr {
   font-size: clamp(0.8rem, 4vw, 1.5rem);
   color: #ffffff;
 }
-
 .html-lesson-wrapper .title-section {
   position: absolute;
   top: clamp(30px, 8vw, 50px);
@@ -130,22 +116,18 @@ hr {
           box-sizing: border-box;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(13px, 3.6vw, 23px);
   margin-bottom: 4px;
 }
-
 .html-lesson-wrapper .title-section .title-below {
   font-size: clamp(13px, 3.6vw, 23px);
   margin-bottom: 10px;
 }
-
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
   letter-spacing: -1px;
 }
-
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
   font-size: clamp(12px, 2.3vw, 16px);
@@ -154,42 +136,34 @@ hr {
   background-size: contain;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .instructions {
   font-family: "Noto Sans";
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 28%;
 }
-
 .html-lesson-wrapper .instructions .title {
   font-size: clamp(9px, 2.9vw, 18px);
   color: #141821;
 }
-
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
   letter-spacing: -1px;
 }
-
 .html-lesson-wrapper .see-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .see-content.see-1 {
   margin-top: clamp(120px, 29vw, 183.2px);
 }
-
 .html-lesson-wrapper .see-content.see-2, .html-lesson-wrapper .see-content.see-3, .html-lesson-wrapper .see-content.see-4 {
   margin-top: clamp(20px, 5vw, 33px);
 }
-
 .html-lesson-wrapper .see-content.see-2 .legend, .html-lesson-wrapper .see-content.see-3 .legend, .html-lesson-wrapper .see-content.see-4 .legend {
   margin-top: clamp(25px, 5vw, 38px);
 }
-
 .html-lesson-wrapper .see-content .arrow.see {
   text-transform: uppercase;
   color: white;
@@ -200,43 +174,34 @@ hr {
   background-size: contain;
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .try-content.try-1 {
   margin-top: 32px;
 }
-
 .html-lesson-wrapper .try-content.try-2, .html-lesson-wrapper .try-content.try-3, .html-lesson-wrapper .try-content.try-4 {
   margin-top: 32px;
 }
-
 .html-lesson-wrapper .try-content .arrow.try {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-try-arrow.png);
 }
-
 .html-lesson-wrapper .act-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
-
 .html-lesson-wrapper .act-content.act-1 {
   margin-top: 32px;
 }
-
 .html-lesson-wrapper .act-content.act-2 {
   margin-top: 32px;
 }
-
 .html-lesson-wrapper .act-content .arrow.act {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
 }
-
 .html-lesson-wrapper .see-1 .section-1-convo {
   margin-top: clamp(30px, 8vw, 50px);
   width: clamp(310px, 90vw, 544px);
@@ -247,26 +212,22 @@ hr {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-10-part1.svg);
 }
-
 .html-lesson-wrapper .see-1 .section-1-convo .bubble-1 {
   position: absolute;
   top: 23%;
   left: 20%;
 }
-
 .html-lesson-wrapper .see-1 .section-1-convo .bubble-1 .eng {
   font-weight: bold;
   font-size: clamp(8.7px, 2.2vw, 14px);
   font-family: "Trebuchet MS";
 }
-
 .html-lesson-wrapper .see-1 .section-1-convo .bubble-1 .jap {
   font-family: "Noto Sans";
   font-size: clamp(6.5px, 1.6vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content {
   margin-left: 11px;
   margin-top: clamp(10px, 5vw, 40px);
@@ -277,48 +238,38 @@ hr {
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .speaker {
   white-space: nowrap;
   text-align: right;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content td {
   height: clamp(30px, 5vw, 40px);
   vertical-align: top;
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .add-margin {
   margin-top: 25px;
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .helen-lines {
   margin-top: 25px;
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .helen-lines .line-under {
   margin-left: clamp(41px, 9.2vw, 66px);
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .akiko-lines .line-under {
   margin-left: clamp(41px, 9.2vw, 66px);
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .akiko-lines .div-1 {
   margin-left: clamp(41px, 9.2vw, 66px);
   margin-top: 25px;
 }
-
 .html-lesson-wrapper .see-1 .convo-text-content .akiko-lines .div-2 {
   margin-top: 25px;
   margin-left: clamp(41px, 9.2vw, 66px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 {
   margin-bottom: clamp(50px, 10vw, 70px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo {
   margin-top: clamp(30px, 8vw, 50px);
   width: clamp(310px, 90vw, 540px);
@@ -329,63 +280,52 @@ hr {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-10-part1-image1.svg);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 {
   position: absolute;
   margin-left: clamp(45px, 13vw, 103px);
   top: 13%;
   font-size: clamp(8px, 2.4vw, 14px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 ul li {
   list-style-type: none;
   margin-bottom: clamp(7px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 ul li span {
   color: transparent;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-2 {
   position: absolute;
   top: 32%;
   left: 66%;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-2 .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
   font-size: clamp(8px, 2.4vw, 14px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-2 .jap {
   font-family: "Noto Sans";
   font-size: clamp(6.3px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(10.9px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .speaker {
   white-space: nowrap;
   text-align: right;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content td {
   height: clamp(30px, 5vw, 40px);
   vertical-align: top;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 {
   margin-bottom: clamp(50px, 10vw, 70px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo {
   margin-top: clamp(30px, 8vw, 50px);
   width: clamp(310px, 90vw, 540px);
@@ -396,44 +336,36 @@ hr {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-10-part1-image2.svg);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble {
   position: absolute;
   margin-left: clamp(36px, 12vw, 98px);
   top: 14%;
   font-size: clamp(8px, 2.4vw, 14px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul li {
   list-style-type: none;
   margin-bottom: clamp(7px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul li span {
   color: transparent;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .speaker {
   white-space: nowrap;
   text-align: right;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content td {
   height: clamp(30px, 5vw, 40px);
   vertical-align: top;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 {
   margin-bottom: clamp(50px, 10vw, 70px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo {
   margin-top: clamp(30px, 8vw, 50px);
   width: clamp(310px, 90vw, 540px);
@@ -444,45 +376,37 @@ hr {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-10-part1-image3.svg);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble {
   position: absolute;
   margin-left: clamp(15px, 8vw, 70px);
   top: 18%;
   font-size: clamp(8px, 2.4vw, 14px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble ul li {
   font-weight: bold;
   list-style-type: none;
   margin-bottom: clamp(6px, 1.8vw, 12px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble ul li span {
   color: transparent;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .speaker {
   white-space: nowrap;
   text-align: right;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content td {
   height: clamp(30px, 5vw, 40px);
   vertical-align: top;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 {
   margin-bottom: clamp(50px, 10vw, 70px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo {
   margin-top: clamp(30px, 8vw, 50px);
   width: clamp(310px, 90vw, 540px);
@@ -493,44 +417,36 @@ hr {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-10-part1-image4.svg);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 {
   position: absolute;
   margin-left: clamp(50px, 18vw, 120px);
   top: 14%;
   font-size: clamp(8px, 2.4vw, 14px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li {
   list-style-type: none;
   margin-bottom: clamp(6px, 1.8vw, 12px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li span {
   color: transparent;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .speaker {
   white-space: nowrap;
   text-align: right;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content td {
   height: clamp(30px, 5vw, 40px);
   vertical-align: top;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 {
   margin-bottom: clamp(50px, 10vw, 70px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo {
   margin-top: clamp(30px, 8vw, 50px);
   width: clamp(310px, 90vw, 540px);
@@ -541,37 +457,30 @@ hr {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-10-part1-image5.svg);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble {
   position: absolute;
   margin-left: clamp(40px, 13vw, 90px);
   top: 12%;
   font-size: clamp(8px, 2.4vw, 14px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul li {
   list-style-type: none;
   margin-bottom: clamp(6px, 1.8vw, 12px);
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul li span {
   color: transparent;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans";
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .speaker {
   white-space: nowrap;
   text-align: right;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content td {
   height: clamp(30px, 5vw, 40px);
   vertical-align: top;
 }
-/*# sourceMappingURL=main.css.map */

@@ -540,24 +540,24 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-.try .content-table .table-header {
+.html-lesson-wrapper .try .content-table .table-header {
   width: 30% !important;
 }
 
-.try .content-table .table-header:first-child {
+.html-lesson-wrapper .try .content-table .table-header:first-child {
   width: 40% !important;
 }
 
-.try .content-table td.empty {
+.html-lesson-wrapper .try .content-table td.empty {
   height: 20px;
 }
 
-.act-spacer {
+.html-lesson-wrapper .act-spacer {
   padding-bottom: 10rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .act-spacer {
+  .html-lesson-wrapper .act-spacer {
     padding-bottom: 0;
   }
 }

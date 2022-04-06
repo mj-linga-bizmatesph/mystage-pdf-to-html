@@ -540,16 +540,16 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-.try .content-table .table-header {
+.html-lesson-wrapper .try .content-table .table-header {
   width: 33.33% !important;
 }
 
-.act-spacer {
+.html-lesson-wrapper .act-spacer {
   padding-bottom: 5rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .act-spacer {
+  .html-lesson-wrapper .act-spacer {
     padding-bottom: 0;
   }
 }

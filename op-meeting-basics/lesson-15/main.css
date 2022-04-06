@@ -540,23 +540,23 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-.title {
+.html-lesson-wrapper .title {
   padding-bottom: 10% !important;
 }
 
 @media only screen and (max-device-width: 767px) {
-  .title {
+  .html-lesson-wrapper .title {
     padding-top: 4%;
     padding-bottom: 3%;
   }
 }
 
-.part-spacer {
+.html-lesson-wrapper .part-spacer {
   padding-bottom: 15rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .part-spacer {
+  .html-lesson-wrapper .part-spacer {
     padding-bottom: 0;
   }
 }

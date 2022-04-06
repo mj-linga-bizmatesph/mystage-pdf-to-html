@@ -540,12 +540,12 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-.act-spacer {
+.html-lesson-wrapper .act-spacer {
   padding-bottom: 10rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .act-spacer {
+  .html-lesson-wrapper .act-spacer {
     padding-bottom: 0;
   }
 }

@@ -14,14 +14,14 @@ body {
   overflow: hidden;
   position: relative;
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg");
-  background-position: top, bottom;
+  background-position: top, -11.5px 100%;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
 
 .html-lesson-wrapper header {
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", sans-serif;
   margin-bottom: clamp(110px, 30vw, 270px);
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: "Helvetica" !important;
+  font-family: "Helvetica", "Arial", sans-serif !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
@@ -98,7 +98,7 @@ body {
   left: -78px;
   color: #cc3366;
   font-weight: bold;
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
 }
 
@@ -213,8 +213,8 @@ body {
   text-align: right;
   bottom: 43px;
   right: 8.2%;
-  font-family: "Helvetica";
-  max-width: 54%;
+  font-family: "Helvetica", "Arial", sans-serif;
+  max-width: 40%;
 }
 
 @media screen and (max-width: 900px) {
@@ -271,6 +271,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .html-lesson-wrapper {
+    background-position: top, -11px 100% !important;
+  }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }
@@ -284,6 +287,9 @@ body {
 }
 
 @media screen and (max-width: 460px) {
+  .html-lesson-wrapper {
+    background-position: top, -1.5px 100% !important;
+  }
   .html-lesson-wrapper .text-header {
     left: -12px !important;
   }

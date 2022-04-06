@@ -14,7 +14,7 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: 11%;
+  padding-bottom: 7%;
   background-image: url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png"), url("https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
@@ -348,7 +348,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
-    min-height: unset;
+    min-height: 581px;
   }
   .html-lesson-wrapper .see-content {
     margin-top: clamp(22px, 3.8vw, 36px);
@@ -412,4 +412,3 @@ body {
     border-top-width: 5.5px !important;
   }
 }
-/*# sourceMappingURL=small-talk.css.map */

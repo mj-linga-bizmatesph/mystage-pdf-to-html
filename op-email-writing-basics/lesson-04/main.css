@@ -311,7 +311,7 @@ footer .footer-text {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-  width: 11%;
+  width: 13%;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
@@ -342,9 +342,16 @@ footer .footer-text {
   list-style-position: inside;
 }
 
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 
@@ -555,7 +562,7 @@ footer .footer-text {
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 

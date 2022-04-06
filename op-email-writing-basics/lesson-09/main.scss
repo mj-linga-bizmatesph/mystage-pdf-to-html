@@ -271,7 +271,7 @@ footer {
       justify-content: flex-start;
       margin-bottom: 5rem;
       .biz-tip-label {
-        width: 11%;
+        width: 13%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
@@ -295,9 +295,15 @@ footer {
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
+          li {
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 1em;
+            padding-left: 0.5em;
+          }
           li::before {
             content: '';
-            display: inline-block;
+            display: block;
             width: 0.5em;
           }
           li::marker {
@@ -338,6 +344,7 @@ footer {
         font-size: clamp(12px, 3vw, 16px);
         vertical-align: middle;
         padding-left: clamp(10px, 4vw, 60px);
+        width: 88%;
       }
     }
     &.review {
@@ -474,9 +481,15 @@ footer {
             list-style-type: '\25BC';
             box-sizing: content-box;
             list-style-position: inside;
+            li {
+              list-style-position: outside;
+              text-indent: -1em;
+              margin-left: 1em;
+              padding-left: 0.5em;
+            }
             li::before {
               content: '';
-              display: inline-block;
+              display: block;
               width: 0.5em;
             }
             li::marker {

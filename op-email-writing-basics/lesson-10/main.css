@@ -342,9 +342,16 @@ footer .footer-text {
   list-style-position: inside;
 }
 
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 
@@ -400,6 +407,7 @@ footer .footer-text {
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 60px);
   margin-top: 55px;
+  width: 88%;
 }
 
 .html-lesson-wrapper .content-item .content-label .content-label-text-2 {
@@ -408,6 +416,7 @@ footer .footer-text {
   font-size: clamp(12px, 3vw, 16px);
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 60px);
+  width: 88%;
 }
 
 .html-lesson-wrapper .content-item.review .content-label {
@@ -564,9 +573,16 @@ footer .footer-text {
   list-style-position: inside;
 }
 
+.html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 

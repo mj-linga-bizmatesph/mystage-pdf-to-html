@@ -1,0 +1,186 @@
+@import '../../css/level0-utils';
+//individual differences
+.html-lesson-wrapper {
+  .lesson-number {
+    right: 6.7%;
+  }
+  .part-content {
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+    &.part-1 {
+      margin-top: 29%;
+
+      .blue-line {
+        margin-top: 5%;
+      }
+
+      .table {
+        font-family: $noto-sans;
+
+        .jap {
+          margin-bottom: 3.6%;
+        }
+        .name {
+          width: 14%;
+          padding-left: 1%;
+          padding-right: 2%;
+
+          & ~ td > .eng {
+            margin-bottom: 4%;
+          }
+        }
+      }
+
+      .office-section {
+        margin-top: 6%;
+
+        .speech {
+          &.helen {
+            margin-top: 12%;
+            left: 28%;
+          }
+        }
+      }
+    }
+
+    &.part-2 {
+      margin-top: 7%;
+
+      .choice {
+        td {
+          padding-bottom: 4%;
+        }
+      }
+
+      .new-line {
+        margin-left: -6%;
+      }
+
+      .office-part-2-1 {
+        margin-top: 13%;
+      }
+
+      .office-part-2-2,
+      .office-part-2-3,
+      .office-part-2-4,
+      .office-part-2-5 {
+        margin-top: 11%;
+      }
+
+      .office-part-2-1,
+      .office-part-2-2,
+      .office-part-2-3,
+      .office-part-2-4,
+      .office-part-2-5 {
+        .speech {
+          font-size: clamp(8px, 2.2vw, 14px);
+
+          &.akiko {
+            margin-top: 11%;
+            left: 31%;
+          }
+
+          .choice {
+            .choice-letter {
+              @extend .b;
+              padding-right: clamp(10px, 4vw, 20px);
+            }
+            .choice-phrase {
+              @extend .b;
+            }
+          }
+        }
+      }
+
+      .office-part-2-1 {
+        .speech {
+          &.akiko {
+            margin-top: 11%;
+            left: 34%;
+          }
+        }
+      }
+
+      .office-part-2-2 {
+        .speech {
+          &.mandy-1 {
+            margin-top: 14%;
+            left: 14%;
+          }
+          &.mandy-2 {
+            margin-top: 42%;
+            left: 14%;
+
+            .eng:not(:last-child()) {
+              margin-bottom: 4.5%;
+            }
+          }
+        }
+      }
+
+      .office-part-2-3 {
+        .speech {
+          &.akiko {
+            margin-top: 9%;
+            left: 28%;
+          }
+        }
+      }
+
+      .office-part-2-4 {
+        .speech {
+          &.brenda-1 {
+            margin-top: 9.5%;
+            left: 16%;
+          }
+
+          &.brenda-2 {
+            margin-top: 34.5%;
+            left: 13%;
+          }
+          .eng:not(:last-child()) {
+            margin-bottom: 4.5%;
+          }
+        }
+      }
+
+      .office-part-2-5 {
+        .speech {
+          &.akiko-1 {
+            margin-top: 10.5%;
+            left: 14%;
+          }
+
+          &.akiko-2 {
+            margin-top: 33.5%;
+            left: 14%;
+          }
+          .eng:not(:last-child()) {
+            margin-bottom: 7%;
+          }
+        }
+      }
+
+      .blue-line {
+        margin-top: 2%;
+      }
+
+      .table {
+        font-family: $noto-sans;
+
+        .jap {
+          margin-bottom: 3.6%;
+        }
+        .name {
+          width: 14%;
+
+          & ~ td > .eng {
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+  }
+}

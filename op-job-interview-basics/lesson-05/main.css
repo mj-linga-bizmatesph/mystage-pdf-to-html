@@ -395,19 +395,24 @@ body {
 }
 
 .html-lesson-wrapper .see-content ol {
+  list-style-type: decimal;
   margin: 0;
+  margin-left: 1em;
+  text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
-  counter-reset: list;
-  list-style-position: inside;
 }
 
-.html-lesson-wrapper .see-content li {
+.html-lesson-wrapper .see-content ol li {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
   margin-bottom: 2%;
 }
 
-.html-lesson-wrapper .see-content li span {
-  margin-left: 2%;
+.html-lesson-wrapper .see-content ol li::before {
+  content: '';
+  width: 2%;
+  display: inline-block;
 }
 
 .html-lesson-wrapper .see-content .paper {

@@ -205,6 +205,7 @@ footer {
         clamp(10px, 3vw, 17px);
       background-color: $primary-pink;
       font-size: clamp(8px, 1.8vw, 15px);
+      font-family: $helvetica;
     }
     .level {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 25px)

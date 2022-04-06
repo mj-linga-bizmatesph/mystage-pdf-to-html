@@ -169,7 +169,7 @@ body .see-content .row .breaker {
 body .see-content .row table {
   width: 50%;
   padding-right: 5%;
-  border: 1px solid;
+  border: 1px solid #d9d9d9;
   padding: 7px;
 }
 body .see-content .row table tr td .u-line {
@@ -283,6 +283,7 @@ body .try-content {
 body .try-content .table-1 {
   width: 100%;
   border-collapse: collapse;
+  border-color: #d9d9d9;
 }
 body .try-content .table-1 tr td,
 body .try-content .table-1 tr th {

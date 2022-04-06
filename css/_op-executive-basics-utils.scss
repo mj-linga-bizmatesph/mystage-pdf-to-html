@@ -1,13 +1,13 @@
 $helvetica: Helvetica, Arial, 'Sans-serif';
 $trebuchet: 'Trebuchet MS';
+$magenta: #cc3366;
+$magenta-light: #f0d4d4;
+$blue-green: #339999;
 
 body {
   margin: 0;
   padding: 0;
 }
-$magenta: #cc3366;
-$magenta-light: #f0d4d4;
-$blue-green: #339999;
 
 .html-lesson-wrapper {
   width: 100%;
@@ -258,10 +258,15 @@ $blue-green: #339999;
   .try-content {
     ul {
       list-style-type: decimal;
-      list-style-position: inside;
       margin: 0;
+      margin-left: 1em;
+      text-indent: -1em;
       margin-block: 0;
       padding-inline: 0;
+
+      li {
+        padding-inline-start: 1em;
+      }
 
       li::before {
         content: '';

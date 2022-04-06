@@ -250,10 +250,16 @@ body {
 
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;
-  list-style-position: inside;
   margin: 0;
+  margin-left: 1em;
+  text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
+}
+
+.html-lesson-wrapper .try-content ul li {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
 }
 
 .html-lesson-wrapper .try-content ul li::before {

@@ -26,13 +26,13 @@ body .html-lesson-wrapper {
 
   .subject-label {
     text-align: right;
-    width: 330px;
+    width: 350px;
     .arrow {
       background-image: url(#{$s3}/arrow.svg);
       background-repeat: no-repeat;
       position: absolute;
       top: 40%;
-      right: 22.1%;
+      right: 21%;
       width: 100px;
       height: 20px;
     }
@@ -52,7 +52,7 @@ body .html-lesson-wrapper {
       background-repeat: no-repeat;
       position: absolute;
       top: 4.5%;
-      right: 22.5%;
+      right: 21.5%;
       width: 300px;
       height: 20px;
     }
@@ -74,7 +74,7 @@ body .html-lesson-wrapper {
       background-repeat: no-repeat;
       position: absolute;
       top: 23%;
-      right: 22.5%;
+      right: 21.5%;
       width: 100px;
       height: 20px;
     }
@@ -89,7 +89,7 @@ body .html-lesson-wrapper {
   }
   .main-message-label {
     text-align: right;
-    width: 250px;
+    width: 258px;
     position: absolute;
     top: 38%;
     left: 60.5%;
@@ -99,7 +99,7 @@ body .html-lesson-wrapper {
       background-repeat: no-repeat;
       position: absolute;
       top: 42%;
-      right: 53%;
+      right: 52%;
       width: 100px;
       height: 20px;
     }
@@ -124,7 +124,7 @@ body .html-lesson-wrapper {
       background-repeat: no-repeat;
       position: absolute;
       top: 67.5%;
-      right: 23%;
+      right: 21.5%;
       width: 100px;
       height: 20px;
     }
@@ -347,6 +347,7 @@ body .see-content .col {
   line-height: clamp(12px, 3vw, 26px);
   width: 100%;
   border: 3px solid rgb(203, 203, 203);
+  padding-left: 8px;
 }
 body .see-content .col-img {
   position: absolute;
@@ -463,7 +464,7 @@ body footer {
   }
 
   .subject-label {
-    width: 290px !important;
+    width: 301px !important;
     .arrow {
       right: 22.5% !important;
     }
@@ -471,6 +472,7 @@ body footer {
   .greeting-label {
     width: 513px !important;
     .arrow {
+      right: 21% !important;
       top: 4% !important;
     }
   }
@@ -478,7 +480,8 @@ body footer {
     width: 258px !important;
 
     .arrow {
-      top: 21% !important;
+      right: 21% !important;
+      top: 23% !important;
     }
   }
   .main-message-label {
@@ -490,10 +493,10 @@ body footer {
     }
   }
   .closing-label {
-    width: 323px !important;
+    width: 320px !important;
 
     .arrow {
-      right: 22.5% !important;
+      right: 21.8% !important;
     }
   }
 }
@@ -503,20 +506,20 @@ body footer {
   }
 
   .subject-label {
-    width: 290px !important;
+    width: 300px !important;
     .arrow {
       right: 22% !important;
     }
   }
   .greeting-label {
-    width: 510px !important;
+    width: 500px !important;
     .arrow {
       top: 4% !important;
       right: 22% !important;
     }
   }
   .opening-label {
-    width: 258px !important;
+    width: 248px !important;
 
     .arrow {
       top: 23% !important;
@@ -532,7 +535,7 @@ body footer {
     }
   }
   .closing-label {
-    width: 323px !important;
+    width: 313px !important;
 
     .arrow {
       right: 22% !important;
@@ -545,20 +548,20 @@ body footer {
   }
 
   .subject-label {
-    width: 280px !important;
+    width: 293px !important;
     .arrow {
       right: 22.5% !important;
     }
   }
   .greeting-label {
-    width: 495px !important;
+    width: 487px !important;
     .arrow {
       top: 4% !important;
       right: 22.5% !important;
     }
   }
   .opening-label {
-    width: 250px !important;
+    width: 243px !important;
 
     .arrow {
       top: 21% !important;
@@ -573,7 +576,7 @@ body footer {
     }
   }
   .closing-label {
-    width: 315px !important;
+    width: 307px !important;
 
     .arrow {
       right: 22% !important;
@@ -677,7 +680,7 @@ body footer {
     border-top: 5.5px solid #000000 !important;
   }
   .subject-label {
-    width: 100px !important;
+    width: 110px !important;
     .arrow {
       top: 30% !important;
       right: 24% !important;
@@ -688,7 +691,7 @@ body footer {
     }
   }
   .greeting-label {
-    width: 225px !important;
+    width: 217px !important;
     .arrow {
       right: 23% !important;
       width: 120px !important;
@@ -698,12 +701,12 @@ body footer {
     }
   }
   .opening-label {
-    width: 93.5px !important;
+    width: 87px !important;
 
     .arrow {
-      top: 23.5% !important;
+      top: 22.5% !important;
       right: 23% !important;
-      width: 30px !important;
+      width: 25px !important;
     }
     .opening-label-box {
       width: 60px !important;
@@ -722,7 +725,7 @@ body footer {
     }
   }
   .closing-label {
-    width: 129px !important;
+    width: 122px !important;
 
     .arrow {
       width: 50px !important;
@@ -821,7 +824,7 @@ body footer {
 }
 @media screen and (max-width: 415px) {
   .subject-label {
-    width: 95px !important;
+    width: 107px !important;
     .arrow {
       top: 30% !important;
       right: 20% !important;
@@ -832,7 +835,7 @@ body footer {
     }
   }
   .greeting-label {
-    width: 216px !important;
+    width: 207px !important;
     .arrow {
       right: 20% !important;
       width: 100px !important;
@@ -842,10 +845,10 @@ body footer {
     }
   }
   .opening-label {
-    width: 89px !important;
+    width: 80px !important;
 
     .arrow {
-      top: 23% !important;
+      top: 23.5% !important;
       right: 20% !important;
       width: 18px !important;
     }
@@ -863,10 +866,12 @@ body footer {
     .main-message-label-box {
       width: 45px !important;
       height: 25px !important;
+      padding-bottom: 2px;
+      padding-top: 2px !important;
     }
   }
   .closing-label {
-    width: 122px !important;
+    width: 113px !important;
 
     .arrow {
       width: 30px !important;
@@ -879,7 +884,7 @@ body footer {
 }
 @media screen and (max-width: 400px) {
   .subject-label {
-    width: 85px !important;
+    width: 97px !important;
     .arrow {
       top: 30% !important;
       right: 25% !important;
@@ -890,7 +895,7 @@ body footer {
     }
   }
   .greeting-label {
-    width: 200px !important;
+    width: 192px !important;
     .arrow {
       right: 25% !important;
       width: 100px !important;
@@ -900,15 +905,15 @@ body footer {
     }
   }
   .opening-label {
-    width: 80px !important;
+    width: 72px !important;
 
     .arrow {
-      top: 21.5% !important;
-      right: 25% !important;
-      width: 18px !important;
+      top: 23.5% !important;
+      right: 23% !important;
+      width: 13px !important;
     }
     .opening-label-box {
-      width: 60px !important;
+      width: 55px !important;
     }
   }
   .main-message-label {
@@ -916,15 +921,17 @@ body footer {
 
     .arrow {
       right: 50% !important;
-      width: 30px !important;
+      width: 25px !important;
     }
     .main-message-label-box {
+      padding-top: 2px !important;
+      padding-bottom: 2px;
       width: 47px !important;
-      height: 20px !important;
+      height: 15px !important;
     }
   }
   .closing-label {
-    width: 111px !important;
+    width: 103px !important;
 
     .arrow {
       width: 40px !important;
@@ -937,7 +944,7 @@ body footer {
 }
 @media screen and (max-width: 376px) {
   .subject-label {
-    width: 75px !important;
+    width: 86px !important;
     .arrow {
       top: 30% !important;
       right: 24% !important;
@@ -948,7 +955,7 @@ body footer {
     }
   }
   .greeting-label {
-    width: 187px !important;
+    width: 179px !important;
     .arrow {
       right: 23% !important;
       width: 100px !important;
@@ -958,12 +965,12 @@ body footer {
     }
   }
   .opening-label {
-    width: 72px !important;
+    width: 65px !important;
 
     .arrow {
-      top: 24% !important;
+      top: 22% !important;
       right: 23% !important;
-      width: 18px !important;
+      width: 14px !important;
     }
     .opening-label-box {
       width: 50px !important;
@@ -973,20 +980,22 @@ body footer {
     width: 93px !important;
 
     .arrow {
-      right: 53% !important;
+      right: 50% !important;
       width: 20px !important;
     }
     .main-message-label-box {
-      width: 45px !important;
-      height: 20px !important;
+      padding-top: 2px !important;
+      padding-bottom: 2px;
+      width: 43px !important;
+      height: 15px !important;
     }
   }
   .closing-label {
-    width: 102px !important;
+    width: 95px !important;
 
     .arrow {
       width: 30px !important;
-      right: 24% !important;
+      right: 22.5% !important;
     }
     .closing-label-box {
       width: 50px !important;
@@ -995,7 +1004,7 @@ body footer {
 }
 @media screen and (max-width: 360px) {
   .subject-label {
-    width: 70px !important;
+    width: 82px !important;
     .arrow {
       top: 30% !important;
       right: 24% !important;
@@ -1006,7 +1015,7 @@ body footer {
     }
   }
   .greeting-label {
-    width: 178px !important;
+    width: 170px !important;
     .arrow {
       right: 24% !important;
       width: 80px !important;
@@ -1016,34 +1025,36 @@ body footer {
     }
   }
   .opening-label {
-    width: 67.5px !important;
+    width: 60px !important;
 
     .arrow {
-      top: 21.5% !important;
-      right: 24% !important;
+      top: 23.5% !important;
+      right: 21% !important;
       width: 15px !important;
     }
     .opening-label-box {
-      width: 50px !important;
+      width: 45px !important;
     }
   }
   .main-message-label {
-    width: 88px !important;
+    width: 90px !important;
 
     .arrow {
-      right: 52% !important;
+      right: 48% !important;
       width: 20px !important;
     }
     .main-message-label-box {
-      width: 42px !important;
-      height: 20px !important;
+      padding-top: 2px !important;
+      padding-bottom: 2px;
+      width: 40px !important;
+      height: 15px !important;
     }
   }
   .closing-label {
-    width: 96px !important;
+    width: 88.5px !important;
 
     .arrow {
-      width: 40px !important;
+      width: 35px !important;
       right: 24% !important;
     }
     .closing-label-box {

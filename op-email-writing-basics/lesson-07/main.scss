@@ -50,7 +50,7 @@ footer {
     width: 100%;
     right: 2%;
     @media only screen and (max-width: 767px) {
-      max-width: 117px;
+      max-width: 156px;
     }
   }
 }
@@ -375,7 +375,7 @@ footer {
       }
       .header-text-2 {
         margin: 0;
-        width: 153%;
+        width: 166%;
         font-family: $helvetica;
         font-size: clamp(12px, 3vw, 15px);
         font-weight: bold;
@@ -383,6 +383,7 @@ footer {
         margin-top: clamp(-2px, -1vw, -3px);
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-gap: 3px;
       }
       .grid-section {
         display: grid;
@@ -392,6 +393,7 @@ footer {
           .message {
             border: 4px solid rgb(210, 209, 209);
             border-radius: 3px;
+            padding-left: 8px;
           }
         }
 
@@ -399,6 +401,7 @@ footer {
           .message {
             border: 4px solid rgb(210, 209, 209);
             border-radius: 3px;
+            padding-left: 8px;
           }
         }
       }

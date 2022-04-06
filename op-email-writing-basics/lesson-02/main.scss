@@ -362,10 +362,11 @@ footer {
         display: grid;
         grid-template-columns: 50% 50%;
         width: 200%;
+        grid-gap: 3px;
       }
       .grid-section {
         display: grid;
-        grid-template-columns: 55% 53%;
+        grid-template-columns: 50% 50%;
 
         .left-section {
           .message {

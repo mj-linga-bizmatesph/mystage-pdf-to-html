@@ -429,6 +429,7 @@ footer .footer-text {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  grid-gap: 3%;
 }
 
 .html-lesson-wrapper .content-item .content-div .header-text-1 {
@@ -447,7 +448,7 @@ footer .footer-text {
 
 .html-lesson-wrapper .content-item .content-div .header-text-2 {
   margin: 0;
-  width: 153%;
+  width: 166%;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 3vw, 15px);
   font-weight: bold;
@@ -469,11 +470,13 @@ footer .footer-text {
 .html-lesson-wrapper .content-item .content-div .grid-section .left-section .message {
   border: 4px solid #d2d1d1;
   border-radius: 3px;
+  padding-left: 8px;
 }
 
 .html-lesson-wrapper .content-item .content-div .grid-section .right-section .message {
   border: 4px solid #d2d1d1;
   border-radius: 3px;
+  padding-left: 8px;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
@@ -482,11 +485,6 @@ footer .footer-text {
   display: flex;
   font-size: clamp(12px, 3vw, 15px);
   line-height: clamp(19px, 3vw, 24px);
-}
-
-.html-lesson-wrapper .content-item .content-div.see .dialogue .speaker {
-  width: 12%;
-  font-weight: bold;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .dialogue .message {

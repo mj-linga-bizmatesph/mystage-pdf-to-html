@@ -430,13 +430,14 @@ footer .footer-text {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   width: 200%;
+  grid-gap: 3px;
 }
 
 .html-lesson-wrapper .content-item .content-div .grid-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 55% 53%;
-      grid-template-columns: 55% 53%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .html-lesson-wrapper .content-item .content-div .grid-section .left-section .message {

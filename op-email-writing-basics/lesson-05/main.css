@@ -467,18 +467,20 @@ footer .footer-text {
 .html-lesson-wrapper .content-item .content-div .grid-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 53% 53%;
+      grid-template-columns: 53% 53%;
 }
 
 .html-lesson-wrapper .content-item .content-div .grid-section .left-section .message {
   border: 4px solid #d2d1d1;
   border-radius: 3px;
+  padding-left: 8px;
 }
 
 .html-lesson-wrapper .content-item .content-div .grid-section .right-section .message {
   border: 4px solid #d2d1d1;
   border-radius: 3px;
+  padding-left: 8px;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .dialogue {

@@ -243,7 +243,7 @@ hr {
 }
 .html-lesson-wrapper .section-1-convo .s1-bubble2 {
   left: 51.5%;
-  margin-top: clamp(58px, 16vw, 97px);
+  margin-top: clamp(55px, 15vw, 97px);
   width: clamp(140px, 40vw, 242px);
   min-height: clamp(30px, 8vw, 50px);
   position: absolute;
@@ -364,7 +364,7 @@ hr {
   margin-top: 15px;
 }
 .html-lesson-wrapper .see-2 .section2-content .section2-first-row .f2-c1 .box-2 {
-  width: clamp(100px, 23vw, 152.8px);
+  width: clamp(70px, 17vw, 120px);
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png);
   text-align: center;
   background-position: center;
@@ -412,7 +412,7 @@ hr {
   margin-top: clamp(25px, 5vw, 38px);
 }
 .html-lesson-wrapper .see-2 .section2-box-content .b1-legend {
-  width: clamp(80px, 15vw, 121px);
+  width: clamp(50px, 15vw, 80px);
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png);
   background-position: center;
   background-size: cover;
@@ -1030,20 +1030,14 @@ hr {
   margin-bottom: -70px;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 {
   padding-bottom: 20px;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko {
   padding-bottom: clamp(10px, 1vw, 20px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko .number-left,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .number-left,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .number-left,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko .number-left {
   padding-right: 20px;
   color: #1288cd;
@@ -1051,14 +1045,10 @@ hr {
   font-weight: bold;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko .akiko-line-1,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .akiko-line-1,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .akiko-line-1,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko .akiko-line-1 {
   font-size: clamp(10px, 2.1vw, 14px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko .number-right,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .number-right,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .number-right,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko .number-right {
   margin-left: 10px;
   padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
@@ -1076,14 +1066,10 @@ hr {
   text-align: center;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko .text-under,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .text-under,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .text-under,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko .text-under {
   margin-left: clamp(70px, 13vw, 84px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko .text-under .underline,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .text-under .underline,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .text-under .underline,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko .text-under .underline {
   margin-left: clamp(1px, 1.1vw, 8px);
   text-decoration: underline;
@@ -1091,53 +1077,199 @@ hr {
   font-size: clamp(9px, 2.5vw, 14px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-helen,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-helen {
   padding-bottom: clamp(10px, 1vw, 20px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-helen .number-left,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen .number-left,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen .number-left,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-helen .number-left {
   padding-right: 20px;
   color: white;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-helen .helen-line,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen .helen-line,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen .helen-line,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-helen .helen-line {
   font-size: clamp(10px, 2.1vw, 14px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-helen .text-under,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen .text-under,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen .text-under,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-helen .text-under {
   margin-left: clamp(70px, 13vw, 84px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko-last,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko-last {
   padding-bottom: clamp(10px, 3vw, 20px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko-last .number-left,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last .number-left,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last .number-left,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko-last .number-left {
   padding-right: 20px;
   color: white;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko-last .akiko-line-2,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last .akiko-line-2,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last .akiko-line-2,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko-last .akiko-line-2 {
   font-size: clamp(10px, 2.1vw, 14px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-1 .convo-wrap-akiko-last .letter-square,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last .letter-square,
-.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last .letter-square,
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-4 .convo-wrap-akiko-last .letter-square {
+  margin-left: 10px;
+  padding-left: clamp(3px, 0.3vw, 5px);
+  padding-right: clamp(4px, 0.3vw, 5px);
+  color: #1288cd;
+  font-size: clamp(10px, 2.1vw, 14px) !important;
+  font-weight: bold;
+  --size: clamp(13px, 2vw, 32px);
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: white;
+  border: 2.3px solid #1288cd;
+  text-align: center;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 {
+  padding-bottom: 20px;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko {
+  padding-bottom: clamp(10px, 1vw, 20px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .number-left {
+  padding-right: 20px;
+  color: #1288cd;
+  font-size: clamp(10px, 2.1vw, 14px);
+  font-weight: bold;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .akiko-line-1 {
+  font-size: clamp(10px, 2.1vw, 14px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .number-right {
+  margin-left: 10px;
+  padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
+  color: white;
+  font-size: clamp(10px, 2.1vw, 14px);
+  font-weight: bold;
+  --size: clamp(13px, 2vw, 32px);
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #1288cd;
+  border-radius: 50%;
+  text-align: center;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .text-under {
+  margin-left: clamp(70px, 13vw, 84px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko .text-under .underline {
+  margin-left: clamp(1px, 1.1vw, 8px);
+  text-decoration: underline;
+  color: #1287cd;
+  font-size: clamp(9px, 2.5vw, 14px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen {
+  padding-bottom: clamp(10px, 1vw, 20px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen .number-left {
+  padding-right: 20px;
+  color: white;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen .helen-line {
+  font-size: clamp(10px, 2.1vw, 14px);
+  margin-left: clamp(3px, 2vw, 4px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-helen .text-under {
+  margin-left: clamp(70px, 13vw, 84px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last {
+  padding-bottom: clamp(10px, 3vw, 20px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last .number-left {
+  padding-right: 20px;
+  color: white;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last .akiko-line-2 {
+  font-size: clamp(10px, 2.1vw, 14px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-2 .convo-wrap-akiko-last .letter-square {
+  margin-left: 10px;
+  padding-left: clamp(3px, 0.3vw, 5px);
+  padding-right: clamp(4px, 0.3vw, 5px);
+  color: #1288cd;
+  font-size: clamp(10px, 2.1vw, 14px) !important;
+  font-weight: bold;
+  --size: clamp(13px, 2vw, 32px);
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: white;
+  border: 2.3px solid #1288cd;
+  text-align: center;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 {
+  padding-bottom: 20px;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko {
+  padding-bottom: clamp(10px, 1vw, 20px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .number-left {
+  padding-right: 20px;
+  color: #1288cd;
+  font-size: clamp(10px, 2.1vw, 14px);
+  font-weight: bold;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .akiko-line-1 {
+  font-size: clamp(10px, 2.1vw, 14px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .number-right {
+  margin-left: 10px;
+  padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
+  color: white;
+  font-size: clamp(10px, 2.1vw, 14px);
+  font-weight: bold;
+  --size: clamp(13px, 2vw, 32px);
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #1288cd;
+  border-radius: 50%;
+  text-align: center;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .text-under {
+  margin-left: clamp(70px, 13vw, 84px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko .text-under .underline {
+  margin-left: clamp(1px, 1.1vw, 8px);
+  text-decoration: underline;
+  color: #1287cd;
+  font-size: clamp(9px, 2.5vw, 14px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen {
+  padding-bottom: clamp(10px, 1vw, 20px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen .number-left {
+  padding-right: 20px;
+  color: white;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen .helen-line {
+  font-size: clamp(10px, 2.1vw, 14px);
+  margin-left: clamp(-3px, -1vw, -3px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-helen .text-under {
+  margin-left: clamp(70px, 13vw, 84px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last {
+  padding-bottom: clamp(10px, 3vw, 20px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last .number-left {
+  padding-right: 20px;
+  color: white;
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last .akiko-line-2 {
+  font-size: clamp(10px, 2.1vw, 14px);
+}
+.html-lesson-wrapper .try-3 .try-3-content .conversation-text .convo-3 .convo-wrap-akiko-last .letter-square {
   margin-left: 10px;
   padding-left: clamp(3px, 0.3vw, 5px);
   padding-right: clamp(4px, 0.3vw, 5px);
@@ -1172,7 +1304,6 @@ hr {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-cloud-bubble-white.png);
   padding-top: clamp(3px, 3vw, 25px);
   padding-left: clamp(16px, 4.8vw, 40px);
   padding-bottom: clamp(5.2px, 2.6vw, 15px);
@@ -1246,6 +1377,21 @@ hr {
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .english .text-under,
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo3 .english .text-under,
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo4 .english .text-under {
+  margin-left: clamp(40px, 11vw, 87px);
+}
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo .english1,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo1 .english1,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .english1,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo3 .english1,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo4 .english1 {
+  font-size: clamp(10px, 2.3vw, 17px);
+  margin-left: clamp(15px, 5vw, 30px);
+}
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo .english1 .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo1 .english1 .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo2 .english1 .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo3 .english1 .text-under,
+.html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo4 .english1 .text-under {
   margin-left: clamp(40px, 11vw, 87px);
 }
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text .convo .line,

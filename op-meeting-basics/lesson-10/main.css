@@ -1,190 +1,17 @@
 /*
-this file is intended to be use Other Programs - Meeting Basics Lessons 1-20,
-if you want to override the specified class, go to the scss file
-of the lesson and make the same class, and override it depending
+this file is intended to be use Other Programs - Meeting Basics Lessons 1-20, 
+if you want to override the specified class, go to the scss file 
+of the lesson and make the same class, and override it depending 
 on what you need.
 */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS";
-  position: relative;
-}
-
-body::after {
-  content: '';
-  display: block;
-}
-
-header {
-  top: 0;
-  margin-bottom: clamp(50px, 15vw, 65px);
-  margin-top: -3%;
-  position: relative;
-}
-
-footer {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: clamp(5px, 1.5vw, 10px);
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 10%;
-  bottom: -20px;
-}
-
-@media only screen and (max-width: 767px) {
-  footer {
-    bottom: -45px;
-  }
-}
-
-footer .footer-text {
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  right: 2%;
-}
-
-@media only screen and (max-width: 767px) {
-  footer .footer-text {
-    max-width: 117px;
-  }
-}
-
-.img-responsive-clamp {
-  max-width: clamp(44%, 25vw, 100%);
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.flex-right {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-.flex-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.flex-vertical-middle {
-  justify-items: center;
-}
-
-.flex-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.mt-2 {
-  margin-top: 1rem;
-}
-
-.mt-4 {
-  margin-top: 2rem;
-}
-
-.mt-5 {
-  margin-top: 2.5rem;
-}
-
-.mt-7 {
-  margin-top: 3.5rem;
-}
-
-.mt-8 {
-  margin-top: 4rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.gray-text, .jp {
-  color: #9fa0a0;
-}
-
-.white-text {
-  color: #fff;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-middle {
-  vertical-align: middle !important;
-}
-
-.flip-horizontal {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.middle-dot {
-  font-family: "Helvetica", "Arial", sans-serif;
-  position: absolute;
-}
-
-[class*='col-'] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
 }
 
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
+  position: relative;
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -206,6 +33,173 @@ footer .footer-text {
   }
 }
 
+.html-lesson-wrapper header {
+  top: 0;
+  margin-bottom: clamp(50px, 15vw, 65px);
+  margin-top: -3%;
+  position: relative;
+}
+
+.html-lesson-wrapper footer {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: clamp(5px, 1.5vw, 10px);
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 10%;
+  bottom: -20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper footer {
+    bottom: -45px;
+  }
+}
+
+.html-lesson-wrapper footer .footer-text {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: 2%;
+}
+
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper footer .footer-text {
+    max-width: 117px;
+  }
+}
+
+.html-lesson-wrapper .img-responsive-clamp {
+  max-width: clamp(44%, 25vw, 100%);
+}
+
+.html-lesson-wrapper .inline-block {
+  display: inline-block;
+}
+
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .flex-right {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.html-lesson-wrapper .flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.html-lesson-wrapper .flex-vertical-middle {
+  justify-items: center;
+}
+
+.html-lesson-wrapper .flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.html-lesson-wrapper .mt-2 {
+  margin-top: 1rem;
+}
+
+.html-lesson-wrapper .mt-4 {
+  margin-top: 2rem;
+}
+
+.html-lesson-wrapper .mt-5 {
+  margin-top: 2.5rem;
+}
+
+.html-lesson-wrapper .mt-7 {
+  margin-top: 3.5rem;
+}
+
+.html-lesson-wrapper .mt-8 {
+  margin-top: 4rem;
+}
+
+.html-lesson-wrapper .pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.html-lesson-wrapper .gray-text, .html-lesson-wrapper .jp {
+  color: #9fa0a0;
+}
+
+.html-lesson-wrapper .white-text {
+  color: #fff;
+}
+
+.html-lesson-wrapper .text-center {
+  text-align: center !important;
+}
+
+.html-lesson-wrapper .text-middle {
+  vertical-align: middle !important;
+}
+
+.html-lesson-wrapper .flip-horizontal {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.html-lesson-wrapper .middle-dot {
+  font-family: "Helvetica", "Arial", sans-serif;
+  position: absolute;
+}
+
+.html-lesson-wrapper [class*='col-'] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .html-lesson-wrapper .col-1 {
+    width: 8.33%;
+  }
+  .html-lesson-wrapper .col-2 {
+    width: 16.66%;
+  }
+  .html-lesson-wrapper .col-3 {
+    width: 25%;
+  }
+  .html-lesson-wrapper .col-4 {
+    width: 33.33%;
+  }
+  .html-lesson-wrapper .col-5 {
+    width: 41.66%;
+  }
+  .html-lesson-wrapper .col-6 {
+    width: 50%;
+  }
+  .html-lesson-wrapper .col-7 {
+    width: 58.33%;
+  }
+  .html-lesson-wrapper .col-8 {
+    width: 66.66%;
+  }
+  .html-lesson-wrapper .col-9 {
+    width: 75%;
+  }
+  .html-lesson-wrapper .col-10 {
+    width: 83.33%;
+  }
+  .html-lesson-wrapper .col-11 {
+    width: 91.66%;
+  }
+  .html-lesson-wrapper .col-12 {
+    width: 100%;
+  }
+}
+
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
@@ -224,6 +218,7 @@ footer .footer-text {
 }
 
 .html-lesson-wrapper .program-rank {
+  font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
@@ -232,7 +227,7 @@ footer .footer-text {
 
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-  background-color: #bd3762;
+  background-color: #cc3366;
   font-size: clamp(8px, 1.8vw, 15px);
 }
 
@@ -319,7 +314,7 @@ footer .footer-text {
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
   padding-left: clamp(10px, 4vw, 60px);
 }
@@ -345,9 +340,16 @@ footer .footer-text {
   list-style-position: inside;
 }
 
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 
@@ -455,6 +457,10 @@ footer .footer-text {
   background-color: #bd3762;
 }
 
+.html-lesson-wrapper .content-item .content-div.try .content-table th {
+  vertical-align: middle !important;
+}
+
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 2px solid #d9d9d9;
@@ -492,12 +498,18 @@ footer .footer-text {
   list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  list-style-position: inside;
+}
+
+.html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 0.5em;
 }
 

@@ -1,7 +1,13 @@
 /*
+<<<<<<< HEAD
 this file is intended to be use Other Programs - Meeting Basics Lessons 1-20,
 if you want to override the specified class, go to the scss file
 of the lesson and make the same class, and override it depending
+=======
+this file is intended to be use Other Programs - Meeting Basics Lessons 1-20, 
+if you want to override the specified class, go to the scss file 
+of the lesson and make the same class, and override it depending 
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
 on what you need.
 */
 $trebuchet: 'Trebuchet MS';
@@ -23,6 +29,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 body {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   font-family: $trebuchet;
   position: relative;
 }
@@ -167,10 +174,16 @@ footer {
   .col-12 {
     width: 100%;
   }
+=======
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
 }
 
 .html-lesson-wrapper {
   font-family: $trebuchet;
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
   width: 100%;
   min-width: 360px;
   max-width: 892.75px;
@@ -186,6 +199,145 @@ footer {
   @media only screen and (max-width: 767px) {
     min-height: 800px;
   }
+<<<<<<< HEAD
+=======
+  header {
+    top: 0;
+    margin-bottom: clamp(50px, 15vw, 65px);
+    margin-top: -3%;
+    position: relative;
+  }
+
+  footer {
+    font-family: $helvetica;
+    font-size: clamp(5px, 1.5vw, 10px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: -20px;
+    @media only screen and (max-width: 767px) {
+      bottom: -45px;
+    }
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      right: 2%;
+      @media only screen and (max-width: 767px) {
+        max-width: 117px;
+      }
+    }
+  }
+
+  .jp {
+    @extend .gray-text;
+  }
+
+  // Global classes
+  .img-responsive-clamp {
+    max-width: clamp(44%, 25vw, 100%);
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-right {
+    justify-content: right;
+  }
+  .flex-center {
+    justify-content: center;
+  }
+  .flex-vertical-middle {
+    justify-items: center;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .mt-2 {
+    margin-top: 1rem;
+  }
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  .mt-5 {
+    margin-top: 2.5rem;
+  }
+  .mt-7 {
+    margin-top: 3.5rem;
+  }
+  .mt-8 {
+    margin-top: 4rem;
+  }
+  .pb-1 {
+    padding-bottom: 0.25rem;
+  }
+  .gray-text {
+    color: #9fa0a0;
+  }
+  .white-text {
+    color: #fff;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .text-middle {
+    vertical-align: middle !important;
+  }
+  .flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .middle-dot {
+    font-family: $helvetica;
+    position: absolute;
+  }
+
+  [class*='col-'] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+  }
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
 
   .exclude-letter-spacing {
     letter-spacing: normal;
@@ -201,6 +353,10 @@ footer {
     color: $primary-blue;
   }
   .program-rank {
+<<<<<<< HEAD
+=======
+    font-family: $helvetica;
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 3vw, 25px);
@@ -209,7 +365,11 @@ footer {
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
+<<<<<<< HEAD
       background-color: $primary-pink;
+=======
+      background-color: $text-pink;
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
       font-size: clamp(8px, 1.8vw, 15px);
     }
     .level {
@@ -279,7 +439,11 @@ footer {
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
+<<<<<<< HEAD
         font-size: clamp(12px, 2vw, 16px);
+=======
+        font-size: clamp(12px, 2vw, 15px);
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 4vw, 60px);
       }
@@ -298,9 +462,21 @@ footer {
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
+<<<<<<< HEAD
           li::before {
             content: '';
             display: inline-block;
+=======
+          li {
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 1em;
+            padding-left: 0.5em;
+          }
+          li::before {
+            content: '';
+            display: block;
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
             width: 0.5em;
           }
           li::marker {
@@ -385,6 +561,12 @@ footer {
             color: white;
             background-color: $primary-pink;
           }
+<<<<<<< HEAD
+=======
+          th {
+            vertical-align: middle !important;
+          }
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
           td,
           th {
             border: 2px solid $tertiary-gray;
@@ -416,10 +598,23 @@ footer {
             padding: 0;
             list-style-type: '\25BC';
             box-sizing: content-box;
+<<<<<<< HEAD
             list-style-position: inside;
             li::before {
               content: '';
               display: inline-block;
+=======
+            li {
+              list-style-position: outside;
+              text-indent: -1em;
+              margin-left: 1em;
+              padding-left: 0.5em;
+            }
+
+            li::before {
+              content: '';
+              display: block;
+>>>>>>> 813a3e2b29179bc4e8025e9269f4777e18777156
               width: 0.5em;
             }
             li::marker {

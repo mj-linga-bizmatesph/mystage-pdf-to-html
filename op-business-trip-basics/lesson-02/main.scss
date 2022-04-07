@@ -1,4 +1,4 @@
-$helvetica: 'Helvetica';
+$helvetica: 'Helvetica', 'Arial', sans-serif;
 $trebuchet: 'Trebuchet MS';
 
 body {
@@ -9,20 +9,22 @@ $magenta: #cc3366;
 $magenta-light: #f0d4d4;
 $blue-green: #339999;
 
+$fs-10: clamp(6.48px, 1.8vw, 10pt);
+
 .html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
   max-width: 100%;
   max-width: 892.75px;
-  min-height: 1200px;
+  min-height: 960px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 11%;
-  background-image: url('https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png'),
-    url('https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -42,6 +44,10 @@ $blue-green: #339999;
 
   .i {
     font-family: italic;
+  }
+
+  .small-mt {
+    margin-top: clamp(5px, 2vw, 10px);
   }
 
   .program-rank {
@@ -72,21 +78,21 @@ $blue-green: #339999;
     position: absolute;
     top: 80px;
     left: 55px;
-    font-size: clamp(9.3px, 3vw, 27px);
+    font-size: clamp(9.3pt, 3vw, 18pt);
   }
 
   .lesson-number {
     position: absolute;
     left: 92.2%;
     margin-top: 7.8%;
-    font-size: clamp(7px, 1.8vw, 13px);
+    font-size: clamp(7px, 1.8vw, 9pt);
     color: #ffffff;
   }
 
   .lesson-number-two {
     @extend .lesson-number;
 
-    left: 91.5%;
+    left: 91.8%;
   }
 
   .row {
@@ -101,16 +107,14 @@ $blue-green: #339999;
 
   .sub-text {
     font-family: $helvetica !important;
+    font-size: $fs-10;
     line-height: clamp(12px, 2.8vw, 22px);
     margin: 0 auto;
+    font-weight: bold;
   }
 
   .magenta-color {
     color: $magenta;
-  }
-
-  .sub-color {
-    color: #7f7f7f;
   }
 
   .section {
@@ -119,6 +123,7 @@ $blue-green: #339999;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
+    font-size: $fs-10;
     top: 2px;
   }
 
@@ -151,11 +156,12 @@ $blue-green: #339999;
   .see-content,
   .act-content,
   .try-content,
-  .review-content {
+  .review-content,
+  .part-content {
     position: relative;
-    margin-left: clamp(50px, 14%, 126.5px);
-    padding-left: 18.5px;
-    padding-right: 42px;
+    margin-left: clamp(40px, 14vw, 126.5px);
+    padding-left: clamp(12px, 2vw, 18.5px);
+    padding-right: clamp(8px, 2vw, 20px);
     font-size: clamp(6px, 1.8vw, 15px);
   }
 
@@ -167,12 +173,12 @@ $blue-green: #339999;
     height: -moz-fit-content;
     height: fit-content;
     padding-bottom: 4%;
-    padding-left: clamp(32px, 6vw, 47px);
+    padding-left: clamp(17px, 6.5vw, 47px);
     background: $magenta-light;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(6px, 1.8vw, 10pt);
 
     .section {
-      margin-left: clamp(50px, 14%, 126.5px);
+      margin-left: clamp(40px, 14vw, 126.5px);
       line-height: 1.8em;
       margin-top: 3% !important;
     }
@@ -199,7 +205,7 @@ $blue-green: #339999;
       height: 0;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      border-top: 8px solid $magenta;
+      border-top: 8px solid;
       display: inline-block;
       vertical-align: middle;
     }
@@ -249,13 +255,126 @@ $blue-green: #339999;
       td {
         padding: 0;
         vertical-align: top;
-        line-height: 1.8em;
 
         &:first-child {
           @extend .b;
           width: 10%;
         }
       }
+    }
+
+    .see-border-box {
+      border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
+      font-family: $trebuchet;
+      font-size: $fs-10;
+      padding: 0.5vw 0.5vw 2vw;
+    }
+
+    .dialogue {
+      font-size: $fs-10;
+      font-family: $trebuchet;
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+      margin-bottom: clamp(2px, 1vw, 7px);
+    }
+
+    .person {
+      font-weight: bold;
+      width: 10%;
+    }
+  }
+
+  .part-content {
+    &.part-1 {
+      margin-top: clamp(70px, 25%, 250px);
+    }
+
+    .sub-text {
+      margin-bottom: 1.5%;
+    }
+
+    .article {
+      margin-top: 5px;
+      line-height: 1.7em;
+      margin-bottom: 29px;
+
+      span.highlight {
+        color: $magenta;
+        font-weight: bold;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+
+      p {
+        margin: 0;
+        line-height: 1.8em;
+        top: -0.3em;
+        position: relative;
+
+        &:not(:last-child) {
+          margin-bottom: 5%;
+        }
+      }
+
+      td {
+        padding: 0;
+        vertical-align: top;
+
+        &:first-child {
+          @extend .b;
+          width: 10%;
+        }
+      }
+    }
+
+    .see-border-box {
+      border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
+      font-family: $trebuchet;
+      font-size: $fs-10;
+      padding: 0.5vw 0.5vw 2vw;
+    }
+
+    .dialogue {
+      font-size: $fs-10;
+      font-family: $trebuchet;
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+      margin-bottom: clamp(2px, 1vw, 7px);
+    }
+
+    .person {
+      font-weight: bold;
+      width: 10%;
+    }
+
+    ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-gap: clamp(0.1rem, 1vw, 0.3rem);
+      counter-reset: orderedlist;
+      font-family: $trebuchet;
+      font-size: $fs-10;
+    }
+
+    li::before {
+      counter-increment: orderedlist;
+      content: counter(orderedlist) '. ';
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: 0 1fr;
+      grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
     }
   }
 
@@ -265,8 +384,45 @@ $blue-green: #339999;
     }
 
     table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: $trebuchet;
+      font-size: $fs-10;
+    }
+
+    th,
+    td {
+      border-left: 1.5px solid #d8d8d8;
+      border-right: 1.5px solid #d8d8d8;
+
+      &:not(.no-border) {
+        border-bottom: 1.5px solid #d8d8d8;
+      }
+    }
+
+    th {
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      background-color: $magenta;
+      padding: 0.3vw 0;
+    }
+    td {
+      padding: 0.3vw 0.5vw;
+      &:not(.not-vertical-center) {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .act-content {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+
+    table {
       margin-top: 5px;
-      font-size: clamp(6px, 1.8vw, 15px);
+      font-size: clamp(6px, 1.5vw, 14px);
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
@@ -276,7 +432,7 @@ $blue-green: #339999;
         max-width: 120px;
         min-width: 80px;
         word-wrap: break-word;
-        border: 1px solid #f2f2f2;
+        border: 1px solid #ffffff;
       }
 
       th {
@@ -288,22 +444,10 @@ $blue-green: #339999;
 
       td {
         text-align: left;
-        padding: 1% 1% 5% 1%;
-        background-color: #fff;
+        padding: 4px;
+        background-color: #f2f2f2;
       }
     }
-
-    .example {
-      @extend .sub-color;
-      padding-left: 1%;
-      margin-bottom: 0.5%;
-    }
-  }
-
-  .act-content {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .review-content {
@@ -351,10 +495,10 @@ $blue-green: #339999;
     width: -moz-fit-content;
     width: fit-content;
     text-align: right;
-    bottom: 1.5%;
+    bottom: 4%;
     right: 6.2%;
     font-family: $helvetica;
-    max-width: 35%;
+    max-width: 44%;
   }
 
   @media screen and (max-width: 900px) {
@@ -393,14 +537,8 @@ $blue-green: #339999;
     }
     .title {
       top: clamp(45px, 8.4vw, 80px);
-      left: clamp(30px, 4.1vw, 55px);
+      left: clamp(23px, 4.1vw, 55px);
     }
-    // .divider {
-    //   .d1,
-    //   .d2 {
-    //     margin-top: clamp(18px, 3.4vw, 28px);
-    //   }
-    // }
     .section {
       left: calc(-16% + 30px);
       &.words {
@@ -421,9 +559,9 @@ $blue-green: #339999;
       vertical-align: middle;
     }
     .arrow-part:before {
-      border-left: 3.5px solid transparent !important;
-      border-right: 3.5px solid transparent !important;
-      border-top-width: 5.5px !important;
+      border-left: clamp(2px, 0.5vw, 3.5px) solid transparent !important;
+      border-right: clamp(2px, 0.5vw, 3.5px) solid transparent !important;
+      border-top: clamp(3.5px, 0.5vw, 5.5px) solid !important;
     }
   }
   /*# sourceMappingURL=main.css.map */

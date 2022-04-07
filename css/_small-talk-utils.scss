@@ -47,7 +47,7 @@ $blue-green: #339999;
   .program-rank {
     position: absolute;
     top: 40px;
-    left: 48px;
+    left: 57px;
     color: #ffffff;
     font-size: 0px;
 
@@ -71,7 +71,7 @@ $blue-green: #339999;
   .title {
     position: absolute;
     top: 80px;
-    left: 48px;
+    left: 56px;
     font-size: clamp(9.3px, 3vw, 27px);
   }
 
@@ -115,7 +115,7 @@ $blue-green: #339999;
 
   .section {
     position: absolute;
-    left: -78px;
+    left: -69px;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
@@ -371,6 +371,21 @@ $blue-green: #339999;
     & {
       min-height: 581px;
       padding-bottom: 21%;
+      .program-rank {
+        position: absolute;
+        top: clamp(20px, 4vw, 40px);
+        left: clamp(53px, 4vw, 48px);
+      }
+      .title {
+        top: clamp(45px, 8.4vw, 80px);
+        left: clamp(52px, 4.1vw, 55px);
+      }
+      .section {
+        left: calc(-16% + 50px);
+        &.words {
+          left: calc(-14% + 52px);
+        }
+      }
       .see-content {
         margin-top: clamp(22px, 3.8vw, 36px);
   
@@ -418,16 +433,16 @@ $blue-green: #339999;
       .program-rank {
         position: absolute;
         top: clamp(20px, 4vw, 40px);
-        left: clamp(23px, 4vw, 48px);
+        left: clamp(24px, 4vw, 48px);
       }
       .title {
         top: clamp(45px, 8.4vw, 80px);
-        left: clamp(30px, 4.1vw, 55px);
+        left: clamp(24px, 4.1vw, 55px);
       }
       .section {
-        left: calc(-16% + 30px);
+        left: calc(-16% + 23px);
         &.words {
-          left: calc(-14% + 30px);
+          left: calc(-14% + 24px);
         }
       }
     }

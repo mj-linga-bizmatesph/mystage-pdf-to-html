@@ -280,8 +280,9 @@ body {
         display: block;
 
         .eng {
+          width: 105%;
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 14px);
+          font-size: clamp(5px, 1.8vw, 14px);
         }
 
         .jap {
@@ -313,11 +314,13 @@ body {
       font-size: clamp(8px, 2vw, 14px);
 
       .eng {
+        width: 107%;
         font-weight: bold;
         font-size: clamp(8px, 2vw, 14px);
       }
 
       .jap {
+        width: 115%;
         font-size: clamp(6px, 1.5vw, 11px);
         color: $subtext-color;
         letter-spacing: $jap-letter-spacing;
@@ -804,8 +807,8 @@ body {
 
           .bubble-text {
             margin-top: clamp(1px, 1vw, -10px);
-            margin-left: clamp(16px, 11.4vw, 70px);
-            width: clamp(135px, 37.5vw, 250px);
+            margin-left: clamp(16px, 11vw, 70px);
+            width: clamp(135px, 41vw, 250px);
             height: clamp(20px, 15vw, 150px);
             text-align: left;
 
@@ -1006,11 +1009,14 @@ body {
           display: block;
 
           .english {
-            width: clamp(98px, 16vw, 153px);
-            font-size: clamp(11px, 1.8vw, 16px);
+            width: clamp(75px, 27vw, 150px);
+            height: 20%;
+            font-size: clamp(8px, 1.8vw, 16px);
             border-radius: 5px;
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            padding: clamp(5px, 2vw, 6px) clamp(13px, 3vw, 17px);
             background-image: url(#{$s3}/0-B-3-piece-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
           }
 
           .jap {
@@ -1030,10 +1036,12 @@ body {
           .english {
             width: clamp(10px, 5vw, 20px);
             background-image: url(#{$s3}/0-B-3-piece-2.svg);
-            font-size: clamp(11px, 1.8vw, 16px);
+            font-size: clamp(8px, 1.8vw, 16px);
             border-radius: 5px;
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+            padding: clamp(5px, 2vw, 6px) clamp(13px, 3vw, 17px);
             font-size: clamp(11px, 1.8vw, 16px);
+            background-size: contain;
+            background-repeat: no-repeat;
           }
 
           .jap {
@@ -1056,14 +1064,18 @@ body {
 
       .yellow {
         background-image: url(#{$s3}/0-B-3-piece-1.svg);
-        font-size: clamp(11px, 1.8vw, 16px);
+        font-size: clamp(8px, 1.8vw, 16px);
         width: clamp(98px, 16vw, 153px);
         border-radius: 3px;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
       .blue {
         background-image: url(#{$s3}/0-B-3-piece-2.svg);
-        font-size: clamp(11px, 1.8vw, 16px);
+        font-size: clamp(8px, 1.8vw, 16px);
         border-radius: 3px;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
 
       .legend {

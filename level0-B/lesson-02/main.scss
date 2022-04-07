@@ -298,7 +298,7 @@ hr {
 
     .s1-bubble2 {
       left: 51.5%;
-      margin-top: clamp(58px, 16vw, 97px);
+      margin-top: clamp(55px, 15vw, 97px);
       width: clamp(140px, 40vw, 242px);
       min-height: clamp(30px, 8vw, 50px);
       position: absolute;
@@ -435,7 +435,7 @@ hr {
           margin-top: 15px;
 
           .box-2 {
-            width: clamp(100px, 23vw, 152.8px);
+            width: clamp(70px, 17vw, 120px);
             background: url(#{$s3}/0-yellow-piece.png);
             text-align: center;
             background-position: center;
@@ -491,7 +491,7 @@ hr {
       }
 
       .b1-legend {
-        width: clamp(80px, 15vw, 121px);
+        width: clamp(50px, 15vw, 80px);
         background: url(#{$s3}/0-yellow-piece.png);
         background-position: center;
         background-size: cover;
@@ -1169,8 +1169,6 @@ hr {
         padding-top: clamp(1px, 1.2vw, 20px);
         margin-bottom: -70px;
         .convo-1,
-        .convo-2,
-        .convo-3,
         .convo-4{
           padding-bottom: 20px;
           .convo-wrap-akiko {
@@ -1258,6 +1256,184 @@ hr {
             }
           }
         }
+
+        .convo-2{
+          padding-bottom: 20px;
+          .convo-wrap-akiko {
+            padding-bottom: clamp(10px, 1vw, 20px);
+            .number-left {
+              padding-right: 20px;
+              color: #1288cd;
+              font-size: clamp(10px, 2.1vw, 14px);
+              font-weight: bold;
+            }
+
+            .akiko-line-1 {
+              font-size: clamp(10px, 2.1vw, 14px);
+            }
+
+            .number-right {
+              margin-left: 10px;
+              padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
+              color: white;
+              font-size: clamp(10px, 2.1vw, 14px);
+              font-weight: bold;
+              --size: clamp(13px, 2vw, 32px);
+              left: calc(-1 * var(--size) - 10px);
+              line-height: var(--size);
+              width: var(--size);
+              height: var(--size);
+              top: 0;
+              background: #1288cd;
+              border-radius: 50%;
+              text-align: center;
+            }
+            .text-under {
+              margin-left: clamp(70px, 13vw, 84px);
+
+              .underline {
+                margin-left: clamp(1px, 1.1vw, 8px);
+                text-decoration: underline;
+                color: $primary-blue;
+                font-size: clamp(9px, 2.5vw, 14px);
+              }
+            }
+          }
+
+          .convo-wrap-helen {
+            padding-bottom: clamp(10px, 1vw, 20px);
+            .number-left {
+              padding-right: 20px;
+              color: white;
+            }
+
+            .helen-line {
+              font-size: clamp(10px, 2.1vw, 14px);
+              margin-left: clamp(3px, 2vw, 4px);
+            }
+            .text-under {
+              margin-left: clamp(70px, 13vw, 84px);
+            }
+          }
+
+          .convo-wrap-akiko-last {
+            padding-bottom: clamp(10px, 3vw, 20px);
+            .number-left {
+              padding-right: 20px;
+              color: white;
+            }
+            .akiko-line-2 {
+              font-size: clamp(10px, 2.1vw, 14px);
+            }
+
+            .letter-square {
+              margin-left: 10px;
+              padding-left: clamp(3px, 0.3vw, 5px);
+              padding-right: clamp(4px, 0.3vw, 5px);
+              color: #1288cd;
+              font-size: clamp(10px, 2.1vw, 14px) !important;
+              font-weight: bold;
+              --size: clamp(13px, 2vw, 32px);
+              left: calc(-1 * var(--size) - 10px);
+              line-height: var(--size);
+              width: var(--size);
+              height: var(--size);
+              top: 0;
+              background: white;
+              border: 2.3px solid #1288cd;
+              text-align: center;
+            }
+          }
+        }
+
+        .convo-3{
+          padding-bottom: 20px;
+          .convo-wrap-akiko {
+            padding-bottom: clamp(10px, 1vw, 20px);
+            .number-left {
+              padding-right: 20px;
+              color: #1288cd;
+              font-size: clamp(10px, 2.1vw, 14px);
+              font-weight: bold;
+            }
+
+            .akiko-line-1 {
+              font-size: clamp(10px, 2.1vw, 14px);
+            }
+
+            .number-right {
+              margin-left: 10px;
+              padding: clamp(3.5px, 0.9vw, 3.6px) clamp(6.5px, 0.6vw, 5px);
+              color: white;
+              font-size: clamp(10px, 2.1vw, 14px);
+              font-weight: bold;
+              --size: clamp(13px, 2vw, 32px);
+              left: calc(-1 * var(--size) - 10px);
+              line-height: var(--size);
+              width: var(--size);
+              height: var(--size);
+              top: 0;
+              background: #1288cd;
+              border-radius: 50%;
+              text-align: center;
+            }
+            .text-under {
+              margin-left: clamp(70px, 13vw, 84px);
+
+              .underline {
+                margin-left: clamp(1px, 1.1vw, 8px);
+                text-decoration: underline;
+                color: $primary-blue;
+                font-size: clamp(9px, 2.5vw, 14px);
+              }
+            }
+          }
+
+          .convo-wrap-helen {
+            padding-bottom: clamp(10px, 1vw, 20px);
+            .number-left {
+              padding-right: 20px;
+              color: white;
+            }
+
+            .helen-line {
+              font-size: clamp(10px, 2.1vw, 14px);
+              margin-left: clamp(-3px, -1vw, -3px);
+            }
+            .text-under {
+              margin-left: clamp(70px, 13vw, 84px);
+            }
+          }
+
+          .convo-wrap-akiko-last {
+            padding-bottom: clamp(10px, 3vw, 20px);
+            .number-left {
+              padding-right: 20px;
+              color: white;
+            }
+            .akiko-line-2 {
+              font-size: clamp(10px, 2.1vw, 14px);
+            }
+
+            .letter-square {
+              margin-left: 10px;
+              padding-left: clamp(3px, 0.3vw, 5px);
+              padding-right: clamp(4px, 0.3vw, 5px);
+              color: #1288cd;
+              font-size: clamp(10px, 2.1vw, 14px) !important;
+              font-weight: bold;
+              --size: clamp(13px, 2vw, 32px);
+              left: calc(-1 * var(--size) - 10px);
+              line-height: var(--size);
+              width: var(--size);
+              height: var(--size);
+              top: 0;
+              background: white;
+              border: 2.3px solid #1288cd;
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }
@@ -1282,7 +1458,6 @@ hr {
           position: absolute;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-cloud-bubble-white.png);
           padding-top: clamp(3px, 3vw, 25px);
           padding-left: clamp(16px, 4.8vw, 40px);
           padding-bottom: clamp(5.2px, 2.6vw, 15px);
@@ -1356,6 +1531,15 @@ hr {
           .english {
             font-size: clamp(10px, 2.3vw, 17px);
             margin-left: clamp(15px, 3.5vw, 30px);
+
+            .text-under {
+              margin-left: clamp(40px, 11vw, 87px);
+            }
+          }
+
+          .english1 {
+            font-size: clamp(10px, 2.3vw, 17px);
+            margin-left: clamp(15px, 5vw, 30px);
 
             .text-under {
               margin-left: clamp(40px, 11vw, 87px);

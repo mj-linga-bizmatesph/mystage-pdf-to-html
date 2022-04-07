@@ -1,1 +1,23 @@
 @import '../../css/small-talk-level-1-utils';
+
+.html-lesson-wrapper {
+    .see-content {
+      li {
+        line-height: 1.8;
+      }
+    }
+    .try-content {
+      .space {
+        margin-top: 8%;
+      }
+      li {
+        line-height: 1.8;
+      }
+    }
+    .act-content {
+      .normal {
+        font-weight: normal;
+      }
+    }
+  }
+  

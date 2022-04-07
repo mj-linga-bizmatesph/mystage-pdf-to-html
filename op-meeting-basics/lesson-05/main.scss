@@ -12,3 +12,10 @@
     padding-bottom: 0;
   }
 }
+
+.review-part-1 {
+  padding-right: clamp(15px, 7vw, 55px);
+  .review-box {
+    width: 100%;
+  }
+}

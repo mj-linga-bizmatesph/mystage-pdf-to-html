@@ -1,4 +1,4 @@
-$helvetica: 'Helvetica';
+$helvetica: 'Helvetica', 'Arial', sans-serif;
 $trebuchet: 'Trebuchet MS';
 
 body {
@@ -23,8 +23,8 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   overflow: hidden;
   position: relative;
   padding-bottom: 11%;
-  background-image: url('https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.png'),
-    url('https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/other-programs-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,13 +60,13 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $magenta;
-      font-size: clamp(6.48px, 1.8vw, 10pt);
+      font-size: clamp(6.48px, 1.8vw, 15px);
     }
 
     .level {
       padding: 3px 12px 3px 13px;
       background-color: $blue-green;
-      font-size: clamp(6.48px, 1.8vw, 10pt);
+      font-size: clamp(6.48px, 1.8vw, 15px);
     }
   }
 
@@ -161,7 +161,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     position: relative;
     margin-left: clamp(40px, 14vw, 126.5px);
     padding-left: clamp(12px, 2vw, 18.5px);
-    padding-right: clamp(35px, 11vw, 42px);
+    padding-right: clamp(8px, 2vw, 20px);
     font-size: clamp(6px, 1.8vw, 15px);
   }
 
@@ -208,6 +208,32 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       border-top: 8px solid;
       display: inline-block;
       vertical-align: middle;
+    }
+
+    span {
+      color: $magenta;
+      font-weight: bold;
+    }
+
+    &.black-arrow:before {
+      border-top: 8px solid black;
+    }
+  }
+
+  .arrow-part-1 {
+    position: relative;
+    &:before {
+      content: '';
+      left: -1.5em;
+      top: 0.3em;
+      width: 0;
+      height: 0;
+      border-left: clamp(2px, 1vw, 5px) solid transparent;
+      border-right: clamp(2px, 1vw, 5px) solid transparent;
+      border-top: clamp(4px, 1vw, 8px) solid;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: clamp(5px, 1vw, 8px);
     }
 
     span {

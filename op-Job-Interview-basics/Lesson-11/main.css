@@ -23,7 +23,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", "Sans Serif";
 }
 
 .html-lesson-wrapper .u {
@@ -41,7 +41,7 @@ body {
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
-  left: 48px;
+  left: 60px;
   color: #ffffff;
   font-size: 0px;
 }
@@ -65,7 +65,7 @@ body {
 .html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
-  left: 55px;
+  left: 58px;
   font-size: clamp(9.3px, 3vw, 27px);
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: "Helvetica" !important;
+  font-family: "Helvetica", "Arial", "Sans Serif" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
@@ -107,10 +107,10 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -71.5px;
+  left: -66px;
   color: #cc3366;
   font-weight: bold;
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", "Sans Serif";
   top: 2px;
 }
 
@@ -265,7 +265,7 @@ body {
 
 .html-lesson-wrapper .try-content table th,
 .html-lesson-wrapper .try-content table td {
-  max-width: 120px;
+  max-width: 213px;
   min-width: 80px;
   word-wrap: break-word;
   border: 1px solid #f2f2f2;
@@ -330,15 +330,15 @@ body {
 }
 
 .html-lesson-wrapper footer {
-  font-size: clamp(4.5px, 1.1vw, 9px);
+  font-size: clamp(4.5px, 1.1vw, 6px);
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 1.5%;
+  bottom: 2.5%;
   right: 6.2%;
-  font-family: "Helvetica";
+  font-family: "Helvetica", "Arial", "Sans Serif";
   max-width: 55%;
 }
 
@@ -438,6 +438,18 @@ body {
 
 .html-lesson-wrapper .try-content table td {
   padding: 1%;
+}
+
+.html-lesson-wrapper .try-content table .row p {
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .try-content table .row p:first-child {
+  min-width: 9%;
+  max-width: 100px;
+  word-wrap: break-word;
+  color: red;
 }
 
 .html-lesson-wrapper .try-content ol {

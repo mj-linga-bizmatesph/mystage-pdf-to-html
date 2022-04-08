@@ -1,4 +1,4 @@
-@import '../../css/job-interview-basics.scss';
+@import '../../css/op-job-interview-basics-utils';
 
 .html-lesson-wrapper {
   @media screen and (max-width: 370px) {
@@ -26,6 +26,18 @@
     table {
       td {
         padding: 1%;
+      }
+      .row {
+        p {
+          display: inline-block;
+          margin: 0px 0px;
+          &:first-child {
+            min-width: 9%;
+            max-width: 100px;
+            word-wrap: break-word;
+            color: red;
+          }
+        }
       }
     }
     ol {

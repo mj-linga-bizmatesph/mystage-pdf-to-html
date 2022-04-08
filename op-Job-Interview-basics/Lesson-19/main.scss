@@ -1,4 +1,4 @@
-@import '../../css/job-interview-basics.scss';
+@import '../../css/op-job-interview-basics-utils';
 
 .html-lesson-wrapper {
   @media screen and (max-width: 370px) {
@@ -12,9 +12,9 @@
   }
 
   .see-content {
-   .red{
-     color: red;
-   }
+    .red {
+      color: red;
+    }
     table {
       td:first-child {
         width: 9em;

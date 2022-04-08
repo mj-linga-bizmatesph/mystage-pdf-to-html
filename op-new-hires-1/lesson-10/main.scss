@@ -1,0 +1,43 @@
+@import '../../css/_op-new-hires-1-utils.scss';
+.html-lesson-wrapper {
+  header {
+    margin-bottom: clamp(110px, 30vw, 270px);
+  }
+  .lesson-number {
+    left: clamp(80%, 91.3vw, 91.5%) !important;
+  }
+  .part-content {
+    position: relative;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(6px, 1.8vw, 15px);
+    .part-1 {
+      margin-left: 8px;
+      font-family: $title-font !important;
+      font-weight: bold;
+    }
+    margin-bottom: clamp(50px, 13vw, 120px);
+  }
+  .part-content-2 {
+    margin-bottom: clamp(50px, 13vw, 120px);
+  }
+  .part-content {
+    ul {
+      list-style-type: square;
+      margin-left: clamp(18px, 3vw, 24px);
+      li {
+        margin-bottom: clamp(10px, 2vw, 20px);
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .html-lesson-wrapper {
+      min-height: unset;
+      .part-content {
+        margin-top: clamp(20px, 3.7vw, 30px);
+        padding-left: clamp(11px, 2.4vw, 18px);
+      }
+    }
+  }
+}

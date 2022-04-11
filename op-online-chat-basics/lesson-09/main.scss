@@ -1,0 +1,41 @@
+@import '../../css/_op-online-chat-basics-utils.scss';
+.html-lesson-wrapper {
+  .biz-tips {
+    .biz-tip-content {
+      padding-bottom: 1.5rem !important;
+    }
+  }
+  .chat-box {
+    .chat-message {
+      .chat-1 {
+        max-width: 463px;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+      }
+      .chat-2 {
+        max-width: 503px;
+        padding-right: 0 !important;
+      }
+      &.left {
+        max-width: 85% !important;
+        padding-right: clamp(2px, 1vw, 1em) !important;
+      }
+      &.right {
+        max-width: 417px;
+        padding-right: clamp(2px, 1vw, 1em) !important;
+        @media screen and (max-width: 460px) {
+          max-width: 200px !important;
+        }
+      }
+      @media screen and (max-width: 460px) {
+        max-width: 200px !important;
+      }
+    }
+  }
+  .act-spacer {
+    padding-bottom: 7rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+}

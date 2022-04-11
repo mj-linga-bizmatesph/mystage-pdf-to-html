@@ -1,0 +1,26 @@
+@import '../../css/_op-online-chat-basics-utils.scss';
+.html-lesson-wrapper {
+  .chat-message {
+    &.left {
+      min-width: clamp(100px, 23vw, 325px);
+    }
+  }
+
+  .biz-tips {
+    .biz-tip-label {
+      font-size: clamp(6px, 1.8vw, 15px) !important;
+    }
+    .biz-tip-content {
+      font-size: clamp(6px, 1.8vw, 15px) !important;
+    }
+  }
+  .content-label-text {
+    font-size: clamp(6px, 1.8vw, 15px) !important;
+  }
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../css/_op-online-chat-basics-utils.scss';
+.html-lesson-wrapper {
+  .biz-tips {
+    .biz-tip-content {
+      padding-bottom: 1rem !important;
+    }
+  }
+  .chat-box {
+    .chat-message {
+      .chat-1 {
+        margin-block-start: 1.5rem;
+        margin-block-end: 1.5rem;
+      }
+      @media screen and (max-width: 460px) {
+        max-width: 200px !important;
+      }
+    }
+  }
+  .act-spacer {
+    padding-bottom: 7rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../css/_op-online-chat-basics-utils.scss';
+.html-lesson-wrapper {
+  header {
+    margin-bottom: clamp(19px, 10vw, 34px);
+  }
+  .header-text {
+    line-height: clamp(12px, 4vw, 24px) !important;
+    padding-bottom: clamp(10px, 2vw, 15px);
+  }
+  .review-part-1 {
+    .review-box {
+      .all-tips {
+        .start-div {
+          box-sizing: border-box;
+          max-width: clamp(100px, 20vw, 315px) !important;
+        }
+      }
+    }
+  }
+  .part-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -139,7 +139,6 @@ body {
       border-bottom: 1px solid black;
     }
   }
-  // Words and Phrases Content
   .words-phrase-content {
     position: relative;
     margin-top: clamp(63px, 17.6%, 157px);
@@ -180,14 +179,12 @@ body {
       }
     }
   }
-  // See
   .see-content {
     margin-top: 36px;
     .text-convo {
       margin-left: -2px;
     }
   }
-  // Try
   .try-content {
     margin-top: 30px;
     .decimal {
@@ -204,7 +201,6 @@ body {
       }
     }
   }
-  // Act
   .act-content {
     margin-top: 36px;
     height: fit-content;

@@ -8,9 +8,6 @@ body {
   margin: 0;
   padding: 0;
 }
-$magenta: #cc3366;
-$magenta-light: #f0d4d4;
-$blue-green: #339999;
 
 .html-lesson-wrapper {
   width: 100%;
@@ -263,7 +260,6 @@ $blue-green: #339999;
   }
 
   .try-content {
-
     table {
       margin-top: 5px;
       font-size: clamp(6px, 1.8vw, 15px);
@@ -304,12 +300,12 @@ $blue-green: #339999;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    .aut{
+    .aut {
       margin-left: 64%;
       position: absolute;
       margin-top: 35px;
       font-weight: bold;
-      }
+    }
   }
 
   .review-content {
@@ -363,8 +359,8 @@ $blue-green: #339999;
     max-width: 35%;
   }
 
-  @media screen and (max-width: 1280px){
-    &{
+  @media screen and (max-width: 1280px) {
+    & {
       min-height: 581px;
       padding-bottom: 17%;
     }
@@ -391,7 +387,7 @@ $blue-green: #339999;
       }
       .see-content {
         margin-top: clamp(22px, 3.8vw, 36px);
-  
+
         .article {
           margin-bottom: clamp(20px, 3.7vw, 29px);
         }
@@ -399,39 +395,38 @@ $blue-green: #339999;
       .try-content {
         margin-top: clamp(20px, 3.7vw, 30px);
         padding-left: clamp(11px, 2.4vw, 18px);
-  
+
         ul {
           margin-left: clamp(11px, 2.4vw, 18px);
         }
-  
+
         li {
           padding-left: clamp(9px, 1.8vw, 13px);
         }
       }
       .act-content {
         margin-top: clamp(20px, 3.8vw, 36px);
-        .aut{
+        .aut {
           margin-left: 64%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;
-          }
+        }
       }
     }
-    
   }
 
   @media screen and (max-width: 768px) {
-    &{
+    & {
       min-height: 581px;
       padding-bottom: 23%;
       .act-content {
-        .aut{
+        .aut {
           margin-left: 52%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;
-          }
+        }
       }
       .program-rank {
         position: absolute;
@@ -449,20 +444,19 @@ $blue-green: #339999;
         }
       }
     }
-   
   }
 
   @media screen and (max-width: 400px) {
-    &{
+    & {
       min-height: 581px;
       padding-bottom: 13%;
       .act-content {
-        .aut{
+        .aut {
           margin-left: 52%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;
-          }
+        }
       }
       .type {
         padding: 2px 8px 2px 7px !important;
@@ -480,9 +474,5 @@ $blue-green: #339999;
         border-top-width: 5.5px !important;
       }
     }
-    
-    
   }
-  /*# sourceMappingURL=main.css.map */
 }
-

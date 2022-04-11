@@ -150,7 +150,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content {
-  margin-top: clamp(70px, 35%, 220px);
+  margin-top: 25%;
   width: 72%;
 }
 
@@ -216,12 +216,6 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
     padding-bottom: clamp(20px, 21vw, 177px);
-  }
-  .html-lesson-wrapper .see-content {
-    margin-top: clamp(70px, 26%, 202px);
-  }
-  .html-lesson-wrapper .see-content .article {
-    margin-bottom: clamp(20px, 3.7vw, 29px);
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
@@ -293,3 +287,4 @@ body {
     border-top: 5.5px solid #2078a0 !important;
   }
 }
+/*# sourceMappingURL=main.css.map */

@@ -283,6 +283,7 @@ body .try-content {
 body .try-content .table-1 {
   width: 100%;
   border-collapse: collapse;
+  border-color: #d9d9d9;
 }
 body .try-content .table-1 tr td,
 body .try-content .table-1 tr th {
@@ -387,6 +388,9 @@ body footer {
     bottom: clamp(16px, 4.8vw, 43px);
     right: 5% !important;
   }
+  body .words-phrase-content .pointers table tr td {
+    padding-right: 5%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -426,10 +430,14 @@ body footer {
     margin: 0 6px;
     vertical-align: middle;
   }
+  .html-lesson-wrapper .arrow-part {
+    padding-left: 2% !important;
+  }
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
     border-right: 3.5px solid transparent !important;
     border-top: 5.5px solid #000000 !important;
+    left: -6% !important;
   }
 }
 

@@ -1,6 +1,8 @@
 @import '../../css/_op-bizmates-starter-utils.scss';
-.mt-8 {
-  @media only screen and (max-width: 767px) {
-    margin-top: 1rem;
+.html-lesson-wrapper {
+  .mt-8 {
+    @media only screen and (max-width: 767px) {
+      margin-top: 1rem;
+    }
   }
 }

@@ -1,13 +1,13 @@
 $helvetica: Helvetica, Arial, 'Sans-serif';
 $trebuchet: 'Trebuchet MS';
+$magenta: #cc3366;
+$magenta-light: #f0d4d4;
+$blue-green: #339999;
 
 body {
   margin: 0;
   padding: 0;
 }
-$magenta: #cc3366;
-$magenta-light: #f0d4d4;
-$blue-green: #339999;
 
 .html-lesson-wrapper {
   width: 100%;
@@ -90,7 +90,6 @@ $blue-green: #339999;
 
   .lesson-number-two {
     @extend .lesson-number;
-
     left: 91.5%;
   }
 

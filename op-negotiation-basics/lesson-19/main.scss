@@ -1,33 +1,33 @@
 @import '../../css/op-negotiation-basics-utils';
 
 .html-lesson-wrapper {
-    .m-0 {
-        margin: 0 !important;
-    }
+  .m-0 {
+    margin: 0 !important;
+  }
 
-    .mb {
-        margin-bottom: 1.5em !important;
-    }
+  .mb {
+    margin-bottom: 1.5em !important;
+  }
 
-    .paper {
-        p:not(:last-child){
-            &:not(:last-child){
-                margin-bottom: 1.5em;
-              }
-        }
+  .paper {
+    p:not(:last-child) {
+      &:not(:last-child) {
+        margin-bottom: 1.5em;
+      }
     }
+  }
 
-    .see-content {
-        ol {
-            li {
-                line-height: 1.8em;
-            }
-        }
+  .see-content {
+    ol {
+      li {
+        line-height: 1.8em;
+      }
     }
+  }
 
-    .try-content {
-        ol {
-            margin-left: 1.5em;
-        }
+  .try-content {
+    ol {
+      margin-left: 1.5em;
     }
+  }
 }

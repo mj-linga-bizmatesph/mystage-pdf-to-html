@@ -123,7 +123,7 @@ td {
 }
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.5%;
+  right: 7.5%;
   width: 1.9%;
   text-align: center;
   margin-top: 0.5%;
@@ -291,12 +291,7 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .green-piece {
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.svg);
 }
-.html-lesson-wrapper .see-content .phrases-section .yellow-piece,
-.html-lesson-wrapper .see-content .phrases-section .green-piece {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 .html-lesson-wrapper .see-content .phrases-section .icon {
   text-align: center;
   font-size: clamp(10px, 2vw, 14px);
@@ -329,6 +324,15 @@ td {
   width: -moz-min-content;
   width: min-content;
   min-width: 100%;
+  position: absolute;
+  margin-left: 17%;
+  margin-top: 43%;
+  font-size: 0.7rem;
+}
+.html-lesson-wrapper .see-2 img {
+  margin-top: 10%;
+  margin-bottom: -73.6%;
+  width: 100%;
 }
 .html-lesson-wrapper .see-content .phrases-section .legend {
   display: -webkit-box;
@@ -383,6 +387,7 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
   letter-spacing: -0.5px;
+  color: #7f8288;
 }
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
@@ -434,10 +439,11 @@ td {
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: clamp(8px, 3vw, 12px);
+  font-size: 11px;
 }
 
 .html-lesson-wrapper .see-content.see-1 {
-  margin-top: 29%;
+  margin-top: 33%;
 }
 .html-lesson-wrapper .see-content.see-1 .office-section.office-see-1 {
   margin-top: clamp(20px, 6.5vw, 29px);
@@ -462,29 +468,46 @@ td {
   margin-top: 6.5%;
   margin-left: 5%;
 }
-.html-lesson-wrapper
-  .see-content.see-1
-  .office-section
-  .conversation
-  .speech.steve {
-  margin-top: 3%;
-  margin-left: 18%;
-}
-.html-lesson-wrapper
-  .see-content.see-1
-  .office-section
-  .conversation
-  .speech.akiko {
-  left: 35%;
-  margin-top: 16%;
-}
+
 .html-lesson-wrapper
   .see-content.see-2
   .phrases-section
   .conversation
   .akiko
   .eng.comp-1 {
-  margin-top: 10%;
+  margin-top: 26%;
+  margin-left: 20%;
+  position: absolute;
+}
+.html-lesson-wrapper
+  .see-content.see-2
+  .phrases-section
+  .conversation
+  .akiko
+  .eng.comp-2 {
+  margin-top: 56%;
+  margin-left: 0.5%;
+  position: absolute;
+}
+.html-lesson-wrapper
+  .see-content.see-2
+  .phrases-section
+  .conversation
+  .akiko
+  .eng.proj-1 {
+  margin-top: 34.4%;
+  margin-left: 47.5%;
+  position: absolute;
+}
+.html-lesson-wrapper
+  .see-content.see-2
+  .phrases-section
+  .conversation
+  .akiko
+  .eng.proj-2 {
+  margin-top: 56%;
+  margin-left: 47%;
+  position: absolute;
 }
 .html-lesson-wrapper .see-content.see-2,
 .html-lesson-wrapper .see-content.see-3,
@@ -512,28 +535,6 @@ td {
   display: grid;
   grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
   grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-}
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .steve
-  .icon {
-  margin-right: 10px;
-}
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .steve
-  .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-}
-.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko {
-  margin-top: clamp(17px, 4vw, 27px);
-  display: grid;
-  grid-template-columns: minmax(auto, 1fr) -webkit-min-content;
-  grid-template-columns: minmax(auto, 1fr) min-content;
 }
 .html-lesson-wrapper
   .see-content.see-2
@@ -569,127 +570,7 @@ td {
 .html-lesson-wrapper .see-content.see-3 .office-section .conversation .eng {
   font-size: clamp(7px, 1.8vw, 13px);
 }
-.html-lesson-wrapper
-  .see-content.see-3
-  .office-section
-  .conversation
-  .bubble.akiko {
-  margin-top: 5%;
-  left: 9%;
-}
-.html-lesson-wrapper
-  .see-content.see-3
-  .office-section
-  .conversation
-  .speech.akiko-1 {
-  margin-top: 13%;
-  left: 24.5%;
-}
-.html-lesson-wrapper
-  .see-content.see-3
-  .office-section
-  .conversation
-  .speech.akiko-2 {
-  margin-top: 25.5%;
-  left: 28%;
-}
-.html-lesson-wrapper
-  .see-content.see-3
-  .office-section
-  .conversation
-  .speech.glen-1 {
-  margin-top: 13%;
-  left: 45%;
-}
-.html-lesson-wrapper
-  .see-content.see-3
-  .office-section
-  .conversation
-  .speech.glen-2 {
-  margin-top: 34.5%;
-  left: 36%;
-}
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .akiko {
-  margin-top: clamp(28px, 5vw, 38px);
-  display: grid;
-  grid-template-columns: -webkit-min-content 1fr;
-  grid-template-columns: min-content 1fr;
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .akiko
-  .icon {
-  margin-right: 20px;
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .akiko
-  .eng {
-  padding: 10px 27px 10px 20px;
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .akiko
-  .phrase:not(:last-child) {
-  margin-right: 20px;
-}
-.html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen {
-  margin-top: clamp(28px, 5vw, 38px);
-  display: grid;
-  grid-template-columns: 1fr -webkit-min-content;
-  grid-template-columns: 1fr min-content;
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .glen
-  .phrases {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .glen
-  .phrases
-  > div:first-child {
-  margin-left: clamp(58px, 13vw, 110px);
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .glen
-  .phrases
-  > div:first-child
-  > .phrase {
-  margin-right: clamp(10px, 10vw, 30px);
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .glen
-  .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-}
-.html-lesson-wrapper
-  .see-content.see-4
-  .phrases-section
-  .conversation
-  .glen
-  .away-from-icon {
-  margin-right: clamp(20px, 8vw, 58px);
-}
+
 .html-lesson-wrapper .see-content.see-4 .phrases-section .legend {
   margin-top: 5%;
 }
@@ -703,9 +584,16 @@ td {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: clamp(20px, 5vw, 32px);
 }
+.html-lesson-wrapper .try-content.try-1 .combinations .combi {
+  margin-left: 52%;
+  margin-top: 4%;
+  position: absolute;
+}
 .html-lesson-wrapper .try-content.try-1 .combinations .combination-icon {
-  height: clamp(119px, 20vw, 183px);
-  width: clamp(119px, 20vw, 183px);
+  height: auto;
+  width: 559px;
+  margin-top: -24%;
+  margin-left: 6%;
 }
 .html-lesson-wrapper .try-content.try-1 .combinations .combination {
   -webkit-box-align: center;
@@ -713,8 +601,11 @@ td {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   margin-bottom: clamp(14px, 2vw, 24px);
+}
+.html-lesson-wrapper .try-content.try-1 .combinations .combination .letters {
+  color: #1287cd;
+  font-weight: 600;
 }
 .html-lesson-wrapper
   .try-content.try-1
@@ -723,166 +614,226 @@ td {
   > div:not(:last-child) {
   margin-right: clamp(5px, 2vw, 10px);
 }
-.html-lesson-wrapper .try-content.try-2 .office-section {
-  margin-top: clamp(20px, 6.5vw, 42px);
+.html-lesson-wrapper .spn {
+  color: #1287cd;
 }
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.nick {
-  margin-top: 9%;
-  left: 29%;
+.html-lesson-wrapper .trainer b span.spn {
+  margin-right: 5%;
 }
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.takashi {
+.html-lesson-wrapper .try-content.try-2 table tbody tr.you,
+.html-lesson-wrapper .try-content.try-3 table tbody tr.you {
+  margin-left: 6%;
+  margin-top: 3%;
+  position: absolute;
+}
+.html-lesson-wrapper .try-content.try-2 table tbody tr.you .spn,
+.html-lesson-wrapper .try-content.try-3 table tbody tr.you .spn {
+  color: #1287cd;
+}
+.html-lesson-wrapper .try-content.try-2 .right.p1,
+.html-lesson-wrapper .try-content.try-2 .left.p1,
+.html-lesson-wrapper .try-content.try-2 .right.p2,
+.html-lesson-wrapper .try-content.try-2 .left.p2,
+.html-lesson-wrapper .try-content.try-2 .right.p3,
+.html-lesson-wrapper .try-content.try-2 .left.p3,
+.html-lesson-wrapper .try-content.try-2 .right.p4,
+.html-lesson-wrapper .try-content.try-2 .left.p4,
+.html-lesson-wrapper .try-content.try-2 .right.p5,
+.html-lesson-wrapper .try-content.try-2 .left.p5,
+.html-lesson-wrapper .try-content.try-3 .right.p1,
+.html-lesson-wrapper .try-content.try-3 .left.p1,
+.html-lesson-wrapper .try-content.try-3 .right.p2,
+.html-lesson-wrapper .try-content.try-3 .left.p2,
+.html-lesson-wrapper .try-content.try-3 .right.p3,
+.html-lesson-wrapper .try-content.try-3 .left.p3,
+.html-lesson-wrapper .try-content.try-3 .right.p4,
+.html-lesson-wrapper .try-content.try-3 .left.p4,
+.html-lesson-wrapper .act-content.act-1 .act-text {
+  color: #2d356b;
+  position: absolute;
+  text-align: center;
+}
+.html-lesson-wrapper .try-content.try-2 .right.p1 {
+  margin-top: 14%;
+  margin-left: 45%;
+}
+.html-lesson-wrapper .try-content.try-2 .left.p1 {
+  margin-top: 14%;
+  margin-left: 14%;
+}
+.html-lesson-wrapper .try-content.try-2 .right.p2 {
+  margin-top: 15%;
+  margin-left: 43%;
+}
+.html-lesson-wrapper .try-content.try-2 .left.p2 {
+  margin-top: 15%;
+  margin-left: 23%;
+}
+.html-lesson-wrapper .try-content.try-2 .right.p3 {
+  margin-top: 14%;
+  margin-left: 42%;
+  text-align: center;
+}
+.html-lesson-wrapper .try-content.try-2 .left.p3 {
   margin-top: 22%;
-  left: 33%;
+  margin-left: 17%;
 }
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.pete {
-  margin-top: 9.5%;
-  left: 31%;
-}
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.mizuho {
-  margin-top: 21%;
-  left: 37%;
-}
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.risa {
-  margin-top: 10%;
-  left: 31%;
-}
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.ken {
-  margin-top: 24%;
-  left: 44%;
-}
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.raj {
-  margin-top: 11%;
-  left: 28%;
-}
-.html-lesson-wrapper
-  .try-content.try-2
-  .office-section
-  .conversation
-  .speech.eri {
-  left: 39%;
-  margin-top: 22%;
-}
-.html-lesson-wrapper .try-content.try-3 .combination-2 {
-  margin-top: clamp(20px, 5vw, 32px);
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.html-lesson-wrapper .try-content.try-3 .combination-2 .combination-icon {
-  height: clamp(119px, 20vw, 183px);
-  width: clamp(119px, 20vw, 183px);
-}
-.html-lesson-wrapper .try-content.try-3 .combination-2 .combination {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: clamp(14px, 2vw, 24px);
-}
-.html-lesson-wrapper
-  .try-content.try-3
-  .combination-2
-  .combination
-  > div:not(:last-child) {
-  margin-right: clamp(5px, 2vw, 10px);
-}
-.html-lesson-wrapper .try-content.try-4 .office-section {
-  margin-top: clamp(20px, 6.5vw, 42px);
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-1 .bubble.takeshi {
-  margin-top: 10%;
-  left: 14%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-1 .speech.takeshi {
-  margin-top: 23%;
-  left: 27%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-1 .speech.kelly {
-  margin-top: 26%;
-  left: 48%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-2 .bubble.akiko {
-  margin-top: 10%;
-  left: 13%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-2 .speech.akiko {
-  margin-top: 19%;
-  left: 32%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-2 .speech.kelly {
-  margin-top: 25.5%;
-  left: 49.5%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-3 .bubble.kenji {
-  margin-top: 10%;
-  left: 16%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-3 .speech.kenji {
-  margin-top: 19%;
-  left: 32%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-3 .speech.mandy {
-  margin-top: 28%;
-  left: 44.5%;
-}
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-4 .bubble.kenji {
+.html-lesson-wrapper .try-content.try-2 .right.p4 {
   margin-top: 12%;
-  left: 12%;
+  margin-left: 32%;
 }
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-4 .speech.kenji {
-  margin-top: 26%;
-  left: 34%;
+.html-lesson-wrapper .try-content.try-2 .left.p4 {
+  margin-top: 15%;
+  margin-left: 23%;
 }
-.html-lesson-wrapper .try-content.try-4 .conversation.conv-4 .speech.mandy {
-  margin-top: 28%;
-  left: 56%;
+.html-lesson-wrapper .try-content.try-2 .right.p5 {
+  margin-top: 16%;
+  margin-left: 28%;
 }
-.html-lesson-wrapper .act-content.act-1,
-.html-lesson-wrapper .act-content.act-2 {
-  margin-top: 32px;
+.html-lesson-wrapper .try-content.try-2 .left.p5 {
+  margin-top: 15%;
+  margin-left: 23%;
 }
-.html-lesson-wrapper .act-content.act-2 {
-  margin-bottom: 50px;
+.html-lesson-wrapper .try-content.try-3 .right.p1 {
+  margin-top: 14%;
+  margin-left: 45%;
 }
-.html-lesson-wrapper .act-content .office-section {
-  margin-top: clamp(20px, 6.5vw, 29px);
-  margin-bottom: clamp(20px, 6.5vw, 29px);
+.html-lesson-wrapper .try-content.try-3 .left.p1 {
+  margin-top: 15%;
+  margin-left: 14%;
 }
-.html-lesson-wrapper .act-content .office-section .conversation .bubble.akiko {
+.html-lesson-wrapper .try-content.try-3 .right.p2 {
+  margin-top: 16%;
+  margin-left: 59%;
+}
+.html-lesson-wrapper .try-content.try-3 .left.p2 {
+  margin-top: 16%;
+  margin-left: 19%;
+}
+.html-lesson-wrapper .try-content.try-3 .right.p3 {
+  margin-top: 17%;
+  margin-left: 61%;
+}
+.html-lesson-wrapper .try-content.try-3 .left.p3 {
+  margin-top: 17%;
+  margin-left: 27%;
+}
+.html-lesson-wrapper .try-content.try-3 .right.p4 {
+  margin-top: 18%;
+  margin-left: 58%;
+}
+.html-lesson-wrapper .try-content.try-3 .left.p4 {
+  margin-top: 18%;
+  margin-left: 24%;
+}
+.html-lesson-wrapper .act-content.act-1 .act-text.left.p1 {
+  margin-top: 14%;
+  margin-left: 11%;
+}
+.html-lesson-wrapper .act-content.act-1 .act-text.center.p1 {
   margin-top: 9%;
-  left: 11%;
+  margin-left: 31%;
 }
-.html-lesson-wrapper
-  .act-content
-  .office-section
-  .conversation
-  .bubble.akiko
-  .eng {
-  font-size: clamp(8px, 2vw, 14px);
+.html-lesson-wrapper .act-content.act-1 .act-text.right.p1 {
+  margin-top: 14%;
+  margin-left: 52%;
+}
+.html-lesson-wrapper .try-content.try-2 img {
+  margin-top: 10%;
+}
+.html-lesson-wrapper .try-content.try-3 img {
+  margin-top: 15%;
+}
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 460px) {
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .see-content .phrases-section .jap {
+    font-size: 0.4rem;
+  }
+  .html-lesson-wrapper .try-content.try-1 .combinations .combination-icon {
+    width: 280px;
+    margin-bottom: 25%;
+  }
+  .html-lesson-wrapper .try-content.try-1 .combinations .combination .letters {
+    font-size: 11px;
+  }
+  .html-lesson-wrapper .plus > img {
+    width: 11px;
+  }
+  .html-lesson-wrapper .try-content.try-1 .combinations .combi {
+    margin-left: 42%;
+  }
+  .html-lesson-wrapper .try-content.try-1,
+  .html-lesson-wrapper .try-content.try-2,
+  .html-lesson-wrapper .try-content.try-3,
+  .html-lesson-wrapper .try-content.try-4 {
+    font-size: 12px;
+  }
+  .html-lesson-wrapper .try-content.try-2 img {
+    margin-top: 15%;
+  }
+
+  .html-lesson-wrapper .try-content.try-2 .left.p1 {
+    margin-top: 18%;
+    margin-left: 14%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .right.p1 {
+    margin-top: 17%;
+    margin-left: 45%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .left.p2 {
+    margin-top: 19%;
+    margin-left: 22%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .right.p2 {
+    margin-top: 19%;
+    margin-left: 42%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .left.p3 {
+    margin-top: 26%;
+    margin-left: 18%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .right.p3 {
+    margin-top: 18%;
+    margin-left: 42%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .left.p4 {
+    margin-top: 17%;
+    margin-left: 12%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .right.p4 {
+    margin-top: 16%;
+    margin-left: 32%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .left.p5 {
+    margin-top: 17%;
+    margin-left: 12%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .right.p5 {
+    margin-top: 21%;
+    margin-left: 29%;
+  }
+  .html-lesson-wrapper .try-content.try-2 .trainer table tr td:first-child {
+    width: 58px !important;
+  }
+  .html-lesson-wrapper .try-content .left,
+  .html-lesson-wrapper .try-content .right,
+  .html-lesson-wrapper .act-content.act-1 .act-text {
+    font-size: 10px !important;
+  }
+  .html-lesson-wrapper .table .jap {
+    font-size: 7px;
+  }
+  .html-lesson-wrapper .see-content.see-1 {
+    margin-top: 35%;
+  }
+  .html-lesson-wrapper .lesson-number {
+    right: 8%;
+  }
 }

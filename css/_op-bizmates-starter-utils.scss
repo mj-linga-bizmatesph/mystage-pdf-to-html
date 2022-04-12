@@ -1,0 +1,492 @@
+/*
+this file is intended to be use Other Programs - Bizmates Starter Lessons 1-20, 
+if you want to override the specified class, go to the scss file 
+of the lesson and make the same class, and override it depending 
+on what you need.
+*/
+$trebuchet: 'Trebuchet MS';
+$helvetica: 'Helvetica', 'Arial', sans-serif;
+
+$primary-blue: #1287cd;
+$primary-pink: #bd3762;
+$rank-blue: #72ade0;
+$primary-gray: #9fa0a0;
+$primary-light: #cce0ea;
+
+$subtext-color: #7f8288;
+
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.html-lesson-wrapper {
+  font-family: $trebuchet;
+  position: relative;
+  width: 100%;
+  min-width: 360px;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: fit-content;
+  overflow: hidden;
+  padding-bottom: 40px;
+  background-image: url(#{$s3}/OP-Starter-bg-header.svg),
+    url(#{$s3}/other-programs-footer-logo-bare.svg);
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 15px;
+  }
+
+  header {
+    top: 0;
+    margin-bottom: clamp(50px, 15vw, 65px);
+    margin-top: -3%;
+    position: relative;
+  }
+
+  footer {
+    font-family: $helvetica;
+    font-size: clamp(5px, 1.5vw, 10px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      right: 2%;
+      @media only screen and (max-width: 767px) {
+        &:not(.review) {
+          max-width: 117px;
+          bottom: -10px;
+        }
+        &.review {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .jp {
+    @extend .gray-text;
+  }
+
+  // Global classes
+  .img-responsive-clamp {
+    max-width: clamp(44%, 25vw, 100%);
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-right {
+    justify-content: right;
+  }
+  .flex-center {
+    justify-content: center;
+  }
+  .flex-vertical-middle {
+    justify-items: center;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .mt-2 {
+    margin-top: 1rem;
+  }
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  .mt-5 {
+    margin-top: 2.5rem;
+  }
+  .mt-7 {
+    margin-top: 3.5rem;
+  }
+  .mt-8 {
+    margin-top: 4rem;
+  }
+  .pb-1 {
+    padding-bottom: 0.25rem;
+  }
+  .gray-text {
+    color: #9fa0a0;
+  }
+  .white-text {
+    color: #fff;
+  }
+  .flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .middle-dot {
+    font-family: $helvetica;
+    position: absolute;
+  }
+
+  [class*='col-'] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+  }
+
+  .exclude-letter-spacing {
+    letter-spacing: normal;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .u-blue {
+    text-decoration: underline;
+    color: $primary-blue;
+  }
+  .primary-blue {
+    color: $primary-blue;
+  }
+  .program-rank {
+    font-family: $helvetica;
+    position: absolute;
+    color: #ffffff;
+    margin-top: clamp(10px, 3vw, 25px);
+    margin-left: clamp(10px, 3vw, 37px);
+
+    .type {
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
+        clamp(10px, 3vw, 17px);
+      background-color: $primary-pink;
+      font-size: clamp(7px, 1.8vw, 15px);
+    }
+    .level {
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 25px)
+        clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 15px);
+      background: $rank-blue;
+      width: 100%;
+      margin-left: -2%;
+    }
+    .separator {
+      font-family: $helvetica;
+      position: relative;
+      display: inline;
+      margin: 0 6px;
+      font-size: 16px;
+      .line {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+      }
+    }
+  }
+  .lesson-number {
+    position: absolute;
+    right: 3.8%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: 4.8%;
+    font-size: clamp(9px, 2.5vw, 17px);
+    color: #ffffff;
+    font-weight: bold;
+    &.two {
+      right: 4%;
+    }
+    @media only screen and (max-device-width: 767px) {
+      margin-top: 4%;
+      right: 4.3%;
+    }
+  }
+
+  .header-content {
+    font-family: $helvetica;
+    position: relative;
+    top: clamp(30px, 8vw, 50px);
+    color: black;
+    box-sizing: content-box;
+    margin-top: clamp(10px, 3vw, 25px);
+    margin-left: clamp(10px, 3vw, 37px);
+    margin-right: clamp(10px, 3vw, 25px);
+
+    .title {
+      font-family: $helvetica;
+      font-size: clamp(13px, 3vw, 19px);
+      @media only screen and (max-width: 767px) {
+        padding-top: 0.5rem;
+      }
+    }
+    .header-content-grid {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @media only screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .header-image {
+        padding: clamp(5px, 3vw, 8px) 0 clamp(5px, 3vw, 8px) 0;
+        img {
+          width: 100%;
+        }
+      }
+      .header-desc {
+        padding: clamp(10px, 4.5vw, 20px) 0 clamp(10px, 4.5vw, 20px)
+          clamp(10px, 4.5vw, 20px);
+        font-size: clamp(8px, 3vw, 13.5px);
+        .jap {
+          @extend .gray-text;
+        }
+        @media only screen and (max-device-width: 767px) {
+          padding: clamp(10px, 4.5vw, 20px);
+        }
+      }
+    }
+  }
+
+  .content-item {
+    display: flex;
+    .content-label {
+      width: 8%;
+      .gray-label {
+        @extend .flex, .flex-right;
+        background-image: url(#{$s3}/OP-Starter-title-bg.svg);
+        background-size: 100% 100%;
+        font-weight: bold;
+        font-family: $helvetica;
+        font-size: clamp(8px, 3vw, 15px);
+        vertical-align: middle;
+        padding-top: clamp(2px, 1vw, 5px);
+        padding-bottom: clamp(2px, 1vw, 5px);
+        padding-right: clamp(3px, 1.2vw, 6px);
+        color: #fff;
+      }
+    }
+    .content-div {
+      width: 92%;
+      margin-bottom: 15px;
+      .conversation-exchange {
+        display: flex;
+        font-size: clamp(8px, 2.2vw, 17px);
+        box-sizing: border-box;
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;
+          margin-left: 10px;
+        }
+        .conversation-item {
+          box-sizing: border-box;
+          margin-left: clamp(7px, 2.5vw, 17px);
+          padding-right: 3%;
+          @media only screen and (max-width: 767px) {
+            padding-right: 6%;
+          }
+          &:first-child {
+            border-right: solid 1px $primary-gray;
+          }
+          &:last-child {
+            padding-left: 2%;
+            @media only screen and (max-width: 767px) {
+              padding-left: 0;
+            }
+          }
+          .item-title {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            padding-bottom: clamp(10px, 2vw, 15px);
+            font-family: $helvetica;
+            .item-number {
+              font-size: clamp(14px, 5vw, 39px);
+              line-height: clamp(13px, 4vw, 35px);
+              color: $primary-pink;
+              font-weight: bold;
+              padding-right: clamp(7px, 2.5vw, 15px);
+              letter-spacing: -3px;
+            }
+            .item-text {
+              p {
+                margin: 0;
+                font-size: clamp(7px, 2.2vw, 14px);
+                &.en {
+                  font-weight: bold;
+                }
+                &.jp {
+                  @extend .gray-text;
+                }
+              }
+            }
+          }
+          .item-conversations {
+            .conv {
+              display: grid;
+              margin-bottom: 3%;
+              &.conv-left {
+                grid-template-columns: min-content 1fr;
+              }
+              &.conv-right {
+                grid-template-columns: 1fr min-content;
+              }
+              .avatar {
+                img {
+                  width: clamp(18px, 9vw, 62px);
+                }
+                .avatar-label {
+                  position: absolute;
+                  color: #fff;
+                  font-size: clamp(8px, 3vw, 15px);
+                  margin-top: clamp(-4.5%, -3.2%, -1.4%);
+                  left: 10.4%;
+                  font-weight: bold;
+                }
+              }
+              .speech {
+                padding-bottom: 1%;
+                &.left {
+                  padding-left: 8%;
+                }
+                &.right {
+                  padding-right: 8%;
+                  padding-left: 2%;
+                }
+                .bubble {
+                  display: block;
+                  padding: 10px 10px 10px 15px;
+                  position: relative;
+                  clear: both;
+                  border: 1px solid $primary-gray;
+                  height: auto;
+                  min-height: 50px;
+                  width: 100%;
+                  box-sizing: border-box;
+                  &::before {
+                    content: '\00a0';
+                    display: block;
+                    height: 12px;
+                    position: absolute;
+                    top: 12px;
+                    -moz-transform: rotate(30deg) skew(-35deg);
+                    -ms-transform: rotate(30deg) skew(-35deg);
+                    -o-transform: rotate(30deg) skew(-35deg);
+                    -webkit-transform: rotate(30deg) skew(-35deg);
+                    transform: rotate(30deg) skew(-35deg);
+                    width: 15px;
+                  }
+                  &.bubble-left {
+                    background-color: #ffffff;
+                    float: left;
+                    &::before {
+                      background-color: #ffffff;
+                      left: -9px;
+                      border-left: 1px solid $primary-gray;
+                      border-bottom: 1px solid $primary-gray;
+                    }
+                  }
+                  &.bubble-right {
+                    background-color: #ffffff;
+                    left: -9px;
+                    border-left: 1px solid $primary-gray;
+                    border-bottom: 1px solid $primary-gray;
+                    &::before {
+                      background-color: #fff;
+                      right: -9px;
+                      border-right: 1px solid $primary-gray;
+                      border-top: 1px solid $primary-gray;
+                    }
+                  }
+                  &.empty {
+                    height: clamp(30px, 5vw, 61px);
+                  }
+                  p {
+                    font-size: clamp(8px, 3vw, 13px);
+                    margin: 0;
+                  }
+                  .other-phrases-label {
+                    font-family: $helvetica;
+                    color: #fff !important;
+                    background-color: $primary-pink;
+                    border-top: 1px solid $primary-gray;
+                    border-bottom: 1px solid $primary-gray;
+                    font-size: clamp(8px, 3vw, 14.5px);
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                    margin-right: -10px;
+                    margin-left: -15px;
+                  }
+                  .option {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .try-content {
+        padding-left: 3%;
+        padding-right: 3%;
+        .try-title {
+          p {
+            margin: 0;
+            font-size: clamp(8px, 3vw, 14.5px);
+            &.en {
+              font-weight: bold;
+            }
+            &.jp {
+              @extend .gray-text;
+            }
+          }
+        }
+        .try-content-div {
+          ol.try-content-list {
+            padding-inline-start: 20px;
+            font-size: clamp(8px, 3vw, 14px);
+          }
+          ul.try-content-list-ul {
+            padding-inline-start: 20px;
+            font-size: clamp(8px, 3vw, 14px);
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}

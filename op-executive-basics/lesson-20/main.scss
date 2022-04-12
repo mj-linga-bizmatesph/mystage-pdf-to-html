@@ -1,0 +1,15 @@
+@import '../../css/op-executive-basics-utils';
+.html-lesson-wrapper {
+  .review-content {
+    margin-top: 26%;
+    .lsn {
+      li:before {
+        content: 'Lsn 1' counter(item, decimal) ': ';
+      }
+
+      .arrows {
+        margin: 1% 0 2% 5.3em;
+      }
+    }
+  }
+}

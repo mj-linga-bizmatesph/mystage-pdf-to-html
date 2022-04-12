@@ -6,7 +6,7 @@ on what you need.
 */
 $text-font: 'Trebuchet MS';
 $title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -24,43 +24,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.justify-left {
-  justify-content: left !important;
-}
-
-.justify-center {
-  justify-content: center !important;
-}
-
-.justify-right {
-  justify-content: end !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.img-responsive-clamp {
-  max-width: clamp(44%, 25vw, 100%);
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -76,8 +39,45 @@ td {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-left {
+    justify-content: left !important;
+  }
+
+  .justify-center {
+    justify-content: center !important;
+  }
+
+  .justify-right {
+    justify-content: end !important;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-responsive-clamp {
+    max-width: clamp(44%, 25vw, 100%);
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-14 {
@@ -119,17 +119,17 @@ td {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 5px);
+    margin-top: clamp(1px, 1vw, 3px);
 
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
         clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px)
-        clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
+        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
@@ -161,7 +161,6 @@ td {
   }
   .at-mention {
     color: #9ea9fc;
-    font-family: $title-font;
   }
   .eng {
     font-weight: bold;
@@ -173,16 +172,11 @@ td {
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
   }
-  .line {
-    margin: 0 12px;
-  }
   .lesson-number {
     position: absolute;
-    right: 8%;
-    width: 1.9%;
+    right: 6%;
     text-align: center;
-    margin-top: 0.5%;
-    font-size: clamp(1px, 4vw, 28px);
+    font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
   }
 
@@ -263,9 +257,9 @@ td {
 
           & > .number {
             font-size: clamp(15px, 4vw, 24px);
-            width: clamp(20px, 4vw, 35px);
-            height: clamp(20px, 4vw, 35px);
-            line-height: clamp(20px, 4vw, 35px);
+            width: clamp(18px, 5vw, 24px);
+            height: clamp(18px, 5vw, 24px);
+            line-height: clamp(18px, 5vw, 24px);
           }
         }
       }
@@ -308,7 +302,6 @@ td {
     text-align: center;
     width: clamp(13px, 4vw, 24px);
     min-width: clamp(13px, 4vw, 24px);
-
     height: clamp(13px, 4vw, 24px);
     line-height: clamp(13px, 4vw, 24px);
     font-family: $noto-sans;
@@ -604,6 +597,9 @@ td {
       .legend {
         display: flex;
         justify-content: space-between;
+        .eng {
+          margin-bottom: 2px;
+        }
       }
     }
   }

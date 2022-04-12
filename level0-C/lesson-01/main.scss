@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
@@ -15,33 +14,6 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 body {
   margin: 0;
   padding: 0;
-}
-
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .html-lesson-wrapper {
@@ -59,8 +31,30 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-16 {
@@ -91,17 +85,17 @@ hr {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 5px);
+    margin-top: clamp(1px, 1vw, 3px);
 
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
+        clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
+        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
@@ -131,14 +125,11 @@ hr {
       width: 100%;
     }
   }
-  .line {
-    margin: 0 12px;
-  }
   .lesson-number {
     position: absolute;
-    top: 1vh;
-    right: 6.3%;
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    right: 6%;
+    text-align: center;
+    font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
   }
 
@@ -1365,7 +1356,7 @@ hr {
         position: absolute;
         left: clamp(12.6%, 13vw, 13%);
         margin-top: clamp(49px, 14vw, 80px);
-        
+
         .eng {
           font-family: $text-font;
           font-weight: bold;
@@ -1460,100 +1451,100 @@ hr {
       margin-bottom: 80px;
     }
   }
-}
 
-@media only screen and(max-width: 460px) {
-  .section-2-content .wrap-all-boxes .jap {
-    margin-top: -6px !important;
+  @media only screen and(max-width: 460px) {
+    .section-2-content .wrap-all-boxes .jap {
+      margin-top: -6px !important;
+    }
   }
-}
 
-@media only screen and(max-width: 540px) {
-  .see3-content .wrapper-with-akiko .akiko-image {
-    left: 1px !important;
+  @media only screen and(max-width: 540px) {
+    .see3-content .wrapper-with-akiko .akiko-image {
+      left: 1px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 400px) and(max-width: 450px) {
-  .see3-content .phrases-container .phrase-alts {
-    margin-top: -19px !important;
+  @media only screen and (min-width: 400px) and(max-width: 450px) {
+    .see3-content .phrases-container .phrase-alts {
+      margin-top: -19px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 350px) and(max-width: 399px) {
-  .see3-content .phrases-container .phrase-alts {
-    margin-top: -21px !important;
+  @media only screen and (min-width: 350px) and(max-width: 399px) {
+    .see3-content .phrases-container .phrase-alts {
+      margin-top: -21px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 100px) and(max-width: 350px) {
-  .see3-content .phrases-container .phrase-alts {
-    margin-top: -22px !important;
+  @media only screen and (min-width: 100px) and(max-width: 350px) {
+    .see3-content .phrases-container .phrase-alts {
+      margin-top: -22px !important;
+    }
   }
-}
 
-@media only screen and(max-width: 310px) {
-  .try-4-content .you-second-line {
-    margin-left: 66px !important;
+  @media only screen and(max-width: 310px) {
+    .try-4-content .you-second-line {
+      margin-left: 66px !important;
+    }
   }
-}
 
-@media only screen and(max-width: 320px) {
-  .see3-content .wrapper-with-akiko .akiko-image {
-    margin-left: -8px !important;
+  @media only screen and(max-width: 320px) {
+    .see3-content .wrapper-with-akiko .akiko-image {
+      margin-left: -8px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 480px) and(max-width: 550px) {
-  .see-2 .section-2-content .phrase-alts {
-    margin-top: -10px !important;
+  @media only screen and (min-width: 480px) and(max-width: 550px) {
+    .see-2 .section-2-content .phrase-alts {
+      margin-top: -10px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 400px) and(max-width: 480px) {
-  .see-2 .section-2-content .phrase-alts {
-    margin-top: -13px !important;
+  @media only screen and (min-width: 400px) and(max-width: 480px) {
+    .see-2 .section-2-content .phrase-alts {
+      margin-top: -13px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 200px) and(max-width: 399px) {
-  .see-2 .section-2-content .phrase-alts {
-    margin-top: -17px !important;
+  @media only screen and (min-width: 200px) and(max-width: 399px) {
+    .see-2 .section-2-content .phrase-alts {
+      margin-top: -17px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 100px) and(max-width: 200px) {
-  .see-2 .section-2-content .phrase-alts {
-    margin-top: -17px !important;
+  @media only screen and (min-width: 100px) and(max-width: 200px) {
+    .see-2 .section-2-content .phrase-alts {
+      margin-top: -17px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 450px) and(max-width: 500px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
-    margin-top: -6px !important;
+  @media only screen and (min-width: 450px) and(max-width: 500px) {
+    .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+      margin-top: -6px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 380px) and(max-width: 450px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
-    margin-top: -6px !important;
+  @media only screen and (min-width: 380px) and(max-width: 450px) {
+    .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+      margin-top: -6px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 100px) and(max-width: 380px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
-    margin-top: -7px !important;
+  @media only screen and (min-width: 100px) and(max-width: 380px) {
+    .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+      margin-top: -7px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 300px) and(max-width: 458px) {
-  .see-2 .section-2-content .wrap-all-boxes .jap {
-    margin-top: -14px !important;
+  @media only screen and (min-width: 300px) and(max-width: 458px) {
+    .see-2 .section-2-content .wrap-all-boxes .jap {
+      margin-top: -14px !important;
+    }
   }
-}
 
-@media only screen and (min-width: 100px) and(max-width: 300px) {
-  .see-2 .section-2-content .wrap-all-boxes .jap {
-    margin-top: -12px !important;
+  @media only screen and (min-width: 100px) and(max-width: 300px) {
+    .see-2 .section-2-content .wrap-all-boxes .jap {
+      margin-top: -12px !important;
+    }
   }
 }

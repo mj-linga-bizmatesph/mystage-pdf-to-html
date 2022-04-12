@@ -1,10 +1,6 @@
 @import '../../css/level0-utils';
-//individuals
-.html-lesson-wrapper {
-  .lesson-number {
-    right: 6.7%;
-  }
 
+.html-lesson-wrapper {
   .see-content {
     &.see-1 {
       margin-top: 29%;
@@ -116,7 +112,7 @@
         margin-bottom: 8%;
       }
 
-      .phrase-wrapper:not(:last-child()) {
+      .phrase-wrapper:not(:last-child) {
         margin-bottom: 4%;
       }
 
@@ -261,7 +257,7 @@
                 @extend .fs-18;
                 box-sizing: border-box;
 
-                &:not(:last-child()) {
+                &:not(:last-child) {
                   margin-bottom: 6%;
                 }
               }

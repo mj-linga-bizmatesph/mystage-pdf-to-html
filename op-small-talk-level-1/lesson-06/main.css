@@ -6,7 +6,6 @@ body {
 .html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
-  max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
   height: -webkit-fit-content;
@@ -47,15 +46,21 @@ body {
 }
 
 .html-lesson-wrapper .program-rank .type {
-  padding: 3px 16px 3px 14px;
+  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #cc3366;
-  font-size: clamp(6.48px, 1.8vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: 3px 12px 3px 13px;
-  background-color: #339999;
-  font-size: clamp(6.48px, 1.8vw, 15px);
+  padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 7px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+  font-size: clamp(7px, 1.8vw, 15px);
+  background: #339999;
+  width: 100%;
+  margin-left: -2%;
+}
+
+.html-lesson-wrapper .program-rank .level.two {
+  padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
 }
 
 .html-lesson-wrapper .line {
@@ -148,7 +153,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .biz-tip-content {
@@ -161,7 +166,7 @@ body {
   padding-bottom: 4%;
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .biz-tip-content .section {
@@ -466,4 +471,3 @@ body {
 .html-lesson-wrapper .try-content li {
   line-height: 1.8;
 }
-/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,68 @@
+@import '../../css/op-job-interview-basics-utils';
+
+.html-lesson-wrapper {
+  .see-content {
+    table {
+      td:first-child {
+        width: 9em;
+      }
+
+      td {
+        padding: 0;
+        line-height: normal;
+      }
+    }
+
+    .paper {
+      padding: 1%;
+      border-color: black;
+      border-style: solid;
+      border-width: 1px;
+      margin-right: 8%;
+
+      p {
+        margin: 0;
+      }
+
+      &.magenta {
+        border-color: $magenta;
+      }
+
+      &-section {
+        margin-bottom: 3%;
+
+        &.content {
+          ul {
+            margin: 0;
+            margin-block: 0;
+            padding-inline: 0;
+
+            li {
+              padding: 0;
+              list-style-position: inside;
+            }
+          }
+
+          & > p {
+            text-decoration: underline;
+            font-weight: bold;
+            margin-bottom: 1%;
+            text-underline-offset: 0.09em;
+          }
+
+          div {
+            margin-left: 5%;
+          }
+        }
+      }
+    }
+  }
+
+  .try-content {
+    table {
+      tr.blank td {
+        padding: 4%;
+      }
+    }
+  }
+}

@@ -89,17 +89,17 @@ body {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
-  margin-top: clamp(1px, 1vw, 5px);
+  margin-top: clamp(1px, 1vw, 3px);
 }
 
 .html-lesson-wrapper .program-rank .type {
-  padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px) clamp(10px, 2vw, 17px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
   background-color: #1287cd;
   font-size: clamp(7px, 1.8vw, 12px);
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px) clamp(10px, 2vw, 17px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
   font-size: clamp(7px, 1.8vw, 12px);
   background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
@@ -107,15 +107,11 @@ body {
   width: 100%;
 }
 
-.html-lesson-wrapper .line {
-  margin: 0 12px;
-}
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  top: 1vh;
-  right: 6.3%;
-  font-size: clamp(0.8rem, 4vw, 1.5rem);
+  right: 6%;
+  text-align: center;
+  font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
 }
 
@@ -1579,4 +1575,3 @@ body {
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;
 }
-/*# sourceMappingURL=main.css.map */

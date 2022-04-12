@@ -79,16 +79,17 @@ body {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 5px);
+    margin-top: clamp(1px, 1vw, 3px);
+
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
+        clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
+        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
@@ -114,14 +115,11 @@ body {
       width: 100%;
     }
   }
-  .line {
-    margin: 0 12px;
-  }
   .lesson-number {
     position: absolute;
-    top: 0.5vh;
-    right: 6.3%;
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    right: 6%;
+    text-align: center;
+    font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
   }
 

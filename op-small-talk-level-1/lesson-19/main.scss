@@ -1,0 +1,30 @@
+@import '../../css/small-talk-level-1-utils';
+
+.html-lesson-wrapper {
+    .lesson-number{
+        position: absolute;
+    left: 91.7%;
+    margin-top: 7.5%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    }
+    
+    .see-content {
+      li {
+        line-height: 1.8;
+      }
+    }
+    .try-content {
+      .space {
+        margin-top: 8%;
+      }
+      li {
+        line-height: 1.8;
+      }
+    }
+    .act-content {
+      .normal {
+        font-weight: normal;
+      }
+    }
+  }
+  

@@ -117,7 +117,7 @@ body {
     margin-left: $left-pixel;
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
   }
   .table {
     width: 100%;
@@ -147,16 +147,18 @@ body {
     padding-bottom: clamp(10px, 2vw, 20px);
     padding-left: clamp(32px, 6vw, 47px);
     background: $primary-light;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
     .section {
       margin-left: $left-pixel;
       line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
     }
     .pointers {
-      margin-top: clamp(12px, 2.8vw, 20px) !important;
+      margin-top: clamp(14px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
+      line-height: 1.8;
       .text-header {
+        line-height: 1.8;
         position: relative;
         left: -17px;
         margin-bottom: clamp(6px, 1vw, 10px);
@@ -167,7 +169,7 @@ body {
           content: '';
           position: absolute;
           left: -16px;
-          top: 5px;
+          top: 8px;
           width: 0;
           height: 0;
           border-left: 5px solid transparent;
@@ -189,22 +191,30 @@ body {
     margin-top: 30px;
     .decimal {
       list-style-type: decimal;
+      line-height: 1.8;
     }
     .bullet {
       list-style-type: none;
+      line-height: 1.8;
       margin-left: -7px;
       li::before {
         content: '\2022';
         color: black;
         display: inline-block;
         width: 1em;
+        list-style-position: inside;
       }
     }
   }
   .act-content {
-    margin-top: 36px;
     height: fit-content;
     margin-bottom: clamp(50px, 13vw, 120px);
+    .act {
+      margin-top: 4px;
+    }
+    p {
+      line-height: 1.8;
+    }
     table {
       border-collapse: collapse;
       width: 70%;
@@ -216,15 +226,22 @@ body {
     }
   }
   footer {
-    color: #0c0c0c;
-    font-size: clamp(4.5px, 1.1vw, 9px);
-    position: absolute;
-    width: fit-content;
-    text-align: right;
-    bottom: 43px;
-    right: 6.2%;
     font-family: $title-font;
-    max-width: 44%;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: 43px;
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      max-width: 45%;
+      right: 2%;
+    }
+  }
+  .inline-block {
+    display: inline-block;
   }
 }
 
@@ -288,7 +305,7 @@ body {
     .arrow-part {
       &:before {
         left: -3% !important;
-        top: 0.6vw !important;
+        top: clamp(8px, 1vw, 1.2vw) !important;
       }
     }
   }
@@ -313,6 +330,11 @@ body {
         border-top: 5.5px solid black !important;
       }
     }
+    .act-content {
+      table {
+        width: 105%;
+      }
+    }
   }
 }
 @media screen and (max-width: 460px) {
@@ -323,6 +345,18 @@ body {
     }
     .try-content .sub-text {
       margin-left: 10px;
+    }
+    .sub-text {
+      padding-top: 2.5px;
+    }
+    .inline-block {
+      display: block !important;
+    }
+    .decimal {
+      margin-left: 25px !important;
+    }
+    .text-header {
+      margin-top: -3px !important;
     }
   }
 }

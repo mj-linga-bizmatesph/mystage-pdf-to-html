@@ -11,7 +11,7 @@
     margin-left: $left-pixel;
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
     .part-1 {
       margin-left: 8px;
       font-family: $title-font !important;
@@ -26,6 +26,7 @@
     ul {
       list-style-type: square;
       margin-left: clamp(18px, 3vw, 24px);
+      line-height: 1.8;
       li {
         margin-bottom: clamp(10px, 2vw, 20px);
       }

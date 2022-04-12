@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -14,37 +13,9 @@ $side-margin: clamp(18px, 5vw, 32px);
 
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
-
 body {
   margin: 0;
   padding: 0;
-}
-
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .html-lesson-wrapper {
@@ -62,8 +33,30 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-16 {
@@ -94,17 +87,16 @@ hr {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 5px);
-
+    margin-top: clamp(1px, 1vw, 3px);
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
+        clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
+        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
@@ -134,14 +126,11 @@ hr {
       width: 100%;
     }
   }
-  .line {
-    margin: 0 12px;
-  }
   .lesson-number {
     position: absolute;
-    top: 1vh;
-    right: 6.3%;
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    right: 6%;
+    text-align: center;
+    font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
   }
 
@@ -715,7 +704,7 @@ hr {
             background-image: url(#{$s3}/0-B-6-Try2-1.svg);
           }
         }
-        .trainer{
+        .trainer {
           margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
@@ -742,10 +731,9 @@ hr {
         .you {
           margin-left: clamp(15px, 5vw, 30px);
           font-size: clamp(11px, 3.3vw, 19px);
-
         }
 
-        .trainer{
+        .trainer {
           margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
@@ -753,7 +741,6 @@ hr {
         .you-2 {
           margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
-
         }
         .bubble {
           position: absolute;
@@ -786,7 +773,7 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
 
-        .trainer{
+        .trainer {
           margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
@@ -794,7 +781,6 @@ hr {
         .you-2 {
           margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
-
         }
         .bubble {
           position: absolute;
@@ -827,7 +813,7 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
 
-        .trainer{
+        .trainer {
           margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
@@ -835,7 +821,6 @@ hr {
         .you-2 {
           margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
-
         }
         .bubble {
           position: absolute;
@@ -868,7 +853,7 @@ hr {
           font-size: clamp(11px, 3.3vw, 19px);
         }
 
-        .trainer{
+        .trainer {
           margin-left: clamp(10px, 5vw, 15px);
           font-size: clamp(11px, 3.3vw, 19px);
         }
@@ -876,7 +861,6 @@ hr {
         .you-2 {
           margin-left: clamp(15px, 6vw, 45px);
           font-size: clamp(11px, 3.3vw, 19px);
-
         }
         .bubble {
           position: absolute;
@@ -896,7 +880,6 @@ hr {
           background-repeat: no-repeat;
         }
       }
-
     }
   }
 
@@ -1185,8 +1168,6 @@ hr {
     }
   }
 
-
-
   .see-3 {
     .see-3-content {
       padding-left: clamp(4px, 2vw, 2px);
@@ -1208,39 +1189,38 @@ hr {
         }
       }
 
-        .phrase-1 {
-          margin-left: clamp(92px, 23vw, 170px);
-          margin-bottom: clamp(30px, 4vw, 40px);
-          display: flex;
+      .phrase-1 {
+        margin-left: clamp(92px, 23vw, 170px);
+        margin-bottom: clamp(30px, 4vw, 40px);
+        display: flex;
 
-          .english {
-            width: clamp(25px, 8vw, 40px);
-            background-image: url(#{$s3}/0-B-6-piece-1-pink.svg);
-            font-size: clamp(11px, 1.8vw, 16px);
-            border-radius: 3px;
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-            font-size: clamp(11px, 1.8vw, 16px);
-          }
+        .english {
+          width: clamp(25px, 8vw, 40px);
+          background-image: url(#{$s3}/0-B-6-piece-1-pink.svg);
+          font-size: clamp(11px, 1.8vw, 16px);
+          border-radius: 3px;
+          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+          font-size: clamp(11px, 1.8vw, 16px);
+        }
 
-          .english-2 {
-            margin-left: clamp(10px, 5vw, 25px);
-            width: clamp(80px, 15vw, 120px);
-            background-image: url(#{$s3}/0-B-6-piece-2.svg);
-            font-size: clamp(11px, 1.8vw, 16px);
-            border-radius: 3px;
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-            font-size: clamp(11px, 1.8vw, 16px);
-          }
+        .english-2 {
+          margin-left: clamp(10px, 5vw, 25px);
+          width: clamp(80px, 15vw, 120px);
+          background-image: url(#{$s3}/0-B-6-piece-2.svg);
+          font-size: clamp(11px, 1.8vw, 16px);
+          border-radius: 3px;
+          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+          font-size: clamp(11px, 1.8vw, 16px);
+        }
 
-          .jap {
-            font-size: clamp(8px, 1.9vw, 13px);
-            position: absolute;
-            margin-top: clamp(35px, 10vw, 60px);
-            color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
-          }
-          }
-
+        .jap {
+          font-size: clamp(8px, 1.9vw, 13px);
+          position: absolute;
+          margin-top: clamp(35px, 10vw, 60px);
+          color: $subtext-color;
+          letter-spacing: $jap-letter-spacing;
+        }
+      }
 
       .phrases-container {
         margin-top: clamp(50px, 16vw, 80px);
@@ -1351,134 +1331,133 @@ hr {
       .conversation {
         margin-top: 40px;
 
-          .try-3-row-1{
-            display: flex;
-            .try3-col1{
-              width: clamp(50px, 35vw, 210px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              text-align: center;
-              border-radius: 4px;
+        .try-3-row-1 {
+          display: flex;
+          .try3-col1 {
+            width: clamp(50px, 35vw, 210px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 4px;
 
-              .try3-col1-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
-            }
-
-            .try3-col2{
-              width: clamp(50px, 35vw, 165px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              margin-left: 3%;
-              text-align: center;
-              border-radius: 4px;
-
-              .try3-col2-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
+            .try3-col1-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
             }
           }
 
-          .try-3-row-2{
-            display: flex;
-            .try3-col1{
-              width: clamp(40px, 30vw, 160px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              text-align: center;
-              border-radius: 4px;
+          .try3-col2 {
+            width: clamp(50px, 35vw, 165px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-left: 3%;
+            text-align: center;
+            border-radius: 4px;
 
-              .try3-col1-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
+            .try3-col2-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
             }
+          }
+        }
 
-            .try3-col2{
-              width: clamp(150px, 35vw, 210px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              margin-left: 3%;
-              text-align: center;
-              border-radius: 4px;
+        .try-3-row-2 {
+          display: flex;
+          .try3-col1 {
+            width: clamp(40px, 30vw, 160px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 4px;
 
-              .try3-col2-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
+            .try3-col1-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
             }
           }
 
-          .try-3-row-3{
-            display: flex;
-            .try3-col1{
-              width: clamp(30px, 25vw, 140px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              text-align: center;
-              border-radius: 4px;
+          .try3-col2 {
+            width: clamp(150px, 35vw, 210px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-left: 3%;
+            text-align: center;
+            border-radius: 4px;
 
-              .try3-col1-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
+            .try3-col2-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
             }
+          }
+        }
 
-            .try3-col2{
-              width: clamp(120px, 25vw, 180px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              margin-left: 3%;
-              text-align: center;
-              border-radius: 4px;
+        .try-3-row-3 {
+          display: flex;
+          .try3-col1 {
+            width: clamp(30px, 25vw, 140px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 4px;
 
-              .try3-col2-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
+            .try3-col1-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
             }
           }
 
-          .try-3-row-4{
-            display: flex;
-            margin-bottom: 30px;
-            .try3-col1{
-              width: clamp(100px, 50vw, 270px);
-              min-height: clamp(35px, 25vw, 35px);
-              background-color: #E7F3FA;
-              font-weight: 700;
-              margin-bottom: 10px;
-              text-align: center;
-              border-radius: 4px;
+          .try3-col2 {
+            width: clamp(120px, 25vw, 180px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-left: 3%;
+            text-align: center;
+            border-radius: 4px;
 
-              .try3-col1-text{
-                display: inline-block;
-                padding-top: clamp(9px, 4vw, 6px);
-                font-size: clamp(10px, 2.1vw, 14px);
-              }
+            .try3-col2-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
             }
           }
+        }
 
+        .try-3-row-4 {
+          display: flex;
+          margin-bottom: 30px;
+          .try3-col1 {
+            width: clamp(100px, 50vw, 270px);
+            min-height: clamp(35px, 25vw, 35px);
+            background-color: #e7f3fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 4px;
+
+            .try3-col1-text {
+              display: inline-block;
+              padding-top: clamp(9px, 4vw, 6px);
+              font-size: clamp(10px, 2.1vw, 14px);
+            }
+          }
+        }
       }
 
       .conversation-text {
@@ -1501,7 +1480,7 @@ hr {
             .akiko-line-1 {
               font-size: clamp(10px, 2.1vw, 14px);
 
-              .bubble{
+              .bubble {
                 position: absolute;
                 left: 62%;
                 margin-top: -11%;
@@ -1545,7 +1524,7 @@ hr {
               font-size: clamp(10px, 2.1vw, 14px);
               margin-left: clamp(10px, 4vw, 22px);
 
-              .underline{
+              .underline {
                 color: $primary-blue;
                 text-decoration: underline;
               }
@@ -1691,7 +1670,7 @@ hr {
         }
 
         .convo1,
-        .convo3{
+        .convo3 {
           font-family: $noto-sans;
           margin-bottom: 20px;
           .english {
@@ -1718,17 +1697,3 @@ hr {
     }
   }
 }
-
-// @media only screen and(max-width: 375px) {
-//   .icon {
-//     margin-top: -100px !important;
-//     margin-left: 30% !important;
-//     // img {
-//     //   height: clamp(51px, 19vw, 100px);
-//     //   width: auto;
-//     // }
-//     // div {
-//     //   margin-top: clamp(8px, 2vw, 9px);
-//     // }
-//   }
-// }

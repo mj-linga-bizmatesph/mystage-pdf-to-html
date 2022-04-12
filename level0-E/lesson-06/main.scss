@@ -1,12 +1,8 @@
 @import '../../css/level0-utils';
-//individuals
+
 .html-lesson-wrapper {
   .ls {
     letter-spacing: -2.5px;
-  }
-
-  .lesson-number {
-    right: 6.7%;
   }
 
   .see-content {
@@ -121,7 +117,7 @@
         margin-bottom: 8%;
       }
 
-      .phrase-wrapper:not(:last-child()) {
+      .phrase-wrapper:not(:last-child) {
         margin-bottom: 4%;
       }
 

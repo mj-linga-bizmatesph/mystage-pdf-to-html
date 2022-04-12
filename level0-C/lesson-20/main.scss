@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -130,7 +129,7 @@ td {
 .html-lesson-wrapper .jap {
   letter-spacing: -0.5px;
   color: #7f8288;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
   font-size: clamp(7px, 1.8vw, 11px);
 }
 .html-lesson-wrapper .line {
@@ -168,10 +167,10 @@ td {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .instructions {
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 28%;
@@ -259,14 +258,14 @@ td {
   width: clamp(13px, 4vw, 24px);
   height: clamp(13px, 4vw, 24px);
   line-height: clamp(13px, 4vw, 24px);
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
   font-size: clamp(11px, 3vw, 16px);
   z-index: 1;
 }
 .html-lesson-wrapper .letter {
   border: 2px solid #1287cd;
   color: #1287cd;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
   width: clamp(11px, 4vw, 20px);
   height: clamp(11px, 4vw, 20px);
   line-height: clamp(11px, 4vw, 20px);
@@ -289,7 +288,7 @@ td {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .see-content .phrases-section .yellow {
   background: #ffe200;
@@ -322,7 +321,7 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase p {
   margin: clamp(3px, 0.5vw, 5px) 0px;
@@ -331,7 +330,7 @@ td {
   font-size: clamp(8px, 2vw, 16px);
   text-align: center;
   border-radius: 3px;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .see-content .phrases-section .jap {
   font-size: clamp(7px, 2vw, 14px);
@@ -394,7 +393,7 @@ td {
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-eng {
   font-size: clamp(9px, 2vw, 18px);
@@ -447,7 +446,7 @@ td {
   padding-top: 4px;
 }
 .html-lesson-wrapper .table .eng {
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
   font-weight: normal;
   font-size: clamp(11px, 2.8vw, 18px);
   margin-bottom: clamp(2px, 1vw, 5px);
@@ -702,7 +701,7 @@ td {
   text-align: center;
   color: #2d356b;
   font-size: 16px;
-  font-family: 'Noto Sans';
+  font-family: $noto-sans;
   width: 100%;
   font-weight: 700;
 }

@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -25,51 +24,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.small-line {
-  height: 2px;
-  width: 16px;
-  background: $primary-blue;
-  margin-bottom: 1.5vw;
-}
-
-.trebuchet {
-  font-family: $text-font;
-}
-
-.content-mt {
-  margin-top: clamp(20px, 6.5vw, 38px);
-}
-
-.span-letter-spacing {
-  letter-spacing: -2.5px !important;
-}
-
-.text-underline {
-  color: #1287cd;
-  text-decoration: underline;
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -85,8 +39,53 @@ td {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .small-line {
+    height: 2px;
+    width: 16px;
+    background: $primary-blue;
+    margin-bottom: 1.5vw;
+  }
+
+  .trebuchet {
+    font-family: $text-font;
+  }
+
+  .content-mt {
+    margin-top: clamp(20px, 6.5vw, 38px);
+  }
+
+  .span-letter-spacing {
+    letter-spacing: -2.5px !important;
+  }
+
+  .text-underline {
+    color: #1287cd;
+    text-decoration: underline;
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-16 {

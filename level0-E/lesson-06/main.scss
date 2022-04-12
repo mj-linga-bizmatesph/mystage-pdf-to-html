@@ -1,5 +1,5 @@
 @import '../../css/level0-utils';
-//individuals
+
 .html-lesson-wrapper {
   .ls {
     letter-spacing: -2.5px;
@@ -121,7 +121,7 @@
         margin-bottom: 8%;
       }
 
-      .phrase-wrapper:not(:last-child()) {
+      .phrase-wrapper:not(:last-child) {
         margin-bottom: 4%;
       }
 

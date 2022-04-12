@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -18,43 +17,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-td {
-  vertical-align: top;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.justify-left {
-  justify-content: left !important;
-}
-
-.justify-center {
-  justify-content: center !important;
-}
-
-.justify-right {
-  justify-content: end !important;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.img-responsive-clamp {
-  max-width: clamp(44%, 25vw, 100%);
-}
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -70,8 +32,45 @@ td {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-left {
+    justify-content: left !important;
+  }
+
+  .justify-center {
+    justify-content: center !important;
+  }
+
+  .justify-right {
+    justify-content: end !important;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-responsive-clamp {
+    max-width: clamp(44%, 25vw, 100%);
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-16 {
@@ -632,7 +631,6 @@ td {
 
 .html-lesson-wrapper {
   .see-content {
-    //individuals
     &.see-1 {
       margin-top: 29%;
 
@@ -755,7 +753,7 @@ td {
         margin-bottom: 8%;
       }
 
-      .phrase-wrapper:not(:last-child()) {
+      .phrase-wrapper:not(:last-child) {
         margin-bottom: 4%;
       }
 

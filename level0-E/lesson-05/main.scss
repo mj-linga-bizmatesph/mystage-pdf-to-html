@@ -1,5 +1,5 @@
 @import '../../css/level0-utils';
-//individual differences
+
 .html-lesson-wrapper {
   .lesson-number {
     right: 6.7%;
@@ -113,7 +113,7 @@
             margin-top: 42%;
             left: 14%;
 
-            .eng:not(:last-child()) {
+            .eng:not(:last-child) {
               margin-bottom: 4.5%;
             }
           }
@@ -140,7 +140,7 @@
             margin-top: 34.5%;
             left: 13%;
           }
-          .eng:not(:last-child()) {
+          .eng:not(:last-child) {
             margin-bottom: 4.5%;
           }
         }
@@ -157,7 +157,7 @@
             margin-top: 33.5%;
             left: 14%;
           }
-          .eng:not(:last-child()) {
+          .eng:not(:last-child) {
             margin-bottom: 7%;
           }
         }

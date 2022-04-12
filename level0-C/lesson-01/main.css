@@ -3,35 +3,6 @@ body {
   padding: 0;
 }
 
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
   width: 100%;
@@ -49,8 +20,32 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.html-lesson-wrapper hr {
+  border-top: 1px solid #dbdcdc;
+}
+.html-lesson-wrapper .m-0 {
+  margin: 0;
+}
+.html-lesson-wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.html-lesson-wrapper .img-responsive {
+  width: 100%;
+  height: auto;
+}
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 .html-lesson-wrapper header {
-  font-family: "Arial";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .fs-16 {
   font-size: clamp(12px, 2.3vw, 16px);
@@ -60,7 +55,7 @@ hr {
   transform: scaleX(-1);
 }
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .b, .html-lesson-wrapper .see-3 .see3-content .phrase-alts .letter, .html-lesson-wrapper .see-3 .see3-content .phrase-alts .number, .html-lesson-wrapper .section-2-content .phrase-alts .letter, .html-lesson-wrapper .section-2-content .phrase-alts .number-white, .html-lesson-wrapper .section-2-content .phrase-alts .number, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .arrow {
   font-weight: bold;
@@ -114,7 +109,7 @@ hr {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .title-section .title {
   font-size: clamp(13px, 3.6vw, 23px);
@@ -134,10 +129,10 @@ hr {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .instructions {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 28%;
@@ -172,7 +167,7 @@ hr {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
@@ -230,7 +225,7 @@ hr {
   font-family: "Trebuchet MS";
 }
 .html-lesson-wrapper .section-1-convo .bubble-1 .jap {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.3px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
@@ -253,7 +248,7 @@ hr {
   font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .section-1-convo .bubble-2 .jap {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: -1px;
@@ -415,7 +410,7 @@ hr {
 .html-lesson-wrapper .section-2-content .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .section-2-content .phrase-alts .choice-eng {
   font-size: clamp(8px, 2.1vw, 16px);
@@ -432,7 +427,7 @@ hr {
   margin: 0;
   text-align: center;
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(11px, 2vw, 16px);
   z-index: 1;
   width: clamp(18px, 4vw, 24px);
@@ -447,7 +442,7 @@ hr {
   margin: 0;
   text-align: center;
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(11px, 2vw, 16px);
   z-index: 1;
   width: clamp(18px, 4vw, 24px);
@@ -464,7 +459,7 @@ hr {
   margin: 0;
   text-align: center;
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(11px, 2vw, 16px);
   z-index: 1;
   width: clamp(18px, 4vw, 24px);
@@ -518,7 +513,7 @@ hr {
   height: clamp(18px, 4vw, 24px);
   display: grid;
   place-items: center;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   font-size: clamp(11px, 2.7vw, 16px);
 }
@@ -888,7 +883,7 @@ hr {
 .html-lesson-wrapper .see-3 .see3-content .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .see-3 .see3-content .phrase-alts .choice-eng {
   font-size: clamp(9px, 2.5vw, 16px);
@@ -907,14 +902,14 @@ hr {
   width: clamp(13px, 4vw, 24px);
   height: clamp(13px, 4vw, 24px);
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(11px, 3vw, 16px);
   z-index: 1;
 }
 .html-lesson-wrapper .see-3 .see3-content .phrase-alts .letter {
   border: 2px solid #1287cd;
   color: #1287cd;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   width: clamp(11px, 4vw, 20px);
   height: clamp(11px, 4vw, 20px);
   line-height: clamp(11px, 4vw, 20px);
@@ -967,7 +962,7 @@ hr {
   height: clamp(18px, 4vw, 24px);
   display: grid;
   place-items: center;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   font-size: clamp(11px, 2.7vw, 16px);
 }
@@ -1193,7 +1188,7 @@ hr {
   font-size: clamp(8.5px, 2.4vw, 14px);
 }
 .html-lesson-wrapper .act-content .act-1-content .convo-text .jap {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.5px, 1.8vw, 11px);
   color: #7f8288;
   letter-spacing: -2px;
@@ -1225,13 +1220,13 @@ hr {
   font-size: clamp(10px, 2.3vw, 18px);
 }
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-1 {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(10px, 2.3vw, 18px);
   margin-left: clamp(37px, 8.6vw, 60px);
   margin-top: 5px;
 }
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-2 {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
@@ -1244,7 +1239,7 @@ hr {
   margin-top: 25px;
 }
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-4 {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
@@ -1252,13 +1247,13 @@ hr {
   margin-top: 9px;
 }
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-5 {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(10px, 2.3vw, 18px);
   margin-top: 25px;
 }
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-6 {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
@@ -1268,84 +1263,83 @@ hr {
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;
 }
-
 @media only screen and (max-width: 460px) {
-  .section-2-content .wrap-all-boxes .jap {
+  .html-lesson-wrapper .section-2-content .wrap-all-boxes .jap {
     margin-top: -6px !important;
   }
 }
 @media only screen and (max-width: 540px) {
-  .see3-content .wrapper-with-akiko .akiko-image {
+  .html-lesson-wrapper .see3-content .wrapper-with-akiko .akiko-image {
     left: 1px !important;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 450px) {
-  .see3-content .phrases-container .phrase-alts {
+  .html-lesson-wrapper .see3-content .phrases-container .phrase-alts {
     margin-top: -19px !important;
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 399px) {
-  .see3-content .phrases-container .phrase-alts {
+  .html-lesson-wrapper .see3-content .phrases-container .phrase-alts {
     margin-top: -21px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 350px) {
-  .see3-content .phrases-container .phrase-alts {
+  .html-lesson-wrapper .see3-content .phrases-container .phrase-alts {
     margin-top: -22px !important;
   }
 }
 @media only screen and (max-width: 310px) {
-  .try-4-content .you-second-line {
+  .html-lesson-wrapper .try-4-content .you-second-line {
     margin-left: 66px !important;
   }
 }
 @media only screen and (max-width: 320px) {
-  .see3-content .wrapper-with-akiko .akiko-image {
+  .html-lesson-wrapper .see3-content .wrapper-with-akiko .akiko-image {
     margin-left: -8px !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 550px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -10px !important;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 480px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -13px !important;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 399px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -17px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 200px) {
-  .see-2 .section-2-content .phrase-alts {
+  .html-lesson-wrapper .see-2 .section-2-content .phrase-alts {
     margin-top: -17px !important;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 500px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .new-business-box {
     margin-top: -6px !important;
   }
 }
 @media only screen and (min-width: 380px) and (max-width: 450px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .new-business-box {
     margin-top: -6px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 380px) {
-  .see-2 .section-2-content .wrap-all-boxes .new-business-box {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .new-business-box {
     margin-top: -7px !important;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 458px) {
-  .see-2 .section-2-content .wrap-all-boxes .jap {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .jap {
     margin-top: -14px !important;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 300px) {
-  .see-2 .section-2-content .wrap-all-boxes .jap {
+  .html-lesson-wrapper .see-2 .section-2-content .wrap-all-boxes .jap {
     margin-top: -12px !important;
   }
 }

@@ -51,15 +51,23 @@ body {
     font-size: clamp(7px, 1.8vw, 15px);
 
     .type {
-      padding: 3px 16px 3px 14px;
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
+        clamp(10px, 3vw, 17px);
       background-color: $magenta;
-      font-size: clamp(6.48px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
     }
 
     .level {
-      padding: 3px 12px 3px 13px;
-      background-color: $blue-green;
-      font-size: clamp(6.48px, 1.8vw, 15px);
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 7px) clamp(1px, 1vw, 2px)
+        clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 15px);
+      background: $blue-green;
+      width: 100%;
+      margin-left: -2%;
+      &.two {
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
+          clamp(10px, 3vw, 17px);
+      }
     }
   }
 
@@ -346,16 +354,25 @@ body {
   }
 
   footer {
-    font-size: clamp(4.5px, 1.1vw, 9px);
-    position: absolute;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    text-align: right;
-    bottom: 3.5%;
-    right: 6.2%;
     font-family: $helvetica;
-    max-width: 35%;
+    font-size: clamp(5px, 1.5vw, 10px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: -20px;
+    @media only screen and (max-width: 767px) {
+      bottom: -45px;
+    }
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      right: 2%;
+      @media only screen and (max-width: 767px) {
+        max-width: 117px;
+      }
+    }
   }
 
   @media screen and (max-width: 1280px) {

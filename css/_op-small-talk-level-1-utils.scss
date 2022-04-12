@@ -8,14 +8,10 @@ body {
   margin: 0;
   padding: 0;
 }
-$magenta: #cc3366;
-$magenta-light: #f0d4d4;
-$blue-green: #339999;
 
 .html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
-  max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
   height: -webkit-fit-content;
@@ -55,17 +51,22 @@ $blue-green: #339999;
     font-size: clamp(7px, 1.8vw, 15px);
 
     .type {
-      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-      background-color: #bd3762;
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
+        clamp(10px, 3vw, 17px);
+      background-color: $magenta;
       font-size: clamp(8px, 1.8vw, 15px);
     }
 
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(5px, 4vw, 7px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-    font-size: clamp(8px, 1.8vw, 15px);
-    background: #339999;
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 7px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+    font-size: clamp(7px, 1.8vw, 15px);
+    background: $blue-green;
     width: 100%;
     margin-left: -2%;
+    &.two {
+      padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
+        clamp(10px, 3vw, 17px);
+    }
     }
   }
 
@@ -161,7 +162,7 @@ $blue-green: #339999;
     margin-left: clamp(50px, 14%, 126.5px);
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
   }
 
   .biz-tip-content {
@@ -174,7 +175,7 @@ $blue-green: #339999;
     padding-bottom: 4%;
     padding-left: clamp(32px, 6vw, 47px);
     background: $magenta-light;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
 
     .section {
       margin-left: clamp(50px, 14%, 126.5px);
@@ -265,7 +266,6 @@ $blue-green: #339999;
   }
 
   .try-content {
-
     table {
       margin-top: 5px;
       font-size: clamp(6px, 1.8vw, 15px);
@@ -303,15 +303,17 @@ $blue-green: #339999;
   }
 
   .act-content {
+    line-height: 1.8;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    .aut{
+    .aut {
+      font-size: clamp(12px, 2vw, 15px);
       margin-left: 64%;
       position: absolute;
       margin-top: 35px;
       font-weight: bold;
-      }
+    }
   }
 
   .review-content {
@@ -364,11 +366,11 @@ $blue-green: #339999;
     font-family: $helvetica;
     max-width: 35%;
   }
-
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: 460px){
     &{
-      min-height: 581px;
-      padding-bottom: 17%;
+      footer{
+        bottom: 1.7%;
+      }
     }
   }
 
@@ -393,7 +395,7 @@ $blue-green: #339999;
       }
       .see-content {
         margin-top: clamp(22px, 3.8vw, 36px);
-  
+
         .article {
           margin-bottom: clamp(20px, 3.7vw, 29px);
         }
@@ -401,39 +403,41 @@ $blue-green: #339999;
       .try-content {
         margin-top: clamp(20px, 3.7vw, 30px);
         padding-left: clamp(11px, 2.4vw, 18px);
-  
+
         ul {
           margin-left: clamp(11px, 2.4vw, 18px);
         }
-  
+
         li {
           padding-left: clamp(9px, 1.8vw, 13px);
         }
       }
       .act-content {
         margin-top: clamp(20px, 3.8vw, 36px);
-        .aut{
+        .aut {
           margin-left: 64%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;
-          }
+        }
       }
     }
-    
   }
 
   @media screen and (max-width: 768px) {
-    &{
+    & {
       min-height: 581px;
       padding-bottom: 23%;
       .act-content {
-        .aut{
+        .aut {
           margin-left: 52%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;
-          }
+        }
+      }
+      footer{
+        bottom: 2%;
       }
       .program-rank {
         position: absolute;
@@ -451,20 +455,22 @@ $blue-green: #339999;
         }
       }
     }
-   
   }
 
   @media screen and (max-width: 400px) {
-    &{
+    & {
       min-height: 581px;
-      padding-bottom: 13%;
+      padding-bottom: 26%;
       .act-content {
-        .aut{
+        .aut {
           margin-left: 52%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;
-          }
+        }
+      }
+      footer{
+        bottom: 1.7%;
       }
       .type {
         padding: 2px 8px 2px 7px !important;
@@ -482,8 +488,5 @@ $blue-green: #339999;
         border-top-width: 5.5px !important;
       }
     }
-    
-    
   }
-  /*# sourceMappingURL=main.css.map */
 }

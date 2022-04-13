@@ -377,6 +377,9 @@ body {
     right: 6.2%;
     font-family: $helvetica;
     max-width: 35%;
+    .no-wrap {
+      white-space: nowrap;
+    }
   }
   @media screen and (max-width: 460px) {
     & {
@@ -487,7 +490,7 @@ body {
         }
       }
       footer {
-        bottom: 1.7%;
+        bottom: 1%;
       }
       .type {
         padding: 2px 8px 2px 7px !important;

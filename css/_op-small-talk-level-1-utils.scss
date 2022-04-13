@@ -11,7 +11,7 @@ body {
 
 .html-lesson-wrapper {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
   height: -webkit-fit-content;
@@ -367,17 +367,21 @@ body {
   }
 
   footer {
+    .no-wrap {
+      white-space: nowrap;
+    }
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     text-align: right;
-    bottom: 3.5%;
+    bottom: 4em;
     right: 6.2%;
     font-family: $helvetica;
-    max-width: 35%;
+    max-width: 41%;
   }
+  
   @media screen and (max-width: 460px) {
     & {
       footer {
@@ -480,7 +484,7 @@ body {
       padding-bottom: 37%;
       .act-content {
         .aut {
-          margin-left: 52%;
+          margin-left: 48%;
           position: absolute;
           margin-top: 35px;
           font-weight: bold;

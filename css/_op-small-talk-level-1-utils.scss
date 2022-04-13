@@ -48,7 +48,7 @@ body {
     top: 40px;
     left: 57px;
     color: #ffffff;
-    font-size: clamp(7px, 1.8vw, 15px);
+    font-size: clamp(8px, 1.8vw, 15px);
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
@@ -58,15 +58,16 @@ body {
     }
 
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 7px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-    font-size: clamp(7px, 1.8vw, 15px);
-    background: $blue-green;
-    width: 100%;
-    margin-left: -2%;
-    &.two {
-      padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 7px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
-    }
+      font-size: clamp(7px, 1.8vw, 15px);
+      background: $blue-green;
+      width: 100%;
+      margin-left: -2%;
+      &.two {
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
+          clamp(10px, 3vw, 17px);
+      }
     }
   }
 
@@ -78,7 +79,7 @@ body {
     position: absolute;
     top: 80px;
     left: 56px;
-    font-size: clamp(12px, 3vw, 27px);
+    font-size: clamp(18px, 4vw, 27px);
   }
 
   .lesson-number {
@@ -130,7 +131,7 @@ body {
 
   .divider {
     color: #d9d9d9;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
     position: relative;
     left: 52%;
   }
@@ -155,7 +156,6 @@ body {
   }
 
   .see-content,
-  .act-content,
   .try-content,
   .review-content {
     position: relative;
@@ -163,6 +163,18 @@ body {
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .act-content {
+    position: relative;
+    margin-left: clamp(50px, 14%, 126.5px);
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(12px, 2vw, 15px);
+
+    .section {
+      margin-top: -3px;
+    }
   }
 
   .biz-tip-content {
@@ -173,14 +185,14 @@ body {
     height: -moz-fit-content;
     height: fit-content;
     padding-bottom: 4%;
-    padding-left: clamp(32px, 6vw, 47px);
+    padding-left: clamp(32px, 13vw, 47px);
     background: $magenta-light;
     font-size: clamp(12px, 2vw, 15px);
 
     .section {
       margin-left: clamp(50px, 14%, 126.5px);
       line-height: 1.8em;
-      margin-top: 3% !important;
+      margin-top: 2.5%;
     }
 
     .pointers {
@@ -366,9 +378,9 @@ body {
     font-family: $helvetica;
     max-width: 35%;
   }
-  @media screen and (max-width: 460px){
-    &{
-      footer{
+  @media screen and (max-width: 460px) {
+    & {
+      footer {
         bottom: 1.7%;
       }
     }
@@ -390,6 +402,7 @@ body {
       .section {
         left: calc(-16% + 50px);
         &.words {
+          margin-top: 2.5%;
           left: calc(-14% + 52px);
         }
       }
@@ -429,6 +442,9 @@ body {
       min-height: 581px;
       padding-bottom: 23%;
       .act-content {
+        .section {
+          margin-top: -8px;
+        }
         .aut {
           margin-left: 52%;
           position: absolute;
@@ -436,7 +452,7 @@ body {
           font-weight: bold;
         }
       }
-      footer{
+      footer {
         bottom: 2%;
       }
       .program-rank {
@@ -451,6 +467,7 @@ body {
       .section {
         left: calc(-16% + 23px);
         &.words {
+          margin-top: 2.5%;
           left: calc(-14% + 24px);
         }
       }
@@ -460,7 +477,7 @@ body {
   @media screen and (max-width: 400px) {
     & {
       min-height: 581px;
-      padding-bottom: 26%;
+      padding-bottom: 37%;
       .act-content {
         .aut {
           margin-left: 52%;
@@ -469,14 +486,14 @@ body {
           font-weight: bold;
         }
       }
-      footer{
+      footer {
         bottom: 1.7%;
       }
       .type {
         padding: 2px 8px 2px 7px !important;
       }
       .level {
-        padding: 2px 6px 2px 7px !important;
+        padding: 2.5px 6px 2px 7px !important;
       }
       .line {
         margin: 0 6px;

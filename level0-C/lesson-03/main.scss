@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
@@ -10,36 +9,10 @@ $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
 body {
   margin: 0;
   padding: 0;
-}
-
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .html-lesson-wrapper {
@@ -57,8 +30,30 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
 
   .fs-16 {
@@ -89,17 +84,17 @@ hr {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 5px);
+    margin-top: clamp(1px, 1vw, 3px);
 
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
+        clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
+        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
@@ -129,14 +124,11 @@ hr {
       width: 100%;
     }
   }
-  .line {
-    margin: 0 12px;
-  }
   .lesson-number {
     position: absolute;
-    top: 0.5vh;
-    right: 6.3%;
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    right: 6%;
+    text-align: center;
+    font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
   }
 
@@ -1284,16 +1276,16 @@ hr {
       margin-bottom: 80px;
     }
   }
-}
 
-@media only screen and (min-width: 150px) and(max-width: 442px) {
-  .section-2-content .wrapper-with-akiko .akiko-image {
-    margin-left: -25px !important;
-  }
-  .section-2-content .wrap-for-flex {
-    margin-left: -5px;
-  }
-  .section-2-content .wrap-all-boxes .jap {
-    margin-left: -5px;
+  @media only screen and (min-width: 150px) and(max-width: 442px) {
+    .section-2-content .wrapper-with-akiko .akiko-image {
+      margin-left: -25px !important;
+    }
+    .section-2-content .wrap-for-flex {
+      margin-left: -5px;
+    }
+    .section-2-content .wrap-all-boxes .jap {
+      margin-left: -5px;
+    }
   }
 }

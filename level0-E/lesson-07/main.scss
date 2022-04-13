@@ -1,6 +1,5 @@
 $text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$noto-sans: 'Noto Sans';
+$noto-sans: 'Noto Sans', sans-serif;
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
@@ -10,32 +9,12 @@ $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
 body {
   margin: 0;
   padding: 0;
 }
-hr {
-  border-top: 1px solid #dbdcdc;
-}
-.m-0 {
-  margin: 0;
-}
-.flex {
-  display: flex;
-}
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-.html-lesson-wrapper .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
+
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -51,8 +30,26 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 
+  hr {
+    border-top: 1px solid #dbdcdc;
+  }
+  .m-0 {
+    margin: 0;
+  }
+  .flex {
+    display: flex;
+  }
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
   header {
-    font-family: $title-font;
+    font-family: $noto-sans;
   }
   .fs-16 {
     font-size: clamp(12px, 2.3vw, 16px);
@@ -82,16 +79,16 @@ hr {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 5px);
+    margin-top: clamp(1px, 1vw, 3px);
     .type {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
+        clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 50px) clamp(1px, 1vw, 5px)
-        clamp(10px, 2vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
+        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
         linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
@@ -117,14 +114,11 @@ hr {
       width: 100%;
     }
   }
-  .line {
-    margin: 0 12px;
-  }
+
   .lesson-number {
     position: absolute;
-    top: 0.5vh;
-    right: 6.3%;
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    right: 5.5%;
+    font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
   }
 
@@ -206,7 +200,7 @@ hr {
       margin-top: 32px;
     }
     &.try-2,
-    &.try-3{
+    &.try-3 {
       margin-top: 32px;
     }
     .arrow.try {
@@ -398,12 +392,12 @@ hr {
           color: white;
           margin: 0;
           text-align: center;
-          line-height: clamp(13px, 4vw, 24px);
           font-family: $noto-sans;
           font-size: clamp(11px, 2vw, 16px);
           z-index: 1;
-          width: clamp(18px, 4vw, 24px);
-          height: clamp(18px, 4vw, 24px);
+          width: clamp(18px, 5vw, 24px);
+          height: clamp(18px, 5vw, 24px);
+          line-height: clamp(18px, 5vw, 24px);
           display: grid;
           place-items: center;
         }

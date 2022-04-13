@@ -2,10 +2,11 @@
 .html-lesson-wrapper {
   .biz-tips {
     .biz-tip-content {
-      padding-bottom: 1rem !important;
+      padding-bottom: 2rem !important;
     }
   }
   .chat-box {
+    padding-top: clamp(5px, 2vw, 1.2em) !important;
     .chat-message {
       .chat-1 {
         max-width: 400px;
@@ -24,7 +25,7 @@
     }
   }
   .act-spacer {
-    padding-bottom: 10rem;
+    padding-bottom: 9.5rem;
     @media only screen and (max-width: 767px) {
       padding-bottom: 0;
     }

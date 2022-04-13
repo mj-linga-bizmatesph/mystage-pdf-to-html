@@ -15,6 +15,9 @@
       .chat-2 {
         max-width: 503px;
         padding-right: 0 !important;
+        @media screen and (max-width: 460px) {
+          padding-right: 10px !important;
+        }
       }
       &.left {
         max-width: 85% !important;
@@ -24,16 +27,16 @@
         max-width: 417px;
         padding-right: clamp(2px, 1vw, 1em) !important;
         @media screen and (max-width: 460px) {
-          max-width: 200px !important;
+          max-width: 80% !important;
         }
       }
       @media screen and (max-width: 460px) {
-        max-width: 200px !important;
+        max-width: 80% !important;
       }
     }
   }
   .act-spacer {
-    padding-bottom: 7rem;
+    padding-bottom: 6.5rem;
     @media only screen and (max-width: 767px) {
       padding-bottom: 0;
     }

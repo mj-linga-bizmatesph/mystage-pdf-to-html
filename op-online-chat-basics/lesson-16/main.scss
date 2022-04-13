@@ -6,8 +6,10 @@
     }
   }
   .chat-box {
+    padding-top: clamp(5px, 2vw, 1.2em) !important;
     .chat-message {
       .chat-1 {
+        max-width: 485px;
         margin-block-start: 0.5rem;
         margin-block-end: 0.5rem;
       }
@@ -17,12 +19,12 @@
         margin-block-end: 0.5rem;
       }
       @media screen and (max-width: 460px) {
-        max-width: 200px !important;
+        max-width: 80% !important;
       }
     }
   }
   .act-spacer {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
     @media only screen and (max-width: 767px) {
       padding-bottom: 0;
     }

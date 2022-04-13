@@ -7,6 +7,12 @@
     line-height: clamp(12px, 4vw, 24px) !important;
     padding-bottom: clamp(10px, 2vw, 15px);
   }
+  .review-part-1 {
+    .content-footer {
+      margin-left: inherit !important;
+      margin-right: inherit !important;
+    }
+  }
   .part-spacer {
     padding-bottom: 14rem;
     @media only screen and (max-width: 767px) {

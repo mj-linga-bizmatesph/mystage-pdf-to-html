@@ -40,6 +40,10 @@ body {
     font-weight: bold;
   }
 
+  .fw-normal {
+    font-weight: normal !important;
+  }
+
   .i {
     font-family: italic;
   }
@@ -79,7 +83,6 @@ body {
     color: #ffffff;
     font-size: 0px;
     white-space: nowrap;
-
     font-size: clamp(7px, 1.8vw, 15px);
 
     .type {
@@ -95,7 +98,7 @@ body {
   }
 
   .line {
-    margin: 0 12px;
+    margin: 0 0.8em;
   }
 
   .title {
@@ -441,10 +444,6 @@ body {
   }
 
   @media screen and (max-width: 600px) {
-    .line {
-      margin: 0 6px;
-      vertical-align: middle;
-    }
     .arrow-part:before {
       border-left: 3.5px solid transparent !important;
       border-right: 3.5px solid transparent !important;

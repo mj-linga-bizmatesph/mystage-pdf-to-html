@@ -23,7 +23,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: Helvetica, Arial, "Sans-serif";
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper .u {
@@ -32,6 +32,10 @@ body {
 
 .html-lesson-wrapper .b, .html-lesson-wrapper .see-content table td:first-child, .html-lesson-wrapper .review-content .lsn {
   font-weight: bold;
+}
+
+.html-lesson-wrapper .fw-normal {
+  font-weight: normal !important;
 }
 
 .html-lesson-wrapper .i {
@@ -88,7 +92,7 @@ body {
 }
 
 .html-lesson-wrapper .line {
-  margin: 0 12px;
+  margin: 0 0.8em;
 }
 
 .html-lesson-wrapper .title {
@@ -121,7 +125,7 @@ body {
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: Helvetica, Arial, "Sans-serif" !important;
+  font-family: "Helvetica", "Arial", sans-serif !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
@@ -138,7 +142,7 @@ body {
   position: absolute;
   color: #cc3366;
   font-weight: bold;
-  font-family: Helvetica, Arial, "Sans-serif";
+  font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
   left: -10.5%;
 }
@@ -403,7 +407,7 @@ body {
   text-align: right;
   bottom: 3%;
   right: 6.2%;
-  font-family: Helvetica, Arial, "Sans-serif";
+  font-family: "Helvetica", "Arial", sans-serif;
   max-width: 41%;
 }
 
@@ -427,10 +431,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .html-lesson-wrapper .line {
-    margin: 0 6px;
-    vertical-align: middle;
-  }
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
     border-right: 3.5px solid transparent !important;

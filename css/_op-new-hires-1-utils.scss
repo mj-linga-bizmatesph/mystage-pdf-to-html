@@ -11,7 +11,7 @@ body {
 }
 .html-lesson-wrapper {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
   height: fit-content;
@@ -45,12 +45,12 @@ body {
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $primary;
-      font-size: clamp(7px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
     }
     .level {
       padding: 3px 12px 3px 13px;
       background-color: $primary-second;
-      font-size: clamp(7px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
       .add-space {
         margin-left: clamp(5px, 2vw, 15px);
       }
@@ -59,11 +59,14 @@ body {
   .line {
     margin: 0 12px;
   }
+  .hide {
+    display: none;
+  }
   .title {
     position: absolute;
     top: 80px;
     left: 48px;
-    font-size: clamp(12px, 3vw, 27px);
+    font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
   }
   .lesson-number {
@@ -92,7 +95,7 @@ body {
   }
   .divider {
     color: #d9d9d9;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
     position: relative;
     left: 52%;
     &.d1 {
@@ -141,7 +144,7 @@ body {
   }
   .words-phrase-content {
     position: relative;
-    margin-top: clamp(63px, 17.6%, 157px);
+    margin-top: clamp(87px, 17.6%, 157px);
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
@@ -358,6 +361,9 @@ body {
     .text-header {
       margin-top: -3px !important;
     }
+    .hide {
+      display: inline;
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -370,6 +376,20 @@ body {
           top: 0.6vw !important;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper {
+    .section {
+      left: -27px !important;
+    }
+    .section.words {
+      left: -27px !important;
+    }
+    .words-phrase-content {
+      margin-top: 93px !important;
     }
   }
 }

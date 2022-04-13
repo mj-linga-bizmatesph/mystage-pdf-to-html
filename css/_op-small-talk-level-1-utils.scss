@@ -11,7 +11,7 @@ body {
 
 .html-lesson-wrapper {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
   height: -webkit-fit-content;
@@ -60,7 +60,7 @@ body {
     .level {
       padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 7px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
-      font-size: clamp(7px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
       background: $blue-green;
       width: 100%;
       margin-left: -2%;

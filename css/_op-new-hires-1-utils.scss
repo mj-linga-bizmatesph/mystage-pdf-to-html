@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 .html-lesson-wrapper {
-  width: 100%;
+  max-width: 100%;
   min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
@@ -212,6 +212,7 @@ body {
   .act-content {
     height: fit-content;
     margin-bottom: clamp(50px, 13vw, 120px);
+    margin-top: 36px;
     .act {
       margin-top: 4px;
     }

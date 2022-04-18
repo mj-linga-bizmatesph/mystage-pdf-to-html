@@ -422,7 +422,14 @@ body {
 
 .html-lesson-wrapper .try-content .table {
   overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 100%;
+}
+
+.html-lesson-wrapper .try-content .table::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .html-lesson-wrapper .try-content table {

@@ -4,29 +4,11 @@
   table {
     border-collapse: collapse;
   }
-  .biz-tip-content {
-    table {
-      tr th {
-        text-align: left;
-        padding-top: 5px;
-        padding-bottom: 15px;
-        span {
-          position: absolute;
-          margin-left: -3%;
-        }
-      }
-      tr td {
-        width: 47%;
-        .arrow-part {
-          width: 80%;
-        }
-        .arrow-part.div-2 {
-          margin-top: -15px;
-        }
-      }
-    }
+  .lesson-number {
+    left: 94.2% !important;
   }
-  .see-content {
+  .review-content {
+    margin-top: clamp(70px, 25%, 160px);
     table {
       tr th {
         text-align: left;
@@ -42,6 +24,26 @@
         min-height: 150px;
         margin-bottom: 5%;
         margin-right: 5%;
+        padding-left: 5%;
+        p {
+          margin-left: -3%;
+          margin-top: -5px;
+          margin-bottom: 3px;
+        }
+        div.div-1 {
+          float: left;
+          width: 47%;
+        }
+        div.div-2 {
+          float: right;
+          width: 47%;
+        }
+        div.div-1,
+        div.div-2 {
+          .b {
+            margin-left: -7%;
+          }
+        }
       }
       tr td.tdbreaker {
         border: none;
@@ -67,6 +69,17 @@
         border: 1px solid #d8d8d8;
         border-collapse: collapse;
       }
+    }
+    ol {
+      margin-left: -4%;
+      li {
+        p {
+          line-height: 1.8rem;
+        }
+      }
+    }
+    p {
+      line-height: 1.8rem;
     }
   }
 }

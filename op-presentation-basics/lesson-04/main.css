@@ -372,16 +372,46 @@ body {
 
 .html-lesson-wrapper table {
   border-collapse: collapse;
+  width: 90%;
 }
 
-.html-lesson-wrapper .see-content table tr td.td-content {
-  color: #000000;
-  padding: 5px;
-  border: 1px solid #d8d8d8;
+.html-lesson-wrapper .biz-tip-content table tr th {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.html-lesson-wrapper .biz-tip-content table tr th span {
+  position: absolute;
+  margin-left: -3%;
+}
+
+.html-lesson-wrapper .biz-tip-content table tr td {
+  width: 47%;
+}
+
+.html-lesson-wrapper .biz-tip-content table tr td .arrow-part {
+  width: 80%;
+}
+
+.html-lesson-wrapper .see-content table tr th {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.html-lesson-wrapper .see-content table tr td {
+  padding: 10px;
+  min-height: 150px;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+.html-lesson-wrapper .see-content table tr td.tdbreaker {
+  border: none;
+}
+
+.html-lesson-wrapper .try-content table tr th {
   text-align: center;
-}
-
-.html-lesson-wrapper .see-content table tr th.th-header {
   background-color: #cc3366;
   color: #ffffff;
   padding: 5px;
@@ -389,161 +419,10 @@ body {
   border-collapse: collapse;
 }
 
-.html-lesson-wrapper .see-content table tr td.td-content-2a {
-  padding: 5px;
-  text-align: center;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-2b {
-  padding: 15px;
-  border-left: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-3a {
-  text-align: center;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-3b {
-  text-align: center;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-3a .spn-3a {
-  padding: 0;
-  height: 32px;
-  width: 85%;
-  float: right;
-  border-left: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-3b .spn-3b {
-  height: 32px;
-  width: 94%;
-  float: left;
-  padding: 0;
-  border-right: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-3b .spn-3b {
-  height: 32px;
-  width: 94%;
-  float: left;
-  padding: 0;
-  border-right: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-4a,
-.html-lesson-wrapper .see-content table tr td.td-content-4b,
-.html-lesson-wrapper .see-content table tr td.td-content-4c,
-.html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b,
-.html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4b,
-.html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c,
-.html-lesson-wrapper
-  .try-content
-  .tbl-2
-  .see-content
-  table
-  tr
-  td.td-content-4c {
-  padding: 15px;
-  border: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-4b {
-  padding: 15px;
-  border: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-4c {
-  padding: 15px;
-  border: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .see-content table tr td.td-content-4a,
-.html-lesson-wrapper .see-content table tr td.td-content-4b,
-.html-lesson-wrapper .see-content table tr td.td-content-4c,
-.html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b,
-.html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4b,
-.html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c,
-.html-lesson-wrapper
-  .try-content
-  .tbl-2
-  .see-content
-  table
-  tr
-  td.td-content-4c {
-  padding-left: 5%;
-}
-
-.html-lesson-wrapper .try-content table tr th.th-header {
-  background-color: #cc3366;
-  color: #ffffff;
+.html-lesson-wrapper .try-content table tr td {
+  width: 20%;
   padding: 5px;
   border: 1px solid #d8d8d8;
   border-collapse: collapse;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content {
-  color: #000000;
-  padding: 5px;
-  border: 1px solid #d8d8d8;
-  text-align: center;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-2a {
-  padding: 5px;
-  text-align: center;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-2b {
-  padding: 15px;
-  border-left: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-3a {
-  text-align: center;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-3b {
-  text-align: center;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-3a .spn-3a {
-  padding: 0;
-  height: 32px;
-  width: 85%;
-  float: right;
-  border-left: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-3b .spn-3b {
-  height: 32px;
-  width: 94%;
-  float: left;
-  padding: 0;
-  border-right: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .try-content table tr td.td-content-4a,
-.html-lesson-wrapper .try-content table tr td.td-content-4b,
-.html-lesson-wrapper .try-content table tr td.td-content-4c,
-.html-lesson-wrapper .try-content table .tbl-2 tr td.td-content-4b,
-.html-lesson-wrapper .try-content .tbl-2 table tr td.td-content-4b,
-.html-lesson-wrapper .try-content table .tbl-2 tr td.td-content-4c,
-.html-lesson-wrapper .try-content .tbl-2 table tr td.td-content-4c {
-  padding: 5px;
-  border: 1px solid #d8d8d8;
-}
-
-.html-lesson-wrapper .try-content .tbl-2 tr td.td-content-4a,
-.html-lesson-wrapper .try-content .tbl-2 tr td.td-content-4b,
-.html-lesson-wrapper .try-content .tbl-2 tr td.td-content-4c {
-  padding-left: 5%;
-  height: 70px;
-  vertical-align: top;
 }
 /*# sourceMappingURL=main.css.map */

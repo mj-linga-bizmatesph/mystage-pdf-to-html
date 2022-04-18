@@ -3,6 +3,16 @@
 .html-lesson-wrapper {
   table {
     border-collapse: collapse;
+    width: 90%;
+  }
+  .see-img {
+    width: 100%;
+    margin-top: -15%;
+    position: relative;
+    z-index: 0;
+  }
+  p {
+    line-height: 1.8rem;
   }
   .biz-tip-content {
     table {
@@ -20,9 +30,6 @@
         .arrow-part {
           width: 80%;
         }
-        .arrow-part.div-2 {
-          margin-top: -15px;
-        }
       }
     }
   }
@@ -32,12 +39,7 @@
         text-align: left;
         padding-bottom: 10px;
       }
-      tr th {
-        text-align: left;
-        padding-bottom: 10px;
-      }
       tr td {
-        border: 2.1px solid #d8d8d8;
         padding: 10px;
         min-height: 150px;
         margin-bottom: 5%;
@@ -46,9 +48,11 @@
       tr td.tdbreaker {
         border: none;
       }
-      tr.trbreaker {
-        height: 20px;
-      }
+    }
+    .p-title {
+      text-align: center;
+      position: relative;
+      z-index: 1;
     }
   }
   .try-content {
@@ -62,11 +66,16 @@
         border-collapse: collapse;
       }
       tr td {
-        width: 47%;
+        width: 20%;
         padding: 5px;
-        border: 1px solid #d8d8d8;
         border-collapse: collapse;
       }
+    }
+    .p-title {
+      text-align: center;
+      padding-bottom: 1%;
+      position: relative;
+      z-index: 1;
     }
   }
 }

@@ -3,6 +3,7 @@
 .html-lesson-wrapper {
   table {
     border-collapse: collapse;
+    width: 90%;
   }
   .biz-tip-content {
     table {
@@ -16,22 +17,15 @@
         }
       }
       tr td {
-        width: 47%;
+        width: 32%;
         .arrow-part {
           width: 80%;
-        }
-        .arrow-part.div-2 {
-          margin-top: -15px;
         }
       }
     }
   }
   .see-content {
     table {
-      tr th {
-        text-align: left;
-        padding-bottom: 10px;
-      }
       tr th {
         text-align: left;
         padding-bottom: 10px;
@@ -46,9 +40,6 @@
       tr td.tdbreaker {
         border: none;
       }
-      tr.trbreaker {
-        height: 20px;
-      }
     }
   }
   .try-content {
@@ -62,7 +53,7 @@
         border-collapse: collapse;
       }
       tr td {
-        width: 47%;
+        width: 20%;
         padding: 5px;
         border: 1px solid #d8d8d8;
         border-collapse: collapse;

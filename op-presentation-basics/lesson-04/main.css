@@ -5,7 +5,7 @@ body {
 
 .html-lesson-wrapper {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
@@ -15,25 +15,23 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: clamp(3em, 12vw, 9em);
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-bg-header.svg),
-    url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo-bare.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/OP-Starter-bg-header.svg), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo-bare.svg);
   background-position: top, clamp(-15px, -2vw, -8px) bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
   /*# sourceMappingURL=main.css.map */
 }
 
 .html-lesson-wrapper header {
-  font-family: Helvetica, Arial, 'Sans-serif';
+  font-family: Helvetica, Arial, "Sans-serif";
 }
 
 .html-lesson-wrapper .u {
   text-decoration: underline;
 }
 
-.html-lesson-wrapper .b,
-.html-lesson-wrapper .review-content .lsn {
+.html-lesson-wrapper .b, .html-lesson-wrapper .review-content .lsn {
   font-weight: bold;
 }
 
@@ -53,13 +51,13 @@ body {
 .html-lesson-wrapper .program-rank .type {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #cc3366;
-  font-size: clamp(6.48px, 1.8vw, 15px);
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #339999;
-  font-size: clamp(6.48px, 1.8vw, 15px);
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .line {
@@ -70,11 +68,10 @@ body {
   position: absolute;
   top: clamp(4.5%, 18vw, 6.1%);
   left: 5%;
-  font-size: clamp(9.3px, 3vw, 27px);
+  font-size: clamp(18px, 4vw, 27px);
 }
 
-.html-lesson-wrapper .lesson-number,
-.html-lesson-wrapper .lesson-number-two {
+.html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
   left: 94.8%;
   margin-top: 4.8%;
@@ -97,7 +94,7 @@ body {
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: Helvetica, Arial, 'Sans-serif' !important;
+  font-family: Helvetica, Arial, "Sans-serif" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
@@ -110,14 +107,14 @@ body {
   position: absolute;
   color: #cc3366;
   font-weight: bold;
-  font-family: Helvetica, Arial, 'Sans-serif';
+  font-family: Helvetica, Arial, "Sans-serif";
   top: 2px;
   left: -10.5%;
 }
 
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
   position: relative;
   left: 52%;
 }
@@ -148,7 +145,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(10px, 2vw, 13.5px);
 }
 
 .html-lesson-wrapper .biz-tip-content {
@@ -258,7 +255,7 @@ body {
 
 .html-lesson-wrapper .try-content ul li {
   -webkit-padding-start: 1em;
-  padding-inline-start: 1em;
+          padding-inline-start: 1em;
 }
 
 .html-lesson-wrapper .try-content ul li::before {
@@ -303,7 +300,7 @@ body {
 }
 
 .html-lesson-wrapper .review-content .sub-text {
-  font-family: 'Trebuchet MS' !important;
+  font-family: "Trebuchet MS" !important;
   margin-bottom: 2%;
 }
 
@@ -319,7 +316,7 @@ body {
 }
 
 .html-lesson-wrapper .review-content .lsn li:before {
-  content: 'Lsn ' counter(item, decimal) ': ';
+  content: "Lsn " counter(item, decimal) ": ";
   counter-increment: item;
 }
 
@@ -341,7 +338,7 @@ body {
   text-align: right;
   bottom: 1.5%;
   right: 6.2%;
-  font-family: Helvetica, Arial, 'Sans-serif';
+  font-family: Helvetica, Arial, "Sans-serif";
   max-width: 41%;
 }
 

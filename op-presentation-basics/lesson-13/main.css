@@ -5,7 +5,7 @@ body {
 
 .html-lesson-wrapper {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
@@ -51,13 +51,13 @@ body {
 .html-lesson-wrapper .program-rank .type {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #cc3366;
-  font-size: clamp(6.48px, 1.8vw, 15px);
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #339999;
-  font-size: clamp(6.48px, 1.8vw, 15px);
+  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .line {
@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: clamp(4.5%, 18vw, 6.1%);
   left: 5%;
-  font-size: clamp(9.3px, 3vw, 27px);
+  font-size: clamp(18px, 4vw, 27px);
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
@@ -114,7 +114,7 @@ body {
 
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
   position: relative;
   left: 52%;
 }
@@ -145,7 +145,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(10px, 2vw, 13.5px);
 }
 
 .html-lesson-wrapper .biz-tip-content {

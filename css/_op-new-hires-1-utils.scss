@@ -219,14 +219,17 @@ body {
     p {
       line-height: 1.8;
     }
-    table {
+    .table-1 {
       border-collapse: collapse;
       width: 70%;
+      th {
+        height: clamp(20px, 4vw, 40px);
+        text-align: left;
+        font-weight: normal;
+      }
     }
-    th {
-      height: clamp(20px, 4vw, 40px);
-      text-align: left;
-      font-weight: normal;
+    .table-2 {
+      display: none;
     }
   }
   footer {
@@ -335,7 +338,7 @@ body {
       }
     }
     .act-content {
-      table {
+      .table-1 {
         width: 105%;
       }
     }
@@ -380,6 +383,22 @@ body {
     }
   }
 }
+@media screen and (max-width: 358px) {
+  .act-content .table-1 {
+    display: none !important;
+  }
+  .act-content .table-2 {
+    display: flex !important;
+    border-collapse: collapse;
+    width: 113%;
+    th {
+      height: clamp(20px, 4vw, 40px);
+      text-align: left;
+      font-weight: normal;
+      width: 120px;
+    }
+  }
+}
 
 @media screen and (max-width: 320px) {
   .html-lesson-wrapper {
@@ -391,6 +410,9 @@ body {
     }
     .words-phrase-content {
       margin-top: 93px !important;
+    }
+    .words-phrase-content .pointers {
+      padding-right: 5px;
     }
   }
 }

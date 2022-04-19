@@ -19,11 +19,11 @@
       border-collapse: collapse;
     }
     td.td-content-2a {
-      padding: 5px;
+      padding: 15px !important;
       text-align: center;
     }
     td.td-content-2b {
-      padding: 15px;
+      padding: 15px !important;
       border-left: 1px solid $gray-light;
     }
     td.td-content-3a {
@@ -35,10 +35,11 @@
     td.td-content-3a .spn-3a {
       padding: 0;
       height: 32px;
-      width: 85%;
+      width: 94%;
       float: right;
       border-left: 1px solid $gray-light;
       border-top: 1px solid $gray-light;
+      margin-right: -2%;
     }
     td.td-content-3b .spn-3b {
       height: 32px;
@@ -55,6 +56,7 @@
       padding: 0;
       border-right: 1px solid $gray-light;
       border-top: 1px solid $gray-light;
+      margin-left: -2%;
     }
     td.td-content-4a {
       padding: 15px;
@@ -109,7 +111,7 @@
     td.td-content-3a .spn-3a {
       padding: 0;
       height: 32px;
-      width: 85%;
+      width: 94%;
       float: right;
       border-left: 1px solid $gray-light;
       border-top: 1px solid $gray-light;
@@ -121,6 +123,7 @@
       padding: 0;
       border-right: 1px solid $gray-light;
       border-top: 1px solid $gray-light;
+      margin-left: -1%;
     }
     td.td-content-4a {
       padding: 5px;
@@ -144,6 +147,23 @@
     }
     td.td-content-4c {
       @extend .td-content-4a;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .arrow-part:before {
+      left: 0em;
+    }
+    .arrow-part {
+      padding-left: 10px;
+    }
+    .biz-tip-content {
+      .arrow-part {
+        margin-left: -3.2%;
+      }
+    }
+    .see-content,
+    .try-content {
+      font-size: clamp(8px, 2vw, 13.5px);
     }
   }
 }

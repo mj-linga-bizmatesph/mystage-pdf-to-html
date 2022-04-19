@@ -402,12 +402,12 @@ body {
 }
 
 .html-lesson-wrapper .see-content table tr td.td-content-2a {
-  padding: 5px;
+  padding: 15px !important;
   text-align: center;
 }
 
 .html-lesson-wrapper .see-content table tr td.td-content-2b {
-  padding: 15px;
+  padding: 15px !important;
   border-left: 1px solid #d8d8d8;
 }
 
@@ -422,10 +422,11 @@ body {
 .html-lesson-wrapper .see-content table tr td.td-content-3a .spn-3a {
   padding: 0;
   height: 32px;
-  width: 85%;
+  width: 94%;
   float: right;
   border-left: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
+  margin-right: -2%;
 }
 
 .html-lesson-wrapper .see-content table tr td.td-content-3b .spn-3b {
@@ -444,6 +445,7 @@ body {
   padding: 0;
   border-right: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
+  margin-left: -2%;
 }
 
 .html-lesson-wrapper .see-content table tr td.td-content-4a, .html-lesson-wrapper .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content table tr td.td-content-4c, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b, .html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c, .html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4c {
@@ -501,7 +503,7 @@ body {
 .html-lesson-wrapper .try-content table tr td.td-content-3a .spn-3a {
   padding: 0;
   height: 32px;
-  width: 85%;
+  width: 94%;
   float: right;
   border-left: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
@@ -514,6 +516,7 @@ body {
   padding: 0;
   border-right: 1px solid #d8d8d8;
   border-top: 1px solid #d8d8d8;
+  margin-left: -1%;
 }
 
 .html-lesson-wrapper .try-content table tr td.td-content-4a, .html-lesson-wrapper .try-content table tr td.td-content-4b, .html-lesson-wrapper .try-content table tr td.td-content-4c, .html-lesson-wrapper .try-content table .tbl-2 tr td.td-content-4b, .html-lesson-wrapper .try-content .tbl-2 table tr td.td-content-4b, .html-lesson-wrapper .try-content table .tbl-2 tr td.td-content-4c, .html-lesson-wrapper .try-content .tbl-2 table tr td.td-content-4c {
@@ -525,5 +528,21 @@ body {
   padding-left: 5%;
   height: 70px;
   vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: 0em;
+  }
+  .html-lesson-wrapper .arrow-part {
+    padding-left: 10px;
+  }
+  .html-lesson-wrapper .biz-tip-content .arrow-part {
+    margin-left: -3.2%;
+  }
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .try-content {
+    font-size: clamp(8px, 2vw, 13.5px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

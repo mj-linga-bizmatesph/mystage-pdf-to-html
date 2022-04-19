@@ -60,19 +60,20 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     left: 5%;
     color: #ffffff;
     font-size: 0px;
+    font-size: clamp(8px, 1.8vw, 15px);
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
       background-color: $magenta;
-      font-size: clamp(7px, 1.8vw, 15px);
+      // font-size: clamp(7px, 1.8vw, 15px);
     }
 
     .level {
       padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
       background-color: $blue-green;
-      font-size: clamp(7px, 1.8vw, 15px);
+      // font-size: clamp(7px, 1.8vw, 15px);
       margin-left: -2%;
       &.two {
         padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
@@ -89,7 +90,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     position: absolute;
     top: 80px;
     left: 5%;
-    font-size: clamp(18px, 3vw, 27px);
+    font-size: clamp(18px, 4vw, 27px);
   }
 
   .lesson-number {
@@ -354,6 +355,29 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
   }
 
+  ul.arrow-part-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: '\25BC';
+    box-sizing: content-box;
+    list-style-position: inside;
+    li {
+      list-style-position: outside;
+      text-indent: -1em;
+      margin-left: 0.8em;
+      padding-left: 0.5em;
+      margin-bottom: -0.4em
+    }
+    li::before {
+      content: '';
+      display: block;
+      width: 0.5em;
+    }
+    li::marker {
+      font-size: clamp(9px, 2vw, 13px);
+    }
+  }
+
   .part-content {
     &.part-1 {
       margin-top: clamp(70px, 25%, 250px);
@@ -424,18 +448,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       list-style-type: decimal;
     }
 
-    .table {
-      overflow-x: scroll;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      width: 100%;
-    }
-
-    .table::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
-
     table {
       border-collapse: collapse;
       width: 100%;
@@ -446,7 +458,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     th,
     td {
       border: 1.5px solid #d8d8d8;
-      min-width: 9rem;
     }
 
     th {
@@ -454,7 +465,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       color: white;
       text-transform: uppercase;
       background-color: $magenta;
-      padding: 0.3vw 0;
+      padding: 0.3vw 1vw;
     }
     td {
       vertical-align: top;
@@ -578,5 +589,14 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       border-right: 3.5px solid transparent !important;
       border-top: 5.5px solid !important;
     }
+
+    // ol.arrow-part-list {
+    //   li::before {
+    //     left: -0.6rem;
+    //     border-left: 3.5px solid transparent !important;
+    //     border-right: 3.5px solid transparent !important;
+    //     border-top: 5.5px solid !important;
+    //   }
+    // }
   }
 }

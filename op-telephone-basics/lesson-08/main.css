@@ -52,18 +52,17 @@ body {
   left: 5%;
   color: #ffffff;
   font-size: 0px;
+  font-size: clamp(8px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #cc3366;
-  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #339999;
-  font-size: clamp(7px, 1.8vw, 15px);
   margin-left: -2%;
 }
 
@@ -79,7 +78,7 @@ body {
   position: absolute;
   top: 80px;
   left: 5%;
-  font-size: clamp(18px, 3vw, 27px);
+  font-size: clamp(18px, 4vw, 27px);
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
@@ -352,6 +351,33 @@ body {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
 }
 
+.html-lesson-wrapper ul.arrow-part-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: '\25BC';
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  list-style-position: inside;
+}
+
+.html-lesson-wrapper ul.arrow-part-list li {
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 0.8em;
+  padding-left: 0.5em;
+  margin-bottom: -0.4em;
+}
+
+.html-lesson-wrapper ul.arrow-part-list li::before {
+  content: '';
+  display: block;
+  width: 0.5em;
+}
+
+.html-lesson-wrapper ul.arrow-part-list li::marker {
+  font-size: clamp(9px, 2vw, 13px);
+}
+
 .html-lesson-wrapper .part-content.part-1 {
   margin-top: clamp(70px, 25%, 250px);
 }
@@ -420,18 +446,6 @@ body {
   list-style-type: decimal;
 }
 
-.html-lesson-wrapper .try-content .table {
-  overflow-x: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  width: 100%;
-}
-
-.html-lesson-wrapper .try-content .table::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 .html-lesson-wrapper .try-content table {
   border-collapse: collapse;
   width: 100%;
@@ -442,7 +456,6 @@ body {
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {
   border: 1.5px solid #d8d8d8;
-  min-width: 9rem;
 }
 
 .html-lesson-wrapper .try-content th {
@@ -450,7 +463,7 @@ body {
   color: white;
   text-transform: uppercase;
   background-color: #cc3366;
-  padding: 0.3vw 0;
+  padding: 0.3vw 1vw;
 }
 
 .html-lesson-wrapper .try-content td {

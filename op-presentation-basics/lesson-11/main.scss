@@ -64,4 +64,12 @@
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    .try-content {
+      table tr td ol {
+        margin-top: 0%;
+        margin-left: -25%;
+      }
+    }
+  }
 }

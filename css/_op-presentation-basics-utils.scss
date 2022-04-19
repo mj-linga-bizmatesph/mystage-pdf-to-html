@@ -372,6 +372,9 @@ body {
   }
 
   @media screen and (max-width: 600px) {
+    .biz-tip-content {
+      margin-top: 30%;
+    }
     .line {
       margin: 0 6px;
       vertical-align: middle;
@@ -380,6 +383,22 @@ body {
       border-left: 3.5px solid transparent !important;
       border-right: 3.5px solid transparent !important;
       border-top-width: 5.5px !important;
+    }
+    .review-content {
+      .arrow-part:before {
+        left: -1em;
+      }
+      .arrow-part {
+        margin-left: 5%;
+      }
+    }
+    p {
+      line-height: 1rem !important;
+    }
+    .see-content {
+      table tr td {
+        padding: 3px !important;
+      }
     }
   }
   /*# sourceMappingURL=main.css.map */

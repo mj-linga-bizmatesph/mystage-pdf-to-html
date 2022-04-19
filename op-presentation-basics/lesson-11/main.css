@@ -356,6 +356,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content {
+    margin-top: 30%;
+  }
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
@@ -364,6 +367,18 @@ body {
     border-left: 3.5px solid transparent !important;
     border-right: 3.5px solid transparent !important;
     border-top-width: 5.5px !important;
+  }
+  .html-lesson-wrapper .review-content .arrow-part:before {
+    left: -1em;
+  }
+  .html-lesson-wrapper .review-content .arrow-part {
+    margin-left: 5%;
+  }
+  .html-lesson-wrapper p {
+    line-height: 1rem !important;
+  }
+  .html-lesson-wrapper .see-content table tr td {
+    padding: 3px !important;
   }
 }
 
@@ -427,5 +442,12 @@ body {
 
 .html-lesson-wrapper .try-content table tr td ol {
   margin-top: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .try-content table tr td ol {
+    margin-top: 0%;
+    margin-left: -25%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

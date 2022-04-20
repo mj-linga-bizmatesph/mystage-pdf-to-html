@@ -7,6 +7,9 @@
     left: clamp(91%, 91.3vw, 91.5%) !important;
   }
   .part-content {
+    ul {
+      list-style-type: decimal !important;
+    }
     position: relative;
     margin-left: $left-pixel;
     padding-left: 18.5px;

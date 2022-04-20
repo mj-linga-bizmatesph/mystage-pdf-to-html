@@ -442,3 +442,7 @@ body {
 .html-lesson-wrapper .try-content ol {
   margin-left: 1.5em;
 }
+
+.html-lesson-wrapper .try-content table {
+  font-size: clamp(10px, 2vw, 15px);
+}

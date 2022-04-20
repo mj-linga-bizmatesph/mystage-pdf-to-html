@@ -63,6 +63,11 @@
       margin-top: 5%;
       line-height: 1.8rem;
     }
+    @media screen and (max-width: 600px) {
+      .part-2 {
+        line-height: 1.1rem;
+      }
+    }
   }
   .try-content {
     table {

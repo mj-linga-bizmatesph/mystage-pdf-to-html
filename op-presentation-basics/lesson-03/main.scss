@@ -7,19 +7,26 @@
   }
   .biz-tip-content {
     table {
-      tr th {
-        text-align: left;
-        padding-top: 5px;
-        padding-bottom: 15px;
-        span {
-          position: absolute;
-          margin-left: -3%;
+      tr {
+        th {
+          text-align: left;
+          padding-top: 5px;
+          padding-bottom: 15px;
+          span {
+            position: absolute;
+            margin-left: -3%;
+          }
         }
-      }
-      tr td {
-        width: 47%;
-        .arrow-part {
-          width: 80%;
+        td {
+          width: 47%;
+          .arrow-part {
+            width: 80%;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          th {
+            padding-bottom: 8px;
+          }
         }
       }
     }
@@ -44,19 +51,22 @@
   }
   .try-content {
     table {
-      tr th {
-        text-align: center;
-        background-color: #cc3366;
-        color: #ffffff;
-        padding: 5px;
-        border: 1px solid #d8d8d8;
-        border-collapse: collapse;
-      }
-      tr td {
-        width: 20%;
-        padding: 5px;
-        border: 1px solid #d8d8d8;
-        border-collapse: collapse;
+      tr {
+        vertical-align: top;
+        th {
+          text-align: center;
+          background-color: #cc3366;
+          color: #ffffff;
+          padding: 5px;
+          border: 1px solid #d8d8d8;
+          border-collapse: collapse;
+        }
+        td {
+          width: 20%;
+          padding: 5px;
+          border: 1px solid #d8d8d8;
+          border-collapse: collapse;
+        }
       }
     }
   }

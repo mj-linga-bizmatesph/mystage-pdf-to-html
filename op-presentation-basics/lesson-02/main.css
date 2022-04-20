@@ -409,6 +409,12 @@ body {
   margin-top: -15px;
 }
 
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content table tr th {
+    padding-bottom: 8px;
+  }
+}
+
 .html-lesson-wrapper .see-content table tr th {
   text-align: left;
   padding-bottom: 10px;

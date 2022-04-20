@@ -30,18 +30,20 @@
   .see-content {
     table {
       margin-left: -1%;
-      tr th {
-        text-align: left;
-        padding-bottom: 10px;
-      }
-      tr td {
-        padding: 1px 10px;
-        min-height: 150px;
-        margin-bottom: 5%;
-        margin-right: 5%;
-      }
-      tr td.tdbreaker {
-        border: none;
+      tr {
+        th {
+          text-align: left;
+          padding-bottom: 10px;
+        }
+        td {
+          padding: 1px 10px;
+          min-height: 150px;
+          margin-bottom: 5%;
+          margin-right: 5%;
+        }
+        td.tdbreaker {
+          border: none;
+        }
       }
     }
     p.p-title {
@@ -50,19 +52,22 @@
   }
   .try-content {
     table {
-      tr th {
-        text-align: center;
-        background-color: #cc3366;
-        color: #ffffff;
-        padding: 5px;
-        border: 1px solid #d8d8d8;
-        border-collapse: collapse;
-      }
-      tr td {
-        width: 20%;
-        padding: 5px;
-        border: 1px solid #d8d8d8;
-        border-collapse: collapse;
+      tr {
+        vertical-align: top;
+        th {
+          text-align: center;
+          background-color: #cc3366;
+          color: #ffffff;
+          padding: 5px;
+          border: 1px solid #d8d8d8;
+          border-collapse: collapse;
+        }
+        td {
+          width: 20%;
+          padding: 5px;
+          border: 1px solid #d8d8d8;
+          border-collapse: collapse;
+        }
       }
     }
   }

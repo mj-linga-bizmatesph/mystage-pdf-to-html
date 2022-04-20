@@ -406,6 +406,12 @@ body {
   width: 80%;
 }
 
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content table tr th {
+    padding-bottom: 8px;
+  }
+}
+
 .html-lesson-wrapper .see-content table tr th {
   text-align: left;
   padding-bottom: 10px;
@@ -421,6 +427,10 @@ body {
 
 .html-lesson-wrapper .see-content table tr td.tdbreaker {
   border: none;
+}
+
+.html-lesson-wrapper .try-content table tr {
+  vertical-align: top;
 }
 
 .html-lesson-wrapper .try-content table tr th {

@@ -62,7 +62,26 @@
         border: none !important;
         padding: 0px !important;
         .part-2 {
+          span {
+            color: #000000 !important;
+            font-weight: normal;
+          }
           margin-left: -10%;
+        }
+        @media screen and (max-width: 600px) {
+          .part-3 {
+            margin-left: 25%;
+          }
+          .part-2 {
+            span {
+              color: #000000 !important;
+              font-weight: normal;
+            }
+            margin-left: 10%;
+            .part-2-2 {
+              display: block;
+            }
+          }
         }
       }
       th p {
@@ -71,6 +90,11 @@
         margin-top: -1%;
         margin-bottom: 0;
       }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .review-content {
+      font-size: clamp(8px, 2vw, 13.5px);
     }
   }
   .try-content {

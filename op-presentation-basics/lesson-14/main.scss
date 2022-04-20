@@ -10,17 +10,24 @@
   }
   .biz-tip-content {
     table {
-      tr th {
-        text-align: left;
-        padding-top: 5px;
-        padding-bottom: 15px;
-        span {
-          position: absolute;
-          margin-left: -3%;
+      tr {
+        th {
+          text-align: left;
+          padding-top: 5px;
+          padding-bottom: 15px;
+          span {
+            position: absolute;
+            margin-left: -3%;
+          }
         }
-      }
-      tr td {
-        width: 47%;
+        td {
+          width: 47%;
+        }
+        @media screen and (max-width: 600px) {
+          th {
+            padding-bottom: 8px;
+          }
+        }
       }
     }
   }

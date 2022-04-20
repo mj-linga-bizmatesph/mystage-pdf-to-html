@@ -457,11 +457,38 @@ body {
   margin-left: -10%;
 }
 
+.html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 span {
+  color: #000000 !important;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .review-content table.tbl-3 tr td .part-3 {
+    margin-left: 25%;
+  }
+  .html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 {
+    margin-left: 10%;
+  }
+  .html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 span {
+    color: #000000 !important;
+    font-weight: normal;
+  }
+  .html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 .part-2-2 {
+    display: block;
+  }
+}
+
 .html-lesson-wrapper .review-content table.tbl-3 th p {
   margin-left: -4%;
   font-weight: normal;
   margin-top: -1%;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .review-content {
+    font-size: clamp(8px, 2vw, 13.5px);
+  }
 }
 
 .html-lesson-wrapper .try-content table tr th {

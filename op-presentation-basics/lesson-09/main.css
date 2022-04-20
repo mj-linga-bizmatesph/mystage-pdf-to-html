@@ -447,6 +447,12 @@ body {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .see-content .part-2 {
+    line-height: 1.1rem;
+  }
+}
+
 .html-lesson-wrapper .try-content table tr th {
   text-align: center;
   background-color: #cc3366;

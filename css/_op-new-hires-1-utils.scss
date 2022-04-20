@@ -167,6 +167,7 @@ body {
         margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
+        padding-left: 7px;
         position: relative;
         &:before {
           content: '';
@@ -197,16 +198,9 @@ body {
       line-height: 1.8;
     }
     .bullet {
-      list-style-type: none;
+      list-style-type: disc;
       line-height: 1.8;
-      margin-left: -7px;
-      li::before {
-        content: '\2022';
-        color: black;
-        display: inline-block;
-        width: 1em;
-        list-style-position: inside;
-      }
+      list-style-position: outside;
     }
   }
   .act-content {
@@ -376,7 +370,7 @@ body {
       left: -9px !important;
       .arrow-part {
         &:before {
-          left: -4.5% !important;
+          left: -14.5% !important;
           top: 0.6vw !important;
         }
       }
@@ -397,6 +391,11 @@ body {
       font-weight: normal;
       width: 120px;
     }
+    .arrow-part {
+      &:before {
+        left: -12% !important;
+      }
+    }
   }
 }
 
@@ -413,6 +412,9 @@ body {
     }
     .words-phrase-content .pointers {
       padding-right: 5px;
+    }
+    .arrow-part {
+      padding-left: 10px !important;
     }
   }
 }

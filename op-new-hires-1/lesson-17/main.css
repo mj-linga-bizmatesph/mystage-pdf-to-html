@@ -202,6 +202,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
+  padding-left: 7px;
   position: relative;
 }
 
@@ -237,17 +238,9 @@ body {
 }
 
 .html-lesson-wrapper .try-content .bullet {
-  list-style-type: none;
+  list-style-type: disc;
   line-height: 1.8;
-  margin-left: -7px;
-}
-
-.html-lesson-wrapper .try-content .bullet li::before {
-  content: '\2022';
-  color: black;
-  display: inline-block;
-  width: 1em;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .html-lesson-wrapper .act-content {
@@ -419,7 +412,7 @@ body {
     left: -9px !important;
   }
   .html-lesson-wrapper .text-header .arrow-part:before {
-    left: -4.5% !important;
+    left: -14.5% !important;
     top: 0.6vw !important;
   }
 }
@@ -441,6 +434,9 @@ body {
     font-weight: normal;
     width: 120px;
   }
+  .act-content .table-2 .arrow-part:before {
+    left: -12% !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -455,6 +451,9 @@ body {
   }
   .html-lesson-wrapper .words-phrase-content .pointers {
     padding-right: 5px;
+  }
+  .html-lesson-wrapper .arrow-part {
+    padding-left: 10px !important;
   }
 }
 

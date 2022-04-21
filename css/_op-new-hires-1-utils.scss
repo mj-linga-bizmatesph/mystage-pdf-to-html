@@ -278,6 +278,9 @@ body {
     .section.words {
       left: calc(-14% + 48px);
     }
+    .hide {
+      display: inline;
+    }
   }
 }
 @media screen and (max-width: 768px) {

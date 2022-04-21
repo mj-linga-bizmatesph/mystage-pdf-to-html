@@ -40,13 +40,13 @@ body {
   position: absolute;
   top: 40px;
   left: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0px;
 }
 
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
-  background-color: #CC3366;
+  background-color: #cc3366;
   font-size: clamp(8px, 1.8vw, 15px);
 }
 
@@ -81,7 +81,7 @@ body {
   left: clamp(91.5%, 93vw, 92%);
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .html-lesson-wrapper .row {
@@ -103,14 +103,14 @@ body {
 .html-lesson-wrapper .section {
   position: absolute;
   left: -78px;
-  color: #CC3366;
+  color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
 }
 
 .html-lesson-wrapper .divider {
-  color: #D9D9D9;
+  color: #d9d9d9;
   font-size: clamp(12px, 2vw, 15px);
   position: relative;
   left: 52%;
@@ -184,7 +184,7 @@ body {
   height: fit-content;
   padding-bottom: clamp(10px, 2vw, 20px);
   padding-left: clamp(32px, 6vw, 47px);
-  background: #F0D4D4;
+  background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
 }
 
@@ -334,14 +334,17 @@ body {
   .html-lesson-wrapper .see-content .article {
     margin-bottom: clamp(20px, 3.7vw, 29px);
   }
-  .html-lesson-wrapper .try-content, .html-lesson-wrapper .see-content {
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .see-content {
     margin-top: clamp(20px, 3.7vw, 30px);
     padding-left: clamp(11px, 2.4vw, 18px);
   }
-  .html-lesson-wrapper .try-content ul, .html-lesson-wrapper .see-content ul {
+  .html-lesson-wrapper .try-content ul,
+  .html-lesson-wrapper .see-content ul {
     margin-left: clamp(15px, 2.4vw, 18px);
   }
-  .html-lesson-wrapper .try-content li, .html-lesson-wrapper .see-content li {
+  .html-lesson-wrapper .try-content li,
+  .html-lesson-wrapper .see-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
   }
   .html-lesson-wrapper .act-content {
@@ -509,4 +512,25 @@ body {
 
 .html-lesson-wrapper .act-content .normal {
   font-weight: normal;
+}
+
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-top: clamp(7px, 2.6vw, 18px) !important;
+  }
+  .html-lesson-wrapper .section {
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .program-rank {
+    left: clamp(22px, 3vw, 48px) !important;
+  }
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-top: clamp(6px, 1.6vw, 18px) !important;
+  }
+  .html-lesson-wrapper .section {
+    top: 7px;
+  }
 }

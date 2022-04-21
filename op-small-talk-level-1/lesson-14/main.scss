@@ -43,7 +43,7 @@
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
     .program-rank {
-      left: clamp(25px, 2vw, 48px);
+      left: clamp(22px, 3vw, 48px) !important;
     }
     .words-phrase-content {
       .section {

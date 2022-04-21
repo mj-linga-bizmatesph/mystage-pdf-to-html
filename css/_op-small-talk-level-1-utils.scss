@@ -1,9 +1,9 @@
 $text-font: 'Trebuchet MS';
 $title-font: 'Helvetica', 'Arial', sans-serif;
-$primary: #CC3366;
+$primary: #cc3366;
 $primary-second: #339999;
-$primary-light: #F0D4D4;
-$text-title: #CC3366;
+$primary-light: #f0d4d4;
+$text-title: #cc3366;
 $left-pixel: clamp(50px, 14%, 126.5px);
 body {
   margin: 0;
@@ -39,7 +39,7 @@ body {
     position: absolute;
     top: 40px;
     left: 48px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 0px;
     .type {
       padding: 3px 16px 3px 14px;
@@ -73,7 +73,7 @@ body {
     left: clamp(91.5%, 93vw, 92%);
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .row {
     display: flex;
@@ -93,7 +93,7 @@ body {
     top: 2px;
   }
   .divider {
-    color: #D9D9D9;
+    color: #d9d9d9;
     font-size: clamp(12px, 2vw, 15px);
     position: relative;
     left: 52%;
@@ -120,8 +120,8 @@ body {
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
-    .sub-text{
-        line-height: 1.8;
+    .sub-text {
+      line-height: 1.8;
     }
   }
   .table {
@@ -190,9 +190,9 @@ body {
   .see-content {
     margin-top: 36px;
     .decimal {
-        list-style-type: decimal;
-        line-height: 1.8;
-      }
+      list-style-type: decimal;
+      line-height: 1.8;
+    }
   }
   .try-content {
     margin-top: 30px;
@@ -205,8 +205,8 @@ body {
       line-height: 1.8;
       list-style-position: outside;
     }
-    .space{
-        margin-top: 20px;
+    .space {
+      margin-top: 20px;
     }
   }
   .act-content {
@@ -220,7 +220,7 @@ body {
       display: flex;
       justify-content: flex-end;
     }
-    .normal{
+    .normal {
       font-weight: normal;
       margin-left: 5px;
     }
@@ -271,7 +271,8 @@ body {
         margin-bottom: clamp(20px, 3.7vw, 29px);
       }
     }
-    .try-content, .see-content {
+    .try-content,
+    .see-content {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 2.4vw, 18px);
       ul {
@@ -360,12 +361,12 @@ body {
     .text-header {
       left: -12px !important;
     }
-    .try-content .sub-text{
+    .try-content .sub-text {
       margin-left: 10px;
     }
-    .see-content .sub-text{
-        margin-left: 10px;
-      }
+    .see-content .sub-text {
+      margin-left: 10px;
+    }
     .sub-text {
       padding-top: 2.5px;
     }

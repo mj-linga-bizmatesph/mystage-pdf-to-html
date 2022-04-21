@@ -26,24 +26,32 @@
     }
     }
 }
-@media screen and (max-width: 320px) {
-    .html-lesson-wrapper{
-        .biz-tip-content{
-            .pointers{
-                .no-arrow{
-                    margin-left: -9.2%;
-                }
-            }
-            
+@media screen and (max-width: 320px){
+    .html-lesson-wrapper{ 
+      .words-phrase-content{
+        .section {
+      
+          margin-top: clamp(7px, 2.6vw, 18px) !important;
         }
-        .act-content{
-            .aut{
-                margin-left: 34%;
-                .no-wrap{
-                  font-weight: normal !important;
-              }
-            }
-        }
+      }
+      .section {
+      top: 7px;
     }
-    
-}
+  }
+  }
+  
+  @media screen and (max-width: 768px){
+    .html-lesson-wrapper{ 
+        .program-rank {
+            left: clamp(25px, 2vw, 48px);
+        }
+      .words-phrase-content{
+        .section {
+          margin-top: clamp(6px, 1.6vw, 18px) !important;
+        }
+      }
+      .section {
+      top: 7px;
+    }
+  }
+  }

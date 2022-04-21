@@ -515,3 +515,24 @@ body {
 .html-lesson-wrapper .act-content .normal {
   font-weight: normal;
 }
+
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-top: clamp(7px, 2.6vw, 18px) !important;
+  }
+  .html-lesson-wrapper .section {
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .program-rank {
+    left: clamp(25px, 2vw, 48px);
+  }
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-top: clamp(6px, 1.6vw, 18px) !important;
+  }
+  .html-lesson-wrapper .section {
+    top: 7px;
+  }
+}

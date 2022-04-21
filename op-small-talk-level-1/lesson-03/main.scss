@@ -1,22 +1,49 @@
 @import '../../css/op-small-talk-level-1-utils';
 
-.html-lesson-wrapper {
-  .see-content {
-    li {
-      line-height: 1.8;
+.html-lesson-wrapper{
+    .biz-tip-content{
+        line-height: 1.8;
+        .pointers{
+            margin-left: clamp(75px, 14%, 126.5px);
+        }
     }
-  }
-  .try-content {
-    .space {
-      margin-top: 8%;
+    .see-content{
+        li{
+            line-height: 1.8;
+        }
     }
-    li {
-      line-height: 1.8;
+    .try-content{
+        .space{
+            margin-top: 8%;
+        }
+        li{
+            line-height: 1.8;
+        }
     }
-  }
-  .act-content {
-    .normal {
-      font-weight: normal;
+    .act-content{
+      .no-wrap{
+        font-weight: normal !important;
     }
-  }
+    }
+}
+@media screen and (max-width: 320px) {
+    .html-lesson-wrapper{
+        .biz-tip-content{
+            .pointers{
+                .no-arrow{
+                    margin-left: -9.2%;
+                }
+            }
+            
+        }
+        .act-content{
+            .aut{
+                margin-left: 35%;
+                .no-wrap{
+                  font-weight: normal !important;
+              }
+            }
+        }
+    }
+    
 }

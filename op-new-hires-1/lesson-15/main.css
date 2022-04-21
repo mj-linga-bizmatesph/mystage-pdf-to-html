@@ -329,6 +329,9 @@ body {
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 48px);
   }
+  .html-lesson-wrapper .hide {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 768px) {

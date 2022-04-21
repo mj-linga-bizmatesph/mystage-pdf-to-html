@@ -1,8 +1,15 @@
 @import '../../css/_op-new-hires-1-utils.scss';
 @media screen and (max-width: 880px) {
-    .html-lesson-wrapper {
-      .inline-block {
-        display: block !important;
-      }
+  .html-lesson-wrapper {
+    .inline-block {
+      display: block !important;
     }
   }
+}
+@media screen and (max-width: 350px) {
+  .html-lesson-wrapper {
+    .words-phrase-content {
+      margin-top: 90px !important;
+    }
+  }
+}

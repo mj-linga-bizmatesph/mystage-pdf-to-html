@@ -329,6 +329,9 @@ body {
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 48px);
   }
+  .html-lesson-wrapper .hide {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -460,6 +463,12 @@ body {
 @media screen and (max-width: 880px) {
   .html-lesson-wrapper .inline-block {
     display: block !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .html-lesson-wrapper .words-phrase-content {
+    margin-top: 90px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

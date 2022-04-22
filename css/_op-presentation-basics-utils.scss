@@ -197,7 +197,7 @@ body {
     padding-bottom: 4%;
     padding-left: clamp(32px, 6vw, 47px);
     background: $magenta-light;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
 
     .section {
       left: 0;
@@ -211,7 +211,7 @@ body {
       margin-left: clamp(50px, 14%, 126.5px);
 
       .no-arrow {
-        margin-left: -3.2%;
+        margin-left: -3.6%;
         margin-right: 16%;
       }
     }

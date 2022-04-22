@@ -502,10 +502,10 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .html-lesson-wrapper .html-lesson-wrapper {
+  .html-lesson-wrapper {
     min-height: unset;
   }
-  .html-lesson-wrapper .html-lesson-wrapper .part-content {
+  .html-lesson-wrapper .part-content {
     margin-top: clamp(20px, 3.7vw, 30px);
     padding-left: clamp(11px, 2.4vw, 18px);
   }

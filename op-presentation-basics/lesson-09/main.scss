@@ -22,7 +22,7 @@
       tr td {
         width: 32%;
         .arrow-part {
-          width: 80%;
+          width: 90%;
         }
       }
     }
@@ -92,6 +92,11 @@
     .p-1,
     .p-2 {
       line-height: 1rem;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      margin-top: 30%;
     }
   }
 }

@@ -22,6 +22,9 @@
         }
         td {
           width: 47%;
+          .part-3 {
+            margin-top: -5%;
+          }
         }
         @media screen and (max-width: 600px) {
           th {
@@ -67,6 +70,19 @@
         vertical-align: top;
         ol {
           margin-top: 0%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      table {
+        tr {
+          td {
+            .arrow-part {
+              margin-right: 10%;
+            }
+          }
         }
       }
     }

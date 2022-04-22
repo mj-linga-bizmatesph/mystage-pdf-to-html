@@ -20,7 +20,7 @@
         td {
           width: 47%;
           .arrow-part {
-            width: 80%;
+            width: 90%;
           }
         }
         @media screen and (max-width: 600px) {
@@ -67,6 +67,11 @@
           border: 1px solid #d8d8d8;
           border-collapse: collapse;
         }
+      }
+    }
+    @media screen and (max-width: 360px) {
+      table {
+        font-size: clamp(8.7px, 2vw, 13.5px);
       }
     }
   }

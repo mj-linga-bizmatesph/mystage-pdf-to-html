@@ -19,7 +19,7 @@
       tr td {
         width: 47%;
         .arrow-part {
-          width: 80%;
+          width: 90%;
         }
       }
     }
@@ -57,6 +57,11 @@
         border: 1px solid #d8d8d8;
         border-collapse: collapse;
       }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      margin-top: 25%;
     }
   }
 }

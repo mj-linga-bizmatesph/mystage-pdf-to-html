@@ -51,13 +51,13 @@ body {
 .html-lesson-wrapper .program-rank .type {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #cc3366;
-  font-size: clamp(7px, 1.8vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #339999;
-  font-size: clamp(7px, 1.8vw, 15px);
+  font-size: clamp(8px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .line {
@@ -159,6 +159,33 @@ body {
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
   font-size: clamp(6px, 1.8vw, 15px);
+}
+
+.html-lesson-wrapper .biz-tip-content table tr td {
+  vertical-align: top;
+}
+
+.html-lesson-wrapper .biz-tip-content table tr td .arrow-part {
+  margin-right: 5%;
+}
+
+.html-lesson-wrapper .biz-tip-content .tbl-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.html-lesson-wrapper .biz-tip-content .tbl-wrapper table {
+  width: 50%;
+  margin-right: 4%;
+}
+
+.html-lesson-wrapper .biz-tip-content .tbl-wrapper table tr td {
+  height: 10px;
+  line-height: 1em;
 }
 
 .html-lesson-wrapper .biz-tip-content .section {
@@ -359,6 +386,9 @@ body {
   .html-lesson-wrapper .biz-tip-content {
     margin-top: 30%;
   }
+  .html-lesson-wrapper .biz-tip-content table tr th {
+    padding-bottom: 10px !important;
+  }
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
@@ -379,6 +409,37 @@ body {
   }
   .html-lesson-wrapper .see-content table tr td {
     padding: 3px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper .title {
+    position: absolute;
+    top: clamp(4.5%, 18vw, 6.1%);
+    left: 5%;
+    right: 5%;
+    font-size: clamp(18px, 4vw, 27px);
+  }
+  .html-lesson-wrapper .biz-tip-content {
+    margin-top: 35%;
+  }
+  .html-lesson-wrapper .biz-tip-content .no-arrow {
+    line-height: 1em;
+  }
+  .html-lesson-wrapper .biz-tip-content .arrow-part:before {
+    left: -1.1em;
+  }
+  .html-lesson-wrapper .biz-tip-content table tr td .arrow-part {
+    margin-right: 7%;
+  }
+  .html-lesson-wrapper .biz-tip-content table tr th {
+    padding-bottom: 10px !important;
+  }
+  .html-lesson-wrapper .biz-tip-content,
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .act-content {
+    font-size: clamp(9px, 2vw, 13.5px);
   }
 }
 
@@ -403,7 +464,17 @@ body {
 }
 
 .html-lesson-wrapper .biz-tip-content table tr td .arrow-part {
-  width: 80%;
+  width: 90%;
+}
+
+.html-lesson-wrapper .biz-tip-content table tr td .div-2 span {
+  color: #000000 !important;
+  font-weight: normal;
+}
+
+.html-lesson-wrapper .biz-tip-content table tr td .div-2 .part-2-2 {
+  color: #000000 !important;
+  font-weight: normal;
 }
 
 .html-lesson-wrapper .see-content table tr th {
@@ -441,5 +512,23 @@ body {
   padding: 5px;
   border: 1px solid #d8d8d8;
   border-collapse: collapse;
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content table tr td .div-2 span {
+    color: #000000 !important;
+    font-weight: normal;
+  }
+  .html-lesson-wrapper .biz-tip-content table tr td .div-2 .part-2-2 {
+    display: block;
+    color: #000000 !important;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper .biz-tip-content {
+    margin-top: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

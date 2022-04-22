@@ -28,7 +28,7 @@
       tr td {
         width: 47%;
         .arrow-part {
-          width: 80%;
+          width: 90%;
         }
       }
     }
@@ -76,6 +76,11 @@
       padding-bottom: 1%;
       position: relative;
       z-index: 1;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      margin-top: 25%;
     }
   }
 }

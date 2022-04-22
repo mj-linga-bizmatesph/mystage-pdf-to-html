@@ -596,6 +596,12 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper {
+    min-height: 730px !important;
+  }
+}
+
 .html-lesson-wrapper .act-spacer {
   padding-bottom: 10rem;
 }

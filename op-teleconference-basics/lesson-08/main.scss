@@ -1,53 +1,46 @@
 @import '../../css/op-teleconference-basics-utils';
-.act-spacer {
-  padding-bottom: 10rem;
-  @media only screen and (max-width: 767px) {
-    padding-bottom: 0;
-  }
-}
-.header-text {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 20px;
-}
-.grid-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 20px;
-
-  .left-section {
-    padding-left: 5px;
-    border: 4px solid rgb(210, 209, 209);
-    border-radius: 3px;
-  }
-
-  .right-section {
-    padding-left: 5px;
-    border: 4px solid rgb(210, 209, 209);
-    border-radius: 3px;
-  }
-}
-
-.try {
-  .content-table {
-    font-size: clamp(12px, 3vw, 16px);
-    width: 100%;
-    border-collapse: collapse;
-    .table-header {
-      width: 33.33% !important;
-      color: white;
-      background-color: $primary-pink;
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
     }
   }
-}
-.header-text-2 {
-  margin: 0;
-  width: 153%;
-  font-family: $helvetica;
-  font-size: clamp(12px, 3vw, 15px);
-  font-weight: bold;
-  line-height: clamp(12px, 4vw, 22px);
-  margin-top: clamp(-2px, -1vw, -3px);
-  display: grid;
-  grid-template-columns: 50% 50%;
+  .grid-section {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: clamp(5px, 3vw, 20px);
+
+    .right-section,
+    .left-section {
+      padding-left: 5px;
+      border: 4px solid rgb(210, 209, 209);
+      border-radius: 3px;
+      padding: 1.5%;
+    }
+  }
+
+  .try {
+    .content-table {
+      max-width: 90%;
+      .table-header {
+        width: 33.33% !important;
+        color: white;
+        background-color: $primary-pink;
+      }
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .right-section,
+    .left-section {
+      padding: 3% !important;
+    }
+    .speaker {
+      width: 27% !important;
+    }
+    .dialogue {
+      padding-left: 1%;
+    }
+  }
 }

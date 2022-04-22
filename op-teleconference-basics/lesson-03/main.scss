@@ -1,33 +1,48 @@
 @import '../../css/op-teleconference-basics-utils';
-.act-spacer {
-  padding-bottom: 10rem;
-  @media only screen and (max-width: 767px) {
-    padding-bottom: 0;
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
   }
-}
-.dialogue-comment {
-  color: rgb(166, 166, 166);
-  text-align: center;
-}
+  .dialogue-comment {
+    color: rgb(166, 166, 166);
+    text-align: center;
+  }
+  .try {
+    .content-table {
+      font-size: clamp(12px, 3vw, 16px);
+      width: 100%;
+      border-collapse: collapse;
+      .table-header {
+        width: 25% !important;
+        color: white;
+        background-color: $primary-pink;
+      }
+      th {
+        vertical-align: middle !important;
+      }
+      td,
+      th {
+        border: 2px solid $tertiary-gray;
+        padding: 0.5%;
+        vertical-align: baseline;
+      }
+    }
+  }
+  .extension{
+      margin-bottom: 1% !important;
+      width: 70% !important;
+      @media only screen and (max-width: 863px){
+        width: 73% !important;
+      }
+      @media only screen and (max-width: 830px){
+        width: 75% !important;
+      }
+      @media only screen and (max-width: 450px){
+        width: 92% !important;
+      }
 
-.try {
-  .content-table {
-    font-size: clamp(12px, 3vw, 16px);
-    width: 100%;
-    border-collapse: collapse;
-    .table-header {
-      width: 25% !important;
-      color: white;
-      background-color: $primary-pink;
-    }
-    th {
-      vertical-align: middle !important;
-    }
-    td,
-    th {
-      border: 2px solid $tertiary-gray;
-      padding: 0.5%;
-      vertical-align: baseline;
-    }
   }
 }

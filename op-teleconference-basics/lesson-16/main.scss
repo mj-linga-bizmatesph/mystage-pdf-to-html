@@ -1,0 +1,155 @@
+@import '../../css/op-teleconference-basics-utils';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .dialogue-comment {
+    color: rgb(166, 166, 166);
+    text-align: center;
+  }
+
+  .try {
+    .tbl-container {
+      width: 95%;
+
+      @media only screen and (max-width: 360px) {
+        overflow-x: scroll;
+      }
+      .content-table {
+        font-size: clamp(12px, 3vw, 16px);
+        width: 100%;
+        border-collapse: collapse;
+
+        @media only screen and (max-width: 460px) {
+          width: 105% !important;
+        }
+        @media only screen and (max-width: 360px) {
+          width: 150% !important;
+        }
+        .table-header {
+          width: 20% !important;
+          color: white;
+          background-color: $primary-pink;
+        }
+        th {
+          vertical-align: middle !important;
+        }
+        td,
+        th {
+          border: 2px solid $tertiary-gray;
+          padding: 0.5%;
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+  // .try {
+  //   .tbl-container {
+  //     display: flex;
+  //     font-family: $trebuchet;
+  //     font-size: clamp(12px, 2vw, 15px);
+  //     .decision-group {
+  //       display: flex;
+  //       flex-direction: column;
+  //       width: 20%;
+
+  //       .dec-header {
+  //         border: 1px solid rgb(218, 218, 218);
+  //         background-color: #bd3762;
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         height: 30px;
+  //         color: white;
+  //       }
+  //       .dec-text {
+  //         padding: 2% 5%;
+  //         border: 1px solid rgb(218, 218, 218);
+  //       }
+  //       .dec-1 {
+  //         min-height: 50px;
+  //         max-height: 120px;
+  //         height: 50px;
+  //         @media only screen and (max-width: 780px) {
+  //           height: 55px !important;
+  //         }
+  //         @media only screen and (max-width: 540px) {
+  //           height: 72px !important;
+  //         }
+  //         @media only screen and (max-width: 408px) {
+  //           height: 83px !important;
+  //         }
+  //         @media only screen and (max-width: 396px) {
+  //           height: 100px !important;
+  //         }
+  //       }
+  //       .dec-2 {
+  //         min-height: 50px;
+  //         max-height: 120px;
+  //         height: 50px;
+  //         @media only screen and (max-width: 820px) {
+  //           height: 73px !important;
+  //         }
+  //         @media only screen and (max-width: 780px) {
+  //           height: 70px !important;
+  //         }
+  //         @media only screen and (max-width: 540px) {
+  //           height: 65px !important;
+  //         }
+  //         @media only screen and (max-width: 479px) {
+  //           height: 70px !important;
+  //         }
+  //         @media only screen and (max-width: 408px) {
+  //           height: 85px !important;
+  //         }
+  //       }
+  //       .dec-3 {
+  //         min-height: 40px;
+  //         max-height: 120px;
+  //         height: 40px;
+  //         @media only screen and (max-width: 820px) {
+  //           height: 60px !important;
+  //         }
+  //         @media only screen and (max-width: 780px) {
+  //           height: 55px !important;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  @media only screen and (max-width: 440px) {
+    .try {
+      .tbl-container {
+        flex-direction: column;
+        .decision-group {
+          flex-direction: row !important;
+          width: 100%;
+          .dec-header {
+            width: 5px;
+            padding: 2%;
+            text-align: center;
+            overflow-wrap: break-word;
+            height: 109px !important;
+            .dec-header-text {
+              width: 5px;
+              overflow-wrap: break-word;
+              .word-l {
+                overflow-wrap: break-word;
+                display: block;
+                margin-bottom: 8px;
+              }
+            }
+          }
+          .dec-text {
+            padding: 2%;
+            width: 70px;
+            height: 109px !important;
+          }
+        }
+      }
+    }
+  }
+}

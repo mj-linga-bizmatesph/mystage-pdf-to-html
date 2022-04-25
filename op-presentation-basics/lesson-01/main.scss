@@ -1,0 +1,180 @@
+@import '../../css/_op-presentation-basics-utils';
+
+.html-lesson-wrapper {
+  table {
+    border-collapse: collapse;
+  }
+  .see-content table tr {
+    td.td-content {
+      color: #000000;
+      padding: 5px;
+      border: 1px solid $gray-light;
+      text-align: center;
+    }
+    th.th-header {
+      background-color: $magenta;
+      color: #ffffff;
+      padding: 5px;
+      border: 1px solid $gray-light;
+      border-collapse: collapse;
+    }
+    td.td-content-2a {
+      padding: 15px !important;
+      text-align: center;
+    }
+    td.td-content-2b {
+      padding: 15px !important;
+      border-left: 1px solid $gray-light;
+    }
+    td.td-content-3a {
+      text-align: center;
+      padding: 0px !important;
+    }
+    td.td-content-3b {
+      text-align: center;
+      padding: 0px !important;
+    }
+    td.td-content-3a .spn-3a {
+      padding: 0;
+      height: 32px;
+      width: 94%;
+      float: right;
+      border-left: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+      margin-right: -2%;
+    }
+    td.td-content-3b .spn-3b {
+      height: 32px;
+      width: 94%;
+      float: left;
+      padding: 0;
+      border-right: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+    }
+    td.td-content-3b .spn-3b {
+      height: 32px;
+      width: 94%;
+      float: left;
+      padding: 0;
+      border-right: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+      margin-left: -2%;
+    }
+    td.td-content-4a {
+      padding: 15px;
+      border: 1px solid $gray-light;
+    }
+    td.td-content-4b {
+      padding: 15px;
+      border: 1px solid $gray-light;
+    }
+    td.td-content-4c {
+      padding: 15px;
+      border: 1px solid $gray-light;
+    }
+    td.td-content-4a {
+      padding-left: 5%;
+    }
+    td.td-content-4b {
+      @extend td.td-content-4a;
+    }
+    td.td-content-4c {
+      @extend td.td-content-4a;
+    }
+  }
+  .try-content table tr {
+    th.th-header {
+      background-color: $magenta;
+      color: #ffffff;
+      padding: 5px;
+      border: 1px solid $gray-light;
+      border-collapse: collapse;
+    }
+    td.td-content {
+      color: #000000;
+      padding: 5px;
+      border: 1px solid $gray-light;
+      text-align: center;
+    }
+    td.td-content-2a {
+      padding: 5px;
+      text-align: center;
+    }
+    td.td-content-2b {
+      padding: 15px;
+      border-left: 1px solid $gray-light;
+    }
+    td.td-content-3a {
+      text-align: center;
+      padding: 0px !important;
+    }
+    td.td-content-3b {
+      text-align: center;
+      padding: 0px !important;
+    }
+    td.td-content-3a .spn-3a {
+      padding: 0;
+      height: 32px;
+      width: 94%;
+      float: right;
+      border-left: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+    }
+    td.td-content-3b .spn-3b {
+      height: 32px;
+      width: 94%;
+      float: left;
+      padding: 0;
+      border-right: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+      margin-left: -1%;
+    }
+    td.td-content-4a {
+      padding: 5px;
+      border: 1px solid $gray-light;
+    }
+    td.td-content-4b {
+      @extend .td-content-4a;
+    }
+    td.td-content-4c {
+      @extend .td-content-4a;
+    }
+  }
+  .try-content .tbl-2 tr {
+    td.td-content-4a {
+      padding-left: 5%;
+      height: 70px;
+      vertical-align: top;
+    }
+    td.td-content-4b {
+      @extend .td-content-4a;
+    }
+    td.td-content-4c {
+      @extend .td-content-4a;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .arrow-part:before {
+      left: 0em;
+    }
+    .arrow-part {
+      padding-left: 10px;
+    }
+    .biz-tip-content {
+      .arrow-part {
+        margin-left: -3.2%;
+      }
+    }
+    .see-content,
+    .try-content {
+      font-size: clamp(8px, 2vw, 13.5px);
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      .arrow-part:before {
+        left: 0em;
+      }
+    }
+  }
+}

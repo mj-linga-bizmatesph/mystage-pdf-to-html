@@ -1,0 +1,129 @@
+@import '../../css/_op-presentation-basics-utils';
+
+.html-lesson-wrapper {
+  table {
+    border-collapse: collapse;
+  }
+  .lesson-number {
+    left: 94.2% !important;
+  }
+  .review-content {
+    margin-top: clamp(70px, 25%, 160px);
+    table {
+      tr th {
+        text-align: left;
+      }
+      tr td {
+        border: 2.1px solid #d8d8d8;
+        padding: 10px;
+        min-height: 150px;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        padding-left: 5%;
+        p {
+          margin-left: -3%;
+          margin-top: -5px;
+          margin-bottom: 3px;
+        }
+        div.div-1 {
+          float: left;
+          width: 47%;
+        }
+        div.div-2 {
+          float: right;
+          width: 47%;
+        }
+        div.div-1,
+        div.div-2 {
+          b {
+            margin-left: -7%;
+          }
+        }
+      }
+      tr td.tdbreaker {
+        border: none;
+      }
+      tr.trbreaker {
+        height: 20px;
+      }
+    }
+    table.tbl-3 {
+      border: 2.1px solid #d8d8d8;
+      padding: 10px;
+      margin-bottom: 3%;
+      margin-right: 5%;
+      padding-left: 5%;
+      margin-top: 3%;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0px 0px;
+
+      tr td {
+        border: none !important;
+        padding: 0px !important;
+        .part-2 {
+          span {
+            color: #000000 !important;
+            font-weight: normal;
+          }
+          margin-left: -10%;
+        }
+        @media screen and (max-width: 600px) {
+          .part-3 {
+            margin-left: 25%;
+          }
+          .part-2 {
+            span {
+              color: #000000 !important;
+              font-weight: normal;
+            }
+            margin-left: 10%;
+            .part-2-2 {
+              display: block;
+            }
+          }
+        }
+      }
+      th p {
+        margin-left: -4%;
+        font-weight: normal;
+        margin-top: -1%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .review-content {
+      font-size: clamp(9px, 2vw, 13.5px);
+    }
+  }
+  .try-content {
+    table {
+      tr th {
+        text-align: center;
+        background-color: #cc3366;
+        color: #ffffff;
+        padding: 5px;
+        border: 1px solid #d8d8d8;
+        border-collapse: collapse;
+      }
+      tr td {
+        width: 47%;
+        padding: 5px;
+        border: 1px solid #d8d8d8;
+        border-collapse: collapse;
+      }
+    }
+    ol {
+      margin-left: -4%;
+      li {
+        p {
+          line-height: 1.8rem;
+        }
+      }
+    }
+    p {
+      line-height: 1.8rem;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../css/op-teleconference-basics-utils';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .try {
+    .content-table {
+      font-size: clamp(12px, 3vw, 16px);
+      width: 100%;
+      border-collapse: collapse;
+      .table-header {
+        width: 50%;
+        color: white;
+        background-color: $primary-pink;
+      }
+      th {
+        vertical-align: middle !important;
+      }
+      td,
+      th {
+        border: 2px solid $tertiary-gray;
+        padding: 0.5%;
+        vertical-align: baseline;
+        width: 50%;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: '\25BC';
+          box-sizing: content-box;
+          li::before {
+            content: '';
+            display: block;
+            width: 0.5em;
+          }
+          li::marker {
+            font-size: clamp(11px, 2vw, 13px);
+          }
+        }
+      }
+    }
+  }
+}

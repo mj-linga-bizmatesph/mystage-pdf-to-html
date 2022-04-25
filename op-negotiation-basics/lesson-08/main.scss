@@ -5,5 +5,9 @@
     ol {
       margin-left: 1.5em;
     }
+
+    table {
+      font-size: clamp(10px, 2vw, 15px);
+    }
   }
 }

@@ -5,7 +5,7 @@ body {
 
 .html-lesson-wrapper {
   width: 100%;
-  min-width: 240px;
+  min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
@@ -457,4 +457,8 @@ body {
 
 .html-lesson-wrapper .try-content ol {
   margin-left: 1.5em;
+}
+
+.html-lesson-wrapper .try-content table {
+  font-size: clamp(10px, 2vw, 15px);
 }

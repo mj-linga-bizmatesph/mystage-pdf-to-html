@@ -24,6 +24,11 @@
         padding: clamp(12px, 3vw, 20px);
         width: clamp(140px, 14vw, 195px);
         margin-bottom: 1%;
+        h1 {
+          margin-block-start: 0;
+          margin-block-end: 0;
+          font-size: 2em;
+        }
       }
       #product-subtitle {
         background-color: #d8d8d8;

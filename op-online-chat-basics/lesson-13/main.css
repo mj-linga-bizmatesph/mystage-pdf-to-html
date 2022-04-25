@@ -561,6 +561,14 @@ body {
   margin-bottom: 1%;
 }
 
+.html-lesson-wrapper .chat-box #product-image #product-logo h1 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 2em;
+}
+
 .html-lesson-wrapper .chat-box #product-image #product-subtitle {
   background-color: #d8d8d8;
   color: #7f7f7f;

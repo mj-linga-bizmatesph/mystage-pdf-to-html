@@ -1,0 +1,44 @@
+@import '../../css/_op-online-chat-basics-utils.scss';
+.html-lesson-wrapper {
+  .biz-tips {
+    .biz-tip-content {
+      padding-bottom: 0.5rem !important;
+    }
+  }
+  .chat-box {
+    .chat-message {
+      .chat-1 {
+        max-width: 419px;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+      }
+      @media screen and (max-width: 460px) {
+        max-width: 80% !important;
+      }
+    }
+    #product-image {
+      #product-logo {
+        background-color: #d8d8d8;
+        color: #595959;
+        text-align: center;
+        padding: clamp(12px, 3vw, 20px);
+        width: clamp(140px, 14vw, 195px);
+        margin-bottom: 1%;
+      }
+      #product-subtitle {
+        background-color: #d8d8d8;
+        color: #7f7f7f;
+        width: clamp(140px, 14vw, 195px);
+        padding: 3px clamp(12px, 3vw, 20px);
+        font-size: clamp(10px, 2vw, 13.5px);
+        text-align: center;
+      }
+    }
+  }
+  .act-spacer {
+    padding-bottom: 1rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+}

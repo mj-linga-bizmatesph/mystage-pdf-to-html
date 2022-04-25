@@ -1,0 +1,11 @@
+@import '../../css/op-negotiation-basics-utils';
+
+.html-lesson-wrapper {
+  .paper {
+    p:not(:last-child) {
+      &:not(:last-child) {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 /*
-this file is intended to be use Other Programs - Meeting Basics Lessons 1-20, 
-if you want to override the specified class, go to the scss file 
-of the lesson and make the same class, and override it depending 
+this file is intended to be use Other Programs - Meeting Basics Lessons 1-20,
+if you want to override the specified class, go to the scss file
+of the lesson and make the same class, and override it depending
 on what you need.
 */
 $trebuchet: 'Trebuchet MS';
@@ -266,6 +266,7 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
+        font-family: $helvetica;
       }
     }
     &.review {
@@ -299,11 +300,13 @@ body {
           .speaker {
             width: 12%;
             font-weight: bold;
+            font-family: $trebuchet;
           }
           .message {
             width: 88%;
             @media only screen and (max-device-width: 400px) {
               padding-left: 0.8em;
+              font-family: $trebuchet;
             }
           }
         }
@@ -413,6 +416,7 @@ body {
     color: $tertiary-gray;
     margin-top: clamp(10px, 2vw, 20px);
     margin-bottom: clamp(15px, 3vw, 25px);
+    font-size: clamp(12px, 2vw, 15px);
     &::after {
       content: '\25BC\25BC\25BC';
     }

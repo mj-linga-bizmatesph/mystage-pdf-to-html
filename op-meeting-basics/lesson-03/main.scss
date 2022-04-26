@@ -1,14 +1,16 @@
 @import '../../css/_op-meeting-basics-utils.scss';
-.act-spacer {
-  padding-bottom: 10rem;
-  @media only screen and (max-width: 767px) {
-    padding-bottom: 0;
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
   }
-}
-.try {
-  .content-table {
-    .table-header {
-      width: 25% !important;
+  .try {
+    .content-table {
+      .table-header {
+        width: 25% !important;
+      }
     }
   }
 }

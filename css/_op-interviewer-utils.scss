@@ -36,7 +36,7 @@ body {
   overflow: hidden;
   padding-bottom: 62px;
   background-image: url(#{$s3}/other-programs-bg-header-magenta.svg),
-    url(#{$s3}/other-programs-footer-logo.svg);
+    url(#{$s3}/other-programs-footer-level2.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ body {
       }
     }
     &.two {
-      right: 6.9%;
+      right: 6.5%;
     }
   }
 
@@ -326,6 +326,7 @@ body {
     .content-see{
       margin-left: -6%;
       font-size: clamp(12px, 3vw, 15px);
+      line-height: 1.8;
     }
     ul {
       list-style-type: none;
@@ -405,6 +406,16 @@ body {
           border-collapse: collapse;
           .table-header {
             width: 50%;
+            color: white;
+            background-color: $primary-pink;
+          }
+          .table-header1 {
+            width: 13%;
+            color: white;
+            background-color: $primary-pink;
+          }
+          .table-header2 {
+            width: 18%;
             color: white;
             background-color: $primary-pink;
           }

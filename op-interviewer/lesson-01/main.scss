@@ -1,1 +1,12 @@
 @import '../../css/op-interviewer-utils';
+
+&{
+    .content-see{
+        margin-left: -6%;
+        font-size: clamp(12px, 3vw, 15px);
+        line-height: 1.8;
+        @media only screen and (max-device-width: 320px) {
+          margin-left: -16% !important;
+        }
+      }
+}

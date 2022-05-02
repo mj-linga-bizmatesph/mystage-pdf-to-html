@@ -4,6 +4,7 @@ if you want to override the specified class, go to the scss file
 of the lesson and make the same class, and override it depending 
 on what you need.
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
   font-family: "Trebuchet MS";
   position: relative;
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
   height: -webkit-fit-content;
@@ -34,15 +35,14 @@ body {
 }
 
 .html-lesson-wrapper header {
-  top: 0;
-  margin-bottom: clamp(50px, 15vw, 65px);
+  margin-bottom: clamp(27px, 6vw, 65px);
   margin-top: -3%;
   position: relative;
 }
 
 .html-lesson-wrapper footer {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: clamp(5px, 1.5vw, 10px);
+  font-size: clamp(4.5px, 1.1vw, 9px);
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -59,12 +59,16 @@ body {
 
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper footer .footer-text:not(.review) {
-    max-width: 117px;
+    max-width: 45%;
     bottom: -10px;
   }
   .html-lesson-wrapper footer .footer-text.review {
-    bottom: 0;
+    bottom: -6px;
   }
+}
+
+.html-lesson-wrapper .jp {
+  font-family: "SimSun", "Noto Sans JP", sans-serif;
 }
 
 .html-lesson-wrapper .img-responsive-clamp {
@@ -116,6 +120,10 @@ body {
   margin-top: 2.5rem;
 }
 
+.html-lesson-wrapper .mt-6 {
+  margin-top: 3rem;
+}
+
 .html-lesson-wrapper .mt-7 {
   margin-top: 3.5rem;
 }
@@ -124,8 +132,41 @@ body {
   margin-top: 4rem;
 }
 
+.html-lesson-wrapper .mt-9 {
+  margin-top: 4.5rem;
+}
+
+.html-lesson-wrapper .mt-10 {
+  margin-top: 5rem;
+}
+
 .html-lesson-wrapper .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.html-lesson-wrapper .mb-2 {
+  margin-bottom: 1rem;
+}
+
+.html-lesson-wrapper .mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.html-lesson-wrapper .mb-4 {
+  margin-bottom: 2rem !important;
+}
+
+.html-lesson-wrapper .mb-18 {
+  margin-bottom: 9rem !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper [class*='mt-'] {
+    margin-top: 0 !important;
+  }
+  .html-lesson-wrapper [class*='mb-'] {
+    margin-bottom: 0 !important;
+  }
 }
 
 .html-lesson-wrapper .gray-text, .html-lesson-wrapper .jp, .html-lesson-wrapper .header-content .header-content-grid .header-desc .jap, .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p.jp, .html-lesson-wrapper .content-item .content-div .try-content .try-title p.jp {
@@ -136,6 +177,10 @@ body {
   color: #fff;
 }
 
+.html-lesson-wrapper .helvetica {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
 .html-lesson-wrapper .flip-horizontal {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -144,6 +189,10 @@ body {
 .html-lesson-wrapper .middle-dot {
   font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
+}
+
+.html-lesson-wrapper .jp-font {
+  font-family: "SimSun", "Noto Sans JP", sans-serif;
 }
 
 .html-lesson-wrapper [class*='col-'] {
@@ -161,7 +210,7 @@ body {
     width: 25%;
   }
   .html-lesson-wrapper .col-4 {
-    width: 33.33%;
+    width: 31.33%;
   }
   .html-lesson-wrapper .col-5 {
     width: 41.66%;
@@ -210,19 +259,18 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
   color: #ffffff;
-  margin-top: clamp(10px, 3vw, 25px);
+  margin-top: clamp(10px, 3vw, 35px);
   margin-left: clamp(10px, 3vw, 37px);
+  font-size: clamp(8px, 1.8vw, 13px);
 }
 
 .html-lesson-wrapper .program-rank .type {
-  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+  padding: clamp(2px, 1vw, 3.5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 3.5px) clamp(10px, 3vw, 17px);
   background-color: #bd3762;
-  font-size: clamp(7px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 25px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
-  font-size: clamp(7px, 1.8vw, 15px);
+  padding: clamp(2px, 1vw, 3.5px) clamp(20px, 4.4vw, 25px) clamp(2px, 1vw, 3.5px) clamp(10px, 3vw, 17px);
   background: #72ade0;
   width: 100%;
   margin-left: -2%;
@@ -233,7 +281,7 @@ body {
   position: relative;
   display: inline;
   margin: 0 6px;
-  font-size: 16px;
+  font-size: clamp(10px, 2vw, 16px);
 }
 
 .html-lesson-wrapper .program-rank .separator .line {
@@ -247,27 +295,37 @@ body {
   right: 3.8%;
   width: 1.9%;
   text-align: center;
-  margin-top: 4.8%;
-  font-size: clamp(9px, 2.5vw, 17px);
+  margin-top: 5.2%;
+  font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
   font-weight: bold;
 }
 
 .html-lesson-wrapper .lesson-number.two {
-  right: 4%;
+  right: 3.8%;
 }
 
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .lesson-number {
-    margin-top: 4%;
-    right: 4.3%;
+    margin-top: 4.8%;
+    right: 4%;
+  }
+  .html-lesson-wrapper .lesson-number.two {
+    right: 4.1%;
+  }
+}
+
+@media only screen and (max-device-width: 330px) {
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 4.3%;
+    right: 3.8%;
   }
 }
 
 .html-lesson-wrapper .header-content {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
-  top: clamp(30px, 8vw, 50px);
+  top: clamp(30px, 8vw, 73px);
   color: black;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -278,13 +336,8 @@ body {
 
 .html-lesson-wrapper .header-content .title {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: clamp(13px, 3vw, 19px);
-}
-
-@media only screen and (max-width: 767px) {
-  .html-lesson-wrapper .header-content .title {
-    padding-top: 0.5rem;
-  }
+  font-size: clamp(15px, 3vw, 19px);
+  font-weight: 500;
 }
 
 .html-lesson-wrapper .header-content .header-content-grid {
@@ -297,6 +350,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 9px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -317,8 +371,13 @@ body {
 }
 
 .html-lesson-wrapper .header-content .header-content-grid .header-desc {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: clamp(9px, 2vw, 13.5px);
   padding: clamp(10px, 4.5vw, 20px) 0 clamp(10px, 4.5vw, 20px) clamp(10px, 4.5vw, 20px);
-  font-size: clamp(8px, 3vw, 13.5px);
+}
+
+.html-lesson-wrapper .header-content .header-content-grid .header-desc .jap {
+  font-family: "SimSun", "Noto Sans JP", sans-serif;
 }
 
 @media only screen and (max-device-width: 767px) {
@@ -333,8 +392,52 @@ body {
   display: flex;
 }
 
+.html-lesson-wrapper .content-item.pt-see {
+  padding-top: clamp(15px, 3vw, 30px);
+}
+
+.html-lesson-wrapper .content-item.pt-review {
+  padding-top: clamp(10px, 2vw, 20px);
+}
+
 .html-lesson-wrapper .content-item .content-label {
-  width: 8%;
+  width: 7.5%;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 7%;
+  }
+}
+
+@media only screen and (max-device-width: 740px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 7.6%;
+  }
+}
+
+@media only screen and (max-device-width: 450px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 8.5%;
+  }
+}
+
+@media only screen and (max-device-width: 400px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 9%;
+  }
+}
+
+@media only screen and (max-device-width: 360px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 10.5%;
+  }
 }
 
 .html-lesson-wrapper .content-item .content-label .gray-label {
@@ -342,7 +445,7 @@ body {
   background-size: 100% 100%;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: clamp(8px, 3vw, 15px);
+  font-size: clamp(10px, 2vw, 13.5px);
   vertical-align: middle;
   padding-top: clamp(2px, 1vw, 5px);
   padding-bottom: clamp(2px, 1vw, 5px);
@@ -359,7 +462,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(8px, 2.2vw, 17px);
+  font-size: clamp(10px, 2vw, 13.5px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -412,7 +515,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-number {
-  font-size: clamp(14px, 5vw, 39px);
+  font-size: clamp(18px, 4vw, 34px);
   line-height: clamp(13px, 4vw, 35px);
   color: #bd3762;
   font-weight: bold;
@@ -422,7 +525,7 @@ body {
 
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p {
   margin: 0;
-  font-size: clamp(7px, 2.2vw, 14px);
+  font-size: clamp(10px, 2vw, 13.5px);
 }
 
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-title .item-text p.en {
@@ -475,7 +578,7 @@ body {
 
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble {
   display: block;
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 10px 12px;
   position: relative;
   clear: both;
   border: 1px solid #9fa0a0;
@@ -528,22 +631,26 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble p {
-  font-size: clamp(8px, 3vw, 13px);
+  font-size: clamp(10px, 2vw, 13.5px);
   margin: 0;
 }
 
+.html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble p.jp {
+  letter-spacing: -0.9px;
+  word-spacing: -3px;
+}
+
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble .other-phrases-label {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: clamp(10px, 2vw, 13.5px);
   color: #fff !important;
   background-color: #bd3762;
   border-top: 1px solid #9fa0a0;
   border-bottom: 1px solid #9fa0a0;
-  font-size: clamp(8px, 3vw, 14.5px);
   padding-left: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: -10px;
-  margin-left: -15px;
+  margin-left: -12px;
 }
 
 .html-lesson-wrapper .content-item .content-div .conversation-exchange .conversation-item .item-conversations .conv .speech .bubble .option {
@@ -558,28 +665,27 @@ body {
 
 .html-lesson-wrapper .content-item .content-div .try-content .try-title p {
   margin: 0;
-  font-size: clamp(8px, 3vw, 14.5px);
+  font-size: clamp(10px, 2vw, 13.5px);
 }
 
 .html-lesson-wrapper .content-item .content-div .try-content .try-title p.en {
   font-weight: bold;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper .content-item .content-div .try-content .try-content-div ol.try-content-list {
-  -webkit-padding-start: 20px;
-          padding-inline-start: 20px;
-  font-size: clamp(8px, 3vw, 14px);
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  margin-top: clamp(0.5em, 2vw, 1.6em);
+  font-size: clamp(10px, 2vw, 13.5px);
+  line-height: 1.2;
 }
 
 .html-lesson-wrapper .content-item .content-div .try-content .try-content-div ul.try-content-list-ul {
-  -webkit-padding-start: 20px;
-          padding-inline-start: 20px;
-  font-size: clamp(8px, 3vw, 14px);
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-top: clamp(0.5em, 2vw, 1.5em);
+  font-size: clamp(10px, 2vw, 13.5px);
+  line-height: 1.4;
   list-style: none;
-}
-
-@media only screen and (max-width: 767px) {
-  .html-lesson-wrapper .mt-5 {
-    margin-top: 1rem;
-  }
 }

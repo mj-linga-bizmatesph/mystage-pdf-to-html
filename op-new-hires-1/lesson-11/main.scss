@@ -1,0 +1,27 @@
+@import '../../css/_op-new-hires-1-utils.scss';
+.html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91%, 91.5vw, 91.7%) !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    .inline-block {
+      display: block !important;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .html-lesson-wrapper {
+    .title {
+      top: clamp(35px, 3vw, 40px);
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .html-lesson-wrapper {
+    .words-phrase-content {
+      margin-top: 100px !important;
+    }
+  }
+}

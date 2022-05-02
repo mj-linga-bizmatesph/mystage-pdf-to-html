@@ -1,0 +1,90 @@
+@import '../../css/_op-presentation-basics-utils';
+
+.html-lesson-wrapper {
+  .lesson-number {
+    left: 94.4% !important;
+  }
+  table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  .biz-tip-content {
+    table {
+      tr {
+        th {
+          text-align: left;
+          padding-top: 5px;
+          padding-bottom: 15px;
+          span {
+            position: absolute;
+            margin-left: -3%;
+          }
+        }
+        td {
+          width: 47%;
+        }
+        @media screen and (max-width: 600px) {
+          th {
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+  .see-content {
+    table {
+      tr th {
+        text-align: left;
+        padding-bottom: 10px;
+      }
+      tr td {
+        border: 2.1px solid #d8d8d8;
+        padding: 10px;
+        min-height: 150px;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        .tbl-inner {
+          width: 100% !important;
+          tr td {
+            border: 0px solid #d8d8d8;
+            padding: 2px 2px;
+            min-height: 150px;
+            b {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      tr td.tdbreaker {
+        border: none;
+      }
+    }
+  }
+  .try-content {
+    table {
+      tr th {
+        text-align: center;
+        background-color: #cc3366;
+        color: #ffffff;
+        padding: 5px;
+        border: 1px solid #d8d8d8;
+        border-collapse: collapse;
+      }
+      tr td {
+        width: 20%;
+        padding: 5px;
+        border: 1px solid #d8d8d8;
+        border-collapse: collapse;
+        vertical-align: top;
+        ol {
+          margin-top: 0%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      margin-top: 30%;
+    }
+  }
+}

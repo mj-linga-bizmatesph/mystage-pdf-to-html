@@ -1,0 +1,11 @@
+@import '../../css/op-negotiations-utils';
+
+.html-lesson-wrapper {
+  .try-content {
+    ol {
+      .misaligned::before {
+        width: 1.5%;
+      }
+    }
+  }
+}

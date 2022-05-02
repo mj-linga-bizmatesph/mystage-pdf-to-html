@@ -1,0 +1,44 @@
+@import '../../css/op-negotiations-utils';
+
+.html-lesson-wrapper {
+  .m-0 {
+    margin: 0 !important;
+  }
+
+  .mb {
+    margin-bottom: 1.5em !important;
+  }
+
+  .paper {
+    p:not(:last-child) {
+      &:not(:last-child) {
+        margin-bottom: 1.5em;
+      }
+    }
+
+    .lh-initial {
+      line-height: initial;
+    }
+  }
+
+  .see-content {
+    table {
+      margin-bottom: 1%;
+    }
+
+    ul {
+      padding-inline-start: 1.2em;
+      margin: 0;
+      li {
+        margin-bottom: 1.5em;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .try-content {
+    ol {
+      margin-left: 1.5em;
+    }
+  }
+}

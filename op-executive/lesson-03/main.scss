@@ -6,4 +6,11 @@
       padding-bottom: 0;
     }
   }
+  footer {
+    .footer-text {
+      @media only screen and (max-width: 880px) {
+        max-width: 40% !important;
+      }
+    }
+  }
 }

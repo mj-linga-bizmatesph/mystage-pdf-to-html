@@ -174,7 +174,7 @@ body {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 7.4%;
   }
@@ -183,7 +183,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-device-width: 400px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 7%;
   }
@@ -216,20 +216,14 @@ body {
   max-width: 90%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .header-content .title {
     padding-top: 1%;
     padding-bottom: 5%;
   }
 }
 
-@media only screen and (max-width: 690px) {
-  .html-lesson-wrapper .header-content .title {
-    max-width: 86% !important;
-  }
-}
-
-@media only screen and (max-width: 390px) {
+@media only screen and (max-device-width: 690px) {
   .html-lesson-wrapper .header-content .title {
     max-width: 86% !important;
   }
@@ -248,7 +242,7 @@ body {
   margin-bottom: 4rem;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-device-width: 460px) {
   .html-lesson-wrapper .header-content .biz-tips {
     margin-bottom: 0 !important;
   }
@@ -358,7 +352,7 @@ body {
   width: 17%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .content-item.review .content-label {
     width: 25% !important;
   }
@@ -580,5 +574,11 @@ body {
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .act-spacer {
     padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .footer-text {
+    max-width: 40% !important;
   }
 }

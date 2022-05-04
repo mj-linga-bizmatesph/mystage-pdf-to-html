@@ -1,17 +1,15 @@
 @import '../../css/op-interviewer-utils';
 
-.html-lesson-wrapper{
-.try {
-       
+.html-lesson-wrapper {
+  .try {
     .tbl-container {
-       
-    @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 415px) {
         width: 95%;
         overflow-x: auto !important;
-        .content-table{
-            width: 190% !important;
+        .content-table {
+          width: 190% !important;
         }
       }
- }
-}
+    }
+  }
 }

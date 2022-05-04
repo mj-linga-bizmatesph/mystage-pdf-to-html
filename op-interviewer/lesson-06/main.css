@@ -52,7 +52,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper footer {
-    bottom: -45px;
+    bottom: -50px !important;
   }
 }
 
@@ -141,7 +141,7 @@ body {
   padding-bottom: 0.25rem;
 }
 
-.html-lesson-wrapper .gray-text, .html-lesson-wrapper .jp {
+.html-lesson-wrapper .gray-text {
   color: #9fa0a0;
 }
 

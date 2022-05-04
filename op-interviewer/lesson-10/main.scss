@@ -1,12 +1,30 @@
 @import '../../css/op-interviewer-utils';
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
-    .html-lesson-wrapper {
-      min-height: unset;
-      .part-content {
-        overflow-x: scroll;
-        margin-top: clamp(20px, 3.7vw, 30px);
-        padding-left: clamp(11px, 2.4vw, 18px);
+.html-lesson-wrapper{
+.review-part-1 {
+       
+    .tbl-container {
+       
+    @media only screen and (max-width: 360px) {
+        width: 95%;
+        overflow-x: auto !important;
+        .content-table{
+            width: 190% !important;
+        }
+      }
+ }
+}
+.review-part-2 {
+       
+  .tbl-container {
+     
+  @media only screen and (max-width: 360px) {
+      width: 95%;
+      overflow-x: auto !important;
+      .content-table{
+          width: 190% !important;
       }
     }
+}
+}
 }

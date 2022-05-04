@@ -34,7 +34,7 @@ body {
   min-height: 960px;
   height: fit-content;
   overflow: hidden;
-  padding-bottom: 11%;
+  padding-bottom: 62px;
   background-image: url(#{$s3}/other-programs-bg-header-magenta.svg),
     url(#{$s3}/other-programs-footer-level2.svg);
   background-position: top, bottom;
@@ -56,9 +56,9 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    top: 115px;
+    bottom: -20px;
     @media only screen and (max-width: 767px) {
-      top: 25px;
+      bottom: -50px !important;
     }
     .footer-text {
       text-align: right;
@@ -71,11 +71,6 @@ body {
       }
     }
   }
-
-  .jp {
-    @extend .gray-text;
-  }
-
   // Global classes
   .img-responsive-clamp {
     max-width: clamp(44%, 25vw, 100%);
@@ -219,7 +214,7 @@ body {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 20px)
         clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       font-size: clamp(8px, 1.8vw, 15px);
-      background-image: linear-gradient(to right, #cdca23 25%, #db8536);
+      background-image: linear-gradient(to right, #cdca23 25%, #db8536) !important;
       width: 100%;
       margin-left: -2%;
     }
@@ -282,16 +277,19 @@ body {
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
-        margin-top: clamp(15px, 3vw, 24px);
+        margin-top: clamp(12px, 3vw, 24px);
         padding-left: clamp(10px, 4vw, 60px);
       }
       .biz-tip-content {
+        padding-bottom: 9px;
         font-family: $trebuchet;
-        line-height: 1.8;
         width: 75%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-right: clamp(15px, 14vw, 175px);
+        .content-header{
+          margin-bottom: 10px;
+        }
         p {
           margin: 0;
         }
@@ -306,7 +304,7 @@ body {
           li {
             list-style-position: outside;
             text-indent: -1em;
-            margin-left: 1em;
+            margin-left: 0.7em;
             padding-left: 0.5em;
           }
           li::before {
@@ -331,36 +329,41 @@ body {
     justify-content: baseline;
     align-items: flex-start;
     width: 100%;
-   
+    
     .content-see{
-      margin-left: -6%;
+      // line-height: 1.8;
+      padding-right: 15px;
       font-size: clamp(12px, 2vw, 15px);
-      line-height: 1.8;
-      @media only screen and (max-device-width: 320px) {
-        margin-left: -16% !important;
-      }
     }
     ul {
       list-style-type: none;
+      padding-inline-start: 0px !important;
     }
-    .header{
+    .li-header{
+      margin-left: 0.8em;
+      padding-left: 0.5em;
+      text-indent: -1.3em;
       color: $text-pink;
       font-weight: bold;
     }
-    ul:before {
+    .li-header:before {
+      width: 1em;
+      padding-right: 0.2em;
       content: '\25BC';
       color: $primary-pink;
     }
     
     ul li {
-      margin-left: 20px;
+      margin-left: clamp(15px, 3.5vw, 19px);
     }
     .content-label {
       width: 15%;
       color: $text-pink;
+      font-family: $helvetica;
+      font-size: clamp(12px, 2vw, 15px);
       @media only screen and (max-device-width: 767px) {
         width: 11% !important;
-        margin-top: -3px;
+        margin-top: -2px;
       }
       .content-label-text {
         font-weight: bold;
@@ -384,9 +387,10 @@ body {
       box-sizing: content-box;
       padding-left: clamp(8px, 1vw, 25px);
       .header-text {
-        margin: 0;
+        margin-bottom: 15%;
+        margin: 1px;
         font-family: $helvetica;
-        font-size: clamp(12px, 3vw, 15px);
+        font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
         line-height: clamp(12px, 4vw, 22px);
         margin-top: clamp(-2px, -1vw, -3px);
@@ -394,7 +398,7 @@ body {
       &.see {
         .dialogue {
           display: flex;
-          font-size: clamp(12px, 3vw, 15px);
+          font-size: clamp(12px, 2vw, 15px);
           line-height: clamp(19px, 3vw, 24px);
           .speaker {
             width: 12%;
@@ -408,32 +412,27 @@ body {
           width: 100%;
           text-align: center;
           color: $secondary-gray;
-          font-size: clamp(12px, 3vw, 16px);
+          font-size: clamp(12px, 2vw, 15px);
           line-height: clamp(14px, 3vw, 28px);
         }
       }
       &.try {
        
         .content-table {
-          font-size: clamp(12px, 3vw, 16px);
           width: 100%;
           border-collapse: collapse;
-          font-size: clamp(12px, 3vw, 15px);
-          // @media only screen and (max-width: 360px) {
-          //   overflow-x: scroll;
-          // }
+          font-size: clamp(12px, 2vw, 15px);
           .table-header {
            
             color: white;
             background-color: $primary-pink;
           }
           .table-header1 {
-            width: 13%;
+            width: 16%;
             color: white;
             background-color: $primary-pink;
           }
           .table-header2 {
-            
             color: white;
             background-color: $primary-pink;
           }
@@ -443,19 +442,16 @@ body {
           td,
           th {
             border: 2px solid $tertiary-gray;
-            padding-bottom: 1.5%;
-            padding-top: 1%;
-            padding-left: 1%;
+            padding: 7px;
             vertical-align: middle;
-          }
-          @media screen and (min-width: 320px) and (max-width: 360px) {
-            .html-lesson-wrapper {
-              overflow-x: scroll;
-              min-height: unset;
-              .part-content {
-                margin-top: clamp(20px, 3.7vw, 30px);
-                padding-left: clamp(11px, 2.4vw, 18px);
+            
+            .ul-bullet{
+              list-style-type: initial !important;
+              margin: 0%;
+              &::before{
+                content: '' !important;
               }
+
             }
           }
         }
@@ -472,7 +468,7 @@ body {
         padding-right: clamp(15px, 7vw, 55px);
         .review-box {
           font-family: $trebuchet;
-          font-size: clamp(12px, 3vw, 15px);
+          font-size: clamp(12px, 2vw, 15px);
           line-height: clamp(12px, 4vw, 20px);
           padding: clamp(5px, 2vw, 10px);
           border: 5px solid $tertiary-gray;
@@ -507,22 +503,16 @@ body {
           }
         }
         .content-table {
-          font-size: clamp(12px, 3vw, 16px);
+          font-size: clamp(12px, 2vw, 15px);
           width: 100%;
           border-collapse: collapse;
-          font-size: clamp(12px, 3vw, 15px);
           .table-header {
-           
+            width: 50%;
             color: white;
             background-color: $primary-pink;
           }
           .table-header1 {
-            width: 13%;
-            color: white;
-            background-color: $primary-pink;
-          }
-          .table-header2 {
-            
+            width: 50%;
             color: white;
             background-color: $primary-pink;
           }
@@ -565,26 +555,26 @@ body {
         p.part-2-content {
           margin: 0;
           font-family: $trebuchet;
-          font-size: clamp(12px, 3vw, 16px);
+          font-size: clamp(12px, 2vw, 15px);
           line-height: clamp(12px, 4vw, 25px);
+          
         }
-        .content-table {
-          font-size: clamp(12px, 3vw, 16px);
+        table {
+          font-size: clamp(12px, 2vw, 15px);
           width: 100%;
           border-collapse: collapse;
-          font-size: clamp(12px, 3vw, 15px);
           .table-header {
-            width: 43%;
+            width: 45%;
             color: white;
             background-color: $primary-pink;
           }
           .table-header1 {
-           
+            width: 35%;
             color: white;
             background-color: $primary-pink;
           }
           .table-header2 {
-            width: 19%;
+            width: 20%;
             color: white;
             background-color: $primary-pink;
           }
@@ -594,7 +584,6 @@ body {
           td,
           th {
             border: 2px solid $tertiary-gray;
-            padding-left: 1%;
             vertical-align: middle;
             padding: 1%;
             .row {
@@ -609,28 +598,15 @@ body {
               }
             }
           }
-        }
-        .example-gray {
-          font-family: $trebuchet;
-          color: $secondary-gray;
-          margin-top: clamp(5px, 2vw, 10px);
-          font-size: clamp(12px, 3vw, 15px);
-        }
-        // @media only screen and (max-width: 360px) {
-        //   overflow-x: scroll;
-        // }
-        @media screen and (min-width: 320px) and (max-width: 360px) {
-          overflow-x: scroll;
-          .html-lesson-wrapper {
-            min-height: unset;
-            .part-content {
-              margin-top: clamp(20px, 3.7vw, 30px);
-              padding-left: clamp(11px, 2.4vw, 18px);
-            }
+          .inside{
+            text-align: center;
           }
         }
       }
     }
+  }
+  .spacebottom{
+    margin-bottom: 15%;
   }
   .content-item-divider {
     width: 100%;

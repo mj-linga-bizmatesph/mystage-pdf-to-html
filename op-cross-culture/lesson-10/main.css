@@ -164,6 +164,7 @@ body {
 .html-lesson-wrapper .speaker-text {
   position: relative;
   line-height: 1.8;
+  padding-right: clamp(8px, 2vw, 19px) !important;
 }
 
 .html-lesson-wrapper .speaker-text .underline {
@@ -366,12 +367,6 @@ body {
 
 .html-lesson-wrapper .inline-block {
   display: inline-block;
-}
-
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  .speaker-text {
-    padding-right: 19px !important;
-  }
 }
 
 @media screen and (max-width: 900px) {

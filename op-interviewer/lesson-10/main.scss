@@ -1,1 +1,12 @@
 @import '../../css/op-interviewer-utils';
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .html-lesson-wrapper {
+      min-height: unset;
+      .part-content {
+        overflow-x: scroll;
+        margin-top: clamp(20px, 3.7vw, 30px);
+        padding-left: clamp(11px, 2.4vw, 18px);
+      }
+    }
+}

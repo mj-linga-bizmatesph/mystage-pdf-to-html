@@ -1,9 +1,12 @@
 @import '../../css/op-interviewer-utils';
 
 .html-lesson-wrapper {
+  .content-header {
+    margin-bottom: 10px !important;
+  }
   .try {
     .tbl-container {
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 360px) {
         width: 95%;
         overflow-x: auto !important;
         .content-table {

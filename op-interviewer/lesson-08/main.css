@@ -47,7 +47,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 10%;
-  bottom: -20px;
+  bottom: -24px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -320,7 +320,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-  width: 11%;
+  width: clamp(52px, 13vw, 103px);
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
@@ -330,16 +330,13 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
-  padding-bottom: 9px;
   font-family: "Trebuchet MS";
-  width: 79%;
+  width: 75%;
   font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
-  padding-right: clamp(15px, 14vw, 166px);
-}
-
-.html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
-  margin-bottom: 10px;
+  padding-right: clamp(15px, 14vw, 175px);
+  padding-bottom: 1rem;
+  margin-right: 1em;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
@@ -347,20 +344,20 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul {
+  color: #cc3366;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   list-style-position: inside;
-  color: #bd3762;
-  font-weight: bold;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
   list-style-position: outside;
   text-indent: -1em;
-  margin-left: 0.7em;
+  margin-left: 0.8em;
   padding-left: 0.5em;
 }
 
@@ -372,10 +369,29 @@ body {
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::marker {
   font-size: clamp(11px, 2vw, 13px);
-  color: #bd3762;
+}
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+}
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips .start-div {
+  max-width: 50%;
+}
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips .end-div {
+  margin-left: 4%;
+}
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips .tip-label {
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .content-item {
+  font-size: clamp(12px, 2vw, 15px);
   padding-top: clamp(10px, 1vw, 20px);
   padding-right: clamp(10px, 3vw, 25px);
   -webkit-box-sizing: border-box;
@@ -390,11 +406,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-}
-
-.html-lesson-wrapper .content-item .content-see {
-  padding-right: 15px;
-  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .content-item ul {
@@ -497,6 +508,10 @@ body {
   color: #7f7f7f;
   font-size: clamp(12px, 2vw, 15px);
   line-height: clamp(14px, 3vw, 28px);
+}
+
+.html-lesson-wrapper .content-item .content-div.try .tbl-container {
+  margin-top: 10px;
 }
 
 .html-lesson-wrapper .content-item .content-div.try .content-table {
@@ -622,9 +637,7 @@ body {
 .html-lesson-wrapper .content-item .content-div.review-part-1 .content-table td,
 .html-lesson-wrapper .content-item .content-div.review-part-1 .content-table th {
   border: 2px solid #d9d9d9;
-  padding-bottom: 1.5%;
-  padding-top: 1%;
-  padding-left: 1%;
+  padding: 1%;
   vertical-align: middle;
 }
 
@@ -733,7 +746,11 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-@media only screen and (max-width: 400px) {
+.html-lesson-wrapper .content-header {
+  margin-bottom: 10px !important;
+}
+
+@media only screen and (max-width: 360px) {
   .html-lesson-wrapper .try .tbl-container {
     width: 95%;
     overflow-x: auto !important;

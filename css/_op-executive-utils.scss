@@ -251,6 +251,7 @@ body {
             content: '';
             display: block;
             width: 0.5em;
+            height: 0px;
           }
           li::marker {
             font-size: clamp(11px, 2vw, 13px);

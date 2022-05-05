@@ -18,14 +18,12 @@ body .html-lesson-wrapper {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
 }
-
 body .html-lesson-wrapper .subject-label {
   text-align: right;
   width: 350px;
 }
-
 body .html-lesson-wrapper .subject-label .arrow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/arrow.svg);
   background-repeat: no-repeat;
@@ -35,7 +33,6 @@ body .html-lesson-wrapper .subject-label .arrow {
   width: 100px;
   height: 20px;
 }
-
 body .html-lesson-wrapper .subject-label .subject-label-box {
   text-align: center;
   width: 130px;
@@ -43,12 +40,10 @@ body .html-lesson-wrapper .subject-label .subject-label-box {
   border-radius: 8px;
   background-color: #f0d4d4;
 }
-
 body .html-lesson-wrapper .greeting-label {
   text-align: right;
   width: 552px;
 }
-
 body .html-lesson-wrapper .greeting-label .arrow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/arrow.svg);
   background-repeat: no-repeat;
@@ -58,7 +53,6 @@ body .html-lesson-wrapper .greeting-label .arrow {
   width: 300px;
   height: 20px;
 }
-
 body .html-lesson-wrapper .greeting-label .greeting-label-box {
   text-align: center;
   width: 130px;
@@ -67,12 +61,10 @@ body .html-lesson-wrapper .greeting-label .greeting-label-box {
   border-radius: 8px;
   background-color: #f0d4d4;
 }
-
 body .html-lesson-wrapper .opening-label {
   text-align: right;
   width: 295px;
 }
-
 body .html-lesson-wrapper .opening-label .arrow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/arrow.svg);
   background-repeat: no-repeat;
@@ -82,7 +74,6 @@ body .html-lesson-wrapper .opening-label .arrow {
   width: 100px;
   height: 20px;
 }
-
 body .html-lesson-wrapper .opening-label .opening-label-box {
   text-align: center;
   width: 130px;
@@ -91,7 +82,6 @@ body .html-lesson-wrapper .opening-label .opening-label-box {
   border-radius: 8px;
   background-color: #f0d4d4;
 }
-
 body .html-lesson-wrapper .main-message-label {
   text-align: right;
   width: 258px;
@@ -99,7 +89,6 @@ body .html-lesson-wrapper .main-message-label {
   top: 38%;
   left: 60.5%;
 }
-
 body .html-lesson-wrapper .main-message-label .arrow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/arrow.svg);
   background-repeat: no-repeat;
@@ -109,7 +98,6 @@ body .html-lesson-wrapper .main-message-label .arrow {
   width: 100px;
   height: 20px;
 }
-
 body .html-lesson-wrapper .main-message-label .main-message-label-box {
   text-align: center;
   width: 130px;
@@ -121,12 +109,10 @@ body .html-lesson-wrapper .main-message-label .main-message-label-box {
   background-color: #f0d4d4;
   top: 5%;
 }
-
 body .html-lesson-wrapper .closing-label {
   text-align: right;
   width: 360px;
 }
-
 body .html-lesson-wrapper .closing-label .arrow {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/arrow.svg);
   background-repeat: no-repeat;
@@ -136,7 +122,6 @@ body .html-lesson-wrapper .closing-label .arrow {
   width: 100px;
   height: 20px;
 }
-
 body .html-lesson-wrapper .closing-label .closing-label-box {
   text-align: center;
   width: 130px;
@@ -145,27 +130,23 @@ body .html-lesson-wrapper .closing-label .closing-label-box {
   border-radius: 8px;
   background-color: #f0d4d4;
 }
-
 body .html-lesson-wrapper .inline {
   display: inline-block !important;
 }
-
 body .html-lesson-wrapper .try-content .row table {
   width: 98%;
 }
-
 body .html-lesson-wrapper .try-content .row table td {
   width: 50%;
   padding: 5px;
 }
-
 body .html-lesson-wrapper .try-content .row table tr th {
   background: #cc3366;
   color: #fff;
 }
 
 body header {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
 }
 
 body .b {
@@ -230,13 +211,13 @@ body .row {
 }
 
 body .sub-text {
-  font-family: 'Trebuchet MS' !important;
+  font-family: "Trebuchet MS" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
 
 body .words-phrase-conten {
-  font-family: 'Trebuchet MS' !important;
+  font-family: "Trebuchet MS" !important;
 }
 
 body .section {
@@ -244,7 +225,7 @@ body .section {
   left: -71.5px;
   color: #cc3366;
   font-weight: bold;
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   top: 2px;
 }
 
@@ -318,7 +299,7 @@ body .words-phrase-content .arrow-part-1 {
 }
 
 body .words-phrase-content .pointers .arrow-part:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: 5px;
@@ -359,7 +340,7 @@ body .see-content .col {
   position: relative;
   line-height: clamp(12px, 3vw, 26px);
   width: 100%;
-  border: 3px solid #cbcbcb;
+  border: 3px solid rgb(203, 203, 203);
   padding-left: 8px;
 }
 
@@ -401,13 +382,13 @@ body .try-content .content-table {
   width: 100%;
   font-size: clamp(12px, 3vw, 16px);
   border-collapse: collapse;
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
 }
 
 body .try-content .content-table .header-1 {
   background-color: #cc3366;
   width: 50%;
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
   color: white;
   font-size: clamp(6px, 1.8vw, 15px);
 }
@@ -415,13 +396,13 @@ body .try-content .content-table .header-1 {
 body .try-content .content-table .header-2 {
   background-color: #cc3366;
   width: 50%;
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
   color: white;
   font-size: clamp(6px, 1.8vw, 15px);
 }
 
 body .try-content .content-table td {
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
   height: clamp 10px, 5vw, 25px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
@@ -476,7 +457,7 @@ body footer {
   text-align: right;
   bottom: 32px;
   right: 6.2%;
-  font-family: 'Arial';
+  font-family: "Arial";
   max-width: 34%;
 }
 
@@ -484,12 +465,14 @@ body footer {
   .html-lesson-wrapper {
     min-height: 700px !important;
   }
+
   .subject-label {
     width: 301px !important;
   }
   .subject-label .arrow {
     right: 22.5% !important;
   }
+
   .greeting-label {
     width: 513px !important;
   }
@@ -497,6 +480,7 @@ body footer {
     right: 21% !important;
     top: 4% !important;
   }
+
   .opening-label {
     width: 258px !important;
   }
@@ -504,6 +488,7 @@ body footer {
     right: 21% !important;
     top: 23% !important;
   }
+
   .main-message-label {
     width: 242px !important;
   }
@@ -511,6 +496,7 @@ body footer {
     right: 55% !important;
     width: 80px !important;
   }
+
   .closing-label {
     width: 320px !important;
   }
@@ -518,17 +504,18 @@ body footer {
     right: 21.8% !important;
   }
 }
-
 @media screen and (max-width: 821px) {
   .html-lesson-wrapper {
     min-height: 700px !important;
   }
+
   .subject-label {
     width: 300px !important;
   }
   .subject-label .arrow {
     right: 22% !important;
   }
+
   .greeting-label {
     width: 500px !important;
   }
@@ -536,6 +523,7 @@ body footer {
     top: 4% !important;
     right: 22% !important;
   }
+
   .opening-label {
     width: 248px !important;
   }
@@ -543,6 +531,7 @@ body footer {
     top: 23% !important;
     right: 22% !important;
   }
+
   .main-message-label {
     width: 242px !important;
   }
@@ -550,6 +539,7 @@ body footer {
     right: 55% !important;
     width: 80px !important;
   }
+
   .closing-label {
     width: 313px !important;
   }
@@ -557,17 +547,18 @@ body footer {
     right: 22% !important;
   }
 }
-
 @media screen and (max-width: 801px) {
   .html-lesson-wrapper {
     min-height: 700px !important;
   }
+
   .subject-label {
     width: 293px !important;
   }
   .subject-label .arrow {
     right: 22.5% !important;
   }
+
   .greeting-label {
     width: 487px !important;
   }
@@ -575,12 +566,14 @@ body footer {
     top: 4% !important;
     right: 22.5% !important;
   }
+
   .opening-label {
     width: 243px !important;
   }
   .opening-label .arrow {
     top: 21% !important;
   }
+
   .main-message-label {
     width: 242px !important;
   }
@@ -588,6 +581,7 @@ body footer {
     right: 55% !important;
     width: 80px !important;
   }
+
   .closing-label {
     width: 307px !important;
   }
@@ -595,31 +589,36 @@ body footer {
     right: 22% !important;
   }
 }
-
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);
     left: clamp(23px, 4vw, 48px);
   }
+
   .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
     left: clamp(30px, 4.1vw, 55px);
   }
+
   .html-lesson-wrapper .divider.d1,
-  .html-lesson-wrapper .divider.d2 {
+.html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
   }
+
   .html-lesson-wrapper .section {
     left: calc(-16% + 30px);
   }
+
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
   }
+
   .html-lesson-wrapper .arrow-part:before {
     left: -4.5% !important;
     top: 0.6vw !important;
   }
+
   .subject-label {
     width: 100px !important;
   }
@@ -631,6 +630,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 60px !important;
   }
+
   .greeting-label {
     width: 225px !important;
   }
@@ -641,6 +641,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 60px !important;
   }
+
   .opening-label {
     width: 93.5px !important;
   }
@@ -652,6 +653,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 60px !important;
   }
+
   .main-message-label {
     width: 111px !important;
   }
@@ -663,6 +665,7 @@ body footer {
     width: 60px !important;
     height: 20px !important;
   }
+
   .closing-label {
     width: 129px !important;
   }
@@ -673,23 +676,26 @@ body footer {
     width: 60px !important;
   }
 }
-
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }
+
   .html-lesson-wrapper .level {
     padding: 2px 6px 2px 7px !important;
   }
+
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
   }
+
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
     border-right: 3.5px solid transparent !important;
     border-top: 5.5px solid #000000 !important;
   }
+
   .subject-label {
     width: 110px !important;
   }
@@ -701,6 +707,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 60px !important;
   }
+
   .greeting-label {
     width: 217px !important;
   }
@@ -711,6 +718,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 60px !important;
   }
+
   .opening-label {
     width: 87px !important;
   }
@@ -722,6 +730,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 60px !important;
   }
+
   .main-message-label {
     width: 111px !important;
   }
@@ -733,6 +742,7 @@ body footer {
     width: 60px !important;
     height: 20px !important;
   }
+
   .closing-label {
     width: 122px !important;
   }
@@ -743,37 +753,42 @@ body footer {
     width: 60px !important;
   }
 }
-
 @media screen and (max-width: 420px) {
   body .see-content .col-img img {
     height: 16px;
     width: 58%;
     display: block;
   }
+
   body .see-content .col-img img.see-img1 {
     margin-left: 58.3%;
     margin-top: 2%;
     width: 33%;
   }
+
   body .see-content .col-img img.see-img2 {
     margin-left: 37%;
     width: 54%;
     margin-top: 2%;
   }
+
   body .see-content .col-img img.see-img3 {
     margin-left: 66%;
     width: 25%;
   }
+
   body .see-content .col-img img.see-img4 {
     margin-left: 67%;
     margin-top: clamp(3.5%, 1rem, 3%);
     width: 24%;
   }
+
   body .see-content .col-img img.see-img5 {
     margin-left: 56%;
     margin-top: 0.5%;
     width: 35%;
   }
+
   .subject-label {
     width: 70px !important;
   }
@@ -785,6 +800,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 50px !important;
   }
+
   .greeting-label {
     width: 178px !important;
   }
@@ -795,6 +811,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 50px !important;
   }
+
   .opening-label {
     width: 68px !important;
   }
@@ -806,6 +823,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 50px !important;
   }
+
   .main-message-label {
     width: 89px !important;
   }
@@ -817,6 +835,7 @@ body footer {
     width: 45px !important;
     height: 20px !important;
   }
+
   .closing-label {
     width: 96px !important;
   }
@@ -828,7 +847,6 @@ body footer {
     width: 50px !important;
   }
 }
-
 @media screen and (max-width: 415px) {
   .subject-label {
     width: 107px !important;
@@ -841,6 +859,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 50px !important;
   }
+
   .greeting-label {
     width: 207px !important;
   }
@@ -851,6 +870,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 50px !important;
   }
+
   .opening-label {
     width: 80px !important;
   }
@@ -862,6 +882,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 50px !important;
   }
+
   .main-message-label {
     width: 105px !important;
   }
@@ -875,6 +896,7 @@ body footer {
     padding-bottom: 2px;
     padding-top: 2px !important;
   }
+
   .closing-label {
     width: 113px !important;
   }
@@ -886,7 +908,6 @@ body footer {
     width: 50px !important;
   }
 }
-
 @media screen and (max-width: 400px) {
   .subject-label {
     width: 97px !important;
@@ -899,6 +920,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 60px !important;
   }
+
   .greeting-label {
     width: 192px !important;
   }
@@ -909,6 +931,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 60px !important;
   }
+
   .opening-label {
     width: 72px !important;
   }
@@ -920,6 +943,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 55px !important;
   }
+
   .main-message-label {
     width: 100px !important;
   }
@@ -933,6 +957,7 @@ body footer {
     width: 47px !important;
     height: 15px !important;
   }
+
   .closing-label {
     width: 103px !important;
   }
@@ -944,7 +969,6 @@ body footer {
     width: 60px !important;
   }
 }
-
 @media screen and (max-width: 376px) {
   .subject-label {
     width: 86px !important;
@@ -957,6 +981,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 50px !important;
   }
+
   .greeting-label {
     width: 179px !important;
   }
@@ -967,6 +992,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 50px !important;
   }
+
   .opening-label {
     width: 65px !important;
   }
@@ -978,6 +1004,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 50px !important;
   }
+
   .main-message-label {
     width: 93px !important;
   }
@@ -991,6 +1018,7 @@ body footer {
     width: 43px !important;
     height: 15px !important;
   }
+
   .closing-label {
     width: 95px !important;
   }
@@ -1002,7 +1030,6 @@ body footer {
     width: 50px !important;
   }
 }
-
 @media screen and (max-width: 360px) {
   .subject-label {
     width: 82px !important;
@@ -1015,6 +1042,7 @@ body footer {
   .subject-label .subject-label-box {
     width: 50px !important;
   }
+
   .greeting-label {
     width: 170px !important;
   }
@@ -1025,6 +1053,7 @@ body footer {
   .greeting-label .greeting-label-box {
     width: 50px !important;
   }
+
   .opening-label {
     width: 60px !important;
   }
@@ -1036,6 +1065,7 @@ body footer {
   .opening-label .opening-label-box {
     width: 45px !important;
   }
+
   .main-message-label {
     width: 90px !important;
   }
@@ -1049,6 +1079,7 @@ body footer {
     width: 40px !important;
     height: 15px !important;
   }
+
   .closing-label {
     width: 88.5px !important;
   }
@@ -1060,4 +1091,3 @@ body footer {
     width: 50px !important;
   }
 }
-/*# sourceMappingURL=main.css.map */

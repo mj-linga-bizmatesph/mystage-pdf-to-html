@@ -419,3 +419,7 @@ body {
     border-top-width: 5.5px !important;
   }
 }
+
+.html-lesson-wrapper .try-content ol .misaligned::before {
+  width: 2%;
+}

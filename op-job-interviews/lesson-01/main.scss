@@ -12,11 +12,10 @@
         line-height: normal;
       }
     }
-
   }
-  
+
   .try {
-    .content-table-div{
+    .content-table-div {
       @media only screen and (max-width: 401px) {
         width: 95%;
         overflow-x: auto !important;
@@ -26,7 +25,6 @@
       }
     }
     .content-table {
-      
       td {
         padding: 1%;
       }

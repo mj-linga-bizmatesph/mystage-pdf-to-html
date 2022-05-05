@@ -364,36 +364,36 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
 
     .email-header-label-to {
-        width: 100%;
-        background: #d8d8d8;
-        border-radius: 3px;
-        height: clamp(15px, 2vw, 22px);
-        place-items: center;
-        display: grid;
+      width: 100%;
+      background: #d8d8d8;
+      border-radius: 3px;
+      height: clamp(15px, 2vw, 22px);
+      place-items: center;
+      display: grid;
     }
     .email-header-label-subject {
-        font-style: italic;
-        font-weight: bold;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: clamp(15px, 2vw, 22px);
+      font-style: italic;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: clamp(15px, 2vw, 22px);
     }
     .email-header-textfield {
       display: grid;
       row-gap: clamp(4px, 1vw, 7px);
     }
     .email-textfield {
-        background: white;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        height: clamp(15px, 2vw, 22px);
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      height: clamp(15px, 2vw, 22px);
     }
     .email-content {
-        background: white;
-        padding: 5px;
-        font-size: clamp(8px, 2vw, 12px);
+      background: white;
+      padding: 5px;
+      font-size: clamp(8px, 2vw, 12px);
     }
   }
 

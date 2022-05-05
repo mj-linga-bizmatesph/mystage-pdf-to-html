@@ -283,10 +283,10 @@ body {
       .biz-tip-content {
         padding-bottom: 9px;
         font-family: $trebuchet;
-        width: 75%;
+        width: 79%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
-        padding-right: clamp(15px, 14vw, 175px);
+        padding-right: clamp(15px, 14vw, 166px);
         .content-header{
           margin-bottom: 10px;
         }
@@ -338,6 +338,7 @@ body {
     ul {
       list-style-type: none;
       padding-inline-start: 0px !important;
+      margin-block-start: 0% !important;
     }
     .li-header{
       margin-left: 0.8em;

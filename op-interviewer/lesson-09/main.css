@@ -332,10 +332,10 @@ body {
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
   padding-bottom: 9px;
   font-family: "Trebuchet MS";
-  width: 75%;
+  width: 79%;
   font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
-  padding-right: clamp(15px, 14vw, 175px);
+  padding-right: clamp(15px, 14vw, 166px);
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
@@ -401,6 +401,8 @@ body {
   list-style-type: none;
   -webkit-padding-start: 0px !important;
           padding-inline-start: 0px !important;
+  -webkit-margin-before: 0% !important;
+          margin-block-start: 0% !important;
 }
 
 .html-lesson-wrapper .content-item .li-header {

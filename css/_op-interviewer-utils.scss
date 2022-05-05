@@ -56,7 +56,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -20px;
+    bottom: -24px;
     @media only screen and (max-width: 767px) {
       bottom: -50px !important;
     }
@@ -214,7 +214,11 @@ body {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 20px)
         clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       font-size: clamp(8px, 1.8vw, 15px);
-      background-image: linear-gradient(to right, #cdca23 25%, #db8536) !important;
+      background-image: linear-gradient(
+        to right,
+        #cdca23 25%,
+        #db8536
+      ) !important;
       width: 100%;
       margin-left: -2%;
     }
@@ -272,7 +276,7 @@ body {
       justify-content: flex-start;
       margin-bottom: 5rem;
       .biz-tip-label {
-        width: 11%;
+        width: clamp(52px, 13vw, 103px);
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
@@ -281,30 +285,28 @@ body {
         padding-left: clamp(10px, 4vw, 60px);
       }
       .biz-tip-content {
-        padding-bottom: 9px;
         font-family: $trebuchet;
         width: 75%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-right: clamp(15px, 14vw, 175px);
-        .content-header{
-          margin-bottom: 10px;
-        }
+        padding-bottom: 1rem;
+        margin-right: 1em;
         p {
           margin: 0;
         }
         ul {
+          color: $text-pink;
+          font-weight: bold;
           margin: 0;
           padding: 0;
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
-          color: $primary-pink;
-          font-weight: bold;
           li {
             list-style-position: outside;
             text-indent: -1em;
-            margin-left: 0.7em;
+            margin-left: 0.8em;
             padding-left: 0.5em;
           }
           li::before {
@@ -314,7 +316,19 @@ body {
           }
           li::marker {
             font-size: clamp(11px, 2vw, 13px);
-            color: $primary-pink;
+          }
+        }
+        .all-tips {
+          display: flex;
+          margin-top: 2%;
+          .start-div {
+            max-width: 50%;
+          }
+          .end-div {
+            margin-left: 4%;
+          }
+          .tip-label {
+            font-weight: bold;
           }
         }
       }
@@ -322,6 +336,7 @@ body {
   }
 
   .content-item {
+    font-size: clamp(12px, 2vw, 15px);
     padding-top: clamp(10px, 1vw, 20px);
     padding-right: clamp(10px, 3vw, 25px);
     box-sizing: border-box;
@@ -329,17 +344,12 @@ body {
     justify-content: baseline;
     align-items: flex-start;
     width: 100%;
-    
-    .content-see{
-      // line-height: 1.8;
-      padding-right: 15px;
-      font-size: clamp(12px, 2vw, 15px);
-    }
     ul {
       list-style-type: none;
       padding-inline-start: 0px !important;
+      margin-block-start: 0% !important;
     }
-    .li-header{
+    .li-header {
       margin-left: 0.8em;
       padding-left: 0.5em;
       text-indent: -1.3em;
@@ -352,7 +362,7 @@ body {
       content: '\25BC';
       color: $primary-pink;
     }
-    
+
     ul li {
       margin-left: clamp(15px, 3.5vw, 19px);
     }
@@ -417,13 +427,15 @@ body {
         }
       }
       &.try {
-       
+        .tbl-container {
+          margin-top: 10px;
+        }
         .content-table {
           width: 100%;
           border-collapse: collapse;
           font-size: clamp(12px, 2vw, 15px);
+
           .table-header {
-           
             color: white;
             background-color: $primary-pink;
           }
@@ -444,14 +456,13 @@ body {
             border: 2px solid $tertiary-gray;
             padding: 7px;
             vertical-align: middle;
-            
-            .ul-bullet{
+
+            .ul-bullet {
               list-style-type: initial !important;
               margin: 0%;
-              &::before{
+              &::before {
                 content: '' !important;
               }
-
             }
           }
         }
@@ -461,10 +472,8 @@ body {
           margin-top: clamp(5px, 2vw, 10px);
           font-size: clamp(12px, 3vw, 15px);
         }
-       
       }
       &.review-part-1 {
-        
         padding-right: clamp(15px, 7vw, 55px);
         .review-box {
           font-family: $trebuchet;
@@ -497,7 +506,7 @@ body {
               font-size: clamp(11px, 2vw, 13px);
               color: $primary-pink;
             }
-            .rt{
+            .rt {
               border-bottom: #7f7f7f;
             }
           }
@@ -522,9 +531,7 @@ body {
           td,
           th {
             border: 2px solid $tertiary-gray;
-            padding-bottom: 1.5%;
-            padding-top: 1%;
-            padding-left: 1%;
+            padding: 1%;
             vertical-align: middle;
             .row {
               p {
@@ -548,7 +555,6 @@ body {
         @media only screen and (max-width: 360px) {
           overflow-x: scroll;
         }
-      
       }
       &.review-part-2 {
         padding-right: clamp(15px, 7vw, 55px);
@@ -557,7 +563,6 @@ body {
           font-family: $trebuchet;
           font-size: clamp(12px, 2vw, 15px);
           line-height: clamp(12px, 4vw, 25px);
-          
         }
         table {
           font-size: clamp(12px, 2vw, 15px);
@@ -598,14 +603,14 @@ body {
               }
             }
           }
-          .inside{
+          .inside {
             text-align: center;
           }
         }
       }
     }
   }
-  .spacebottom{
+  .spacebottom {
     margin-bottom: 15%;
   }
   .content-item-divider {

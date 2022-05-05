@@ -43,6 +43,7 @@ body {
   background-repeat: no-repeat;
   @media only screen and (max-width: 767px) {
     min-height: 800px;
+    padding-bottom: 76px !important;
   }
   header {
     top: 0;
@@ -67,6 +68,18 @@ body {
       bottom: 0;
       max-width: 45%;
       right: 2%;
+      @media only screen and (max-width: 769px) {
+        bottom: -10px !important;
+      }
+      @media only screen and (max-width: 426px) {
+        bottom: -15px !important;
+      }
+      @media only screen and (max-width: 376px) {
+        bottom: -17px !important;
+      }
+      @media only screen and (max-width: 320px) {
+        bottom: -19px !important;
+      }
     }
   }
   .inline-block {

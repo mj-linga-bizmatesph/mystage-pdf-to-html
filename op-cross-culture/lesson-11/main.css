@@ -537,20 +537,31 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   left: clamp(91%, 91.5vw, 91.7%) !important;
+  color: red !important;
 }
 
 .html-lesson-wrapper .decimal {
   list-style-type: none !important;
 }
 
-.html-lesson-wrapper .table-try td {
-  height: 10px !important;
-}
-
-.html-lesson-wrapper .table-try td .speaker-try {
+.html-lesson-wrapper .speaker-try {
   white-space: nowrap;
   text-align: left;
   line-height: 1.8;
+}
+
+.html-lesson-wrapper .speaker-text-try {
+  position: relative;
+  line-height: 1.8;
+  padding-right: clamp(8px, 2vw, 19px) !important;
+}
+
+.html-lesson-wrapper .speaker-text-try .underline {
+  border-bottom: 1px solid black;
+}
+
+.html-lesson-wrapper .table-try td {
+  height: 10px !important;
 }
 
 @media screen and (max-width: 460px) {

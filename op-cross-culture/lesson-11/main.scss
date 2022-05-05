@@ -2,18 +2,26 @@
 .html-lesson-wrapper {
   .lesson-number {
     left: clamp(91%, 91.5vw, 91.7%) !important;
+    color: red !important;
   }
   .decimal {
     list-style-type: none !important;
   }
+  .speaker-try {
+    white-space: nowrap;
+    text-align: left;
+    line-height: 1.8;
+  }
+  .speaker-text-try {
+    position: relative;
+    line-height: 1.8;
+    padding-right: clamp(8px, 2vw, 19px) !important;
+    .underline {
+      border-bottom: 1px solid black;
+    }
+  }
   .table-try td {
     height: 10px !important;
-
-    .speaker-try {
-      white-space: nowrap;
-      text-align: left;
-      line-height: 1.8;
-    }
   }
   @media screen and (max-width: 460px) {
     .try-content .sub-text-div {

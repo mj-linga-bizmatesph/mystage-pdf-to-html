@@ -8,3 +8,29 @@
     }
   }
 }
+.html-lesson-wrapper {
+  // .review-part-1 {
+
+  //     .tbl-container {
+
+  //     @media only screen and (max-width: 360px) {
+  //         width: 95%;
+  //         overflow-x: auto !important;
+  //         .content-table{
+  //             width: 190% !important;
+  //         }
+  //       }
+  //  }
+  // }
+  .review-part-2 {
+    .tbl-container {
+      @media only screen and (max-width: 400px) {
+        width: 95%;
+        overflow-x: auto !important;
+        .content-table {
+          width: 190% !important;
+        }
+      }
+    }
+  }
+}

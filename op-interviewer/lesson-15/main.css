@@ -777,3 +777,13 @@ body {
 .html-lesson-wrapper .review-part-2 .content-table {
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .review-part-2 .tbl-container {
+    width: 95%;
+    overflow-x: auto !important;
+  }
+  .html-lesson-wrapper .review-part-2 .tbl-container .content-table {
+    width: 190% !important;
+  }
+}

@@ -175,7 +175,7 @@ body {
         margin-bottom: 0 !important;
       }
       .biz-tip-label {
-        width: 8%;
+        width: 12%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
@@ -276,6 +276,7 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       font-size: clamp(12px, 2vw, 15px);
+      padding-left: clamp(10px, 3vw, 25px);
       @media only screen and (max-width: 400px) {
         padding-left: 10px;
       }
@@ -324,7 +325,7 @@ body {
           border-collapse: collapse;
           font-size: clamp(12px, 2vw, 14px);
           p {
-            margin: 0px 0px;
+            margin: 5px 0px;
             line-height: 1.8em;
             top: -0.3em;
             position: relative;
@@ -408,7 +409,7 @@ body {
           td,
           th {
             border: 1px solid $tertiary-gray;
-            vertical-align: baseline;
+            vertical-align: middle !important;
           }
           th {
             vertical-align: middle !important;

@@ -199,7 +199,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-  width: 8%;
+  width: 12%;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
@@ -333,6 +333,7 @@ body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   font-size: clamp(12px, 2vw, 15px);
+  padding-left: clamp(10px, 3vw, 25px);
 }
 
 @media only screen and (max-width: 400px) {
@@ -396,7 +397,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.see .response-table p {
-  margin: 0px 0px;
+  margin: 5px 0px;
   line-height: 1.8em;
   top: -0.3em;
   position: relative;
@@ -491,7 +492,7 @@ body {
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 1px solid #d9d9d9;
-  vertical-align: baseline;
+  vertical-align: middle !important;
 }
 
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
@@ -728,6 +729,22 @@ body {
 .html-lesson-wrapper .see-content table td {
   padding: 0;
   line-height: normal;
+}
+
+.html-lesson-wrapper .see .content-list ol {
+  margin: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  list-style-position: inside;
+}
+
+.html-lesson-wrapper .see .content-list ol li::marker {
+  color: black;
+}
+
+.html-lesson-wrapper .see .content-list p {
+  display: inline-block;
+  margin: 0px 0px;
 }
 
 .html-lesson-wrapper .try .content-table td {

@@ -13,7 +13,23 @@
       }
     }
   }
-
+  .see {
+    .content-list {
+      ol {
+        margin: 0;
+        margin-block: 0;
+        padding-inline: 0;
+        list-style-position: inside;
+        li::marker {
+          color: black;
+        }
+      }
+      p {
+        display: inline-block;
+        margin: 0px 0px;
+      }
+    }
+  }
   .try {
     .content-table {
       td {

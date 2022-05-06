@@ -1,11 +1,13 @@
 @import '../../css/_op-meeting-basics-utils.scss';
-.act-spacer {
-  padding-bottom: 10rem;
-  @media only screen and (max-width: 767px) {
-    padding-bottom: 0;
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
   }
-}
-.dialogue-comment{
-  color: rgb(166, 166, 166);
-  text-align: center;
+  .dialogue-comment {
+    color: rgb(166, 166, 166);
+    text-align: center;
+  }
 }

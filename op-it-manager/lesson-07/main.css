@@ -146,7 +146,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(10px, 2vw, 13.5px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .biz-tip-content {
@@ -544,6 +544,10 @@ body {
   line-height: 1.8em;
 }
 
+.html-lesson-wrapper .try-content table tr td:first-child {
+  vertical-align: top;
+}
+
 .html-lesson-wrapper .act-content p {
   line-height: 1.8em;
 }
@@ -562,9 +566,11 @@ body {
   .html-lesson-wrapper .biz-tip-content .arrow-part {
     margin-left: -3.2%;
   }
+  .html-lesson-wrapper .biz-tip-content,
   .html-lesson-wrapper .see-content,
-  .html-lesson-wrapper .try-content {
-    font-size: clamp(8px, 2vw, 13.5px);
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .act-content {
+    font-size: clamp(9px, 2vw, 13.5px);
   }
   .html-lesson-wrapper .see-content .ctr-proj {
     margin-bottom: -2.2%;

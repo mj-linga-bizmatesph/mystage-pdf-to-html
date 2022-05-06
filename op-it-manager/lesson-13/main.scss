@@ -28,6 +28,9 @@
         td {
           line-height: 1.8em;
         }
+        td:first-child {
+          vertical-align: top;
+        }
       }
     }
   }
@@ -52,9 +55,11 @@
         margin-left: -3.2%;
       }
     }
+    .biz-tip-content,
     .see-content,
-    .try-content {
-      font-size: clamp(8px, 2vw, 13.5px);
+    .try-content,
+    .act-content {
+      font-size: clamp(9px, 2vw, 13.5px);
     }
   }
   @media screen and (max-width: 360px) {

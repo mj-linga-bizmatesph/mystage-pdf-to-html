@@ -146,7 +146,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(10px, 2vw, 13.5px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .biz-tip-content {
@@ -454,7 +454,11 @@ body {
 .html-lesson-wrapper .see-content table tr td.breaker {
   padding: 2%;
   text-align: center;
-  padding-right: 17%;
+  padding-right: 5%;
+}
+
+.html-lesson-wrapper .see-content table tr td.breaker span {
+  padding: 3px;
 }
 
 .html-lesson-wrapper .see-content table tr td {
@@ -467,6 +471,10 @@ body {
 
 .html-lesson-wrapper .try-content table tr td {
   line-height: 1.8em;
+}
+
+.html-lesson-wrapper .try-content table tr td:first-child {
+  vertical-align: top;
 }
 
 .html-lesson-wrapper .act-content p {
@@ -487,15 +495,34 @@ body {
   .html-lesson-wrapper .biz-tip-content .arrow-part {
     margin-left: -3.2%;
   }
+  .html-lesson-wrapper .see-content table td.breaker {
+    padding: 2%;
+    text-align: center;
+    padding-left: 1% !important;
+  }
+  .html-lesson-wrapper .see-content table td.breaker span {
+    padding: 3px;
+  }
+  .html-lesson-wrapper .biz-tip-content,
   .html-lesson-wrapper .see-content,
-  .html-lesson-wrapper .try-content {
-    font-size: clamp(8px, 2vw, 13.5px);
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .act-content {
+    font-size: clamp(9px, 2vw, 13.5px);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper .see-content table td.breaker {
+    padding-left: 10% !important;
   }
 }
 
 @media screen and (max-width: 360px) {
   .html-lesson-wrapper .biz-tip-content .arrow-part:before {
     left: 0em;
+  }
+  .html-lesson-wrapper .see-content table td.breaker {
+    padding-left: 10% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

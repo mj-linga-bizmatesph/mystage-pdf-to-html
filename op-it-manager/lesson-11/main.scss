@@ -13,7 +13,8 @@
       padding: 1%;
       margin-top: 2%;
       ol {
-        margin-left: -4%;
+        margin-left: -10%;
+        line-height: 1.5em;
       }
       .btn-red {
         background-color: #cc3366;
@@ -78,6 +79,9 @@
         td {
           line-height: 1.8em;
         }
+        td:first-child {
+          vertical-align: top;
+        }
       }
     }
   }
@@ -126,9 +130,11 @@
         }
       }
     }
+    .biz-tip-content,
     .see-content,
-    .try-content {
-      font-size: clamp(8px, 2vw, 13.5px);
+    .try-content,
+    .act-content {
+      font-size: clamp(9px, 2vw, 13.5px);
     }
   }
   @media screen and (max-width: 360px) {

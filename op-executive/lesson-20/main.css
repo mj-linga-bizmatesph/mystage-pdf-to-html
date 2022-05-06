@@ -637,21 +637,35 @@ body {
 
 @media only screen and (max-width: 450px) {
   .html-lesson-wrapper .see-content-text li {
-    margin-left: -9% !important;
+    margin-left: -7% !important;
     width: 320px;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .html-lesson-wrapper .see-content-text li {
-    margin-left: -10% !important;
+    margin-left: -9% !important;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .html-lesson-wrapper .see-content-text li {
+    margin-left: -7% !important;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .html-lesson-wrapper .see-content-text li {
+    margin-left: -9% !important;
     width: 300px;
   }
 }
 
 @media only screen and (max-width: 335px) {
   .html-lesson-wrapper .see-content-text li {
-    margin-left: -12% !important;
+    margin-left: -10% !important;
     width: 250px;
   }
 }

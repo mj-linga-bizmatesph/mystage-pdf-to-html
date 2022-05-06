@@ -1,0 +1,25 @@
+@import '../../css/_op-cross-culture-utils.scss';
+.html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91%, 91.5vw, 91.7%) !important;
+  }
+  .decimal {
+    list-style-type: disc !important;
+  }
+  .sub-text-wrapper {
+    border-bottom: 1px solid black;
+  }
+  @media screen and (max-width: 460px) {
+    .try-content .sub-text-wrapper {
+      margin-left: 10px;
+    }
+    .sub-text-wrapper {
+      padding-top: 2.5px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .inline-block {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../css/_op-cross-culture-utils.scss';
+.html-lesson-wrapper {
+  .see-content .see {
+    margin-top: 7px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper {
+    .words-phrase-content {
+      margin-top: 115px !important;
+    }
+  }
+}

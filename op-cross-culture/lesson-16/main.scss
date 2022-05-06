@@ -1,0 +1,22 @@
+@import '../../css/_op-cross-culture-utils.scss';
+.html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91%, 91.5vw, 91.7%) !important;
+  }
+  .sub-text-wrapper {
+    margin-top: -13px !important;
+  }
+  @media screen and (max-width: 460px) {
+    .try-content .sub-text-div {
+      margin-left: 10px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .inline-block {
+      display: block !important;
+    }
+    .hide {
+      display: inline !important;
+    }
+  }
+}

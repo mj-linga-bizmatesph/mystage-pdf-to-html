@@ -266,7 +266,7 @@ body {
 
       li::before {
         content: '';
-        width: 2%;
+        width: 1em;
         display: inline-block;
       }
     }
@@ -326,7 +326,7 @@ body {
 
       li::before {
         content: '';
-        width: 2%;
+        width: 1em;
         display: inline-block;
       }
     }
@@ -380,8 +380,23 @@ body {
     margin-top: 28%;
 
     ol {
+      list-style-type: decimal;
+      margin: 0;
+      margin-left: 1em;
+      text-indent: -1em;
+      margin-block: 0;
+      padding-inline: 0;
+
       li {
         margin-bottom: 1.5em;
+        padding-inline-start: 1em;
+        line-height: 1.8em;
+      }
+
+      li::before {
+        content: '';
+        width: 1em;
+        display: inline-block;
       }
     }
   }

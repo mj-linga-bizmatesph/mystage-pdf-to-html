@@ -264,7 +264,7 @@ body {
 
 .html-lesson-wrapper .see-content ol li::before {
   content: '';
-  width: 2%;
+  width: 1em;
   display: inline-block;
 }
 
@@ -322,7 +322,7 @@ body {
 
 .html-lesson-wrapper .try-content ol li::before {
   content: '';
-  width: 2%;
+  width: 1em;
   display: inline-block;
 }
 
@@ -376,8 +376,26 @@ body {
   margin-bottom: 2em;
 }
 
+.html-lesson-wrapper .review-content ol {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1em;
+  text-indent: -1em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
 .html-lesson-wrapper .review-content ol li {
   margin-bottom: 1.5em;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+  line-height: 1.8em;
+}
+
+.html-lesson-wrapper .review-content ol li::before {
+  content: '';
+  width: 1em;
+  display: inline-block;
 }
 
 .html-lesson-wrapper footer {
@@ -418,8 +436,4 @@ body {
     border-right: 3.5px solid transparent !important;
     border-top-width: 5.5px !important;
   }
-}
-
-.html-lesson-wrapper .try-content ol .misaligned::before {
-  width: 1.5%;
 }

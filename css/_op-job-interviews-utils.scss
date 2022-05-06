@@ -21,7 +21,7 @@ $gradient: linear-gradient(to right, #cdca23 25%, #db8536);
 $subtext-color: #7f8288;
 
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
-$image: '../../images';
+
 body {
   margin: 0;
   padding: 0;
@@ -50,6 +50,7 @@ body {
     margin-bottom: clamp(50px, 15vw, 65px);
     margin-top: -3%;
     position: relative;
+    font-family: $helvetica;
   }
 
   footer {
@@ -66,7 +67,7 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 41%;
       right: 2%;
     }
   }
@@ -252,6 +253,7 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
+        font-family: $helvetica;
       }
     }
     &.review {
@@ -383,9 +385,19 @@ body {
           margin: 0;
           margin-block: 0;
           padding-inline: 0;
-          list-style-position: inside;
           li {
-            margin-bottom: 0;
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 0.9em;
+            padding-left: 0.5em;
+          }
+          li::before {
+            content: '';
+            display: block;
+            width: 0.5em;
+          }
+          li::marker {
+            font-size: clamp(11px, 2vw, 13px);
           }
         }
         .content-message {
@@ -420,6 +432,7 @@ body {
             padding-left: clamp(5px, 1vw, 10px);
             @media screen and (max-width: 460px) {
               padding-bottom: 1%;
+              vertical-align: top !important;
             }
           }
           .row {

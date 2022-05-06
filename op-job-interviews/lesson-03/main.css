@@ -38,6 +38,7 @@ body {
   margin-bottom: clamp(50px, 15vw, 65px);
   margin-top: -3%;
   position: relative;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper footer {
@@ -60,7 +61,7 @@ body {
   text-align: right;
   position: absolute;
   bottom: 0;
-  max-width: 45%;
+  max-width: 41%;
   right: 2%;
 }
 
@@ -301,6 +302,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
   padding-left: clamp(10px, 6vw, 60px);
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper .content-item.review {
@@ -462,11 +464,23 @@ body {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
-  list-style-position: inside;
 }
 
 .html-lesson-wrapper .content-item .content-div.see ul li {
-  margin-bottom: 0;
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 0.9em;
+  padding-left: 0.5em;
+}
+
+.html-lesson-wrapper .content-item .content-div.see ul li::before {
+  content: '';
+  display: block;
+  width: 0.5em;
+}
+
+.html-lesson-wrapper .content-item .content-div.see ul li::marker {
+  font-size: clamp(11px, 2vw, 13px);
 }
 
 .html-lesson-wrapper .content-item .content-div.see .content-message {
@@ -508,6 +522,7 @@ body {
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .content-item .content-div.try .content-table td {
     padding-bottom: 1%;
+    vertical-align: top !important;
   }
 }
 
@@ -764,6 +779,7 @@ body {
 .html-lesson-wrapper .content-div.see .see-header-box {
   background-color: #f0d4d4;
   padding: 10px;
+  padding-top: 5px;
   font-size: clamp(12px, 2vw, 15px);
 }
 
@@ -879,7 +895,7 @@ body {
 .html-lesson-wrapper .content-div.see .border-box .content ul li {
   list-style-position: outside;
   text-indent: -1em;
-  margin-left: 0.9em;
+  margin-left: 1.2em;
 }
 
 .html-lesson-wrapper .content-div.see .border-box .content ul li::before {
@@ -912,7 +928,6 @@ body {
 }
 
 .html-lesson-wrapper .content-div.see .border-box .green-content p {
-  display: inline-block;
   margin: 0px 0px;
   font-size: clamp(10px, 1.5vw, 12px);
 }
@@ -926,7 +941,7 @@ body {
 .html-lesson-wrapper .content-div.see .border-box .green-content ul li {
   list-style-position: outside;
   text-indent: -1em;
-  margin-left: 0.9em;
+  margin-left: 1.2em;
 }
 
 .html-lesson-wrapper .content-div.see .border-box .green-content ul li::before {
@@ -947,7 +962,7 @@ body {
 }
 
 .html-lesson-wrapper .content-div.see .border-box .green-content .image-table {
-  background-image: url(../../images/lesson-03.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/ji-lesson-03.png);
   width: 100%;
   height: 100px;
   background-repeat: no-repeat;

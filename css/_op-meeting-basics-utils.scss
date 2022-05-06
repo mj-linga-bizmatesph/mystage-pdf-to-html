@@ -201,6 +201,9 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 6vw, 60px);
+        @media only screen and (max-device-width: 460px) {
+          width: 12%;
+        }
       }
       .biz-tip-content {
         font-family: $trebuchet;
@@ -229,6 +232,7 @@ body {
             content: '';
             display: block;
             width: 0.5em;
+            height: 0px;
           }
           li::marker {
             font-size: clamp(11px, 2vw, 13px);
@@ -389,6 +393,7 @@ body {
               content: '';
               display: block;
               width: 0.5em;
+              height: 0px;
             }
             li::marker {
               font-size: clamp(11px, 2vw, 13px);

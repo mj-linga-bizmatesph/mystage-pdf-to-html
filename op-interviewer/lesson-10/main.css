@@ -773,17 +773,7 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-@media only screen and (max-width: 360px) {
-  .html-lesson-wrapper .review-part-1 .tbl-container {
-    width: 95%;
-    overflow-x: auto !important;
-  }
-  .html-lesson-wrapper .review-part-1 .tbl-container .content-table {
-    width: 190% !important;
-  }
-}
-
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   .html-lesson-wrapper .review-part-2 .tbl-container {
     width: 95%;
     overflow-x: auto !important;

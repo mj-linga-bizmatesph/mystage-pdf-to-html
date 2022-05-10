@@ -1,0 +1,15 @@
+@import '../../css/_op-executive-utils.scss';
+$s4: './images';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .footer-text {
+    @media only screen and (max-width: 880px){
+      max-width: 40% !important;
+    }
+  }
+}

@@ -293,6 +293,7 @@ body {
   content: '';
   display: block;
   width: 0.5em;
+  height: 0px;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::marker {
@@ -568,12 +569,36 @@ body {
 }
 
 .html-lesson-wrapper .act-spacer {
-  padding-bottom: 25rem;
+  padding-bottom: 37rem;
 }
 
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .act-spacer {
-    padding-bottom: 10rem;
+    margin-bottom: 4%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper .act-spacer {
+    margin-bottom: 4%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .html-lesson-wrapper .act-spacer {
+    margin-bottom: 25%;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  .html-lesson-wrapper .act-spacer {
+    margin-bottom: 35% !important;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .html-lesson-wrapper .act-spacer {
+    margin-bottom: 60% !important;
   }
 }
 
@@ -591,6 +616,7 @@ body {
   margin-top: 5%;
   line-height: 25px;
   font-size: clamp(12px, 2vw, 15px);
+  height: 0px;
 }
 
 .html-lesson-wrapper .see-content-text li {
@@ -605,21 +631,63 @@ body {
 
 @media only screen and (max-width: 450px) {
   .html-lesson-wrapper .see-content-text li {
-    margin-left: -9% !important;
+    margin-left: -7% !important;
     width: 320px;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .html-lesson-wrapper .see-content-text li {
-    margin-left: -10% !important;
+    margin-left: -8% !important;
     width: 300px;
   }
 }
 
 @media only screen and (max-width: 335px) {
   .html-lesson-wrapper .see-content-text li {
-    margin-left: -12% !important;
+    margin-left: -8% !important;
     width: 250px;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -6px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: 19px !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: 3px !important;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: 2px !important;
+  }
+}
+
+@media only screen and (max-width: 351px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -1px !important;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -4px !important;
   }
 }

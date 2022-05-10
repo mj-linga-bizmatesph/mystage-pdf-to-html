@@ -6,8 +6,8 @@
       padding-bottom: 0;
     }
   }
-  footer {
-    .footer-text {
+  .footer-text {
+    @media only screen and (max-width: 870px){
       max-width: 40% !important;
     }
   }

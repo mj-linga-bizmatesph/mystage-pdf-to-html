@@ -1,0 +1,65 @@
+@import '../../css/op-job-interviews-utils';
+
+.html-lesson-wrapper {
+  .see-content {
+    table {
+      td:first-child {
+        width: 9em;
+      }
+
+      td {
+        padding: 0;
+        line-height: normal;
+      }
+    }
+  }
+
+  .see {
+    .inside-content {
+      td {
+        &:first-child {
+          min-width: 5%;
+          max-width: 70px;
+          word-wrap: break-word;
+          @media screen and (max-width: 320px) {
+            min-width: 17%;
+          }
+        }
+      }
+    }
+  }
+
+  .try {
+    .content-table {
+      td {
+        padding: 1%;
+      }
+      .with-rowspan {
+        width: 10%;
+      }
+      .row {
+        p {
+          display: inline-block;
+          margin: 0px 0px;
+          &:first-child {
+            min-width: 9%;
+            max-width: 100px;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      margin-block: 0;
+      padding-inline: 0;
+      list-style-position: inside;
+      li::marker {
+        color: black;
+      }
+      li {
+        margin-bottom: 2%;
+      }
+    }
+  }
+}

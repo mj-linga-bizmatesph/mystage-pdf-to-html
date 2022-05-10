@@ -19,6 +19,9 @@
     }
     table {
       tr {
+        td:first-child {
+          padding-right: 10px;
+        }
         td {
           line-height: 1.8em;
           .dv-wrapper {

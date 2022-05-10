@@ -462,7 +462,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .tbl-wrapper ol {
-  margin-left: -10%;
+  margin-left: -4%;
   line-height: 1.5em;
 }
 
@@ -582,12 +582,27 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .see-content .tbl-wrapper ol {
+    margin-left: -11%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper .see-content .tbl-wrapper ol {
+    margin-left: -12%;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
     left: 94.1%;
   }
   .html-lesson-wrapper .biz-tip-content .arrow-part:before {
     left: 0em;
+  }
+  .html-lesson-wrapper .see-content .tbl-wrapper ol {
+    margin-left: -15%;
   }
   .html-lesson-wrapper .see-content .tbl-wrapper .btn-red {
     width: 35px;

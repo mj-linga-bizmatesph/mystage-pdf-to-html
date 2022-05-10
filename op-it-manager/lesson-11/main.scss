@@ -13,7 +13,7 @@
       padding: 1%;
       margin-top: 2%;
       ol {
-        margin-left: -10%;
+        margin-left: -4%;
         line-height: 1.5em;
       }
       .btn-red {
@@ -137,6 +137,24 @@
       font-size: clamp(9px, 2vw, 13.5px);
     }
   }
+  @media screen and (max-width: 600px) {
+    .see-content {
+      .tbl-wrapper {
+        ol {
+          margin-left: -11%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .see-content {
+      .tbl-wrapper {
+        ol {
+          margin-left: -12%;
+        }
+      }
+    }
+  }
   @media screen and (max-width: 360px) {
     .lesson-number {
       left: 94.1%;
@@ -148,6 +166,9 @@
     }
     .see-content {
       .tbl-wrapper {
+        ol {
+          margin-left: -15%;
+        }
         .btn-red {
           width: 35px;
         }

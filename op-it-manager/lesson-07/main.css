@@ -579,7 +579,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 328px;
+    width: 245px;
   }
   .html-lesson-wrapper .see-content .dv-wrapper .dv-top {
     margin-left: -5% !important;
@@ -590,11 +590,11 @@ body {
             flex: 0 0 auto;
     width: 25% !important;
     height: 70px !important;
-    margin-right: 0% !important;
+    margin-right: -2% !important;
     padding: 10px 10px 10px 5px !important;
   }
   .html-lesson-wrapper .see-content .dv-wrapper .dv-content ul {
-    margin-left: -8%;
+    margin-left: -20%;
   }
   .html-lesson-wrapper .see-content .dv-wrapper .triangle-right.dv-dark {
     border-left: 26px solid #cc3366 !important;
@@ -624,7 +624,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 232px;
+    width: 195px;
   }
   .html-lesson-wrapper .see-content .dv-wrapper .dv-top {
     margin-left: -8% !important;
@@ -635,10 +635,14 @@ body {
             flex: 0 0 auto;
     width: 25% !important;
     height: 70px !important;
-    margin-right: 0% !important;
+    margin-right: -2% !important;
   }
   .html-lesson-wrapper .see-content .dv-wrapper .dv-content ul {
-    margin-left: -25%;
+    margin-left: -40%;
+  }
+  .html-lesson-wrapper .see-content .dv-wrapper .dv-content ul li span {
+    position: relative;
+    left: -5px !important;
   }
   .html-lesson-wrapper .see-content .dv-wrapper .triangle-right.dv-dark {
     border-left: 26px solid #cc3366 !important;

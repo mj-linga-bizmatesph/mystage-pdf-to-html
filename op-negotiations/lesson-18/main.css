@@ -106,6 +106,7 @@ body {
   top: 2.3em;
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
+  width: 90%;
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
@@ -192,7 +193,7 @@ body {
 
 .html-lesson-wrapper .biz-tip-content {
   position: relative;
-  margin-top: clamp(78px, 18%, 160px);
+  margin-top: clamp(87px, 18%, 160px);
   padding: 2px 0px 0px 47px;
   height: -webkit-fit-content;
   height: -moz-fit-content;

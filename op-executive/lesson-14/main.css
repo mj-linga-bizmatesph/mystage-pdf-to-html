@@ -30,6 +30,7 @@ body {
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper {
     min-height: 800px;
+    padding-bottom: 76px !important;
   }
 }
 
@@ -62,6 +63,30 @@ body {
   bottom: 0;
   max-width: 45%;
   right: 2%;
+}
+
+@media only screen and (max-width: 769px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -10px !important;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -15px !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -17px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -19px !important;
+  }
 }
 
 .html-lesson-wrapper .inline-block {
@@ -224,6 +249,12 @@ body {
 }
 
 @media only screen and (max-width: 690px) {
+  .html-lesson-wrapper .header-content .title {
+    max-width: 86% !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
   .html-lesson-wrapper .header-content .title {
     max-width: 86% !important;
   }
@@ -569,125 +600,17 @@ body {
 }
 
 .html-lesson-wrapper .act-spacer {
-  padding-bottom: 37rem;
+  padding-bottom: 10rem;
 }
 
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .act-spacer {
-    margin-bottom: 4%;
+    padding-bottom: 0;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .html-lesson-wrapper .act-spacer {
-    margin-bottom: 4%;
-  }
-}
-
-@media only screen and (max-width: 490px) {
-  .html-lesson-wrapper .act-spacer {
-    margin-bottom: 25%;
-  }
-}
-
-@media only screen and (max-width: 377px) {
-  .html-lesson-wrapper .act-spacer {
-    margin-bottom: 35% !important;
-  }
-}
-
-@media only screen and (max-width: 335px) {
-  .html-lesson-wrapper .act-spacer {
-    margin-bottom: 60% !important;
-  }
-}
-
-.html-lesson-wrapper .pt-2 {
-  padding-top: 4.5rem !important;
-}
-
-@media only screen and (max-width: 460px) {
-  .html-lesson-wrapper .pt-2 {
-    padding-top: 0px !important;
-  }
-}
-
-.html-lesson-wrapper .see-content-text {
-  margin-top: 5%;
-  line-height: 25px;
-  font-size: clamp(12px, 2vw, 15px);
-  height: 0px;
-}
-
-.html-lesson-wrapper .see-content-text li {
-  margin-left: -3%;
-}
-
-@media only screen and (max-width: 650px) {
-  .html-lesson-wrapper .see-content-text li {
-    margin-left: -5% !important;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .html-lesson-wrapper .see-content-text li {
-    margin-left: -7% !important;
-    width: 320px;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .html-lesson-wrapper .see-content-text li {
-    margin-left: -8% !important;
-    width: 300px;
-  }
-}
-
-@media only screen and (max-width: 335px) {
-  .html-lesson-wrapper .see-content-text li {
-    margin-left: -8% !important;
-    width: 250px;
-  }
-}
-
-@media only screen and (max-width: 796px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: -6px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 19px !important;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 8px !important;
-  }
-}
-
-@media only screen and (max-width: 426px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 3px !important;
-  }
-}
-
-@media only screen and (max-width: 391px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 2px !important;
-  }
-}
-
-@media only screen and (max-width: 351px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: -1px !important;
-  }
-}
-
-@media only screen and (max-width: 321px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: -4px !important;
+@media only screen and (max-width: 850px) {
+  .html-lesson-wrapper .footer-text {
+    max-width: 39% !important;
   }
 }

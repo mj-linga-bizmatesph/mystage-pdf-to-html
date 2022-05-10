@@ -30,6 +30,7 @@ body {
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper {
     min-height: 800px;
+    padding-bottom: 76px !important;
   }
 }
 
@@ -62,6 +63,30 @@ body {
   bottom: 0;
   max-width: 45%;
   right: 2%;
+}
+
+@media only screen and (max-width: 769px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -10px !important;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -15px !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -17px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -19px !important;
+  }
 }
 
 .html-lesson-wrapper .inline-block {
@@ -224,6 +249,12 @@ body {
 }
 
 @media only screen and (max-width: 690px) {
+  .html-lesson-wrapper .header-content .title {
+    max-width: 86% !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
   .html-lesson-wrapper .header-content .title {
     max-width: 86% !important;
   }
@@ -578,7 +609,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 870px) {
   .html-lesson-wrapper .footer-text {
     max-width: 40% !important;
   }

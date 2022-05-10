@@ -1,4 +1,5 @@
 @import '../../css/_op-executive-utils.scss';
+$s4: './images';
 .html-lesson-wrapper {
   .act-spacer {
     padding-bottom: 10rem;
@@ -6,11 +7,9 @@
       padding-bottom: 0;
     }
   }
-  footer {
-    .footer-text {
-      @media only screen and (max-width: 880px) {
-        max-width: 40% !important;
-      }
+  .footer-text {
+    @media only screen and (max-width: 840px) {
+      max-width: 40% !important;
     }
   }
 }

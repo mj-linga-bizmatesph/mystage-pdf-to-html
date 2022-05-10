@@ -39,11 +39,27 @@
         width: 320px;
       }
       @media only screen and (max-width: 376px) {
+<<<<<<< HEAD:op-executive/lesson-20/main.scss
+        margin-left: -9% !important;
+        width: 300px;
+      }
+      @media only screen and (max-width: 375px) {
+        margin-left: -7% !important;
+        width: 300px;
+      }
+      @media only screen and (max-width: 374px) {
+        margin-left: -9% !important;
+        width: 300px;
+      }
+      @media only screen and (max-width: 335px) {
+        margin-left: -10% !important;
+=======
         margin-left: -8% !important;
         width: 300px;
       }
       @media only screen and (max-width: 335px) {
         margin-left: -8% !important;
+>>>>>>> 66ee7c2cfc787bd060cfed8c49695d5f8751bb9e:op-executive/lesson-10/main.scss
         width: 250px;
       }
     }

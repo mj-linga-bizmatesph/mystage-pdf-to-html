@@ -140,7 +140,10 @@ body {
   .speaker-text {
     position: relative;
     line-height: 1.8;
+<<<<<<< HEAD
     padding-right: clamp(8px, 2vw, 19px) !important;
+=======
+>>>>>>> dfe77f6f3205bfb7f1d8d82735b1c07d2614470d
     .underline {
       border-bottom: 1px solid black;
     }
@@ -307,6 +310,15 @@ body {
     display: inline-block;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .speaker-text {
+    padding-right: 19px !important;
+  }
+}
+>>>>>>> dfe77f6f3205bfb7f1d8d82735b1c07d2614470d
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;

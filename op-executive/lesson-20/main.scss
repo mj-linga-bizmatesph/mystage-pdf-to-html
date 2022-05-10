@@ -1,9 +1,21 @@
 @import '../../css/_op-executive-utils.scss';
 .html-lesson-wrapper {
   .act-spacer {
-    padding-bottom: 25rem;
+    padding-bottom: 37rem;
     @media only screen and (max-width: 767px) {
-      padding-bottom: 10rem;
+      margin-bottom: 4%;
+    }
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 4%;
+    }
+    @media only screen and (max-width: 490px) {
+      margin-bottom: 25%;
+    }
+    @media only screen and (max-width: 377px) {
+      margin-bottom: 35% !important;
+    }
+    @media only screen and (max-width: 335px) {
+      margin-bottom: 60% !important;
     }
   }
   .pt-2 {
@@ -16,6 +28,7 @@
     margin-top: 5%;
     line-height: 25px;
     font-size: clamp(12px, 2vw, 15px);
+    height: 0px;
     li {
       margin-left: -3%;
       @media only screen and (max-width: 650px) {
@@ -26,6 +39,7 @@
         width: 320px;
       }
       @media only screen and (max-width: 376px) {
+<<<<<<< HEAD:op-executive/lesson-20/main.scss
         margin-left: -9% !important;
         width: 300px;
       }
@@ -39,7 +53,39 @@
       }
       @media only screen and (max-width: 335px) {
         margin-left: -10% !important;
+=======
+        margin-left: -8% !important;
+        width: 300px;
+      }
+      @media only screen and (max-width: 335px) {
+        margin-left: -8% !important;
+>>>>>>> 66ee7c2cfc787bd060cfed8c49695d5f8751bb9e:op-executive/lesson-10/main.scss
         width: 250px;
+      }
+    }
+  }
+  footer {
+    .footer-text {
+      @media only screen and (max-width: 796px) {
+        bottom: -6px;
+      }
+      @media only screen and (max-width: 767px) {
+        bottom: 19px !important;
+      }
+      @media only screen and (max-width: 520px) {
+        bottom: 8px !important;
+      }
+      @media only screen and (max-width: 426px) {
+        bottom: 3px !important;
+      }
+      @media only screen and (max-width: 391px) {
+        bottom: 2px !important;
+      }
+      @media only screen and (max-width: 351px) {
+        bottom: -1px !important;
+      }
+      @media only screen and (max-width: 321px) {
+        bottom: -4px !important;
       }
     }
   }

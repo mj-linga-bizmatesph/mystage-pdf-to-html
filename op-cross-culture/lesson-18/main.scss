@@ -1,0 +1,14 @@
+@import '../../css/_op-cross-culture-utils.scss';
+.html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91%, 91.5vw, 91.7%) !important;
+  }
+  @media screen and (max-width: 900px) {
+    .inline-block {
+      display: block !important;
+    }
+  }
+  table tr td {
+    padding-right: 3px;
+  }
+}

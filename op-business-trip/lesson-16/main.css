@@ -60,21 +60,18 @@ body {
 }
 
 .html-lesson-wrapper .program-rank .type {
-  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
-    clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #cc3366;
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
-    clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #339999;
   margin-left: -2%;
 }
 
 .html-lesson-wrapper .program-rank .level.two {
-  padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
-    clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
 }
 
 .html-lesson-wrapper .line {
@@ -361,10 +358,10 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
-      grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+  grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
   font-size: clamp(9px, 2vw, 13px);
   -webkit-column-gap: clamp(0.2rem, 1vw, 1rem);
-          column-gap: clamp(0.2rem, 1vw, 1rem);
+  column-gap: clamp(0.2rem, 1vw, 1rem);
 }
 
 .html-lesson-wrapper .see-content .email-header-label {
@@ -390,11 +387,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: clamp(15px, 2vw, 22px);
 }
 
@@ -410,8 +407,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 10px;
   height: clamp(15px, 2vw, 22px);
 }
@@ -446,7 +443,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1% 1fr;
-      grid-template-columns: 1% 1fr;
+  grid-template-columns: 1% 1fr;
   grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 
@@ -478,7 +475,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0 1fr;
-      grid-template-columns: 0 1fr;
+  grid-template-columns: 0 1fr;
   grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 
@@ -491,7 +488,7 @@ body {
   padding: 0;
   list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   list-style-position: inside;
 }
 
@@ -725,12 +722,4 @@ body {
     border-top: 5.5px solid !important;
   }
 }
-<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
-=======
-
-.html-lesson-wrapper u.add-space {
-  margin-right: 7px;
-}
-/*# sourceMappingURL=main.css.map */
->>>>>>> dfe77f6f3205bfb7f1d8d82735b1c07d2614470d

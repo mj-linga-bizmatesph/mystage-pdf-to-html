@@ -307,11 +307,7 @@ body {
     display: inline-block;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  .speaker-text {
-    padding-right: 19px !important;
-  }
-}
+
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;

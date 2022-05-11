@@ -1,5 +1,12 @@
 @import '../../css/_op-business-trip-utils.scss';
 
-.biz-tip-content {
-  margin-top: clamp(95px, 18%, 160px) !important;
+.html-lesson-wrapper {
+  .biz-tip-content {
+    margin-top: clamp(95px, 18%, 160px) !important;
+  }
+  .see-content {
+    .person {
+      padding-right: 10px;
+    }
+  }
 }

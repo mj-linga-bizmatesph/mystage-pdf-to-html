@@ -21,7 +21,7 @@ $gradient: linear-gradient(to right, #cdca23 25%, #db8536);
 $subtext-color: #7f8288;
 
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
-$image: '../../images';
+
 body {
   margin: 0;
   padding: 0;
@@ -50,6 +50,7 @@ body {
     margin-bottom: clamp(50px, 15vw, 65px);
     margin-top: -3%;
     position: relative;
+    font-family: $helvetica;
   }
 
   footer {
@@ -66,7 +67,7 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 41%;
       right: 2%;
     }
   }
@@ -175,7 +176,7 @@ body {
         margin-bottom: 0 !important;
       }
       .biz-tip-label {
-        width: 8%;
+        width: 12%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
@@ -252,6 +253,7 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
+        font-family: $helvetica;
       }
     }
     &.review {
@@ -276,6 +278,7 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       font-size: clamp(12px, 2vw, 15px);
+      padding-left: clamp(10px, 3vw, 25px);
       @media only screen and (max-width: 400px) {
         padding-left: 10px;
       }
@@ -324,7 +327,7 @@ body {
           border-collapse: collapse;
           font-size: clamp(12px, 2vw, 14px);
           p {
-            margin: 0px 0px;
+            margin: 5px 0px;
             line-height: 1.8em;
             top: -0.3em;
             position: relative;
@@ -382,9 +385,19 @@ body {
           margin: 0;
           margin-block: 0;
           padding-inline: 0;
-          list-style-position: inside;
           li {
-            margin-bottom: 0;
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 0.9em;
+            padding-left: 0.5em;
+          }
+          li::before {
+            content: '';
+            display: block;
+            width: 0.5em;
+          }
+          li::marker {
+            font-size: clamp(11px, 2vw, 13px);
           }
         }
         .content-message {
@@ -408,7 +421,7 @@ body {
           td,
           th {
             border: 1px solid $tertiary-gray;
-            vertical-align: baseline;
+            vertical-align: middle !important;
           }
           th {
             vertical-align: middle !important;
@@ -419,6 +432,7 @@ body {
             padding-left: clamp(5px, 1vw, 10px);
             @media screen and (max-width: 460px) {
               padding-bottom: 1%;
+              vertical-align: top !important;
             }
           }
           .row {

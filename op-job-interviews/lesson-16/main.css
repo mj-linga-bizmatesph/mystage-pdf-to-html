@@ -38,6 +38,7 @@ body {
   margin-bottom: clamp(50px, 15vw, 65px);
   margin-top: -3%;
   position: relative;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper footer {
@@ -60,7 +61,7 @@ body {
   text-align: right;
   position: absolute;
   bottom: 0;
-  max-width: 45%;
+  max-width: 41%;
   right: 2%;
 }
 
@@ -199,7 +200,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-  width: 8%;
+  width: 12%;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
@@ -301,6 +302,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
   padding-left: clamp(10px, 6vw, 60px);
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .html-lesson-wrapper .content-item.review {
@@ -333,6 +335,7 @@ body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   font-size: clamp(12px, 2vw, 15px);
+  padding-left: clamp(10px, 3vw, 25px);
 }
 
 @media only screen and (max-width: 400px) {
@@ -396,7 +399,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.see .response-table p {
-  margin: 0px 0px;
+  margin: 5px 0px;
   line-height: 1.8em;
   top: -0.3em;
   position: relative;
@@ -461,11 +464,23 @@ body {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
-  list-style-position: inside;
 }
 
 .html-lesson-wrapper .content-item .content-div.see ul li {
-  margin-bottom: 0;
+  list-style-position: outside;
+  text-indent: -1em;
+  margin-left: 0.9em;
+  padding-left: 0.5em;
+}
+
+.html-lesson-wrapper .content-item .content-div.see ul li::before {
+  content: '';
+  display: block;
+  width: 0.5em;
+}
+
+.html-lesson-wrapper .content-item .content-div.see ul li::marker {
+  font-size: clamp(11px, 2vw, 13px);
 }
 
 .html-lesson-wrapper .content-item .content-div.see .content-message {
@@ -491,7 +506,7 @@ body {
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 1px solid #d9d9d9;
-  vertical-align: baseline;
+  vertical-align: middle !important;
 }
 
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
@@ -507,6 +522,7 @@ body {
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .content-item .content-div.try .content-table td {
     padding-bottom: 1%;
+    vertical-align: top !important;
   }
 }
 

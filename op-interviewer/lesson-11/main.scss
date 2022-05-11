@@ -1,6 +1,9 @@
 @import '../../css/op-interviewer-utils';
 
 .html-lesson-wrapper {
+  .content-header {
+    margin-bottom: 0px !important;
+  }
   .try {
     .tbl-container {
       @media only screen and (max-width: 401px) {

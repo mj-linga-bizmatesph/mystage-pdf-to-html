@@ -556,4 +556,14 @@ body {
     margin-left: 9px !important;
   }
 }
+
+@media only screen and (max-width: 660px) {
+  .html-lesson-wrapper .table-container {
+    width: 105%;
+    overflow-x: auto !important;
+  }
+  .html-lesson-wrapper .table-container .content-table {
+    width: 190% !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

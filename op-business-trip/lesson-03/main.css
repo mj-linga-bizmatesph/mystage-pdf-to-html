@@ -10,6 +10,8 @@ body {
   max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   position: relative;
@@ -99,7 +101,12 @@ body {
 }
 
 .html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -160,6 +167,8 @@ body {
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content,
 .html-lesson-wrapper .part-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -181,10 +190,14 @@ body {
 
 .html-lesson-wrapper .biz-tip-content {
   margin-top: clamp(70px, 18%, 160px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 4%;
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -302,6 +315,8 @@ body {
 }
 
 .html-lesson-wrapper .see-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-bottom: clamp(5px, 1vw, 7px);
@@ -329,20 +344,25 @@ body {
 .html-lesson-wrapper .see-content .email-window {
   background: #cc3366;
   padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);
+  display: -ms-grid;
   display: grid;
   row-gap: clamp(4px, 1vw, 7px);
   border: clamp(2px, 0.5vw, 3px) solid #a5a5a5;
 }
 
 .html-lesson-wrapper .see-content .email-header {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+  -ms-grid-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+      grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
   font-size: clamp(9px, 2vw, 13px);
-  column-gap: clamp(0.2rem, 1vw, 1rem);
+  -webkit-column-gap: clamp(0.2rem, 1vw, 1rem);
+          column-gap: clamp(0.2rem, 1vw, 1rem);
 }
 
 .html-lesson-wrapper .see-content .email-header-label {
   row-gap: clamp(4px, 1vw, 7px);
+  display: -ms-grid;
   display: grid;
 }
 
@@ -352,27 +372,39 @@ body {
   border-radius: 3px;
   height: clamp(15px, 2vw, 22px);
   place-items: center;
+  display: -ms-grid;
   display: grid;
 }
 
 .html-lesson-wrapper .see-content .email-header-label-subject {
   font-style: italic;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: clamp(15px, 2vw, 22px);
 }
 
 .html-lesson-wrapper .see-content .email-header-textfield {
+  display: -ms-grid;
   display: grid;
   row-gap: clamp(4px, 1vw, 7px);
 }
 
 .html-lesson-wrapper .see-content .email-textfield {
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 10px;
   height: clamp(15px, 2vw, 22px);
 }
@@ -387,6 +419,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -ms-grid;
   display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
@@ -403,8 +436,10 @@ body {
 }
 
 .html-lesson-wrapper ol.numbers li {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1% 1fr;
+  -ms-grid-columns: 1% 1fr;
+      grid-template-columns: 1% 1fr;
   grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 
@@ -416,6 +451,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -ms-grid;
   display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
@@ -432,8 +468,10 @@ body {
 }
 
 .html-lesson-wrapper ol.bullets li {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 0 1fr;
+  -ms-grid-columns: 0 1fr;
+      grid-template-columns: 0 1fr;
   grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 
@@ -445,7 +483,8 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: '\25BC';
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   list-style-position: inside;
 }
 
@@ -519,6 +558,8 @@ body {
 }
 
 .html-lesson-wrapper .part-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-bottom: clamp(2px, 1vw, 7px);
@@ -559,6 +600,8 @@ body {
 }
 
 .html-lesson-wrapper .act-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   font-size: clamp(12px, 2vw, 15px);
 }
@@ -676,7 +719,13 @@ body {
   }
 }
 
-.biz-tip-content {
+.html-lesson-wrapper .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content .url-label u {
+    font-size: clamp(9.5px, 2vw, 15px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

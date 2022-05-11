@@ -506,7 +506,7 @@ body {
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 1px solid #d9d9d9;
-  vertical-align: middle !important;
+  vertical-align: top;
 }
 
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
@@ -758,6 +758,7 @@ body {
 
 .html-lesson-wrapper .try .content-table td {
   padding: 1%;
+  vertical-align: top !important;
 }
 
 .html-lesson-wrapper .try .content-table .row p {

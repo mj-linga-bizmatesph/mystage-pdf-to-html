@@ -37,8 +37,7 @@ body {
   height: fit-content;
   overflow: hidden;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg),
-    url(#{$s3}/other-programs-footer-level2.svg);
+  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg), url(#{$s3}/other-programs-footer-level2.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -98,19 +97,16 @@ body {
     margin-left: clamp(10px, 6vw, 60px);
 
     .type {
-      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-color: $text-pink;
     }
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-image: $gradient;
       width: 100%;
       margin-left: -2%;
       &.two {
-        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
-          clamp(10px, 3vw, 17px);
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       }
     }
     .separator {
@@ -421,7 +417,7 @@ body {
           td,
           th {
             border: 1px solid $tertiary-gray;
-            vertical-align: middle !important;
+            vertical-align: top;
           }
           th {
             vertical-align: middle !important;

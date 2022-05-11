@@ -1,0 +1,108 @@
+@import '../../css/op-job-interviews-utils';
+
+.html-lesson-wrapper {
+  .see-content {
+    table {
+      td:first-child {
+        width: 9em;
+      }
+
+      td {
+        padding: 0;
+        line-height: normal;
+      }
+    }
+  }
+
+  .see {
+    .content-list {
+      .content-table-list {
+        font-size: clamp(12px, 2vw, 14px);
+        width: 96%;
+        border-collapse: collapse;
+        margin-right: 1.5em;
+        padding-right: 42px;
+        background-color: white;
+        .table-header {
+          color: white;
+          background-color: $primary-pink;
+        }
+        td,
+        th {
+          border: 1px solid $tertiary-gray;
+          vertical-align: baseline;
+        }
+        th {
+          vertical-align: middle !important;
+          padding: 0.7% 0.5%;
+        }
+        td {
+          padding: 0.5%;
+          padding-left: clamp(5px, 1vw, 10px);
+          width: 45%;
+          @media screen and (max-width: 460px) {
+            padding-bottom: 1%;
+          }
+        }
+        ul {
+          margin: 0;
+          margin-block: 0;
+          padding-inline: 0;
+          li {
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 0.9em;
+          }
+          li::before {
+            content: '';
+            display: block;
+            width: 0.5em;
+          }
+          li::marker {
+            font-size: clamp(11px, 2vw, 13px);
+          }
+        }
+      }
+    }
+  }
+  .try {
+    .content-table {
+      td {
+        padding: 1%;
+        width: 70%;
+      }
+      .with-rowspan {
+        width: 10%;
+      }
+      .row {
+        p {
+          display: inline-block;
+          margin: 0px 0px;
+          &:first-child {
+            min-width: 9%;
+            max-width: 100px;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      margin-block: 0;
+      padding-inline: 0;
+      li {
+        list-style-position: outside;
+        text-indent: -1em;
+        margin-left: 0.9em;
+      }
+      li::before {
+        content: '';
+        display: block;
+        width: 0.5em;
+      }
+      li::marker {
+        font-size: clamp(11px, 2vw, 13px);
+      }
+    }
+  }
+}

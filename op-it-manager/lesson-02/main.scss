@@ -1,0 +1,60 @@
+@import '../../css/_op-it-manager-utils.scss';
+
+.html-lesson-wrapper {
+  table {
+    border-collapse: collapse;
+  }
+  .see-content table tr {
+    td {
+      line-height: 1.8em;
+    }
+  }
+  .try-content {
+    table {
+      margin-top: -2%;
+      tr {
+        td {
+          line-height: 1.8em;
+        }
+        td:first-child {
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  .act-content {
+    p {
+      line-height: 1.8em;
+    }
+    p.content {
+      margin-top: -2%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .arrow-part:before {
+      left: 0em;
+    }
+    .arrow-part {
+      padding-left: 10px;
+    }
+    .biz-tip-content {
+      .arrow-part {
+        margin-left: -3.2%;
+      }
+    }
+    .biz-tip-content,
+    .see-content,
+    .try-content,
+    .act-content {
+      font-size: clamp(9px, 2vw, 13.5px);
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      .arrow-part:before {
+        left: 0em;
+      }
+    }
+  }
+}

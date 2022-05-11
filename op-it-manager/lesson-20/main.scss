@@ -1,0 +1,101 @@
+@import '../../css/_op-it-manager-utils.scss';
+
+.html-lesson-wrapper {
+  .lesson-number {
+    left: 94.4%;
+  }
+  .title {
+    top: clamp(7.5%, 18vw, 6.1%);
+  }
+  table {
+    border-collapse: collapse;
+  }
+  .biz-tip-content {
+    background: hsl(0, 0%, 100%);
+  }
+  .see-content {
+    table {
+      tr {
+        td.breaker {
+          padding: 2%;
+          text-align: center;
+          padding-right: 17%;
+        }
+        td {
+          line-height: 1.8em;
+        }
+      }
+    }
+  }
+  .try-content {
+    table {
+      margin-top: -2%;
+      tr {
+        td {
+          line-height: 1.8em;
+        }
+        td:first-child {
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  .act-content {
+    p {
+      line-height: 1.8em;
+    }
+    p.content {
+      margin-top: -2%;
+    }
+  }
+  .review-content {
+    table {
+      margin-bottom: 20%;
+      margin-top: 0%;
+      tr {
+        td {
+          line-height: 3em;
+        }
+        td:first-child {
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .arrow-part:before {
+      left: 0em;
+    }
+    .arrow-part {
+      padding-left: 10px;
+    }
+    .biz-tip-content {
+      .arrow-part {
+        margin-left: -3.2%;
+      }
+    }
+    .biz-tip-content,
+    .see-content,
+    .try-content,
+    .act-content {
+      font-size: clamp(9px, 2vw, 13.5px);
+    }
+    .review-content {
+      table {
+        tr {
+          td {
+            line-height: 1.8em;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .biz-tip-content {
+      .arrow-part:before {
+        left: 0em;
+      }
+    }
+  }
+}

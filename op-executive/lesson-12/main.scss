@@ -8,6 +8,7 @@ $s4: './images';
     }
   }
   .footer-text {
+    max-width: 40% !important;
     @media only screen and (max-width: 400px) {
       max-width: 40% !important;
     }

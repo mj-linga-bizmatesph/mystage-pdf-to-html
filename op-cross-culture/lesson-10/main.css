@@ -13,15 +13,16 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-level2.svg");
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-level2.svg');
   background-position: top, -11.5px 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
 }
 
 .html-lesson-wrapper header {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .html-lesson-wrapper .b {
@@ -91,12 +92,12 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .html-lesson-wrapper .sub-text {
-  font-family: "Helvetica", "Arial", sans-serif !important;
+  font-family: 'Helvetica', 'Arial', sans-serif !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
@@ -106,7 +107,7 @@ body {
   left: -78px;
   color: #cc3366;
   font-weight: bold;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   top: 2px;
 }
 
@@ -348,11 +349,11 @@ body {
 }
 
 .html-lesson-wrapper footer {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-right: 10%;
   bottom: 43px;
 }
@@ -367,6 +368,12 @@ body {
 
 .html-lesson-wrapper .inline-block {
   display: inline-block;
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .speaker-text {
+    padding-right: 19px !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -414,7 +421,8 @@ body {
     top: clamp(45px, 8.4vw, 80px);
     left: clamp(23px, 3.1vw, 55px);
   }
-  .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
+  .html-lesson-wrapper .divider.d1,
+  .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
   }
   .html-lesson-wrapper .section {
@@ -558,7 +566,7 @@ body {
 
 .html-lesson-wrapper .part-content .part-1 {
   margin-left: clamp(3px, 1vw, 7px);
-  font-family: "Helvetica", "Arial", sans-serif !important;
+  font-family: 'Helvetica', 'Arial', sans-serif !important;
   font-weight: bold;
 }
 

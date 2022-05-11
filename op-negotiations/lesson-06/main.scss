@@ -1,0 +1,14 @@
+@import '../../css/op-negotiations-utils';
+
+.html-lesson-wrapper {
+  .try-content {
+    table {
+      th:first-child {
+        width: 30%;
+      }
+    }
+    .fs-8 {
+      font-size: clamp(9.5px, 2vw, 13px);
+    }
+  }
+}

@@ -511,7 +511,7 @@ body {
   margin-left: -2%;
 }
 
-.html-lesson-wrapper .see-content table tr td.td-content-4a, .html-lesson-wrapper .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content table tr td.td-content-4c, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b, .html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c, .html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4c {
+.html-lesson-wrapper .see-content table tr td.td-content-4a, .html-lesson-wrapper .see-content .try-content table tr td.td-content-4b, .html-lesson-wrapper .try-content .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content .try-content table tr td.td-content-4c, .html-lesson-wrapper .try-content .see-content table tr td.td-content-4c, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c {
   padding: 15px;
   border: 1px solid #d8d8d8;
 }
@@ -526,7 +526,15 @@ body {
   border: 1px solid #d8d8d8;
 }
 
-.html-lesson-wrapper .see-content table tr td.td-content-4a, .html-lesson-wrapper .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content table tr td.td-content-4c, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b, .html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c, .html-lesson-wrapper .try-content .tbl-2 .see-content table tr td.td-content-4c {
+.html-lesson-wrapper .see-content table tr td.td-content-4a, .html-lesson-wrapper .see-content .try-content table tr td.td-content-4b, .html-lesson-wrapper .try-content .see-content table tr td.td-content-4b, .html-lesson-wrapper .see-content .try-content table tr td.td-content-4c, .html-lesson-wrapper .try-content .see-content table tr td.td-content-4c, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4b, .html-lesson-wrapper .see-content table .try-content .tbl-2 tr td.td-content-4c {
+  padding-left: 5%;
+}
+
+.html-lesson-wrapper .see-content table tr td.td-content-4b {
+  padding-left: 5%;
+}
+
+.html-lesson-wrapper .see-content table tr td.td-content-4c {
   padding-left: 5%;
 }
 

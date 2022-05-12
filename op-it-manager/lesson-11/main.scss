@@ -1,0 +1,194 @@
+@import '../../css/_op-it-manager-utils.scss';
+
+.html-lesson-wrapper {
+  .lesson-number {
+    left: 94.4%;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  .see-content {
+    .tbl-wrapper {
+      background: #d9d9d9;
+      padding: 1%;
+      margin-top: 2%;
+      ol {
+        margin-left: -4%;
+        line-height: 1.5em;
+      }
+      .btn-red {
+        background-color: #cc3366;
+        width: 60px;
+        color: #fff;
+      }
+      .btn-to {
+        padding-left: 10px;
+      }
+      .btn-send {
+        text-align: center;
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1%;
+      }
+      table {
+        tr {
+          td.breaker {
+            padding: 2%;
+            text-align: center;
+            padding-right: 17%;
+          }
+          td {
+            .sub {
+              margin-bottom: 10px;
+              margin-right: 35px;
+            }
+            .to-value,
+            .sub-value {
+              background-color: #fff;
+              padding-left: 10px;
+            }
+            .to-value {
+              border-bottom: 4px solid #d9d9d9;
+              margin-top: -2px;
+            }
+            .sub-value {
+              border-top: 4px solid #d9d9d9;
+              margin-top: -2px;
+            }
+            .to-value {
+              font-size: clamp(8px, 2vw, 13.5px);
+            }
+            line-height: 1.8em;
+            .tbl-content {
+              background: #fff;
+              padding: 2%;
+            }
+          }
+          td.td-btn {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .try-content {
+    table {
+      margin-top: -2%;
+      tr {
+        td {
+          line-height: 1.8em;
+        }
+        td:first-child {
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  .act-content {
+    p {
+      line-height: 1.8em;
+    }
+    p.content {
+      margin-top: -2%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .arrow-part:before {
+      left: 0em;
+    }
+    .arrow-part {
+      padding-left: 10px;
+    }
+    .biz-tip-content {
+      .arrow-part {
+        margin-left: -3.2%;
+      }
+    }
+    .see-content {
+      .tbl-wrapper {
+        .btn-red {
+          width: 35px;
+        }
+        table {
+          tr {
+            td {
+              padding: 0px !important;
+              .to-value {
+                margin-top: 0px;
+              }
+              .sub-value {
+                border-top: 1px solid #d9d9d9;
+              }
+              .sub {
+                margin-bottom: 2px;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .biz-tip-content,
+    .see-content,
+    .try-content,
+    .act-content {
+      font-size: clamp(9px, 2vw, 13.5px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .see-content {
+      .tbl-wrapper {
+        ol {
+          margin-left: -11%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .see-content {
+      .tbl-wrapper {
+        ol {
+          margin-left: -12%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .lesson-number {
+      left: 94.1%;
+    }
+    .biz-tip-content {
+      .arrow-part:before {
+        left: 0em;
+      }
+    }
+    .see-content {
+      .tbl-wrapper {
+        ol {
+          margin-left: -15%;
+        }
+        .btn-red {
+          width: 35px;
+        }
+        table {
+          tr {
+            td {
+              .to-value {
+                margin-top: 0px;
+              }
+              .sub {
+                margin-bottom: 2px;
+                margin-right: 20px;
+              }
+              .sub-value {
+                border-top: 1px solid #d9d9d9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

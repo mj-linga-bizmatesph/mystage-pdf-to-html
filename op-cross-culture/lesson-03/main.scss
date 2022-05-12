@@ -11,4 +11,13 @@
       margin-left: 9px !important;
     }
   }
+  .table-container {
+    @media only screen and (max-width: 660px) {
+      width: 105%;
+      overflow-x: auto !important;
+      .content-table {
+        width: 190% !important;
+      }
+    }
+  }
 }

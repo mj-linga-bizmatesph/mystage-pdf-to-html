@@ -4,14 +4,16 @@ $primary: #cc3366;
 $primary-second: #339999;
 $primary-light: #f0d4d4;
 $text-title: #cc3366;
+$primary-pink: #cb3366;
+$tertiary-gray: #d9d9d9;
 $left-pixel: clamp(50px, 14%, 126.5px);
 body {
   margin: 0;
   padding: 0;
 }
 .html-lesson-wrapper {
-  width: 100%;
-  min-width: 360px;
+  max-width: 100%;
+  min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
   height: fit-content;
@@ -45,12 +47,12 @@ body {
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $primary;
-      font-size: clamp(7px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
     }
     .level {
       padding: 3px 12px 3px 13px;
       background-color: $primary-second;
-      font-size: clamp(7px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
       .add-space {
         margin-left: clamp(5px, 2vw, 15px);
       }
@@ -59,21 +61,30 @@ body {
   .line {
     margin: 0 12px;
   }
+  .hide {
+    display: none;
+  }
   .title {
     position: absolute;
     top: 80px;
-    left: 48px;
-    font-size: clamp(12px, 3vw, 27px);
+    left: 47px;
+    font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
   }
   .lesson-number {
     position: absolute;
-    left: 92%;
+    left: clamp(91.5%, 93vw, 92%);
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
   .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .sub-text {
@@ -87,11 +98,11 @@ body {
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
-    top: 2px;
+    top: 3px;
   }
   .divider {
     color: #d9d9d9;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
     position: relative;
     left: 52%;
     &.d1 {
@@ -102,24 +113,21 @@ body {
     }
   }
   ul {
-    margin: 3px 0px 0px 18px;
+    margin: 0px 0px 0px 16px;
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
-    li {
-      padding-left: 8px;
-    }
   }
   .see-content,
   .act-content,
-  .try-content {
+  .try-content,
+  .review-content {
     position: relative;
     margin-left: $left-pixel;
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
   }
   .table {
-    margin-top: 20px;
     width: 100%;
   }
   .speaker {
@@ -134,41 +142,213 @@ body {
   }
   .speaker-text {
     position: relative;
-    left: clamp(15px, 4vw, 35px);
     line-height: 1.8;
+    padding-right: clamp(8px, 2vw, 19px) !important;
     .underline {
       border-bottom: 1px solid black;
     }
   }
-  
   .see-content {
-    line-height: 1.8;
     margin-top: 25%;
-    width: 72%;
-  }
-  // Try
-  .try-content {
-    margin-top: 30px;
-    ul {
-      list-style-type: decimal;
+    .see-margin {
+      p {
+        margin-block-start: 0em;
+      }
+      line-height: 1.8;
+      ul {
+        line-height: 1.8;
+      }
+      .instruction {
+        margin-block-end: 0em !important;
+        font-weight: bold;
+      }
+      .tbl-container {
+        margin-top: 10px;
+
+        .content-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: clamp(12px, 2vw, 15px);
+
+          .table-header {
+            color: white;
+            background-color: $primary-pink;
+          }
+          .table-header1 {
+            width: 16%;
+            color: white;
+            background-color: $primary-pink;
+          }
+          .table-header2 {
+            color: white;
+            background-color: $primary-pink;
+          }
+          th {
+            vertical-align: middle !important;
+          }
+          td,
+          th {
+            border: 2px solid $tertiary-gray;
+            padding: 7px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .sub-text {
+      line-height: 1.8em;
     }
   }
-  // Act
+  .try-content {
+    margin-top: 30px;
+    .sub-text {
+      line-height: 1.8em;
+    }
+    .bullet {
+      list-style: decimal;
+      line-height: 1.8;
+      list-style-position: outside;
+      .nested-ul {
+        line-height: 1.8;
+        list-style: lower-alpha;
+      }
+    }
+  }
   .act-content {
-    margin-top: 36px;
+    p {
+      margin-block-start: 0em;
+    }
     height: fit-content;
     margin-bottom: clamp(50px, 13vw, 120px);
+    margin-top: 36px;
+    p {
+      line-height: 1.8;
+    }
+    .tbl-container {
+      margin-top: 10px;
+
+      .content-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: clamp(12px, 2vw, 15px);
+
+        .table-header {
+          color: white;
+          background-color: $primary-pink;
+        }
+        .table-header1 {
+          width: 16%;
+          color: white;
+          background-color: $primary-pink;
+        }
+        .table-header2 {
+          color: white;
+          background-color: $primary-pink;
+        }
+        th {
+          vertical-align: middle !important;
+        }
+        td,
+        th {
+          border: 2px solid $tertiary-gray;
+          padding: 7px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .tbl-container1 {
+      margin-top: 10px;
+
+      .content-table {
+        border-bottom: 2px solid $tertiary-gray;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: clamp(12px, 2vw, 15px);
+        p {
+          margin-block-start: 0em !important;
+          margin-block-end: 0em !important;
+        }
+
+        .table-header {
+          color: white;
+          background-color: $primary-pink;
+        }
+        .table-header1 {
+          width: 16%;
+          color: white;
+          background-color: $primary-pink;
+        }
+        .table-header2 {
+          color: white;
+          background-color: $primary-pink;
+        }
+        th {
+          vertical-align: middle !important;
+        }
+        th {
+          border: 2px solid $tertiary-gray;
+          padding: 7px;
+          vertical-align: middle;
+        }
+        td {
+          border-left: 2px solid $tertiary-gray;
+          border-right: 2px solid $tertiary-gray;
+          padding-left: 5px;
+          vertical-align: middle;
+          .row {
+            p {
+              display: inline-block;
+              margin: 0px 0px;
+              &:first-child {
+                margin-right: 4px;
+                max-width: 100px;
+                word-wrap: break-word;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .review-content {
+    margin-top: 25%;
+    .sub-text {
+      line-height: 1.8em;
+    }
+    ul {
+      line-height: 1.8 !important;
+      list-style: decimal;
+      li {
+        margin: 12.5px 1px;
+
+        p {
+          margin-block-start: 0 !important;
+          margin-block-end: 0 !important;
+
+          &:last-child {
+            font-weight: normal;
+          }
+        }
+      }
+    }
   }
   footer {
-    color: #0c0c0c;
-    font-size: clamp(4.5px, 1.1vw, 9px);
-    position: absolute;
-    width: fit-content;
-    text-align: right;
-    bottom: 43px;
-    right: 6.2%;
     font-family: $title-font;
-    max-width: 64%;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: 43px;
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      max-width: 45%;
+      right: 2%;
+    }
+  }
+  .inline-block {
+    display: inline-block;
   }
 }
 
@@ -176,16 +356,16 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
     .see-content {
-      margin-top: clamp(22px, 3.8vw, 36px);
+      margin-top: 30%;
       .article {
         margin-bottom: clamp(20px, 3.7vw, 29px);
       }
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
+      padding-left: clamp(11px, 3vw, 18px);
       ul {
-        margin-left: clamp(15px, 2.4vw, 18px);
+        margin-left: clamp(17px, 2vw, 23px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -193,6 +373,9 @@ body {
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
+    }
+    .review-content {
+      margin-top: 31%;
     }
     footer {
       bottom: clamp(16px, 4.8vw, 43px);
@@ -215,7 +398,8 @@ body {
     }
     .title {
       top: clamp(45px, 8.4vw, 80px);
-      left: clamp(24px, 3.1vw, 55px);
+      left: clamp(22px, 3.8vw, 55px);
+      width: 77%;
     }
     .divider {
       &.d1,
@@ -224,15 +408,19 @@ body {
       }
     }
     .section {
-      left: calc(-16% + 22px);
+      left: calc(-15% + 21px);
     }
     .section.words {
-      left: calc(-14% + 24px);
+      left: calc(-13.3% + 22px);
+    }
+    .try-content {
+      ul {
+        margin-left: clamp(16px, 1vw, 23px);
+      }
     }
     .arrow-part {
       &:before {
         left: -3% !important;
-        top: 0.6vw !important;
       }
     }
   }
@@ -246,15 +434,18 @@ body {
     .level {
       padding: 2px 6px 2px 7px !important;
     }
+    .section {
+      top: 5px;
+      left: calc(-15% + 20px);
+    }
     .line {
       margin: 0 6px;
       vertical-align: middle;
     }
-    .arrow-part {
-      &:before {
-        border-left: 3.5px solid transparent !important;
-        border-right: 3.5px solid transparent !important;
-        border-top: 5.5px solid black !important;
+    .try-content {
+      padding-left: clamp(17px, 4vw, 20px);
+      ul {
+        margin-left: clamp(13px, 2vw, 23px);
       }
     }
   }
@@ -265,8 +456,35 @@ body {
     .text-header {
       left: -12px !important;
     }
+    .pointers {
+      padding-right: 6px;
+    }
     .try-content .sub-text {
       margin-left: 10px;
+    }
+    .see-bullets {
+      margin-left: 1.1em;
+    }
+    .try-content {
+      padding-left: clamp(8px, 4vw, 11px);
+      ul {
+        margin-left: clamp(23px, 2vw, 25px);
+      }
+    }
+    .sub-text {
+      padding-top: 2.5px;
+    }
+    .inline-block {
+      display: block !important;
+    }
+    .decimal {
+      margin-left: 25px !important;
+    }
+    .text-header {
+      margin-top: -3px !important;
+    }
+    .hide {
+      display: inline;
     }
   }
 }
@@ -276,10 +494,73 @@ body {
       left: -9px !important;
       .arrow-part {
         &:before {
-          left: -4.5% !important;
+          left: -14.5% !important;
           top: 0.6vw !important;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 358px) {
+  .act-content .table-1 {
+    display: none !important;
+  }
+  .act-content .table-2 {
+    display: flex !important;
+    border-collapse: collapse;
+    width: 113%;
+    th {
+      height: clamp(20px, 4vw, 40px);
+      text-align: left;
+      font-weight: normal;
+      width: 120px;
+    }
+    .arrow-part {
+      &:before {
+        left: -12% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .section {
+      top: 7px;
+    }
+    .try-content {
+      padding-left: clamp(8px, 4vw, 11px);
+      ul {
+        margin-left: 10.1%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper {
+    .see-bullets {
+      margin-left: 1.1em;
+    }
+    .section {
+      left: -27px !important;
+      top: 5px !important;
+    }
+    .try-content {
+      padding-left: clamp(8px, 4vw, 11px);
+      ul {
+        margin-left: 2em;
+      }
+    }
+    .section.words {
+      left: -27px !important;
+    }
+    .words-phrase-content {
+      margin-top: 93px;
+    }
+    .words-phrase-content .pointers {
+      padding-right: 5px;
+    }
+    .arrow-part {
+      padding-left: 10px !important;
     }
   }
 }

@@ -618,3 +618,13 @@ body {
     padding-left: 10px !important;
   }
 }
+
+.html-lesson-wrapper .lesson-number {
+  left: clamp(91.8%, 93vw, 91%) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content {
+    margin-top: 33% !important;
+  }
+}

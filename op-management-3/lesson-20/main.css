@@ -618,3 +618,7 @@ body {
     padding-left: 10px !important;
   }
 }
+
+.html-lesson-wrapper .lesson-number {
+  left: clamp(91.8%, 93vw, 91%);
+}

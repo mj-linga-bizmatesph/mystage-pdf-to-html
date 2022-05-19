@@ -618,3 +618,13 @@ body {
     padding-left: 10px !important;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  .act-content .tbl-container {
+    width: 95%;
+    overflow-x: auto !important;
+  }
+  .act-content .tbl-container .content-table {
+    width: 190% !important;
+  }
+}

@@ -154,17 +154,20 @@ body {
     padding-left: clamp(32px, 6vw, 47px);
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
+    .biz-tip {
+      width: clamp(20px, 8vw, 52px);
+      line-height: 20px;
+    }
     .section {
       margin-left: $left-pixel;
       margin-top: clamp(12px, 2.8vw, 21px) !important;
     }
     .pointers {
-      margin-top: clamp(14px, 2.8vw, 20px) !important;
+      margin-top: clamp(18px, 3.5vw, 22px) !important;
       margin-left: $left-pixel;
       .text-header {
         position: relative;
         left: -17px;
-        margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
         padding-left: 7px;

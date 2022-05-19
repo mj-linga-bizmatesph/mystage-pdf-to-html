@@ -183,20 +183,24 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 
+.html-lesson-wrapper .words-phrase-content .biz-tip {
+  width: clamp(20px, 8vw, 52px);
+  line-height: 20px;
+}
+
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   margin-top: clamp(12px, 2.8vw, 21px) !important;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {
-  margin-top: clamp(14px, 2.8vw, 20px) !important;
+  margin-top: clamp(18px, 3.5vw, 22px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
   position: relative;
   left: -17px;
-  margin-bottom: clamp(6px, 1vw, 10px);
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {

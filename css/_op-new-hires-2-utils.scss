@@ -309,6 +309,48 @@ body {
         margin-top: clamp(-2px, -1vw, -3px);
         margin-right: 1em;
       }
+      .header-text-2 {
+        font-family: $helvetica;
+        font-size: clamp(12px, 2vw, 15px);
+      }
+      .content-text-b {
+        line-height: 150%;
+        margin-left: -3%;
+        font-family: $trebuchet;
+        font-size: clamp(12px, 2vw, 15px);
+
+        @media only screen and (max-width: 800px) {
+          margin-left: -3.3%;
+        }
+        @media only screen and (max-width: 725px) {
+          margin-left: -3.8%;
+        }
+        @media only screen and (max-width: 601px) {
+          margin-left: -5%;
+        }
+        @media only screen and (max-width: 426px) {
+          margin-left: -7%;
+        }
+        @media only screen and (max-width: 376px) {
+          margin-left: -8%;
+        }
+        @media only screen and (max-width: 321px) {
+          margin-left: -9%;
+        }
+      }
+      .mt {
+        margin-top: -2%;
+        @media only screen and (max-width: 391px) {
+          margin-top: -4%;
+        }
+      }
+      .mt-2 {
+        margin-top: -0.8%;
+      }
+      .see-text-content {
+        font-size: clamp(12px, 2vw, 15px);
+        font-family: $trebuchet;
+      }
       &.see {
         .dialogue {
           display: flex;
@@ -454,7 +496,7 @@ body {
   }
   .rts {
     font-size: clamp(12px, 2vw, 15px);
-    color: red;
+    color: black;
     margin-top: 0%;
     margin-bottom: 0%;
   }
@@ -464,5 +506,10 @@ body {
   .act-text {
     font-size: clamp(12px, 2vw, 15px);
     max-width: 72%;
+    margin-top: 0%;
+    font-family: $trebuchet;
+    @media only screen and (max-width: 550px) {
+      max-width: 90%;
+    }
   }
 }

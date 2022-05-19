@@ -1,0 +1,99 @@
+@import '../../css/op-new-hires-2-utils';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .biz-tip-content {
+    ul {
+      li {
+        ul {
+          li {
+            list-style: none;
+            div {
+              display: flex;
+              max-width: 350px;
+              .container-img {
+                margin-left: 19.5%;
+                @media only screen and (max-width: 429px) {
+                  margin-left: 20% !important;
+                }
+                @media only screen and (max-width: 391px) {
+                  margin-left: 23% !important;
+                }
+                @media only screen and (max-width: 361px) {
+                  margin-left: 24.5% !important;
+                }
+                @media only screen and (max-width: 321px) {
+                  margin-left: 28.5% !important;
+                }
+                .bracket-img {
+                  background-image: url(#{$s3}/L7-bracket.svg);
+                  height: 9px;
+                  width: 25px;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  margin-left: 3.5px;
+
+                  @media only screen and (max-width: 429px) {
+                    width: 20px !important;
+                  }
+                  @media only screen and (max-width: 391px) {
+                    width: 20px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.try-content {
+  display: flex;
+  column-gap: 5%;
+  ol {
+    font-size: clamp(12px, 2vw, 15px);
+    list-style-type: none;
+
+    li {
+      margin-left: -28.5% !important;
+    }
+  }
+}
+.table-container {
+  width: 91%;
+  @media only screen and (max-width: 460px) {
+    overflow-x: scroll;
+  }
+  .content-table {
+    border-collapse: collapse;
+    font-size: clamp(12px, 2vw, 15px);
+    width: 100%;
+    @media only screen and (max-width: 460px) {
+      width: 105% !important;
+    }
+    @media only screen and (max-width: 360px) {
+      width: 150% !important;
+    }
+    .table-header {
+      background-color: #bd3762;
+      color: white;
+      text-align: center;
+      vertical-align: top;
+      width: 20% !important;
+    }
+    td,
+    th {
+      border: 2px solid rgb(211, 211, 211);
+      text-align: right;
+      height: 25px;
+    }
+    .al {
+      text-align: left;
+    }
+  }
+}

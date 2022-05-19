@@ -698,3 +698,127 @@ body {
     padding-bottom: 0;
   }
 }
+
+.html-lesson-wrapper .biz-tip-content ul li ul li {
+  list-style: none;
+}
+
+.html-lesson-wrapper .biz-tip-content ul li ul li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 350px;
+}
+
+.html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+  margin-left: 19.5%;
+}
+
+@media only screen and (max-width: 429px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+    margin-left: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+    margin-left: 23% !important;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+    margin-left: 24.5% !important;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+    margin-left: 28.5% !important;
+  }
+}
+
+.html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/L7-bracket.svg);
+  height: 9px;
+  width: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 3.5px;
+}
+
+@media only screen and (max-width: 429px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
+    width: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
+    width: 20px !important;
+  }
+}
+
+.try-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+}
+
+.try-content ol {
+  font-size: clamp(12px, 2vw, 15px);
+  list-style-type: none;
+}
+
+.try-content ol li {
+  margin-left: -28.5% !important;
+}
+
+.table-container {
+  width: 91%;
+}
+
+@media only screen and (max-width: 460px) {
+  .table-container {
+    overflow-x: scroll;
+  }
+}
+
+.table-container .content-table {
+  border-collapse: collapse;
+  font-size: clamp(12px, 2vw, 15px);
+  width: 100%;
+}
+
+@media only screen and (max-width: 460px) {
+  .table-container .content-table {
+    width: 105% !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .table-container .content-table {
+    width: 150% !important;
+  }
+}
+
+.table-container .content-table .table-header {
+  background-color: #bd3762;
+  color: white;
+  text-align: center;
+  vertical-align: top;
+  width: 20% !important;
+}
+
+.table-container .content-table td,
+.table-container .content-table th {
+  border: 2px solid lightgray;
+  text-align: right;
+  height: 25px;
+}
+
+.table-container .content-table .al {
+  text-align: left;
+}

@@ -698,3 +698,50 @@ body {
     padding-bottom: 0;
   }
 }
+
+.html-lesson-wrapper ol {
+  font-size: clamp(12px, 2vw, 15px);
+}
+
+.html-lesson-wrapper ol li {
+  list-style: '\25FC';
+  margin-left: -4%;
+}
+
+@media only screen and (max-width: 801px) {
+  .html-lesson-wrapper ol li {
+    margin-left: -5%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .html-lesson-wrapper ol li {
+    margin-left: -6.8%;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .html-lesson-wrapper ol li {
+    margin-left: -10%;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .html-lesson-wrapper ol li {
+    margin-left: -11%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .html-lesson-wrapper ol li {
+    margin-left: -14%;
+  }
+}
+
+.html-lesson-wrapper .ns {
+  margin-top: -2%;
+}
+
+.html-lesson-wrapper .spacer-2 {
+  margin-bottom: 24%;
+}

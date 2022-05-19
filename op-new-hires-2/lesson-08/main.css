@@ -698,3 +698,48 @@ body {
     padding-bottom: 0;
   }
 }
+
+.html-lesson-wrapper .act-text {
+  width: 265px;
+}
+
+@media only screen and (max-width: 550px) {
+  .html-lesson-wrapper .content-div .act-text {
+    max-width: 80% !important;
+  }
+}
+
+.html-lesson-wrapper .content-div .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 466px) {
+  .html-lesson-wrapper .content-div .content-container {
+    display: inline-block;
+  }
+}
+
+.html-lesson-wrapper .content-div .content-container .img-graph {
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/L8-graph.svg);
+  width: 250px;
+  height: 200px;
+  background-size: cover;
+  margin-top: -30px;
+  margin-left: -50px;
+}
+
+@media only screen and (max-width: 601px) {
+  .html-lesson-wrapper .content-div .content-container .img-graph {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .html-lesson-wrapper .content-div .content-container .img-graph {
+    margin-top: 8%;
+    margin-left: 5%;
+  }
+}

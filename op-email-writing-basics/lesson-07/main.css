@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -26,20 +27,17 @@ body::after {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper {
     min-height: 800px;
   }
 }
-
 .html-lesson-wrapper header {
   top: 0;
   margin-bottom: clamp(50px, 15vw, 65px);
   margin-top: -3%;
   position: relative;
 }
-
 .html-lesson-wrapper footer {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(5px, 1.5vw, 10px);
@@ -49,13 +47,11 @@ body::after {
   padding-right: 10%;
   bottom: -20px;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper footer {
     bottom: -45px;
   }
 }
-
 .html-lesson-wrapper footer .footer-text {
   text-align: right;
   position: absolute;
@@ -63,104 +59,82 @@ body::after {
   width: 100%;
   right: 2%;
 }
-
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper footer .footer-text {
     max-width: 156px;
   }
 }
-
 .html-lesson-wrapper .img-responsive-clamp {
   max-width: clamp(44%, 25vw, 100%);
 }
-
 .html-lesson-wrapper .inline-block {
   display: inline-block;
 }
-
 .html-lesson-wrapper .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .html-lesson-wrapper .flex-right {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
-
 .html-lesson-wrapper .flex-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .html-lesson-wrapper .flex-vertical-middle {
   justify-items: center;
 }
-
 .html-lesson-wrapper .flex-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .html-lesson-wrapper .mt-2 {
   margin-top: 1rem;
 }
-
 .html-lesson-wrapper .mt-4 {
   margin-top: 2rem;
 }
-
 .html-lesson-wrapper .mt-5 {
   margin-top: 2.5rem;
 }
-
 .html-lesson-wrapper .mt-7 {
   margin-top: 3.5rem;
 }
-
 .html-lesson-wrapper .mt-8 {
   margin-top: 4rem;
 }
-
 .html-lesson-wrapper .pb-1 {
   padding-bottom: 0.25rem;
 }
-
 .html-lesson-wrapper .gray-text, .html-lesson-wrapper .jp {
   color: #9fa0a0;
 }
-
 .html-lesson-wrapper .white-text {
   color: #fff;
 }
-
 .html-lesson-wrapper .text-center {
   text-align: center !important;
 }
-
 .html-lesson-wrapper .text-middle {
   vertical-align: middle !important;
 }
-
 .html-lesson-wrapper .flip-horizontal {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 .html-lesson-wrapper .middle-dot {
   font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
 }
-
-.html-lesson-wrapper [class*='col-'] {
+.html-lesson-wrapper [class*=col-] {
   width: 100%;
 }
-
 @media only screen and (min-width: 768px) {
   .html-lesson-wrapper .col-1 {
     width: 8.33%;
@@ -199,38 +173,31 @@ body::after {
     width: 100%;
   }
 }
-
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-
 .html-lesson-wrapper .b {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .u-blue {
   text-decoration: underline;
   color: #1287cd;
 }
-
 .html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
-
 .html-lesson-wrapper .program-rank {
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
   margin-left: clamp(10px, 4vw, 60px);
 }
-
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #bd3762;
   font-size: clamp(8px, 1.8vw, 15px);
   font-family: "Helvetica", "Arial", sans-serif;
 }
-
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4.4vw, 25px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   font-size: clamp(8px, 1.8vw, 15px);
@@ -239,14 +206,12 @@ body::after {
   margin-left: -2%;
   font-family: "Helvetica", "Arial", sans-serif;
 }
-
 .html-lesson-wrapper .program-rank .separator {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
   display: inline;
   margin: 0 6px;
 }
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 6.4%;
@@ -257,7 +222,6 @@ body::after {
   color: #ffffff;
   font-weight: bold;
 }
-
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 7%;
@@ -266,11 +230,9 @@ body::after {
     right: 7.4% !important;
   }
 }
-
 .html-lesson-wrapper .lesson-number.two {
   right: 6.9%;
 }
-
 .html-lesson-wrapper .header-content {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
@@ -280,7 +242,6 @@ body::after {
           box-sizing: content-box;
   margin-top: clamp(10px, 3vw, 25px);
 }
-
 .html-lesson-wrapper .header-content .title {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(18px, 4vw, 27px);
@@ -289,14 +250,12 @@ body::after {
   padding-top: 2%;
   padding-bottom: 7%;
 }
-
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .header-content .title {
     padding-top: 4%;
     padding-bottom: 3%;
   }
 }
-
 .html-lesson-wrapper .header-content .biz-tips {
   background-color: #f0d4d4;
   min-height: 140px;
@@ -309,7 +268,6 @@ body::after {
           justify-content: flex-start;
   margin-bottom: 5rem;
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
   width: 13%;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -319,7 +277,6 @@ body::after {
   margin-top: clamp(10px, 3vw, 20px);
   padding-left: clamp(10px, 4vw, 60px);
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
   font-family: "Trebuchet MS";
   width: 75%;
@@ -327,51 +284,41 @@ body::after {
   margin-top: clamp(10px, 3vw, 20px);
   padding-right: clamp(15px, 14vw, 175px);
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
   width: 106%;
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul {
   margin: 0;
   padding: 0;
-  list-style-type: '\25BC';
+  list-style-type: "▼";
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   list-style-position: inside;
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 1em;
   padding-left: 0.5em;
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
-  content: '';
+  content: "";
   display: block;
   width: 0.5em;
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::marker {
   font-size: clamp(11px, 2vw, 13px);
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .grid-section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   grid-gap: 5%;
 }
-
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .grid-section .formal-bold,
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .grid-section .casual-bold {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .content-item {
   padding-top: clamp(10px, 1vw, 20px);
   padding-right: clamp(10px, 3vw, 25px);
@@ -388,18 +335,15 @@ body::after {
           align-items: flex-start;
   width: 100%;
 }
-
 .html-lesson-wrapper .content-item .content-label {
   width: 15%;
   color: #cc3366;
 }
-
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .content-item .content-label {
     width: 11% !important;
   }
 }
-
 .html-lesson-wrapper .content-item .content-label .content-label-text {
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -407,17 +351,14 @@ body::after {
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 60px);
 }
-
 .html-lesson-wrapper .content-item.review .content-label {
   width: 17%;
 }
-
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .content-item.review .content-label {
     width: 19% !important;
   }
 }
-
 .html-lesson-wrapper .content-item .content-div {
   width: 89%;
   margin-bottom: 15px;
@@ -425,7 +366,6 @@ body::after {
           box-sizing: content-box;
   padding-left: clamp(10px, 3vw, 25px);
 }
-
 .html-lesson-wrapper .content-item .content-div .header-text {
   margin: 0;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -433,12 +373,9 @@ body::after {
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
-
 .html-lesson-wrapper .content-item .content-div .header-text-1 {
   margin: 0;
   width: 150%;
@@ -447,12 +384,9 @@ body::after {
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
-
 .html-lesson-wrapper .content-item .content-div .header-text-2 {
   margin: 0;
   width: 166%;
@@ -461,32 +395,24 @@ body::after {
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   grid-gap: 3px;
 }
-
 .html-lesson-wrapper .content-item .content-div .grid-section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
-
 .html-lesson-wrapper .content-item .content-div .grid-section .left-section .message {
-  border: 4px solid #d2d1d1;
+  border: 4px solid rgb(210, 209, 209);
   border-radius: 3px;
   padding-left: 8px;
 }
-
 .html-lesson-wrapper .content-item .content-div .grid-section .right-section .message {
-  border: 4px solid #d2d1d1;
+  border: 4px solid rgb(210, 209, 209);
   border-radius: 3px;
   padding-left: 8px;
 }
-
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,16 +420,13 @@ body::after {
   font-size: clamp(12px, 3vw, 15px);
   line-height: clamp(19px, 3vw, 24px);
 }
-
 .html-lesson-wrapper .content-item .content-div.see .dialogue .speaker {
   width: 12%;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
   width: 88%;
 }
-
 .html-lesson-wrapper .content-item .content-div.see .dialogue-spacer {
   width: 100%;
   text-align: center;
@@ -511,43 +434,36 @@ body::after {
   font-size: clamp(12px, 3vw, 16px);
   line-height: clamp(14px, 3vw, 28px);
 }
-
 .html-lesson-wrapper .content-item .content-div.try .content-table {
   font-size: clamp(12px, 3vw, 16px);
   width: 100%;
   border-collapse: collapse;
 }
-
 .html-lesson-wrapper .content-item .content-div.try .content-table .table-header {
   width: 20%;
   color: white;
   background-color: #bd3762;
 }
-
 .html-lesson-wrapper .content-item .content-div.try .content-table .table-header-1 {
   width: 60%;
   color: white;
   background-color: #bd3762;
 }
-
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 2px solid #d9d9d9;
   padding: 0.5%;
   vertical-align: baseline;
 }
-
 .html-lesson-wrapper .content-item .content-div.try .example-gray {
   font-family: "Trebuchet MS";
   color: #7f7f7f;
   margin-top: clamp(5px, 2vw, 10px);
   font-size: clamp(12px, 3vw, 15px);
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 {
   padding-right: clamp(15px, 7vw, 55px);
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box {
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 3vw, 15px);
@@ -556,48 +472,40 @@ body::after {
   border: 5px solid #d9d9d9;
   margin-bottom: 2%;
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box p {
   margin: 0;
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul {
   margin: 0;
   padding: 0;
-  list-style-type: '\25BC';
+  list-style-type: "▼";
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   list-style-position: inside;
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 1em;
   padding-left: 0.5em;
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::before {
-  content: '';
+  content: "";
   display: block;
   width: 0.5em;
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::marker {
   font-size: clamp(11px, 2vw, 13px);
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-2 {
   padding-right: clamp(15px, 7vw, 55px);
 }
-
 .html-lesson-wrapper .content-item .content-div.review-part-2 p.part-2-content {
   margin: 0;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 3vw, 16px);
   line-height: clamp(12px, 4vw, 25px);
 }
-
 .html-lesson-wrapper .content-item-divider {
   width: 100%;
   text-align: center;
@@ -605,18 +513,15 @@ body::after {
   margin-top: clamp(10px, 2vw, 20px);
   margin-bottom: clamp(15px, 3vw, 25px);
 }
-
 .html-lesson-wrapper .content-item-divider::after {
-  content: '\25BC\25BC\25BC';
+  content: "▼▼▼";
 }
 
 .act-spacer {
   padding-bottom: 10rem;
 }
-
 @media only screen and (max-width: 767px) {
   .act-spacer {
     padding-bottom: 0;
   }
 }
-/*# sourceMappingURL=main.css.map */

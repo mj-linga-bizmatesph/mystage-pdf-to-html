@@ -1,19 +1,19 @@
 @import '../../css/op-management-3-utils';
 .act-content {
-    .tbl-container {
-      @media only screen and (max-width: 360px) {
-        width: 95%;
-        overflow-x: auto !important;
-        .content-table {
-          width: 190% !important;
-        }
+  .tbl-container {
+    @media only screen and (max-width: 360px) {
+      width: 95%;
+      overflow-x: auto !important;
+      .content-table {
+        width: 190% !important;
       }
     }
   }
-  .html-lesson-wrapper .lesson-number {
-    left: clamp(91.8%, 93vw, 91%) !important;
-  }
-  .html-lesson-wrapper .act-content p {
-    margin-block-end: 0em !important;
-    margin-block-start: 0em !important;
+}
+.html-lesson-wrapper .lesson-number {
+  left: clamp(91.8%, 93vw, 91%) !important;
+}
+.html-lesson-wrapper .act-content p {
+  margin-block-end: 0em !important;
+  margin-block-start: 0em !important;
 }

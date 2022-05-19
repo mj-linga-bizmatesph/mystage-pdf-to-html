@@ -153,6 +153,7 @@ body {
     .see-margin {
       p {
         margin-block-start: 0em;
+        margin-block-end: 1em !important;
       }
       line-height: 1.8;
       ul {
@@ -237,11 +238,17 @@ body {
           background-color: $primary-pink;
         }
         .table-header1 {
-          width: 16%;
+          width: 32%;
           color: white;
           background-color: $primary-pink;
         }
         .table-header2 {
+          width: 15%;
+          color: white;
+          background-color: $primary-pink;
+        }
+        .table-header3 {
+          width: 20%;
           color: white;
           background-color: $primary-pink;
         }
@@ -312,6 +319,7 @@ body {
   }
   .review-content {
     margin-top: 25%;
+    padding-bottom: 10%;
     .sub-text {
       line-height: 1.8em;
     }
@@ -344,7 +352,10 @@ body {
       position: absolute;
       bottom: 0;
       max-width: 45%;
-      right: 2%;
+      right: 5%;
+      @media screen and (max-width: 900px){
+        right: 2%;
+      }
     }
   }
   .inline-block {

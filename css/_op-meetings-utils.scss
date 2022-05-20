@@ -284,6 +284,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
         color: white;
         background-color: $magenta !important;
         padding: 0.3vw 0.2vw;
+        padding-left: 6px !important;
       }
     }
     table {
@@ -336,7 +337,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
         p {
           margin: 0;
           line-height: 1.8em;
-          top: -0.3em;
+          top: 0.1em;
           position: relative;
         }
         th,
@@ -355,13 +356,12 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
           padding: 0.5%;
           padding-left: clamp(5px, 1vw, 10px);
           background: #f0d4d4;
-          vertical-align: top;
+          vertical-align: middle;
           width: 40px;
         }
         .row {
           display: flex;
           width: 100%;
-          margin-bottom: clamp(2px, 1vw, 7px);
         }
       }
     }
@@ -600,6 +600,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
         grid-template-columns: 1% 1fr;
         grid-gap: clamp(1rem, 1.5vw, 2.1rem);
         margin: 12.5px 0px;
+
+        &:first-child {
+          margin-top: 0 !important;
+        }
 
         div:not(:last-child) {
           margin-bottom: clamp(0.1rem, 1vw, 0.4rem);

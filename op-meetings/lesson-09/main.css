@@ -287,6 +287,7 @@ body {
   color: white;
   background-color: #cc3366 !important;
   padding: 0.3vw 0.2vw;
+  padding-left: 6px !important;
 }
 
 .html-lesson-wrapper .see-content table {
@@ -346,7 +347,7 @@ body {
 .html-lesson-wrapper .see-content .see-sub-content table p {
   margin: 0;
   line-height: 1.8em;
-  top: -0.3em;
+  top: 0.1em;
   position: relative;
 }
 
@@ -366,7 +367,7 @@ body {
   padding: 0.5%;
   padding-left: clamp(5px, 1vw, 10px);
   background: #f0d4d4;
-  vertical-align: top;
+  vertical-align: middle;
   width: 40px;
 }
 
@@ -375,7 +376,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: clamp(2px, 1vw, 7px);
 }
 
 .html-lesson-wrapper .see-content .see-border-box {
@@ -629,6 +629,10 @@ body {
       grid-template-columns: 1% 1fr;
   grid-gap: clamp(1rem, 1.5vw, 2.1rem);
   margin: 12.5px 0px;
+}
+
+.html-lesson-wrapper .part-content ol.numbers li:first-child {
+  margin-top: 0 !important;
 }
 
 .html-lesson-wrapper .part-content ol.numbers li div:not(:last-child) {

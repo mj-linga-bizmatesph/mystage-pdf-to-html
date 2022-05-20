@@ -883,3 +883,12 @@ body {
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
 }
+
+.try-content p {
+  line-height: 0.4em !important;
+  margin-bottom: clamp(5px, 1vw, 7px);
+}
+
+.try-content .second {
+  margin-left: 5px;
+}

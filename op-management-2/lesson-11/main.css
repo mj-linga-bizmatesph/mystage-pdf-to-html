@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: clamp(3em, 12vw, 9em);
-  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-level2.svg");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg");
   background-position: top, clamp(-15px, -2vw, -8px) bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -63,12 +63,23 @@ body {
 }
 
 .html-lesson-wrapper .paper:not(:last-child) {
-  margin-bottom: 3%;
+  margin-bottom: 1.8em;
 }
 
 .html-lesson-wrapper .paper p {
   margin: 0;
-  line-height: 1.8em;
+}
+
+.html-lesson-wrapper .paper p:not(:last-child) {
+  margin-bottom: 1.8em;
+}
+
+.html-lesson-wrapper .paper .mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.html-lesson-wrapper .paper .mb-1_8em {
+  margin-bottom: 1.8em !important;
 }
 
 .html-lesson-wrapper .paper .arrow-part {
@@ -93,8 +104,7 @@ body {
 .html-lesson-wrapper .program-rank .level {
   margin-left: -1.1%;
   padding: 0.7% 3% 0.7% 3%;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #cdca23), to(#db8536));
-  background-image: linear-gradient(to right, #cdca23 25%, #db8536);
+  background-color: #339999;
 }
 
 .html-lesson-wrapper .line {
@@ -107,6 +117,7 @@ body {
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
   width: 90%;
+  text-transform: uppercase;
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
@@ -175,11 +186,6 @@ body {
   line-height: clamp(12px, 3vw, 26px);
 }
 
-.html-lesson-wrapper ul li {
-  padding-left: 0.5em;
-  padding-bottom: 1.5%;
-}
-
 .html-lesson-wrapper .see-content,
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content,
@@ -202,6 +208,31 @@ body {
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
+  line-height: 1.8em;
+}
+
+.html-lesson-wrapper .biz-tip-content .arrow-part {
+  position: relative;
+  margin-left: 1.5em;
+}
+
+.html-lesson-wrapper .biz-tip-content .arrow-part:before {
+  content: '';
+  position: absolute;
+  left: -1.5em;
+  top: 0.65em;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid black;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.html-lesson-wrapper .biz-tip-content .arrow-part span {
+  color: #cc3366;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .biz-tip-content .section {
@@ -214,45 +245,56 @@ body {
 
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 12%;
   padding-right: 1.5em;
 }
 
-.html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  margin-left: -1.8em;
+.html-lesson-wrapper .biz-tip-content .grid {
+  display: -ms-grid;
+  display: grid;
 }
 
-.html-lesson-wrapper .arrow-part {
-  position: relative;
+.html-lesson-wrapper .biz-tip-content .grid-cols-2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
 
-.html-lesson-wrapper .arrow-part:before {
-  content: '';
-  position: absolute;
-  left: -1.5em;
-  top: 0.6em;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 8px solid black;
-  display: inline-block;
-  vertical-align: middle;
+.html-lesson-wrapper .biz-tip-content .grid-cols-2 .arrow-part {
+  margin-left: 1.8em;
 }
 
-.html-lesson-wrapper .arrow-part span {
-  color: #cc3366;
-  font-weight: bold;
+.html-lesson-wrapper .biz-tip-content p {
+  margin: 0;
 }
 
 .html-lesson-wrapper .see-content {
   margin-top: 36px;
 }
 
+.html-lesson-wrapper .see-content ul {
+  margin: 0;
+  margin-left: 1.2em;
+  text-indent: -1em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .see-content ul li {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+}
+
+.html-lesson-wrapper .see-content ul li::before {
+  content: '';
+  width: 1em;
+  display: inline-block;
+}
+
 .html-lesson-wrapper .see-content ol {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1em;
+  margin-left: 1.2em;
   text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
@@ -292,7 +334,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content table p:not(:last-child) {
-  margin-bottom: 5%;
+  margin-bottom: 1.8em;
 }
 
 .html-lesson-wrapper .see-content table td {
@@ -304,6 +346,10 @@ body {
 .html-lesson-wrapper .see-content table td:first-child {
   padding-right: 1em;
   width: 10%;
+}
+
+.html-lesson-wrapper .see-content table:not(:last-child) {
+  margin-bottom: 1.8em;
 }
 
 .html-lesson-wrapper .try-content ol {
@@ -325,6 +371,10 @@ body {
   content: '';
   width: 1em;
   display: inline-block;
+}
+
+.html-lesson-wrapper .try-content ol .alphabet {
+  margin-left: 2.3em;
 }
 
 .html-lesson-wrapper .try-content table {
@@ -369,6 +419,31 @@ body {
   height: fit-content;
 }
 
+.html-lesson-wrapper .act-content ol {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1em;
+  text-indent: -1em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .act-content ol li {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+  line-height: 1.8em;
+}
+
+.html-lesson-wrapper .act-content ol li::before {
+  content: '';
+  width: 1em;
+  display: inline-block;
+}
+
+.html-lesson-wrapper .alphabet {
+  list-style-type: lower-alpha !important;
+}
+
 .html-lesson-wrapper .review-content {
   margin-top: 28%;
 }
@@ -392,10 +467,16 @@ body {
   line-height: 1.8em;
 }
 
-.html-lesson-wrapper .review-content ol li::before {
-  content: '';
-  margin-left: -0.33em;
-  display: inline-block;
+.html-lesson-wrapper .review-content ol li p {
+  margin: 0;
+}
+
+.html-lesson-wrapper .review-content ol li p:first-child {
+  font-weight: bold;
+}
+
+.html-lesson-wrapper .review-content ol .alphabet {
+  margin-left: 1.3em;
 }
 
 .html-lesson-wrapper footer {
@@ -423,7 +504,6 @@ body {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    padding-left: clamp(11px, 2.4vw, 18px);
   }
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);

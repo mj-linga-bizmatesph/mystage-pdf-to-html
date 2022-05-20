@@ -214,6 +214,7 @@ body {
     padding-left: clamp(32px, 6vw, 47px);
     background: $magenta-light;
     font-size: clamp(12px, 2vw, 15px);
+    line-height: 1.8em;
 
     .arrow-part {
       position: relative;
@@ -222,7 +223,7 @@ body {
         content: '';
         position: absolute;
         left: -1.5em;
-        top: 0.3em;
+        top: 0.65em;
         width: 0;
         height: 0;
         border-left: 5px solid transparent;
@@ -258,6 +259,7 @@ body {
 
     .grid-cols-2 {
       grid-template-columns: 1fr 1fr;
+      gap: 1em;
 
       .arrow-part {
         margin-left: 1.8em;

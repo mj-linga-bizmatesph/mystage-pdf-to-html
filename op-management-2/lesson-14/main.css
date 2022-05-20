@@ -208,6 +208,7 @@ body {
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
+  line-height: 1.8em;
 }
 
 .html-lesson-wrapper .biz-tip-content .arrow-part {
@@ -219,7 +220,7 @@ body {
   content: '';
   position: absolute;
   left: -1.5em;
-  top: 0.3em;
+  top: 0.65em;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -256,6 +257,7 @@ body {
 .html-lesson-wrapper .biz-tip-content .grid-cols-2 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
 
 .html-lesson-wrapper .biz-tip-content .grid-cols-2 .arrow-part {

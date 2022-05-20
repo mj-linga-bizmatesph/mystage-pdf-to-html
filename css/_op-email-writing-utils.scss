@@ -400,7 +400,6 @@ $s3: 'http://127.0.0.1:5500/images';
     ol.numbers {
       li::before {
         content: '• ' !important;
-        color: $magenta;
       }
     }
 
@@ -505,11 +504,15 @@ $s3: 'http://127.0.0.1:5500/images';
     display: flex;
     align-items: center;
     padding: 0 10px;
-    height: clamp(15px, 2vw, 22px);
+    min-height: clamp(15px, 2vw, 22px);
   }
   .email-content {
     background: white;
     padding: 5px;
+    font-size: clamp(8px, 2vw, 12px);
+  }
+
+  .text-12 {
     font-size: clamp(8px, 2vw, 12px);
   }
 
@@ -572,8 +575,31 @@ $s3: 'http://127.0.0.1:5500/images';
   }
 
   ol.circle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    counter-reset: orderedlist;
+    font-family: $trebuchet;
+    font-size: clamp(12px, 2vw, 15px);
+
+    &:not(.no-mb) {
+      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
+    }
+
     li::before {
+      counter-increment: orderedlist;
       content: '• ' !important;
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: 0 1fr;
+      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
+
+      div:not(:last-child) {
+        margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
+      }
     }
   }
 
@@ -721,7 +747,7 @@ $s3: 'http://127.0.0.1:5500/images';
     }
 
     .person {
-      width: 9%;
+      width: clamp(3rem, 9%, 4rem);
     }
   }
 

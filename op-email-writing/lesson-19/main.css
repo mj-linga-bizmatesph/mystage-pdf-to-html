@@ -381,7 +381,6 @@ body {
 
 .html-lesson-wrapper .see-content ol.numbers li::before {
   content: '• ' !important;
-  color: #cc3366;
 }
 
 .html-lesson-wrapper .see-content .email-text-settings, .html-lesson-wrapper .see-content .email-lesson-2-1-text, .html-lesson-wrapper .see-content .email-lesson-2-2-text, .html-lesson-wrapper .see-content .email-lesson-2-3-text, .html-lesson-wrapper .see-content .email-lesson-2-4-text, .html-lesson-wrapper .see-content .email-lesson-2-5-text, .html-lesson-wrapper .see-content .email-lesson-2-6-text, .html-lesson-wrapper .see-content .email-lesson-2-7-text {
@@ -489,12 +488,16 @@ body {
   display: flex;
   align-items: center;
   padding: 0 10px;
-  height: clamp(15px, 2vw, 22px);
+  min-height: clamp(15px, 2vw, 22px);
 }
 
 .html-lesson-wrapper .email-content {
   background: white;
   padding: 5px;
+  font-size: clamp(8px, 2vw, 12px);
+}
+
+.html-lesson-wrapper .text-12 {
   font-size: clamp(8px, 2vw, 12px);
 }
 
@@ -556,8 +559,33 @@ body {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
 }
 
+.html-lesson-wrapper ol.circle {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  counter-reset: orderedlist;
+  font-family: "Trebuchet MS";
+  font-size: clamp(12px, 2vw, 15px);
+}
+
+.html-lesson-wrapper ol.circle:not(.no-mb) {
+  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
+}
+
 .html-lesson-wrapper ol.circle li::before {
+  counter-increment: orderedlist;
   content: '• ' !important;
+}
+
+.html-lesson-wrapper ol.circle li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
+}
+
+.html-lesson-wrapper ol.circle li div:not(:last-child) {
+  margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
 }
 
 .html-lesson-wrapper ul.arrow-part-list {
@@ -700,7 +728,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .person {
-  width: 9%;
+  width: clamp(3rem, 9%, 4rem);
 }
 
 .html-lesson-wrapper footer {
@@ -819,5 +847,9 @@ body {
   .html-lesson-wrapper .mv-mt {
     margin-top: clamp(5px, 2vw, 10px) !important;
   }
+}
+
+.biz-tip-content {
+  margin-top: clamp(95px, 18%, 160px) !important;
 }
 /*# sourceMappingURL=main.css.map */

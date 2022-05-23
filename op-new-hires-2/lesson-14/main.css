@@ -699,6 +699,14 @@ body {
   }
 }
 
+.html-lesson-wrapper .biz-tip-content ul {
+  list-style-type: none !important;
+}
+
+.html-lesson-wrapper .biz-tip-content ul li {
+  margin-left: -0.4em !important;
+}
+
 .html-lesson-wrapper .email-window {
   background: #cecece;
   padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);

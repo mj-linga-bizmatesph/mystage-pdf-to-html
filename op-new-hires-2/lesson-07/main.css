@@ -714,6 +714,18 @@ body {
   margin-left: 19.5%;
 }
 
+@media only screen and (max-width: 660px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+    margin-left: 17.5% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
+    margin-left: 16% !important;
+  }
+}
+
 @media only screen and (max-width: 429px) {
   .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img {
     margin-left: 20% !important;
@@ -747,8 +759,23 @@ body {
   margin-left: 3.5px;
 }
 
+@media only screen and (max-width: 660px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
+    height: 7.5px !important;
+    width: 22px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
+    height: 7px !important;
+    width: 19.5px !important;
+  }
+}
+
 @media only screen and (max-width: 429px) {
   .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
+    height: 7.5px !important;
     width: 20px !important;
   }
 }
@@ -756,6 +783,59 @@ body {
 @media only screen and (max-width: 391px) {
   .html-lesson-wrapper .biz-tip-content ul li ul li div .container-img .bracket-img {
     width: 20px !important;
+  }
+}
+
+.html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+  font-size: clamp(6.5px, 1.1vw, 8px);
+  margin-left: 24%;
+}
+
+@media only screen and (max-width: 769px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 25% !important;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 22% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 20.5% !important;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 25.5% !important;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 29.5% !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 31.5% !important;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
+    margin-left: 37% !important;
   }
 }
 

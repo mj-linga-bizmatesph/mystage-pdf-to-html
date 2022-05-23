@@ -9,26 +9,25 @@
   ol {
     font-size: clamp(12px, 2vw, 15px);
     li {
-      list-style: '\25FC';
-      margin-left: -4%;
+      margin-left: -3%;
 
       @media only screen and (max-width: 801px) {
-        margin-left: -5%;
+        margin-left: -3.5%;
       }
       @media only screen and (max-width: 620px) {
-        margin-left: -6.8%;
+        margin-left: -5.5%;
       }
       @media only screen and (max-width: 431px) {
-        margin-left: -10%;
+        margin-left: -8%;
       }
       @media only screen and (max-width: 391px) {
-        margin-left: -11%;
+        margin-left: -9%;
       }
       @media only screen and (max-width: 375px) {
         margin-left: -10%;
       }
       @media only screen and (max-width: 321px) {
-        margin-left: -14%;
+        margin-left: -12%;
       }
     }
   }

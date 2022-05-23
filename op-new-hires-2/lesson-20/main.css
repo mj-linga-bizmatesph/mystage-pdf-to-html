@@ -704,31 +704,30 @@ body {
 }
 
 .html-lesson-wrapper ol li {
-  list-style: '\25FC';
-  margin-left: -4%;
+  margin-left: -3%;
 }
 
 @media only screen and (max-width: 801px) {
   .html-lesson-wrapper ol li {
-    margin-left: -5%;
+    margin-left: -3.5%;
   }
 }
 
 @media only screen and (max-width: 620px) {
   .html-lesson-wrapper ol li {
-    margin-left: -6.8%;
+    margin-left: -5.5%;
   }
 }
 
 @media only screen and (max-width: 431px) {
   .html-lesson-wrapper ol li {
-    margin-left: -10%;
+    margin-left: -8%;
   }
 }
 
 @media only screen and (max-width: 391px) {
   .html-lesson-wrapper ol li {
-    margin-left: -11%;
+    margin-left: -9%;
   }
 }
 
@@ -740,7 +739,7 @@ body {
 
 @media only screen and (max-width: 321px) {
   .html-lesson-wrapper ol li {
-    margin-left: -14%;
+    margin-left: -12%;
   }
 }
 

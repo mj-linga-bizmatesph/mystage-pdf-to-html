@@ -8,11 +8,11 @@
   }
 
   .email-window {
-    background: rgb(206, 206, 206);
+    background: $primary-pink;
     padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);
     display: grid;
     row-gap: clamp(4px, 1vw, 7px);
-    border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
+    border: clamp(2px, 0.5vw, 3px) solid $primary-pink;
   }
   .email-header {
     display: grid;
@@ -28,7 +28,7 @@
 
   .email-header-label-to {
     width: 100%;
-    background: #d8d8d8;
+    background: $primary-pink;
     border-radius: 3px;
     height: clamp(15px, 2vw, 22px);
     place-items: center;

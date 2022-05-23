@@ -17,6 +17,12 @@
               max-width: 350px;
               .container-img {
                 margin-left: 19.5%;
+                @media only screen and (max-width: 660px) {
+                  margin-left: 17.5% !important;
+                }
+                @media only screen and (max-width: 600px){
+                  margin-left: 16% !important;
+                }
                 @media only screen and (max-width: 429px) {
                   margin-left: 20% !important;
                 }
@@ -36,8 +42,16 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   margin-left: 3.5px;
-
+                  @media only screen and (max-width: 660px) {
+                    height: 7.5px !important;
+                    width: 22px !important;
+                  }
+                  @media only screen and (max-width: 600px) {
+                    height: 7px !important;
+                    width: 19.5px !important;
+                  }
                   @media only screen and (max-width: 429px) {
+                    height: 7.5px !important;
                     width: 20px !important;
                   }
                   @media only screen and (max-width: 391px) {
@@ -45,6 +59,35 @@
                   }
                 }
               }
+            }
+          }
+          .text-under {
+            font-size: clamp(6.5px, 1.1vw, 8px);
+            margin-left: 24%;
+
+            @media only screen and (max-width: 769px){
+              margin-left: 25% !important;
+            }
+            @media only screen and (max-width: 660px){
+              margin-left: 22% !important;
+            }
+            @media only screen and (max-width: 600px){
+              margin-left: 20.5% !important;
+            }
+            @media only screen and (max-width: 429px) {
+              margin-left: 25.5% !important;
+            }
+            @media only screen and (max-width: 391px) {
+              margin-left: 29.5% !important;
+            }
+            @media only screen and (max-width: 375px) {
+              margin-left: 30% !important;
+            }
+            @media only screen and (max-width: 361px) {
+              margin-left: 31.5% !important;
+            }
+            @media only screen and (max-width: 321px) {
+              margin-left: 37% !important;
             }
           }
         }

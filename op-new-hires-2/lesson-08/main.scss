@@ -8,9 +8,13 @@
   }
   .act-text {
     width: 265px;
+    @media only screen and (max-width: 631px) {
+      width: 225px !important;
+    }
   }
   .content-div {
     .act-text {
+      max-width: 100% !important;
       @media only screen and (max-width: 550px) {
         max-width: 80% !important;
       }
@@ -26,15 +30,30 @@
         height: 200px;
         background-size: cover;
         margin-top: -30px;
-        margin-left: -50px;
+        margin-left: 130px;
 
-        @media only screen and (max-width: 601px) {
-          width: 200px;
+        @media only screen and (max-width: 810px) {
+          margin-left: 60px !important;
+        }
+        @media only screen and (max-width: 691px) {
+          width: 180px;
           height: 150px;
+          margin-left: 40px !important;
+        }
+        @media only screen and (max-width: 601px) {
+          width: 180px;
+          height: 150px;
+          margin-left: 30px !important;
+        }
+        @media only screen and (max-width: 551px) {
+          margin-left: 0px !important;
+        }
+        @media only screen and (max-width: 501px) {
+          margin-left: -25px !important;
         }
         @media only screen and (max-width: 466px) {
           margin-top: 8%;
-          margin-left: 5%;
+          margin-left: 5% !important;
         }
       }
     }

@@ -94,8 +94,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
   .lesson-number-two {
     @extend .lesson-number;
-
-    left: 91%;
+    left: 91.5%;
+    @media only screen and (max-width: 460px) {
+      left: 91%;
+    }
   }
 
   .row {
@@ -177,7 +179,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-size: clamp(12px, 2vw, 15px);
 
     @media only screen and (max-width: 425px) {
-      width: 12%;
+      width: 11%;
     }
   }
 
@@ -187,6 +189,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     min-width: 75%;
     padding-right: 5%;
     font-size: clamp(12px, 2vw, 15px);
+    @media only screen and (max-width: 460px) {
+      margin-left: clamp(22px, 3.8vw, 36px);
+    }
   }
 
   .biz-tip-content {
@@ -208,6 +213,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
     .pointers {
       margin-top: 3% !important;
+
+      .no-arrow {
+        margin-bottom: clamp(6px, 1vw, 10px);
+      }
     }
   }
 
@@ -293,8 +302,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
       p {
-        margin: 0px 5px;
-        line-height: 1.8em;
+        margin: 8px 5px;
         top: -0.3em;
         position: relative;
 
@@ -376,6 +384,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .dialogue {
       font-size: $fs-10;
       font-family: $trebuchet;
+
+      .row {
+        line-height: 1.8;
+      }
     }
 
     .row {
@@ -585,6 +597,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       counter-reset: orderedlist;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
+      @media only screen and (max-width: 460px) {
+        padding-right: 10px;
+      }
 
       &:not(.no-mb) {
         grid-gap: clamp(0.1rem, 1vw, 0.4rem);
@@ -619,6 +634,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       padding: 0;
       box-sizing: content-box;
       list-style-position: inside;
+      line-height: 1.8em;
+      @media only screen and (max-width: 460px) {
+        padding-right: 5px;
+      }
       li {
         list-style-position: outside;
         text-indent: -1em;
@@ -644,6 +663,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       counter-reset: orderedlist;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
+      line-height: 1.8em;
 
       &:not(.no-mb) {
         grid-gap: clamp(0.1rem, 1vw, 0.4rem);
@@ -670,6 +690,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   }
 
   .try-content {
+    .numbers {
+      line-height: 1.8;
+    }
+
     ul {
       list-style-type: decimal;
     }
@@ -705,6 +729,12 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     height: fit-content;
     font-size: clamp(12px, 2vw, 15px);
 
+    .content {
+      div {
+        line-height: 1.8em;
+      }
+    }
+
     table {
       margin-top: 5px;
       font-size: clamp(12px, 2vw, 15px);
@@ -739,6 +769,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       padding: 0;
       box-sizing: content-box;
       list-style-position: inside;
+      line-height: 1.8;
       li {
         list-style-position: outside;
         text-indent: -1em;
@@ -796,14 +827,15 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       .article {
         margin-bottom: clamp(20px, 3.7vw, 29px);
       }
+      .person {
+        @media screen and (max-width: 900px) {
+          width: clamp(2.2rem, 29%, 5.5rem) !important;
+        }
+      }
     }
     .try-content {
       ul {
         margin-left: clamp(11px, 2.4vw, 18px);
-      }
-
-      li {
-        padding-left: clamp(9px, 1.8vw, 13px);
       }
     }
     .act-content {
@@ -820,6 +852,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .title {
       top: clamp(45px, 8.4vw, 80px);
       left: 5%;
+      right: 5%;
     }
   }
 

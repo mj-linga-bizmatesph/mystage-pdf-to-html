@@ -93,6 +93,7 @@ body {
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
+  padding-left: 5%;
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
@@ -201,6 +202,7 @@ body {
 .html-lesson-wrapper .dialogue {
   font-size: clamp(6.48px, 1.8vw, 10pt);
   font-family: "Trebuchet MS";
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .row {
@@ -509,6 +511,7 @@ body {
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper ol.numbers:not(.no-mb) {
@@ -847,5 +850,9 @@ body {
   .html-lesson-wrapper .mv-mt {
     margin-top: clamp(5px, 2vw, 10px) !important;
   }
+}
+
+.biz-tip-content {
+  margin-top: clamp(95px, 18%, 160px) !important;
 }
 /*# sourceMappingURL=main.css.map */

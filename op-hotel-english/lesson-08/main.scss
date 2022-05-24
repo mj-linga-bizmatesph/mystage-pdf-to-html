@@ -1,1 +1,11 @@
 @import '../../css/_op-hotel-english-utils.scss';
+.html-lesson-wrapper {
+  .words-phrase-content {
+    margin-top: clamp(97px, 19%, 157px);
+  }
+  @media screen and (max-width: 850px) {
+    .hide {
+      display: block;
+    }
+  }
+}

@@ -4,7 +4,7 @@
     margin-bottom: clamp(110px, 30vw, 270px);
   }
   .lesson-number {
-    left: clamp(91%, 91.3vw, 91.7%) !important;
+    left: 91.6% !important;
   }
   .part-content {
     .p1 {
@@ -44,6 +44,17 @@
       line-height: 1.8;
       li {
         margin-bottom: clamp(10px, 2vw, 20px);
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .lesson-number {
+      left: 91.3% !important;
+    }
+    .part-content {
+      .p1,
+      .p2 {
+        letter-spacing: -0.8px;
       }
     }
   }

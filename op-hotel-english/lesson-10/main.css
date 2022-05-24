@@ -172,7 +172,7 @@ body {
 
 .html-lesson-wrapper .words-phrase-content {
   position: relative;
-  margin-top: clamp(87px, 17.6%, 157px);
+  margin-top: clamp(97px, 17%, 157px);
   padding: 2px 0px 0px 47px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -194,13 +194,15 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {
-  margin-top: clamp(18px, 3.5vw, 22px) !important;
+  margin-top: clamp(14px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
   position: relative;
   left: -17px;
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
@@ -212,7 +214,7 @@ body {
   content: '';
   position: absolute;
   left: -16px;
-  top: 4px;
+  top: 8px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -542,7 +544,7 @@ body {
     left: -27px !important;
   }
   .html-lesson-wrapper .words-phrase-content {
-    margin-top: 93px;
+    margin-top: 98px;
   }
   .html-lesson-wrapper .words-phrase-content .pointers {
     padding-right: 5px;
@@ -557,7 +559,7 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
-  left: clamp(91%, 91.3vw, 91.7%) !important;
+  left: 91.6% !important;
 }
 
 .html-lesson-wrapper .part-content {
@@ -606,6 +608,16 @@ body {
 
 .html-lesson-wrapper .part-content ul li {
   margin-bottom: clamp(10px, 2vw, 20px);
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .lesson-number {
+    left: 91.3% !important;
+  }
+  .html-lesson-wrapper .part-content .p1,
+  .html-lesson-wrapper .part-content .p2 {
+    letter-spacing: -0.8px;
+  }
 }
 
 @media screen and (max-width: 900px) {

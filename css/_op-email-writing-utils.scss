@@ -142,7 +142,6 @@ $s3: 'http://127.0.0.1:5500/images';
   .sub-text {
     font-family: $helvetica !important;
     font-size: clamp(12px, 2vw, 15px);
-    line-height: clamp(12px, 2.8vw, 22px);
     font-weight: bold;
     margin: 0 0 0.3rem 0;
   }
@@ -201,6 +200,7 @@ $s3: 'http://127.0.0.1:5500/images';
   .try-content,
   .part-content {
     display: flex;
+    font-size: clamp(12px, 2vw, 15px);
   }
 
   .section {
@@ -519,7 +519,7 @@ $s3: 'http://127.0.0.1:5500/images';
   }
 
   ol.numbers {
-    margin: 0;
+    margin: -4px 0 0;
     padding: 0;
     list-style: none;
     display: grid;

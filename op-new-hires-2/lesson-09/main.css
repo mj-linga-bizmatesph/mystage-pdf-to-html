@@ -479,7 +479,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: clamp(12px, 2vw, 15px);
-  line-height: 1.6;
+  line-height: 1.8;
   margin-right: 1em;
 }
 
@@ -552,7 +552,7 @@ body {
 
 .html-lesson-wrapper .content-item .content-div.try .try-content {
   font-size: clamp(12px, 2vw, 15px);
-  line-height: 25px;
+  line-height: 1.8;
   margin-top: 0%;
 }
 
@@ -681,6 +681,7 @@ body {
   max-width: 72%;
   margin-top: 0%;
   font-family: "Trebuchet MS";
+  line-height: 1.8;
 }
 
 @media only screen and (max-width: 550px) {
@@ -726,7 +727,7 @@ body {
 
 .html-lesson-wrapper .email-header-label-to {
   width: 100%;
-  background: #bd3762;
+  background: #d9d9d9;
   border-radius: 3px;
   height: clamp(15px, 2vw, 22px);
   place-items: center;

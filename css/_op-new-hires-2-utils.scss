@@ -355,7 +355,7 @@ body {
         .dialogue {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
-          line-height: 1.6;
+          line-height: 1.8;
           margin-right: 1em;
           .speaker {
             width: 12%;
@@ -404,7 +404,7 @@ body {
       &.try {
         .try-content {
           font-size: clamp(12px, 2vw, 15px);
-          line-height: 25px;
+          line-height: 1.8;
           margin-top: 0%;
           ol {
             li {
@@ -508,6 +508,7 @@ body {
     max-width: 72%;
     margin-top: 0%;
     font-family: $trebuchet;
+    line-height: 1.8;
     @media only screen and (max-width: 550px) {
       max-width: 90%;
     }

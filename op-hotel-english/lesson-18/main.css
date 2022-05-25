@@ -172,7 +172,7 @@ body {
 
 .html-lesson-wrapper .words-phrase-content {
   position: relative;
-  margin-top: clamp(97px, 17%, 157px);
+  margin-top: clamp(90px, 17.6%, 157px);
   padding: 2px 0px 0px 47px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -194,15 +194,14 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {
-  margin-top: clamp(14px, 2.8vw, 20px) !important;
+  margin-top: clamp(18px, 2.9vw, 22px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
-  line-height: 1.8;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
   position: relative;
   left: -17px;
-  line-height: 1.8;
+  margin-bottom: clamp(6px, 1vw, 10px);
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
@@ -214,7 +213,7 @@ body {
   content: '';
   position: absolute;
   left: -16px;
-  top: 8px;
+  top: 4px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;

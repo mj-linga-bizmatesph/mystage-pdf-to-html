@@ -147,7 +147,7 @@ body {
   }
   .words-phrase-content {
     position: relative;
-    margin-top: clamp(97px, 17%, 157px);
+    margin-top: clamp(90px, 17.6%, 157px);
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
@@ -163,13 +163,12 @@ body {
       margin-top: clamp(12px, 2.8vw, 21px) !important;
     }
     .pointers {
-      margin-top: clamp(14px, 2.8vw, 20px) !important;
+      margin-top: clamp(18px, 2.9vw, 22px) !important;
       margin-left: $left-pixel;
-      line-height: 1.8;
       .text-header {
         position: relative;
         left: -17px;
-        line-height: 1.8;
+        margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
         padding-left: 7px;
@@ -178,7 +177,7 @@ body {
           content: '';
           position: absolute;
           left: -16px;
-          top: 8px;
+          top: 4px;
           width: 0;
           height: 0;
           border-left: 5px solid transparent;

@@ -711,6 +711,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 466px) {
+  .html-lesson-wrapper .act-text {
+    width: 110% !important;
+  }
+}
+
 .html-lesson-wrapper .content-div .act-text {
   max-width: 100% !important;
 }

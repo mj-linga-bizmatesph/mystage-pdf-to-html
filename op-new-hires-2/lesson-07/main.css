@@ -859,10 +859,10 @@ body {
 }
 
 .table-container {
-  width: 91%;
+  width: 95%;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   .table-container {
     overflow-x: scroll;
   }
@@ -874,15 +874,21 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 800px) {
   .table-container .content-table {
     width: 105% !important;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 500px) {
   .table-container .content-table {
     width: 150% !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .table-container .content-table {
+    width: 180% !important;
   }
 }
 
@@ -891,7 +897,25 @@ body {
   color: white;
   text-align: center;
   vertical-align: top;
-  width: 20% !important;
+  width: 16.67%;
+}
+
+@media only screen and (max-width: 800px) {
+  .table-container .content-table .table-header {
+    width: 14% !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .table-container .content-table .table-header {
+    width: 11% !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .table-container .content-table .table-header {
+    width: 14% !important;
+  }
 }
 
 .table-container .content-table td,

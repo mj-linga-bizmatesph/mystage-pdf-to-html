@@ -108,26 +108,38 @@
   }
 }
 .table-container {
-  width: 91%;
-  @media only screen and (max-width: 460px) {
+  width: 95%;
+  @media only screen and (max-width: 500px) {
     overflow-x: scroll;
   }
   .content-table {
     border-collapse: collapse;
     font-size: clamp(12px, 2vw, 15px);
     width: 100%;
-    @media only screen and (max-width: 460px) {
+    @media only screen and (max-width: 800px) {
       width: 105% !important;
     }
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 500px) {
       width: 150% !important;
+    }
+    @media only screen and (max-width: 360px) {
+      width: 180% !important;
     }
     .table-header {
       background-color: #bd3762;
       color: white;
       text-align: center;
       vertical-align: top;
-      width: 20% !important;
+      width: 16.67%;
+      @media only screen and (max-width: 800px) {
+        width: 14% !important;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 11% !important;
+      }
+      @media only screen and (max-width: 360px) {
+        width: 14% !important;
+      }
     }
     td,
     th {

@@ -253,6 +253,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .html-lesson-wrapper .header-content .title {
+    padding-top: 3% !important;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .html-lesson-wrapper .header-content .title {
+    padding-top: 1% !important;
+  }
+}
+
 @media only screen and (max-width: 390px) {
   .html-lesson-wrapper .header-content .title {
     max-width: 86% !important;

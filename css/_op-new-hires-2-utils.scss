@@ -195,6 +195,12 @@ body {
       @media only screen and (max-width: 690px) {
         max-width: 86% !important;
       }
+      @media only screen and (max-width: 375px) {
+        padding-top: 3% !important;
+      }
+      @media only screen and (max-width: 374px) {
+        padding-top: 1% !important;
+      }
       @media only screen and (max-width: 390px) {
         max-width: 86% !important;
       }

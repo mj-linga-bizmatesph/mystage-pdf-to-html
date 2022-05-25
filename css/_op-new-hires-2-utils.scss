@@ -350,6 +350,7 @@ body {
       .see-text-content {
         font-size: clamp(12px, 2vw, 15px);
         font-family: $trebuchet;
+        line-height: 1.8;
       }
       &.see {
         .dialogue {

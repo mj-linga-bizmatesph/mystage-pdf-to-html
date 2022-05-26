@@ -17,15 +17,16 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-review-logo.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-review-logo.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
     url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: 94% 94%, top, bottom;
   background-size: 10%, 100% auto, 100%;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, footer {
+  .b,
+  header,
+  footer {
     font-weight: bold;
   }
   header {
@@ -57,23 +58,23 @@ body {
     margin: 2px 0px 0px 16px;
     padding: 0;
     list-style: none;
-  
+
     li {
       padding-left: 6px;
       position: relative;
       &:before {
         content: '■';
         position: absolute;
-        left: -15px;
-        top: -7px;
-        font-size: clamp(16px, 2.4vw, 26px);
+        left: -0.7em;
+        top: -0.1em;
+        font-size: 1.2em;
       }
       &:not(:last-child) {
         margin-bottom: clamp(18px, 2vw, 24px);
       }
     }
   }
-  
+
   .part1-content,
   .part2-content {
     position: relative;
@@ -84,7 +85,7 @@ body {
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 20px);
-  
+
     .sub-text {
       font-size: clamp(9.5px, 2.4vw, 20px);
       font-weight: bold;
@@ -93,7 +94,7 @@ body {
       margin: 0px auto;
     }
   }
-  
+
   .part2-content {
     margin-top: 48px;
     padding-top: 4px;
@@ -102,7 +103,7 @@ body {
       margin-bottom: 20px;
     }
   }
-  
+
   footer {
     font-size: clamp(12px, 2vw, 18px);
     position: absolute;

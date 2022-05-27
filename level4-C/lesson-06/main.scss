@@ -318,6 +318,14 @@ body {
         border-top: 5.5px solid $primary !important;
       }
     }
+    .try-content{
+      .sub-text{
+        margin-left: clamp(7px, 1vw, 8px);
+      }
+      li{
+        margin-left: 5px;
+      }
+    }
   }
 }
 

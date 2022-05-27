@@ -318,6 +318,19 @@ body {
         border-top: 5.5px solid $primary !important;
       }
     }
+    .see-content{
+      li{
+        margin-left: -8px;
+      }
+    }
+    .try-content{
+      .sub-text{
+        margin-left: clamp(7px, 1vw, 8px);
+      }
+      li{
+        margin-left: 5px;
+      }
+    }
   }
 }
 

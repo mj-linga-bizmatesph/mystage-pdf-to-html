@@ -322,6 +322,14 @@ body {
       width: 120px;
       text-align: left;
     }
+    .try-content{
+      .sub-text{
+        margin-left: clamp(8px, 1vw, 8px);
+      }
+      li{
+        margin-left: 5px;
+      }
+    }
   }
 }
 

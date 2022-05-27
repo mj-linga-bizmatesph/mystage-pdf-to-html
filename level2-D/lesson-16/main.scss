@@ -81,6 +81,9 @@ body {
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
     
+    .bullet{
+      list-style-type: disc;
+    }
     div {
       margin-bottom: 15px;
     }

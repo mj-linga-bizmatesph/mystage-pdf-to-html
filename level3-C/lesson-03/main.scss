@@ -18,14 +18,25 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  embed {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -118,7 +129,7 @@ body {
       list-style-type: inherit;
       padding-left: 10px;
       margin-right: -20px;
-    
+
       li {
         padding-left: 0px;
         line-height: 1.1;
@@ -157,7 +168,6 @@ body {
             font-weight: bold;
           }
         }
-
       }
     }
     .col1 {
@@ -167,7 +177,7 @@ body {
       width: 45%;
     }
     img {
-      width:100%;
+      width: 100%;
       margin-left: calc(min(24vw, 15px));
     }
   }
@@ -177,6 +187,7 @@ body {
     margin-top: clamp(40px, 12%, 90px);
 
     ul {
+      list-style-type: disc;
       li {
         font-style: italic;
       }
@@ -184,7 +195,7 @@ body {
     .col {
       padding: 20px 0px 0px 0px;
       img {
-        width:90%;
+        width: 90%;
 
         &:last-child {
           margin-left: calc(min(24vw, 10px));
@@ -203,17 +214,20 @@ body {
     height: fit-content;
     min-height: 26px;
 
-    ul li {
-      &:last-child {
-        list-style-type: none;
-        font-size: clamp(12px, 2vw, 16.5px);
-        font-style: italic;
-        padding-bottom: 10px;
-        word-wrap: break-word;
-      }
-      a {
-        font-size: clamp(6px, 1.8vw, 16.5px);
-        color:#119f9f;
+    ul {
+      list-style-type: disc;
+      li {
+        &:last-child {
+          list-style-type: none;
+          font-size: clamp(12px, 2vw, 16.5px);
+          font-style: italic;
+          padding-bottom: 10px;
+          word-wrap: break-word;
+        }
+        a {
+          font-size: clamp(6px, 1.8vw, 16.5px);
+          color: #119f9f;
+        }
       }
     }
   }

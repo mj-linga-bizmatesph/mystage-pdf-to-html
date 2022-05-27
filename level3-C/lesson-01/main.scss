@@ -18,14 +18,16 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -65,7 +67,7 @@ body {
       top: -6px;
     }
   }
-  ul {
+  ol {
     margin: 2px 0px 0px 18px;
     padding: 0;
     list-style-type: decimal;
@@ -117,7 +119,7 @@ body {
       margin: 2px 0px 0px 18px;
       padding: 0;
       list-style-type: inherit;
-    
+
       li {
         padding-left: 6px;
         line-height: 1.1;
@@ -166,12 +168,18 @@ body {
   // Try
   .try-content {
     margin-top: clamp(60px, 14%, 120px);
-    ul {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 120px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
+
+    // ul {
+    //   display: flex;
+    //   flex-direction: column;
+    //   flex-wrap: wrap;
+    //   height: 120px;
+    // }
   }
 
   // Act
@@ -179,7 +187,9 @@ body {
     margin-top: 36px;
     height: fit-content;
     min-height: 26px;
-
+    .no-wrap {
+      white-space: nowrap;
+    }
     table {
       margin-top: 5px;
       border-spacing: 0px;
@@ -191,19 +201,22 @@ body {
         max-width: 120px;
         word-wrap: break-word;
         border: 1px solid #ffffff;
+
+        &:first-child {
+          @extend .no-wrap;
+        }
       }
       th {
-        background-color: #f5800b;
         color: #ffffff;
         padding: 4px;
         min-width: fit-content;
         &:not(:first-child) {
-          background-color: #BC7D3E;
+          background-color: #bc7d3e;
         }
       }
       td {
         text-align: right;
-        padding:4px;
+        padding: 4px;
         &:nth-child(1) {
           text-align: left;
           font-weight: bold;

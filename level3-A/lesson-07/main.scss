@@ -155,7 +155,7 @@ body {
 
   // Try
   .try-content {
-    margin-top: 17%;
+    margin-top: clamp(40px, 16%, 100px);
   }
 
   // Act

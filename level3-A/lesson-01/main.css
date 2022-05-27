@@ -165,7 +165,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: 17%;
+  margin-top: clamp(75px, 14%, 120px);
 }
 
 .html-lesson-wrapper .act-content {

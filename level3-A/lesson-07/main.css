@@ -169,7 +169,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: 17%;
+  margin-top: clamp(40px, 16%, 100px);
 }
 
 .html-lesson-wrapper .act-content {

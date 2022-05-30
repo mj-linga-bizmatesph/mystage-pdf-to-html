@@ -155,7 +155,10 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(30px, 16%, 64px);
+    margin-top: 18%;
+    @media screen and (max-width: 860px) {
+      margin-top: 18%;
+    }
   }
 
   // Act

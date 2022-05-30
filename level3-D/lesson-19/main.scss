@@ -162,7 +162,16 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(24px, 14%, 62px);
+    margin-top: 18%;
+    @media screen and (max-width: 860px) {
+      margin-top: 25%;
+    }
+    @media screen and (max-width: 525px) {
+      margin-top: 30%;
+    }
+    @media screen and (max-width: 400px) {
+      margin-top: 20%;
+    }
   }
 
   // Act
@@ -196,7 +205,7 @@ body {
       padding-right: 7px !important;
     }
     aside .text {
-      min-height: 80px;
+      min-height: 103px;
     }
   }
 }
@@ -229,7 +238,7 @@ body {
     }
     aside {
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 1px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -246,7 +255,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 2px;
       }
       .sub-text {
         padding: 3px 8px !important;

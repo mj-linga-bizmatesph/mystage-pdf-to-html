@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body .html-lesson-wrapper {
   width: 100%;
   min-width: 360px;
@@ -19,18 +20,23 @@ body .html-lesson-wrapper {
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
+
 body header {
   font-family: "Arial";
 }
+
 body .b {
   font-weight: bold;
 }
+
 body .i {
   font-family: italic;
 }
+
 body .u {
   text-decoration: underline;
 }
+
 body .program-rank {
   position: absolute;
   top: 40px;
@@ -38,25 +44,30 @@ body .program-rank {
   color: #ffffff;
   font-size: 0px;
 }
+
 body .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #2078a0;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 body .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #e56a62;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 body .line {
   margin: 0 12px;
 }
+
 body .title {
   position: absolute;
   top: 80px;
   left: 55px;
   font-size: clamp(12px, 3vw, 27px);
 }
+
 body .lesson-number {
   position: absolute;
   left: 91.65%;
@@ -64,6 +75,7 @@ body .lesson-number {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
+
 body .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,11 +85,13 @@ body .row {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
 body .sub-text {
   font-family: "Arial" !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
+
 body .section {
   position: absolute;
   left: -71.5px;
@@ -86,26 +100,32 @@ body .section {
   font-family: "Arial";
   top: 2px;
 }
+
 body .divider {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 52%;
 }
+
 body .divider.d1 {
   margin-top: 8px;
 }
+
 body .divider.d2 {
   margin-top: 28px;
 }
+
 body ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
+
 body ul li {
   padding-left: 8px;
 }
+
 body .see-content,
 body .act-content,
 body .try-content {
@@ -115,6 +135,7 @@ body .try-content {
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
+
 body .words-phrase-content {
   position: relative;
   margin-top: clamp(70px, 18%, 155px);
@@ -127,20 +148,24 @@ body .words-phrase-content {
   background: #d4e6f0;
   font-size: clamp(6px, 1.8vw, 15px);
 }
+
 body .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 18px) !important;
 }
+
 body .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
 }
+
 body .words-phrase-content .pointers .arrow-part {
   position: relative;
 }
+
 body .words-phrase-content .pointers .arrow-part:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   top: 5px;
@@ -152,22 +177,27 @@ body .words-phrase-content .pointers .arrow-part:before {
   display: inline-block;
   vertical-align: middle;
 }
+
 body .words-phrase-content .pointers .arrow-part span {
   color: #267aa1;
   font-weight: bold;
 }
+
 body .see-content {
   margin-top: 36px;
 }
+
 body .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
+
 body .see-content .article span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
+
 body .see-content .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -176,28 +206,35 @@ body .see-content .col {
   position: relative;
   line-height: clamp(12px, 3vw, 26px);
 }
+
 body .see-content .col span.highlight {
   color: #267aa1;
   font-weight: bold;
 }
+
 body .see-content .col p {
   margin: 2px auto 24px;
 }
+
 body .see-content .col p.name {
   width: 70px;
 }
+
 body .try-content {
   margin-top: 30px;
 }
+
 body .try-content ul {
   list-style-type: decimal;
 }
+
 body .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
+
 body .act-content table {
   margin-top: 5px;
   font-size: clamp(6px, 1.5vw, 14px);
@@ -205,6 +242,7 @@ body .act-content table {
   padding-bottom: 5px;
   width: 100%;
 }
+
 body .act-content table th,
 body .act-content table td {
   max-width: 120px;
@@ -212,20 +250,24 @@ body .act-content table td {
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
+
 body .act-content table th {
   background-color: #2078a0;
   color: #ffffff;
   font-size: clamp(7px, 1.8vw, 15px);
   padding: 5px;
 }
+
 body .act-content table th:first-child {
   width: 400px;
 }
+
 body .act-content table td {
   text-align: left;
   padding: 4px;
   background-color: #f2f2f2;
 }
+
 body footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -260,10 +302,9 @@ body footer {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    padding-left: clamp(11px, 2.4vw, 18px);
   }
   .html-lesson-wrapper .try-content ul {
-    margin-left: clamp(11px, 2.4vw, 18px);
+    margin-left: clamp(1px, 2vw, 18px);
   }
   .html-lesson-wrapper .try-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
@@ -276,6 +317,7 @@ body footer {
     right: 5% !important;
   }
 }
+
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper .program-rank {
     position: absolute;
@@ -300,6 +342,7 @@ body footer {
     top: 0.6vw !important;
   }
 }
+
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;

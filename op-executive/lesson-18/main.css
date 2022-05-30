@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
-this file is intended to be use Other Programs - Executive Lessons 1-20,
-if you want to override the specified class, go to the scss file
-of the lesson and make the same class, and override it depending
-on what you need.
-*/
 body {
   margin: 0;
   padding: 0;
@@ -519,14 +513,6 @@ body {
     padding-bottom: 0;
   }
 }
-<<<<<<< HEAD
 .html-lesson-wrapper footer .footer-text {
   max-width: 40% !important;
 }
-=======
-
-.html-lesson-wrapper footer .footer-text {
-  max-width: 40% !important;
-}
-/*# sourceMappingURL=main.css.map */
->>>>>>> 7c108dbd0057f450947d5d504f8cf36159431cda

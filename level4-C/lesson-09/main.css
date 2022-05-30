@@ -331,6 +331,9 @@ body {
   .html-lesson-wrapper .try-content li {
     margin-left: 5px;
   }
+  .html-lesson-wrapper .see-content li {
+    margin-left: -9px !important;
+  }
 }
 
 @media screen and (max-width: 420px) {

@@ -114,6 +114,7 @@ body {
 
 @media screen and (max-width: 960px) {
   .html-lesson-wrapper {
+    min-height: 125.68vw;
     width: 100vw !important;
   }
 }
@@ -138,11 +139,23 @@ body {
 
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
+    min-height: 150vw;
     header {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .section {
       left: calc(#{$left-pixel} - 240px);
     }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .html-lesson-wrapper {
+    min-height: 140vw;
+  }
+}
+@media screen and (max-width: 350px) {
+  .html-lesson-wrapper {
+    min-height: 165vw;
   }
 }

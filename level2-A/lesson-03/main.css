@@ -180,6 +180,12 @@ body {
 
 @media only screen and (max-width: 837px) {
   .html-lesson-wrapper .try-content ul {
+    height: 110px !important;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .html-lesson-wrapper .try-content ul {
     height: 100px !important;
   }
 }

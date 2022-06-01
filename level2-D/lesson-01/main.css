@@ -115,7 +115,7 @@ body {
 }
 
 .html-lesson-wrapper aside .text {
-  margin-top: 6px;
+  margin-top: 0.2em;
   padding: 7px 7px 32px 12px;
   width: 100%;
   height: -webkit-fit-content;
@@ -197,7 +197,14 @@ body {
     min-height: 80px;
   }
   .html-lesson-wrapper aside .second-text {
-    min-height: 110px;
+    min-height: 130px;
+  }
+  .html-lesson-wrapper .biztip-two ul {
+    margin: 2px 0px 0px 18px;
+    padding: 0;
+  }
+  .html-lesson-wrapper .biztip-two ul li {
+    padding-left: 0px;
   }
 }
 

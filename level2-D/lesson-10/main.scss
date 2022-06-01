@@ -117,6 +117,19 @@ body {
   .part-2 {
     margin-top: clamp(28px, 7.2vw, 52px) !important;
   }
+  ul {
+    li {
+      padding-left: 6px;
+      position: relative;
+      &:before {
+        content: '■';
+        position: absolute;
+        left: -15px;
+        top: 0px;
+        font-size: clamp(16px, 2.4vw, 16px);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -124,6 +137,7 @@ body {
     header {
       top: clamp(30px, 7.3vw, 59px);
     }
+    
   }
 }
 

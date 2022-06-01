@@ -116,7 +116,7 @@ body {
   .try-content {
     position: relative;
     margin-left: $left-pixel;
-    padding-left: 18.5px !important;
+    padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);
   }
@@ -146,7 +146,7 @@ body {
       .arrow-part {
         position: relative;
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: -20px;
           top: 5px;

@@ -132,7 +132,7 @@ body {
 .html-lesson-wrapper .try-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
-  padding-left: 18.5px !important;
+  padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: 5px;
@@ -337,4 +337,3 @@ body {
     border-top: 5.5px solid #2078a0 !important;
   }
 }
-/*# sourceMappingURL=main.css.map */

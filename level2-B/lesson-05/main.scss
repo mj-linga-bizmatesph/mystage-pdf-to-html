@@ -81,7 +81,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -158,6 +158,16 @@ body {
       flex-direction: column;
       flex-wrap: wrap;
       height: 120px;
+
+      @media only screen and (max-width: 837px){
+        height: 100px !important;
+      }
+      @media only screen and (max-width: 656px){
+        height: 80px !important;
+      }
+      @media only screen and (max-width: 603px){
+        height: 70px !important;
+      }
     }
   }
 

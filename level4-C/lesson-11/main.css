@@ -132,7 +132,7 @@ body {
 .html-lesson-wrapper .try-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
-  padding-left: 18.5px;
+  padding-left: 18.5px !important;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }

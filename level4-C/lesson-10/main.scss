@@ -76,7 +76,7 @@ body {
   }
   .activity {
     position: relative;
-    padding-left: 18.5px;
+    padding-left: 18.5px !important;
     font-size: clamp(6px, 1.8vw, 15px);
   }
   .section {
@@ -93,7 +93,7 @@ body {
     position: relative;
     margin-left: $left-pixel;
     margin-top: 20%;
-    padding-left: 18.5px;
+    padding-left: 18.5px !important;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);
 

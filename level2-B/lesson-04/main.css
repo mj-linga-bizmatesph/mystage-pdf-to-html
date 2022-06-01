@@ -21,7 +21,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper footer, .html-lesson-wrapper aside, .html-lesson-wrapper p.sub-text {
+.html-lesson-wrapper .b,
+.html-lesson-wrapper header,
+.html-lesson-wrapper footer,
+.html-lesson-wrapper aside,
+.html-lesson-wrapper p.sub-text {
   font-weight: bold;
 }
 
@@ -123,7 +127,7 @@ body {
 }
 
 .html-lesson-wrapper aside ul {
-  margin: 2px 0px 0px 18px;
+  margin: 16px 0px 0px 18px;
   padding: 0;
   list-style-type: disc;
   position: relative;
@@ -188,14 +192,16 @@ body {
   width: 100%;
 }
 
-.html-lesson-wrapper .try-content table th, .html-lesson-wrapper .try-content table td {
+.html-lesson-wrapper .try-content table th,
+.html-lesson-wrapper .try-content table td {
   word-wrap: break-word;
   padding: 4px 7px;
   border: 1px solid #ffffff;
   text-align: left;
 }
 
-.html-lesson-wrapper .try-content table th:first-child, .html-lesson-wrapper .try-content table td:first-child {
+.html-lesson-wrapper .try-content table th:first-child,
+.html-lesson-wrapper .try-content table td:first-child {
   min-width: 95px;
 }
 
@@ -241,7 +247,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .html-lesson-wrapper .try-content table th:first-child, .html-lesson-wrapper .try-content table td:first-child {
+  .html-lesson-wrapper .try-content table th:first-child,
+  .html-lesson-wrapper .try-content table td:first-child {
     min-width: 55px;
   }
   .html-lesson-wrapper aside .text {
@@ -270,7 +277,8 @@ body {
   .html-lesson-wrapper .try-content {
     margin-top: 20%;
   }
-  .html-lesson-wrapper .try-content table td, .html-lesson-wrapper .try-content table th {
+  .html-lesson-wrapper .try-content table td,
+  .html-lesson-wrapper .try-content table th {
     padding: 2px !important;
   }
   .html-lesson-wrapper aside .text {
@@ -293,7 +301,8 @@ body {
   .html-lesson-wrapper .try-content {
     margin-top: 23%;
   }
-  .html-lesson-wrapper .try-content table th:first-child, .html-lesson-wrapper .try-content table td:first-child {
+  .html-lesson-wrapper .try-content table th:first-child,
+  .html-lesson-wrapper .try-content table td:first-child {
     min-width: 0px;
   }
   .html-lesson-wrapper aside {

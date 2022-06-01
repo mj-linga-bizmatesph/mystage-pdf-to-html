@@ -21,7 +21,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper footer, .html-lesson-wrapper aside, .html-lesson-wrapper p.sub-text {
+.html-lesson-wrapper .b,
+.html-lesson-wrapper header,
+.html-lesson-wrapper footer,
+.html-lesson-wrapper aside,
+.html-lesson-wrapper p.sub-text {
   font-weight: bold;
 }
 
@@ -183,7 +187,19 @@ body {
 
 @media only screen and (max-width: 837px) {
   .html-lesson-wrapper .try-content ul {
+    height: 110px !important;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .html-lesson-wrapper .try-content ul {
     height: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 80px !important;
   }
 }
 
@@ -194,6 +210,12 @@ body {
 }
 
 @media only screen and (max-width: 603px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 72px !important;
+  }
+}
+
+@media only screen and (max-width: 521px) {
   .html-lesson-wrapper .try-content ul {
     height: 70px !important;
   }
@@ -215,7 +237,8 @@ body {
   width: 100%;
 }
 
-.html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+.html-lesson-wrapper .act-content table th,
+.html-lesson-wrapper .act-content table td {
   word-wrap: break-word;
   padding: 4px 7px;
   border: 1px solid #ffffff;
@@ -276,7 +299,8 @@ body {
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
   }
-  .html-lesson-wrapper .act-content table td, .html-lesson-wrapper .act-content table th {
+  .html-lesson-wrapper .act-content table td,
+  .html-lesson-wrapper .act-content table th {
     padding: 2px !important;
   }
 }

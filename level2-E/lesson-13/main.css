@@ -215,10 +215,13 @@ body {
     padding-top: 5px;
   }
   .html-lesson-wrapper aside .text {
-    padding: 4px 8px;
+    padding: 4px 8px 24px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
+  }
+  .html-lesson-wrapper .section {
+    top: -2px;
   }
 }
 

@@ -99,13 +99,19 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 7px 45px 12px;
+      padding: 7px 7px 0 12px;
       width: 100%;
       height: fit-content;
-      min-height: 117px;
       background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 3.5em;
+      }
+
       p {
         font-size: clamp(6px, 1.6vw, 13px);
         margin-block-start: 0;
@@ -140,12 +146,12 @@ body {
           display: inline-block;
           margin: 0px 0px;
           &:first-child {
-            min-width: 54px;
-            max-width: 100px;
+            width: 3.5em;
             word-wrap: break-word;
             font-weight: bold;
           }
           &:last-child {
+            width: 100%;
             font-style: italic;
           }
         }
@@ -155,7 +161,7 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(40px, 16%, 100px);
+    margin-top: 17%;
   }
 
   // Act
@@ -181,11 +187,7 @@ body {
       padding-right: 7px !important;
     }
     aside .text {
-      padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
-    }
-    .see-content .conversation .row p:first-child {
-      min-width: clamp(30px, 7.3vw, 60px) !important;
     }
   }
 }
@@ -215,6 +217,7 @@ body {
     aside {
       .text {
         padding: 4px 8px;
+        padding-bottom: 0;
       }
       .sub-text {
         padding: 3px 8px !important;

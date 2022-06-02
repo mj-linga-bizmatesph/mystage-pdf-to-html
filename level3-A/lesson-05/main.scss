@@ -136,12 +136,12 @@ body {
           display: inline-block;
           margin: 0px 0px;
           &:first-child {
-            min-width: 54px;
-            max-width: 100px;
+            width: 3.5em;
             word-wrap: break-word;
             font-weight: bold;
           }
           &:last-child {
+            width: 100%;
             font-style: italic;
           }
         }
@@ -179,9 +179,6 @@ body {
     aside .text {
       padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
-    }
-    .see-content .conversation .row p:first-child {
-      min-width: clamp(30px, 7.3vw, 60px) !important;
     }
   }
 }

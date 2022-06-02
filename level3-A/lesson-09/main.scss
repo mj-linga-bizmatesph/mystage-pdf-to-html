@@ -23,7 +23,10 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -57,7 +60,7 @@ body {
     width: 35%;
     min-width: 113px;
     max-width: 206px;
-  
+
     &.try,
     &.act {
       top: -6px;
@@ -67,12 +70,12 @@ body {
     margin: 2px 0px 0px 18px;
     padding: 0;
     list-style-type: decimal;
-  
+
     li {
       padding-left: 6px;
     }
   }
-  
+
   aside {
     position: absolute;
     left: 8px;
@@ -80,7 +83,7 @@ body {
     min-width: 75px;
     max-width: 168px;
     font-size: clamp(7px, 1.8vw, 15px);
-  
+
     div {
       margin-bottom: 20px;
     }
@@ -108,7 +111,7 @@ body {
       color: red;
     }
   }
-  
+
   .see-content,
   .act-content,
   .try-content {
@@ -121,11 +124,11 @@ body {
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 24px);
   }
-  
+
   // See
   .see-content {
     margin-top: clamp(20px, 17%, 116px);
-  
+
     .conversation {
       margin-bottom: 22px;
       .row {
@@ -133,31 +136,31 @@ body {
           display: inline-block;
           margin: 0px 0px;
           &:first-child {
-            min-width: 54px;
-            max-width: 100px;
+            width: 3.5em;
             word-wrap: break-word;
             font-weight: bold;
           }
           &:last-child {
+            width: 100%;
             font-style: italic;
           }
         }
       }
     }
   }
-  
+
   // Try
   .try-content {
     margin-top: clamp(20px, 10%, 50px);
   }
-  
+
   // Act
   .act-content {
     margin-top: 36px;
     height: fit-content;
     min-height: 26px;
   }
-  
+
   footer {
     font-size: clamp(12px, 2vw, 18px);
     position: absolute;
@@ -176,9 +179,6 @@ body {
     aside .text {
       padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
-    }
-    .see-content .conversation .row p:first-child {
-      min-width: clamp(30px, 7.3vw, 60px) !important;
     }
   }
 }

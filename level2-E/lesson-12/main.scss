@@ -44,7 +44,7 @@ body {
   .section {
     position: absolute;
     left: calc(-28% - 44px);
-    top: -4px;
+    top: -7px;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
@@ -218,14 +218,17 @@ body {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
     }
-    
     aside {
       .text {
-        padding: 4px 8px;
+        padding: 4px 8px 24px;
       }
       .sub-text {
         padding: 3px 8px !important;
       }
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      top: -2px;
     }
   }
 }

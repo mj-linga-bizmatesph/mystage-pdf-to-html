@@ -66,10 +66,6 @@ body {
   max-width: 206px;
 }
 
-.html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
-  top: -6px;
-}
-
 .html-lesson-wrapper ul {
   margin: 2px 0px 0px 1em;
   padding: 0;
@@ -106,7 +102,7 @@ body {
 }
 
 .html-lesson-wrapper aside .text {
-  margin-top: 6px;
+  margin-top: 0.2em;
   padding: 7px 7px 32px 12px;
   width: 100%;
   height: -webkit-fit-content;
@@ -251,6 +247,7 @@ body {
   }
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
+    top: -2px;
   }
 }
 /*# sourceMappingURL=main.css.map */

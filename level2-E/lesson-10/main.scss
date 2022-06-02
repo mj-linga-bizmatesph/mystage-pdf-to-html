@@ -109,12 +109,31 @@ body {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .html-lesson-wrapper {
+    ul {
+      li {
+        &:before {
+          top: -4px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 820px) {
   .html-lesson-wrapper {
     min-height: 125.68vw;
     padding-bottom: 82px;
     section {
       padding-right: clamp(8px, 2vw, 16px);
+    }
+    ul {
+      li {
+        &:before {
+          top: -3px;
+        }
+      }
     }
   }
 }
@@ -123,6 +142,13 @@ body {
   .html-lesson-wrapper {
     header {
       top: clamp(30px, 7.3vw, 59px);
+    }
+    ul {
+      li {
+        &:before {
+          top: -2px;
+        }
+      }
     }
   }
 }
@@ -136,6 +162,18 @@ body {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .html-lesson-wrapper {
+    ul {
+      li {
+        &:before {
+          top: -2px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
     header {
@@ -144,5 +182,13 @@ body {
     .section {
       left: calc(#{$left-pixel} - 240px);
     }
+    ul {
+      li {
+        &:before {
+          top: -5px;
+        }
+      }
+    }
   }
 }
+

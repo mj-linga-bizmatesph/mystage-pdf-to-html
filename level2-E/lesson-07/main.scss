@@ -61,11 +61,11 @@ body {
   
     &.try,
     &.act {
-      top: -6px;
+      // top: -6px;
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 2px 0px 0px 1em;
     padding: 0;
     list-style-type: decimal;
   
@@ -234,6 +234,7 @@ body {
     }
     .section {
       left: calc(#{$left-pixel} - 240px);
+      top: -2px;
     }
   }
 }

@@ -44,7 +44,7 @@ body {
   .section {
     position: absolute;
     left: calc(-28% - 44px);
-    top: -4px;
+    top: -7px;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
@@ -61,11 +61,11 @@ body {
 
     &.try,
     &.act {
-      top: -6px;
+      // top: -6px;
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 2px 0px 0px 1em;
     padding: 0;
     list-style-type: decimal;
 
@@ -213,6 +213,10 @@ body {
         padding: 3px 8px !important;
       }
     }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      top: -2px;
+    }
   }
 }
 
@@ -229,6 +233,7 @@ body {
     }
     .section {
       left: calc(#{$left-pixel} - 240px);
+      top: -2px;
     }
   }
 }

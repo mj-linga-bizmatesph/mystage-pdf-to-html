@@ -136,7 +136,7 @@ body {
     .section {
       margin-left: $left-pixel;
       line-height: 1.8em;
-      margin-top: clamp(10px, 2.6vw, 18px) !important;
+      margin-top: clamp(11px, 2.5vw, 15px) !important;
       max-width: 100px;
     }
 
@@ -324,7 +324,7 @@ body {
     }
     .words-phrase-content {
       .section {
-        max-width: 50px;
+        max-width: 52px;
       }
     }
     .arrow-part {

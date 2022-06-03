@@ -150,7 +150,7 @@ body {
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
-  margin-top: clamp(10px, 2.6vw, 18px) !important;
+  margin-top: clamp(11px, 2.5vw, 15px) !important;
   max-width: 100px;
 }
 
@@ -326,7 +326,7 @@ body {
     vertical-align: middle;
   }
   .html-lesson-wrapper .words-phrase-content .section {
-    max-width: 50px;
+    max-width: 52px;
   }
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
@@ -334,4 +334,3 @@ body {
     border-top: 5.5px solid #2078a0 !important;
   }
 }
-/*# sourceMappingURL=main.css.map */

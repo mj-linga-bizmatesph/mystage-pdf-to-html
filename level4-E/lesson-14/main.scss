@@ -139,7 +139,7 @@ body {
     .section {
       margin-left: $left-pixel;
       line-height: 1.8em;
-      margin-top: clamp(10px, 2.6vw, 18px) !important;
+      margin-top: clamp(11px, 2.5vw, 15px) !important;
       max-width: 100px;
     }
 
@@ -177,7 +177,7 @@ body {
       margin-top: 5px;
       line-height: 1.7em;
       margin-bottom: 29px;
-  
+
       span.highlight {
         color: $primary-dark;
         font-weight: bold;
@@ -188,16 +188,16 @@ body {
       margin-right: 16px;
       position: relative;
       line-height: clamp(12px, 3vw, 26px);
-      
+
       span.highlight {
         color: $primary-dark;
         font-weight: bold;
       }
       p {
         margin: 2px auto 24px;
-  
+
         &.name {
-          width:70px
+          width: 70px;
         }
       }
     }
@@ -318,7 +318,7 @@ body {
     }
     .words-phrase-content {
       .section {
-        max-width: 50px;
+        max-width: 52px;
       }
     }
     .arrow-part {

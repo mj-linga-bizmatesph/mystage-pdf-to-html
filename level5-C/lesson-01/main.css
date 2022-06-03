@@ -205,7 +205,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-
+/* padding-left: clamp(11px, 2.4vw, 18px); */
 .html-lesson-wrapper .act-content p:not(.sub-text) {
   margin: 2px auto;
   line-height: clamp(12px, 3vw, 26px);

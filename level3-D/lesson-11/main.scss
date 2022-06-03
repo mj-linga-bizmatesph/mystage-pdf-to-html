@@ -158,14 +158,11 @@ body {
   // Try
   .try-content {
     margin-top: 25%;
-    @media screen and (max-width: 860px) {
-      margin-top: 25%;
+    @media screen and (max-width: 900px) {
+      margin-top: 28%;
     }
     @media screen and (max-width: 525px) {
       margin-top: 30%;
-    }
-    @media screen and (max-width: 400px) {
-      margin-top: 20%;
     }
   }
 
@@ -233,7 +230,7 @@ body {
     }
     aside {
       .text {
-        padding: 4px 8px 18px;
+        padding: 4px 8px 21px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -250,7 +247,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 2px;
+        padding: 4px 8px 17px;
       }
       .sub-text {
         padding: 3px 8px !important;

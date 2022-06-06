@@ -95,7 +95,7 @@ body {
       background-repeat: no-repeat;
     }
     .text {
-      margin-top: 6px;
+      margin-top: 0.2em;
       padding: 7px 7px 32px 12px;
       width: 100%;
       height: fit-content;
@@ -177,7 +177,17 @@ body {
       min-height: 80px;
     }
     aside .second-text {
-      min-height: 110px;
+      min-height: 170px;
+
+      p{
+        padding-bottom: 0px;
+      }
+    }
+    ul{
+      margin: 2px 0px 0px 23px;
+      li{
+        padding-left: 0px;
+      }
     }
   }
 }
@@ -196,6 +206,9 @@ body {
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
+      &.try, &.act {
+        top: -3px;
+      }
     }
     .see-content .conversation .row p:first-child {
       min-width: 32px !important;
@@ -206,10 +219,26 @@ body {
     aside {
       .text {
         padding: 4px 8px 12px;
+        width: 100%
       }
       .sub-text {
         padding: 3px 8px !important;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    aside .second-text {
+      min-height: 135px;
+
+      p{
+        padding-bottom: 0px;
+      }
+    }
+    ul{
+      margin: 2px 0px 0px 15px;
     }
   }
 }
@@ -231,8 +260,40 @@ body {
         padding: 3px 8px !important;
       }
     }
+    ul{
+      margin: 2px 0px 0px 15px;
+    }
     .section {
       left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    aside .second-text {
+      min-height: 155px;
+
+      p{
+        padding-bottom: 0px;
+      }
+
+    }
+    ul{
+      margin: 2px 0px 0px 15px;
+      li{
+        padding-left: 0px;
+      }
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
+      }
     }
   }
 }

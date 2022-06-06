@@ -113,6 +113,12 @@ body {
   .html-lesson-wrapper {
     min-height: 125.68vw;
     padding-bottom: 82px;
+    ul{
+      li:before{
+        font-size:17px;
+        top: 0px;
+      }
+    }
   }
   .part-2 {
     margin-top: clamp(28px, 7.2vw, 52px) !important;
@@ -132,6 +138,23 @@ body {
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
+      &.try, &.act {
+        top: -3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    ul{
+      li{
+        padding-left: 2px;
+      }
+      li:before{
+        font-size:12px;
+        top: -2px;
+      }
     }
   }
 }
@@ -143,6 +166,20 @@ body {
     }
     .section {
       left: calc(#{$left-pixel} - 240px);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    ul{
+      li{
+        padding-left: 2px;
+      }
+      li:before{
+        font-size:12px;
+        top: -2px;
+      }
     }
   }
 }

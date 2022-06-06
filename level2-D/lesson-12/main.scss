@@ -95,11 +95,11 @@ body {
       background-repeat: no-repeat;
     }
     .text {
-      margin-top: 6px;
+      margin-top: 0.2em;
       padding: 7px 7px 32px 12px;
       width: 100%;
       height: fit-content;
-      min-height: 117px;
+      min-height: 75px;
       background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -176,8 +176,9 @@ body {
       min-height: 80px;
     }
     aside .second-text {
-      min-height: 110px;
+      min-height: 90px;
     }
+   
   }
 }
 
@@ -195,6 +196,9 @@ body {
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
+      &.try, &.act {
+        top: -3px;
+      }
     }
     .see-content .conversation .row p:first-child {
       min-width: 32px !important;
@@ -202,12 +206,32 @@ body {
     .try-content {
       margin-top: 15%;
     }
-    aside {
+ aside {
       .text {
         padding: 4px 8px 12px;
       }
       .sub-text {
         padding: 3px 8px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+
+    ul{
+      margin: 2px 0px 0px 15px;
+    }
+
+    aside {
+      top: 100px;
+      .text {
+        padding: 4px 10px 12px;
+        width: 100%;
+      }
+      .sub-text {
+        padding: 3px 10px !important;
       }
     }
   }
@@ -231,7 +255,25 @@ body {
       }
     }
     .section {
+      
       left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .sub-text {
+      padding-right: 7px !important;
+    }
+    aside .text:not(.second-text) {
+      min-height: 80px;
+    }
+    aside .second-text {
+      min-height: 90px;
     }
   }
 }

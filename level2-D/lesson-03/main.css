@@ -106,16 +106,20 @@ body {
 }
 
 .html-lesson-wrapper aside .text {
-  margin-top: 6px;
+  margin-top: 0.2em;
   padding: 7px 7px 32px 12px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 117px;
+  min-height: 80px;
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.html-lesson-wrapper aside .second-text {
+  min-height: 155px;
 }
 
 .html-lesson-wrapper aside .red {
@@ -186,9 +190,17 @@ body {
   }
   .html-lesson-wrapper aside .text {
     min-height: 80px;
+    padding: 7px 7% 32px 12px;
+    width: 95%;
   }
   .html-lesson-wrapper aside .second-text {
     min-height: 135px;
+  }
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 23px;
+  }
+  .html-lesson-wrapper ul li {
+    padding-left: 0px;
   }
 }
 
@@ -206,6 +218,9 @@ body {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
+  .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
+    top: -3px;
+  }
   .html-lesson-wrapper .see-content .conversation .row p:first-child {
     min-width: 32px !important;
   }
@@ -217,6 +232,22 @@ body {
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 15px;
+  }
+  .html-lesson-wrapper aside {
+    top: 100px;
+  }
+  .html-lesson-wrapper aside .text {
+    padding: 4px 10px 12px;
+    width: 100%;
+  }
+  .html-lesson-wrapper aside .sub-text {
+    padding: 3px 10px !important;
   }
 }
 
@@ -238,6 +269,24 @@ body {
   }
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
+  }
+  .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
+    top: -3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 15px;
+  }
+  .html-lesson-wrapper ul li {
+    padding-left: 0px;
+  }
+  .html-lesson-wrapper .section {
+    left: calc(clamp(120px, 28%, 218px) - 240px);
+  }
+  .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
+    top: -3px;
   }
 }
 /*# sourceMappingURL=main.css.map */

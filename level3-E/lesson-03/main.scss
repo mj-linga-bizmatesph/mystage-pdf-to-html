@@ -17,16 +17,14 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b,
-  header,
-  aside,
-  footer {
+  .b, header, aside, footer {
     font-weight: bold;
   }
   header {
@@ -114,7 +112,7 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 8px 41px 12px;
+      padding: 7px 8px 43px 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
@@ -175,7 +173,16 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(20px, 8%, 56px);
+    margin-top: 18%;
+    @media screen and (max-width: 860px) {
+      margin-top: 25%;
+    }
+    @media screen and (max-width: 525px) {
+      margin-top: 30%;
+    }
+    @media screen and (max-width: 400px) {
+      margin-top: 20%;
+    }
   }
 
   // Act

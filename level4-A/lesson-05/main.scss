@@ -67,6 +67,7 @@ body {
   .lesson-number {
     position: absolute;
     left: 92.2%;
+    top: 0px;
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
@@ -135,7 +136,8 @@ body {
     .section {
       margin-left: $left-pixel;
       line-height: 1.8em;
-      margin-top: clamp(10px, 2.6vw, 18px) !important;
+      margin-top: clamp(11px, 2.5vw, 15px) !important;
+      max-width: 100px;
     }
 
     .pointers {
@@ -200,11 +202,11 @@ body {
       font-size: clamp(6px, 1.5vw, 14px);
       border-spacing: 0px;
       padding-bottom: 5px;
-      width: 100%;
+      min-width: 100%;
       th,
       td {
         max-width: 120px;
-        min-width: 80px;
+        min-width: 100%;
         word-wrap: break-word;
         border: 1px solid #ffffff;
       }
@@ -215,8 +217,9 @@ body {
         padding: 5px;
       }
       td {
+        color: #d0cece;
         text-align: left;
-        padding: 4px;
+        padding: 6px;
         background-color: $background-grey;
       }
     }
@@ -245,8 +248,9 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
+      // padding-left: clamp(11px, 2.4vw, 18px);
       ul {
-        margin-left: clamp(1px, 2vw, 18px);
+        margin-left: clamp(11px, 2.4vw, 18px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -290,6 +294,14 @@ body {
         top: 0.6vw !important;
       }
     }
+    .act-content table {
+      th {
+        padding: 2px;
+      }
+      td {
+        padding: 3px;
+      }
+    }
   }
 }
 
@@ -304,6 +316,11 @@ body {
     .line {
       margin: 0 6px;
       vertical-align: middle;
+    }
+    .words-phrase-content {
+      .section {
+        max-width: 52px;
+      }
     }
     .arrow-part {
       &:before {

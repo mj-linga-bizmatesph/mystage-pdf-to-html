@@ -68,6 +68,7 @@ body {
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   left: 92.2%;
+  top: 0px;
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
@@ -149,7 +150,8 @@ body {
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
-  margin-top: clamp(10px, 2.6vw, 18px) !important;
+  margin-top: clamp(11px, 2.5vw, 15px) !important;
+  max-width: 100px;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {
@@ -215,13 +217,13 @@ body {
   font-size: clamp(6px, 1.5vw, 14px);
   border-spacing: 0px;
   padding-bottom: 5px;
-  width: 100%;
+  min-width: 100%;
 }
 
 .html-lesson-wrapper .act-content table th,
 .html-lesson-wrapper .act-content table td {
   max-width: 120px;
-  min-width: 80px;
+  min-width: 100%;
   word-wrap: break-word;
   border: 1px solid #ffffff;
 }
@@ -234,8 +236,9 @@ body {
 }
 
 .html-lesson-wrapper .act-content table td {
+  color: #d0cece;
   text-align: left;
-  padding: 4px;
+  padding: 6px;
   background-color: #f2f2f2;
 }
 
@@ -266,7 +269,7 @@ body {
     margin-top: clamp(20px, 3.7vw, 30px);
   }
   .html-lesson-wrapper .try-content ul {
-    margin-left: clamp(1px, 2vw, 18px);
+    margin-left: clamp(11px, 2.4vw, 18px);
   }
   .html-lesson-wrapper .try-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
@@ -303,6 +306,12 @@ body {
     left: -4.5% !important;
     top: 0.6vw !important;
   }
+  .html-lesson-wrapper .act-content table th {
+    padding: 2px;
+  }
+  .html-lesson-wrapper .act-content table td {
+    padding: 3px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -315,6 +324,9 @@ body {
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
+  }
+  .html-lesson-wrapper .words-phrase-content .section {
+    max-width: 52px;
   }
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;

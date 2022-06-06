@@ -94,7 +94,10 @@ body {
       margin: 0 auto;
     }
     ul {
-      margin-left: 15px;
+      margin-left: 11%;
+      @media screen and (max-width: 900px){
+        margin-left: 15%;
+      }
       li {
         padding-left: 0px;
       }
@@ -219,7 +222,7 @@ body {
     }
     aside {
       ul {
-        margin-left: 10px;
+        margin-left: 10%;
       }
     }
     header {

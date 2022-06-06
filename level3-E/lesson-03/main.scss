@@ -112,7 +112,7 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 8px 32px 12px;
+      padding: 7px 8px 43px 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
@@ -173,7 +173,16 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(20px, 8%, 56px);
+    margin-top: 18%;
+    @media screen and (max-width: 860px) {
+      margin-top: 25%;
+    }
+    @media screen and (max-width: 525px) {
+      margin-top: 30%;
+    }
+    @media screen and (max-width: 400px) {
+      margin-top: 20%;
+    }
   }
 
   // Act

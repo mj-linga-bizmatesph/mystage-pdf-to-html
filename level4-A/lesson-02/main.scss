@@ -147,7 +147,7 @@ body {
       .arrow-part {
         position: relative;
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: -20px;
           top: 5px;
@@ -217,6 +217,7 @@ body {
         padding: 5px;
       }
       td {
+        color: #d0cece;
         text-align: left;
         padding: 6px;
         background-color: $background-grey;

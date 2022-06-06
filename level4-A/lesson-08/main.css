@@ -164,7 +164,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   top: 5px;
@@ -236,6 +236,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content table td {
+  color: #d0cece;
   text-align: left;
   padding: 6px;
   background-color: #f2f2f2;

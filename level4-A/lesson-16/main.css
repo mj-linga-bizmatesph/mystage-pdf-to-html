@@ -167,8 +167,8 @@ body {
   position: relative;
 }
 
-.html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: '';
+body .words-phrase-content .pointers .arrow-part:before {
+  content: "";
   position: absolute;
   left: -20px;
   top: 5px;

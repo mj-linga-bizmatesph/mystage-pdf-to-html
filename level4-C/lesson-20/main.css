@@ -145,8 +145,13 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
   }
+<<<<<<< HEAD
   .html-lesson-wrapper .section {
     left: -78px;
+=======
+  .html-lesson-wrapper .section.review {
+    left: calc(-14% + 13px);
+>>>>>>> df8cb4d9 (Enhanced aside titles alignments)
   }
   .html-lesson-wrapper .review-content ul li span {
     width: auto;
@@ -194,6 +199,17 @@ body {
     margin: 0 6px;
     vertical-align: middle;
   }
+<<<<<<< HEAD
+=======
+  .html-lesson-wrapper .words-phrase-content .section {
+    max-width: 60px;
+  }
+  .html-lesson-wrapper .arrow-part:before {
+    border-left: 3.5px solid transparent !important;
+    border-right: 3.5px solid transparent !important;
+    border-top: 5.5px solid #2078a0 !important;
+  }
+>>>>>>> df8cb4d9 (Enhanced aside titles alignments)
 }
 
 @media screen and (max-width: 420px) {

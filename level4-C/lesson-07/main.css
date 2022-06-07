@@ -271,7 +271,11 @@ body {
     /* padding-left: clamp(11px, 2.4vw, 18px); */
   }
   .html-lesson-wrapper .try-content ul {
+<<<<<<< HEAD
     margin-left: clamp(21px, 2.4vw, 21px);
+=======
+    margin-left: 17px;
+>>>>>>> df8cb4d9 (Enhanced aside titles alignments)
   }
   .html-lesson-wrapper .try-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
@@ -303,6 +307,24 @@ body {
   }
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
+<<<<<<< HEAD
+=======
+  }
+  .html-lesson-wrapper .see-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .see-content ul {
+    margin-left: 16px;
+  }
+  .html-lesson-wrapper .try-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 16px;
+  }
+  .html-lesson-wrapper .act-content .section {
+    left: calc(-16% + 28px);
+>>>>>>> df8cb4d9 (Enhanced aside titles alignments)
   }
   .html-lesson-wrapper .arrow-part:before {
     left: -4.5% !important;
@@ -322,7 +344,22 @@ body {
     vertical-align: middle;
   }
   .html-lesson-wrapper .words-phrase-content .section {
-    max-width: 50px;
+    max-width: 60px;
+  }
+  .html-lesson-wrapper .see-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .see-content ul {
+    margin-left: 12px;
+  }
+  .html-lesson-wrapper .try-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 13px;
+  }
+  .html-lesson-wrapper .act-content .section {
+    left: calc(-16% + 28px);
   }
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
@@ -357,10 +394,83 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
+  .html-lesson-wrapper .see-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .see-content ul {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 9px;
+  }
+  .html-lesson-wrapper .act-content .section {
+    left: calc(-16% + 28px);
+  }
   .html-lesson-wrapper footer {
     width: 100px;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper .see-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .see-content ul {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 9px;
+  }
+  .html-lesson-wrapper .act-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper footer {
+    width: 100px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper .see-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .see-content ul {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 8px;
+  }
+  .html-lesson-wrapper .act-content .section {
+    left: calc(-16% + 28px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper .see-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .see-content ul {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .section {
+    left: calc(-16% + 28px);
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 7px;
+  }
+  .html-lesson-wrapper .act-content .section {
+    left: calc(-16% + 28px);
   }
 }
 /*# sourceMappingURL=main.css.map */

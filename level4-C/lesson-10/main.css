@@ -153,8 +153,13 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
   }
+<<<<<<< HEAD
   .html-lesson-wrapper .section {
     left: -78px;
+=======
+  .html-lesson-wrapper .section.review {
+    left: calc(-14% + 13px);
+>>>>>>> df8cb4d9 (Enhanced aside titles alignments)
   }
   .html-lesson-wrapper .review-content ul li span {
     width: auto;
@@ -174,6 +179,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .html-lesson-wrapper .section.review {
+    left: calc(-14% + -9px);
+  }
   .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);

@@ -184,7 +184,35 @@ body {
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
     .section {
-      left: -40.5px;
+      // left: -40.5px;
+      left: -15.6%
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .words-phrase-content {
+      .section {
+        max-width: 50px;
+      }
+    }
+    .arrow-part {
+      &:before {
+        border-left: 3.5px solid transparent !important;
+        border-right: 3.5px solid transparent !important;
+        border-top: 5.5px solid $primary !important;
+      }
     }
     .type {
       padding: 2px 8px 2px 7px !important;

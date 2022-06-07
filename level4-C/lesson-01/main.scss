@@ -134,9 +134,18 @@ body {
 
     .section {
       margin-left: $left-pixel;
+<<<<<<< HEAD
       line-height: 1.8em;
+=======
+      // line-height: 1.8;
+>>>>>>> 45035380 (Fixed issues with responsiveness)
       margin-top: clamp(10px, 2.6vw, 18px) !important;
       max-width: 100px;
+      &.words{
+        div{
+          margin-bottom: 0.5em;
+        }
+      }
     }
 
     .pointers {

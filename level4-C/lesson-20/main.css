@@ -187,7 +187,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
-    left: -40.5px;
+    left: -15.6%;
   }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
@@ -212,6 +212,30 @@ body {
 >>>>>>> df8cb4d9 (Enhanced aside titles alignments)
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .type {
+    padding: 2px 8px 2px 7px !important;
+  }
+  .html-lesson-wrapper .level {
+    padding: 2px 6px 2px 7px !important;
+  }
+  .html-lesson-wrapper .line {
+    margin: 0 6px;
+    vertical-align: middle;
+  }
+  .html-lesson-wrapper .words-phrase-content .section {
+    max-width: 50px;
+  }
+  .html-lesson-wrapper .arrow-part:before {
+    border-left: 3.5px solid transparent !important;
+    border-right: 3.5px solid transparent !important;
+    border-top: 5.5px solid #2078a0 !important;
+  }
+}
+
+>>>>>>> 45035380 (Fixed issues with responsiveness)
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper .review-content ul {
     padding: 10px 0px 10px 8px;

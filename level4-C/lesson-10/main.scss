@@ -81,7 +81,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -80.5px;
+    left: -87.5px;
     color: $primary;
     font-weight: bold;
     font-family: $title-font;
@@ -140,12 +140,17 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
 <<<<<<< HEAD
+<<<<<<< HEAD
     .section{
       left: -78px;
 =======
     .section.review {
       left: calc(-14% + 13px);
 >>>>>>> df8cb4d9 (Enhanced aside titles alignments)
+=======
+    .section.review {
+      left: calc(-14% + -8px);
+>>>>>>> 45035380 (Fixed issues with responsiveness)
     }
     .review-content {
       ul {
@@ -185,7 +190,7 @@ body {
       left: clamp(30px, 4.1vw, 55px);
     }
     .section.words {
-      left: calc(-14% + 30px);
+      left: calc(-14% + 32px);
     }
   }
 }
@@ -204,6 +209,14 @@ body {
     .line {
       margin: 0 6px;
       vertical-align: middle;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    .section.review {
+      left: calc(-14% + -5px);
     }
   }
 }
@@ -231,6 +244,14 @@ body {
     }
     footer {
       bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .section.review {
+      left: calc(-14% + -3px);
     }
   }
 }

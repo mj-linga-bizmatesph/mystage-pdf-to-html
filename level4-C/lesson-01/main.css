@@ -148,9 +148,16 @@ body {
 
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
+<<<<<<< HEAD
   line-height: 1.8em;
+=======
+>>>>>>> 45035380 (Fixed issues with responsiveness)
   margin-top: clamp(10px, 2.6vw, 18px) !important;
   max-width: 100px;
+}
+
+.html-lesson-wrapper .words-phrase-content .section.words div {
+  margin-bottom: 0.5em;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {

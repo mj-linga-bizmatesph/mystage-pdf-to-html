@@ -152,23 +152,35 @@ body {
 
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
-  line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 18px) !important;
   max-width: 100px;
 }
 
+<<<<<<< HEAD
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
   padding-right: 2em;
 }
 
+=======
+.html-lesson-wrapper .words-phrase-content .section.words div {
+  margin-bottom: 0.5em;
+}
+
+.html-lesson-wrapper .words-phrase-content .pointers {
+  margin-top: clamp(10px, 2.6vw, 18px) !important;
+  margin-left: clamp(50px, 14%, 126.5px);
+  padding-right: 5vw;
+}
+
+>>>>>>> 45035380 (Fixed issues with responsiveness)
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
   position: relative;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   top: 5px;
@@ -383,6 +395,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 428px) {
   .html-lesson-wrapper .see-content ul {
     margin: 3px 0px 0px 2.6em;
@@ -397,11 +410,15 @@ body {
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
   }
+=======
+@media screen and (max-width: 420px) {
+>>>>>>> 45035380 (Fixed issues with responsiveness)
   .html-lesson-wrapper footer {
     width: 100px;
     text-align: left;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 425px) {
   .html-lesson-wrapper .see-content .section {
@@ -482,4 +499,6 @@ body {
     left: calc(-16% + 28px);
   }
 }
+=======
+>>>>>>> 45035380 (Fixed issues with responsiveness)
 /*# sourceMappingURL=main.css.map */

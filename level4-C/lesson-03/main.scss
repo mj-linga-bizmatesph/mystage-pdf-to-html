@@ -134,13 +134,18 @@ body {
 
     .section {
       margin-left: $left-pixel;
-      line-height: 1.8em;
+      // line-height: 1.8;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
       max-width: 100px;
+      &.words{
+        div{
+          margin-bottom: 0.5em;
+        }
+      }
     }
 
     .pointers {
-      margin-top: clamp(12px, 2.8vw, 20px) !important;
+      margin-top: clamp(10px, 2.6vw, 18px) !important;
       margin-left: $left-pixel;
       padding-right: 2em;
       .arrow-part {
@@ -298,6 +303,7 @@ body {
       left: calc(-16% + 30px);
     }
     .section.words {
+<<<<<<< HEAD
       left: calc(-14% + 30px);
 <<<<<<< HEAD
 =======
@@ -323,6 +329,9 @@ body {
         left: calc(-16% + 28px)
       }
 >>>>>>> df8cb4d9 (Enhanced aside titles alignments)
+=======
+      left: calc(-14% + 32px);
+>>>>>>> 45035380 (Fixed issues with responsiveness)
     }
     .arrow-part {
       &:before {

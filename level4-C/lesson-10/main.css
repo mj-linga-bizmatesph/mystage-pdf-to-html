@@ -90,7 +90,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -80.5px;
+  left: -87.5px;
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
@@ -154,12 +154,17 @@ body {
     min-height: unset;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .html-lesson-wrapper .section {
     left: -78px;
 =======
   .html-lesson-wrapper .section.review {
     left: calc(-14% + 13px);
 >>>>>>> df8cb4d9 (Enhanced aside titles alignments)
+=======
+  .html-lesson-wrapper .section.review {
+    left: calc(-14% + -8px);
+>>>>>>> 45035380 (Fixed issues with responsiveness)
   }
   .html-lesson-wrapper .review-content ul li span {
     width: auto;
@@ -192,7 +197,7 @@ body {
     left: clamp(30px, 4.1vw, 55px);
   }
   .html-lesson-wrapper .section.words {
-    left: calc(-14% + 30px);
+    left: calc(-14% + 32px);
   }
 }
 
@@ -212,6 +217,15 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .section.review {
+    left: calc(-14% + -5px);
+  }
+}
+
+>>>>>>> 45035380 (Fixed issues with responsiveness)
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper .review-content ul {
     padding: 10px 0px 10px 8px;
@@ -231,4 +245,13 @@ body {
     bottom: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper .section.review {
+    left: calc(-14% + -3px);
+  }
+}
+>>>>>>> 45035380 (Fixed issues with responsiveness)
 /*# sourceMappingURL=main.css.map */

@@ -34,8 +34,8 @@ body {
   .b {
     font-weight: bold;
   }
-  .i {
-    font-family: italic;
+  .u {
+    text-decoration: underline;
   }
   .program-rank {
     position: absolute;
@@ -194,6 +194,7 @@ body {
 
   // Act
   .act-content {
+    margin-bottom: 15%;
     margin-top: 36px;
     height: fit-content;
 
@@ -217,7 +218,6 @@ body {
         padding: 5px;
       }
       td {
-        color: #d0cece;
         text-align: left;
         padding: 6px;
         background-color: $background-grey;

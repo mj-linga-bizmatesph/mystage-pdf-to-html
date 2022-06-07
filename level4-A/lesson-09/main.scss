@@ -34,8 +34,8 @@ body {
   .b {
     font-weight: bold;
   }
-  .i {
-    font-family: italic;
+  .u {
+    text-decoration: underline;
   }
   .program-rank {
     position: absolute;
@@ -194,6 +194,7 @@ body {
 
   // Act
   .act-content {
+    margin-bottom: 15%;
     margin-top: 36px;
     height: fit-content;
 

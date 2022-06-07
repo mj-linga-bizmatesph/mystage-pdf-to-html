@@ -30,8 +30,8 @@ body {
   font-weight: bold;
 }
 
-.html-lesson-wrapper .i {
-  font-family: italic;
+.html-lesson-wrapper .u {
+  text-decoration: underline;
 }
 
 .html-lesson-wrapper .program-rank {
@@ -206,6 +206,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content {
+  margin-bottom: 15%;
   margin-top: 36px;
   height: -webkit-fit-content;
   height: -moz-fit-content;

@@ -146,6 +146,7 @@ body {
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
+      margin-right: 1em;
 
       .arrow-part {
         position: relative;

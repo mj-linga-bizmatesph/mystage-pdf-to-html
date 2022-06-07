@@ -113,7 +113,7 @@ body {
 
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
-  padding: 7px 8px 32px 12px;
+  padding: 7px 8px 0 12px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -122,6 +122,12 @@ body {
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.html-lesson-wrapper aside .text::after {
+  content: '';
+  display: block;
+  height: 3.5em;
 }
 
 .html-lesson-wrapper aside .red {
@@ -171,7 +177,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: clamp(30px, 16%, 100px);
+  margin-top: 20%;
 }
 
 .html-lesson-wrapper .act-content {
@@ -202,7 +208,6 @@ body {
     padding-right: 7px !important;
   }
   .html-lesson-wrapper aside .text {
-    padding-bottom: clamp(24px, 6vw, 32px) !important;
     min-height: calc(max(12vw, 50px));
   }
   .html-lesson-wrapper .see-content .conversation .row p:first-child {
@@ -232,6 +237,7 @@ body {
   }
   .html-lesson-wrapper aside .text {
     padding: 4px 8px;
+    padding-bottom: 0;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;

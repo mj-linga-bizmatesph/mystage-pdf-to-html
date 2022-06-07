@@ -102,13 +102,19 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 8px 32px 12px;
+      padding: 7px 8px 0 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
       background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 3.5em;
+      }
     }
     .red {
       color: red;
@@ -159,7 +165,7 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(30px, 16%, 100px);
+    margin-top: 20%;
   }
 
   // Act
@@ -188,7 +194,6 @@ body {
       padding-right: 7px !important;
     }
     aside .text {
-      padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
     }
     .see-content .conversation .row p:first-child {
@@ -225,6 +230,7 @@ body {
     aside {
       .text {
         padding: 4px 8px;
+        padding-bottom: 0;
       }
       .sub-text {
         padding: 3px 8px !important;

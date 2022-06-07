@@ -61,7 +61,7 @@ body {
 .html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
-  left: 55px;
+  left: 2em;
   font-size: clamp(12px, 3vw, 27px);
 }
 
@@ -92,7 +92,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -71.5px;
+  left: -4.2em;
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
@@ -128,7 +128,7 @@ body {
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content {
   position: relative;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 8em;
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
@@ -148,7 +148,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .section {
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 8em;
   line-height: 1.8em;
   margin-top: clamp(11px, 2.5vw, 15px) !important;
   max-width: 100px;
@@ -156,7 +156,7 @@ body {
 
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 8em;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
@@ -291,16 +291,9 @@ body {
   }
   .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
-    left: clamp(30px, 4.1vw, 55px);
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
-  }
-  .html-lesson-wrapper .section {
-    left: calc(-16% + 30px);
-  }
-  .html-lesson-wrapper .section.words {
-    left: calc(-14% + 30px);
   }
   .html-lesson-wrapper .arrow-part:before {
     left: -4.5% !important;

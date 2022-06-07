@@ -93,7 +93,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: relative;
-  left: -95.5px;
+  left: -7em;
   color: #2078a0;
   font-weight: bold;
   font-family: "Arial";
@@ -102,7 +102,7 @@ body {
 
 .html-lesson-wrapper .review-content {
   position: relative;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 9em;
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
@@ -197,11 +197,7 @@ body {
     left: clamp(30px, 4.1vw, 55px);
   }
   .html-lesson-wrapper .section {
-    left: calc(-20% + 30px);
     top: 16px;
-  }
-  .html-lesson-wrapper .section.words {
-    left: calc(-14% + 30px);
   }
   .html-lesson-wrapper .sub-text:not(:nth-child(2)) {
     padding-bottom: clamp(60px, 3.7vw, 70px);
@@ -210,7 +206,6 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
-    left: -6.5em;
     top: 1.4em;
   }
   .html-lesson-wrapper .type {
@@ -224,4 +219,3 @@ body {
     vertical-align: middle;
   }
 }
-/*# sourceMappingURL=main.css.map */

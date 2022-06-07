@@ -6,7 +6,7 @@ $primary-light: #d4e6f0;
 $primary-dark: #267aa1;
 $background-grey: #f2f2f2;
 
-$left-pixel: clamp(50px, 14%, 126.5px);
+$left-pixel: 8em;
 
 body {
   margin: 0;
@@ -61,7 +61,7 @@ body {
   .title {
     position: absolute;
     top: 80px;
-    left: 55px;
+    left: 2em;
     font-size: clamp(12px, 3vw, 27px);
   }
   .lesson-number {
@@ -83,7 +83,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -71.5px;
+    left: -4.2em;
     color: $primary;
     font-weight: bold;
     font-family: $title-font;
@@ -274,19 +274,12 @@ body {
     }
     .title {
       top: clamp(45px, 8.4vw, 80px);
-      left: clamp(30px, 4.1vw, 55px);
     }
     .divider {
       &.d1,
       &.d2 {
         margin-top: clamp(18px, 3.4vw, 28px);
       }
-    }
-    .section {
-      left: calc(-16% + 30px);
-    }
-    .section.words {
-      left: calc(-14% + 30px);
     }
     .arrow-part {
       &:before {

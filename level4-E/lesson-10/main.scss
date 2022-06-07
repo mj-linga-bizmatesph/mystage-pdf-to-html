@@ -85,7 +85,7 @@ body {
   }
   .section {
     position: relative;
-    left: -95.5px;
+    left: -7em;
     color: $primary;
     font-weight: bold;
     font-family: $title-font;
@@ -95,7 +95,7 @@ body {
   // Review Content
   .review-content {
     position: relative;
-    margin-left: $left-pixel;
+    margin-left: 9em;
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);
@@ -190,11 +190,7 @@ body {
       left: clamp(30px, 4.1vw, 55px);
     }
     .section {
-      left: calc(-20% + 30px);
       top: 16px;
-    }
-    .section.words {
-      left: calc(-14% + 30px);
     }
     .sub-text {
       &:not(:nth-child(2)) {
@@ -207,7 +203,6 @@ body {
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
     .section {
-      left: -6.5em;
       top: 1.4em;
     }
     .type {

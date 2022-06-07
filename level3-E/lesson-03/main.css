@@ -21,10 +21,7 @@ body {
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
 
-.html-lesson-wrapper .b,
-.html-lesson-wrapper header,
-.html-lesson-wrapper aside,
-.html-lesson-wrapper footer {
+.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper aside, .html-lesson-wrapper footer {
   font-weight: bold;
 }
 
@@ -128,7 +125,7 @@ body {
 
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
-  padding: 7px 8px 41px 12px;
+  padding: 7px 8px 43px 12px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -193,7 +190,25 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: clamp(20px, 8%, 56px);
+  margin-top: 18%;
+}
+
+@media screen and (max-width: 860px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 20%;
+  }
 }
 
 .html-lesson-wrapper .act-content {

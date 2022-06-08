@@ -100,7 +100,7 @@ body {
   left: 8px;
   top: calc(min(24vw, 175px));
   min-width: 75px;
-  max-width: 168px;
+  max-width: 11.2em;
   font-size: clamp(7px, 1.8vw, 15px);
 }
 
@@ -186,7 +186,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .conversation .row p:first-child {
-  min-width: 74px;
+  min-width: 54px;
   word-wrap: break-word;
   font-weight: bold;
 }
@@ -201,7 +201,6 @@ body {
 
 .html-lesson-wrapper .see-content img {
   width: 100%;
-  height: 85%;
   margin-left: calc(min(24vw, 15px));
 }
 
@@ -211,6 +210,48 @@ body {
 
 .html-lesson-wrapper .try-content ul li {
   font-style: italic;
+}
+
+.html-lesson-wrapper .try-content table {
+  margin-top: 5px;
+  border-spacing: 0px;
+  padding-bottom: 5px;
+  width: 100%;
+  font-size: clamp(7px, 1.6vw, 15px);
+}
+
+.html-lesson-wrapper .try-content table th,
+.html-lesson-wrapper .try-content table td {
+  max-width: 120px;
+  min-width: 85px;
+  word-wrap: break-word;
+}
+
+.html-lesson-wrapper .try-content table th {
+  color: #ffffff;
+  padding: 4px;
+  background-color: #bc7d3e;
+  border: 1px solid #ffffff;
+}
+
+.html-lesson-wrapper .try-content table td {
+  text-align: left;
+  padding: 0px;
+  border-right: 1px solid #ffffff;
+}
+
+.html-lesson-wrapper .try-content table td:before {
+  content: '\2022';
+  color: black;
+  margin: 10px;
+}
+
+.html-lesson-wrapper .try-content table .exclude:before {
+  content: none !important;
+}
+
+.html-lesson-wrapper .try-content table .exclude {
+  padding-left: 28px;
 }
 
 .html-lesson-wrapper .try-content .col {
@@ -275,12 +316,23 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-wdith: 238px) {
   .html-lesson-wrapper aside {
     width: 20.65%;
   }
   .html-lesson-wrapper header {
     top: clamp(30px, 7.3vw, 59px);
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .html-lesson-wrapper .try-content table td,
+  .html-lesson-wrapper .try-content table th {
+    padding: 2px !important;
+    min-width: 40px;
+  }
+  .html-lesson-wrapper .try-content table td:before {
+    margin: 1px;
   }
 }
 
@@ -309,5 +361,16 @@ body {
   }
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .html-lesson-wrapper .try-content table td,
+  .html-lesson-wrapper .try-content table th {
+    padding: 1px !important;
+    min-width: 39px;
+  }
+  .html-lesson-wrapper .try-content table td:before {
+    margin: 0px;
   }
 }

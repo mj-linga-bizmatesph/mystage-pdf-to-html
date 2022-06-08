@@ -288,6 +288,9 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
   }
+  .html-lesson-wrapper .section {
+    left: -60.5px;
+  }
   .html-lesson-wrapper .see-content {
     margin-top: clamp(22px, 3.8vw, 36px);
   }

@@ -173,7 +173,13 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: clamp(32px, 12%, 42px);
+  margin-top: 18%;
+}
+
+@media screen and (max-width: 860px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 18%;
+  }
 }
 
 .html-lesson-wrapper .act-content {

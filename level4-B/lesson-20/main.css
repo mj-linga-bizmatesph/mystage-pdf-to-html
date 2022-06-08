@@ -148,6 +148,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .html-lesson-wrapper .section {
+    left: -59px;
+  }
   .html-lesson-wrapper .review-content {
     margin-top: clamp(100px, 28%, 240px);
   }
@@ -166,7 +169,22 @@ body {
     min-height: unset;
   }
   .html-lesson-wrapper .section {
-    left: -78px;
+    left: -59px;
+  }
+  .html-lesson-wrapper .review-content ul li span {
+    width: auto;
+    margin: auto 33px auto 0px;
+  }
+  .html-lesson-wrapper .review-content ul li p {
+    width: 270px;
+  }
+  .html-lesson-wrapper .review-content ul li p::before {
+    padding: 1px 8px 0px;
+    margin-right: 5px;
+  }
+  .html-lesson-wrapper footer {
+    bottom: clamp(20px, 5.2vw, 43px);
+    right: 5% !important;
   }
 }
 
@@ -180,15 +198,15 @@ body {
     top: clamp(45px, 8.4vw, 80px);
     left: clamp(30px, 4.1vw, 55px);
   }
-  .html-lesson-wrapper .section {
-    left: calc(-16% + 30px);
-  }
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
   }
 }
 
 @media screen and (max-width: 600px) {
+  .html-lesson-wrapper .section {
+    left: -40.5px;
+  }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }
@@ -198,6 +216,26 @@ body {
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper .review-content ul {
+    padding: 10px 0px 10px 8px;
+  }
+  .html-lesson-wrapper .review-content ul li span {
+    width: auto;
+    margin: auto 33px auto 0px;
+  }
+  .html-lesson-wrapper .review-content ul li p {
+    width: 270px;
+  }
+  .html-lesson-wrapper .review-content ul li p::before {
+    padding: 1px 4px 0px;
+    margin-right: 2px;
+  }
+  .html-lesson-wrapper footer {
+    bottom: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

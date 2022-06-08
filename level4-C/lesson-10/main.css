@@ -153,6 +153,9 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
   }
+  .html-lesson-wrapper .section {
+    left: -78px;
+  }
   .html-lesson-wrapper .review-content ul li span {
     width: auto;
     margin: auto 33px auto 0px;

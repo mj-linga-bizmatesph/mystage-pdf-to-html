@@ -220,7 +220,10 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .try-content ul {
+    margin: 2px 0 0 1.5em;
+  }
   .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px) !important;
   }
@@ -233,6 +236,31 @@ body {
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
     top: -2px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper .try-content ul {
+    margin: 2px 0 0 1.5em;
+  }
+  .html-lesson-wrapper header {
+    top: clamp(26px, 7.3vw, 32px) !important;
+  }
+  .html-lesson-wrapper aside {
+    top: 100px;
+  }
+  .html-lesson-wrapper aside .sub-text {
+    padding: 3px 8px !important;
+  }
+  .html-lesson-wrapper .section {
+    left: calc(clamp(120px, 28%, 218px) - 240px);
+    top: -2px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper .try-content ul {
+    margin: 2px 0 0 1.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */

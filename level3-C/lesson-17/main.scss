@@ -124,6 +124,7 @@ body {
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 24px);
+    padding-bottom: 0.3em;
   }
 
   // See

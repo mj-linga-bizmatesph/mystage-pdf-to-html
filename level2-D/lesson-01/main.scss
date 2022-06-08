@@ -62,13 +62,27 @@ body {
       top: -6px;
     }
   }
-  ul {
-    margin: 2px 0px 0px 18px;
-    padding: 0;
-    list-style-type: decimal;
-  
-    li {
-      padding-left: 6px;
+
+  .biztip-two{
+    ul {
+      margin: 2px 0px 0px 18px;
+      padding: 0;
+      
+      li {
+        padding-left: 6px;
+      }
+    }
+  }
+
+  .try-content{
+    ul {
+      margin: 2px 0px 0px 18px;
+      padding: 0;
+      list-style-type: decimal;
+    
+      li {
+        padding-left: 6px;
+      }
     }
   }
   
@@ -95,7 +109,7 @@ body {
       background-repeat: no-repeat;
     }
     .text {
-      margin-top: 6px;
+      margin-top: 0.2em;
       padding: 7px 7px 32px 12px;
       width: 100%;
       height: fit-content;
@@ -176,7 +190,17 @@ body {
       min-height: 80px;
     }
     aside .second-text {
-      min-height: 110px;
+      min-height: 130px;
+    }
+    .biztip-two{
+      ul {
+        margin: 2px 0px 0px 18px;
+        padding: 0;
+        
+        li {
+          padding-left: 0px;
+        }
+      }
     }
   }
 }

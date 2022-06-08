@@ -24,7 +24,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,7 +63,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -81,7 +86,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -109,7 +114,7 @@ body {
       color: red;
     }
     ul {
-      margin: 2px 0px 0px 18px;
+      margin: 16px 0px 0px 18px;
       padding: 0;
       list-style-type: disc;
       position: relative;
@@ -163,7 +168,7 @@ body {
   // Try
   .try-content {
     margin-top: 12%;
-    
+
     table {
       margin-top: 5px;
       font-size: clamp(8px, 1.6vw, 15px);
@@ -172,7 +177,8 @@ body {
       left: 0;
       position: relative;
       width: 100%;
-      th, td {
+      th,
+      td {
         word-wrap: break-word;
         padding: 4px 7px;
         border: 1px solid #ffffff;
@@ -286,7 +292,8 @@ body {
     }
     .try-content {
       table {
-        td, th {
+        td,
+        th {
           padding: 2px !important;
         }
       }

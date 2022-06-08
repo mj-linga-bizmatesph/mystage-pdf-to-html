@@ -264,10 +264,10 @@ body {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    padding-left: clamp(11px, 2.4vw, 18px);
+    /* padding-left: clamp(11px, 2.4vw, 18px); */
   }
   .html-lesson-wrapper .try-content ul {
-    margin-left: clamp(11px, 2.4vw, 18px);
+    margin-left: clamp(21px, 2.4vw, 21px);
   }
   .html-lesson-wrapper .try-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
@@ -333,9 +333,30 @@ body {
   }
 }
 
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .see-content ul {
+    margin: 3px 0px 0px 2.6em;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  .html-lesson-wrapper .try-content {
+    padding-left: 1.7em;
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin: 3px 0px 0px 12px;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  .html-lesson-wrapper footer {
+    width: 100px;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper footer {
     width: 100px;
     text-align: left;
   }
 }
+/*# sourceMappingURL=main.css.map */

@@ -142,7 +142,7 @@ body {
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
-
+      padding-right: 2em;
       .arrow-part {
         position: relative;
         &:before {

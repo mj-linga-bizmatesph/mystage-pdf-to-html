@@ -145,7 +145,7 @@ body {
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
-
+      padding-right: 2em;
       .arrow-part {
         position: relative;
         &:before {
@@ -231,6 +231,9 @@ body {
 @media screen and (max-width: 820px) {
   .html-lesson-wrapper {
     min-height: unset;
+    .section{
+      left: -60.5px;
+    }
     .see-content {
       margin-top: clamp(22px, 3.8vw, 36px);
       .article {

@@ -280,3 +280,24 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .try-content{
+      padding-left: 2.6em;
+    }
+    footer{
+      bottom: 15px
+    }
+  }
+}

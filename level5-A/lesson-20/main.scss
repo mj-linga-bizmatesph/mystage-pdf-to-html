@@ -157,6 +157,9 @@ body {
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
+    .section{
+      left: calc(-16% + 54px);
+    }
     section {
       padding-right: clamp(22px, 4.6vw, 60px) !important;
     }

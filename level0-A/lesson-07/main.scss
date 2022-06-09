@@ -103,38 +103,20 @@ body {
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -212,8 +194,7 @@ body {
         &.right {
           @extend .b;
           font-size: clamp(18px, 3vw, 25px);
-          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px)
-            clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
+          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px) clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
           background-color: #ebebeb;
           margin-top: 2px;
           color: #2d356b;
@@ -328,6 +309,7 @@ body {
       display: grid;
       grid-template-columns: min-content 1fr;
       gap: 13px;
+      margin-top: 2%;
 
       &.half {
         grid-template-columns: 1fr 1fr;
@@ -407,95 +389,49 @@ body {
         background-repeat: no-repeat;
       }
       .yellow-piece {
-        background-image: url(#{$s3}/0-yellow-piece.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 226, 0, 1) 80%,
-            rgba(255, 255, 255, 0) 80%
-          );
+        background-image: url(#{$s3}/0-yellow-piece.png), linear-gradient(90deg, rgba(255, 226, 0, 1) 80%, rgba(255, 255, 255, 0) 80%);
         background-position: right;
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue-piece {
-        background-image: url(#{$s3}/0-blue-piece.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 20%,
-            rgb(231, 243, 250) 20%
-          );
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-image: url(#{$s3}/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left;
       }
       .red-piece {
-        background-image: url(#{$s3}/0-red-piece.png),
-          linear-gradient(
-            90deg,
-            rgb(255, 178, 176) 80%,
-            rgba(255, 255, 255, 0) 80%
-          );
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-image: url(#{$s3}/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         background-position: right;
       }
       .green-piece {
-        background-image: url(#{$s3}/0-green-piece.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 20%,
-            rgba(195, 232, 230, 1) 20%
-          );
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-image: url(#{$s3}/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgba(195, 232, 230, 1) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
       .green-piece-complete {
-        background-image: url(#{$s3}/0-green-piece-end.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 8%,
-            #c3e8e6 8%,
-            #c3e8e6 80%,
-            rgba(255, 255, 255, 0) 80%
-          ),
-          url(#{$s3}/0-green-piece-start.png);
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-image: url(#{$s3}/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%), url(#{$s3}/0-green-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
       }
 
       .blue-piece-complete {
-        background-image: url(#{$s3}/0-blue-piece-end.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 8%,
-            #e7f3fa 8%,
-            #e7f3fa 80%,
-            rgba(255, 255, 255, 0) 80%
-          ),
-          url(#{$s3}/0-blue-piece-start.png);
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-image: url(#{$s3}/0-blue-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #e7f3fa 8%, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%), url(#{$s3}/0-blue-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
       }
 
       .green-piece-male {
-        background-image: url(#{$s3}/0-green-piece-male.png),
-          linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
-        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-image: url(#{$s3}/0-green-piece-male.png), linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
         background-position: right;
       }
 
       .yellow-piece-female {
-        background-image: url(#{$s3}/0-yellow-piece-female.png),
-          linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
-        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-image: url(#{$s3}/0-yellow-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
@@ -586,11 +522,17 @@ body {
       width: 1%;
       padding-top: 0.8%;
     }
+    .p-1 {
+      padding-top: 0.6%;
 
+      @media screen and (max-width: 501px) {
+        padding-top: 0.4%;
+      }
+    }
     .eng {
       font-family: $noto-sans;
       font-weight: normal;
-      font-size: clamp(10px, 2.68vw, 18px);
+      font-size: clamp(10px, 3vw, 16px);
       margin-bottom: 1%;
     }
     .jap {
@@ -789,7 +731,13 @@ body {
     .table {
       font-family: $noto-sans;
       border-collapse: collapse;
+      .td-pad {
+        padding-top: 0.5%;
 
+        @media screen and (max-width: 521px) {
+          padding-top: 1.2%;
+        }
+      }
       td {
         font-size: clamp(10px, 3vw, 18px);
         img {
@@ -805,6 +753,11 @@ body {
       }
       tr:not(:last-child) td:nth-child(2) {
         padding-bottom: 5%;
+        padding-top: 0.5%;
+
+        @media screen and (max-width: 521px) {
+          padding-top: 1%;
+        }
       }
     }
   }

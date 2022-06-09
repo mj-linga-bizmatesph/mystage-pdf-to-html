@@ -75,12 +75,17 @@ body {
 }
 
 .html-lesson-wrapper ul {
-  margin: 2px 0px 0px 18px;
+  margin: 2px 0px 0px 15px;
   padding: 0;
 }
 
 .html-lesson-wrapper ul li {
   padding-left: 6px;
+}
+
+.html-lesson-wrapper .biz-bullet {
+  margin-top: 4px;
+  margin-bottom: 11px;
 }
 
 .html-lesson-wrapper aside {
@@ -250,7 +255,7 @@ body {
     top: 100px;
   }
   .html-lesson-wrapper aside .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px 6px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;

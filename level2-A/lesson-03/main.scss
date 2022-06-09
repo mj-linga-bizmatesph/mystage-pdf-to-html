@@ -24,7 +24,12 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
+    padding-left: 2%;
     font-weight: bold;
   }
   header {
@@ -59,14 +64,28 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 2px 0px 0px 31px;
     padding: 0;
     list-style-type: decimal;
+
+    @media screen and (max-width: 761px) {
+      margin: 2px 0px 0px 26px;
+    }
+    @media screen and (max-width: 631px) {
+      margin: 2px 0px 0px 22px;
+    }
+    @media screen and (max-width: 501px) {
+      margin: 2px 0px 0px 18px;
+    }
+    @media screen and (max-width: 401px) {
+      margin: 2px 0px 0px 16px;
+    }
 
     li {
       padding-left: 6px;
@@ -115,8 +134,9 @@ body {
   .try-content {
     position: relative;
     margin-left: $left-pixel;
-    padding-right: 20px;
+    padding-right: 25px;
     padding-top: 4px;
+    padding-bottom: 2%;
     font-size: clamp(10px, 2vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
@@ -130,6 +150,7 @@ body {
 
     .conversation {
       margin-bottom: 22px;
+      padding-left: 2%;
       .row {
         p {
           display: inline-block;
@@ -150,29 +171,32 @@ body {
 
   // Try
   .try-content {
-    margin-top: 12%;
+    margin-top: 15%;
     ul {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       height: 120px;
 
-      @media only screen and (max-width: 837px){
+      @media only screen and (max-width: 837px) {
         height: 110px !important;
       }
-      @media only screen and (max-width: 735px){
+      @media only screen and (max-width: 762px) {
+        height: 105px !important;
+      }
+      @media only screen and (max-width: 735px) {
         height: 100px !important;
       }
-      @media only screen and (max-width: 670px){
+      @media only screen and (max-width: 670px) {
+        height: 85px !important;
+      }
+      @media only screen and (max-width: 656px) {
         height: 80px !important;
       }
-      @media only screen and (max-width: 656px){
-        height: 80px !important;
-      }
-      @media only screen and (max-width: 603px){
+      @media only screen and (max-width: 603px) {
         height: 72px !important;
       }
-      @media only screen and (max-width: 521px){
+      @media only screen and (max-width: 521px) {
         height: 70px !important;
       }
     }
@@ -188,8 +212,10 @@ body {
       margin-top: 5px;
       font-size: clamp(8px, 7.3vw, 14px);
       border-spacing: 0px;
-      padding-bottom: 5px;
-      th, td {
+      padding-bottom: 2%;
+      padding-left: 2%;
+      th,
+      td {
         max-width: 120px;
         min-width: 80px;
         word-wrap: break-word;
@@ -229,7 +255,8 @@ body {
     .act-content {
       table {
         font-size: 8px;
-        th, td {
+        th,
+        td {
           max-width: 105px !important;
           min-width: 15px;
         }
@@ -245,6 +272,7 @@ body {
     }
     aside .text {
       min-height: 80px;
+      padding-bottom: 40px;
     }
   }
 }
@@ -279,6 +307,7 @@ body {
     aside {
       .text {
         padding: 4px 8px 12px;
+        padding-bottom: 30px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -293,7 +322,7 @@ body {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-    margin-top: 15%;
+      margin-top: 15%;
     }
     .see-content {
       min-height: 270px;
@@ -301,7 +330,8 @@ body {
     .act-content {
       table {
         font-size: 8px;
-        th, td {
+        th,
+        td {
           max-width: 28px !important;
           min-width: 15px;
         }
@@ -315,7 +345,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 25px;
       }
       .sub-text {
         padding: 3px 8px !important;

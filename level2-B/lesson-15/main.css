@@ -111,7 +111,7 @@ body {
 
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
-  padding: 7px 7px 38px 12px;
+  padding: 7px 7px 65px 12px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -141,7 +141,7 @@ body {
 }
 
 .html-lesson-wrapper aside ul {
-  margin: 16px 0px 0px 18px;
+  margin: -10px 0px 0px 18px;
   padding: 0;
   list-style-type: disc;
   position: relative;
@@ -193,7 +193,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: 14%;
+  margin-top: 25%;
 }
 
 .html-lesson-wrapper .try-content table {
@@ -246,10 +246,8 @@ body {
 
 @media screen and (max-width: 960px) {
   .html-lesson-wrapper aside ul {
-    left: 8px;
-  }
-  .html-lesson-wrapper .try-content {
-    margin-top: 16%;
+    left: 11px;
+    bottom: 130px;
   }
 }
 
@@ -258,35 +256,59 @@ body {
     padding-right: 7px;
   }
   .html-lesson-wrapper aside ul {
-    bottom: 122px;
-    left: 8px;
+    bottom: 133px;
+    left: 11px;
   }
   .html-lesson-wrapper aside .text {
-    min-height: 168px;
-    padding: 7px 7px 8px 12px;
+    min-height: 150px;
+    padding: 7px 7px 74px 12px;
   }
   .html-lesson-wrapper .try-content {
-    margin-top: 20%;
+    margin-top: 29%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper aside .text {
-    min-height: 150px;
+    min-height: 135px;
   }
+}
+
+@media screen and (max-width: 768px) and (max-width: 650px) {
+  .html-lesson-wrapper aside .text {
+    min-height: 104px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .html-lesson-wrapper aside ul {
-    bottom: 108px;
-    left: 7px;
+    bottom: 122px;
+    left: 10px;
   }
+}
+
+@media screen and (max-width: 768px) and (max-width: 650px) {
+  .html-lesson-wrapper aside ul {
+    bottom: 101px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .html-lesson-wrapper header {
     top: clamp(30px, 7.3vw, 59px);
   }
   .html-lesson-wrapper .try-content {
-    margin-top: 24%;
+    margin-top: 30%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) and (max-width: 693px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 33%;
+  }
+}
+
+@media screen and (max-width: 601px) {
   .html-lesson-wrapper {
     min-height: 125.68vw;
   }
@@ -301,15 +323,15 @@ body {
     margin-top: 26%;
   }
   .html-lesson-wrapper aside .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px 35px;
     min-height: 125px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px;
   }
   .html-lesson-wrapper aside ul {
-    bottom: 94px;
-    left: 2px;
+    bottom: 93px;
+    left: 4px;
   }
   .html-lesson-wrapper .try-content table td,
   .html-lesson-wrapper .try-content table th {
@@ -317,28 +339,81 @@ body {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 561px) {
+  .try-content {
+    margin-top: 22% !important;
+  }
+}
+
+@media screen and (max-width: 561px) and (max-width: 525px) {
+  .try-content {
+    margin-top: 28% !important;
+  }
+}
+
+@media screen and (max-width: 561px) and (max-width: 481px) {
+  .try-content {
+    margin-top: 30% !important;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  aside .text {
+    padding: 4px 8px 19px !important;
+  }
+}
+
+@media screen and (max-width: 561px) and (max-width: 525px) {
+  aside .text {
+    min-height: 125px !important;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  aside ul {
+    bottom: 85px !important;
+  }
+}
+
+@media screen and (max-width: 445px) {
   .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px);
   }
   .html-lesson-wrapper .try-content {
-    margin-top: 25%;
+    margin-top: 46% !important;
   }
   .html-lesson-wrapper aside {
     top: 100px;
   }
-  .html-lesson-wrapper aside .text:not(:last-child) {
-    padding: 4px 8px 35px;
+  .html-lesson-wrapper aside .text {
+    padding: 4px 8px 50px !important;
     min-height: 105px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px;
   }
-  .html-lesson-wrapper aside ul:not(:last-child) {
-    bottom: 90px;
-    left: 1px;
+  .html-lesson-wrapper aside ul {
+    bottom: 96px !important;
+    left: 3px;
   }
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 23% !important;
+  }
+  .html-lesson-wrapper aside {
+    top: 100px;
+  }
+  .html-lesson-wrapper aside .text {
+    padding: 4px 8px 26px !important;
+    min-height: 105px;
+  }
+  .html-lesson-wrapper aside ul {
+    bottom: 82px !important;
+    left: 3px;
   }
 }

@@ -62,13 +62,26 @@ body {
       top: -6px;
     }
   }
-  ul {
-    margin: 2px 0px 0px 18px;
-    padding: 0;
-    list-style-type: decimal;
-  
-    li {
-      padding-left: 6px;
+  .biztip-two{
+    ul {
+      margin: 2px 0px 0px 18px;
+      padding: 0;
+      
+      li {
+        padding-left: 6px;
+      }
+    }
+  }
+
+  .try-content{
+    ul {
+      margin: 2px 0px 0px 18px;
+      padding: 0;
+      list-style-type: decimal;
+    
+      li {
+        padding-left: 6px;
+      }
     }
   }
   

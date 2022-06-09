@@ -44,7 +44,7 @@ body {
   .section {
     position: absolute;
     left: calc(-28% - 44px);
-    top: -4px;
+    top: -7px;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
@@ -61,11 +61,11 @@ body {
 
     &.try,
     &.act {
-      top: -6px;
+      // top: -6px;
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 2px 0px 0px 1em;
     padding: 0;
     list-style-type: decimal;
 
@@ -97,7 +97,7 @@ body {
       background-repeat: no-repeat;
     }
     .text {
-      margin-top: 6px;
+      margin-top: 0.2em;
       padding: 7px 7px 32px 12px;
       width: 100%;
       height: fit-content;
@@ -182,11 +182,16 @@ body {
       padding-right: 7px !important;
     }
     aside .text {
-      padding-bottom: clamp(20px, 6vw, 32px) !important;
+      padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
     }
     .see-content .conversation .row p:first-child {
       min-width: clamp(30px, 7.3vw, 60px) !important;
+    }
+    .try-content{
+      ul{
+        margin: 2px 0 0 1.5em; 
+      }
     }
   }
 }
@@ -212,17 +217,25 @@ body {
     }
     aside {
       .text {
-        padding: 4px 8px;
+        padding: 4px 8px 24px;
       }
       .sub-text {
         padding: 3px 8px !important;
       }
     }
+.section {
+      top: -2px;
+    }
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 428px) {
   .html-lesson-wrapper {
+    .try-content{
+      ul{
+        margin: 2px 0 0 1.5em; 
+      }
+    }
     header {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
@@ -234,6 +247,41 @@ body {
     }
     .section {
       left: calc(#{$left-pixel} - 240px);
+      top: -2px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper {
+    .try-content{
+      ul{
+        margin: 2px 0 0 1.5em; 
+      }
+    }
+    header {
+      top: clamp(26px, 7.3vw, 32px) !important;
+    }
+    aside {
+      top: 100px;
+      .sub-text {
+        padding: 3px 8px !important;
+      }
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      top: -2px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .try-content{
+      ul{
+        margin: 2px 0 0 1.5em; 
+      }
     }
   }
 }

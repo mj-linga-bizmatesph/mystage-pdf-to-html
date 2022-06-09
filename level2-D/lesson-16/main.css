@@ -70,7 +70,16 @@ body {
   top: -6px;
 }
 
-.html-lesson-wrapper ul {
+.html-lesson-wrapper .biztip-two ul {
+  margin: 2px 0px 0px 18px;
+  padding: 0;
+}
+
+.html-lesson-wrapper .biztip-two ul li {
+  padding-left: 6px;
+}
+
+.html-lesson-wrapper .try-content ul {
   margin: 2px 0px 0px 18px;
   padding: 0;
   list-style-type: decimal;

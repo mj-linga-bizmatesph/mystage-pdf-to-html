@@ -17,14 +17,16 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -157,7 +159,7 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(30px, 16%, 100px);
+    margin-top: 19%;
   }
 
   // Act

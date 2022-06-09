@@ -125,6 +125,17 @@ body {
   .part-2 {
     margin-top: clamp(28px, 7.2vw, 52px) !important;
   }
+  ul li {
+    padding-left: 6px;
+    position: relative;
+  }
+  ul li:before {
+    content: '■';
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    font-size: clamp(16px, 2.4vw, 16px);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -140,6 +151,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 428px) {
   .html-lesson-wrapper ul li {
     padding-left: 2px;
@@ -150,6 +162,8 @@ body {
   }
 }
 
+=======
+>>>>>>> d728659613f60cbbc523acc962b9ae86ef4fb271
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px) !important;
@@ -158,6 +172,7 @@ body {
     left: calc(clamp(120px, 28%, 218px) - 240px);
   }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 375px) {
   .html-lesson-wrapper ul li {
@@ -168,4 +183,6 @@ body {
     top: -2px;
   }
 }
+=======
+>>>>>>> d728659613f60cbbc523acc962b9ae86ef4fb271
 /*# sourceMappingURL=main.css.map */

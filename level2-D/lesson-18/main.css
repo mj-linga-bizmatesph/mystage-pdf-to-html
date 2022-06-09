@@ -209,6 +209,9 @@ body {
     left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
+  .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
+    top: -3px;
+  }
   .html-lesson-wrapper .see-content .conversation .row p:first-child {
     min-width: 32px !important;
   }
@@ -244,6 +247,21 @@ body {
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
+  }
+  .html-lesson-wrapper .section {
+    left: calc(clamp(120px, 28%, 218px) - 240px);
+  }
+  .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
+    top: -3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 15px;
+  }
+  .html-lesson-wrapper ul li {
+    padding-left: 0px;
   }
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);

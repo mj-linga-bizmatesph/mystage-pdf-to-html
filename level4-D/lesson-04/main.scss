@@ -119,6 +119,16 @@ body {
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);
+
+    @media screen and (max-width: 816px) {
+      margin-left: clamp(50px, 15%, 126.5px) !important;
+    }
+    @media screen and (max-width: 781px) {
+      margin-left: clamp(50px, 16%, 126.5px) !important;
+    }
+    @media screen and (max-width: 769px) {
+      margin-left: $left-pixel !important;
+    }
   }
 
   // Words and Phrases Content
@@ -136,11 +146,28 @@ body {
       margin-left: $left-pixel;
       line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
+
+      @media screen and (max-width: 816px) {
+        margin-left: clamp(50px, 15%, 126.5px) !important;
+      }
+      @media screen and (max-width: 781px) {
+        margin-left: clamp(50px, 16%, 126.5px) !important;
+      }
+      @media screen and (max-width: 769px) {
+        margin-left: $left-pixel !important;
+      }
     }
 
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
+
+      @media screen and (max-width: 769px) {
+        margin-left: clamp(50px, 15%, 125.5px) !important;
+      }
+      @media screen and (max-width: 601px) {
+        margin-left: clamp(50px, 15.5%, 125.5px) !important;
+      }
 
       .arrow-part {
         position: relative;
@@ -194,6 +221,7 @@ body {
   .act-content {
     margin-top: 36px;
     height: fit-content;
+    margin-bottom: 10%;
 
     table {
       margin-top: 5px;

@@ -121,6 +121,7 @@ body {
     margin-left: $left-pixel;
     padding-right: 20px;
     padding-top: 4px;
+    padding-bottom: 2%;
     font-size: clamp(10px, 2vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
@@ -165,7 +166,7 @@ body {
           padding: 0px 0px 10px 10px;
 
           &:last-child {
-            padding-bottom: 5px;
+            padding-bottom: 11px;
           }
           span {
             display: block;

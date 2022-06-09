@@ -21,7 +21,12 @@ body {
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper footer, .html-lesson-wrapper aside, .html-lesson-wrapper p.sub-text {
+.html-lesson-wrapper .b,
+.html-lesson-wrapper header,
+.html-lesson-wrapper footer,
+.html-lesson-wrapper aside,
+.html-lesson-wrapper p.sub-text {
+  padding-left: 2%;
   font-weight: bold;
 }
 
@@ -71,9 +76,33 @@ body {
 }
 
 .html-lesson-wrapper ul {
-  margin: 2px 0px 0px 18px;
+  margin: 2px 0px 0px 31px;
   padding: 0;
   list-style-type: decimal;
+}
+
+@media screen and (max-width: 761px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 26px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 22px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 18px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 16px;
+  }
 }
 
 .html-lesson-wrapper ul li {
@@ -127,8 +156,9 @@ body {
 .html-lesson-wrapper .try-content {
   position: relative;
   margin-left: clamp(120px, 28%, 218px);
-  padding-right: 20px;
+  padding-right: 25px;
   padding-top: 4px;
+  padding-bottom: 2%;
   font-size: clamp(10px, 2vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
@@ -143,6 +173,7 @@ body {
 
 .html-lesson-wrapper .see-content .conversation {
   margin-bottom: 22px;
+  padding-left: 2%;
 }
 
 .html-lesson-wrapper .see-content .conversation .row p {
@@ -162,7 +193,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
-  margin-top: 12%;
+  margin-top: 15%;
 }
 
 .html-lesson-wrapper .try-content ul {
@@ -184,6 +215,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 762px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 105px !important;
+  }
+}
+
 @media only screen and (max-width: 735px) {
   .html-lesson-wrapper .try-content ul {
     height: 100px !important;
@@ -192,7 +229,7 @@ body {
 
 @media only screen and (max-width: 670px) {
   .html-lesson-wrapper .try-content ul {
-    height: 80px !important;
+    height: 85px !important;
   }
 }
 
@@ -226,10 +263,12 @@ body {
   margin-top: 5px;
   font-size: clamp(8px, 7.3vw, 14px);
   border-spacing: 0px;
-  padding-bottom: 5px;
+  padding-bottom: 2%;
+  padding-left: 2%;
 }
 
-.html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+.html-lesson-wrapper .act-content table th,
+.html-lesson-wrapper .act-content table td {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
@@ -269,7 +308,8 @@ body {
   .html-lesson-wrapper .act-content table {
     font-size: 8px;
   }
-  .html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+  .html-lesson-wrapper .act-content table th,
+  .html-lesson-wrapper .act-content table td {
     max-width: 105px !important;
     min-width: 15px;
   }
@@ -281,6 +321,7 @@ body {
   }
   .html-lesson-wrapper aside .text {
     min-height: 80px;
+    padding-bottom: 40px;
   }
 }
 
@@ -312,6 +353,7 @@ body {
   }
   .html-lesson-wrapper aside .text {
     padding: 4px 8px 12px;
+    padding-bottom: 30px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
@@ -331,7 +373,8 @@ body {
   .html-lesson-wrapper .act-content table {
     font-size: 8px;
   }
-  .html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+  .html-lesson-wrapper .act-content table th,
+  .html-lesson-wrapper .act-content table td {
     max-width: 28px !important;
     min-width: 15px;
   }
@@ -342,7 +385,7 @@ body {
     top: 100px;
   }
   .html-lesson-wrapper aside .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px 25px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;

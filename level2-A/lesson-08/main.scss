@@ -24,7 +24,11 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,7 +63,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -81,7 +86,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -123,7 +128,7 @@ body {
     width: calc(100% - #{$left-pixel} - 24px);
   }
 
-  // See 
+  // See
   .see-content {
     margin-top: clamp(20px, 17%, 116px);
     min-height: 400px;
@@ -176,6 +181,7 @@ body {
     }
     aside .text {
       min-height: 80px;
+      padding-bottom: 40px;
     }
   }
 }
@@ -206,10 +212,11 @@ body {
     }
     .try-content {
       margin-top: 10%;
+      padding-bottom: 50px;
     }
     aside {
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 15px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -224,7 +231,7 @@ body {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-    margin-top: 15%;
+      margin-top: 15%;
     }
     .see-content {
       min-height: 270px;
@@ -232,7 +239,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 25px;
       }
       .sub-text {
         padding: 3px 8px !important;

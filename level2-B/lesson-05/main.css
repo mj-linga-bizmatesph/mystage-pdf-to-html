@@ -111,7 +111,7 @@ body {
 
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
-  padding: 7px 7px 32px 12px;
+  padding: 7px 7px 40px 12px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -191,6 +191,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 762px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 105px !important;
+  }
+}
+
 @media only screen and (max-width: 735px) {
   .html-lesson-wrapper .try-content ul {
     height: 100px !important;
@@ -199,7 +205,7 @@ body {
 
 @media only screen and (max-width: 670px) {
   .html-lesson-wrapper .try-content ul {
-    height: 80px !important;
+    height: 85px !important;
   }
 }
 
@@ -293,8 +299,17 @@ body {
   .html-lesson-wrapper .try-content {
     margin-top: 10%;
   }
+}
+
+@media screen and (max-width: 600px) and (max-width: 497px) {
+  .html-lesson-wrapper .try-content {
+    margin-top: 12%;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .html-lesson-wrapper aside .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px 23px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;

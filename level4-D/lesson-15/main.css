@@ -122,6 +122,24 @@ body ul {
   line-height: clamp(12px, 3vw, 26px);
 }
 
+@media screen and (max-width: 770px) {
+  body ul {
+    margin: 3px 0px 0px 16px;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  body ul {
+    margin: 3px 0px 0px 14px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  body ul {
+    margin: 3px 0px 0px 10.5px;
+  }
+}
+
 body ul li {
   padding-left: 8px;
   list-style: decimal;
@@ -135,6 +153,30 @@ body .try-content {
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
+}
+
+@media screen and (max-width: 816px) {
+  body .see-content,
+  body .act-content,
+  body .try-content {
+    margin-left: clamp(50px, 15%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  body .see-content,
+  body .act-content,
+  body .try-content {
+    margin-left: clamp(50px, 16%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  body .see-content,
+  body .act-content,
+  body .try-content {
+    margin-left: clamp(50px, 14%, 126.5px) !important;
+  }
 }
 
 body .words-phrase-content {
@@ -156,9 +198,39 @@ body .words-phrase-content .section {
   margin-top: clamp(10px, 2.6vw, 18px) !important;
 }
 
+@media screen and (max-width: 816px) {
+  body .words-phrase-content .section {
+    margin-left: clamp(50px, 15%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  body .words-phrase-content .section {
+    margin-left: clamp(50px, 16%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  body .words-phrase-content .section {
+    margin-left: clamp(50px, 14%, 126.5px) !important;
+  }
+}
+
 body .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
+}
+
+@media screen and (max-width: 769px) {
+  body .words-phrase-content .pointers {
+    margin-left: clamp(50px, 15%, 125.5px) !important;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  body .words-phrase-content .pointers {
+    margin-left: clamp(50px, 15.5%, 125.5px) !important;
+  }
 }
 
 body .words-phrase-content .pointers .arrow-part {
@@ -234,6 +306,7 @@ body .act-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 10%;
 }
 
 body .act-content table {

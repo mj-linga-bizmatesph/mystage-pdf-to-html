@@ -190,7 +190,7 @@ body {
     width: 95%;
   }
   .html-lesson-wrapper aside .second-text {
-    min-height: 130px;
+    min-height: 160px;
   }
   .html-lesson-wrapper aside .second-text p {
     margin-right: 20px;
@@ -277,6 +277,21 @@ body {
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
+  }
+  .html-lesson-wrapper .section {
+    left: calc(clamp(120px, 28%, 218px) - 240px);
+  }
+  .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
+    top: -3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 15px;
+  }
+  .html-lesson-wrapper ul li {
+    padding-left: 0px;
   }
   .html-lesson-wrapper .section {
     left: calc(clamp(120px, 28%, 218px) - 240px);

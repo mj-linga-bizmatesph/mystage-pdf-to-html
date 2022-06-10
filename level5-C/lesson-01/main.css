@@ -205,7 +205,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-/* padding-left: clamp(11px, 2.4vw, 18px); */
+
 .html-lesson-wrapper .act-content p:not(.sub-text) {
   margin: 2px auto;
   line-height: clamp(12px, 3vw, 26px);
@@ -238,10 +238,10 @@ body {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    padding-left: clamp(11px, 2.4vw, 18px);
+    /* padding-left: clamp(11px, 2.4vw, 18px); */
   }
   .html-lesson-wrapper .try-content ul {
-    margin-left: clamp(11px, 2.4vw, 18px);
+    margin-left: clamp(10px, 2.7vw, 35px);
   }
   .html-lesson-wrapper .try-content li {
     padding-left: clamp(9px, 1.8vw, 13px);
@@ -287,6 +287,25 @@ body {
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper .type {
+    padding: 2px 8px 2px 7px !important;
+  }
+  .html-lesson-wrapper .level {
+    padding: 2px 6px 2px 7px !important;
+  }
+  .html-lesson-wrapper .line {
+    margin: 0 6px;
+    vertical-align: middle;
+  }
+  .html-lesson-wrapper .try-content {
+    padding-left: 2.6em;
+  }
+  .html-lesson-wrapper footer {
+    bottom: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

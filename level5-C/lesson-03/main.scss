@@ -226,7 +226,7 @@ body {
       margin-top: clamp(20px, 3.7vw, 30px);
       /* padding-left: clamp(11px, 2.4vw, 18px); */
       ul {
-        margin-left: clamp(11px, 2.4vw, 18px);
+        margin-left: clamp(10px,2.7vw,35px)
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -279,6 +279,26 @@ body {
     .line {
       margin: 0 6px;
       vertical-align: middle;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .try-content{
+      padding-left: 2.6em;
+    }
+    footer{
+      bottom: 15px
     }
   }
 }

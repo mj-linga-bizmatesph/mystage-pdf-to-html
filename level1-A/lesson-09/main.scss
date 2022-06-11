@@ -27,8 +27,7 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -101,7 +100,7 @@ body {
     }
     &.try,
     &.act {
-      top: -1px;
+      top: 0;
     }
   }
   .divider {
@@ -257,6 +256,7 @@ body {
         border: 1px solid #000000;
         padding: 5px 8px;
         position: relative;
+        vertical-align: middle;
       }
       tr {
         background-color: #d4e6f0;
@@ -531,7 +531,8 @@ body {
         top: unset;
       }
       table {
-        th, td {
+        th,
+        td {
           padding: 3px 4px;
         }
       }

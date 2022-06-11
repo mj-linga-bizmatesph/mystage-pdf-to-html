@@ -27,8 +27,7 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,7 +38,9 @@ body {
   .b {
     font-weight: bold;
   }
-
+  .ff-ja {
+    font-family: $ja-font;
+  }
   .u-sup {
     border-bottom: solid 1.5px black;
     display: inline-block;
@@ -175,6 +176,7 @@ body {
     .example {
       margin-top: 34px;
       margin-left: 18.5px;
+      margin-right: 1.5em;
 
       .conversation {
         line-height: clamp(12px, 3vw, 26px);
@@ -331,6 +333,7 @@ body {
       margin-top: 20px;
       margin-left: 125px;
       word-spacing: 3px;
+      margin-right: 1.5em;
       .subtitle {
         font-size: clamp(6px, 1.8vw, 15px);
         color: #000000;

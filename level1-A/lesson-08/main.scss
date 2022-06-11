@@ -27,8 +27,7 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,7 +38,9 @@ body {
   .b {
     font-weight: bold;
   }
-
+  .ff-ja {
+    font-family: $ja-font;
+  }
   .u-sup {
     border-bottom: solid 1.5px black;
     display: inline-block;
@@ -102,7 +103,7 @@ body {
     }
     &.try,
     &.act {
-      top: -1px;
+      top: 0;
     }
   }
   .divider {
@@ -288,9 +289,6 @@ body {
     font-size: clamp(6px, 1.8vw, 15px);
     height: fit-content;
 
-    .sub-text {
-      line-height: clamp(12px, 2.8vw, 22px);
-    }
     ul {
       list-style: none;
       margin: 3px 0px 0px 0px;

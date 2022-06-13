@@ -1,4 +1,4 @@
-$text-font: 'Calibri', 'PT Sans', 'Trebuchet MS';
+$text-font: "Calibri", "PT Sans", "Trebuchet MS";
 
 $primary: #2078a0;
 
@@ -17,14 +17,16 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png");
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -51,7 +53,7 @@ body {
     padding-top: 9px;
     font-size: clamp(12px, 2.4vw, 21.5px);
     padding-left: 6px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-section-arrow.png');
+    background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-section-arrow.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 50px;
@@ -94,7 +96,7 @@ body {
       padding: 5px 11px 5px 12px;
       width: 100%;
       max-width: 164px;
-      background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-title.png');
+      background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-title.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
@@ -104,7 +106,7 @@ body {
       width: 100%;
       height: fit-content;
       min-height: 117px;
-      background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
+      background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
@@ -154,7 +156,16 @@ body {
 
   // Try
   .try-content {
-    margin-top: clamp(56px, 22%, 136px);
+    margin-top: 18%;
+    @media screen and (max-width: 860px) {
+      margin-top: 25%;
+    }
+    @media screen and (max-width: 525px) {
+      margin-top: 30%;
+    }
+    @media screen and (max-width: 400px) {
+      margin-top: 20%;
+    }
   }
 
   // Act

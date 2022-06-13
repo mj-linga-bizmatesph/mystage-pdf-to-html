@@ -24,7 +24,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,7 +63,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -81,7 +86,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -97,7 +102,7 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 7px 32px 12px;
+      padding: 7px 7px 40px 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
@@ -205,7 +210,7 @@ body {
     }
     aside {
       .text {
-        padding: 4px 8px 5px;
+        padding: 4px 8px 18px;
       }
       .bottom-part {
         min-height: 95px;
@@ -228,7 +233,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 21px;
       }
       .sub-text {
         padding: 3px 8px !important;

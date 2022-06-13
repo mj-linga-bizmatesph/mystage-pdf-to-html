@@ -24,7 +24,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,7 +63,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -81,7 +86,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -97,7 +102,7 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 7px 32px 12px;
+      padding: 7px 7px 40px 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
@@ -109,7 +114,7 @@ body {
       color: red;
     }
     ul {
-      margin: 2px 0px 0px 18px;
+      margin: 16px 0px 0px 18px;
       padding: 0;
       list-style-type: disc;
       position: relative;
@@ -163,7 +168,7 @@ body {
   // Try
   .try-content {
     margin-top: 12%;
-    
+
     table {
       margin-top: 5px;
       font-size: clamp(8px, 1.6vw, 15px);
@@ -172,7 +177,8 @@ body {
       left: 0;
       position: relative;
       width: 100%;
-      th, td {
+      th,
+      td {
         word-wrap: break-word;
         padding: 4px 7px;
         border: 1px solid #ffffff;
@@ -214,11 +220,11 @@ body {
     }
     aside {
       ul {
-        bottom: 95px;
-        left: 7px;
+        bottom: 105px;
+        left: 10px;
       }
       .text {
-        min-height: 100px;
+        min-height: 110px;
       }
     }
 
@@ -232,7 +238,8 @@ body {
   .html-lesson-wrapper {
     .try-content {
       table {
-        th, td {
+        th,
+        td {
           &:first-child {
             min-width: 55px;
           }
@@ -241,10 +248,37 @@ body {
     }
     aside {
       .text {
-        min-height: 90px;
+        min-height: 100px;
       }
       ul {
-        bottom: 88px;
+        bottom: 98px;
+        left: 10px;
+      }
+    }
+    header {
+      top: clamp(30px, 7.3vw, 59px);
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .html-lesson-wrapper {
+    .try-content {
+      table {
+        th,
+        td {
+          &:first-child {
+            min-width: 55px;
+          }
+        }
+      }
+    }
+    aside {
+      .text {
+        min-height: 100px;
+      }
+      ul {
+        bottom: 108px;
         left: 7px;
       }
     }
@@ -267,7 +301,8 @@ body {
     .try-content {
       margin-top: 20%;
       table {
-        td, th {
+        td,
+        th {
           padding: 2px !important;
         }
       }
@@ -278,8 +313,43 @@ body {
         min-height: 90px;
       }
       ul {
-        bottom: 75px;
-        left: 2px;
+        bottom: 79px;
+        left: 4px;
+      }
+      .sub-text {
+        padding: 3px 8px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .html-lesson-wrapper {
+    min-height: 125.68vw;
+    .section {
+      left: clamp(-158px, calc(-28% - 34px), -100px);
+      padding-top: 5px;
+    }
+    .see-content .conversation .row p:first-child {
+      min-width: 32px !important;
+    }
+    .try-content {
+      margin-top: 20%;
+      table {
+        td,
+        th {
+          padding: 2px !important;
+        }
+      }
+    }
+    aside {
+      .text {
+        padding: 4px 8px 12px;
+        min-height: 112px;
+      }
+      ul {
+        bottom: 92px;
+        left: 4px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -296,7 +366,8 @@ body {
     .try-content {
       margin-top: 23%;
       table {
-        th, td {
+        th,
+        td {
           &:first-child {
             min-width: 0px;
           }
@@ -313,8 +384,8 @@ body {
         min-height: 106px;
       }
       ul {
-        bottom: 83px;
-        left: 2px;
+        bottom: 88px;
+        left: 0px;
       }
     }
     .section {

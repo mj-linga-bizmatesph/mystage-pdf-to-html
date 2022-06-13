@@ -212,7 +212,23 @@ body {
     }
   }
 }
-
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    .section {
+      left: -29.5px;
+    }
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+  }
+}
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
     .section{
@@ -242,4 +258,10 @@ body {
     }
   }
 }
-
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .section{
+      left:-19.9px;
+    }
+  }
+}

@@ -377,7 +377,7 @@ body {
     .try-content{
       padding-left: 1.7em;
       ul{
-        margin: 3px 0px 0px 12px;
+        margin: 3px 0px 0px 1.7em;
         padding: 0;
         line-height: clamp(12px, 3vw, 26px);
       }
@@ -398,6 +398,44 @@ body {
 }
 @media screen and (max-width: 375px) {
   .html-lesson-wrapper {
+    .see-content{
+      ul{
+        margin: 3px 0px 0px 2.8em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .try-content{
+      padding-left: 1.7em;
+      ul{
+        margin: 3px 0px 0px 12px;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    footer {
+      width: 100px;
+      text-align: left;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .see-content{
+      ul{
+        margin: 3px 0px 0px 2.4em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .try-content{
+      padding-left: 1.7em;
+      ul{
+        margin-left: 1.4em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
     footer {
       width: 100px;
       text-align: left;

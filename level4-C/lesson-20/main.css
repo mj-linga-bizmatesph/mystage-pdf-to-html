@@ -141,17 +141,29 @@ body {
   font-family: "Arial";
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .section {
+    left: -59px;
+  }
+  .html-lesson-wrapper .review-content {
+    margin-top: clamp(100px, 28%, 240px);
+  }
+  .html-lesson-wrapper .review-content img {
+    margin-top: clamp(40px, 8.2vw, 80px);
+    width: 100%;
+  }
+  .html-lesson-wrapper footer {
+    bottom: clamp(20px, 5.2vw, 43px);
+    right: 5% !important;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .html-lesson-wrapper {
     min-height: unset;
   }
-<<<<<<< HEAD
   .html-lesson-wrapper .section {
-    left: -78px;
-=======
-  .html-lesson-wrapper .section.review {
-    left: calc(-14% + 13px);
->>>>>>> df8cb4d9 (Enhanced aside titles alignments)
+    left: -77px;
   }
   .html-lesson-wrapper .review-content ul li span {
     width: auto;
@@ -187,7 +199,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .section {
-    left: -15.6%;
+    left: -40.5px;
   }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
@@ -199,22 +211,12 @@ body {
     margin: 0 6px;
     vertical-align: middle;
   }
-<<<<<<< HEAD
-=======
-  .html-lesson-wrapper .words-phrase-content .section {
-    max-width: 60px;
-  }
-  .html-lesson-wrapper .arrow-part:before {
-    border-left: 3.5px solid transparent !important;
-    border-right: 3.5px solid transparent !important;
-    border-top: 5.5px solid #2078a0 !important;
-  }
->>>>>>> df8cb4d9 (Enhanced aside titles alignments)
 }
 
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .section {
+    left: -48.5px;
+  }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }
@@ -225,18 +227,12 @@ body {
     margin: 0 6px;
     vertical-align: middle;
   }
-  .html-lesson-wrapper .words-phrase-content .section {
-    max-width: 50px;
-  }
-  .html-lesson-wrapper .arrow-part:before {
-    border-left: 3.5px solid transparent !important;
-    border-right: 3.5px solid transparent !important;
-    border-top: 5.5px solid #2078a0 !important;
-  }
 }
 
->>>>>>> 45035380 (Fixed issues with responsiveness)
 @media screen and (max-width: 420px) {
+  .html-lesson-wrapper .section {
+    left: -40.9px;
+  }
   .html-lesson-wrapper .review-content ul {
     padding: 10px 0px 10px 8px;
   }
@@ -253,6 +249,12 @@ body {
   }
   .html-lesson-wrapper footer {
     bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper .section {
+    left: -37.9px;
   }
 }
 /*# sourceMappingURL=main.css.map */

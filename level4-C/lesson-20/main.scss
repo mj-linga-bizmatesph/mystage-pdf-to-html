@@ -126,16 +126,29 @@ body {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    .section{
+      left: -59px;
+    }
+    .review-content {
+      margin-top: clamp(100px, 28%, 240px);
+      img {
+        margin-top: clamp(40px, 8.2vw, 80px);
+        width: 100%;
+      }
+    }
+    footer {
+      bottom: clamp(20px, 5.2vw, 43px);
+      right: 5% !important;
+    }
+  }
+}
 @media screen and (max-width: 820px) {
   .html-lesson-wrapper {
     min-height: unset;
-<<<<<<< HEAD
     .section{
-      left: -78px;
-=======
-    .section.review {
-      left: calc(-14% + 13px);
->>>>>>> df8cb4d9 (Enhanced aside titles alignments)
+      left: -77px;
     }
     .review-content {
       ul {
@@ -160,10 +173,6 @@ body {
     }
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> df8cb4d9 (Enhanced aside titles alignments)
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
     .program-rank {
@@ -184,35 +193,24 @@ body {
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
     .section {
-      // left: -40.5px;
-      left: -15.6%
+      left: -40.5px;
+    }
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
     }
   }
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 428px) {
   .html-lesson-wrapper {
-    .type {
-      padding: 2px 8px 2px 7px !important;
-    }
-    .level {
-      padding: 2px 6px 2px 7px !important;
-    }
-    .line {
-      margin: 0 6px;
-      vertical-align: middle;
-    }
-    .words-phrase-content {
-      .section {
-        max-width: 50px;
-      }
-    }
-    .arrow-part {
-      &:before {
-        border-left: 3.5px solid transparent !important;
-        border-right: 3.5px solid transparent !important;
-        border-top: 5.5px solid $primary !important;
-      }
+    .section {
+      left: -48.5px;
     }
     .type {
       padding: 2px 8px 2px 7px !important;
@@ -224,26 +222,13 @@ body {
       margin: 0 6px;
       vertical-align: middle;
     }
-<<<<<<< HEAD
-=======
-    .words-phrase-content {
-      .section {
-        max-width: 60px;
-      }
-    }
-    .arrow-part {
-      &:before {
-        border-left: 3.5px solid transparent !important;
-        border-right: 3.5px solid transparent !important;
-        border-top: 5.5px solid $primary !important;
-      }
-    }
->>>>>>> df8cb4d9 (Enhanced aside titles alignments)
   }
 }
-
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
+    .section{
+      left:-40.9px
+    }
     .review-content {
 
       ul {
@@ -265,6 +250,13 @@ body {
     }
     footer {
       bottom: 15px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .section{
+      left:-37.9px
     }
   }
 }

@@ -220,6 +220,16 @@ body {
     margin-top: 36px;
     margin-bottom: 30px;
     height: fit-content;
+    .article {
+      margin-top: 5px;
+      line-height: 1.7em;
+      margin-bottom: 29px;
+  
+      span.highlight {
+        color: $primary-dark;
+        font-weight: bold;
+      }
+    }
   }
 
   footer {

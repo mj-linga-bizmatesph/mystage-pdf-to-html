@@ -194,6 +194,16 @@ body {
     ul {
       list-style-type: decimal;
     }
+    .article {
+      margin-top: 5px;
+      line-height: 1.7em;
+      margin-bottom: 29px;
+
+      span.highlight {
+        color: $primary-dark;
+        font-weight: bold;
+      }
+    }
   }
 
   // Act

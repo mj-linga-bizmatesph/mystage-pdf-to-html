@@ -208,6 +208,17 @@ body {
   list-style-type: decimal;
 }
 
+.html-lesson-wrapper .try-content .article {
+  margin-top: 5px;
+  line-height: 1.7em;
+  margin-bottom: 29px;
+}
+
+.html-lesson-wrapper .try-content .article span.highlight {
+  color: #267aa1;
+  font-weight: bold;
+}
+
 .html-lesson-wrapper .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;

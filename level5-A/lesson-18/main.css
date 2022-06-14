@@ -217,7 +217,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-align: right;
+  text-align: left;
   bottom: 43px;
   right: 6.2%;
   font-family: "Arial";
@@ -306,6 +306,26 @@ body {
   }
   .html-lesson-wrapper footer {
     bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper .see-content ul {
+    margin: 3px 0px 0px 2.4em;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  .html-lesson-wrapper .try-content {
+    padding-left: 1.7em;
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 1.4em;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  .html-lesson-wrapper footer {
+    width: 29%;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

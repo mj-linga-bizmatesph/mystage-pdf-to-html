@@ -203,7 +203,7 @@ body {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
-    text-align: right;
+    text-align: left;
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
@@ -301,6 +301,29 @@ body {
     }
     footer{
       bottom: 15px
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .see-content{
+      ul{
+        margin: 3px 0px 0px 2.4em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .try-content{
+      padding-left: 1.7em;
+      ul{
+        margin-left: 1.4em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    footer {
+      width: 29%;
+      text-align: left;
     }
   }
 }

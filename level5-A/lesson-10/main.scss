@@ -67,7 +67,7 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 91.65%;
+    right: 6.5%;
     width: 1.9%;
     text-align: center;
     margin-top: 7.4%;
@@ -157,28 +157,6 @@ body {
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
-    section {
-      padding-right: clamp(22px, 4.6vw, 60px) !important;
-    }
-    ul {
-      margin-top: clamp(18px, 3.4vw, 28px) !important;
-      li {
-        margin-bottom: clamp(18px, 3.4vw, 30px) !important;
-        p {
-         margin-left: clamp(18px, 5vw, 40px) !important;
-        }
-      }
-    }
-    footer {
-      bottom: clamp(16px, 4.8vw, 43px);
-      right: 5% !important;
-      max-width: 34%;
-    }
-  }
-}
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper {
-    min-height: unset;
     .section{
       left: calc(-16% + 54px);
     }
@@ -193,6 +171,15 @@ body {
          margin-left: clamp(18px, 5vw, 40px) !important;
         }
       }
+    }
+    .lesson-number {
+      position: absolute;
+      right: 6.6%;
+      width: 1.9%;
+      text-align: center;
+      margin-top: 7.4%;
+      font-size: clamp(7px, 1.8vw, 13px);
+      color: #ffffff;
     }
     footer {
       bottom: clamp(16px, 4.8vw, 43px);

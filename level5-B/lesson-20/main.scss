@@ -67,7 +67,7 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 91.65%;
+    right: 6.5%;
     width: 1.9%;
     text-align: center;
     margin-top: 7.4%;
@@ -147,7 +147,7 @@ body {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
-    text-align: right;
+    text-align: left;
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
@@ -168,6 +168,15 @@ body {
          margin-left: clamp(18px, 5vw, 40px) !important;
         }
       }
+    }
+    .lesson-number {
+      position: absolute;
+      right: 6.6%;
+      width: 1.9%;
+      text-align: center;
+      margin-top: 7.4%;
+      font-size: clamp(7px, 1.8vw, 13px);
+      color: #ffffff;
     }
     footer {
       bottom: clamp(16px, 4.8vw, 43px);

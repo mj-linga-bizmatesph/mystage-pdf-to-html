@@ -298,4 +298,24 @@ body {
     vertical-align: middle;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper .see-content ul {
+    margin: 3px 0px 0px 2.4em;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  .html-lesson-wrapper .try-content {
+    padding-left: 2.7em;
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 1em;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+  }
+  .html-lesson-wrapper footer {
+    width: 29%;
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=main.css.map */

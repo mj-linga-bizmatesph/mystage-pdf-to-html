@@ -289,3 +289,27 @@ body {
     }
   }
 }
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .see-content{
+      ul{
+        margin: 3px 0px 0px 2.4em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .try-content{
+      padding-left: 2.7em;
+      ul{
+        margin-left: 1em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    
+    footer {
+      width: 29%;
+      text-align: left;
+    }
+  }
+}

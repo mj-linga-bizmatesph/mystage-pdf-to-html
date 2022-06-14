@@ -241,6 +241,17 @@ body {
   height: fit-content;
 }
 
+.html-lesson-wrapper .act-content .article {
+  margin-top: 5px;
+  line-height: 1.7em;
+  margin-bottom: 29px;
+}
+
+.html-lesson-wrapper .act-content .article span.highlight {
+  color: #267aa1;
+  font-weight: bold;
+}
+
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;

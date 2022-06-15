@@ -147,10 +147,15 @@ body {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
-    text-align: left;
+    text-align: right;
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
+    width: 30%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 
@@ -219,9 +224,24 @@ body {
     .level {
       padding: 2px 6px 2px 7px !important;
     }
+    .lesson-number {
+      margin-top: 6.9%;
+    }
     .line {
       margin: 0 6px;
       vertical-align: middle;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+   
+    .lesson-number {
+      margin-top: 7.2%;
+    }
+    footer {
+      width: 100%;
+      text-align: right;
     }
   }
 }

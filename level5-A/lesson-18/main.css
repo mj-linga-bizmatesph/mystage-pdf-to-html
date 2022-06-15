@@ -217,10 +217,16 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-align: left;
+  text-align: right;
   bottom: 43px;
   right: 6.2%;
   font-family: "Arial";
+  width: 30%;
+}
+
+.html-lesson-wrapper footer span {
+  overflow-wrap: break-word;
+  display: inline-block;
 }
 
 @media screen and (max-width: 900px) {
@@ -284,6 +290,9 @@ body {
   .html-lesson-wrapper .level {
     padding: 2px 6px 2px 7px !important;
   }
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 6.9%;
+  }
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
@@ -323,9 +332,12 @@ body {
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
   }
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 7.2%;
+  }
   .html-lesson-wrapper footer {
-    width: 29%;
-    text-align: left;
+    width: 100%;
+    text-align: right;
   }
 }
 /*# sourceMappingURL=main.css.map */

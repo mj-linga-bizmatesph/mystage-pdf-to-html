@@ -24,7 +24,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -58,7 +62,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -116,6 +121,7 @@ body {
     margin-left: $left-pixel;
     padding-right: 20px;
     padding-top: 4px;
+    padding-bottom: 2%;
     font-size: clamp(10px, 2vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
@@ -160,7 +166,7 @@ body {
           padding: 0px 0px 10px 10px;
 
           &:last-child {
-            padding-bottom: 5px;
+            padding-bottom: 11px;
           }
           span {
             display: block;
@@ -273,4 +279,3 @@ body {
     }
   }
 }
-

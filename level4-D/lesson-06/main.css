@@ -133,6 +133,30 @@ body {
   font-size: clamp(6px, 1.8vw, 15px);
 }
 
+@media screen and (max-width: 816px) {
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content {
+    margin-left: clamp(50px, 15%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content {
+    margin-left: clamp(50px, 16%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content {
+    margin-left: clamp(50px, 14%, 126.5px) !important;
+  }
+}
+
 .html-lesson-wrapper .words-phrase-content {
   position: relative;
   margin-top: clamp(70px, 18%, 155px);
@@ -152,9 +176,39 @@ body {
   margin-top: clamp(10px, 2.6vw, 18px) !important;
 }
 
+@media screen and (max-width: 816px) {
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-left: clamp(50px, 15%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-left: clamp(50px, 16%, 126.5px) !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-left: clamp(50px, 14%, 126.5px) !important;
+  }
+}
+
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(12px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
+}
+
+@media screen and (max-width: 769px) {
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-left: clamp(50px, 15%, 125.5px) !important;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-left: clamp(50px, 15.5%, 125.5px) !important;
+  }
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
@@ -208,6 +262,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 10%;
 }
 
 .html-lesson-wrapper .act-content table {

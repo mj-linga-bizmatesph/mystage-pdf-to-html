@@ -21,7 +21,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper footer, .html-lesson-wrapper aside, .html-lesson-wrapper p.sub-text {
+.html-lesson-wrapper .b,
+.html-lesson-wrapper header,
+.html-lesson-wrapper footer,
+.html-lesson-wrapper aside,
+.html-lesson-wrapper p.sub-text {
   font-weight: bold;
 }
 
@@ -123,6 +127,7 @@ body {
   margin-left: clamp(120px, 28%, 218px);
   padding-right: 20px;
   padding-top: 4px;
+  padding-bottom: 2%;
   font-size: clamp(10px, 2vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
@@ -173,7 +178,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .conversation .row p:last-child {
-  padding-bottom: 5px;
+  padding-bottom: 11px;
 }
 
 .html-lesson-wrapper .see-content .conversation .row p span {

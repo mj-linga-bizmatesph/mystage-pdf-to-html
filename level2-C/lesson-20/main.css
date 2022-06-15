@@ -22,7 +22,10 @@ body {
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper footer, .html-lesson-wrapper p.sub-text {
+.html-lesson-wrapper .b,
+.html-lesson-wrapper header,
+.html-lesson-wrapper footer,
+.html-lesson-wrapper p.sub-text {
   font-weight: bold;
 }
 
@@ -65,11 +68,11 @@ body {
 }
 
 .html-lesson-wrapper ul li:before {
-  content: '■';
+  content: "■";
   position: absolute;
-  left: -15px;
-  top: -7px;
-  font-size: clamp(16px, 2.4vw, 26px);
+  left: -0.7em;
+  top: -0.1em;
+  font-size: 1.2em;
 }
 
 .html-lesson-wrapper ul li:not(:last-child) {

@@ -69,12 +69,16 @@ body {
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 2px 0px 0px 15px;
     padding: 0;
 
     li {
       padding-left: 6px;
     }
+  }
+  .biz-bullet {
+    margin-top: 4px;
+    margin-bottom: 11px;
   }
 
   aside {
@@ -243,7 +247,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 6px;
       }
       .sub-text {
         padding: 3px 8px !important;

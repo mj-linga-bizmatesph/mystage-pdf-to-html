@@ -69,9 +69,12 @@ body {
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 16px 0px 0px 18px;
     padding: 0;
-    list-style-type: decimal;
+    list-style-type: disc;
+    position: relative;
+    bottom: 139px;
+    left: 10px;
 
     li {
       padding-left: 6px;
@@ -102,7 +105,7 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 7px 38px 12px;
+      padding: 7px 7px 48px 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
@@ -116,11 +119,10 @@ body {
     ul {
       margin: 16px 0px 0px 18px;
       padding: 0;
-      list-style-type: disc;
+      list-style-type: decimal;
       position: relative;
-      bottom: 132px;
+      bottom: 139px;
       left: 10px;
-
       li {
         padding-left: 0px;
       }
@@ -221,7 +223,7 @@ body {
       }
     }
     .try-content {
-      margin-top: 15%;
+      margin-top: 20%;
     }
   }
 }
@@ -233,17 +235,25 @@ body {
     }
     aside {
       ul {
-        bottom: 123px;
-        left: 8px;
+        bottom: 200px;
+        left: 12px;
+
+        @media screen and (max-width: 777px) {
+          bottom: 168px;
+        }
       }
       .text {
-        min-height: 85px;
-        padding: 7px 7px 60px 12px;
+        min-height: 135px;
+        padding: 7px 7px 111px 12px;
+
+        @media screen and (max-width: 777px) {
+          padding: 7px 7px 83px 12px;
+        }
       }
     }
 
     .try-content {
-      margin-top: 25%;
+      margin-top: 43%;
     }
   }
 }
@@ -254,6 +264,18 @@ body {
       ul {
         bottom: 128px;
         left: 7px;
+      }
+      .text {
+        min-height: 111px;
+        padding: 7px 7px 38px 12px;
+      }
+    }
+
+    .try-content {
+      margin-top: 22%;
+
+      @media screen and (max-width: 670px) {
+        margin-top: 30%;
       }
     }
     header {
@@ -274,10 +296,24 @@ body {
     }
     .try-content {
       margin-top: 26%;
+
+      @media screen and (max-width: 481px) {
+        margin-top: 28%;
+      }
+      @media screen and (max-width: 468px) {
+        margin-top: 33%;
+      }
     }
     aside {
       .text {
         padding: 4px 8px 22px;
+
+        @media screen and (max-width: 481px) {
+          padding: 4px 8px 30px;
+        }
+        @media screen and (max-width: 468px) {
+          padding: 4px 8px 40px;
+        }
       }
       .bottom-part {
         min-height: 100px;
@@ -288,6 +324,13 @@ body {
       ul {
         bottom: 108px;
         left: 2px;
+
+        @media screen and (max-width: 481px) {
+          bottom: 116px;
+        }
+        @media screen and (max-width: 468px) {
+          bottom: 121px;
+        }
       }
     }
     .try-content {
@@ -307,14 +350,14 @@ body {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-      margin-top: 24%;
+      margin-top: 38%;
     }
     aside {
       top: 100px;
       .text {
         &:not(:last-child) {
-          padding: 4px 8px 35px;
-          min-height: 105px;
+          padding: 4px 8px 70px;
+          min-height: 95px;
         }
       }
       .sub-text {
@@ -322,8 +365,8 @@ body {
       }
       ul {
         &:not(:last-child) {
-          bottom: 115px;
-          left: 1px;
+          bottom: 135px;
+          left: 3px;
         }
       }
     }

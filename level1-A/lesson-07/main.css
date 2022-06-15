@@ -252,11 +252,14 @@ body {
           align-items: stretch;
 }
 
+.html-lesson-wrapper .try-content .wrapper ul {
+  margin-bottom: 15em;
+}
+
 .html-lesson-wrapper .try-content .shape {
-  width: 510px;
+  width: 100%;
   position: absolute;
-  top: -55px;
-  left: 130px;
+  left: -0.5em;
   z-index: -1;
 }
 
@@ -420,7 +423,7 @@ body {
 }
 
 .html-lesson-wrapper .page-2 .arrow-part div:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -38px;
   top: 5px;
@@ -504,53 +507,16 @@ body {
   margin-bottom: 0px;
 }
 
+.html-lesson-wrapper .page-3 .try-content .wrapper ul {
+  margin-bottom: 20em;
+}
+
 .html-lesson-wrapper .page-3 .try-content .shape {
-  top: -48px;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name {
-  margin-top: 62px;
-  left: 16px;
-  height: 250px;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:first-child {
-  left: 0.08%;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:nth-child(2) {
-  top: 66.4%;
-  left: 4.17%;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:nth-child(3) {
-  top: -40%;
-  left: 45.31%;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:nth-child(4) {
-  top: 3.2%;
-  left: 43.23%;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:nth-child(5) {
-  top: 44.8%;
-  left: 33.85%;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:nth-child(6) {
-  text-align: left;
-  top: -11.2%;
-  left: 84.64%;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p:nth-child(6) span {
-  text-align: left;
-}
-
-.html-lesson-wrapper .page-3 .try-content .name p span {
-  text-align: right;
-  min-width: 90px;
+  width: 90%;
+  position: absolute;
+  margin-top: 14.5em;
+  left: 4em;
+  z-index: -1;
 }
 
 .html-lesson-wrapper .page-3 .act-content {
@@ -621,12 +587,6 @@ body {
   .html-lesson-wrapper .try-content .name p {
     max-width: clamp(40px, 16%, 120px);
   }
-  .html-lesson-wrapper .try-content .shape {
-    width: 57vw !important;
-    min-width: 230px;
-    top: clamp(-55px, -5.2vw, -15px);
-    left: clamp(20px, 17%, 130px);
-  }
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
   }
@@ -677,11 +637,6 @@ body {
   }
   .html-lesson-wrapper .page-3 .act-content .list-col ul {
     margin-left: 0px;
-  }
-  .html-lesson-wrapper .page-3 .shape {
-    top: clamp(-20px, -8.3vw, -48px) !important;
-    width: 57vw !important;
-    min-width: 210px;
   }
   .html-lesson-wrapper .page-3 .name {
     margin-top: clamp(42px, 8.8vw, 62px) !important;

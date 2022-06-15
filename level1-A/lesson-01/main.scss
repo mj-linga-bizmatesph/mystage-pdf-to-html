@@ -139,6 +139,7 @@ body {
     font-size: clamp(6px, 1.6vw, 10px);
     line-height: clamp(8px, 1.8vw, 16px);
     display: inline-block;
+    vertical-align: super !important;
   }
 
   // See

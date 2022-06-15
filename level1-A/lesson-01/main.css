@@ -154,6 +154,7 @@ body {
   font-size: clamp(6px, 1.6vw, 10px);
   line-height: clamp(8px, 1.8vw, 16px);
   display: inline-block;
+  vertical-align: super !important;
 }
 
 .html-lesson-wrapper .see-content {
@@ -277,7 +278,7 @@ body {
 
 .html-lesson-wrapper .try-content .dash-list li::before {
   display: inline-block;
-  content: '-';
+  content: "-";
   width: 6px;
   margin-right: 4px;
   margin-left: -1em;
@@ -401,7 +402,7 @@ body {
 }
 
 .html-lesson-wrapper .page-2 .arrow-part div:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -38px;
   top: 7px;

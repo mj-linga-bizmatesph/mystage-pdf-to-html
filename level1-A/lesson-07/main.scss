@@ -217,12 +217,14 @@ body {
       display: flex;
       flex-direction: column;
       align-items: stretch;
+      ul {
+        margin-bottom: 15em;
+      }
     }
     .shape {
-      width: 510px;
+      width: 100%;
       position: absolute;
-      top: -55px;
-      left: 130px;
+      left: -0.5em;
       z-index: -1;
     }
     .name {
@@ -430,46 +432,17 @@ body {
           }
         }
       }
-      .shape {
-        top: -48px;
-      }
-      .name {
-        margin-top: 62px;
-        left: 16px;
-        height: 250px;
-        p {
-          &:first-child {
-            left: 0.08%;
-          }
-          &:nth-child(2) {
-            top: 66.4%;
-            left: 4.17%;
-          }
-          &:nth-child(3) {
-            top: -40%;
-            left: 45.31%;
-          }
-          &:nth-child(4) {
-            top: 3.2%;
-            left: 43.23%;
-          }
-          &:nth-child(5) {
-            top: 44.8%;
-            left: 33.85%;
-          }
-          &:nth-child(6) {
-            text-align: left;
-            top: -11.2%;
-            left: 84.64%;
-            span {
-              text-align: left;
-            }
-          }
-          span {
-            text-align: right;
-            min-width: 90px;
-          }
+      .wrapper {
+        ul {
+          margin-bottom: 20em;
         }
+      }
+      .shape {
+        width: 90%;
+        position: absolute;
+        margin-top: 14.5em;
+        left: 4em;
+        z-index: -1;
       }
     }
     .act-content {
@@ -538,12 +511,7 @@ body {
           max-width: clamp(40px, 16%, 120px);
         }
       }
-      .shape {
-        width: 57vw !important;
-        min-width: 230px;
-        top: clamp(-55px, -5.2vw, -15px);
-        left: clamp(20px, 17%, 130px);
-      }
+
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
@@ -593,7 +561,9 @@ body {
         margin-top: clamp(26px, 4.3vw, 52px);
         ul {
           margin-top: clamp(12px, 3vw, 24px);
+          
         }
+        
       }
       .act-content .list-col {
         margin-top: clamp(5px, 2.5vw, 31px);
@@ -601,12 +571,7 @@ body {
           margin-left: 0px;
         }
       }
-      .shape {
-        // top: clamp(-48px, -5.3vw, -88px) !important;
-        top: clamp(-20px, -8.3vw, -48px) !important;
-        width: 57vw !important;
-        min-width: 210px;
-      }
+      
       .name {
         margin-top: clamp(42px, 8.8vw, 62px) !important;
         height: clamp(60px, 26vw, 250px) !important;

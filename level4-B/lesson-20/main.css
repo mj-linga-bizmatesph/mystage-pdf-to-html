@@ -161,6 +161,7 @@ body {
   .html-lesson-wrapper footer {
     bottom: clamp(20px, 5.2vw, 43px);
     right: 5% !important;
+    max-width: 34%;
   }
 }
 
@@ -185,6 +186,7 @@ body {
   .html-lesson-wrapper footer {
     bottom: clamp(20px, 5.2vw, 43px);
     right: 5% !important;
+    max-width: 34%;
   }
 }
 
@@ -261,6 +263,9 @@ body {
 @media screen and (max-width: 360px) {
   .html-lesson-wrapper .section {
     left: -19.9px;
+  }
+  .html-lesson-wrapper footer {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -584,7 +584,7 @@ body {
   font-weight: normal;
   font-size: clamp(10px, 3vw, 16px);
   margin-bottom: 1%;
-  padding-top: 0.5%;
+  padding-top: 1.1%;
 }
 
 .html-lesson-wrapper .table .jap {
@@ -721,19 +721,11 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
-  padding-top: 5.5px;
+  padding-top: 1.8px;
 }
 
-@media screen and (max-width: 551px) {
-  .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 6.5px;
-  }
-}
-
-@media screen and (max-width: 451px) {
-  .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 5.5px;
-  }
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .dialog {
+  padding-left: 2%;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
@@ -812,14 +804,8 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table .table-number {
-  padding-top: 4px;
+  padding-top: 2px;
   font-weight: bold;
-}
-
-@media screen and (max-width: 501px) {
-  .html-lesson-wrapper .try-content.try-3 .table .table-number {
-    padding-top: 2px;
-  }
 }
 
 .html-lesson-wrapper .try-content.try-3 .table .table-sentence {

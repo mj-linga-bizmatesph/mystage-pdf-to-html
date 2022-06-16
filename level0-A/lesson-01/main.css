@@ -482,8 +482,15 @@ body {
 .html-lesson-wrapper .table .eng {
   font-family: "Noto Sans", sans-serif;
   font-weight: normal;
-  font-size: clamp(11px, 2.8vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
   margin-bottom: clamp(2px, 1vw, 5px);
+  padding-top: 0.8%;
+}
+
+@media screen and (max-width: 566px) {
+  .html-lesson-wrapper .table .eng {
+    padding-top: 0%;
+  }
 }
 
 .html-lesson-wrapper .table .jap {

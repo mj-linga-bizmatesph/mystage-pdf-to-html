@@ -532,6 +532,7 @@ body {
       font-weight: normal;
       font-size: clamp(10px, 2.68vw, 18px);
       margin-bottom: 1%;
+      padding-top: 1.1%;
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
@@ -699,7 +700,7 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: 6px;
+          padding-top: 3px;
           padding-left: clamp(5px, 3vw, 10px);
         }
         .table-img {
@@ -717,7 +718,7 @@ body {
       }
     }
     .p1 {
-      padding-top: 0.9%;
+      padding-top: 0.4%;
 
       @media screen and (max-width: 401px) {
         padding-top: 1.1%;
@@ -776,7 +777,7 @@ body {
       .table-number {
         @extend .b, .primary-blue;
         font-size: clamp(10px, 3vw, 16px);
-        padding-top: 6px;
+        padding-top: 3px;
       }
       .table-img {
         text-align: center;

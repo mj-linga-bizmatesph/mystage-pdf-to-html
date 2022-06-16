@@ -454,8 +454,13 @@ body {
     .eng {
       font-family: $noto-sans;
       font-weight: normal;
-      font-size: clamp(11px, 2.8vw, 18px);
+      font-size: clamp(10px, 3vw, 16px);
       margin-bottom: clamp(2px, 1vw, 5px);
+      padding-top: 0.8%;
+
+      @media screen and (max-width: 566px) {
+        padding-top: 0%;
+      }
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);

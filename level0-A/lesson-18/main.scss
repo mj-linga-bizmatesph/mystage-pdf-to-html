@@ -713,8 +713,8 @@ body {
         }
         .table-number {
           @extend .b, .primary-blue;
-          font-size: clamp(10px, 3vw, 18px);
-          padding-top: 3px;
+          font-size: clamp(10px, 3vw, 16px);
+          padding-top: 2px;
           padding-left: 10px;
           padding-right: 8px;
 
@@ -797,7 +797,7 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: clamp(5px, 2.2vw, 6px);
+          padding-top: 2px;
           padding-right: clamp(9px, 2.9vw, 15px);
         }
         .table-img {

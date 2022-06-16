@@ -781,7 +781,7 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: clamp(3px, 1vw, 6px);
+          padding-top: 2px;
           padding-right: clamp(9px, 2.9vw, 15px);
         }
         .table-img {

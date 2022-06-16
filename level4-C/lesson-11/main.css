@@ -171,7 +171,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   top: 5px;
@@ -239,16 +239,10 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-
 .html-lesson-wrapper .act-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
-}
-
-.html-lesson-wrapper .act-content .article span.highlight {
-  color: #267aa1;
-  font-weight: bold;
 }
 
 .html-lesson-wrapper footer {
@@ -445,7 +439,6 @@ body {
     text-align: right;
   }
 }
-
 @media screen and (max-width: 360px) {
   .html-lesson-wrapper .see-content ul {
     margin: 3px 0px 0px 2.4em;
@@ -467,4 +460,3 @@ body {
     text-align: right;
   }
 }
-/*# sourceMappingURL=main.css.map */

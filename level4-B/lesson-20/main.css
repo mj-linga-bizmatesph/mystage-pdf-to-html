@@ -147,6 +147,11 @@ body {
   text-transform: capitalize;
 }
 
+.html-lesson-wrapper footer span {
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .section {
     left: -59px;

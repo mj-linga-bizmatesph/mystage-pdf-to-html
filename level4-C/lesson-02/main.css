@@ -256,6 +256,11 @@ body {
   font-family: "Arial";
 }
 
+.html-lesson-wrapper footer span {
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;

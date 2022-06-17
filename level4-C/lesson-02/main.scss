@@ -238,6 +238,10 @@ body {
     bottom: 36px;
     right: 6.2%;
     font-family: $title-font;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 

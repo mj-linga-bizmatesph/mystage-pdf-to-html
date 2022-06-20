@@ -17,14 +17,16 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -134,12 +136,12 @@ body {
           display: inline-block;
           margin: 0px 0px;
           &:first-child {
-            min-width: 54px;
-            max-width: 100px;
+            width: 4.5em;
             word-wrap: break-word;
             font-weight: bold;
           }
           &:last-child {
+            width: 100%;
             font-style: italic;
           }
         }
@@ -164,12 +166,18 @@ body {
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
+      &::after {
+        display: block;
+        content: '';
+        height: 0.5em;
+      }
       th,
       td {
         max-width: 120px;
         word-wrap: break-word;
         border: 1px solid #ffffff;
         font-size: clamp(10px, 2vw, 15px);
+        background-color: #e6e6e6;
       }
       th {
         background-color: #f5800b;
@@ -208,9 +216,6 @@ body {
     aside .text {
       padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
-    }
-    .see-content .conversation .row p:first-child {
-      min-width: clamp(30px, 7.3vw, 60px) !important;
     }
   }
 }

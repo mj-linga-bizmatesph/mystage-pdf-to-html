@@ -24,7 +24,11 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,18 +63,22 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
   ul {
-    margin: 2px 0px 0px 18px;
+    margin: 2px 0px 0px 15px;
     padding: 0;
-    list-style-type: decimal;
 
     li {
       padding-left: 6px;
     }
+  }
+  .biz-bullet {
+    margin-top: 4px;
+    margin-bottom: 11px;
   }
 
   aside {
@@ -81,7 +89,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 14px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -121,9 +129,13 @@ body {
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     width: calc(100% - #{$left-pixel} - 24px);
+
+    .decimal-bullet {
+      list-style-type: decimal;
+    }
   }
 
-  // See 
+  // See
   .see-content {
     margin-top: clamp(20px, 17%, 116px);
     min-height: 400px;
@@ -227,7 +239,7 @@ body {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-    margin-top: 15%;
+      margin-top: 15%;
     }
     .see-content {
       min-height: 340px;
@@ -235,7 +247,7 @@ body {
     aside {
       top: 100px;
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 6px;
       }
       .sub-text {
         padding: 3px 8px !important;

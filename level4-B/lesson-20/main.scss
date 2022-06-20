@@ -128,22 +128,59 @@ body {
     right: 6.2%;
     font-family: $title-font;
     text-transform: capitalize;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
-    min-height: unset;
+    .section{
+      left: -59px;
+    }
     .review-content {
       margin-top: clamp(100px, 28%, 240px);
-      ul li {
-        margin-top: clamp(7px, 1.8vw, 12px);
-        margin-bottom: clamp(7px, 1.8vw, 12px);
+      img {
+        margin-top: clamp(40px, 8.2vw, 80px);
+        width: 100%;
       }
     }
     footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
+      max-width:34%;
+    }
+  }
+}
+@media screen and (max-width: 820px) {
+  .html-lesson-wrapper {
+    min-height: unset;
+    .section{
+      left: -59px;
+    }
+    .review-content {
+      ul {
+        li {
+          span {
+            width: auto;
+            margin: auto 33px auto 0px;
+          }
+          p {
+            width: 270px;
+          }
+          p::before {
+            padding: 1px 8px 0px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    footer {
+      bottom: clamp(20px, 5.2vw, 43px);
+      right: 5% !important;
+      max-width:34%;
     }
   }
 }
@@ -158,9 +195,6 @@ body {
       top: clamp(45px, 8.4vw, 80px);
       left: clamp(30px, 4.1vw, 55px);
     }
-    .section {
-      left: calc(-16% + 30px);
-    }
     .section.words {
       left: calc(-14% + 30px);
     }
@@ -169,6 +203,9 @@ body {
 
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
+    .section {
+      left: -40.5px;
+    }
     .type {
       padding: 2px 8px 2px 7px !important;
     }
@@ -178,6 +215,62 @@ body {
     .line {
       margin: 0 6px;
       vertical-align: middle;
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    .section {
+      left: -29.5px;
+    }
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .html-lesson-wrapper {
+    .section{
+      left: -22.5px;
+    }
+    .review-content {
+
+      ul {
+        padding: 10px 0px 10px 8px;
+        li {
+          span {
+            width: auto;
+            margin: auto 33px auto 0px;
+          }
+          p {
+            width: 270px;
+          }
+          p::before {
+            padding: 1px 4px 0px;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+    footer {
+      bottom: 15px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .section{
+      left:-19.9px;
+    }
+    footer {
+      text-align: right;
     }
   }
 }

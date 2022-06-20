@@ -20,9 +20,16 @@ body {
   background-repeat: no-repeat;
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper header, .html-lesson-wrapper footer, .html-lesson-wrapper aside, .html-lesson-wrapper p.sub-text {
+
+.html-lesson-wrapper .b,
+.html-lesson-wrapper header,
+.html-lesson-wrapper footer,
+.html-lesson-wrapper aside,
+.html-lesson-wrapper p.sub-text {
+  padding-left: 2%;
   font-weight: bold;
 }
+
 .html-lesson-wrapper header {
   position: absolute;
   top: 59px;
@@ -30,6 +37,7 @@ body {
   font-size: clamp(9px, 2.4vw, 21px);
   color: #ffffff;
 }
+
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,9 +47,11 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
 .html-lesson-wrapper .sub-text {
   margin: 0 auto;
 }
+
 .html-lesson-wrapper .section {
   position: absolute;
   left: calc(-28% - 44px);
@@ -60,29 +70,59 @@ body {
   min-width: 113px;
   max-width: 206px;
 }
+
 .html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
   top: -6px;
 }
+
 .html-lesson-wrapper ul {
-  margin: 2px 0px 0px 18px;
+  margin: 2px 0px 0px 31px;
   padding: 0;
   list-style-type: decimal;
 }
+
+@media screen and (max-width: 761px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 26px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 22px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 18px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper ul {
+    margin: 2px 0px 0px 16px;
+  }
+}
+
 .html-lesson-wrapper ul li {
   padding-left: 6px;
 }
+
 .html-lesson-wrapper aside {
   position: absolute;
   left: 8px;
-  top: min(24vw, 175px);
+  top: calc(min(24vw, 175px));
   width: 20.65%;
   min-width: 82px;
   max-width: 168px;
   font-size: clamp(9px, 1.8vw, 15px);
 }
+
 .html-lesson-wrapper aside div {
   margin-bottom: 15px;
 }
+
 .html-lesson-wrapper aside .sub-text {
   color: #ffffff;
   font-size: clamp(11px, 2vw, 18px);
@@ -93,6 +133,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
   padding: 7px 7px 32px 12px;
@@ -105,45 +146,56 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .html-lesson-wrapper aside .red {
   color: red;
 }
+
 .html-lesson-wrapper .see-content,
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content {
   position: relative;
   margin-left: clamp(120px, 28%, 218px);
-  padding-right: 20px;
+  padding-right: 25px;
   padding-top: 4px;
+  padding-bottom: 2%;
   font-size: clamp(10px, 2vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
   width: calc(100% - clamp(120px, 28%, 218px) - 24px);
 }
+
 .html-lesson-wrapper .see-content {
   margin-top: clamp(20px, 17%, 116px);
   min-height: 400px;
 }
+
 .html-lesson-wrapper .see-content .conversation {
   margin-bottom: 22px;
+  padding-left: 2%;
 }
+
 .html-lesson-wrapper .see-content .conversation .row p {
   display: inline-block;
   margin: 0px 0px;
 }
+
 .html-lesson-wrapper .see-content .conversation .row p:first-child {
   min-width: 9%;
   max-width: 100px;
   word-wrap: break-word;
   font-weight: bold;
 }
+
 .html-lesson-wrapper .see-content .conversation .row p:last-child {
   font-style: italic;
 }
+
 .html-lesson-wrapper .try-content {
-  margin-top: 12%;
+  margin-top: 15%;
 }
+
 .html-lesson-wrapper .try-content ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +208,49 @@ body {
       flex-wrap: wrap;
   height: 120px;
 }
+
+@media only screen and (max-width: 837px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 110px !important;
+  }
+}
+
+@media only screen and (max-width: 762px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 105px !important;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 85px !important;
+  }
+}
+
+@media only screen and (max-width: 656px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 603px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 72px !important;
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .html-lesson-wrapper .try-content ul {
+    height: 70px !important;
+  }
+}
+
 .html-lesson-wrapper .act-content {
   margin-top: 36px;
   height: -webkit-fit-content;
@@ -163,35 +258,44 @@ body {
   height: fit-content;
   min-height: 26px;
 }
+
 .html-lesson-wrapper .act-content table {
   margin-top: 5px;
   font-size: clamp(8px, 7.3vw, 14px);
   border-spacing: 0px;
-  padding-bottom: 5px;
+  padding-bottom: 2%;
+  padding-left: 2%;
 }
-.html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+
+.html-lesson-wrapper .act-content table th,
+.html-lesson-wrapper .act-content table td {
   max-width: 120px;
   min-width: 80px;
   word-wrap: break-word;
   padding: 4px 7px;
   border: 1px solid #ffffff;
 }
+
 .html-lesson-wrapper .act-content table th {
   background-color: #cdb925;
   color: #ffffff;
 }
+
 .html-lesson-wrapper .act-content table th:first-child {
   background-color: transparent;
 }
+
 .html-lesson-wrapper .act-content table td {
   text-align: right;
 }
+
 .html-lesson-wrapper .act-content table td:first-child {
   padding: 2px;
   width: 260px;
   font-weight: bold;
   text-align: left;
 }
+
 .html-lesson-wrapper footer {
   font-size: clamp(12px, 2vw, 18px);
   position: absolute;
@@ -204,7 +308,8 @@ body {
   .html-lesson-wrapper .act-content table {
     font-size: 8px;
   }
-  .html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+  .html-lesson-wrapper .act-content table th,
+  .html-lesson-wrapper .act-content table td {
     max-width: 105px !important;
     min-width: 15px;
   }
@@ -216,8 +321,10 @@ body {
   }
   .html-lesson-wrapper aside .text {
     min-height: 80px;
+    padding-bottom: 40px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper header {
     top: clamp(30px, 7.3vw, 59px);
@@ -226,12 +333,13 @@ body {
     min-height: 340px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
     min-height: 125.68vw;
   }
   .html-lesson-wrapper .section {
-    left: clamp(-158px, -28% - 34px, -100px);
+    left: clamp(-158px, calc(-28% - 34px), -100px);
     padding-top: 5px;
   }
   .html-lesson-wrapper .see-content .conversation .row p:first-child {
@@ -245,11 +353,13 @@ body {
   }
   .html-lesson-wrapper aside .text {
     padding: 4px 8px 12px;
+    padding-bottom: 30px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;
   }
 }
+
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper header {
     top: clamp(26px, 7.3vw, 32px) !important;
@@ -263,7 +373,8 @@ body {
   .html-lesson-wrapper .act-content table {
     font-size: 8px;
   }
-  .html-lesson-wrapper .act-content table th, .html-lesson-wrapper .act-content table td {
+  .html-lesson-wrapper .act-content table th,
+  .html-lesson-wrapper .act-content table td {
     max-width: 28px !important;
     min-width: 15px;
   }
@@ -274,7 +385,7 @@ body {
     top: 100px;
   }
   .html-lesson-wrapper aside .text {
-    padding: 4px 8px 12px;
+    padding: 4px 8px 25px;
   }
   .html-lesson-wrapper aside .sub-text {
     padding: 3px 8px !important;

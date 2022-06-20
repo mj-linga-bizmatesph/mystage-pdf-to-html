@@ -24,7 +24,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,7 +63,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -81,7 +86,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -97,7 +102,7 @@ body {
     }
     .text {
       margin-top: 6px;
-      padding: 7px 7px 32px 12px;
+      padding: 7px 7px 40px 12px;
       width: 100%;
       height: fit-content;
       min-height: 117px;
@@ -158,6 +163,28 @@ body {
       flex-direction: column;
       flex-wrap: wrap;
       height: 120px;
+
+      @media only screen and (max-width: 837px) {
+        height: 110px !important;
+      }
+      @media only screen and (max-width: 762px) {
+        height: 105px !important;
+      }
+      @media only screen and (max-width: 735px) {
+        height: 100px !important;
+      }
+      @media only screen and (max-width: 670px) {
+        height: 85px !important;
+      }
+      @media only screen and (max-width: 656px) {
+        height: 80px !important;
+      }
+      @media only screen and (max-width: 603px) {
+        height: 72px !important;
+      }
+      @media only screen and (max-width: 521px) {
+        height: 70px !important;
+      }
     }
   }
 
@@ -173,7 +200,8 @@ body {
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
-      th, td {
+      th,
+      td {
         word-wrap: break-word;
         padding: 4px 7px;
         border: 1px solid #ffffff;
@@ -231,10 +259,14 @@ body {
     }
     .try-content {
       margin-top: 10%;
+
+      @media screen and (max-width: 497px) {
+        margin-top: 12%;
+      }
     }
     aside {
       .text {
-        padding: 4px 8px 12px;
+        padding: 4px 8px 23px;
       }
       .sub-text {
         padding: 3px 8px !important;
@@ -242,7 +274,8 @@ body {
     }
     .act-content {
       table {
-        td, th {
+        td,
+        th {
           padding: 2px !important;
         }
       }

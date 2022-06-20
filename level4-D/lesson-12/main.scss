@@ -45,7 +45,7 @@ body {
     left: 48px;
     color: #ffffff;
     font-size: 0px;
-  
+
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $primary;
@@ -95,7 +95,7 @@ body {
     font-size: clamp(6px, 1.8vw, 15px);
     position: relative;
     left: 52%;
-  
+
     &.d1 {
       margin-top: 8px;
     }
@@ -107,13 +107,23 @@ body {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
-  
+
+    @media screen and (max-width: 770px) {
+      margin: 3px 0px 0px 16px;
+    }
+    @media screen and (max-width: 641px) {
+      margin: 3px 0px 0px 14px;
+    }
+    @media screen and (max-width: 501px) {
+      margin: 3px 0px 0px 10.5px;
+    }
+
     li {
       padding-left: 8px;
       list-style: decimal;
     }
   }
-  
+
   .see-content,
   .act-content,
   .try-content {
@@ -122,8 +132,18 @@ body {
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);
+
+    @media screen and (max-width: 816px) {
+      margin-left: clamp(50px, 15%, 126.5px) !important;
+    }
+    @media screen and (max-width: 781px) {
+      margin-left: clamp(50px, 16%, 126.5px) !important;
+    }
+    @media screen and (max-width: 769px) {
+      margin-left: $left-pixel !important;
+    }
   }
-  
+
   // Words and Phrases Content
   .words-phrase-content {
     position: relative;
@@ -134,17 +154,34 @@ body {
     padding-left: clamp(32px, 6vw, 47px);
     background: $primary-light;
     font-size: clamp(6px, 1.8vw, 15px);
-  
+
     .section {
       margin-left: $left-pixel;
       line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
+
+      @media screen and (max-width: 816px) {
+        margin-left: clamp(50px, 15%, 126.5px) !important;
+      }
+      @media screen and (max-width: 781px) {
+        margin-left: clamp(50px, 16%, 126.5px) !important;
+      }
+      @media screen and (max-width: 769px) {
+        margin-left: $left-pixel !important;
+      }
     }
-  
+
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
-  
+
+      @media screen and (max-width: 769px) {
+        margin-left: clamp(50px, 15%, 125.5px) !important;
+      }
+      @media screen and (max-width: 601px) {
+        margin-left: clamp(50px, 15.5%, 125.5px) !important;
+      }
+
       .arrow-part {
         position: relative;
         &:before {
@@ -160,7 +197,7 @@ body {
           display: inline-block;
           vertical-align: middle;
         }
-  
+
         span {
           color: $primary-dark;
           font-weight: bold;
@@ -168,7 +205,7 @@ body {
       }
     }
   }
-  
+
   // See
   .see-content {
     margin-top: 36px;
@@ -176,7 +213,7 @@ body {
       margin-top: 5px;
       line-height: 1.7em;
       margin-bottom: 29px;
-  
+
       span.highlight {
         color: $primary-dark;
         font-weight: bold;
@@ -187,35 +224,36 @@ body {
       margin-right: 16px;
       position: relative;
       line-height: clamp(12px, 3vw, 26px);
-  
+
       span.highlight {
         color: $primary-dark;
         font-weight: bold;
       }
       p {
         margin: 2px auto 24px;
-  
+
         &.name {
           width: 70px;
         }
       }
     }
   }
-  
+
   // Try
   .try-content {
     margin-top: 30px;
-  
+
     ul {
       list-style-type: decimal;
     }
   }
-  
+
   // Act
   .act-content {
     margin-top: 36px;
     height: fit-content;
-  
+    margin-bottom: 10%;
+
     table {
       margin-top: 5px;
       font-size: clamp(6px, 1.5vw, 14px);
@@ -234,7 +272,7 @@ body {
         color: #ffffff;
         font-size: clamp(7px, 1.8vw, 15px);
         padding: 5px;
-  
+
         &:first-child {
           width: 400px;
         }
@@ -246,7 +284,7 @@ body {
       }
     }
   }
-  
+
   footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
@@ -279,9 +317,8 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
       ul {
-        margin-left: clamp(11px, 2.4vw, 18px);
+        margin-left: 3%;
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);

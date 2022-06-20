@@ -235,7 +235,11 @@ body {
 }
 @media screen and (max-width: 360px) {
   .html-lesson-wrapper {
-   
+    .test-content{
+      p{
+        padding-top: 2px;
+      }
+    }
     .lesson-number {
       margin-top: 7.2%;
     }

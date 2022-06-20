@@ -95,9 +95,9 @@ body {
       background-repeat: no-repeat;
     }
     .text {
-      margin-top: 6px;
-      padding: 7px 7px 32px 12px;
-      width: 100%;
+      margin-top: 0.2em;
+      padding: 7px 11px 32px 12px;
+      width: 98%;
       height: fit-content;
       min-height: 117px;
       background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
@@ -172,11 +172,24 @@ body {
     .sub-text {
       padding-right: 7px !important;
     }
-    aside .text {
-      min-height: 80px;
+    aside
+    { 
+      .text {
+        min-height: 110px;
+        padding: 7px 7% 32px 12px;
+        width: 95%;
+      }
+      .second-text {
+        min-height: 160px;
+        p{
+          margin-right: 20px;
+        }
+      }
     }
-    aside .second-text {
-      min-height: 110px;
+    .section {
+      &.try, &.act {
+        top: -8px;
+      }
     }
   }
 }
@@ -195,6 +208,9 @@ body {
     .section {
       left: clamp(-158px, calc(-28% - 34px), -100px);
       padding-top: 5px;
+      &.try, &.act {
+        top: -3px;
+      }
     }
     .see-content .conversation .row p:first-child {
       min-width: 32px !important;
@@ -208,6 +224,39 @@ body {
       }
       .sub-text {
         padding: 3px 8px !important;
+      }
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) { // IPHONE 13 PRO MAX
+  .html-lesson-wrapper {
+    header {
+      top: clamp(26px, 7.3vw, 32px) !important;
+    }
+    .try-content {
+    margin-top: 15%;
+    }
+    aside {
+      top: 100px;
+      .text {
+        padding: 4px 10px 12px;
+        width: 100%;
+      }
+      .sub-text {
+        padding: 3px 10px !important;
+      }
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
       }
     }
   }
@@ -232,6 +281,52 @@ body {
     }
     .section {
       left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+  
+    ul{
+      margin: 2px 0px 0px 15px;
+      li{
+        padding-left: 0px;
+      }
+    }
+    .section {
+      left: calc(#{$left-pixel} - 240px);
+      &.try, &.act {
+        top: -3px;
+      }
+    }
+    
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .sub-text {
+      padding-right: 7px !important;
+    }
+    aside {
+      .text:not(.second-text) {
+        min-height: 100px;
+        width: 100%;
+      }
+      .second-text {
+        width: 100%;
+        min-height: 145px;
+      }
+    }
+    .section{
+      &.try, &.act {
+        top: -3px;
+      }
     }
   }
 }

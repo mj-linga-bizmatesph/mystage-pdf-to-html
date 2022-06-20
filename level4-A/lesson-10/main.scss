@@ -1,5 +1,5 @@
-$text-font: 'Trebuchet MS';
-$title-font: 'Arial';
+$text-font: "Trebuchet MS";
+$title-font: "Arial";
 
 $primary: #2078a0;
 $left-pixel: clamp(50px, 14%, 126.5px);
@@ -17,8 +17,8 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), 
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png');
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), 
+    url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/04-bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;

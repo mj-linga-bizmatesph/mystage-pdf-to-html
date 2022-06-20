@@ -253,6 +253,12 @@ body {
   bottom: 43px;
   right: 6.2%;
   font-family: "Arial";
+  width: 35%;
+}
+
+.html-lesson-wrapper footer span {
+  overflow-wrap: break-word;
+  display: inline-block;
 }
 
 @media screen and (max-width: 900px) {
@@ -278,9 +284,19 @@ body {
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
   }
+  .html-lesson-wrapper .lesson-number {
+    position: absolute;
+    right: 6.6%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: 7.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
   .html-lesson-wrapper footer {
     bottom: clamp(20px, 5.2vw, 43px);
     right: 5% !important;
+    max-width: 34%;
   }
 }
 
@@ -316,6 +332,7 @@ body {
   .html-lesson-wrapper footer {
     bottom: clamp(20px, 5.2vw, 43px);
     right: 5% !important;
+    max-width: 34%;
   }
 }
 
@@ -345,6 +362,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 6.9%;
+  }
   .html-lesson-wrapper .type {
     padding: 2px 8px 2px 7px !important;
   }
@@ -389,15 +409,13 @@ body {
     line-height: clamp(12px, 3vw, 26px);
   }
   .html-lesson-wrapper footer {
-    width: 29%;
-    text-align: left;
+    text-align: right;
   }
 }
 
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper footer {
-    width: 29%;
-    text-align: left;
+    text-align: right;
   }
 }
 
@@ -416,8 +434,7 @@ body {
     line-height: clamp(12px, 3vw, 26px);
   }
   .html-lesson-wrapper footer {
-    width: 29%;
-    text-align: left;
+    text-align: right;
   }
 }
 
@@ -435,9 +452,11 @@ body {
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
   }
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 7.2%;
+  }
   .html-lesson-wrapper footer {
-    width: 29%;
-    text-align: left;
+    text-align: right;
   }
 }
 /*# sourceMappingURL=main.css.map */

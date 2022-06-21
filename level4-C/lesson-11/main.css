@@ -171,7 +171,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: 5px;
@@ -239,10 +239,16 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
+
 .html-lesson-wrapper .act-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
+}
+
+.html-lesson-wrapper .act-content .article span.highlight {
+  color: #267aa1;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper footer {
@@ -320,7 +326,7 @@ body {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    /* padding-left: clamp(11px, 2.4vw, 18px); */
+    
   }
   .html-lesson-wrapper .try-content ul {
     margin-left: clamp(21px, 2.4vw, 21px);
@@ -439,6 +445,7 @@ body {
     text-align: right;
   }
 }
+
 @media screen and (max-width: 360px) {
   .html-lesson-wrapper .see-content ul {
     margin: 3px 0px 0px 2.4em;

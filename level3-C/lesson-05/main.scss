@@ -18,14 +18,25 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  img {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -68,7 +79,7 @@ body {
   ul {
     margin: 2px 0px 0px 18px;
     padding: 0;
-    list-style-type: decimal;
+    list-style-type: disc;
 
     li {
       padding-left: 6px;
@@ -80,7 +91,7 @@ body {
     left: 8px;
     top: calc(min(24vw, 175px));
     min-width: 75px;
-    max-width: 168px;
+    max-width: 11.2em;
     font-size: clamp(7px, 1.8vw, 15px);
 
     div {
@@ -118,7 +129,7 @@ body {
       list-style-type: inherit;
       padding-left: 10px;
       margin-right: -20px;
-    
+
       li {
         padding-left: 0px;
         line-height: 1.1;
@@ -157,7 +168,6 @@ body {
             font-weight: bold;
           }
         }
-
       }
     }
     .col1 {
@@ -167,14 +177,20 @@ body {
       width: 45%;
     }
     img {
-      width:100%;
+      width: 100%;
       margin-left: calc(min(24vw, 15px));
     }
   }
 
   // Try
   .try-content {
-    margin-top: clamp(40px, 14%, 90px);
+    margin-top: clamp(65px, 14%, 90px);
+
+    ul {
+      li {
+        font-style: italic;
+      }
+    }
 
     table {
       margin-top: 5px;
@@ -182,15 +198,16 @@ body {
       padding-bottom: 5px;
       width: 100%;
       font-size: clamp(7px, 1.6vw, 15px);
-      th, td {
+      th,
+      td {
         max-width: 120px;
         min-width: 85px;
         word-wrap: break-word;
       }
       th {
         color: #ffffff;
-        padding:4px;
-        background-color: #BC7D3E;
+        padding: 4px;
+        background-color: #bc7d3e;
         border: 1px solid #ffffff;
       }
       td {
@@ -199,7 +216,7 @@ body {
         border-right: 1px solid #ffffff;
       }
       td:before {
-        content: "\2022";
+        content: '•';
         color: black;
         margin: 10px;
       }
@@ -213,7 +230,7 @@ body {
     .col {
       padding: 20px 0px 0px 0px;
       img {
-        width:90%;
+        width: 90%;
 
         &:last-child {
           margin-left: calc(min(24vw, 10px));
@@ -242,7 +259,7 @@ body {
       }
       a {
         font-size: clamp(6px, 1.8vw, 16.5px);
-        color:#119f9f;
+        color: #119f9f;
       }
     }
   }
@@ -266,16 +283,34 @@ body {
       padding-bottom: clamp(24px, 6vw, 32px) !important;
       min-height: calc(max(12vw, 50px));
     }
+    .try-content img {
+      width: 30vw !important;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-wdith: 238px) {
   .html-lesson-wrapper {
     aside {
       width: 20.65%;
     }
     header {
       top: clamp(30px, 7.3vw, 59px);
+    }
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .html-lesson-wrapper {
+    .try-content table {
+      td,
+      th {
+        padding: 2px !important;
+        min-width: 40px;
+      }
+      td:before {
+        margin: 1px;
+      }
     }
   }
 }
@@ -292,16 +327,6 @@ body {
       }
       .sub-text {
         padding: 3px 8px !important;
-      }
-    }
-    .try-content table {
-      td,
-      th {
-        padding: 2px !important;
-        min-width: 43px;
-      }
-      td:before {
-        margin: 1px;
       }
     }
   }
@@ -321,6 +346,20 @@ body {
     .section {
       left: calc(#{$left-pixel} - 240px);
     }
-    
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .html-lesson-wrapper {
+    .try-content table {
+      td,
+      th {
+        padding: 1px !important;
+        min-width: 39px;
+      }
+      td:before {
+        margin: 0px;
+      }
+    }
   }
 }

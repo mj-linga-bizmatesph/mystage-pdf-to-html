@@ -18,14 +18,16 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'),
-    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
   background-position: top, bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
 
-  .b, header, aside, footer {
+  .b,
+  header,
+  aside,
+  footer {
     font-weight: bold;
   }
   header {
@@ -118,7 +120,7 @@ body {
       list-style-type: inherit;
       padding-left: 10px;
       margin-right: -20px;
-    
+
       li {
         padding-left: 0px;
         line-height: 1.1;
@@ -168,8 +170,8 @@ body {
   .try-content {
     margin-top: clamp(40px, 12%, 70px);
     img {
-      width:25%;
-      height:30%;
+      width: 25%;
+      height: 30%;
       margin: 0 auto;
       display: block;
       &:not(:last-child) {
@@ -182,12 +184,12 @@ body {
       margin-right: 15px;
     }
     .chart-g {
-      width:30%;
+      width: 30%;
       margin-left: 20px;
       margin-right: 25px;
     }
     .chart-h {
-      width:30%;
+      width: 30%;
       top: 0px;
       position: relative;
       left: -10px;

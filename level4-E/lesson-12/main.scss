@@ -6,7 +6,7 @@ $primary-light: #d4e6f0;
 $primary-dark: #267aa1;
 $background-grey: #f2f2f2;
 
-$left-pixel: clamp(50px, 14%, 126.5px);
+$left-pixel: 8em;
 
 body {
   margin: 0;
@@ -64,7 +64,7 @@ body {
   .title {
     position: absolute;
     top: 80px;
-    left: 55px;
+    left: 2em;
     font-size: clamp(12px, 3vw, 27px);
   }
   .lesson-number {
@@ -86,7 +86,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -71.5px;
+    left: -4.2em;
     color: $primary;
     font-weight: bold;
     font-family: $title-font;
@@ -139,13 +139,14 @@ body {
     .section {
       margin-left: $left-pixel;
       line-height: 1.8em;
-      margin-top: clamp(10px, 2.6vw, 18px) !important;
+      margin-top: clamp(11px, 2.5vw, 15px) !important;
       max-width: 100px;
     }
 
     .pointers {
       margin-top: clamp(12px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
+      padding-right: 1em;
 
       .arrow-part {
         position: relative;
@@ -177,7 +178,7 @@ body {
       margin-top: 5px;
       line-height: 1.7em;
       margin-bottom: 29px;
-  
+
       span.highlight {
         color: $primary-dark;
         font-weight: bold;
@@ -188,16 +189,16 @@ body {
       margin-right: 16px;
       position: relative;
       line-height: clamp(12px, 3vw, 26px);
-      
+
       span.highlight {
         color: $primary-dark;
         font-weight: bold;
       }
       p {
         margin: 2px auto 24px;
-  
+
         &.name {
-          width:70px
+          width: 70px;
         }
       }
     }
@@ -255,7 +256,7 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
+      // padding-left: clamp(11px, 2.4vw, 18px);
       ul {
         margin-left: clamp(11px, 2.4vw, 18px);
       }
@@ -281,19 +282,12 @@ body {
     }
     .title {
       top: clamp(45px, 8.4vw, 80px);
-      left: clamp(30px, 4.1vw, 55px);
     }
     .divider {
       &.d1,
       &.d2 {
         margin-top: clamp(18px, 3.4vw, 28px);
       }
-    }
-    .section {
-      left: calc(-16% + 30px);
-    }
-    .section.words {
-      left: calc(-14% + 30px);
     }
     .arrow-part {
       &:before {
@@ -318,7 +312,7 @@ body {
     }
     .words-phrase-content {
       .section {
-        max-width: 50px;
+        max-width: 52px;
       }
     }
     .arrow-part {

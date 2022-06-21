@@ -24,7 +24,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  .b, header, footer, aside, p.sub-text {
+  .b,
+  header,
+  footer,
+  aside,
+  p.sub-text {
     font-weight: bold;
   }
   header {
@@ -59,7 +63,8 @@ body {
     min-width: 113px;
     max-width: 206px;
 
-    &.try, &.act {
+    &.try,
+    &.act {
       top: -6px;
     }
   }
@@ -81,7 +86,7 @@ body {
     min-width: 82px;
     max-width: 168px;
     font-size: clamp(9px, 1.8vw, 15px);
-    
+
     div {
       margin-bottom: 15px;
     }
@@ -175,8 +180,8 @@ body {
       padding-right: 7px !important;
     }
     aside .text {
-      min-height: 80px;
-      padding-bottom: 15px;
+      min-height: 90px;
+      padding-bottom: 35px;
     }
   }
 }
@@ -220,7 +225,7 @@ body {
       top: clamp(26px, 7.3vw, 32px) !important;
     }
     .try-content {
-    margin-top: 15%;
+      margin-top: 15%;
     }
     aside {
       top: 100px;

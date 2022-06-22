@@ -66,12 +66,13 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 92.2%;
+    right: 6.5%;
+    width: 1.9%;
+    text-align: center;
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
-  }
-  .row {
+  }  .row {
     display: flex;
     flex-direction: row;
   }
@@ -233,6 +234,10 @@ body {
     right: 6.2%;
     font-family: $title-font;
     text-transform: capitalize;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 
@@ -258,9 +263,19 @@ body {
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
+    .lesson-number {
+      position: absolute;
+      right: 6.6%;
+      width: 1.9%;
+      text-align: center;
+      margin-top: 7.4%;
+      font-size: clamp(7px, 1.8vw, 13px);
+      color: #ffffff;
+    }
     footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
+      max-width:34%;
     }
   }
 }
@@ -295,6 +310,7 @@ body {
     footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
+      max-width:34%;
     }
   }
 }
@@ -331,6 +347,9 @@ body {
 }
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
+    .lesson-number {
+      margin-top: 6.9%;
+    }
     .type {
       padding: 2px 8px 2px 7px !important;
     }
@@ -386,16 +405,14 @@ body {
       }
     }
     footer {
-      width: 29%;
-      text-align: left;
+      text-align: right;
     }
   }
 }
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
     footer {
-      width: 29%;
-      text-align: left;
+      text-align: right;
     }
   }
 }
@@ -417,8 +434,7 @@ body {
       }
     }
     footer {
-      width: 29%;
-      text-align: left;
+      text-align: right;
     }
   }
 }
@@ -439,9 +455,11 @@ body {
         line-height: clamp(12px, 3vw, 26px);
       }
     }
+    .lesson-number {
+      margin-top: 7.2%;
+    }
     footer {
-      width: 29%;
-      text-align: left;
+      text-align: right;
     }
   }
 }

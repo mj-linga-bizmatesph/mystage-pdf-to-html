@@ -110,6 +110,11 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
+    width: 35%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 
@@ -128,6 +133,7 @@ body {
     footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
+      max-width:34%;
     }
   }
 }
@@ -157,6 +163,7 @@ body {
     footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
+      max-width:34%;
     }
   }
 }
@@ -244,6 +251,9 @@ body {
   .html-lesson-wrapper {
     .section{
       left:-19.9px;
+    }
+    footer {
+      text-align: right;
     }
   }
 }

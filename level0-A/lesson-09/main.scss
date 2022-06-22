@@ -112,7 +112,7 @@ body {
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
@@ -138,9 +138,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6%;
+    right: 6.3%;
     text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
   }
 
@@ -512,7 +512,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .table {
@@ -533,16 +532,13 @@ body {
       font-weight: normal;
       font-size: clamp(10px, 2.68vw, 18px);
       margin-bottom: 1%;
-      padding-top: 1.1%;
+      padding-top: 1%;
 
       @media screen and (max-width: 663px) {
-        padding-top: 0.3%;
+        padding-top: 0.8%;
       }
       @media screen and (max-width: 611px) {
-        padding-top: 0.5%;
-      }
-      @media screen and (max-width: 551px) {
-        padding-top: 0.8%;
+        padding-top: 0.7%;
       }
     }
     .jap {
@@ -740,11 +736,14 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 3px;
             padding-left: clamp(5px, 3vw, 10px);
+            padding-top: 6px;
 
-            @media screen and (max-width: 401px) {
-              padding-top: 4px;
+            @media screen and (max-width: 521px) {
+              padding-top: 5px;
+            }
+            @media screen and (max-width: 451px) {
+              padding-top: 5px;
             }
           }
           .table-img {
@@ -814,7 +813,9 @@ body {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
         }
-
+        .dialog {
+          padding-left: 1%;
+        }
         .table-wrapper {
           width: 100%;
 
@@ -824,11 +825,15 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 1px;
             padding-left: clamp(5px, 3vw, 10px);
+            padding-top: 6px;
 
-            @media screen and (max-width: 401px) {
+            @media screen and (max-width: 451px) {
               padding-top: 4px;
+            }
+
+            @media screen and (max-width: 431px) {
+              padding-top: 3px;
             }
           }
           .table-img {
@@ -867,7 +872,7 @@ body {
           padding-bottom: 5%;
 
           @media screen and (max-width: 601px) {
-            padding-top: 0.5%;
+            padding-top: 1%;
           }
           @media screen and (max-width: 501px) {
             padding-top: 1%;
@@ -895,8 +900,12 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 6px;
             padding-left: clamp(5px, 3vw, 10px);
+            padding-top: 6px;
+
+            @media screen and (max-width: 451px) {
+              padding-top: 5px;
+            }
           }
           .table-img {
             text-align: center;

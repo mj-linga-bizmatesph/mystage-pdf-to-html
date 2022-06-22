@@ -108,7 +108,7 @@ body {
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
@@ -154,11 +154,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6.5%;
-    width: 1.9%;
+    right: 6.3%;
     text-align: center;
-    margin-top: 0.5%;
-    font-size: clamp(18px, 4vw, 28px);
+    font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
   }
 
@@ -317,7 +315,6 @@ body {
     &.inverse {
       color: $primary-blue;
       background-color: white;
-      border: 1px solid rgb(219, 219, 219);
     }
   }
 
@@ -538,7 +535,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .p-1 {
@@ -562,7 +558,7 @@ body {
       font-weight: normal;
       font-size: clamp(10px, 3vw, 16px);
       margin-bottom: 1%;
-      padding-top: 1.1%;
+      padding-top: 0.5%;
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
@@ -685,7 +681,11 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 1px;
+            padding-top: 5px;
+
+            @media screen and (max-width: 451px) {
+              padding-top: 4px;
+            }
           }
           .table-img {
             width: 34%;
@@ -720,11 +720,11 @@ body {
         }
 
         td:nth-child(2) {
-          padding-top: 0.6%;
           padding-bottom: 7%;
+          padding-top: 0.2%;
 
           @media screen and (max-width: 551px) {
-            padding-top: 1%;
+            padding-top: 0.8%;
           }
         }
       }
@@ -763,7 +763,11 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 1px;
+            padding-top: 5px;
+
+            @media screen and (max-width: 451px) {
+              padding-top: 4px;
+            }
           }
           .dialog {
             padding-left: 2%;
@@ -803,6 +807,11 @@ body {
 
         td:nth-child(2) {
           padding-bottom: 7%;
+          padding-top: 0.2%;
+
+          @media screen and (max-width: 551px) {
+            padding-top: 0.8%;
+          }
         }
       }
     }

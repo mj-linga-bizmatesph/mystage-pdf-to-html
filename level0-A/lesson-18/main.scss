@@ -108,7 +108,7 @@ body {
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
@@ -134,9 +134,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 5%;
+    right: 6.3%;
     text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
   }
 
@@ -521,7 +521,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .table {
@@ -714,9 +713,13 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: 2px;
+          padding-top: 5px;
           padding-left: 10px;
           padding-right: 8px;
+
+          @media screen and (max-width: 451px) {
+            padding-top: 4px;
+          }
 
           @media screen and (max-width: 551px) {
             padding-top: 4px;
@@ -797,8 +800,12 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: 2px;
+          padding-top: 5px;
           padding-right: clamp(9px, 2.9vw, 15px);
+
+          @media screen and (max-width: 451px) {
+            padding-top: 4px;
+          }
         }
         .table-img {
           width: 34%;

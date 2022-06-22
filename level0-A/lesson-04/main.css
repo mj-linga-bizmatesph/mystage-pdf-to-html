@@ -116,7 +116,7 @@ body {
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
   font-size: clamp(7px, 1.8vw, 12px);
   background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
@@ -138,9 +138,9 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6%;
+  right: 6.3%;
   text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
 }
 
@@ -534,7 +534,6 @@ body {
 .html-lesson-wrapper .blue-line {
   width: 15px;
   height: 2px;
-  border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
 }
 
@@ -561,7 +560,7 @@ body {
   font-weight: normal;
   font-size: clamp(10px, 3vw, 16px);
   margin-bottom: 1%;
-  padding-top: 1.1%;
+  padding-top: 0.8%;
 }
 
 .html-lesson-wrapper .table .jap {
@@ -721,7 +720,13 @@ body {
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 3px;
+  padding-top: 6px;
+}
+
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 5px;
+  }
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
@@ -785,7 +790,13 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 3px;
+  padding-top: 6px;
+}
+
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 5px;
+  }
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img {

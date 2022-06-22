@@ -124,7 +124,7 @@ body {
 }
 
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
   font-size: clamp(7px, 1.8vw, 12px);
   background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
@@ -146,9 +146,9 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 4.7%;
+  right: 6.3%;
   text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
 }
 
@@ -382,7 +382,7 @@ body {
 .html-lesson-wrapper .part-2 .office-part-2 .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 15px);
+  font-size: clamp(7px, 2vw, 16px);
 }
 
 .html-lesson-wrapper .part-1 .office-part-1 .bubble .jap,
@@ -426,7 +426,7 @@ body {
 .html-lesson-wrapper .part-2 .part-2-items .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 15px);
+  font-size: clamp(7px, 2vw, 16px);
 }
 
 .html-lesson-wrapper .part-2 .part-2-items .bubble .eng .option-item {
@@ -440,6 +440,20 @@ body {
 
 .html-lesson-wrapper .part-2 .part-2-items .bubble .eng .option-item .option {
   padding-right: 2rem;
+}
+
+@media screen and (max-width: 481px) {
+  .html-lesson-wrapper .part-2 .part-2-items .bubble .b1 {
+    padding-top: 3%;
+    padding-left: 4%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .html-lesson-wrapper .part-2 .part-2-items .bubble .b2 {
+    padding-top: 1%;
+    padding-left: 4%;
+  }
 }
 
 .html-lesson-wrapper .part-2 .part-2-items.item-1 .akiko {

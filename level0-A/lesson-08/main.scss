@@ -112,7 +112,7 @@ body {
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
       font-size: clamp(7px, 1.8vw, 12px);
       background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
@@ -138,9 +138,9 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6%;
+    right: 6.3%;
     text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
   }
 
@@ -700,8 +700,12 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: 3px;
           padding-left: clamp(5px, 3vw, 10px);
+          padding-top: 7px;
+
+          @media screen and (max-width: 451px) {
+            padding-top: 5px;
+          }
         }
         .table-img {
           text-align: center;
@@ -777,7 +781,11 @@ body {
       .table-number {
         @extend .b, .primary-blue;
         font-size: clamp(10px, 3vw, 16px);
-        padding-top: 3px;
+        padding-top: 6px;
+
+        @media screen and (max-width: 451px) {
+          padding-top: 5px;
+        }
       }
       .table-img {
         text-align: center;

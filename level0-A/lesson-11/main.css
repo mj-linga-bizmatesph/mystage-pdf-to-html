@@ -142,10 +142,16 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.3%;
+  right: 5%;
   text-align: center;
   font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
+}
+
+@media screen and (max-width: 651px) {
+  .html-lesson-wrapper .lesson-number {
+    right: 5.5%;
+  }
 }
 
 .html-lesson-wrapper .title-section {
@@ -581,7 +587,7 @@ body {
   font-weight: normal;
   font-size: clamp(10px, 3vw, 16px);
   margin-bottom: 1%;
-  padding-top: 1.1%;
+  padding-top: 0.8%;
 }
 
 .html-lesson-wrapper .table .jap {

@@ -141,10 +141,14 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6.3%;
+    right: 5%;
     text-align: center;
     font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
+
+    @media screen and (max-width: 651px) {
+      right: 5.5%;
+    }
   }
 
   .title-section {
@@ -274,7 +278,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .table {
@@ -352,7 +355,7 @@ body {
         .jap {
           font-family: $noto-sans;
           letter-spacing: -1px;
-          font-size: clamp(10px, 2.3vw, 13px);
+          font-size: clamp(7px, 2vw, 16px);
           line-height: clamp(10px, 13px, 14px);
         }
         &.akiko-1 {
@@ -366,7 +369,6 @@ body {
       }
     }
   }
-
   .part-2 {
     margin-top: 7%;
     .office-part-2 {
@@ -374,6 +376,9 @@ body {
       &.top {
         margin-top: 5rem !important;
       }
+    }
+    .ef {
+      font-size: clamp(4px, 1.3vw, 16px);
     }
     .part-2-items {
       .bubble {
@@ -386,7 +391,7 @@ body {
             grid-template-columns: min-content 1fr;
             padding-bottom: clamp(8px, 14px, 14px);
             .option {
-              padding-right: 2rem;
+              padding-right: 1rem;
             }
           }
         }

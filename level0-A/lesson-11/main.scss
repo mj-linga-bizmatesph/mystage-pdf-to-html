@@ -138,10 +138,14 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6.3%;
+    right: 5%;
     text-align: center;
     font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
+
+    @media screen and (max-width: 651px) {
+      right: 5.5%;
+    }
   }
 
   .title-section {
@@ -531,7 +535,7 @@ body {
       font-weight: normal;
       font-size: clamp(10px, 3vw, 16px);
       margin-bottom: 1%;
-      padding-top: 1.1%;
+      padding-top: 0.8%;
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);

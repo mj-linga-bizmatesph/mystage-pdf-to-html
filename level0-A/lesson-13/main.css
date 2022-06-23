@@ -142,10 +142,16 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.3%;
+  right: 5%;
   text-align: center;
   font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
+}
+
+@media screen and (max-width: 651px) {
+  .html-lesson-wrapper .lesson-number {
+    right: 5.5%;
+  }
 }
 
 .html-lesson-wrapper .title-section {
@@ -288,7 +294,6 @@ body {
 .html-lesson-wrapper .number.inverse {
   color: #1287cd;
   background-color: white;
-  border: 1px solid #d1d1d1;
 }
 
 .html-lesson-wrapper .number.b-inverse {
@@ -880,7 +885,8 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table td {
-  font-size: clamp(10px, 3vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 0.8%;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table td img {
@@ -895,6 +901,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table tr:not(:last-child) td:nth-child(2) {
   padding-bottom: 5%;
+  padding-top: 0.8%;
 }
 
 .html-lesson-wrapper .act-1,

@@ -138,10 +138,14 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6.3%;
+    right: 5%;
     text-align: center;
     font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
+
+    @media screen and (max-width: 651px) {
+      right: 5.5%;
+    }
   }
 
   .title-section {
@@ -275,7 +279,6 @@ body {
     &.inverse {
       color: $primary-blue;
       background-color: white;
-      border: 1px solid #d1d1d1;
     }
 
     &.b-inverse {
@@ -815,7 +818,8 @@ body {
         border-collapse: collapse;
 
         td {
-          font-size: clamp(10px, 3vw, 18px);
+          font-size: clamp(10px, 3vw, 16px);
+          padding-top: 0.8%;
           img {
             max-width: clamp(44%, 16vw, 100%);
             margin-bottom: 20px;
@@ -829,6 +833,7 @@ body {
         }
         tr:not(:last-child) td:nth-child(2) {
           padding-bottom: 5%;
+          padding-top: 0.8%;
         }
       }
     }

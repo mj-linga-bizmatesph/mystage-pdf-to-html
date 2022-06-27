@@ -207,6 +207,7 @@
 
           p {
             margin: 0;
+            padding-top: 0.9%;
           }
           .table-number {
             @extend .b, .primary-blue;
@@ -251,6 +252,8 @@
       .table {
         font-family: $noto-sans;
         border-collapse: collapse;
+        margin-left: 3%;
+        margin-top: 0.5%;
 
         td {
           @extend .fs-18;

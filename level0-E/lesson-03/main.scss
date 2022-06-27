@@ -228,14 +228,15 @@
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 6px;
+            padding-top: 3px;
             padding-left: clamp(5px, 3vw, 10px);
           }
           .dialog {
             padding-bottom: 5%;
+            padding-left: 2%;
           }
           .table-choices {
-            padding: 3% 2%;
+            padding: 3% 5%;
             border-radius: clamp(1px, 1vw, 10px);
             border: 1px solid $primary-blue;
             background: #e7f3fa;

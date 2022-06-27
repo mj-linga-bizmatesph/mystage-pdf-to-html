@@ -573,6 +573,12 @@ body {
 
 .html-lesson-wrapper .try-content table tr ul {
   list-style-type: disc;
+  margin-left: 2em;
+}
+
+.html-lesson-wrapper .try-content table tr ul li {
+  -webkit-padding-start: initial;
+          padding-inline-start: initial;
 }
 
 .html-lesson-wrapper .try-content table tr td {

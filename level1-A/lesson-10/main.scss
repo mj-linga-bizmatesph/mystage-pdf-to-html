@@ -1,351 +1,121 @@
-$text-font: 'Trebuchet MS';
-$title-font: 'Arial';
-$ja-font: 'Noto Sans JP';
-
-$primary: #257a9e;
-$primary-dark: #083051;
-$primary-light: #cce0ec;
-
-body {
-  margin: 0;
-  padding: 0;
-}
+@import '../../css/level1-a-utils';
 
 .html-lesson-wrapper {
-  font-family: $text-font;
-
-  .page-1,
-  .page-2,
-  .page-3 {
-    width: 100%;
-    min-width: 360px;
-    max-width: 892.75px;
-    min-height: 1200px;
-    height: fit-content;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
-    background-position: top, bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  header {
-    font-family: $title-font;
-  }
-  .b {
-    font-weight: bold;
-  }
-
-  .u-sup {
-    border-bottom: solid 1.5px black;
-    display: inline-block;
-    line-height: clamp(6px, 1.5vw, 14px);
-  }
-  .program-rank {
-    position: absolute;
-    top: 40px;
-    left: 48px;
-    color: #ffffff;
-    font-size: 0px;
-
-    .type {
-      padding: 3px 16px 3px 14px;
-      background-color: #248bb0;
-      font-size: clamp(7px, 1.8vw, 15px);
-    }
-    .level {
-      padding: 3px 12px 3px 13px;
-      background-color: #339999;
-      font-size: clamp(7px, 1.8vw, 15px);
+  .sub-text.ja {
+    color: $primary;
+    &.offset {
+      margin-left: 2.3em;
     }
   }
-  .line {
-    margin: 0 12px;
-  }
-  .title {
-    position: absolute;
-    top: 80px;
-    left: 55px;
-    font-size: clamp(12px, 3vw, 27px);
-  }
-  .lesson-number {
-    position: absolute;
-    left: 91.65%;
-    width: 1.9%;
-    text-align: center;
-    margin-top: 7.4%;
-    font-size: clamp(7px, 1.8vw, 13px);
-    color: #ffffff;
-  }
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-  .sub-text {
-    font-family: $title-font !important;
-  }
-  .sub-head {
-    position: absolute;
-    top: 125px;
-    left: 47px;
-    max-width: 760px;
-    height: fit-content;
-    .subtitle {
-      font-family: $ja-font;
-      color: $primary;
-      font-weight: bold;
-      font-size: clamp(6px, 1.8vw, 15px);
+
+  .page-1 {
+    .lesson-list {
+      margin-top: 5em;
     }
-    p {
-      margin: 3px auto;
-      &:nth-child(n + 3) {
-        color: $primary;
-        font-size: clamp(5px, 1.5vw, 12px);
-        line-height: clamp(12px, 2.8vw, 22px);
+    figure {
+      position: absolute;
+      margin-top: 16em;
+      right: -1em;
+      .shape {
+        width: 22em;
+      }
+
+      .name {
+        p {
+          display: inline-block;
+          &:first-child {
+            margin-left: 2em;
+          }
+          &:last-child {
+            margin-left: 12em;
+          }
+        }
       }
     }
   }
-  .ja {
-    font-family: $ja-font, sans-serif !important;
-    font-size: clamp(5px, 1.4vw, 12.5px);
-    color: #595959;
+
+  .page-2 {
+    .mb {
+      margin-bottom: 2em;
+      color: $sub-color;
+    }
   }
-  sup {
-    font-size: clamp(6px, 1.6vw, 10px);
-    line-height: clamp(8px, 1.8vw, 16px);
-    display: inline-block;
+
+  .page-2,
+  .page-3 {
+    li {
+      span.ja {
+        display: block;
+      }
+    }
+    figure {
+      position: absolute;
+      margin-top: 31em;
+      right: -1em;
+      .shape {
+        width: 22em;
+      }
+
+      .name {
+        p {
+          span {
+            display: block;
+          }
+          display: inline-block;
+          &:first-child {
+            margin-left: 2em;
+          }
+          &:last-child {
+            margin-left: 12em;
+          }
+        }
+      }
+    }
   }
 
   .lesson-list {
-    font-family: $text-font;
+    margin-top: 3em;
+    margin-left: 8em;
     font-size: clamp(6px, 1.8vw, 15px);
-    margin-top: clamp(120px, 21vw, 189px);
-    margin-left: clamp(50px, 16%, 149px);
+
     ul {
       list-style-type: decimal;
-      margin: 24.5px 0px 0px 18px;
-      padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
-      position: relative;
+      margin: 0;
+      margin-left: 1.2em;
+      margin-block: 0;
+      padding-inline: 0;
+      margin-bottom: 2em;
+
+      &.desc {
+        list-style-type: '-';
+
+        li {
+          line-height: 1.5em;
+          margin-bottom: 5%;
+        }
+      }
+
+      li {
+        padding-inline-start: 1em;
+        line-height: 1.8em;
+      }
+    }
+    .arrow {
+      display: block;
+
       &:before {
         content: '';
-        position: absolute;
-        left: -16px;
-        top: 7px;
+        position: relative;
+        margin-right: 1.3em;
+        top: -0.1em;
         width: 0;
         height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 11px solid #000000;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        border-top: 0.8em solid #000000;
         display: inline-block;
         vertical-align: middle;
       }
-      &.initial {
-        margin-top: 30px;
-      }
-      .sub-text {
-        margin-left: 4px;
-      }
-    }
-    li {
-      padding-left: 9px;
-    }
-    p {
-      margin: 0px 0px 0px 8px;
-      display: flex;
-      justify-content: space-between;
-      span {
-        flex: 1;
-      }
-    }
-  }
-  figure {
-    position: absolute;
-    right: 58px;
-    top: 390px;
-    width: fit-content;
-    z-index: 2;
-    margin: 0px;
-
-    .shape {
-      width: 320px;
-      display: block;
-    }
-    .name {
-      display: flex;
-      justify-content: space-between;
-      p {
-        width: 40%;
-        margin: 2px 0px;
-        text-align: center;
-        font-size: clamp(7px, 1.8vw, 15px);
-        span {
-          display: block;
-        }
-      }
-    }
-  }
-
-  footer {
-    font-size: clamp(4.5px, 1.2vw, 9px);
-    position: absolute;
-    width: fit-content;
-    text-align: right;
-    bottom: 43px;
-    right: 6.2%;
-    font-family: $title-font;
-  }
-
-  // Page 2
-  .page-2 {
-    .title {
-      top: 72px;
-      left: 50px;
-      .ja {
-        font-size: clamp(12px, 3vw, 27px);
-        color: #000000;
-        font-weight: bold;
-        margin-right: 3px;
-      }
-    }
-    figure {
-      top: 680px;
-    }
-    .lesson-list {
-      margin-top: 260px;
-    }
-    .sub-text.ja {
-      margin: 8px 0px 0px 0px;
-    }
-    ul {
-      .sub-text.ja {
-        font-size: clamp(6px, 1.8vw, 14px);
-        color: $primary;
-        margin: 0px 0px 0px 4px;
-      }
-      li {
-        span {
-          display: block;
-        }
-      }
-    }
-  }
-
-  // Page 3
-  .page-3 {
-    .title {
-      top: 72px;
-      left: 50px;
-      .ja {
-        font-size: clamp(12px, 3vw, 27px);
-        color: #000000;
-        font-weight: bold;
-        margin-right: 3px;
-      }
-    }
-    .lesson-list {
-      margin-top: 210px;
-    }
-    ul {
-      .sub-text.ja {
-        font-size: clamp(6px, 1.8vw, 14px);
-        color: $primary;
-        margin: 0px 0px 0px 4px;
-      }
-      li {
-        span {
-          display: block;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper {
-    .page-1,
-    .page-2,
-    .page-3 {
-      min-height: unset;
-    }
-  }
-  .lesson-list {
-    ul.initial {
-      margin-top: clamp(18px, 3.6vw, 30px);
-    }
-  }
-  figure {
-    top: clamp(220px, 46vw, 390px) !important;
-    right: clamp(0px, 4vw, 58px) !important;
-    .shape {
-      width: 38vw !important;
-      min-width: 150px;
-    }
-  }
-  .title {
-    top: clamp(40px, 10vw, 80px) !important;
-    left: clamp(30px, 4.1vw, 55px) !important;
-  }
-  .sub-head {
-    top: clamp(62px, 16vw, 128px) !important;
-    left: clamp(30px, 4.1vw, 55px) !important;
-  }
-  .lesson-list {
-    margin-top: clamp(40px, 20vw, 260px) !important;
-  }
-
-  // Page 2
-  .page-2 {
-    .lesson-list {
-      margin-top: clamp(130px, 34vw, 260px) !important;
-    }
-    figure {
-      top: clamp(340px, 74vw, 680px) !important;
-    }
-  }
-
-  // Page 3
-  .page-3 {
-    .lesson-list {
-      margin-top: clamp(120px, 22vw, 260px) !important;
-    }
-  }
-  footer {
-    bottom: clamp(20px, 5.2vw, 43px) !important;
-    right: 5% !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .html-lesson-wrapper {
-    .program-rank {
-      position: absolute;
-      top: clamp(20px, 4vw, 40px) !important;
-      left: clamp(23px, 4vw, 48px) !important;
-    }
-    .title {
-      top: clamp(45px, 8vw, 80px) !important;
-      left: clamp(30px, 4.1vw, 55px) !important;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .html-lesson-wrapper {
-    .lesson-list ul:before {
-      left: -12px;
-      top: 2px;
-      border-left: 4px solid transparent;
-      border-right: 4px solid transparent;
-      border-top: 8px solid #000000;
-    }
-    .type {
-      padding: 2px 8px 2px 7px !important;
-    }
-    .level {
-      padding: 2px 6px 2px 7px !important;
     }
   }
 }

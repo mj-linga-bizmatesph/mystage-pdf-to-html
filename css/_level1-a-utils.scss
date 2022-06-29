@@ -1,6 +1,6 @@
-$text-font: 'Helvetica', 'Arial', sans-serif;
+$text-font: 'Trebuchet MS';
 $title-font: 'Helvetica', 'Arial', sans-serif;
-$ja-font: 'Noto Sans JP';
+$ja-font: 'Noto Sans JP', sans-serif;
 
 $primary: #257a9e;
 $primary-dark: #083051;
@@ -366,7 +366,7 @@ body {
         line-height: 1.8em;
         &.ja {
           list-style-type: none;
-          padding-left: 1.2em;
+          padding-left: 1.4em;
         }
       }
     }

@@ -73,6 +73,9 @@
   }
 
   .page-3 {
+    .grid {
+      margin-top: 1.5em;
+    }
     .try-content {
       table {
         td:first-child {
@@ -89,7 +92,7 @@
   .act-content {
     ul {
       list-style: decimal;
-      margin-left: 1.2em;
+      margin-left: 1.4em;
     }
     span {
       display: block;

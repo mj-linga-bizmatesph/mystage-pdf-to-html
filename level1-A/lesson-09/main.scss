@@ -21,7 +21,7 @@
 
   .see-content {
     .grid {
-      grid-template-columns: 1.1fr 1fr 1.25fr;
+      grid-template-columns: 1.1fr 1.3fr 1.25fr;
     }
   }
 
@@ -39,7 +39,7 @@
     &,
     th,
     td {
-      border: 0.1em solid black;
+      border: 2px solid black;
     }
 
     tr {
@@ -71,12 +71,12 @@
           width: 3.5em;
 
           margin-top: -6.8em;
-          z-index: -1;
+          z-index: -999;
           &.bill {
-            margin-left: 10.5em;
+            right: 43%;
           }
           &.mai {
-            margin-left: 14em;
+            right: 6%;
           }
         }
       }

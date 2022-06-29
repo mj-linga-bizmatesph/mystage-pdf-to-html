@@ -103,6 +103,9 @@ body {
   .pl-3 {
     padding-left: 3em;
   }
+  .no-wrap {
+    white-space: nowrap;
+  }
 
   .page-1,
   .page-2,
@@ -113,7 +116,7 @@ body {
     height: fit-content;
     overflow: hidden;
     position: relative;
-    padding-bottom: 8em;
+    padding-bottom: 14%;
     background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
@@ -344,6 +347,7 @@ body {
     position: relative;
     margin-top: 2em;
     margin-left: $left-pixel;
+    margin-right: 1.5em;
     padding-left: 1.3em;
     font-size: clamp(6px, 1.8vw, 15px);
 
@@ -414,6 +418,9 @@ body {
     p {
       margin: 0.5em auto;
       font-size: clamp(5px, 1.5vw, 12px);
+    }
+    p.subtitle + p > span {
+      display: block;
     }
     div {
       position: relative;

@@ -5,18 +5,15 @@
     width: 4em;
   }
 
-  ul.desc {
-    margin-left: 0.4em;
-    li {
-      margin-bottom: 0;
-      line-height: 1.2em;
+  .try-content {
+    ul.desc {
+      li {
+        line-height: 1.8em;
+        margin-bottom: 0;
+      }
     }
   }
   .page-1 {
-    .desc-div {
-      margin-top: 1em;
-    }
-
     .see-content {
       .col {
         &:not(:last-child) {

@@ -112,6 +112,10 @@ body {
   padding-left: 3em;
 }
 
+.html-lesson-wrapper .no-wrap {
+  white-space: nowrap;
+}
+
 .html-lesson-wrapper .page-1,
 .html-lesson-wrapper .page-2,
 .html-lesson-wrapper .page-3 {
@@ -123,7 +127,7 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: 8em;
+  padding-bottom: 14%;
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
@@ -401,6 +405,7 @@ body {
   position: relative;
   margin-top: 2em;
   margin-left: 14%;
+  margin-right: 1.5em;
   padding-left: 1.3em;
   font-size: clamp(6px, 1.8vw, 15px);
 }
@@ -482,6 +487,10 @@ body {
 .html-lesson-wrapper .arrow-part p {
   margin: 0.5em auto;
   font-size: clamp(5px, 1.5vw, 12px);
+}
+
+.html-lesson-wrapper .arrow-part p.subtitle + p > span {
+  display: block;
 }
 
 .html-lesson-wrapper .arrow-part div {
@@ -617,7 +626,7 @@ body {
 .html-lesson-wrapper table,
 .html-lesson-wrapper table th,
 .html-lesson-wrapper table td {
-  border: 0.1em solid black;
+  border: 1px solid black;
 }
 
 .html-lesson-wrapper table tr * {
@@ -625,6 +634,7 @@ body {
 }
 
 .html-lesson-wrapper table tr th {
+  font-weight: normal;
   padding: 1% 2%;
   text-align: center;
   background-color: #083051;

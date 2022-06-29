@@ -63,7 +63,7 @@
     &,
     th,
     td {
-      border: 0.1em solid black;
+      border: 1px solid black;
     }
 
     tr {
@@ -71,6 +71,7 @@
         line-height: normal !important;
       }
       th {
+        font-weight: normal;
         padding: 1% 2%;
         text-align: center;
         background-color: $primary-dark;

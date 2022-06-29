@@ -50,8 +50,8 @@
     }
   }
   .blue-section {
-    .col {
-      margin-right: 0.5em;
+    .col:not(:last-child) {
+      margin-right: 1em;
     }
   }
 }

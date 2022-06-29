@@ -1,6 +1,12 @@
 @import '../../css/level1-a-utils';
 
 .html-lesson-wrapper {
+  ul {
+    p {
+      margin-left: 1em;
+    }
+  }
+
   .sub-text.ja {
     color: $primary;
     &.offset {
@@ -14,7 +20,7 @@
     }
     figure {
       position: absolute;
-      margin-top: 16em;
+      margin-top: 14.8em;
       right: -1em;
       .shape {
         width: 22em;
@@ -41,6 +47,12 @@
     }
   }
 
+  .page-3 {
+    .lesson-number {
+      margin-top: -6%;
+    }
+  }
+
   .page-2,
   .page-3 {
     li {
@@ -50,7 +62,7 @@
     }
     figure {
       position: absolute;
-      margin-top: 31em;
+      margin-top: 30.8em;
       right: -1em;
       .shape {
         width: 22em;

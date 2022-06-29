@@ -3,6 +3,7 @@
 .html-lesson-wrapper {
   .try-content {
     table {
+      border-collapse: collapse;
       tr {
         & * {
           line-height: normal !important;
@@ -14,6 +15,7 @@
             background-color: $primary;
             color: white;
             @extend .b;
+            border: 0.1em solid white;
             border-bottom: 0.2em solid white;
             .ja {
               color: white;
@@ -41,6 +43,7 @@
           }
           &:not(:first-child) {
             background-color: #cde0ec;
+            border: 0.1em solid white;
           }
         }
         &:nth-child(odd) {
@@ -87,6 +90,9 @@
     ul {
       list-style: decimal;
       margin-left: 1.2em;
+    }
+    span {
+      display: block;
     }
   }
 }

@@ -112,6 +112,10 @@ body {
   padding-left: 3em;
 }
 
+.html-lesson-wrapper .no-wrap {
+  white-space: nowrap;
+}
+
 .html-lesson-wrapper .page-1,
 .html-lesson-wrapper .page-2,
 .html-lesson-wrapper .page-3 {
@@ -123,7 +127,7 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: 8em;
+  padding-bottom: 14%;
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
@@ -401,6 +405,7 @@ body {
   position: relative;
   margin-top: 2em;
   margin-left: 14%;
+  margin-right: 1.5em;
   padding-left: 1.3em;
   font-size: clamp(6px, 1.8vw, 15px);
 }
@@ -484,6 +489,10 @@ body {
   font-size: clamp(5px, 1.5vw, 12px);
 }
 
+.html-lesson-wrapper .arrow-part p.subtitle + p > span {
+  display: block;
+}
+
 .html-lesson-wrapper .arrow-part div {
   position: relative;
 }
@@ -559,8 +568,8 @@ body {
 }
 
 .html-lesson-wrapper .see-content .grid {
-  -ms-grid-columns: 1.1fr 1fr 1.25fr;
-      grid-template-columns: 1.1fr 1fr 1.25fr;
+  -ms-grid-columns: 1.1fr 1.3fr 1.25fr;
+      grid-template-columns: 1.1fr 1.3fr 1.25fr;
 }
 
 .html-lesson-wrapper .try-content table {
@@ -577,7 +586,7 @@ body {
 .html-lesson-wrapper table,
 .html-lesson-wrapper table th,
 .html-lesson-wrapper table td {
-  border: 0.1em solid black;
+  border: 2px solid black;
 }
 
 .html-lesson-wrapper table tr * {
@@ -610,15 +619,15 @@ body {
   position: absolute;
   width: 3.5em;
   margin-top: -6.8em;
-  z-index: -1;
+  z-index: -999;
 }
 
 .html-lesson-wrapper table tr th .shape.bill {
-  margin-left: 10.5em;
+  right: 43%;
 }
 
 .html-lesson-wrapper table tr th .shape.mai {
-  margin-left: 14em;
+  right: 6%;
 }
 
 .html-lesson-wrapper table tr ul {

@@ -151,6 +151,7 @@ body {
 @media screen and (max-width: 651px) {
   .html-lesson-wrapper .lesson-number {
     right: 5.5%;
+    padding-top: 1%;
   }
 }
 
@@ -740,13 +741,19 @@ body {
 
 .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 6px;
+  padding-top: 4px;
   padding-left: clamp(5px, 3vw, 10px);
 }
 
 @media screen and (max-width: 451px) {
   .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 4px;
+    padding-top: 3px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 2px;
   }
 }
 

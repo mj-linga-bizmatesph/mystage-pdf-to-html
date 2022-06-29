@@ -147,6 +147,7 @@ body {
 @media screen and (max-width: 651px) {
   .html-lesson-wrapper .lesson-number {
     right: 5.5%;
+    padding-top: 1%;
   }
 }
 
@@ -907,13 +908,13 @@ body {
 
 .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 5px;
+  padding-top: 4px;
   padding-right: clamp(9px, 2.9vw, 15px);
 }
 
 @media screen and (max-width: 451px) {
   .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 4px;
+    padding-top: 1px;
   }
 }
 

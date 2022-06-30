@@ -173,7 +173,10 @@
         }
       }
     }
-
+    .p1 {
+      font-size: clamp(10px, 3vw, 16px);
+      padding-top: 1.2%;
+    }
     &.try-2 {
       .table-wrapper-section {
         margin-top: 14%;
@@ -202,7 +205,9 @@
             width: 16%;
           }
           tr:not(:last-child) td:nth-child(2) {
+            padding-top: 1%;
             padding-bottom: 5%;
+            font-size: clamp(10px, 3vw, 16px);
           }
         }
       }
@@ -223,13 +228,19 @@
           width: 100%;
 
           p {
+            font-size: clamp(10px, 3vw, 16px);
             margin: 0;
+            padding-top: 1%;
           }
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
             padding-top: 3px;
             padding-left: clamp(5px, 3vw, 10px);
+
+            @media screen and (max-width: 371px) {
+              padding-top: 2.5px;
+            }
           }
           .dialog {
             padding-bottom: 5%;
@@ -249,11 +260,17 @@
               left: 1%;
               margin-top: -4%;
               width: 82%;
+
+              @media screen and (max-width: 551px) {
+                width: 78%;
+              }
             }
 
             ol {
+              padding-left: 6%;
               @extend .m-0;
               list-style-type: upper-alpha;
+
               li {
                 @extend .fs-18;
                 box-sizing: border-box;
@@ -302,7 +319,9 @@
   .act-2 {
     margin-bottom: 50px;
   }
-
+  .p2 {
+    padding-top: 1%;
+  }
   .act-1 {
     .blue-line {
       margin-top: 5%;

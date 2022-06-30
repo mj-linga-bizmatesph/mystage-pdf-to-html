@@ -93,38 +93,20 @@ body {
     margin-top: clamp(1px, 1vw, 3px);
 
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -587,6 +569,7 @@ body {
       }
       .speaker-text {
         font-size: clamp(10.8px, 2.2vw, 18px);
+        padding-left: 2%;
       }
       .number {
         @extend .b;
@@ -620,6 +603,7 @@ body {
       }
       .speaker-text {
         font-size: clamp(10.5px, 2.8vw, 18px);
+        padding-left: 2%;
       }
       .number {
         @extend .b;
@@ -717,6 +701,7 @@ body {
         }
         .speaker-text {
           font-size: clamp(10.5px, 2.8vw, 18px);
+          padding-left: 2%;
         }
         .number {
           @extend .b;

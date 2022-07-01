@@ -180,6 +180,13 @@ body {
   line-height: 1.6;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .instructions {
+    max-width: 100%;
+    width: 250px;
+  }
+}
+
 .html-lesson-wrapper .instructions .title {
   font-size: clamp(12px, 3.5vw, 18px);
   color: #141821;
@@ -261,9 +268,16 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 .eng table {
   border-collapse: collapse;
   border: none;
-  margin-left: 2%;
+  margin-left: 18%;
+  margin-top: 4%;
   max-width: 500px;
   width: 400px;
+}
+
+@media screen and (max-width: 441px) {
+  .html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 .eng table {
+    margin-left: 16%;
+  }
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 .eng table tr {
@@ -288,6 +302,7 @@ body {
   border-collapse: collapse;
   border: none;
   margin-top: 6%;
+  margin-left: 10%;
   max-width: 500px;
   width: 400px;
 }
@@ -301,7 +316,7 @@ body {
 @media screen and (max-width: 509px) {
   .html-lesson-wrapper .act-content .act-1-content .speech-bubble-2 .eng table {
     width: 345px;
-    margin-left: -3%;
+    margin-left: 9%;
   }
 }
 
@@ -320,7 +335,7 @@ body {
 @media screen and (max-width: 395px) {
   .html-lesson-wrapper .act-content .act-1-content .speech-bubble-2 .eng table {
     width: 260px;
-    margin-left: -7%;
+    margin-left: 11%;
   }
 }
 
@@ -353,6 +368,7 @@ body {
   border: none;
   margin-left: 2%;
   margin-top: 8%;
+  margin-left: 16%;
   max-width: 500px;
   width: 410px;
 }
@@ -396,7 +412,7 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-4 .eng table {
   border-collapse: collapse;
   border: none;
-  margin-left: -5%;
+  margin-left: 5%;
   margin-top: 5%;
   max-width: 500px;
   width: 400px;
@@ -462,7 +478,7 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-6 .eng table {
   border-collapse: collapse;
   border: none;
-  margin-left: 7%;
+  margin-left: 19%;
   margin-top: 5%;
   max-width: 500px;
   width: 400px;
@@ -471,7 +487,7 @@ body {
 @media screen and (max-width: 421px) {
   .html-lesson-wrapper .act-content .act-1-content .speech-bubble-6 .eng table {
     margin-top: 4%;
-    margin-left: 4%;
+    margin-left: 17%;
   }
 }
 
@@ -506,7 +522,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
   margin-bottom: clamp(5px, 3vw, 18px);
 }
 
@@ -515,11 +531,12 @@ body {
   text-align: right;
   width: 15%;
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(10px, 3vw, 16px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
   width: 85%;
+  padding-left: 2%;
 }
 
 .html-lesson-wrapper .act-content .arrow.act {
@@ -530,6 +547,5 @@ body {
 .html-lesson-wrapper .blue-line {
   width: 15px;
   height: 2px;
-  border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
 }

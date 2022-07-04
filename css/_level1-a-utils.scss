@@ -311,6 +311,11 @@ body {
     padding-right: 1.5em;
     font-size: clamp(6px, 1.8vw, 15px);
 
+    .letter-grid {
+      display: grid;
+      grid-template-columns: 0.035fr 1fr;
+    }
+
     ul {
       list-style-type: decimal;
       margin: 0;

@@ -361,6 +361,13 @@ body {
   font-size: clamp(6px, 1.8vw, 15px);
 }
 
+.html-lesson-wrapper .try-content .letter-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.035fr 1fr;
+      grid-template-columns: 0.035fr 1fr;
+}
+
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;
   margin: 0;
@@ -557,6 +564,13 @@ body {
   .html-lesson-wrapper .page-3 {
     min-height: unset;
   }
+}
+
+.html-lesson-wrapper .try-content ul > li > p {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.03fr 1fr;
+      grid-template-columns: 0.03fr 1fr;
 }
 
 .html-lesson-wrapper .see-content .grid {

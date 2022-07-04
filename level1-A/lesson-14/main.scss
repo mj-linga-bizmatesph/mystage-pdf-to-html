@@ -1,6 +1,12 @@
 @import '../../css/level1-a-utils';
 
 .html-lesson-wrapper {
+  .try-content {
+    ul > li > p {
+      display: grid;
+      grid-template-columns: 0.03fr 1fr;
+    }
+  }
   .see-content {
     .grid {
       grid-template-columns: 0.15fr 1fr;

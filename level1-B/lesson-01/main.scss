@@ -1,1 +1,8 @@
 @import '../../css/level1-B-utils';
+
+.try-content {
+    ul > li > p {
+      display: grid;
+      grid-template-columns: 0.035fr 1fr;
+    }
+  }

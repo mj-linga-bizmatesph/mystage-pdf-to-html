@@ -137,6 +137,16 @@ body {
           flex-direction: row;
 }
 
+.html-lesson-wrapper .try-grid {
+  -ms-grid-columns: 1.8fr 3fr;
+      grid-template-columns: 1.8fr 3fr;
+}
+
+.html-lesson-wrapper .shapes-grid {
+  -ms-grid-columns: 0.3fr 1fr;
+      grid-template-columns: 0.3fr 1fr;
+}
+
 .html-lesson-wrapper .sub-text {
   font-family: "Helvetica", "Arial", sans-serif !important;
   margin: 0px 0px 1px;
@@ -302,6 +312,12 @@ body {
   padding-inline: 0;
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 1.5em;
+  }
+}
+
 .html-lesson-wrapper .try-content ul li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
@@ -309,9 +325,8 @@ body {
 }
 
 .html-lesson-wrapper .try-content ul .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
 }
 
 .html-lesson-wrapper .try-content ul .row p {
@@ -326,7 +341,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .wrapper {
-  margin-top: 5%;
+  margin-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +355,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .sub-text.mg {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .html-lesson-wrapper .try-content .outline {
@@ -436,6 +451,12 @@ body {
   margin-left: 1.2em;
   margin-block: 0;
   padding-inline: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .act-content ul {
+    margin-left: 1.5em;
+  }
 }
 
 .html-lesson-wrapper .act-content ul li {

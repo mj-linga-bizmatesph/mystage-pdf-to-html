@@ -65,13 +65,13 @@ body {
     top: 2.3em;
     left: 5%;
     font-size: clamp(18px, 4vw, 27px);
-    width: 90%;
+    width: 85%;
   }
 
   .lesson-number {
     position: absolute;
-    right: 6.9%;
-    margin-top: 7.8%;
+    right: 7.1%;
+    margin-top: 7%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
@@ -244,5 +244,11 @@ body {
     right: 6.2%;
     font-family: $helvetica;
     max-width: 39%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .lesson-number {
+      margin-top: 7.5%;
+    }
   }
 }

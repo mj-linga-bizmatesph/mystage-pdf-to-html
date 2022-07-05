@@ -154,6 +154,13 @@ body {
 
       p {
         margin-block-end: 0;
+        margin-block-start: 0;
+      }
+
+      &:not(:first-child) {
+        .text:not(:last-child) {
+          margin-bottom: 1.5em;
+        }
       }
     }
   }

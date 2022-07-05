@@ -16,7 +16,7 @@ body {
   position: relative;
   padding-bottom: clamp(3em, 12vw, 9em);
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
-  background-position: top, -0.4em bottom;
+  background-position: top, -0.7em bottom;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
@@ -46,7 +46,7 @@ body {
 
 .html-lesson-wrapper .program-rank .type {
   padding: 0.7% 3% 0.7% 3%;
-  background-color: #2078A0;
+  background-color: #2078a0;
 }
 
 .html-lesson-wrapper .program-rank .level {
@@ -64,13 +64,13 @@ body {
   top: 2.3em;
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
-  width: 90%;
+  width: 85%;
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
-  right: 6.9%;
-  margin-top: 7.8%;
+  right: 7.1%;
+  margin-top: 7%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
@@ -96,7 +96,7 @@ body {
 }
 
 .html-lesson-wrapper .magenta-color {
-  color: #2078A0;
+  color: #2078a0;
 }
 
 .html-lesson-wrapper .sub-color {
@@ -105,7 +105,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  color: #2078A0;
+  color: #2078a0;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.8em;
@@ -154,12 +154,18 @@ body {
 .html-lesson-wrapper .see-content .col p {
   -webkit-margin-after: 0;
           margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.html-lesson-wrapper .see-content .col p:not(:last-child) {
+  margin-bottom: 1.5em;
 }
 
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.2em;
+  margin-left: 1.5em;
   text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
@@ -246,4 +252,10 @@ body {
   right: 6.2%;
   font-family: "Helvetica", "Arial", sans-serif;
   max-width: 39%;
+}
+
+@media screen and (min-width: 768px) {
+  .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
+    margin-top: 7.5%;
+  }
 }

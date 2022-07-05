@@ -4,6 +4,22 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin-right: 2em;
+    margin-right: 1em !important;
     position: relative;
+}
+
+.html-lesson-wrapper .see-content .col {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 2em !important;
+    position: relative;
+}
+
+.html-lesson-wrapper .see-content .blue-section {
+    width: 100% !important;
+}
+
+.html-lesson-wrapper .see-content {
+    width: 90% !important;
 }

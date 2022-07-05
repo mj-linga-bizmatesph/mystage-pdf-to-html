@@ -80,6 +80,12 @@ body {
     margin-top: 7.4%;
     font-size: clamp(8px, 1.8vw, 13px);
     color: #ffffff;
+    @media screen and (max-width: 900px){
+      left: 91.6%;
+    }
+    @media screen and (max-width: 400px){
+      left: 91.1%;
+    }
   }
   .row {
     display: flex;
@@ -119,10 +125,11 @@ body {
   }
 
   .lesson-list {
+    width: 78%;
     font-family: $text-font;
     font-size: clamp(6px, 1.8vw, 15px);
     margin-top: clamp(120px, 21vw, 189px);
-    margin-left: clamp(50px, 16%, 149px);
+    margin-left: clamp(50px, 15%, 123px);
     ul {
       list-style-type: decimal;
       margin: 24.5px 0px 0px 18px;
@@ -168,18 +175,23 @@ body {
   }
 
   footer {
-    font-size: clamp(4.5px, 1.2vw, 9px);
+    font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
     text-align: right;
-    bottom: 3.3%;
+    bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
+    width: 35%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 
   .blueja{
     font-family: 'Noto Sans JP', sans-serif !important;
-    font-size: clamp(5px, 1.4vw, 12.5px);
+    font-size: clamp(5px, 1.5vw, 12px);
     color: #257a9e;
   }
   .title {
@@ -252,6 +264,11 @@ body {
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
+    footer {
+      bottom: clamp(16px, 4.8vw, 43px);
+      right: 5% !important;
+      max-width: 35%;
+    }
   }
   .lesson-list {
     ul.initial {
@@ -301,3 +318,19 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 375px){
+  .html-lesson-wrapper{
+   footer {
+     bottom: 15px;
+   }
+ }
+ }
+ @media screen and (max-width: 360px){
+   .html-lesson-wrapper{
+   footer {
+     width: 100%;
+     text-align: right;
+   }
+ }
+ }

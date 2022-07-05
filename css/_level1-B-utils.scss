@@ -187,8 +187,14 @@ body {
   li p {
     margin: 0 auto;
   }
+  .see-content,
+  .try-content,
+  .act-content{
+    width: 90%;
+  }
   // See
   .see-content {
+    width: 78%;
     position: relative;
     margin-left: $left-pixel;
     margin-top: 8%;
@@ -342,6 +348,7 @@ body {
   }
   // Act
   .act-content {
+    width: 78%;
     position: relative;
     margin-top: 2em;
     margin-left: $left-pixel;
@@ -523,16 +530,17 @@ body {
     }
   }
   footer {
-    font-size: clamp(4.5px, 1.2vw, 9px);
+    font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
     width: fit-content;
     text-align: right;
-    bottom: 3.3%;
-    right: 5.2%;
+    bottom: 43px;
+    right: 6.2%;
     font-family: $title-font;
-    @media screen and (max-width: 900px){
-      right: 2.2%;
-      bottom: 2.5%;
+    width: 35%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
     }
   }
   .page-2 {
@@ -566,5 +574,26 @@ body {
     .page-3 {
       min-height: unset;
     }
+    footer {
+      bottom: clamp(16px, 4.8vw, 43px);
+      right: 5% !important;
+      max-width: 35%;
+    }
   }
+}
+
+@media screen and (max-width: 375px){
+ .html-lesson-wrapper{
+  footer {
+    bottom: 15px;
+  }
+}
+}
+@media screen and (max-width: 360px){
+  .html-lesson-wrapper{
+  footer {
+    width: 100%;
+    text-align: right;
+  }
+}
 }

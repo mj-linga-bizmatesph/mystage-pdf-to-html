@@ -178,23 +178,71 @@ body {
 }
 
 .html-lesson-wrapper .ml-1 {
+  margin-left: 10%;
+}
+
+.html-lesson-wrapper .ml-1em {
   margin-left: 1em;
 }
 
-.html-lesson-wrapper .ml-2 {
+.html-lesson-wrapper .ml-2em {
   margin-left: 2em;
 }
 
-.html-lesson-wrapper .ml-3 {
+.html-lesson-wrapper .ml-3em {
   margin-left: 6vw;
 }
 
-.html-lesson-wrapper .ml-4 {
+.html-lesson-wrapper .ml-4em {
   margin-left: 4em;
 }
 
-.html-lesson-wrapper .ml-5 {
+.html-lesson-wrapper .ml-5em {
   margin-left: 5em;
+}
+
+.html-lesson-wrapper .mr-1 {
+  margin-right: 10%;
+}
+
+.html-lesson-wrapper .mr-2 {
+  margin-right: 25%;
+}
+
+.html-lesson-wrapper .mr-3 {
+  margin-right: 50%;
+}
+
+.html-lesson-wrapper .mr-4 {
+  margin-right: 75%;
+}
+
+.html-lesson-wrapper .mr-5 {
+  margin-right: 100%;
+}
+
+.html-lesson-wrapper .mr-2vw {
+  margin-right: 2vw;
+}
+
+.html-lesson-wrapper .mr-3vw {
+  margin-right: 3vw;
+}
+
+.html-lesson-wrapper .mt-0 {
+  margin-top: 0;
+}
+
+.html-lesson-wrapper .mt-1em {
+  margin-top: 1em !important;
+}
+
+.html-lesson-wrapper .mt-2em {
+  margin-top: 2em;
+}
+
+.html-lesson-wrapper .mt-3em {
+  margin-top: 3em;
 }
 
 .html-lesson-wrapper .flex-wrapper {
@@ -280,12 +328,15 @@ body {
   margin: 0 .5em;
 }
 
+.html-lesson-wrapper .no-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .html-lesson-wrapper .conversation-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -298,8 +349,6 @@ body {
   margin: 8% 0px;
   font-size: clamp(12px, 3.5vw, 18px);
   position: relative;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
 }
 
 .html-lesson-wrapper .conversation-wrapper .row .convo-row {
@@ -328,7 +377,7 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .speaker {
@@ -387,10 +436,7 @@ body {
 
 .html-lesson-wrapper .conversation-wrapper .row .side-image .text {
   position: absolute;
-}
-
-.html-lesson-wrapper .conversation-wrapper .row .side-image img {
-  width: clamp(126px, 16.3vw, 190px);
+  top: 0;
 }
 
 .html-lesson-wrapper .conversation-wrapper .row .side-image .rotate-1 {
@@ -403,6 +449,13 @@ body {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   padding-left: clamp(12px, 2.5vw, 25px);
+}
+
+.html-lesson-wrapper .blue-line {
+  width: 19px;
+  height: 2px;
+  border-bottom: 2px solid #1287cd;
+  margin-bottom: 5px;
 }
 
 .html-lesson-wrapper .see-content {
@@ -908,7 +961,10 @@ body {
 
 .html-lesson-wrapper .try-2 .try2-content {
   padding-left: clamp(4px, 10vw, 5px);
-  margin-top: clamp(40px, 16vw, 100px);
+}
+
+.html-lesson-wrapper .try-2 .try2-content .side-image .text {
+  top: 29%;
 }
 
 .html-lesson-wrapper .see-3 .see-3-content {
@@ -1087,6 +1143,10 @@ body {
   line-height: clamp(11px, 4vw, 20px);
   font-size: clamp(11px, 3vw, 16px);
   text-align: center;
+}
+
+.html-lesson-wrapper .try-3 .try-3-content .circle-number, .html-lesson-wrapper .try-3 .try-3-content .square-letter {
+  margin-left: 1%;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .conversation {

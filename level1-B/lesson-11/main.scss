@@ -27,14 +27,19 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
   }
   header {
     font-family: $title-font;
+  }
+  .w {
+    width: 3%;
+  }
+  .m2 {
+    padding-left: 1%;
   }
   .b {
     font-weight: bold;
@@ -130,7 +135,6 @@ body {
       color: $primary;
       font-weight: bold;
       font-size: clamp(10px, 2vw, 15px);
-      
     }
     p {
       margin: 3px auto;
@@ -226,34 +230,25 @@ body {
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: clamp(12px, 3vw, 26px);
+
+      @media screen and (max-width: 901px) {
+        padding-left: 2.3%;
+      }
+      @media screen and (max-width: 451px) {
+        padding-left: 0.8%;
+      }
     }
     li {
       padding-left: 13px;
       width: 95%;
+      text-indent: 0;
       &:nth-child(5) {
         margin-bottom: 25px;
-      }
-      span {
-        display: block;
-        width: 65%;
-        &:not(.ja) {
-          padding-left: 1.3em;
-          text-indent: -19px;
-        }
       }
     }
     .row {
       display: flex;
       width: 67%;
-      p {
-        display: inline-block;
-        margin: 0px 0px;
-        &:first-child {
-          margin-right: 4px;
-          max-width: 100px;
-          word-wrap: break-word;
-        }
-      }
     }
     .wrapper {
       display: flex;
@@ -281,7 +276,7 @@ body {
           margin-top: 1%;
         }
         &.b {
-          font-weight: normal;
+          font-weight: bold;
           margin-top: 8.5%;
         }
         &.b-sub {
@@ -312,15 +307,18 @@ body {
         left: 73%;
         &.a {
           margin-top: 5.8%;
+          font-weight: bold;
         }
         &.b {
-          font-weight: normal;
+          font-weight: bold;
           margin-top: 11.7%;
         }
         &.c {
           margin-top: 20.2%;
+          font-weight: bold;
         }
         &.d {
+          font-weight: bold;
           margin-top: 26.5%;
         }
       }

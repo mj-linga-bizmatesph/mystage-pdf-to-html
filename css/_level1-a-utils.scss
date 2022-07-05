@@ -21,6 +21,10 @@ body {
     text-align: center;
   }
 
+  .dark-blue {
+    color: $primary-dark;
+  }
+
   .primary-color {
     color: $primary !important;
   }
@@ -163,7 +167,7 @@ body {
   }
   .lesson-number {
     position: absolute;
-    left: 91.65%;
+    left: 91.6%;
     width: 1.9%;
     text-align: center;
     margin-top: -5%;
@@ -451,7 +455,7 @@ body {
   footer {
     font-size: clamp(4.5px, 1.2vw, 9px);
     position: absolute;
-    width: fit-content;
+    width: 43%;
     text-align: right;
     bottom: 3.3%;
     right: 6.2%;
@@ -488,13 +492,30 @@ body {
       }
     }
   }
-}
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper {
+  @media screen and (max-width: 900px) {
     .page-1,
     .page-2,
     .page-3 {
       min-height: unset;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .page-1 {
+      .lesson-number {
+        margin-top: -6%;
+      }
+    }
+
+    .page-2 {
+      .lesson-number {
+        margin-top: -7%;
+      }
+    }
+
+    .page-3 {
+      .lesson-number {
+        margin-top: 0.3%;
+      }
     }
   }
 }

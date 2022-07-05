@@ -130,4 +130,12 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .page-3 {
+      .lesson-number {
+        margin-top: -7%;
+      }
+    }
+  }
 }

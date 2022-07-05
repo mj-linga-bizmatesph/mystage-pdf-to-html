@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+.html-lesson-wrapper .dark-blue {
+  color: #083051;
+}
+
 .html-lesson-wrapper .primary-color {
   color: #257a9e !important;
 }
@@ -183,7 +187,7 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  left: 91.65%;
+  left: 91.6%;
   width: 1.9%;
   text-align: center;
   margin-top: -5%;
@@ -525,9 +529,7 @@ body {
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.2vw, 9px);
   position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 43%;
   text-align: right;
   bottom: 3.3%;
   right: 6.2%;
@@ -563,6 +565,18 @@ body {
   .html-lesson-wrapper .page-2,
   .html-lesson-wrapper .page-3 {
     min-height: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .page-1 .lesson-number {
+    margin-top: -6%;
+  }
+  .html-lesson-wrapper .page-2 .lesson-number {
+    margin-top: -7%;
+  }
+  .html-lesson-wrapper .page-3 .lesson-number {
+    margin-top: 0.3%;
   }
 }
 
@@ -696,4 +710,10 @@ body {
   border-top: 0.8em solid #000000;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .page-3 .lesson-number {
+    margin-top: -7%;
+  }
 }

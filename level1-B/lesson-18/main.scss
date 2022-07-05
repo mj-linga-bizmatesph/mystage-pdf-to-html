@@ -20,3 +20,26 @@
       grid-template-columns: 0.035fr 1fr;
   }
 }
+
+.page-3{
+  .try-content{
+    .wrapper{
+      margin-top: 1.5em !important;
+    }
+  }
+  .act-content{
+    .wrapper{
+      margin-top: 1em !important;
+    }
+  }
+}
+.arrow-part{
+  div{
+    &:before{
+      font-size: clamp(0px, 100%, 8px);
+      left: -4em !important;
+      top: 0.8em !important;
+    }
+  }
+  
+}

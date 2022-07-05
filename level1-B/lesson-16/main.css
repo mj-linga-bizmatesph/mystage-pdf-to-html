@@ -760,3 +760,29 @@ body {
   -ms-grid-columns: 0.035fr 1fr;
       grid-template-columns: 0.035fr 1fr;
 }
+
+.arrow-part div:before {
+  font-size: clamp(0px, 100%, 8px);
+  left: -4em !important;
+  top: 0.8em !important;
+}
+
+.arrow-part div:nth-child(2) .subtitle {
+  margin-left: 4em;
+}
+
+.arrow-part div:nth-child(2) p:nth-child(1n+2) {
+  margin-left: 5em;
+}
+
+.arrow-part div:nth-child(2) .no-arrow:nth-of-type(1) img {
+  width: 40%;
+}
+
+.page-3 .try-content .wrapper {
+  margin-top: 1.5em !important;
+}
+
+.page-3 .act-content .wrapper {
+  margin-top: 1em !important;
+}

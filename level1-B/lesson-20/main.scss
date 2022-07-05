@@ -102,11 +102,11 @@ body {
     }
     p {
       margin: 3px auto;
-      &:nth-child(n + 3) {
-        color: $primary;
-        font-size: clamp(6px, 1.6vw, 13px);
-        line-height: clamp(12px, 2.8vw, 22px);
-      }
+      // &:nth-child(n + 3) {
+      //   color: $primary;
+      //   font-size: clamp(6px, 1.6vw, 13px);
+      //   line-height: clamp(12px, 2.8vw, 22px);
+      // }
     }
   }
   .text {
@@ -115,7 +115,6 @@ body {
   .ja {
     font-family: $ja-font, sans-serif !important;
     font-size: clamp(5px, 1.4vw, 12.5px);
-    font-weight: bold;
     color: #595959;
   }
   sup {
@@ -158,11 +157,16 @@ body {
     li {
       padding-left: 9px;
       width: 95%;
+      &::marker{
+        margin-left: 1em;
+        text-indent: 1em !important;
+      }
     }
     p {
       margin: 0px 0px 0px 8px;
       display: flex;
       justify-content: space-between;
+      margin: inherit;
       span {
         flex: 1;
       }

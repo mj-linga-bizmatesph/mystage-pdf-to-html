@@ -130,6 +130,7 @@ body {
       color: $primary;
       font-weight: bold;
       font-size: clamp(10px, 2vw, 15px);
+      
     }
     p {
       margin: 3px auto;
@@ -141,7 +142,6 @@ body {
   .ja {
     font-family: $ja-font, sans-serif;
     font-size: clamp(5px, 1.4vw, 12.5px);
-    font-weight: bold;
     color: #595959;
   }
   .primary-text {
@@ -239,6 +239,19 @@ body {
         &:not(.ja) {
           padding-left: 1.3em;
           text-indent: -19px;
+        }
+      }
+    }
+    .row {
+      display: flex;
+      width: 67%;
+      p {
+        display: inline-block;
+        margin: 0px 0px;
+        &:first-child {
+          margin-right: 4px;
+          max-width: 100px;
+          word-wrap: break-word;
         }
       }
     }

@@ -1,0 +1,570 @@
+$text-font: 'Trebuchet MS';
+$title-font: 'Helvetica', 'Arial', sans-serif;
+$ja-font: 'Noto Sans JP';
+$primary: #257a9e;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+$sub-color: #595959;
+$left-pixel: 14%;
+body {
+  margin: 0;
+  padding: 0;
+}
+.html-lesson-wrapper {
+  font-family: $text-font;
+  .sub-color {
+    color: $sub-color !important;
+  }
+  p {
+    margin: 0;
+    line-height: 1.8em;
+  }
+  .grid {
+    display: grid;
+    &.equal {
+      grid-template-columns: 1fr 1fr;
+    }
+    &.min-auto {
+      grid-template-columns: min-content 1fr;
+    }
+  }
+  .disc {
+    list-style-type: disc;
+  }
+  img {
+    margin-left: 8%;
+    max-width: 68%;
+    height: auto;
+  }
+  .pr-1 {
+    padding-right: 1.5em;
+  }
+  .mr-1 {
+    margin-right: 1.5em;
+  }
+  .page-1,
+  .page-2,
+  .page-3 {
+    width: 100%;
+    min-width: 360px;
+    max-width: 892.75px;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 16%;
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-position: top, bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  header {
+    font-family: $title-font;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .u-sup {
+    border-bottom: solid 1.5px black;
+    display: inline-block;
+    line-height: 1em;
+  }
+  .program-rank {
+    margin-top: 4%;
+    margin-left: 6%;
+    color: #ffffff;
+    font-size: 0px;
+    .type {
+      padding: 0.5% 2% 0.5% 2%;
+      background-color: #248bb0;
+      font-size: clamp(7px, 1.8vw, 15px);
+    }
+    .level {
+      padding: 0.5% 2% 0.5% 2%;
+      background-color: #339999;
+      font-size: clamp(7px, 1.8vw, 15px);
+    }
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .blueja{
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size: clamp(5px, 1.4vw, 12.5px);
+    color: #257a9e;
+  }
+  .title {
+    margin-top: 1em;
+    margin-left: 7%;
+    font-size: clamp(11px, 3vw, 27px);
+  }
+  .lesson-number {
+    position: absolute;
+    left: 91.65%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: -5%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+    @media screen and (max-width: 900px){
+      margin-top: -6%;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .try-grid {
+    grid-template-columns: 1.8fr 3fr;
+  }
+  .shapes-grid {
+    grid-template-columns: 0.3fr 1fr;
+  }
+
+  .sub-text {
+    font-family: $title-font !important;
+    margin: 0px 0px 1px;
+    p {
+      margin: 0px 0px 1px;
+      line-height: unset !important;
+    }
+    .ja {
+      margin-top: 5px;
+    }
+  }
+  .section {
+    position: absolute;
+    left: -8%;
+    color: #2078a0;
+    font-weight: bold;
+    font-size: clamp(6px, 1.8vw, 15px);
+    font-family: $title-font;
+    &.see {
+      margin-top: 1.5%;
+    }
+    &.act {
+      line-height: 1.8em;
+    }
+  }
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(6px, 1.8vw, 15px);
+    position: relative;
+    left: 52%;
+    &.d1,
+    &.d2 {
+      margin: 4% 0;
+    }
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+  .sub-head {
+    position: relative;
+    margin-top: 1em;
+    margin-left: 7%;
+    .subtitle {
+      font-family: $ja-font;
+      color: $primary;
+      font-weight: bold;
+      font-size: clamp(6px, 1.8vw, 15px);
+    }
+    p {
+      margin: 5px auto;
+    }
+  }
+  .ja {
+    font-family: $ja-font, sans-serif !important;
+    font-size: clamp(5px, 1.4vw, 12.5px);
+    color: #595959;
+  }
+  .primary-text {
+    color: $primary;
+  }
+  sup {
+    font-size: clamp(6px, 1.6vw, 10px);
+    line-height: clamp(8px, 1.8vw, 16px);
+  }
+  li p {
+    margin: 0 auto;
+  }
+  // See
+  .see-content {
+    position: relative;
+    margin-left: $left-pixel;
+    margin-top: 8%;
+    font-size: clamp(6px, 1.8vw, 15px);
+    .blue-section {
+      background-color: $primary-light;
+      padding-top: 1.5%;
+      padding-left: 1.3em;
+      height: fit-content;
+      padding-bottom: 1.5em;
+      padding-right: 1.5em;
+    }
+    p {
+      &:not(.sub-text) {
+        line-height: clamp(12px, 3vw, 26px);
+      }
+      .tab{
+        margin-right: 3%;
+      }
+      .tab1{
+        margin-right: 2.4%;
+      }
+    }
+    .col {
+      width: fit-content;
+      margin-right: 3em;
+      position: relative;
+    }
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+    }
+    .example {
+      margin-top: 1.5em;
+      margin-left: 1.3em;
+      .conversation {
+        width: 90%;
+        line-height: 1.8em;
+        margin-top: 4px;
+        .row {
+          display: grid;
+          grid-template-columns: 0.2fr 2fr;
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+    .space{
+      padding-right: 2.1em;
+     }
+  }
+  // Try
+  .try-content {
+    width: 78%;
+    position: relative;
+    margin-top: 2em;
+    margin-left: $left-pixel;
+    padding-left: 1.3em;
+    font-size: clamp(6px, 1.8vw, 15px);
+    ul {
+      list-style-type: decimal;
+      margin: 0;
+      margin-left: 1.2em;
+      margin-block: 0;
+      padding-inline: 0;
+      @media screen and (max-width: 900px){
+        margin-left: 1.5em;
+      }
+      li {
+        padding-inline-start: 1em;
+        line-height: 1.8em;
+      }
+      p {
+        display: grid;
+        grid-template-columns: 0.035fr 1fr;
+      }
+    }
+    .wrapper {
+      width: 90%;
+      margin-top: 1%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .sub-text.mg {
+      margin-top: 2em;
+    }
+    .outline {
+      position: relative;
+      img {
+        left: 75%;
+        position: absolute;
+        width: 5%;
+        height: auto;
+      }
+      span {
+        position: absolute;
+        left: 81%;
+        &.a {
+          margin-top: 2%;
+        }
+        &.a-sub {
+          margin-top: 1%;
+        }
+        &.b {
+          font-weight: normal;
+          margin-top: 8.5%;
+        }
+        &.b-sub {
+          margin-top: 7.2%;
+        }
+        &.c {
+          margin-top: 16%;
+        }
+        &.c-sub {
+          margin-top: 14.5%;
+        }
+        &.d {
+          margin-top: 22%;
+        }
+        &.d-sub {
+          margin-top: 21%;
+        }
+        &.e {
+          margin-top: 30%;
+        }
+        &.e-sub {
+          margin-top: 29%;
+        }
+      }
+
+      div {
+        position: absolute;
+        left: 73%;
+        &.a {
+          margin-top: 5.8%;
+        }
+        &.b {
+          font-weight: normal;
+          margin-top: 11.7%;
+        }
+        &.c {
+          margin-top: 20.2%;
+        }
+        &.d {
+          margin-top: 26.5%;
+        }
+      }
+    }
+  }
+  // Act
+  .act-content {
+    position: relative;
+    margin-top: 2em;
+    margin-left: $left-pixel;
+    padding-left: 1.3em;
+    font-size: clamp(6px, 1.8vw, 15px);
+    ul {
+      list-style-type: decimal;
+      margin: 0;
+      margin-left: 1.2em;
+      margin-block: 0;
+      padding-inline: 0;
+      @media screen and (max-width: 900px){
+        margin-left: 1.5em;
+      }
+      li {
+        padding-inline-start: 1em;
+        line-height: 1.8em;
+      }
+     
+    }
+    .bullets{
+     margin-top: 2%;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .sub-text.mg {
+      margin-top: 1em;
+    }
+  }
+  .title {
+    .ja {
+      font-size: clamp(12px, 3vw, 27px);
+      color: #000000;
+      font-weight: bold;
+      // margin-right: 3px;
+    }
+  }
+  .lesson-list {
+    font-family: $text-font;
+    font-size: clamp(6px, 1.8vw, 15px);
+    margin-top: 10%;
+    margin-left: 10%;
+    ul {
+      list-style-type: decimal;
+      margin: 24.5px 0px 0px 18px;
+      padding: 0;
+      line-height: clamp(12px, 3vw, 26px);
+      position: relative;
+      &:marker{
+        margin-left: 1em;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: -16px;
+        top: 7px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 11px solid #000000;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &.initial {
+        margin-top: 30px;
+      }
+      .sub-text {
+        margin-left: 4px;
+      }
+    }
+    li {
+      padding-left: 9px;
+      width: 95%;
+    }
+    p {
+      margin: 0px 0px 0px 8px;
+      display: flex;
+      justify-content: space-between;
+      span {
+        flex: 1;
+      }
+    }
+  }
+
+  .lesson-points {
+    margin-top: 1em;
+    padding: 1% 0 1% 7%;
+    height: fit-content;
+    background: $primary-light;
+    .subtitle {
+      font-size: clamp(6px, 1.8vw, 15px);
+      color: #000000;
+      font-weight: bold;
+    }
+    p {
+      color: $primary;
+      font-weight: normal;
+      letter-spacing: 0.1px;
+      margin: 3px auto;
+      font-size: clamp(5px, 1.5vw, 12px);
+      line-height: 1.8em;
+      &:first-child {
+        font-size: clamp(6px, 1.8vw, 15px);
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+  .arrow-part {
+    margin-top: 1em;
+    margin-left: 14%;
+    margin-right: 1.5em;
+    margin-bottom: 3.5em;
+    word-spacing: 3px;
+    font-weight: normal;
+    .subtitle {
+      font-size: clamp(6px, 1.8vw, 15px);
+      color: #000000;
+    }
+    p {
+      margin: 0.5em auto;
+      font-size: clamp(5px, 1.5vw, 12px);
+    }
+    div {
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 2em;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: -4em;
+        top: 0.3em;
+        width: 0;
+        height: 0;
+        border-top: 0.8em solid transparent;
+        border-bottom: 0.8em solid transparent;
+        border-left: 1.5em solid $primary;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .no-arrow {
+    &:before {
+      content: '';
+      position: absolute;
+      left: -38px;
+      top: 5px;
+      width: 0;
+      height: 0;
+      border: none !important;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+.mb0{
+  margin-left: 3em;
+}
+.mb1{
+  margin-left: 2em;
+}
+.no-arrow-sub {
+    margin-top: 7px;
+    margin-left: 125px;
+    .subtitle {
+      font-size: clamp(7px, 1.8vw, 15px);
+      color: #000000;
+    }
+    span {
+      margin-left: 15px;
+    }
+    .light-blue {
+      color: $primary;
+    }
+  }
+  footer {
+    font-size: clamp(4.5px, 1.2vw, 9px);
+    position: absolute;
+    width: fit-content;
+    text-align: right;
+    bottom: 3.3%;
+    right: 5.2%;
+    font-family: $title-font;
+    @media screen and (max-width: 900px){
+      right: 2.2%;
+      bottom: 2.5%;
+    }
+  }
+  .page-2 {
+    .see-content {
+      margin-top: 0;
+    }
+    .lesson-number {
+      margin-top: -6%;
+      @media screen and (max-width: 900px){
+        margin-top: -7%;
+      }
+    }
+  }
+  // Page 3
+  .page-3 {
+    .lesson-number {
+      margin-top: 1%;
+    }
+    .try-content {
+      margin-top: 3em;
+      span:first-of-type {
+        display: block !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    .page-1,
+    .page-2,
+    .page-3 {
+      min-height: unset;
+    }
+  }
+}

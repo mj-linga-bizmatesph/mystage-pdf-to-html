@@ -23,3 +23,8 @@
   -ms-grid-columns: 0.2fr 2fr;
   grid-template-columns: 0.2fr 1fr;
 }
+
+.html-lesson-wrapper .see-content p:not(.sub-text) {
+  line-height: clamp(12px, 3vw, 26px);
+  padding-right: 2em;
+}

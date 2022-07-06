@@ -250,6 +250,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .blue-section {
+  width: 97%;
   background-color: #cce0ec;
   padding-top: 1.5%;
   padding-left: 1.3em;
@@ -351,7 +352,7 @@ body {
 
 .html-lesson-wrapper .try-content .wrapper {
   width: 90%;
-  margin-top: 1%;
+  margin-top: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +478,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .bullets {
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .html-lesson-wrapper .act-content .wrapper {
@@ -766,4 +767,9 @@ body {
   display: grid;
   -ms-grid-columns: 0.2fr 2fr;
   grid-template-columns: 0.2fr 1fr;
+}
+
+.html-lesson-wrapper .see-content p:not(.sub-text) {
+  line-height: clamp(12px, 3vw, 26px);
+  padding-right: 2em;
 }

@@ -157,19 +157,12 @@ body {
       }
     }
     li {
+      margin-left: 0.1em;
       padding-left: 9px;
       width: 95%;
       &::marker{
         margin-left: 1em;
         text-indent: 1em !important;
-      }
-    }
-    p {
-      margin: 0px 0px 0px 8px;
-      display: flex;
-      justify-content: space-between;
-      span {
-        flex: 1;
       }
     }
   }

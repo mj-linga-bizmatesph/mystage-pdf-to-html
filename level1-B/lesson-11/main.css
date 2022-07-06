@@ -557,12 +557,21 @@ body {
 }
 
 .html-lesson-wrapper footer {
-  font-size: clamp(4.5px, 1.2vw, 9px);
+  font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
   bottom: 43px;
   right: 6.2%;
-  text-align: right;
   font-family: "Arial";
+  width: 35%;
+}
+
+.html-lesson-wrapper footer span {
+  overflow-wrap: break-word;
+  display: inline-block;
 }
 
 .html-lesson-wrapper .page-2 .sub-head {
@@ -939,6 +948,11 @@ body {
   .html-lesson-wrapper .page-3 {
     min-height: unset;
   }
+  .html-lesson-wrapper footer {
+    bottom: clamp(16px, 4.8vw, 43px);
+    right: 5% !important;
+    max-width: 35%;
+  }
   .html-lesson-wrapper .program-rank {
     top: clamp(20px, 4.4vw, 40px);
   }
@@ -1008,11 +1022,6 @@ body {
   }
   .html-lesson-wrapper .page-3 .act-content ul li .ja {
     margin: 2px auto !important;
-  }
-  .html-lesson-wrapper footer {
-    bottom: clamp(20px, 5vw, 43px);
-    right: 5% !important;
-    max-width: 42%;
   }
 }
 
@@ -1090,5 +1099,18 @@ body {
     border-bottom: 5px solid transparent;
     border-left: 8px solid #257a9e;
     left: -28px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper footer {
+    bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper footer {
+    width: 100%;
+    text-align: right;
   }
 }

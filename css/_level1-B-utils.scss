@@ -194,13 +194,13 @@ body {
   }
   // See
   .see-content {
-    width: 78%;
+    width: 74%;
     position: relative;
     margin-left: $left-pixel;
     margin-top: 8%;
     font-size: clamp(6px, 1.8vw, 15px);
     .blue-section {
-      width: 106% !important;
+      width: 109% !important;
       background-color: $primary-light;
       padding-top: 1.5%;
       padding-left: 1.3em;
@@ -439,6 +439,7 @@ body {
   }
 
   .lesson-points {
+    width: 80%;
     margin-top: 1em;
     padding: 1% 0 1% 7%;
     height: fit-content;

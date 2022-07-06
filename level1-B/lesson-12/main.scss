@@ -1,36 +1,54 @@
 @import '../../css/level1-B-utils';
-.html-lesson-wrapper {
-  .html-lesson-wrapper .page-2 .lesson-number {
-    margin-top: -9%;
-  }
 
-  .html-lesson-wrapper .see-content p .tab {
-    margin-left: 5%;
-  }
+.html-lesson-wrapper .try-content ul p {
+  display: flex;
+}
+.html-lesson-wrapper li p {
+  margin: 0;
+}
+.html-lesson-wrapper .page-3 .try-content .wrapper .row .inline-block {
+  padding-left: 2%;
+}
+.html-lesson-wrapper .page-3 .try-content .wrapper .row .ja {
+  padding-left: 2%;
+}
+.html-lesson-wrapper .page-2 .lesson-number {
+  margin-top: -10.5%;
+}
 
-  .html-lesson-wrapper .see-content .col {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: 100%;
-    margin-right: 0em;
-    position: relative;
-  }
+.html-lesson-wrapper .see-content p .tab {
+  margin-left: 5%;
+}
 
-  .html-lesson-wrapper .act-content ul {
-    .text {
-      padding-left: 1em;
-    }
-  }
+.html-lesson-wrapper .see-content .col {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 100%;
+  margin-right: 0em;
+  position: relative;
+}
 
-  .html-lesson-wrapper .act-content ul .text {
+.html-lesson-wrapper .act-content ul {
+  .text {
     padding-left: 1em;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    .ja {
-      padding-left: 0.8em;
+  }
+}
+
+.html-lesson-wrapper .act-content ul .text {
+  padding-left: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .ja {
+    padding-left: 0.8em;
+  }
+}
+.html-lesson-wrapper {
+  .lesson-number {
+    @media screen and (max-width: 900px) {
+      margin-top: -5%;
+      left: 91.5%;
     }
   }
-
   .w {
     width: 3%;
   }

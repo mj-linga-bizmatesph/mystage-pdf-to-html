@@ -1,6 +1,23 @@
 @import '../../css/level1-B-utils';
 
+.html-lesson-wrapper .try-content ul p {
+  display: flex;
+}
+.html-lesson-wrapper li p {
+  margin: 0;
+}
+.html-lesson-wrapper .page-3 .try-content .wrapper .row .inline-block {
+  padding-left: 2%;
+}
+.html-lesson-wrapper .page-3 .try-content .wrapper .row .ja {
+  padding-left: 2%;
+}
 .html-lesson-wrapper {
+  .see-content {
+    .example {
+      margin-right: 1rem;
+    }
+  }
   .w {
     width: 3%;
   }

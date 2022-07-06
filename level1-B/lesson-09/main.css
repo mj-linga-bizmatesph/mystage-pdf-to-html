@@ -250,7 +250,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .blue-section {
-  width: 97%;
+  width: 106% !important;
   background-color: #cce0ec;
   padding-top: 1.5%;
   padding-left: 1.3em;
@@ -765,4 +765,14 @@ body {
 .html-lesson-wrapper .arrow-part .column {
   display: -ms-grid;
   display: grid;
+}
+
+.html-lesson-wrapper .ja {
+  font-family: "Noto Sans JP", sans-serif !important;
+  font-size: clamp(5px, 1.4vw, 12.5px);
+  color: #595959;
+}
+
+.html-lesson-wrapper .ja .margin-right {
+  margin-right: 10%;
 }

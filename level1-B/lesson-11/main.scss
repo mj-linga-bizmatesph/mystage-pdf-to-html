@@ -17,9 +17,6 @@ body {
   display: grid;
   grid-template-columns: 1em auto auto;
 }
-.grid-item {
-  
-}
 
 .ml-1{
   margin-left: 1%;
@@ -267,10 +264,21 @@ body {
 
     ul {
       list-style-type: decimal;
-      margin: 3px 0px 0px 18px;
-      padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
-
+      margin: 0;
+      margin-left: 1.2em;
+      margin-block: 0;
+      padding-inline: 0;
+      @media screen and (max-width: 900px){
+        margin-left: 1.5em;
+      }
+      li {
+        padding-inline-start: 1em;
+        line-height: 1.8em;
+      }
+      p {
+        display: grid;
+        grid-template-columns: 0.035fr 1fr;
+      }
       @media screen and (max-width: 901px) {
         padding-left: 2.3%;
       }
@@ -291,6 +299,8 @@ body {
       width: 67%;
     }
     .wrapper {
+      width: 70%;
+      margin-top: 4%;
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -928,8 +938,9 @@ body {
       }
       .try-content {
         .wrapper {
+          width: 61%;
           margin-top: 5px !important;
-          margin-left: -10px;
+          margin-left: -1%;
         }
       }
     }

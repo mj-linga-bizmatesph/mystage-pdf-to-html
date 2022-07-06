@@ -3,6 +3,17 @@
 .try-content {
     ul > li > p {
       display: grid;
-      grid-template-columns: 0.035fr 1fr;
+      grid-template-columns: 0.25fr 1fr;
     }
   }
+
+  .html-lesson-wrapper .see-content .example .conversation .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.2fr 2fr;
+    grid-template-columns: 0.25fr 2fr;
+}
+
+.html-lesson-wrapper .try-content .wrapper {
+  width: 100%;
+}

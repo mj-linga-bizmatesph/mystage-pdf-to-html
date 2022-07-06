@@ -580,10 +580,6 @@ body {
   }
 }
 
-.html-lesson-wrapper ul p {
-  margin-left: 1em;
-}
-
 .html-lesson-wrapper .sub-text.ja {
   color: #257a9e;
 }
@@ -598,7 +594,8 @@ body {
 
 .html-lesson-wrapper .page-1 figure {
   position: absolute;
-  margin-top: 14.8em;
+  margin-top: 16em;
+  right: 0;
 }
 
 .html-lesson-wrapper .page-1 figure .shape {
@@ -622,10 +619,6 @@ body {
   color: #595959;
 }
 
-.html-lesson-wrapper .page-3 .lesson-number {
-  margin-top: -6%;
-}
-
 .html-lesson-wrapper .page-2 li span.ja,
 .html-lesson-wrapper .page-3 li span.ja {
   display: block;
@@ -634,7 +627,8 @@ body {
 .html-lesson-wrapper .page-2 figure,
 .html-lesson-wrapper .page-3 figure {
   position: absolute;
-  margin-top: 30.8em;
+  margin-top: 31em;
+  right: 0;
 }
 
 .html-lesson-wrapper .page-2 figure .shape,
@@ -671,7 +665,7 @@ body {
 .html-lesson-wrapper .lesson-list ul {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.4em;
+  margin-left: 1.2em;
   margin-block: 0;
   padding-inline: 0;
   margin-bottom: 2em;
@@ -708,10 +702,4 @@ body {
   border-top: 0.8em solid #000000;
   display: inline-block;
   vertical-align: middle;
-}
-
-@media screen and (max-width: 768px) {
-  .html-lesson-wrapper .page-3 .lesson-number {
-    margin-top: -7%;
-  }
 }

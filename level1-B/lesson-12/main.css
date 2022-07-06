@@ -819,3 +819,17 @@ body {
   -webkit-column-gap: 10%;
           column-gap: 10%;
 }
+
+.html-lesson-wrapper .try-content ul p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -ms-grid;
+  display: grid;
+}
+
+.html-lesson-wrapper .try-content ul p {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.035fr 1fr;
+  grid-template-columns: 0.035fr 1fr;
+}

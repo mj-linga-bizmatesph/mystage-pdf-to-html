@@ -13,6 +13,18 @@ body {
   padding: 0;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1em auto auto;
+}
+.grid-item {
+  
+}
+
+.ml-1{
+  margin-left: 1%;
+}
+
 .html-lesson-wrapper {
   font-family: $text-font;
 
@@ -263,7 +275,7 @@ body {
       }
     }
     li {
-      padding-left: 13px;
+      padding-left: 0.5em;
       width: 95%;
       text-indent: 0;
       &:nth-child(5) {
@@ -278,103 +290,117 @@ body {
       display: flex;
       flex-direction: column;
       align-items: stretch;
+      width: 70%;
     }
     .sub-text.mg {
       margin-top: 25px;
     }
     .outline {
+      font-size: clamp(6px, 1.8vw, 13px) !important;
       position: relative;
-      img {
-        left: 73%;
-        position: absolute;
-        width: 5%;
-        height: auto;
-
-        @media screen and (max-width: 601px) {
-          margin-top: 3%;
+      margin-left: -5em;
+      .float-right{
+        margin-top: -2em !important;
+        .sdp-title{
+          width: 25%;
+          left: 75% !important;
+          font-size: clamp(6px, 1.8vw, 13px) !important;
         }
       }
-      span {
-        position: absolute;
-        left: 79%;
-        &.a {
-          margin-top: 2%;
+      div{
+        img {
+          left: 73%;
+          position: absolute;
+          width: 5%;
+          height: auto;
 
           @media screen and (max-width: 601px) {
-            margin-top: 5%;
+            margin-top: 3%;
           }
         }
-        &.a-sub {
-          margin-top: 1%;
-        }
-        &.b {
-          font-weight: bold;
-          margin-top: 8.5%;
-          @media screen and (max-width: 601px) {
-            margin-top: 11.3%;
-          }
-        }
-        &.b-sub {
-          margin-top: 7.2%;
-        }
-        &.c {
-          margin-top: 16%;
-          @media screen and (max-width: 601px) {
-            margin-top: 18.5%;
-          }
-        }
-        &.c-sub {
-          margin-top: 14.5%;
-        }
-        &.d {
-          margin-top: 22%;
-          @media screen and (max-width: 601px) {
-            margin-top: 25%;
-          }
-        }
-        &.d-sub {
-          margin-top: 21%;
-        }
-        &.e {
-          margin-top: 30%;
-          @media screen and (max-width: 601px) {
-            margin-top: 31.5%;
-          }
-        }
-        &.e-sub {
-          margin-top: 29%;
-        }
-      }
+        span {
+          position: absolute;
+          left: 79%;
+          &.a {
+            margin-top: 2%;
 
-      div {
-        position: absolute;
-        left: 71%;
-        &.a {
-          margin-top: 5.8%;
-          font-weight: bold;
-          @media screen and (max-width: 601px) {
-            margin-top: 8.9%;
+            @media screen and (max-width: 601px) {
+              margin-top: 5%;
+            }
+          }
+          &.a-sub {
+            margin-top: 1%;
+          }
+          &.b {
+            font-weight: bold;
+            margin-top: 8.5%;
+            @media screen and (max-width: 601px) {
+              margin-top: 11.3%;
+            }
+          }
+          &.b-sub {
+            margin-top: 7.2%;
+          }
+          &.c {
+            margin-top: 16%;
+            @media screen and (max-width: 601px) {
+              margin-top: 18.5%;
+            }
+          }
+          &.c-sub {
+            margin-top: 14.5%;
+          }
+          &.d {
+            margin-top: 22%;
+            @media screen and (max-width: 601px) {
+              margin-top: 25%;
+            }
+          }
+          &.d-sub {
+            margin-top: 21%;
+          }
+          &.e {
+            margin-top: 30%;
+            word-break: break-all;
+            @media screen and (max-width: 601px) {
+              margin-top: 31.5%;
+            }
+          }
+          &.e-sub {
+            margin-top: 29%;
           }
         }
-        &.b {
-          font-weight: bold;
-          margin-top: 11.7%;
-          @media screen and (max-width: 601px) {
-            margin-top: 14.6%;
+
+        div {
+          position: absolute;
+          left: 71%;
+          &.a {
+            margin-top: 5.8%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 8.9%;
+            }
           }
-        }
-        &.c {
-          margin-top: 20.2%;
-          font-weight: bold;
-          @media screen and (max-width: 601px) {
-            margin-top: 23%;
+          &.b {
+            font-weight: bold;
+            margin-top: 11.7%;
+            @media screen and (max-width: 601px) {
+              margin-top: 14.6%;
+            }
           }
-        }
-        &.d {
-          font-weight: bold;
-          margin-top: 26.5%;
-          @media screen and (max-width: 601px) {
-            margin-top: 29.5%;
+          &.c {
+            margin-top: 20.2%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 23%;
+            }
+          }
+          &.d {
+            font-weight: bold;
+            margin-top: 26.5%;
+            @media screen and (max-width: 601px) {
+              margin-top: 29.5%;
+            }
           }
         }
       }

@@ -3,6 +3,17 @@ body {
   padding: 0;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1em auto auto;
+      grid-template-columns: 1em auto auto;
+}
+
+.ml-1 {
+  margin-left: 1%;
+}
+
 .html-lesson-wrapper {
   font-family: "Trebuchet MS";
 }
@@ -316,7 +327,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content li {
-  padding-left: 13px;
+  padding-left: 0.5em;
   width: 95%;
   text-indent: 0;
 }
@@ -343,6 +354,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  width: 70%;
 }
 
 .html-lesson-wrapper .try-content .sub-text.mg {
@@ -350,10 +362,22 @@ body {
 }
 
 .html-lesson-wrapper .try-content .outline {
+  font-size: clamp(6px, 1.8vw, 13px) !important;
   position: relative;
+  margin-left: -5em;
 }
 
-.html-lesson-wrapper .try-content .outline img {
+.html-lesson-wrapper .try-content .outline .float-right {
+  margin-top: -2em !important;
+}
+
+.html-lesson-wrapper .try-content .outline .float-right .sdp-title {
+  width: 25%;
+  left: 75% !important;
+  font-size: clamp(6px, 1.8vw, 13px) !important;
+}
+
+.html-lesson-wrapper .try-content .outline div img {
   left: 73%;
   position: absolute;
   width: 5%;
@@ -361,132 +385,133 @@ body {
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline img {
+  .html-lesson-wrapper .try-content .outline div img {
     margin-top: 3%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline span {
+.html-lesson-wrapper .try-content .outline div span {
   position: absolute;
   left: 79%;
 }
 
-.html-lesson-wrapper .try-content .outline span.a {
+.html-lesson-wrapper .try-content .outline div span.a {
   margin-top: 2%;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline span.a {
+  .html-lesson-wrapper .try-content .outline div span.a {
     margin-top: 5%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline span.a-sub {
+.html-lesson-wrapper .try-content .outline div span.a-sub {
   margin-top: 1%;
 }
 
-.html-lesson-wrapper .try-content .outline span.b {
+.html-lesson-wrapper .try-content .outline div span.b {
   font-weight: bold;
   margin-top: 8.5%;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline span.b {
+  .html-lesson-wrapper .try-content .outline div span.b {
     margin-top: 11.3%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline span.b-sub {
+.html-lesson-wrapper .try-content .outline div span.b-sub {
   margin-top: 7.2%;
 }
 
-.html-lesson-wrapper .try-content .outline span.c {
+.html-lesson-wrapper .try-content .outline div span.c {
   margin-top: 16%;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline span.c {
+  .html-lesson-wrapper .try-content .outline div span.c {
     margin-top: 18.5%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline span.c-sub {
+.html-lesson-wrapper .try-content .outline div span.c-sub {
   margin-top: 14.5%;
 }
 
-.html-lesson-wrapper .try-content .outline span.d {
+.html-lesson-wrapper .try-content .outline div span.d {
   margin-top: 22%;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline span.d {
+  .html-lesson-wrapper .try-content .outline div span.d {
     margin-top: 25%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline span.d-sub {
+.html-lesson-wrapper .try-content .outline div span.d-sub {
   margin-top: 21%;
 }
 
-.html-lesson-wrapper .try-content .outline span.e {
+.html-lesson-wrapper .try-content .outline div span.e {
   margin-top: 30%;
+  word-break: break-all;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline span.e {
+  .html-lesson-wrapper .try-content .outline div span.e {
     margin-top: 31.5%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline span.e-sub {
+.html-lesson-wrapper .try-content .outline div span.e-sub {
   margin-top: 29%;
 }
 
-.html-lesson-wrapper .try-content .outline div {
+.html-lesson-wrapper .try-content .outline div div {
   position: absolute;
   left: 71%;
 }
 
-.html-lesson-wrapper .try-content .outline div.a {
+.html-lesson-wrapper .try-content .outline div div.a {
   margin-top: 5.8%;
   font-weight: bold;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline div.a {
+  .html-lesson-wrapper .try-content .outline div div.a {
     margin-top: 8.9%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline div.b {
+.html-lesson-wrapper .try-content .outline div div.b {
   font-weight: bold;
   margin-top: 11.7%;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline div.b {
+  .html-lesson-wrapper .try-content .outline div div.b {
     margin-top: 14.6%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline div.c {
+.html-lesson-wrapper .try-content .outline div div.c {
   margin-top: 20.2%;
   font-weight: bold;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline div.c {
+  .html-lesson-wrapper .try-content .outline div div.c {
     margin-top: 23%;
   }
 }
 
-.html-lesson-wrapper .try-content .outline div.d {
+.html-lesson-wrapper .try-content .outline div div.d {
   font-weight: bold;
   margin-top: 26.5%;
 }
 
 @media screen and (max-width: 601px) {
-  .html-lesson-wrapper .try-content .outline div.d {
+  .html-lesson-wrapper .try-content .outline div div.d {
     margin-top: 29.5%;
   }
 }

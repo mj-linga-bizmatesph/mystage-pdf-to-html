@@ -462,6 +462,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background: #cce0ec;
+  width: 75%;
 }
 
 .html-lesson-wrapper .lesson-points .subtitle {
@@ -586,6 +587,10 @@ body {
 
 .html-lesson-wrapper .shape {
   width: 4em;
+}
+
+.html-lesson-wrapper .lesson-points {
+  width: 88%;
 }
 
 .html-lesson-wrapper .try-content ul.desc li {

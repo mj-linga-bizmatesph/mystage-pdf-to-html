@@ -1,6 +1,12 @@
 @import '../../css/level1-a-utils';
 
 .html-lesson-wrapper {
+  ul {
+    p {
+      margin-left: 1em;
+    }
+  }
+
   .sub-text.ja {
     color: $primary;
     &.offset {
@@ -14,10 +20,10 @@
     }
     figure {
       position: absolute;
-      margin-top: 16em;
+      margin-top: 14.8em;
       right: 0;
       .shape {
-        width: 22em;
+        width: 20em;
       }
 
       .name {
@@ -41,6 +47,12 @@
     }
   }
 
+  .page-3 {
+    .lesson-number {
+      margin-top: -6%;
+    }
+  }
+
   .page-2,
   .page-3 {
     li {
@@ -50,10 +62,10 @@
     }
     figure {
       position: absolute;
-      margin-top: 31em;
+      margin-top: 30.8em;
       right: 0;
       .shape {
-        width: 22em;
+        width: 21em;
       }
 
       .name {
@@ -81,7 +93,7 @@
     ul {
       list-style-type: decimal;
       margin: 0;
-      margin-left: 1.2em;
+      margin-left: 1.4em;
       margin-block: 0;
       padding-inline: 0;
       margin-bottom: 2em;
@@ -115,6 +127,14 @@
         border-top: 0.8em solid #000000;
         display: inline-block;
         vertical-align: middle;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .page-3 {
+      .lesson-number {
+        margin-top: -7%;
       }
     }
   }

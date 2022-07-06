@@ -112,6 +112,17 @@ body {
   font-family: "Arial" !important;
 }
 
+.html-lesson-wrapper .indent {
+  margin-top: auto;
+  margin-left: 0.2%;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .indent {
+    margin-left: 1.5%;
+  }
+}
+
 .html-lesson-wrapper .sub-head {
   position: absolute;
   top: 10%;
@@ -186,7 +197,7 @@ body {
 
 .html-lesson-wrapper .lesson-list li {
   margin-left: 0.1em;
-  padding-left: 9px;
+  padding-left: 2px;
   width: 95%;
 }
 

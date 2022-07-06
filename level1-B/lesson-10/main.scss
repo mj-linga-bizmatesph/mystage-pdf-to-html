@@ -95,6 +95,13 @@ body {
   .sub-text {
     font-family: $title-font !important;
   }
+  .indent{
+    margin-top: auto;
+    margin-left: 0.2%;
+    @media screen and (max-width: 900px){
+      margin-left: 1.5%;
+    }
+  }
   .sub-head {
     position: absolute;
     top: 10%;
@@ -158,7 +165,7 @@ body {
     }
     li {
       margin-left: 0.1em;
-      padding-left: 9px;
+      padding-left: 2px;
       width: 95%;
       &::marker{
         margin-left: 1em;

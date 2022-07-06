@@ -18,8 +18,14 @@
 
 .html-lesson-wrapper .see-content .blue-section {
     width: 100% !important;
+    .row{
+        .col{
+            margin-right: 0.5em !important;
+        }
+    }
 }
 
 .html-lesson-wrapper .see-content {
     width: 90% !important;
 }
+

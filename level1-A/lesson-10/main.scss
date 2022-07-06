@@ -19,9 +19,6 @@
       margin-top: 5em;
     }
     figure {
-      position: absolute;
-      margin-top: 14.8em;
-      right: 0;
       .shape {
         width: 20em;
       }
@@ -33,7 +30,7 @@
             margin-left: 2em;
           }
           &:last-child {
-            margin-left: 12em;
+            margin-left: 10.5em;
           }
         }
       }
@@ -63,7 +60,7 @@
     figure {
       position: absolute;
       margin-top: 30.8em;
-      right: 0;
+      right: 2em;
       .shape {
         width: 21em;
       }
@@ -78,7 +75,7 @@
             margin-left: 2em;
           }
           &:last-child {
-            margin-left: 12em;
+            margin-left: 10em;
           }
         }
       }

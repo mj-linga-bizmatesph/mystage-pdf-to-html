@@ -17,6 +17,10 @@ body {
 .html-lesson-wrapper {
   font-family: $text-font;
 
+  sup {
+    vertical-align: super;
+  }
+
   .center {
     text-align: center;
   }

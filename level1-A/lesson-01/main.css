@@ -8,6 +8,10 @@ body {
   font-family: "Trebuchet MS";
 }
 
+.html-lesson-wrapper sup {
+  vertical-align: super;
+}
+
 .html-lesson-wrapper .center {
   text-align: center;
 }

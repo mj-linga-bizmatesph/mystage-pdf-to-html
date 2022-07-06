@@ -35,6 +35,9 @@ body {
   header {
     font-family: $title-font;
   }
+  .lh {
+    line-height: 1.5;
+  }
   .w {
     width: 3%;
   }
@@ -87,6 +90,10 @@ body {
     padding-top: 7.5%;
     font-size: clamp(8px, 1.8vw, 13px);
     color: #ffffff;
+
+    @media screen and (max-width: 411px) {
+      padding-top: 7%;
+    }
   }
   .row {
     display: flex;
@@ -111,7 +118,20 @@ body {
       top: 0px;
     }
     &.act {
-      top: 2px;
+      top: 0.6%;
+
+      @media screen and (max-width: 721px) {
+        top: 1% !important;
+      }
+      @media screen and (max-width: 651px) {
+        top: 2.3% !important;
+      }
+      @media screen and (max-width: 531px) {
+        top: 2.8% !important;
+      }
+      @media screen and (max-width: 481px) {
+        top: clamp(6px, 2vw, 5px) !important;
+      }
     }
   }
   .divider {
@@ -135,6 +155,10 @@ body {
       color: $primary;
       font-weight: bold;
       font-size: clamp(10px, 2vw, 15px);
+
+      @media screen and (max-width: 451px) {
+        padding-top: 3%;
+      }
     }
     p {
       margin: 3px auto;
@@ -261,16 +285,24 @@ body {
     .outline {
       position: relative;
       img {
-        left: 75%;
+        left: 73%;
         position: absolute;
         width: 5%;
         height: auto;
+
+        @media screen and (max-width: 601px) {
+          margin-top: 3%;
+        }
       }
       span {
         position: absolute;
-        left: 81%;
+        left: 79%;
         &.a {
           margin-top: 2%;
+
+          @media screen and (max-width: 601px) {
+            margin-top: 5%;
+          }
         }
         &.a-sub {
           margin-top: 1%;
@@ -278,24 +310,36 @@ body {
         &.b {
           font-weight: bold;
           margin-top: 8.5%;
+          @media screen and (max-width: 601px) {
+            margin-top: 11.3%;
+          }
         }
         &.b-sub {
           margin-top: 7.2%;
         }
         &.c {
           margin-top: 16%;
+          @media screen and (max-width: 601px) {
+            margin-top: 18.5%;
+          }
         }
         &.c-sub {
           margin-top: 14.5%;
         }
         &.d {
           margin-top: 22%;
+          @media screen and (max-width: 601px) {
+            margin-top: 25%;
+          }
         }
         &.d-sub {
           margin-top: 21%;
         }
         &.e {
           margin-top: 30%;
+          @media screen and (max-width: 601px) {
+            margin-top: 31.5%;
+          }
         }
         &.e-sub {
           margin-top: 29%;
@@ -304,22 +348,34 @@ body {
 
       div {
         position: absolute;
-        left: 73%;
+        left: 71%;
         &.a {
           margin-top: 5.8%;
           font-weight: bold;
+          @media screen and (max-width: 601px) {
+            margin-top: 8.9%;
+          }
         }
         &.b {
           font-weight: bold;
           margin-top: 11.7%;
+          @media screen and (max-width: 601px) {
+            margin-top: 14.6%;
+          }
         }
         &.c {
           margin-top: 20.2%;
           font-weight: bold;
+          @media screen and (max-width: 601px) {
+            margin-top: 23%;
+          }
         }
         &.d {
           font-weight: bold;
           margin-top: 26.5%;
+          @media screen and (max-width: 601px) {
+            margin-top: 29.5%;
+          }
         }
       }
     }
@@ -341,6 +397,18 @@ body {
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: clamp(12px, 3vw, 26px);
+      @media screen and (max-width: 901px) {
+        margin: 3px 0px 0px 28px;
+      }
+      @media screen and (max-width: 651px) {
+        margin: 3px 0px 0px 24px;
+      }
+      @media screen and (max-width: 481px) {
+        margin: 3px 0px 0px 21px;
+      }
+      @media screen and (max-width: 381px) {
+        margin: 3px 0px 0px 19px;
+      }
     }
     li {
       padding-left: 13px;
@@ -378,6 +446,34 @@ body {
         color: #000000;
         font-weight: bold;
         margin-right: 3px;
+      }
+    }
+    .tcs {
+      max-width: 800px;
+      margin-left: 0 !important;
+      @media screen and (max-width: 901px) {
+        width: 700px;
+      }
+      @media screen and (max-width: 831px) {
+        width: 600px;
+      }
+      @media screen and (max-width: 721px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 601px) {
+        width: 480px;
+      }
+      @media screen and (max-width: 601px) {
+        width: 430px;
+      }
+      @media screen and (max-width: 518px) {
+        width: 390px;
+      }
+      @media screen and (max-width: 471px) {
+        width: 330px;
+      }
+      @media screen and (max-width: 422px) {
+        width: 290px;
       }
     }
     .lesson-points {
@@ -524,13 +620,16 @@ body {
       margin-top: 75px;
     }
     .try-content {
-      margin-top: 52px;
+      margin-top: 70px;
       padding-left: 0px;
 
       span:nth-child(-n + 2) {
         display: block;
         margin-bottom: 5px;
         width: 100%;
+        @media screen and (max-width: 841px) {
+          width: 95%;
+        }
       }
       ul {
         list-style: none;
@@ -597,10 +696,20 @@ body {
   // Floating styles
   .float-right {
     float: right;
-    font-size: clamp(8px, 1.8vw, 15px);
-    margin-right: 9%;
+    font-size: clamp(7px, 1.8vw, 15px);
+    margin-right: 11%;
     width: 10%;
     margin-top: -3%;
+
+    @media screen and (max-width: 601px) {
+      margin-top: 1%;
+    }
+    @media screen and (max-width: 501px) {
+      margin-top: 2%;
+    }
+    @media screen and (max-width: 421px) {
+      margin-top: 0.5%;
+    }
   }
 
   // Sizes - right
@@ -673,7 +782,7 @@ body {
     .page-1 {
       .act-content {
         .wrapper {
-          margin-top: -8px !important;
+          margin-top: 0px !important;
           margin-left: -10px;
         }
         .section.act {
@@ -682,7 +791,7 @@ body {
       }
       .try-content {
         .wrapper {
-          margin-top: 0px !important;
+          margin-top: 5px !important;
           margin-left: -10px;
         }
       }
@@ -722,9 +831,9 @@ body {
       }
     }
     footer {
-      bottom: clamp(16px, 4vw, 43px);
+      bottom: clamp(20px, 5vw, 43px);
       right: 5% !important;
-      max-width: 34%;
+      max-width: 42%;
     }
   }
 }

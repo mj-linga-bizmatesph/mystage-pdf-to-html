@@ -25,6 +25,10 @@ body {
   margin-left: 1%;
 }
 
+.ml-2{
+  margin-left: 2%;
+}
+
 .html-lesson-wrapper {
   font-family: $text-font;
 
@@ -655,6 +659,102 @@ body {
       margin-top: 70px;
       padding-left: 0px;
 
+      .wrapper{
+        width: 60%;
+      }
+
+      .outline{
+        margin-left: -8em;
+        .float-right{
+          margin-top: 2em !important;
+        }
+        img{
+          margin-top: 10%;
+        }
+        div {
+          &.a {
+            margin-top: 16%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 15.9%;
+            }
+          }
+          &.b {
+            font-weight: bold;
+            margin-top: 22%;
+            @media screen and (max-width: 601px) {
+              margin-top: 21.6%;
+            }
+          }
+          &.c {
+            margin-top: 30.5%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 30%;
+            }
+          }
+          &.d {
+            font-weight: bold;
+            margin-top: 36.9%;
+            @media screen and (max-width: 601px) {
+              margin-top: 36.8%;
+            }
+          }
+        }
+        span {
+          position: absolute;
+          left: 79%;
+          &.a {
+            margin-top: 12%;
+
+            @media screen and (max-width: 601px) {
+              margin-top: 11%;
+            }
+          }
+          &.a-sub {
+            margin-top: 1%;
+          }
+          &.b {
+            font-weight: bold;
+            margin-top: 18.2%;
+            @media screen and (max-width: 601px) {
+              margin-top: 18.2%;
+            }
+          }
+          &.b-sub {
+            margin-top: 7.2%;
+          }
+          &.c {
+            margin-top: 25.5%;
+            @media screen and (max-width: 601px) {
+              margin-top: 25.5%;
+            }
+          }
+          &.c-sub {
+            margin-top: 14.5%;
+          }
+          &.d {
+            margin-top: 32.7%;
+            @media screen and (max-width: 601px) {
+              margin-top: 32.7%;
+            }
+          }
+          &.d-sub {
+            margin-top: 21%;
+          }
+          &.e {
+            margin-top: 39.5%;
+            word-break: break-all;
+            @media screen and (max-width: 601px) {
+              margin-top: 38.8%;
+            }
+          }
+          &.e-sub {
+            margin-top: 29%;
+          }
+        }
+      }
+
       span:nth-child(-n + 2) {
         display: block;
         margin-bottom: 5px;
@@ -665,7 +765,7 @@ body {
       }
       ul {
         list-style: none;
-        margin: 24px 0px 0px 16px;
+        margin: 24px 0px 0px 2em;
         counter-reset: ulCounter;
         li:not(.ja) {
           counter-increment: ulCounter;

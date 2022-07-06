@@ -263,7 +263,7 @@ body {
       margin-block: 0;
       padding-inline: 0;
       @media screen and (max-width: 900px){
-        margin-left: 1.5em;
+        margin-left: 1.5em !important;
       }
       li {
         padding-inline-start: 1em;
@@ -362,7 +362,7 @@ body {
       margin-block: 0;
       padding-inline: 0;
       @media screen and (max-width: 900px){
-        margin-left: 1.5em;
+        margin-left: 1.4em;
       }
       li {
         padding-inline-start: 1em;
@@ -539,7 +539,7 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
-    width: 35%;
+    width: 40%;
     span{
       overflow-wrap: break-word;
       display:inline-block

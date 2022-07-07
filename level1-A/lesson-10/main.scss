@@ -47,12 +47,6 @@
     }
   }
 
-  .page-3 {
-    .lesson-number {
-      margin-top: -6%;
-    }
-  }
-
   .page-2,
   .page-3 {
     li {
@@ -127,14 +121,6 @@
         border-top: 0.8em solid #000000;
         display: inline-block;
         vertical-align: middle;
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .page-3 {
-      .lesson-number {
-        margin-top: -7%;
       }
     }
   }

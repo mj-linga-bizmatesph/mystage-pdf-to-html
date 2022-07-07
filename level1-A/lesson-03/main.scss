@@ -66,6 +66,9 @@
 
   .page-2 {
     .see-content {
+      .example .conversation .row {
+        grid-template-columns: 0.1fr 1fr;
+      }
       .questions {
         margin-top: 1em;
       }

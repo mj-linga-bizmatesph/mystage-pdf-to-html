@@ -33,6 +33,9 @@
 
   .page-2 {
     .see-content {
+      .example .conversation .row {
+        grid-template-columns: 0.1fr 1fr;
+      }
       .blue-section {
         .grid {
           grid-template-columns: 1fr 1.3fr;

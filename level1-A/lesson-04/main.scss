@@ -29,6 +29,14 @@
     }
   }
 
+  .page-2 {
+    .see-content {
+      .example .conversation .row {
+        grid-template-columns: 0.1fr 1fr;
+      }
+    }
+  }
+
   .page-3 {
     .grid-5 {
       margin-top: 1.5em;

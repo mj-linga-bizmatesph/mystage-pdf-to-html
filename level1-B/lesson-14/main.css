@@ -179,7 +179,7 @@ body {
 }
 
 .html-lesson-wrapper .section.act {
-  line-height: 1.8em;
+  line-height: 1.30em;
 }
 
 .html-lesson-wrapper .divider {
@@ -208,10 +208,12 @@ body {
   color: #257a9e;
   font-weight: bold;
   font-size: clamp(6px, 1.8vw, 15px);
+  margin-bottom: 0.5em;
 }
 
 .html-lesson-wrapper .sub-head p {
-  margin: 5px auto;
+  line-height: 1.8em;
+  margin-bottom: 0.1em;
 }
 
 .html-lesson-wrapper .ja {
@@ -257,6 +259,10 @@ body {
   height: fit-content;
   padding-bottom: 1.5em;
   padding-right: 1.5em;
+}
+
+.html-lesson-wrapper .see-content .blue-section .slide {
+  width: 80%;
 }
 
 .html-lesson-wrapper .see-content p:not(.sub-text) {
@@ -503,6 +509,7 @@ body {
 }
 
 .html-lesson-wrapper .lesson-list {
+  width: 80%;
   font-family: "Trebuchet MS";
   font-size: clamp(6px, 1.8vw, 15px);
   margin-top: 10%;
@@ -521,16 +528,20 @@ body {
   margin-left: 1em;
 }
 
+.html-lesson-wrapper .lesson-list ul:first-child {
+  margin-top: 5% !important;
+}
+
 .html-lesson-wrapper .lesson-list ul:before {
   content: '';
-  position: absolute;
-  left: -16px;
-  top: 7px;
+  position: relative;
+  margin-right: 1.3em;
+  top: -0.1em;
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 11px solid #000000;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-top: 0.8em solid #000000;
   display: inline-block;
   vertical-align: middle;
 }
@@ -562,6 +573,14 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.html-lesson-wrapper .lesson-list .sub-text-ja {
+  margin-left: 3.2em !important;
+}
+
+.html-lesson-wrapper .lesson-list .space {
+  margin-bottom: 5%;
 }
 
 .html-lesson-wrapper .lesson-points {

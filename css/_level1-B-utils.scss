@@ -87,7 +87,7 @@ body {
   .line {
     margin: 0 12px;
   }
-  .blueja{
+  .blueja {
     font-family: 'Noto Sans JP', sans-serif !important;
     font-size: clamp(5px, 1.4vw, 12.5px);
     color: #257a9e;
@@ -143,7 +143,7 @@ body {
       margin-top: 1.5%;
     }
     &.act {
-      line-height: 1.8em;
+      line-height: 1.30em;
     }
   }
   .divider {
@@ -168,9 +168,12 @@ body {
       color: $primary;
       font-weight: bold;
       font-size: clamp(6px, 1.8vw, 15px);
+
+      margin-bottom: 0.5em;
     }
     p {
-      margin: 5px auto;
+      line-height: 1.8em;
+      margin-bottom: 0.1em;
     }
   }
   .ja {
@@ -190,7 +193,7 @@ body {
   }
   .see-content,
   .try-content,
-  .act-content{
+  .act-content {
     width: 90%;
   }
   // See
@@ -208,15 +211,19 @@ body {
       height: fit-content;
       padding-bottom: 1.5em;
       padding-right: 1.5em;
+      .slide{
+        width: 80%;
+      }
     }
+    
     p {
       &:not(.sub-text) {
         line-height: clamp(12px, 3vw, 26px);
       }
-      .tab{
+      .tab {
         margin-right: 3%;
       }
-      .tab1{
+      .tab1 {
         margin-right: 2.4%;
       }
     }
@@ -245,9 +252,9 @@ body {
         }
       }
     }
-    .space{
+    .space {
       padding-right: 2.1em;
-     }
+    }
   }
   // Try
   .try-content {
@@ -263,7 +270,7 @@ body {
       margin-left: 1.4em;
       margin-block: 0;
       padding-inline: 0;
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 900px) {
         margin-left: 1.5em !important;
       }
       li {
@@ -362,17 +369,16 @@ body {
       margin-left: 1.4em;
       margin-block: 0;
       padding-inline: 0;
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 900px) {
         margin-left: 1.4em;
       }
       li {
         padding-inline-start: 1em;
         line-height: 1.8em;
       }
-     
     }
-    .bullets{
-     margin-top: 4%;
+    .bullets {
+      margin-top: 4%;
     }
     .wrapper {
       display: flex;
@@ -392,6 +398,7 @@ body {
     }
   }
   .lesson-list {
+    width: 80%;
     font-family: $text-font;
     font-size: clamp(6px, 1.8vw, 15px);
     margin-top: 10%;
@@ -402,19 +409,22 @@ body {
       padding: 0;
       line-height: clamp(12px, 3vw, 26px);
       position: relative;
-      &:marker{
+      &:marker {
         margin-left: 1em;
+      }
+      &:first-child{
+        margin-top: 5% !important;
       }
       &:before {
         content: '';
-        position: absolute;
-        left: -16px;
-        top: 7px;
+        position: relative;
+        margin-right: 1.3em;
+        top: -0.1em;
         width: 0;
         height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 11px solid #000000;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        border-top: 0.8em solid #000000;
         display: inline-block;
         vertical-align: middle;
       }
@@ -436,6 +446,12 @@ body {
       span {
         flex: 1;
       }
+    }
+    .sub-text-ja {
+      margin-left: 3.2em !important;
+    }
+    .space{
+      margin-bottom: 5%;
     }
   }
 
@@ -512,13 +528,13 @@ body {
       vertical-align: middle;
     }
   }
-.mb0{
-  margin-left: 3em;
-}
-.mb1{
-  margin-left: 2em;
-}
-.no-arrow-sub {
+  .mb0 {
+    margin-left: 3em;
+  }
+  .mb1 {
+    margin-left: 2em;
+  }
+  .no-arrow-sub {
     margin-top: 7px;
     margin-left: 125px;
     .subtitle {
@@ -541,9 +557,9 @@ body {
     right: 6.2%;
     font-family: $title-font;
     width: 40%;
-    span{
+    span {
       overflow-wrap: break-word;
-      display:inline-block
+      display: inline-block;
     }
   }
   .page-2 {
@@ -552,7 +568,7 @@ body {
     }
     .lesson-number {
       margin-top: -6%;
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 900px) {
         margin-top: -7%;
       }
     }
@@ -585,18 +601,18 @@ body {
   }
 }
 
-@media screen and (max-width: 375px){
- .html-lesson-wrapper{
-  footer {
-    bottom: 15px;
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    footer {
+      bottom: 15px;
+    }
   }
 }
-}
-@media screen and (max-width: 360px){
-  .html-lesson-wrapper{
-  footer {
-    width: 100%;
-    text-align: right;
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    footer {
+      width: 100%;
+      text-align: right;
+    }
   }
-}
 }

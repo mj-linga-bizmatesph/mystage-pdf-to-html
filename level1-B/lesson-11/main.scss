@@ -40,7 +40,7 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header-1.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -96,17 +96,17 @@ body {
     font-size: clamp(12px, 3vw, 27px);
   }
   .lesson-number {
+    font-family: $title-font;
     position: absolute;
-    left: 91.65%;
-    width: 1.9%;
+    left: 88.8%;
+    margin-top: 6.1%;
     text-align: center;
-    padding-top: 7.5%;
-    font-size: clamp(8px, 1.8vw, 13px);
+    font-size: clamp(5.4px, 1.5vw, 13px);
     color: #ffffff;
-
-    @media screen and (max-width: 411px) {
-      padding-top: 7%;
-    }
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-lesson-number.png');
+    padding: 1em 2em 2em 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .row {
     display: flex;
@@ -346,7 +346,7 @@ body {
             margin-top: 1%;
           }
           &.b {
-            font-weight: bold;
+            
             margin-top: 8.5%;
             @media screen and (max-width: 601px) {
               margin-top: 11.3%;
@@ -423,6 +423,7 @@ body {
 
   // Act
   .act-content {
+    width: 78%;
     position: relative;
     margin-top: 36px;
     margin-left: clamp(1px, 15%, 126.5px);

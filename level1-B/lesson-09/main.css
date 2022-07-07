@@ -62,7 +62,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 16%;
-  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header-1.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png");
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -118,19 +118,17 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
+  font-family: "Helvetica", "Arial", sans-serif;
   position: absolute;
-  left: 91.65%;
-  width: 1.9%;
+  left: 88.8%;
+  margin-top: 6.1%;
   text-align: center;
-  margin-top: -5%;
-  font-size: clamp(7px, 1.8vw, 13px);
+  font-size: clamp(5.4px, 1.5vw, 13px);
   color: #ffffff;
-}
-
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper .lesson-number {
-    margin-top: -6%;
-  }
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-lesson-number.png");
+  padding: 1em 2em 2em 2em;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .html-lesson-wrapper .row {

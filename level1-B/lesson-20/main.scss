@@ -25,8 +25,7 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header-1.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,19 +72,17 @@ body {
     font-size: clamp(12px, 3vw, 27px);
   }
   .lesson-number {
+    font-family: $title-font;
     position: absolute;
-    left: 91.65%;
-    width: 1.9%;
+    left: 88.8%;
+    margin-top: 6.1%;
     text-align: center;
-    margin-top: 7.4%;
-    font-size: clamp(8px, 1.8vw, 13px);
+    font-size: clamp(5.4px, 1.5vw, 13px);
     color: #ffffff;
-    @media screen and (max-width: 900px){
-      left: 91.6%;
-    }
-    @media screen and (max-width: 400px){
-      left: 91.1%;
-    }
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-lesson-number.png');
+    padding: 1em 2em 2em 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .row {
     display: flex;
@@ -95,7 +92,7 @@ body {
   .sub-text {
     font-family: $title-font !important;
   }
-  .indent{
+  .indent {
     margin-top: auto;
     margin-left: 0.2%;
   }
@@ -112,6 +109,10 @@ body {
     }
     p {
       margin: 3px auto;
+      &:nth-child(n + 3) {
+        font-size: clamp(6px, 1.6vw, 13px);
+        line-height: clamp(12px, 2.8vw, 22px);
+      }
     }
   }
   .text {
@@ -164,7 +165,7 @@ body {
       margin-left: 0.1em;
       padding-left: 2px;
       width: 95%;
-      &::marker{
+      &::marker {
         margin-left: 1em;
         text-indent: 1em !important;
       }
@@ -180,13 +181,13 @@ body {
     right: 6.2%;
     font-family: $title-font;
     width: 35%;
-    span{
+    span {
       overflow-wrap: break-word;
-      display:inline-block
+      display: inline-block;
     }
   }
 
-  .blueja{
+  .blueja {
     font-family: 'Noto Sans JP', sans-serif !important;
     font-size: clamp(5px, 1.5vw, 12px);
     color: #257a9e;
@@ -217,15 +218,16 @@ body {
         }
       }
     }
-    .margin-bottom{
+    .margin-bottom {
       margin-bottom: 10%;
     }
   }
 
   // Page 3
   .page-3 {
+    width: 80%;
     .lesson-list {
-      margin-top: 210px;
+      margin-top: 32%;
     }
     ul {
       .sub-text.ja {
@@ -316,18 +318,18 @@ body {
   }
 }
 
-@media screen and (max-width: 375px){
-  .html-lesson-wrapper{
-   footer {
-     bottom: 15px;
-   }
- }
- }
- @media screen and (max-width: 360px){
-   .html-lesson-wrapper{
-   footer {
-     width: 100%;
-     text-align: right;
-   }
- }
- }
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    footer {
+      bottom: 15px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    footer {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

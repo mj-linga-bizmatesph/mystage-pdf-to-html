@@ -267,6 +267,27 @@ p {
   line-height: 1.8em;
 }
 
+.html-lesson-wrapper .see-content .article ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.4em;
+  text-indent: -1em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .see-content .article ul li {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+  line-height: 1.8em;
+}
+
+.html-lesson-wrapper .see-content .article ul li::before {
+  content: '';
+  width: 1em;
+  display: inline-block;
+}
+
 .html-lesson-wrapper .see-content .article .label {
   font-weight: bold;
   text-decoration: underline;

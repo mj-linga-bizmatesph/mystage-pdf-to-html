@@ -1,6 +1,9 @@
 @import '../../css/level1-a-utils';
 
 .html-lesson-wrapper {
+  .pos-rel {
+    position: relative;
+  }
   .page-1 {
     .see-content {
       .text {
@@ -74,10 +77,10 @@
           margin-top: -6.8em;
           z-index: -999;
           &.bill {
-            right: 43%;
+            right: 1%;
           }
           &.mai {
-            right: 6%;
+            right: 1%;
           }
         }
       }

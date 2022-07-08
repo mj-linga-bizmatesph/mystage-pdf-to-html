@@ -571,6 +571,10 @@ body {
   }
 }
 
+.html-lesson-wrapper .pos-rel {
+  position: relative;
+}
+
 .html-lesson-wrapper .page-1 .see-content .text p span {
   margin-right: 1.5em;
 }
@@ -636,11 +640,11 @@ body {
 }
 
 .html-lesson-wrapper table tr th .shape.bill {
-  right: 43%;
+  right: 1%;
 }
 
 .html-lesson-wrapper table tr th .shape.mai {
-  right: 6%;
+  right: 1%;
 }
 
 .html-lesson-wrapper table tr ul {

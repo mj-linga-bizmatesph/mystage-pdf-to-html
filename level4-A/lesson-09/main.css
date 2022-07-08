@@ -98,6 +98,7 @@ p {
 
 .html-lesson-wrapper .words-phrase-content .phrases-word {
   line-height: 2.8em;
+  display: block;
 }
 
 .html-lesson-wrapper .arrow-part {
@@ -228,6 +229,7 @@ p {
 
 .html-lesson-wrapper .review-content .section {
   left: 6.4%;
+  line-height: normal;
 }
 
 .html-lesson-wrapper .review-content img {
@@ -265,6 +267,11 @@ p {
   line-height: 1.8em;
 }
 
+.html-lesson-wrapper .see-content .article .label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .html-lesson-wrapper .see-content .article:not(:last-child) {
   margin-bottom: 2em;
 }
@@ -283,7 +290,7 @@ p {
   width: 5em;
 }
 
-.html-lesson-wrapper .try-content ul {
+.html-lesson-wrapper ul {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1.4em;
@@ -292,13 +299,13 @@ p {
   padding-inline: 0;
 }
 
-.html-lesson-wrapper .try-content ul li {
+.html-lesson-wrapper ul li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
   line-height: 1.8em;
 }
 
-.html-lesson-wrapper .try-content ul li::before {
+.html-lesson-wrapper ul li::before {
   content: '';
   width: 1em;
   display: inline-block;

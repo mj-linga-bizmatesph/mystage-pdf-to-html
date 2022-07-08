@@ -96,6 +96,7 @@ p {
 
     .phrases-word {
       line-height: 2.8em;
+      display: block;
     }
   }
 
@@ -225,6 +226,7 @@ p {
     margin-top: 25%;
     .section {
       left: 6.4%;
+      line-height: normal;
     }
 
     img {
@@ -261,6 +263,10 @@ p {
 
     .article {
       line-height: 1.8em;
+      .label {
+        font-weight: bold;
+        text-decoration: underline;
+      }
       &:not(:last-child) {
         margin-bottom: 2em;
       }
@@ -278,25 +284,23 @@ p {
     }
   }
 
-  .try-content {
-    ul {
-      list-style-type: decimal;
-      margin: 0;
-      margin-left: 1.4em;
-      text-indent: -1em;
-      margin-block: 0;
-      padding-inline: 0;
+  ul {
+    list-style-type: decimal;
+    margin: 0;
+    margin-left: 1.4em;
+    text-indent: -1em;
+    margin-block: 0;
+    padding-inline: 0;
 
-      li {
-        padding-inline-start: 1em;
-        line-height: 1.8em;
-      }
+    li {
+      padding-inline-start: 1em;
+      line-height: 1.8em;
+    }
 
-      li::before {
-        content: '';
-        width: 1em;
-        display: inline-block;
-      }
+    li::before {
+      content: '';
+      width: 1em;
+      display: inline-block;
     }
   }
 

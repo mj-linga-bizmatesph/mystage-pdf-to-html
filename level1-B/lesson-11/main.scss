@@ -13,6 +13,19 @@ body {
   padding: 0;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1em auto auto;
+}
+
+.ml-1{
+  margin-left: 1%;
+}
+
+.ml-2{
+  margin-left: 2%;
+}
+
 .html-lesson-wrapper {
   font-family: $text-font;
 
@@ -27,14 +40,22 @@ body {
     overflow: hidden;
     position: relative;
     padding-bottom: 62px;
-    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header.png'),
-      url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-header-1.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-footer.png');
     background-position: top, bottom;
     background-size: contain;
     background-repeat: no-repeat;
   }
   header {
     font-family: $title-font;
+  }
+  .lh {
+    line-height: 1.5;
+  }
+  .w {
+    width: 3%;
+  }
+  .m2 {
+    padding-left: 1%;
   }
   .b {
     font-weight: bold;
@@ -75,13 +96,17 @@ body {
     font-size: clamp(12px, 3vw, 27px);
   }
   .lesson-number {
+    font-family: $title-font;
     position: absolute;
-    left: 91.65%;
-    width: 1.9%;
+    left: 88.8%;
+    margin-top: 6.1%;
     text-align: center;
-    padding-top: 7.5%;
-    font-size: clamp(8px, 1.8vw, 13px);
+    font-size: clamp(5.4px, 1.5vw, 13px);
     color: #ffffff;
+    background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/bg-lesson-number.png');
+    padding: 1em 2em 2em 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .row {
     display: flex;
@@ -106,7 +131,20 @@ body {
       top: 0px;
     }
     &.act {
-      top: 2px;
+      top: 0.6%;
+
+      @media screen and (max-width: 721px) {
+        top: 1% !important;
+      }
+      @media screen and (max-width: 651px) {
+        top: 2.3% !important;
+      }
+      @media screen and (max-width: 531px) {
+        top: 2.8% !important;
+      }
+      @media screen and (max-width: 481px) {
+        top: clamp(6px, 2vw, 5px) !important;
+      }
     }
   }
   .divider {
@@ -130,6 +168,10 @@ body {
       color: $primary;
       font-weight: bold;
       font-size: clamp(10px, 2vw, 15px);
+
+      @media screen and (max-width: 451px) {
+        padding-top: 3%;
+      }
     }
     p {
       margin: 3px auto;
@@ -141,7 +183,6 @@ body {
   .ja {
     font-family: $ja-font, sans-serif;
     font-size: clamp(5px, 1.4vw, 12.5px);
-    font-weight: bold;
     color: #595959;
   }
   .primary-text {
@@ -223,92 +264,158 @@ body {
 
     ul {
       list-style-type: decimal;
-      margin: 3px 0px 0px 18px;
-      padding: 0;
-      line-height: clamp(12px, 3vw, 26px);
+      margin: 0;
+      margin-left: 1.2em;
+      margin-block: 0;
+      padding-inline: 0;
+      @media screen and (max-width: 900px){
+        margin-left: 1.5em;
+      }
+      li {
+        padding-inline-start: 1em;
+        line-height: 1.8em;
+      }
+      p {
+        display: grid;
+        grid-template-columns: 0.035fr 1fr;
+      }
+      @media screen and (max-width: 901px) {
+        padding-left: 2.3%;
+      }
+      @media screen and (max-width: 451px) {
+        padding-left: 0.8%;
+      }
     }
     li {
-      padding-left: 13px;
+      padding-left: 0.5em;
       width: 95%;
+      text-indent: 0;
       &:nth-child(5) {
         margin-bottom: 25px;
       }
-      span {
-        display: block;
-        width: 65%;
-        &:not(.ja) {
-          padding-left: 1.3em;
-          text-indent: -19px;
-        }
-      }
+    }
+    .row {
+      display: flex;
+      width: 67%;
     }
     .wrapper {
+      width: 70%;
+      margin-top: 4%;
       display: flex;
       flex-direction: column;
       align-items: stretch;
+      width: 70%;
     }
     .sub-text.mg {
       margin-top: 25px;
     }
     .outline {
+      font-size: clamp(6px, 1.8vw, 13px) !important;
       position: relative;
-      img {
-        left: 75%;
-        position: absolute;
-        width: 5%;
-        height: auto;
-      }
-      span {
-        position: absolute;
-        left: 81%;
-        &.a {
-          margin-top: 2%;
-        }
-        &.a-sub {
-          margin-top: 1%;
-        }
-        &.b {
-          font-weight: normal;
-          margin-top: 8.5%;
-        }
-        &.b-sub {
-          margin-top: 7.2%;
-        }
-        &.c {
-          margin-top: 16%;
-        }
-        &.c-sub {
-          margin-top: 14.5%;
-        }
-        &.d {
-          margin-top: 22%;
-        }
-        &.d-sub {
-          margin-top: 21%;
-        }
-        &.e {
-          margin-top: 30%;
-        }
-        &.e-sub {
-          margin-top: 29%;
+      margin-left: -5em;
+      .float-right{
+        margin-top: -2em !important;
+        .sdp-title{
+          width: 25%;
+          left: 75% !important;
+          font-size: clamp(6px, 1.8vw, 13px) !important;
         }
       }
+      div{
+        img {
+          left: 73%;
+          position: absolute;
+          width: 5%;
+          height: auto;
 
-      div {
-        position: absolute;
-        left: 73%;
-        &.a {
-          margin-top: 5.8%;
+          @media screen and (max-width: 601px) {
+            margin-top: 3%;
+          }
         }
-        &.b {
-          font-weight: normal;
-          margin-top: 11.7%;
+        span {
+          position: absolute;
+          left: 79%;
+          &.a {
+            margin-top: 2%;
+
+            @media screen and (max-width: 601px) {
+              margin-top: 5%;
+            }
+          }
+          &.a-sub {
+            margin-top: 1%;
+          }
+          &.b {
+            
+            margin-top: 8.5%;
+            @media screen and (max-width: 601px) {
+              margin-top: 11.3%;
+            }
+          }
+          &.b-sub {
+            margin-top: 7.2%;
+          }
+          &.c {
+            margin-top: 16%;
+            @media screen and (max-width: 601px) {
+              margin-top: 18.5%;
+            }
+          }
+          &.c-sub {
+            margin-top: 14.5%;
+          }
+          &.d {
+            margin-top: 22%;
+            @media screen and (max-width: 601px) {
+              margin-top: 25%;
+            }
+          }
+          &.d-sub {
+            margin-top: 21%;
+          }
+          &.e {
+            margin-top: 30%;
+            word-break: break-all;
+            @media screen and (max-width: 601px) {
+              margin-top: 31.5%;
+            }
+          }
+          &.e-sub {
+            margin-top: 29%;
+          }
         }
-        &.c {
-          margin-top: 20.2%;
-        }
-        &.d {
-          margin-top: 26.5%;
+
+        div {
+          position: absolute;
+          left: 71%;
+          &.a {
+            margin-top: 5.8%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 8.9%;
+            }
+          }
+          &.b {
+            font-weight: bold;
+            margin-top: 11.7%;
+            @media screen and (max-width: 601px) {
+              margin-top: 14.6%;
+            }
+          }
+          &.c {
+            margin-top: 20.2%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 23%;
+            }
+          }
+          &.d {
+            font-weight: bold;
+            margin-top: 26.5%;
+            @media screen and (max-width: 601px) {
+              margin-top: 29.5%;
+            }
+          }
         }
       }
     }
@@ -316,6 +423,7 @@ body {
 
   // Act
   .act-content {
+    width: 78%;
     position: relative;
     margin-top: 36px;
     margin-left: clamp(1px, 15%, 126.5px);
@@ -330,6 +438,18 @@ body {
       margin: 3px 0px 0px 18px;
       padding: 0;
       line-height: clamp(12px, 3vw, 26px);
+      @media screen and (max-width: 901px) {
+        margin: 3px 0px 0px 28px;
+      }
+      @media screen and (max-width: 651px) {
+        margin: 3px 0px 0px 24px;
+      }
+      @media screen and (max-width: 481px) {
+        margin: 3px 0px 0px 21px;
+      }
+      @media screen and (max-width: 381px) {
+        margin: 3px 0px 0px 19px;
+      }
     }
     li {
       padding-left: 13px;
@@ -345,12 +465,18 @@ body {
     }
   }
   footer {
-    font-size: clamp(4.5px, 1.2vw, 9px);
+    font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
+    width: fit-content;
+    text-align: right;
     bottom: 43px;
     right: 6.2%;
-    text-align: right;
     font-family: $title-font;
+    width: 35%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 
   // Page 2
@@ -367,6 +493,34 @@ body {
         color: #000000;
         font-weight: bold;
         margin-right: 3px;
+      }
+    }
+    .tcs {
+      max-width: 800px;
+      margin-left: 0 !important;
+      @media screen and (max-width: 901px) {
+        width: 700px;
+      }
+      @media screen and (max-width: 831px) {
+        width: 600px;
+      }
+      @media screen and (max-width: 721px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 601px) {
+        width: 480px;
+      }
+      @media screen and (max-width: 601px) {
+        width: 430px;
+      }
+      @media screen and (max-width: 518px) {
+        width: 390px;
+      }
+      @media screen and (max-width: 471px) {
+        width: 330px;
+      }
+      @media screen and (max-width: 422px) {
+        width: 290px;
       }
     }
     .lesson-points {
@@ -513,17 +667,116 @@ body {
       margin-top: 75px;
     }
     .try-content {
-      margin-top: 52px;
+      margin-top: 70px;
       padding-left: 0px;
+
+      .wrapper{
+        width: 60%;
+      }
+
+      .outline{
+        margin-left: -8em;
+        .float-right{
+          margin-top: 2em !important;
+        }
+        img{
+          margin-top: 10%;
+        }
+        div {
+          &.a {
+            margin-top: 16%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 15.9%;
+            }
+          }
+          &.b {
+            font-weight: bold;
+            margin-top: 22%;
+            @media screen and (max-width: 601px) {
+              margin-top: 21.6%;
+            }
+          }
+          &.c {
+            margin-top: 30.5%;
+            font-weight: bold;
+            @media screen and (max-width: 601px) {
+              margin-top: 30%;
+            }
+          }
+          &.d {
+            font-weight: bold;
+            margin-top: 36.9%;
+            @media screen and (max-width: 601px) {
+              margin-top: 36.8%;
+            }
+          }
+        }
+        span {
+          position: absolute;
+          left: 79%;
+          &.a {
+            margin-top: 12%;
+
+            @media screen and (max-width: 601px) {
+              margin-top: 11%;
+            }
+          }
+          &.a-sub {
+            margin-top: 1%;
+          }
+          &.b {
+            font-weight: bold;
+            margin-top: 18.2%;
+            @media screen and (max-width: 601px) {
+              margin-top: 18.2%;
+            }
+          }
+          &.b-sub {
+            margin-top: 7.2%;
+          }
+          &.c {
+            margin-top: 25.5%;
+            @media screen and (max-width: 601px) {
+              margin-top: 25.5%;
+            }
+          }
+          &.c-sub {
+            margin-top: 14.5%;
+          }
+          &.d {
+            margin-top: 32.7%;
+            @media screen and (max-width: 601px) {
+              margin-top: 32.7%;
+            }
+          }
+          &.d-sub {
+            margin-top: 21%;
+          }
+          &.e {
+            margin-top: 40.5%;
+            word-break: break-all;
+            @media screen and (max-width: 601px) {
+              margin-top: 40.8%;
+            }
+          }
+          &.e-sub {
+            margin-top: 29%;
+          }
+        }
+      }
 
       span:nth-child(-n + 2) {
         display: block;
         margin-bottom: 5px;
         width: 100%;
+        @media screen and (max-width: 841px) {
+          width: 95%;
+        }
       }
       ul {
         list-style: none;
-        margin: 24px 0px 0px 16px;
+        margin: 24px 0px 0px 2em;
         counter-reset: ulCounter;
         li:not(.ja) {
           counter-increment: ulCounter;
@@ -586,10 +839,20 @@ body {
   // Floating styles
   .float-right {
     float: right;
-    font-size: clamp(8px, 1.8vw, 15px);
-    margin-right: 9%;
+    font-size: clamp(7px, 1.8vw, 15px);
+    margin-right: 11%;
     width: 10%;
     margin-top: -3%;
+
+    @media screen and (max-width: 601px) {
+      margin-top: 1%;
+    }
+    @media screen and (max-width: 501px) {
+      margin-top: 2%;
+    }
+    @media screen and (max-width: 421px) {
+      margin-top: 0.5%;
+    }
   }
 
   // Sizes - right
@@ -622,6 +885,11 @@ body {
     .page-2,
     .page-3 {
       min-height: unset;
+    }
+    footer {
+      bottom: clamp(16px, 4.8vw, 43px);
+      right: 5% !important;
+      max-width: 35%;
     }
     .program-rank {
       top: clamp(20px, 4.4vw, 40px);
@@ -662,7 +930,7 @@ body {
     .page-1 {
       .act-content {
         .wrapper {
-          margin-top: -8px !important;
+          margin-top: 0px !important;
           margin-left: -10px;
         }
         .section.act {
@@ -671,8 +939,9 @@ body {
       }
       .try-content {
         .wrapper {
-          margin-top: 0px !important;
-          margin-left: -10px;
+          width: 61%;
+          margin-top: 5px !important;
+          margin-left: -1%;
         }
       }
     }
@@ -709,11 +978,6 @@ body {
           }
         }
       }
-    }
-    footer {
-      bottom: clamp(16px, 4vw, 43px);
-      right: 5% !important;
-      max-width: 34%;
     }
   }
 }
@@ -813,3 +1077,20 @@ body {
     }
   }
 }
+
+
+@media screen and (max-width: 375px){
+  .html-lesson-wrapper{
+   footer {
+     bottom: 15px;
+   }
+ }
+ }
+ @media screen and (max-width: 360px){
+   .html-lesson-wrapper{
+   footer {
+     width: 100%;
+     text-align: right;
+   }
+ }
+ }

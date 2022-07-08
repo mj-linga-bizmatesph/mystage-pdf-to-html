@@ -415,27 +415,6 @@ body {
 .html-lesson-wrapper .see-content .see-2-section ol.column-one li::before {
   color: #fff;
   border-radius: 50%;
-}
-
-.html-lesson-wrapper .see-content .see-2-section ol.column-two {
-  --li-bg: #fff;
-}
-
-.html-lesson-wrapper .see-content .see-2-section ol.column-two li::before {
-  color: #1287cd;
-  border: 2px solid #1287cd;
-}
-
-.html-lesson-wrapper .see-content .see-2-section ol.column-three {
-  --li-bg: #fff;
-}
-
-.html-lesson-wrapper .see-content .see-2-section ol.column-three li::before {
-  border-radius: 50%;
-  color: #1287cd;
-}
-
-.html-lesson-wrapper .see-content .see-2-section li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans", sans-serif;
@@ -448,6 +427,34 @@ body {
   color: #fff;
   background-color: var(--li-bg);
   font-weight: bold;
+}
+
+.html-lesson-wrapper .see-content .see-2-section ol.column-two {
+  --li-bg: #fff;
+}
+
+.html-lesson-wrapper .see-content .see-2-section ol.column-two li::before {
+  content: attr(data-value) " ";
+  color: #1287cd;
+  border: 2px solid #1287cd;
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(11px, 2.7vw, 16px);
+  width: clamp(18px, 4vw, 24px);
+  height: clamp(18px, 4vw, 24px);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: var(--li-bg);
+  font-weight: bold;
+}
+
+.html-lesson-wrapper .see-content .see-2-section ol.column-three {
+  --li-bg: #fff;
+}
+
+.html-lesson-wrapper .see-content .see-2-section ol.column-three li::before {
+  border-radius: 50%;
+  color: #1287cd;
 }
 
 .html-lesson-wrapper .see-content .see-2-section li {

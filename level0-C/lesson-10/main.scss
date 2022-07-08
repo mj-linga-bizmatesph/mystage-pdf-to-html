@@ -86,38 +86,20 @@ body {
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -333,9 +315,9 @@ body {
         background-image: url(#{$s3}/0-C-10-image2.svg);
         .bubble-1 {
           position: absolute;
-          margin-left: clamp(3px, 2vw, 25px);
-          top: 12%;
-          font-size: clamp(8.7px, 2.5vw, 14px);
+          margin-left: clamp(14px, 11vw, 65px);
+          top: 14%;
+          font-size: clamp(8.7px, 2.3vw, 14px);
           ul li {
             list-style-type: none;
             margin-bottom: clamp(7px, 2vw, 15px);
@@ -403,9 +385,9 @@ body {
         background-image: url(#{$s3}/0-C-10-image3.svg);
         .text-bubble {
           position: absolute;
-          margin-left: clamp(24px, 10vw, 70px);
-          top: 12%;
-          font-size: clamp(8.8px, 2.5vw, 14px);
+          margin-left: clamp(24px, 16vw, 125px);
+          top: 14%;
+          font-size: clamp(8.8px, 2.3vw, 14px);
           ul li {
             list-style-type: none;
             margin-bottom: clamp(7px, 2vw, 15px);
@@ -458,7 +440,7 @@ body {
         background-image: url(#{$s3}/0-C-10-image4.svg);
         .text-bubble {
           position: absolute;
-          margin-left: clamp(28px, 11vw, 80px);
+          margin-left: clamp(28px, 18vw, 114px);
           top: 15%;
           font-size: clamp(8.6px, 2.5vw, 14px);
           ul li {
@@ -520,8 +502,8 @@ body {
         }
         .bubble-2 {
           position: absolute;
-          margin-left: clamp(5px, 3vw, 30px);
-          top: 39%;
+          margin-left: clamp(7px, 9vw, 65px);
+          top: 41%;
           font-size: clamp(8.5px, 2.4vw, 14px);
           ul li {
             list-style-type: none;
@@ -570,8 +552,8 @@ body {
         background-image: url(#{$s3}/0-C-10-image6.svg);
         .text-bubble {
           position: absolute;
-          margin-left: clamp(40px, 13vw, 90px);
-          top: 12%;
+          margin-left: clamp(40px, 20vw, 134px);
+          top: 14%;
           font-size: clamp(8.6px, 2.6vw, 14px);
           ul li {
             list-style-type: none;

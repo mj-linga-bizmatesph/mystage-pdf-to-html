@@ -110,6 +110,7 @@ body {
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 6%;
+  margin-top: 0.5%;
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
@@ -1183,7 +1184,25 @@ body {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content .first-line .you-second-line {
-  margin-left: clamp(75px, 12.9vw, 99px);
+  margin-left: 18.5%;
+}
+
+@media screen and (max-width: 651px) {
+  .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content .first-line .you-second-line {
+    margin-left: 17.8%;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content .first-line .you-second-line {
+    margin-left: 17.3%;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content .first-line .you-second-line {
+    margin-left: 19.5%;
+  }
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content .image-content {
@@ -1426,6 +1445,16 @@ body {
   margin-bottom: clamp(5px, 1vw, 10px);
 }
 
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-content .group-text {
+  margin-left: 2%;
+}
+
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content b {
   font-size: clamp(10px, 2.3vw, 16px);
 }
@@ -1437,13 +1466,11 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-1 {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(10px, 2.3vw, 18px);
-  margin-left: clamp(37px, 8.6vw, 60px);
   margin-top: 5px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-2 {
   font-family: "Noto Sans", sans-serif;
-  margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -1.5px;
@@ -1452,13 +1479,11 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-3 {
   font-size: clamp(10px, 2.3vw, 18px);
-  margin-left: clamp(37px, 8.6vw, 60px);
   margin-top: 25px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-4 {
   font-family: "Noto Sans", sans-serif;
-  margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -0.5px;
@@ -1467,14 +1492,12 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-5 {
   font-family: "Noto Sans", sans-serif;
-  margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(10px, 2.3vw, 18px);
   margin-top: 25px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .div-6 {
   font-family: "Noto Sans", sans-serif;
-  margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -2xpx;

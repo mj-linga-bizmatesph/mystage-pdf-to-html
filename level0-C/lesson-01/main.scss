@@ -110,6 +110,7 @@ body {
   .lesson-number {
     position: absolute;
     right: 6%;
+    margin-top: 0.5%;
     text-align: center;
     font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
@@ -1129,7 +1130,17 @@ body {
             color: $primary-blue;
           }
           .you-second-line {
-            margin-left: clamp(75px, 12.9vw, 99px);
+            margin-left: 18.5%;
+
+            @media screen and (max-width: 651px) {
+              margin-left: 17.8%;
+            }
+            @media screen and (max-width: 601px) {
+              margin-left: 17.3%;
+            }
+            @media screen and (max-width: 401px) {
+              margin-left: 19.5%;
+            }
           }
         }
 
@@ -1369,7 +1380,13 @@ body {
           color: white;
           margin-bottom: clamp(5px, 1vw, 10px);
         }
+        .akiko-content {
+          display: flex;
 
+          .group-text {
+            margin-left: 2%;
+          }
+        }
         b {
           font-size: clamp(10px, 2.3vw, 16px);
         }
@@ -1379,12 +1396,10 @@ body {
         .div-1 {
           font-family: $noto-sans;
           font-size: clamp(10px, 2.3vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
           margin-top: 5px;
         }
         .div-2 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -1.5px;
@@ -1393,13 +1408,11 @@ body {
 
         .div-3 {
           font-size: clamp(10px, 2.3vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
           margin-top: 25px;
         }
 
         .div-4 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -0.5px;
@@ -1408,14 +1421,12 @@ body {
 
         .div-5 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(10px, 2.3vw, 18px);
           margin-top: 25px;
         }
 
         .div-6 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -2xpx;

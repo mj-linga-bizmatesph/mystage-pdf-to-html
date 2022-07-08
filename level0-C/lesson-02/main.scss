@@ -86,38 +86,20 @@ body {
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -126,6 +108,8 @@ body {
   .lesson-number {
     position: absolute;
     right: 6%;
+    margin-top: 0.5%;
+
     text-align: center;
     font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
@@ -192,6 +176,7 @@ body {
       //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        margin-bottom: 1%;
       }
     }
 
@@ -406,6 +391,9 @@ body {
             font-family: $noto-sans;
           }
         }
+        .w {
+          width: 108%;
+        }
         .choice-eng {
           font-size: clamp(10.1px, 1.8vw, 16px);
         }
@@ -558,6 +546,7 @@ body {
         }
         .speaker-text {
           font-size: clamp(11px, 2.5vw, 18px);
+          padding-left: 2%;
         }
         .number {
           @extend .b;
@@ -636,22 +625,25 @@ body {
         position: relative;
         font-family: $noto-sans;
         table {
-          width: 100%;
+          width: 105%;
         }
         .speaker {
           white-space: nowrap;
           text-align: right;
           font-weight: bold;
           font-size: clamp(9px, 2.4vw, 16px) !important;
+          width: 70px;
         }
         .speaker-text {
           font-size: clamp(11px, 2.5vw, 18px);
           white-space: nowrap;
+          padding-left: 2%;
         }
         .number {
           @extend .b;
           color: $primary-blue;
           font-size: clamp(9px, 2vw, 16px) !important;
+          width: 20px;
         }
         td {
           height: clamp(30px, 5vw, 40px);
@@ -730,7 +722,16 @@ body {
           color: white;
           margin-bottom: clamp(5px, 1vw, 10px);
         }
+        .akiko-content {
+          display: flex;
 
+          .group-text {
+            margin-left: 2%;
+          }
+        }
+        .mt {
+          margin-top: 0.2%;
+        }
         b {
           font-size: clamp(10px, 2.3vw, 16px);
         }
@@ -739,7 +740,6 @@ body {
         }
         .div-1 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -2px;
@@ -749,11 +749,9 @@ body {
           margin-top: 20px;
           font-family: $noto-sans;
           font-size: clamp(11px, 2.5vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
         }
         .div-3 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -2px;
@@ -767,7 +765,6 @@ body {
         }
         .div-5 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -1.5px;
@@ -777,11 +774,9 @@ body {
           margin-top: 20px;
           font-family: $noto-sans;
           font-size: clamp(11px, 2.5vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
         }
         .div-7 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -1.5px;
@@ -791,11 +786,9 @@ body {
           margin-top: 20px;
           font-family: $noto-sans;
           font-size: clamp(11px, 2.5vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
         }
         .div-9 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -1.5px;
@@ -805,11 +798,9 @@ body {
           margin-top: 20px;
           font-family: $noto-sans;
           font-size: clamp(11px, 2.5vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
         }
         .div-11 {
           font-family: $noto-sans;
-          margin-left: clamp(37px, 8.6vw, 60px);
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
           letter-spacing: -1.5px;

@@ -51,6 +51,15 @@ body {
     margin: 0;
   }
 
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
   .flex {
     display: flex;
   }
@@ -1172,7 +1181,7 @@ body {
         }
 
         .person {
-          width: clamp(60px, 15%, 80px);
+          width: 5em;
           text-align: right;
           font-weight: bold;
           font-size: $fs-16;
@@ -1203,6 +1212,20 @@ body {
             width: 40%;
           }
         }
+        .row {
+          p {
+            display: inline-block;
+            margin: 0px 0px;
+            &:first-child {
+              margin-right: 2em;
+              max-width: 100px;
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
+      p{
+        margin-block-start: 0em !important;
       }
     }
 

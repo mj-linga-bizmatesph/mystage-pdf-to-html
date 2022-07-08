@@ -365,6 +365,7 @@ body {
         height: clamp(25px, 7vw, 38px);
 
         .piece-text {
+          margin-left: 0.2em;
           position: absolute;
           font-size: $fs-16;
           font-family: $noto-sans;

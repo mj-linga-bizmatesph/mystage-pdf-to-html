@@ -322,8 +322,25 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece {
-  width: clamp(165px, 12vw, 283px);
+  width: 64%;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .red-piece {
+    width: 55%;
+  }
+}
+
+.html-lesson-wrapper .see-content .see-2-section .red-piece1 {
+  width: 90%;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .red-piece1 {
+    width: 67%;
+  }
 }
 
 .html-lesson-wrapper .see-content .see-2-section .yellow-piece {
@@ -331,8 +348,27 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece {
-  width: clamp(185px, 12vw, 297.2px);
-  margin-left: auto;
+  width: 79%;
+  margin-left: 4.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .blue-piece {
+    width: 83%;
+    margin-left: 2.1em;
+  }
+}
+
+.html-lesson-wrapper .see-content .see-2-section .blue-piece1 {
+  width: 98%;
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .blue-piece1 {
+    width: 67%;
+    margin-left: 5.1em;
+  }
 }
 
 .html-lesson-wrapper .see-content .see-2-section .piece {

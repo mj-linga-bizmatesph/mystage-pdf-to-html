@@ -33,6 +33,16 @@ body {
   margin: 0;
 }
 
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .html-lesson-wrapper .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1232,7 +1242,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-4-content li .person {
-  width: clamp(60px, 15%, 80px);
+  width: 5em;
   text-align: right;
   font-weight: bold;
   font-size: clamp(11px, 2.7vw, 16px);
@@ -1266,6 +1276,22 @@ body {
 
 .html-lesson-wrapper .try-content .try-4-content li .image .size-c {
   width: 40%;
+}
+
+.html-lesson-wrapper .try-content .try-4-content li .row p {
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .try-content .try-4-content li .row p:first-child {
+  margin-right: 2em;
+  max-width: 100px;
+  word-wrap: break-word;
+}
+
+.html-lesson-wrapper .try-content .try-4-content p {
+  -webkit-margin-before: 0em !important;
+          margin-block-start: 0em !important;
 }
 
 .html-lesson-wrapper .try-content .try-content-pb {

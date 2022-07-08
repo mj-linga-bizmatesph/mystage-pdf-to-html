@@ -297,6 +297,7 @@ body {
 
     .see-2-section {
       margin-top: clamp(20px, 6.5vw, 4rem);
+      
       .akiko-section {
         display: flex;
         .akiko-icon {
@@ -362,7 +363,7 @@ body {
           font-size: $fs-16;
           font-family: $noto-sans;
           font-weight: bold;
-          margin-left: -1vw;
+          // margin-left: -1vw;
         }
 
         .piece-image {
@@ -404,6 +405,9 @@ body {
       .table.column-three {
         background: #e7f3fa;
       }
+      .table.column-four {
+        background: #e7f3fa;
+      }
 
       ol {
         margin: 0;
@@ -420,6 +424,17 @@ body {
         li::before {
           color: #fff;
           border-radius: 50%;
+          counter-increment: orderedlist;
+          content: counter(orderedlist);
+          font-family: $noto-sans;
+          font-size: $fs-16;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+          color: #fff;
+          background-color: var(--li-bg);
+          font-weight: bold;
         }
       }
 
@@ -427,33 +442,71 @@ body {
         --li-bg: #fff;
 
         li::before {
+          content: attr(data-value) ' ';
           color: $primary-blue;
           border: 2px solid $primary-blue;
+          // content: counter(orderedlist);
+          font-family: $noto-sans;
+          font-size: $fs-16;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+          background-color: var(--li-bg);
+          font-weight: bold;
         }
       }
-
+      .below{
+        width: 75%;
+        margin-left: 4em;        
+      }
       ol.column-three {
         --li-bg: #fff;
+        .below{
+          width: 75%;
+          margin-left: 4em;
+          
+        }
 
         li::before {
+          counter-reset: list-number 5 !important;
           border-radius: 50%;
           color: $primary-blue;
+          counter-increment: orderedlist;
+          content: counter(orderedlist);
+          font-family: $noto-sans;
+          font-size: $fs-16;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+          background-color: var(--li-bg);
+          font-weight: bold;
         }
       }
 
-      li::before {
-        counter-increment: orderedlist;
-        content: counter(orderedlist);
-        font-family: $noto-sans;
-        font-size: $fs-16;
-        width: clamp(18px, 4vw, 24px);
-        height: clamp(18px, 4vw, 24px);
-        display: grid;
-        place-items: center;
-        color: #fff;
-        background-color: var(--li-bg);
-        font-weight: bold;
+      ol.column-four{
+        --li-bg: #fff;
+        .below{
+          width: 75%;
+          margin-left: 4em;
+          
+        }
+        li::before {
+          content: attr(data-value) ' ';
+          border-radius: 50%;
+          color: $primary-blue;
+          font-family: $noto-sans;
+          font-size: $fs-16;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+          background-color: var(--li-bg);
+          font-weight: bold;
+        }
       }
+
 
       li {
         display: grid;
@@ -484,6 +537,17 @@ body {
       .column-three {
         .by-the-president-piece {
           margin: 0 0 0 auto;
+
+        }
+
+        .directors-meeting-piece {
+          margin: 0 0 0 auto;
+        }
+      }
+      .column-four {
+        .by-the-president-piece {
+          margin: 0 0 0 auto;
+
         }
 
         .directors-meeting-piece {
@@ -533,7 +597,7 @@ body {
           display: grid;
           grid-template-columns: auto auto auto auto auto;
           align-items: center;
-          margin-bottom: 2.4vw;
+          margin-bottom: 1.4vw;
 
           div {
             width: clamp(18px, 4vw, 24px);

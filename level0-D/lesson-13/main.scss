@@ -328,10 +328,85 @@ body {
       .red-piece {
         width: clamp(65px, 16vw, 116.8px);
         margin-right: clamp(3px, 1vw, 10px);
+        
+      }
+      .red-piece2 {
+        font-family: "Noto sans";
+        font-weight: bolder;
+        width: 33%;
+        margin-right: 0.4em;
+        background: url(#{$s3}/0-D-13-pinkP.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
+      }
+      .red-piece3 {
+        font-family: "Noto sans";
+        font-weight: bolder;
+        width: 59%;
+        background: url(#{$s3}/0-D-13-pinkP.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
+      }
+      .red-piece1 {
+        font-family: "Noto sans";
+        font-weight: bolder;
+        width: 33%;
+        margin-right: 0.4em;
+        background: url(#{$s3}/0-D-13-pinkP.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
       }
 
-      .blue-piece {
-        width: clamp(110px, 25vw, 188.2px);
+
+      .blue-piece1 {
+        font-family: "Noto sans";
+        font-weight: bolder;
+        width: 51%;
+        margin-right: 0.4em;
+        background: url(#{$s3}/0-D-See-2blue1.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
+      }
+      .blue-piece2 {
+        font-family: "Noto sans";
+        font-weight: bolder;
+        width: 26%;
+        margin-right: 0.4em;
+        background: url(#{$s3}/0-D-See-2blue2.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
+      }
+      .blue-piece3 {
+        font-family: "Noto sans";
+        font-weight: bolder;
+        width: 59%;
+        background: url(#{$s3}/0-D-See-2blue1.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
       }
 
       .blue-piece-1 {
@@ -354,7 +429,7 @@ body {
         grid-template-columns: auto auto;
 
         .column-two {
-          margin-left: auto;
+          margin-right: 1.4em;
         }
       }
 

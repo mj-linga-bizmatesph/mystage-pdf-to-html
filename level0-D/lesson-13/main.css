@@ -309,8 +309,86 @@ body {
   margin-right: clamp(3px, 1vw, 10px);
 }
 
-.html-lesson-wrapper .see-content .see-2-section .blue-piece {
-  width: clamp(110px, 25vw, 188.2px);
+.html-lesson-wrapper .see-content .see-2-section .red-piece2 {
+  font-family: "Noto sans";
+  font-weight: bolder;
+  width: 33%;
+  margin-right: 0.4em;
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-13-pinkP.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
+}
+
+.html-lesson-wrapper .see-content .see-2-section .red-piece3 {
+  font-family: "Noto sans";
+  font-weight: bolder;
+  width: 59%;
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-13-pinkP.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
+}
+
+.html-lesson-wrapper .see-content .see-2-section .red-piece1 {
+  font-family: "Noto sans";
+  font-weight: bolder;
+  width: 33%;
+  margin-right: 0.4em;
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-13-pinkP.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
+}
+
+.html-lesson-wrapper .see-content .see-2-section .blue-piece1 {
+  font-family: "Noto sans";
+  font-weight: bolder;
+  width: 51%;
+  margin-right: 0.4em;
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
+}
+
+.html-lesson-wrapper .see-content .see-2-section .blue-piece2 {
+  font-family: "Noto sans";
+  font-weight: bolder;
+  width: 26%;
+  margin-right: 0.4em;
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue2.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
+}
+
+.html-lesson-wrapper .see-content .see-2-section .blue-piece3 {
+  font-family: "Noto sans";
+  font-weight: bolder;
+  width: 59%;
+  background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
 }
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece-1 {
@@ -337,7 +415,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table-pieces .column-two {
-  margin-left: auto;
+  margin-right: 1.4em;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table {

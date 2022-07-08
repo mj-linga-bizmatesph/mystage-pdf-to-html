@@ -268,10 +268,12 @@ body {
   color: #257a9e;
   font-weight: bold;
   font-size: clamp(6px, 1.8vw, 15px);
+  margin-bottom: 0.5em;
 }
 
 .html-lesson-wrapper .sub-head p {
-  margin: 5px auto;
+  line-height: 1.8em;
+  margin-bottom: 0.1em;
 }
 
 .html-lesson-wrapper .ja {
@@ -606,4 +608,11 @@ body {
 .html-lesson-wrapper .try-content .shape {
   margin-top: -7em;
   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .page-1 .shape,
+  .html-lesson-wrapper .page-3 .shape {
+    margin-top: 0;
+  }
 }

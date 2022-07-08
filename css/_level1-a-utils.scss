@@ -234,9 +234,12 @@ body {
       color: $primary;
       font-weight: bold;
       font-size: clamp(6px, 1.8vw, 15px);
+
+      margin-bottom: 0.5em;
     }
     p {
-      margin: 5px auto;
+      line-height: 1.8em;
+      margin-bottom: 0.1em;
     }
   }
   .ja {

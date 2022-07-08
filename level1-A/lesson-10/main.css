@@ -268,10 +268,12 @@ body {
   color: #257a9e;
   font-weight: bold;
   font-size: clamp(6px, 1.8vw, 15px);
+  margin-bottom: 0.5em;
 }
 
 .html-lesson-wrapper .sub-head p {
-  margin: 5px auto;
+  line-height: 1.8em;
+  margin-bottom: 0.1em;
 }
 
 .html-lesson-wrapper .ja {
@@ -649,9 +651,14 @@ body {
   margin-left: 10em;
 }
 
+.html-lesson-wrapper .sub-head {
+  padding-right: 1.5em;
+}
+
 .html-lesson-wrapper .lesson-list {
   margin-top: 3em;
   margin-left: 8em;
+  padding-right: 1.5em;
   font-size: clamp(6px, 1.8vw, 15px);
 }
 

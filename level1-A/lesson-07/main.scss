@@ -54,4 +54,13 @@
       margin-right: 1em;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .page-1,
+    .page-3 {
+      .shape {
+        margin-top: 0;
+      }
+    }
+  }
 }

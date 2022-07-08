@@ -19,7 +19,6 @@ p {
   min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
-  min-height: 960px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -370,4 +369,51 @@ p {
   .html-lesson-wrapper .review-content {
     padding-left: 8.5em;
   }
+}
+
+.html-lesson-wrapper .review-content {
+  padding-left: 10em;
+  font-size: clamp(10px, 2vw, 15px) !important;
+}
+
+.html-lesson-wrapper .review-content ul {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  margin-left: 1em !important;
+}
+
+.html-lesson-wrapper .review-content ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.5fr 1fr;
+      grid-template-columns: 1fr 0.5fr 1fr;
+  font-weight: bold !important;
+}
+
+.html-lesson-wrapper .review-content ul li:not(:last-child) {
+  padding-bottom: 2em;
+}
+
+.html-lesson-wrapper .review-content ul li span {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.html-lesson-wrapper .review-content ul li p {
+  color: black !important;
+  position: relative;
+  padding-left: 2em;
+}
+
+.html-lesson-wrapper .review-content ul li p:first-child {
+  padding-right: 0.8em;
+}
+
+.html-lesson-wrapper .review-content ul li p:before {
+  position: absolute;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  content: '';
+  display: inline-block;
+  border: 2px solid #2078a0;
 }

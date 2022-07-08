@@ -1,1 +1,42 @@
 @import '../../css/level4-utils';
+
+.html-lesson-wrapper {
+  .review-content {
+    padding-left: 10em;
+    font-size: clamp(10px, 2vw, 15px) !important;
+    ul {
+      margin-top: 4em;
+      margin-bottom: 4em;
+      margin-left: 1em !important;
+      li {
+        &:not(:last-child) {
+          padding-bottom: 2em;
+        }
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 1fr;
+
+        font-weight: bold !important;
+        span {
+          font-family: $helvetica;
+        }
+        p {
+          color: black !important;
+          position: relative;
+          padding-left: 2em;
+          &:first-child {
+            padding-right: 0.8em;
+          }
+          &:before {
+            position: absolute;
+            left: 0;
+            height: 1em;
+            width: 1em;
+            content: '';
+            display: inline-block;
+            border: 2px solid $blue;
+          }
+        }
+      }
+    }
+  }
+}

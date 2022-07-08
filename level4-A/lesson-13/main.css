@@ -290,7 +290,8 @@ p {
   width: 5em;
 }
 
-.html-lesson-wrapper ul {
+.html-lesson-wrapper .try-content ul,
+.html-lesson-wrapper .act-content ul {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1.4em;
@@ -299,13 +300,15 @@ p {
   padding-inline: 0;
 }
 
-.html-lesson-wrapper ul li {
+.html-lesson-wrapper .try-content ul li,
+.html-lesson-wrapper .act-content ul li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
   line-height: 1.8em;
 }
 
-.html-lesson-wrapper ul li::before {
+.html-lesson-wrapper .try-content ul li::before,
+.html-lesson-wrapper .act-content ul li::before {
   content: '';
   width: 1em;
   display: inline-block;

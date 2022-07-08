@@ -355,7 +355,7 @@ body {
         .jap {
           font-family: $noto-sans;
           letter-spacing: -1px;
-          font-size: clamp(7px, 2vw, 16px);
+          font-size: clamp(7px, 1.8vw, 11px);
           line-height: clamp(10px, 13px, 14px);
         }
         &.akiko-1 {

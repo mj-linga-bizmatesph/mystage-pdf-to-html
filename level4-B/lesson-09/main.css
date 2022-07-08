@@ -311,6 +311,14 @@ p {
   display: inline-block;
 }
 
+.html-lesson-wrapper .try-content {
+  line-height: 1.8em;
+}
+
+.html-lesson-wrapper .act-content {
+  line-height: 1.8em;
+}
+
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;

@@ -303,6 +303,12 @@ p {
       display: inline-block;
     }
   }
+  .try-content {
+    line-height: 1.8em;
+  }
+  .act-content {
+    line-height: 1.8em;
+  }
 
   footer {
     font-size: clamp(4.5px, 1.1vw, 9px);

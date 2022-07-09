@@ -1,5 +1,7 @@
 @import '../../css/level0-utils';
 
+$primary-blue: #1287cd;
+
 .html-lesson-wrapper {
   .see-content {
     &.see-1 {
@@ -282,30 +284,78 @@
           margin-bottom: 5%;
         }
 
-        .table {
-          font-family: $noto-sans;
-          border-collapse: collapse;
-          margin-bottom: 15%;
+        .ul1 {
+          list-style-type: none;
+          font-size: clamp(11px, 2.7vw, 16px);
+          margin-bottom: 3rem;
 
-          td {
-            @extend .fs-18;
-            img {
-              max-width: clamp(44%, 16vw, 100%);
-              margin-bottom: 20px;
+          li {
+            display: flex;
+            line-height: 1.5rem;
+
+            @media screen and (max-width: 551px) {
+              line-height: 1.3rem;
+            }
+            @media screen and (max-width: 401px) {
+              line-height: 1rem;
+            }
+
+            div {
+              margin-left: 3%;
+              width: 400px;
+            }
+
+            u {
+              color: $primary-blue;
             }
           }
-
-          .name {
-            @extend .b;
-            font-size: clamp(10px, 3vw, 16px);
-            white-space: nowrap;
-            width: 16%;
-          }
-          tr:not(:last-child) td:nth-child(2) {
-            padding-bottom: 5%;
-          }
+        }
+        li::before {
+          content: attr(data-value) ' ';
+          width: clamp(25px, 32vw, 75px);
+          text-align: right;
+          font-weight: bold;
         }
       }
+    }
+  }
+
+  .act-content {
+    .ul1 {
+      list-style-type: none;
+      font-size: clamp(11px, 2.7vw, 16px);
+      margin-bottom: 3rem;
+
+      li {
+        display: flex;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 551px) {
+          line-height: 1.3rem;
+        }
+        @media screen and (max-width: 401px) {
+          line-height: 1rem;
+        }
+
+        div {
+          margin-left: 2%;
+          width: clamp(269px, 70vw, 400px);
+        }
+
+        u {
+          color: $primary-blue;
+        }
+
+        .j {
+          font-size: clamp(1px, 2vw, 13px);
+        }
+      }
+    }
+    li::before {
+      content: attr(data-value) ' ';
+      width: clamp(25px, 32vw, 75px);
+      text-align: right;
+      font-weight: bold;
     }
   }
 

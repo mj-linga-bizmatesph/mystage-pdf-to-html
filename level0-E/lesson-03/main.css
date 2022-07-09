@@ -871,6 +871,61 @@ body {
   margin-top: 1.5% !important;
 }
 
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 16px);
+  margin-bottom: 3rem;
+  margin-left: -10%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .ul-content {
+  margin-left: 1%;
+  margin-top: -0.5%;
+  color: black;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 div {
+  margin-left: 3%;
+  width: clamp(150px, 70vw, 400px);
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
+  content: attr(data-value) " ";
+  width: clamp(15px, 15vw, 72px);
+  text-align: right;
+  font-weight: bold;
+}
+
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper {
   width: 100%;
 }
@@ -922,8 +977,9 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol {
-  padding-left: 6%;
+  padding-left: 3%;
   list-style-type: upper-alpha;
+  width: 455px;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol li {
@@ -956,6 +1012,51 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table tr:not(:last-child) td:nth-child(2) {
   padding-bottom: 5%;
+}
+
+.html-lesson-wrapper .act-content .ul1 {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 16px);
+  margin-bottom: 3rem;
+}
+
+.html-lesson-wrapper .act-content .ul1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .act-content .ul1 li div {
+  margin-left: 2%;
+  width: clamp(269px, 70vw, 400px);
+}
+
+.html-lesson-wrapper .act-content .ul1 li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .act-content .ul1 li .j {
+  font-size: clamp(1px, 2vw, 13px);
+}
+
+.html-lesson-wrapper .act-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .act-1,

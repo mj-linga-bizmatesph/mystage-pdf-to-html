@@ -84,7 +84,7 @@ body {
   font-size: clamp(6px, 2.6vw, 16px);
 }
 
-.html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-2 .table td, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table td {
+.html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-2 .table td {
   font-size: clamp(6px, 2.7vw, 18px);
 }
 
@@ -101,7 +101,7 @@ body {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name {
   font-weight: bold;
 }
 
@@ -914,25 +914,90 @@ body {
   margin-bottom: 5%;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table {
-  font-family: "Noto Sans", sans-serif;
-  border-collapse: collapse;
-  margin-bottom: 15%;
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 16px);
+  margin-bottom: 3rem;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-  width: 16%;
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li {
+    line-height: 1.3rem;
+  }
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table tr:not(:last-child) td:nth-child(2) {
-  padding-bottom: 5%;
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li div {
+  margin-left: 3%;
+  width: 400px;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
+}
+
+.html-lesson-wrapper .act-content .ul1 {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 16px);
+  margin-bottom: 3rem;
+}
+
+.html-lesson-wrapper .act-content .ul1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .act-content .ul1 li div {
+  margin-left: 2%;
+  width: clamp(269px, 70vw, 400px);
+}
+
+.html-lesson-wrapper .act-content .ul1 li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .act-content .ul1 li .j {
+  font-size: clamp(1px, 2vw, 13px);
+}
+
+.html-lesson-wrapper .act-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .act-1,

@@ -1,5 +1,7 @@
 @import '../../css/level0-utils';
 
+$primary-blue: #1287cd;
+
 .html-lesson-wrapper {
   .see-content {
     &.see-1 {
@@ -224,6 +226,50 @@
           margin-top: 1.5% !important;
         }
 
+        .ul-main {
+          list-style-type: none;
+          font-size: clamp(11px, 2.7vw, 16px);
+          margin-bottom: 3rem;
+          margin-left: -10%;
+
+          .li1 {
+            display: flex;
+            color: $primary-blue;
+          }
+
+          .ul-content {
+            margin-left: 1%;
+            margin-top: -0.5%;
+            color: black;
+          }
+          .li2 {
+            display: flex;
+            line-height: 1.5rem;
+
+            @media screen and (max-width: 551px) {
+              line-height: 1.3rem;
+            }
+            @media screen and (max-width: 401px) {
+              line-height: 1rem;
+            }
+
+            div {
+              margin-left: 3%;
+              width: clamp(150px, 70vw, 400px);
+            }
+
+            u {
+              color: $primary-blue;
+            }
+          }
+        }
+        li::before {
+          content: attr(data-value) ' ';
+          width: clamp(15px, 15vw, 72px);
+          text-align: right;
+          font-weight: bold;
+        }
+
         .table-wrapper {
           width: 100%;
 
@@ -267,9 +313,10 @@
             }
 
             ol {
-              padding-left: 6%;
+              padding-left: 3%;
               @extend .m-0;
               list-style-type: upper-alpha;
+              width: 455px;
 
               li {
                 @extend .fs-18;
@@ -309,6 +356,45 @@
           padding-bottom: 5%;
         }
       }
+    }
+  }
+
+  .act-content {
+    .ul1 {
+      list-style-type: none;
+      font-size: clamp(11px, 2.7vw, 16px);
+      margin-bottom: 3rem;
+
+      li {
+        display: flex;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 551px) {
+          line-height: 1.3rem;
+        }
+        @media screen and (max-width: 401px) {
+          line-height: 1rem;
+        }
+
+        div {
+          margin-left: 2%;
+          width: clamp(269px, 70vw, 400px);
+        }
+
+        u {
+          color: $primary-blue;
+        }
+
+        .j {
+          font-size: clamp(1px, 2vw, 13px);
+        }
+      }
+    }
+    li::before {
+      content: attr(data-value) ' ';
+      width: clamp(25px, 32vw, 75px);
+      text-align: right;
+      font-weight: bold;
     }
   }
 

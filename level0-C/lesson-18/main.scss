@@ -17,6 +17,83 @@ body {
   padding: 0;
 }
 
+.html-lesson-wrapper {
+  .try-content {
+    .phrases {
+      margin-top: 10%;
+      .phrase {
+        .contents {
+          display: flex;
+          font-size: clamp(9px, 2.3vw, 13px);
+          .content-number {
+            width: 10%;
+          }
+
+          .trainer {
+            display: flex;
+
+            .content-name {
+              width: 19%;
+              font-weight: bold;
+              text-align: right;
+            }
+            .content-text {
+              width: 300px;
+              margin-left: 2%;
+            }
+          }
+        }
+        .contents-t3 {
+          display: flex;
+          font-size: clamp(9px, 2.3vw, 13px);
+
+          .content-number {
+            width: 3%;
+          }
+
+          .trainer-t3 {
+            display: flex;
+
+            .content-name-t3 {
+              width: 14%;
+              font-weight: bold;
+              text-align: right;
+            }
+            .content-text-t3 {
+              width: 300px;
+              margin-left: 2%;
+
+              u {
+                color: $primary-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .act-content {
+    .table {
+      max-width: 100%;
+      font-size: clamp(10px, 3vw, 16px);
+
+      .name {
+        width: 15%;
+        margin-top: 0%;
+      }
+
+      .content-text {
+        margin-left: 1%;
+        margin-top: 0;
+
+        @media screen and (max-width: 480px) {
+          margin-top: 0.8%;
+        }
+      }
+    }
+  }
+}
+
 .html-lesson-wrapper hr {
   border-top: 1px solid #dbdcdc;
 }
@@ -105,19 +182,15 @@ body {
   margin-top: clamp(1px, 1vw, 5px);
 }
 .html-lesson-wrapper .program-rank .type {
-  padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px)
-    clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 5px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
   background-color: #1287cd;
   font-size: clamp(7px, 1.8vw, 12px);
 }
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px) clamp(1px, 1vw, 5px)
-    clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 5px) clamp(20px, 8.4vw, 50px) clamp(1px, 1vw, 5px) clamp(10px, 3vw, 17px);
   font-size: clamp(7px, 1.8vw, 12px);
-  background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%),
-    linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
-  background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%),
-    linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
+  background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
+  background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   margin-left: -15px;
   width: 100%;
 }
@@ -379,11 +452,7 @@ body {
   -ms-flex-align: baseline;
   align-items: baseline;
 }
-.html-lesson-wrapper
-  .see-content
-  .phrases-section
-  .phrase-alts
-  .alt:not(:last-child) {
+.html-lesson-wrapper .see-content .phrases-section .phrase-alts .alt:not(:last-child) {
   margin-bottom: clamp(10px, 2vw, 20px);
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice {
@@ -474,38 +543,22 @@ body {
   margin-left: 5%;
 }
 
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .phrase.blue1 {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .phrase.blue1 {
   margin-top: 14%;
   margin-left: 57%;
   position: absolute;
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .phrase.blue2 {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .phrase.blue2 {
   margin-top: 36%;
   margin-left: 67.5%;
   position: absolute;
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .phrase.red1 {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .phrase.red1 {
   margin-top: 14.4%;
   margin-left: 23.5%;
   position: absolute;
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .phrase.red2 {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .phrase.red2 {
   margin-top: 36.5%;
   margin-left: 3%;
   position: absolute;
@@ -515,18 +568,8 @@ body {
 .html-lesson-wrapper .see-content.see-4 {
   margin-top: clamp(20px, 5vw, 33px);
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .steve
-  .phrases,
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .akiko
-  .phrases {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .phrases,
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrases {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -537,29 +580,14 @@ body {
   grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
   grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .akiko
-  .icon {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .icon {
   margin-left: -6px;
   z-index: 0;
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .akiko
-  .phrase {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrase {
   z-index: 2;
 }
-.html-lesson-wrapper
-  .see-content.see-2
-  .phrases-section
-  .conversation
-  .akiko
-  .eng {
+.html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .eng {
   padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .legend {
@@ -620,11 +648,7 @@ body {
   color: #1287cd;
   font-weight: 600;
 }
-.html-lesson-wrapper
-  .try-content.try-1
-  .combinations
-  .combination
-  > div:not(:last-child) {
+.html-lesson-wrapper .try-content.try-1 .combinations .combination > div:not(:last-child) {
   margin-right: clamp(5px, 2vw, 10px);
 }
 .html-lesson-wrapper .spn {

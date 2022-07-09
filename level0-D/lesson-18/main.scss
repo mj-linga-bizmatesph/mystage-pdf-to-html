@@ -116,38 +116,20 @@ body {
     margin-top: clamp(1px, 1vw, 3px);
 
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -1041,8 +1023,7 @@ body {
 
           .lower-4 {
             position: absolute;
-            margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0
-              clamp(6.1rem, 26.2%, 14.8rem);
+            margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0 clamp(6.1rem, 26.2%, 14.8rem);
             transform: rotate(-4deg) !important;
           }
 
@@ -1135,8 +1116,35 @@ body {
       }
     }
 
-    .try-4-content {
+    .try-4-content {  
       margin-top: clamp(20px, 10vw, 69px);
+      p {
+        margin-block-start: 1% !important;
+        margin-block-end: 1% !important;
+      }
+      .row{
+        display: flex;
+        justify-content: flex-start;
+      }
+      .col {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .blue-section {
+        margin-right: 1em;
+        width: fit-content;
+        background-color: #cce0ec;
+        font-size: clamp(11px, 2.5vw, 17px);
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        height: fit-content;
+        padding-bottom: 0.5em;
+        padding-right: 1.5em;
+      }
+      .bl {
+        font-weight: bold;
+        color: #1287cd;
+      }
 
       ol {
         margin: 0;
@@ -1281,6 +1289,9 @@ body {
 
       .step {
         margin-bottom: clamp(2rem, 9vw, 5rem);
+      }
+      .margin-bottom{
+        margin-bottom: 5%;
       }
     }
 

@@ -1193,6 +1193,50 @@ body {
   margin-top: clamp(20px, 10vw, 69px);
 }
 
+.html-lesson-wrapper .try-content .try-4-content p {
+  -webkit-margin-before: 1% !important;
+          margin-block-start: 1% !important;
+  -webkit-margin-after: 1% !important;
+          margin-block-end: 1% !important;
+}
+
+.html-lesson-wrapper .try-content .try-4-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.html-lesson-wrapper .try-content .try-4-content .col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.html-lesson-wrapper .try-content .try-4-content .blue-section {
+  margin-right: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #cce0ec;
+  font-size: clamp(11px, 2.5vw, 17px);
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 0.5em;
+  padding-right: 1.5em;
+}
+
+.html-lesson-wrapper .try-content .try-4-content .bl {
+  font-weight: bold;
+  color: #1287cd;
+}
+
 .html-lesson-wrapper .try-content .try-4-content ol {
   margin: 0;
   padding: 0;
@@ -1342,6 +1386,10 @@ body {
 
 .html-lesson-wrapper .try-content .try-4-content .step {
   margin-bottom: clamp(2rem, 9vw, 5rem);
+}
+
+.html-lesson-wrapper .try-content .try-4-content .margin-bottom {
+  margin-bottom: 5%;
 }
 
 .html-lesson-wrapper .try-content .try-content-pb {

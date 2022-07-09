@@ -332,8 +332,9 @@ body {
       }
       .red-piece2 {
         font-family: "Noto sans";
-        font-weight: bolder;
-        width: 33%;
+        font-weight: bold;
+        width: 7em;
+        height: 1em;
         margin-right: 0.4em;
         background: url(#{$s3}/0-D-13-pinkP.svg);
         text-align: center;
@@ -342,23 +343,32 @@ body {
         background-repeat: no-repeat;
         padding: clamp(7px, 2vw, 10px) 0;
         font-size: clamp(10px, 2.2vw, 16px);
+        @media screen and (max-width: 900px){
+          width: 8em;
+        }
       }
       .red-piece3 {
         font-family: "Noto sans";
-        font-weight: bolder;
-        width: 59%;
+        font-weight: bold;
+        width: 7em;
+        height: 1em;
         background: url(#{$s3}/0-D-13-pinkP.svg);
         text-align: center;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+       
         padding: clamp(7px, 2vw, 10px) 0;
         font-size: clamp(10px, 2.2vw, 16px);
+        @media screen and (max-width: 900px){
+          width: 8em;
+        }
       }
       .red-piece1 {
         font-family: "Noto sans";
-        font-weight: bolder;
-        width: 33%;
+        font-weight: bold;
+        width: 7em;
+        height: 1em;
         margin-right: 0.4em;
         background: url(#{$s3}/0-D-13-pinkP.svg);
         text-align: center;
@@ -367,13 +377,17 @@ body {
         background-repeat: no-repeat;
         padding: clamp(7px, 2vw, 10px) 0;
         font-size: clamp(10px, 2.2vw, 16px);
+        @media screen and (max-width: 900px){
+          width: 8em;
+        }
       }
 
 
       .blue-piece1 {
         font-family: "Noto sans";
-        font-weight: bolder;
-        width: 51%;
+        font-weight: bold;
+        width: 11em;
+        height: 1em;
         margin-right: 0.4em;
         background: url(#{$s3}/0-D-See-2blue1.svg);
         text-align: center;
@@ -382,11 +396,15 @@ body {
         background-repeat: no-repeat;
         padding: clamp(7px, 2vw, 10px) 0;
         font-size: clamp(10px, 2.2vw, 16px);
+        @media screen and (max-width: 900px){
+          width: 13em;
+        }
       }
       .blue-piece2 {
         font-family: "Noto sans";
-        font-weight: bolder;
-        width: 26%;
+        font-weight: bold;
+        width: 7em;
+        height: 1em;
         margin-right: 0.4em;
         background: url(#{$s3}/0-D-See-2blue2.svg);
         text-align: center;
@@ -398,8 +416,9 @@ body {
       }
       .blue-piece3 {
         font-family: "Noto sans";
-        font-weight: bolder;
-        width: 59%;
+        font-weight: bold;
+        width: 12em;
+        height: 1em;
         background: url(#{$s3}/0-D-See-2blue1.svg);
         text-align: center;
         background-position: center;
@@ -407,6 +426,9 @@ body {
         background-repeat: no-repeat;
         padding: clamp(7px, 2vw, 10px) 0;
         font-size: clamp(10px, 2.2vw, 16px);
+        @media screen and (max-width: 900px){
+          width: 14em;
+        }
       }
 
       .blue-piece-1 {
@@ -421,15 +443,21 @@ body {
       }
 
       .akiko-table-pieces {
-        margin-top: clamp(1rem, 9vw, 1.5rem);
-        display: grid;
-        column-gap: 2%;
+        margin-top: 2em;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto;
+        // grid-template-columns: auto auto;
+
+        .column-one{
+          display: flex;
+          justify-content: flex-start;
+        }
 
         .column-two {
-          margin-right: 1.4em;
+          display: flex;
+          justify-content: end;
         }
       }
 

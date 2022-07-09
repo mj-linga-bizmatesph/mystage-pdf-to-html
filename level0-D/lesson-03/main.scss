@@ -42,6 +42,10 @@ body {
   hr {
     border-top: 1px solid #dbdcdc;
   }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 
   td {
     vertical-align: top;
@@ -759,6 +763,27 @@ body {
 
     .try-3-content {
       margin: clamp(3rem, 11vw, 6rem) 0 clamp(20px, 17vw, 7rem);
+      .blue-section {
+        font-size:$fs-20 ;
+        margin-top: 2em;
+        border: 2px solid #1287CD;
+        border-radius: 8px;
+        background-color: #E7F3FA;
+        height: fit-content;
+        padding: 2em;
+        .row {
+          margin-bottom: 1em;
+          p {
+            display: inline-block;
+            margin: 0px 0px;
+            &:first-child {
+              margin-right: 4px;
+              max-width: 100px;
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
 
       ol {
         margin: 0;

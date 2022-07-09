@@ -25,6 +25,16 @@ body {
   border-top: 1px solid #dbdcdc;
 }
 
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .html-lesson-wrapper td {
   vertical-align: top;
 }
@@ -775,6 +785,33 @@ body {
 
 .html-lesson-wrapper .try-content .try-3-content {
   margin: clamp(3rem, 11vw, 6rem) 0 clamp(20px, 17vw, 7rem);
+}
+
+.html-lesson-wrapper .try-content .try-3-content .blue-section {
+  font-size: clamp(13px, 4vw, 20px);
+  margin-top: 2em;
+  border: 2px solid #1287CD;
+  border-radius: 8px;
+  background-color: #E7F3FA;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2em;
+}
+
+.html-lesson-wrapper .try-content .try-3-content .blue-section .row {
+  margin-bottom: 1em;
+}
+
+.html-lesson-wrapper .try-content .try-3-content .blue-section .row p {
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .try-content .try-3-content .blue-section .row p:first-child {
+  margin-right: 4px;
+  max-width: 100px;
+  word-wrap: break-word;
 }
 
 .html-lesson-wrapper .try-content .try-3-content ol {

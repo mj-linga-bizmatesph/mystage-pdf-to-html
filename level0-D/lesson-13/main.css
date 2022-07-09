@@ -311,8 +311,9 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece2 {
   font-family: "Noto sans";
-  font-weight: bolder;
-  width: 33%;
+  font-weight: bold;
+  width: 7em;
+  height: 1em;
   margin-right: 0.4em;
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-13-pinkP.svg);
   text-align: center;
@@ -321,12 +322,19 @@ body {
   background-repeat: no-repeat;
   padding: clamp(7px, 2vw, 10px) 0;
   font-size: clamp(10px, 2.2vw, 16px);
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .red-piece2 {
+    width: 8em;
+  }
 }
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece3 {
   font-family: "Noto sans";
-  font-weight: bolder;
-  width: 59%;
+  font-weight: bold;
+  width: 7em;
+  height: 1em;
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-13-pinkP.svg);
   text-align: center;
   background-position: center;
@@ -336,10 +344,17 @@ body {
   font-size: clamp(10px, 2.2vw, 16px);
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .red-piece3 {
+    width: 8em;
+  }
+}
+
 .html-lesson-wrapper .see-content .see-2-section .red-piece1 {
   font-family: "Noto sans";
-  font-weight: bolder;
-  width: 33%;
+  font-weight: bold;
+  width: 7em;
+  height: 1em;
   margin-right: 0.4em;
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-13-pinkP.svg);
   text-align: center;
@@ -350,10 +365,17 @@ body {
   font-size: clamp(10px, 2.2vw, 16px);
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .red-piece1 {
+    width: 8em;
+  }
+}
+
 .html-lesson-wrapper .see-content .see-2-section .blue-piece1 {
   font-family: "Noto sans";
-  font-weight: bolder;
-  width: 51%;
+  font-weight: bold;
+  width: 11em;
+  height: 1em;
   margin-right: 0.4em;
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
   text-align: center;
@@ -364,10 +386,17 @@ body {
   font-size: clamp(10px, 2.2vw, 16px);
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .blue-piece1 {
+    width: 13em;
+  }
+}
+
 .html-lesson-wrapper .see-content .see-2-section .blue-piece2 {
   font-family: "Noto sans";
-  font-weight: bolder;
-  width: 26%;
+  font-weight: bold;
+  width: 7em;
+  height: 1em;
   margin-right: 0.4em;
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue2.svg);
   text-align: center;
@@ -380,8 +409,9 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece3 {
   font-family: "Noto sans";
-  font-weight: bolder;
-  width: 59%;
+  font-weight: bold;
+  width: 12em;
+  height: 1em;
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
   text-align: center;
   background-position: center;
@@ -389,6 +419,12 @@ body {
   background-repeat: no-repeat;
   padding: clamp(7px, 2vw, 10px) 0;
   font-size: clamp(10px, 2.2vw, 16px);
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .blue-piece3 {
+    width: 14em;
+  }
 }
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece-1 {
@@ -403,19 +439,33 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table-pieces {
-  margin-top: clamp(1rem, 9vw, 1.5rem);
-  display: -ms-grid;
-  display: grid;
-  -webkit-column-gap: 2%;
-          column-gap: 2%;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 100%;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+}
+
+.html-lesson-wrapper .see-content .see-2-section .akiko-table-pieces .column-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table-pieces .column-two {
-  margin-right: 1.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table {

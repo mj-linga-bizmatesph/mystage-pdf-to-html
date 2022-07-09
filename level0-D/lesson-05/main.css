@@ -29,6 +29,16 @@ body {
   vertical-align: top;
 }
 
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .html-lesson-wrapper .m-0 {
   margin: 0;
 }
@@ -225,7 +235,22 @@ body {
   margin: clamp(50px, 12vw, 70px) 0 clamp(20px, 17vw, 7rem);
 }
 
-.html-lesson-wrapper .act-content .act-1-content .image-area {
+.html-lesson-wrapper .act-content .part-2-content .row p {
+  -webkit-margin-before: 0em !important;
+          margin-block-start: 0em !important;
+  -webkit-margin-after: 0em !important;
+          margin-block-end: 0em !important;
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .act-content .part-2-content .row p:first-child {
+  margin-right: 1em;
+  max-width: 100px;
+  word-wrap: break-word;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .image-area1 {
   margin-bottom: 1vw;
 }
 
@@ -239,28 +264,52 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 {
+  line-height: 1.8;
+  width: 20em;
+  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-weight: bold;
   position: absolute;
-  margin: 9% 0 0 13%;
+  margin: 10% 0px 0 27%;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 .space {
+  margin-left: 1em;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-2 {
+  line-height: 1.8;
+  width: 20em;
+  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-weight: bold;
   position: absolute;
-  margin: 12% 0 0 11%;
+  margin: 13% 0 0 22%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-3 {
+  line-height: 1.8;
+  width: 20em;
+  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-weight: bold;
   position: absolute;
-  margin: 6% 0 0 6%;
+  margin: 09% 0 0 16%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-4 {
+  line-height: 1.8;
+  width: 20em;
+  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-weight: bold;
   position: absolute;
-  margin: 7% 0 0 12%;
+  margin: 07% 0 0 25%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-5 {
+  line-height: 1.8;
+  width: 20em;
+  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-weight: bold;
   position: absolute;
-  margin: 7% 0 0 22%;
+  margin: 9% 0 0 32%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .eng {

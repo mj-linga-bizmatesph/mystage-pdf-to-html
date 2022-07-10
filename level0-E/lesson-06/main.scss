@@ -1,6 +1,12 @@
-@import '../../css/level0-utils';
+@import '../../css/level0-E-utils';
 
 .html-lesson-wrapper {
+  .title-section {
+    .title {
+      font-size: clamp(15px, 4.3vw, 26px);
+    }
+  }
+
   .ls {
     letter-spacing: -2.5px;
   }

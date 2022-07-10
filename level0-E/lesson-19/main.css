@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-right: 1%;
   padding: 0;
 }
 
@@ -235,7 +236,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -390,6 +391,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  border-radius: 5px;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table {
@@ -438,6 +440,10 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section ol.column-two {
   --li-bg: #fff;
+}
+
+.html-lesson-wrapper .see-content .see-2-section ol.column-two div {
+  padding-top: 1.5%;
 }
 
 .html-lesson-wrapper .see-content .see-2-section ol.column-two li::before {
@@ -758,6 +764,10 @@ body {
   display: grid;
   grid-gap: clamp(0.1rem, 1vw, 0.5rem);
   counter-reset: orderedlist;
+}
+
+.html-lesson-wrapper .try-content .try-3-content .blue-box {
+  width: 460px;
 }
 
 .html-lesson-wrapper .try-content .try-3-content li::before {

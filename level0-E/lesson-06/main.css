@@ -1,7 +1,7 @@
 /*
-this file is intended to be use generally for the level 0 lessons, 
-if you want to override the specified class, go to the scss file 
-of the lesson and make the same class, and override it depending 
+this file is intended to be use generally for the level 0 lessons,
+if you want to override the specified class, go to the scss file
+of the lesson and make the same class, and override it depending
 on what you need.
 */
 body {
@@ -206,7 +206,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -641,6 +641,51 @@ body {
 .html-lesson-wrapper .part-content .arrow.part {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+}
+
+.html-lesson-wrapper .part-content .ul-main {
+  list-style-type: none;
+  font-size: clamp(10px, 2.68vw, 18px);
+  margin-bottom: 3rem;
+}
+
+.html-lesson-wrapper .part-content .ul-main li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .part-content .ul-main li div {
+  margin-left: 3%;
+  width: 400px;
+}
+
+.html-lesson-wrapper .part-content .ul-main li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .part-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
+}
+
+.html-lesson-wrapper .title-section .title {
+  font-size: clamp(15px, 4.3vw, 26px);
 }
 
 .html-lesson-wrapper .ls {

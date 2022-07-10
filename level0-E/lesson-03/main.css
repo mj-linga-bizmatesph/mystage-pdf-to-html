@@ -1,7 +1,7 @@
 /*
-this file is intended to be use generally for the level 0 lessons, 
-if you want to override the specified class, go to the scss file 
-of the lesson and make the same class, and override it depending 
+this file is intended to be use generally for the level 0 lessons,
+if you want to override the specified class, go to the scss file
+of the lesson and make the same class, and override it depending
 on what you need.
 */
 body {
@@ -206,7 +206,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -643,6 +643,47 @@ body {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
 }
 
+.html-lesson-wrapper .part-content .ul-main {
+  list-style-type: none;
+  font-size: clamp(10px, 2.68vw, 18px);
+  margin-bottom: 3rem;
+}
+
+.html-lesson-wrapper .part-content .ul-main li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .part-content .ul-main li div {
+  margin-left: 3%;
+  width: 400px;
+}
+
+.html-lesson-wrapper .part-content .ul-main li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .part-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
+}
+
 .html-lesson-wrapper .see-content.see-1 {
   margin-top: 29%;
 }
@@ -849,7 +890,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table .name {
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
   white-space: nowrap;
   width: 16%;
 }
@@ -857,7 +898,7 @@ body {
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table tr:not(:last-child) td:nth-child(2) {
   padding-top: 1%;
   padding-bottom: 5%;
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section {
@@ -873,7 +914,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main {
   list-style-type: none;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(11px, 2.7vw, 18px);
   margin-bottom: 3rem;
   margin-left: -10%;
 }
@@ -887,7 +928,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .ul-content {
   margin-left: 1%;
-  margin-top: -0.5%;
+  margin-top: -0.3%;
   color: black;
 }
 
@@ -921,7 +962,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
   content: attr(data-value) " ";
-  width: clamp(15px, 15vw, 72px);
+  width: clamp(15px, 15vw, 75px);
   text-align: right;
   font-weight: bold;
 }
@@ -991,6 +1032,10 @@ body {
   margin-bottom: 6%;
 }
 
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol li::marker {
+  font-weight: bold;
+}
+
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
   margin-bottom: 13%;
 }
@@ -1016,7 +1061,7 @@ body {
 
 .html-lesson-wrapper .act-content .ul1 {
   list-style-type: none;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(11px, 3.5vw, 18px);
   margin-bottom: 3rem;
 }
 

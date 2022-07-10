@@ -22,6 +22,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
 body {
   margin: 0;
+  margin-right: 1%;
   padding: 0;
 }
 
@@ -235,7 +236,7 @@ body {
     line-height: 1.6;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
     }
     .sub-title {
@@ -383,6 +384,7 @@ body {
         font-weight: bold;
         display: grid;
         place-items: center;
+        border-radius: 5px;
       }
 
       .akiko-table {
@@ -724,7 +726,9 @@ body {
         grid-gap: clamp(0.1rem, 1vw, 0.5rem);
         counter-reset: orderedlist;
       }
-
+      .blue-box {
+        width: 460px;
+      }
       li::before {
         counter-increment: orderedlist;
         content: counter(orderedlist);

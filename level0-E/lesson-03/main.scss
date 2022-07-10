@@ -1,4 +1,4 @@
-@import '../../css/level0-utils';
+@import '../../css/level0-E-utils';
 
 $primary-blue: #1287cd;
 
@@ -202,14 +202,14 @@ $primary-blue: #1287cd;
 
           .name {
             @extend .b;
-            font-size: clamp(10px, 3vw, 16px);
+            font-size: clamp(10px, 3vw, 18px);
             white-space: nowrap;
             width: 16%;
           }
           tr:not(:last-child) td:nth-child(2) {
             padding-top: 1%;
             padding-bottom: 5%;
-            font-size: clamp(10px, 3vw, 16px);
+            font-size: clamp(10px, 3vw, 18px);
           }
         }
       }
@@ -228,7 +228,7 @@ $primary-blue: #1287cd;
 
         .ul-main {
           list-style-type: none;
-          font-size: clamp(11px, 2.7vw, 16px);
+          font-size: clamp(11px, 2.7vw, 18px);
           margin-bottom: 3rem;
           margin-left: -10%;
 
@@ -239,7 +239,7 @@ $primary-blue: #1287cd;
 
           .ul-content {
             margin-left: 1%;
-            margin-top: -0.5%;
+            margin-top: -0.3%;
             color: black;
           }
           .li2 {
@@ -265,7 +265,7 @@ $primary-blue: #1287cd;
         }
         li::before {
           content: attr(data-value) ' ';
-          width: clamp(15px, 15vw, 72px);
+          width: clamp(15px, 15vw, 75px);
           text-align: right;
           font-weight: bold;
         }
@@ -326,6 +326,9 @@ $primary-blue: #1287cd;
                   margin-bottom: 6%;
                 }
               }
+              li::marker {
+                font-weight: bold;
+              }
             }
           }
 
@@ -362,7 +365,7 @@ $primary-blue: #1287cd;
   .act-content {
     .ul1 {
       list-style-type: none;
-      font-size: clamp(11px, 2.7vw, 16px);
+      font-size: clamp(11px, 3.5vw, 18px);
       margin-bottom: 3rem;
 
       li {

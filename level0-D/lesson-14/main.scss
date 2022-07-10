@@ -200,6 +200,7 @@ body {
     font-family: $noto-sans;
   }
   .instructions {
+    margin-right: 6%;
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
@@ -336,31 +337,53 @@ body {
         }
       }
       .red-piece {
-        width: 64%;
+        width: 89%;
         margin-right: 8px;
         @media screen and (max-width: 900px){
-          width: 55%;
+          width: 90%;
         }
       }
       .red-piece1 {
-        width: 90%;
-        margin-right: 8px;
-        @media screen and (max-width: 900px){
-          width: 67%;
-        }
+        font-weight: bold;
+        font-family: "Noto Sans", sans-serif;
+        font-size: clamp(11px, 1.8vw, 16px);
+        background-color: #ffb3b0;
+        height: 2em;
+        width: 16em;
+        border-radius: 3px;
+        text-align: center;
+        padding-top: 1em;
       }
 
-      .yellow-piece {
-        width: clamp(113px, 12vw, 192.8px);
+      .yellow-piece1 { 
+        font-weight: bold;
+        font-family: "Noto Sans", sans-serif;
+        text-align: center;
+        height: 1em;
+        width: 10em;
+        margin-left: clamp(4px, 2vw, 7px);
+        font-size: clamp(10px, 2.2vw, 16px);
+        background: url(#{$s3}/0-C-12-i-piece.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 0.5em;
+        padding-right: 1em;
+        padding-bottom: 1em;
       }
 
       .blue-piece {
-        width: 79%;
-        margin-left: 4.5em;
-        @media screen and (max-width: 900px){
-          width: 83%;
-          margin-left: 2.1em;
-        }
+        font-family: "Noto sans";
+        font-weight: bold;
+        width: 17em;
+        height: 1.3em;
+        background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
       }
       .blue-piece1 {
         width: 98%;
@@ -397,14 +420,20 @@ body {
 
       .akiko-table-pieces {
         margin-top: clamp(1rem, 9vw, 1.5rem);
-        display: grid;
-        column-gap: 2%;
+        display: flex;
+        justify-content: space-between;
+        // column-gap: 2%;
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto;
+        // grid-template-columns: auto auto;
 
         .column-two {
-          margin-left: auto;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .column-one {
+          display: flex;
+          justify-content: start;
         }
       }
 

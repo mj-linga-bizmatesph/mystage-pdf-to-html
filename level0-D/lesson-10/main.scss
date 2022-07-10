@@ -205,6 +205,7 @@ body {
     font-family: $noto-sans;
   }
   .instructions {
+    margin-right: 6%;
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
@@ -321,8 +322,12 @@ body {
       }
 
       .speech-bubble-5 {
+        line-height: 1.8;
+        width: 20em;
+        font-size: clamp(8.5px, 2.4vw, 14px);
+        font-weight: bold;
         position: absolute;
-        margin: 10% 0 0 5%;
+        margin: 13% 0 0 22%;
       }
 
       .eng {

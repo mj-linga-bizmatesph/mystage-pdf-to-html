@@ -340,15 +340,21 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section .piece {
   position: relative;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   place-items: center;
   width: 100%;
   height: clamp(25px, 7vw, 38px);
 }
 
 .html-lesson-wrapper .see-content .see-2-section .piece .piece-text {
-  margin-left: 0.2em;
   position: absolute;
   font-size: clamp(11px, 2.7vw, 16px);
   font-family: "Noto Sans", sans-serif;

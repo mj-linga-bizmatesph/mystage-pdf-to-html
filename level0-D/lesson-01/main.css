@@ -173,6 +173,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions {
+  margin-right: 6%;
   font-family: "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
@@ -366,6 +367,7 @@ body {
   height: 100%;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
+  margin-bottom: 2em;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-bottom-table {
@@ -454,6 +456,13 @@ body {
 .html-lesson-wrapper .see-content .see-2-section .below {
   width: 75%;
   margin-left: 4em;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .see-2-section .below {
+    width: 75%;
+    margin-left: 3em;
+  }
 }
 
 .html-lesson-wrapper .see-content .see-2-section ol.column-three {
@@ -639,7 +648,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-2-content {
-  margin-top: clamp(20px, 10vw, 69px);
+  margin-top: 5em;
 }
 
 .html-lesson-wrapper .try-content .try-2-content ol {

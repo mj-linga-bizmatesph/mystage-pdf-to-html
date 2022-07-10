@@ -25,6 +25,16 @@ body {
   border-top: 1px solid #dbdcdc;
 }
 
+.html-lesson-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .html-lesson-wrapper td {
   vertical-align: top;
 }
@@ -173,6 +183,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions {
+  margin-right: 6%;
   font-family: "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
@@ -1110,6 +1121,65 @@ body {
   position: relative;
 }
 
+.html-lesson-wrapper .try-content .try-2-content .image3 {
+  margin-left: 16%;
+  margin-bottom: 2em;
+  height: 13em;
+  width: 24em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: url(https://lesson-materials.s3.ap-northeast-1.amazonaws.com/images/0-D-tv.svg);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: clamp(7px, 2vw, 10px) 0;
+  font-size: clamp(10px, 2.2vw, 16px);
+}
+
+.html-lesson-wrapper .try-content .try-2-content .image3 .mini-convo {
+  margin-left: 2em;
+  font-size: clamp(10px, 2.5vw, 18px);
+}
+
+.html-lesson-wrapper .try-content .try-2-content .image3 .mini-convo .sub-title {
+  margin-top: 1em;
+  margin-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #7B88AC;
+  font-weight: bold;
+  font-family: Trebuchet MS;
+}
+
+.html-lesson-wrapper .try-content .try-2-content .image3 .mini-convo .grey {
+  color: #7B88AC;
+}
+
+.html-lesson-wrapper .try-content .try-2-content .image3 .mini-convo .row {
+  font-weight: bold;
+  color: #2D356B;
+  margin-bottom: 0.5vw !important;
+  line-height: 1.8;
+}
+
+.html-lesson-wrapper .try-content .try-2-content .image3 .mini-convo .row p {
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .try-content .try-2-content .image3 .mini-convo .row p:first-child {
+  margin-right: 1em;
+  max-width: 100px;
+  word-wrap: break-word;
+}
+
 .html-lesson-wrapper .try-content .try-3-content {
   margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
   display: -webkit-box;
@@ -1500,6 +1570,21 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
   width: 85%;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .row {
+  line-height: 1.8;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .row p {
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .row p:first-child {
+  margin-right: 1em;
+  max-width: 100px;
+  word-wrap: break-word;
 }
 
 .html-lesson-wrapper .act-content.act-1, .html-lesson-wrapper .act-content.act-2 {

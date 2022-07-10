@@ -81,7 +81,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -80.5px;
+    left: -87.5px;
     color: $primary;
     font-weight: bold;
     font-family: $title-font;
@@ -133,12 +133,39 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
+    width: 35%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    .section{
+      left: -59px;
+    }
+    .review-content {
+      margin-top: clamp(100px, 28%, 240px);
+      img {
+        margin-top: clamp(40px, 8.2vw, 80px);
+        width: 100%;
+      }
+    }
+    footer {
+      bottom: clamp(20px, 5.2vw, 43px);
+      right: 5% !important;
+      max-width:34%;
+    }
+  }
+}
 @media screen and (max-width: 820px) {
   .html-lesson-wrapper {
     min-height: unset;
+    .section{
+      left: -59px;
+    }
     .review-content {
       ul {
         li {
@@ -159,6 +186,7 @@ body {
     footer {
       bottom: clamp(20px, 5.2vw, 43px);
       right: 5% !important;
+      max-width:34%;
     }
   }
 }
@@ -196,9 +224,28 @@ body {
     }
   }
 }
-
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    .section {
+      left: -29.5px;
+    }
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+  }
+}
 @media screen and (max-width: 420px) {
   .html-lesson-wrapper {
+    .section{
+      left: -22.5px;
+    }
     .review-content {
 
       ul {
@@ -220,6 +267,16 @@ body {
     }
     footer {
       bottom: 15px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .section{
+      left:-19.9px;
+    }
+    footer {
+      text-align: right;
     }
   }
 }

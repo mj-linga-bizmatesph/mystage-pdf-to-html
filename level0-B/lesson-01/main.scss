@@ -204,7 +204,7 @@ body {
     margin-left: 2em;
   }
   .ml-3em{
-    margin-left: 6vw;
+    margin-left: 3em;
   }
   .ml-4em{
     margin-left: 4em;
@@ -239,6 +239,10 @@ body {
 
   .mr-3vw{
     margin-right: 3vw;
+  }
+
+  .mr-3em{
+    margin-right: 3em;
   }
 
   .mt-0{
@@ -281,6 +285,8 @@ body {
   
   .puzzle-box{
     border-radius: 3px;
+    font-family: $noto-sans;
+    font-size: clamp(9px, 1.8vw, 15px) !important;
   }
 
   .circle-number{

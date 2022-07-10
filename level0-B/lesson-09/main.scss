@@ -237,6 +237,18 @@ body {
     width: 100%;
   }
 
+  .width-90{
+    width: 90%;
+  }
+
+  .width-75{
+    width: 75%;
+  }
+
+  .width-35{
+    width: 35%;
+  }
+
   .flip-image{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -286,8 +298,34 @@ body {
     margin-left: 5em;
   }
 
+  .mt-2em{
+    margin-top: 2em;
+  }
+
+  .mt-3em{
+    margin-top: 3em;
+  }
+
+  .mt-4em{
+    margin-top: 4em;
+  }
+
+  .mt-5em{
+    margin-top: 5em;
+  }
+
   .mb-1{
     margin-bottom: 0.5em;
+  }
+
+  .mb-1em{
+    margin-bottom: 1em;
+  }
+  .mb-2em{
+    margin-bottom: 2em;
+  }
+  .mb-3em{
+    margin-bottom: 3em;
   }
   
   .flex-wrapper{
@@ -321,6 +359,8 @@ body {
   
   .puzzle-box{
     border-radius: 3px;
+    font-family: $noto-sans;
+    font-size: clamp(9px, 1.8vw, 15px) !important;
   }
 
   .circle-number{
@@ -383,19 +423,19 @@ body {
       }
     }
   }
-
+  .no-wrap{
+    flex-shrink: 0;
+  }
   .conversation-wrapper{
+    font-family: $noto-sans;
     .row{
       display:flex;
-      flex-wrap: wrap;
       flex-direction: row;
       align-items:center;
       max-height: 100vh;
       max-width: 100%;
-      margin: 8% 0px;
-      font-size: clamp(12px,3.5vw,18px);
+      font-size: clamp(12px,2vw,18px);
       position: relative;
-      flex-basis: auto;
       .underline{
         text-decoration: underline;
       }
@@ -955,6 +995,11 @@ body {
       margin-bottom: 8%;
     }
 
+    .phrases-wrapper{
+      width: 93%;
+      align-items: center;
+    }
+
     .phrases {
       display: flex;
       flex-direction: column;
@@ -1010,6 +1055,12 @@ body {
 
   .try-1 {
     font-family: $noto-sans;
+    .conversation-wrapper{
+      .side-image{
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    }
     .table-wrapper-section {
       margin-top: 10%;
       .table-wrapper {
@@ -1062,7 +1113,7 @@ body {
     }
     .table-wrapper-section {
       margin-top: 10%;
-      .table-wrapper {
+      
         width: 100%;
         p {
           margin: 0;
@@ -1104,7 +1155,7 @@ body {
               display: inline-block;
               background-color: #e7f3fa;
               font-weight: bold;
-              font-size: clamp(8px, 2vw, 17px);
+              font-size: clamp(10px, 2vw, 17px);
               padding: 0.5em;
               padding-left: 1em;
               padding-right: 1em;
@@ -1115,7 +1166,6 @@ body {
             }
           }
         }
-      }
     }
 
     .table {

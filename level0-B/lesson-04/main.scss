@@ -207,7 +207,7 @@ body {
     margin-left: 2em;
   }
   .ml-3{
-    margin-left: 6vw;
+    margin-left: 3em;
   }
   .ml-4{
     margin-left: 4em;
@@ -215,7 +215,25 @@ body {
   .ml-5{
     margin-left: 5em;
   }
-  
+  .ml-3vw{
+    margin-left: 3vw;
+  }
+  .ml-4vw{
+    margin-left: 4vw;
+  }
+  .ml-6vw{
+    margin-left: 6vw;
+  }
+
+  .mb-1em{
+    margin-bottom: 1em;
+  }
+  .mb-2em{
+    margin-bottom: 2em;
+  }
+  .mb-3em{
+    margin-bottom: 3em;
+  }
 
   .flex-wrapper{
     display:flex;
@@ -246,6 +264,8 @@ body {
   
   .puzzle-box{
     border-radius: 3px;
+    font-family: $noto-sans;
+    font-size: clamp(11px, 1.8vw, 15px) !important;
   }
 
   .circle-number{
@@ -282,6 +302,7 @@ body {
 
 
   .conversation-wrapper{
+    font-family: $noto-sans;
     .row{
       display:flex;
       flex-wrap: wrap;
@@ -289,7 +310,6 @@ body {
       align-items:center;
       max-height: 100vh;
       max-width: 100%;
-      margin: 8% 0px;
       font-size: clamp(12px,3.5vw,18px);
       position: relative;
       flex-basis: auto;
@@ -383,6 +403,13 @@ body {
         }
       }
     }
+  }
+
+  .blue-line {
+    width: 19px;
+    height: 2px;
+    border-bottom: 2px solid $primary-blue;
+    margin-bottom: 5px;
   }
 
   // See-content
@@ -603,6 +630,7 @@ body {
 
       margin-left: $side-margin;
       margin-right: $side-margin;
+      font-family: $noto-sans;
 
       .section2-first-row {
         .text-with-akiko {
@@ -610,7 +638,7 @@ body {
           display: grid;
 
           .wrapper-with-akiko {
-            padding-left: clamp(35px, 6.7vw, 55px);
+            padding-left: clamp(27px, 6.7vw, 120px);
           }
         }
 
@@ -644,7 +672,7 @@ body {
           margin-top: 15px;
 
           .box-2 {
-            width: clamp(100px, 30vw, 120px);
+            width: clamp(8px, 22vw, 120px);
             background: url(#{$s3}/0-yellow-piece.png);
             text-align: center;
             background-position: center;
@@ -655,7 +683,7 @@ body {
           }
 
           .box-3 {
-            width: clamp(74px, 17vw, 105px);
+            width: clamp(75px, 17vw, 105px);
             margin-left: clamp(4px, 2vw, 7px);
             font-size: clamp(10px, 2.2vw, 16px);
             background: url(#{$s3}/0-piece-blue.png);
@@ -728,7 +756,7 @@ body {
 
       .phrase-alts {
         display: grid;
-        grid-template-columns: 1fr clamp(157px, 39vw, 280px);
+        grid-template-columns: 1fr clamp(180px, 39vw, 280px);
         gap: 7px;
 
         &.half {
@@ -925,8 +953,8 @@ body {
   .try-2 {
     .try2-content {
       padding-left: clamp(4px, 10vw, 5px);
-      margin-top: clamp(40px, 16vw, 100px);
-
+      margin-top: clamp(40px, 16vw, 80px);
+      font-family: $noto-sans;
       .try-2-row-1 {
         margin-bottom: clamp(5px, 8vw, 20px);
         position: relative;
@@ -998,7 +1026,7 @@ body {
       }
 
       .try-2-row-3 {
-        margin-bottom: clamp(50px, 12vw, 100px);
+        margin-bottom: clamp(50px, 12vw, 70px);
         position: relative;
         display: flex;
 
@@ -1195,15 +1223,16 @@ body {
       }
 
       .see-3-convo-1 {
-        width: clamp(50px, 50vw, 303px);
-        min-height: clamp(25px, 10vw, 58px);
-        margin-top: clamp(15px, 6vw, 40px);
-        margin-left: clamp(20px, 17vw, 100px);
+        width: clamp(50px,51vw,303px);
+        min-height: clamp(25px,10vw,58px);
+        margin-top: clamp(15px,6vw,40px);
+        margin-left: clamp(12px,16.3vw,100px);
 
         .english {
           font-size: clamp(8px, 2.5vw, 14px);
           padding-left: clamp(5px, 1.5vw, 15px);
           padding-top: clamp(205px, 55vw, 650px);
+          font-weight:bold;
         }
 
         .jap {
@@ -1225,6 +1254,7 @@ body {
           font-size: clamp(8px, 2.5vw, 14px);
           padding-left: clamp(5px, 1.5vw, 15px);
           padding-top: clamp(205px, 55vw, 650px);
+          font-weight:bold;
         }
 
         .jap {
@@ -1246,6 +1276,7 @@ body {
           font-size: clamp(8px, 2.5vw, 14px);
           padding-left: clamp(5px, 1.5vw, 15px);
           padding-top: clamp(205px, 55vw, 650px);
+          font-weight: bold;
         }
 
         .jap {
@@ -1552,8 +1583,8 @@ body {
         background-image: url(#{$s3}/0-B-4-Act1.svg);
 
         .bubble {
-          margin-left: clamp(15px, 5vw, 19px);
-          margin-top: clamp(5px, 2.3vw, 10px);
+          margin-left: clamp(29px, 5vw, 30px);
+          margin-top: clamp(15px, 2.3vw, 19px);
           width: clamp(170px, 43.4vw, 260px);
           min-height: clamp(130px, 50vw, 260px);
           position: absolute;
@@ -1567,6 +1598,7 @@ body {
           .bubble-text {
             .english {
               font-size: clamp(8px, 2vw, 14px);
+              font-weight: bold;
             }
             .japanese {
               position: absolute;

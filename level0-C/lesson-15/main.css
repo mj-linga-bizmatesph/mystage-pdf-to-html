@@ -308,15 +308,22 @@ body {
 }
 
 .html-lesson-wrapper .see-1 .convo-text-content .helen-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 25px;
 }
 
-.html-lesson-wrapper .see-1 .convo-text-content .helen-lines .line-under {
-  margin-left: clamp(41px, 9.2vw, 66px);
+.html-lesson-wrapper .see-1 .convo-text-content .helen-lines b {
+  width: 13%;
+}
+
+.html-lesson-wrapper .see-1 .convo-text-content .akiko-lines b {
+  width: 13%;
 }
 
 .html-lesson-wrapper .see-1 .convo-text-content .akiko-lines .line-under {
-  margin-left: clamp(37px, 8.5vw, 62px);
+  margin-left: clamp(40px, 9vw, 65px);
 }
 
 .html-lesson-wrapper .see-1 .convo-text-content .akiko-lines .div-1 {

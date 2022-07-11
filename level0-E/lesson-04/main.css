@@ -27,6 +27,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.html-lesson-wrapper .spacer1 {
+  margin-top: 1%;
+}
+
 .html-lesson-wrapper hr {
   border-top: 1px solid #dbdcdc;
 }
@@ -915,15 +919,16 @@ body {
   border: 1px solid #1287cd;
   background: #e7f3fa;
   font-family: "Noto Sans", sans-serif;
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content.try-2 .choices-section .div-choices .oblong {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
   position: absolute;
-  left: 1%;
+  left: 0.5%;
   margin-top: -2.5%;
-  width: 50%;
+  width: clamp(150px, 43vw, 280px);
 }
 
 .html-lesson-wrapper .try-content.try-2 .choices-section .div-choices ol {

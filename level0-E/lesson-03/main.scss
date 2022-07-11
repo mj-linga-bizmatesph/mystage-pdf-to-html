@@ -176,7 +176,7 @@ $primary-blue: #1287cd;
       }
     }
     .p1 {
-      font-size: clamp(10px, 3vw, 16px);
+      font-size: clamp(11px, 2.7vw, 18px);
       padding-top: 1.2%;
     }
     &.try-2 {
@@ -231,6 +231,7 @@ $primary-blue: #1287cd;
           font-size: clamp(11px, 2.7vw, 18px);
           margin-bottom: 3rem;
           margin-left: -10%;
+          font-family: $noto-sans;
 
           .li1 {
             display: flex;
@@ -261,6 +262,9 @@ $primary-blue: #1287cd;
             u {
               color: $primary-blue;
             }
+          }
+          .spacer-li {
+            margin-top: 2%;
           }
         }
         li::before {
@@ -367,6 +371,7 @@ $primary-blue: #1287cd;
       list-style-type: none;
       font-size: clamp(11px, 3.5vw, 18px);
       margin-bottom: 3rem;
+      font-family: $noto-sans;
 
       li {
         display: flex;

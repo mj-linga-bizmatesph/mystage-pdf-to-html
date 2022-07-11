@@ -195,7 +195,6 @@
           color: $subtext-color;
           margin-top: 1.5% !important;
         }
-
         .table-wrapper {
           width: 100%;
 
@@ -205,7 +204,7 @@
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 2px;
+            padding-top: clamp(1.4px, 0.1vw, 1px);
             padding-left: clamp(5px, 3vw, 10px);
           }
           .table-img {

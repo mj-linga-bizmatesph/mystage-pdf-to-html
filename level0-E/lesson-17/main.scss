@@ -116,6 +116,7 @@ body {
     border-radius: clamp(4px, 1vw, 8px);
     padding: clamp(1.1rem, 3.5vw, 2rem) clamp(1rem, 2vw, 1.3rem);
     position: relative !important;
+    width: clamp(288px, 80.1vw, 492px);
 
     ol {
       margin: 0;
@@ -123,6 +124,10 @@ body {
       display: grid;
       grid-gap: clamp(1rem, 2vw, 1.5rem) !important;
       counter-reset: orderedlist;
+
+      div {
+        width: clamp(292px, 80.1vw, 492px);
+      }
     }
 
     li::before {
@@ -149,8 +154,9 @@ body {
     .red-circle {
       position: absolute;
       bottom: clamp(0rem, 1vw, 0.9rem);
-      left: 0.5%;
-      width: 65%;
+      left: 0%;
+      top: 47%;
+      width: clamp(201px, 54.1vw, 328px);
     }
   }
   .program-rank {
@@ -725,7 +731,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 100%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -958,6 +964,7 @@ body {
       }
 
       .speech {
+        font-size: $fs-16;
         width: 85%;
       }
     }

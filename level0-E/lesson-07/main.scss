@@ -784,28 +784,36 @@ body {
           margin-top: 25px;
         }
         .akiko-lines {
-          .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
-          }
+          display: flex;
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
             letter-spacing: -2px;
             margin-top: 5px;
+          }
+          b {
+            width: 15%;
+          }
+          div {
+            width: clamp(150px, 60vw, 380px);
           }
         }
         .steve-lines {
+          display: flex;
           margin-top: 25px;
-          .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
-          }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
             letter-spacing: -2px;
             margin-top: 5px;
+          }
+
+          b {
+            width: 15%;
+          }
+
+          div {
+            width: clamp(150px, 60vw, 380px);
           }
         }
       }

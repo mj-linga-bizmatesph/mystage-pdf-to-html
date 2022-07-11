@@ -105,6 +105,7 @@ body {
   border-radius: clamp(10px, 3vw, 25px);
   padding: clamp(1.2rem, 4.8vw, 2rem) clamp(0.7rem, 2vw, 0.8rem);
   position: relative !important;
+  width: clamp(292px, 80.1vw, 492px);
 }
 
 .html-lesson-wrapper .blue-image-text ol {
@@ -114,6 +115,10 @@ body {
   display: grid;
   grid-gap: clamp(1rem, 2vw, 1.5rem) !important;
   counter-reset: orderedlist;
+}
+
+.html-lesson-wrapper .blue-image-text ol div {
+  width: clamp(292px, 80.1vw, 492px);
 }
 
 .html-lesson-wrapper .blue-image-text li::before {
@@ -145,7 +150,7 @@ body {
   position: absolute;
   top: clamp(0.1rem, 1.5vw, 0.6rem);
   left: 1%;
-  width: 98%;
+  width: clamp(190px, 83vw, 510px);
 }
 
 .html-lesson-wrapper .program-rank {
@@ -1183,7 +1188,7 @@ body {
 .html-lesson-wrapper .try-content .try-2-content li .speech {
   padding-left: 1vw;
   width: 85%;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(10.5px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content {
@@ -1583,6 +1588,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
+  font-size: clamp(10.5px, 2.7vw, 16px);
   width: 85%;
 }
 

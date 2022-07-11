@@ -288,6 +288,7 @@ $primary-blue: #1287cd;
           list-style-type: none;
           font-size: clamp(11px, 2.7vw, 18px);
           margin-bottom: 3rem;
+          font-family: $noto-sans;
 
           li {
             display: flex;

@@ -116,6 +116,7 @@ body {
     border-radius: clamp(4px, 1vw, 8px);
     padding: clamp(1.1rem, 5vw, 2rem) 0.5rem;
     position: relative !important;
+    width: clamp(200px, 80vw, 480px);
 
     ol {
       margin: 0;
@@ -696,7 +697,7 @@ body {
         .speech {
           width: 100%;
           padding-left: clamp(1px, 2vw, 20px);
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -712,7 +713,7 @@ body {
         counter-reset: orderedlist;
       }
       .blue-box {
-        width: 460px;
+        width: clamp(200px, 80vw, 480px);
       }
       li::before {
         counter-increment: orderedlist;
@@ -786,7 +787,7 @@ body {
         }
 
         .person {
-          width: clamp(60px, 15%, 80px);
+          width: clamp(45px, 15%, 80px);
           text-align: right;
           font-weight: bold;
           font-size: $fs-16;
@@ -795,7 +796,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -892,6 +893,7 @@ body {
       }
 
       .speech {
+        font-size: $fs-16;
         width: 85%;
       }
     }

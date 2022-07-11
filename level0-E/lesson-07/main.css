@@ -897,32 +897,47 @@ body {
   margin-top: 25px;
 }
 
-.html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .line-under {
-  margin-left: clamp(37px, 8.5vw, 60px);
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .div-jap {
-  margin-left: clamp(37px, 8.5vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -2px;
   margin-top: 5px;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines b {
+  width: 15%;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines div {
+  width: clamp(150px, 60vw, 380px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 25px;
 }
 
-.html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines .line-under {
-  margin-left: clamp(37px, 8.5vw, 60px);
-}
-
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines .div-jap {
-  margin-left: clamp(37px, 8.5vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -2px;
   margin-top: 5px;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines b {
+  width: 15%;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines div {
+  width: clamp(150px, 60vw, 380px);
 }
 
 .html-lesson-wrapper .act-2 .act-2-space {

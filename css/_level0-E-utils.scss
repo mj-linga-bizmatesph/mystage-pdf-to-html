@@ -38,7 +38,9 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-
+  .spacer1 {
+    margin-top: 1%;
+  }
   hr {
     border-top: 1px solid #dbdcdc;
   }
@@ -582,6 +584,8 @@ body {
       margin-bottom: 3.8%;
     }
   }
+  .try-content,
+  .table-wrapper-section,
   .part-content {
     margin-left: $side-margin;
     margin-right: $side-margin;

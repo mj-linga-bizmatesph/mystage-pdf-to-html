@@ -106,6 +106,7 @@ body {
   border-radius: clamp(4px, 1vw, 8px);
   padding: clamp(1.1rem, 5vw, 2rem) 0.5rem;
   position: relative !important;
+  width: clamp(200px, 80vw, 480px);
 }
 
 .html-lesson-wrapper .blue-image-text ol {
@@ -749,7 +750,7 @@ body {
 .html-lesson-wrapper .try-content .try-2-content li .speech {
   width: 100%;
   padding-left: clamp(1px, 2vw, 20px);
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content {
@@ -767,7 +768,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-3-content .blue-box {
-  width: 460px;
+  width: clamp(200px, 80vw, 480px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content li::before {
@@ -847,7 +848,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-3-content li .person {
-  width: clamp(60px, 15%, 80px);
+  width: clamp(45px, 15%, 80px);
   text-align: right;
   font-weight: bold;
   font-size: clamp(9.8px, 2.7vw, 16px);
@@ -856,7 +857,7 @@ body {
 .html-lesson-wrapper .try-content .try-3-content li .speech {
   padding-left: 1vw;
   width: 85%;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(9.8px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-content-pb {
@@ -955,6 +956,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
+  font-size: clamp(9.8px, 2.7vw, 16px);
   width: 85%;
 }
 

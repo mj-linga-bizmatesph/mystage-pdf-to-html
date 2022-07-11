@@ -866,7 +866,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .p1 {
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(11px, 2.7vw, 18px);
   padding-top: 1.2%;
 }
 
@@ -917,6 +917,7 @@ body {
   font-size: clamp(11px, 2.7vw, 18px);
   margin-bottom: 3rem;
   margin-left: -10%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li1 {
@@ -958,6 +959,10 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 u {
   color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .spacer-li {
+  margin-top: 2%;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
@@ -1063,6 +1068,7 @@ body {
   list-style-type: none;
   font-size: clamp(11px, 3.5vw, 18px);
   margin-bottom: 3rem;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .act-content .ul1 li {

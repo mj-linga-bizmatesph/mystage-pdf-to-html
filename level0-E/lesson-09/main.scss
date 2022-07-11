@@ -176,6 +176,7 @@ body {
     }
   }
   .try-content {
+    font-family: $noto-sans;
     margin-left: $side-margin;
     margin-right: $side-margin;
     &.try-1 {
@@ -674,6 +675,7 @@ body {
       .margin-both-sides {
         margin-top: 30px;
         .box-content {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -698,6 +700,7 @@ body {
           }
         }
         .box-content-2 {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -766,10 +769,10 @@ body {
         }
         .akiko-lines {
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
             letter-spacing: -2px;
@@ -779,10 +782,10 @@ body {
         .steve-lines {
           margin-top: 25px;
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
             letter-spacing: -2px;

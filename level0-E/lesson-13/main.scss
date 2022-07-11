@@ -371,6 +371,7 @@ body {
       }
 
       .piece {
+        border-radius: 3%;
         height: clamp(30px, 9vw, 38px);
         font-size: $fs-16;
         font-family: $noto-sans;
@@ -1023,6 +1024,11 @@ body {
         display: grid;
         grid-gap: clamp(0.1rem, 1vw, 0.5rem);
         counter-reset: orderedlist;
+
+        div {
+          margin-left: 1%;
+          margin-top: -0.3%;
+        }
       }
       .blue-box {
         width: 460px;
@@ -1109,7 +1115,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -1492,6 +1498,7 @@ body {
 
       .speech {
         width: 85%;
+        font-size: $fs-16;
       }
     }
 

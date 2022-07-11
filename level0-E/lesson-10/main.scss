@@ -14,7 +14,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -29,7 +28,9 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-
+  .spacer1 {
+    height: 2%;
+  }
   hr {
     border-top: 1px solid #dbdcdc;
   }

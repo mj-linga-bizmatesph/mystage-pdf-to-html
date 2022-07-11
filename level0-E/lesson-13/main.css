@@ -378,6 +378,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .piece {
+  border-radius: 3%;
   height: clamp(30px, 9vw, 38px);
   font-size: clamp(10.5px, 2.7vw, 16px);
   font-family: "Noto Sans", sans-serif;
@@ -1101,6 +1102,11 @@ body {
   counter-reset: orderedlist;
 }
 
+.html-lesson-wrapper .try-content .try-2-content ol div {
+  margin-left: 1%;
+  margin-top: -0.3%;
+}
+
 .html-lesson-wrapper .try-content .try-2-content .blue-box {
   width: 460px;
 }
@@ -1191,7 +1197,7 @@ body {
 .html-lesson-wrapper .try-content .try-2-content li .speech {
   padding-left: 1vw;
   width: 85%;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(10.5px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content {
@@ -1592,6 +1598,7 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
   width: 85%;
+  font-size: clamp(10.5px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .act-content.act-1, .html-lesson-wrapper .act-content.act-2 {

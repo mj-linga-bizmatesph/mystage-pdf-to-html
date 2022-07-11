@@ -992,12 +992,9 @@ body {
   padding-left: 0.3em;
 }
 .html-lesson-wrapper .try-2 ol li {
-  list-style-type: lower-alpha;
-  /* or 'decimal-leading-zero', 'upper-alpha', 'lower-alpha'... */
-  list-style-position: outside;
-  /* or 'inside' */
-  margin-left: 1em;
-  /* gives 'room' for the numbers to appear in */
+  list-style-type: lower-alpha; /* or 'decimal-leading-zero', 'upper-alpha', 'lower-alpha'... */
+  list-style-position: outside; /* or 'inside' */
+  margin-left: 1em; /* gives 'room' for the numbers to appear in */
 }
 .html-lesson-wrapper .try-2 ol li::marker {
   color: #1287cd;

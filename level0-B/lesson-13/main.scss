@@ -994,6 +994,41 @@ body {
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-b-13-act1bg.svg);
         font-family: $noto-sans;
+        .nick-bubble {
+          position: absolute;
+          font-weight: bold;
+          top: clamp(4.6em,2vw,134px);
+          left: clamp(3em,2vw,73px);
+          color: #2d356b;
+          color: #2d356b;
+          font-size: clamp(9px,2vw,13px);
+          .rotate-1{
+            transform: rotate(2deg);
+            margin-bottom: 0.5em;
+          }
+          .rotate-2{
+            transform: rotate(-10deg);
+          }
+        }
+        .akiko-bubble {
+          position: absolute;
+          font-weight: bold;
+          top: clamp(2.5em,1vw,110px);
+          right: clamp(2em,1vw,47px);
+          color: #2d356b;
+          font-size: clamp(8px,2vw,13px);
+
+          .rotate-1{
+            transform: rotate(12deg);
+          }
+          .rotate-2{
+            transform: rotate(-13deg);
+            margin-bottom: 0.1em
+          }
+          .rotate-3{
+            transform: rotate(-13deg);
+          }
+        }    
       }
 
       .converstation-text {

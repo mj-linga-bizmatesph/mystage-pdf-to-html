@@ -902,6 +902,13 @@ body {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-t2bg1.svg);
 }
+.html-lesson-wrapper .try-2 .try2-content .try-2-row-1 .bubble .text {
+  right: 0;
+  position: absolute;
+  color: #2d356b;
+  font-weight: 600;
+  font-size: clamp(12px, 2vw, 18px);
+}
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-2 {
   margin-bottom: clamp(73px, 20vw, 107px);
   position: relative;
@@ -932,6 +939,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-t2bg2.svg);
+}
+.html-lesson-wrapper .try-2 .try2-content .try-2-row-2 .bubble .text {
+  right: 0;
+  position: absolute;
+  color: #2d356b;
+  font-weight: 600;
+  font-size: clamp(12px, 2vw, 18px);
 }
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-3 {
   margin-bottom: clamp(57px, 17vw, 142px);
@@ -964,6 +978,13 @@ body {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-t2bg3.svg);
 }
+.html-lesson-wrapper .try-2 .try2-content .try-2-row-3 .bubble .text {
+  right: 0;
+  position: absolute;
+  color: #2d356b;
+  font-weight: 600;
+  font-size: clamp(12px, 2vw, 18px);
+}
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-4 {
   margin-bottom: clamp(60px, 14vw, 121px);
   position: relative;
@@ -995,6 +1016,14 @@ body {
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-t2bg4.svg);
 }
+.html-lesson-wrapper .try-2 .try2-content .try-2-row-4 .bubble .text {
+  left: 15%;
+  top: 27%;
+  position: absolute;
+  color: #FFE200;
+  font-size: clamp(7px, 2vw, 10px);
+  font-weight: 600;
+}
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-5 {
   position: relative;
 }
@@ -1019,6 +1048,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-12-t2bg5.svg);
+}
+.html-lesson-wrapper .try-2 .try2-content .try-2-row-5 .bubble .text {
+  right: 0;
+  position: absolute;
+  color: #2d356b;
+  font-weight: 600;
+  font-size: clamp(12px, 2vw, 18px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text {
   margin-left: -4px;

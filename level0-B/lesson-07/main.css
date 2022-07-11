@@ -972,8 +972,8 @@ body {
   border: 1px solid #1287cd !important;
 }
 .html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(1) .side-image .text {
-  bottom: 2em;
-  right: 2em;
+  bottom: clamp(34px, 1vw, 35px);
+  right: clamp(49px, 1vw, 45px);
 }
 .html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(2) .side-image .text {
   bottom: 2em;

@@ -101,7 +101,7 @@ body {
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-2 .table .name, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
+.html-lesson-wrapper .b, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
   font-weight: bold;
 }
 .html-lesson-wrapper .u-sup {
@@ -113,7 +113,7 @@ body {
   text-decoration: underline;
   color: #1287cd;
 }
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper .table-number {
+.html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
 .html-lesson-wrapper .program-rank {
@@ -492,14 +492,12 @@ body {
   position: absolute;
 }
 .html-lesson-wrapper .conversation-wrapper .row .side-image .rotate-1 {
-  margin-bottom: 9px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
 .html-lesson-wrapper .conversation-wrapper .row .side-image .rotate-2 {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  padding-left: clamp(12px, 2.5vw, 25px);
 }
 .html-lesson-wrapper .office-section .legend div {
   position: absolute;
@@ -1020,37 +1018,20 @@ body {
 .html-lesson-wrapper .try-1 {
   font-family: "Noto Sans", sans-serif;
 }
-.html-lesson-wrapper .try-1 .table-wrapper-section {
-  margin-top: 10%;
+.html-lesson-wrapper .try-1 .conversation-wrapper .row:nth-child(2) .side-image .text {
+  font-size: clamp(9px, 3vw, 11px);
+  left: clamp(19px, 5vw, 23px);
+  bottom: clamp(48px, 13vw, 59px);
 }
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper {
-  width: 100%;
+.html-lesson-wrapper .try-1 .conversation-wrapper .row:nth-child(3) .side-image .text {
+  font-size: clamp(9px, 3vw, 14px);
+  right: 0;
+  top: 0;
 }
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper p {
-  margin: 0;
-}
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
-  padding-top: clamp(5px, 2.2vw, 6px);
-  padding-right: clamp(9px, 2.9vw, 15px);
-}
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper .table-img {
-  width: 28%;
-  text-align: right;
-  vertical-align: bottom;
-}
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: 3rem;
-}
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 28vw, 100%);
-  padding-left: 5%;
-}
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper .dialog .table tr td:nth-child(2) {
-  font-weight: 100;
-}
-.html-lesson-wrapper .try-1 .table-wrapper-section .table-wrapper .dialog .table tr td {
-  padding-bottom: clamp(8px, 1vw, 14px);
+.html-lesson-wrapper .try-1 .conversation-wrapper .row:nth-child(4) .side-image .text {
+  font-size: clamp(12px, 4vw, 17px);
+  right: clamp(9px, 3vw, 16px);
+  top: clamp(9px, 3vw, 12px);
 }
 .html-lesson-wrapper .try-2 {
   font-family: "Noto Sans", sans-serif;
@@ -1063,91 +1044,6 @@ body {
   border-radius: 50%;
   margin-top: -12.8%;
   left: -2%;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section {
-  margin-top: 10%;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper {
-  width: 100%;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper p {
-  margin: 0;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
-  padding-top: 5px;
-  padding-left: 10px;
-  width: 17px;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-img {
-  width: 50%;
-  text-align: left;
-  padding-right: 1%;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: clamp(1rem, 2vw, 12%);
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 50vw, 100%);
-  padding-left: 5%;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  font-size: clamp(10px, 3vw, 18px);
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options div:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ul {
-  list-style: none;
-  display: inline;
-  text-align: left;
-  -webkit-padding-start: 14px;
-          padding-inline-start: 14px;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ul li {
-  display: inline-block;
-  background-color: #e7f3fa;
-  font-weight: bold;
-  font-size: clamp(8px, 2vw, 17px);
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: 10px;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .options ul li.relative {
-  position: relative !important;
-}
-.html-lesson-wrapper .try-2 .table {
-  font-family: "Noto Sans", sans-serif;
-  border-collapse: collapse;
-}
-.html-lesson-wrapper .try-2 .table td {
-  font-size: clamp(10px, 3vw, 18px);
-}
-.html-lesson-wrapper .try-2 .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
-}
-.html-lesson-wrapper .try-2 .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-}
-.html-lesson-wrapper .try-2 .table td:nth-child(3) {
-  padding-bottom: 3%;
-}
-.html-lesson-wrapper .try-2 .table td.you {
-  padding-bottom: 3%;
 }
 .html-lesson-wrapper .try-3 .combinations {
   grid-template-columns: -webkit-min-content 1fr 1fr;
@@ -1179,35 +1075,61 @@ body {
 .html-lesson-wrapper .try-4 {
   font-family: "Noto Sans", sans-serif !important;
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section {
-  margin-top: 15%;
-  margin-left: 1%;
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(1) .side-image .text {
+  bottom: clamp(38px, 1vw, 35px);
+  right: clamp(23px, 1vw, 22px);
+  font-size: clamp(9px, 3vw, 15px);
+  text-align: center;
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper {
-  width: 100%;
-  margin-bottom: clamp(2rem, 3vh, 3rem) !important;
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(1) .side-image .text .rotate-1 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper p {
-  margin: 0;
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(1) .side-image .text .rotate-2 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
-  padding-top: clamp(5px, 2.2vw, 6px);
-  padding-right: clamp(9px, 2.9vw, 15px);
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(2) .side-image .text {
+  bottom: clamp(38px, 1vw, 35px);
+  right: clamp(36px, 3vw, 24px);
+  font-size: clamp(9px, 3vw, 15px);
+  text-align: center;
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-img {
-  width: 30%;
-  text-align: right;
-  vertical-align: bottom;
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(2) .side-image .text .rotate-1 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: clamp(1rem, 2vw, 3rem);
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(2) .side-image .text .rotate-2 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 25vw, 100%);
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(3) .side-image .text {
+  bottom: clamp(38px, 1vw, 35px);
+  right: clamp(23px, 1vw, 22px);
+  font-size: clamp(9px, 3vw, 15px);
+  text-align: center;
 }
-.html-lesson-wrapper .try-4 .table-wrapper-section .dialog table tr:first-child td:last-child {
-  padding-bottom: 1rem;
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(3) .side-image .text .rotate-1 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(3) .side-image .text .rotate-2 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+}
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(4) .side-image .text {
+  bottom: clamp(38px, 1vw, 35px);
+  right: clamp(23px, 1vw, 22px);
+  font-size: clamp(9px, 3vw, 15px);
+  text-align: center;
+}
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(4) .side-image .text .rotate-1 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.html-lesson-wrapper .try-4 .conversation-wrapper .row:nth-child(4) .side-image .text .rotate-2 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
 }
 .html-lesson-wrapper .act-1,
 .html-lesson-wrapper .act-2 {
@@ -1229,21 +1151,39 @@ body {
   letter-spacing: -2px;
 }
 .html-lesson-wrapper .act-1 .office-act-1 {
-  margin-top: 6%;
+  position: relative;
 }
-.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick .eng, .html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko .eng {
+.html-lesson-wrapper .act-1 .office-act-1 .nick-bubble {
+  position: absolute;
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 13px);
+  top: clamp(2.6em, 2vw, 134px);
+  left: clamp(4.6em, 4vw, 73px);
+  color: #2d356b;
+  font-size: clamp(9px, 2vw, 13px);
 }
-.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick .jap, .html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko .jap {
-  letter-spacing: -1px;
-  line-height: clamp(10px, 2.8vw, 1rem);
+.html-lesson-wrapper .act-1 .office-act-1 .nick-bubble .rotate-1 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  margin-bottom: 1em;
 }
-.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick {
-  margin-top: 12.4%;
-  left: 15.9%;
+.html-lesson-wrapper .act-1 .office-act-1 .nick-bubble .rotate-2 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
-.html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko {
-  margin-top: 18.4%;
-  right: 12.9%;
+.html-lesson-wrapper .act-1 .office-act-1 .akiko-bubble {
+  position: absolute;
+  font-weight: bold;
+  top: clamp(4em, 3vw, 134px);
+  right: clamp(4em, 3vw, 55px);
+  color: #2d356b;
+  font-size: clamp(9px, 2vw, 13px);
+}
+.html-lesson-wrapper .act-1 .office-act-1 .akiko-bubble .rotate-1 {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+.html-lesson-wrapper .act-1 .office-act-1 .akiko-bubble .rotate-2 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  margin-bottom: 1.3em;
 }

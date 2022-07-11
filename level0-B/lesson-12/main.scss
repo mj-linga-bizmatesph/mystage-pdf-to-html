@@ -944,6 +944,14 @@ body {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-b-12-t2bg1.svg);
+          .text{
+            right:0;
+            position:absolute;
+            color: #2d356b;
+            font-weight: 600;
+            font-size: clamp(12px, 2vw, 18px);
+
+          }
         }
       }
 
@@ -976,6 +984,14 @@ body {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-b-12-t2bg2.svg);
+          .text{
+            right:0;
+            position:absolute;
+            color: #2d356b;
+            font-weight: 600;
+            font-size: clamp(12px, 2vw, 18px);
+
+          }
         }
       }
 
@@ -1008,6 +1024,13 @@ body {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-b-12-t2bg3.svg);
+          .text{
+            right:0;
+            position:absolute;
+            color: #2d356b;
+            font-weight: 600;
+            font-size: clamp(12px, 2vw, 18px);
+          }
         }
       }
 
@@ -1040,6 +1063,14 @@ body {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-b-12-t2bg4.svg);
+          .text{
+            left: 15%;
+            top: 27%;
+            position: absolute;
+            color: #FFE200;
+            font-size: clamp(7px,2vw,10px);
+            font-weight: 600;
+          }
         }
       }
       .try-2-row-5 {
@@ -1065,6 +1096,13 @@ body {
           background-size: contain;
           background-repeat: no-repeat;
           background-image: url(#{$s3}/0-b-12-t2bg5.svg);
+          .text{
+            right:0;
+            position:absolute;
+            color: #2d356b;
+            font-weight: 600;
+            font-size: clamp(12px, 2vw, 18px);
+          }
         }
       }
     }

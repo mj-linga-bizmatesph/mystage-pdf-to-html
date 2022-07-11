@@ -950,6 +950,45 @@ body {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-13-act1bg.svg);
   font-family: "Noto Sans", sans-serif;
 }
+.html-lesson-wrapper .act-1 .act-1-content .conversation .nick-bubble {
+  position: absolute;
+  font-weight: bold;
+  top: clamp(4.6em, 2vw, 134px);
+  left: clamp(3em, 2vw, 73px);
+  color: #2d356b;
+  color: #2d356b;
+  font-size: clamp(9px, 2vw, 13px);
+}
+.html-lesson-wrapper .act-1 .act-1-content .conversation .nick-bubble .rotate-1 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  margin-bottom: 0.5em;
+}
+.html-lesson-wrapper .act-1 .act-1-content .conversation .nick-bubble .rotate-2 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+.html-lesson-wrapper .act-1 .act-1-content .conversation .akiko-bubble {
+  position: absolute;
+  font-weight: bold;
+  top: clamp(2.5em, 1vw, 110px);
+  right: clamp(2em, 1vw, 47px);
+  color: #2d356b;
+  font-size: clamp(8px, 2vw, 13px);
+}
+.html-lesson-wrapper .act-1 .act-1-content .conversation .akiko-bubble .rotate-1 {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+.html-lesson-wrapper .act-1 .act-1-content .conversation .akiko-bubble .rotate-2 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  margin-bottom: 0.1em;
+}
+.html-lesson-wrapper .act-1 .act-1-content .conversation .akiko-bubble .rotate-3 {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+}
 .html-lesson-wrapper .act-1 .act-1-content .converstation-text {
   margin-left: -22px;
   margin-top: 20px;

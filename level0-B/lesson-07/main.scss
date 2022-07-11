@@ -1070,8 +1070,8 @@ body {
         &:nth-child(1){
           .side-image{
             .text{
-              bottom: 2em;
-              right: 2em;
+              bottom: clamp(34px,1vw,35px);
+              right: clamp(49px,1vw,45px);
             }
           }
         }

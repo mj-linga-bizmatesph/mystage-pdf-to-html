@@ -44,6 +44,11 @@ p {
   white-space: nowrap;
 }
 
+.html-lesson-wrapper .table-responsive {
+  width: 100%;
+  overflow: auto;
+}
+
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 2em;
@@ -238,7 +243,7 @@ p {
 
 .html-lesson-wrapper .review-content .sub-text {
   font-family: "Trebuchet MS" !important;
-  margin-bottom: 2%;
+  margin-bottom: 1em;
   line-height: normal;
 }
 
@@ -256,6 +261,10 @@ p {
 .html-lesson-wrapper .review-content ul li p:nth-child(3) {
   color: #2078a0;
   font-weight: bold;
+}
+
+.html-lesson-wrapper .review-content.part-2 {
+  margin-top: 3em !important;
 }
 
 .html-lesson-wrapper .see-content {

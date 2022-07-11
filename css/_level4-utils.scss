@@ -43,6 +43,10 @@ p {
   .no-wrap {
     white-space: nowrap;
   }
+  .table-responsive {
+    width: 100%;
+    overflow: auto;
+  }
   .program-rank {
     position: absolute;
     top: 2em;
@@ -235,7 +239,7 @@ p {
 
     .sub-text {
       font-family: $trebuchet !important;
-      margin-bottom: 2%;
+      margin-bottom: 1em;
       line-height: normal;
     }
 
@@ -254,6 +258,10 @@ p {
           font-weight: bold;
         }
       }
+    }
+
+    &.part-2 {
+      margin-top: 3em !important;
     }
   }
 

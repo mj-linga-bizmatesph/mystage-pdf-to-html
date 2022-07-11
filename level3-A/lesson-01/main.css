@@ -36,6 +36,10 @@ body {
   color: #ffffff;
 }
 
+.html-lesson-wrapper main {
+  position: relative;
+}
+
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,23 +56,19 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: 0;
-  top: -0.4em;
+  left: -10.5em;
+  top: -0.2em;
   color: #ffffff;
   text-align: center;
   font-weight: bold;
   padding-top: 0.3em;
-  font-size: clamp(9px, 2.4vw, 21px);
+  font-size: clamp(11px, 2.6vw, 21px);
   padding-left: 0.4em;
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-section-arrow.png");
-  background-size: 100%;
+  background-size: 105%;
   background-repeat: no-repeat;
   height: 3em;
-  width: 26%;
-}
-
-.html-lesson-wrapper .section.try, .html-lesson-wrapper .section.act {
-  top: -0.4em;
+  width: 9.5em;
 }
 
 .html-lesson-wrapper ul {
@@ -83,8 +83,8 @@ body {
 
 .html-lesson-wrapper aside {
   position: absolute;
-  left: 8px;
-  top: calc(min(24vw, 175px));
+  left: 0.5em;
+  top: 4em;
   width: 11em;
   font-size: clamp(7px, 1.8vw, 15px);
   z-index: 999;
@@ -96,10 +96,9 @@ body {
 
 .html-lesson-wrapper aside .sub-text {
   color: #ffffff;
-  font-size: clamp(11px, 2vw, 18px);
-  padding: 5px 11px 5px 12px;
+  font-size: clamp(9px, 2vw, 18px);
+  padding: 0.5em 1em 0.5em 1em;
   width: 100%;
-  max-width: 164px;
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-title.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -107,15 +106,20 @@ body {
 
 .html-lesson-wrapper aside .text {
   margin-top: 6px;
-  padding: 7px 7px 16px 12px;
-  width: 100%;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 101%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 131px;
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.html-lesson-wrapper aside .text::after {
+  content: '';
+  display: block;
+  height: 2em;
 }
 
 .html-lesson-wrapper aside .red {
@@ -126,16 +130,16 @@ body {
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content {
   position: relative;
-  padding-left: 13em;
+  margin-left: 13em;
   padding-right: 1.5em;
   padding-top: 0.5em;
   font-size: clamp(9px, 2.1vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
   border-radius: 10px;
-  width: 98%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-right: 0.5em;
 }
 
 .html-lesson-wrapper .see-content {

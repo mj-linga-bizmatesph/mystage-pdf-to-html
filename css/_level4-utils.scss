@@ -174,7 +174,7 @@ p {
 
     td {
       text-align: left;
-      padding: 0.1em 0.8em;
+      padding: 0.2em 0.8em;
       background-color: #f2f2f2;
       vertical-align: top;
     }
@@ -338,6 +338,7 @@ p {
   }
   .act-content {
     line-height: 1.8em;
+    padding-left: 9.2em;
   }
 
   footer {
@@ -366,6 +367,10 @@ p {
     .try-content,
     .review-content {
       padding-left: 8.5em;
+    }
+
+    .act-content {
+      padding-left: 8.4em;
     }
   }
 }

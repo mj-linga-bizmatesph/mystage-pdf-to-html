@@ -178,7 +178,7 @@ p {
 
 .html-lesson-wrapper table td {
   text-align: left;
-  padding: 0.1em 0.8em;
+  padding: 0.2em 0.8em;
   background-color: #f2f2f2;
   vertical-align: top;
 }
@@ -349,6 +349,7 @@ p {
 
 .html-lesson-wrapper .act-content {
   line-height: 1.8em;
+  padding-left: 9.2em;
 }
 
 .html-lesson-wrapper footer {
@@ -377,5 +378,8 @@ p {
   .html-lesson-wrapper .try-content,
   .html-lesson-wrapper .review-content {
     padding-left: 8.5em;
+  }
+  .html-lesson-wrapper .act-content {
+    padding-left: 8.4em;
   }
 }

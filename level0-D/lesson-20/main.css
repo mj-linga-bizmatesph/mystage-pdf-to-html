@@ -236,17 +236,8 @@ body {
   margin: clamp(20px, 12vw, 70px) 0 clamp(20px, 17vw, 7rem);
 }
 
-.html-lesson-wrapper .act-content .act-1-content ul {
-  line-height: 1.8;
-  list-style: none;
-  font-family: "Trebuchet MS";
-  font-size: clamp(8.5px, 2.4vw, 14px);
+.html-lesson-wrapper .act-content .act-1-content .row {
   font-weight: bold;
-}
-
-.html-lesson-wrapper .act-content .act-1-content ul li::before {
-  padding-right: 1em;
-  content: attr(data-value) " ";
 }
 
 .html-lesson-wrapper .act-content .act-1-content .row p {
@@ -278,7 +269,8 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 {
-  font-size: clamp(10px, 2.2vw, 16px);
+  font-weight: bold;
+  font-size: clamp(10px, 2.2vw, 15px);
   line-height: 1.8;
   position: absolute;
   margin: 12% 0 0 17%;
@@ -286,21 +278,24 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-2 {
   width: 33em;
-  font-size: clamp(10px, 2.2vw, 16px);
+  font-weight: bold;
+  font-size: clamp(10px, 2.2vw, 15px);
   line-height: 1.8;
   position: absolute;
   margin: 13% 0 0 14%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-3 {
+  width: 24em;
   font-size: clamp(10px, 2.2vw, 16px);
   line-height: 1.5;
   position: absolute;
-  margin: 10% 0 0 16%;
+  margin: 10% 0 0 15%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-4 {
-  font-size: clamp(10px, 2.2vw, 16px);
+  font-weight: bold;
+  font-size: clamp(10px, 2.2vw, 15px);
   line-height: 1.8;
   position: absolute;
   margin: 10% 0 0 19%;
@@ -311,7 +306,8 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-5 {
-  font-size: clamp(10px, 2.2vw, 16px);
+  font-weight: bold;
+  font-size: clamp(10px, 2.2vw, 15px);
   width: 20em;
   line-height: 1.8;
   position: absolute;
@@ -320,7 +316,7 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .eng {
   font-family: "Trebuchet MS";
-  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-size: clamp(10px, 2.2vw, 15px);
   font-weight: bold;
 }
 

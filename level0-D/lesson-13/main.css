@@ -311,7 +311,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece2 {
-  font-family: "Noto sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   width: 7em;
   height: 1em;
@@ -332,7 +332,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece3 {
-  font-family: "Noto sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   width: 7em;
   height: 1em;
@@ -352,7 +352,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .red-piece1 {
-  font-family: "Noto sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   width: 7em;
   height: 1em;
@@ -373,7 +373,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece1 {
-  font-family: "Noto sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   width: 11em;
   height: 1em;
@@ -394,7 +394,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece2 {
-  font-family: "Noto sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   width: 7em;
   height: 1em;
@@ -409,7 +409,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .blue-piece3 {
-  font-family: "Noto sans";
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   width: 12em;
   height: 1em;
@@ -1433,7 +1433,7 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .akiko-speech-1 {
   position: absolute;
-  margin: 74.5% 0 0 18%;
+  margin: 74.5% 0 0 17%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .eng {
@@ -1444,14 +1444,14 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .eng-1 {
   font-family: "Trebuchet MS";
-  font-size: clamp(5px, 1.7vw, 10px);
+  font-size: clamp(3px, 1.7vw, 10px);
   font-weight: bold;
   color: #2d356b;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .jpn {
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(6px, 1.9vw, 11px);
+  font-size: clamp(2px, 1.5vw, 8px);
   color: #7f8288;
 }
 
@@ -1503,7 +1503,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .mt {
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 .html-lesson-wrapper .act-content.act-1, .html-lesson-wrapper .act-content.act-2 {

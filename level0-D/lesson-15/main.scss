@@ -1016,6 +1016,7 @@ body {
         font-weight: bold;
         li::before {
           content: attr(data-value) ' ';
+          margin-right: 1em;
       }
     }
   }

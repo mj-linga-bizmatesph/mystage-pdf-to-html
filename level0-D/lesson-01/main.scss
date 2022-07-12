@@ -701,19 +701,20 @@ body {
           position: relative;
 
           .size-a {
-            width: clamp(200px, 47vw, 283.57px);
+            width: 18em;
           }
 
           .size-b {
-            width: clamp(245px, 63.5vw, 384.4px);
+            height: 10em;
+            width: 22em;
           }
 
           .text-20 {
-            font-size: $fs-20;
+            font-size: clamp(13px, 4.2vw, 20px);
           }
 
           .text-16 {
-            font-size: $fs-16;
+            font-size: clamp(10px, 3.5vw, 16px);
           }
 
           .president {
@@ -739,58 +740,57 @@ body {
 
           .upper-1 {
             position: absolute;
-            margin: clamp(1.2rem, 5%, 2rem) 0 0 clamp(6.6rem, 30%, 9.5rem);
+            margin: clamp(2.2rem, 5%, 2rem) 0 0 clamp(9.6rem, 32%, 9.5rem);
           }
 
           .lower-1 {
             position: absolute;
-            margin: clamp(3rem, 14%, 5rem) 0 0 clamp(7rem, 30%, 10rem);
+            margin: clamp(5rem, 14%, 5rem) 0 0 clamp(10rem, 30%, 10rem);
             transform: rotate(13.8deg);
           }
 
           .lower-2 {
             position: absolute;
-            margin: clamp(2.8rem, 12.5%, 4rem) 0 0 clamp(5.5rem, 25%, 10rem);
+            margin: clamp(4rem, 12.5%, 4rem) 0 0 clamp(8.5rem, 25%, 10rem);
             transform: rotate(9.29deg);
           }
 
           .upper-3 {
             position: absolute;
-            margin: clamp(1rem, 5%, 1.3rem) 0 0 clamp(10.5rem, 50%, 16.8rem);
+            margin: clamp(2rem, 6%, 4.3rem) 0 0 clamp(10.5rem, 63%, 14rem);
           }
 
           .lower-3 {
             position: absolute;
-            margin: clamp(1.5rem, 11.5%, 3.6rem) 0 0 clamp(6.6rem, 46%, 14.8rem);
+            margin: clamp(4.5rem, 15.5%, 4.6rem) 0 0 clamp(6.6rem, 61%, 13.5rem);
             transform: rotate(9.29deg);
           }
 
           .upper-4 {
             position: absolute;
-            margin: clamp(1rem, 7%, 2rem) 0 0 clamp(6.5rem, 28%, 16.8rem);
+            margin: clamp(1rem, 8%, 2rem) 0 0 clamp(9.5rem, 28%, 16.8rem);
             transform: rotate(11.92deg) !important;
           }
 
           .lower-4 {
             position: absolute;
-            margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0
-              clamp(6.1rem, 26.2%, 14.8rem);
+            margin: clamp(3.4rem, 17.5%, 4.7rem) 0 0 clamp(8.1rem, 26.2%, 14.8rem);
             transform: rotate(-4deg) !important;
           }
 
           .upper-5 {
             position: absolute;
-            margin: clamp(1rem, 5%, 2rem) 0 0 clamp(11rem, 55%, 16.8rem);
+            margin: clamp(1rem, 9%, 2rem) 0 0 clamp(11rem, 67%, 15rem);
           }
 
           .lower-5 {
             position: absolute;
-            margin: clamp(2rem, 12%, 4.7rem) 0 0 clamp(10.2rem, 50%, 16.2rem);
+            margin: clamp(2rem, 20%, 4.7rem) 0 0 clamp(10.2rem, 67%, 15rem);
             transform: rotate(9.29deg);
           }
 
           .clockwise {
-            transform: rotate(-15deg);
+            transform: rotate(-12deg);
           }
           .counter-clockwise {
             transform: rotate(8deg);

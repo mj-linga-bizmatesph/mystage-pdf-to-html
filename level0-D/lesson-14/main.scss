@@ -345,11 +345,11 @@ body {
       }
       .red-piece1 {
         font-weight: bold;
-        font-family: "Noto Sans", sans-serif;
-        font-size: clamp(11px, 1.8vw, 16px);
+        font-family: $noto-sans;
+        font-size: clamp(10px, 2.2vw, 15px);
         background-color: #ffb3b0;
         height: 2em;
-        width: 16em;
+        width: 20em;
         border-radius: 3px;
         text-align: center;
         padding: 2%;
@@ -357,12 +357,12 @@ body {
 
       .yellow-piece1 { 
         font-weight: bold;
-        font-family: "Noto Sans", sans-serif;
+        font-family: $noto-sans;
         text-align: center;
         height: 54%;
-        width: 10em;
+        width: 12em;
         margin-left: clamp(4px, 2vw, 7px);
-        font-size: clamp(10px, 2.2vw, 16px);
+        font-size: clamp(10px, 2.2vw, 15px);
         background: url(#{$s3}/0-C-12-i-piece.png);
         background-position: center;
         background-size: cover;
@@ -372,9 +372,9 @@ body {
 
       .yellow-piece2 { 
         font-weight: bold;
-        font-family: "Noto Sans", sans-serif;
+        font-family: $noto-sans;
         text-align: center;
-        height: 53%;
+        height: 71%;
         width: 12em;
         margin-left: clamp(4px, 2vw, 7px);
         font-size: clamp(10px, 2.2vw, 16px);
@@ -382,13 +382,15 @@ body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 5%;
+        padding-top: 1em;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
       }
 
       .blue-piece {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
-        width: 17em;
+        width: 19em;
         height: 1.3em;
         background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
         text-align: center;
@@ -396,7 +398,8 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         padding: 5%;
-        font-size: clamp(10px, 2.2vw, 16px);
+        font-size: clamp(09px, 2.1vw, 15px);
+        
       }
       .blue-piece1 {
         width: 98%;
@@ -446,7 +449,7 @@ body {
         }
         .column-one {
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
         }
       }
 

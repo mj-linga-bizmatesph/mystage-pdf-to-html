@@ -120,38 +120,20 @@ body {
     margin-top: clamp(1px, 1vw, 3px);
 
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -259,18 +241,8 @@ body {
     }
 
     .act-1-content {
-      ul{
-        line-height: 1.8;
-        list-style: none;
-        font-family: $text-font;
-        font-size: $fs-14;
-        font-weight: bold;
-        li::before {
-          padding-right: 1em;
-          content: attr(data-value) ' ';
-      }
-    }
       .row {
+        font-weight: bold;
         p {
           margin-block-start: 0em !important;
           margin-block-end: 0em !important;
@@ -297,7 +269,8 @@ body {
       }
 
       .speech-bubble-1 {
-        font-size: clamp(10px, 2.2vw, 16px);
+        font-weight: bold;
+        font-size: clamp(10px, 2.2vw, 15px);
         line-height: 1.8;
         position: absolute;
         margin: 12% 0 0 17%;
@@ -305,31 +278,35 @@ body {
 
       .speech-bubble-2 {
         width: 33em;
-        font-size: clamp(10px, 2.2vw, 16px);
+        font-weight: bold;
+        font-size: clamp(10px, 2.2vw, 15px);
         line-height: 1.8;
         position: absolute;
         margin: 13% 0 0 14%;
       }
 
       .speech-bubble-3 {
+        width: 24em;
         font-size: clamp(10px, 2.2vw, 16px);
         line-height: 1.5;
         position: absolute;
-        margin: 10% 0 0 16%;
+        margin: 10% 0 0 15%;
       }
 
       .speech-bubble-4 {
-        font-size: clamp(10px, 2.2vw, 16px);
+        font-weight: bold;
+        font-size: clamp(10px, 2.2vw, 15px);
         line-height: 1.8;
         position: absolute;
         margin: 10% 0 0 19%;
       }
-      .tv{
+      .tv {
         width: 10em;
       }
 
       .speech-bubble-5 {
-        font-size: clamp(10px, 2.2vw, 16px);
+        font-weight: bold;
+        font-size: clamp(10px, 2.2vw, 15px);
         width: 20em;
         line-height: 1.8;
         position: absolute;
@@ -338,7 +315,7 @@ body {
 
       .eng {
         font-family: $text-font;
-        font-size: $fs-14;
+        font-size: clamp(10px, 2.2vw, 15px);
         font-weight: bold;
       }
 

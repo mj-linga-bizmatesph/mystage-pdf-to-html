@@ -332,7 +332,7 @@ body {
         
       }
       .red-piece2 {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
         width: 7em;
         height: 1em;
@@ -349,7 +349,7 @@ body {
         }
       }
       .red-piece3 {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
         width: 7em;
         height: 1em;
@@ -366,7 +366,7 @@ body {
         }
       }
       .red-piece1 {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
         width: 7em;
         height: 1em;
@@ -385,7 +385,7 @@ body {
 
 
       .blue-piece1 {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
         width: 11em;
         height: 1em;
@@ -402,7 +402,7 @@ body {
         }
       }
       .blue-piece2 {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
         width: 7em;
         height: 1em;
@@ -416,7 +416,7 @@ body {
         font-size: clamp(10px, 2.2vw, 16px);
       }
       .blue-piece3 {
-        font-family: "Noto sans";
+        font-family: $noto-sans;
         font-weight: bold;
         width: 12em;
         height: 1em;
@@ -1354,7 +1354,7 @@ body {
 
       .akiko-speech-1 {
         position: absolute;
-        margin: 74.5% 0 0 18%;
+        margin: 74.5% 0 0 17%;
       }
 
       .eng {
@@ -1365,14 +1365,14 @@ body {
 
       .eng-1 {
         font-family: $text-font;
-        font-size: $fs-10;
+        font-size: clamp(3px, 1.7vw, 10px);
         font-weight: bold;
         color: #2d356b;
       }
 
       .jpn {
         font-family: $noto-sans;
-        font-size: $fs-11;
+        font-size: clamp(2px, 1.5vw, 8px);
         color: #7f8288;
       }
 
@@ -1420,7 +1420,7 @@ body {
       }
 
       .mt {
-        margin-top: 5px;
+        margin-top: 1px;
       }
     }
 

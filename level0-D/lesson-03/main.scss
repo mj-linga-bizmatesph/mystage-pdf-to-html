@@ -765,14 +765,19 @@ body {
     .try-3-content {
       margin: clamp(3rem, 11vw, 6rem) 0 clamp(20px, 17vw, 7rem);
       .blue-section {
-        font-size:$fs-20 ;
+        font-family: $noto-sans;
+        font-size: $fs-16;
         margin-top: 2em;
-        border: 2px solid #1287CD;
+        border: 2px solid #1287cd;
         border-radius: 8px;
-        background-color: #E7F3FA;
+        background-color: #e7f3fa;
         height: fit-content;
-        padding: 2em;
+        padding-left: 1.5em;
+        padding-top: 1em;
+        padding-right: 1em;
+
         .row {
+          display: flex;
           margin-bottom: 1em;
           p {
             display: inline-block;

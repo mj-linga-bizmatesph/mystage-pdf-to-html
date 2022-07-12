@@ -796,9 +796,14 @@ body {
       }
 
       .convo-3 {
-        width: 23em;
+        width: 22em;
         position: absolute;
-        margin: 10% 0 0 13%;
+        margin: 9% 0 0 16%;
+        @media only screen and (max-width: 900px){
+        width: 14em;
+        position: absolute;
+        margin: 9% 0 0 16%;
+        }
       }
 
       .convo-4 {

@@ -717,19 +717,20 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .size-a {
-  width: clamp(200px, 47vw, 283.57px);
+  width: 18em;
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .size-b {
-  width: clamp(245px, 63.5vw, 384.4px);
+  height: 10em;
+  width: 22em;
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .text-20 {
-  font-size: clamp(13px, 4vw, 20px);
+  font-size: clamp(13px, 4.2vw, 20px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .text-16 {
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(10px, 3.5vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .president {
@@ -755,64 +756,64 @@ body {
 
 .html-lesson-wrapper .try-content .try-2-content li .image .upper-1 {
   position: absolute;
-  margin: clamp(1.2rem, 5%, 2rem) 0 0 clamp(6.6rem, 30%, 9.5rem);
+  margin: clamp(2.2rem, 5%, 2rem) 0 0 clamp(9.6rem, 32%, 9.5rem);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .lower-1 {
   position: absolute;
-  margin: clamp(3rem, 14%, 5rem) 0 0 clamp(7rem, 30%, 10rem);
+  margin: clamp(5rem, 14%, 5rem) 0 0 clamp(10rem, 30%, 10rem);
   -webkit-transform: rotate(13.8deg);
           transform: rotate(13.8deg);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .lower-2 {
   position: absolute;
-  margin: clamp(2.8rem, 12.5%, 4rem) 0 0 clamp(5.5rem, 25%, 10rem);
+  margin: clamp(4rem, 12.5%, 4rem) 0 0 clamp(8.5rem, 25%, 10rem);
   -webkit-transform: rotate(9.29deg);
           transform: rotate(9.29deg);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .upper-3 {
   position: absolute;
-  margin: clamp(1rem, 5%, 1.3rem) 0 0 clamp(10.5rem, 50%, 16.8rem);
+  margin: clamp(2rem, 6%, 4.3rem) 0 0 clamp(10.5rem, 63%, 14rem);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .lower-3 {
   position: absolute;
-  margin: clamp(1.5rem, 11.5%, 3.6rem) 0 0 clamp(6.6rem, 46%, 14.8rem);
+  margin: clamp(4.5rem, 15.5%, 4.6rem) 0 0 clamp(6.6rem, 61%, 13.5rem);
   -webkit-transform: rotate(9.29deg);
           transform: rotate(9.29deg);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .upper-4 {
   position: absolute;
-  margin: clamp(1rem, 7%, 2rem) 0 0 clamp(6.5rem, 28%, 16.8rem);
+  margin: clamp(1rem, 8%, 2rem) 0 0 clamp(9.5rem, 28%, 16.8rem);
   -webkit-transform: rotate(11.92deg) !important;
           transform: rotate(11.92deg) !important;
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .lower-4 {
   position: absolute;
-  margin: clamp(3.4rem, 15.5%, 4.7rem) 0 0 clamp(6.1rem, 26.2%, 14.8rem);
+  margin: clamp(3.4rem, 17.5%, 4.7rem) 0 0 clamp(8.1rem, 26.2%, 14.8rem);
   -webkit-transform: rotate(-4deg) !important;
           transform: rotate(-4deg) !important;
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .upper-5 {
   position: absolute;
-  margin: clamp(1rem, 5%, 2rem) 0 0 clamp(11rem, 55%, 16.8rem);
+  margin: clamp(1rem, 9%, 2rem) 0 0 clamp(11rem, 67%, 15rem);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .lower-5 {
   position: absolute;
-  margin: clamp(2rem, 12%, 4.7rem) 0 0 clamp(10.2rem, 50%, 16.2rem);
+  margin: clamp(2rem, 20%, 4.7rem) 0 0 clamp(10.2rem, 67%, 15rem);
   -webkit-transform: rotate(9.29deg);
           transform: rotate(9.29deg);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .clockwise {
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .counter-clockwise {

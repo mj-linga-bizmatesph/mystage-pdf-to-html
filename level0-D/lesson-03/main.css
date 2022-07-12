@@ -789,18 +789,24 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-3-content .blue-section {
-  font-size: clamp(13px, 4vw, 20px);
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(11px, 2.7vw, 16px);
   margin-top: 2em;
-  border: 2px solid #1287CD;
+  border: 2px solid #1287cd;
   border-radius: 8px;
-  background-color: #E7F3FA;
+  background-color: #e7f3fa;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 2em;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  padding-right: 1em;
 }
 
 .html-lesson-wrapper .try-content .try-3-content .blue-section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1em;
 }
 

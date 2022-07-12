@@ -27,6 +27,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.html-lesson-wrapper .spacer1 {
+  margin-top: 1%;
+}
+
 .html-lesson-wrapper hr {
   border-top: 1px solid #dbdcdc;
 }
@@ -633,22 +637,31 @@ body {
   margin-bottom: 3.8%;
 }
 
+.html-lesson-wrapper .try-content,
+.html-lesson-wrapper .table-wrapper-section,
 .html-lesson-wrapper .part-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
 
+.html-lesson-wrapper .try-content .arrow.part,
+.html-lesson-wrapper .table-wrapper-section .arrow.part,
 .html-lesson-wrapper .part-content .arrow.part {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
 }
 
+.html-lesson-wrapper .try-content .ul-main,
+.html-lesson-wrapper .table-wrapper-section .ul-main,
 .html-lesson-wrapper .part-content .ul-main {
   list-style-type: none;
   font-size: clamp(10px, 2.68vw, 18px);
   margin-bottom: 3rem;
+  font-family: "Noto Sans", sans-serif;
 }
 
+.html-lesson-wrapper .try-content .ul-main li,
+.html-lesson-wrapper .table-wrapper-section .ul-main li,
 .html-lesson-wrapper .part-content .ul-main li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,26 +670,36 @@ body {
 }
 
 @media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content .ul-main li,
+  .html-lesson-wrapper .table-wrapper-section .ul-main li,
   .html-lesson-wrapper .part-content .ul-main li {
     line-height: 1.3rem;
   }
 }
 
 @media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content .ul-main li,
+  .html-lesson-wrapper .table-wrapper-section .ul-main li,
   .html-lesson-wrapper .part-content .ul-main li {
     line-height: 1rem;
   }
 }
 
+.html-lesson-wrapper .try-content .ul-main li div,
+.html-lesson-wrapper .table-wrapper-section .ul-main li div,
 .html-lesson-wrapper .part-content .ul-main li div {
   margin-left: 3%;
   width: 400px;
 }
 
+.html-lesson-wrapper .try-content .ul-main li u,
+.html-lesson-wrapper .table-wrapper-section .ul-main li u,
 .html-lesson-wrapper .part-content .ul-main li u {
   color: #1287cd;
 }
 
+.html-lesson-wrapper .try-content li::before,
+.html-lesson-wrapper .table-wrapper-section li::before,
 .html-lesson-wrapper .part-content li::before {
   content: attr(data-value) " ";
   width: clamp(25px, 32vw, 75px);
@@ -1001,6 +1024,7 @@ body {
   list-style-type: none;
   font-size: clamp(11px, 2.7vw, 18px);
   margin-bottom: 3rem;
+  margin-left: clamp(-29px, -10vw, 0px);
 }
 
 .html-lesson-wrapper .act-content .ul1 li {

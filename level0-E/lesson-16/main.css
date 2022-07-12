@@ -711,13 +711,13 @@ body {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .speech {
   padding-left: 0.1vw;
   width: 100%;
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content {
@@ -783,7 +783,7 @@ body {
 
 .html-lesson-wrapper .try-content .try-3-content .math-area .row .text {
   color: #1287cd;
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   font-weight: bold;
 }
 
@@ -810,7 +810,7 @@ body {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   color: #1287cd;
   font-weight: bold;
   padding-left: 1vw;
@@ -849,7 +849,7 @@ body {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-4-content li .speech {
@@ -973,7 +973,7 @@ body {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   color: #1287cd;
   font-weight: bold;
 }
@@ -1011,7 +1011,7 @@ body {
 .html-lesson-wrapper .try-content .try-3-content li .person {
   text-align: right;
   font-weight: bold;
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 15%;
 }
 
@@ -1117,7 +1117,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
-  font-size: clamp(9.5px, 2.2vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 85%;
 }
 

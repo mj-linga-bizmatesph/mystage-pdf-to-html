@@ -599,6 +599,7 @@ body {
       list-style-type: none;
       font-size: clamp(10px, 2.68vw, 18px);
       margin-bottom: 3rem;
+      font-family: $noto-sans;
 
       li {
         display: flex;

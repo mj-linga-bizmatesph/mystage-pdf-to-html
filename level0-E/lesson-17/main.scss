@@ -244,6 +244,7 @@ body {
     .title {
       font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
+      margin-right: 4%;
     }
     .sub-title {
       font-size: $fs-13;
@@ -725,13 +726,13 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
           padding-left: 1vw;
           width: 100%;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
       }
     }
@@ -824,7 +825,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -859,7 +860,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -964,7 +965,7 @@ body {
       }
 
       .speech {
-        font-size: $fs-16;
+        font-size: $fs-18;
         width: 85%;
       }
     }

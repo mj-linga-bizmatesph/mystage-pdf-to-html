@@ -183,14 +183,14 @@ body {
   }
   .eng {
     font-weight: bold;
-    font-size: $fs-14;
+    font-size: clamp(8px, 2.2vw, 13px);
     font-family: $text-font;
   }
   .jap {
     letter-spacing: -0.5px;
     color: $subtext-color;
     font-family: $noto-sans;
-    font-size: $fs-11;
+    font-size: clamp(5px, 1.6vw, 10px);
   }
   .step {
     margin-bottom: clamp(2rem, 9vw, 3rem);
@@ -242,6 +242,7 @@ body {
     .title {
       font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
+      margin-right: 4%;
     }
     .sub-title {
       font-size: $fs-13;
@@ -1044,21 +1045,30 @@ body {
       .speech-bubble {
         position: absolute;
         margin: 13% 0 0 31%;
+        margin-top: clamp(25px, 10vw, 68px);
+        margin-left: clamp(70px, 23vw, 161px);
       }
 
       .speech-bubble-1 {
         position: absolute;
         margin: 13% 0 0 39%;
+        margin-top: 11%;
+        margin-left: clamp(40px, 35vw, 207px);
       }
 
       .speech-bubble-2 {
         position: absolute;
-        margin: 13% 0 0 26%;
+        margin-left: clamp(60px, 18.5vw, 135px);
+        margin-top: clamp(18px, 11vw, 65px);
+
+        .eng {
+          width: clamp(140px, 60vw, 345px);
+        }
       }
 
       .speech-bubble-3 {
         position: absolute;
-        margin: 13% 0 0 36%;
+        margin: 10% 0 0 33%;
       }
 
       li {
@@ -1092,13 +1102,13 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
           padding-left: 0.5vw;
           width: 85%;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
       }
     }
@@ -1219,7 +1229,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1376,7 +1386,7 @@ body {
           font-size: clamp(12px, 3.5vw, 18px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1477,7 +1487,7 @@ body {
       }
 
       .speech {
-        font-size: $fs-16;
+        font-size: $fs-18;
         width: 85%;
       }
     }

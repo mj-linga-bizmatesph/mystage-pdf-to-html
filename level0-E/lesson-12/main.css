@@ -177,7 +177,7 @@ body {
 
 .html-lesson-wrapper .eng {
   font-weight: bold;
-  font-size: clamp(8.5px, 2.4vw, 14px);
+  font-size: clamp(8px, 2.2vw, 13px);
   font-family: "Trebuchet MS";
 }
 
@@ -185,7 +185,7 @@ body {
   letter-spacing: -0.5px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(6px, 1.9vw, 11px);
+  font-size: clamp(5px, 1.6vw, 10px);
 }
 
 .html-lesson-wrapper .step {
@@ -242,6 +242,7 @@ body {
 .html-lesson-wrapper .instructions .title {
   font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
+  margin-right: 4%;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
@@ -1122,21 +1123,30 @@ body {
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble {
   position: absolute;
   margin: 13% 0 0 31%;
+  margin-top: clamp(25px, 10vw, 68px);
+  margin-left: clamp(70px, 23vw, 161px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-1 {
   position: absolute;
   margin: 13% 0 0 39%;
+  margin-top: 11%;
+  margin-left: clamp(40px, 35vw, 207px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-2 {
   position: absolute;
-  margin: 13% 0 0 26%;
+  margin-left: clamp(60px, 18.5vw, 135px);
+  margin-top: clamp(18px, 11vw, 65px);
+}
+
+.html-lesson-wrapper .try-content .try-2-content .speech-bubble-2 .eng {
+  width: clamp(140px, 60vw, 345px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-3 {
   position: absolute;
-  margin: 13% 0 0 36%;
+  margin: 10% 0 0 33%;
 }
 
 .html-lesson-wrapper .try-content .try-2-content li {
@@ -1173,13 +1183,13 @@ body {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .speech {
   padding-left: 0.5vw;
   width: 85%;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content {
@@ -1311,7 +1321,7 @@ body {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-4-content li .speech {
@@ -1474,7 +1484,7 @@ body {
   font-size: clamp(12px, 3.5vw, 18px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 15%;
 }
 
@@ -1576,7 +1586,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 85%;
 }
 

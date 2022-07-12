@@ -116,6 +116,7 @@ body {
     border-radius: clamp(10px, 1vw, 21px);
     padding: clamp(0.8rem, 3.5vw, 2rem) clamp(1rem, 2vw, 1rem);
     position: relative !important;
+    font-size: clamp(12px, 3.5vw, 18px);
 
     ol {
       margin: 0;
@@ -1031,7 +1032,8 @@ body {
         }
       }
       .blue-box {
-        width: 460px;
+        width: 462px;
+        font-size: clamp(10.5px, 2.7vw, 16px);
       }
 
       li::before {
@@ -1055,27 +1057,27 @@ body {
 
       .speech-bubble {
         position: absolute;
-        margin: 39% 0 0 6%;
+        margin: 37% 0 0 6%;
       }
 
       .speech-bubble-1 {
         position: absolute;
-        margin: 39% 0 0 21%;
+        margin: 37% 0 0 21%;
       }
 
       .speech-bubble-2 {
         position: absolute;
-        margin: 40% 0 0 24%;
+        margin: 37% 0 0 27%;
       }
 
       .speech-bubble-3 {
         position: absolute;
-        margin: 39.5% 0 0 15%;
+        margin: 37.5% 0 0 15%;
       }
 
       .speech-bubble-4 {
         position: absolute;
-        margin: 42% 0 0 15%;
+        margin: 40% 0 0 15%;
       }
 
       li {
@@ -1109,13 +1111,13 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
       }
     }
@@ -1200,7 +1202,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -1236,7 +1238,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1357,7 +1359,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -1392,7 +1394,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1498,7 +1500,7 @@ body {
 
       .speech {
         width: 85%;
-        font-size: $fs-16;
+        font-size: $fs-18;
       }
     }
 

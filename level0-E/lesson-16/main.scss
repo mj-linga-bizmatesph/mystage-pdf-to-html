@@ -674,13 +674,13 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
           padding-left: 0.1vw;
           width: 100%;
-          font-size: clamp(10px, 3vw, 16px);
+          font-size: clamp(10px, 3vw, 18px);
         }
       }
     }
@@ -737,7 +737,7 @@ body {
 
           .text {
             color: $primary-blue;
-            font-size: $fs-16;
+            font-size: $fs-18;
             font-weight: bold;
           }
 
@@ -765,7 +765,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -801,7 +801,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -922,7 +922,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -957,7 +957,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1062,7 +1062,7 @@ body {
       }
 
       .speech {
-        font-size: $fs-16;
+        font-size: $fs-18;
         width: 85%;
       }
     }

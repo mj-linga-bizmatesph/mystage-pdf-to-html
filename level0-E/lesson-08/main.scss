@@ -509,6 +509,7 @@ body {
           left: 14%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
+        margin: 12% 0 0 0%;
       }
       .image-3 {
         margin-top: clamp(30px, 8vw, 50px);
@@ -722,6 +723,46 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(35px, 12vw, 70px);
+
+      .ul1 {
+        list-style-type: none;
+        font-size: clamp(10.8px, 2.8vw, 18px);
+        color: $primary-blue;
+        margin-left: clamp(-65px, -4vw, -28px);
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 551px) {
+          line-height: 1.3rem;
+        }
+        @media screen and (max-width: 401px) {
+          line-height: 1rem;
+        }
+
+        .ul2 {
+          color: black;
+          margin-left: 2%;
+
+          .name {
+            width: clamp(230px, 75vw, 470px);
+          }
+        }
+        li {
+          display: flex;
+
+          div {
+            margin-left: 3%;
+            width: 400px;
+          }
+        }
+      }
+
+      li::before {
+        content: attr(data-value) ' ';
+        width: clamp(78px, 32vw, 75px);
+        text-align: right;
+        font-weight: bold;
+      }
+
       .wrap-flex-content {
         margin-bottom: clamp(160px, 40vw, 250px);
         margin-left: 8px;
@@ -729,6 +770,9 @@ body {
         .number-hide {
           color: transparent;
           font-size: clamp(12px, 3vw, 18px);
+        }
+        .trainer-part {
+          display: flex;
         }
         .number {
           color: $primary-blue;
@@ -743,6 +787,15 @@ body {
         }
         .trainer-no {
           font-size: clamp(10.8px, 2.8vw, 18px);
+          display: flex;
+          b {
+            width: 20%;
+            text-align: right;
+          }
+          div {
+            width: 400px;
+            margin-left: 2%;
+          }
         }
         .underline {
           text-decoration: underline;
@@ -756,6 +809,16 @@ body {
           .you-no {
             margin-left: clamp(18.4px, 4.7vw, 29px);
             font-size: clamp(10.8px, 2.8vw, 18px);
+            display: flex;
+
+            b {
+              width: 20%;
+              text-align: right;
+            }
+            div {
+              width: 400px;
+              margin-left: 2%;
+            }
           }
           .line-under {
             margin-left: clamp(55px, 13.5vw, 95px);

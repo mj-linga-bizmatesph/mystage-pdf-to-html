@@ -1,7 +1,24 @@
 @import '../../css/level0-E-utils';
 
-$primary-blue: #1287cd;
+$text-font: 'Trebuchet MS';
+$noto-sans: 'Noto Sans', sans-serif;
 
+$primary-blue: #1287cd;
+$rank-green: #009c9a;
+$primary-dark: #083051;
+$primary-light: #cce0ec;
+
+$subtext-color: #7f8288;
+
+$side-margin: clamp(18px, 5vw, 32px);
+$fs-10: clamp(5px, 1.7vw, 10px);
+$fs-11: clamp(6px, 1.9vw, 11px);
+$fs-12: clamp(8px, 1.8vw, 12px);
+$fs-13: clamp(9px, 2.2vw, 13px);
+$fs-14: clamp(8.5px, 2.4vw, 14px);
+$fs-16: clamp(10.5px, 2.7vw, 16px);
+$fs-18: clamp(12px, 3.5vw, 18px);
+$fs-20: clamp(13px, 4vw, 20px);
 .html-lesson-wrapper {
   .see-content {
     &.see-1 {
@@ -44,6 +61,13 @@ $primary-blue: #1287cd;
 
       .phrases-section {
         margin-bottom: 8%;
+
+        .phrase {
+          p {
+            margin: clamp(3px, 0.5vw, 5px) 0px;
+            width: clamp(52px, 13vw, 104px);
+          }
+        }
       }
 
       .conversation {
@@ -230,7 +254,7 @@ $primary-blue: #1287cd;
           list-style-type: none;
           font-size: clamp(11px, 2.7vw, 18px);
           margin-bottom: 3rem;
-          margin-left: -10%;
+          margin-left: clamp(-11%, -1em, 2%);
           font-family: $noto-sans;
 
           .li1 {
@@ -240,7 +264,6 @@ $primary-blue: #1287cd;
 
           .ul-content {
             margin-left: 1%;
-            margin-top: -0.3%;
             color: black;
           }
           .li2 {
@@ -269,12 +292,13 @@ $primary-blue: #1287cd;
         }
         li::before {
           content: attr(data-value) ' ';
-          width: clamp(15px, 15vw, 75px);
+          width: clamp(15px, 15vw, 77px);
           text-align: right;
           font-weight: bold;
         }
 
         .table-wrapper {
+          font-size: clamp(11px, 2.8vw, 18px);
           width: 100%;
 
           p {
@@ -296,6 +320,41 @@ $primary-blue: #1287cd;
             padding-bottom: 5%;
             padding-left: 2%;
           }
+
+          .blue-image-text {
+            background-color: #e7f3fa;
+            border: 1px solid $primary-blue;
+            border-radius: clamp(10px, 1vw, 21px);
+            padding: clamp(0.8rem, 3.5vw, 1.2rem) clamp(1rem, 2vw, 2rem);
+            position: relative !important;
+            width: clamp(250px, 79vw, 475px);
+            z-index: 1;
+            font-family: $noto-sans;
+
+            .blue-box {
+              list-style-type: upper-alpha;
+              margin-top: 0%;
+              margin-left: clamp(0px, 2vw, 24px);
+
+              li::marker {
+                font-weight: bold;
+              }
+            }
+
+            div {
+              width: clamp(250px, 80vw, 500px);
+            }
+
+            .red-circle {
+              position: absolute;
+              top: clamp(0.1rem, 1.5vw, 0.2rem);
+              left: 0%;
+              top: 4%;
+              width: clamp(315px, 80vw, 510px);
+              z-index: -1;
+            }
+          }
+
           .table-choices {
             padding: 3% 5%;
             border-radius: clamp(1px, 1vw, 10px);
@@ -372,6 +431,7 @@ $primary-blue: #1287cd;
       font-size: clamp(11px, 3.5vw, 18px);
       margin-bottom: 3rem;
       font-family: $noto-sans;
+      margin-left: clamp(-29px, -10vw, 0px);
 
       li {
         display: flex;

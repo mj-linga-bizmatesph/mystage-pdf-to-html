@@ -296,12 +296,18 @@ body {
   right: 3px;
 }
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 960px) {
   .html-lesson-wrapper .html-lesson-wrapper {
     min-height: unset;
   }
   .html-lesson-wrapper header {
-    top: 2.9em;
+    top: 3.4em;
+  }
+  .html-lesson-wrapper .html-lesson-wrapper .group:first-child aside {
+    margin-top: 8em;
+  }
+  .html-lesson-wrapper .html-lesson-wrapper .see-content {
+    margin-top: 7.5em;
   }
 }
 

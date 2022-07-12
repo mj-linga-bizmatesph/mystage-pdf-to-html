@@ -360,7 +360,6 @@ body {
 
       .choice-jap {
         font-size: clamp(6.7px, 1.8vw, 13px);
-        letter-spacing: -0.5px;
         color: $subtext-color;
       }
     }
@@ -642,7 +641,7 @@ body {
           font-size: clamp(9px, 2vw, 15px);
         }
         .choice-jap {
-          letter-spacing: -2px;
+          letter-spacing: 1.5px;
           line-height: clamp(0.9rem, 2vw, 1.9rem);
         }
       }

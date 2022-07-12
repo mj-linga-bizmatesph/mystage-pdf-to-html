@@ -313,6 +313,10 @@ body {
       color: $primary-blue;
       background-color: white;
     }
+
+    &.border{
+      border: 1px solid #777777;
+    }
   }
 
   .letter {
@@ -651,6 +655,9 @@ body {
       .section-wrapper {
         display: flex;
         margin-top: 10%;
+        img{
+          width: clamp(114px, 20vw, 151px);
+        }
       }
 
       .dialog-section {

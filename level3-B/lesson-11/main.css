@@ -173,6 +173,19 @@ body {
   z-index: -1;
 }
 
+.html-lesson-wrapper aside .text ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.2em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper aside .text ul li {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+}
+
 .html-lesson-wrapper aside .red {
   color: red;
 }
@@ -222,7 +235,7 @@ body {
   font-style: italic;
 }
 
-.html-lesson-wrapper ul {
+.html-lesson-wrapper .see-content ul {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1.2em;
@@ -230,7 +243,7 @@ body {
   padding-inline: 0;
 }
 
-.html-lesson-wrapper ul li {
+.html-lesson-wrapper .see-content ul li {
   -webkit-padding-start: 0.5em;
           padding-inline-start: 0.5em;
 }
@@ -240,12 +253,38 @@ body {
   margin-top: 0.4em;
 }
 
+.html-lesson-wrapper .try-content ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.2em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .try-content ul li {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+}
+
 .html-lesson-wrapper .act-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 0.4em;
   padding-bottom: 0.5em;
+}
+
+.html-lesson-wrapper .act-content ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.2em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .act-content ul li {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
 }
 
 .html-lesson-wrapper .act-content table {
@@ -309,6 +348,6 @@ body {
 
 .html-lesson-wrapper .shape {
   height: calc(min(24vw, 237px));
-  margin: 0 auto;
+  margin: 0.5em auto;
   display: block;
 }

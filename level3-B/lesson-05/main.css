@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -173,6 +174,19 @@ body {
   z-index: -1;
 }
 
+.html-lesson-wrapper aside .text ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.2em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper aside .text ul li {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+}
+
 .html-lesson-wrapper aside .red {
   color: red;
 }
@@ -222,7 +236,7 @@ body {
   font-style: italic;
 }
 
-.html-lesson-wrapper ul {
+.html-lesson-wrapper .see-content ul {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1.2em;
@@ -230,7 +244,7 @@ body {
   padding-inline: 0;
 }
 
-.html-lesson-wrapper ul li {
+.html-lesson-wrapper .see-content ul li {
   -webkit-padding-start: 0.5em;
           padding-inline-start: 0.5em;
 }
@@ -240,12 +254,38 @@ body {
   margin-top: 0.4em;
 }
 
+.html-lesson-wrapper .try-content ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.2em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .try-content ul li {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+}
+
 .html-lesson-wrapper .act-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 0.4em;
   padding-bottom: 0.5em;
+}
+
+.html-lesson-wrapper .act-content ul {
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 1.2em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper .act-content ul li {
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
 }
 
 .html-lesson-wrapper .act-content table {
@@ -305,4 +345,17 @@ body {
   .html-lesson-wrapper ul {
     margin-left: 1.5em;
   }
+}
+
+.html-lesson-wrapper aside .text ul {
+  list-style-type: '•';
+  margin: 0;
+  margin-left: 0.6em;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.html-lesson-wrapper aside .text ul li {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
 }

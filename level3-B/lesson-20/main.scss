@@ -24,21 +24,39 @@
     .description {
       font-size: clamp(10px, 2vw, 20px);
     }
-    ul {
-      list-style: none;
+    &:not(.part-2) {
+      ul {
+        list-style: none;
+        margin-block: 0;
+        padding-inline: 0;
+        margin-left: 0.9em;
 
-      li {
-        padding-left: 0.5em;
-        position: relative;
-        &:before {
-          content: '■';
-          position: absolute;
-          left: -0.7em;
-          top: -0.1em;
-          font-size: 1.2em;
+        li {
+          padding-left: 0.5em;
+          position: relative;
+          &:before {
+            content: '■';
+            position: absolute;
+            left: -0.7em;
+            top: -0.1em;
+            font-size: 1.2em;
+          }
+          &:not(:last-child) {
+            margin-bottom: 2em;
+          }
         }
-        &:not(:last-child) {
-          margin-bottom: 2em;
+      }
+    }
+    &.part-2 {
+      ul {
+        list-style-type: '•';
+        margin: 0;
+        margin-left: 0.6em;
+        margin-block: 0;
+        padding-inline: 0;
+
+        li {
+          padding-inline-start: 1em;
         }
       }
     }

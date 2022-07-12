@@ -17,6 +17,53 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     margin: 0;
     padding: 0;
   }
+
+  .try-content {
+    .ul-main {
+      list-style: none;
+      font-size: clamp(11px, 2.8vw, 18px);
+      line-height: 1.5rem;
+      margin-left: clamp(-50px, -14vw, 20px);
+      li {
+        display: flex;
+        color: $primary-blue;
+      }
+      .ul-sub {
+        list-style: none;
+        margin-left: 2%;
+
+        @media screen and (max-width: 501px) {
+          margin-left: 0%;
+        }
+        @media screen and (max-width: 401px) {
+          margin-left: -3%;
+        }
+
+        .ct {
+          color: black;
+        }
+        li {
+          display: flex;
+          div {
+            width: clamp(180px, 60vw, 420px);
+            margin-left: 2%;
+            b {
+              font-weight: normal;
+              color: $primary-blue;
+            }
+          }
+        }
+      }
+      li::before {
+        font-weight: bold;
+        width: 75px;
+        text-align: right;
+      }
+    }
+    li::before {
+      content: attr(data-value) ' ';
+    }
+  }
 }
 
 .html-lesson-wrapper hr {

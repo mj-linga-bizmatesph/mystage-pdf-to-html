@@ -334,8 +334,13 @@ body {
           ul li {
             list-style-type: none;
             margin-bottom: clamp(7px, 2vw, 15px);
-            span {
-              color: transparent;
+            display: flex;
+
+            .ul-letter {
+              width: 30px;
+            }
+            .ul-text {
+              width: 250px;
             }
           }
         }
@@ -352,11 +357,32 @@ body {
         }
         .helen-lines {
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(41px, 9.2vw, 66px);
           }
         }
         .akiko-lines {
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(37px, 8.5vw, 62px);
           }
@@ -391,8 +417,13 @@ body {
           ul li {
             list-style-type: none;
             margin-bottom: clamp(7px, 2vw, 15px);
-            span {
-              color: transparent;
+            display: flex;
+
+            .ul-letter {
+              width: 30px;
+            }
+            .ul-text {
+              width: 250px;
             }
           }
         }
@@ -409,11 +440,31 @@ body {
         }
         .helen-lines {
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
+
           .line-under {
             margin-left: clamp(41px, 9.2vw, 66px);
           }
         }
         .akiko-lines {
+          display: flex;
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(37px, 8.5vw, 62px);
           }
@@ -449,8 +500,13 @@ body {
             font-weight: bold;
             list-style-type: none;
             margin-bottom: clamp(6px, 1.8vw, 12px);
-            span {
-              color: transparent;
+            display: flex;
+
+            .ul-letter {
+              width: 30px;
+            }
+            .ul-text {
+              width: 250px;
             }
           }
         }
@@ -466,13 +522,32 @@ body {
           margin-top: 25px;
         }
         .nick-lines {
-          margin-left: clamp(6px, 1.4vw, 10px);
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(32px, 7vw, 52px);
           }
         }
         .akiko-lines {
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(37px, 8.5vw, 62px);
           }
@@ -507,8 +582,13 @@ body {
           ul li {
             list-style-type: none;
             margin-bottom: clamp(6px, 1.8vw, 12px);
-            span {
-              color: transparent;
+            display: flex;
+
+            .ul-letter {
+              width: 30px;
+            }
+            .ul-text {
+              width: 250px;
             }
           }
         }
@@ -525,11 +605,31 @@ body {
         }
         .helen-lines {
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(41px, 9.2vw, 66px);
           }
         }
         .akiko-lines {
+          display: flex;
+
+          b {
+            width: 70px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(37px, 8.5vw, 62px);
           }
@@ -564,8 +664,13 @@ body {
           ul li {
             list-style-type: none;
             margin-bottom: clamp(6px, 1.8vw, 12px);
-            span {
-              color: transparent;
+            display: flex;
+
+            .ul-letter {
+              width: 30px;
+            }
+            .ul-text {
+              width: 250px;
             }
           }
         }
@@ -581,7 +686,16 @@ body {
           margin-top: 25px;
         }
         .akiko-lines {
-          margin-left: clamp(8px, 1.7vw, 13px);
+          display: flex;
+
+          b {
+            width: 80px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(37px, 8.6vw, 60px);
           }
@@ -596,6 +710,16 @@ body {
         }
         .brenda-lines {
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 80px;
+            text-align: right;
+          }
+          .thank-you {
+            width: 400px;
+            margin-left: 2%;
+          }
           .line-under {
             margin-left: clamp(46px, 10.5vw, 77px);
           }

@@ -711,7 +711,7 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-C-2-act1-bg.svg);
+        background-image: url(#{$s3}/0-C-L2-act-1.svg);
       }
       .convo-text-content {
         margin-top: clamp(30px, 8vw, 40px);
@@ -761,7 +761,6 @@ body {
           margin-top: 20px;
           font-family: $noto-sans;
           font-size: clamp(11px, 2.5vw, 18px);
-          margin-left: clamp(37px, 8.6vw, 60px);
         }
         .div-5 {
           font-family: $noto-sans;

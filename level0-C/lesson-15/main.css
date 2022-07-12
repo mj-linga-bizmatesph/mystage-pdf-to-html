@@ -361,10 +361,17 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 ul li {
   list-style-type: none;
   margin-bottom: clamp(7px, 2vw, 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 ul li span {
-  color: transparent;
+.html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 ul li .ul-letter {
+  width: 30px;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1 ul li .ul-text {
+  width: 250px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content {
@@ -383,10 +390,39 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .helen-lines {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .helen-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .helen-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .helen-lines .line-under {
   margin-left: clamp(41px, 9.2vw, 66px);
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .akiko-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .akiko-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .akiko-lines .line-under {
@@ -428,10 +464,17 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul li {
   list-style-type: none;
   margin-bottom: clamp(7px, 2vw, 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul li span {
-  color: transparent;
+.html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul li .ul-letter {
+  width: 30px;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul li .ul-text {
+  width: 250px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content {
@@ -450,10 +493,39 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .helen-lines {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .helen-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .helen-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .helen-lines .line-under {
   margin-left: clamp(41px, 9.2vw, 66px);
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines .line-under {
@@ -496,10 +568,17 @@ body {
   font-weight: bold;
   list-style-type: none;
   margin-bottom: clamp(6px, 1.8vw, 12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble ul li span {
-  color: transparent;
+.html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble ul li .ul-letter {
+  width: 30px;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble ul li .ul-text {
+  width: 250px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content {
@@ -517,12 +596,40 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines {
-  margin-left: clamp(6px, 1.4vw, 10px);
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines .line-under {
   margin-left: clamp(32px, 7vw, 52px);
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .akiko-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .akiko-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .akiko-lines .line-under {
@@ -564,10 +671,17 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li {
   list-style-type: none;
   margin-bottom: clamp(6px, 1.8vw, 12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li span {
-  color: transparent;
+.html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li .ul-letter {
+  width: 30px;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li .ul-text {
+  width: 250px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content {
@@ -586,10 +700,39 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines .line-under {
   margin-left: clamp(41px, 9.2vw, 66px);
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines b {
+  width: 70px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines .line-under {
@@ -631,10 +774,17 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul li {
   list-style-type: none;
   margin-bottom: clamp(6px, 1.8vw, 12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul li span {
-  color: transparent;
+.html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul li .ul-letter {
+  width: 30px;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul li .ul-text {
+  width: 250px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content {
@@ -652,7 +802,19 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines {
-  margin-left: clamp(8px, 1.7vw, 13px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines b {
+  width: 80px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines .line-under {
@@ -671,6 +833,19 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .brenda-lines {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .brenda-lines b {
+  width: 80px;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .brenda-lines .thank-you {
+  width: 400px;
+  margin-left: 2%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .brenda-lines .line-under {

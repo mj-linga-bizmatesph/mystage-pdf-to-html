@@ -736,6 +736,10 @@ body {
       }
       .blue-box {
         width: 460px;
+
+        @media screen and (max-width: 450px) {
+          width: 340px;
+        }
       }
       li::before {
         counter-increment: orderedlist;

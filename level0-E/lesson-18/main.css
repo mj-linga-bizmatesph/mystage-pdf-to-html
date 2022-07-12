@@ -792,6 +792,12 @@ body {
   width: 460px;
 }
 
+@media screen and (max-width: 450px) {
+  .html-lesson-wrapper .try-content .try-3-content .blue-box {
+    width: 340px;
+  }
+}
+
 .html-lesson-wrapper .try-content .try-3-content li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist);

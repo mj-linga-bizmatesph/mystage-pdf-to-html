@@ -1128,8 +1128,7 @@ body {
         justify-content: flex-start;
       }
       .col {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: inline-flex;
       }
       .blue-section {
         margin-right: 1em;

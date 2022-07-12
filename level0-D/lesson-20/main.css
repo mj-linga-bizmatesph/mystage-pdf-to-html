@@ -278,28 +278,40 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-1 {
+  font-size: clamp(10px, 2.2vw, 16px);
   line-height: 1.8;
   position: absolute;
   margin: 12% 0 0 17%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-2 {
+  width: 33em;
+  font-size: clamp(10px, 2.2vw, 16px);
   line-height: 1.8;
   position: absolute;
-  margin: 14% 0 0 17%;
+  margin: 13% 0 0 14%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-3 {
+  font-size: clamp(10px, 2.2vw, 16px);
+  line-height: 1.5;
   position: absolute;
-  margin: 8% 0 0 -1%;
+  margin: 10% 0 0 16%;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-4 {
+  font-size: clamp(10px, 2.2vw, 16px);
+  line-height: 1.8;
   position: absolute;
-  margin: 11% 0 0 0;
+  margin: 10% 0 0 19%;
+}
+
+.html-lesson-wrapper .act-content .act-1-content .tv {
+  width: 10em;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech-bubble-5 {
+  font-size: clamp(10px, 2.2vw, 16px);
   width: 20em;
   line-height: 1.8;
   position: absolute;

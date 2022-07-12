@@ -401,6 +401,17 @@ body {
         li::before {
           color: #fff;
           border-radius: 50%;
+          counter-increment: orderedlist;
+          content: counter(orderedlist);
+          font-family: $noto-sans;
+          font-size: $fs-16;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+          color: #fff;
+          background-color: var(--li-bg);
+          font-weight: bold;
         }
       }
 
@@ -410,6 +421,16 @@ body {
         li::before {
           color: $primary-blue;
           border: 2px solid $primary-blue;
+          content: attr(data-value) " ";
+          font-family: "Noto Sans", sans-serif;
+          font-size: clamp(11px, 2.7vw, 16px);
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: -ms-grid;
+          display: grid;
+          place-items: center;
+          background-color: var(--li-bg);
+          font-weight: bold;
         }
       }
 
@@ -419,22 +440,20 @@ body {
         li::before {
           border-radius: 50%;
           color: $primary-blue;
+          counter-increment: orderedlist;
+          content: counter(orderedlist);
+          font-family: $noto-sans;
+          font-size: $fs-16;
+          width: clamp(18px, 4vw, 24px);
+          height: clamp(18px, 4vw, 24px);
+          display: grid;
+          place-items: center;
+          color: #fff;
+          background-color: var(--li-bg);
+          font-weight: bold;
         }
       }
 
-      li::before {
-        counter-increment: orderedlist;
-        content: counter(orderedlist);
-        font-family: $noto-sans;
-        font-size: $fs-16;
-        width: clamp(18px, 4vw, 24px);
-        height: clamp(18px, 4vw, 24px);
-        display: grid;
-        place-items: center;
-        color: #fff;
-        background-color: var(--li-bg);
-        font-weight: bold;
-      }
 
       li {
         display: grid;

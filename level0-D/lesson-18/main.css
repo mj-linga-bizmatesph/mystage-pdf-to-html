@@ -1211,10 +1211,9 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-4-content .col {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .html-lesson-wrapper .try-content .try-4-content .blue-section {

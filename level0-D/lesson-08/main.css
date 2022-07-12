@@ -656,6 +656,9 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-3-section .column-two .green-piece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
 }
 
@@ -835,6 +838,9 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-4-section .column-two .green-piece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
 }
 

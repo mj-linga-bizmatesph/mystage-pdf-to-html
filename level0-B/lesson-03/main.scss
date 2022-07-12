@@ -5,7 +5,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 1px;
 
 $subtext-color: #7f8288;
 
@@ -638,7 +638,7 @@ body {
           }
 
           .box-3 {
-            width: clamp(72px, 17vw, 115px);
+            width: clamp(82px,17vw,120px);
             margin-left: clamp(4px, 2vw, 7px);
             font-size: clamp(10px, 2.2vw, 16px);
             background: url(#{$s3}/0-piece-blue.png);

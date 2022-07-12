@@ -92,7 +92,7 @@ body {
 }
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6%;
+  right: clamp(1px, 5.8%, 37px);
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
@@ -340,7 +340,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -635,7 +634,7 @@ body {
   font-size: clamp(10px, 2.2vw, 16px);
 }
 .html-lesson-wrapper .see-2 .section2-content .section2-first-row .f2-c1 .box-3 {
-  width: clamp(74px, 17vw, 120px);
+  width: clamp(81px, 17vw, 125px);
   margin-left: clamp(4px, 2vw, 7px);
   font-size: clamp(10px, 2.2vw, 16px);
   background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-piece-blue.png);
@@ -1049,7 +1048,6 @@ body {
   margin-top: -1px;
   font-size: clamp(6px, 1.5vw, 10px);
   color: #7f8288;
-  letter-spacing: -0.5px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation .akiko span {
   position: absolute;

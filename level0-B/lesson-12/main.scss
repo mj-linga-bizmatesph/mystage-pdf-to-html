@@ -5,7 +5,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0;
 
 $subtext-color: #7f8288;
 
@@ -167,7 +167,7 @@ body {
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
-    left: 27%;
+    left: 9em;
 
     .title {
       font-size: clamp(9px, 2.9vw, 18px);
@@ -237,6 +237,10 @@ body {
     margin-bottom: 0.5em;
   }
 
+  .mr-1em{
+    margin-right: 1em;
+  }
+
   .mb-1em{
     margin-bottom: 1em;
   }
@@ -299,7 +303,7 @@ body {
   .puzzle-box{
     border-radius: 3px;
     font-family: $noto-sans;
-    font-size: clamp(9px, 1.8vw, 15px) !important;
+    font-size: clamp(9px,1.8vw,12px) !important;
   }
 
   .circle-number{
@@ -568,7 +572,7 @@ body {
         font-size: clamp(9px, 1.5vw, 14px);
       }
       .jap {
-        font-size: clamp(6px, 2.1vw, 9px);
+        font-size: clamp(6px, 2.1vw, 11px);
         color: $subtext-color;
         letter-spacing: $jap-letter-spacing;
       }
@@ -587,7 +591,7 @@ body {
         font-size: clamp(10px, 2vw, 14px);
       }
       .jap {
-        font-size: clamp(6px, 1.5vw, 11px);
+        font-size: clamp(6px, 2.1vw, 11px);
         color: $subtext-color;
         letter-spacing: $jap-letter-spacing;
       }
@@ -602,10 +606,10 @@ body {
         .text-with-akiko {
           grid-template-columns: 3fr 70px;
           display: grid;
-          margin-left: clamp(35px, 6.7vw, 55px);
+          margin-left: clamp(25px,3.7vw,74px);
           .wrapper-with-akiko {
-            padding-left: clamp(35px, 6.7vw, 55px);
-            margin-top: clamp(-39px, -6.7vw, -39px);
+            padding-left: clamp(29px,1.7vw,55px);
+            margin-top: clamp(-39px,-6.7vw,-39px);
           }
         }
         .text-1 {
@@ -628,37 +632,37 @@ body {
           font-size: clamp(10px, 2.5vw, 16px);
           margin-left: clamp(-3px, -1vw, 0px);
           .box-1 {
-            width: clamp(62px, 19vw, 110px);
+            width: clamp(62px,19vw,94px);
             background: url(#{$s3}/0-b-12-yellow.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: clamp(10px, 5vw, 26px);
+            height: clamp(10px,5vw,23px);
             text-align: center;
-            padding-top: clamp(1px, 1.3vw, 6px);
-            margin-left: clamp(-2px, -2vw, -15px);
+            padding-top: clamp(1px,1.3vw,6px);
+            margin-left: clamp(-2px,-2vw,-15px);
           }
           .box-2 {
-            width: clamp(86px, 25vw, 140px);
+            width: clamp(86px,25vw,123px);
             background: url(#{$s3}/0-b-12-green.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: clamp(7px, 5vw, 26px);
+            height: clamp(7px,5vw,24px);
             text-align: center;
-            padding-top: clamp(1px, 1.3vw, 6px);
-            margin-left: clamp(0px, 0vw, 3px);
+            padding-top: clamp(1px,1.3vw,6px);
+            margin-left: clamp(0px,0vw,3px);
           }
           .box-3 {
-            width: clamp(97px, 26vw, 150px);
-            margin-left: clamp(0px, 0vw, 4px);
+            width: clamp(97px,26vw,125px);
+            margin-left: clamp(0px,0vw,4px);
             background: url(#{$s3}/0-b-12-pinkpiece.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: clamp(15px, 5vw, 26px);
+            height: clamp(15px,5vw,24px);
             text-align: center;
-            padding-top: clamp(1px, 1.3vw, 6px);
+            padding-top: clamp(1px,1.3vw,6px);
           }
           .text-2 {
             position: absolute;
@@ -697,24 +701,24 @@ body {
       margin-top: clamp(65px, 33vw, 91px);
     }
     .b1-legend {
-      width: clamp(90px, 20vw, 115px);
+      width: clamp(90px,20vw,96px);
       background: url(#{$s3}/0-b-12-yellow.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       height: 30px;
       text-align: center;
-      height: clamp(23px, 5vw, 30px);
+      height: clamp(23px,5vw,22px);
     }
     .b2-legend {
-      width: clamp(120px, 25.1vw, 163px);
+      width: clamp(120px,25.1vw,144px);
       text-align: center;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-image: url(#{$s3}/0-b-12-pink.png);
       font-size: clamp(10px, 2.2vw, 16px);
-      height: clamp(23px, 5vw, 30px);
+      height: clamp(23px,5vw,20px);
     }
     .legend {
       display: flex;

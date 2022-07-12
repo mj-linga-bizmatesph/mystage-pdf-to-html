@@ -114,7 +114,6 @@ body {
   font-size: clamp(8px, 2.3vw, 14px);
 }
 .html-lesson-wrapper .jap {
-  letter-spacing: -1.5px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
@@ -634,8 +633,7 @@ body {
 .part-2 .office-part-1 .bubble .jap,
 .part-2 .office-part-2 .bubble .jap {
   font-family: "Noto Sans", sans-serif;
-  letter-spacing: -2px;
-  font-size: clamp(10px, 2.3vw, 13px);
+  font-size: clamp(7px, 1.8vw, 11px);
   line-height: 13px;
 }
 .part-1 .office-part-1 .bubble.akiko-1,

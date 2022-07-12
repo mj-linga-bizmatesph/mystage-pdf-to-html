@@ -813,7 +813,7 @@ body {
 }
 .html-lesson-wrapper .see-2 .section2-box-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 2.3vw, 13px);
-  letter-spacing: -3.5px;
+  letter-spacing: -0.9px;
   color: #7f8288;
 }
 .html-lesson-wrapper .see-2 .section2-box-content .phrase-alts .number {
@@ -965,7 +965,7 @@ body {
 }
 .html-lesson-wrapper .see-3 .see-3-content .phrase-1 .english {
   font-family: "Noto Sans", sans-serif;
-  width: clamp(109px, 21vw, 156px);
+  width: clamp(126px, 21vw, 170px);
   background-color: #c2e7e5;
   font-size: clamp(11px, 1.8vw, 16px);
   border-radius: 3px;
@@ -988,7 +988,7 @@ body {
 .html-lesson-wrapper .see-3 .see-3-content .phrase-2 .english {
   font-weight: bold;
   font-family: "Noto Sans", sans-serif;
-  width: clamp(70px, 12vw, 106px);
+  width: clamp(85px, 12vw, 115px);
   background-color: #ffb2b0;
   font-size: clamp(11px, 2vw, 16px);
   border-radius: 3px;
@@ -1208,7 +1208,6 @@ body {
   color: #7f8288;
   font-size: clamp(6px, 2vw, 11px);
   font-weight: normal;
-  letter-spacing: -2px;
   margin-left: clamp(0px, 0vw, 53px);
   margin-top: clamp(-20px, -1vw, -4px);
 }

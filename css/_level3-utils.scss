@@ -13,22 +13,30 @@ body {
   width: 100%;
   min-width: 360px;
   max-width: 810px;
+  min-height: 54em;
   height: fit-content;
   overflow: hidden;
   position: relative;
   padding-bottom: 5em;
-  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png');
-  background-position: top, bottom;
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg-footer.png'), url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-bg.png');
+  background-position: bottom, top;
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: $text-font;
-
+  p {
+    margin-block: 0;
+  }
   .b,
   header,
   aside,
   footer {
     font-weight: bold;
   }
+
+  .fw-normal {
+    font-weight: normal;
+  }
+
   header {
     position: absolute;
     top: 3em;
@@ -53,14 +61,13 @@ body {
     color: #ffffff;
     text-align: center;
     font-weight: bold;
-    padding-top: 0.3em;
+    padding-top: 0.5em;
     font-size: clamp(11px, 2.6vw, 21px);
     padding-left: 0.4em;
     background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-section-arrow.png');
-    background-size: 105%;
+    background-size: 103%;
     background-repeat: no-repeat;
     height: 3em;
-    width: 9.5em;
   }
   ul {
     margin: 2px 0px 0px 18px;
@@ -72,38 +79,82 @@ body {
     }
   }
 
-  aside {
-    position: absolute;
-    left: 0.5em;
-    top: 4em;
-    width: 11em;
-    font-size: clamp(7px, 1.8vw, 15px);
-    z-index: 999;
+  .group {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    & * {
+      box-sizing: border-box;
+    }
+    section {
+      margin-left: 0;
+    }
 
-    div {
-      margin-bottom: 15px;
+    .section {
+      width: 105%;
+    }
+
+    &:first-child {
+      aside {
+        margin-top: 6em;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 2em;
+    }
+  }
+
+  aside {
+    left: 0.5em;
+    margin-top: 0;
+    width: 13em;
+    font-size: clamp(9px, 2.1vw, 18px);
+    z-index: 999;
+    margin-right: 2em;
+
+    .section {
+      position: initial;
+    }
+    div:not(:last-child) {
+      margin-bottom: 2em;
     }
     .sub-text {
       color: #ffffff;
       font-size: clamp(9px, 2vw, 18px);
       padding: 0.5em 1em 0.5em 1em;
-      width: 100%;
+      width: 97%;
       background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-title.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
+      margin-left: 0.5em;
     }
     .text {
       margin-top: 6px;
       padding: 0.5em 1em 0.5em 1em;
-      width: 101%;
+      width: 97%;
       height: fit-content;
-      background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container.png');
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
+
+      margin-left: 0.5em;
+      min-height: 10.45em;
       &::after {
         content: '';
         display: block;
         height: 2em;
+      }
+      position: relative;
+      &::before {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+        position: absolute;
+        content: '';
+        background: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container-start.png'),
+          url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container-end.png');
+        background-size: 100% calc(100% - 3em), 100%;
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+        z-index: -1;
       }
     }
     .red {
@@ -113,24 +164,26 @@ body {
 
   .see-content,
   .act-content,
-  .try-content {
+  .try-content,
+  .test-content {
     position: relative;
     margin-left: $left-pixel;
-    padding-right: 1.5em;
-    padding-top: 0.5em;
+    padding-right: 1em;
     font-size: clamp(9px, 2.1vw, 18px);
     background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
     border-radius: 10px;
     box-sizing: border-box;
     margin-right: 0.5em;
+    padding-top: 0.5em;
+    height: fit-content;
   }
 
   // See
   .see-content {
-    margin-top: clamp(20px, 17%, 116px);
+    margin-top: 6.5em;
+    padding-bottom: 0.5em;
 
     .conversation {
-      margin-bottom: 22px;
       .row {
         p {
           display: inline-block;
@@ -148,22 +201,31 @@ body {
       }
     }
   }
+  ul {
+    list-style-type: decimal;
+    margin: 0;
+    margin-left: 1.2em;
+    margin-block: 0;
+    padding-inline: 0;
 
+    li {
+      padding-inline-start: 0.5em;
+    }
+  }
   // Try
   .try-content {
-    margin-top: 19%;
+    padding-bottom: 0.5em;
+    margin-top: 0.4em;
   }
 
   // Act
   .act-content {
-    margin-top: 36px;
     height: fit-content;
-    min-height: 26px;
+    margin-top: 0.4em;
+    padding-bottom: 0.5em;
 
     table {
-      margin-top: 5px;
       border-spacing: 0px;
-      padding-bottom: 5px;
       width: 100%;
       font-size: clamp(8px, 1.6vw, 11px);
       &::after {
@@ -203,6 +265,9 @@ body {
     right: 3px;
   }
   @media screen and (min-width: 810px) {
+    .html-lesson-wrapper {
+      min-height: unset;
+    }
     header {
       top: 2.9em;
     }

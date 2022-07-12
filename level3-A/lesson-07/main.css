@@ -8,7 +8,6 @@ body {
   width: 100%;
   min-width: 360px;
   max-width: 810px;
-  min-height: 54em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -20,6 +19,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: "Calibri", "PT Sans", "Trebuchet MS";
+  font-size: clamp(9.5px, 2.4vw, 20px);
 }
 
 .html-lesson-wrapper p {
@@ -79,16 +79,6 @@ body {
   height: 3em;
 }
 
-.html-lesson-wrapper ul {
-  margin: 2px 0px 0px 18px;
-  padding: 0;
-  list-style-type: decimal;
-}
-
-.html-lesson-wrapper ul li {
-  padding-left: 6px;
-}
-
 .html-lesson-wrapper .group {
   display: -ms-grid;
   display: grid;
@@ -121,7 +111,7 @@ body {
 .html-lesson-wrapper aside {
   left: 0.5em;
   margin-top: 0;
-  width: 13em;
+  width: 11.5em;
   font-size: clamp(9px, 2.1vw, 18px);
   z-index: 999;
   margin-right: 2em;
@@ -129,6 +119,10 @@ body {
 
 .html-lesson-wrapper aside .section {
   position: initial;
+}
+
+.html-lesson-wrapper aside .section.see {
+  margin-bottom: 0.5em;
 }
 
 .html-lesson-wrapper aside div:not(:last-child) {
@@ -173,7 +167,7 @@ body {
   position: absolute;
   content: '';
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container-start.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container-end.png");
-  background-size: 100% calc(100% - 3em), 100%;
+  background-size: 100% calc(100% - 2.5em), 100%;
   background-position: top, bottom;
   background-repeat: no-repeat;
   z-index: -1;
@@ -206,6 +200,10 @@ body {
 .html-lesson-wrapper .see-content {
   margin-top: 6.5em;
   padding-bottom: 0.5em;
+}
+
+.html-lesson-wrapper .see-content .conversation:not(:last-child) {
+  margin-bottom: 1em;
 }
 
 .html-lesson-wrapper .see-content .conversation .row p {
@@ -251,6 +249,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content table {
+  margin-top: 0.5em;
   border-spacing: 0px;
   width: 100%;
   font-size: clamp(8px, 1.6vw, 11px);
@@ -302,6 +301,12 @@ body {
   }
   .html-lesson-wrapper header {
     top: 2.9em;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .html-lesson-wrapper ul {
+    margin-left: 1.5em;
   }
 }
 

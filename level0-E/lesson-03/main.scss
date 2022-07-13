@@ -334,7 +334,7 @@ $fs-20: clamp(13px, 4vw, 20px);
             .blue-box {
               list-style-type: none;
               margin-top: 0%;
-              margin-left: clamp(0px, 2vw, 24px);
+              margin-left: clamp(0px, 0.5vw, 24px);
 
               li {
                 display: flex;
@@ -351,6 +351,7 @@ $fs-20: clamp(13px, 4vw, 20px);
 
             div {
               width: clamp(250px, 80vw, 500px);
+              margin-left: 1%;
             }
 
             .red-circle {

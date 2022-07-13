@@ -332,12 +332,20 @@ $fs-20: clamp(13px, 4vw, 20px);
             font-family: $noto-sans;
 
             .blue-box {
-              list-style-type: upper-alpha;
+              list-style-type: none;
               margin-top: 0%;
               margin-left: clamp(0px, 2vw, 24px);
 
+              li {
+                display: flex;
+              }
+
               li::marker {
                 font-weight: bold;
+              }
+              li::before {
+                content: attr(data-value) ' ';
+                width: 17px;
               }
             }
 

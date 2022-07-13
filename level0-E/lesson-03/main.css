@@ -1039,13 +1039,24 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box {
-  list-style-type: upper-alpha;
+  list-style-type: none;
   margin-top: 0%;
   margin-left: clamp(0px, 2vw, 24px);
 }
 
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li::marker {
   font-weight: bold;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li::before {
+  content: attr(data-value) " ";
+  width: 17px;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text div {

@@ -1015,7 +1015,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
   content: attr(data-value) " ";
-  width: clamp(25px, 32vw, 75px);
+  width: clamp(28px, 33vw, 78px);
   text-align: right;
   font-weight: bold;
 }

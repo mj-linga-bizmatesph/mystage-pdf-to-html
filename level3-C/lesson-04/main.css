@@ -169,7 +169,7 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.75;
+  opacity: 0.8;
   position: absolute;
   content: '';
   background: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container-start.png"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/biz-tip-container-end.png");
@@ -236,7 +236,8 @@ body {
   font-weight: bold;
 }
 
-.html-lesson-wrapper .see-content .conversation .row p:last-child {
+.html-lesson-wrapper .see-content .conversation .row p:last-child, .html-lesson-wrapper .see-content .conversation .row p.exclude {
+  font-weight: normal;
   width: 100%;
   font-style: italic;
 }

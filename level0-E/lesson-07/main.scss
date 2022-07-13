@@ -161,6 +161,7 @@ body {
       margin-top: clamp(20px, 5vw, 33px);
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
     .arrow.see {
@@ -269,6 +270,7 @@ body {
         position: absolute;
         .wrap-for-flex {
           display: flex;
+          font-family: $noto-sans !important;
           .problem-is {
             font-size: clamp(10.3px, 2.3vw, 16px);
             text-align: center;

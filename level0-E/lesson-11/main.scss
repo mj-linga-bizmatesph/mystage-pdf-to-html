@@ -183,6 +183,7 @@ body {
       //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans;
       }
     }
     .arrow.see {
@@ -299,6 +300,7 @@ body {
             background-repeat: no-repeat;
             padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
             font-size: clamp(9.3px, 2.4vw, 16px);
+            font-family: $noto-sans !important;
           }
           .dont-know-piece {
             margin-right: 6px;
@@ -311,6 +313,7 @@ body {
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url(#{$s3}/0-E-11-dont-know.png);
+            font-family: $noto-sans !important;
           }
           .date-piece {
             text-align: center;
@@ -320,6 +323,7 @@ body {
             background-repeat: no-repeat;
             padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
             font-size: clamp(9.3px, 2.4vw, 16px);
+            font-family: $noto-sans !important;
           }
         }
         .jap {

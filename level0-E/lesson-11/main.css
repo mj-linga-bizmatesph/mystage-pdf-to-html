@@ -183,6 +183,7 @@ body {
 
 .html-lesson-wrapper .see-content.see-2 .legend, .html-lesson-wrapper .see-content.see-3 .legend, .html-lesson-wrapper .see-content.see-4 .legend {
   margin-top: clamp(25px, 5vw, 38px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-content .arrow.see {
@@ -324,6 +325,7 @@ body {
   background-repeat: no-repeat;
   padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
   font-size: clamp(9.3px, 2.4vw, 16px);
+  font-family: "Noto Sans", sans-serif !important;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex .dont-know-piece {
@@ -337,6 +339,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-E-11-dont-know.png);
+  font-family: "Noto Sans", sans-serif !important;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex .date-piece {
@@ -347,6 +350,7 @@ body {
   background-repeat: no-repeat;
   padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
   font-size: clamp(9.3px, 2.4vw, 16px);
+  font-family: "Noto Sans", sans-serif !important;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .jap {

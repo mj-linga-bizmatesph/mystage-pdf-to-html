@@ -160,6 +160,7 @@ body {
       margin-top: clamp(20px, 5vw, 33px);
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
     .arrow.see {
@@ -271,6 +272,7 @@ body {
         left: 26%;
         position: absolute;
         .wrap-for-flex {
+          font-family: $noto-sans !important;
           display: flex;
           .decided-to {
             margin-right: 5px;

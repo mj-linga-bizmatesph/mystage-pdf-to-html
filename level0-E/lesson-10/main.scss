@@ -180,6 +180,7 @@ body {
       //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
 

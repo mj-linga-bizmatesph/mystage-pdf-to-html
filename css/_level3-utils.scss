@@ -48,6 +48,9 @@ body {
   main {
     position: relative;
   }
+  .no-wrap {
+    white-space: nowrap;
+  }
   .row {
     display: flex;
     flex-direction: row;
@@ -126,7 +129,7 @@ body {
       padding: 0.5em 1em 0.5em 1em;
       width: 97%;
       height: fit-content;
-
+      font-size: clamp(7px, 1.8vw, 15px);
       margin-left: 0.5em;
       min-height: 10.45em;
       &::after {
@@ -274,12 +277,12 @@ body {
       th {
         background-color: #f5800b;
         color: #ffffff;
-        padding: 4px;
+        padding: 0.5em;
         min-width: fit-content;
       }
       td {
         text-align: left;
-        padding: 4px;
+        padding: 0.5em;
 
         &:nth-child(2) {
           min-width: 10vw;

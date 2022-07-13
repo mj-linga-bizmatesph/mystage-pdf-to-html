@@ -50,6 +50,10 @@ body {
   position: relative;
 }
 
+.html-lesson-wrapper .no-wrap {
+  white-space: nowrap;
+}
+
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,6 +152,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  font-size: clamp(7px, 1.8vw, 15px);
   margin-left: 0.5em;
   min-height: 10.45em;
   position: relative;
@@ -312,7 +317,7 @@ body {
 .html-lesson-wrapper .act-content table th {
   background-color: #f5800b;
   color: #ffffff;
-  padding: 4px;
+  padding: 0.5em;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -320,7 +325,7 @@ body {
 
 .html-lesson-wrapper .act-content table td {
   text-align: left;
-  padding: 4px;
+  padding: 0.5em;
 }
 
 .html-lesson-wrapper .act-content table td:nth-child(2) {

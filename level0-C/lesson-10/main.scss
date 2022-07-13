@@ -405,6 +405,15 @@ body {
           margin-top: 25px;
         }
         .akiko-lines {
+          display: flex;
+          b {
+            width: 11%;
+            text-align: right;
+          }
+          div {
+            margin-left: 1%;
+            width: 420px;
+          }
           .line-under {
             margin-left: clamp(42px, 9.4vw, 67px);
           }
@@ -418,8 +427,17 @@ body {
           }
         }
         .risa-lines {
-          margin-left: clamp(7px, 1.7vw, 12px);
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 11%;
+            text-align: right;
+          }
+          div {
+            margin-left: 1%;
+            width: 420px;
+          }
           .line-under {
             margin-left: clamp(42px, 9.4vw, 67px);
           }
@@ -573,11 +591,31 @@ body {
         }
         .helen-lines {
           margin-top: 25px;
+          display: flex;
+
+          b {
+            width: 11%;
+            text-align: right;
+          }
+          div {
+            margin-left: 1%;
+            width: 420px;
+          }
           .line-under {
             margin-left: clamp(41px, 9.2vw, 66px);
           }
         }
         .akiko-lines {
+          display: flex;
+
+          b {
+            width: 11%;
+            text-align: right;
+          }
+          div {
+            margin-left: 1%;
+            width: 420px;
+          }
           .line-under {
             margin-left: clamp(41px, 9.2vw, 66px);
           }

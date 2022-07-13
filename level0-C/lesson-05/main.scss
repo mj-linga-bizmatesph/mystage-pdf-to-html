@@ -434,8 +434,8 @@ body {
         background-image: url(#{$s3}/0-C-5-part2-img3.svg);
         .text-bubble {
           position: absolute;
-          margin-left: clamp(98px, 31vw, 196px);
-          top: 15%;
+          margin-left: clamp(98px, 31vw, 205px);
+          top: 12%;
           font-size: clamp(7px, 1.8vw, 12px);
           ul {
             padding-left: clamp(9%, 17%, 22%);

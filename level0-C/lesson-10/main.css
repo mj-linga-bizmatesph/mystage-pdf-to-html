@@ -441,6 +441,22 @@ body {
   margin-top: 25px;
 }
 
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines b {
+  width: 11%;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines div {
+  margin-left: 1%;
+  width: 420px;
+}
+
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines .line-under {
   margin-left: clamp(42px, 9.4vw, 67px);
 }
@@ -456,8 +472,20 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .risa-lines {
-  margin-left: clamp(7px, 1.7vw, 12px);
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .risa-lines b {
+  width: 11%;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .risa-lines div {
+  margin-left: 1%;
+  width: 420px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .risa-lines .line-under {
@@ -639,10 +667,39 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .helen-lines {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .helen-lines b {
+  width: 11%;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .helen-lines div {
+  margin-left: 1%;
+  width: 420px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .helen-lines .line-under {
   margin-left: clamp(41px, 9.2vw, 66px);
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines b {
+  width: 11%;
+  text-align: right;
+}
+
+.html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines div {
+  margin-left: 1%;
+  width: 420px;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .akiko-lines .line-under {

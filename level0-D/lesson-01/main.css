@@ -717,12 +717,11 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .size-a {
-  width: 18em;
+  width: clamp(200px, 47vw, 283.57px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .size-b {
-  height: 10em;
-  width: 22em;
+  width: clamp(245px, 63.5vw, 384.4px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image .text-20 {

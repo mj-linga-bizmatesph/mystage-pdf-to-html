@@ -154,7 +154,7 @@ body {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(10px, 2vw, 14px);
+    font-size: clamp(8.5px, 2.4vw, 14px);
   }
   .jap {
     letter-spacing: -0.5px;
@@ -259,7 +259,7 @@ body {
         font-size: clamp(8.5px, 2.4vw, 14px);
       }
       .jpn {
-        width: 20em;
+        display: inline-block;
         font-family: $noto-sans;
         color: #76797f;
         font-weight: normal;
@@ -796,13 +796,14 @@ body {
       }
 
       .convo-3 {
-        width: 22em;
+        width: 70%;
         position: absolute;
-        margin: 9% 0 0 16%;
+        margin: 10% 0 0 9%;
+    
         @media only screen and (max-width: 900px){
-        width: 14em;
-        position: absolute;
-        margin: 9% 0 0 16%;
+          width: 20em;
+          position: absolute;
+          margin: 9% 0 0 19%;
         }
       }
 
@@ -910,7 +911,7 @@ body {
         .speech {
           width: 85%;
           padding-left: clamp(1px, 1vw, 5px);
-          font-size: $fs-18;
+          font-size: (8.5px, 2.4vw, 18px);
         }
       }
     }
@@ -997,7 +998,7 @@ body {
 
       .eng {
         font-family: $text-font;
-        font-size: $fs-14;
+        font-size: clamp(8.5px, 2.4vw, 14px);
         font-weight: bold;
       }
 
@@ -1007,7 +1008,7 @@ body {
 
       .jpn {
         font-family: $noto-sans;
-        font-size: $fs-11;
+        font-size: clamp(7px, 2.2vw, 11px);
         color: #7f8288;
       }
 
@@ -1030,8 +1031,7 @@ body {
 
       .jpn-text {
         display: flex;
-        font-family: $noto-sans;
-        font-size: $fs-13;
+        font-family: (7px, 2.2vw, 11px);
         margin-bottom: clamp(5px, 3vw, 25px);
         color: #7f8288;
       }
@@ -1041,10 +1041,11 @@ body {
         text-align: right;
         width: 12%;
         font-weight: bold;
-        font-size: $fs-16;
+        font-size: (8.5px, 2.4vw, 14px);
       }
 
       .speech {
+        font-size: (8.5px, 2.4vw, 14px);
         width: 88%;
       }
     }

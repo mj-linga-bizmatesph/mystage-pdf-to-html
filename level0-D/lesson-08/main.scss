@@ -692,6 +692,7 @@ body {
               display: flex;
               justify-content: space-between;
             }
+            
             .sub {
               font-family: $noto-sans;
               font-size: $fs-13;
@@ -810,7 +811,14 @@ body {
       .column-two {
         .green-piece {
           display: flex;
+          justify-content: flex-end;
           margin-left: auto;
+        }
+        .inside{
+          position: absolute;
+          font-size: $fs-16;
+          font-family: $noto-sans;
+          font-weight: bold;
         }
       }
     }

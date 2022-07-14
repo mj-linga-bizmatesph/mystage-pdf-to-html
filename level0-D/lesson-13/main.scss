@@ -286,6 +286,9 @@ body {
 
     .see-2-section {
       margin-top: clamp(20px, 6.5vw, 4rem);
+      .pl{
+        padding-left: 2%;
+      }
       .akiko-section {
         display: flex;
         .akiko-icon {

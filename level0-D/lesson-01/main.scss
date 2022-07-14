@@ -701,12 +701,11 @@ body {
           position: relative;
 
           .size-a {
-            width: 18em;
+            width: clamp(200px, 47vw, 283.57px);
           }
 
           .size-b {
-            height: 10em;
-            width: 22em;
+            width: clamp(245px, 63.5vw, 384.4px);
           }
 
           .text-20 {

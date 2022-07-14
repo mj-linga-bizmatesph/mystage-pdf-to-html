@@ -841,7 +841,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: auto;
+}
+
+.html-lesson-wrapper .see-content .see-4-section .column-two .inside {
+  position: absolute;
+  font-size: clamp(11px, 2.7vw, 16px);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-content .arrow.see {

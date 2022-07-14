@@ -53,6 +53,11 @@ body {
   color: #ffffff;
 }
 
+.html-lesson-wrapper .table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
 .html-lesson-wrapper main {
   position: relative;
 }

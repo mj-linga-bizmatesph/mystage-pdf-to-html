@@ -53,6 +53,11 @@ body {
   color: #ffffff;
 }
 
+.html-lesson-wrapper .table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
 .html-lesson-wrapper main {
   position: relative;
 }
@@ -380,13 +385,14 @@ body {
 
 .html-lesson-wrapper .conversation .subject {
   position: relative;
+  font-weight: bold;
   padding-left: 0.5em;
   padding-top: 0.4em;
   top: -0.1em;
   left: -0.5%;
   width: 100.5%;
   margin-bottom: 0px;
-  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/03-black-header.png");
+  background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/3-C-17_email_header.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 1.8em;

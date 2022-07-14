@@ -50,6 +50,10 @@ body {
     font-size: clamp(9px, 2.4vw, 21px);
     color: #ffffff;
   }
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
   main {
     position: relative;
   }

@@ -22,6 +22,10 @@ body {
   font-size: clamp(9.5px, 2.4vw, 20px);
 }
 
+.html-lesson-wrapper .ofx-auto {
+  overflow-x: auto !important;
+}
+
 .html-lesson-wrapper a {
   word-break: break-all;
 }
@@ -226,7 +230,6 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  overflow-x: auto;
 }
 
 .html-lesson-wrapper .see-content {
@@ -381,7 +384,7 @@ body {
 }
 
 .html-lesson-wrapper .conversation {
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .html-lesson-wrapper .conversation .subject {
@@ -389,9 +392,9 @@ body {
   font-weight: bold;
   padding-left: 0.5em;
   padding-top: 0.4em;
-  top: -0.1em;
-  left: -0.5%;
-  width: 100.5%;
+  top: -0.15em;
+  left: -0.11em;
+  width: calc(100% + 0.17em);
   margin-bottom: 0px;
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/3-C-17_email_header.png");
   background-repeat: no-repeat;

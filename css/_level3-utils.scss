@@ -23,6 +23,11 @@ body {
   background-repeat: no-repeat;
   font-family: $text-font;
   font-size: clamp(9.5px, 2.4vw, 20px);
+
+  .ofx-auto {
+    overflow-x: auto !important;
+  }
+
   a {
     word-break: break-all;
   }
@@ -193,9 +198,7 @@ body {
     margin-right: 0.5em;
     padding-top: 0.5em;
     height: fit-content;
-    overflow-x: auto;
   }
-
   // See
   .see-content {
     margin-top: 1.5em;

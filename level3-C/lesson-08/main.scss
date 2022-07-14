@@ -1,6 +1,11 @@
 @import '../../css/level3-utils';
 
 .html-lesson-wrapper {
+  .see-content {
+    p:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
   .act-content {
     ul {
       list-style-type: '•';

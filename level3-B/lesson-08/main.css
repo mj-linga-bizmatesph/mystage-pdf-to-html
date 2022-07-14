@@ -193,6 +193,10 @@ body {
 .html-lesson-wrapper .see-content .conversation:not(:last-child) {
   margin-bottom: 1em;
 }
+.html-lesson-wrapper .see-content .conversation .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
 .html-lesson-wrapper .see-content .conversation .row p {
   display: inline-block;
   margin: 0px 0px;

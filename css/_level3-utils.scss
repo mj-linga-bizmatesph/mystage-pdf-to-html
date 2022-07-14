@@ -196,6 +196,8 @@ body {
         margin-bottom: 1em;
       }
       .row {
+        flex-wrap: nowrap;
+
         p {
           display: inline-block;
           margin: 0px 0px;

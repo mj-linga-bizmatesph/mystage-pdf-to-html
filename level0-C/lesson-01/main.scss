@@ -183,6 +183,7 @@ body {
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
         margin-bottom: 1%;
+        font-family: $noto-sans;
       }
     }
 
@@ -319,6 +320,7 @@ body {
           display: flex;
 
           .currently-box {
+            font-family: $noto-sans;
             padding-top: clamp(5.8px, 1.5vw, 9px);
             padding-left: clamp(2px, 2vw, 2px);
             padding-right: 10px;
@@ -335,6 +337,7 @@ body {
           }
 
           .our-team-box {
+            font-family: $noto-sans;
             padding-top: clamp(6.3px, 2vw, 9px);
             padding-left: clamp(2px, 2vw, 2px);
             padding-right: 11px;
@@ -351,6 +354,7 @@ body {
         }
 
         .new-business-box {
+          font-family: $noto-sans;
           padding-top: clamp(6.3px, 2vw, 9px);
           padding-left: clamp(2px, 2vw, 2px);
           padding-right: 5px;
@@ -378,6 +382,7 @@ body {
     .legend {
       display: flex;
       margin-top: clamp(40px, 7vw, 50px);
+      font-family: $noto-sans;
       .legend-1 {
         padding-top: clamp(4.8px, 1.3vw, 9px);
         padding-left: clamp(8px, 2vw, 2px);
@@ -617,6 +622,7 @@ body {
       .wrap-flex-content {
         margin-left: 8px;
         position: relative;
+        font-family: $noto-sans;
         .number {
           color: $primary-blue;
           font-size: clamp(11px, 2.3vw, 18px);
@@ -857,6 +863,7 @@ body {
           .wrap-for-flex {
             display: flex;
             margin-bottom: clamp(0.01px, 0.8vw, 10px);
+            font-family: $noto-sans;
 
             .talk-about {
               font-weight: bold;
@@ -1115,6 +1122,7 @@ body {
         margin-bottom: clamp(230px, 60vw, 350px);
         margin-left: 8px;
         position: relative;
+        font-family: $noto-sans;
 
         .first-line {
           .number {

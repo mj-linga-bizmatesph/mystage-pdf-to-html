@@ -26,6 +26,7 @@ body {
       .name {
         width: 15%;
         margin-top: 0%;
+        font-family: $noto-sans;
       }
 
       .content-text {
@@ -610,10 +611,16 @@ body {
   margin-right: 5%;
 }
 .html-lesson-wrapper .trainer table tr td:first-child {
-  width: 72px;
+  width: 75px;
+}
+.html-lesson-wrapper .trainer table tr td {
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .you table tr td:first-child {
   width: 35px;
+}
+.html-lesson-wrapper .you table tr td {
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .try-content.try-2 .phrase img {
   width: 60%;

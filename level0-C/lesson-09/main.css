@@ -303,6 +303,7 @@ body {
   margin-top: clamp(12px, 3vw, 19px);
   left: 26%;
   position: absolute;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
@@ -361,6 +362,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .b1-legend {
@@ -410,6 +412,7 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 2px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt-box {
@@ -599,6 +602,7 @@ body {
 
 .html-lesson-wrapper .try-2 .try2-content {
   margin-top: clamp(35px, 10vw, 60px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content {
@@ -692,6 +696,7 @@ body {
 
 .html-lesson-wrapper .try-3 .try-3-content {
   margin-top: clamp(35px, 9vw, 50px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .wrap-flex-content {
@@ -779,7 +784,7 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-9-act1.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-9-act-1p.svg);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-text {

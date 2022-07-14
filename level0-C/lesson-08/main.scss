@@ -264,6 +264,7 @@ body {
         margin-top: clamp(12px, 3vw, 19px);
         left: 26%;
         position: absolute;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .were-yellow {
@@ -301,6 +302,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -331,6 +333,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4px;
+        font-family: $noto-sans;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -489,6 +492,7 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(35px, 10vw, 60px);
+      font-family: $noto-sans;
       table {
         font-size: $noto-sans;
         border-collapse: collapse;
@@ -507,6 +511,7 @@ body {
   .try-3 {
     .try-3-content {
       margin-top: clamp(35px, 9vw, 50px);
+      font-family: $noto-sans;
       .row-content {
         margin-left: clamp(5px, 1vw, 10px);
         position: relative;

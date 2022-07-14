@@ -282,6 +282,7 @@ body {
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 28%;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .it-was-piece {
@@ -328,6 +329,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -359,6 +361,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4px;
+        font-family: $noto-sans;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -448,6 +451,7 @@ body {
 
   .try-1 {
     .try1-content {
+      font-family: $noto-sans;
       margin-top: clamp(25px, 7vw, 50px);
       margin-left: $side-margin;
       margin-right: $side-margin;
@@ -527,6 +531,7 @@ body {
   }
 
   .try-2 {
+    font-family: $noto-sans;
     .try2-content {
       margin-top: 70px;
       .wrap-flex-content {
@@ -642,6 +647,7 @@ body {
 
   .try-3 {
     .try3-content {
+      font-family: $noto-sans;
       margin-top: 70px;
       .wrap-flex-content {
         margin-bottom: clamp(230px, 55vw, 340px);
@@ -747,7 +753,7 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/act-1-svg.svg);
+        background-image: url(#{$s3}/0-C-13-act-1.svg);
       }
       margin-top: clamp(30px, 8vw, 40px);
       font-family: $noto-sans;

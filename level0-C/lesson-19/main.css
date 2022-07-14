@@ -11,6 +11,7 @@ body {
 .html-lesson-wrapper .act-content .table .name {
   width: 15%;
   margin-top: 0%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .act-content .table .content-text {
@@ -701,11 +702,19 @@ body {
 }
 
 .html-lesson-wrapper .trainer table tr td:first-child {
-  width: 72px;
+  width: 75px;
+}
+
+.html-lesson-wrapper .trainer table tr td {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .you table tr td:first-child {
   width: 35px;
+}
+
+.html-lesson-wrapper .you table tr td {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content.try-2 .phrase img {

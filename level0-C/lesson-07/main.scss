@@ -273,6 +273,7 @@ body {
         margin-top: clamp(12px, 3vw, 19px);
         left: 26%;
         position: absolute;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .there-were {
@@ -318,6 +319,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -349,6 +351,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4px;
+        font-family: $noto-sans;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -503,6 +506,7 @@ body {
 
   .try-2 {
     .try2-content {
+      font-family: $noto-sans;
       align-content: center;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -529,6 +533,7 @@ body {
   .try-3 {
     .try-3-content {
       margin-top: clamp(35px, 9vw, 50px);
+      font-family: $noto-sans;
       .try-3-numbers {
         margin-left: clamp(20px, 7vw, 29px);
         position: relative;
@@ -549,6 +554,7 @@ body {
   .try-4 {
     .try-4-content {
       margin-top: clamp(45px, 13vw, 70px);
+      font-family: $noto-sans;
       .convo-content {
         margin-bottom: clamp(60px, 14vw, 90px);
       }
@@ -718,6 +724,7 @@ body {
         position: absolute;
         left: 15%;
         margin-top: clamp(12px, 3vw, 19px);
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .how-many-inquiries {
@@ -770,6 +777,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -802,6 +810,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2px;
+        font-family: $noto-sans;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -947,6 +956,7 @@ body {
   .try-6 {
     .try-6-content {
       margin-bottom: clamp(120px, 30vw, 200px);
+      font-family: $noto-sans;
       .row {
         margin-bottom: clamp(100px, 21vw, 150px);
         margin-top: 60px;

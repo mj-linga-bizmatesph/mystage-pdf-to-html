@@ -344,6 +344,7 @@ body {
   position: absolute;
   right: 26%;
   margin-top: clamp(12px, 3vw, 19px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-helen .wrap-all-boxes .wrap-for-flex {
@@ -459,6 +460,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .b1-legend {
@@ -691,6 +693,7 @@ body {
 
 .html-lesson-wrapper .try-2 .try2-content {
   margin-top: 70px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-2 .try2-content .make-columns {
@@ -1056,6 +1059,7 @@ body {
   position: absolute;
   right: 26%;
   margin-top: clamp(12px, 3vw, 19px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-3-content .wrapper-with-helen .wrap-all-boxes .wrap-for-flex {
@@ -1115,6 +1119,7 @@ body {
   position: absolute;
   left: 27%;
   margin-top: clamp(12px, 3vw, 19px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-3-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
@@ -1161,6 +1166,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-3-content .section2-box-content .b1-legend {
@@ -1299,6 +1305,7 @@ body {
 
 .html-lesson-wrapper .try-3 .try-3-content {
   margin-top: clamp(35px, 9vw, 50px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .columns {
@@ -1359,6 +1366,10 @@ body {
   margin-top: 5px;
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
+}
+
+.html-lesson-wrapper .try-4 .try-4-content {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .image-content-1 {

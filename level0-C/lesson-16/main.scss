@@ -283,6 +283,7 @@ body {
         margin-top: clamp(12px, 3vw, 19px);
         left: 26%;
         position: absolute;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .have-you-piece {
@@ -317,6 +318,7 @@ body {
     .section2-box-content {
       margin-top: clamp(10px, 5vw, 20px);
       .legend {
+        font-family: $noto-sans;
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
       }
@@ -346,6 +348,7 @@ body {
         }
       }
       .phrase-alts {
+        font-family: $noto-sans;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4px;
@@ -506,6 +509,7 @@ body {
 
   .try-2 {
     .try2-content {
+      font-family: $noto-sans;
       margin-top: clamp(35px, 10vw, 60px);
       .image-content {
         margin-top: clamp(30px, 8vw, 50px);
@@ -743,6 +747,7 @@ body {
           margin-bottom: clamp(35px, 8vw, 50px);
           .number {
             color: $primary-blue;
+            font-weight: bold;
             font-size: clamp(10px, 2vw, 16px) !important;
           }
           .you-content {
@@ -761,6 +766,7 @@ body {
 
   .try-3 {
     .try-3-content {
+      font-family: $noto-sans;
       margin-top: clamp(35px, 9vw, 50px);
       .image-content {
         border: 1px solid #707070;

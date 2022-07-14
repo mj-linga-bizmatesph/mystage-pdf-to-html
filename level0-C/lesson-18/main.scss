@@ -24,38 +24,45 @@ body {
       .phrase {
         .contents {
           display: flex;
-          font-size: clamp(9px, 2.3vw, 13px);
+          font-size: clamp(11px, 2.8vw, 18px);
+          font-family: $noto-sans;
+
           .content-number {
             width: 10%;
+            font-weight: bold;
           }
+          .container {
+            margin-left: 2%;
+            .trainer {
+              display: flex;
 
-          .trainer {
-            display: flex;
-
-            .content-name {
-              width: 19%;
-              font-weight: bold;
-              text-align: right;
-            }
-            .content-text {
-              width: 300px;
-              margin-left: 2%;
+              .content-name {
+                width: 19%;
+                font-weight: bold;
+                text-align: right;
+              }
+              .content-text {
+                width: 300px;
+                margin-left: 2%;
+              }
             }
           }
         }
         .contents-t3 {
           display: flex;
-          font-size: clamp(9px, 2.3vw, 13px);
+          font-size: clamp(11px, 2.8vw, 18px);
+          font-family: $noto-sans;
 
           .content-number {
             width: 3%;
+            font-weight: bold;
           }
 
           .trainer-t3 {
             display: flex;
 
             .content-name-t3 {
-              width: 14%;
+              width: 19%;
               font-weight: bold;
               text-align: right;
             }
@@ -80,14 +87,20 @@ body {
       .name {
         width: 15%;
         margin-top: 0%;
+        font-family: $noto-sans;
       }
 
       .content-text {
         margin-left: 1%;
         margin-top: 0;
-
+        @media screen and (max-width: 601px) {
+          margin-top: 0.3%;
+        }
+        @media screen and (max-width: 575px) {
+          margin-top: 0.6%;
+        }
         @media screen and (max-width: 480px) {
-          margin-top: 0.8%;
+          margin-top: 0.9%;
         }
       }
     }

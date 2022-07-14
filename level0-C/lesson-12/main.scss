@@ -282,6 +282,7 @@ body {
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 28%;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .i-piece {
@@ -326,6 +327,7 @@ body {
     .section2-box-content {
       margin-top: clamp(10px, 5vw, 20px);
       .legend {
+        font-family: $noto-sans;
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
       }
@@ -448,6 +450,7 @@ body {
 
   .try-1 {
     .try1-content {
+      font-family: $noto-sans;
       margin-top: clamp(25px, 7vw, 50px);
       margin-left: $side-margin;
       margin-right: $side-margin;
@@ -529,6 +532,7 @@ body {
 
   .try-2 {
     .try-2-content {
+      font-family: $noto-sans;
       margin-top: clamp(45px, 13vw, 70px);
       .convo-content {
         margin-bottom: clamp(55px, 13vw, 80px);
@@ -592,6 +596,7 @@ body {
         background-image: url(#{$s3}/0-C-12-helen.svg);
       }
       .wrap-all-boxes {
+        font-family: $noto-sans;
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 15%;
@@ -629,6 +634,7 @@ body {
     .section2-box-content {
       margin-top: clamp(10px, 5vw, 20px);
       .legend {
+        font-family: $noto-sans;
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
       }
@@ -658,6 +664,7 @@ body {
         }
       }
       .phrase-alts {
+        font-family: $noto-sans;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2px;
@@ -746,6 +753,7 @@ body {
 
   .try-3 {
     .try3-content {
+      font-family: $noto-sans;
       margin-top: 70px;
       .wrap-flex-content {
         margin-bottom: clamp(220px, 54vw, 340px);

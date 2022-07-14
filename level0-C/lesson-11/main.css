@@ -349,6 +349,7 @@ body {
   position: absolute;
   margin-top: clamp(12px, 3vw, 19px);
   left: 25%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
@@ -390,6 +391,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .b1-legend {
@@ -431,6 +433,7 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 4px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt-box {
@@ -541,6 +544,7 @@ body {
   margin-top: clamp(25px, 7vw, 50px);
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-right-view {
@@ -618,6 +622,7 @@ body {
 
 .html-lesson-wrapper .try-2 .try2-content {
   margin-top: clamp(30px, 9vw, 60px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-2 .try2-content .wrap-flex-content {
@@ -880,6 +885,7 @@ body {
 
 .html-lesson-wrapper .try-3 .try-3-content {
   margin-top: clamp(45px, 13vw, 70px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .convo-content {
@@ -965,6 +971,7 @@ body {
   position: absolute;
   margin-top: clamp(12px, 3vw, 19px);
   left: 30%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-3-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
@@ -1007,6 +1014,7 @@ body {
 }
 
 .html-lesson-wrapper .section-3-content .section2-box-content .legend {
+  font-family: "Noto Sans", sans-serif;
   margin-top: clamp(25px, 5vw, 38px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1047,6 +1055,7 @@ body {
 }
 
 .html-lesson-wrapper .section-3-content .section2-box-content .phrase-alts {
+  font-family: "Noto Sans", sans-serif;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1148,6 +1157,7 @@ body {
 
 .html-lesson-wrapper .try-4 .try4-content {
   margin-top: clamp(15px, 6vw, 30px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-4 .try4-content .make-columns {
@@ -1266,10 +1276,12 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-text span {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-text .li-content {
   margin-top: 15px;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content {

@@ -331,6 +331,7 @@ body {
   position: absolute;
   margin-top: clamp(22px, 3vw, 19px);
   left: 28%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
@@ -382,6 +383,7 @@ body {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .legend {
+  font-family: "Noto Sans", sans-serif;
   margin-top: clamp(25px, 5vw, 38px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +434,7 @@ body {
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts {
+  font-family: "Noto Sans", sans-serif;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -539,6 +542,7 @@ body {
 
 .html-lesson-wrapper .try-1 .try1-content {
   margin-top: clamp(35px, 10vw, 65px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-content1 {
@@ -548,7 +552,31 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-14-try1-image1.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-14-C-try-1-i1.svg);
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content1 ul {
+  list-style-type: none;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 13%;
+  padding-left: 11%;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content1 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content1 ul li div {
+  width: 390px;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content1 li::before {
+  content: attr(data-value) " ";
+  font-weight: bold;
+  width: 30px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-content2 {
@@ -558,7 +586,31 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-14-try1-image2.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-14-C-try-1-i2.svg);
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content2 ul {
+  list-style-type: none;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 13%;
+  padding-left: 11%;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content2 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content2 ul li div {
+  width: 390px;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content2 li::before {
+  content: attr(data-value) " ";
+  font-weight: bold;
+  width: 30px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-content3 {
@@ -568,7 +620,31 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-14-try1-image3.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-14-C-try-1-i3.svg);
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content3 ul {
+  list-style-type: none;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 13%;
+  padding-left: 11%;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content3 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content3 ul li div {
+  width: 390px;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content3 li::before {
+  content: attr(data-value) " ";
+  font-weight: bold;
+  width: 30px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-content4 {
@@ -578,7 +654,31 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-14-try1-image4.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-14-C-try-1-i4.svg);
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content4 ul {
+  list-style-type: none;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 13%;
+  padding-left: 11%;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content4 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content4 ul li div {
+  width: 390px;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content4 li::before {
+  content: attr(data-value) " ";
+  font-weight: bold;
+  width: 30px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-content5 {
@@ -588,7 +688,31 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-14-try1-image5.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-14-C-try-1-i5.svg);
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content5 ul {
+  list-style-type: none;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 13%;
+  padding-left: 11%;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content5 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content5 ul li div {
+  width: 390px;
+}
+
+.html-lesson-wrapper .try-1 .try1-content .image-content5 li::before {
+  content: attr(data-value) " ";
+  font-weight: bold;
+  width: 30px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .part {
@@ -626,6 +750,7 @@ body {
 
 .html-lesson-wrapper .try-2 .try2-content {
   margin-top: 70px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-2 .try2-content .image-content {

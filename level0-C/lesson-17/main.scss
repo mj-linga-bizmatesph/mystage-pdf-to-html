@@ -24,6 +24,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       font-size: clamp(11px, 2.8vw, 18px);
       line-height: 1.5rem;
       margin-left: clamp(-50px, -14vw, 20px);
+      font-family: $noto-sans;
       li {
         display: flex;
         color: $primary-blue;
@@ -483,6 +484,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
   font-weight: bold;
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 4px;
+  font-family: $noto-sans;
 }
 .html-lesson-wrapper .table .eng {
   font-family: 'Noto Sans', sans-serif;

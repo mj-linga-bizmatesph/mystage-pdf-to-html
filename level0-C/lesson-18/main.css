@@ -11,26 +11,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(9px, 2.3vw, 13px);
+  font-size: clamp(11px, 2.8vw, 18px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content .phrases .phrase .contents .content-number {
   width: 10%;
+  font-weight: bold;
 }
 
-.html-lesson-wrapper .try-content .phrases .phrase .contents .trainer {
+.html-lesson-wrapper .try-content .phrases .phrase .contents .container {
+  margin-left: 2%;
+}
+
+.html-lesson-wrapper .try-content .phrases .phrase .contents .container .trainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.html-lesson-wrapper .try-content .phrases .phrase .contents .trainer .content-name {
+.html-lesson-wrapper .try-content .phrases .phrase .contents .container .trainer .content-name {
   width: 19%;
   font-weight: bold;
   text-align: right;
 }
 
-.html-lesson-wrapper .try-content .phrases .phrase .contents .trainer .content-text {
+.html-lesson-wrapper .try-content .phrases .phrase .contents .container .trainer .content-text {
   width: 300px;
   margin-left: 2%;
 }
@@ -39,11 +45,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(9px, 2.3vw, 13px);
+  font-size: clamp(11px, 2.8vw, 18px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content .phrases .phrase .contents-t3 .content-number {
   width: 3%;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .try-content .phrases .phrase .contents-t3 .trainer-t3 {
@@ -53,7 +61,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .phrases .phrase .contents-t3 .trainer-t3 .content-name-t3 {
-  width: 14%;
+  width: 19%;
   font-weight: bold;
   text-align: right;
 }
@@ -75,6 +83,7 @@ body {
 .html-lesson-wrapper .act-content .table .name {
   width: 15%;
   margin-top: 0%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .act-content .table .content-text {
@@ -82,9 +91,21 @@ body {
   margin-top: 0;
 }
 
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .act-content .table .content-text {
+    margin-top: 0.3%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .html-lesson-wrapper .act-content .table .content-text {
+    margin-top: 0.6%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .html-lesson-wrapper .act-content .table .content-text {
-    margin-top: 0.8%;
+    margin-top: 0.9%;
   }
 }
 

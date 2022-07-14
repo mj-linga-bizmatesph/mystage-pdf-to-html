@@ -313,6 +313,7 @@ body {
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 25%;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .meeting-with-steve {
@@ -349,6 +350,7 @@ body {
       .legend {
         // margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -379,6 +381,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4px;
+        font-family: $noto-sans;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -475,6 +478,7 @@ body {
       margin-top: clamp(25px, 7vw, 50px);
       margin-left: $side-margin;
       margin-right: $side-margin;
+      font-family: $noto-sans;
       .akiko-right-view {
         padding-right: 3vw;
         margin-left: -30px;
@@ -550,6 +554,7 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(30px, 9vw, 60px);
+      font-family: $noto-sans;
       .wrap-flex-content {
         margin-bottom: clamp(200px, 49vw, 280px);
         margin-left: 8px;
@@ -772,6 +777,7 @@ body {
   .try-3 {
     .try-3-content {
       margin-top: clamp(45px, 13vw, 70px);
+      font-family: $noto-sans;
       .convo-content {
         margin-bottom: clamp(55px, 13vw, 80px);
       }
@@ -838,6 +844,7 @@ body {
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
         left: 30%;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .did-you {
@@ -872,6 +879,7 @@ body {
     .section2-box-content {
       margin-top: clamp(10px, 5vw, 20px);
       .legend {
+        font-family: $noto-sans;
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
       }
@@ -901,6 +909,7 @@ body {
         }
       }
       .phrase-alts {
+        font-family: $noto-sans;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2px;
@@ -989,6 +998,7 @@ body {
   .try-4 {
     .try4-content {
       margin-top: clamp(15px, 6vw, 30px);
+      font-family: $noto-sans;
       .make-columns {
         height: clamp(125px, 34vw, 210px);
         display: grid;
@@ -1083,9 +1093,11 @@ body {
         .bubble-text {
           span {
             text-decoration: underline;
+            font-weight: bold;
           }
           .li-content {
             margin-top: 15px;
+            font-weight: bold;
           }
           top: 18%;
           left: 29%;

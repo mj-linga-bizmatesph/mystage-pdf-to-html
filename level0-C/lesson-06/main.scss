@@ -321,6 +321,7 @@ body {
         position: absolute;
         right: 26%;
         margin-top: clamp(12px, 3vw, 19px);
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .big-sales {
@@ -415,6 +416,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -611,6 +613,7 @@ body {
   .try-2 {
     .try2-content {
       margin-top: 70px;
+      font-family: $noto-sans;
       .make-columns {
         height: clamp(125px, 34vw, 210px);
         display: grid;
@@ -898,6 +901,7 @@ body {
         position: absolute;
         right: 26%;
         margin-top: clamp(12px, 3vw, 19px);
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .how-much {
@@ -945,6 +949,7 @@ body {
         position: absolute;
         left: 27%;
         margin-top: clamp(12px, 3vw, 19px);
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .sales-were {
@@ -982,6 +987,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -1099,6 +1105,7 @@ body {
   .try-3 {
     .try-3-content {
       margin-top: clamp(35px, 9vw, 50px);
+      font-family: $noto-sans;
       .columns {
         align-content: center;
         display: grid;
@@ -1152,6 +1159,7 @@ body {
 
   .try-4 {
     .try-4-content {
+      font-family: $noto-sans;
       .image-content-1 {
         margin-left: $side-margin;
         margin-top: clamp(30px, 8vw, 50px);

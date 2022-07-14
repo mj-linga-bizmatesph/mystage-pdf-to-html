@@ -293,6 +293,7 @@ body {
       }
       .wrap-all-boxes {
         margin-top: clamp(12px, 4vw, 29px);
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .trouble-box {
@@ -519,6 +520,7 @@ body {
         margin-bottom: clamp(175px, 45vw, 260px);
         margin-left: 8px;
         position: relative;
+        font-family: $noto-sans;
         .number {
           color: $primary-blue;
           font-size: clamp(12px, 3vw, 18px);
@@ -905,6 +907,7 @@ body {
         .trainer-part {
           margin-top: clamp(20px, 5vw, 30px);
           font-size: clamp(12px, 3vw, 18px);
+          font-family: $noto-sans;
           .trainer {
             margin-left: clamp(14px, 2.5vw, 20px);
           }

@@ -304,6 +304,7 @@ body {
   margin-top: clamp(12px, 3vw, 19px);
   left: 26%;
   position: absolute;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
@@ -360,6 +361,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .b1-legend {
@@ -402,6 +404,7 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 4px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .alt-box {
@@ -584,6 +587,7 @@ body {
 }
 
 .html-lesson-wrapper .try-2 .try2-content {
+  font-family: "Noto Sans", sans-serif;
   -ms-flex-line-pack: center;
       align-content: center;
   display: -ms-grid;
@@ -614,6 +618,7 @@ body {
 
 .html-lesson-wrapper .try-3 .try-3-content {
   margin-top: clamp(35px, 9vw, 50px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .try-3-numbers {
@@ -635,6 +640,7 @@ body {
 
 .html-lesson-wrapper .try-4 .try-4-content {
   margin-top: clamp(45px, 13vw, 70px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .convo-content {
@@ -844,6 +850,7 @@ body {
   position: absolute;
   left: 15%;
   margin-top: clamp(12px, 3vw, 19px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-3-content .wrapper-with-helen .wrap-all-boxes .wrap-for-flex {
@@ -909,6 +916,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-3-content .section2-box-content .b1-legend {
@@ -951,6 +959,7 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 2px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-3-content .section2-box-content .phrase-alts .alt-box {
@@ -1121,6 +1130,7 @@ body {
 
 .html-lesson-wrapper .try-6 .try-6-content {
   margin-bottom: clamp(120px, 30vw, 200px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-6 .try-6-content .row {

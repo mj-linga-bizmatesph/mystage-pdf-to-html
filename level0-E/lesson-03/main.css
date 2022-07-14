@@ -993,6 +993,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
+  padding-right: 1em;
   content: attr(data-value) " ";
   width: clamp(15px, 15vw, 77px);
   text-align: right;
@@ -1031,9 +1032,9 @@ body {
   background-color: #e7f3fa;
   border: 1px solid #1287cd;
   border-radius: clamp(10px, 1vw, 21px);
-  padding: clamp(0.8rem, 3.5vw, 1.2rem) clamp(1rem, 2vw, 2rem);
+  padding: clamp(0.8rem, 3.5vw, 1.2rem) clamp(1rem, 2vw, 1rem);
   position: relative !important;
-  width: clamp(250px, 79vw, 470px);
+  width: 86%;
   z-index: 1;
   font-family: "Noto Sans", sans-serif;
 }
@@ -1042,6 +1043,8 @@ body {
   list-style-type: none;
   margin-top: 0%;
   margin-left: clamp(0px, 0.5vw, 24px);
+  -webkit-padding-start: 0px !important;
+          padding-inline-start: 0px !important;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li {
@@ -1097,6 +1100,8 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol {
+  -webkit-padding-start: 0px !important;
+          padding-inline-start: 0px !important;
   padding-left: 3%;
   list-style-type: upper-alpha;
   width: 455px;
@@ -1219,3 +1224,4 @@ body {
   margin-top: 10%;
   left: 57.1%;
 }
+/*# sourceMappingURL=main.css.map */

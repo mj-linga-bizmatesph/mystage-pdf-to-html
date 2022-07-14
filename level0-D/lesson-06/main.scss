@@ -76,7 +76,7 @@ body {
   }
 
   .span-letter-spacing {
-    letter-spacing: -2.5px !important;
+    letter-spacing: 1px !important;
   }
 
   header {
@@ -699,7 +699,7 @@ body {
         .row {
           display: flex;
           align-items: center;
-          margin-bottom: 2.4vw;
+          margin-bottom: 1vw;
 
           div {
             margin-right: clamp(2px, 1.5vw, 6px);

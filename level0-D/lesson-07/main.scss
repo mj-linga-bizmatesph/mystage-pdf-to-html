@@ -154,7 +154,7 @@ body {
   }
   .eng {
     font-weight: bold;
-    font-size: clamp(8.5px, 2.4vw, 14px);
+    font-size: clamp(10px, 2.3vw, 18px);
   }
   .jap {
     letter-spacing: -0.5px;
@@ -911,7 +911,7 @@ body {
         .speech {
           width: 85%;
           padding-left: clamp(1px, 1vw, 5px);
-          font-size: (8.5px, 2.4vw, 18px);
+          font-size: clamp(8.5px, 2.4vw, 18px);
         }
       }
     }
@@ -951,9 +951,9 @@ body {
       .bold {
         margin-right: 2vw;
         text-align: right;
-        width: 12%;
+        width: 13%;
         font-weight: bold;
-        font-size: $fs-16;
+        font-size: clamp(8.5px,2.4vw,14px);
       }
 
       .step {
@@ -998,7 +998,7 @@ body {
 
       .eng {
         font-family: $text-font;
-        font-size: clamp(8.5px, 2.4vw, 14px);
+        font-size: clamp(10px, 2.3vw, 14px);
         font-weight: bold;
       }
 
@@ -1025,13 +1025,13 @@ body {
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: clamp(10px, 2.3vw, 18px);
         margin-bottom: clamp(5px, 1vw, 10px);
       }
 
       .jpn-text {
         display: flex;
-        font-family: (7px, 2.2vw, 11px);
+        font-size: clamp(8px, 2.2vw, 13px);
         margin-bottom: clamp(5px, 3vw, 25px);
         color: #7f8288;
       }
@@ -1039,13 +1039,12 @@ body {
       .bold {
         margin-right: 2vw;
         text-align: right;
-        width: 12%;
+        width: 13%;
         font-weight: bold;
-        font-size: (8.5px, 2.4vw, 14px);
+        font-size: clamp(10px, 2.3vw, 18px);
       }
 
       .speech {
-        font-size: (8.5px, 2.4vw, 14px);
         width: 88%;
       }
     }

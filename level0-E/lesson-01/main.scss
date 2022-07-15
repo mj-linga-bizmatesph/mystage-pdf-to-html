@@ -27,7 +27,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,10 +60,6 @@ body {
   .fs-16 {
     font-size: clamp(12px, 2.3vw, 16px);
   }
-  .flip-horizontal {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
   .noto-sans {
     font-family: $noto-sans;
   }
@@ -87,6 +83,7 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
 
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
@@ -257,13 +254,11 @@ body {
         background-size: contain;
 
         &.akiko-1 {
-          // background-image: url(#{$s3}/0-e-1-speech-bubble-akiko.png);
           left: 6%;
           padding: 11% 10% 6% 16%;
           margin-top: 0.8%;
         }
         &.ken-1 {
-          // background-image: url(#{$s3}/0-e-1-speech-bubble-ken.png);
           right: 1%;
           padding: 5% 8% 10% 5%;
           margin-top: 13%;

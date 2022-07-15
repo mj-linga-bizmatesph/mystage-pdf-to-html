@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-header.png), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-footer.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-header.svg), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,11 +52,6 @@ body {
   font-size: clamp(12px, 2.3vw, 16px);
 }
 
-.html-lesson-wrapper .flip-horizontal {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 .html-lesson-wrapper .noto-sans {
   font-family: "Noto Sans", sans-serif;
 }
@@ -85,6 +80,7 @@ body {
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 69%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -790,4 +786,3 @@ body {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: 3.8%;
 }
-/*# sourceMappingURL=main.css.map */

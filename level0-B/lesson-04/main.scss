@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,6 +88,7 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
         clamp(10px, 3vw, 17px);
@@ -437,7 +438,7 @@ body {
       text-transform: uppercase;
       color: $primary-blue;
       font-size: clamp(12px, 2.3vw, 16px);
-      background-image: url(#{$s3}/0-see-arrow.png);
+      background-image: url(#{$s3}/0-see-arrow.svg);
       padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
       background-repeat: no-repeat;
       background-size: contain;
@@ -459,7 +460,7 @@ body {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.svg);
     }
   }
   .act-content {
@@ -475,7 +476,7 @@ body {
 
     .arrow.act {
       color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
 
@@ -673,7 +674,7 @@ body {
 
           .box-2 {
             width: clamp(8px, 22vw, 120px);
-            background: url(#{$s3}/0-yellow-piece.png);
+            background: url(#{$s3}/0-yellow-piece.svg);
             text-align: center;
             background-position: center;
             background-size: cover;
@@ -686,7 +687,7 @@ body {
             width: clamp(84px, 17vw, 110px);
             margin-left: clamp(4px, 2vw, 7px);
             font-size: clamp(10px, 2.2vw, 16px);
-            background: url(#{$s3}/0-piece-blue.png);
+            background: url(#{$s3}/0-piece-blue.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -728,7 +729,7 @@ body {
 
       .b1-legend {
         width: clamp(80px, 15vw, 85px);
-        background: url(#{$s3}/0-yellow-piece.png);
+        background: url(#{$s3}/0-yellow-piece.svg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -739,7 +740,7 @@ body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-piece-blue.png);
+        background-image: url(#{$s3}/0-piece-blue.svg);
         font-size: clamp(10px, 2.2vw, 16px);
       }
 
@@ -944,7 +945,7 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-akiko-right-view.png);
+        background-image: url(#{$s3}/0-akiko-right-view.svg);
         transform: scaleX(-1);
       }
     }

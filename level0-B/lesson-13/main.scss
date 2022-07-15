@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,6 +88,7 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
         clamp(10px, 3vw, 17px);
@@ -494,7 +495,7 @@ body {
       text-transform: uppercase;
       color: $primary-blue;
       font-size: clamp(12px, 2.3vw, 16px);
-      background-image: url(#{$s3}/0-see-arrow.png);
+      background-image: url(#{$s3}/0-see-arrow.svg);
       padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
       background-repeat: no-repeat;
       background-size: contain;
@@ -515,7 +516,7 @@ body {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.svg);
     }
   }
   .act-content {
@@ -532,7 +533,7 @@ body {
 
     .arrow.act {
       color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
 
@@ -571,7 +572,7 @@ body {
       background-position: top, bottom;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url(#{$s3}/0-convo-bubble3.png);
+      background-image: url(#{$s3}/0-convo-bubble3.svg);
       display: flex;
       flex-direction: column;
     }
@@ -675,7 +676,7 @@ body {
           .box-2 {
             font-size: clamp(10px, 2.2vw, 16px);
             width: clamp(113px, 21vw, 181.8px);
-            background: url(#{$s3}/0-B-13-yellowpiece.png);
+            background: url(#{$s3}/0-B-13-yellowpiece.svg);
             text-align: center;
             background-position: center;
             background-size: cover;
@@ -690,7 +691,7 @@ body {
             width: clamp(93px, 18vw, 168px);
             margin-left: clamp(0px, 2vw, 3px);
             font-size: clamp(10px, 2.2vw, 16px);
-            background: url(#{$s3}/0-B-13-GREENPIECE.png);
+            background: url(#{$s3}/0-B-13-GREENPIECE.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -738,7 +739,7 @@ body {
 
       .b1-legend {
         width: clamp(130px, 18vw, 150px);
-        background: url(#{$s3}/0-b-13-rect.png);
+        background: url(#{$s3}/0-b-13-rect.svg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -751,7 +752,7 @@ body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-B-13-GREENPIECE.png);
+        background-image: url(#{$s3}/0-B-13-GREENPIECE.svg);
         height: clamp(8px, 6vw, 32px);
       }
 

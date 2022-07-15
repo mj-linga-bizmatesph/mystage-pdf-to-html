@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,6 +88,7 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
         clamp(10px, 3vw, 17px);
@@ -494,7 +495,7 @@ body {
       text-transform: uppercase;
       color: $primary-blue;
       font-size: clamp(12px, 2.3vw, 16px);
-      background-image: url(#{$s3}/0-see-arrow.png);
+      background-image: url(#{$s3}/0-see-arrow.svg);
       padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
       background-repeat: no-repeat;
       background-size: contain;
@@ -516,7 +517,7 @@ body {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.svg);
     }
   }
   .act-content {
@@ -532,7 +533,7 @@ body {
 
     .arrow.act {
       color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
 
@@ -633,7 +634,7 @@ body {
           margin-left: clamp(-3px, -1vw, 0px);
           .box-1 {
             width: clamp(62px,19vw,94px);
-            background: url(#{$s3}/0-b-12-yellow.png);
+            background: url(#{$s3}/0-b-12-yellow.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -644,7 +645,7 @@ body {
           }
           .box-2 {
             width: clamp(86px,25vw,123px);
-            background: url(#{$s3}/0-b-12-green.png);
+            background: url(#{$s3}/0-b-12-green.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -702,7 +703,7 @@ body {
     }
     .b1-legend {
       width: clamp(90px,20vw,96px);
-      background: url(#{$s3}/0-b-12-yellow.png);
+      background: url(#{$s3}/0-b-12-yellow.svg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -716,7 +717,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(#{$s3}/0-b-12-pink.png);
+      background-image: url(#{$s3}/0-b-12-pink.svg);
       font-size: clamp(10px, 2.2vw, 16px);
       height: clamp(23px,5vw,20px);
     }
@@ -807,7 +808,7 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-D-1-akikoright-icon.png);
+        background-image: url(#{$s3}/0-D-1-akikoright-icon.svg);
       }
       .akiko-combinations {
         .akiko-first-combinations {

@@ -109,6 +109,7 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
         clamp(10px, 3vw, 17px);
@@ -380,7 +381,7 @@ body {
 
     .arrow.see {
       color: $primary-blue;
-      background-image: url(#{$s3}/0-see-arrow.png);
+      background-image: url(#{$s3}/0-see-arrow.svg);
     }
 
     .phrases-section {
@@ -415,7 +416,7 @@ body {
         background-repeat: no-repeat;
       }
       .yellow-piece {
-        background-image: url(#{$s3}/0-yellow-piece.png),
+        background-image: url(#{$s3}/0-yellow-piece.svg),
           linear-gradient(
             90deg,
             rgba(255, 226, 0, 1) 80%,
@@ -423,10 +424,10 @@ body {
           );
         background-position: right;
         padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 9px);
       }
       .blue-piece {
-        background-image: url(#{$s3}/0-blue-piece.png),
+        background-image: url(#{$s3}/0-blue-piece.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 20%,
@@ -437,7 +438,7 @@ body {
         background-position: left;
       }
       .red-piece {
-        background-image: url(#{$s3}/0-red-piece.png),
+        background-image: url(#{$s3}/0-red-piece.svg),
           linear-gradient(
             90deg,
             rgb(255, 178, 176) 80%,
@@ -448,7 +449,7 @@ body {
         background-position: right;
       }
       .green-piece {
-        background-image: url(#{$s3}/0-green-piece.png),
+        background-image: url(#{$s3}/0-green-piece.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 20%,
@@ -460,7 +461,7 @@ body {
         background-position: left;
       }
       .green-piece-complete {
-        background-image: url(#{$s3}/0-green-piece-end.png),
+        background-image: url(#{$s3}/0-green-piece-end.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 8%,
@@ -468,7 +469,7 @@ body {
             #c3e8e6 80%,
             rgba(255, 255, 255, 0) 80%
           ),
-          url(#{$s3}/0-green-piece-start.png);
+          url(#{$s3}/0-green-piece-start.svg);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
@@ -476,7 +477,7 @@ body {
       }
 
       .blue-piece-complete {
-        background-image: url(#{$s3}/0-blue-piece-end.png),
+        background-image: url(#{$s3}/0-blue-piece-end.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 8%,
@@ -484,7 +485,7 @@ body {
             #e7f3fa 80%,
             rgba(255, 255, 255, 0) 80%
           ),
-          url(#{$s3}/0-blue-piece-start.png);
+          url(#{$s3}/0-blue-piece-start.svg);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
         background-position: left, center, right;
@@ -492,7 +493,7 @@ body {
       }
 
       .yellow-piece-complete {
-        background-image: url(#{$s3}/0-yellow-piece-end.png),
+        background-image: url(#{$s3}/0-yellow-piece-end.svg),
           linear-gradient(
             90deg,
             rgba(255, 255, 255, 0) 8%,
@@ -500,15 +501,15 @@ body {
             #ffe200 80%,
             rgba(255, 255, 255, 0) 80%
           ),
-          url(#{$s3}/0-yellow-piece-start.png);
+          url(#{$s3}/0-yellow-piece-start.svg);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px)
-          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+          clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 13px);
         background-position: left, center, right;
         background-size: auto 100%, auto, auto 100%;
       }
 
       .green-piece-male {
-        background-image: url(#{$s3}/0-green-piece-male.png),
+        background-image: url(#{$s3}/0-green-piece-male.svg),
           linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
         padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
           clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
@@ -516,7 +517,7 @@ body {
       }
 
       .yellow-piece-female {
-        background-image: url(#{$s3}/0-yellow-piece-female.png),
+        background-image: url(#{$s3}/0-yellow-piece-female.svg),
           linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
         padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px)
           clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
@@ -572,7 +573,7 @@ body {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.svg);
     }
 
     .combinations {
@@ -589,7 +590,7 @@ body {
 
     .arrow.act {
       color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
   .blue-line {

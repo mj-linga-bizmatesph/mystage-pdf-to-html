@@ -593,6 +593,9 @@ body {
   color: #1287cd;
   font-size: clamp(11px, 2.7vw, 16px);
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row img {

@@ -296,6 +296,7 @@ body {
           margin-left: clamp(22px, 9.8vw, 85px);
           top: 15%;
           font-size: clamp(8px, 2.3vw, 13px);
+          font-family: $noto-sans;
           ul {
             padding-left: clamp(5%, 8%, 9%);
             padding-top: 1%;
@@ -310,6 +311,7 @@ body {
           }
           li::before {
             content: attr(data-value) ' ';
+            font-weight: bold;
           }
         }
       }
@@ -368,6 +370,7 @@ body {
           margin-left: clamp(29px, 11vw, 75px);
           top: 15%;
           font-size: clamp(8px, 2.3vw, 14px);
+          font-family: $noto-sans;
           ul {
             padding-left: clamp(5%, 6%, 8%);
             padding-top: 1%;
@@ -379,6 +382,7 @@ body {
           }
           li::before {
             content: attr(data-value) ' ';
+            font-weight: bold;
           }
         }
       }
@@ -437,6 +441,7 @@ body {
           margin-left: clamp(98px, 31vw, 205px);
           top: 12%;
           font-size: clamp(7px, 1.8vw, 12px);
+          font-family: $noto-sans;
           ul {
             padding-left: clamp(9%, 17%, 22%);
             padding-top: 2%;
@@ -454,6 +459,7 @@ body {
           }
           li::before {
             content: attr(data-value) ' ';
+            font-weight: bold;
           }
         }
       }
@@ -512,6 +518,7 @@ body {
           margin-left: clamp(40px, 15vw, 106px);
           top: 17%;
           font-size: clamp(7px, 2.3vw, 13px);
+          font-family: $noto-sans;
           ul {
             padding-left: clamp(7%, 4rem, 17%);
           }
@@ -522,6 +529,7 @@ body {
           }
           li::before {
             content: attr(data-value) ' ';
+            font-weight: bold;
           }
         }
       }
@@ -580,6 +588,7 @@ body {
           margin-left: clamp(70px, 23.5vw, 156px);
           top: 15%;
           font-size: clamp(7px, 2vw, 13px);
+          font-family: $noto-sans;
           ul {
             padding-left: clamp(7%, 4rem, 21%);
           }
@@ -590,6 +599,7 @@ body {
           }
           li::before {
             content: attr(data-value) ' ';
+            font-weight: bold;
           }
         }
       }

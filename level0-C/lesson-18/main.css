@@ -41,6 +41,10 @@ body {
   margin-left: 2%;
 }
 
+.html-lesson-wrapper .try-content .phrases .phrase .contents .container .trainer .content-text u {
+  color: #1287cd;
+}
+
 .html-lesson-wrapper .try-content .phrases .phrase .contents-t3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,24 +92,24 @@ body {
 
 .html-lesson-wrapper .act-content .table .content-text {
   margin-left: 1%;
-  margin-top: 0;
+  margin-top: 0.4%;
 }
 
 @media screen and (max-width: 601px) {
   .html-lesson-wrapper .act-content .table .content-text {
-    margin-top: 0.3%;
+    margin-top: 0.7%;
   }
 }
 
 @media screen and (max-width: 575px) {
   .html-lesson-wrapper .act-content .table .content-text {
-    margin-top: 0.6%;
+    margin-top: 1%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .html-lesson-wrapper .act-content .table .content-text {
-    margin-top: 0.9%;
+    margin-top: 1.2%;
   }
 }
 

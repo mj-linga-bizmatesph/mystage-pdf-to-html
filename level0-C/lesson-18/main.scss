@@ -44,6 +44,10 @@ body {
               .content-text {
                 width: 300px;
                 margin-left: 2%;
+
+                u {
+                  color: $primary-blue;
+                }
               }
             }
           }
@@ -92,15 +96,15 @@ body {
 
       .content-text {
         margin-left: 1%;
-        margin-top: 0;
+        margin-top: 0.4%;
         @media screen and (max-width: 601px) {
-          margin-top: 0.3%;
+          margin-top: 0.7%;
         }
         @media screen and (max-width: 575px) {
-          margin-top: 0.6%;
+          margin-top: 1%;
         }
         @media screen and (max-width: 480px) {
-          margin-top: 0.9%;
+          margin-top: 1.2%;
         }
       }
     }

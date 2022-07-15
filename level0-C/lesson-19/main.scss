@@ -18,6 +18,25 @@ body {
 }
 
 .html-lesson-wrapper {
+  .tyr-content {
+    .office-section {
+      .phrases {
+        .phrase {
+          .you {
+            table {
+              tbody {
+                tr {
+                  .you {
+                    border: 1px solid red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .act-content {
     .table {
       max-width: 100%;
@@ -31,10 +50,15 @@ body {
 
       .content-text {
         margin-left: 1%;
-        margin-top: 0;
-
-        @media screen and (max-width: 551px) {
-          margin-top: 0.8%;
+        margin-top: 0.4%;
+        @media screen and (max-width: 601px) {
+          margin-top: 0.7%;
+        }
+        @media screen and (max-width: 575px) {
+          margin-top: 1%;
+        }
+        @media screen and (max-width: 480px) {
+          margin-top: 1.2%;
         }
       }
     }
@@ -611,13 +635,13 @@ body {
   margin-right: 5%;
 }
 .html-lesson-wrapper .trainer table tr td:first-child {
-  width: 75px;
+  width: 95px;
 }
 .html-lesson-wrapper .trainer table tr td {
   font-family: $noto-sans;
 }
 .html-lesson-wrapper .you table tr td:first-child {
-  width: 35px;
+  width: 45px;
 }
 .html-lesson-wrapper .you table tr td {
   font-family: $noto-sans;
@@ -627,9 +651,11 @@ body {
   height: auto;
   float: right;
 }
-.html-lesson-wrapper .try-content.try-2 .phrases {
+.html-lesson-wrapper .try-content.try-2 .phrases,
+.html-lesson-wrapper .try-content.try-3 .phrases {
   display: inline-block;
   width: 100%;
+  font-size: clamp(11px, 2.8vw, 18px);
 }
 .html-lesson-wrapper .try-content.try-2 .phrase.phrase-left,
 .html-lesson-wrapper .try-content.try-2 .phrase.phrase-right {
@@ -653,15 +679,16 @@ body {
 }
 .html-lesson-wrapper .try-content.try-2 table tbody tr.you,
 .html-lesson-wrapper .try-content.try-3 table tbody tr.you {
-  margin-left: 6%;
+  margin-left: 8.3%;
   margin-top: 3%;
   position: absolute;
+  width: 300px;
 }
 .html-lesson-wrapper .try-content.try-3 .trainer {
   padding: 10% 0 40% 0;
 }
 .html-lesson-wrapper .try-content.try-3 table tbody tr.you {
-  margin-left: 6%;
+  margin-left: 8.3%;
   margin-top: -30%;
   position: absolute;
 }
@@ -671,7 +698,7 @@ body {
 }
 .html-lesson-wrapper .try-content.try-3 .phrase.phrase-topper {
   position: absolute;
-  margin-top: -17%;
+  margin-top: -9%;
   margin-left: 4%;
   text-align: center;
   color: #2d356b;

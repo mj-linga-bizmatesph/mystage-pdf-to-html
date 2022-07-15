@@ -314,6 +314,7 @@ body {
   margin-left: clamp(22px, 9.8vw, 85px);
   top: 15%;
   font-size: clamp(8px, 2.3vw, 13px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .text-bubble ul {
@@ -335,6 +336,7 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .text-bubble li::before {
   content: attr(data-value) " ";
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content {
@@ -407,6 +409,7 @@ body {
   margin-left: clamp(29px, 11vw, 75px);
   top: 15%;
   font-size: clamp(8px, 2.3vw, 14px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble ul {
@@ -424,6 +427,7 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble li::before {
   content: attr(data-value) " ";
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content {
@@ -496,6 +500,7 @@ body {
   margin-left: clamp(98px, 31vw, 205px);
   top: 12%;
   font-size: clamp(7px, 1.8vw, 12px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble ul {
@@ -521,6 +526,7 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble li::before {
   content: attr(data-value) " ";
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content {
@@ -593,6 +599,7 @@ body {
   margin-left: clamp(40px, 15vw, 106px);
   top: 17%;
   font-size: clamp(7px, 2.3vw, 13px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .text-bubble ul {
@@ -609,6 +616,7 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .text-bubble li::before {
   content: attr(data-value) " ";
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content {
@@ -681,6 +689,7 @@ body {
   margin-left: clamp(70px, 23.5vw, 156px);
   top: 15%;
   font-size: clamp(7px, 2vw, 13px);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble ul {
@@ -697,6 +706,7 @@ body {
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble li::before {
   content: attr(data-value) " ";
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content {

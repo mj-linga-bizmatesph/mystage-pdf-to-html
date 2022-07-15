@@ -505,6 +505,7 @@ body {
               color: $primary-blue;
               font-size: $fs-16;
               white-space: nowrap;
+              display: flex;
             }
             img {
               width: clamp(10px, 3vw, 15px);

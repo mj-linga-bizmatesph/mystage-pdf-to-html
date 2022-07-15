@@ -51,13 +51,14 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
             b {
               font-weight: normal;
               color: $primary-blue;
+              text-decoration: underline;
             }
           }
         }
       }
       li::before {
         font-weight: bold;
-        width: 75px;
+        width: 80px;
         text-align: right;
       }
     }

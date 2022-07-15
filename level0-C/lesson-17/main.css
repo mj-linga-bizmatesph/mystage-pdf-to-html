@@ -53,11 +53,12 @@
 .html-lesson-wrapper .try-content .ul-main .ul-sub li div b {
   font-weight: normal;
   color: #1287cd;
+  text-decoration: underline;
 }
 
 .html-lesson-wrapper .try-content .ul-main li::before {
   font-weight: bold;
-  width: 75px;
+  width: 80px;
   text-align: right;
 }
 

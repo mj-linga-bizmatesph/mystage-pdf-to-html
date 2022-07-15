@@ -1140,6 +1140,7 @@ body {
           .number {
             color: $primary-blue;
             font-size: clamp(10px, 2vw, 16px) !important;
+            font-weight: bold;
           }
           .content {
             position: absolute;

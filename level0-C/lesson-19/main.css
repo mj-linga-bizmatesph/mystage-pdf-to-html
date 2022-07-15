@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+.html-lesson-wrapper .tyr-content .office-section .phrases .phrase .you table tbody tr .you {
+  border: 1px solid red;
+}
+
 .html-lesson-wrapper .act-content .table {
   max-width: 100%;
   font-size: clamp(10px, 3vw, 16px);
@@ -16,12 +20,24 @@ body {
 
 .html-lesson-wrapper .act-content .table .content-text {
   margin-left: 1%;
-  margin-top: 0;
+  margin-top: 0.4%;
 }
 
-@media screen and (max-width: 551px) {
+@media screen and (max-width: 601px) {
   .html-lesson-wrapper .act-content .table .content-text {
-    margin-top: 0.8%;
+    margin-top: 0.7%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .html-lesson-wrapper .act-content .table .content-text {
+    margin-top: 1%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .html-lesson-wrapper .act-content .table .content-text {
+    margin-top: 1.2%;
   }
 }
 
@@ -702,7 +718,7 @@ body {
 }
 
 .html-lesson-wrapper .trainer table tr td:first-child {
-  width: 75px;
+  width: 95px;
 }
 
 .html-lesson-wrapper .trainer table tr td {
@@ -710,7 +726,7 @@ body {
 }
 
 .html-lesson-wrapper .you table tr td:first-child {
-  width: 35px;
+  width: 45px;
 }
 
 .html-lesson-wrapper .you table tr td {
@@ -723,9 +739,11 @@ body {
   float: right;
 }
 
-.html-lesson-wrapper .try-content.try-2 .phrases {
+.html-lesson-wrapper .try-content.try-2 .phrases,
+.html-lesson-wrapper .try-content.try-3 .phrases {
   display: inline-block;
   width: 100%;
+  font-size: clamp(11px, 2.8vw, 18px);
 }
 
 .html-lesson-wrapper .try-content.try-2 .phrase.phrase-left,
@@ -754,9 +772,10 @@ body {
 
 .html-lesson-wrapper .try-content.try-2 table tbody tr.you,
 .html-lesson-wrapper .try-content.try-3 table tbody tr.you {
-  margin-left: 6%;
+  margin-left: 8.3%;
   margin-top: 3%;
   position: absolute;
+  width: 300px;
 }
 
 .html-lesson-wrapper .try-content.try-3 .trainer {
@@ -764,7 +783,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 table tbody tr.you {
-  margin-left: 6%;
+  margin-left: 8.3%;
   margin-top: -30%;
   position: absolute;
 }
@@ -776,7 +795,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .phrase.phrase-topper {
   position: absolute;
-  margin-top: -17%;
+  margin-top: -9%;
   margin-left: 4%;
   text-align: center;
   color: #2d356b;

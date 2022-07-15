@@ -834,12 +834,13 @@ body {
 
 .html-lesson-wrapper .try-content .try-1-content .row1 p {
   font-size: clamp(12px, 2.2vw, 18px);
-  width: 26em;
+  width: 22em;
   display: inline-block;
   margin: 0px 0px;
 }
 
 .html-lesson-wrapper .try-content .try-1-content .row1 p:first-child {
+  margin-left: 2em;
   margin-right: 4px;
   max-width: 100px;
   word-wrap: break-word;
@@ -866,7 +867,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
 }
 
 .html-lesson-wrapper .try-content .try-1-content .blue-section .row p {
@@ -912,6 +913,7 @@ body {
   font-size: clamp(11px, 2.7vw, 16px);
   color: #1287cd;
   font-weight: bold;
+  margin-top: 0.1em;
 }
 
 .html-lesson-wrapper .try-content .try-1-content li {

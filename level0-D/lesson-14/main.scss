@@ -782,10 +782,11 @@ body {
         margin-bottom: 0em;
         p {
           font-size: clamp(12px, 2.2vw, 18px);
-          width: 26em;
+          width: 22em;
           display: inline-block;
           margin: 0px 0px;
           &:first-child {
+            margin-left: 2em;
             margin-right: 4px;
             max-width: 100px;
             word-wrap: break-word;
@@ -809,7 +810,7 @@ body {
 
         .row {
           display: flex;
-          margin-bottom: 0em;
+          margin-bottom: 0.5em;
           p {
             display: inline-block;
             margin: 0px 0px;
@@ -852,6 +853,7 @@ body {
         font-size: $fs-16;
         color: $primary-blue;
         font-weight: bold;
+        margin-top: 0.1em;
       }
 
       li {

@@ -133,7 +133,7 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -160,7 +160,7 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .see-content {
@@ -256,7 +256,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.5px, 1.7vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-2 {
@@ -275,7 +275,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.5px, 1.7vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .section-2-content {
@@ -338,7 +338,7 @@ body {
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .jap {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.8px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content {
@@ -522,10 +522,11 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.2px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-1 .bubble-2 {
+  font-weight: bold;
   font-size: clamp(8.4px, 2.3vw, 14px);
   position: absolute;
   top: clamp(47%, 29.5vw, 50%);
@@ -559,10 +560,11 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.2px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-2 .bubble-2 {
+  font-weight: bold;
   font-size: clamp(8.4px, 2.3vw, 14px);
   position: absolute;
   top: clamp(50%, 32vw, 54.5%);
@@ -596,13 +598,14 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.2px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-3 .bubble-2 {
+  font-weight: bold;
   font-size: clamp(8.4px, 2.3vw, 14px);
   position: absolute;
-  top: clamp(41%, 26.5vw, 45.5%);
+  top: clamp(41%, 26.5vw, 43.5%);
   left: 36%;
 }
 
@@ -633,10 +636,11 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.2px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-4 .bubble-2 {
+  font-weight: bold;
   font-size: clamp(8.4px, 2.3vw, 14px);
   position: absolute;
   top: clamp(43%, 27vw, 46%);
@@ -670,10 +674,11 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.2px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-5 .bubble-2 {
+  font-weight: bold;
   font-size: clamp(8.4px, 2.3vw, 14px);
   position: absolute;
   top: clamp(43%, 27vw, 45.5%);
@@ -707,10 +712,11 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.2px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .try-1 .try1-content .image-6 .bubble-2 {
+  font-weight: bold;
   font-size: clamp(8.4px, 2.3vw, 14px);
   position: absolute;
   top: clamp(45%, 28.5vw, 48%);
@@ -865,7 +871,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-1 .text-bot,
@@ -891,7 +897,7 @@ body {
   margin-left: clamp(40px, 9vw, 64px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   margin-top: 5px;
 }
 

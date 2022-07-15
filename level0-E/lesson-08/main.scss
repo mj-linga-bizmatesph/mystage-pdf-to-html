@@ -422,6 +422,17 @@ body {
 
   .try-1 {
     .try1-content {
+      ul{
+        list-style: none;
+        li::before {
+          font-size: clamp(10.8px, 2.8vw, 18px);
+          color: $primary-blue;
+          font-weight: bold;
+          font-family: $noto-sans;
+          content: attr(data-value) " ";
+        }
+        }
+      }
       .underline {
         text-decoration: underline;
         color: $primary-blue;
@@ -467,8 +478,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -507,8 +518,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
         margin: 12% 0 0 0%;
@@ -548,8 +559,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -588,8 +599,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -634,8 +645,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -674,8 +685,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -714,8 +725,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -725,6 +736,11 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(35px, 12vw, 70px);
+
+      .underline{
+        text-decoration: underline;
+        color: $primary-blue;
+      }
 
       .ul1 {
         list-style-type: none;
@@ -957,7 +973,7 @@ body {
       margin-bottom: 80px;
     }
   }
-}
+
 
 @media only screen and (min-width: 150px) and(max-width: 442px) {
   .section-2-content .wrapper-with-akiko .steve-image {

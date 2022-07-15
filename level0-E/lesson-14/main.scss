@@ -117,7 +117,7 @@ body {
     border-radius: clamp(10px, 3vw, 25px);
     padding: clamp(1.2rem, 4.8vw, 2rem) clamp(0.7rem, 2vw, 0.8rem);
     position: relative !important;
-    width: clamp(292px, 80.1vw, 492px);
+    width: clamp(292px, 80.1vw, 514px);
 
     ol {
       margin: 0;
@@ -127,7 +127,7 @@ body {
       counter-reset: orderedlist;
 
       div {
-        width: clamp(292px, 79.1vw, 465px);
+        width: clamp(292px, 79.1vw, 470px);
       }
     }
 
@@ -156,7 +156,7 @@ body {
       position: absolute;
       top: clamp(0.1rem, 1.5vw, 0.6rem);
       left: 1%;
-      width: clamp(190px, 83vw, 510px);
+      width: clamp(190px, 83vw, 525px);
     }
   }
   .program-rank {
@@ -1103,10 +1103,11 @@ body {
         }
 
         .person {
-          width: clamp(60px, 15%, 80px);
+          margin-left: 1em;
+          width: 20%;
           text-align: right;
           font-weight: bold;
-          font-size: $fs-18;
+          font-size: clamp(12px, 3.5vw, 18px);
         }
 
         .speech {

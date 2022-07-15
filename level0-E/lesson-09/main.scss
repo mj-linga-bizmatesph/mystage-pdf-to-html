@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 1px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -300,7 +300,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 1px;
         }
       }
     }
@@ -452,10 +452,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 1px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(47%, 29.5vw, 50%);
@@ -488,6 +489,7 @@ body {
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(50%, 32vw, 54.5%);
@@ -520,9 +522,10 @@ body {
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
-          top: clamp(41%, 26.5vw, 45.5%);
+          top: clamp(41%, 26.5vw, 43.5%);
           left: 36%;
         }
       }
@@ -548,10 +551,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 1px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(43%, 27vw, 46%);
@@ -580,10 +584,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 1px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(43%, 27vw, 45.5%);
@@ -616,6 +621,7 @@ body {
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(45%, 28.5vw, 48%);
@@ -777,7 +783,7 @@ body {
             margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 1px;
             margin-top: 5px;
           }
         }

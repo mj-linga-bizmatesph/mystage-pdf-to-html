@@ -1,4 +1,4 @@
-@import '../../css/level0-utils';
+@import '../../css/level0-E-utils';
 
 .html-lesson-wrapper {
   .see-content {
@@ -226,14 +226,15 @@
           border: 1px solid $primary-blue;
           background: #e7f3fa;
           font-family: $noto-sans;
+          font-size: clamp(12px, 3.5vw, 18px);
 
           .oblong {
             margin-left: $side-margin;
             margin-right: $side-margin;
             position: absolute;
-            left: 1%;
+            left: 0.5%;
             margin-top: -2.5%;
-            width: 50%;
+            width: clamp(150px, 43vw, 288px);
           }
 
           ol {
@@ -291,7 +292,7 @@
           margin-top: 65%;
           left: 16.1%;
           .eng:nth-child(1) {
-            margin-bottom: 5%;
+            margin-bottom: 1%;
           }
           .jap:not(:last-child) {
             margin-bottom: 5%;

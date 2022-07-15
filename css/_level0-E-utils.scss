@@ -1,4 +1,11 @@
+/*
+this file is intended to be use generally for the level 0 lessons,
+if you want to override the specified class, go to the scss file
+of the lesson and make the same class, and override it depending
+on what you need.
+*/
 $text-font: 'Trebuchet MS';
+$title-font: 'Arial';
 $noto-sans: 'Noto Sans', sans-serif;
 
 $primary-blue: #1287cd;
@@ -27,11 +34,13 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-
+  .spacer1 {
+    margin-top: 1%;
+  }
   hr {
     border-top: 1px solid #dbdcdc;
   }
@@ -48,17 +57,40 @@ body {
     display: flex;
   }
 
+  .justify-left {
+    justify-content: left !important;
+  }
+
+  .justify-center {
+    justify-content: center !important;
+  }
+
+  .justify-right {
+    justify-content: end !important;
+  }
+
   .img-responsive {
     width: 100%;
     height: auto;
+  }
+
+  .img-responsive-clamp {
+    max-width: clamp(44%, 25vw, 100%);
   }
 
   header {
     font-family: $noto-sans;
   }
 
+  .fs-14 {
+    font-size: clamp(6px, 1.5vw, 14px);
+  }
+
   .fs-16 {
-    font-size: clamp(12px, 2.3vw, 16px);
+    font-size: clamp(6px, 2.6vw, 16px);
+  }
+  .fs-18 {
+    font-size: clamp(6px, 2.7vw, 18px);
   }
   .flip-horizontal {
     -webkit-transform: scaleX(-1);
@@ -66,6 +98,9 @@ body {
   }
   .noto-sans {
     font-family: $noto-sans;
+  }
+  .exclude-letter-spacing {
+    letter-spacing: normal;
   }
   .b {
     font-weight: bold;
@@ -108,12 +143,15 @@ body {
       width: 100%;
     }
   }
+  .at-mention {
+    color: #9ea9fc;
+  }
   .eng {
     font-weight: bold;
-    font-size: clamp(9px, 2vw, 14px);
+    font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -1.3px;
+    letter-spacing: -0.5px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -126,7 +164,6 @@ body {
     color: #ffffff;
   }
 
-  // Title
   .title-section {
     position: absolute;
     top: clamp(30px, 8vw, 50px);
@@ -156,17 +193,18 @@ body {
     font-family: $noto-sans;
   }
   .instructions {
+    margin-right: $side-margin;
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
-    left: 26%;
+    left: 27%;
 
     .title {
       font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(9px, 2vw, 13px);
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
       letter-spacing: -1.3px;
     }
@@ -174,17 +212,6 @@ body {
 
   //office section
   .office-section {
-    &.office-see-1 {
-      margin-top: 9%;
-    }
-    &.office-act-1 {
-      margin-top: 7%;
-      margin-bottom: 4%;
-    }
-    &.office-try-4 {
-      margin-top: clamp(23px, 6.5vw, 35px);
-    }
-
     .legend {
       div {
         position: absolute;
@@ -213,9 +240,9 @@ body {
 
           & > .number {
             font-size: clamp(15px, 4vw, 24px);
-            width: clamp(20px, 4vw, 35px);
-            height: clamp(20px, 4vw, 35px);
-            line-height: clamp(20px, 4vw, 35px);
+            width: clamp(18px, 5vw, 24px);
+            height: clamp(18px, 5vw, 24px);
+            line-height: clamp(18px, 5vw, 24px);
           }
         }
       }
@@ -226,27 +253,9 @@ body {
       border-radius: clamp(4px, 1vw, 7px);
       border: 0.25px solid #231f20;
       background: white;
-      padding: 1.6% 2.5%;
+      padding: 1% 1.6%;
       font-size: clamp(7px, 2vw, 10px);
       color: #2d356b;
-
-      &.akiko-1 {
-        left: 38%;
-        margin-top: 35%;
-      }
-      &.ken-1 {
-        right: 13%;
-        margin-top: 34%;
-      }
-      &.akiko-2 {
-        left: 10%;
-        margin-top: 34%;
-        z-index: 999;
-      }
-      &.ken-2 {
-        right: 14%;
-        margin-top: 36%;
-      }
     }
     .conversation {
       .bubble {
@@ -255,19 +264,6 @@ body {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-
-        &.akiko-1 {
-          // background-image: url(#{$s3}/0-e-1-speech-bubble-akiko.png);
-          left: 6%;
-          padding: 11% 10% 6% 16%;
-          margin-top: 0.8%;
-        }
-        &.ken-1 {
-          // background-image: url(#{$s3}/0-e-1-speech-bubble-ken.png);
-          right: 1%;
-          padding: 5% 8% 10% 5%;
-          margin-top: 13%;
-        }
       }
       .speech {
         position: absolute;
@@ -275,19 +271,6 @@ body {
         flex-direction: column;
         background-repeat: no-repeat;
         background-size: contain;
-
-        &.ken-1 {
-          background-image: url(#{$s3}/0-e-1-speech-ken-1.png);
-          padding: 2% 3% 5% 2%;
-          margin-top: 15%;
-          right: 22%;
-        }
-        &.akiko-1 {
-          background-image: url(#{$s3}/0-e-1-speech-akiko-1.png);
-          padding: 2% 3% 16% 2%;
-          margin-top: 4%;
-          left: 14%;
-        }
       }
     }
   }
@@ -300,12 +283,19 @@ body {
     color: white;
     margin: 0;
     text-align: center;
-    width: clamp(18px, 5vw, 24px);
-    height: clamp(18px, 5vw, 24px);
-    line-height: clamp(18px, 5vw, 24px);
+    width: clamp(13px, 4vw, 24px);
+    min-width: clamp(13px, 4vw, 24px);
+    height: clamp(13px, 4vw, 24px);
+    line-height: clamp(13px, 4vw, 24px);
     font-family: $noto-sans;
-    font-size: clamp(11px, 3vw, 16px);
+    @extend .fs-16;
     z-index: 1;
+
+    &.inverse {
+      color: $primary-blue;
+      background-color: white;
+      border: 1px solid #707070;
+    }
   }
 
   .letter {
@@ -316,8 +306,14 @@ body {
     width: clamp(11px, 4vw, 20px);
     height: clamp(11px, 4vw, 20px);
     line-height: clamp(11px, 4vw, 20px);
-    font-size: clamp(11px, 3vw, 16px);
+    @extend .fs-16;
     text-align: center;
+  }
+
+  .text {
+    @extend .b, .primary-blue, .fs-16;
+    white-space: nowrap;
+    font-family: $noto-sans;
   }
 
   .plus {
@@ -325,7 +321,7 @@ body {
     align-content: center;
     & > img {
       width: auto;
-      height: clamp(10px, 5vw, 15px);
+      height: clamp(10px, 2vw, 15px);
     }
   }
 
@@ -334,25 +330,49 @@ body {
     margin-left: $side-margin;
     margin-right: $side-margin;
 
-    &.see-1 {
-      margin-top: 30%;
-    }
+    .phrase-alts {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      gap: 13px;
 
-    &.see-2,
-    &.see-3 {
-      margin-top: 7%;
-
-      .legend {
-        margin-top: 7%;
+      &.half {
+        grid-template-columns: 1fr 1fr;
       }
-    }
 
-    &.see-3 {
-      .legend {
-        justify-content: center !important;
-        .red {
-          margin-bottom: 2px;
+      .alt-box {
+        padding: clamp(7px, 2vw, 15px);
+        border: 1px solid $primary-blue;
+
+        &.blue {
+          background-color: #e7f3fa;
         }
+      }
+
+      .alt {
+        display: flex;
+        align-items: baseline;
+      }
+
+      .alt:not(:last-child) {
+        margin-bottom: clamp(10px, 2vw, 20px);
+      }
+
+      .choice {
+        margin-left: clamp(5px, 1vw, 9px);
+        p {
+          margin: 0;
+          font-family: $noto-sans;
+        }
+      }
+
+      .choice-eng {
+        font-size: clamp(9px, 2vw, 18px);
+      }
+
+      .choice-jap {
+        font-size: clamp(6.7px, 1.8vw, 13px);
+        letter-spacing: -0.5px;
+        color: $subtext-color;
       }
     }
 
@@ -362,6 +382,7 @@ body {
     }
 
     .phrases-section {
+      //base
       .yellow {
         background: #ffe200;
       }
@@ -372,27 +393,92 @@ body {
         background: #ffb2b0;
       }
 
+      .yellow,
+      .blue,
+      .red {
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+      }
+
       .yellow-piece,
       .green-piece,
       .red-piece,
-      .blue-piece {
+      .blue-piece,
+      .green-piece-complete,
+      .blue-piece-complete,
+      .green-piece-male,
+      .blue-piece-male,
+      .yellow-piece-female,
+      .yellow-piece-complete,
+      .red-piece-female {
         background-position: center;
-        background-size: contain;
+        background-size: auto 105%;
         background-repeat: no-repeat;
       }
-
       .yellow-piece {
         background-image: url(#{$s3}/0-yellow-piece.png), linear-gradient(90deg, rgba(255, 226, 0, 1) 80%, rgba(255, 255, 255, 0) 80%);
         background-position: right;
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
       .blue-piece {
-        background-image: url(#{$s3}/0-blue-piece.png);
+        background-image: url(#{$s3}/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left;
       }
       .red-piece {
-        background-image: url(#{$s3}/0-red-piece.png);
+        background-image: url(#{$s3}/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
       }
       .green-piece {
         background-image: url(#{$s3}/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgba(195, 232, 230, 1) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+
+        background-position: left;
+      }
+      .green-piece-complete {
+        background-image: url(#{$s3}/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 85%, rgba(255, 255, 255, 0) 85%), url(#{$s3}/0-green-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left, center, right;
+        background-size: auto 105%, auto, auto 105%;
+      }
+
+      .blue-piece-complete {
+        background-image: url(#{$s3}/0-blue-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #e7f3fa 8%, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%), url(#{$s3}/0-blue-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left, center, right;
+        background-size: auto 105%, auto, auto 105%;
+      }
+
+      .yellow-piece-complete {
+        background-image: url(#{$s3}/0-yellow-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #ffe200 8%, #ffe200 80%, rgba(255, 255, 255, 0) 80%),
+          url(#{$s3}/0-yellow-piece-start.png);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 25px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left, center, right;
+        background-size: auto 105%, auto, auto 105%;
+      }
+
+      .green-piece-male {
+        background-image: url(#{$s3}/0-green-piece-male.png), linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
+      }
+
+      .blue-piece-male {
+        background-image: url(#{$s3}/0-blue-piece-male.png), linear-gradient(90deg, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
+      }
+
+      .yellow-piece-female {
+        background-image: url(#{$s3}/0-yellow-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+
+        background-position: left;
+      }
+
+      .red-piece-female {
+        background-image: url(#{$s3}/0-red-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffb2b0 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
         background-position: left;
       }
@@ -401,6 +487,7 @@ body {
         @extend .b;
         text-align: center;
         font-size: clamp(10px, 2vw, 14px);
+        font-family: $noto-sans;
 
         img {
           height: clamp(70px, 20vw, 100px);
@@ -421,7 +508,7 @@ body {
       }
       .eng {
         @extend .b;
-        font-size: clamp(8px, 2.2vw, 16px);
+        font-size: clamp(8px, 2vw, 16px);
         text-align: center;
         border-radius: 3px;
         font-family: $noto-sans;
@@ -432,102 +519,11 @@ body {
         min-width: 100%;
       }
 
-      .conversation {
-        .akiko-1 {
-          margin-top: 5%;
-          display: grid;
-          grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-
-          .icon {
-            margin-right: 40px;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(11px, 3vw, 17px);
-          }
-          .phrase:not(:last-child) {
-            margin-right: 20px;
-          }
-        }
-
-        .ken-1 {
-          margin-top: 5%;
-          display: grid;
-          grid-template-columns: 1fr min-content;
-
-          .icon {
-            margin-right: 40px;
-          }
-          .eng {
-            padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-          }
-          .phrase:not(:last-child) {
-            margin-right: 20px;
-          }
-          .phrases-wrapper {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            margin-right: clamp(18px, 5vw, 30px);
-          }
-        }
-      }
-
       .legend {
         display: flex;
         justify-content: space-between;
-
-        & .eng {
-          padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
-        }
-        .yellow-piece,
-        .green-piece {
+        .eng {
           margin-bottom: 2px;
-        }
-      }
-
-      .phrase-alts {
-        display: grid;
-        grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
-        gap: 13px;
-
-        &.half {
-          grid-template-columns: 1fr 1fr;
-        }
-        &.right {
-          grid-template-columns: 1fr min-content;
-        }
-
-        .alt-box {
-          padding: 15px;
-          border: 1px solid $primary-blue;
-        }
-
-        .alt {
-          display: flex;
-          align-items: baseline;
-        }
-
-        .alt:not(:last-child) {
-          margin-bottom: 7%;
-        }
-
-        .choice {
-          margin-left: clamp(5px, 1vw, 9px);
-          p {
-            margin: 0;
-            white-space: nowrap;
-            font-family: $noto-sans;
-          }
-        }
-
-        .choice-eng {
-          font-size: clamp(9px, 3vw, 18px);
-        }
-
-        .choice-jap {
-          font-size: clamp(6.7px, 1.8vw, 13px);
-          letter-spacing: -1.3px;
-          color: $subtext-color;
         }
       }
     }
@@ -535,129 +531,6 @@ body {
   .try-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-
-    &.try-1,
-    &.try-3,
-    &.try-2 {
-      margin-top: 7%;
-    }
-
-    &.try-1 {
-      .combinations {
-        grid-template-columns: min-content 1fr 1fr;
-        margin-top: 7%;
-
-        .combination-icon {
-          height: clamp(116px, 26vw, 180px);
-          width: auto;
-          margin-right: clamp(28px, 8vw, 56px);
-        }
-
-        .combination {
-          align-items: center;
-          margin-bottom: 11%;
-
-          & > div:not(:last-child) {
-            margin-right: 11%;
-          }
-        }
-      }
-    }
-
-    &.try-2 {
-      .instructions {
-        margin-right: 20px;
-      }
-
-      .table-wrapper-section {
-        margin-top: 15%;
-        .table-wrapper {
-          width: 100%;
-          p {
-            margin: 0;
-          }
-          .table-number {
-            @extend .b, .primary-blue;
-            font-size: clamp(10px, 3vw, 16px);
-            padding-top: 3px;
-          }
-          .table-img {
-            width: 34%;
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 11%;
-          }
-          img {
-            max-width: clamp(44%, 25vw, 100%);
-            padding-left: 5%;
-          }
-        }
-      }
-
-      .table {
-        font-family: $noto-sans;
-        border-collapse: collapse;
-        margin-left: 3%;
-        margin-top: 1.3%;
-
-        td {
-          font-size: clamp(10px, 3vw, 18px);
-          img {
-            max-width: clamp(44%, 16vw, 100%);
-            margin-bottom: 20px;
-          }
-        }
-
-        .name {
-          @extend .b;
-          font-size: clamp(10px, 3vw, 16px);
-          white-space: nowrap;
-        }
-
-        td:nth-child(2) {
-          padding-bottom: 9%;
-        }
-      }
-    }
-
-    &.try-3 {
-      margin-top: 50px;
-
-      .table-wrapper {
-        margin-top: 12%;
-        .table {
-          font-family: $noto-sans;
-          border-collapse: collapse;
-          margin-bottom: 8%;
-
-          .table-number {
-            @extend .b, .primary-blue;
-            font-size: clamp(10px, 3vw, 16px);
-            padding-right: 12px;
-          }
-
-          td {
-            font-size: clamp(10px, 3vw, 18px);
-            img {
-              max-width: clamp(44%, 16vw, 100%);
-              margin-bottom: 20px;
-            }
-          }
-
-          .name {
-            @extend .b;
-            font-size: clamp(10px, 3vw, 16px);
-
-            white-space: nowrap;
-          }
-
-          td:nth-child(3) {
-            padding-bottom: 5%;
-          }
-        }
-      }
-    }
 
     .arrow.try {
       color: white;
@@ -675,35 +548,16 @@ body {
   .act-content {
     margin-left: $side-margin;
     margin-right: $side-margin;
-    &.act-1,
-    &.act-2 {
-      margin-top: 32px;
-    }
-    &.act-2 {
-      margin-bottom: 15%;
-    }
 
     .arrow.act {
       color: white;
       background-image: url(#{$s3}/0-act-arrow.png);
     }
-
-    &.act-1 {
-      .akiko-standing {
-        position: absolute;
-        margin-top: 25%;
-        left: 10%;
-        height: auto;
-        width: clamp(34px, 9.1vw, 57px);
-      }
-      .table .name {
-        padding-top: 1px;
-      }
-    }
   }
   .blue-line {
     width: 15px;
     height: 2px;
+    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .table {
@@ -716,17 +570,63 @@ body {
       padding-right: 10px;
       white-space: nowrap;
       width: 1%;
+      padding-top: 0.8%;
     }
 
     .eng {
       font-family: $noto-sans;
       font-weight: normal;
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(10px, 2.68vw, 18px);
       margin-bottom: 1%;
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
       margin-bottom: 3.8%;
+    }
+  }
+  .try-content,
+  .table-wrapper-section,
+  .part-content {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+
+    .arrow.part {
+      color: white;
+      background-image: url(#{$s3}/0-act-arrow.png);
+    }
+
+    .ul-main {
+      list-style-type: none;
+      font-size: clamp(10px, 2.68vw, 18px);
+      margin-bottom: 3rem;
+      font-family: $noto-sans;
+
+      li {
+        display: flex;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 551px) {
+          line-height: 1.3rem;
+        }
+        @media screen and (max-width: 401px) {
+          line-height: 1rem;
+        }
+
+        div {
+          margin-left: 3%;
+          width: 400px;
+        }
+
+        u {
+          color: $primary-blue;
+        }
+      }
+    }
+    li::before {
+      content: attr(data-value) ' ';
+      width: clamp(25px, 32vw, 75px);
+      text-align: right;
+      font-weight: bold;
     }
   }
 }

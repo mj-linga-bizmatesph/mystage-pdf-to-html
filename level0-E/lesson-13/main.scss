@@ -47,7 +47,9 @@ body {
   td {
     vertical-align: top;
   }
-
+  .jpf {
+    font-size: $fs-13 !important;
+  }
   .m-0 {
     margin: 0;
   }
@@ -116,6 +118,7 @@ body {
     border-radius: clamp(10px, 1vw, 21px);
     padding: clamp(0.8rem, 3.5vw, 2rem) clamp(1rem, 2vw, 1rem);
     position: relative !important;
+    font-size: clamp(12px, 3.5vw, 18px);
 
     ol {
       margin: 0;
@@ -236,8 +239,11 @@ body {
     line-height: 1.6;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
+    }
+    .m {
+      margin-right: 4%;
     }
     .sub-title {
       font-size: $fs-13;
@@ -371,6 +377,7 @@ body {
       }
 
       .piece {
+        border-radius: 3%;
         height: clamp(30px, 9vw, 38px);
         font-size: $fs-16;
         font-family: $noto-sans;
@@ -419,7 +426,9 @@ body {
 
       ol.column-two {
         --li-bg: #fff;
-
+        div {
+          padding-top: 1%;
+        }
         li::before {
           color: $primary-blue;
           border: 2px solid $primary-blue;
@@ -1008,7 +1017,7 @@ body {
     }
 
     .try-2-content {
-      margin-top: clamp(40px, 10vw, 50px);
+      margin-top: clamp(40px, 13vw, 50px);
 
       .try-3-image {
         margin-bottom: clamp(20px, 3vw, 40px);
@@ -1021,6 +1030,15 @@ body {
         display: grid;
         grid-gap: clamp(0.1rem, 1vw, 0.5rem);
         counter-reset: orderedlist;
+
+        div {
+          margin-left: 1%;
+          margin-top: -0.3%;
+        }
+      }
+      .blue-box {
+        width: 462px;
+        font-size: clamp(10.5px, 2.7vw, 16px);
       }
 
       li::before {
@@ -1044,27 +1062,27 @@ body {
 
       .speech-bubble {
         position: absolute;
-        margin: 39% 0 0 6%;
+        margin: 37% 0 0 6%;
       }
 
       .speech-bubble-1 {
         position: absolute;
-        margin: 39% 0 0 21%;
+        margin: 37% 0 0 21%;
       }
 
       .speech-bubble-2 {
         position: absolute;
-        margin: 40% 0 0 24%;
+        margin: 37% 0 0 27%;
       }
 
       .speech-bubble-3 {
         position: absolute;
-        margin: 39.5% 0 0 15%;
+        margin: 37.5% 0 0 15%;
       }
 
       .speech-bubble-4 {
         position: absolute;
-        margin: 42% 0 0 15%;
+        margin: 40% 0 0 15%;
       }
 
       li {
@@ -1095,10 +1113,10 @@ body {
         }
 
         .person {
-          width: clamp(60px, 15%, 80px);
+          width: clamp(60px, 16%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1108,6 +1126,7 @@ body {
         }
       }
     }
+
     .try-3-content {
       margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
       display: flex;
@@ -1189,7 +1208,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -1225,7 +1244,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1346,7 +1365,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -1381,7 +1400,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1487,6 +1506,7 @@ body {
 
       .speech {
         width: 85%;
+        font-size: $fs-18;
       }
     }
 

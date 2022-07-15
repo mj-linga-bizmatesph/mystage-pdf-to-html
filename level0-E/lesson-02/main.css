@@ -1,7 +1,7 @@
 /*
-this file is intended to be use generally for the level 0 lessons, 
-if you want to override the specified class, go to the scss file 
-of the lesson and make the same class, and override it depending 
+this file is intended to be use generally for the level 0 lessons,
+if you want to override the specified class, go to the scss file
+of the lesson and make the same class, and override it depending
 on what you need.
 */
 body {
@@ -25,6 +25,10 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.html-lesson-wrapper .spacer1 {
+  margin-top: 1%;
 }
 
 .html-lesson-wrapper hr {
@@ -84,7 +88,7 @@ body {
   font-size: clamp(6px, 2.6vw, 16px);
 }
 
-.html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-2 .table td, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table td {
+.html-lesson-wrapper .fs-18, .html-lesson-wrapper .try-content.try-2 .table td {
   font-size: clamp(6px, 2.7vw, 18px);
 }
 
@@ -101,7 +105,7 @@ body {
   letter-spacing: normal;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name, .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table .name {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .number, .html-lesson-wrapper .letter, .html-lesson-wrapper .text, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .try-content.try-2 .table .name {
   font-weight: bold;
 }
 
@@ -206,7 +210,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -633,14 +637,74 @@ body {
   margin-bottom: 3.8%;
 }
 
+.html-lesson-wrapper .try-content,
+.html-lesson-wrapper .table-wrapper-section,
 .html-lesson-wrapper .part-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
 
+.html-lesson-wrapper .try-content .arrow.part,
+.html-lesson-wrapper .table-wrapper-section .arrow.part,
 .html-lesson-wrapper .part-content .arrow.part {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+}
+
+.html-lesson-wrapper .try-content .ul-main,
+.html-lesson-wrapper .table-wrapper-section .ul-main,
+.html-lesson-wrapper .part-content .ul-main {
+  list-style-type: none;
+  font-size: clamp(10px, 2.68vw, 18px);
+  margin-bottom: 3rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.html-lesson-wrapper .try-content .ul-main li,
+.html-lesson-wrapper .table-wrapper-section .ul-main li,
+.html-lesson-wrapper .part-content .ul-main li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content .ul-main li,
+  .html-lesson-wrapper .table-wrapper-section .ul-main li,
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content .ul-main li,
+  .html-lesson-wrapper .table-wrapper-section .ul-main li,
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .try-content .ul-main li div,
+.html-lesson-wrapper .table-wrapper-section .ul-main li div,
+.html-lesson-wrapper .part-content .ul-main li div {
+  margin-left: 3%;
+  width: 400px;
+}
+
+.html-lesson-wrapper .try-content .ul-main li u,
+.html-lesson-wrapper .table-wrapper-section .ul-main li u,
+.html-lesson-wrapper .part-content .ul-main li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content li::before,
+.html-lesson-wrapper .table-wrapper-section li::before,
+.html-lesson-wrapper .part-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-content.see-1 {
@@ -914,25 +978,93 @@ body {
   margin-bottom: 5%;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table {
-  font-family: "Noto Sans", sans-serif;
-  border-collapse: collapse;
-  margin-bottom: 15%;
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 18px);
+  margin-bottom: 3rem;
+  font-family: "Noto Sans", sans-serif !important;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-  width: 16%;
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li {
+    line-height: 1.3rem;
+  }
 }
 
-.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table tr:not(:last-child) td:nth-child(2) {
-  padding-bottom: 5%;
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li div {
+  margin-left: 3%;
+  width: 400px;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul1 li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
+  content: attr(data-value) " ";
+  width: clamp(28px, 33vw, 78px);
+  text-align: right;
+  font-weight: bold;
+}
+
+.html-lesson-wrapper .act-content .ul1 {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 18px);
+  margin-bottom: 3rem;
+  margin-left: clamp(-29px, -10vw, 0px);
+}
+
+.html-lesson-wrapper .act-content .ul1 li {
+  font-family: "Noto Sans", sans-serif !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .act-content .ul1 li div {
+  margin-left: 2%;
+  width: clamp(269px, 70vw, 400px);
+}
+
+.html-lesson-wrapper .act-content .ul1 li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .act-content .ul1 li .j {
+  font-size: clamp(1px, 2vw, 13px);
+}
+
+.html-lesson-wrapper .act-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .act-1,
@@ -961,3 +1093,4 @@ body {
   margin-top: 44%;
   left: 10.1%;
 }
+/*# sourceMappingURL=main.css.map */

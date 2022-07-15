@@ -1,7 +1,7 @@
 /*
-this file is intended to be use generally for the level 0 lessons, 
-if you want to override the specified class, go to the scss file 
-of the lesson and make the same class, and override it depending 
+this file is intended to be use generally for the level 0 lessons,
+if you want to override the specified class, go to the scss file
+of the lesson and make the same class, and override it depending
 on what you need.
 */
 body {
@@ -25,6 +25,10 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.html-lesson-wrapper .spacer1 {
+  margin-top: 1%;
 }
 
 .html-lesson-wrapper hr {
@@ -206,7 +210,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -633,14 +637,74 @@ body {
   margin-bottom: 3.8%;
 }
 
+.html-lesson-wrapper .try-content,
+.html-lesson-wrapper .table-wrapper-section,
 .html-lesson-wrapper .part-content {
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
 
+.html-lesson-wrapper .try-content .arrow.part,
+.html-lesson-wrapper .table-wrapper-section .arrow.part,
 .html-lesson-wrapper .part-content .arrow.part {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.png);
+}
+
+.html-lesson-wrapper .try-content .ul-main,
+.html-lesson-wrapper .table-wrapper-section .ul-main,
+.html-lesson-wrapper .part-content .ul-main {
+  list-style-type: none;
+  font-size: clamp(10px, 2.68vw, 18px);
+  margin-bottom: 3rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.html-lesson-wrapper .try-content .ul-main li,
+.html-lesson-wrapper .table-wrapper-section .ul-main li,
+.html-lesson-wrapper .part-content .ul-main li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content .ul-main li,
+  .html-lesson-wrapper .table-wrapper-section .ul-main li,
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content .ul-main li,
+  .html-lesson-wrapper .table-wrapper-section .ul-main li,
+  .html-lesson-wrapper .part-content .ul-main li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .try-content .ul-main li div,
+.html-lesson-wrapper .table-wrapper-section .ul-main li div,
+.html-lesson-wrapper .part-content .ul-main li div {
+  margin-left: 3%;
+  width: 400px;
+}
+
+.html-lesson-wrapper .try-content .ul-main li u,
+.html-lesson-wrapper .table-wrapper-section .ul-main li u,
+.html-lesson-wrapper .part-content .ul-main li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content li::before,
+.html-lesson-wrapper .table-wrapper-section li::before,
+.html-lesson-wrapper .part-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .see-content.see-1 {
@@ -685,6 +749,11 @@ body {
 
 .html-lesson-wrapper .see-content.see-2 .phrases-section {
   margin-bottom: 8%;
+}
+
+.html-lesson-wrapper .see-content.see-2 .phrases-section .phrase p {
+  margin: clamp(3px, 0.5vw, 5px) 0px;
+  width: clamp(52px, 13vw, 104px);
 }
 
 .html-lesson-wrapper .see-content.see-2 .conversation .conv-1 {
@@ -825,7 +894,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .p1 {
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(11px, 2.7vw, 18px);
   padding-top: 1.2%;
 }
 
@@ -849,7 +918,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table .name {
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
   white-space: nowrap;
   width: 16%;
 }
@@ -857,7 +926,7 @@ body {
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table tr:not(:last-child) td:nth-child(2) {
   padding-top: 1%;
   padding-bottom: 5%;
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section {
@@ -871,7 +940,68 @@ body {
   margin-top: 1.5% !important;
 }
 
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main {
+  list-style-type: none;
+  font-size: clamp(11px, 2.7vw, 18px);
+  margin-bottom: 3rem;
+  margin-left: clamp(-11%, -1em, 2%);
+  font-family: "Noto Sans", sans-serif;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .ul-content {
+  margin-left: 1%;
+  color: black;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 div {
+  margin-left: 3%;
+  width: clamp(150px, 70vw, 400px);
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .spacer-li {
+  margin-top: 2%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section li::before {
+  padding-right: 1em;
+  content: attr(data-value) " ";
+  width: clamp(15px, 15vw, 77px);
+  text-align: right;
+  font-weight: bold;
+}
+
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper {
+  font-size: clamp(11px, 2.8vw, 18px);
   width: 100%;
 }
 
@@ -898,6 +1028,54 @@ body {
   padding-left: 2%;
 }
 
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text {
+  background-color: #e7f3fa;
+  border: 1px solid #1287cd;
+  border-radius: clamp(10px, 1vw, 21px);
+  padding: clamp(0.8rem, 3.5vw, 1.2rem) clamp(1rem, 2vw, 1rem);
+  position: relative !important;
+  width: 86%;
+  z-index: 1;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box {
+  list-style-type: none;
+  margin-top: 0%;
+  margin-left: clamp(0px, 0.5vw, 24px);
+  -webkit-padding-start: 0px !important;
+          padding-inline-start: 0px !important;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li::marker {
+  font-weight: bold;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box li::before {
+  content: attr(data-value) " ";
+  width: 17px;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text div {
+  width: clamp(250px, 80vw, 500px);
+  margin-left: 1%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .red-circle {
+  position: absolute;
+  top: clamp(0.1rem, 1.5vw, 0.2rem);
+  left: 0%;
+  top: 4%;
+  width: clamp(315px, 80vw, 510px);
+  z-index: -1;
+}
+
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices {
   padding: 3% 5%;
   border-radius: clamp(1px, 1vw, 10px);
@@ -922,8 +1100,11 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol {
-  padding-left: 6%;
+  -webkit-padding-start: 0px !important;
+          padding-inline-start: 0px !important;
+  padding-left: 3%;
   list-style-type: upper-alpha;
+  width: 455px;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol li {
@@ -933,6 +1114,10 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol li:not(:last-child) {
   margin-bottom: 6%;
+}
+
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-choices ol li::marker {
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper:not(:last-child) {
@@ -956,6 +1141,53 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table tr:not(:last-child) td:nth-child(2) {
   padding-bottom: 5%;
+}
+
+.html-lesson-wrapper .act-content .ul1 {
+  list-style-type: none;
+  font-size: clamp(11px, 3.5vw, 18px);
+  margin-bottom: 3rem;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: clamp(-29px, -10vw, 0px);
+}
+
+.html-lesson-wrapper .act-content .ul1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .act-content .ul1 li {
+    line-height: 1rem;
+  }
+}
+
+.html-lesson-wrapper .act-content .ul1 li div {
+  margin-left: 2%;
+  width: clamp(269px, 70vw, 400px);
+}
+
+.html-lesson-wrapper .act-content .ul1 li u {
+  color: #1287cd;
+}
+
+.html-lesson-wrapper .act-content .ul1 li .j {
+  font-size: clamp(1px, 2vw, 13px);
+}
+
+.html-lesson-wrapper .act-content li::before {
+  content: attr(data-value) " ";
+  width: clamp(25px, 32vw, 75px);
+  text-align: right;
+  font-weight: bold;
 }
 
 .html-lesson-wrapper .act-1,
@@ -992,3 +1224,4 @@ body {
   margin-top: 10%;
   left: 57.1%;
 }
+/*# sourceMappingURL=main.css.map */

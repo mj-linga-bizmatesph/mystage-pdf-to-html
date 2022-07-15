@@ -161,7 +161,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -265,14 +265,12 @@ body {
 }
 
 .html-lesson-wrapper .office-section .conversation .bubble.akiko-1 {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-e-1-speech-bubble-akiko.png);
   left: 6%;
   padding: 11% 10% 6% 16%;
   margin-top: 0.8%;
 }
 
 .html-lesson-wrapper .office-section .conversation .bubble.ken-1 {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-e-1-speech-bubble-ken.png);
   right: 1%;
   padding: 5% 8% 10% 5%;
   margin-top: 13%;
@@ -759,7 +757,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content.act-1 .table .name {
-  padding-top: 4px;
+  padding-top: 1px;
 }
 
 .html-lesson-wrapper .blue-line {
@@ -792,3 +790,4 @@ body {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: 3.8%;
 }
+/*# sourceMappingURL=main.css.map */

@@ -47,7 +47,9 @@ body {
   td {
     vertical-align: top;
   }
-
+  .jpf {
+    font-size: $fs-13 !important;
+  }
   .m-0 {
     margin: 0;
   }
@@ -115,6 +117,7 @@ body {
     border-radius: clamp(10px, 3vw, 25px);
     padding: clamp(1.2rem, 4.8vw, 2rem) clamp(0.7rem, 2vw, 0.8rem);
     position: relative !important;
+    width: clamp(292px, 80.1vw, 492px);
 
     ol {
       margin: 0;
@@ -122,6 +125,10 @@ body {
       display: grid;
       grid-gap: clamp(1rem, 2vw, 1.5rem) !important;
       counter-reset: orderedlist;
+
+      div {
+        width: clamp(292px, 79.1vw, 465px);
+      }
     }
 
     li::before {
@@ -148,8 +155,8 @@ body {
     .red-circle {
       position: absolute;
       top: clamp(0.1rem, 1.5vw, 0.6rem);
-      left: 2%;
-      width: 96%;
+      left: 1%;
+      width: clamp(190px, 83vw, 510px);
     }
   }
   .program-rank {
@@ -235,8 +242,11 @@ body {
     line-height: 1.6;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
+    }
+    .m {
+      margin-right: 4%;
     }
     .sub-title {
       font-size: $fs-13;
@@ -1017,6 +1027,9 @@ body {
         grid-gap: clamp(0.1rem, 1vw, 0.5rem);
         counter-reset: orderedlist;
       }
+      .blue-box {
+        width: 520px;
+      }
 
       li::before {
         counter-increment: orderedlist;
@@ -1093,7 +1106,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1220,7 +1233,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1341,7 +1354,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -1376,7 +1389,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1481,6 +1494,7 @@ body {
       }
 
       .speech {
+        font-size: $fs-18;
         width: 85%;
       }
     }

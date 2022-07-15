@@ -14,7 +14,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .html-lesson-wrapper {
   font-family: $text-font;
   width: 100%;
@@ -29,7 +28,9 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-
+  .spacer1 {
+    height: 2%;
+  }
   hr {
     border-top: 1px solid #dbdcdc;
   }
@@ -152,7 +153,7 @@ body {
     padding: clamp(0px, 0.01vw, 3px) 0px;
     left: 28%;
     .title {
-      font-size: clamp(9px, 2.9vw, 18px);
+      font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
     }
     .sub-title {
@@ -179,6 +180,7 @@ body {
       //see-content.legend
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
 
@@ -326,6 +328,7 @@ body {
           ul li {
             list-style-type: none;
             margin-bottom: clamp(7px, 2vw, 15px);
+            font-weight: bold;
             span {
               color: transparent;
             }
@@ -385,6 +388,7 @@ body {
           left: 10%;
           font-size: clamp(8px, 2.4vw, 14px);
           ul li {
+            font-weight: bold;
             list-style-type: none;
             margin-bottom: clamp(7px, 2vw, 15px);
             span {
@@ -479,6 +483,7 @@ body {
           ul li {
             list-style-type: none;
             margin-bottom: clamp(6px, 1.8vw, 12px);
+            font-weight: bold;
             span {
               color: transparent;
             }
@@ -517,13 +522,14 @@ body {
         background-image: url(#{$s3}/0-E-10-part1-image5.svg);
         .text-bubble {
           position: absolute;
-          margin-left: clamp(40px, 13vw, 90px);
-          top: 16%;
+          margin-left: clamp(40px, 13vw, 73px);
+          top: 14.5%;
           left: 10%;
           font-size: clamp(8px, 2.4vw, 14px);
           ul li {
             list-style-type: none;
             margin-bottom: clamp(6px, 1.8vw, 12px);
+            font-weight: bold;
             span {
               color: transparent;
             }

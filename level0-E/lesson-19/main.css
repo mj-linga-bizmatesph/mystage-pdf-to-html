@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-right: 1%;
   padding: 0;
 }
 
@@ -27,6 +28,10 @@ body {
 
 .html-lesson-wrapper td {
   vertical-align: top;
+}
+
+.html-lesson-wrapper .jpf {
+  font-size: clamp(9px, 2.2vw, 13px) !important;
 }
 
 .html-lesson-wrapper .m-0 {
@@ -105,6 +110,8 @@ body {
   border-radius: clamp(4px, 1vw, 8px);
   padding: clamp(1.1rem, 5vw, 2rem) 0.5rem;
   position: relative !important;
+  width: clamp(200px, 80vw, 480px);
+  margin-left: 6%;
 }
 
 .html-lesson-wrapper .blue-image-text ol {
@@ -235,8 +242,12 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
+}
+
+.html-lesson-wrapper .instructions .m {
+  margin-right: 4%;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
@@ -390,6 +401,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  border-radius: 5px;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table {
@@ -438,6 +450,10 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section ol.column-two {
   --li-bg: #fff;
+}
+
+.html-lesson-wrapper .see-content .see-2-section ol.column-two div {
+  padding-top: 1.5%;
 }
 
 .html-lesson-wrapper .see-content .see-2-section ol.column-two li::before {
@@ -760,11 +776,15 @@ body {
   counter-reset: orderedlist;
 }
 
+.html-lesson-wrapper .try-content .try-3-content .blue-box {
+  width: clamp(200px, 80vw, 480px);
+}
+
 .html-lesson-wrapper .try-content .try-3-content li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9.8px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   color: #1287cd;
   font-weight: bold;
   padding-left: 1vw;
@@ -840,7 +860,7 @@ body {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(9.8px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-3-content li .speech {
@@ -945,6 +965,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 85%;
 }
 

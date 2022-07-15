@@ -137,7 +137,7 @@ body {
     padding: clamp(0px, 0.01vw, 3px) 0px;
     left: 28%;
     .title {
-      font-size: clamp(9px, 2.9vw, 18px);
+      font-size: clamp(12px, 3.5vw, 22px);
       color: #141821;
     }
     .sub-title {
@@ -160,6 +160,7 @@ body {
       margin-top: clamp(20px, 5vw, 33px);
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
     .arrow.see {
@@ -175,6 +176,7 @@ body {
     }
   }
   .try-content {
+    font-family: $noto-sans;
     margin-left: $side-margin;
     margin-right: $side-margin;
     &.try-1 {
@@ -270,6 +272,7 @@ body {
         left: 26%;
         position: absolute;
         .wrap-for-flex {
+          font-family: $noto-sans !important;
           display: flex;
           .decided-to {
             margin-right: 5px;
@@ -427,6 +430,7 @@ body {
       .number {
         color: $primary-blue;
         font-size: $fs-16;
+        font-weight: bold;
       }
       .image-1 {
         margin-top: clamp(30px, 8vw, 50px);
@@ -507,6 +511,7 @@ body {
           left: 14%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
+        margin: 12% 0 0 0%;
       }
       .image-3 {
         margin-top: clamp(30px, 8vw, 50px);
@@ -720,6 +725,46 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(35px, 12vw, 70px);
+
+      .ul1 {
+        list-style-type: none;
+        font-size: clamp(10.8px, 2.8vw, 18px);
+        color: $primary-blue;
+        margin-left: clamp(-65px, -4vw, -28px);
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 551px) {
+          line-height: 1.3rem;
+        }
+        @media screen and (max-width: 401px) {
+          line-height: 1rem;
+        }
+
+        .ul2 {
+          color: black;
+          margin-left: 2%;
+
+          .name {
+            width: clamp(230px, 75vw, 470px);
+          }
+        }
+        li {
+          display: flex;
+
+          div {
+            margin-left: 3%;
+            width: 400px;
+          }
+        }
+      }
+
+      li::before {
+        content: attr(data-value) ' ';
+        width: clamp(78px, 32vw, 75px);
+        text-align: right;
+        font-weight: bold;
+      }
+
       .wrap-flex-content {
         margin-bottom: clamp(160px, 40vw, 250px);
         margin-left: 8px;
@@ -727,6 +772,9 @@ body {
         .number-hide {
           color: transparent;
           font-size: clamp(12px, 3vw, 18px);
+        }
+        .trainer-part {
+          display: flex;
         }
         .number {
           color: $primary-blue;
@@ -741,6 +789,15 @@ body {
         }
         .trainer-no {
           font-size: clamp(10.8px, 2.8vw, 18px);
+          display: flex;
+          b {
+            width: 20%;
+            text-align: right;
+          }
+          div {
+            width: 400px;
+            margin-left: 2%;
+          }
         }
         .underline {
           text-decoration: underline;
@@ -754,6 +811,16 @@ body {
           .you-no {
             margin-left: clamp(18.4px, 4.7vw, 29px);
             font-size: clamp(10.8px, 2.8vw, 18px);
+            display: flex;
+
+            b {
+              width: 20%;
+              text-align: right;
+            }
+            div {
+              width: 400px;
+              margin-left: 2%;
+            }
           }
           .line-under {
             margin-left: clamp(55px, 13.5vw, 95px);
@@ -764,6 +831,7 @@ body {
       .margin-both-sides {
         margin-top: 30px;
         .box-content {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -788,6 +856,7 @@ body {
           }
         }
         .box-content-2 {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -856,10 +925,10 @@ body {
         }
         .akiko-lines {
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
             letter-spacing: -2px;
@@ -869,10 +938,10 @@ body {
         .steve-lines {
           margin-top: 25px;
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
             letter-spacing: -2px;

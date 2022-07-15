@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-right: 1%;
   padding: 0;
 }
 
@@ -27,6 +28,10 @@ body {
 
 .html-lesson-wrapper td {
   vertical-align: top;
+}
+
+.html-lesson-wrapper .jpf {
+  font-size: clamp(9px, 2.2vw, 13px) !important;
 }
 
 .html-lesson-wrapper .m-0 {
@@ -105,6 +110,7 @@ body {
   border-radius: clamp(4px, 1vw, 8px);
   padding: clamp(1.1rem, 3.5vw, 2rem) clamp(1rem, 2vw, 1.3rem);
   position: relative !important;
+  width: clamp(288px, 80.1vw, 492px);
 }
 
 .html-lesson-wrapper .blue-image-text ol {
@@ -114,6 +120,10 @@ body {
   display: grid;
   grid-gap: clamp(1rem, 2vw, 1.5rem) !important;
   counter-reset: orderedlist;
+}
+
+.html-lesson-wrapper .blue-image-text ol div {
+  width: clamp(292px, 80.1vw, 492px);
 }
 
 .html-lesson-wrapper .blue-image-text li::before {
@@ -144,8 +154,9 @@ body {
 .html-lesson-wrapper .blue-image-text .red-circle {
   position: absolute;
   bottom: clamp(0rem, 1vw, 0.9rem);
-  left: 0.5%;
-  width: 65%;
+  left: 0%;
+  top: 47%;
+  width: clamp(201px, 54.1vw, 328px);
 }
 
 .html-lesson-wrapper .program-rank {
@@ -235,8 +246,12 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
+}
+
+.html-lesson-wrapper .instructions .m {
+  margin-right: 4%;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
@@ -383,6 +398,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  border-radius: 5px;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-table {
@@ -680,6 +696,10 @@ body {
   counter-reset: orderedlist;
 }
 
+.html-lesson-wrapper .try-content .try-2-content .blue-box {
+  width: 460px;
+}
+
 .html-lesson-wrapper .try-content .try-2-content li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist);
@@ -761,7 +781,7 @@ body {
   width: clamp(60px, 15%, 80px);
   text-align: right;
   font-weight: bold;
-  font-size: clamp(9.6px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .speech {
@@ -868,7 +888,7 @@ body {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9.6px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   color: #1287cd;
   font-weight: bold;
 }
@@ -906,7 +926,7 @@ body {
 .html-lesson-wrapper .try-content .try-3-content li .person {
   text-align: right;
   font-weight: bold;
-  font-size: clamp(9.6px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 15%;
 }
 
@@ -1012,6 +1032,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
+  font-size: clamp(12px, 3.5vw, 18px);
   width: 85%;
 }
 

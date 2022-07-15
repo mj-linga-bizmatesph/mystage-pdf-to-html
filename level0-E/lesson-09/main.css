@@ -153,7 +153,7 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(12px, 3.5vw, 22px);
   color: #141821;
 }
 
@@ -178,6 +178,7 @@ body {
 
 .html-lesson-wrapper .see-content.see-2 .legend, .html-lesson-wrapper .see-content.see-3 .legend, .html-lesson-wrapper .see-content.see-4 .legend {
   margin-top: clamp(25px, 5vw, 38px);
+  font-family: "Noto Sans", sans-serif !important;
 }
 
 .html-lesson-wrapper .see-content .arrow.see {
@@ -192,6 +193,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content {
+  font-family: "Noto Sans", sans-serif;
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
@@ -304,6 +306,7 @@ body {
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
+  font-family: "Noto Sans", sans-serif !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,6 +781,7 @@ body {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .margin-both-sides .box-content {
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(11px, 2.8vw, 18px);
   position: absolute;
   left: 3%;
@@ -806,6 +810,7 @@ body {
 }
 
 .html-lesson-wrapper .try-2 .try2-content .margin-both-sides .box-content-2 {
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(11px, 2.8vw, 18px);
   position: absolute;
   left: 3%;
@@ -879,11 +884,11 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .line-under {
-  margin-left: clamp(37px, 8.5vw, 60px);
+  margin-left: clamp(40px, 9vw, 64px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .div-jap {
-  margin-left: clamp(37px, 8.5vw, 60px);
+  margin-left: clamp(40px, 9vw, 64px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -2px;
@@ -895,11 +900,11 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines .line-under {
-  margin-left: clamp(37px, 8.5vw, 60px);
+  margin-left: clamp(40px, 9vw, 64px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines .div-jap {
-  margin-left: clamp(37px, 8.5vw, 60px);
+  margin-left: clamp(40px, 9vw, 64px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
   letter-spacing: -2px;

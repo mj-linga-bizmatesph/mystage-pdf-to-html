@@ -1,1 +1,11 @@
 @import '../../css/level4-utils';
+
+.sub-text {
+  font-family: $trebuchet !important;
+}
+
+.act-content{
+    span{
+        margin-left: -33px;
+    }
+}

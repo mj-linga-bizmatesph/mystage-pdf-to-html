@@ -520,3 +520,8 @@ $fs-20: clamp(13px, 4vw, 20px);
     }
   }
 }
+
+.html-lesson-wrapper .try-content, .html-lesson-wrapper .table-wrapper-section, .html-lesson-wrapper .part-content {
+  margin-left: clamp(18px, 5vw, 29px) !important;
+  margin-right: clamp(18px, 5vw, 32px);
+}

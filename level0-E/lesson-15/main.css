@@ -60,7 +60,7 @@ body {
 }
 
 .html-lesson-wrapper .span-letter-spacing {
-  letter-spacing: -2.5px !important;
+  letter-spacing: 0px !important;
 }
 
 .html-lesson-wrapper header {
@@ -128,7 +128,7 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(8px, 2vw, 11px);
@@ -161,7 +161,6 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -0.5px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -194,9 +193,8 @@ body {
 }
 
 .html-lesson-wrapper .instructions .sub-title {
-  font-size: clamp(9px, 2.2vw, 13px);
+  font-size: clamp(7px, 2vw, 12px);
   color: #7f8288;
-  letter-spacing: -0.5px;
 }
 
 .html-lesson-wrapper .name {

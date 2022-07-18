@@ -80,7 +80,7 @@ body {
   }
 
   .span-letter-spacing {
-    letter-spacing: -2.5px !important;
+    letter-spacing: 0px !important;
   }
 
   header {
@@ -192,7 +192,7 @@ body {
     font-family: $text-font;
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: $fs-11;
@@ -225,7 +225,6 @@ body {
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
       line-height: 2.8;
-      letter-spacing: -0.5px;
     }
   }
   .arrow {
@@ -252,9 +251,9 @@ body {
       margin-right: 4%;
     }
     .sub-title {
-      font-size: $fs-13;
+      font-size: clamp(7px, 2vw, 12px);
       color: $subtext-color;
-      letter-spacing: -0.5px;
+      letter-spacing: 0px;
     }
   }
 

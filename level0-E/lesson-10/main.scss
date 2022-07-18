@@ -158,9 +158,8 @@ body {
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(7px, 2vw, 13px);
+      font-size: clamp(7px, 2vw, 12px);
       color: $subtext-color;
-      letter-spacing: $jap-letter-spacing;
     }
   }
 

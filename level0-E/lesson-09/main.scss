@@ -120,8 +120,8 @@ body {
       margin-bottom: 4px;
     }
     .sub-title {
-      font-size: clamp(10px, 2.3vw, 15px);
-      letter-spacing: $jap-letter-spacing;
+      font-size: clamp(10px, 2.3vw, 12px);
+
     }
   }
   .arrow {
@@ -145,7 +145,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: $jap-letter-spacing;
+      letter-spacing: 0px;
     }
   }
 
@@ -234,7 +234,7 @@ body {
         font-family: $noto-sans;
         font-size: clamp(6.5px, 1.7vw, 11px);
         color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        letter-spacing: 0px;
       }
     }
     .bubble-2 {
@@ -250,7 +250,7 @@ body {
         font-family: $noto-sans;
         font-size: clamp(6.5px, 1.7vw, 11px);
         color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        letter-spacing: 0px;
       }
     }
   }
@@ -453,7 +453,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: 1px;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
@@ -486,7 +486,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
@@ -519,7 +519,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
@@ -552,7 +552,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: 1px;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
@@ -585,7 +585,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: 1px;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
@@ -618,7 +618,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
@@ -761,7 +761,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(7px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
           .text-bot,
           .text-mid {
@@ -784,7 +784,7 @@ body {
             margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: 1px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
         }
@@ -797,7 +797,7 @@ body {
             margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
         }

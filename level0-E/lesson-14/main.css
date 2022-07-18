@@ -64,7 +64,7 @@ body {
 }
 
 .html-lesson-wrapper .span-letter-spacing {
-  letter-spacing: -2.5px !important;
+  letter-spacing: 0px !important;
 }
 
 .html-lesson-wrapper header {
@@ -187,7 +187,7 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.9vw, 11px);
@@ -224,7 +224,6 @@ body {
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
   line-height: 2.8;
-  letter-spacing: -0.5px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -254,9 +253,8 @@ body {
 }
 
 .html-lesson-wrapper .instructions .sub-title {
-  font-size: clamp(9px, 2.2vw, 13px);
+  font-size: clamp(7px, 2vw, 12px);
   color: #7f8288;
-  letter-spacing: -0.5px;
 }
 
 .html-lesson-wrapper .name {
@@ -360,7 +358,6 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-section .akiko-conversation .row-2 .sub {
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 2.2vw, 13px);
   font-size: clamp(9px, 2.2vw, 13px);
   color: #7f8288;
 }
@@ -547,7 +544,6 @@ body {
 
 .html-lesson-wrapper .see-content .see-3-section .akiko-section .akiko-conversation .row-2 .sub {
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 2.2vw, 13px);
   font-size: clamp(9px, 2.2vw, 13px);
   line-height: 2;
   color: #7f8288;
@@ -784,7 +780,6 @@ body {
 
 .html-lesson-wrapper .see-content .see-4-section .akiko-section .akiko-conversation .row-1 .sub {
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 2.2vw, 13px);
   font-size: clamp(9px, 2.2vw, 13px);
   line-height: 2;
   color: #7f8288;

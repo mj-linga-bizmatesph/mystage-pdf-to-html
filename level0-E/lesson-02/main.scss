@@ -223,7 +223,7 @@ $primary-blue: #1287cd;
             width: 100%;
 
             img {
-              max-width: clamp(1%, 28vw, 100%);
+              max-width: clamp(40%, 28vw, 100%);
             }
 
             &.small {
@@ -303,7 +303,7 @@ $primary-blue: #1287cd;
 
             div {
               margin-left: 3%;
-              width: 400px;
+              width: 349px;
             }
 
             u {
@@ -326,7 +326,7 @@ $primary-blue: #1287cd;
       list-style-type: none;
       font-size: clamp(11px, 2.7vw, 18px);
       margin-bottom: 3rem;
-      margin-left: clamp(-29px, -10vw, 0px);
+     
 
       li {
         font-family: $noto-sans !important;
@@ -350,6 +350,7 @@ $primary-blue: #1287cd;
         }
 
         .j {
+          color: #7f8288;
           font-size: clamp(1px, 2vw, 13px);
         }
       }
@@ -391,4 +392,8 @@ $primary-blue: #1287cd;
       }
     }
   }
+}
+
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
+  width: 98% !important;
 }

@@ -134,7 +134,6 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
-  letter-spacing: -1px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -159,9 +158,8 @@ body {
 }
 
 .html-lesson-wrapper .instructions .sub-title {
-  font-size: clamp(7px, 2vw, 13px);
+  font-size: clamp(7px, 2vw, 12px);
   color: #7f8288;
-  letter-spacing: -1px;
 }
 
 .html-lesson-wrapper .see-content {
@@ -256,7 +254,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.3px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-2 {
@@ -275,7 +273,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-2-content {
@@ -347,7 +345,7 @@ body {
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .jap {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.8px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content {
@@ -435,7 +433,7 @@ body {
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice-jap {
   font-size: clamp(8.6px, 1.8vw, 13px);
-  letter-spacing: -1.5px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 
@@ -886,7 +884,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.6vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-1 .text-bot {
@@ -911,7 +909,7 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .div-jap {
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   margin-top: 5px;
 }
 
@@ -933,7 +931,7 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .steve-lines .div-jap {
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   margin-top: 5px;
 }
 

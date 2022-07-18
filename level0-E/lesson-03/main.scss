@@ -215,6 +215,7 @@ $fs-20: clamp(13px, 4vw, 20px);
           font-family: $noto-sans;
           border-collapse: collapse;
           margin-bottom: 15%;
+          width: 104% !important;
 
           td {
             @extend .fs-18;
@@ -279,7 +280,7 @@ $fs-20: clamp(13px, 4vw, 20px);
 
             div {
               margin-left: 3%;
-              width: clamp(150px, 70vw, 400px);
+              width: clamp(150px, 60vw, 400px);
             }
 
             u {
@@ -328,9 +329,12 @@ $fs-20: clamp(13px, 4vw, 20px);
             border-radius: clamp(10px, 3vw, 20px);
             padding: clamp(0.8rem, 3.5vw, 1.2rem) clamp(1rem, 2vw, 1rem);
             position: relative !important;
-            width: 86%;
+            width: 85%;
             z-index: 1;
             font-family: $noto-sans;
+            @media screen and (max-width: 500px){
+              width: 82%;
+            }
 
             .blue-box {
               list-style-type: none;
@@ -467,6 +471,7 @@ $fs-20: clamp(13px, 4vw, 20px);
         }
 
         .j {
+          color: #7f8288;
           font-size: clamp(1px, 2vw, 13px);
         }
       }

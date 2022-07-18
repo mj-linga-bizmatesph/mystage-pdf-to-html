@@ -129,6 +129,7 @@ body {
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 69%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -156,18 +157,23 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
 }
 
 .html-lesson-wrapper .lesson-number {
-  position: absolute;
-  right: 6%;
-  text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  position: relative;
+  float: right;
+  right: 6.3%;
+  font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
+  margin-top: clamp(2px, 1vh, 10px);
+}
+
+.html-lesson-wrapper .lesson-number.lesson-10 {
+  right: 5.5%;
 }
 
 .html-lesson-wrapper .title-section {
@@ -189,7 +195,6 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -215,9 +220,8 @@ body {
 }
 
 .html-lesson-wrapper .instructions .sub-title {
-  font-size: clamp(7px, 2vw, 13px);
+  font-size: clamp(7px, 2vw, 12px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 
 .html-lesson-wrapper .office-section .legend div {
@@ -395,8 +399,8 @@ body {
 }
 
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
-  font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -0.5px;
+  font-size: clamp(6.7px, 1.8vw, 11px);
+  letter-spacing: 0px;
   color: #7f8288;
 }
 
@@ -553,7 +557,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .phrases-section .jap {
-  font-size: clamp(7px, 2vw, 14px);
+  font-size: clamp(7px, 2vw, 11px);
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -633,7 +637,7 @@ body {
 }
 
 .html-lesson-wrapper .table .jap {
-  font-size: clamp(9px, 2vw, 13px);
+  font-size: clamp(9px, 2vw, 11px);
   margin-bottom: 3.8%;
 }
 
@@ -910,6 +914,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   border-collapse: collapse;
   margin-bottom: 15%;
+  width: 104% !important;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table td img {
@@ -981,7 +986,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 div {
   margin-left: 3%;
-  width: clamp(150px, 70vw, 400px);
+  width: clamp(150px, 60vw, 400px);
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 u {
@@ -1034,9 +1039,15 @@ body {
   border-radius: clamp(10px, 3vw, 20px);
   padding: clamp(0.8rem, 3.5vw, 1.2rem) clamp(1rem, 2vw, 1rem);
   position: relative !important;
-  width: 86%;
+  width: 85%;
   z-index: 1;
   font-family: "Noto Sans", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text {
+    width: 82%;
+  }
 }
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .blue-image-text .blue-box {
@@ -1180,6 +1191,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .ul1 li .j {
+  color: #7f8288;
   font-size: clamp(1px, 2vw, 13px);
 }
 

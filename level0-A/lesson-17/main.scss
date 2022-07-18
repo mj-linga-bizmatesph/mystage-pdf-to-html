@@ -127,7 +127,6 @@ body {
     font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -875,9 +874,6 @@ body {
       margin-left: 1rem;
     }
 
-    p.jap {
-      letter-spacing: -2px;
-    }
     .office-act-1 {
       margin-top: 6%;
 
@@ -893,7 +889,6 @@ body {
           }
 
           .jap {
-            letter-spacing: -1px;
             line-height: clamp(10px, 2.8vw, 1rem);
           }
         }

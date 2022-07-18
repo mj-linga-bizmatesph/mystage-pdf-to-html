@@ -127,7 +127,7 @@ body {
     font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0.5px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -799,12 +799,9 @@ body {
           font-family: $noto-sans;
 
           .eng {
-            font-weight: normal;
+            font-weight: bold;
           }
 
-          .jap {
-            letter-spacing: -2px;
-          }
         }
       }
     }

@@ -213,7 +213,7 @@ $primary-blue: #1287cd;
           }
           .table-number {
             @extend .b, .primary-blue;
-            font-size: clamp(10px, 3vw, 16px);
+            font-size: clamp(10px, 3vw, 18px);
             padding-top: 6px;
             padding-left: clamp(5px, 3vw, 10px);
           }
@@ -255,7 +255,6 @@ $primary-blue: #1287cd;
         font-family: $noto-sans;
         border-collapse: collapse;
         margin-left: 3%;
-        margin-top: 0.5%;
 
         td {
           @extend .fs-18;
@@ -267,7 +266,7 @@ $primary-blue: #1287cd;
 
         .name {
           @extend .b;
-          font-size: clamp(10px, 3vw, 16px);
+          font-size: clamp(10px, 3vw, 18px);
           white-space: nowrap;
         }
         tr:not(:last-child) td:nth-child(2) {

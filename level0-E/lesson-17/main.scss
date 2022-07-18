@@ -485,6 +485,22 @@ body {
           margin-left: auto;
         }
       }
+
+      .icon {
+        @extend .b;
+        text-align: center;
+        font-size: clamp(10px, 2vw, 14px);
+        
+
+        img {
+          height: clamp(70px, 20vw, 100px);
+          width: auto;
+        }
+
+        div {
+          margin-top: 3%;
+        }
+      }
     }
 
     .arrow.see {

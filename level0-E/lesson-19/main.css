@@ -85,7 +85,7 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content.see-2 .icon, .html-lesson-wrapper .see-content .arrow.see {
   font-weight: bold;
 }
 
@@ -314,6 +314,20 @@ body {
 
 .html-lesson-wrapper .see-content.see-2 .legend {
   margin-top: clamp(25px, 5vw, 38px);
+}
+
+.html-lesson-wrapper .see-content.see-2 .icon {
+  text-align: center;
+  font-size: clamp(10px, 2vw, 14px);
+}
+
+.html-lesson-wrapper .see-content.see-2 .icon img {
+  height: clamp(70px, 20vw, 100px);
+  width: auto;
+}
+
+.html-lesson-wrapper .see-content.see-2 .icon div {
+  margin-top: 3%;
 }
 
 .html-lesson-wrapper .see-content .see-2-section {

@@ -313,6 +313,21 @@ body {
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
       }
+      .icon {
+        @extend .b;
+        text-align: center;
+        font-size: clamp(10px, 2vw, 14px);
+        
+
+        img {
+          height: clamp(70px, 20vw, 100px);
+          width: auto;
+        }
+
+        div {
+          margin-top: 3%;
+        }
+      }
     }
 
     .see-2-section {

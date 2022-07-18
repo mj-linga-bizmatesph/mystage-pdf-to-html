@@ -922,7 +922,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
   padding-top: 6px;
   padding-left: clamp(5px, 3vw, 10px);
 }
@@ -957,7 +957,6 @@ body {
   font-family: "Noto Sans", sans-serif;
   border-collapse: collapse;
   margin-left: 3%;
-  margin-top: 0.5%;
 }
 
 .html-lesson-wrapper .try-content.try-2 .table td img {
@@ -966,7 +965,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-2 .table .name {
-  font-size: clamp(10px, 3vw, 16px);
+  font-size: clamp(10px, 3vw, 18px);
   white-space: nowrap;
 }
 

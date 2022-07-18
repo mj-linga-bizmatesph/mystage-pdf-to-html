@@ -58,16 +58,11 @@ body {
   font-size: clamp(12px, 2.3vw, 16px);
 }
 
-.html-lesson-wrapper .flip-horizontal {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 .html-lesson-wrapper .noto-sans {
   font-family: "Noto Sans", sans-serif;
 }
 
-.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .number, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .number-white, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .number-bg, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .number-outlined, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .text, .html-lesson-wrapper .try-2 .try-2-content .number, .html-lesson-wrapper .try-3 .try3-content .number, .html-lesson-wrapper .act-content .act-1-content .convo-text-content .number {
+.html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .see-content .icon, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .number, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .number-white, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .number-bg, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .number-outlined, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .letter, .html-lesson-wrapper .try-1 .try1-content .akiko-combinations .combinations .row .text, .html-lesson-wrapper .try-2 .try-2-content .number, .html-lesson-wrapper .try-3 .try3-content .number, .html-lesson-wrapper .act-content .act-1-content .convo-text-content .number {
   font-weight: bold;
 }
 
@@ -194,6 +189,20 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Noto Sans", sans-serif;
+}
+
+.html-lesson-wrapper .see-content .icon {
+  text-align: center;
+  font-size: clamp(10px, 2vw, 14px);
+}
+
+.html-lesson-wrapper .see-content .icon img {
+  height: clamp(70px, 20vw, 100px);
+  width: auto;
+}
+
+.html-lesson-wrapper .see-content .icon div {
+  margin-top: 3%;
 }
 
 .html-lesson-wrapper .try-content {

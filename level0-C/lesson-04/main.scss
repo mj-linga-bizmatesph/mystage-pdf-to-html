@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1.5px;
+$jap-letter-spacing: -0.5px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -308,7 +308,7 @@ body {
       .wrap-all-boxes {
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
-        left: 20%;
+        left: 17%;
         font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
@@ -738,7 +738,7 @@ body {
       .wrap-all-boxes {
         position: absolute;
         margin-top: clamp(12px, 3vw, 19px);
-        left: 20%;
+        left: 18%;
         .wrap-for-flex {
           display: flex;
           .plan-to-box {

@@ -18,6 +18,18 @@ body {
 }
 
 .html-lesson-wrapper {
+  .see-content {
+    .phrases-section {
+      .conversation {
+        .phrase {
+          .jap {
+            width: 200px;
+            margin-left: -10%;
+          }
+        }
+      }
+    }
+  }
   .try-content {
     .phrases {
       margin-top: 10%;
@@ -33,6 +45,7 @@ body {
           }
           .container {
             margin-left: 2%;
+            width: clamp(230px, 50vw, 500px);
             .trainer {
               display: flex;
 
@@ -413,7 +426,7 @@ body {
   font-family: $noto-sans;
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase p {
-  margin: clamp(3px, 0.5vw, 5px) 0px;
+  margin: clamp(3px, 1.5vw, 5px) 0px;
 }
 .html-lesson-wrapper .see-content .phrases-section .eng {
   font-size: clamp(8px, 2vw, 16px);
@@ -538,7 +551,7 @@ body {
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
   margin-bottom: clamp(8px, 3vw, 12px);
-  font-size: 11px;
+  font-size: clamp(6.7px, 1.8vw, 13px);
 }
 
 .html-lesson-wrapper .see-content.see-1 {
@@ -687,9 +700,10 @@ body {
   width: 35px;
 }
 .html-lesson-wrapper .try-content.try-2 .phrase img {
-  width: 40%;
+  width: 50%;
   height: auto;
   float: right;
+  margin-left: 2em;
 }
 .html-lesson-wrapper .try-content.try-2 .phrases {
   display: inline-block;
@@ -699,10 +713,11 @@ body {
 .html-lesson-wrapper .try-content.try-2 .phrase.phrase-right {
   width: 55%;
   float: left;
+  margin-right: -4%;
 }
 .html-lesson-wrapper .try-content.try-2 .phrase.phrase-right {
   float: right;
-  margin-top: -7%;
+  margin-top: -25%;
   margin-bottom: 10%;
 }
 .html-lesson-wrapper .try-content.try-2 table tbody tr.you {
@@ -878,7 +893,8 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .see-content .phrases-section .jap {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
+    width: 140px;
   }
   .html-lesson-wrapper .try-content.try-1 .combinations .combination-icon {
     width: 280px;

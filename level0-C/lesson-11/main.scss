@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -104,7 +104,7 @@ body {
   .lesson-number {
     position: absolute;
     right: 5%;
-    margin-top: 0.5%;
+    margin-top: -0.5%;
     text-align: center;
     font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
@@ -307,7 +307,15 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-C-1-akiko-icon.png);
+        background-image: url(#{$s3}/akiko-icon.svg);
+
+        div {
+          font-family: $noto-sans;
+          font-weight: bold;
+          padding-top: 110%;
+          padding-left: 32%;
+          font-size: clamp(11px, 3.5vw, 15px);
+        }
       }
       .wrap-all-boxes {
         position: absolute;
@@ -408,11 +416,19 @@ body {
           font-size: clamp(7px, 2vw, 13px);
           letter-spacing: -1px;
           color: $subtext-color;
+
+          @media screen and (max-width: 401px) {
+            letter-spacing: 0px;
+          }
         }
         .choice-jap-1 {
           font-size: clamp(7px, 2vw, 13px);
           letter-spacing: -3px;
           color: $subtext-color;
+
+          @media screen and (max-width: 401px) {
+            letter-spacing: -1px;
+          }
         }
         //number
         .number {
@@ -489,7 +505,8 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-akiko-right-view.png);
+        background-image: url(#{$s3}/0-akiko-icon.svg);
+        transform: scaleX(-1);
       }
       .akiko-combinations {
         margin-top: 20px;
@@ -1036,6 +1053,7 @@ body {
       }
 
       .image-content {
+        margin-left: -1em;
         width: clamp(110px, 34vw, 222px);
         height: 140px;
         background-position: top, bottom;
@@ -1044,6 +1062,7 @@ body {
         background-image: url(#{$s3}/0-C-11-try4-image1.svg);
       }
       .image-content2 {
+        margin-left: -1em;
         width: clamp(110px, 34vw, 222px);
         height: 140px;
         background-position: top, bottom;
@@ -1052,6 +1071,7 @@ body {
         background-image: url(#{$s3}/0-C-11-try4-image2.svg);
       }
       .image-content3 {
+        margin-left: -1em;
         width: clamp(110px, 34vw, 222px);
         height: 140px;
         background-position: top, bottom;
@@ -1060,6 +1080,7 @@ body {
         background-image: url(#{$s3}/0-C-11-try4-image3.svg);
       }
       .image-content4 {
+        margin-left: -1em;
         width: clamp(110px, 34vw, 222px);
         height: 140px;
         background-position: top, bottom;
@@ -1068,6 +1089,7 @@ body {
         background-image: url(#{$s3}/0-C-11-try4-image4.svg);
       }
       .image-content5 {
+        margin-left: -1em;
         width: clamp(110px, 34vw, 222px);
         height: 140px;
         background-position: top, bottom;

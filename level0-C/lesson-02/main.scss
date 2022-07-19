@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -282,7 +282,15 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-C-1-akiko-icon.png);
+        background-image: url(#{$s3}/akiko-icon.svg);
+
+        div {
+          font-family: $noto-sans;
+          font-weight: bold;
+          padding-top: 110%;
+          padding-left: 32%;
+          font-size: clamp(11px, 3.5vw, 15px);
+        }
       }
       .wrap-all-boxes {
         margin-top: clamp(12px, 3vw, 19px);
@@ -290,7 +298,7 @@ body {
         .wrap-for-flex {
           display: flex;
           .our-goal-box {
-            width: clamp(63px, 17vw, 107px);
+            width: clamp(65px, 18vw, 110px);
             font-size: clamp(10.1px, 1.8vw, 16px);
             text-align: center;
             background: url(#{$s3}/0-C-2-our-goal.png);
@@ -300,7 +308,7 @@ body {
             padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 17px);
           }
           .increase-sales-box {
-            width: clamp(66px, 17vw, 114px);
+            width: clamp(66px, 18vw, 114px);
             font-size: clamp(10.1px, 1.8vw, 16px);
             padding-top: clamp(7px, 2vw, 10px);
             padding-left: clamp(11px, 3vw, 17px);
@@ -480,7 +488,8 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-akiko-right-view.png);
+        background-image: url(#{$s3}/0-akiko-icon.svg);
+        transform: scaleX(-1);
       }
       .akiko-combinations {
         margin-top: 20px;
@@ -634,6 +643,10 @@ body {
           font-weight: bold;
           font-size: clamp(9px, 2.4vw, 16px) !important;
           width: 70px;
+
+          @media screen and (max-width: 401px) {
+            width: 20px;
+          }
         }
         .speaker-text {
           font-size: clamp(11px, 2.5vw, 18px);
@@ -712,7 +725,7 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-2-C-L2-act-1.svg);
+        background-image: url(#{$s3}/0-C-2-act-1.svg);
       }
       .convo-text-content {
         margin-top: clamp(30px, 8vw, 40px);

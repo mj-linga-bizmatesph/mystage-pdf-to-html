@@ -6,7 +6,7 @@ body {
 .html-lesson-wrapper .office-section .conversation .bubble .eng ul {
   list-style-type: none;
   margin-top: 5%;
-  margin-left: clamp(-9px, -3vw, -11%);
+  margin-left: clamp(-15px, -3vw, -11%);
 }
 
 .html-lesson-wrapper .office-section .conversation .bubble .eng ul li {
@@ -202,6 +202,10 @@ body {
   }
 }
 
+.html-lesson-wrapper .table .breaker {
+  height: 10px;
+}
+
 .html-lesson-wrapper hr {
   border-top: 1px solid #dbdcdc;
 }
@@ -333,10 +337,10 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 8%;
+  right: 7.6%;
   width: 1.9%;
   text-align: center;
-  margin-top: -9.5%;
+  margin-top: -10%;
   font-size: clamp(18px, 4vw, 28px);
   color: #ffffff;
 }

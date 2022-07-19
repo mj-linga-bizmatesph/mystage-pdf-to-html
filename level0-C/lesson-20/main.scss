@@ -25,7 +25,7 @@ body {
           ul {
             list-style-type: none;
             margin-top: 5%;
-            margin-left: clamp(-9px, -3vw, -11%);
+            margin-left: clamp(-15px, -3vw, -11%);
             li {
               display: flex;
               line-height: 1.5rem;
@@ -155,6 +155,10 @@ body {
         margin-top: 1.2%;
       }
     }
+
+    .breaker {
+      height: 10px;
+    }
   }
 }
 
@@ -274,10 +278,10 @@ body {
 }
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 8%;
+  right: 7.6%;
   width: 1.9%;
   text-align: center;
-  margin-top: -9.5%;
+  margin-top: -10%;
   font-size: clamp(18px, 4vw, 28px);
   color: #ffffff;
 }

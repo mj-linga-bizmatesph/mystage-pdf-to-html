@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -341,6 +341,10 @@ body {
             }
             .ul-text {
               width: 250px;
+
+              @media screen and (max-width: 401px) {
+                width: 180px;
+              }
             }
           }
         }
@@ -494,7 +498,7 @@ body {
           @extend .b;
           position: absolute;
           margin-left: clamp(28px, 21vw, 123px);
-          top: 17%;
+          top: 16%;
           font-size: clamp(8.6px, 2.5vw, 14px);
           ul li {
             font-weight: bold;

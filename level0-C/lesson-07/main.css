@@ -135,7 +135,7 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -162,7 +162,7 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .see-content {
@@ -257,7 +257,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6.3px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-2 {
@@ -276,7 +276,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-2-content {
@@ -297,7 +297,15 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-1-akiko-icon.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/akiko-icon.svg);
+}
+
+.html-lesson-wrapper .section-2-content .wrapper-with-akiko .akiko-image div {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 110%;
+  padding-left: 32%;
+  font-size: clamp(11px, 3.5vw, 15px);
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes {
@@ -520,7 +528,9 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-akiko-right-view.png);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-akiko-icon.svg);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .html-lesson-wrapper .try-1 .try1-content .akiko-combinations {
@@ -1270,7 +1280,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-2 {
@@ -1289,7 +1299,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content {
@@ -1314,7 +1324,7 @@ body {
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .line-under {
   font-size: clamp(10px, 2.3vw, 18px);
-  margin-left: clamp(33.3px, 7.6vw, 54px);
+  margin-left: clamp(37px, 7.6vw, 59px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content .akiko-lines .div-1 {

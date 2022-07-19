@@ -436,9 +436,9 @@ body {
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .phrases,
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrases {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 @media screen and (max-width: 701px) {
   .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .pm {
@@ -511,7 +511,7 @@ body {
   z-index: 2;
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
+  padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 8px);
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .legend {
   margin-top: 4%;

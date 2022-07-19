@@ -506,7 +506,7 @@ body {
         .conversation {
           .steve .phrases,
           .akiko .phrases {
-            justify-content: space-between;
+            justify-content: space-evenly;
           }
           .pm {
             @media screen and (max-width: 701px) {
@@ -565,7 +565,7 @@ body {
               z-index: 2;
             }
             .eng {
-              padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
+              padding: clamp(7px,2vw,10px) clamp(8px,3vw,8px);
             }
           }
         }

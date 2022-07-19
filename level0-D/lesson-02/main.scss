@@ -174,27 +174,34 @@
 
       .akiko-table-pieces {
         margin-top: clamp(1rem, 9vw, 3.5rem);
-        display: grid;
+        display: flex;
         width: 100%;
-        grid-template-columns: 33.3% 33.3% 33.3%;
+        justify-content: space-between;
+        // grid-template-columns: 33.3% 33.3% 33.3%;
 
         div {
           margin-top: auto;
+          width: fit-content;
         }
 
         .middle {
           div {
             margin: auto;
+            width: fit-content;
           }
 
           .top {
             margin-bottom: 2px;
+            width: fit-content;
           }
         }
 
         .right {
           div {
+            display: flex;
+            justify-content: flex-end;
             margin-left: auto;
+            width: fit-content;
           }
         }
       }
@@ -296,7 +303,7 @@
           div.list-subtitle {
             font-size: $fs-13;
             color: #7f8288;
-            letter-spacing: -1.8px;
+            letter-spacing: 0px;
           }
         }
       }

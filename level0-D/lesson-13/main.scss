@@ -335,21 +335,12 @@ body {
         
       }
       .red-piece2 {
+        width: clamp(65px, 16vw, 116.8px);
         font-family: $noto-sans;
         font-weight: bold;
-        width: 7em;
-        height: 1em;
-        margin-right: 0.4em;
-        background: url(#{$s3}/0-D-13-pinkP.svg);
-        text-align: center;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: clamp(7px, 2vw, 10px) 0;
-        font-size: clamp(10px, 2.2vw, 16px);
-        @media screen and (max-width: 900px){
-          width: 8em;
-        }
+        background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
       }
       .red-piece3 {
         font-family: $noto-sans;
@@ -369,70 +360,26 @@ body {
         }
       }
       .red-piece1 {
-        font-family: $noto-sans;
-        font-weight: bold;
-        width: 7em;
-        height: 1em;
-        margin-right: 0.4em;
-        background: url(#{$s3}/0-D-13-pinkP.svg);
-        text-align: center;
         background-position: center;
-        background-size: cover;
+        background-size: auto 105%;
         background-repeat: no-repeat;
-        padding: clamp(7px, 2vw, 10px) 0;
-        font-size: clamp(10px, 2.2vw, 16px);
-        @media screen and (max-width: 900px){
-          width: 8em;
-        }
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: clamp(11px, 2.7vw, 16px);
+        font-family: 'Noto Sans', sans-serif;
+        background-image: url(#{$s3}/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
       }
 
 
-      .blue-piece1 {
+      .blue-piece{
+        font-size: clamp(10px, 2.2vw, 16px);
         font-family: $noto-sans;
         font-weight: bold;
-        width: 11em;
-        height: 1em;
-        margin-right: 0.4em;
-        background: url(#{$s3}/0-D-See-2blue1.svg);
-        text-align: center;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: clamp(7px, 2vw, 10px) 0;
-        font-size: clamp(10px, 2.2vw, 16px);
-        @media screen and (max-width: 900px){
-          width: 13em;
-        }
-      }
-      .blue-piece2 {
-        font-family: $noto-sans;
-        font-weight: bold;
-        width: 7em;
-        height: 1em;
-        margin-right: 0.4em;
-        background: url(#{$s3}/0-D-See-2blue2.svg);
-        text-align: center;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: clamp(7px, 2vw, 10px) 0;
-        font-size: clamp(10px, 2.2vw, 16px);
-      }
-      .blue-piece3 {
-        font-family: $noto-sans;
-        font-weight: bold;
-        width: 12em;
-        height: 1em;
-        background: url(#{$s3}/0-D-See-2blue1.svg);
-        text-align: center;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: clamp(7px, 2vw, 10px) 0;
-        font-size: clamp(10px, 2.2vw, 16px);
-        @media screen and (max-width: 900px){
-          width: 14em;
-        }
+        background-image: url(#{$s3}/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left;
       }
 
       .blue-piece-1 {

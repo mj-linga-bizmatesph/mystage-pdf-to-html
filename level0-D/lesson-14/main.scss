@@ -353,61 +353,67 @@ body {
         }
       }
       .red-piece1 {
+        background-position: center;
+        background-size: auto 105%;
+        background-repeat: no-repeat;
+        border-radius: 4px;
         font-weight: bold;
-        font-family: $noto-sans;
-        font-size: clamp(10px, 2.2vw, 15px);
-        background-color: #ffb3b0;
-        height: 2em;
-        width: 20em;
-        border-radius: 3px;
-        text-align: center;
-        padding: 2%;
+        font-size: clamp(11px, 2.7vw, 16px);
+        font-family: 'Noto Sans', sans-serif;
+        background-image: url(#{$s3}/0-red-piece-full.svg), linear-gradient(90deg, rgba(255, 178, 176,1) 100%, rgba(255, 255, 255, 0) 80%);
+        background-position: right;
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
 
       .yellow-piece1 { 
-        font-weight: bold;
-        font-family: $noto-sans;
-        text-align: center;
-        height: 54%;
-        width: 12em;
-        margin-left: clamp(4px, 2vw, 7px);
-        font-size: clamp(10px, 2.2vw, 15px);
-        background: url(#{$s3}/0-C-12-i-piece.png);
         background-position: center;
-        background-size: cover;
+        background-size: auto 105%;
         background-repeat: no-repeat;
-        padding: 3%;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: clamp(11px, 2.7vw, 16px);
+        font-family: 'Noto Sans', sans-serif;
+        background-image: url(#{$s3}/0-yellow-piece.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 226, 0, 1) 80%,
+            rgba(255, 255, 255, 0) 80%
+          );
+        background-position: right;
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
 
       .yellow-piece2 { 
-        font-weight: bold;
-        font-family: $noto-sans;
-        text-align: center;
-        height: 71%;
-        width: 12em;
-        margin-left: clamp(4px, 2vw, 7px);
-        font-size: clamp(10px, 2.2vw, 16px);
-        background: url(#{$s3}/0-C-12-i-piece.png);
         background-position: center;
-        background-size: cover;
+        background-size: auto 105%;
         background-repeat: no-repeat;
-        padding-top: 1em;
-        padding-left: 0.3em;
-        padding-right: 0.3em;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: clamp(11px, 2.7vw, 16px);
+        font-family: 'Noto Sans', sans-serif;
+        background-image: url(#{$s3}/0-yellow-piece.png),
+          linear-gradient(
+            90deg,
+            rgba(255, 226, 0, 1) 80%,
+            rgba(255, 255, 255, 0) 80%
+          );
+        background-position: right;
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px)
+          clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
       }
 
       .blue-piece {
-        font-family: $noto-sans;
-        font-weight: bold;
-        width: 19em;
-        height: 1.3em;
-        background: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-D-See-2blue1.svg);
-        text-align: center;
         background-position: center;
-        background-size: cover;
+        background-size: auto 105%;
         background-repeat: no-repeat;
-        padding: 5%;
-        font-size: clamp(09px, 2.1vw, 15px);
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: clamp(11px, 2.7vw, 16px);
+        font-family: 'Noto Sans', sans-serif;
+        background-image: url(#{$s3}/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left;
 
       }
       .blue-piece1 {

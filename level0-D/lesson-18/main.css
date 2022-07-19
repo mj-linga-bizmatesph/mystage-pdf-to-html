@@ -60,7 +60,7 @@ body {
 }
 
 .html-lesson-wrapper .span-letter-spacing {
-  letter-spacing: -2.5px !important;
+  letter-spacing: 0px !important;
 }
 
 .html-lesson-wrapper header {
@@ -98,18 +98,20 @@ body {
 .html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
+
 .html-lesson-wrapper .text-right {
   text-align: right;
 }
+
 .html-lesson-wrapper .text-center {
   text-align: center;
 }
+
 .html-lesson-wrapper .program-rank {
-  position: absolute;
+  position: relative;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
-  width: 69%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -133,7 +135,7 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(8px, 2vw, 11px);
@@ -145,9 +147,16 @@ body {
   right: 6.3%;
   font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
-  margin-top: clamp(2px, 1vh, 10px);
+  margin-top: -3%;
 }
-.html-lesson-wrapper .lesson-number.lesson-10 {
+
+.html-lesson-wrapper .lesson-number.lesson-10,
+.html-lesson-wrapper .lesson-number .lesson-11,
+.html-lesson-wrapper .lesson-number .lesson-12,
+.html-lesson-wrapper .lesson-number .lesson-17,
+.html-lesson-wrapper .lesson-number .lesson-18,
+.html-lesson-wrapper .lesson-number .lesson-19,
+.html-lesson-wrapper .lesson-number .lesson-20 {
   right: 5.5%;
 }
 
@@ -170,7 +179,6 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -0.5px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -192,15 +200,15 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 18px) !important;
   color: #141821;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(9px, 2.2vw, 13px);
   color: #7f8288;
-  letter-spacing: -0.5px;
 }
+
 .html-lesson-wrapper .yellow-piece,
 .html-lesson-wrapper .green-piece,
 .html-lesson-wrapper .red-piece,
@@ -215,38 +223,44 @@ body {
 .html-lesson-wrapper .yellow-piece-full,
 .html-lesson-wrapper .green-piece-full,
 .html-lesson-wrapper .red-piece-full {
+  text-align: center;
   background-position: center;
   background-size: auto 105%;
   background-repeat: no-repeat;
   border-radius: 4px;
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
-  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(10px, 2.7vw, 16px);
+  font-family: 'Noto Sans', sans-serif;
 }
+
 .html-lesson-wrapper .yellow-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 226, 0)), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, rgb(255, 226, 0) 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece.png), linear-gradient(90deg, #ffe200 80%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
+
 .html-lesson-wrapper .blue-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, rgb(231, 243, 250)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #e7f3fa));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #e7f3fa 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
+
 .html-lesson-wrapper .red-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 178, 176)), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
+
 .html-lesson-wrapper .green-piece {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, rgb(195, 232, 230)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(195, 232, 230) 20%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #c3e8e6));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #c3e8e6 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
+
 .html-lesson-wrapper .green-piece-complete {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #c3e8e6), color-stop(85%, #c3e8e6), color-stop(85%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #c3e8e6 8%, #c3e8e6 85%, rgba(255, 255, 255, 0) 85%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-start.png);
@@ -254,6 +268,7 @@ body {
   background-position: left, center, right;
   background-size: auto 105%, auto, auto 105%;
 }
+
 .html-lesson-wrapper .blue-piece-complete {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #e7f3fa), color-stop(80%, #e7f3fa), color-stop(80%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-start.png);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #e7f3fa 8%, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-start.png);
@@ -261,6 +276,7 @@ body {
   background-position: left, center, right;
   background-size: auto 105%, auto, auto 105%;
 }
+
 .html-lesson-wrapper .yellow-piece-complete {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-end.png), -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(255, 255, 255, 0)), color-stop(8%, #ffe200), color-stop(80%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0))), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-start.png);
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-end.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, #ffe200 8%, #ffe200 80%, rgba(255, 255, 255, 0) 80%), url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-start.png);
@@ -268,45 +284,52 @@ body {
   background-position: left, center, right;
   background-size: auto 105%, auto, auto 105%;
 }
+
 .html-lesson-wrapper .green-piece-male {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-male.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-male.png), linear-gradient(90deg, #c3e8e6 80%, rgba(255, 255, 255, 0) 80%);
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
+
 .html-lesson-wrapper .blue-piece-male {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-male.png), -webkit-gradient(linear, left top, right top, color-stop(80%, #e7f3fa), color-stop(80%, rgba(255, 255, 255, 0)));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-blue-piece-male.png), linear-gradient(90deg, #e7f3fa 80%, rgba(255, 255, 255, 0) 80%);
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   background-position: right;
 }
+
 .html-lesson-wrapper .yellow-piece-female {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-female.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ffe200));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffe200 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
+
 .html-lesson-wrapper .red-piece-female {
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece-female.png), -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(20%, #ffb2b0));
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece-female.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #ffb2b0 20%);
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
   background-position: left;
 }
+
 .html-lesson-wrapper .yellow-piece-full {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-full.svg), -webkit-gradient(linear, left top, right top, color-stop(100%, rgb(255, 226, 0)), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-full.svg), linear-gradient(90deg, rgb(255, 226, 0) 100%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-full.svg), -webkit-gradient(linear, left top, right top, color-stop(100%, #ffe200), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-yellow-piece-full.svg), linear-gradient(90deg, #ffe200 100%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
+
 .html-lesson-wrapper .green-piece-full {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-full.svg), -webkit-gradient(linear, left top, right top, color-stop(100%, rgb(195, 232, 230)), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-full.svg), linear-gradient(90deg, rgb(195, 232, 230) 100%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-full.svg), -webkit-gradient(linear, left top, right top, color-stop(100%, #c3e8e6), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-green-piece-full.svg), linear-gradient(90deg, #c3e8e6 100%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
+
 .html-lesson-wrapper .red-piece-full {
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece-full.svg), -webkit-gradient(linear, left top, right top, color-stop(100%, rgb(255, 178, 176)), color-stop(80%, rgba(255, 255, 255, 0)));
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece-full.svg), linear-gradient(90deg, rgb(255, 178, 176) 100%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece-full.svg), -webkit-gradient(linear, left top, right top, color-stop(100%, #ffb2b0), color-stop(80%, rgba(255, 255, 255, 0)));
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece-full.svg), linear-gradient(90deg, #ffb2b0 100%, rgba(255, 255, 255, 0) 80%);
   background-position: right;
   padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
@@ -1119,7 +1142,7 @@ body {
 .html-lesson-wrapper .try-content .try-2-content li .speech {
   padding-left: 1vw;
   width: 85%;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .image {
@@ -1420,7 +1443,7 @@ body {
 .html-lesson-wrapper .try-content .try-4-content li .speech {
   padding-left: 1vw;
   width: 85%;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-4-content .image-area {
@@ -1504,7 +1527,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
   margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
 }
 
@@ -1586,7 +1609,7 @@ body {
 
 .html-lesson-wrapper .try-content .try-3-content li .speech {
   padding-left: clamp(1px, 1vw, 5px);
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .number {
@@ -1663,7 +1686,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 2.2vw, 13px);
+  font-size: clamp(9px, 2.2vw, 12px);
   margin-bottom: clamp(5px, 3vw, 25px);
   color: #7f8288;
 }
@@ -1671,9 +1694,9 @@ body {
 .html-lesson-wrapper .act-content .act-1-content .bold {
   margin-right: 2vw;
   text-align: right;
-  width: 12%;
+  width: 13%;
   font-weight: bold;
-  font-size: clamp(11px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {
@@ -1691,4 +1714,13 @@ body {
 .html-lesson-wrapper .act-content .arrow.act {
   color: white;
   background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-act-arrow.svg);
+}
+
+.html-lesson-wrapper .lesson-number {
+  position: relative;
+  float: right;
+  right: 5.3%;
+  font-size: clamp(14px, 3vw, 20px);
+  color: #ffffff;
+  margin-top: -3%;
 }

@@ -100,7 +100,7 @@ body {
 }
 
 .html-lesson-wrapper .program-rank {
-  position: absolute;
+  position: relative;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
@@ -127,7 +127,7 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(8px, 2vw, 11px);
@@ -139,6 +139,7 @@ body {
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
+  margin-top: -3%;
 }
 
 .html-lesson-wrapper .title-section {
@@ -160,7 +161,7 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -182,14 +183,14 @@ body {
 }
 
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 18px) !important;
   color: #141821;
 }
 
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(9px, 2.2vw, 13px);
   color: #7f8288;
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .name {
@@ -268,7 +269,7 @@ body {
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-section .akiko-icon {
   text-align: center;
-  width: 18%;
+  width: 25%;
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-section .akiko-icon div {
@@ -1202,7 +1203,7 @@ body {
 .html-lesson-wrapper .try-content .try-4-content li .speech {
   padding-left: 1vw;
   width: 85%;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-4-content .image {
@@ -1281,7 +1282,7 @@ body {
 
 .html-lesson-wrapper .try-content .try-3-content li .speech {
   padding-left: clamp(1px, 1vw, 5px);
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-4-content {
@@ -1312,7 +1313,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(11px, 2.7vw, 16px);
   margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
 }
 
@@ -1425,7 +1426,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 2.2vw, 13px);
+  font-size: clamp(9px, 2.2vw, 12px);
   margin-bottom: clamp(5px, 3vw, 25px);
   color: #7f8288;
 }

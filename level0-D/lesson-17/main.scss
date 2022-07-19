@@ -91,6 +91,7 @@ body {
           padding-left: 1vw;
 
           .row-1 {
+            font-size: clamp(10px, 2.7vw, 16px) !important;
             width: 100%;
             display: flex;
           }
@@ -111,7 +112,7 @@ body {
       }
 
       .green-piece {
-        width: clamp(141px,31vw,196.2px);
+        width: clamp(128px, 31vw, 196.2px);
       }
 
       .yellow-piece {
@@ -746,7 +747,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
 
         .image {
@@ -981,7 +982,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
 
@@ -1062,7 +1063,7 @@ body {
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
         margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
       }
 
@@ -1136,7 +1137,7 @@ body {
 
         .speech {
           padding-left: clamp(1px, 1vw, 5px);
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -1214,20 +1215,20 @@ body {
         margin-bottom: clamp(5px, 1vw, 10px);
       }
 
-      .jpn-text {
+     .jpn-text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-13;
+        font-size: clamp(9px, 2.2vw, 12px);
         margin-bottom: clamp(5px, 3vw, 25px);
         color: #7f8288;
       }
 
-      .bold {
+       .bold {
         margin-right: 2vw;
         text-align: right;
-        width: 12%;
+        width: 13%;
         font-weight: bold;
-        font-size: $fs-16;
+        font-size: clamp(12px, 3.4vw, 18px);
       }
 
       .speech {
@@ -1248,4 +1249,13 @@ body {
       background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
+}
+
+.html-lesson-wrapper .lesson-number {
+  position: relative;
+  float: right;
+  right: 5.3%;
+  font-size: clamp(14px, 3vw, 20px);
+  color: #ffffff;
+  margin-top: -3%;
 }

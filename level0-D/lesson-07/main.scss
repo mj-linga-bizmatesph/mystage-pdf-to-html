@@ -79,7 +79,7 @@
         display: flex;
         .akiko-icon {
           text-align: center;
-          width: 18%;
+          width: 25%;
 
           div {
             font-family: $noto-sans;
@@ -619,7 +619,7 @@
 
       .text {
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
 
         .underline {
           color: $primary-blue;
@@ -722,7 +722,7 @@
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
         margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
       }
 
@@ -808,7 +808,7 @@
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: clamp(10px, 2.3vw, 18px);
+        font-size: $fs-18;
         margin-bottom: clamp(5px, 1vw, 10px);
       }
 
@@ -824,7 +824,7 @@
         text-align: right;
         width: 13%;
         font-weight: bold;
-        font-size: clamp(10px, 2.3vw, 18px);
+        font-size: clamp(12px, 3.4vw, 18px);
       }
 
       .speech {

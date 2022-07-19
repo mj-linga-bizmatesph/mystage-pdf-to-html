@@ -78,7 +78,7 @@ body {
         display: flex;
         .akiko-icon {
           text-align: center;
-          width: 18%;
+          width: 25%;
 
           div {
             font-family: $noto-sans;
@@ -125,7 +125,7 @@ body {
       }
 
       .green-piece {
-        width: clamp(186px,50vw,294.2px);
+        width: clamp(190px, 50vw, 294.2px);
         margin-left: auto;
       }
 
@@ -811,7 +811,7 @@ body {
         .speech {
           width: 80%;
           padding-left: clamp(1px, 1vw, 5px);
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -939,7 +939,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
       .image {
@@ -1014,7 +1014,7 @@ body {
 
         .speech {
           padding-left: clamp(1px, 1vw, 5px);
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -1042,7 +1042,7 @@ body {
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
         margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
       }
 
@@ -1124,14 +1124,14 @@ body {
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
         margin-bottom: clamp(5px, 1vw, 10px);
       }
 
-      .jpn-text {
+     .jpn-text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-13;
+        font-size: clamp(9px, 2.2vw, 12px);
         margin-bottom: clamp(5px, 3vw, 25px);
         color: #7f8288;
       }
@@ -1162,4 +1162,13 @@ body {
       background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
+}
+
+.html-lesson-wrapper .lesson-number {
+  position: relative;
+  float: right;
+  right: 5.3%;
+  font-size: clamp(14px, 3vw, 20px);
+  color: #ffffff;
+  margin-top: -3%;
 }

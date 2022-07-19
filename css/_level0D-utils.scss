@@ -116,11 +116,10 @@ body {
     text-align: center;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
-    width: 69%;
 
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
@@ -147,7 +146,7 @@ body {
     font-size: clamp(10px, 2vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(8px, 2vw, 11px);
@@ -158,9 +157,15 @@ body {
     right: 6.3%;
     font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
-    margin-top: clamp(2px, 1vh, 10px);
+    margin-top: -3%;
 
-    &.lesson-10 {
+    &.lesson-10,
+    .lesson-11,
+    .lesson-12,
+    .lesson-17,
+    .lesson-18,
+    .lesson-19,
+    .lesson-20 {
       right: 5.5%;
     }
   }
@@ -182,7 +187,6 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -0.5px;
     }
   }
   .arrow {
@@ -203,7 +207,7 @@ body {
     line-height: 1.6;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 18px) !important;
       color: #141821;
     }
     .sub-title {
@@ -226,12 +230,13 @@ body {
   .yellow-piece-full,
   .green-piece-full,
   .red-piece-full {
+    text-align: center;
     background-position: center;
     background-size: auto 105%;
     background-repeat: no-repeat;
     border-radius: 4px;
     font-weight: bold;
-    font-size: clamp(11px, 2.7vw, 16px);
+    font-size: clamp(10px, 2.7vw, 16px);
     font-family: 'Noto Sans', sans-serif;
   }
   .yellow-piece {

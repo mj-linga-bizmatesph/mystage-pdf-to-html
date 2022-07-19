@@ -91,7 +91,7 @@ body {
         display: flex;
         .akiko-icon {
           text-align: center;
-          width: 18%;
+          width: 25%;
 
           div {
             font-family: $noto-sans;
@@ -433,7 +433,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
 
         .image {
@@ -608,7 +608,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
 
@@ -641,7 +641,7 @@ body {
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
         margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
       }
 
@@ -727,10 +727,10 @@ body {
         margin-bottom: clamp(5px, 1vw, 10px);
       }
 
-      .jpn-text {
+     .jpn-text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-13;
+        font-size: clamp(9px, 2.2vw, 12px);
         margin-bottom: clamp(5px, 3vw, 25px);
         color: #7f8288;
       }
@@ -738,9 +738,9 @@ body {
       .bold {
         margin-right: 2vw;
         text-align: right;
-        width: 15%;
+        width: 16%;
         font-weight: bold;
-        font-size: $fs-16;
+        font-size: clamp(12px, 3.4vw, 18px);
       }
 
       .speech {

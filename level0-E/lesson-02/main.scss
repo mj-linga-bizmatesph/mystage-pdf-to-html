@@ -223,7 +223,7 @@ $primary-blue: #1287cd;
             width: 100%;
 
             img {
-              max-width: clamp(40%, 28vw, 100%);
+              max-width: clamp(100%, 28vw, 100%);
             }
 
             &.small {

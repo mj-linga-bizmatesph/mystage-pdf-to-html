@@ -9,6 +9,7 @@ $primary-light: #cce0ec;
 $subtext-color: #7f8288;
 
 $side-margin: clamp(18px, 5vw, 32px);
+$fs-10: clamp(5px, 1.7vw, 10px);
 $fs-11: clamp(6px, 1.9vw, 11px);
 $fs-12: clamp(8px, 1.8vw, 12px);
 $fs-13: clamp(9px, 2.2vw, 13px);
@@ -315,7 +316,7 @@ body {
   }
 
   .red-piece-full{
-    background-image: url(#{$s3}/0-red-piece-full.svg), linear-gradient(90deg, rgba(255, 178, 176) 100%, rgba(255, 255, 255, 0) 80%);
+    background-image: url(#{$s3}/0-red-piece-full.svg), linear-gradient(90deg, rgba(255, 178, 176,1) 100%, rgba(255, 255, 255, 0) 80%);
     background-position: right;
     padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   }

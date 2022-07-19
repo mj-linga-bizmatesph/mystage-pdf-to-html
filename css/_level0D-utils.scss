@@ -222,7 +222,10 @@ body {
   .blue-piece-male,
   .yellow-piece-female,
   .yellow-piece-complete,
-  .red-piece-female {
+  .red-piece-female,
+  .yellow-piece-full,
+  .green-piece-full,
+  .red-piece-full {
     background-position: center;
     background-size: auto 105%;
     background-repeat: no-repeat;
@@ -297,5 +300,23 @@ body {
     padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
 
     background-position: left;
+  }
+
+  .yellow-piece-full{
+    background-image: url(#{$s3}/0-yellow-piece-full.svg), linear-gradient(90deg, rgba(255, 226, 0, 1) 100%, rgba(255, 255, 255, 0) 80%);
+    background-position: right;
+    padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+  }
+
+  .green-piece-full{
+    background-image: url(#{$s3}/0-green-piece-full.svg), linear-gradient(90deg, rgba(195, 232, 230, 1) 100%, rgba(255, 255, 255, 0) 80%);
+    background-position: right;
+    padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+  }
+
+  .red-piece-full{
+    background-image: url(#{$s3}/0-red-piece-full.svg), linear-gradient(90deg, rgba(255, 178, 176) 100%, rgba(255, 255, 255, 0) 80%);
+    background-position: right;
+    padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
   }
 }

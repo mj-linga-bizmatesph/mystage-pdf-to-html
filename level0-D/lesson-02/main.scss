@@ -113,7 +113,15 @@
           .row-1 {
             width: 100%;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row;
+            &:nth-child(1){
+              .red-piece{
+                width: clamp(36px, 7em, 102px);
+              }
+              .yellow-piece-complete{
+                width: clamp(33px, 5em, 72px);
+              }
+            }
           }
           .row-2 {
             width: 100%;

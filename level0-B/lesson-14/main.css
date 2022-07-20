@@ -943,18 +943,25 @@ body {
   font-size: clamp(8px, 2.8vw, 18px);
 }
 .html-lesson-wrapper .see-3 .see-3-content .nick-image {
-  width: clamp(70px, 16.3vw, 100px);
-  min-height: clamp(70px, 40vw, 100px);
   position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-b-14-nick.svg);
   margin-left: clamp(254px, 75vw, 422px);
   margin-top: clamp(35px, 9vw, 59px);
 }
+.html-lesson-wrapper .see-3 .see-3-content .nick-image .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-nick-side-view.svg);
+  width: clamp(70px, 16.3vw, 100px);
+  min-height: clamp(61px, 17vw, 100px);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
 .html-lesson-wrapper .see-3 .see-3-content .nick-image .name {
   position: absolute;
-  margin-top: clamp(80px, 18vw, 112px);
+  margin-top: 0.5em;
   margin-left: clamp(25px, 5vw, 34px);
   font-size: clamp(8px, 2.8vw, 18px);
 }

@@ -1039,18 +1039,29 @@ body {
       }
 
       .nick-image {
-        width: clamp(70px, 16.3vw, 100px);
-        min-height: clamp(70px, 40vw, 100px);
+        
         position: absolute;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-b-14-nick.svg);
         margin-left: clamp(254px, 75vw, 422px);
         margin-top: clamp(35px, 9vw, 59px);
+        .img{
+          
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(#{$s3}/0-nick-side-view.svg);
+          width: clamp(70px,16.3vw,100px);
+          min-height: clamp(61px,17vw,100px);
+
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          filter: FlipH;
+          -ms-filter: "FlipH";
+        }
 
         .name {
           position: absolute;
-          margin-top: clamp(80px, 18vw, 112px);
+          margin-top: 0.5em;
           margin-left: clamp(25px, 5vw, 34px);
           font-size: clamp(8px, 2.8vw, 18px);
         }

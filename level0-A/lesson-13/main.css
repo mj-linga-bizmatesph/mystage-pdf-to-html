@@ -99,7 +99,7 @@ body {
   font-size: clamp(7px, 1.8vw, 12px);
 }
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
   font-size: clamp(7px, 1.8vw, 12px);
   background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
@@ -120,8 +120,14 @@ body {
   position: absolute;
   right: 5%;
   text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
+}
+@media screen and (max-width: 651px) {
+  .html-lesson-wrapper .lesson-number {
+    right: 5.5%;
+    padding-top: 1%;
+  }
 }
 .html-lesson-wrapper .title-section {
   position: absolute;
@@ -247,7 +253,11 @@ body {
 .html-lesson-wrapper .number.inverse {
   color: #1287cd;
   background-color: white;
-  border: 1px solid #707070;
+}
+.html-lesson-wrapper .number.b-inverse {
+  color: #1287cd;
+  background-color: white;
+  border: 1px solid #1287cd;
 }
 .html-lesson-wrapper .letter {
   border: 2px solid #1287cd;
@@ -283,6 +293,7 @@ body {
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
   gap: 13px;
+  margin-top: 2%;
 }
 .html-lesson-wrapper .see-content .phrase-alts.half {
   grid-template-columns: 1fr 1fr;
@@ -290,6 +301,7 @@ body {
 .html-lesson-wrapper .see-content .phrase-alts .alt-box {
   padding: clamp(7px, 2vw, 15px);
   border: 1px solid #1287cd;
+  margin-top: 5%;
 }
 .html-lesson-wrapper .see-content .phrase-alts .alt-box.blue {
   background-color: #e7f3fa;
@@ -477,7 +489,6 @@ body {
 .html-lesson-wrapper .blue-line {
   width: 15px;
   height: 2px;
-  border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
 }
 .html-lesson-wrapper .table {
@@ -495,8 +506,9 @@ body {
 .html-lesson-wrapper .table .eng {
   font-family: "Noto Sans", sans-serif;
   font-weight: normal;
-  font-size: clamp(10px, 2.68vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
   margin-bottom: 1%;
+  padding-top: 0.8%;
 }
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
@@ -635,8 +647,16 @@ body {
 }
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 6px;
+  padding-top: 5px;
   padding-left: clamp(5px, 3vw, 10px);
+}
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 4px;
+  }
+}
+.html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .dialog {
+  padding-left: 2%;
 }
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
   text-align: center;
@@ -647,12 +667,15 @@ body {
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper img {
   max-width: clamp(76%, 24vw, 100%);
 }
+.html-lesson-wrapper .try-content.try-2 .p1 {
+  padding-top: 1.1%;
+}
 .html-lesson-wrapper .try-content.try-2 .table {
   font-family: "Noto Sans", sans-serif;
   border-collapse: collapse;
 }
 .html-lesson-wrapper .try-content.try-2 .table td {
-  font-size: clamp(10px, 3vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
 }
 .html-lesson-wrapper .try-content.try-2 .table td img {
   max-width: clamp(44%, 16vw, 100%);
@@ -684,6 +707,11 @@ body {
   padding-top: 6px;
   padding-left: clamp(5px, 3vw, 10px);
 }
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 4px;
+  }
+}
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img {
   text-align: center;
   padding-top: 6%;
@@ -699,7 +727,8 @@ body {
   border-collapse: collapse;
 }
 .html-lesson-wrapper .try-content.try-3 .table td {
-  font-size: clamp(10px, 3vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 0.8%;
 }
 .html-lesson-wrapper .try-content.try-3 .table td img {
   max-width: clamp(44%, 16vw, 100%);
@@ -711,6 +740,7 @@ body {
 }
 .html-lesson-wrapper .try-content.try-3 .table tr:not(:last-child) td:nth-child(2) {
   padding-bottom: 5%;
+  padding-top: 0.8%;
 }
 .html-lesson-wrapper .act-1,
 .html-lesson-wrapper .act-2 {

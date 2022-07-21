@@ -96,7 +96,7 @@ body {
   font-size: clamp(7px, 1.8vw, 12px);
 }
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
   font-size: clamp(7px, 1.8vw, 12px);
   background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
@@ -130,16 +130,11 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
 }
-.html-lesson-wrapper .line {
-  margin: 0 12px;
-}
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.5%;
-  width: 1.9%;
+  right: 6.3%;
   text-align: center;
-  margin-top: 0.5%;
-  font-size: clamp(18px, 4vw, 28px);
+  font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
 }
 .html-lesson-wrapper .title-section {
@@ -289,7 +284,9 @@ body {
 .html-lesson-wrapper .number.inverse {
   color: #1287cd;
   background-color: white;
-  border: 1px solid #707070;
+}
+.html-lesson-wrapper .number.border {
+  border: 1px solid #777777;
 }
 .html-lesson-wrapper .letter {
   border: 2px solid #1287cd;
@@ -317,6 +314,7 @@ body {
   margin-right: clamp(18px, 5vw, 32px);
 }
 .html-lesson-wrapper .see-content .phrase-alts {
+  margin-top: 2%;
   display: grid;
   grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
   grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
@@ -326,6 +324,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .html-lesson-wrapper .see-content .phrase-alts .alt-box {
+  margin-top: 3%;
   padding: clamp(7px, 2vw, 15px);
   border: 1px solid #1287cd;
 }
@@ -494,8 +493,10 @@ body {
 .html-lesson-wrapper .blue-line {
   width: 15px;
   height: 2px;
-  border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
+}
+.html-lesson-wrapper .p-1 {
+  padding-top: 0.3% !important;
 }
 .html-lesson-wrapper .table {
   width: 100%;
@@ -512,8 +513,9 @@ body {
 .html-lesson-wrapper .table .eng {
   font-family: "Noto Sans", sans-serif;
   font-weight: normal;
-  font-size: clamp(10px, 2.68vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
   margin-bottom: 1%;
+  padding-top: 0.5%;
 }
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
@@ -587,6 +589,9 @@ body {
   display: flex;
   margin-top: 10%;
 }
+.html-lesson-wrapper .see-content.see-4 .section-wrapper img {
+  width: clamp(114px, 20vw, 151px);
+}
 .html-lesson-wrapper .see-content.see-4 .dialog-section {
   margin-left: 14%;
 }
@@ -605,6 +610,11 @@ body {
 .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 5px;
+}
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 4px;
+  }
 }
 .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-img {
   width: 34%;
@@ -633,6 +643,12 @@ body {
 }
 .html-lesson-wrapper .try-content.try-1 .table td:nth-child(2) {
   padding-bottom: 7%;
+  padding-top: 0.2%;
+}
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content.try-1 .table td:nth-child(2) {
+    padding-top: 0.8%;
+  }
 }
 .html-lesson-wrapper .try-content.try-2 .combinations {
   grid-template-columns: 1fr 1fr -webkit-min-content;
@@ -666,7 +682,15 @@ body {
 }
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 3px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
+    padding-top: 4px;
+  }
+}
+.html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .dialog {
+  padding-left: 2%;
 }
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-img {
   width: 34%;
@@ -696,4 +720,10 @@ body {
 }
 .html-lesson-wrapper .try-content.try-3 .table td:nth-child(2) {
   padding-bottom: 7%;
+  padding-top: 0.2%;
+}
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .try-content.try-3 .table td:nth-child(2) {
+    padding-top: 0.8%;
+  }
 }

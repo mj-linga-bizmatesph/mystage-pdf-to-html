@@ -215,7 +215,7 @@ body {
 .html-lesson-wrapper .test-content {
   position: relative;
   margin-left: 13em;
-  padding-right: 1em;
+  padding-right: 0.5em;
   font-size: clamp(9px, 2.1vw, 18px);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#fff), to(#e6e6e6));
   background-image: linear-gradient(to right, #fff, #fff, #e6e6e6);
@@ -317,7 +317,7 @@ body {
   margin-top: 0.5em;
   border-spacing: 0px;
   width: 100%;
-  font-size: clamp(8px, 1.6vw, 11px);
+  font-size: clamp(6px, 1.6vw, 11px);
 }
 
 .html-lesson-wrapper .act-content table::after {
@@ -328,7 +328,7 @@ body {
 
 .html-lesson-wrapper .act-content table th,
 .html-lesson-wrapper .act-content table td {
-  max-width: 120px;
+  width: 120px;
   word-wrap: break-word;
   border: 1px solid #ffffff;
   background-color: #e6e6e6;
@@ -344,12 +344,13 @@ body {
 }
 
 .html-lesson-wrapper .act-content table td {
+  white-space: nowrap;
   text-align: left;
   padding: 0.5em;
 }
 
 .html-lesson-wrapper .act-content table td:nth-child(2) {
-  min-width: 10vw;
+  width: 25%;
 }
 
 .html-lesson-wrapper .act-content table td:nth-child(2), .html-lesson-wrapper .act-content table td:nth-child(4) {

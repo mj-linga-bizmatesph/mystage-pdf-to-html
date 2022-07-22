@@ -5,7 +5,12 @@
 }
 
 .act-content{
-    span{
-        margin-left: -33px;
+    ul{
+      margin-left: 0 !important;
+      text-indent: 0 !important;
+      li{
+        list-style-position:inside !important;
+        padding-left: 0 !important;
+      }
     }
 }

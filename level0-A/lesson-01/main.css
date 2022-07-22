@@ -81,7 +81,7 @@ body {
   font-size: clamp(7px, 1.8vw, 12px);
 }
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+  padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
   font-size: clamp(7px, 1.8vw, 12px);
   background: linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
   background: -moz-linear-gradient(125deg, #1287cd 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, #009c9a 90%, rgba(0, 0, 0, 0) 0%);
@@ -102,8 +102,14 @@ body {
   position: absolute;
   right: 6%;
   text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
+}
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .lesson-number {
+    right: 6.5%;
+    padding-top: 1%;
+  }
 }
 .html-lesson-wrapper .title-section {
   position: absolute;
@@ -317,6 +323,7 @@ body {
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts {
+  margin-top: 2%;
   display: grid;
   grid-template-columns: [one] -webkit-min-content [two] minmax(auto, 1fr);
   grid-template-columns: [one] min-content [two] minmax(auto, 1fr);
@@ -353,7 +360,7 @@ body {
 }
 .html-lesson-wrapper .see-content .phrases-section .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -0.5px;
+  color: #7f8288;
 }
 .html-lesson-wrapper .try-content {
   margin-left: clamp(18px, 5vw, 32px);
@@ -382,8 +389,10 @@ body {
 .html-lesson-wrapper .blue-line {
   width: 15px;
   height: 2px;
-  border-bottom: 2px solid #1287cd;
   margin-bottom: 5px;
+}
+.html-lesson-wrapper .pl {
+  padding-left: 1%;
 }
 .html-lesson-wrapper .table {
   width: 100%;
@@ -393,13 +402,15 @@ body {
 }
 .html-lesson-wrapper .table .name {
   font-weight: bold;
-  font-size: clamp(11px, 2.8vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
+  padding-top: 0.3%;
 }
 .html-lesson-wrapper .table .eng {
   font-family: "Noto Sans", sans-serif;
   font-weight: normal;
-  font-size: clamp(11px, 2.8vw, 18px);
+  font-size: clamp(10px, 3vw, 16px);
   margin-bottom: clamp(2px, 1vw, 5px);
+  padding-top: 0.8%;
 }
 .html-lesson-wrapper .table .jap {
   font-size: clamp(9px, 2vw, 13px);
@@ -425,9 +436,54 @@ body {
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve .phrases,
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .phrases {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media screen and (max-width: 701px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .pm {
+    margin-right: 9%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .pm {
+    margin-right: 18%;
+  }
+}
+@media screen and (max-width: 521px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .pm {
+    margin-right: 12%;
+  }
+}
+@media screen and (max-width: 391px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .pm {
+    margin-right: 7%;
+  }
+}
+@media screen and (max-width: 366px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .pm {
+    margin-right: 3%;
+  }
+}
+@media screen and (max-width: 701px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .am {
+    margin-right: 9%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .am {
+    margin-right: 16%;
+  }
+}
+@media screen and (max-width: 521px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .am {
+    margin-right: 9%;
+  }
+}
+@media screen and (max-width: 391px) {
+  .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .am {
+    margin-right: 4%;
+  }
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .steve {
   margin-top: clamp(28px, 5vw, 38px);
@@ -455,7 +511,7 @@ body {
   z-index: 2;
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .conversation .akiko .eng {
-  padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 14px);
+  padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 8px);
 }
 .html-lesson-wrapper .see-content.see-2 .phrases-section .legend {
   margin-top: 4%;
@@ -513,7 +569,32 @@ body {
           justify-content: space-between;
 }
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
-  margin-left: clamp(58px, 13vw, 110px);
+  margin-left: clamp(58px, 24vw, 110px);
+}
+@media screen and (max-width: 651px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
+    margin-left: clamp(58px, 24vw, 122px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
+    margin-left: clamp(48px, 24vw, 95px);
+  }
+}
+@media screen and (max-width: 407px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
+    margin-left: clamp(48px, 24vw, 80px);
+  }
+}
+@media screen and (max-width: 385px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
+    margin-left: clamp(28px, 20vw, 68px);
+  }
+}
+@media screen and (max-width: 366px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child {
+    margin-left: clamp(20px, 16vw, 57px);
+  }
 }
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .phrases > div:first-child > .phrase {
   margin-right: clamp(10px, 10vw, 30px);
@@ -522,7 +603,17 @@ body {
   padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
 }
 .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .away-from-icon {
-  margin-right: clamp(20px, 8vw, 58px);
+  margin-right: clamp(20px, 10vw, 58px);
+}
+@media screen and (max-width: 525px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .away-from-icon {
+    margin-right: clamp(20px, 8vw, 58px);
+  }
+}
+@media screen and (max-width: 501px) {
+  .html-lesson-wrapper .see-content.see-4 .phrases-section .conversation .glen .away-from-icon {
+    margin-right: clamp(20px, 5vw, 58px);
+  }
 }
 .html-lesson-wrapper .see-content.see-4 .phrases-section .legend {
   margin-top: 5%;

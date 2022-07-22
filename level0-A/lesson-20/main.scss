@@ -110,38 +110,20 @@ body {
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 5vw, 43px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 24px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -159,10 +141,14 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 4.7%;
+    right: 5%;
     text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
+
+    @media screen and (max-width: 651px) {
+      right: 5.5%;
+    }
   }
 
   .title-section {
@@ -219,8 +205,7 @@ body {
         &.right {
           @extend .b;
           font-size: clamp(18px, 3vw, 25px);
-          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px)
-            clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
+          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px) clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
           background-color: #ebebeb;
           margin-top: 2px;
           color: #2d356b;
@@ -293,7 +278,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .table {
@@ -312,8 +296,9 @@ body {
     .eng {
       font-family: $noto-sans;
       font-weight: normal;
-      font-size: clamp(10px, 2.68vw, 18px);
+      font-size: clamp(10px, 3vw, 16px);
       margin-bottom: 1%;
+      padding-top: 1.1%;
     }
     .jap {
       font-size: clamp(9px, 2vw, 13px);
@@ -364,13 +349,13 @@ body {
         .eng {
           font-family: $text-font;
           font-weight: bold;
-          font-size: clamp(10px, 2.3vw, 15px);
+          font-size: clamp(7px, 2vw, 16px);
         }
 
         .jap {
           font-family: $noto-sans;
           letter-spacing: -1px;
-          font-size: clamp(10px, 2.3vw, 13px);
+          font-size: clamp(7px, 1.8vw, 11px);
           line-height: clamp(10px, 13px, 14px);
         }
         &.akiko-1 {
@@ -384,7 +369,6 @@ body {
       }
     }
   }
-
   .part-2 {
     margin-top: 7%;
     .office-part-2 {
@@ -393,19 +377,34 @@ body {
         margin-top: 5rem !important;
       }
     }
+    .ef {
+      font-size: clamp(4px, 1.3vw, 16px);
+    }
     .part-2-items {
       .bubble {
         .eng {
           font-family: $text-font;
           font-weight: bold;
-          font-size: clamp(10px, 2.3vw, 15px);
+          font-size: clamp(7px, 2vw, 16px);
           .option-item {
             display: grid;
             grid-template-columns: min-content 1fr;
             padding-bottom: clamp(8px, 14px, 14px);
             .option {
-              padding-right: 2rem;
+              padding-right: 1rem;
             }
+          }
+        }
+        .b1 {
+          @media screen and (max-width: 481px) {
+            padding-top: 3%;
+            padding-left: 4%;
+          }
+        }
+        .b2 {
+          @media screen and (max-width: 481px) {
+            padding-top: 1%;
+            padding-left: 4%;
           }
         }
       }

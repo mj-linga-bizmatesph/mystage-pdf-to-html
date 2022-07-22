@@ -1,0 +1,52 @@
+@import '../css/op-presentations-utils.scss';
+
+.html-lesson-wrapper {
+  table{
+    border-collapse: collapse;
+  }
+  .see-content{
+    .th-row1-cell2{
+      border: solid $gray;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+      text-align: center;
+      background-color: $magenta;
+      line-height: clamp(10px, 2.8vw, 22px);
+      color: #ffffff;
+    }
+    .td-row2-cell2{
+      padding: 15px !important;
+      border-right: solid $gray;
+    }
+    .td-row3-cell2{
+      padding: 15px !important;
+      border-right: solid $gray;
+      border-left: solid $gray;
+      border-top: solid $gray;
+    }
+    .td-row3-cell3{
+      padding: 15px !important;
+      border-right: solid $gray;
+      border-top: solid $gray;
+    }
+    .th-row4{
+      border: solid $gray;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+      text-align: center;
+      background-color: $magenta;
+      line-height: clamp(10px, 2.8vw, 22px);
+      color: #ffffff;
+    }
+    .td-row5{
+      border: solid $gray;
+      text-align: left;
+      line-height: clamp(10px, 2.8vw, 22px);
+    }
+  }
+}
+

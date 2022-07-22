@@ -1,0 +1,12 @@
+@import '../css/op-presentations-utils.scss';
+
+.html-lesson-wrapper {
+  table, td {
+    border-collapse: collapse;
+    border: solid $gray;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 10px;
+    line-height: clamp(12px, 2.8vw, 22px);
+  }
+}

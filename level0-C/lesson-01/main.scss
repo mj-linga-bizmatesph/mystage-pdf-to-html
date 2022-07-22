@@ -55,6 +55,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
 
   .fs-16 {
@@ -82,10 +83,11 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
 
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
@@ -108,12 +110,16 @@ body {
     }
   }
   .lesson-number {
-    position: absolute;
-    right: 6%;
-    margin-top: 0.5%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 6.3%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 1vh, 10px);
+
+    &.lesson-10 {
+      right: 5.5%;
+    }
   }
 
   // Title
@@ -1215,7 +1221,7 @@ body {
           background-position: top, bottom;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: url(#{$s3}/0-C-try-2-5.svg);
+          background-image: url(#{$s3}/0-C-1-try4-im2.svg);
         }
       }
 

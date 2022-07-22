@@ -52,6 +52,9 @@ body {
 
 .html-lesson-wrapper header {
   font-family: "Noto Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -86,10 +89,11 @@ body {
 }
 
 .html-lesson-wrapper .program-rank {
-  position: absolute;
+  position: relative;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 100%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -108,12 +112,16 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
-  position: absolute;
-  right: 6%;
-  margin-top: 0.5%;
-  text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  position: relative;
+  float: right;
+  right: 6.3%;
+  font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
+  margin-top: clamp(2px, 1vh, 10px);
+}
+
+.html-lesson-wrapper .lesson-number.lesson-10 {
+  right: 5.5%;
 }
 
 .html-lesson-wrapper .title-section {
@@ -379,7 +387,7 @@ body {
 .html-lesson-wrapper .section-2-content .wrapper-with-helen .wrap-all-boxes .jap {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.8px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko {
@@ -456,7 +464,7 @@ body {
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .jap {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.8px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content {
@@ -553,7 +561,7 @@ body {
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice-jap {
   font-size: clamp(9px, 2.2vw, 13px);
-  letter-spacing: -1.5px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 
@@ -1104,7 +1112,7 @@ body {
 .html-lesson-wrapper .see-3-content .wrapper-with-helen .wrap-all-boxes .jap {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.8px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .see-3-content .wrapper-with-akiko {
@@ -1172,7 +1180,7 @@ body {
 .html-lesson-wrapper .see-3-content .wrapper-with-akiko .wrap-all-boxes .jap {
   font-size: clamp(9px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.8px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .see-3-content .section2-box-content {
@@ -1263,7 +1271,7 @@ body {
 
 .html-lesson-wrapper .see-3-content .section2-box-content .phrase-alts .choice-jap {
   font-size: clamp(7px, 1.8vw, 13px);
-  letter-spacing: -1.5px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 
@@ -1523,7 +1531,7 @@ body {
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   margin-top: 5px;
 }
 
@@ -1549,7 +1557,7 @@ body {
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   margin-top: 5px;
 }
 
@@ -1570,7 +1578,7 @@ body {
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   margin-top: 5px;
 }
 
@@ -1578,7 +1586,7 @@ body {
   margin-left: clamp(37px, 8.6vw, 60px);
   font-size: clamp(9px, 1.5vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .act-2 .act-2-space {

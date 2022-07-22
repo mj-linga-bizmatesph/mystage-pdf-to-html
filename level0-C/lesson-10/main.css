@@ -52,6 +52,9 @@ body {
 
 .html-lesson-wrapper header {
   font-family: "Noto Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -86,10 +89,11 @@ body {
 }
 
 .html-lesson-wrapper .program-rank {
-  position: absolute;
+  position: relative;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 100%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -108,11 +112,18 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
-  position: absolute;
-  right: 5%;
-  text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  position: relative;
+  float: right;
+  right: 5.5%;
+  font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
+  margin-top: clamp(2px, 0.5vh, 10px);
+}
+
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper .lesson-number {
+    right: 5.2%;
+  }
 }
 
 .html-lesson-wrapper .title-section {

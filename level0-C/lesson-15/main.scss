@@ -54,6 +54,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
 
   .fs-16 {
@@ -81,10 +82,11 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
@@ -106,12 +108,16 @@ body {
     }
   }
   .lesson-number {
-    position: absolute;
-    right: 5%;
-    margin-top: 0.5%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 5.5%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 0.5vh, 10px);
+
+    @media screen and (max-width: 400px) {
+      right: 5.2%;
+    }
   }
 
   // Title
@@ -268,7 +274,7 @@ body {
     }
     .convo-text-content {
       margin-top: clamp(30px, 8vw, 40px);
-      font-size: clamp(11px, 2.5vw, 18px);
+      font-size: clamp(11px, 2.5vw, 18px) !important;
       font-family: $noto-sans;
       .convo-title {
         .eng {
@@ -277,7 +283,7 @@ body {
         .jap {
           font-size: clamp(9px, 1.8vw, 13px);
           color: $subtext-color;
-          letter-spacing: -2px;
+          letter-spacing: 0px;
         }
       }
       .convo-wrap {
@@ -289,7 +295,6 @@ body {
       .helen-lines {
         display: flex;
         margin-top: 25px;
-
         b {
           width: 13%;
         }
@@ -368,7 +373,7 @@ body {
             text-align: right;
           }
           .thank-you {
-            width: 400px;
+            width: 465px;
             margin-left: 2%;
           }
           .line-under {
@@ -384,7 +389,7 @@ body {
           }
 
           .thank-you {
-            width: 400px;
+            width: 450px;
             margin-left: 2%;
           }
           .line-under {
@@ -462,12 +467,20 @@ body {
         .akiko-lines {
           display: flex;
           b {
-            width: 70px;
+            width: 94px;
             text-align: right;
+
+            @media screen and (max-width: 401px) {
+              width: 70px;
+            }
           }
           .thank-you {
-            width: 400px;
+            width: 606px;
             margin-left: 2%;
+
+            @media screen and (max-width: 401px) {
+              width: 400px;
+            }
           }
           .line-under {
             margin-left: clamp(37px, 8.5vw, 62px);
@@ -529,13 +542,21 @@ body {
           margin-top: 25px;
           display: flex;
 
+          @media screen and (max-width: 401px) {
+            margin-left: -3%;
+          }
+
           b {
             width: 70px;
             text-align: right;
           }
           .thank-you {
-            width: 400px;
+            width: 590px;
             margin-left: 2%;
+
+            @media screen and (max-width: 401px) {
+              width: 400px;
+            }
           }
           .line-under {
             margin-left: clamp(32px, 7vw, 52px);
@@ -543,6 +564,7 @@ body {
         }
         .akiko-lines {
           display: flex;
+          margin-left: -3%;
 
           b {
             width: 70px;
@@ -592,7 +614,11 @@ body {
               width: 30px;
             }
             .ul-text {
-              width: 250px;
+              width: 310px;
+
+              @media screen and (max-width: 401px) {
+                width: 250px;
+              }
             }
           }
         }
@@ -616,8 +642,12 @@ body {
             text-align: right;
           }
           .thank-you {
-            width: 400px;
+            width: 455px;
             margin-left: 2%;
+
+            @media screen and (max-width: 401px) {
+              width: 400px;
+            }
           }
           .line-under {
             margin-left: clamp(41px, 9.2vw, 66px);
@@ -631,8 +661,12 @@ body {
             text-align: right;
           }
           .thank-you {
-            width: 400px;
+            width: 410px;
             margin-left: 2%;
+
+            @media screen and (max-width: 401px) {
+              width: 400px;
+            }
           }
           .line-under {
             margin-left: clamp(37px, 8.5vw, 62px);

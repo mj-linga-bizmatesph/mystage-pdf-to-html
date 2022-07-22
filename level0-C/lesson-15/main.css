@@ -52,6 +52,9 @@ body {
 
 .html-lesson-wrapper header {
   font-family: "Noto Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -86,10 +89,11 @@ body {
 }
 
 .html-lesson-wrapper .program-rank {
-  position: absolute;
+  position: relative;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 100%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -108,12 +112,18 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
-  position: absolute;
-  right: 5%;
-  margin-top: 0.5%;
-  text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  position: relative;
+  float: right;
+  right: 5.5%;
+  font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
+  margin-top: clamp(2px, 0.5vh, 10px);
+}
+
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper .lesson-number {
+    right: 5.2%;
+  }
 }
 
 .html-lesson-wrapper .title-section {
@@ -285,7 +295,7 @@ body {
 
 .html-lesson-wrapper .see-1 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
-  font-size: clamp(11px, 2.5vw, 18px);
+  font-size: clamp(11px, 2.5vw, 18px) !important;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -296,7 +306,7 @@ body {
 .html-lesson-wrapper .see-1 .convo-text-content .convo-title .jap {
   font-size: clamp(9px, 1.8vw, 13px);
   color: #7f8288;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .see-1 .convo-text-content .convo-wrap {
@@ -407,7 +417,7 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .helen-lines .thank-you {
-  width: 400px;
+  width: 465px;
   margin-left: 2%;
 }
 
@@ -427,7 +437,7 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .akiko-lines .thank-you {
-  width: 400px;
+  width: 450px;
   margin-left: 2%;
 }
 
@@ -525,13 +535,25 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines b {
-  width: 70px;
+  width: 94px;
   text-align: right;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines b {
+    width: 70px;
+  }
+}
+
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines .thank-you {
-  width: 400px;
+  width: 606px;
   margin-left: 2%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines .thank-you {
+    width: 400px;
+  }
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .akiko-lines .line-under {
@@ -608,14 +630,26 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines {
+    margin-left: -3%;
+  }
+}
+
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines b {
   width: 70px;
   text-align: right;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines .thank-you {
-  width: 400px;
+  width: 590px;
   margin-left: 2%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines .thank-you {
+    width: 400px;
+  }
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .nick-lines .line-under {
@@ -626,6 +660,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -3%;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .akiko-lines b {
@@ -687,7 +722,13 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li .ul-text {
-  width: 250px;
+  width: 310px;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1 ul li .ul-text {
+    width: 250px;
+  }
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content {
@@ -717,8 +758,14 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines .thank-you {
-  width: 400px;
+  width: 455px;
   margin-left: 2%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines .thank-you {
+    width: 400px;
+  }
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .helen-lines .line-under {
@@ -737,8 +784,14 @@ body {
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines .thank-you {
-  width: 400px;
+  width: 410px;
   margin-left: 2%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines .thank-you {
+    width: 400px;
+  }
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .akiko-lines .line-under {

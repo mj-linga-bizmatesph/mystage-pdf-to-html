@@ -50,6 +50,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
 
   .fs-16 {
@@ -77,10 +78,11 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
@@ -102,12 +104,16 @@ body {
     }
   }
   .lesson-number {
-    position: absolute;
-    right: 5%;
-    margin-top: -0.5%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 5.5%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 0.5vh, 10px);
+
+    @media screen and (max-width: 400px) {
+      right: 5.2%;
+    }
   }
   // Title
   .title-section {
@@ -349,7 +355,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 0px;
         }
       }
     }
@@ -414,7 +420,7 @@ body {
         }
         .choice-jap {
           font-size: clamp(7px, 2vw, 13px);
-          letter-spacing: -1px;
+          letter-spacing: 0px;
           color: $subtext-color;
 
           @media screen and (max-width: 401px) {
@@ -423,11 +429,11 @@ body {
         }
         .choice-jap-1 {
           font-size: clamp(7px, 2vw, 13px);
-          letter-spacing: -3px;
+          letter-spacing: 0px;
           color: $subtext-color;
 
           @media screen and (max-width: 401px) {
-            letter-spacing: -1px;
+            letter-spacing: 0px;
           }
         }
         //number
@@ -889,7 +895,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 0px;
         }
       }
     }
@@ -954,7 +960,7 @@ body {
         }
         .choice-jap {
           font-size: clamp(7px, 2vw, 13px);
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
         //number
@@ -1149,13 +1155,13 @@ body {
             margin-left: clamp(27px, 6.4vw, 46px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
           }
           .div-jap {
             margin-left: clamp(27px, 6.4vw, 46px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
           .div-eng {
@@ -1179,13 +1185,13 @@ body {
             margin-left: clamp(34px, 7.9vw, 55px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
           }
           .div-jap {
             margin-left: clamp(34px, 7.9vw, 55px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
           .div-eng {

@@ -54,6 +54,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
 
   .fs-16 {
@@ -81,10 +82,11 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
@@ -106,13 +108,16 @@ body {
     }
   }
   .lesson-number {
-    position: absolute;
-    right: 6%;
-    margin-top: 0.5%;
-
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 6.3%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 1vh, 10px);
+
+    &.lesson-10 {
+      right: 5.5%;
+    }
   }
 
   // Title
@@ -333,7 +338,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 0px;
         }
       }
     }
@@ -408,7 +413,7 @@ body {
         }
         .choice-jap {
           font-size: clamp(9px, 2.2vw, 13px);
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
         //number
@@ -557,6 +562,7 @@ body {
         .speaker-text {
           font-size: clamp(11px, 2.5vw, 18px);
           padding-left: 2%;
+          width: 400px;
         }
         .number {
           @extend .b;
@@ -757,7 +763,7 @@ body {
           font-family: $noto-sans;
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -2px;
+          letter-spacing: -0px;
           margin-top: 10px;
         }
         .div-2 {
@@ -769,7 +775,7 @@ body {
           font-family: $noto-sans;
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -2px;
+          letter-spacing: 0px;
           margin-top: 10px;
         }
         .div-4 {
@@ -781,7 +787,7 @@ body {
           font-family: $noto-sans;
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           margin-top: 10px;
         }
         .div-6 {
@@ -793,7 +799,7 @@ body {
           font-family: $noto-sans;
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           margin-top: 10px;
         }
         .div-8 {
@@ -805,7 +811,7 @@ body {
           font-family: $noto-sans;
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           margin-top: 10px;
         }
         .div-10 {
@@ -817,7 +823,7 @@ body {
           font-family: $noto-sans;
           font-size: clamp(9px, 1.5vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           margin-top: 10px;
         }
       }

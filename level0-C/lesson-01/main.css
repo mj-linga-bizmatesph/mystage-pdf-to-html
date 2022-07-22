@@ -52,6 +52,9 @@ body {
 
 .html-lesson-wrapper header {
   font-family: "Noto Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -86,10 +89,11 @@ body {
 }
 
 .html-lesson-wrapper .program-rank {
-  position: absolute;
+  position: relative;
   color: #ffffff;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 100%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -108,12 +112,16 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
-  position: absolute;
-  right: 6%;
-  margin-top: 0.5%;
-  text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
+  position: relative;
+  float: right;
+  right: 6.3%;
+  font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
+  margin-top: clamp(2px, 1vh, 10px);
+}
+
+.html-lesson-wrapper .lesson-number.lesson-10 {
+  right: 5.5%;
 }
 
 .html-lesson-wrapper .title-section {
@@ -1279,7 +1287,7 @@ body {
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-try-2-5.svg);
+  background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-C-1-try4-im2.svg);
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-2 {

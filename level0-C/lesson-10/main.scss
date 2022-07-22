@@ -54,6 +54,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
 
   .fs-16 {
@@ -81,10 +82,11 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
@@ -106,11 +108,16 @@ body {
     }
   }
   .lesson-number {
-    position: absolute;
-    right: 5%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 5.5%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 0.5vh, 10px);
+
+    @media screen and (max-width: 400px) {
+      right: 5.2%;
+    }
   }
 
   // Title

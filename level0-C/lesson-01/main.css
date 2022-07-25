@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.3;
 }
 
 .html-lesson-wrapper {
@@ -117,7 +118,7 @@ body {
   right: 6.3%;
   font-size: clamp(14px, 3vw, 20px);
   color: #ffffff;
-  margin-top: clamp(2px, 1vh, 10px);
+  margin-top: clamp(2px, 0.5vh, 10px);
 }
 
 .html-lesson-wrapper .lesson-number.lesson-10 {
@@ -137,13 +138,13 @@ body {
 }
 
 .html-lesson-wrapper .title-section .title {
-  font-size: clamp(13px, 3.6vw, 23px);
+  font-size: clamp(13px, 3.6vw, 23px) !important;
   margin-bottom: 4px;
 }
 
 .html-lesson-wrapper .title-section .title-below {
-  font-size: clamp(13px, 3.6vw, 23px);
   margin-bottom: 10px;
+  font-size: clamp(13px, 3.6vw, 23px) !important;
 }
 
 .html-lesson-wrapper .title-section .sub-title {
@@ -1275,7 +1276,7 @@ body {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-1 .first-line .you-second-line {
-  margin-left: clamp(75px, 12.9vw, 99px);
+  margin-left: clamp(66px, 12.9vw, 99px);
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-1 .image-content {
@@ -1312,7 +1313,7 @@ body {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-2 .first-line .you-second-line {
-  margin-left: clamp(75px, 12.9vw, 99px);
+  margin-left: clamp(66px, 12.9vw, 99px);
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-2 .image-content {
@@ -1349,7 +1350,7 @@ body {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-3 .first-line .you-second-line {
-  margin-left: clamp(75px, 12.9vw, 99px);
+  margin-left: clamp(66px, 12.9vw, 99px);
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-3 .image-content {
@@ -1386,7 +1387,7 @@ body {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-4 .first-line .you-second-line {
-  margin-left: clamp(75px, 12.9vw, 99px);
+  margin-left: clamp(66px, 12.9vw, 99px);
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-4 .image-content {
@@ -1423,7 +1424,7 @@ body {
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-5 .first-line .you-second-line {
-  margin-left: clamp(75px, 12.9vw, 99px);
+  margin-left: clamp(66px, 12.9vw, 99px);
 }
 
 .html-lesson-wrapper .try-4 .try-4-content .wrap-flex-content-5 .image-content {

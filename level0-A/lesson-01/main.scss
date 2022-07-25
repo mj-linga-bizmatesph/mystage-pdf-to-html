@@ -15,6 +15,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.3;
 }
 
 .html-lesson-wrapper {
@@ -565,7 +566,7 @@ body {
               z-index: 2;
             }
             .eng {
-              padding: clamp(7px,2vw,10px) clamp(8px,3vw,8px);
+              padding: clamp(7px, 2vw, 10px) clamp(8px, 3vw, 8px);
             }
           }
         }

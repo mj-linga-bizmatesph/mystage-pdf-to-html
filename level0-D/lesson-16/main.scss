@@ -80,6 +80,7 @@ body {
   }
 
   header {
+    display: flex;
     font-family: $noto-sans;
   }
 
@@ -110,9 +111,10 @@ body {
   }
   .program-rank {
     position: relative;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
 
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
@@ -145,12 +147,12 @@ body {
     font-size: clamp(8px, 2vw, 11px);
   }
   .lesson-number {
-    position: absolute;
-    right: 5%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
-    color: #ffffff;
-    margin-top: -3%;
+    position: relative;
+    float: right;
+    right: 5.3%;
+    font-size: clamp(14px, 3vw, 20px);
+    color: #FFFFFF;
+    margin-top: clamp(2px, 1vh, 10px);
   }
 
   // Title
@@ -415,7 +417,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+    grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -591,7 +593,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -1002,7 +1004,8 @@ body {
         margin: 37% 0 0 8%;
       }
 
-      .text {
+.text {
+        line-height: 1.5em;
         display: flex;
         font-family: $noto-sans;
         font-size: $fs-18;

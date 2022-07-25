@@ -65,6 +65,9 @@ body {
 
 .html-lesson-wrapper header {
   font-family: "Noto Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -109,9 +112,10 @@ body {
 
 .html-lesson-wrapper .program-rank {
   position: relative;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 100%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -146,17 +150,11 @@ body {
   float: right;
   right: 6.3%;
   font-size: clamp(14px, 3vw, 20px);
-  color: #ffffff;
-  margin-top: -3%;
+  color: #FFFFFF;
+  margin-top: clamp(2px, 1vh, 10px);
 }
 
-.html-lesson-wrapper .lesson-number.lesson-10,
-.html-lesson-wrapper .lesson-number .lesson-11,
-.html-lesson-wrapper .lesson-number .lesson-12,
-.html-lesson-wrapper .lesson-number .lesson-17,
-.html-lesson-wrapper .lesson-number .lesson-18,
-.html-lesson-wrapper .lesson-number .lesson-19,
-.html-lesson-wrapper .lesson-number .lesson-20 {
+.html-lesson-wrapper .lesson-number.lesson-10 {
   right: 5.5%;
 }
 
@@ -549,7 +547,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -770,7 +768,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -952,7 +950,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1631,6 +1629,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .text {
+  line-height: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1679,6 +1678,6 @@ body {
   float: right;
   right: 5.3%;
   font-size: clamp(14px, 3vw, 20px);
-  color: #ffffff;
-  margin-top: -3%;
+  color: #FFFFFF;
+  margin-top: clamp(2px, 1vh, 10px);
 }

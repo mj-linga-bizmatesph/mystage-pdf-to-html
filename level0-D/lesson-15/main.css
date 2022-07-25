@@ -64,6 +64,9 @@ body {
 }
 
 .html-lesson-wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -101,9 +104,10 @@ body {
 
 .html-lesson-wrapper .program-rank {
   position: relative;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 0px;
   margin-top: clamp(1px, 1vw, 3px);
+  width: 100%;
 }
 
 .html-lesson-wrapper .program-rank .type {
@@ -134,12 +138,12 @@ body {
 }
 
 .html-lesson-wrapper .lesson-number {
-  position: absolute;
-  right: 5%;
-  text-align: center;
-  font-size: clamp(14px, 4vw, 26px);
-  color: #ffffff;
-  margin-top: -3%;
+  position: relative;
+  float: right;
+  right: 5.3%;
+  font-size: clamp(14px, 3vw, 20px);
+  color: #FFFFFF;
+  margin-top: clamp(2px, 1vh, 10px);
 }
 
 .html-lesson-wrapper .title-section {
@@ -423,7 +427,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.1rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -644,7 +648,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.1rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -826,7 +830,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.1rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;

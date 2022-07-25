@@ -161,6 +161,7 @@ body {
       }
 
       .text {
+        line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
         font-size: $fs-16;
@@ -176,6 +177,7 @@ body {
       }
 
       .speech {
+        line-height: 1.5;
         width: 80%;
       }
     }
@@ -185,4 +187,13 @@ body {
       background-image: url(#{$s3}/0-act-arrow.svg);
     }
   }
+}
+
+.html-lesson-wrapper .lesson-number {
+  position: relative;
+  float: right;
+  right: 5.3% !important;
+  font-size: clamp(14px, 3vw, 20px);
+  color: #FFFFFF;
+  margin-top: clamp(2px, 1vh, 10px);
 }

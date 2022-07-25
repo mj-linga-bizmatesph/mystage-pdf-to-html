@@ -106,8 +106,8 @@ body {
           }
           .row-3 {
             .sub {
+              line-height: 1.5;
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               color: #7f8288;
               margin-bottom: 15px;
@@ -231,7 +231,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -284,7 +284,6 @@ body {
             width: 100%;
             .sub {
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               line-height: 2;
               color: #7f8288;
@@ -428,7 +427,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -499,7 +498,6 @@ body {
             }
             .sub {
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               line-height: 2;
               color: #7f8288;
@@ -596,7 +594,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -1166,9 +1164,9 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: relative;
-  float: right;
-  right: 5.3%;
-  font-size: clamp(14px, 3vw, 20px);
-  color: #ffffff;
-  margin-top: -3%;
+    float: right;
+    right: 5.3%;
+    font-size: clamp(14px, 3vw, 20px);
+    color: #FFFFFF;
+    margin-top: clamp(2px, 1vh, 10px);
 }

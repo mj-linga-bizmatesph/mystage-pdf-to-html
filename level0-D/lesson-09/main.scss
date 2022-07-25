@@ -205,7 +205,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -402,7 +402,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -570,7 +570,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -731,6 +731,7 @@ body {
       }
 
       li {
+        line-height: 1.5;
         display: grid;
         grid-template-columns: 0 1fr;
         font-family: $noto-sans;
@@ -902,6 +903,7 @@ body {
         }
 
         .small-mb {
+          margin-left: 2%;
           margin-bottom: clamp(5px, 2vw, 10px);
         }
 
@@ -1110,6 +1112,7 @@ body {
       }
 
       .text {
+        line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
         font-size: $fs-18;

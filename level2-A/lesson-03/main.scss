@@ -10,6 +10,7 @@
   }
   .act-content {
     table {
+      font-size: clamp(7px, 1.6vw, 16px);
       th {
         background-color: #cdb925;
         &:first-of-type {

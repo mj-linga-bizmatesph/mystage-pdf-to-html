@@ -85,7 +85,7 @@ body {
 .html-lesson-wrapper header {
   font-family: "Noto Sans", sans-serif;
 }
-.html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
+.html-lesson-wrapper .fs-16 {
   font-size: clamp(10px, 2.3vw, 16px);
 }
 .html-lesson-wrapper .flip-horizontal {
@@ -98,7 +98,7 @@ body {
 .html-lesson-wrapper .exclude-letter-spacing {
   letter-spacing: normal;
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper .try-2 .table .name, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .text, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
+.html-lesson-wrapper .b, .html-lesson-wrapper .see-content .phrases-section .eng, .html-lesson-wrapper .see-content .phrases-section .icon, .html-lesson-wrapper .letter, .html-lesson-wrapper .number, .html-lesson-wrapper .office-section .name, .html-lesson-wrapper .office-section .legend div.left, .html-lesson-wrapper .office-section .legend div.right, .html-lesson-wrapper .arrow {
   font-weight: bold;
 }
 .html-lesson-wrapper .u-sup {
@@ -110,14 +110,15 @@ body {
   text-decoration: underline;
   color: #1287cd;
 }
-.html-lesson-wrapper .primary-blue, .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number, .html-lesson-wrapper .text {
+.html-lesson-wrapper .primary-blue {
   color: #1287cd;
 }
 .html-lesson-wrapper .program-rank {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
-  margin-top: clamp(1px, 1vw, 3px);
+  margin-top: clamp(1px, 1vw, 5px);
+  width: 69%;
 }
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
@@ -137,7 +138,7 @@ body {
   font-size: clamp(8px, 2.3vw, 14px);
 }
 .html-lesson-wrapper .jap {
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
@@ -148,6 +149,7 @@ body {
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
+  top: 5px;
 }
 .html-lesson-wrapper .title-section {
   position: absolute;
@@ -166,7 +168,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -183,13 +184,274 @@ body {
   left: 27%;
 }
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(9px, 2.9vw, 18px) !important;
   color: #141821;
 }
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
+}
+.html-lesson-wrapper .flip-image {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.html-lesson-wrapper .mt-0 {
+  margin-top: 0;
+}
+.html-lesson-wrapper .mt-1em {
+  margin-top: 1em !important;
+}
+.html-lesson-wrapper .mt-2em {
+  margin-top: 2em;
+}
+.html-lesson-wrapper .mt-3em {
+  margin-top: 3em;
+}
+.html-lesson-wrapper .mt-4em {
+  margin-top: 4em;
+}
+.html-lesson-wrapper .mb-1em {
+  margin-bottom: 1em;
+}
+.html-lesson-wrapper .mb-2em {
+  margin-bottom: 2em;
+}
+.html-lesson-wrapper .mb-3em {
+  margin-bottom: 3em;
+}
+.html-lesson-wrapper .my-1 {
+  margin: 1em 0;
+}
+.html-lesson-wrapper .mt-1 {
+  margin-top: 1em;
+}
+.html-lesson-wrapper .my-2 {
+  margin: 2em 0;
+}
+.html-lesson-wrapper .my-3 {
+  margin: 3em 0;
+}
+.html-lesson-wrapper .ml-1 {
+  margin-left: 1em;
+}
+.html-lesson-wrapper .ml-2 {
+  margin-left: 2em;
+}
+.html-lesson-wrapper .ml-3 {
+  margin-left: 6vw;
+}
+.html-lesson-wrapper .ml-4 {
+  margin-left: 4em;
+}
+.html-lesson-wrapper .ml-5 {
+  margin-left: 5em;
+}
+.html-lesson-wrapper .mb-1 {
+  margin-bottom: 0.5em;
+}
+.html-lesson-wrapper .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+}
+.html-lesson-wrapper .flex-wrapper .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.html-lesson-wrapper .flex-wrapper .col .row {
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.html-lesson-wrapper .align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.html-lesson-wrapper .align-items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.html-lesson-wrapper .align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.html-lesson-wrapper .puzzle-box {
+  border-radius: 3px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(9px, 1.8vw, 15px) !important;
+}
+.html-lesson-wrapper .circle-number {
+  border-radius: 50%;
+  background: #1287cd;
+  color: white;
+  margin: 0;
+  text-align: center;
+  width: 1.7em;
+  height: 1.7em;
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(11px, 3vw, 16px);
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.html-lesson-wrapper .square-letter {
+  border: 2.5px solid #1287cd;
+  color: #1287cd;
+  font-family: "Noto Sans", sans-serif;
+  width: clamp(11px, 4vw, 20px);
+  height: clamp(11px, 4vw, 20px);
+  line-height: clamp(11px, 4vw, 20px);
+  font-size: clamp(11px, 3vw, 16px);
+  text-align: center;
+  font-weight: bold;
+}
+.html-lesson-wrapper .plus-sign {
+  margin: 0 0.5em;
+}
+.html-lesson-wrapper .conversation-wrapper {
+  font-family: "Noto Sans", sans-serif;
+}
+.html-lesson-wrapper .conversation-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 100vh;
+  max-width: 100%;
+  font-size: clamp(12px, 3.5vw, 18px);
+  position: relative;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+.html-lesson-wrapper .conversation-wrapper .row .underline {
+  text-decoration: underline;
+}
+.html-lesson-wrapper .conversation-wrapper .row .text-info {
+  color: #1287cd;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .conversation-number {
+  line-height: 1.5em;
+  color: #1287cd;
+  font-weight: bold;
+  min-width: 1em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .letter-answer {
+  line-height: 1.5em;
+  font-weight: bold;
+  width: 15%;
+  text-align: center;
+  font-size: 2em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo {
+  display: grid;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 0.5em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .speaker {
+  line-height: 1.5em;
+  font-weight: bold;
+  min-width: 5em;
+  text-align: right;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .speaker:after {
+  content: " :";
+  margin-right: 0.4em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .no-after:after {
+  content: none !important;
+  margin-right: 0.4em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .dialogue {
+  word-wrap: break-word;
+  line-height: 1.5em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .japanese {
+  word-wrap: break-word;
+  font-size: clamp(8px, 1.7vw, 13px);
+  color: #7f8288;
+  letter-spacing: 0;
+  margin-top: 0.5em;
+}
+.html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+.html-lesson-wrapper .conversation-wrapper .row .side-image {
+  font-weight: bold;
+  color: #2d356b;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.html-lesson-wrapper .conversation-wrapper .row .side-image .text {
+  position: absolute;
+  font-family: "Trebuchet MS";
+  font-size: clamp(12px, 3.5vw, 18px);
+}
+.html-lesson-wrapper .conversation-wrapper .row .side-image .rotate-1 {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+.html-lesson-wrapper .conversation-wrapper .row .side-image .rotate-2 {
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
 }
 .html-lesson-wrapper .office-section .legend div {
   position: absolute;
@@ -283,10 +545,6 @@ body {
   font-size: clamp(11px, 3vw, 16px);
   text-align: center;
 }
-.html-lesson-wrapper .text {
-  white-space: nowrap;
-  font-family: "Noto Sans", sans-serif;
-}
 .html-lesson-wrapper .plus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,7 +602,7 @@ body {
 }
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 .html-lesson-wrapper .see-content .arrow.see {
@@ -668,9 +926,6 @@ body {
 .html-lesson-wrapper .see-3 .conversation .conv-1 .icon {
   padding-right: 1rem;
 }
-.html-lesson-wrapper .see-3 .conversation .conv-1 .jap {
-  letter-spacing: -2.5px !important;
-}
 .html-lesson-wrapper .see-3 .phrase-alts {
   margin-top: 10%;
   grid-template-columns: 1fr 1.2fr !important;
@@ -680,7 +935,6 @@ body {
   font-size: clamp(13px, 3vw, 18px);
 }
 .html-lesson-wrapper .see-3 .phrase-alts .alt-box .choice-jap {
-  letter-spacing: -1.8px;
   font-size: clamp(10px, 2vw, 15px);
 }
 .html-lesson-wrapper .see-3 .phrase-alts .alt:not(:last-child) {
@@ -718,50 +972,25 @@ body {
 .html-lesson-wrapper .try-1 .combinations .number.inverse {
   border: 1px solid #1287cd !important;
 }
-.html-lesson-wrapper .try-2 .table-wrapper-section {
-  margin-top: 10%;
+.html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(1) .side-image .text {
+  bottom: clamp(34px, 1vw, 35px);
+  right: clamp(49px, 1vw, 45px);
 }
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper {
-  width: 100%;
+.html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(2) .side-image .text {
+  bottom: 2em;
+  right: 4em;
 }
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper p {
-  margin: 0;
+.html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(3) .side-image .text {
+  bottom: 2em;
+  right: 3em;
 }
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number {
-  font-size: clamp(10px, 3vw, 18px);
-  padding-top: 6px;
-  padding-left: 10px;
-  padding-right: 8px;
+.html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(4) .side-image .text {
+  bottom: 3em;
+  right: 1.4em;
 }
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-img {
-  width: 50%;
-  text-align: left;
-  padding-right: 1%;
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper:not(:last-child) {
-  margin-bottom: clamp(1rem, 2vw, 12%);
-}
-.html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper img {
-  max-width: clamp(44%, 50vw, 100%);
-  padding-left: 5%;
-}
-.html-lesson-wrapper .try-2 .table {
-  font-family: "Noto Sans", sans-serif;
-  border-collapse: collapse;
-}
-.html-lesson-wrapper .try-2 .table td {
-  font-size: clamp(10px, 3vw, 18px);
-}
-.html-lesson-wrapper .try-2 .table td img {
-  max-width: clamp(44%, 16vw, 100%);
-  margin-bottom: 20px;
-}
-.html-lesson-wrapper .try-2 .table .name {
-  font-size: clamp(10px, 3vw, 16px);
-  white-space: nowrap;
-}
-.html-lesson-wrapper .try-2 .table td:nth-child(2) {
-  padding-bottom: 7%;
+.html-lesson-wrapper .try-2 .conversation-wrapper .row:nth-child(5) .side-image .text {
+  bottom: 2.5em;
+  right: 0.5em;
 }
 .html-lesson-wrapper .try-3 {
   font-family: "Noto Sans", sans-serif !important;
@@ -786,7 +1015,7 @@ body {
   font-size: 13px;
 }
 .html-lesson-wrapper .try-3 p.jap {
-  letter-spacing: -2px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .try-3 .office-try-3 {
   margin-top: 2.5rem;
@@ -810,7 +1039,7 @@ body {
 }
 .html-lesson-wrapper .try-3 .try-3-items .bubble .jap {
   padding-top: 2px;
-  letter-spacing: -1px !important;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .try-3 .try-3-items.item-1 .akiko {
   margin-top: clamp(12%, 2vw, 13%);
@@ -837,20 +1066,50 @@ body {
   margin-left: 1rem;
 }
 .html-lesson-wrapper .act-1 p.jap {
-  letter-spacing: -2px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .act-1 .office-act-1 {
   margin-top: 6%;
+  position: relative;
 }
 .html-lesson-wrapper .act-1 .office-act-1 .bubble.helen {
   margin-top: 10.4%;
-  left: 15.9%;
+  left: clamp(11%, 20px, 28.9%);
+  width: clamp(163px, 26vw, 313px);
 }
 .html-lesson-wrapper .act-1 .office-act-1 .bubble.helen .eng {
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 13px);
 }
-.html-lesson-wrapper .act-1 .office-act-1 .bubble.helen .jap {
-  letter-spacing: -1.5px;
-  line-height: clamp(10px, 2vw, 1rem);
+.html-lesson-wrapper .act-1 .office-act-1 .akiko {
+  position: absolute;
+  right: clamp(2em, 8vw, 4em);
+  top: clamp(15%, 3vw, 18px);
+}
+.html-lesson-wrapper .act-1 .office-act-1 .akiko .eng {
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+  color: #2d356b;
+  font-size: clamp(6px, 2.5vw, 18px);
+  text-align: center;
+}
+.html-lesson-wrapper .act-1 .office-act-1 .akiko .eng:nth-child(1) {
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  margin-bottom: 0.7em;
+}
+.html-lesson-wrapper .act-1 .office-act-1 .akiko .eng:nth-child(2) {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  margin-bottom: 0.7em;
+}
+.html-lesson-wrapper .act-1 .office-act-1 .akiko .eng:nth-child(3) {
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.choice-jap, .japanese, .jap, .sub-title, .text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

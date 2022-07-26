@@ -972,6 +972,7 @@ body {
       }
 
      .jpn-text {
+      line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
         font-size: clamp(9px, 2.2vw, 12px);

@@ -267,7 +267,7 @@
           }
 
           div.list-subtitle {
-            font-size: $fs-13;
+            font-size: $fs-12;
             color: #7f8288;
           }
         }
@@ -456,7 +456,7 @@
           }
 
           div.list-subtitle {
-            font-size: $fs-13;
+            font-size: $fs-12;
             color: #7f8288;
           }
         }
@@ -844,6 +844,7 @@
       }
 
      .jpn-text {
+        line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
         font-size: clamp(9px, 2.2vw, 12px);

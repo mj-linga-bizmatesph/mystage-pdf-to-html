@@ -622,7 +622,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section li div div.list-subtitle {
-  font-size: clamp(9px, 2.2vw, 13px);
+  font-size: clamp(8px, 1.8vw, 12px);
   color: #7f8288;
 }
 
@@ -842,7 +842,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-4-section li div div.list-subtitle {
-  font-size: clamp(9px, 2.2vw, 13px);
+  font-size: clamp(8px, 1.8vw, 12px);
   color: #7f8288;
 }
 
@@ -1245,6 +1245,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .jpn-text {
+  line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

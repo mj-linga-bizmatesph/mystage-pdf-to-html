@@ -1124,6 +1124,7 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       }
 
       .speech-bubble {
+        line-height: 1.3;
         position: absolute;
         margin: 9.5% 0 0 31%;
       }
@@ -1163,6 +1164,7 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       }
 
      .jpn-text {
+      line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
         font-size: clamp(9px, 2.2vw, 12px);

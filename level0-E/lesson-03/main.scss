@@ -50,6 +50,9 @@
             width: clamp(52px, 13vw, 104px);
           }
         }
+        .choice-jap{
+          font-size: clamp(6.7px, 1.8vw, 14px);
+        }
       }
 
       .conversation {
@@ -69,6 +72,9 @@
 
           .icon {
             margin-right: clamp(1px, 1.8vw, 10px);
+          }
+          .jap{
+            font-size: clamp(7px, 2vw, 14px);
           }
         }
       }

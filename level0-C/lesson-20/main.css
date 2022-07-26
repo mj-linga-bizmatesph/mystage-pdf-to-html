@@ -169,6 +169,16 @@ body {
   content: attr(data-value) " ";
 }
 
+.html-lesson-wrapper .w {
+  width: 455px;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .w {
+    width: 300px;
+  }
+}
+
 .html-lesson-wrapper .table {
   max-width: 100%;
   font-size: clamp(10px, 3vw, 16px);
@@ -203,16 +213,18 @@ body {
   }
 }
 
+.html-lesson-wrapper .table .content-text .eng .s-line {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: clamp(11px, 2.8vw, 18px);
+}
+
 .html-lesson-wrapper .table .breaker {
   height: 10px;
 }
 
 .html-lesson-wrapper hr {
   border-top: 1px solid #dbdcdc;
-}
-
-.html-lesson-wrapper td {
-  vertical-align: top;
 }
 
 .html-lesson-wrapper .m-0 {

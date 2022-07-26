@@ -292,6 +292,7 @@ body {
       }
       .add-margin {
         margin-top: 25px;
+        margin-left: 0.3%;
       }
       .helen-lines {
         display: flex;
@@ -305,15 +306,15 @@ body {
           width: 13%;
         }
         .line-under {
-          margin-left: clamp(40px, 9vw, 65px);
+          margin-left: clamp(40px, 9vw, 68px);
         }
         .div-1 {
-          margin-left: clamp(37px, 8.5vw, 62px);
+          margin-left: clamp(37px, 8.5vw, 68px);
           margin-top: 25px;
         }
         .div-2 {
           margin-top: 25px;
-          margin-left: clamp(37px, 8.5vw, 62px);
+          margin-left: clamp(37px, 8.5vw, 68px);
         }
       }
     }

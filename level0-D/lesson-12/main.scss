@@ -237,7 +237,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-    grid-gap: clamp(1.5rem, 6vw, 3.1rem);
+    grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -433,7 +433,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-    grid-gap: clamp(1.5rem, 6vw, 3.1rem);
+    grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -600,7 +600,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-    grid-gap: clamp(1.5rem, 6vw, 3.1rem);
+    grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -771,6 +771,7 @@ body {
       }
 
       .row {
+        line-height: 1.5;
         margin-bottom: clamp(0.5rem, 13vw, 3rem);
       }
     }

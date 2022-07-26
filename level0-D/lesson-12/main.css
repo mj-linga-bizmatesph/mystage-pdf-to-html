@@ -586,7 +586,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 3.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -806,7 +806,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 3.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -987,7 +987,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 3.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1165,6 +1165,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-2-content .row {
+  line-height: 1.5;
   margin-bottom: clamp(0.5rem, 13vw, 3rem);
 }
 

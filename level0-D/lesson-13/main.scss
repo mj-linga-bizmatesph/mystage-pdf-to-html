@@ -320,8 +320,8 @@ body {
           }
           .row-3 {
             .sub {
+              line-height: 1.5;
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               color: #7f8288;
             }
@@ -1014,6 +1014,7 @@ body {
       }
 
       .row {
+        line-height: 1.5;
         margin-bottom: clamp(0.5rem, 13vw, 3rem);
       }
     }
@@ -1301,6 +1302,7 @@ body {
       }
 
       .akiko-speech {
+        line-height: 1.5;
         position: absolute;
         margin: 8.5% 0 0 17%;
       }

@@ -331,8 +331,8 @@ body {
           .row-2 {
             width: 100%;
             .sub {
+              line-height: 1.5;
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               color: #7f8288;
             }
@@ -787,7 +787,6 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       margin-top: clamp(20px, 10vw, 60px);
 
       .row1 {
-        line-height: 1.8;
         margin-bottom: 0em;
         p {
           font-size: clamp(12px, 2.2vw, 18px);
@@ -866,6 +865,7 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       }
 
       li {
+        line-height: 1.5;
         display: grid;
         grid-template-columns: 0 1fr;
         font-family: $noto-sans;
@@ -1155,6 +1155,7 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       }
 
       .text {
+        line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
         font-size: $fs-16;

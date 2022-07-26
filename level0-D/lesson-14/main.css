@@ -321,8 +321,8 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-2-section .akiko-section .akiko-conversation .row-2 .sub {
+  line-height: 1.5;
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 2.2vw, 13px);
   font-size: clamp(9px, 2.2vw, 13px);
   color: #7f8288;
 }
@@ -831,7 +831,6 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-1-content .row1 {
-  line-height: 1.8;
   margin-bottom: 0em;
 }
 
@@ -920,6 +919,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-1-content li {
+  line-height: 1.5;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0 1fr;
@@ -1227,6 +1227,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .text {
+  line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

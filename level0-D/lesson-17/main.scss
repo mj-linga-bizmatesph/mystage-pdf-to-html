@@ -98,8 +98,8 @@ body {
           .row-2 {
             width: 100%;
             .sub {
+              line-height: 1.5;
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               color: #7f8288;
             }
@@ -711,6 +711,7 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       }
 
       li {
+        line-height: 1.5;
         display: grid;
         grid-template-columns: 0 1fr;
         grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);
@@ -947,6 +948,7 @@ grid-gap: clamp(1.5rem, 6vw, 3.6rem);
       }
 
       li {
+        line-height: 1.5;
         display: grid;
         grid-template-columns: 0 1fr;
         grid-gap: clamp(0.6rem, 1.5vw, 2.1rem);

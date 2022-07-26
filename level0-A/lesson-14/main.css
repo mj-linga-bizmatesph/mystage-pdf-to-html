@@ -135,7 +135,7 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
@@ -144,6 +144,7 @@ body {
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 5%;
+  margin-top: 0.2%;
   text-align: center;
   font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
@@ -175,7 +176,7 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -202,7 +203,7 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .office-section .legend div {
@@ -385,7 +386,7 @@ body {
 
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 
@@ -742,19 +743,19 @@ body {
 
 .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 4px;
+  padding-top: 2px;
   padding-left: clamp(5px, 3vw, 10px);
 }
 
 @media screen and (max-width: 451px) {
   .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 3px;
+    padding-top: 1px;
   }
 }
 
 @media screen and (max-width: 391px) {
   .html-lesson-wrapper .try-content.try-1 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 2px;
+    padding-top: 0px;
   }
 }
 
@@ -847,7 +848,7 @@ body {
 
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 6px;
+  padding-top: 4px;
   padding-left: clamp(5px, 3vw, 10px);
 }
 

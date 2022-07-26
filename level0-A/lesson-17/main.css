@@ -139,6 +139,7 @@ body {
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 5%;
+  margin-top: 0.2%;
   text-align: center;
   font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
@@ -170,7 +171,7 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -197,7 +198,7 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .office-section .legend div {
@@ -383,7 +384,7 @@ body {
 
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 
@@ -811,14 +812,14 @@ body {
 
 .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 5px;
+  padding-top: 3px;
   padding-left: 10px;
   padding-right: 8px;
 }
 
 @media screen and (max-width: 451px) {
   .html-lesson-wrapper .try-2 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 4px;
+    padding-top: 2px;
   }
 }
 
@@ -905,13 +906,13 @@ body {
 
 .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
-  padding-top: 6px;
+  padding-top: 4px;
   padding-right: clamp(9px, 2.9vw, 15px);
 }
 
 @media screen and (max-width: 451px) {
   .html-lesson-wrapper .try-4 .table-wrapper-section .table-wrapper .table-number {
-    padding-top: 4px;
+    padding-top: 2px;
   }
 }
 
@@ -987,8 +988,9 @@ body {
 .html-lesson-wrapper .act-1 .office-act-1 .bubble.helen .eng {
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 13px);
+  margin-bottom: 1%;
 }
 
 .html-lesson-wrapper .act-1 .office-act-1 .bubble.helen .jap {
-  line-height: clamp(10px, 2.8vw, 1rem);
+  line-height: clamp(10px, 2.8vw, 1.3rem);
 }

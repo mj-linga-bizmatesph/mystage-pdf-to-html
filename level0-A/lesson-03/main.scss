@@ -128,7 +128,7 @@ body {
     font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -136,6 +136,7 @@ body {
   .lesson-number {
     position: absolute;
     right: 6%;
+    margin-top: 0.3%;
     text-align: center;
     font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
@@ -145,7 +146,7 @@ body {
     font-size: clamp(9px, 2vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -174,7 +175,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      letter-spacing: 0px;
     }
   }
   .arrow {
@@ -199,7 +200,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      letter-spacing: 0px;
     }
   }
 
@@ -390,7 +391,7 @@ body {
 
       .choice-jap {
         font-size: clamp(6.7px, 1.8vw, 13px);
-        letter-spacing: -0.5px;
+        letter-spacing: 0px;
         color: $subtext-color;
       }
     }
@@ -686,10 +687,10 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 5px;
+            padding-top: 3px;
 
             @media screen and (max-width: 451px) {
-              padding-top: 4px;
+              padding-top: 2px;
             }
           }
           .table-img {
@@ -768,10 +769,10 @@ body {
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 5px;
+            padding-top: 3px;
 
             @media screen and (max-width: 451px) {
-              padding-top: 4px;
+              padding-top: 2px;
             }
           }
           .dialog {

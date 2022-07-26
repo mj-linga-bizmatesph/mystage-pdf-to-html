@@ -139,7 +139,7 @@ body {
 }
 
 .html-lesson-wrapper .jap {
-  letter-spacing: -1.5px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
@@ -148,6 +148,7 @@ body {
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 5%;
+  margin-top: 0.2%;
   text-align: center;
   font-size: clamp(12px, 3vw, 25px);
   color: #ffffff;
@@ -178,7 +179,7 @@ body {
 
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .arrow {
@@ -205,7 +206,7 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .office-section .legend div {
@@ -361,18 +362,18 @@ body {
 
 .html-lesson-wrapper .part-1 .intro .eng,
 .html-lesson-wrapper .part-2 .intro .eng {
-  font-size: clamp(10px, 18px, 18px);
+  font-size: clamp(10px, 13px, 18px);
   font-weight: normal;
 }
 
 .html-lesson-wrapper .part-1 .intro .jap,
 .html-lesson-wrapper .part-2 .intro .jap {
-  font-size: clamp(9px, 13px, 13px);
+  font-size: clamp(9px, 10px, 13px);
 }
 
 .html-lesson-wrapper .part-1 p.jap,
 .html-lesson-wrapper .part-2 p.jap {
-  letter-spacing: -2px;
+  letter-spacing: 0px;
 }
 
 .html-lesson-wrapper .part-1 .office-part-1,
@@ -388,7 +389,7 @@ body {
 .html-lesson-wrapper .part-2 .office-part-2 .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(7px, 2vw, 16px);
+  font-size: clamp(7px, 2vw, 14px);
 }
 
 .html-lesson-wrapper .part-1 .office-part-1 .bubble .jap,
@@ -396,9 +397,9 @@ body {
 .html-lesson-wrapper .part-2 .office-part-1 .bubble .jap,
 .html-lesson-wrapper .part-2 .office-part-2 .bubble .jap {
   font-family: "Noto Sans", sans-serif;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-size: clamp(7px, 1.8vw, 11px);
-  line-height: clamp(10px, 13px, 14px);
+  line-height: clamp(10px, 13px, 15px);
 }
 
 .html-lesson-wrapper .part-1 .office-part-1 .bubble.akiko-1,
@@ -430,13 +431,13 @@ body {
 }
 
 .html-lesson-wrapper .part-2 .ef {
-  font-size: clamp(4px, 1.3vw, 16px);
+  font-size: clamp(7px, 2vw, 14px);
 }
 
 .html-lesson-wrapper .part-2 .part-2-items .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(7px, 2vw, 16px);
+  font-size: clamp(7px, 2vw, 14px);
 }
 
 .html-lesson-wrapper .part-2 .part-2-items .bubble .eng .option-item {

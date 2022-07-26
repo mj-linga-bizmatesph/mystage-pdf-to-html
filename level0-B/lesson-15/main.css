@@ -75,7 +75,7 @@ body {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
-  margin-top: clamp(1px, 1vw, 3px);
+  margin-top: clamp(1px, 1vw, 5px);
   width: 69%;
 }
 .html-lesson-wrapper .program-rank .type {
@@ -97,6 +97,7 @@ body {
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
+  top: 5px;
 }
 .html-lesson-wrapper .title-section {
   position: absolute;
@@ -132,7 +133,7 @@ body {
   left: 27%;
 }
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(12px, 3.5vw, 18px);
+  font-size: clamp(12px, 3.5vw, 18px) !important;
   color: #141821;
   margin-right: 1em;
 }
@@ -409,11 +410,13 @@ body {
   position: relative;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .conversation-number {
+  line-height: 1.5em;
   color: #1287cd;
   font-weight: bold;
   min-width: 1em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .letter-answer {
+  line-height: 1.5em;
   font-weight: bold;
   width: 15%;
   text-align: center;
@@ -429,6 +432,7 @@ body {
   margin-bottom: 1em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .speaker {
+  line-height: 1.5em;
   font-weight: bold;
   min-width: 5em;
   text-align: right;
@@ -443,6 +447,7 @@ body {
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .dialogue {
   word-wrap: break-word;
+  line-height: 1.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .japanese {
   word-wrap: break-word;
@@ -452,6 +457,7 @@ body {
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
+  line-height: 1.5em;
   word-wrap: break-word;
 }
 .html-lesson-wrapper .conversation-wrapper .row .side-image {
@@ -923,4 +929,10 @@ body {
 }
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;
+}
+
+.choice-jap, .japanese, .jap, .sub-title, .text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

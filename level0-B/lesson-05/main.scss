@@ -357,7 +357,7 @@ body {
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
@@ -1253,11 +1253,11 @@ body {
 
         .english {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 13px);
+          font-size: clamp(8px, 2vw, 14px);
         }
 
         .japanese {
-          font-size: clamp(6px, 1.5vw, 10px);
+          font-size: clamp(6px, 1.5vw, 11px);
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
         }
@@ -1388,18 +1388,18 @@ body {
         line-height: clamp(8px, 2vw, 12px);
 
         .bubble {
-          margin-top: clamp(15px, 7vw, 55px);
+          margin-top: clamp(15px,7vw,43px);
           margin-left: clamp(90px, 38vw, 240px);
           min-height: clamp(25px, 15vw, 75px);
-          width: clamp(100px, 35vw, 220px);
+          width: clamp(100px,35vw,228px);
 
           .english {
             font-weight: bold;
-            font-size: clamp(6px, 1.5vw, 13px);
+            font-size: clamp(6px, 1.5vw, 14px);
           }
 
           .japanese {
-            font-size: clamp(6px, 1.5vw, 10px);
+            font-size: clamp(6px, 1.5vw, 11px);
             color: $subtext-color;
             letter-spacing: $jap-letter-spacing;
           }
@@ -1410,11 +1410,11 @@ body {
         margin-top: clamp(24px, 4.5vw, 57px);
         margin-left: clamp(28px, 16.5vw, 110px);
         min-height: clamp(25px, 15vw, 75px);
-        width: clamp(150px, 35vw, 220px);
+        width: clamp(181px,51vw,286px);
 
         .english {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 13px);
+          font-size: clamp(8px, 2vw, 14px);
 
           .a-row-text {
             margin-left: clamp(1px, 2vw, 15px);
@@ -1434,7 +1434,7 @@ body {
         }
 
         .japanese {
-          font-size: clamp(6px, 1.5vw, 10px);
+          font-size: clamp(6px, 1.5vw, 11px);
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
         }
@@ -1557,15 +1557,15 @@ body {
           margin-top: clamp(15px, 8vw, 55px);
           margin-left: clamp(50px, 30vw, 190px);
           min-height: clamp(25px, 15vw, 75px);
-          width: clamp(100px, 35vw, 220px);
+          width: clamp(170px,40vw,282px);
 
           .english {
             font-weight: bold;
-            font-size: clamp(8px, 2vw, 13px);
+            font-size: clamp(8px, 2vw, 14px);
           }
 
           .japanese {
-            font-size: clamp(6px, 1.5vw, 10px);
+            font-size: clamp(6px, 1.5vw, 11px);
             color: $subtext-color;
             letter-spacing: $jap-letter-spacing;
           }
@@ -1576,11 +1576,11 @@ body {
         margin-top: clamp(5px, 5vw, 63px);
         margin-left: clamp(35px, 25vw, 165px);
         min-height: clamp(25px, 15vw, 75px);
-        width: clamp(170px, 40vw, 260px);
+        width: clamp(170px,40vw,280px);
 
         .english {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 13px);
+          font-size: clamp(8px, 2vw, 14px);
 
           .a-row-text {
             margin-left: clamp(1px, 2vw, 15px);
@@ -1599,7 +1599,7 @@ body {
         }
 
         .japanese {
-          font-size: clamp(6px, 1.5vw, 10px);
+          font-size: clamp(6px, 1.5vw, 11px);
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
         }
@@ -1723,11 +1723,11 @@ body {
         margin-top: clamp(48px, 12vw, 93px);
         margin-left: clamp(50px, 26vw, 165px);
         min-height: clamp(25px, 15vw, 75px);
-        width: clamp(200px, 45vw, 300px);
+        width: clamp(181px,51vw,299px);
 
         .english {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 13px);
+          font-size: clamp(8px, 2vw, 14px);
 
           .a-row-text {
             margin-left: clamp(1px, 2vw, 15px);
@@ -1746,7 +1746,7 @@ body {
         }
 
         .japanese {
-          font-size: clamp(6px, 1.5vw, 10px);
+          font-size: clamp(6px, 1.5vw, 11px);
           color: $subtext-color;
           letter-spacing: $jap-letter-spacing;
         }
@@ -1874,7 +1874,7 @@ body {
 
         .english {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 13px);
+          font-size: clamp(8px, 2vw, 14px);
 
           .a-row-text {
             margin-left: clamp(1px, 2vw, 15px);
@@ -2034,7 +2034,7 @@ body {
 
         .english {
           font-weight: bold;
-          font-size: clamp(8px, 2vw, 13px);
+          font-size: clamp(8px, 2vw, 14px);
 
           .a-row-text {
             margin-left: clamp(1px, 2vw, 15px);

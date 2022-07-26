@@ -202,7 +202,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      
     }
   }
   .arrow {
@@ -227,7 +227,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      
     }
   }
 
@@ -1011,7 +1011,7 @@ line-height: 1.5em;
           padding-right: 1rem;
         }
         .jap {
-          letter-spacing: -2.5px !important;
+          ;
         }
       }
     }
@@ -1025,7 +1025,7 @@ line-height: 1.5em;
           font-size: clamp(13px, 3vw, 18px);
         }
         .choice-jap {
-          letter-spacing: -1.8px;
+          
           font-size: clamp(10px, 2vw, 15px);
         }
       }

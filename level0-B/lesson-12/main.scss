@@ -434,7 +434,7 @@ line-height: 1.5em;
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
@@ -924,7 +924,7 @@ line-height: 1.5em;
       font-family: $noto-sans;
       padding-left: clamp(4px, 10vw, 5px);
       margin-top: clamp(40px, 16vw, 100px);
-
+      line-height: 1.8em;
       .try-2-row-1 {
         margin-bottom: clamp(67px, 13vw, 121px);
         position: relative;
@@ -1120,6 +1120,7 @@ line-height: 1.5em;
   }
   .try-3 {
     .try-3-content {
+      line-height: 1.8em;
       .conversation-text {
         margin-left: -4px;
         margin-top: 35px;

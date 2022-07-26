@@ -168,7 +168,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -191,7 +190,6 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .flip-image {
   -webkit-transform: scaleX(-1);
@@ -928,9 +926,6 @@ body {
 .html-lesson-wrapper .see-3 .conversation .conv-1 .icon {
   padding-right: 1rem;
 }
-.html-lesson-wrapper .see-3 .conversation .conv-1 .jap {
-  letter-spacing: -2.5px !important;
-}
 .html-lesson-wrapper .see-3 .phrase-alts {
   margin-top: 10%;
   grid-template-columns: 1fr 1.2fr !important;
@@ -940,7 +935,6 @@ body {
   font-size: clamp(13px, 3vw, 18px);
 }
 .html-lesson-wrapper .see-3 .phrase-alts .alt-box .choice-jap {
-  letter-spacing: -1.8px;
   font-size: clamp(10px, 2vw, 15px);
 }
 .html-lesson-wrapper .see-3 .phrase-alts .alt:not(:last-child) {

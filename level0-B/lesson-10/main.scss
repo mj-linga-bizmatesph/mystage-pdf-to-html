@@ -182,7 +182,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      
     }
   }
   .arrow {
@@ -207,7 +207,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      
     }
   }
 
@@ -459,7 +459,7 @@ line-height: 1.5em;
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
@@ -647,7 +647,7 @@ line-height: 1.5em;
       .eng {
         font-family: $text-font;
         font-weight: bold;
-        font-size: clamp(10px, 2.3vw, 15px);
+        font-size: clamp(10px, 2.3vw, 14px);
       }
 
       .jap {
@@ -676,7 +676,7 @@ line-height: 1.5em;
       .eng {
         font-family: $text-font;
         font-weight: bold;
-        font-size: clamp(10px, 2.3vw, 15px);
+        font-size: clamp(10px, 2.3vw, 14px);
         .option-item {
           display: grid;
           grid-template-columns: min-content 1fr;
@@ -690,10 +690,10 @@ line-height: 1.5em;
     &.item-1 {
       .akiko {
         margin-top: clamp(9%, 12%, 14%);
-        left: 24%;
+        left: 30%;
       }
       .option-item {
-        width: 20rem;
+        width: 18rem;
         
       }
     }
@@ -704,9 +704,7 @@ line-height: 1.5em;
       }
       .option-item {
         width: 40rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
     &.item-3 {
@@ -716,9 +714,7 @@ line-height: 1.5em;
       }
       .option-item {
         width: 40rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
     &.item-4 {
@@ -728,9 +724,7 @@ line-height: 1.5em;
       }
       .option-item {
         width: 30rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
     &.item-5 {
@@ -740,9 +734,7 @@ line-height: 1.5em;
       }
       .option-item {
         width: 30rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
   }

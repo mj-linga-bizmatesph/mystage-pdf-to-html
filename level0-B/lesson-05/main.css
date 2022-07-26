@@ -345,7 +345,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -1148,10 +1147,10 @@ body {
 }
 .html-lesson-wrapper .try-3 .try-3-content .bubble .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-3 .try-3-content .bubble .japanese {
-  font-size: clamp(6px, 1.5vw, 10px);
+  font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0.5px;
 }
@@ -1313,17 +1312,17 @@ body {
   line-height: clamp(8px, 2vw, 12px);
 }
 .html-lesson-wrapper .try-5 .try-5-content .conversation .bubble {
-  margin-top: clamp(15px, 7vw, 55px);
+  margin-top: clamp(15px, 7vw, 43px);
   margin-left: clamp(90px, 38vw, 240px);
   min-height: clamp(25px, 15vw, 75px);
-  width: clamp(100px, 35vw, 220px);
+  width: clamp(100px, 35vw, 228px);
 }
 .html-lesson-wrapper .try-5 .try-5-content .conversation .bubble .english {
   font-weight: bold;
-  font-size: clamp(6px, 1.5vw, 13px);
+  font-size: clamp(6px, 1.5vw, 14px);
 }
 .html-lesson-wrapper .try-5 .try-5-content .conversation .bubble .japanese {
-  font-size: clamp(6px, 1.5vw, 10px);
+  font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0.5px;
 }
@@ -1331,11 +1330,11 @@ body {
   margin-top: clamp(24px, 4.5vw, 57px);
   margin-left: clamp(28px, 16.5vw, 110px);
   min-height: clamp(25px, 15vw, 75px);
-  width: clamp(150px, 35vw, 220px);
+  width: clamp(181px, 51vw, 286px);
 }
 .html-lesson-wrapper .try-5 .try-5-content .bubble-port2 .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-5 .try-5-content .bubble-port2 .english .a-row-text {
   margin-left: clamp(1px, 2vw, 15px);
@@ -1353,7 +1352,7 @@ body {
   margin-left: clamp(15px, 4vw, 26px);
 }
 .html-lesson-wrapper .try-5 .try-5-content .bubble-port2 .japanese {
-  font-size: clamp(6px, 1.5vw, 10px);
+  font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0.5px;
 }
@@ -1503,14 +1502,14 @@ body {
   margin-top: clamp(15px, 8vw, 55px);
   margin-left: clamp(50px, 30vw, 190px);
   min-height: clamp(25px, 15vw, 75px);
-  width: clamp(100px, 35vw, 220px);
+  width: clamp(170px, 40vw, 282px);
 }
 .html-lesson-wrapper .try-6 .try-6-content .conversation .bubble .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-6 .try-6-content .conversation .bubble .japanese {
-  font-size: clamp(6px, 1.5vw, 10px);
+  font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0.5px;
 }
@@ -1518,11 +1517,11 @@ body {
   margin-top: clamp(5px, 5vw, 63px);
   margin-left: clamp(35px, 25vw, 165px);
   min-height: clamp(25px, 15vw, 75px);
-  width: clamp(170px, 40vw, 260px);
+  width: clamp(170px, 40vw, 280px);
 }
 .html-lesson-wrapper .try-6 .try-6-content .bubble-port2 .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-6 .try-6-content .bubble-port2 .english .a-row-text {
   margin-left: clamp(1px, 2vw, 15px);
@@ -1537,7 +1536,7 @@ body {
   margin-left: clamp(5px, 2vw, 12px);
 }
 .html-lesson-wrapper .try-6 .try-6-content .bubble-port2 .japanese {
-  font-size: clamp(6px, 1.5vw, 10px);
+  font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0.5px;
 }
@@ -1687,11 +1686,11 @@ body {
   margin-top: clamp(48px, 12vw, 93px);
   margin-left: clamp(50px, 26vw, 165px);
   min-height: clamp(25px, 15vw, 75px);
-  width: clamp(200px, 45vw, 300px);
+  width: clamp(181px, 51vw, 299px);
 }
 .html-lesson-wrapper .try-7 .try-7-content .bubble-port2 .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-7 .try-7-content .bubble-port2 .english .a-row-text {
   margin-left: clamp(1px, 2vw, 15px);
@@ -1706,7 +1705,7 @@ body {
   margin-left: clamp(5px, 2vw, 12px);
 }
 .html-lesson-wrapper .try-7 .try-7-content .bubble-port2 .japanese {
-  font-size: clamp(6px, 1.5vw, 10px);
+  font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0.5px;
 }
@@ -1860,7 +1859,7 @@ body {
 }
 .html-lesson-wrapper .try-8 .try-8-content .bubble-port2 .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-8 .try-8-content .bubble-port2 .english .a-row-text {
   margin-left: clamp(1px, 2vw, 15px);
@@ -2044,7 +2043,7 @@ body {
 }
 .html-lesson-wrapper .try-9 .try-9-content .bubble-port2 .english {
   font-weight: bold;
-  font-size: clamp(8px, 2vw, 13px);
+  font-size: clamp(8px, 2vw, 14px);
 }
 .html-lesson-wrapper .try-9 .try-9-content .bubble-port2 .english .a-row-text {
   margin-left: clamp(1px, 2vw, 15px);

@@ -144,7 +144,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -167,7 +166,6 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .full-width {
   width: 100%;
@@ -443,7 +441,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -633,7 +630,7 @@ body {
 .part-2 .office-part-2 .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 15px);
+  font-size: clamp(10px, 2.3vw, 14px);
 }
 .part-1 .office-part-1 .bubble .jap,
 .part-1 .office-part-2 .bubble .jap,
@@ -663,7 +660,7 @@ body {
 .part-2 .part-2-items .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 15px);
+  font-size: clamp(10px, 2.3vw, 14px);
 }
 .part-2 .part-2-items .bubble .eng .option-item {
   display: grid;
@@ -676,10 +673,10 @@ body {
 }
 .part-2 .part-2-items.item-1 .akiko {
   margin-top: 12%;
-  left: 24%;
+  left: 30%;
 }
 .part-2 .part-2-items.item-1 .option-item {
-  width: 20rem;
+  width: 18rem;
 }
 .part-2 .part-2-items.item-2 .akiko {
   margin-top: 9%;
@@ -688,18 +685,12 @@ body {
 .part-2 .part-2-items.item-2 .option-item {
   width: 40rem;
 }
-.part-2 .part-2-items.item-2 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
-}
 .part-2 .part-2-items.item-3 .akiko {
   margin-top: 14%;
   left: 26%;
 }
 .part-2 .part-2-items.item-3 .option-item {
   width: 40rem;
-}
-.part-2 .part-2-items.item-3 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
 }
 .part-2 .part-2-items.item-4 .akiko {
   margin-top: 16%;
@@ -708,18 +699,12 @@ body {
 .part-2 .part-2-items.item-4 .option-item {
   width: 30rem;
 }
-.part-2 .part-2-items.item-4 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
-}
 .part-2 .part-2-items.item-5 .akiko {
   margin-top: 10%;
   left: 21%;
 }
 .part-2 .part-2-items.item-5 .option-item {
   width: 30rem;
-}
-.part-2 .part-2-items.item-5 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
 }
 
 .choice-jap, .japanese, .jap, .sub-title, .text-1 {

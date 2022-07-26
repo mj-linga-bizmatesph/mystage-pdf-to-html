@@ -145,7 +145,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -168,7 +167,6 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .office-section .legend div {
   position: absolute;
@@ -250,7 +248,7 @@ body {
 .html-lesson-wrapper .number.inverse {
   color: #1287cd;
   background-color: white;
-  border: 1px solid #707070;
+  border: 1px solid #1287cd;
 }
 .html-lesson-wrapper .letter {
   border: 2px solid #1287cd;
@@ -587,7 +585,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -888,9 +885,6 @@ body {
   grid-template-columns: -webkit-min-content -webkit-min-content 1fr;
   grid-template-columns: min-content min-content 1fr;
 }
-.html-lesson-wrapper .see-content.see-2 .phrase-alts .choice-jap {
-  letter-spacing: -1px;
-}
 .html-lesson-wrapper .see-content.see-2 .phrase-alts .ls- {
   letter-spacing: -5px;
 }
@@ -1110,6 +1104,9 @@ body {
 }
 .html-lesson-wrapper .act-1 .blue-line {
   margin-top: 5%;
+}
+.html-lesson-wrapper .act-1 .speaker {
+  min-width: 6em !important;
 }
 .html-lesson-wrapper .act-1 .office-act-1 {
   margin-top: 6%;

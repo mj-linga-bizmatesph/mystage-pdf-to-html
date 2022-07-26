@@ -206,7 +206,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      
     }
   }
   .arrow {
@@ -231,7 +231,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      
     }
   }
 
@@ -493,7 +493,7 @@ line-height: 1.5em;
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{

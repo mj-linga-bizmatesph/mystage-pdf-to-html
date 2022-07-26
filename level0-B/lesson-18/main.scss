@@ -208,7 +208,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      
     }
   }
   .justify-content-center{
@@ -600,7 +600,7 @@ line-height: 1.5em;
     &.inverse {
       color: $primary-blue;
       background-color: white;
-      border: 1px solid #707070;
+      border: 1px solid $primary-blue;
     }
   }
 

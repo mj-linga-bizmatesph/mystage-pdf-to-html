@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
@@ -466,7 +466,7 @@ line-height: 1.5em;
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
@@ -709,7 +709,7 @@ line-height: 1.5em;
             margin-top: clamp(25px, 7vw, 41px);
             color: $subtext-color;
             font-size: clamp(8px, 1.9vw, 11px);
-            letter-spacing: -1px;
+            
             font-family: 'Noto Sans';
             margin-left: clamp(11px, 1vw, 13px);
           }
@@ -1009,7 +1009,7 @@ line-height: 1.5em;
             margin-top: clamp(25px, 7vw, 41px);
             color: $subtext-color;
             font-size: clamp(8px, 1.9vw, 11px);
-            letter-spacing: -1px;
+            
             font-family: 'Noto Sans';
             margin-left: clamp(0px, 2vw, 13px);
           }

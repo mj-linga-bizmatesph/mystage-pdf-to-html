@@ -115,7 +115,7 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -447,7 +447,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -565,7 +564,7 @@ body {
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .bubble1-text .jap {
   font-size: clamp(8px, 2.2vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .section-1-convo .bubble2-text {
   margin-left: clamp(62px, 27vw, 178px);
@@ -583,7 +582,7 @@ body {
 .html-lesson-wrapper .section-1-convo .bubble2-text .jap {
   font-size: clamp(8px, 2.1vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .see-2 .section2-content {
   margin-top: clamp(20px, 7vw, 50px);
@@ -619,7 +618,7 @@ body {
   position: absolute;
   margin-top: clamp(-18px, -1.6vw, -5px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .see-2 .section2-content .section2-first-row .section-2-with-akiko {
@@ -669,7 +668,6 @@ body {
   margin-top: clamp(25px, 7vw, 41px);
   color: #7f8288;
   font-size: clamp(8px, 1.9vw, 11px);
-  letter-spacing: -1px;
   font-family: "Noto Sans";
   margin-left: clamp(11px, 1vw, 13px);
 }
@@ -911,7 +909,7 @@ body {
   position: absolute;
   margin-top: clamp(-18px, -1.6vw, -5px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .see-3 .section3-content .section3-first-row .section-3-with-akiko {
@@ -961,7 +959,6 @@ body {
   margin-top: clamp(25px, 7vw, 41px);
   color: #7f8288;
   font-size: clamp(8px, 1.9vw, 11px);
-  letter-spacing: -1px;
   font-family: "Noto Sans";
   margin-left: clamp(0px, 2vw, 13px);
 }
@@ -1177,7 +1174,7 @@ body {
   margin-left: clamp(160px, 10.9vw, 71px);
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .cont {
   font-family: Noto Sans;
@@ -1225,7 +1222,7 @@ body {
   color: #7f8288;
   font-size: clamp(8px, 1vw, 11px);
   font-weight: normal;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .act-1 .act-1-content .conversation-img .bubble .row p {
   display: inline-block;

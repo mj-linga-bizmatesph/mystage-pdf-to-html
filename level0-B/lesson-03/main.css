@@ -336,7 +336,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -973,6 +972,7 @@ body {
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-1 .bubble .bubble-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   margin-left: clamp(2px, 3vw, 11px);
+  color: #7f8288;
 }
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-2 {
   margin-bottom: clamp(50px, 40vw, 250px);
@@ -1020,6 +1020,7 @@ body {
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-2 .bubble .bubble-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   margin-left: clamp(2px, 3vw, 11px);
+  color: #7f8288;
 }
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-3 {
   margin-bottom: clamp(50px, 40vw, 250px);
@@ -1067,6 +1068,7 @@ body {
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-3 .bubble .bubble-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   margin-left: clamp(2px, 3vw, 17px);
+  color: #7f8288;
 }
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-4 {
   margin-bottom: clamp(50px, 40vw, 250px);
@@ -1114,6 +1116,7 @@ body {
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-4 .bubble .bubble-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   margin-left: clamp(2px, 3vw, 11px);
+  color: #7f8288;
 }
 .html-lesson-wrapper .see-3 .see-3-content {
   padding-left: clamp(4px, 2vw, 2px);

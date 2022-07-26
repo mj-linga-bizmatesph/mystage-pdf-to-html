@@ -414,7 +414,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -879,6 +878,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   padding-left: clamp(4px, 10vw, 5px);
   margin-top: clamp(40px, 16vw, 100px);
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .try-2 .try2-content .try-2-row-1 {
   margin-bottom: clamp(67px, 13vw, 121px);
@@ -1065,6 +1065,9 @@ body {
   color: #2d356b;
   font-weight: 600;
   font-size: clamp(12px, 2vw, 18px);
+}
+.html-lesson-wrapper .try-3 .try-3-content {
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .try-3 .try-3-content .conversation-text {
   margin-left: -4px;

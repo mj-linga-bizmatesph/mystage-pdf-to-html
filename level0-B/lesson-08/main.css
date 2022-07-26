@@ -150,7 +150,6 @@ body {
   font-size: clamp(8px, 2.3vw, 14px);
 }
 .html-lesson-wrapper .jap {
-  letter-spacing: -1.5px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
@@ -180,7 +179,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -203,7 +201,6 @@ body {
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .full-width {
   width: 100%;
@@ -441,7 +438,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -1150,10 +1146,6 @@ body {
 .html-lesson-wrapper .act-1 .office-act-1 .bubble.nick .eng, .html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko .eng {
   font-weight: bold;
   font-size: clamp(10px, 2.3vw, 13px);
-}
-.html-lesson-wrapper .act-1 .office-act-1 .bubble.nick .jap, .html-lesson-wrapper .act-1 .office-act-1 .bubble.akiko .jap {
-  letter-spacing: -1px;
-  line-height: clamp(10px, 2.8vw, 1rem);
 }
 .html-lesson-wrapper .act-1 .office-act-1 .bubble.nick {
   margin-top: 16.4%;

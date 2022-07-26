@@ -186,7 +186,7 @@ body {
     font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -1.5px;
+    
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -216,7 +216,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      
     }
   }
   .arrow {
@@ -241,7 +241,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      
     }
   }
 
@@ -466,7 +466,7 @@ line-height: 1.5em;
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
@@ -1274,8 +1274,7 @@ line-height: 1.5em;
           }
 
           .jap {
-            letter-spacing: -1px;
-            line-height: clamp(10px, 2.8vw, 1rem);
+            
           }
         }
         &.nick {

@@ -116,7 +116,7 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.3vw, 15px);
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -456,7 +456,6 @@ body {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
@@ -573,7 +572,7 @@ body {
 .html-lesson-wrapper .section-1-convo .s1-bubble1 .bubble1-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .section-1-convo .s1-bubble2 .bubble2-text {
   position: absolute;
@@ -587,7 +586,7 @@ body {
 .html-lesson-wrapper .section-1-convo .s1-bubble2 .bubble2-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .section-1-convo .s1-bubble3 .bubble3-text {
   position: absolute;
@@ -602,7 +601,6 @@ body {
 .html-lesson-wrapper .section-1-convo .s1-bubble3 .bubble3-text .jap {
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
-  letter-spacing: -1px;
 }
 .html-lesson-wrapper .section-1-convo .s1-name span {
   position: absolute;
@@ -649,7 +647,6 @@ body {
 .html-lesson-wrapper .text-1 {
   font-size: clamp(8px, 1.9vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   font-family: "Noto Sans";
 }
 .html-lesson-wrapper .box-2 {
@@ -681,7 +678,7 @@ body {
 .html-lesson-wrapper .text-2 {
   color: #7f8288;
   font-size: clamp(8px, 1.9vw, 14px);
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-family: "Noto Sans", sans-serif;
 }
 .html-lesson-wrapper .see-2 .section2-content {
@@ -857,13 +854,13 @@ body {
 }
 .html-lesson-wrapper .try-1 .try1-content .conversation .jap {
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-size: clamp(6.7px, 2.3vw, 12px);
   margin-left: clamp(58px, 17vw, 98px);
 }
 .html-lesson-wrapper .try-1 .try1-content .conversation .jap-under {
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-size: clamp(10px, 2.3vw, 16px);
   margin-left: clamp(58px, 17vw, 98px);
 }
@@ -990,7 +987,7 @@ body {
   font-size: clamp(8px, 1.9vw, 13px);
   position: absolute;
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .see-3 .see-3-content .phrase-2 {
   margin-top: clamp(2px, 5vw, 38px);
@@ -1228,9 +1225,6 @@ body {
 .html-lesson-wrapper .act-1 .act-1-content .conversation .bubble .bubble-text .bold {
   font-weight: bold;
 }
-.html-lesson-wrapper .act-1 .act-1-content .conversation .bubble .bubble-text .row {
-  margin-bottom: clamp(2px, 1vw, 20px);
-}
 .html-lesson-wrapper .act-1 .act-1-content .conversation .bubble .bubble-text .row .You {
   margin-left: clamp(2px, 14vw, 82px);
 }
@@ -1294,7 +1288,7 @@ body {
   margin-left: clamp(47px, 10.9vw, 90px);
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .act-2 .act-2-space {
   margin-bottom: 80px;

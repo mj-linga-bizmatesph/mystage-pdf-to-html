@@ -196,11 +196,25 @@
           margin-top: 1.5% !important;
         }
         .table-wrapper {
+
+          
+          tr{
+            display: inline-table;
+            grid-template-columns: 50% 50%;
+          }
           width: 100%;
 
           p {
-            margin: 0;
+            margin-block-start: 0em !important;
+            margin-block-end: 0em !important;
+            width: 88%;
+           
           }
+          table {
+            border-collapse: separate;
+            text-indent: initial;
+            border-spacing: 0px !important;
+        }
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
@@ -210,6 +224,40 @@
           .table-img {
             text-align: center;
             width: 49.5%;
+            .legit{
+              position: relative;
+              margin-left: -10%;
+            }
+            img {
+              max-width: clamp(1%, 42vw, 100%);
+              margin-top: -16%;
+            }
+
+            &.small {
+              img {
+                max-width: clamp(48%, 20vw, 100%);
+              }
+            }
+
+            &.medium {
+              img {
+                max-width: clamp(1%, 52vw, 100%);
+              }
+            }
+
+            &.large {
+              img {
+                max-width: clamp(1%, 65vw, 100%);
+              }
+            }
+          }
+          .table-img1 {
+            text-align: center;
+            width: 49.5%;
+            .move{
+              position: relative;
+              margin-left: -12%;
+            }
             img {
               max-width: clamp(1%, 42vw, 100%);
               margin-top: -16%;
@@ -310,4 +358,17 @@
       }
     }
   }
+}
+.html-lesson-wrapper .see-content .phrase-alts .choice-jap {
+  font-size: clamp(6.7px, 1.8vw, 13px);
+  letter-spacing: 0px;
+  color: #7f8288;
+}
+.html-lesson-wrapper .table .jap {
+  font-size: clamp(9px, 2vw, 13px);
+  margin-bottom: 3.8%;
+}
+.html-lesson-wrapper .instructions .sub-title {
+  font-size: clamp(7px, 2vw, 13px);
+  color: #7f8288;
 }

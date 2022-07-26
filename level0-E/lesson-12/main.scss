@@ -189,11 +189,11 @@ body {
     font-size: clamp(8px, 2.2vw, 13px);
     font-size: clamp(7px, 2vw, 13px);
   }
-  .jap {
+   .jap {
     letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
-    font-size: clamp(5px, 1.6vw, 10px);
+    font-size: clamp(5px, 1.6vw, 11px);
   }
   .step {
     margin-bottom: clamp(2rem, 9vw, 3rem);

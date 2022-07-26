@@ -157,7 +157,7 @@ body {
       position: absolute;
       top: -3%;
       left: 1%;
-      width: clamp(190px,83vw,500px);
+      width: clamp(190px, 83vw, 500px);
     }
   }
   .program-rank {
@@ -250,7 +250,7 @@ body {
       margin-right: 4%;
     }
     .sub-title {
-      font-size: clamp(7px, 2vw, 12px);
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
     }
   }
@@ -460,7 +460,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem,6vw,3.6rem);
+        grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;

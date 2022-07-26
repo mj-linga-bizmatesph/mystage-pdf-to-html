@@ -971,18 +971,6 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 551px) {
-  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
-    line-height: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 401px) {
-  .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 {
-    line-height: 1rem;
-  }
-}
-
 .html-lesson-wrapper .try-content.try-3 .table-wrapper-section .ul-main .li2 div {
   margin-left: 3%;
   width: clamp(150px, 60vw, 400px);

@@ -38,6 +38,13 @@ body {
     font-weight: normal;
   }
 
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
+  a {
+    word-break: break-all;
+  }
   header {
     position: relative;
     padding-top: 7.4%;
@@ -104,7 +111,7 @@ body {
   ol {
     list-style-type: decimal;
     margin: 0;
-    margin-left: 1.2em;
+    margin-left: 1.4em;
     margin-block: 0;
     padding-inline: 0;
 
@@ -171,7 +178,7 @@ body {
       ul {
         list-style-type: decimal;
         margin: 0;
-        margin-left: 1.2em;
+        margin-left: 1.4em;
         margin-block: 0;
         padding-inline: 0;
 
@@ -215,6 +222,8 @@ body {
         margin-bottom: 1em;
       }
       .row {
+        flex-wrap: nowrap;
+
         p {
           display: inline-block;
           margin: 0px 0px;
@@ -235,7 +244,7 @@ body {
     ul {
       list-style-type: decimal;
       margin: 0;
-      margin-left: 1.2em;
+      margin-left: 1.4em;
       margin-block: 0;
       padding-inline: 0;
 
@@ -252,7 +261,7 @@ body {
     ul {
       list-style-type: decimal;
       margin: 0;
-      margin-left: 1.2em;
+      margin-left: 1.4em;
       margin-block: 0;
       padding-inline: 0;
 
@@ -304,7 +313,7 @@ body {
     ul {
       list-style-type: decimal;
       margin: 0;
-      margin-left: 1.2em;
+      margin-left: 1.4em;
       margin-block: 0;
       padding-inline: 0;
 

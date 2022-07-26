@@ -21,8 +21,8 @@
     }
     th,
     td {
-      max-width: 120px;
-      word-wrap: break-word;
+      max-width: 25%;
+      white-space: nowrap;
       border: 1px solid #ffffff;
     }
     th {
@@ -36,14 +36,6 @@
       text-align: center;
       padding: 0.5em;
 
-      &:nth-child(2) {
-        min-width: 8em;
-        text-align: right;
-      }
-      &:nth-child(3) {
-        min-width: 8em;
-        text-align: left;
-      }
     }
   }
   .group {

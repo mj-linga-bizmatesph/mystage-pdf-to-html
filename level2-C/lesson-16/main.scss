@@ -7,14 +7,15 @@
     }
   }
   .conversation {
-    border: 2px solid black;
+    border: 1px solid black;
     .subject {
       position: relative;
+      font-weight: bold;
       padding-left: 0.5em;
       padding-top: 0.4em;
-      top: -0.1em;
-      left: -0.5%;
-      width: 100.5%;
+      top: -0.15em;
+      left: -0.11em;
+      width: calc(100% + 0.17em);
       margin-bottom: 0px;
       background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/02-black-header.png');
       background-repeat: no-repeat;

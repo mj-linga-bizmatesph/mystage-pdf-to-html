@@ -22,6 +22,10 @@ body {
   font-size: clamp(9.5px, 2.4vw, 20px);
 }
 
+.html-lesson-wrapper .ofx-auto {
+  overflow-x: auto;
+}
+
 .html-lesson-wrapper p {
   margin-block: 0;
 }
@@ -35,6 +39,15 @@ body {
 
 .html-lesson-wrapper .fw-normal {
   font-weight: normal;
+}
+
+.html-lesson-wrapper .table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.html-lesson-wrapper a {
+  word-break: break-all;
 }
 
 .html-lesson-wrapper header {
@@ -123,7 +136,7 @@ body {
 .html-lesson-wrapper ol {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.2em;
+  margin-left: 1.4em;
   margin-block: 0;
   padding-inline: 0;
 }
@@ -202,7 +215,7 @@ body {
 .html-lesson-wrapper aside .text ul {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.2em;
+  margin-left: 1.4em;
   margin-block: 0;
   padding-inline: 0;
 }
@@ -249,6 +262,11 @@ body {
   margin-bottom: 1em;
 }
 
+.html-lesson-wrapper .see-content .conversation .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .html-lesson-wrapper .see-content .conversation .row p {
   display: inline-block;
   margin: 0px 0px;
@@ -269,7 +287,7 @@ body {
 .html-lesson-wrapper .see-content ul {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.2em;
+  margin-left: 1.4em;
   margin-block: 0;
   padding-inline: 0;
 }
@@ -287,7 +305,7 @@ body {
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.2em;
+  margin-left: 1.4em;
   margin-block: 0;
   padding-inline: 0;
 }
@@ -350,7 +368,7 @@ body {
 .html-lesson-wrapper .act-content ul {
   list-style-type: decimal;
   margin: 0;
-  margin-left: 1.2em;
+  margin-left: 1.4em;
   margin-block: 0;
   padding-inline: 0;
 }

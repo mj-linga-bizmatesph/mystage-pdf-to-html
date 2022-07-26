@@ -25,6 +25,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -263,7 +264,7 @@ body {
           width: clamp(20px, 4vw, 35px);
         }
         .eng {
-          font-size: clamp(7px, 2vw, 12px);
+          font-size: clamp(7px, 2vw, 13px);
           list-style: none;
 
           table {
@@ -286,13 +287,13 @@ body {
 
       .speech-bubble-2 {
         position: absolute;
-        margin: 9% 0 0 13%;
+        margin: 8% 0 0 8%;
 
         .t1 {
           width: clamp(20px, 4vw, 35px);
         }
         .eng {
-          font-size: clamp(7px, 2vw, 12px);
+          font-size: clamp(7px, 2vw, 13px);
           list-style: none;
 
           table {
@@ -332,6 +333,7 @@ body {
       }
 
       .speech-bubble-3 {
+        line-height: 1.3;
         position: absolute;
         margin: 6% 0 0 4%;
         .t1 {

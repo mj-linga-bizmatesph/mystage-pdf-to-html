@@ -4,6 +4,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -423,7 +424,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;

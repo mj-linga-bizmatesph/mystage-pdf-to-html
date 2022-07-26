@@ -26,6 +26,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -142,7 +143,6 @@ body {
       grid-template-columns: 0 1fr !important;
       grid-gap: clamp(0.8rem, 4vw, 2.5rem) !important;
       align-items: start !important;
-      line-height: 1.25 !important;
       font-family: $noto-sans;
       font-size: clamp(10px, 3vw, 18px) !important;
       list-style-type: upper-alpha !important;
@@ -151,7 +151,7 @@ body {
 
     .red-circle {
       position: absolute;
-      top: clamp(1.8rem, 8vw, 3.5rem);
+      top: clamp(1.8rem, 8vw, 3.9rem);
       left: 2%;
       width: 92%;
     }
@@ -460,7 +460,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -1033,15 +1033,15 @@ body {
         }
       }
       .blue-box {
-        width: 462px;
-        font-size: clamp(10.5px, 2.7vw, 16px);
+        width: 100%;
+        font-size: clamp(10.5px, 2.2vw, 16px);
       }
 
       li::before {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -1058,27 +1058,32 @@ body {
 
       .speech-bubble {
         position: absolute;
-        margin: 37% 0 0 6%;
+        margin: 37% 0 0 3%;
+        width: 80%;
       }
 
       .speech-bubble-1 {
         position: absolute;
-        margin: 37% 0 0 21%;
+        margin: 37% 0 0 17%;
+        width: 48%;
       }
 
       .speech-bubble-2 {
         position: absolute;
-        margin: 37% 0 0 27%;
+        margin: 37% 0 0 21%;
+        width: 42%;
       }
 
       .speech-bubble-3 {
         position: absolute;
-        margin: 37.5% 0 0 15%;
+        margin: 37.5% 0 0 11%;
+        width: 62%;
       }
 
       .speech-bubble-4 {
         position: absolute;
-        margin: 40% 0 0 15%;
+        margin: 41% 0 0 11%;
+        width: 62%;
       }
 
       li {
@@ -1097,6 +1102,7 @@ body {
         }
 
         .small-mb {
+          margin-top: 0.9%;
           margin-bottom: clamp(10px, 2vw, 20px);
         }
 
@@ -1497,7 +1503,7 @@ body {
         text-align: right;
         width: 15%;
         font-weight: bold;
-        font-size: $fs-16;
+        font-size: $fs-18;
       }
 
       .speech {

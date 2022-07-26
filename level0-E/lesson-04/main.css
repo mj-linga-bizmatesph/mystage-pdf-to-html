@@ -10,6 +10,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -670,7 +671,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1.5rem;
 }
 
 @media screen and (max-width: 551px) {
@@ -724,7 +724,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content.see-1 .office-section .speech.akiko-1 {
-  margin-top: 4%;
+  margin-top: 3%;
   left: 9.5%;
 }
 
@@ -923,8 +923,9 @@ body {
 }
 
 .html-lesson-wrapper .try-content.try-2 .choices-section .chat-section .chat {
+  width: 65%;
   position: absolute;
-  margin-top: 7.5%;
+  margin-top: 5.5%;
   margin-left: 10%;
 }
 
@@ -1005,7 +1006,7 @@ body {
 }
 
 .html-lesson-wrapper .act-1 .office-act-1 .speech.akiko-2 {
-  margin-top: 65%;
+  margin-top: 63%;
   left: 16.1%;
 }
 

@@ -4,6 +4,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -839,19 +840,6 @@ body {
   font-size: clamp(10.8px, 2.8vw, 18px);
   color: #1287cd;
   margin-left: clamp(-65px, -4vw, -28px);
-  line-height: 1.5rem;
-}
-
-@media screen and (max-width: 551px) {
-  .try-2 .try2-content .ul1 {
-    line-height: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 401px) {
-  .try-2 .try2-content .ul1 {
-    line-height: 1rem;
-  }
 }
 
 .try-2 .try2-content .ul1 .ul2 {
@@ -1036,6 +1024,7 @@ body {
 }
 
 .act-content .act-1-content .act-1-convo .bubble-1 {
+  line-height: 1.5;
   position: absolute;
   top: 22%;
   left: 33%;

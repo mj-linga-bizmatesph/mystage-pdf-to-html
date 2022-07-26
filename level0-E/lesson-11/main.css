@@ -4,6 +4,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -105,7 +106,7 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 4.7%;
+  right: 5.2%;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
 }

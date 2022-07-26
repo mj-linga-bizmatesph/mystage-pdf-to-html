@@ -10,6 +10,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -670,7 +671,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1.5rem;
 }
 
 @media screen and (max-width: 551px) {
@@ -922,7 +922,6 @@ body {
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-number {
   font-size: clamp(10px, 3vw, 16px);
   padding-top: clamp(1.4px, 0.1vw, 1px);
-  padding-left: clamp(5px, 3vw, 10px);
 }
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper .table-img {
@@ -1010,7 +1009,7 @@ body {
 }
 
 .html-lesson-wrapper .act-1 .office-act-1 .speech.steve {
-  margin-top: 13%;
+  margin-top: 11%;
   left: 29.1%;
 }
 

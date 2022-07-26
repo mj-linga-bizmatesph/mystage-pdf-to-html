@@ -4,6 +4,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -794,7 +795,7 @@ body {
 .html-lesson-wrapper .try-3 .try-3-content .image-content .box-content-1 .row-b {
   position: absolute;
   left: 8.5%;
-  top: 53%;
+  top: 49%;
 }
 
 .html-lesson-wrapper .try-3 .try-3-content .image-content .box-content-1 b {
@@ -869,6 +870,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .act-1-convo .bubble-1 {
+  line-height: 1.3;
   position: absolute;
   top: 17%;
   left: 31%;
@@ -892,6 +894,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act-1-content .convo-text-content {
+  line-height: 1.5;
   font-size: clamp(11px, 2.5vw, 18px);
   font-family: "Noto Sans", sans-serif;
 }

@@ -205,7 +205,7 @@
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
             padding-top: clamp(1.4px, 0.1vw, 1px);
-            padding-left: clamp(5px, 3vw, 10px);
+           
           }
           .table-img {
             text-align: center;
@@ -300,7 +300,7 @@
         }
 
         &.steve {
-          margin-top: 13%;
+          margin-top: 11%;
           left: 29.1%;
 
           .jap:not(:last-child) {

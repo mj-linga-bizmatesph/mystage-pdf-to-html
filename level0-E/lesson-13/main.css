@@ -4,6 +4,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: "Trebuchet MS";
   width: 100%;
   min-width: 360px;
@@ -139,7 +140,6 @@ body {
   -webkit-box-align: start !important;
       -ms-flex-align: start !important;
           align-items: start !important;
-  line-height: 1.25 !important;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(10px, 3vw, 18px) !important;
   list-style-type: upper-alpha !important;
@@ -148,7 +148,7 @@ body {
 
 .html-lesson-wrapper .blue-image-text .red-circle {
   position: absolute;
-  top: clamp(1.8rem, 8vw, 3.5rem);
+  top: clamp(1.8rem, 8vw, 3.9rem);
   left: 2%;
   width: 92%;
 }
@@ -482,7 +482,7 @@ body {
   display: grid;
   -ms-grid-columns: 0 1fr;
       grid-template-columns: 0 1fr;
-  grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+  grid-gap: clamp(1.5rem, 6vw, 3.6rem);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1113,15 +1113,15 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-2-content .blue-box {
-  width: 462px;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  width: 100%;
+  font-size: clamp(10.5px, 2.2vw, 16px);
 }
 
 .html-lesson-wrapper .try-content .try-2-content li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-family: "Noto Sans", sans-serif;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
   color: #1287cd;
   font-weight: bold;
   padding-left: 1vw;
@@ -1140,27 +1140,32 @@ body {
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble {
   position: absolute;
-  margin: 37% 0 0 6%;
+  margin: 37% 0 0 3%;
+  width: 80%;
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-1 {
   position: absolute;
-  margin: 37% 0 0 21%;
+  margin: 37% 0 0 17%;
+  width: 48%;
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-2 {
   position: absolute;
-  margin: 37% 0 0 27%;
+  margin: 37% 0 0 21%;
+  width: 42%;
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-3 {
   position: absolute;
-  margin: 37.5% 0 0 15%;
+  margin: 37.5% 0 0 11%;
+  width: 62%;
 }
 
 .html-lesson-wrapper .try-content .try-2-content .speech-bubble-4 {
   position: absolute;
-  margin: 40% 0 0 15%;
+  margin: 41% 0 0 11%;
+  width: 62%;
 }
 
 .html-lesson-wrapper .try-content .try-2-content li {
@@ -1184,6 +1189,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .try-2-content li .small-mb {
+  margin-top: 0.9%;
   margin-bottom: clamp(10px, 2vw, 20px);
 }
 
@@ -1599,7 +1605,7 @@ body {
   text-align: right;
   width: 15%;
   font-weight: bold;
-  font-size: clamp(10.5px, 2.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 18px);
 }
 
 .html-lesson-wrapper .act-content .act-1-content .speech {

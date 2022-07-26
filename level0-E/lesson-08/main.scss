@@ -16,6 +16,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -746,14 +747,6 @@ body {
         font-size: clamp(10.8px, 2.8vw, 18px);
         color: $primary-blue;
         margin-left: clamp(-65px, -4vw, -28px);
-        line-height: 1.5rem;
-
-        @media screen and (max-width: 551px) {
-          line-height: 1.3rem;
-        }
-        @media screen and (max-width: 401px) {
-          line-height: 1rem;
-        }
 
         .ul2 {
           color: black;
@@ -911,6 +904,7 @@ body {
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-E-8-act1.svg);
         .bubble-1 {
+          line-height: 1.5;
           position: absolute;
           top: 22%;
           left: 33%;

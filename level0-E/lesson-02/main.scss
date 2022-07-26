@@ -214,7 +214,7 @@ $primary-blue: #1287cd;
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 18px);
-            padding-top: 6px;
+            padding-top: 0.7%;
             padding-left: clamp(5px, 3vw, 10px);
           }
           .table-img {
@@ -291,14 +291,6 @@ $primary-blue: #1287cd;
 
           li {
             display: flex;
-            line-height: 1.5rem;
-
-            @media screen and (max-width: 551px) {
-              line-height: 1.3rem;
-            }
-            @media screen and (max-width: 401px) {
-              line-height: 1rem;
-            }
 
             div {
               margin-left: 3%;
@@ -330,8 +322,6 @@ $primary-blue: #1287cd;
       li {
         font-family: $noto-sans !important;
         display: flex;
-        line-height: 1.5rem;
-
         @media screen and (max-width: 551px) {
           line-height: 1.3rem;
         }

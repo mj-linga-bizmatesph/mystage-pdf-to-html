@@ -214,11 +214,11 @@ body {
     left: 27%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 22px);
+      font-size: clamp(12px, 3.5vw, 18px);
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(7px, 2vw, 12px);
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
     }
   }

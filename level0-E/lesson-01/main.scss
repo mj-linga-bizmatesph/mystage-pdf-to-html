@@ -165,11 +165,11 @@ body {
     left: 26%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 22px);
+      font-size: clamp(12px, 3.5vw, 18px);
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(9px, 2vw, 12px);
+      font-size: clamp(9px, 2vw, 13px);
       color: $subtext-color;
       letter-spacing: -1.3px;
     }
@@ -734,4 +734,12 @@ body {
       margin-bottom: 3.8%;
     }
   }
+}
+
+.html-lesson-wrapper .see-content .phrases-section .jap {
+  font-size: clamp(7px, 2vw, 13px);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 100%;
 }

@@ -372,3 +372,11 @@
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
 }
+
+.html-lesson-wrapper .see-content .phrases-section .jap {
+  font-size: clamp(7px, 2vw, 13px);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 100%;
+}

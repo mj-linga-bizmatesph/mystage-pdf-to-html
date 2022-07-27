@@ -46,7 +46,7 @@ $primary-blue: #1287cd;
             white-space: normal;
           }
           .choice-jap{
-            font-size: clamp(6.7px, 1.8vw, 14px);
+            font-size: clamp(6.7px, 1.8vw, 13px);
           }
         }
       }
@@ -392,4 +392,7 @@ $primary-blue: #1287cd;
 
 .html-lesson-wrapper .try-content.try-2 .table-wrapper-section .table-wrapper {
   width: 98% !important;
+}
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .jap {
+  font-size: clamp(7px, 2vw, 13px);
 }

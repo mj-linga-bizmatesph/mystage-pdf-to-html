@@ -119,7 +119,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   .sub-text {
     font-family: $helvetica !important;
     font-size: clamp(12px, 2vw, 15px);
-    line-height: clamp(12px, 2.8vw, 22px);
     font-weight: bold;
     margin: 0 0 0.3rem 0;
   }
@@ -202,6 +201,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-family: $trebuchet;
     width: 85%;
     min-width: 75%;
+
+    div {
+      padding-right: 5%;
+    }
   }
 
   .biz-tip-content {
@@ -415,12 +418,22 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       grid-gap: clamp(0.1rem, 1vw, 0.4rem);
     }
 
-    li::before {
-      counter-increment: orderedlist;
-      content: counter(orderedlist) '. ';
-    }
-
     li {
+      display: table;
+
+      &:before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist) '. ';
+        display: table-cell;
+        padding-right: 10px;
+        width: 2ch;
+      }
+
+      &:nth-last-child(n + 10):before,
+      &:nth-last-child(n + 10) ~ li:before {
+        width: 3ch;
+      }
+
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
       }
@@ -612,7 +625,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-family: $helvetica;
     font-size: clamp(4.5px, 1.1vw, 9px);
     padding-right: 10%;
-    bottom: 4em;
+    bottom: 3em;
     position: absolute;
     display: flex;
     width: 23%;

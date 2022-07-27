@@ -96,7 +96,6 @@ body {
 .html-lesson-wrapper .sub-text {
   font-family: "Helvetica", "Arial", sans-serif !important;
   font-size: clamp(12px, 2vw, 15px);
-  line-height: clamp(12px, 2.8vw, 22px);
   font-weight: bold;
   margin: 0 0 0.3rem 0;
 }
@@ -168,6 +167,9 @@ body {
   font-family: "Trebuchet MS";
   width: 85%;
   min-width: 75%;
+}
+.html-lesson-wrapper .content div {
+  padding-right: 5%;
 }
 .html-lesson-wrapper .biz-tip-content {
   height: -webkit-fit-content;
@@ -360,9 +362,18 @@ body {
 .html-lesson-wrapper ol.numbers:not(.no-mb) {
   grid-gap: clamp(0.1rem, 1vw, 0.4rem);
 }
-.html-lesson-wrapper ol.numbers li::before {
+.html-lesson-wrapper ol.numbers li {
+  display: table;
+}
+.html-lesson-wrapper ol.numbers li:before {
   counter-increment: orderedlist;
   content: counter(orderedlist) ". ";
+  display: table-cell;
+  padding-right: 10px;
+  width: 2ch;
+}
+.html-lesson-wrapper ol.numbers li:nth-last-child(n+10):before, .html-lesson-wrapper ol.numbers li:nth-last-child(n+10) ~ li:before {
+  width: 3ch;
 }
 .html-lesson-wrapper ol.numbers li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -523,7 +534,7 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(4.5px, 1.1vw, 9px);
   padding-right: 10%;
-  bottom: 4em;
+  bottom: 3em;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;

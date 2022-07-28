@@ -17,8 +17,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   max-width: 100%;
   max-width: 892.75px;
   min-height: 960px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   position: relative;
@@ -63,19 +61,16 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-size: clamp(8px, 1.8vw, 15px);
 
     .type {
-      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-color: $magenta;
     }
 
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-color: $blue-green;
       margin-left: -2%;
       &.two {
-        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
-          clamp(10px, 3vw, 17px);
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       }
     }
   }
@@ -124,7 +119,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   .sub-text {
     font-family: $helvetica !important;
     font-size: clamp(12px, 2vw, 15px);
-    line-height: clamp(12px, 2.8vw, 22px);
     font-weight: bold;
     margin: 0 0 0.3rem 0;
   }
@@ -174,11 +168,24 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     padding-bottom: 1.5%;
   }
 
+  main {
+    margin-top: clamp(70px, 18%, 160px);
+  }
+
+  .biz-tip-content,
   .see-content,
   .act-content,
   .try-content,
   .part-content {
     display: flex;
+    padding-right: 5%;
+  }
+
+  .see-content,
+  .act-content,
+  .try-content,
+  .part-content {
+    line-height: 1.8;
   }
 
   .section {
@@ -194,26 +201,28 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-family: $trebuchet;
     width: 85%;
     min-width: 75%;
-    padding-right: 5%;
+
+    div {
+      padding-right: 5%;
+    }
   }
 
   .biz-tip-content {
-    margin-top: clamp(70px, 18%, 160px);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding-bottom: 4%;
     background: $magenta-light;
     font-size: clamp(12px, 2vw, 15px);
-    display: flex;
+    padding-bottom: 4%;
+    padding-top: 3%;
 
-    .section {
-      margin-top: 3% !important;
-    }
+    // .section {
+    //   margin-top: 3% !important;
+    // }
 
-    .pointers {
-      margin-top: 3% !important;
-    }
+    // .pointers {
+    //   margin-top: 3% !important;
+    // }
   }
 
   .arrow-part {
@@ -401,7 +410,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
@@ -410,15 +418,21 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       grid-gap: clamp(0.1rem, 1vw, 0.4rem);
     }
 
-    li::before {
-      counter-increment: orderedlist;
-      content: counter(orderedlist) '. ';
-    }
-
     li {
-      display: grid;
-      grid-template-columns: 1% 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
+      display: table;
+
+      &:before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist) '. ';
+        display: table-cell;
+        padding-right: 10px;
+        width: 2ch;
+      }
+
+      &:nth-last-child(n + 10):before,
+      &:nth-last-child(n + 10) ~ li:before {
+        width: 3ch;
+      }
 
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -430,7 +444,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
@@ -445,7 +458,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
 
     li {
-      display: grid;
       grid-template-columns: 0 1fr;
       grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 
@@ -613,26 +625,13 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-family: $helvetica;
     font-size: clamp(4.5px, 1.1vw, 9px);
     padding-right: 10%;
-
-    .footer-text {
-      text-align: right;
-      position: absolute;
-      bottom: 4%;
-      max-width: 42%;
-      right: 5%;
-
-      @media only screen and (max-width: 460px) {
-        bottom: 2.5%;
-      }
-
-      @media only screen and (max-width: 375px) {
-        bottom: 2.2%;
-      }
-
-      @media only screen and (max-width: 320px) {
-        bottom: 1.5%;
-      }
-    }
+    bottom: 3em;
+    position: absolute;
+    display: flex;
+    width: 23%;
+    justify-content: end;
+    right: 3.5rem;
+    flex-wrap: wrap;
   }
 
   @media screen and (max-width: 900px) {
@@ -649,10 +648,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .try-content {
       ul {
         margin-left: clamp(11px, 2.4vw, 18px);
-      }
-
-      li {
-        padding-left: clamp(9px, 1.8vw, 13px);
       }
     }
     .act-content {

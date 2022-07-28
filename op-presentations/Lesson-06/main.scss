@@ -1,7 +1,8 @@
-@import '../css/op-presentations-utils.scss';
+@import '../../css/op-presentations-utils';
 
 .html-lesson-wrapper {
-  table, td {
+  table,
+  td {
     border-collapse: collapse;
     border: solid $gray;
     text-align: left;

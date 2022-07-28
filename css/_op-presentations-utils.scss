@@ -6,10 +6,10 @@ $pink: #f0d4d4;
 $gray: #d9d9d9;
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.html-lesson-wrapper{
+.html-lesson-wrapper {
   min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
@@ -52,19 +52,20 @@ body {
     top: 80px;
     left: 48px;
     font-size: clamp(18px, 4vw, 27px);
-    text-transform: uppercase;   
+    text-transform: uppercase;
   }
   .lesson-number {
     position: absolute;
     left: clamp(91.5%, 93vw, 92%);
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
-    color: #ffffff; 
+    color: #ffffff;
   }
   .instruction {
     font-family: $title-font !important;
     line-height: clamp(12px, 2.8vw, 22px);
     margin: 0 auto;
+    margin-bottom: 1%;
   }
   .sub-text {
     font-family: $text-font !important;
@@ -147,8 +148,8 @@ body {
       margin-left: clamp(50px, 14%, 126.5px);
       .biz-tip-header {
         position: relative;
-        left: -17px;
-        margin-bottom: clamp(6px, 1vw, 10px);     
+        left: -20px;
+        margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
         padding-left: 7px;
@@ -165,6 +166,14 @@ body {
           border-top: 8px solid black;
           display: inline-block;
           vertical-align: middle;
+        }
+      }
+      .biz-ul {
+        margin-left: -1%;
+
+        li {
+          list-style-type: '\25BC';
+          margin-top: -0.5%;
         }
       }
     }
@@ -186,6 +195,27 @@ body {
       height: clamp(10px, 2.5vw, 30px);
       vertical-align: top;
     }
+
+    .see-section {
+      font-size: clamp(12px, 2vw, 15px);
+      .instruction-text {
+        font-weight: bold;
+      }
+      ul {
+        margin-left: -1%;
+        li {
+          line-height: 1.8;
+          div {
+            width: clamp(100px, 50vw, 500px);
+            margin-left: 2%;
+
+            @media screen and (max-width: 401px) {
+              margin-left: 4%;
+            }
+          }
+        }
+      }
+    }
   }
   .try-content {
     margin-top: 30px;
@@ -202,6 +232,13 @@ body {
     .bullet {
       line-height: 1.8;
     }
+
+    ul {
+      list-style: decimal;
+      li {
+        line-height: 1.8;
+      }
+    }
   }
   .act-content {
     height: fit-content;
@@ -212,6 +249,17 @@ body {
     }
     p {
       line-height: 1.8;
+    }
+    .decimal {
+      list-style-type: decimal;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: decimal;
+      li {
+        line-height: 1.8;
+      }
     }
   }
   footer {
@@ -234,13 +282,12 @@ body {
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
     .biz-tip-content {
-      .section{
-        left:  calc(-15% + 56px);
+      .section {
+        left: calc(-15% + 56px);
       }
     }
     .see-content {
@@ -266,7 +313,6 @@ body {
     .section {
       left: calc(-16% + 45px);
     }
-    
   }
 }
 
@@ -326,7 +372,6 @@ body {
       .section {
         left: calc(-15% + 50px);
       }
-
     }
   }
 }
@@ -362,7 +407,7 @@ body {
       margin-left: -5px;
     }
     .section {
-       left: calc(-15% + 25px);
+      left: calc(-15% + 25px);
     }
   }
 }
@@ -420,4 +465,3 @@ body {
     }
   }
 }
-

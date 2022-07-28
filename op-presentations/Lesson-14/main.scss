@@ -1,0 +1,47 @@
+@import '../../css/op-presentations-utils';
+
+.html-lesson-wrapper {
+  .see-content {
+    .see-section {
+      .convo-text {
+        margin-left: 2.5%;
+        li {
+          color: #cc3366;
+          div {
+            font-weight: bold;
+            margin-left: -1%;
+          }
+        }
+        ul {
+          list-style: none;
+          margin-top: -1%;
+          .convo-t1 {
+            li {
+              display: flex;
+              div {
+                width: clamp(100px, 50vw, 500px);
+                margin-left: 2%;
+
+                @media screen and (max-width: 401px) {
+                  margin-left: 4%;
+                }
+              }
+            }
+          }
+          li::before {
+            content: attr(data-value) ' ';
+            color: black;
+            font-weight: bold;
+            width: clamp(40px, 11vw, 60px);
+          }
+          li {
+            div {
+              color: black;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

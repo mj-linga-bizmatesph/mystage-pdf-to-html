@@ -1,0 +1,19 @@
+@import '../../css/op-presentations-utils';
+.html-lesson-wrapper {
+  .see-content {
+    .see-section {
+      .convo-text {
+        list-style: none;
+
+        li {
+          display: flex;
+        }
+      }
+      li::before {
+        content: attr(data-value) ' ';
+        font-weight: bold;
+        width: clamp(20px, 8vw, 40px);
+      }
+    }
+  }
+}

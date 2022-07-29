@@ -375,6 +375,10 @@ body {
     }
 
     .try-2-content {
+      .blue{
+        color: $primary-blue;
+        text-decoration: underline;
+      }
       margin-top: clamp(40px, 10vw, 69px);
 
       ol {
@@ -552,6 +556,10 @@ body {
     }
 
     .try-3-content {
+      .blue{
+        color: $primary-blue;
+        text-decoration: underline;
+      }
       margin-top: clamp(20px, 10vw, 69px);
 
       ol {

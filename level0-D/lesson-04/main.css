@@ -740,6 +740,11 @@ body {
   margin-top: clamp(40px, 10vw, 69px);
 }
 
+.html-lesson-wrapper .try-content .try-2-content .blue {
+  color: #1287cd;
+  text-decoration: underline;
+}
+
 .html-lesson-wrapper .try-content .try-2-content ol {
   margin: 0;
   padding: 0;
@@ -930,6 +935,11 @@ body {
 
 .html-lesson-wrapper .try-content .try-3-content {
   margin-top: clamp(20px, 10vw, 69px);
+}
+
+.html-lesson-wrapper .try-content .try-3-content .blue {
+  color: #1287cd;
+  text-decoration: underline;
 }
 
 .html-lesson-wrapper .try-content .try-3-content ol {

@@ -1,0 +1,23 @@
+@import '../../css/op-business-issues-utils';
+
+.see,
+.try,
+.act {
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 460px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 5.2px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4.7px;
+  }
+}

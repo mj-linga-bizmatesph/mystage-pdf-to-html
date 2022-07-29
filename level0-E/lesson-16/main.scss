@@ -26,6 +26,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -47,7 +48,9 @@ body {
   td {
     vertical-align: top;
   }
-
+  .jpf {
+    font-size: $fs-13 !important;
+  }
   .m-0 {
     margin: 0;
   }
@@ -77,7 +80,7 @@ body {
   }
 
   .span-letter-spacing {
-    letter-spacing: -2.5px !important;
+    letter-spacing: 0px !important;
   }
 
   header {
@@ -114,33 +117,21 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
 
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -152,7 +143,7 @@ body {
     font-family: $text-font;
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: $fs-11;
@@ -185,7 +176,6 @@ body {
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
       line-height: 2.8;
-      letter-spacing: -0.5px;
     }
   }
   .arrow {
@@ -209,9 +199,8 @@ body {
       color: #141821;
     }
     .sub-title {
-      font-size: $fs-13;
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -0.5px;
     }
   }
 
@@ -308,7 +297,6 @@ body {
             .sub {
               font-family: $noto-sans;
               font-size: $fs-13;
-              font-size: $fs-13;
               color: #7f8288;
             }
           }
@@ -345,6 +333,7 @@ body {
         font-weight: bold;
         display: grid;
         place-items: center;
+        border-radius: 5px;
       }
 
       .akiko-table {
@@ -408,7 +397,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         width: clamp(18px, 4vw, 24px);
         height: clamp(18px, 4vw, 24px);
         display: grid;
@@ -421,7 +410,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -443,6 +432,21 @@ body {
       .column-two {
         .green-piece {
           margin-left: auto;
+        }
+      }
+      .icon {
+        @extend .b;
+        text-align: center;
+        font-size: clamp(10px, 2vw, 14px);
+        
+
+        img {
+          height: clamp(70px, 20vw, 100px);
+          width: auto;
+        }
+
+        div {
+          margin-top: 3%;
         }
       }
     }
@@ -614,7 +618,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: clamp(10px, 3vw, 18px);
         color: $primary-blue;
         font-weight: bold;
         padding-left: 0.1vw;
@@ -686,13 +690,13 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
           padding-left: 0.1vw;
           width: 100%;
-          font-size: $fs-18;
+          font-size: clamp(10px, 3vw, 18px);
         }
       }
     }
@@ -749,7 +753,7 @@ body {
 
           .text {
             color: $primary-blue;
-            font-size: $fs-16;
+            font-size: $fs-18;
             font-weight: bold;
           }
 
@@ -777,7 +781,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -813,7 +817,7 @@ body {
           width: clamp(60px, 15%, 80px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -934,7 +938,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -969,7 +973,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1074,6 +1078,7 @@ body {
       }
 
       .speech {
+        font-size: $fs-18;
         width: 85%;
       }
     }
@@ -1094,7 +1099,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
 }

@@ -85,8 +85,8 @@ body {
     margin: 0 auto;
   }
   .section {
-    position: absolute;
-    left: -78px;
+    position: relative;
+    left: 1%;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -116,12 +116,22 @@ body {
   .act-content,
   .try-content {
     position: relative;
-    margin-left: $left-pixel;
+    margin-left: 4.5%;
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
     .sub-text {
       line-height: 1.8;
+    }
+    .convo{
+      margin-left: 4em;
+      margin-top: -0.25%;
+      @media screen and (max-width: 900px){
+        margin-left: 1em;
+      }
+    }
+    .flex{
+      display: flex;
     }
   }
   .table {
@@ -153,14 +163,17 @@ body {
     padding-left: clamp(32px, 6vw, 47px);
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
-    .section {
-      margin-left: $left-pixel;
-      line-height: 1.8em;
-      margin-top: clamp(10px, 2.6vw, 18px) !important;
+ 
+    .convo{
+      margin-left: 4.2em;
+    }
+    .words{
+      margin-top: 3%;
+      white-space: nowrap;
     }
     .pointers {
+      margin-right: 4em;
       margin-top: clamp(14px, 2.8vw, 20px) !important;
-      margin-left: $left-pixel;
       line-height: 1.8;
       .text-header {
         line-height: 1.8;
@@ -186,8 +199,12 @@ body {
         }
       }
     }
+    .flex{
+      display: flex;
+    }
   }
   .see-content {
+    
     p {
       display: block;
       margin-block-start: 1em;
@@ -204,18 +221,22 @@ body {
       line-height: 1.8;
     }
     .convo{
-      
+      width: 100%;
     .row {
       line-height: 1.8;
       .person{
-        width: 1%;
+        width: 10%;
+        @media screen and (max-width: 900px){
+          width: 25%;
+        }
+      }
+      .subject{
+        width: 90%;
       }
       p {
         display: inline-block;
         margin: 0px 0px;
         &:first-child {
-          min-width: 16%;
-          max-width: 100px;
           word-wrap: break-word;
           font-weight: bold;
         }
@@ -275,6 +296,7 @@ body {
       display: none;
     }
   }
+  
   footer {
     font-family: $title-font;
     font-size: clamp(4.5px, 1.1vw, 9px);
@@ -321,12 +343,6 @@ body {
       bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
     }
-    .section {
-      left: calc(-16% + 45px);
-    }
-    .section.words {
-      left: calc(-14% + 48px);
-    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -345,13 +361,7 @@ body {
       &.d2 {
         margin-top: clamp(18px, 3.4vw, 28px);
       }
-    }
-    .section {
-      left: calc(-15% + 20px);
-    }
-    .section.words {
-      left: calc(-13.3% + 22px);
-    }
+    } 
     .arrow-part {
       &:before {
         left: -3% !important;
@@ -392,12 +402,6 @@ body {
     background-position: top, -1.5px 100% !important;
     .text-header {
       left: -12px !important;
-    }
-    .try-content .sub-text {
-      margin-left: 10px;
-    }
-    .see-content .sub-text {
-      margin-left: 10px;
     }
     .sub-text {
       padding-top: 2.5px;
@@ -452,12 +456,6 @@ body {
 }
 @media screen and (max-width: 320px) {
   .html-lesson-wrapper {
-    .section {
-      left: -27px !important;
-    }
-    .section.words {
-      left: -27px !important;
-    }
     .words-phrase-content {
       margin-top: 93px !important;
     }

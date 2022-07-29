@@ -101,8 +101,8 @@ body {
 }
 
 .html-lesson-wrapper .section {
-  position: absolute;
-  left: -78px;
+  position: relative;
+  left: 1%;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -138,7 +138,7 @@ body {
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content {
   position: relative;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 4.5%;
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
@@ -148,6 +148,29 @@ body {
 .html-lesson-wrapper .act-content .sub-text,
 .html-lesson-wrapper .try-content .sub-text {
   line-height: 1.8;
+}
+
+.html-lesson-wrapper .see-content .convo,
+.html-lesson-wrapper .act-content .convo,
+.html-lesson-wrapper .try-content .convo {
+  margin-left: 4em;
+  margin-top: -0.25%;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .convo,
+  .html-lesson-wrapper .act-content .convo,
+  .html-lesson-wrapper .try-content .convo {
+    margin-left: 1em;
+  }
+}
+
+.html-lesson-wrapper .see-content .flex,
+.html-lesson-wrapper .act-content .flex,
+.html-lesson-wrapper .try-content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .html-lesson-wrapper .table {
@@ -188,15 +211,18 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 
-.html-lesson-wrapper .words-phrase-content .section {
-  margin-left: clamp(50px, 14%, 126.5px);
-  line-height: 1.8em;
-  margin-top: clamp(10px, 2.6vw, 18px) !important;
+.html-lesson-wrapper .words-phrase-content .convo {
+  margin-left: 4.2em;
+}
+
+.html-lesson-wrapper .words-phrase-content .words {
+  margin-top: 3%;
+  white-space: nowrap;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {
+  margin-right: 4em;
   margin-top: clamp(14px, 2.8vw, 20px) !important;
-  margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8;
 }
 
@@ -226,6 +252,12 @@ body {
   vertical-align: middle;
 }
 
+.html-lesson-wrapper .words-phrase-content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .html-lesson-wrapper .see-content {
   margin-top: 36px;
 }
@@ -251,12 +283,26 @@ body {
   line-height: 1.8;
 }
 
+.html-lesson-wrapper .see-content .convo {
+  width: 100%;
+}
+
 .html-lesson-wrapper .see-content .convo .row {
   line-height: 1.8;
 }
 
 .html-lesson-wrapper .see-content .convo .row .person {
-  width: 1%;
+  width: 10%;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .see-content .convo .row .person {
+    width: 25%;
+  }
+}
+
+.html-lesson-wrapper .see-content .convo .row .subject {
+  width: 90%;
 }
 
 .html-lesson-wrapper .see-content .convo .row p {
@@ -265,8 +311,6 @@ body {
 }
 
 .html-lesson-wrapper .see-content .convo .row p:first-child {
-  min-width: 16%;
-  max-width: 100px;
   word-wrap: break-word;
   font-weight: bold;
 }
@@ -394,12 +438,6 @@ body {
     bottom: clamp(16px, 4.8vw, 43px);
     right: 5% !important;
   }
-  .html-lesson-wrapper .section {
-    left: calc(-16% + 45px);
-  }
-  .html-lesson-wrapper .section.words {
-    left: calc(-14% + 48px);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -414,12 +452,6 @@ body {
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
-  }
-  .html-lesson-wrapper .section {
-    left: calc(-15% + 20px);
-  }
-  .html-lesson-wrapper .section.words {
-    left: calc(-13.3% + 22px);
   }
   .html-lesson-wrapper .arrow-part:before {
     left: -3% !important;
@@ -457,12 +489,6 @@ body {
   }
   .html-lesson-wrapper .text-header {
     left: -12px !important;
-  }
-  .html-lesson-wrapper .try-content .sub-text {
-    margin-left: 10px;
-  }
-  .html-lesson-wrapper .see-content .sub-text {
-    margin-left: 10px;
   }
   .html-lesson-wrapper .sub-text {
     padding-top: 2.5px;
@@ -514,12 +540,6 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  .html-lesson-wrapper .section {
-    left: -27px !important;
-  }
-  .html-lesson-wrapper .section.words {
-    left: -27px !important;
-  }
   .html-lesson-wrapper .words-phrase-content {
     margin-top: 93px !important;
   }

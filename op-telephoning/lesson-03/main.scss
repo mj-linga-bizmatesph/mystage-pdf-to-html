@@ -1,0 +1,56 @@
+@import '../../css/op-telephoning-utils';
+
+.html-lesson-wrapper {
+  .biz-tip-content {
+    line-height: 1.8;
+    .pointers {
+      margin-left: clamp(75px, 14%, 126.5px);
+    }
+  }
+  .see-content {
+    li {
+      line-height: 1.8;
+    }
+  }
+  .try-content {
+    .space {
+      margin-top: 8%;
+    }
+    li {
+      line-height: 1.8;
+    }
+  }
+  .act-content {
+    .no-wrap {
+      font-weight: normal !important;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper {
+    .words-phrase-content {
+      .section {
+        margin-top: clamp(7px, 2.6vw, 18px) !important;
+      }
+    }
+    .section {
+      top: 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper {
+    .program-rank {
+      left: clamp(25px, 2vw, 48px);
+    }
+    .words-phrase-content {
+      .section {
+        margin-top: clamp(6px, 1.6vw, 18px) !important;
+      }
+    }
+    .section {
+      top: 7px;
+    }
+  }
+}

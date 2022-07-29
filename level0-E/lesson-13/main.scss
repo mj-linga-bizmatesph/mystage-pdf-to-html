@@ -26,6 +26,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -47,7 +48,9 @@ body {
   td {
     vertical-align: top;
   }
-
+  .jpf {
+    font-size: $fs-13 !important;
+  }
   .m-0 {
     margin: 0;
   }
@@ -77,7 +80,7 @@ body {
   }
 
   .span-letter-spacing {
-    letter-spacing: -2.5px !important;
+    letter-spacing: 0px !important;
   }
 
   header {
@@ -116,6 +119,7 @@ body {
     border-radius: clamp(10px, 1vw, 21px);
     padding: clamp(0.8rem, 3.5vw, 2rem) clamp(1rem, 2vw, 1rem);
     position: relative !important;
+    font-size: clamp(12px, 3.5vw, 18px);
 
     ol {
       margin: 0;
@@ -139,7 +143,6 @@ body {
       grid-template-columns: 0 1fr !important;
       grid-gap: clamp(0.8rem, 4vw, 2.5rem) !important;
       align-items: start !important;
-      line-height: 1.25 !important;
       font-family: $noto-sans;
       font-size: clamp(10px, 3vw, 18px) !important;
       list-style-type: upper-alpha !important;
@@ -148,7 +151,7 @@ body {
 
     .red-circle {
       position: absolute;
-      top: clamp(1.8rem, 8vw, 3.5rem);
+      top: clamp(1.8rem, 8vw, 3.9rem);
       left: 2%;
       width: 92%;
     }
@@ -159,32 +162,20 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 53px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -196,7 +187,7 @@ body {
     font-family: $text-font;
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: $fs-11;
@@ -229,7 +220,6 @@ body {
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
       line-height: 2.8;
-      letter-spacing: -0.5px;
     }
   }
   .arrow {
@@ -252,10 +242,12 @@ body {
       font-size: clamp(12px, 3.5vw, 18px);
       color: #141821;
     }
+    .m {
+      margin-right: 4%;
+    }
     .sub-title {
-      font-size: $fs-13;
+      font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -0.5px;
     }
   }
 
@@ -349,9 +341,9 @@ body {
           }
           .row-2 {
             width: 100%;
+            margin-top: 2%;
             .sub {
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               color: #7f8288;
             }
@@ -383,6 +375,7 @@ body {
       }
 
       .piece {
+        border-radius: 3%;
         height: clamp(30px, 9vw, 38px);
         font-size: $fs-16;
         font-family: $noto-sans;
@@ -431,7 +424,9 @@ body {
 
       ol.column-two {
         --li-bg: #fff;
-
+        div {
+          padding-top: 1%;
+        }
         li::before {
           color: $primary-blue;
           border: 2px solid $primary-blue;
@@ -465,7 +460,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        grid-gap: clamp(1.5rem, 6vw, 3.6rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -518,7 +513,6 @@ body {
             width: 100%;
             .sub {
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               line-height: 2;
               color: #7f8288;
@@ -733,7 +727,6 @@ body {
             }
             .sub {
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               line-height: 2;
               color: #7f8288;
@@ -1020,7 +1013,7 @@ body {
     }
 
     .try-2-content {
-      margin-top: clamp(40px, 10vw, 50px);
+      margin-top: clamp(40px, 13vw, 50px);
 
       .try-3-image {
         margin-bottom: clamp(20px, 3vw, 40px);
@@ -1033,13 +1026,22 @@ body {
         display: grid;
         grid-gap: clamp(0.1rem, 1vw, 0.5rem);
         counter-reset: orderedlist;
+
+        div {
+          margin-left: 1%;
+          margin-top: -0.3%;
+        }
+      }
+      .blue-box {
+        width: 100%;
+        font-size: clamp(10.5px, 2.2vw, 16px);
       }
 
       li::before {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -1056,27 +1058,32 @@ body {
 
       .speech-bubble {
         position: absolute;
-        margin: 39% 0 0 6%;
+        margin: 37% 0 0 3%;
+        width: 80%;
       }
 
       .speech-bubble-1 {
         position: absolute;
-        margin: 39% 0 0 21%;
+        margin: 37% 0 0 17%;
+        width: 48%;
       }
 
       .speech-bubble-2 {
         position: absolute;
-        margin: 40% 0 0 24%;
+        margin: 37% 0 0 21%;
+        width: 42%;
       }
 
       .speech-bubble-3 {
         position: absolute;
-        margin: 39.5% 0 0 15%;
+        margin: 37.5% 0 0 11%;
+        width: 62%;
       }
 
       .speech-bubble-4 {
         position: absolute;
-        margin: 42% 0 0 15%;
+        margin: 41% 0 0 11%;
+        width: 62%;
       }
 
       li {
@@ -1095,6 +1102,7 @@ body {
         }
 
         .small-mb {
+          margin-top: 0.9%;
           margin-bottom: clamp(10px, 2vw, 20px);
         }
 
@@ -1107,10 +1115,10 @@ body {
         }
 
         .person {
-          width: clamp(60px, 15%, 80px);
+          width: clamp(60px, 17%, 90px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1120,6 +1128,7 @@ body {
         }
       }
     }
+
     .try-3-content {
       margin: clamp(20px, 6.5vw, 4rem) 0 clamp(20px, 5vw, 1rem);
       display: flex;
@@ -1201,7 +1210,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
         padding-left: 1vw;
@@ -1234,10 +1243,10 @@ body {
         }
 
         .person {
-          width: clamp(60px, 15%, 80px);
+          width: clamp(60px, 17%, 90px);
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
         }
 
         .speech {
@@ -1358,7 +1367,7 @@ body {
         counter-increment: orderedlist;
         content: counter(orderedlist);
         font-family: $noto-sans;
-        font-size: $fs-16;
+        font-size: $fs-18;
         color: $primary-blue;
         font-weight: bold;
       }
@@ -1393,7 +1402,7 @@ body {
         .person {
           text-align: right;
           font-weight: bold;
-          font-size: $fs-16;
+          font-size: $fs-18;
           width: 15%;
         }
 
@@ -1494,11 +1503,12 @@ body {
         text-align: right;
         width: 15%;
         font-weight: bold;
-        font-size: $fs-16;
+        font-size: $fs-18;
       }
 
       .speech {
         width: 85%;
+        font-size: $fs-18;
       }
     }
 
@@ -1518,7 +1528,6 @@ body {
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
 }

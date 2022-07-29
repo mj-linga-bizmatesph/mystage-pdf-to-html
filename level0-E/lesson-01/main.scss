@@ -18,6 +18,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -27,7 +28,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,10 +61,6 @@ body {
   .fs-16 {
     font-size: clamp(12px, 2.3vw, 16px);
   }
-  .flip-horizontal {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
   .noto-sans {
     font-family: $noto-sans;
   }
@@ -87,40 +84,23 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
 
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
 
       margin-left: -15px;
       width: 100%;
@@ -131,18 +111,24 @@ body {
     font-size: clamp(9px, 2vw, 14px);
   }
   .jap {
-    letter-spacing: -1.3px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
   }
   .lesson-number {
-    position: absolute;
-    right: 6%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 6.3%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 1vh, 10px);
+
+    &.lesson-10 {
+      right: 5.5%;
+    }
   }
+
 
   // Title
   .title-section {
@@ -161,7 +147,6 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
     }
   }
   .arrow {
@@ -210,8 +195,7 @@ body {
         &.right {
           @extend .b;
           font-size: clamp(18px, 3vw, 25px);
-          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px)
-            clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
+          padding: clamp(2px, 2vw, 5px) clamp(10px, 5vw, 25px) clamp(2px, 2vw, 5px) clamp(2px, 2vw, 5px);
           background-color: #ebebeb;
           margin-top: 2px;
           color: #2d356b;
@@ -276,13 +260,11 @@ body {
         background-size: contain;
 
         &.akiko-1 {
-          background-image: url(#{$s3}/0-e-1-speech-bubble-akiko.png);
           left: 6%;
-          padding: 11% 10% 6% 16%;
+          padding: 9% 10% 6% 16%;
           margin-top: 0.8%;
         }
         &.ken-1 {
-          background-image: url(#{$s3}/0-e-1-speech-bubble-ken.png);
           right: 1%;
           padding: 5% 8% 10% 5%;
           margin-top: 13%;
@@ -296,16 +278,14 @@ body {
         background-size: contain;
 
         &.ken-1 {
-          background-image: url(#{$s3}/0-e-1-speech-ken-1.png);
           padding: 2% 3% 5% 2%;
-          margin-top: 15%;
-          right: 22%;
+          margin-top: 14%;
+          right: 23%;
         }
         &.akiko-1 {
-          background-image: url(#{$s3}/0-e-1-speech-akiko-1.png);
           padding: 2% 3% 16% 2%;
-          margin-top: 4%;
-          left: 14%;
+          margin-top: 3%;
+          left: 15%;
         }
       }
     }
@@ -401,12 +381,7 @@ body {
       }
 
       .yellow-piece {
-        background-image: url(#{$s3}/0-yellow-piece.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 226, 0, 1) 80%,
-            rgba(255, 255, 255, 0) 80%
-          );
+        background-image: url(#{$s3}/0-yellow-piece.png), linear-gradient(90deg, rgba(255, 226, 0, 1) 80%, rgba(255, 255, 255, 0) 80%);
         background-position: right;
       }
       .blue-piece {
@@ -416,12 +391,7 @@ body {
         background-image: url(#{$s3}/0-red-piece.png);
       }
       .green-piece {
-        background-image: url(#{$s3}/0-green-piece.png),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 20%,
-            rgba(195, 232, 230, 1) 20%
-          );
+        background-image: url(#{$s3}/0-green-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgba(195, 232, 230, 1) 20%);
 
         background-position: left;
       }
@@ -430,10 +400,16 @@ body {
         @extend .b;
         text-align: center;
         font-size: clamp(10px, 2vw, 14px);
+        
 
         img {
           height: clamp(70px, 20vw, 100px);
           width: auto;
+        }
+        .image1 {
+          height: clamp(70px, 20vw, 100px);
+          width: auto;
+          transform: scaleX(-1);
         }
         div {
           margin-top: 3%;
@@ -555,7 +531,7 @@ body {
 
         .choice-jap {
           font-size: clamp(6.7px, 1.8vw, 13px);
-          letter-spacing: -1.3px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
       }
@@ -607,8 +583,8 @@ body {
           }
           .table-number {
             @extend .b, .primary-blue;
-            font-size: clamp(10px, 3vw, 16px);
-            padding-top: 3px;
+            font-size: clamp(10px, 3vw, 18px);     
+            padding-top: 1.5%;
           }
           .table-img {
             width: 34%;
@@ -627,6 +603,8 @@ body {
       .table {
         font-family: $noto-sans;
         border-collapse: collapse;
+        margin-left: 3%;
+        margin-top: 1.5%;
 
         td {
           font-size: clamp(10px, 3vw, 18px);
@@ -638,7 +616,7 @@ body {
 
         .name {
           @extend .b;
-          font-size: clamp(10px, 3vw, 16px);
+          font-size: clamp(10px, 3vw, 18px);
           white-space: nowrap;
         }
 
@@ -724,14 +702,13 @@ body {
         width: clamp(34px, 9.1vw, 57px);
       }
       .table .name {
-        padding-top: 4px;
+        padding-top: 1px;
       }
     }
   }
   .blue-line {
     width: 15px;
     height: 2px;
-    border-bottom: 2px solid $primary-blue;
     margin-bottom: 5px;
   }
   .table {
@@ -757,4 +734,12 @@ body {
       margin-bottom: 3.8%;
     }
   }
+}
+
+.html-lesson-wrapper .see-content .phrases-section .jap {
+  font-size: clamp(7px, 2vw, 13px);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 100%;
 }

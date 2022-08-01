@@ -210,18 +210,21 @@ body {
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
-        font-size: clamp(12px, 2vw, 15px);
+        font-size: clamp(11px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 6vw, 60px);
       }
       .biz-tip-content {
         font-family: $trebuchet;
-        width: 80%;
+        width: 92%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         // padding-right: clamp(15px, 14vw, 175px);
         padding-bottom: 1rem;
         margin-right: 1em;
+        @media only screen and (max-width: 900px){
+          margin-left: 7%;
+        }
         .pink{
             color: #CC3366;
         }
@@ -300,6 +303,9 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
+      @media only screen and (max-width: 900px){
+        padding-left: 11%;
+      }
       .header-text {
         margin: 0;
         font-family: $helvetica;
@@ -310,6 +316,13 @@ body {
         margin-right: 1em;
       }
       &.see {
+        .pink{
+          color: #CC3366;
+      }
+      .introduction{
+        font-family: $trebuchet;
+        font-size: clamp(12px, 2vw, 15px);
+      }
         .dialogue {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
@@ -380,6 +393,12 @@ body {
               margin-left: -12%;
             }
           }
+        }
+      }
+      &.act{
+        .introduction{
+          font-family: $trebuchet;
+          font-size: clamp(12px, 2vw, 15px);
         }
       }
       &.review-part-1 {

@@ -229,7 +229,7 @@ body {
 
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-right: 4em;
-  margin-top: clamp(14px, 2.8vw, 20px) !important;
+  margin-top: clamp(14px, 2.8vw, 23px) !important;
   margin-left: 6%;
 }
 
@@ -249,7 +249,7 @@ body {
   content: '';
   position: absolute;
   left: 0em;
-  top: 8px;
+  top: 0.4em;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -257,6 +257,10 @@ body {
   border-top: 8px solid black;
   display: inline-block;
   vertical-align: middle;
+}
+
+.html-lesson-wrapper .words-phrase-content .pointers .text-header {
+  margin-bottom: 0.8em;
 }
 
 .html-lesson-wrapper .words-phrase-content .flex {

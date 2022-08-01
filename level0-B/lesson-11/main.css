@@ -120,7 +120,7 @@ body {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
-  margin-top: clamp(1px, 1vw, 3px);
+  margin-top: clamp(1px, 1vw, 5px);
   width: 69%;
 }
 .html-lesson-wrapper .program-rank .type {
@@ -141,7 +141,7 @@ body {
   font-size: clamp(8px, 2.3vw, 14px);
 }
 .html-lesson-wrapper .jap {
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   color: #7f8288;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
@@ -152,6 +152,7 @@ body {
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
+  top: 5px;
 }
 .html-lesson-wrapper .title-section {
   position: absolute;
@@ -170,7 +171,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -187,13 +187,12 @@ body {
   left: 27%;
 }
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(9px, 2.9vw, 18px) !important;
   color: #141821;
 }
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .full-width {
   width: 100%;
@@ -426,11 +425,13 @@ body {
   position: relative;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .conversation-number {
+  line-height: 1.5em;
   color: #1287cd;
   font-weight: bold;
   min-width: 1em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .letter-answer {
+  line-height: 1.5em;
   font-weight: bold;
   width: 15%;
   text-align: center;
@@ -446,6 +447,7 @@ body {
   margin-bottom: 1em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .speaker {
+  line-height: 1.5em;
   font-weight: bold;
   min-width: 5em;
   text-align: right;
@@ -460,15 +462,16 @@ body {
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .dialogue {
   word-wrap: break-word;
+  line-height: 1.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .japanese {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
+  line-height: 1.5em;
   word-wrap: break-word;
 }
 .html-lesson-wrapper .conversation-wrapper .row .side-image {
@@ -649,7 +652,7 @@ body {
 }
 .html-lesson-wrapper .see-content .phrase-alts .choice-jap {
   font-size: clamp(6.7px, 1.8vw, 13px);
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   color: #7f8288;
 }
 .html-lesson-wrapper .see-content .arrow.see {
@@ -1149,7 +1152,7 @@ body {
   margin-left: 1rem;
 }
 .html-lesson-wrapper .act-1 p.jap {
-  letter-spacing: -2px;
+  letter-spacing: 0px;
 }
 .html-lesson-wrapper .act-1 .office-act-1 {
   position: relative;
@@ -1187,4 +1190,10 @@ body {
   -webkit-transform: rotate(-13deg);
           transform: rotate(-13deg);
   margin-bottom: 1.3em;
+}
+
+.choice-jap, .japanese, .jap, .sub-title, .text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

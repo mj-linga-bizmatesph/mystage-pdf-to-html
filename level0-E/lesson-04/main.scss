@@ -1,4 +1,4 @@
-@import '../../css/level0-utils';
+@import '../../css/level0-E-utils';
 
 .html-lesson-wrapper {
   .see-content {
@@ -11,7 +11,7 @@
         .speech {
           color: #2d356b;
           &.akiko-1 {
-            margin-top: 4%;
+            margin-top: 3%;
             left: 9.5%;
           }
           &.akiko-2 {
@@ -57,6 +57,9 @@
 
       .phrases-section {
         margin-bottom: 8%;
+        .choice-jap{
+          font-size: clamp(6.7px, 1.8vw, 13px);
+        }
       }
 
       .conversation {
@@ -76,6 +79,9 @@
 
           .icon {
             margin-right: clamp(1px, 1.8vw, 10px);
+          }
+          .jap{
+            font-size: clamp(7px, 2vw, 14px);
           }
         }
       }
@@ -206,8 +212,9 @@
 
         .chat-section {
           .chat {
+            width: 65%;
             position: absolute;
-            margin-top: 7.5%;
+            margin-top: 5.5%;
             margin-left: 10%;
           }
 
@@ -226,14 +233,15 @@
           border: 1px solid $primary-blue;
           background: #e7f3fa;
           font-family: $noto-sans;
+          font-size: clamp(12px, 3.5vw, 18px);
 
           .oblong {
             margin-left: $side-margin;
             margin-right: $side-margin;
             position: absolute;
-            left: 1%;
+            left: 0.5%;
             margin-top: -2.5%;
-            width: 50%;
+            width: clamp(150px, 50vw, 288px);
           }
 
           ol {
@@ -268,6 +276,7 @@
   .act-1 {
     .blue-line {
       margin-top: 5%;
+      border-bottom: none;
     }
 
     .office-act-1 {
@@ -287,10 +296,10 @@
         }
 
         &.akiko-2 {
-          margin-top: 65%;
+          margin-top: 63%;
           left: 16.1%;
           .eng:nth-child(1) {
-            margin-bottom: 5%;
+            margin-bottom: 1%;
           }
           .jap:not(:last-child) {
             margin-bottom: 5%;
@@ -302,4 +311,8 @@
   .chat-color {
     color: #2d356b;
   }
+}
+
+.html-lesson-wrapper .see-content.see-2 .conversation .conv-1 .jap {
+  font-size: clamp(7px, 2vw, 13px);
 }

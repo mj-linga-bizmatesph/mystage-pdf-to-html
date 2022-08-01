@@ -230,7 +230,6 @@ body {
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-right: 4em;
   margin-top: clamp(14px, 2.8vw, 20px) !important;
-  line-height: 1.8;
   margin-left: 6%;
 }
 
@@ -347,6 +346,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content {
+  line-height: 1.8;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -372,7 +372,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .act {
-  margin-top: 4px;
+  margin-top: -0.6%;
 }
 
 .html-lesson-wrapper .act-content p {

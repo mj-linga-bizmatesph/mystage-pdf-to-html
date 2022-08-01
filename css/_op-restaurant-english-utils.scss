@@ -178,7 +178,6 @@ body {
     .pointers {
       margin-right: 4em;
       margin-top: clamp(14px, 2.8vw, 20px) !important;
-      line-height: 1.8;
       margin-left: 6%;
       margin-left .text-header {
         line-height: 1.8;
@@ -267,6 +266,7 @@ body {
     }
   }
   .act-content {
+    line-height: 1.8;
     height: fit-content;
     margin-bottom: clamp(50px, 13vw, 120px);
     margin-top: 36px;
@@ -282,7 +282,7 @@ body {
       margin-left: 5px;
     }
     .act {
-      margin-top: 4px;
+      margin-top: -0.6%;
     }
     p {
       line-height: 1.8;

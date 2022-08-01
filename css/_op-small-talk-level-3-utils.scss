@@ -134,7 +134,7 @@ body {
     line-height: 1.8;
   }
   td {
-    height: clamp(10px, 2.5vw, 30px);
+    // height: clamp(10px, 2.5vw, 30px);
     vertical-align: top;
   }
   .speaker-text {
@@ -155,15 +155,13 @@ body {
     font-size: clamp(12px, 2vw, 15px);
     .section {
       margin-left: $left-pixel;
-      line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
     }
     .pointers {
-      margin-top: clamp(14px, 2.8vw, 20px) !important;
+      // margin-top: clamp(14px, 2.8vw, 18px) !important;
+      margin-top: clamp(15px, 2.8vw, 18px) !important;
       margin-left: $left-pixel;
-      line-height: 1.8;
       .text-header {
-        line-height: 1.8;
         position: relative;
         left: -17px;
         margin-bottom: clamp(6px, 1vw, 10px);
@@ -191,7 +189,7 @@ body {
     margin-top: 36px;
     .decimal {
       list-style-type: decimal;
-      line-height: 1.8;
+      line-height: 1.6;
     }
   }
   .try-content {
@@ -377,7 +375,7 @@ body {
       margin-left: 25px !important;
     }
     .text-header {
-      margin-top: -3px !important;
+      margin-top: -5px !important;
     }
     .hide {
       display: inline;
@@ -435,5 +433,27 @@ body {
     .arrow-part {
       padding-left: 10px !important;
     }
+  }
+}
+
+.see,
+.try,
+.act {
+  margin-top: 3.9px;
+}
+
+@media screen and (max-width: 460px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4.7px;
   }
 }

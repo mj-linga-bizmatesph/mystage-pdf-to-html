@@ -137,7 +137,6 @@ body {
   line-height: 1.8;
 }
 .html-lesson-wrapper td {
-  height: clamp(10px, 2.5vw, 30px);
   vertical-align: top;
 }
 .html-lesson-wrapper .speaker-text {
@@ -161,16 +160,13 @@ body {
 }
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
-  line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 18px) !important;
 }
 .html-lesson-wrapper .words-phrase-content .pointers {
-  margin-top: clamp(14px, 2.8vw, 20px) !important;
+  margin-top: clamp(15px, 2.8vw, 18px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
-  line-height: 1.8;
 }
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
-  line-height: 1.8;
   position: relative;
   left: -17px;
   margin-bottom: clamp(6px, 1vw, 10px);
@@ -197,7 +193,7 @@ body {
 }
 .html-lesson-wrapper .see-content .decimal {
   list-style-type: decimal;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 .html-lesson-wrapper .try-content {
   margin-top: 30px;
@@ -381,7 +377,7 @@ body {
     margin-left: 25px !important;
   }
   .html-lesson-wrapper .text-header {
-    margin-top: -3px !important;
+    margin-top: -5px !important;
   }
   .html-lesson-wrapper .hide {
     display: inline;
@@ -434,7 +430,23 @@ body {
     padding-left: 10px !important;
   }
 }
-.html-lesson-wrapper .arrow-part span {
-  color: #cc3366;
-  font-weight: bold;
+.see,
+.try,
+.act {
+  margin-top: 3.9px;
+}
+
+@media screen and (max-width: 460px) {
+  .see,
+.try,
+.act {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .see,
+.try,
+.act {
+    margin-top: 4.7px;
+  }
 }

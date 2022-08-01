@@ -173,7 +173,7 @@ body {
           content: '';
           position: absolute;
           left: -16px;
-          top: 8px;
+          top: 4px;
           width: 0;
           height: 0;
           border-left: 5px solid transparent;
@@ -321,7 +321,7 @@ body {
     .arrow-part {
       &:before {
         left: -3% !important;
-        top: clamp(8px, 1vw, 1.2vw) !important;
+        top: clamp(4px, 0vw, 1.2vw) !important;
       }
     }
   }

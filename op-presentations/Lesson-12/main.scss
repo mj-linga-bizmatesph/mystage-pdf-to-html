@@ -1,10 +1,13 @@
 @import '../../css/op-presentations-utils';
 
 .html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91.5%, 93vw, 91%);
+  }
   .see-content {
     .see-section {
       .convo-text {
-        margin-left: 2.5%;
+        margin-left: 3%;
         li {
           color: #cc3366;
           div {

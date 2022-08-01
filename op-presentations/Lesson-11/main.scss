@@ -1,5 +1,8 @@
 @import '../../css/op-presentations-utils';
 .html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91.5%, 93vw, 91%);
+  }
   .see-content {
     .see-section {
       .convo-text {

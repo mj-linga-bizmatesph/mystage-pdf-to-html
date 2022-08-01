@@ -496,6 +496,10 @@ body {
   }
 }
 
+.html-lesson-wrapper .lesson-number {
+  left: clamp(91.5%, 93vw, 91%);
+}
+
 .html-lesson-wrapper .see-content .see-section .convo-text {
   margin-left: 2.5%;
 }

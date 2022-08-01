@@ -4,7 +4,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -13,6 +13,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.3;
 }
 
 .html-lesson-wrapper {
@@ -50,6 +51,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
   .fs-16 {
     font-size: clamp(12px, 2.3vw, 16px);
@@ -76,50 +78,37 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
       margin-left: -15px;
       width: 100%;
     }
   }
   .lesson-number {
-    position: absolute;
-    right: 6%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
+    position: relative;
+    float: right;
+    right: 6.3%;
+    font-size: clamp(14px, 3vw, 20px);
     color: #ffffff;
+    margin-top: clamp(2px, 0.5vh, 10px);
+    &.lesson-10 {
+      right: 5.5%;
+    }
   }
   // Title
   .title-section {
@@ -177,6 +166,7 @@ body {
       margin-top: clamp(20px, 5vw, 33px);
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        margin-bottom: 1%;
       }
     }
     .arrow.see {
@@ -278,12 +268,21 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-C-1-akiko-icon.png);
+        background-image: url(#{$s3}/akiko-icon.svg);
+
+        div {
+          font-family: $noto-sans;
+          font-weight: bold;
+          padding-top: 110%;
+          padding-left: 32%;
+          font-size: clamp(11px, 3.5vw, 15px);
+        }
       }
       .wrap-all-boxes {
         margin-top: clamp(12px, 3vw, 19px);
         left: 26%;
         position: absolute;
+        font-family: $noto-sans;
         .wrap-for-flex {
           display: flex;
           .sales-piece {
@@ -322,7 +321,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 0px;
         }
       }
     }
@@ -332,6 +331,7 @@ body {
       .legend {
         margin-top: clamp(25px, 5vw, 38px);
         display: flex;
+        font-family: $noto-sans;
       }
       .b1-legend {
         text-align: center;
@@ -370,8 +370,9 @@ body {
       }
       .phrase-alts {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1.1fr;
         gap: 2px;
+        font-family: $noto-sans;
         .alt-box {
           padding: 15px;
           border: 1px solid $primary-blue;
@@ -395,7 +396,7 @@ body {
         }
         .choice-jap {
           font-size: clamp(9px, 2.2vw, 13px);
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
         //number
@@ -474,7 +475,8 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-akiko-right-view.png);
+        background-image: url(#{$s3}/0-akiko-icon.svg);
+        transform: scaleX(-1);
       }
       .akiko-combinations {
         margin-top: 20px;
@@ -482,7 +484,7 @@ body {
           width: 60%;
           display: grid;
           grid-template-columns: auto auto;
-          grid-gap: clamp(1.5rem, 6vw, 0.8rem);
+          grid-gap: clamp(1.5rem, 6vw, 2rem);
           padding-right: clamp(40px, 4vw, 55px);
           .row {
             display: grid;
@@ -519,6 +521,7 @@ body {
               color: $primary-blue;
               font-size: $fs-16;
               white-space: nowrap;
+              display: flex;
             }
             img {
               width: clamp(10px, 3vw, 15px);
@@ -533,6 +536,7 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(35px, 10vw, 60px);
+      font-family: $noto-sans;
       .wrap-flex-content {
         margin-bottom: clamp(240px, 57vw, 370px);
         margin-left: 8px;
@@ -617,6 +621,7 @@ body {
   .try-3 {
     .try-3-content {
       margin-top: clamp(35px, 9vw, 50px);
+      font-family: $noto-sans;
       .wrap-flex-content {
         margin-bottom: clamp(230px, 55vw, 340px);
         margin-left: 8px;
@@ -697,7 +702,7 @@ body {
         background-position: top, bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(#{$s3}/0-C-9-act1.svg);
+        background-image: url(#{$s3}/0-C-9-act1-img.svg);
         .bubble-text {
           position: absolute;
           top: 68%;
@@ -729,23 +734,24 @@ body {
           }
           .line-under {
             font-size: clamp(11px, 2.5vw, 18px);
-            margin-left: clamp(33.3px, 7.6vw, 54px);
+            margin-left: clamp(33.3px, 7.6vw, 59px);
           }
           .div-1 {
-            margin-left: clamp(33.3px, 7.6vw, 54px);
+            margin-left: clamp(33.3px, 7.6vw, 59px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
           .div-english {
             margin-top: 20px;
             font-size: clamp(11px, 2.5vw, 18px);
-            margin-left: clamp(33.3px, 7.6vw, 54px);
+            margin-left: clamp(33.3px, 7.6vw, 57px);
           }
         }
         .brenda-lines {
           margin-top: 20px;
+          margin-left: 0.2%;
           b {
             font-size: clamp(10px, 2.3vw, 16px);
           }
@@ -754,13 +760,13 @@ body {
           }
           .line-under {
             font-size: clamp(11px, 2.5vw, 18px);
-            margin-left: clamp(33.3px, 7.6vw, 54px);
+            margin-left: clamp(33.3px, 7.6vw, 59px);
           }
           .div-1 {
-            margin-left: clamp(33.3px, 7.6vw, 54px);
+            margin-left: clamp(33.3px, 7.6vw, 59px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
           .div-eng {

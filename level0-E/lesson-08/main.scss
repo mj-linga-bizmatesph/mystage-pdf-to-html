@@ -16,6 +16,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -80,36 +81,19 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
       margin-left: -15px;
       width: 100%;
     }
@@ -137,7 +121,6 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.3vw, 15px);
-      letter-spacing: $jap-letter-spacing;
     }
   }
   .arrow {
@@ -155,13 +138,12 @@ body {
     padding: clamp(0px, 0.01vw, 3px) 0px;
     left: 28%;
     .title {
-      font-size: clamp(9px, 2.9vw, 18px);
+      font-size: clamp(12px, 3.5vw, 18px);
       color: #141821;
     }
     .sub-title {
-      font-size: clamp(7px, 2vw, 13px);
+      font-size: clamp(7px, 2vw, 12px);
       color: $subtext-color;
-      letter-spacing: $jap-letter-spacing;
     }
   }
 
@@ -178,6 +160,7 @@ body {
       margin-top: clamp(20px, 5vw, 33px);
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
     .arrow.see {
@@ -193,6 +176,7 @@ body {
     }
   }
   .try-content {
+    font-family: $noto-sans;
     margin-left: $side-margin;
     margin-right: $side-margin;
     &.try-1 {
@@ -248,7 +232,7 @@ body {
         font-family: $noto-sans;
         font-size: clamp(6.3px, 1.5vw, 11px);
         color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        letter-spacing: 0px;
       }
     }
     .bubble-2 {
@@ -264,7 +248,7 @@ body {
         font-family: $noto-sans;
         font-size: clamp(6px, 1.5vw, 11px);
         color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        letter-spacing: 0px;
       }
     }
   }
@@ -288,6 +272,7 @@ body {
         left: 26%;
         position: absolute;
         .wrap-for-flex {
+          font-family: $noto-sans !important;
           display: flex;
           .decided-to {
             margin-right: 5px;
@@ -314,7 +299,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 0px;
         }
       }
     }
@@ -378,7 +363,7 @@ body {
         }
         .choice-jap {
           font-size: clamp(8.6px, 1.8vw, 13px);
-          letter-spacing: -1.5px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
         .number {
@@ -437,6 +422,17 @@ body {
 
   .try-1 {
     .try1-content {
+      ul{
+        list-style: none;
+        li::before {
+          font-size: clamp(10.8px, 2.8vw, 18px);
+          color: $primary-blue;
+          font-weight: bold;
+          font-family: $noto-sans;
+          content: attr(data-value) " ";
+        }
+        }
+      }
       .underline {
         text-decoration: underline;
         color: $primary-blue;
@@ -445,6 +441,7 @@ body {
       .number {
         color: $primary-blue;
         font-size: $fs-16;
+        font-weight: bold;
       }
       .image-1 {
         margin-top: clamp(30px, 8vw, 50px);
@@ -481,8 +478,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -521,10 +518,11 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
+        margin: 12% 0 0 0%;
       }
       .image-3 {
         margin-top: clamp(30px, 8vw, 50px);
@@ -561,8 +559,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -601,8 +599,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -647,8 +645,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -687,8 +685,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -727,8 +725,8 @@ body {
         }
         .bubble-bottom {
           position: absolute;
-          top: clamp(84%, 53vw, 90.5%);
-          left: 14%;
+          top: clamp(84%, 53vw, 89.5%);
+          left: 12%;
           font-size: clamp(10px, 2.8vw, 18px);
         }
       }
@@ -738,6 +736,43 @@ body {
   .try-2 {
     .try2-content {
       margin-top: clamp(35px, 12vw, 70px);
+
+      .underline{
+        text-decoration: underline;
+        color: $primary-blue;
+      }
+
+      .ul1 {
+        list-style-type: none;
+        font-size: clamp(10.8px, 2.8vw, 18px);
+        color: $primary-blue;
+        margin-left: clamp(-65px, -4vw, -28px);
+
+        .ul2 {
+          color: black;
+          margin-left: 2%;
+
+          .name {
+            width: clamp(230px, 75vw, 470px);
+          }
+        }
+        li {
+          display: flex;
+
+          div {
+            margin-left: 3%;
+            width: 400px;
+          }
+        }
+      }
+
+      li::before {
+        content: attr(data-value) ' ';
+        width: clamp(78px, 32vw, 75px);
+        text-align: right;
+        font-weight: bold;
+      }
+
       .wrap-flex-content {
         margin-bottom: clamp(160px, 40vw, 250px);
         margin-left: 8px;
@@ -745,6 +780,9 @@ body {
         .number-hide {
           color: transparent;
           font-size: clamp(12px, 3vw, 18px);
+        }
+        .trainer-part {
+          display: flex;
         }
         .number {
           color: $primary-blue;
@@ -759,6 +797,15 @@ body {
         }
         .trainer-no {
           font-size: clamp(10.8px, 2.8vw, 18px);
+          display: flex;
+          b {
+            width: 20%;
+            text-align: right;
+          }
+          div {
+            width: 400px;
+            margin-left: 2%;
+          }
         }
         .underline {
           text-decoration: underline;
@@ -772,6 +819,16 @@ body {
           .you-no {
             margin-left: clamp(18.4px, 4.7vw, 29px);
             font-size: clamp(10.8px, 2.8vw, 18px);
+            display: flex;
+
+            b {
+              width: 20%;
+              text-align: right;
+            }
+            div {
+              width: 400px;
+              margin-left: 2%;
+            }
           }
           .line-under {
             margin-left: clamp(55px, 13.5vw, 95px);
@@ -782,6 +839,7 @@ body {
       .margin-both-sides {
         margin-top: 30px;
         .box-content {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -806,6 +864,7 @@ body {
           }
         }
         .box-content-2 {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -845,6 +904,7 @@ body {
         background-repeat: no-repeat;
         background-image: url(#{$s3}/0-E-8-act1.svg);
         .bubble-1 {
+          line-height: 1.5;
           position: absolute;
           top: 22%;
           left: 33%;
@@ -857,7 +917,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(7px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
           .text-bot,
           .text-mid {
@@ -874,26 +934,26 @@ body {
         }
         .akiko-lines {
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
         }
         .steve-lines {
           margin-top: 25px;
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
         }
@@ -906,7 +966,7 @@ body {
       margin-bottom: 80px;
     }
   }
-}
+
 
 @media only screen and (min-width: 150px) and(max-width: 442px) {
   .section-2-content .wrapper-with-akiko .steve-image {
@@ -921,4 +981,9 @@ body {
   .section-2-content .wrapper-with-akiko .wrap-all-boxes {
     margin-left: -10px !important;
   }
+}
+
+.html-lesson-wrapper .instructions .sub-title {
+  font-size: clamp(7px, 2vw, 13px);
+  color: #7f8288;
 }

@@ -5,7 +5,7 @@ $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 0;
 
 $subtext-color: #7f8288;
 
@@ -87,7 +87,7 @@ body {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 3px);
+    margin-top: clamp(1px, 1vw, 5px);
     width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
@@ -171,14 +171,14 @@ body {
     left: 28%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 18px) !important;
       color: #141821;
       margin-right: 1em;
     }
     .sub-title {
       font-size: clamp(9px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -0.9px;
+      letter-spacing: 0px;
     }
   }
 
@@ -339,6 +339,7 @@ body {
         flex-direction: row;
         position: relative;
         .number{
+             line-height:1.5em;
           color: $primary-blue;
           font-weight: bold;
           min-width: 1em;
@@ -349,6 +350,7 @@ body {
             display: inline-flex;
             margin-bottom: 1em;
             .speaker{
+             line-height:1.5em;
               font-weight: bold;
               min-width: 4em;
               text-align: right;
@@ -360,6 +362,7 @@ body {
             .text{
               .dialogue{
                 word-wrap: break-word;
+                line-height: 1.5em;
               }
               .japanese{
                 word-wrap: break-word;
@@ -368,6 +371,7 @@ body {
                 margin-top: 0.5em;
               }
               .answer{
+             line-height:1.5em;
                 word-wrap: break-word;
                 .underline{
                   text-decoration: underline;
@@ -798,7 +802,7 @@ body {
 
         .choice-jap {
           font-size: clamp(6.7px, 2.3vw, 13px);
-          letter-spacing: -0.5px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
 
@@ -1051,7 +1055,7 @@ body {
 
         .choice-jap {
           font-size: clamp(6.7px, 1.8vw, 13px);
-          letter-spacing: -0.9px;
+          letter-spacing: 0px;
           color: $subtext-color;
         }
 
@@ -1229,4 +1233,10 @@ body {
     }
   }
   
+}
+
+.choice-jap,.japanese,.jap,.sub-title,.text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

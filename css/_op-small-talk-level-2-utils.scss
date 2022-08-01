@@ -5,7 +5,8 @@ $primary-second: #339999;
 $primary-light: #f0d4d4;
 $text-title: #cc3366;
 $left-pixel: clamp(50px, 14%, 126.5px);
-$left-pixel2: clamp(50px, 14%, 112.5px);
+$left-pixel2: clamp(50px, 14%, 114.5px);
+$left-pixel3: clamp(50px, 15%, 114.5px);
 $highlight-phrase: #000000;
 body {
   margin: 0;
@@ -132,7 +133,7 @@ body {
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
     .sub-text {
-      line-height: 1.8;
+      // line-height: 1.8;
     }
   }
   .table {
@@ -142,7 +143,7 @@ body {
     white-space: nowrap;
     text-align: left;
     font-weight: bold;
-    line-height: 1.8;
+    // line-height: 1.8;
   }
   td {
     height: clamp(10px, 2.5vw, 30px);
@@ -166,30 +167,30 @@ body {
     font-size: clamp(12px, 2vw, 15px);
     .section {
       margin-left: $left-pixel;
-      line-height: 1.8em;
+      // line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
     }
     .pointers {
       margin-top: clamp(14px, 2.8vw, 20px) !important;
       margin-left: $left-pixel2;
-      line-height: 1.8;
+      // line-height: 1.8;
       .text-header {
-        line-height: 1.8;
+        // line-height: 1.8;
         position: relative;
         left: -17px;
         margin-bottom: clamp(6px, 1vw, 10px);
-        font-weight: bold;
+        // font-weight: bold; //comment muna baka ibalik
       }
       .arrow-part {
         padding-left: 7px;
         position: relative;
-        font-style:italic;
+        // font-style:italic; //comment ko muna to baka ibalik e
         width: 95%;
         &:before {
           content: '';
           position: absolute;
           left: -16px;
-          top: 8px;
+          top: 4px;
           width: 0;
           height: 0;
           border-left: 5px solid transparent;
@@ -201,6 +202,11 @@ body {
         span:nth-child(1){
           font-style: normal;
         }
+      }
+      .no-arrow{
+        position: relative;
+        width: 95%;
+        left: -17px;
       }
     }
   }
@@ -282,6 +288,11 @@ body {
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
+    .no-arrow{
+      position: relative  !important;
+      width: 95% !important;
+      left: -12px !important;
+    }
     .see-content {
       margin-top: clamp(22px, 3.8vw, 36px);
       .article {
@@ -312,10 +323,15 @@ body {
     .section.words {
       left: calc(-14% + 48px);
     }
+    
   }
 }
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
+    .pointers{
+      margin-left: $left-pixel3 !important;
+      
+    }
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px);
@@ -340,9 +356,10 @@ body {
     .arrow-part {
       &:before {
         left: -3% !important;
-        top: clamp(8px, 1vw, 1.2vw) !important;
+        top: clamp(3px,1vw,1.2vw) !important;
       }
     }
+    
   }
 }
 @media screen and (max-width: 600px) {
@@ -369,6 +386,11 @@ body {
       .table-1 {
         width: 105%;
       }
+    }
+    .no-arrow{
+      position: relative !important;
+      width: 95% !important;
+      left: -9px !important;
     }
   }
 }

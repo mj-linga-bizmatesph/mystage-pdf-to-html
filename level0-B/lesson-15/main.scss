@@ -87,7 +87,7 @@ body {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 3px);
+    margin-top: clamp(1px, 1vw, 5px);
     width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
@@ -133,6 +133,7 @@ body {
     text-align: center;
     font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
+    top: 5px;
   }
 
   .title-section {
@@ -170,7 +171,7 @@ body {
     left: 27%;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 18px) !important;
       color: #141821;
       margin-right: 1em;
     }
@@ -439,11 +440,13 @@ body {
         flex-direction: row;
         position: relative;
         .conversation-number{
+line-height: 1.5em;
           color: $primary-blue;
           font-weight: bold;
           min-width: 1em;
         }
         .letter-answer{
+             line-height:1.5em;
           font-weight: bold;
           width: 15%;
           text-align: center;
@@ -455,6 +458,7 @@ body {
             display: inline-flex;
             margin-bottom: 1em;
             .speaker{
+             line-height:1.5em;
               font-weight: bold;
               min-width: 5em;
               text-align: right;
@@ -472,15 +476,17 @@ body {
             .text{
               .dialogue{
                 word-wrap: break-word;
+                line-height: 1.5em;
               }
               .japanese{
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
+             line-height:1.5em;
                 word-wrap: break-word;
               }
               
@@ -999,4 +1005,9 @@ body {
       margin-bottom: 80px;
     }
   }
+}
+.choice-jap,.japanese,.jap,.sub-title,.text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

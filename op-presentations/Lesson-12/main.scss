@@ -8,6 +8,10 @@
     .see-section {
       .convo-text {
         margin-left: 3%;
+
+        @media screen and (max-width: 401px) {
+          margin-left: 6%;
+        }
         li {
           color: #cc3366;
           div {

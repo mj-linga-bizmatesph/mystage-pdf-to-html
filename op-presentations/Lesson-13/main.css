@@ -96,6 +96,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .sub-text {
+    margin-left: -2%;
+  }
+}
+
 .html-lesson-wrapper .section {
   position: absolute;
   left: -78px;
@@ -190,7 +196,7 @@ body {
 
 .html-lesson-wrapper .biz-tip-content .pointers .biz-tip-header {
   position: relative;
-  right: clamp(12px, 2vw, 20px);
+  right: clamp(16px, 2vw, 20px);
   margin-bottom: clamp(6px, 1vw, 10px);
 }
 
@@ -237,9 +243,21 @@ body {
   margin-left: 3%;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-content .see {
+    margin-left: -1.5%;
+  }
+}
+
 .html-lesson-wrapper .see-content .sub-text {
   line-height: 1.8em;
   margin-left: 2px;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-content .sub-text {
+    margin-left: -6px;
+  }
 }
 
 .html-lesson-wrapper .see-content .table {
@@ -317,6 +335,12 @@ body {
   margin-left: 3%;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .try-content .try {
+    margin-left: -1.5%;
+  }
+}
+
 .html-lesson-wrapper .try-content .decimal {
   list-style-type: decimal;
   line-height: 1.8;
@@ -345,6 +369,12 @@ body {
 .html-lesson-wrapper .act-content .act {
   margin-top: 4px;
   margin-left: 3%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .act-content .act {
+    margin-left: -1.5%;
+  }
 }
 
 .html-lesson-wrapper .act-content p {
@@ -409,7 +439,7 @@ body {
 
 @media screen and (max-width: 900px) and (max-width: 401px) {
   .html-lesson-wrapper .try-content ul {
-    margin-left: 5.5%;
+    margin-left: 14px;
   }
 }
 
@@ -463,8 +493,8 @@ body {
     left: clamp(23px, 4vw, 48px);
   }
   .html-lesson-wrapper .title {
-    top: clamp(45px, 8.4vw, 80px);
-    left: clamp(28px, 3.1vw, 55px);
+    top: clamp(40px, 8.4vw, 80px);
+    left: clamp(22.5px, 3.1vw, 55px);
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
@@ -513,18 +543,19 @@ body {
   }
   .html-lesson-wrapper .instruction {
     padding-top: 7px;
+    margin-left: -2%;
   }
   .html-lesson-wrapper .inline-block {
     display: block !important;
   }
   .html-lesson-wrapper .decimal {
-    margin-left: 25px !important;
+    margin-left: 14px !important;
   }
   .html-lesson-wrapper .see-content .see {
     margin-top: 4px !important;
   }
   .html-lesson-wrapper .biz-tip-content .section {
-    left: calc(-15% + 35px);
+    left: calc(-15% + 20px);
   }
   .html-lesson-wrapper .arrow-part {
     margin-left: -5px;
@@ -593,6 +624,12 @@ body {
 
 .html-lesson-wrapper .see-content .see-section .convo-text {
   margin-left: 2.5%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .see-content .see-section .convo-text {
+    margin-left: 6%;
+  }
 }
 
 .html-lesson-wrapper .see-content .see-section .convo-text li {

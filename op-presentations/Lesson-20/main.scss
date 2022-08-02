@@ -102,7 +102,7 @@ body {
     .part2-ul {
       list-style: decimal;
       li {
-        line-height: 0rem;
+        // line-height: 0rem;
         margin-top: 3%;
       }
     }
@@ -163,6 +163,7 @@ body {
   .html-lesson-wrapper {
     .part-1 {
       margin-top: 2px;
+      margin-left: -6.5%;
     }
     .decimal {
       margin-left: 40px;
@@ -176,6 +177,7 @@ body {
   .html-lesson-wrapper {
     .part-2 {
       margin-top: -2px;
+      margin-left: -6.5%;
     }
   }
 }

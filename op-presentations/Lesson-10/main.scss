@@ -133,7 +133,7 @@ body {
     }
     .title {
       top: clamp(45px, 8.4vw, 80px);
-      left: clamp(28px, 3.1vw, 55px);
+      left: clamp(23px, 3.1vw, 55px);
     }
     .divider {
       &.d1,
@@ -155,12 +155,13 @@ body {
   .html-lesson-wrapper {
     .part-1 {
       margin-top: 2px;
+      margin-left: -9%;
     }
     .decimal {
       margin-left: 40px;
     }
     .instruction {
-      margin-left: 30px;
+      margin-left: 22px;
     }
   }
 }
@@ -168,6 +169,7 @@ body {
   .html-lesson-wrapper {
     .part-2 {
       margin-top: -2px;
+      margin-left: -9%;
     }
   }
 }

@@ -142,7 +142,7 @@ body {
   }
   .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
-    left: clamp(28px, 3.1vw, 55px);
+    left: clamp(23px, 3.1vw, 55px);
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
@@ -159,17 +159,19 @@ body {
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .part-1 {
     margin-top: 2px;
+    margin-left: -9%;
   }
   .html-lesson-wrapper .decimal {
     margin-left: 40px;
   }
   .html-lesson-wrapper .instruction {
-    margin-left: 30px;
+    margin-left: 22px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper .part-2 {
     margin-top: -2px;
+    margin-left: -9%;
   }
 }

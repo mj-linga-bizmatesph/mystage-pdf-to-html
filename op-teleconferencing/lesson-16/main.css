@@ -539,75 +539,38 @@ body {
 }
 
 .html-lesson-wrapper .act-spacer {
-  padding-bottom: 20rem;
+  padding-bottom: 25%;
 }
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .act-spacer {
     padding-bottom: 0;
   }
 }
-.html-lesson-wrapper .content-item .tbl-wrapper {
-  background: #cc3366;
-  padding: 1%;
-  margin-top: 2%;
-  border-width: 5px;
-  border: 5px solid rgb(183, 177, 177);
+.html-lesson-wrapper .try .content-table {
+  font-size: clamp(12px, 3vw, 16px);
+  width: 100%;
+  border-collapse: collapse;
 }
-.html-lesson-wrapper .content-item .tbl-wrapper ol {
-  margin-left: -3%;
+.html-lesson-wrapper .try .content-table .table-header {
+  width: 25% !important;
+  color: white;
+  background-color: #bd3762;
 }
-.html-lesson-wrapper .content-item .tbl-wrapper .btn-red {
-  background-color: #d9d9d9;
-  width: 60px;
-  color: #000000;
+.html-lesson-wrapper .try .content-table th {
+  vertical-align: middle !important;
 }
-.html-lesson-wrapper .content-item .tbl-wrapper .btn-to {
-  text-align: center;
-  padding-left: 10px;
+.html-lesson-wrapper .try .content-table td,
+.html-lesson-wrapper .try .content-table th {
+  border: 2px solid #d9d9d9;
+  padding: 0.5%;
+  vertical-align: baseline;
 }
-.html-lesson-wrapper .content-item .tbl-wrapper .btn-send {
-  text-align: center;
-  width: 70px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 1%;
+.html-lesson-wrapper .content-div .header-text {
+  margin-bottom: 2px;
 }
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td.breaker {
-  padding: 2%;
-  text-align: center;
-  padding-right: 17%;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .sub {
-  margin-bottom: 10px;
-  margin-right: 35px;
-  color: #fff;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .to-value,
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .sub-value {
-  background-color: #fff;
-  padding-left: 10px;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .to-value {
-  margin-top: -2px;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .sub-value {
-  margin-top: -2px;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .to-value {
-  font-size: clamp(8px, 2vw, 13.5px);
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td .tbl-content {
-  background: #fff;
-  padding: 2%;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper table tr td.td-btn {
-  text-align: center;
-}
-.html-lesson-wrapper .content-item .tbl-wrapper .to-value {
-  font-size: clamp(12px, 2vw, 15px);
-}
-.html-lesson-wrapper .content-item .tbl-wrapper .sub-value {
-  font-size: clamp(12px, 2vw, 15px);
+.html-lesson-wrapper .content-div ul {
+  padding-left: 15px;
+  margin-top: 0px;
 }
 .html-lesson-wrapper .extension {
   margin-bottom: 1% !important;
@@ -626,5 +589,10 @@ body {
 @media only screen and (max-width: 450px) {
   .html-lesson-wrapper .extension {
     width: 92% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper .content-item .message {
+    padding-left: 7%;
   }
 }

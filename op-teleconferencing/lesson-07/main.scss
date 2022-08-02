@@ -1,0 +1,41 @@
+@import '../../css/op-teleconferencing-utils';
+
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .try {
+    .content-table {
+      font-size: clamp(12px, 2vw, 15px);
+      width: 100%;
+      border-collapse: collapse;
+      .table-header {
+        width: 25% !important;
+        color: white;
+        background-color: $primary-pink;
+      }
+      th {
+        vertical-align: middle !important;
+      }
+      td,
+      th {
+        border: 2px solid $tertiary-gray;
+        padding: 0.5%;
+        vertical-align: baseline;
+      }
+    }
+  }
+  .red-italicize {
+    color: red;
+  }
+  .content-item {
+    .message {
+      @media only screen and (max-width: 767px){
+        padding-left: 3%;
+      }
+    }
+  }
+}

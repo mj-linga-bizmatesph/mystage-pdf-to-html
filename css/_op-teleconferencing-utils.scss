@@ -211,9 +211,14 @@ body {
     .level {
       padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 15px);
       background: $rank-green;
       max-width: 100%;
       margin-left: -2%;
+      &.two {
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
+        clamp(10px, 3vw, 17px);
+      }
     }
     .separator {
       font-family: $helvetica;
@@ -289,6 +294,11 @@ body {
         font-weight: bold;
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 4vw, 60px);
+        // padding-right: 1.5%;
+        @media only screen and (max-width: 500px) {
+          width: 5%;
+          padding-right: 4%;          
+        }
       }
       .biz-tip-content {
         font-family: $trebuchet;
@@ -298,6 +308,7 @@ body {
         padding-bottom: 1rem;
         p {
           margin: 0;
+          margin-bottom: 2%;
         }
         ul {
           margin: 0;
@@ -315,6 +326,7 @@ body {
             content: '';
             display: block;
             width: 0.5em;
+            height: 0px;
           }
           li::marker {
             font-size: clamp(11px, 2vw, 13px);
@@ -372,6 +384,7 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
+      font-size: clamp(12px, 2vw, 15px);
       .header-text {
         margin: 0;
         width: 104%;
@@ -380,6 +393,19 @@ body {
         font-weight: bold;
         line-height: clamp(12px, 4vw, 22px);
         margin-top: clamp(-2px, -1vw, -3px);
+      }
+      .second-header {
+        margin: 0;
+        width: 104%;
+        font-family: $helvetica;
+        font-size: clamp(12px, 2vw, 15px);
+        font-weight: bold;
+        line-height: clamp(12px, 4vw, 22px);
+        margin-top: clamp(-2px, -1vw, -3px);
+        p {
+          margin-top: 30px;
+          margin-bottom: 5px;
+        }
       }
       .content-header {
         font-size: clamp(12px, 2vw, 15px);
@@ -435,6 +461,7 @@ body {
       }
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
+        margin-left: 1%;
         .review-box {
           font-family: $trebuchet;
           font-size: clamp(12px, 2vw, 15px);
@@ -488,6 +515,15 @@ body {
     font-size: clamp(12px, 2vw, 15px);
     &::after {
       content: '\25BC\25BC\25BC';
+    }
+  }
+  /* table alignment */
+  .sides {
+      .num {
+      @media only screen and (max-width: 500px) {
+        margin: 0px;
+        vertical-align: top;         
+      }
     }
   }
 }

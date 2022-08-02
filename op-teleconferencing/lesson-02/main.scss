@@ -91,4 +91,29 @@
         width: 92% !important;
       }
     }
+    
+    .biz-tips {
+      p.link {
+          padding-top: 2%;
+      }
+      a {
+          color: black;
+      }
+    }
+  
+    .tbl-content {
+       p.access {
+          margin-bottom: 0px;
+      }
+        ul.item {
+          margin: 0px;
+          padding: 0px;
+          list-style-type: none;
+      }
+    }
+    .content-div {
+      .top-align {
+        vertical-align: top;
+      }
+    }
   }

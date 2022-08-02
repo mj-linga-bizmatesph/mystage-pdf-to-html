@@ -51,7 +51,7 @@ body {
 .html-lesson-wrapper .title {
   position: absolute;
   top: 35px;
-  left: 48px;
+  left: 36px;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
 }
@@ -179,7 +179,7 @@ body {
 }
 
 .html-lesson-wrapper .biz-tip-content .section {
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: clamp(50px, 16%, 126.5px);
   margin-top: clamp(12px, 2.8vw, 21px) !important;
 }
 
@@ -234,6 +234,7 @@ body {
 
 .html-lesson-wrapper .see-content .see {
   margin-top: 2px;
+  margin-left: 3%;
 }
 
 .html-lesson-wrapper .see-content .sub-text {
@@ -313,6 +314,7 @@ body {
 
 .html-lesson-wrapper .try-content .try {
   margin-top: 4px;
+  margin-left: 3%;
 }
 
 .html-lesson-wrapper .try-content .decimal {
@@ -342,6 +344,7 @@ body {
 
 .html-lesson-wrapper .act-content .act {
   margin-top: 4px;
+  margin-left: 3%;
 }
 
 .html-lesson-wrapper .act-content p {

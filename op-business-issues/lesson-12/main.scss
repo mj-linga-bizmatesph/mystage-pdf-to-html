@@ -18,6 +18,13 @@
         left: clamp(91.5%, 90vw, 50%);
       }
     }
+
+    .arrow-part-purple {
+      &:before {
+        left: -3% !important;
+        top: clamp(1.5px, 1vw, 1.2vw) !important;
+      }
+    }
   }
 }
 
@@ -29,12 +36,10 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper {
-    header {
-      .lesson-number {
-        left: clamp(91.5%, 90vw, 50%);
-      }
+.html-lesson-wrapper {
+  header {
+    .lesson-number {
+      left: clamp(91.5%, 90vw, 50%);
     }
   }
 }

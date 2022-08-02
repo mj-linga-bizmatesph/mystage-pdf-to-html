@@ -29,12 +29,35 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 460px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4px;
+  }
+  .html-lesson-wrapper {
+    .arrow-part-purple {
+      &:before {
+        left: -3% !important;
+        top: clamp(1.5px, 1vw, 1.2vw) !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
   .html-lesson-wrapper {
     header {
       .lesson-number {
-        left: clamp(91.5%, 90vw, 50%);
+        left: clamp(90.5%, 93vw, 91.5%);
       }
+    }
+  }
+}
+
+.html-lesson-wrapper {
+  header {
+    .lesson-number {
+      left: clamp(91.5%, 90vw, 50%);
     }
   }
 }

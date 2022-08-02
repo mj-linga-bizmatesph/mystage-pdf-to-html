@@ -54,6 +54,10 @@ body {
     left: 36px;
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
+
+    @media screen and (max-width: 900px) {
+      left: 38px;
+    }
   }
   .lesson-number {
     position: absolute;
@@ -69,6 +73,11 @@ body {
     font-weight: bold;
     font-family: $title-font;
     top: 2px;
+
+    @media screen and (max-width: 900px) {
+      left: 74%;
+      top: 5px;
+    }
   }
   .divider {
     color: #d9d9d9;
@@ -82,6 +91,14 @@ body {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
+
+    @media screen and (max-width: 900px) {
+      margin: 3px 0px 0px 22px;
+    }
+
+    @media screen and (max-width: 401px) {
+      margin: 3px 0px 0px 40px;
+    }
 
     li {
       margin-bottom: clamp(20px, 8vw, 30px);
@@ -102,8 +119,11 @@ body {
     .part2-ul {
       list-style: decimal;
       li {
-        // line-height: 0rem;
         margin-top: 3%;
+
+        @media screen and (max-width: 401px) {
+          height: 5px;
+        }
       }
     }
     .part-1 .part-2 {
@@ -169,7 +189,7 @@ body {
       margin-left: 40px;
     }
     .instruction {
-      margin-left: 30px;
+      margin-left: 22px;
     }
   }
 }

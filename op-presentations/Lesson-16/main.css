@@ -24,8 +24,16 @@ body {
   font-family: Helvetica, Arial, "Sans-serif";
 }
 
+.html-lesson-wrapper .ml {
+  margin-bottom: 1%;
+}
+
 .html-lesson-wrapper .b {
   font-weight: bold;
+}
+
+.html-lesson-wrapper .ls {
+  list-style: decimal !important;
 }
 
 .html-lesson-wrapper .program-rank {
@@ -51,7 +59,7 @@ body {
 .html-lesson-wrapper .title {
   position: absolute;
   top: 35px;
-  left: 36px;
+  left: 40px;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
 }
@@ -125,12 +133,18 @@ body {
   line-height: clamp(12px, 3vw, 26px);
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper ul {
+    margin: 3px 0px 0px 22px;
+  }
+}
+
 .html-lesson-wrapper ul li {
   padding-left: 8px;
 }
 
 .html-lesson-wrapper .highlight {
-  color: #cc3366;
+  color: black;
   font-weight: bold;
 }
 
@@ -165,6 +179,7 @@ body {
   position: relative;
   line-height: 1.8;
   padding-right: clamp(8px, 2vw, 19px) !important;
+  margin-bottom: 2%;
 }
 
 .html-lesson-wrapper .dialogue .underline {
@@ -401,7 +416,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 10%;
-  bottom: 43px;
+  bottom: 33px;
 }
 
 .html-lesson-wrapper footer .footer-text {
@@ -421,7 +436,7 @@ body {
     min-height: unset;
   }
   .html-lesson-wrapper .biz-tip-content .section {
-    left: calc(-15% + 56px);
+    left: calc(-15% + 37px);
   }
   .html-lesson-wrapper .see-content {
     margin-top: clamp(22px, 3.8vw, 36px);
@@ -482,7 +497,7 @@ body {
     right: 5% !important;
   }
   .html-lesson-wrapper .section {
-    left: calc(-16% + 45px);
+    left: calc(-16% + 17px);
   }
 }
 
@@ -633,7 +648,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .see-section .convo-text li {
-  color: #cc3366;
+  color: black;
 }
 
 .html-lesson-wrapper .see-content .see-section .convo-text li div {

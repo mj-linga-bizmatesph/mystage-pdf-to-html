@@ -27,8 +27,14 @@ body {
   header {
     font-family: $title-font;
   }
+  .ml {
+    margin-bottom: 1%;
+  }
   .b {
     font-weight: bold;
+  }
+  .ls {
+    list-style: decimal !important;
   }
   .program-rank {
     position: absolute;
@@ -50,7 +56,7 @@ body {
   .title {
     position: absolute;
     top: 35px;
-    left: 36px;
+    left: 40px;
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
   }
@@ -106,12 +112,16 @@ body {
     margin: 3px 0px 0px 18px;
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
+
+    @media screen and (max-width: 900px) {
+      margin: 3px 0px 0px 22px;
+    }
     li {
       padding-left: 8px;
     }
   }
   .highlight {
-    color: $magenta;
+    color: black;
     font-weight: bold;
   }
   .see-content,
@@ -141,6 +151,7 @@ body {
     position: relative;
     line-height: 1.8;
     padding-right: clamp(8px, 2vw, 19px) !important;
+    margin-bottom: 2%;
     .underline {
       border-bottom: 1px solid black;
     }
@@ -321,7 +332,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: 43px;
+    bottom: 33px;
     .footer-text {
       text-align: right;
       position: absolute;
@@ -340,7 +351,7 @@ body {
     min-height: unset;
     .biz-tip-content {
       .section {
-        left: calc(-15% + 56px);
+        left: calc(-15% + 37px);
       }
     }
     .see-content {
@@ -384,7 +395,7 @@ body {
       right: 5% !important;
     }
     .section {
-      left: calc(-16% + 45px);
+      left: calc(-16% + 17px);
     }
   }
 }

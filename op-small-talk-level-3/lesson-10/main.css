@@ -450,3 +450,13 @@ body {
     margin-top: 4.7px;
   }
 }
+@media screen and (max-width: 460px) {
+  .html-lesson-wrapper header .lesson-number {
+    left: clamp(91.5%, 90vw, 50%);
+  }
+}
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper header .lesson-number {
+    left: clamp(91.5%, 90vw, 50%);
+  }
+}

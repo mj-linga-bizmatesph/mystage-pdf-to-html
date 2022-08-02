@@ -541,9 +541,10 @@ body {
 .html-lesson-wrapper .content-div .header-text {
   margin-bottom: 2px;
 }
-.html-lesson-wrapper .content-div ul {
+.html-lesson-wrapper .content-div ol {
   padding-left: 15px;
   margin-top: 0px;
+  line-height: 1.8em;
 }
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .content-item .message {

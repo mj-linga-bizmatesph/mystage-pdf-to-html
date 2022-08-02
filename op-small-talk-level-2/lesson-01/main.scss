@@ -21,9 +21,9 @@
       .section {
         margin-top: clamp(7px, 2.6vw, 18px) !important;
       }
-    }
-    .section {
-      top: 7px;
+     .words{
+        top: 7px;
+      }
     }
   }
 }
@@ -37,9 +37,9 @@
       .section {
         margin-top: clamp(6px, 1.6vw, 18px) !important;
       }
-    }
-    .section {
-      top: 7px;
+      .words{
+        top: 7px;
+      }
     }
   }
 }

@@ -411,6 +411,7 @@ body {
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
+  margin-bottom: 7px;
 }
 .html-lesson-wrapper .content-item .content-div .second-header {
   margin: 0;
@@ -578,6 +579,7 @@ body {
 .html-lesson-wrapper .content-div .content-div .bullets li {
   padding-left: 0px;
   margin-left: 10%;
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .content-div .header-text-content {
   font-size: 11px, 1.8vw, 16px;
@@ -597,4 +599,8 @@ body {
 .html-lesson-wrapper .bullets li {
   padding-left: 0px;
   margin-left: 10%;
+  line-height: 1.8em;
+}
+.html-lesson-wrapper .content-div .sides {
+  padding-left: 20px;
 }

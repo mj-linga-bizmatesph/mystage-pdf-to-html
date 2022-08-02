@@ -411,6 +411,7 @@ body {
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
+  margin-bottom: 7px;
 }
 .html-lesson-wrapper .content-item .content-div .second-header {
   margin: 0;
@@ -568,10 +569,8 @@ body {
 .html-lesson-wrapper .content-div .header-text {
   margin-bottom: 2px;
 }
-.html-lesson-wrapper .content-div ol {
-  padding-left: 15px;
+.html-lesson-wrapper .content-div .target {
   margin-top: 0px;
-  line-height: 1.8em;
 }
 .html-lesson-wrapper .extension {
   margin-bottom: 1% !important;

@@ -146,10 +146,14 @@ body {
     position: absolute;
     width: fit-content;
     text-align: right;
-    bottom: 43px;
+    bottom: 33px;
     right: 6.2%;
     font-family: $title-font;
     max-width: 64%;
+
+    .footer-text {
+      display: flex;
+    }
   }
 }
 @media screen and (max-width: 768px) {

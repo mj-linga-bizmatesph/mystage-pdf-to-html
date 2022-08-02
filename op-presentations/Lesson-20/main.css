@@ -168,10 +168,16 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 43px;
+  bottom: 33px;
   right: 6.2%;
   font-family: Helvetica, Arial, "Sans-serif";
   max-width: 64%;
+}
+
+.html-lesson-wrapper footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {

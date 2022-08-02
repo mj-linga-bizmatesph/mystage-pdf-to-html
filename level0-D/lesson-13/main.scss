@@ -36,7 +36,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/0-bg-header.png), url(#{$s3}/0-bg-footer.png);
+  background-image: url(#{$s3}/0-bg-header.svg), url(#{$s3}/0-bg-footer.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -83,6 +83,7 @@ body {
 
   header {
     font-family: $noto-sans;
+    display: flex;
   }
 
   .fs-16 {
@@ -111,10 +112,11 @@ body {
     color: $primary-blue;
   }
   .program-rank {
-    position: absolute;
-    color: #ffffff;
+    position: relative;
+    color: #FFFFFF;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 100%;
 
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
@@ -159,17 +161,18 @@ body {
     font-size: clamp(10px, 2vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(8px, 2vw, 11px);
   }
   .lesson-number {
-    position: absolute;
-    right: 5%;
-    text-align: center;
-    font-size: clamp(14px, 4vw, 26px);
-    color: #ffffff;
+    position: relative;
+    float: right;
+    right: 5.3%;
+    font-size: clamp(14px, 3vw, 20px);
+    color: #FFFFFF;
+    margin-top: clamp(2px, 1vh, 10px);
   }
 
   // Title
@@ -189,7 +192,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -0.5px;
+      letter-spacing: 0px;
     }
   }
   .arrow {
@@ -202,6 +205,7 @@ body {
     font-family: $noto-sans;
   }
   .instructions {
+    margin-right: 6%;
     font-family: $noto-sans;
     position: absolute;
     padding: clamp(0px, 0.01vw, 3px) 0px;
@@ -209,13 +213,13 @@ body {
     line-height: 1.6;
 
     .title {
-      font-size: clamp(12px, 3.5vw, 18px);
+      font-size: clamp(12px, 3.5vw, 18px) !important;
       color: #141821;
     }
     .sub-title {
       font-size: $fs-13;
       color: $subtext-color;
-      letter-spacing: -0.5px;
+      letter-spacing: 0px;
     }
   }
 
@@ -285,11 +289,14 @@ body {
 
     .see-2-section {
       margin-top: clamp(20px, 6.5vw, 4rem);
+      .pl{
+        padding-left: 2%;
+      }
       .akiko-section {
         display: flex;
         .akiko-icon {
           text-align: center;
-          width: 18%;
+          width: 25%;
 
           div {
             font-family: $noto-sans;
@@ -313,8 +320,8 @@ body {
           }
           .row-3 {
             .sub {
+              line-height: 1.5;
               font-family: $noto-sans;
-              font-size: $fs-13;
               font-size: $fs-13;
               color: #7f8288;
             }
@@ -328,10 +335,54 @@ body {
       .red-piece {
         width: clamp(65px, 16vw, 116.8px);
         margin-right: clamp(3px, 1vw, 10px);
+        
+      }
+      .red-piece2 {
+        width: clamp(65px, 16vw, 116.8px);
+        font-family: $noto-sans;
+        font-weight: bold;
+        background-image: url(https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/0-red-piece.png), linear-gradient(90deg, #ffb2b0 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
+      }
+      .red-piece3 {
+        font-family: $noto-sans;
+        font-weight: bold;
+        width: 7em;
+        height: 1em;
+        background: url(#{$s3}/0-D-13-pinkP.svg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        padding: clamp(7px, 2vw, 10px) 0;
+        font-size: clamp(10px, 2.2vw, 16px);
+        @media screen and (max-width: 900px){
+          width: 8em;
+        }
+      }
+      .red-piece1 {
+        background-position: center;
+        background-size: auto 105%;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: clamp(11px, 2.7vw, 16px);
+        font-family: 'Noto Sans', sans-serif;
+        background-image: url(#{$s3}/0-red-piece.png), linear-gradient(90deg, rgb(255, 178, 176) 80%, rgba(255, 255, 255, 0) 80%);
+        padding: clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px) clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px);
+        background-position: right;
       }
 
-      .blue-piece {
-        width: clamp(110px, 25vw, 188.2px);
+
+      .blue-piece{
+        font-size: clamp(10px, 2.2vw, 16px);
+        font-family: $noto-sans;
+        font-weight: bold;
+        background-image: url(#{$s3}/0-blue-piece.png), linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgb(231, 243, 250) 20%);
+        padding: clamp(7px, 2vw, 10px) clamp(13px, 3vw, 17px) clamp(7px, 2vw, 10px) clamp(15px, 3.5vw, 25px);
+        background-position: left;
       }
 
       .blue-piece-1 {
@@ -346,15 +397,21 @@ body {
       }
 
       .akiko-table-pieces {
-        margin-top: clamp(1rem, 9vw, 1.5rem);
-        display: grid;
-        column-gap: 2%;
+        margin-top: 2em;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
-        grid-template-columns: auto auto;
+        // grid-template-columns: auto auto;
+
+        .column-one{
+          display: flex;
+          justify-content: flex-start;
+        }
 
         .column-two {
-          margin-left: auto;
+          display: flex;
+          justify-content: end;
         }
       }
 
@@ -424,7 +481,7 @@ body {
         counter-increment: orderedlist;
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+        grid-gap: clamp(1.5rem, 6vw, 3.1rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -621,7 +678,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+    grid-gap: clamp(1.5rem, 6vw, 3.1rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -789,7 +846,7 @@ body {
       li {
         display: grid;
         grid-template-columns: 0 1fr;
-        grid-gap: clamp(1.5rem, 6vw, 2.1rem);
+    grid-gap: clamp(1.5rem, 6vw, 3.1rem);
         align-items: start;
         line-height: 1.25;
         font-family: $noto-sans;
@@ -832,7 +889,7 @@ body {
       text-transform: uppercase;
       color: $primary-blue;
       font-size: $fs-16;
-      background-image: url(#{$s3}/0-see-arrow.png);
+      background-image: url(#{$s3}/0-see-arrow.svg);
       padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
       background-repeat: no-repeat;
       background-size: contain;
@@ -957,6 +1014,7 @@ body {
       }
 
       .row {
+        line-height: 1.5;
         margin-bottom: clamp(0.5rem, 13vw, 3rem);
       }
     }
@@ -1084,7 +1142,7 @@ body {
         .speech {
           padding-left: 1vw;
           width: 85%;
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
       .image {
@@ -1159,7 +1217,7 @@ body {
 
         .speech {
           padding-left: clamp(1px, 1vw, 5px);
-          font-size: $fs-18;
+          font-size: $fs-16;
         }
       }
     }
@@ -1187,7 +1245,7 @@ body {
       .text {
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-18;
+        font-size: $fs-16;
         margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
       }
 
@@ -1225,7 +1283,7 @@ body {
 
     .arrow.try {
       color: white;
-      background-image: url(#{$s3}/0-try-arrow.png);
+      background-image: url(#{$s3}/0-try-arrow.svg);
     }
   }
   .act-content {
@@ -1244,13 +1302,15 @@ body {
       }
 
       .akiko-speech {
+        line-height: 1.5;
         position: absolute;
         margin: 8.5% 0 0 17%;
       }
 
       .akiko-speech-1 {
+        line-height: 1.5;
         position: absolute;
-        margin: 74.5% 0 0 18%;
+        margin: 74.5% 0 0 17%;
       }
 
       .eng {
@@ -1261,14 +1321,14 @@ body {
 
       .eng-1 {
         font-family: $text-font;
-        font-size: $fs-10;
+        font-size: clamp(3px, 1.7vw, 10px);
         font-weight: bold;
         color: #2d356b;
       }
 
       .jpn {
         font-family: $noto-sans;
-        font-size: $fs-11;
+        font-size: clamp(2px, 1.5vw, 10px);
         color: #7f8288;
       }
 
@@ -1288,17 +1348,19 @@ body {
         margin: 37% 0 0 8%;
       }
 
-      .text {
+.text {
+        line-height: 1.5em;
         display: flex;
         font-family: $noto-sans;
         font-size: $fs-18;
         margin-bottom: clamp(5px, 1vw, 10px);
       }
 
-      .jpn-text {
+     .jpn-text {
+      line-height: 1.5;
         display: flex;
         font-family: $noto-sans;
-        font-size: $fs-13;
+        font-size: clamp(9px, 2.2vw, 12px);
         margin-bottom: clamp(5px, 3vw, 25px);
         color: #7f8288;
       }
@@ -1316,7 +1378,7 @@ body {
       }
 
       .mt {
-        margin-top: 5px;
+        margin-top: 1px;
       }
     }
 
@@ -1330,13 +1392,7 @@ body {
 
     .arrow.act {
       color: white;
-      background-image: url(#{$s3}/0-act-arrow.png);
+      background-image: url(#{$s3}/0-act-arrow.svg);
     }
-  }
-  .blue-line {
-    width: 15px;
-    height: 2px;
-    border-bottom: 2px solid $primary-blue;
-    margin-bottom: 5px;
   }
 }

@@ -102,7 +102,7 @@ body {
 
 .html-lesson-wrapper .section {
   position: relative;
-  left: 1%;
+  left: 1.4%;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -206,7 +206,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: clamp(10px, 2vw, 20px);
-  padding-left: clamp(32px, 6vw, 40px);
+  padding-left: clamp(32px, 6vw, 38px);
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
 }
@@ -223,7 +223,6 @@ body {
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .words-phrase-content .words {
     margin-left: -4%;
-    margin-top: 4%;
   }
 }
 
@@ -249,7 +248,7 @@ body {
   content: '';
   position: absolute;
   left: 0em;
-  top: 0.4em;
+  top: 0.2em;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -464,9 +463,6 @@ body {
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
-  }
-  .html-lesson-wrapper .arrow-part:before {
-    top: clamp(8px, 1vw, 1.2vw) !important;
   }
 }
 

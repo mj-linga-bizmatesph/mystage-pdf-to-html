@@ -102,7 +102,7 @@ body {
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
-  top: 2px;
+  top: 4px;
 }
 
 .html-lesson-wrapper .divider {
@@ -133,7 +133,7 @@ body {
 
 .html-lesson-wrapper .part-content {
   position: relative;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: 17%;
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);

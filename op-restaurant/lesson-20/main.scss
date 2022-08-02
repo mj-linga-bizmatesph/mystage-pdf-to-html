@@ -89,7 +89,7 @@ body {
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
-    top: 2px;
+    top: 4px;
   }
   .divider {
     color: #d9d9d9;
@@ -117,7 +117,7 @@ body {
 
   .part-content {
     position: relative;
-    margin-left: $left-pixel;
+    margin-left: 17%;
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);

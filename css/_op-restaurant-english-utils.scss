@@ -86,7 +86,7 @@ body {
   }
   .section {
     position: relative;
-    left: 1%;
+    left: 1.4%;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -160,7 +160,7 @@ body {
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
-    padding-left: clamp(32px, 6vw, 40px);
+    padding-left: clamp(32px, 6vw, 38px);
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
 
@@ -172,7 +172,6 @@ body {
       white-space: nowrap;
       @media screen and (max-width: 900px){
       margin-left: -4%;
-      margin-top: 4%;
       }
     }
     .pointers {
@@ -192,7 +191,7 @@ body {
           content: '';
           position: absolute;
           left: 0em;
-          top: 0.4em;
+          top: 0.2em;
           width: 0;
           height: 0;
           border-left: 5px solid transparent;
@@ -369,11 +368,11 @@ body {
         margin-top: clamp(18px, 3.4vw, 28px);
       }
     }
-    .arrow-part {
-      &:before {
-        top: clamp(8px, 1vw, 1.2vw) !important;
-      }
-    }
+    // .arrow-part {
+    //   &:before {
+    //     top: clamp(8px, 1vw, 1.2vw) !important;
+    //   }
+    // }
   }
 }
 @media screen and (max-width: 600px) {

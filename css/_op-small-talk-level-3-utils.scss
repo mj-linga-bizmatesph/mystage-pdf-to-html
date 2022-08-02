@@ -86,7 +86,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -78px;
+    left: -51px;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -160,7 +160,8 @@ body {
     .pointers {
       // margin-top: clamp(14px, 2.8vw, 18px) !important;
       margin-top: clamp(15px, 2.8vw, 18px) !important;
-      margin-left: $left-pixel;
+      margin-left: clamp(50px, 14%, 92.5px);
+      // margin-left: $left-pixel;
       .text-header {
         position: relative;
         left: -17px;
@@ -320,7 +321,7 @@ body {
     }
     .arrow-part {
       &:before {
-        left: -3% !important;
+        left: -2.5% !important;
         top: clamp(4px, 0vw, 1.2vw) !important;
       }
     }
@@ -372,7 +373,7 @@ body {
       display: block !important;
     }
     .decimal {
-      margin-left: 25px !important;
+      margin-left: 29px !important;
     }
     .text-header {
       margin-top: -5px !important;
@@ -385,7 +386,7 @@ body {
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper {
     .text-header {
-      left: -9px !important;
+      left: -8px !important;
       .arrow-part {
         &:before {
           left: -14.5% !important;

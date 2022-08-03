@@ -71,11 +71,15 @@ body {
 
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -78px;
+  left: -66px;
   color: #cc3366;
   font-weight: bold;
   font-family: Helvetica, Arial, "Sans-serif";
-  top: 2px;
+  top: 6.5px;
+}
+
+.html-lesson-wrapper .st {
+  top: 0.5px;
 }
 
 .html-lesson-wrapper .divider {

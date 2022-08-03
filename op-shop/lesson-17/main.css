@@ -41,7 +41,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 10%;
-  bottom: -20px;
+  bottom: -28px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -56,6 +56,12 @@ body {
   bottom: 0;
   max-width: 45%;
   right: 2%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper footer .footer-text {
+    max-width: 43%;
+  }
 }
 
 .html-lesson-wrapper .inline-block {
@@ -243,12 +249,6 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
   padding-left: clamp(10px, 6vw, 60px);
-}
-
-@media only screen and (max-device-width: 460px) {
-  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-    width: 12%;
-  }
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
@@ -539,6 +539,12 @@ body {
   margin-left: 5%;
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .content-item .see-ul .see-content-ul {
+    margin-left: 7%;
+  }
+}
+
 .html-lesson-wrapper .content-item .see-ul .see-content-ul .see-content-ul2 {
   margin-left: 0%;
   width: 100%;
@@ -605,10 +611,22 @@ body {
   margin-left: 5%;
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .content-item .try-ul .try-content-ul {
+    margin-left: 7%;
+  }
+}
+
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
   list-style: decimal;
-  margin-left: 4.4%;
+  margin-left: 4.5%;
   margin-top: -1%;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
+    margin-left: 5.7%;
+  }
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul li {
@@ -630,4 +648,20 @@ body {
 
 .html-lesson-wrapper .content-item-divider::after {
   content: '\25BC\25BC\25BC';
+}
+
+.html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
+  margin-left: 3.6%;
+}
+
+@media screen and (max-width: 901px) {
+  .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
+    margin-left: 4.6%;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
+    margin-left: 6%;
+  }
 }

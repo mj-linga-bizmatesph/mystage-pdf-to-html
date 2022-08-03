@@ -49,7 +49,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -20px;
+    bottom: -28px;
     @media only screen and (max-width: 767px) {
       bottom: -45px;
     }
@@ -59,6 +59,10 @@ body {
       bottom: 0;
       max-width: 45%;
       right: 2%;
+
+      @media screen and (max-width: 401px) {
+        max-width: 43%;
+      }
     }
   }
   .inline-block {
@@ -192,9 +196,9 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 6vw, 60px);
-        @media only screen and (max-device-width: 460px) {
-          width: 12%;
-        }
+        // @media only screen and (max-device-width: 460px) {
+        //   width: 12%;
+        // }
       }
       .biz-tip-content {
         font-family: $trebuchet;
@@ -426,6 +430,10 @@ body {
         width: 100%;
         margin-left: 5%;
 
+        @media screen and (max-width: 900px) {
+          margin-left: 7%;
+        }
+
         .see-content-ul2 {
           margin-left: 0%;
           width: 100%;
@@ -479,10 +487,20 @@ body {
         list-style: none;
         margin-top: -1%;
         margin-left: 5%;
+
+        @media screen and (max-width: 900px) {
+          margin-left: 7%;
+        }
         .content-text {
           list-style: decimal;
-          margin-left: 4.4%;
+          margin-left: 4.5%;
           margin-top: -1%;
+          @media screen and (max-width: 900px) {
+            margin-left: 5.7%;
+          }
+          // @media screen and (max-width: 401px) {
+          //   margin-left: 5.7%;
+          // }
         }
         li {
           line-height: 1.8;

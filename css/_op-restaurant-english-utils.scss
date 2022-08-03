@@ -122,17 +122,20 @@ body {
   .try-content {
     position: relative;
     margin-left: 2.5%;
-    padding-left: 1em;
+    padding-left: 1.4em;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
+    @media screen and (max-width: 500px){
+      margin-left: 0.5%;
+    }
     .sub-text {
       line-height: 1.8;
     }
     .convo {
-      margin-left: 4.9em;
+      margin-left: 4.7em;
       margin-top: -1%;
-      @media screen and (max-width: 900px) {
-        margin-left: 3em;
+      @media screen and (max-width: 500px) {
+        margin-left: 3.8em;
       }
     }
     .flex {
@@ -165,7 +168,7 @@ body {
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
-    padding-left: clamp(32px, 6vw, 38px);
+    padding-left: clamp(27px, 6vw, 38px);
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
 
@@ -175,8 +178,8 @@ body {
     .words {
       margin-top: 2.5%;
       white-space: nowrap;
-      @media screen and (max-width: 900px) {
-        margin-left: -4%;
+      @media screen and (max-width: 500px) {
+        margin-left: -2%;
       }
     }
     .pointers {
@@ -332,6 +335,7 @@ body {
     min-height: unset;
     .see-content {
       margin-top: clamp(22px, 3.8vw, 36px);
+     
       .article {
         margin-bottom: clamp(20px, 3.7vw, 29px);
       }
@@ -339,7 +343,7 @@ body {
     .try-content,
     .see-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
+      // padding-left: clamp(11px, 2.4vw, 18px);
       // ul {
       //   margin-left: clamp(15px, 2.4vw, 18px);
       // }
@@ -471,6 +475,7 @@ body {
     }
     .words-phrase-content .pointers {
       padding-right: 5px;
+      margin-left: 6.2%;
     }
     .arrow-part {
       padding-left: 10px !important;

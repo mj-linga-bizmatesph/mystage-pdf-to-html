@@ -94,7 +94,7 @@ body {
   position: absolute;
   color: #ffffff;
   font-size: 0px;
-  margin-top: clamp(1px, 1vw, 3px);
+  margin-top: clamp(1px, 1vw, 5px);
   width: 69%;
 }
 .html-lesson-wrapper .program-rank .type {
@@ -125,6 +125,7 @@ body {
   text-align: center;
   font-size: clamp(14px, 4vw, 26px);
   color: #ffffff;
+  top: 5px;
 }
 .html-lesson-wrapper .title-section {
   position: absolute;
@@ -143,7 +144,6 @@ body {
 }
 .html-lesson-wrapper .title-section .sub-title {
   font-size: clamp(10px, 2.5vw, 15px);
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .arrow {
   text-transform: uppercase;
@@ -160,13 +160,12 @@ body {
   left: 27%;
 }
 .html-lesson-wrapper .instructions .title {
-  font-size: clamp(9px, 2.9vw, 18px);
+  font-size: clamp(9px, 2.9vw, 18px) !important;
   color: #141821;
 }
 .html-lesson-wrapper .instructions .sub-title {
   font-size: clamp(7px, 2vw, 13px);
   color: #7f8288;
-  letter-spacing: -1.3px;
 }
 .html-lesson-wrapper .full-width {
   width: 100%;
@@ -399,11 +398,13 @@ body {
   position: relative;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .conversation-number {
+  line-height: 1.5em;
   color: #1287cd;
   font-weight: bold;
   min-width: 1em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .letter-answer {
+  line-height: 1.5em;
   font-weight: bold;
   width: 15%;
   text-align: center;
@@ -419,6 +420,7 @@ body {
   margin-bottom: 1em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .speaker {
+  line-height: 1.5em;
   font-weight: bold;
   min-width: 5em;
   text-align: right;
@@ -433,15 +435,16 @@ body {
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .dialogue {
   word-wrap: break-word;
+  line-height: 1.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .japanese {
   word-wrap: break-word;
   font-size: clamp(8px, 1.7vw, 13px);
   color: #7f8288;
-  letter-spacing: -1px;
   margin-top: 0.5em;
 }
 .html-lesson-wrapper .conversation-wrapper .row .convo-row .convo .dialogue-row .text .answer {
+  line-height: 1.5em;
   word-wrap: break-word;
 }
 .html-lesson-wrapper .conversation-wrapper .row .side-image {
@@ -627,7 +630,7 @@ body {
 .part-2 .office-part-2 .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 15px);
+  font-size: clamp(10px, 2.3vw, 14px);
 }
 .part-1 .office-part-1 .bubble .jap,
 .part-1 .office-part-2 .bubble .jap,
@@ -657,7 +660,7 @@ body {
 .part-2 .part-2-items .bubble .eng {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  font-size: clamp(10px, 2.3vw, 15px);
+  font-size: clamp(10px, 2.3vw, 14px);
 }
 .part-2 .part-2-items .bubble .eng .option-item {
   display: grid;
@@ -670,10 +673,10 @@ body {
 }
 .part-2 .part-2-items.item-1 .akiko {
   margin-top: 12%;
-  left: 24%;
+  left: 30%;
 }
 .part-2 .part-2-items.item-1 .option-item {
-  width: 20rem;
+  width: 18rem;
 }
 .part-2 .part-2-items.item-2 .akiko {
   margin-top: 9%;
@@ -682,18 +685,12 @@ body {
 .part-2 .part-2-items.item-2 .option-item {
   width: 40rem;
 }
-.part-2 .part-2-items.item-2 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
-}
 .part-2 .part-2-items.item-3 .akiko {
   margin-top: 14%;
   left: 26%;
 }
 .part-2 .part-2-items.item-3 .option-item {
   width: 40rem;
-}
-.part-2 .part-2-items.item-3 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
 }
 .part-2 .part-2-items.item-4 .akiko {
   margin-top: 16%;
@@ -702,9 +699,6 @@ body {
 .part-2 .part-2-items.item-4 .option-item {
   width: 30rem;
 }
-.part-2 .part-2-items.item-4 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
-}
 .part-2 .part-2-items.item-5 .akiko {
   margin-top: 10%;
   left: 21%;
@@ -712,6 +706,9 @@ body {
 .part-2 .part-2-items.item-5 .option-item {
   width: 30rem;
 }
-.part-2 .part-2-items.item-5 .option-item .content {
-  font-size: clamp(5px, 1.6vw, 14px) !important;
+
+.choice-jap, .japanese, .jap, .sub-title, .text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

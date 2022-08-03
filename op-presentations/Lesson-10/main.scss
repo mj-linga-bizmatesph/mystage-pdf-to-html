@@ -27,6 +27,7 @@ body {
   header {
     font-family: $title-font;
     margin-bottom: clamp(110px, 30vw, 270px);
+    margin-top: 3%;
   }
   .b {
     font-weight: bold;
@@ -50,15 +51,15 @@ body {
   }
   .title {
     position: absolute;
-    top: 80px;
-    left: 36px;
+    top: 35px;
+    left: 35px;
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
   }
   .lesson-number {
     position: absolute;
     left: clamp(91.5%, 93vw, 91%);
-    margin-top: 7.4%;
+    margin-top: 4.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
@@ -92,7 +93,7 @@ body {
     }
   }
   .decimal {
-    list-style-type: decimal;
+    list-style-type: none;
     line-height: 1.8;
   }
   .part-content {
@@ -161,7 +162,7 @@ body {
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper {
     .part-1 {
-      margin-top: 2px;
+      margin-top: -1px;
       margin-left: -9%;
     }
     .decimal {

@@ -52,7 +52,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .see-2 .part-2-page-1 .section-2-convo .bubble-1, .html-lesson-wrapper .see-2 .part-2-page-2 .section-2-convo .text-bubble, .html-lesson-wrapper .see-2 .part-2-page-3 .section-2-convo .text-bubble, .html-lesson-wrapper .see-2 .part-2-page-4 .section-2-convo .bubble-1, .html-lesson-wrapper .see-2 .part-2-page-5 .section-2-convo .text-bubble {
@@ -136,7 +136,7 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .title-section .title {
@@ -160,11 +160,11 @@ body {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .instructions {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 28%;
@@ -206,7 +206,7 @@ body {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content {
@@ -269,7 +269,7 @@ body {
 }
 
 .html-lesson-wrapper .see-1 .section-1-convo .bubble-1 .jap {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.2vw, 11px);
   color: #7f8288;
   letter-spacing: 0px;
@@ -288,7 +288,7 @@ body {
 }
 
 .html-lesson-wrapper .see-1 .section-1-convo .bubble-2 .jap {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.2vw, 11px);
   color: #7f8288;
   letter-spacing: 0px;
@@ -297,7 +297,7 @@ body {
 .html-lesson-wrapper .see-1 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px) !important;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-1 .convo-text-content .convo-title .eng {
@@ -395,7 +395,7 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-1 .convo-text-content .convo-wrap {
@@ -498,7 +498,7 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-2 .convo-text-content .convo-wrap {
@@ -614,7 +614,7 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-3 .convo-text-content .convo-wrap {
@@ -736,7 +736,7 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-4 .convo-text-content .convo-wrap {
@@ -851,7 +851,7 @@ body {
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content {
   margin-top: clamp(20px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .see-2 .part-2-page-5 .convo-text-content .convo-wrap {

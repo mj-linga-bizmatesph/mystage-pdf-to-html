@@ -642,4 +642,6 @@ body {
   vertical-align: middle;
   padding-left: 10px;
   line-height: clamp(12px, 2.8vw, 22px);
+  -webkit-column-width: 300px;
+          column-width: 300px;
 }

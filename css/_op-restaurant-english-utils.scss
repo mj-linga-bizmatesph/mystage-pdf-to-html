@@ -183,11 +183,11 @@ body {
       }
     }
     .pointers {
+      line-height: normal;
       margin-right: 4em;
       margin-top: clamp(14px, 2.8vw, 23px) !important;
       margin-left: 7.2%;
-      margin-left .text-header {
-        line-height: 1.8;
+       .text-header {  
         position: relative;
         left: -17px;
         margin-bottom: clamp(6px, 1vw, 10px);

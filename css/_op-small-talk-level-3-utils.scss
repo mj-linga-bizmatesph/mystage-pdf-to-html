@@ -156,13 +156,14 @@ body {
     line-height: normal;
     .section {
       margin-left: $left-pixel;
-      margin-top: clamp(10px, 2.6vw, 18px) !important;
+      margin-top: clamp(10px, 2.6vw, 18.5px) !important;
     }
     .pointers {
       // margin-top: clamp(14px, 2.8vw, 18px) !important;
-      margin-top: clamp(15px, 2.8vw, 18px) !important;
+      margin-top: clamp(14px, 2.8vw, 18px) !important;
       line-height: normal;
       margin-left: clamp(50px, 14%, 92.5px);
+      line-height: normal;
       // margin-left: $left-pixel;
       .text-header {
         position: relative;
@@ -170,7 +171,6 @@ body {
         margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
-        line-height: normal;
         padding-left: 7px;
         position: relative;
         &:before {
@@ -270,15 +270,7 @@ body {
     margin-left: clamp(100px, 13%, 200.5px);
   }
   .html-lesson-wrapper .section {
-    left: calc(-18% + 60px);
-  }
-  .html-lesson-wrapper .section.words {
-    left: -75px;
-  }
-  .html-lesson-wrapper .see-content,
-  .html-lesson-wrapper .try-content,
-  .html-lesson-wrapper .act-content {
-    left: -20px;
+    left: -75px !important;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1180px) {

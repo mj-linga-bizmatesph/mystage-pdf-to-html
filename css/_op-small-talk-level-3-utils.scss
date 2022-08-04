@@ -153,6 +153,7 @@ body {
     padding-left: clamp(32px, 6vw, 47px);
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
+    line-height: normal;
     .section {
       margin-left: $left-pixel;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
@@ -160,6 +161,7 @@ body {
     .pointers {
       // margin-top: clamp(14px, 2.8vw, 18px) !important;
       margin-top: clamp(15px, 2.8vw, 18px) !important;
+      line-height: normal;
       margin-left: clamp(50px, 14%, 92.5px);
       // margin-left: $left-pixel;
       .text-header {
@@ -168,6 +170,7 @@ body {
         margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
+        line-height: normal;
         padding-left: 7px;
         position: relative;
         &:before {
@@ -261,9 +264,16 @@ body {
     display: inline-block;
   }
 }
-@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+@media only screen and (min-width: 1600px) and (max-width: 1921px) {
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-top: clamp(15px, 2.8vw, 18px) !important;
+    margin-left: clamp(100px, 13%, 200.5px);
+  }
   .html-lesson-wrapper .section {
     left: calc(-15% + 58px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: -78px;
   }
   .html-lesson-wrapper .see-content,
   .html-lesson-wrapper .try-content,
@@ -325,6 +335,7 @@ body {
     }
     .section.words {
       left: calc(-14% + 48px);
+      line-height: normal;
     }
   }
 }

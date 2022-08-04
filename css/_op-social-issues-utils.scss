@@ -382,8 +382,11 @@ body {
           margin-top: 0%;
           li {
             margin-left: 2.2%;
-            @media only screen and (max-width: 430px) {
-              margin-left: 4%
+            @media screen and (max-width: 900px){
+              margin-left: 3%;
+            }
+            @media screen and (max-width: 500px){
+              margin-left: 5%;
             }
           }
         }

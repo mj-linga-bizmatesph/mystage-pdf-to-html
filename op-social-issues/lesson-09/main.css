@@ -516,9 +516,15 @@ body {
   margin-left: 2.2%;
 }
 
-@media only screen and (max-width: 430px) {
+@media screen and (max-width: 900px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content li {
-    margin-left: 4%;
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .content-item .content-div.try .try-content li {
+    margin-left: 5%;
   }
 }
 

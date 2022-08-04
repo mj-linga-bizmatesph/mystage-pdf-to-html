@@ -282,6 +282,18 @@ body {
   display: inline-block;
 }
 
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section {
+    left: -55px !important;
+  }
+}
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .section {
+    left: -55px !important;
+  }
+}
 @media only screen and (min-width: 820px) and (max-width: 1180px) {
   .html-lesson-wrapper {
     min-height: unset;

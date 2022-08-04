@@ -165,6 +165,7 @@ body {
     padding-left: clamp(32px, 6vw, 47px);
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
+    line-height: normal;
     .section {
       margin-left: $left-pixel;
       // line-height: 1.8em;
@@ -282,7 +283,7 @@ body {
     }
   }
   .inline-block {
-    display: inline-block;
+    display: inline-block;    
   }
 }
 @media only screen and (min-width: 820px) and (max-width: 1180px)  { 

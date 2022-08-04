@@ -13,7 +13,7 @@ body {
   font-size: clamp(11px, 2.8vw, 18px);
   line-height: 1.5rem;
   margin-left: clamp(-50px, -14vw, 20px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content .ul-main li {
@@ -118,7 +118,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +134,7 @@ body {
 }
 
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .b,
@@ -564,7 +564,7 @@ body {
   font-weight: bold;
   font-size: clamp(10px, 3vw, 16px);
   padding-top: 4px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .table .eng {

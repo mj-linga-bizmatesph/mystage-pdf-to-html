@@ -68,7 +68,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .fs-16, .html-lesson-wrapper .text {
@@ -85,7 +85,7 @@ body {
 }
 
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .exclude-letter-spacing {
@@ -141,7 +141,7 @@ body {
 .html-lesson-wrapper .jap {
   letter-spacing: 0px;
   color: #7f8288;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.8vw, 11px);
 }
 
@@ -169,7 +169,7 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .title-section .title {
@@ -188,11 +188,11 @@ body {
   padding: 2.4% 3.5%;
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .instructions {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 27%;
@@ -283,7 +283,7 @@ body {
 
 .html-lesson-wrapper .text {
   white-space: nowrap;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .part-content {
@@ -317,7 +317,7 @@ body {
 }
 
 .html-lesson-wrapper .table .eng {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-weight: normal;
   font-size: clamp(10px, 3vw, 16px);
   margin-bottom: 1%;
@@ -335,7 +335,7 @@ body {
 
 .html-lesson-wrapper .part-1,
 .html-lesson-wrapper .part-2 {
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif !important;
 }
 
 .html-lesson-wrapper .part-1 .blue-line,
@@ -396,7 +396,7 @@ body {
 .html-lesson-wrapper .part-1 .office-part-2 .bubble .jap,
 .html-lesson-wrapper .part-2 .office-part-1 .bubble .jap,
 .html-lesson-wrapper .part-2 .office-part-2 .bubble .jap {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   letter-spacing: 0px;
   font-size: clamp(7px, 1.8vw, 11px);
   line-height: clamp(10px, 13px, 15px);

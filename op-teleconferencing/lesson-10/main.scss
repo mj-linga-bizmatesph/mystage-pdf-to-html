@@ -68,14 +68,18 @@
     li {
       padding-left: 0px;
       margin-bottom: 50px;
+      list-style: none;
     }
   }
   
   .bullets {
     li {
       padding-left: 0px;
-      margin-left: 10%;
+      margin-left: 15%;
       line-height: 1.8em;
+      @media only screen and (max-width: 480px) {
+        margin-left: 20%;
+      }
     }
   }
   .content-div {

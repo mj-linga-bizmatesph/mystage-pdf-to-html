@@ -312,6 +312,17 @@ body {
   margin-top: clamp(10px, 3vw, 20px);
   padding-right: clamp(10px, 2vw, 20px);
   padding-bottom: 1rem;
+  margin-left: -1.5%;
+}
+@media only screen and (max-width: 2560px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: -0.5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1%;
+  }
 }
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
@@ -386,6 +397,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 60px);
+  width: 100%;
 }
 .html-lesson-wrapper .content-item.review .content-label {
   width: 17%;
@@ -582,6 +594,12 @@ body {
   margin-bottom: 10px;
   margin-right: 35px;
   color: #fff;
+  margin-left: 10%;
+}
+@media only screen and (max-width: 480px) {
+  .html-lesson-wrapper .content-item .tbl-wrapper table tr td .sub {
+    margin-left: 20%;
+  }
 }
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td .to-value,
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td .sub-value {
@@ -590,9 +608,14 @@ body {
 }
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td .to-value {
   margin-top: -2px;
+  padding: 1%;
+  border-top: 5px solid #cc3366;
+  border-bottom: 10px solid #cc3366;
 }
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td .sub-value {
   margin-top: -2px;
+  padding: 1%;
+  border-bottom: 8px solid #cc3366;
 }
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td .to-value {
   font-size: clamp(8px, 2vw, 13.5px);
@@ -600,6 +623,10 @@ body {
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td .tbl-content {
   background: #fff;
   padding: 2%;
+  line-height: 1.8em;
+}
+.html-lesson-wrapper .content-item .tbl-wrapper table tr td .tbl-content p {
+  margin-top: 3%;
 }
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td.td-btn {
   text-align: center;
@@ -642,6 +669,7 @@ body {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .content-div .top-align {
   vertical-align: top;

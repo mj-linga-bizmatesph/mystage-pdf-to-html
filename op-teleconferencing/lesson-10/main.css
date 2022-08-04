@@ -312,6 +312,17 @@ body {
   margin-top: clamp(10px, 3vw, 20px);
   padding-right: clamp(10px, 2vw, 20px);
   padding-bottom: 1rem;
+  margin-left: -1.5%;
+}
+@media only screen and (max-width: 2560px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: -0.5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1%;
+  }
 }
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
@@ -386,6 +397,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 60px);
+  width: 100%;
 }
 .html-lesson-wrapper .content-item.review .content-label {
   width: 17%;
@@ -595,11 +607,17 @@ body {
 .html-lesson-wrapper .lessons li {
   padding-left: 0px;
   margin-bottom: 50px;
+  list-style: none;
 }
 .html-lesson-wrapper .bullets li {
   padding-left: 0px;
-  margin-left: 10%;
+  margin-left: 15%;
   line-height: 1.8em;
+}
+@media only screen and (max-width: 480px) {
+  .html-lesson-wrapper .bullets li {
+    margin-left: 20%;
+  }
 }
 .html-lesson-wrapper .content-div .sides {
   padding-left: 20px;

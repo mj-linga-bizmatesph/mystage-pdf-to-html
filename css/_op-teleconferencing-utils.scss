@@ -279,6 +279,7 @@ body {
       justify-content: flex-start;
       margin-bottom: 4rem;
       font-size: clamp(12px, 2vw, 15px);
+      
       @media only screen and (max-width: 700px) {
         min-height: 120px !important;
         margin-bottom: 2rem !important;
@@ -294,7 +295,7 @@ body {
         font-weight: bold;
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 4vw, 60px);
-        // padding-right: 1.5%;
+        
         @media only screen and (max-width: 500px) {
           width: 5%;
           padding-right: 4%;          
@@ -306,6 +307,13 @@ body {
         margin-top: clamp(10px, 3vw, 20px);
         padding-right: clamp(10px, 2vw, 20px);
         padding-bottom: 1rem;
+        margin-left: -1.5%;
+        @media only screen and (max-width: 2560px) {
+          margin-left: -0.5%;
+        }
+        @media only screen and (max-width: 480px) {
+          margin-left: 1%;
+        }
         p {
           margin: 0;
           margin-bottom: 2%;
@@ -369,6 +377,7 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
         padding-left: clamp(10px, 4vw, 60px);
+        width: 100%;
       }
     }
     &.review {

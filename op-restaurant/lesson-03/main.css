@@ -247,13 +247,11 @@ body {
   line-height: normal;
   margin-right: 4em;
   margin-top: clamp(14px, 2.8vw, 23px) !important;
-  margin-left: 7.2%;
+  margin-left: 6.5%;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
-  position: relative;
-  left: -17px;
-  margin-bottom: clamp(6px, 1vw, 10px);
+  margin-bottom: 0.8em;
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part {
@@ -428,7 +426,7 @@ body {
   text-align: right;
   position: absolute;
   bottom: 0;
-  max-width: 45%;
+  max-width: 40%;
   right: 2%;
 }
 
@@ -470,6 +468,7 @@ body {
     left: clamp(23px, 4vw, 48px);
   }
   .html-lesson-wrapper .title {
+    width: 80%;
     top: clamp(45px, 8.4vw, 80px);
     left: clamp(23px, 3.1vw, 55px);
   }

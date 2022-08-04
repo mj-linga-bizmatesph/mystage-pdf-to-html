@@ -52,7 +52,7 @@ body {
 }
 
 .html-lesson-wrapper header {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .fs-16 {
@@ -65,7 +65,7 @@ body {
 }
 
 .html-lesson-wrapper .noto-sans {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .b, .html-lesson-wrapper .arrow, .html-lesson-wrapper .see-content .arrow.see, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .number, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .number-white, .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .letter {
@@ -125,7 +125,7 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .title-section .title {
@@ -143,11 +143,11 @@ body {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .instructions {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   position: absolute;
   padding: clamp(0px, 0.01vw, 3px) 0px;
   left: 28%;
@@ -178,7 +178,7 @@ body {
 
 .html-lesson-wrapper .see-content.see-2 .legend, .html-lesson-wrapper .see-content.see-3 .legend, .html-lesson-wrapper .see-content.see-4 .legend {
   margin-top: clamp(25px, 5vw, 38px);
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif !important;
 }
 
 .html-lesson-wrapper .see-content .arrow.see {
@@ -189,11 +189,11 @@ body {
   padding: clamp(8px, 2vw, 14px) clamp(15px, 4vw, 22px);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .try-content {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   margin-left: clamp(18px, 5vw, 32px);
   margin-right: clamp(18px, 5vw, 32px);
 }
@@ -253,7 +253,7 @@ body {
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-1 .jap {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(6.3px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0px;
@@ -272,7 +272,7 @@ body {
 }
 
 .html-lesson-wrapper .section-1-convo .bubble-2 .jap {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(6px, 1.5vw, 11px);
   color: #7f8288;
   letter-spacing: 0px;
@@ -306,7 +306,7 @@ body {
 }
 
 .html-lesson-wrapper .section-2-content .wrapper-with-akiko .wrap-all-boxes .wrap-for-flex {
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +419,7 @@ body {
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice p {
   margin: 0;
   white-space: nowrap;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .html-lesson-wrapper .section-2-content .section2-box-content .phrase-alts .choice-eng {
@@ -438,7 +438,7 @@ body {
   color: white;
   margin: 0;
   text-align: center;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(11px, 2vw, 16px);
   z-index: 1;
   width: clamp(18px, 5vw, 24px);
@@ -456,7 +456,7 @@ body {
   margin: 0;
   text-align: center;
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(11px, 2vw, 16px);
   z-index: 1;
   width: clamp(18px, 4vw, 24px);
@@ -476,7 +476,7 @@ body {
   margin: 0;
   text-align: center;
   line-height: clamp(13px, 4vw, 24px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(11px, 2vw, 16px);
   z-index: 1;
   width: clamp(18px, 4vw, 24px);
@@ -494,7 +494,7 @@ body {
   font-size: clamp(10.8px, 2.8vw, 18px);
   color: #1287cd;
   font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   content: attr(data-value) " ";
 }
 
@@ -955,7 +955,7 @@ body {
 }
 
 .try-2 .try2-content .margin-both-sides .box-content {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(11px, 2.8vw, 18px);
   position: absolute;
   left: 3%;
@@ -984,7 +984,7 @@ body {
 }
 
 .try-2 .try2-content .margin-both-sides .box-content-2 {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(11px, 2.8vw, 18px);
   position: absolute;
   left: 3%;
@@ -1037,7 +1037,7 @@ body {
 }
 
 .act-content .act-1-content .act-1-convo .bubble-1 .jap {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
   font-size: clamp(7px, 1.6vw, 11px);
   color: #7f8288;
   letter-spacing: 0px;
@@ -1051,7 +1051,7 @@ body {
 .act-content .act-1-content .convo-text-content {
   margin-top: clamp(30px, 8vw, 40px);
   font-size: clamp(11px, 2.5vw, 18px);
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSansJP", "Noto Sans", sans-serif;
 }
 
 .act-content .act-1-content .convo-text-content .add-margin {

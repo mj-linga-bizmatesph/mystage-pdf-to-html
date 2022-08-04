@@ -55,6 +55,10 @@ body {
 .html-lesson-wrapper .program-rank .level .add-space {
   margin-left: clamp(5px, 2vw, 15px);
 }
+.html-lesson-wrapper .program-rank .phrases-word {
+  line-height: 2.8em;
+  display: block;
+}
 .html-lesson-wrapper .line {
   margin: 0 12px;
 }
@@ -290,12 +294,39 @@ body {
   display: inline-block;
 }
 
-@media only screen and (min-width: 820px) and (max-width: 1180px) {
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
   .html-lesson-wrapper .section {
-    left: calc(-16% + 31px);
+    left: calc(-15% + 56px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 248px);
+  }
+  .html-lesson-wrapper .see-content,
+.html-lesson-wrapper .try-content,
+.html-lesson-wrapper .act-content {
+    left: -20px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1180px) {
+  .html-lesson-wrapper .section {
+    left: calc(-16% + 43.5px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 77px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 231px);
   }
 }
 @media screen and (max-width: 768px) {
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 59.5px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 202px);
+  }
   .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);
@@ -303,14 +334,10 @@ body {
   }
   .html-lesson-wrapper .title {
     top: clamp(45px, 8.4vw, 80px);
-    left: clamp(23px, 3.1vw, 55px);
+    left: clamp(30px, 3.1vw, 55px);
   }
   .html-lesson-wrapper .divider.d1, .html-lesson-wrapper .divider.d2 {
     margin-top: clamp(18px, 3.4vw, 28px);
-  }
-  .html-lesson-wrapper .section {
-    -webkit-margin-start: calc(-22.3% + 60px);
-    left: calc(-22.3% + 37px);
   }
   .html-lesson-wrapper .arrow-part-purple:before {
     left: -3% !important;
@@ -347,14 +374,24 @@ body {
   .html-lesson-wrapper .act-content .table-1 {
     width: 105%;
   }
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 47px);
+  }
 }
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper {
     background-position: top, -1.5px 100% !important;
   }
+  .html-lesson-wrapper .title {
+    top: clamp(45px, 8.4vw, 80px);
+    left: clamp(22px, 3.1vw, 55px);
+    max-width: 70%;
+  }
   .html-lesson-wrapper .section {
-    -webkit-margin-start: calc(-22.3% + 72px);
-    left: calc(-22.3% + 37px);
+    left: calc(-22.3% + 29px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 115px);
   }
   .html-lesson-wrapper .text-header {
     left: -12px !important;
@@ -392,11 +429,13 @@ body {
     padding-right: 5px;
     margin-top: clamp(0.5px, 3vw, 20px) !important;
   }
+  .html-lesson-wrapper footer {
+    bottom: 30px;
+  }
 }
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper .section {
-    -webkit-margin-start: calc(-22.3% + 67px);
-    left: calc(-22.3% + 37px);
+    left: calc(-22.3% + 32px);
   }
   .html-lesson-wrapper .text-header {
     left: -9px !important;
@@ -410,7 +449,33 @@ body {
     top: 0.6vw !important;
   }
 }
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 391px) {
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 25px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 110px);
+  }
+}
+@media screen and (max-width: 376px) {
+  .html-lesson-wrapper .title {
+    top: clamp(45px, 8.4vw, 80px);
+    left: clamp(22px, 3.1vw, 55px);
+  }
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 20px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 106px);
+  }
+}
+@media screen and (max-width: 361px) {
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 18px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 104px);
+  }
   .act-content .table-1 {
     display: none !important;
   }
@@ -451,21 +516,10 @@ body {
     padding-left: 10px !important;
   }
 }
-@media screen and (max-width: 390px) {
-  .html-lesson-wrapper .section {
-    left: calc(-22.3% + 32px);
-  }
-}
-@media screen and (max-width: 375px) {
-  .html-lesson-wrapper .section {
-    -webkit-margin-start: calc(-22.3% + 62px);
-    left: calc(-22.3% + 29px);
-  }
-}
-@media screen and (max-width: 360px) {
-  .html-lesson-wrapper .section {
-    -webkit-margin-start: calc(-22.3% + 62px);
-    left: calc(-22.3% + 25px);
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+  .html-lesson-wrapper .title {
+    top: 70px !important;
+    max-width: 70%;
   }
 }
 .see,

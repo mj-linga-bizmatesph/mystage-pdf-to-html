@@ -418,6 +418,11 @@ body {
   .html-lesson-wrapper .hide {
     display: inline;
   }
+  .html-lesson-wrapper .see,
+.html-lesson-wrapper .try,
+.html-lesson-wrapper .act {
+    margin-top: 5px;
+  }
 }
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper .text-header {
@@ -426,6 +431,13 @@ body {
   .html-lesson-wrapper .text-header .arrow-part:before {
     left: -14.5% !important;
     top: 0.6vw !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .see,
+.try,
+.act {
+    margin-top: 4.7px;
   }
 }
 @media screen and (max-width: 358px) {
@@ -472,13 +484,6 @@ body {
   margin-top: 3.9px;
 }
 
-@media screen and (max-width: 375px) {
-  .see,
-.try,
-.act {
-    margin-top: 4.7px;
-  }
-}
 .html-lesson-wrapper .arrow-part span {
   color: #cc3366;
   font-weight: bold;

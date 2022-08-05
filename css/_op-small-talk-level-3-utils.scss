@@ -414,6 +414,11 @@ body {
     .hide {
       display: inline;
     }
+    .see,
+    .try,
+    .act {
+      margin-top: 5px;
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -429,6 +434,14 @@ body {
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4.7px;
+  }
+}
+
 @media screen and (max-width: 358px) {
   .act-content .table-1 {
     display: none !important;
@@ -474,15 +487,4 @@ body {
 .try,
 .act {
   margin-top: 3.9px;
-}
-
-@media screen and (max-width: 460px) {
-}
-
-@media screen and (max-width: 375px) {
-  .see,
-  .try,
-  .act {
-    margin-top: 4.7px;
-  }
 }

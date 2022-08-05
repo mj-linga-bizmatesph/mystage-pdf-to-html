@@ -643,6 +643,11 @@ body {
   margin-top: 3%;
   margin-bottom: 3%;
 }
+@media only screen and (max-width: 500px) {
+  .html-lesson-wrapper .content-item .tbl-wrapper table tr td .tbl-content .list {
+    margin-left: 2%;
+  }
+}
 .html-lesson-wrapper .content-item .tbl-wrapper table tr td.td-btn {
   text-align: center;
 }

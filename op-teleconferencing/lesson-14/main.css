@@ -199,10 +199,11 @@ body {
 }
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+  font-size: clamp(7px, 1.8vw, 15px);
   background-color: #cc3366;
 }
 .html-lesson-wrapper .program-rank .level {
-  padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   font-size: clamp(7px, 1.8vw, 15px);
   background: #339999;
   max-width: 100%;
@@ -225,14 +226,13 @@ body {
   margin-top: 7.8%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
-  font-weight: bold;
 }
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 7%;
   }
   .html-lesson-wrapper .lesson-number.two {
-    right: 7.4% !important;
+    right: 7.1% !important; /* previously 7.4% */
   }
 }
 .html-lesson-wrapper .lesson-number.two {
@@ -447,6 +447,9 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
 }
+.html-lesson-wrapper .content-item .content-div .content {
+  line-height: 1.8em;
+}
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,6 +495,9 @@ body {
   color: #7f7f7f;
   margin-top: clamp(5px, 2vw, 10px);
   font-size: clamp(12px, 2vw, 15px);
+}
+.html-lesson-wrapper .content-item .content-div.act p {
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .content-item .content-div.review-part-1 {
   padding-right: clamp(15px, 7vw, 55px);
@@ -615,7 +621,4 @@ body {
   .html-lesson-wrapper .content-item .message {
     padding-left: 8%;
   }
-}
-.html-lesson-wrapper .content-div .content {
-  line-height: 1.8em;
 }

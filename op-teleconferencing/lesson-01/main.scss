@@ -66,14 +66,14 @@
                 padding: 1%;
               }
               .to-value {
-                font-size: clamp(8px, 2vw, 13.5px);
+                font-size: clamp(8px, 2vw, 13px);
                 padding: 1%;
                 border-bottom: 10px solid #cc3366;
               }
               .tbl-content {
                 background: #fff;
                 padding: 2%;
-                line-height: 1.8em;
+                line-height: normal;
                 p {
                   margin-top: 3%;
                   margin-bottom: 3%;

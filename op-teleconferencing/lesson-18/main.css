@@ -324,6 +324,11 @@ body {
     margin-left: 1%;
   }
 }
+@media only screen and (max-width: 820px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 2.5%;
+  }
+}
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
   margin-bottom: 2%;

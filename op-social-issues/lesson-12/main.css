@@ -42,7 +42,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 10%;
-  bottom: -20px;
+  bottom: -34px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -61,28 +61,28 @@ body {
 
 @media only screen and (max-width: 769px) {
   .html-lesson-wrapper footer .footer-text {
-    max-width: 43%;
+    max-width: 33%;
     bottom: -10px !important;
   }
 }
 
 @media only screen and (max-width: 426px) {
   .html-lesson-wrapper footer .footer-text {
-    max-width: 43%;
+    max-width: 33%;
     bottom: -15px !important;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .html-lesson-wrapper footer .footer-text {
-    max-width: 43%;
+    max-width: 33%;
     bottom: -17px !important;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .html-lesson-wrapper footer .footer-text {
-    max-width: 43%;
+    max-width: 33%;
     bottom: -19px !important;
   }
 }
@@ -278,6 +278,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+  line-height: 1.6;
   width: 11%;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
@@ -409,11 +410,11 @@ body {
 
 @media only screen and (max-width: 500px) {
   .html-lesson-wrapper .content-item .content-div {
-    padding-left: 11%;
+    padding-left: 3.2em !important;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   .html-lesson-wrapper .content-item .content-div {
     padding-left: 2.5em;
   }
@@ -535,7 +536,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content li {
-    margin-left: 5%;
+    margin-left: 6%;
   }
 }
 

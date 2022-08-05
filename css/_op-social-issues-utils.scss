@@ -59,18 +59,22 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
-      right: 2%;
+      max-width: 43%;
+      right: 6.6%;
       @media only screen and (max-width: 769px) {
+        max-width: 43%;
         bottom: -10px !important;
       }
       @media only screen and (max-width: 426px) {
+        max-width: 43%;
         bottom: -15px !important;
       }
       @media only screen and (max-width: 376px) {
+        max-width: 43%;
         bottom: -17px !important;
       }
       @media only screen and (max-width: 320px) {
+        max-width: 43%;
         bottom: -19px !important;
       }
     }
@@ -222,8 +226,8 @@ body {
         padding-left: 1em;
         padding-bottom: 1rem;
         margin-right: 1em;
-        @media only screen and (max-width: 900px) {
-          margin-left: 7%;
+        @media only screen and (max-width: 500px) {
+          margin-left: 3%;
         }
         .pink {
           color: #cc3366;
@@ -303,8 +307,11 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       padding-left: 4em;
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 500px) {
         padding-left: 11%;
+      }
+      @media only screen and (max-width: 500px) {
+        padding-left: 2.5em;
       }
       .header-text {
         margin: 0;
@@ -381,7 +388,7 @@ body {
           font-size: clamp(12px, 2vw, 15px) !important;
           margin-top: 0%;
           li {
-            margin-left: 2.2%;
+            margin-left: 3%;
             @media screen and (max-width: 900px) {
               margin-left: 4%;
             }

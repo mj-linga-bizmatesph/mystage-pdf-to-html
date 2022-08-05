@@ -1,0 +1,25 @@
+@import '../../css/op-hotel-utils';
+
+.html-lesson-wrapper {
+  .title {
+    max-width: 70%;
+    top: 71px !important;
+  }
+
+  .lesson-number {
+    left: 91.6% !important;
+  }
+  @media screen and (max-width: 500px) {
+    .lesson-number {
+      left: 91.3% !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .inline-block {
+      display: block !important;
+    }
+    .hide {
+      display: inline !important;
+    }
+  }
+}

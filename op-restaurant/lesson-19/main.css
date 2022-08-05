@@ -178,7 +178,7 @@ body {
   .html-lesson-wrapper .see-content .convo,
   .html-lesson-wrapper .act-content .convo,
   .html-lesson-wrapper .try-content .convo {
-    margin-left: 3.8em;
+    margin-left: 3.5em;
   }
 }
 
@@ -584,7 +584,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper ul {
-    margin-left: 4.5%;
+    margin-left: 6.5%;
   }
 }
 
@@ -594,4 +594,13 @@ body {
   margin-top: 7.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
+}
+
+.html-lesson-wrapper .title {
+  width: 21em;
+  position: absolute;
+  top: 80px;
+  left: 48px;
+  font-size: clamp(18px, 4vw, 27px);
+  text-transform: uppercase;
 }

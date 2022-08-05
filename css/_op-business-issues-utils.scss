@@ -321,6 +321,12 @@ body {
     }
   }
 }
+@media screen and (max-width: 821px) {
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-top: clamp(0.5px, 2vw, 20px) !important;
+    margin-left: clamp(102px, 14.4%, 140.5px);
+  }
+}
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
     background-position: top, -11px 100% !important;
@@ -353,7 +359,7 @@ body {
     }
     .words-phrase-content {
       .pointers {
-        margin-left: clamp(66px, 14%, 100.5px);
+        margin-left: clamp(76px, 14.8%, 123.5px);
       }
     }
   }
@@ -410,10 +416,10 @@ body {
       max-width: 70%;
     }
     .section {
-      left: calc(-22.3% + 29px);
+      left: calc(-22.3% + 36px);
     }
     .section.words {
-      left: calc(-22.3% + 115px);
+      left: calc(-22.3% + 125px);
     }
     .text-header {
       left: -12px !important;
@@ -426,8 +432,14 @@ body {
     .see-content .dialogue {
       margin-left: 10px;
     }
-    .sub-text {
-      padding-top: 2.5px;
+    .act-content {
+      .article {
+        margin-left: 10px;
+      }
+      .sub-text {
+        padding-top: 2.5px;
+        margin-left: 10px;
+      }
     }
     .inline-block {
       display: block !important;
@@ -451,6 +463,7 @@ body {
     .words-phrase-content .pointers {
       padding-right: 5px;
       margin-top: clamp(0.5px, 3vw, 20px) !important;
+      margin-left: 75px !important;
     }
     footer {
       bottom: 30px;
@@ -464,6 +477,9 @@ body {
     }
     .section.words {
       left: calc(-22.3% + 118px);
+    }
+    .words-phrase-content .pointers {
+      margin-top: clamp(2.5px, 2vw, 20px) !important;
     }
   }
 }
@@ -486,6 +502,16 @@ body {
           top: 0.6vw !important;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 394px) {
+  .html-lesson-wrapper {
+    .section.words {
+      left: calc(-22.3% + 111px);
+    }
+    .section {
+      left: calc(-22.3% + 27px);
     }
   }
 }

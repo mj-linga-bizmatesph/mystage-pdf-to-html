@@ -177,6 +177,9 @@ body {
         padding-top: 1%;
         padding-bottom: 5%;
       }
+      @media screen and (max-width: 341px) {
+        width: 200px;
+      }
     }
     .biz-tips {
       background-color: #f0d4d4;
@@ -189,16 +192,22 @@ body {
         margin-bottom: 0 !important;
       }
       .biz-tip-label {
-        width: 11%;
+        width: 10.5%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 6vw, 60px);
-        // @media only screen and (max-device-width: 460px) {
-        //   width: 12%;
-        // }
+        @media only screen and (max-device-width: 760px) {
+          width: 10.5%;
+        }
+        @media only screen and (max-device-width: 460px) {
+          width: 15%;
+        }
+        @media only screen and (max-device-width: 320px) {
+          width: 15%;
+        }
       }
       .biz-tip-content {
         font-family: $trebuchet;
@@ -209,7 +218,28 @@ body {
         padding-bottom: 1rem;
         margin-right: 1em;
         line-height: 1.2;
-
+        margin-left: 2.2%;
+        @media screen and (max-width: 959px) {
+          margin-left: 0.2%;
+        }
+        @media screen and (max-width: 701px) {
+          margin-left: 1.2%;
+        }
+        @media screen and (max-width: 501px) {
+          margin-left: 2.3%;
+        }
+        @media screen and (max-width: 461px) {
+          margin-left: -0.5%;
+        }
+        @media screen and (max-width: 401px) {
+          margin-left: -0.3%;
+        }
+        @media screen and (max-width: 361px) {
+          margin-left: 0.7%;
+        }
+        @media screen and (max-width: 321px) {
+          margin-left: 1.7%;
+        }
         .content-header {
           margin-bottom: 1%;
         }
@@ -285,7 +315,7 @@ body {
       width: 89%;
       margin-bottom: 15%;
       box-sizing: content-box;
-      padding-left: clamp(10px, 3vw, 25px);
+      padding-left: clamp(19px, 3.5vw, 25px);
       font-size: clamp(12px, 2vw, 15px);
       margin-top: -0.3%;
       .header-text {
@@ -428,7 +458,7 @@ body {
       .see-content-ul {
         list-style: none;
         width: 100%;
-        margin-left: 5%;
+        margin-left: 6.5%;
 
         @media screen and (max-width: 900px) {
           margin-left: 7%;
@@ -486,11 +516,11 @@ body {
       .try-content-ul {
         list-style: none;
         margin-top: -1%;
-        margin-left: 5%;
+        margin-left: 7%;
 
-        @media screen and (max-width: 900px) {
-          margin-left: 7%;
-        }
+        // @media screen and (max-width: 900px) {
+        //   margin-left: 7%;
+        // }
         .content-text {
           list-style: decimal;
           margin-left: 4.5%;

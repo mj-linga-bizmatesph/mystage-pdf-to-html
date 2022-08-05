@@ -222,6 +222,12 @@ body {
   }
 }
 
+@media screen and (max-width: 341px) {
+  .html-lesson-wrapper .header-content .title {
+    width: 200px;
+  }
+}
+
 .html-lesson-wrapper .header-content .biz-tips {
   background-color: #f0d4d4;
   min-height: 140px;
@@ -242,13 +248,31 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-  width: 11%;
+  width: 10.5%;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
   padding-left: clamp(10px, 6vw, 60px);
+}
+
+@media only screen and (max-device-width: 760px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 10.5%;
+  }
+}
+
+@media only screen and (max-device-width: 460px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 15%;
+  }
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
@@ -260,6 +284,49 @@ body {
   padding-bottom: 1rem;
   margin-right: 1em;
   line-height: 1.2;
+  margin-left: 2.2%;
+}
+
+@media screen and (max-width: 959px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 0.2%;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1.2%;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 2.3%;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: -0.5%;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: -0.3%;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 0.7%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1.7%;
+  }
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
@@ -361,7 +428,7 @@ body {
   margin-bottom: 15%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(10px, 3vw, 25px);
+  padding-left: clamp(19px, 3.5vw, 25px);
   font-size: clamp(12px, 2vw, 15px);
   margin-top: -0.3%;
 }
@@ -536,7 +603,7 @@ body {
 .html-lesson-wrapper .content-item .see-ul .see-content-ul {
   list-style: none;
   width: 100%;
-  margin-left: 5%;
+  margin-left: 6.5%;
 }
 
 @media screen and (max-width: 900px) {
@@ -608,13 +675,7 @@ body {
 .html-lesson-wrapper .content-item .try-ul .try-content-ul {
   list-style: none;
   margin-top: -1%;
-  margin-left: 5%;
-}
-
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper .content-item .try-ul .try-content-ul {
-    margin-left: 7%;
-  }
+  margin-left: 7%;
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {

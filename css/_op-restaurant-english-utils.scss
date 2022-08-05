@@ -132,7 +132,7 @@ body {
       line-height: 1.8;
     }
     .convo {
-      margin-left: 4.7em;
+      margin-left: 4.2em;
       margin-top: -0.5%;
       @media screen and (max-width: 500px) {
         margin-left: 3.8em;
@@ -319,9 +319,12 @@ body {
     .footer-text {
       text-align: right;
       position: absolute;
-      bottom: 0;
-      max-width: 40%;
-      right: 2%;
+      bottom: -9px;
+      max-width: 43%;
+      right: 6.2%;
+      @media screen and (max-width: 900px){
+        bottom: 0px;
+      }
     }
   }
   .inline-block {
@@ -341,10 +344,6 @@ body {
     .try-content,
     .see-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      // padding-left: clamp(11px, 2.4vw, 18px);
-      // ul {
-      //   margin-left: clamp(15px, 2.4vw, 18px);
-      // }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
       }

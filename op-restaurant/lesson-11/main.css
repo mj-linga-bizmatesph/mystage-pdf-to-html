@@ -170,7 +170,7 @@ body {
 .html-lesson-wrapper .see-content .convo,
 .html-lesson-wrapper .act-content .convo,
 .html-lesson-wrapper .try-content .convo {
-  margin-left: 4.7em;
+  margin-left: 4.2em;
   margin-top: -0.5%;
 }
 
@@ -425,9 +425,15 @@ body {
 .html-lesson-wrapper footer .footer-text {
   text-align: right;
   position: absolute;
-  bottom: 0;
-  max-width: 40%;
-  right: 2%;
+  bottom: -9px;
+  max-width: 43%;
+  right: 6.2%;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: 0px;
+  }
 }
 
 .html-lesson-wrapper .inline-block {
@@ -565,4 +571,27 @@ body {
   .html-lesson-wrapper .arrow-part {
     padding-left: 10px !important;
   }
+}
+
+.html-lesson-wrapper ul {
+  margin-left: 3.5%;
+  padding: 0%;
+  line-height: 1.8;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper ul {
+    margin-left: 6.5%;
+  }
+}
+
+.html-lesson-wrapper .lesson-number {
+  position: absolute;
+  left: 91.5%;
+  margin-top: 7.4%;
+  font-size: clamp(7px, 1.8vw, 13px);
+  color: #ffffff;
 }

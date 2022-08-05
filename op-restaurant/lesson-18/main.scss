@@ -1,1 +1,9 @@
 @import '../../css/op-restaurant-english-utils';
+
+.html-lesson-wrapper .lesson-number {
+    position: absolute;
+    left: 91.5%;
+    margin-top: 7.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+}

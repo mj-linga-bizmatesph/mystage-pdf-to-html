@@ -292,18 +292,16 @@ body {
 }
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
   .html-lesson-wrapper {
-    .section {
-      left: calc(-15% + 56px);
-    }
-
     .section.words {
       left: calc(-22.3% + 248px);
     }
   }
-  .html-lesson-wrapper .see-content,
-  .html-lesson-wrapper .try-content,
-  .html-lesson-wrapper .act-content {
-    left: -20px;
+  .html-lesson-wrapper {
+    .see,
+    .try,
+    .act {
+      left: -78px;
+    }
   }
 }
 @media only screen and (min-width: 901px) and (max-width: 1180px) {
@@ -323,6 +321,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
+    background-position: top, -11px 100% !important;
     .section {
       left: calc(-22.3% + 59.5px);
     }
@@ -359,7 +358,6 @@ body {
 }
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
-    background-position: top, -11px 100% !important;
     .type {
       padding: 2px 8px 2px 7px !important;
     }
@@ -389,8 +387,15 @@ body {
         width: 105%;
       }
     }
+    .title {
+      left: clamp(21px, 3.1vw, 55px);
+    }
     .section {
-      left: calc(-22.3% + 47px);
+      left: calc(-22.3% + 39px);
+    }
+    .section.words {
+      margin-top: clamp(8px, 3vw, 1px) !important;
+      left: calc(-22.3% + 127px);
     }
   }
 }
@@ -447,6 +452,16 @@ body {
     }
     footer {
       bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    .section {
+      left: calc(-22.3% + 33px);
+    }
+    .section.words {
+      left: calc(-22.3% + 118px);
     }
   }
 }

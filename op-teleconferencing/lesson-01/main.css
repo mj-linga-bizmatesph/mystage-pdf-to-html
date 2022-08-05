@@ -578,9 +578,9 @@ body {
   border: 5px solid rgb(183, 177, 177);
 }
 .html-lesson-wrapper .content-item .tbl-wrapper ol {
-  margin-left: 4%;
+  padding-left: 4%;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 390px) {
   .html-lesson-wrapper .content-item .tbl-wrapper ol {
     margin-left: 6%;
   }

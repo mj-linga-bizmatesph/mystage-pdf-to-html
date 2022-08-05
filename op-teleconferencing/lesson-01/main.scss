@@ -15,8 +15,9 @@
         border-width: 5px;
         border: 5px solid rgb(183, 177, 177);
         ol {
-          margin-left: 4%;
-          @media only screen and (max-width: 480px) {
+          // margin-left: 4%;
+          padding-left: 4%;
+          @media only screen and (max-width: 390px) {
             margin-left: 6%;            
           }
         }

@@ -569,6 +569,11 @@ body {
     padding-bottom: 0;
   }
 }
+@media only screen and (max-width: 820px) {
+  .html-lesson-wrapper .header-content .biz-tip-content {
+    margin-left: 2.5%;
+  }
+}
 .html-lesson-wrapper .try .content-table {
   font-size: clamp(12px, 3vw, 16px);
   width: 100%;

@@ -295,16 +295,17 @@ body {
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-  .html-lesson-wrapper .section {
-    left: calc(-15% + 56px);
-  }
   .html-lesson-wrapper .section.words {
     left: calc(-22.3% + 248px);
   }
-  .html-lesson-wrapper .see-content,
-.html-lesson-wrapper .try-content,
-.html-lesson-wrapper .act-content {
-    left: -20px;
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-top: clamp(0.5px, 2vw, 20px) !important;
+    margin-left: clamp(90px, 14%, 113.5px);
+  }
+  .html-lesson-wrapper .see,
+.html-lesson-wrapper .try,
+.html-lesson-wrapper .act {
+    left: -78px;
   }
 }
 @media only screen and (min-width: 901px) and (max-width: 1180px) {

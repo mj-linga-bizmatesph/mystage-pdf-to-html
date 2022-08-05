@@ -295,8 +295,10 @@ body {
     .section.words {
       left: calc(-22.3% + 248px);
     }
-  }
-  .html-lesson-wrapper {
+    .words-phrase-content .pointers {
+      margin-top: clamp(0.5px, 2vw, 20px) !important;
+      margin-left: clamp(90px, 14%, 113.5px);
+    }
     .see,
     .try,
     .act {

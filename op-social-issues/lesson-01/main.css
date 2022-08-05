@@ -288,6 +288,7 @@ body {
   width: 92%;
   font-size: clamp(12px, 2vw, 15px) !important;
   margin-top: clamp(10px, 3vw, 20px);
+  padding-left: 1em;
   padding-bottom: 1rem;
   margin-right: 1em;
 }
@@ -299,7 +300,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .pink {
-  color: #CC3366;
+  color: #cc3366;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
@@ -331,7 +332,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::marker {
-  color: #CC3366;
+  color: #cc3366;
   font-size: clamp(11px, 2vw, 13px);
 }
 
@@ -399,7 +400,7 @@ body {
   margin-bottom: 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(10px, 3vw, 25px);
+  padding-left: 4em;
 }
 
 @media only screen and (max-width: 900px) {
@@ -419,7 +420,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.see .pink {
-  color: #CC3366;
+  color: #cc3366;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .introduction {
@@ -518,7 +519,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content li {
-    margin-left: 3%;
+    margin-left: 4%;
   }
 }
 

@@ -219,14 +219,14 @@ body {
         width: 92%;
         font-size: clamp(12px, 2vw, 15px) !important;
         margin-top: clamp(10px, 3vw, 20px);
-        // padding-right: clamp(15px, 14vw, 175px);
+        padding-left: 1em;
         padding-bottom: 1rem;
         margin-right: 1em;
-        @media only screen and (max-width: 900px){
+        @media only screen and (max-width: 900px) {
           margin-left: 7%;
         }
-        .pink{
-            color: #CC3366;
+        .pink {
+          color: #cc3366;
         }
         p {
           margin: 0;
@@ -251,7 +251,7 @@ body {
             height: 0px;
           }
           li::marker {
-            color: #CC3366;
+            color: #cc3366;
             font-size: clamp(11px, 2vw, 13px);
           }
         }
@@ -302,8 +302,8 @@ body {
       width: 89%;
       margin-bottom: 15px;
       box-sizing: content-box;
-      padding-left: clamp(10px, 3vw, 25px);
-      @media only screen and (max-width: 900px){
+      padding-left: 4em;
+      @media only screen and (max-width: 900px) {
         padding-left: 11%;
       }
       .header-text {
@@ -316,14 +316,14 @@ body {
         margin-right: 1em;
       }
       &.see {
-        .pink{
-          color: #CC3366;
-      }
-      .introduction{
-        line-height: 1.8;
-        font-family: $trebuchet;
-        font-size: clamp(12px, 2vw, 15px) !important;
-      }
+        .pink {
+          color: #cc3366;
+        }
+        .introduction {
+          line-height: 1.8;
+          font-family: $trebuchet;
+          font-size: clamp(12px, 2vw, 15px) !important;
+        }
         .dialogue {
           margin-bottom: 1em;
           margin-top: 1em;
@@ -382,17 +382,17 @@ body {
           margin-top: 0%;
           li {
             margin-left: 2.2%;
-            @media screen and (max-width: 900px){
-              margin-left: 3%;
+            @media screen and (max-width: 900px) {
+              margin-left: 4%;
             }
-            @media screen and (max-width: 500px){
+            @media screen and (max-width: 500px) {
               margin-left: 5%;
             }
           }
         }
       }
-      &.act{
-        .introduction{
+      &.act {
+        .introduction {
           line-height: 1.8;
           font-family: $trebuchet;
           font-size: clamp(12px, 2vw, 15px) !important;

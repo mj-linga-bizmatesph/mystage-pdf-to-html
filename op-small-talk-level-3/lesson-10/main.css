@@ -165,9 +165,8 @@ body {
 }
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(14px, 2.8vw, 18px) !important;
-  line-height: normal;
   margin-left: clamp(50px, 14%, 92.5px);
-  line-height: normal;
+  line-height: normal !important;
 }
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
   position: relative;

@@ -134,7 +134,6 @@ body {
     line-height: 1.8;
   }
   td {
-    // height: clamp(10px, 2.5vw, 30px);
     vertical-align: top;
   }
   .speaker-text {
@@ -161,9 +160,8 @@ body {
     .pointers {
       // margin-top: clamp(14px, 2.8vw, 18px) !important;
       margin-top: clamp(14px, 2.8vw, 18px) !important;
-      line-height: normal;
       margin-left: clamp(50px, 14%, 92.5px);
-      line-height: normal;
+      line-height: normal !important;
       // margin-left: $left-pixel;
       .text-header {
         position: relative;
@@ -479,11 +477,6 @@ body {
 }
 
 @media screen and (max-width: 460px) {
-  .see,
-  .try,
-  .act {
-    margin-top: 5px;
-  }
 }
 
 @media screen and (max-width: 375px) {

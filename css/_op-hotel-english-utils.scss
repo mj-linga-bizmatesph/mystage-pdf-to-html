@@ -165,6 +165,7 @@ body {
     .pointers {
       margin-top: clamp(18px, 2.9vw, 22px) !important;
       margin-left: $left-pixel;
+      line-height: normal !important;
       .text-header {
         position: relative;
         left: -17px;

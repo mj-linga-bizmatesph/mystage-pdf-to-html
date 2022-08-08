@@ -1,0 +1,30 @@
+@import '../../css/op-new-hires-2-utils';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  ol {
+    font-size: clamp(12px, 2vw, 15px);
+    line-height: 1.8;
+  }
+  .spacer-2 {
+    margin-bottom: 24%;
+  }
+}
+
+.html-lesson-wrapper ul, .html-lesson-wrapper li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.html-lesson-wrapper .content-item .content-div {
+  width: 89%;
+  margin-bottom: 15px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 0%;
+  margin-bottom: 1em;
+}

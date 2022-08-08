@@ -1,10 +1,10 @@
 $text-font: 'Trebuchet MS';
-$noto-sans: 'Noto Sans', sans-serif;
+$noto-sans: "NotoSansJP", "Noto Sans",sans-serif;
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
 $primary-dark: #083051;
 $primary-light: #cce0ec;
-$jap-letter-spacing: -1px;
+$jap-letter-spacing: 1px;
 $subtext-color: #7f8288;
 $side-margin: clamp(18px, 5vw, 32px);
 $fs-16: clamp(11px, 2.7vw, 16px);
@@ -16,6 +16,7 @@ body {
 }
 
 .html-lesson-wrapper {
+  line-height: 1.5;
   font-family: $text-font;
   width: 100%;
   min-width: 360px;
@@ -80,36 +81,19 @@ body {
     color: #ffffff;
     font-size: 0px;
     margin-top: clamp(1px, 1vw, 3px);
+    width: 69%;
     .type {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 17px);
       background-color: $primary-blue;
       font-size: clamp(7px, 1.8vw, 12px);
     }
     .level {
-      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px)
-        clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
+      padding: clamp(1px, 1vw, 4px) clamp(20px, 8.4vw, 59px) clamp(1px, 1vw, 4px) clamp(10px, 3vw, 33px);
       font-size: clamp(7px, 1.8vw, 12px);
-      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -webkit-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -o-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
-      background: -moz-linear-gradient(
-          125deg,
-          $primary-blue 6%,
-          rgba(0, 0, 0, 0) 0%
-        ),
-        linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -webkit-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -o-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
+      background: -moz-linear-gradient(125deg, $primary-blue 6%, rgba(0, 0, 0, 0) 0%), linear-gradient(125deg, $rank-green 90%, rgba(0, 0, 0, 0) 0%);
       margin-left: -15px;
       width: 100%;
     }
@@ -137,8 +121,8 @@ body {
       margin-bottom: 4px;
     }
     .sub-title {
-      font-size: clamp(10px, 2.3vw, 15px);
-      letter-spacing: $jap-letter-spacing;
+      font-size: clamp(10px, 2.3vw, 12px);
+
     }
   }
   .arrow {
@@ -156,13 +140,13 @@ body {
     padding: clamp(0px, 0.01vw, 3px) 0px;
     left: 28%;
     .title {
-      font-size: clamp(9px, 2.9vw, 18px);
+      font-size: clamp(12px, 3.5vw, 18px);
       color: #141821;
     }
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: $jap-letter-spacing;
+      letter-spacing: 0px;
     }
   }
 
@@ -179,6 +163,7 @@ body {
       margin-top: clamp(20px, 5vw, 33px);
       & .legend {
         margin-top: clamp(25px, 5vw, 38px);
+        font-family: $noto-sans !important;
       }
     }
     .arrow.see {
@@ -194,6 +179,7 @@ body {
     }
   }
   .try-content {
+    font-family: $noto-sans;
     margin-left: $side-margin;
     margin-right: $side-margin;
     &.try-1 {
@@ -249,7 +235,7 @@ body {
         font-family: $noto-sans;
         font-size: clamp(6.5px, 1.7vw, 11px);
         color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        letter-spacing: 0px;
       }
     }
     .bubble-2 {
@@ -265,7 +251,7 @@ body {
         font-family: $noto-sans;
         font-size: clamp(6.5px, 1.7vw, 11px);
         color: $subtext-color;
-        letter-spacing: $jap-letter-spacing;
+        letter-spacing: 0px;
       }
     }
   }
@@ -289,6 +275,7 @@ body {
         left: 26%;
         position: absolute;
         .wrap-for-flex {
+          font-family: $noto-sans !important;
           display: flex;
           .try-to {
             margin-right: 10px;
@@ -315,7 +302,7 @@ body {
         .jap {
           font-size: clamp(9px, 2vw, 13px);
           color: $subtext-color;
-          letter-spacing: -1.8px;
+          letter-spacing: 1px;
         }
       }
     }
@@ -467,10 +454,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(47%, 29.5vw, 50%);
@@ -499,10 +487,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(50%, 32vw, 54.5%);
@@ -531,13 +520,14 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
-          top: clamp(41%, 26.5vw, 45.5%);
+          top: clamp(41%, 26.5vw, 43.5%);
           left: 36%;
         }
       }
@@ -563,10 +553,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(43%, 27vw, 46%);
@@ -595,10 +586,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(43%, 27vw, 45.5%);
@@ -627,10 +619,11 @@ body {
             font-family: $noto-sans;
             font-size: clamp(6.2px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
         }
         .bubble-2 {
+          font-weight: bold;
           font-size: clamp(8.4px, 2.3vw, 14px);
           position: absolute;
           top: clamp(45%, 28.5vw, 48%);
@@ -692,6 +685,7 @@ body {
       .margin-both-sides {
         margin-top: 30px;
         .box-content {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -716,6 +710,7 @@ body {
           }
         }
         .box-content-2 {
+          font-family: $noto-sans;
           font-size: clamp(11px, 2.8vw, 18px);
           position: absolute;
           left: 3%;
@@ -767,7 +762,7 @@ body {
             font-family: $noto-sans;
             font-size: clamp(7px, 1.6vw, 11px);
             color: $subtext-color;
-            letter-spacing: $jap-letter-spacing;
+            letter-spacing: 0px;
           }
           .text-bot,
           .text-mid {
@@ -784,26 +779,26 @@ body {
         }
         .akiko-lines {
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
         }
         .steve-lines {
           margin-top: 25px;
           .line-under {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
           }
           .div-jap {
-            margin-left: clamp(37px, 8.5vw, 60px);
+            margin-left: clamp(40px, 9vw, 64px);
             font-size: clamp(9px, 1.5vw, 13px);
             color: $subtext-color;
-            letter-spacing: -2px;
+            letter-spacing: 0px;
             margin-top: 5px;
           }
         }

@@ -1,4 +1,4 @@
-@import '../../css/level0-utils';
+@import '../../css/level0-E-utils';
 
 .html-lesson-wrapper {
   .part-content {
@@ -11,8 +11,8 @@
 
       .blue-line {
         margin-top: 5%;
+        border-bottom: none;
       }
-
       .table {
         font-family: $noto-sans;
 
@@ -87,6 +87,10 @@
             .choice-phrase {
               @extend .b;
             }
+
+            div {
+              width: clamp(80px, 40vw, 250px);
+            }
           }
         }
       }
@@ -107,7 +111,7 @@
             left: 14%;
           }
           &.mandy-2 {
-            margin-top: 42%;
+            margin-top: 40%;
             left: 14%;
 
             .eng:not(:last-child) {
@@ -134,7 +138,7 @@
           }
 
           &.brenda-2 {
-            margin-top: 34.5%;
+            margin-top: 31.5%;
             left: 13%;
           }
           .eng:not(:last-child) {
@@ -151,7 +155,7 @@
           }
 
           &.akiko-2 {
-            margin-top: 33.5%;
+            margin-top: 31.5%;
             left: 14%;
           }
           .eng:not(:last-child) {

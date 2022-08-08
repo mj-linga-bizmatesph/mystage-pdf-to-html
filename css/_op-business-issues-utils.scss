@@ -196,6 +196,7 @@ body {
       margin-top: clamp(0.5px, 2vw, 20px) !important;
       margin-left: clamp(90px, 14%, 126.5px);
       line-height: normal !important;
+      max-width: 80% !important;
       .text-header {
         line-height: 1.6;
         position: relative;

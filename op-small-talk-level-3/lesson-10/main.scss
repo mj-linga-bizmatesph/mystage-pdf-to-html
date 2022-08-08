@@ -1,0 +1,25 @@
+@import '../../css/op-small-talk-level-3-utils';
+
+@media screen and (max-width: 460px) {
+  .html-lesson-wrapper {
+    header {
+      .lesson-number {
+        left: clamp(91.5%, 90vw, 50%);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -10px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    header {
+      .lesson-number {
+        left: clamp(91.5%, 90vw, 50%);
+      }
+    }
+  }
+}

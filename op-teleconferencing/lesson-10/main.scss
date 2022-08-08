@@ -13,7 +13,6 @@
       padding-bottom: 0;
     }
   }
-
   .review-part-1 {
     padding-right: clamp(15px, 7vw, 55px);
     .review-box {
@@ -25,20 +24,17 @@
     font-size: clamp(12px, 2vw, 15px);
     margin-bottom: 2px;
       padding-left: 20px;
-      
       .content-div {
         .header-text{
           margin-bottom: 2px;
           padding-left: 20px;
         }
-      
         .lessons {
           li {
             padding-left: 0px;
             margin-bottom: 50px;
           }
         }
-      
         .bullets {
           li {
             padding-left: 0px;
@@ -47,7 +43,6 @@
           }
         }
       }
-
     .header-text-content {
       font-size: (11px, 1.8vw, 16px);
       line-height: 1.8;
@@ -62,7 +57,6 @@
     margin-bottom: 2px;
     padding-left: 20px;
   }
-  
   .lessons {
     li {
       padding-left: 0px;
@@ -70,7 +64,6 @@
       list-style: none;
     }
   }
-  
   .bullets {
     li {
       padding-left: 0px;

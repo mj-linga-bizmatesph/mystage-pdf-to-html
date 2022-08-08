@@ -309,6 +309,7 @@ body {
         padding-right: clamp(10px, 2vw, 20px);
         padding-bottom: 1rem;
         margin-left: -1.5%;
+        line-height: normal;
         @media only screen and (max-width: 480px) {
           margin-left: 1%;
         }

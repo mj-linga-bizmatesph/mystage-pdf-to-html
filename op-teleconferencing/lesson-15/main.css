@@ -313,11 +313,7 @@ body {
   padding-right: clamp(10px, 2vw, 20px);
   padding-bottom: 1rem;
   margin-left: -1.5%;
-}
-@media only screen and (max-width: 2560px) {
-  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
-    margin-left: -0.5%;
-  }
+  line-height: normal;
 }
 @media only screen and (max-width: 480px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {

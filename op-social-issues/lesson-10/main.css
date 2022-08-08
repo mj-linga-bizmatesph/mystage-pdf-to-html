@@ -55,7 +55,7 @@ body {
   text-align: right;
   position: absolute;
   bottom: 0;
-  max-width: 43%;
+  max-width: 39%;
   right: 6.6%;
 }
 
@@ -289,6 +289,7 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+  line-height: normal;
   font-family: "Trebuchet MS";
   width: 92%;
   font-size: clamp(12px, 2vw, 15px) !important;

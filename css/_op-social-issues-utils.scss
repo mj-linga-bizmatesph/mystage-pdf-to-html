@@ -59,7 +59,7 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 43%;
+      max-width: 39%;
       right: 6.6%;
       @media only screen and (max-width: 769px) {
         max-width: 33%;
@@ -220,6 +220,7 @@ body {
         padding-left: clamp(10px, 6vw, 60px);
       }
       .biz-tip-content {
+        line-height: normal;
         font-family: $trebuchet;
         width: 92%;
         font-size: clamp(12px, 2vw, 15px) !important;

@@ -1,6 +1,12 @@
-@import '../../css/level0-utils';
+@import '../../css/level0-E-utils';
 
 .html-lesson-wrapper {
+  .title-section {
+    .title {
+      font-size: clamp(15px, 4.3vw, 26px);
+    }
+  }
+
   .ls {
     letter-spacing: -2.5px;
   }
@@ -189,22 +195,69 @@
           color: $subtext-color;
           margin-top: 1.5% !important;
         }
-
         .table-wrapper {
+
+          
+          tr{
+            display: inline-table;
+            grid-template-columns: 50% 50%;
+          }
           width: 100%;
 
           p {
-            margin: 0;
+            margin-block-start: 0em !important;
+            margin-block-end: 0em !important;
+            width: 88%;
+           
           }
+          table {
+            border-collapse: separate;
+            text-indent: initial;
+            border-spacing: 0px !important;
+        }
           .table-number {
             @extend .b, .primary-blue;
             font-size: clamp(10px, 3vw, 16px);
-            padding-top: 6px;
-            padding-left: clamp(5px, 3vw, 10px);
+            padding-top: clamp(1.4px, 0.1vw, 1px);
+           
           }
           .table-img {
             text-align: center;
             width: 49.5%;
+            .legit{
+              position: relative;
+              margin-left: -10%;
+            }
+            img {
+              max-width: clamp(1%, 42vw, 100%);
+              margin-top: -16%;
+            }
+
+            &.small {
+              img {
+                max-width: clamp(48%, 20vw, 100%);
+              }
+            }
+
+            &.medium {
+              img {
+                max-width: clamp(1%, 52vw, 100%);
+              }
+            }
+
+            &.large {
+              img {
+                max-width: clamp(1%, 65vw, 100%);
+              }
+            }
+          }
+          .table-img1 {
+            text-align: center;
+            width: 49.5%;
+            .move{
+              position: relative;
+              margin-left: -12%;
+            }
             img {
               max-width: clamp(1%, 42vw, 100%);
               margin-top: -16%;
@@ -234,7 +287,15 @@
           }
         }
       }
+      .p1 {
+        font-size: clamp(10px, 3vw, 16px);
+        padding-top: 1%;
+        padding-left: 3%;
 
+        @media screen and (max-width: 369px) {
+          padding-top: 1.5%;
+        }
+      }
       .table {
         font-family: $noto-sans;
         border-collapse: collapse;
@@ -270,8 +331,14 @@
   .act-1 {
     .blue-line {
       margin-top: 5%;
+      border-bottom: none;
     }
-
+    .table {
+      .eng {
+        font-size: clamp(10px, 3vw, 16px);
+        padding-top: 0.8%;
+      }
+    }
     .office-act-1 {
       margin-top: 6%;
 
@@ -281,7 +348,7 @@
         }
 
         &.steve {
-          margin-top: 13%;
+          margin-top: 11%;
           left: 29.1%;
 
           .jap:not(:last-child) {
@@ -291,4 +358,25 @@
       }
     }
   }
+}
+.html-lesson-wrapper .see-content .phrase-alts .choice-jap {
+  font-size: clamp(6.7px, 1.8vw, 13px);
+  letter-spacing: 0px;
+  color: #7f8288;
+}
+.html-lesson-wrapper .table .jap {
+  font-size: clamp(9px, 2vw, 13px);
+  margin-bottom: 3.8%;
+}
+.html-lesson-wrapper .instructions .sub-title {
+  font-size: clamp(7px, 2vw, 13px);
+  color: #7f8288;
+}
+
+.html-lesson-wrapper .see-content .phrases-section .jap {
+  font-size: clamp(7px, 2vw, 13px);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 100%;
 }

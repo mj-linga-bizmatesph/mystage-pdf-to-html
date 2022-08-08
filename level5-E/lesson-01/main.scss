@@ -67,7 +67,7 @@ body {
   }
 .lesson-number {
     position: absolute;
-    left: 91.65%;
+    right: 6.5%;
     width: 1.9%;
     text-align: center;
     margin-top: 7.4%;
@@ -119,7 +119,7 @@ body {
   .try-content {
     position: relative;
     margin-left: $left-pixel;
-    padding-left: 18.5px;
+    padding-left: 18.5px !important;
     padding-right: 60px;
     font-size: clamp(6px, 1.8vw, 15px);
   }
@@ -205,6 +205,11 @@ body {
     bottom: 43px;
     right: 6.2%;
     font-family: $title-font;
+    width: 35%;
+    span{
+      overflow-wrap: break-word;
+      display:inline-block
+    }
   }
 }
 
@@ -222,9 +227,9 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
+      
       ul {
-        margin-left: clamp(11px, 2.4vw, 18px);
+        margin-left: clamp(10px,2.7vw,35px)
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -233,13 +238,23 @@ body {
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
+    .lesson-number {
+      position: absolute;
+      right: 6.6%;
+      width: 1.9%;
+      text-align: center;
+      margin-top: 7.4%;
+      font-size: clamp(7px, 1.8vw, 13px);
+      color: #ffffff;
+    }
     footer {
       bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
-      max-width: 34%;
+      max-width: 35%;
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
     .program-rank {
@@ -274,9 +289,59 @@ body {
     .level {
       padding: 2px 6px 2px 7px !important;
     }
+    .lesson-number {
+      margin-top: 6.9%;
+    }
     .line {
       margin: 0 6px;
       vertical-align: middle;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .html-lesson-wrapper {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .try-content{
+      padding-left: 2.6em;
+    }
+    footer{
+      bottom: 15px
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .html-lesson-wrapper {
+    .see-content{
+      ul{
+        margin: 3px 0px 0px 2.4em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .try-content{
+      padding-left: 2.7em;
+      ul{
+        margin-left: 1em;
+        padding: 0;
+        line-height: clamp(12px, 3vw, 26px);
+      }
+    }
+    .lesson-number {
+      margin-top: 7.2%;
+    }
+    footer {
+      width: 100%;
+      text-align: right;
     }
   }
 }

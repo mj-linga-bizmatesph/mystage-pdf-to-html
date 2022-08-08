@@ -195,6 +195,7 @@ body {
     .pointers {
       margin-top: clamp(0.5px, 2vw, 20px) !important;
       margin-left: clamp(90px, 14%, 126.5px);
+      line-height: normal !important;
       .text-header {
         line-height: 1.6;
         position: relative;
@@ -265,6 +266,9 @@ body {
         text-align: left;
         font-weight: normal;
       }
+    }
+    .article {
+      line-height: 1.8;
     }
     .table-2 {
       display: none;

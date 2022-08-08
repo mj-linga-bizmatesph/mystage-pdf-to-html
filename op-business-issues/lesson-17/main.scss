@@ -35,4 +35,7 @@
       left: clamp(91.5%, 90vw, 50%);
     }
   }
+  footer .footer-text {
+    max-width: 35%;
+  }
 }

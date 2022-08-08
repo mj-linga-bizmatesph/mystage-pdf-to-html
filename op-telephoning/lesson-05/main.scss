@@ -25,11 +25,14 @@
     .words-phrase-content {
       .section {
         margin-top: clamp(7px, 2.6vw, 18px) !important;
+        top: 7px;
       }
     }
-    .section {
-      top: 7px;
+    .see-content, .try-content, .act-content{
+.section {
+      top: 2.5px;
     }
+}
   }
 }
 
@@ -41,10 +44,13 @@
     .words-phrase-content {
       .section {
         margin-top: clamp(6px, 1.6vw, 18px) !important;
+        top: 7px;
       }
     }
-    .section {
-      top: 7px;
+    .see-content, .try-content, .act-content{
+.section {
+      top: 2.5px;
     }
+}
   }
 }

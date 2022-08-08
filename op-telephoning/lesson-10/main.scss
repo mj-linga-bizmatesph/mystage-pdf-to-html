@@ -1,10 +1,18 @@
 @import '../../css/op-telephoning-utils';
-
 .html-lesson-wrapper {
-  .lesson-number {
-    left: 91.5%;
+  .words-phrase-content{
+    background-color: transparent;
+  }
+  .conversation-wrapper{
+    .row:not(:last-child){
+      margin-bottom: 2em;
+      line-height: normal;     
+    }
   }
   .see-content {
+    .section{
+      top: 0;
+    }
     li {
       line-height: 1.8;
     }
@@ -28,11 +36,14 @@
     .words-phrase-content {
       .section {
         margin-top: clamp(7px, 2.6vw, 18px) !important;
+        top: 7px;
       }
     }
-    .section {
-      top: 7px;
+    .see-content, .try-content, .act-content{
+.section {
+      top: 2.5px;
     }
+}
   }
 }
 
@@ -44,10 +55,14 @@
     .words-phrase-content {
       .section {
         margin-top: clamp(6px, 1.6vw, 18px) !important;
+        top: 7px;
       }
     }
-    .section {
-      top: 7px;
+    .see-content, .try-content, .act-content{
+.section {
+      top: 2.5px;
     }
+}
   }
 }
+

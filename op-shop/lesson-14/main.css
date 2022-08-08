@@ -219,6 +219,15 @@ body {
   .html-lesson-wrapper .header-content .title {
     padding-top: 1%;
     padding-bottom: 5%;
+    width: 86%;
+  }
+}
+
+@media only screen and (max-device-width: 431px) {
+  .html-lesson-wrapper .header-content .title {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    width: 85%;
   }
 }
 
@@ -283,7 +292,7 @@ body {
   padding-right: clamp(15px, 14vw, 175px);
   padding-bottom: 1rem;
   margin-right: 1em;
-  line-height: 1.2;
+  line-height: normal;
   margin-left: 2.2%;
 }
 
@@ -330,7 +339,8 @@ body {
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
+  width: 129%;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
@@ -428,7 +438,7 @@ body {
   margin-bottom: 15%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(19px, 3.5vw, 25px);
+  padding-left: clamp(19px, 3.5vw, 38px);
   font-size: clamp(12px, 2vw, 15px);
   margin-top: -0.3%;
 }
@@ -631,6 +641,7 @@ body {
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul li {
   font-family: 'Trebuchet MS';
+  width: 125%;
 }
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul li::before {
@@ -709,4 +720,8 @@ body {
 
 .html-lesson-wrapper .content-item-divider::after {
   content: '\25BC\25BC\25BC';
+}
+
+.html-lesson-wrapper .header-content .title {
+  max-width: 84%;
 }

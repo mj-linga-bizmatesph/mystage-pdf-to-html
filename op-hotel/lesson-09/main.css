@@ -419,7 +419,7 @@ body {
     left: calc(-15% + 20px);
   }
   .html-lesson-wrapper .section.words {
-    left: calc(-13.3% + 22px);
+    left: calc(-13.3% + 25px);
   }
   .html-lesson-wrapper .arrow-part:before {
     left: -2.5% !important;
@@ -453,11 +453,19 @@ body {
   .html-lesson-wrapper {
     background-position: top, -1.5px 100% !important;
   }
+  .html-lesson-wrapper .section {
+    left: calc(-15% + 21px);
+  }
   .html-lesson-wrapper .text-header {
     left: -12px !important;
   }
   .html-lesson-wrapper .try-content .sub-text {
-    margin-left: 10px;
+    margin-left: 3px;
+  }
+  .html-lesson-wrapper .try-content .decimal {
+    list-style-type: decimal;
+    line-height: 1.8;
+    margin-left: 16.8px;
   }
   .html-lesson-wrapper .see-content .sub-text {
     margin-left: 5px;
@@ -486,6 +494,20 @@ body {
     margin-left: 4.5px;
   }
 }
+@media screen and (max-width: 421px) {
+  .html-lesson-wrapper .section.words {
+    left: calc(-13.3% + 21px);
+  }
+  .html-lesson-wrapper .see-content .sub-text {
+    margin-left: 4px;
+  }
+  .html-lesson-wrapper .try-content .decimal {
+    margin-left: 16.8px !important;
+  }
+  .html-lesson-wrapper .act-content .sub-text {
+    margin-left: -4.8px;
+  }
+}
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper .text-header {
     left: -8px !important;
@@ -495,18 +517,35 @@ body {
     top: 0.6vw !important;
   }
 }
-@media screen and (max-width: 391px) {
-  .html-lesson-wrapper .see-content .table-2 {
-    margin-left: 8.8px;
+@media screen and (max-width: 394px) {
+  .html-lesson-wrapper .section {
+    left: calc(-15% + 22px);
   }
-  .html-lesson-wrapper .see-content .sub-text {
-    margin-left: 9px;
-  }
-  .html-lesson-wrapper .see-content .bizmates-style {
-    margin-left: 9px;
+  .html-lesson-wrapper .section.words {
+    left: calc(-15% + 28px);
   }
   .html-lesson-wrapper .words-phrase-content .pointers {
     margin-top: clamp(9px, 3.9vw, 18px) !important;
+    margin-left: clamp(53px, 14%, 126.5px);
+  }
+  .html-lesson-wrapper .words-phrase-content .pointers .text-header {
+    max-width: 90%;
+  }
+  .html-lesson-wrapper .see-content .table-2 {
+    margin-left: 10px;
+  }
+  .html-lesson-wrapper .see-content .sub-text,
+.html-lesson-wrapper .see-content .bizmates-style {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .sub-text {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .decimal {
+    margin-left: 27px !important;
+  }
+  .html-lesson-wrapper .act-content .sub-text {
+    margin-left: 3.2px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -515,40 +554,85 @@ body {
 .act {
     margin-top: 4.7px;
   }
+  .html-lesson-wrapper .act-content .sub-text {
+    margin-left: 3.2px;
+  }
   .html-lesson-wrapper .words-phrase-content .pointers {
     margin-top: clamp(16px, 2.9vw, 22px) !important;
+    margin-left: 50px;
+  }
+  .html-lesson-wrapper .words-phrase-content .pointers .text-header {
+    left: -6px;
+  }
+  .html-lesson-wrapper .try-content .sub-text {
+    margin-left: 10.5px;
+  }
+  .html-lesson-wrapper .try-content .decimal {
+    list-style-type: decimal;
+    line-height: 1.8;
+    margin-left: 21.5px;
   }
   .html-lesson-wrapper .text-convo.table-2 {
     margin-left: 9.8px;
   }
-  .html-lesson-wrapper .see-content .bizmates-style {
-    margin-left: 10px !important;
+  .html-lesson-wrapper .see-content .sub-text,
+.html-lesson-wrapper .see-content .bizmates-style {
+    margin-left: 9.5px;
   }
   .html-lesson-wrapper .see-content .see,
 .html-lesson-wrapper .see-content .try,
 .html-lesson-wrapper .see-content .act {
+    left: calc(-15% + 23px);
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 358px) {
-  .act-content .table-1 {
-    display: none !important;
+@media screen and (max-width: 361px) {
+  .html-lesson-wrapper .section {
+    left: calc(-15% + 22px);
   }
-  .act-content .table-2 {
+  .html-lesson-wrapper .section.words {
+    left: calc(-15% + 28px);
+  }
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-left: clamp(48px, 14%, 125.5px);
+  }
+  .html-lesson-wrapper .words-phrase-content .pointers .text-header {
+    max-width: 90%;
+  }
+  .html-lesson-wrapper .see-content .table-2 {
+    margin-left: 10px;
+  }
+  .html-lesson-wrapper .see-content .sub-text,
+.html-lesson-wrapper .see-content .bizmates-style {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .sub-text {
+    margin-left: 11px;
+  }
+  .html-lesson-wrapper .try-content .decimal {
+    margin-left: 27px !important;
+  }
+  .html-lesson-wrapper .act-content .table-2 {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     border-collapse: collapse;
     width: 113%;
   }
-  .act-content .table-2 th {
+  .html-lesson-wrapper .act-content .table-2 th {
     height: clamp(20px, 4vw, 40px);
     text-align: left;
     font-weight: normal;
     width: 120px;
   }
-  .act-content .table-2 .arrow-part:before {
+  .html-lesson-wrapper .act-content .table-2 .arrow-part:before {
     left: -12% !important;
+  }
+  .html-lesson-wrapper .act-content .sub-text {
+    margin-left: 3.2px;
+  }
+  .html-lesson-wrapper .act-content .table-1 {
+    display: none !important;
   }
 }
 @media screen and (max-width: 320px) {

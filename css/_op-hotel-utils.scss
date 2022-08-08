@@ -420,7 +420,7 @@ body {
       left: calc(-15% + 20px);
     }
     .section.words {
-      left: calc(-13.3% + 22px);
+      left: calc(-13.3% + 25px);
     }
     .arrow-part {
       &:before {
@@ -459,12 +459,22 @@ body {
 }
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper {
+    .section {
+      left: calc(-15% + 21px);
+    }
     background-position: top, -1.5px 100% !important;
     .text-header {
       left: -12px !important;
     }
-    .try-content .sub-text {
-      margin-left: 10px;
+    .try-content {
+      .sub-text {
+        margin-left: 3px;
+      }
+      .decimal {
+        list-style-type: decimal;
+        line-height: 1.8;
+        margin-left: 16.8px;
+      }
     }
     .see-content .sub-text {
       margin-left: 5px;
@@ -494,6 +504,23 @@ body {
     }
   }
 }
+@media screen and (max-width: 421px) {
+  .html-lesson-wrapper {
+    .section.words {
+      left: calc(-13.3% + 21px);
+    }
+    .see-content .sub-text {
+      margin-left: 4px;
+    }
+    .try-content .decimal {
+      margin-left: 16.8px !important;
+    }
+    .act-content .sub-text {
+      margin-left: -4.8px;
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper {
     .text-header {
@@ -507,21 +534,44 @@ body {
     }
   }
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 394px) {
   .html-lesson-wrapper {
-    .see-content {
-      .table-2 {
-        margin-left: 8.8px;
-      }
-      .sub-text {
-        margin-left: 9px;
-      }
-      .bizmates-style {
-        margin-left: 9px;
+    .section {
+      left: calc(-15% + 22px);
+    }
+    .section.words {
+      left: calc(-15% + 28px);
+    }
+    .words-phrase-content {
+      .pointers {
+        margin-top: clamp(9px, 3.9vw, 18px) !important;
+        margin-left: clamp(53px, 14%, 126.5px);
+        .text-header {
+          max-width: 90%;
+        }
       }
     }
-    .words-phrase-content .pointers {
-      margin-top: clamp(9px, 3.9vw, 18px) !important;
+    .see-content {
+      .table-2 {
+        margin-left: 10px;
+      }
+      .sub-text,
+      .bizmates-style {
+        margin-left: 11px;
+      }
+    }
+    .try-content {
+      .sub-text {
+        margin-left: 11px;
+      }
+      .decimal {
+        margin-left: 27px !important;
+      }
+    }
+    .act-content {
+      .sub-text {
+        margin-left: 3.2px;
+      }
     }
   }
 }
@@ -532,42 +582,99 @@ body {
     margin-top: 4.7px;
   }
   .html-lesson-wrapper {
+    .act-content .sub-text {
+      margin-left: 3.2px;
+    }
     .words-phrase-content .pointers {
       margin-top: clamp(16px, 2.9vw, 22px) !important;
+      margin-left: 50px;
+      .text-header {
+        left: -6px;
+      }
+    }
+    .try-content {
+      .sub-text {
+        margin-left: 10.5px;
+      }
+      .decimal {
+        list-style-type: decimal;
+        line-height: 1.8;
+        margin-left: 21.5px;
+      }
     }
     .text-convo.table-2 {
       margin-left: 9.8px;
     }
     .see-content {
+      .sub-text,
       .bizmates-style {
-        margin-left: 10px !important;
+        margin-left: 9.5px;
       }
       .see,
       .try,
       .act {
+        left: calc(-15% + 23px);
         margin-top: 5px;
       }
     }
   }
 }
 
-@media screen and (max-width: 358px) {
-  .act-content .table-1 {
-    display: none !important;
-  }
-  .act-content .table-2 {
-    display: flex !important;
-    border-collapse: collapse;
-    width: 113%;
-    th {
-      height: clamp(20px, 4vw, 40px);
-      text-align: left;
-      font-weight: normal;
-      width: 120px;
+@media screen and (max-width: 361px) {
+  .html-lesson-wrapper {
+    .section {
+      left: calc(-15% + 22px);
     }
-    .arrow-part {
-      &:before {
-        left: -12% !important;
+    .section.words {
+      left: calc(-15% + 28px);
+    }
+    .words-phrase-content {
+      .pointers {
+        margin-left: clamp(48px, 14%, 125.5px);
+        .text-header {
+          max-width: 90%;
+        }
+      }
+    }
+    .see-content {
+      .table-2 {
+        margin-left: 10px;
+      }
+      .sub-text,
+      .bizmates-style {
+        margin-left: 11px;
+      }
+    }
+    .try-content {
+      .sub-text {
+        margin-left: 11px;
+      }
+      .decimal {
+        margin-left: 27px !important;
+      }
+    }
+    .act-content {
+      .table-2 {
+        display: flex !important;
+        border-collapse: collapse;
+        width: 113%;
+        th {
+          height: clamp(20px, 4vw, 40px);
+          text-align: left;
+          font-weight: normal;
+          width: 120px;
+        }
+        .arrow-part {
+          &:before {
+            left: -12% !important;
+          }
+        }
+      }
+      .sub-text {
+        margin-left: 3.2px;
+      }
+      .table-1 {
+        display: none !important;
       }
     }
   }

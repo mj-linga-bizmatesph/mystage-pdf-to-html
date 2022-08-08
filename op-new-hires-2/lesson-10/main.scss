@@ -8,30 +8,23 @@
   }
   ol {
     font-size: clamp(12px, 2vw, 15px);
-    li {
-      margin-left: -3%;
-
-      @media only screen and (max-width: 801px) {
-        margin-left: -3.5%;
-      }
-      @media only screen and (max-width: 620px) {
-        margin-left: -5.5%;
-      }
-      @media only screen and (max-width: 431px) {
-        margin-left: -8%;
-      }
-      @media only screen and (max-width: 391px) {
-        margin-left: -9%;
-      }
-      @media only screen and (max-width: 321px) {
-        margin-left: -12%;
-      }
-    }
-  }
-  .ns {
-    margin-top: -2%;
+    line-height: 1.8;
   }
   .spacer-2 {
     margin-bottom: 24%;
   }
+}
+
+.html-lesson-wrapper ul, .html-lesson-wrapper li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.html-lesson-wrapper .content-item .content-div {
+  width: 89%;
+  margin-bottom: 15px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 0%;
+  margin-bottom: 1em;
 }

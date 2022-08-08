@@ -416,7 +416,7 @@ body {
   font-weight: bold;
   line-height: 1.6;
   margin-top: clamp(-2px, -1vw, -3px);
-  margin-right: 1em;
+  margin-left: 0em;
 }
 
 .html-lesson-wrapper .content-item .content-div .header-text-2 {
@@ -570,30 +570,18 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-  margin-left: -3%;
+  margin-left: 3%;
 }
 
 @media only screen and (max-width: 850px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -3.5%;
+    margin-left: 3.5%;
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 550px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -8%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -9%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -12%;
+    margin-left: 5.5%;
   }
 }
 
@@ -715,54 +703,11 @@ body {
 
 .html-lesson-wrapper ol {
   font-size: clamp(12px, 2vw, 15px);
-}
-
-.html-lesson-wrapper ol li {
-  margin-left: -3%;
-}
-
-@media only screen and (max-width: 801px) {
-  .html-lesson-wrapper ol li {
-    margin-left: -3.5%;
-  }
-}
-
-@media only screen and (max-width: 620px) {
-  .html-lesson-wrapper ol li {
-    margin-left: -5.5%;
-  }
-}
-
-@media only screen and (max-width: 431px) {
-  .html-lesson-wrapper ol li {
-    margin-left: -8%;
-  }
-}
-
-@media only screen and (max-width: 391px) {
-  .html-lesson-wrapper ol li {
-    margin-left: -9%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .html-lesson-wrapper ol li {
-    margin-left: -10%;
-  }
-}
-
-@media only screen and (max-width: 321px) {
-  .html-lesson-wrapper ol li {
-    margin-left: -12%;
-  }
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .spacer-2 {
   margin-bottom: 36% !important;
-}
-
-.html-lesson-wrapper .ns {
-  margin-top: -2%;
 }
 
 .html-lesson-wrapper .spacer-2 {
@@ -827,4 +772,18 @@ body {
   .html-lesson-wrapper footer .footer-text {
     bottom: -17px !important;
   }
+}
+
+.html-lesson-wrapper ul, .html-lesson-wrapper li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.html-lesson-wrapper .content-item .content-div {
+  width: 89%;
+  margin-bottom: 15px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 0%;
+  margin-bottom: 1em;
 }

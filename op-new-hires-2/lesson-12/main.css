@@ -416,7 +416,7 @@ body {
   font-weight: bold;
   line-height: 1.6;
   margin-top: clamp(-2px, -1vw, -3px);
-  margin-right: 1em;
+  margin-left: 0em;
 }
 
 .html-lesson-wrapper .content-item .content-div .header-text-2 {
@@ -570,30 +570,18 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-  margin-left: -3%;
+  margin-left: 3%;
 }
 
 @media only screen and (max-width: 850px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -3.5%;
+    margin-left: 3.5%;
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 550px) {
   .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -8%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -9%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .html-lesson-wrapper .content-item .content-div.try .try-content ol li {
-    margin-left: -12%;
+    margin-left: 5.5%;
   }
 }
 

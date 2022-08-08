@@ -313,7 +313,7 @@ body {
         font-weight: bold;
         line-height: 1.6;
         margin-top: clamp(-2px, -1vw, -3px);
-        margin-right: 1em;
+        margin-left: 0em;
       }
       .header-text-2 {
         font-family: $helvetica;
@@ -415,19 +415,13 @@ body {
           margin-top: 0%;
           ol {
             li {
-              margin-left: -3%;
+              margin-left: 3%;
 
               @media only screen and (max-width: 850px) {
-                margin-left: -3.5%;
+                margin-left: 3.5%;
               }
-              @media only screen and (max-width: 430px) {
-                margin-left: -8%;
-              }
-              @media only screen and (max-width: 375px) {
-                margin-left: -9%;
-              }
-              @media only screen and (max-width: 320px) {
-                margin-left: -12%;
+              @media only screen and (max-width: 550px) {
+                margin-left: 5.5%;
               }
             }
           }

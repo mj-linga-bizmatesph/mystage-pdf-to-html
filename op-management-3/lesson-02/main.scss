@@ -1,0 +1,12 @@
+@import '../../css/op-management-3-utils';
+.act-content {
+  .tbl-container {
+    @media only screen and (max-width: 360px) {
+      width: 95%;
+      overflow-x: auto !important;
+      .content-table {
+        width: 190% !important;
+      }
+    }
+  }
+}

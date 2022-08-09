@@ -343,6 +343,12 @@ body {
   width: 135%;
 }
 
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
+    width: 120%;
+  }
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
 }

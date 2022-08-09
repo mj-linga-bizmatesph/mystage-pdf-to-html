@@ -249,6 +249,10 @@ body {
         .content-header {
           margin-bottom: 1.5%;
           width: 135%;
+
+          @media screen and (max-width: 768px) {
+            width: 120%;
+          }
         }
         p {
           margin: 0;

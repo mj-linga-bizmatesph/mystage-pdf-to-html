@@ -454,6 +454,7 @@ body {
 
 .html-lesson-wrapper .content-item .content-div div {
   line-height: 1.8;
+  width: 100%;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
@@ -687,6 +688,7 @@ body {
   list-style: none;
   margin-top: -1%;
   margin-left: 7%;
+  width: 100%;
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
@@ -723,5 +725,5 @@ body {
 }
 
 .html-lesson-wrapper .header-content .title {
-  max-width: 84%;
+  max-width: 75%;
 }

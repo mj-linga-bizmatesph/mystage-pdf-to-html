@@ -232,6 +232,7 @@ body {
   margin-top: 30px;
 }
 .html-lesson-wrapper .try-content .decimal {
+  line-height: 1.6 !important;
   list-style-type: decimal;
 }
 .html-lesson-wrapper .try-content .bullet {
@@ -273,7 +274,7 @@ body {
   font-weight: normal;
 }
 .html-lesson-wrapper .act-content .article {
-  line-height: 1.8;
+  line-height: 1.6;
 }
 .html-lesson-wrapper .act-content .table-2 {
   display: none;
@@ -300,6 +301,9 @@ body {
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  .html-lesson-wrapper .program-rank .level {
+    padding: 3px 16px 3px 13px !important;
+  }
   .html-lesson-wrapper .section.words {
     left: calc(-22.3% + 248px);
   }
@@ -590,4 +594,8 @@ body {
 }
 .html-lesson-wrapper header .lesson-number {
   left: clamp(91.5%, 90vw, 50%);
+}
+
+.html-lesson-wrapper footer .footer-text {
+  max-width: 30%;
 }

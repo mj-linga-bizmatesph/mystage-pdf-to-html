@@ -165,6 +165,7 @@ body {
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
+  line-height: normal;
 }
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
@@ -258,6 +259,9 @@ body {
 .html-lesson-wrapper .try-content {
   margin-top: 30px;
 }
+.html-lesson-wrapper .try-content .sub-text {
+  font-family: "Trebuchet MS" !important;
+}
 .html-lesson-wrapper .try-content .decimal {
   list-style-type: decimal;
   line-height: 1.8;
@@ -276,6 +280,9 @@ body {
   height: fit-content;
   margin-bottom: clamp(50px, 13vw, 120px);
   margin-top: 36px;
+}
+.html-lesson-wrapper .act-content .sub-text {
+  font-family: "Trebuchet MS" !important;
 }
 .html-lesson-wrapper .act-content .decimal {
   list-style-type: decimal;

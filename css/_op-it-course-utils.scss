@@ -248,7 +248,11 @@ body {
         }
         .content-header {
           margin-bottom: 1.5%;
-          width: 129%;
+          width: 135%;
+
+          @media screen and (max-width: 501px) {
+            width: 125%;
+          }
         }
         p {
           margin: 0;
@@ -479,6 +483,11 @@ body {
           .p {
             margin-left: 0%;
             width: 100%;
+            font-weight: bold;
+
+            @media screen and (max-width: 451px) {
+              width: 80%;
+            }
           }
 
           div {
@@ -533,9 +542,6 @@ body {
         margin-left: 7%;
         width: 100%;
 
-        // @media screen and (max-width: 900px) {
-        //   margin-left: 7%;
-        // }
         .content-text {
           list-style: decimal;
           margin-left: 4.5%;
@@ -543,9 +549,6 @@ body {
           @media screen and (max-width: 900px) {
             margin-left: 5.7%;
           }
-          // @media screen and (max-width: 401px) {
-          //   margin-left: 5.7%;
-          // }
         }
         li {
           line-height: 1.8;

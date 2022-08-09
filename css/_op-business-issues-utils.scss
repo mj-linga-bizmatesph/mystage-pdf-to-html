@@ -184,7 +184,6 @@ body {
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
     .section {
-      // margin-left: $left-pixel;
       left: clamp(46px, 3.1vw, 55px);
       line-height: 1.6em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
@@ -234,6 +233,7 @@ body {
   .try-content {
     margin-top: 30px;
     .decimal {
+      line-height: 1.6;
       list-style-type: decimal;
     }
     .bullet {
@@ -269,7 +269,7 @@ body {
       }
     }
     .article {
-      line-height: 1.8;
+      line-height: 1.6;
     }
     .table-2 {
       display: none;
@@ -297,6 +297,9 @@ body {
 }
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
   .html-lesson-wrapper {
+    .program-rank .level {
+      padding: 3px 16px 3px 13px !important;
+    }
     .section.words {
       left: calc(-22.3% + 248px);
     }

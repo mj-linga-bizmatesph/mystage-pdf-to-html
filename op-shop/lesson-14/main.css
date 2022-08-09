@@ -340,7 +340,7 @@ body {
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
   margin-bottom: 1.5%;
-  width: 129%;
+  width: 135%;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
@@ -361,6 +361,7 @@ body {
   text-indent: -1em;
   margin-left: 0.8em;
   padding-left: 0.5em;
+  width: 110%;
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
@@ -629,8 +630,14 @@ body {
 }
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul .see-content-ul2 div {
-  width: 48%;
+  width: 54%;
   margin-left: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .content-item .see-ul .see-content-ul .see-content-ul2 div {
+    width: 48%;
+  }
 }
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul .name {
@@ -722,6 +729,12 @@ body {
 
 .html-lesson-wrapper .content-item-divider::after {
   content: '\25BC\25BC\25BC';
+}
+
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper .content-header {
+    width: 112%;
+  }
 }
 
 .html-lesson-wrapper .header-content .title {

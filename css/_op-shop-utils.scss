@@ -248,7 +248,7 @@ body {
         }
         .content-header {
           margin-bottom: 1.5%;
-          width: 129%;
+          width: 135%;
         }
         p {
           margin: 0;
@@ -264,6 +264,7 @@ body {
             text-indent: -1em;
             margin-left: 0.8em;
             padding-left: 0.5em;
+            width: 110%;
           }
           li::before {
             content: '';
@@ -477,8 +478,12 @@ body {
           width: 100%;
 
           div {
-            width: 48%;
+            width: 54%;
             margin-left: 3%;
+
+            @media screen and (max-width: 768px) {
+              width: 48%;
+            }
           }
         }
         .name {
@@ -528,9 +533,6 @@ body {
         margin-left: 7%;
         width: 100%;
 
-        // @media screen and (max-width: 900px) {
-        //   margin-left: 7%;
-        // }
         .content-text {
           list-style: decimal;
           margin-left: 4.5%;
@@ -538,9 +540,6 @@ body {
           @media screen and (max-width: 900px) {
             margin-left: 5.7%;
           }
-          // @media screen and (max-width: 401px) {
-          //   margin-left: 5.7%;
-          // }
         }
         li {
           line-height: 1.8;

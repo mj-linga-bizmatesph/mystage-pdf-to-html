@@ -84,21 +84,11 @@
     }
     footer {
       .footer-text {
-        top: 120px;
+        top: -5px;
       }
     }
   }
 }
-
-// @media screen and (min-width: 901px) {
-//   .html-lesson-wrapper {
-//     footer {
-//       .footer-text {
-//         // top: 120px;
-//       }
-//     }
-//   }
-// }
 .html-lesson-wrapper footer .footer-text {
   bottom: -28px;
 }

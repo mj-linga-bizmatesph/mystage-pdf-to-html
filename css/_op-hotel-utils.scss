@@ -124,6 +124,11 @@ body {
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
   }
+  .see-content {
+    .sub-text.extra-text-red {
+      margin-left: 1px !important;
+    }
+  }
   .table {
     width: 100%;
   }
@@ -311,6 +316,9 @@ body {
     .sub-text {
       margin-left: 4.2px;
     }
+    .article {
+      line-height: 1.8 !important;
+    }
   }
   footer {
     font-family: $title-font;
@@ -335,7 +343,7 @@ body {
 @media only screen and (min-width: 1600px) and (max-width: 1921px) {
   .html-lesson-wrapper .words-phrase-content .pointers {
     margin-top: clamp(15px, 2.8vw, 18px) !important;
-    margin-left: clamp(100px, 13%, 200.5px);
+    margin-left: clamp(117px, 13%, 200.5px);
   }
   .html-lesson-wrapper .section {
     left: -75px !important;
@@ -396,6 +404,19 @@ body {
     .section.words {
       left: calc(-14% + 48px);
       line-height: normal;
+    }
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 821px) {
+  .html-lesson-wrapper {
+    .section.words {
+      left: calc(-14% + 52px);
+    }
+    .section {
+      left: calc(-16% + 49px);
+    }
+    .try-content .decimal {
+      margin-left: 25.8px;
     }
   }
 }
@@ -504,7 +525,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 429px) {
   .html-lesson-wrapper {
     .section.words {
       left: calc(-13.3% + 21px);
@@ -544,7 +565,7 @@ body {
     }
     .words-phrase-content {
       .pointers {
-        margin-top: clamp(9px, 3.9vw, 18px) !important;
+        margin-top: clamp(17px, 3.9vw, 28px) !important;
         margin-left: clamp(53px, 14%, 126.5px);
         .text-header {
           max-width: 90%;
@@ -557,7 +578,7 @@ body {
       }
       .sub-text,
       .bizmates-style {
-        margin-left: 11px;
+        margin-left: 9.5px;
       }
     }
     .try-content {

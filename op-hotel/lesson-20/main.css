@@ -122,6 +122,9 @@ body {
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
 }
+.html-lesson-wrapper .see-content .sub-text.extra-text-red {
+  margin-left: 1px !important;
+}
 .html-lesson-wrapper .table {
   width: 100%;
 }
@@ -311,6 +314,9 @@ body {
 .html-lesson-wrapper .act-content .sub-text {
   margin-left: 4.2px;
 }
+.html-lesson-wrapper .act-content .article {
+  line-height: 1.8 !important;
+}
 .html-lesson-wrapper footer {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(4.5px, 1.1vw, 9px);
@@ -334,7 +340,7 @@ body {
 @media only screen and (min-width: 1600px) and (max-width: 1921px) {
   .html-lesson-wrapper .words-phrase-content .pointers {
     margin-top: clamp(15px, 2.8vw, 18px) !important;
-    margin-left: clamp(100px, 13%, 200.5px);
+    margin-left: clamp(117px, 13%, 200.5px);
   }
   .html-lesson-wrapper .section {
     left: -75px !important;
@@ -400,6 +406,17 @@ body {
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 48px);
     line-height: normal;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 821px) {
+  .html-lesson-wrapper .section.words {
+    left: calc(-14% + 52px);
+  }
+  .html-lesson-wrapper .section {
+    left: calc(-16% + 49px);
+  }
+  .html-lesson-wrapper .try-content .decimal {
+    margin-left: 25.8px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -494,7 +511,7 @@ body {
     margin-left: 4.5px;
   }
 }
-@media screen and (max-width: 421px) {
+@media screen and (max-width: 429px) {
   .html-lesson-wrapper .section.words {
     left: calc(-13.3% + 21px);
   }
@@ -525,7 +542,7 @@ body {
     left: calc(-15% + 28px);
   }
   .html-lesson-wrapper .words-phrase-content .pointers {
-    margin-top: clamp(9px, 3.9vw, 18px) !important;
+    margin-top: clamp(17px, 3.9vw, 28px) !important;
     margin-left: clamp(53px, 14%, 126.5px);
   }
   .html-lesson-wrapper .words-phrase-content .pointers .text-header {
@@ -536,7 +553,7 @@ body {
   }
   .html-lesson-wrapper .see-content .sub-text,
 .html-lesson-wrapper .see-content .bizmates-style {
-    margin-left: 11px;
+    margin-left: 9.5px;
   }
   .html-lesson-wrapper .try-content .sub-text {
     margin-left: 11px;
@@ -738,7 +755,7 @@ body {
     padding-left: clamp(11px, 2.4vw, 18px);
   }
   .html-lesson-wrapper footer .footer-text {
-    top: 120px;
+    top: -5px;
   }
 }
 .html-lesson-wrapper footer .footer-text {

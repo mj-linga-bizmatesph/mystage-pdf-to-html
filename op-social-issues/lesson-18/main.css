@@ -627,3 +627,11 @@ body {
 .html-lesson-wrapper .content-item-divider::after {
   content: '\25BC\25BC\25BC';
 }
+
+.html-lesson-wrapper footer .footer-text {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  max-width: 38%;
+  right: 6.6%;
+}

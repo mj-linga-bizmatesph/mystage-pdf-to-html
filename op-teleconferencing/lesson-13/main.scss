@@ -1,7 +1,8 @@
 @import '../../css/op-teleconferencing-utils';
+
 .html-lesson-wrapper {
   .content-div {
-    .header-text{
+    .header-text {
       margin-bottom: 2px;
     }
     ol {
@@ -15,7 +16,7 @@
   }
   .content-item {
     .message {
-      @media only screen and (max-width: 767px){
+      @media only screen and (max-width: 767px) {
         padding-left: 6%;
       }
     }

@@ -1,4 +1,5 @@
 @import '../../css/op-teleconferencing-utils';
+
 .html-lesson-wrapper {
   .act-spacer {
     padding-bottom: 15%;
@@ -10,7 +11,8 @@
     .content-table {
       font-size: clamp(12px, 3vw, 16px);
       width: 100%;
-      border-collapse: collapse;  .act-spacer {
+      border-collapse: collapse;
+      .act-spacer {
         padding-bottom: 5%;
         @media only screen and (max-width: 767px) {
           padding-bottom: 0;
@@ -50,7 +52,7 @@
   }
   .content-item {
     .message {
-      @media only screen and (max-width: 767px){
+      @media only screen and (max-width: 767px) {
         padding-left: 3%;
       }
     }

@@ -1,4 +1,5 @@
 @import '../../css/op-teleconferencing-utils';
+
 .html-lesson-wrapper {
   .act-spacer {
     padding-bottom: 5%;
@@ -35,13 +36,13 @@
     }
   }
   .content-div {
-    .header-text{
+    .header-text {
       margin-bottom: 2px;
     }
     .target {
       margin-top: 0px;
     }
-  }  
+  }
   .extension {
     margin-bottom: 1% !important;
     width: 70% !important;
@@ -60,14 +61,14 @@
       width: 42%;
       float: left;
     }
-    .bullet-two{
+    .bullet-two {
       width: 30%;
       float: left;
     }
   }
   .content-item {
     .message {
-      @media only screen and (max-width: 767px){
+      @media only screen and (max-width: 767px) {
         padding-left: 7%;
       }
     }

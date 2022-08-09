@@ -1,0 +1,68 @@
+@import '../../css/op-new-hires-2-utils';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  ol {
+    font-size: clamp(12px, 2vw, 15px);
+    line-height: 1.8;
+  }
+  .spacer-2 {
+    margin-bottom: 36% !important;
+  }
+
+  .spacer-2 {
+    margin-bottom: 24%;
+  }
+  footer {
+    @media only screen and (max-width: 361px) {
+      bottom: -28px;
+    }
+    @media only screen and (max-width: 321px) {
+      bottom: -45px;
+    }
+    .footer-text {
+      @media only screen and (max-width: 767px) {
+        bottom: 3px !important;
+      }
+      @media only screen and (max-width: 671px) {
+        bottom: 0px !important;
+      }
+      @media only screen and (max-width: 429px) {
+        bottom: -12px !important;
+      }
+      @media only screen and (max-width: 391px) {
+        bottom: -26px !important;
+      }
+      @media only screen and (max-width: 361px) {
+        bottom: -20px !important;
+      }
+      @media only screen and (max-width: 376px) {
+        bottom: -31px !important;
+      }
+      @media only screen and (max-width: 375px) {
+        bottom: -15px !important;
+      }
+      @media only screen and (max-width: 321px) {
+        bottom: -17px !important;
+      }
+    }
+  }
+}
+
+.html-lesson-wrapper ul, .html-lesson-wrapper li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.html-lesson-wrapper .content-item .content-div {
+  width: 89%;
+  margin-bottom: 15px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 0%;
+  margin-bottom: 1em;
+}

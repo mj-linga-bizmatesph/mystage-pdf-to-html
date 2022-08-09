@@ -1,0 +1,12 @@
+@import '../../css/op-management-3-utils';
+.html-lesson-wrapper .lesson-number {
+  left: clamp(91.8%, 93vw, 91%);
+}
+
+.html-lesson-wrapper .see-content, .html-lesson-wrapper .act-content, .html-lesson-wrapper .try-content, .html-lesson-wrapper .review-content {
+  position: relative;
+  margin-left: clamp(50px, 14.3%, 126.5px);
+  padding-left: 18.5px;
+  padding-right: 42px;
+  font-size: clamp(12px, 2vw, 15px);
+}

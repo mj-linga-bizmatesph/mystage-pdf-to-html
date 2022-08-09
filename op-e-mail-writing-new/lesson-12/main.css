@@ -336,9 +336,6 @@ body {
   margin-bottom: clamp(2px, 1vw, 7px);
   font-size: clamp(12px, 2vw, 15px);
 }
-.html-lesson-wrapper .see-content ol.numbers li::before {
-  content: "• " !important;
-}
 .html-lesson-wrapper .see-content .email-text-settings, .html-lesson-wrapper .see-content .email-lesson-2-7-text, .html-lesson-wrapper .see-content .email-lesson-2-6-text, .html-lesson-wrapper .see-content .email-lesson-2-5-text, .html-lesson-wrapper .see-content .email-lesson-2-4-text, .html-lesson-wrapper .see-content .email-lesson-2-3-text, .html-lesson-wrapper .see-content .email-lesson-2-2-text, .html-lesson-wrapper .see-content .email-lesson-2-1-text {
   position: absolute;
   font-size: clamp(10px, 1vw, 12px);
@@ -451,23 +448,14 @@ body {
   margin: -4px 0 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
   line-height: 1.8;
 }
-.html-lesson-wrapper ol.numbers:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper ol.numbers li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist) ". ";
-}
-.html-lesson-wrapper ol.numbers li {
-  display: grid;
-  grid-template-columns: 1% 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 .html-lesson-wrapper ol.numbers li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -476,22 +464,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }
-.html-lesson-wrapper ol.bullets:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper ol.bullets li::before {
   counter-increment: orderedlist;
   content: "■ ";
-}
-.html-lesson-wrapper ol.bullets li {
-  display: grid;
-  grid-template-columns: 0 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 .html-lesson-wrapper ol.bullets li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -500,22 +479,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }
-.html-lesson-wrapper ol.circle:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper ol.circle li::before {
   counter-increment: orderedlist;
   content: "• " !important;
-}
-.html-lesson-wrapper ol.circle li {
-  display: grid;
-  grid-template-columns: 0 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 .html-lesson-wrapper ol.circle li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -639,7 +609,7 @@ body {
   background-color: #f2f2f2;
 }
 .html-lesson-wrapper .act-content .person {
-  width: clamp(3rem, 9%, 4rem);
+  width: clamp(3rem, 9%, 6rem);
 }
 .html-lesson-wrapper footer {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -753,4 +723,8 @@ body {
 
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
+}
+
+.see-content ul {
+  line-height: 1.8 !important;
 }

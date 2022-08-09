@@ -14,7 +14,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 $fs-12: clamp(10px, 1vw, 12px);
 
 $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
-// $s3: 'http://127.0.0.1:5500/images';
 
 .html-lesson-wrapper {
   width: 100%;
@@ -399,12 +398,6 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       font-size: clamp(12px, 2vw, 15px);
     }
 
-    ol.numbers {
-      li::before {
-        content: '• ' !important;
-      }
-    }
-
     .email-text-settings {
       position: absolute;
       font-size: $fs-12;
@@ -417,9 +410,8 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       width: clamp(400px, 55vw, 480px);
     }
     .email-lesson-2-1-text {
-      // clamp(305px, 46vw, 363px)
+      
       margin: clamp(12px, 1%, 50px) 0 0 clamp(305px, 46vw, 363px);
-      //   margin: 1px 0 0 clamp(230px, 45%, 295px);
       @extend .email-text-settings;
     }
     .email-lesson-2-2-text {
@@ -522,15 +514,10 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     margin: -4px 0 0;
     padding: 0;
     list-style: none;
-    display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
     line-height: 1.8;
-
-    &:not(.no-mb) {
-      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-    }
 
     li::before {
       counter-increment: orderedlist;
@@ -538,10 +525,6 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     }
 
     li {
-      display: grid;
-      grid-template-columns: 1% 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
-
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
       }
@@ -552,14 +535,9 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
-
-    &:not(.no-mb) {
-      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-    }
 
     li::before {
       counter-increment: orderedlist;
@@ -567,10 +545,6 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     }
 
     li {
-      display: grid;
-      grid-template-columns: 0 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
-
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
       }
@@ -581,14 +555,9 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
-
-    &:not(.no-mb) {
-      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-    }
 
     li::before {
       counter-increment: orderedlist;
@@ -596,10 +565,6 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     }
 
     li {
-      display: grid;
-      grid-template-columns: 0 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
-
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
       }
@@ -750,7 +715,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     }
 
     .person {
-      width: clamp(3rem, 9%, 4rem);
+      width: clamp(3rem, 9%, 6rem);
     }
   }
 

@@ -44,11 +44,17 @@ body {
     color: #ffffff;
     font-size: 0px;
 
+    @media screen and (max-width: 1920px) {
+      left: 6.5%;
+    }
     @media screen and (max-width: 959px) {
       left: 6.5%;
     }
     @media screen and (max-width: 901px) {
       left: 5%;
+    }
+    @media screen and (max-width: 801px) {
+      left: 5.8%;
     }
 
     .type {
@@ -57,7 +63,7 @@ body {
       font-size: clamp(8px, 1.8vw, 15px);
     }
     .level {
-      padding: 3px 12px 3px 13px;
+      padding: 3px 20px 3px 13px;
       background-color: $green;
       font-size: clamp(8px, 1.8vw, 15px);
     }
@@ -69,6 +75,9 @@ body {
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
 
+    @media screen and (max-width: 1920px) {
+      left: 58px;
+    }
     @media screen and (max-width: 959px) {
       left: 58px;
     }
@@ -107,6 +116,7 @@ body {
 
     @media screen and (max-width: 401px) {
       margin-left: 1%;
+      line-height: 1.8;
     }
   }
   .section {
@@ -250,6 +260,7 @@ body {
 
         @media screen and (max-width: 401px) {
           margin-left: -1.8%;
+          line-height: normal;
         }
 
         li {
@@ -317,7 +328,7 @@ body {
         li {
           line-height: 1.8;
           div {
-            width: clamp(100px, 50vw, 500px);
+            width: clamp(100px, 68vw, 500px);
             margin-left: 2%;
 
             @media screen and (max-width: 401px) {
@@ -353,7 +364,7 @@ body {
         margin-left: 4.5% !important;
       }
       @media screen and (max-width: 401px) {
-        margin-left: 6% !important;
+        margin-left: 7.5% !important;
       }
       @media screen and (max-width: 371px) {
         margin-left: 7% !important;
@@ -437,7 +448,6 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      // padding-left: clamp(11px, 2.4vw, 18px);
       ul {
         @media screen and (max-width: 501px) {
           margin-left: 4%;

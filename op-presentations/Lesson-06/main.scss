@@ -1,6 +1,21 @@
 @import '../../css/op-presentations-utils';
 
 .html-lesson-wrapper {
+  .w {
+    width: 85%;
+  }
+  .title {
+    @media screen and (max-width: 371px) {
+      width: 250px !important;
+    }
+  }
+  .biz-tip-content {
+    .pointers {
+      .biz-tip-header {
+        width: 84%;
+      }
+    }
+  }
   table,
   td {
     border-collapse: collapse;

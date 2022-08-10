@@ -1,0 +1,18 @@
+@import '../../css/op-shop-utils';
+.html-lesson-wrapper {
+  .content-item {
+    .try-ul {
+      .try-content-ul {
+        .content-text {
+          margin-left: 3%;
+          @media screen and (max-width: 901px) {
+            margin-left: 4%;
+          }
+          @media screen and (max-width: 401px) {
+            margin-left: 6%;
+          }
+        }
+      }
+    }
+  }
+}

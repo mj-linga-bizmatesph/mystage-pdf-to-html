@@ -1,0 +1,68 @@
+@import '../../css/op-new-hires-2-utils';
+.html-lesson-wrapper {
+  .act-spacer {
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .biz-tip-content {
+    ul {
+      list-style-type: none !important;
+      li {
+        margin-left: -0.4em !important;
+      }
+    }
+  }
+  .email-window {
+    background: rgb(206, 206, 206);
+    padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);
+    display: grid;
+    row-gap: clamp(4px, 1vw, 7px);
+    border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
+  }
+  .email-header {
+    display: grid;
+    grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+    font-size: clamp(9px, 2vw, 13px);
+    column-gap: clamp(0.2rem, 1vw, 1rem);
+  }
+
+  .email-header-label {
+    row-gap: clamp(4px, 1vw, 7px);
+    display: grid;
+  }
+
+  .email-header-label-to {
+    width: 100%;
+    background: #d8d8d8;
+    border-radius: 3px;
+    height: clamp(15px, 2vw, 22px);
+    place-items: center;
+    display: grid;
+  }
+  .email-header-label-subject {
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: clamp(15px, 2vw, 22px);
+  }
+  .email-header-textfield {
+    display: grid;
+    row-gap: clamp(4px, 1vw, 7px);
+  }
+  .email-textfield {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: clamp(15px, 2vw, 22px);
+  }
+  .email-content {
+    background: white;
+    padding: 5px;
+    font-size: clamp(8px, 2vw, 12px);
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../css/op-business-issues-utils';
+
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+  .html-lesson-wrapper {
+    .title {
+      top: 70px !important;
+      max-width: 70%;
+    }
+  }
+}
+.see,
+.try,
+.act {
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 460px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4.9px;
+  }
+  .html-lesson-wrapper {
+    header {
+      .lesson-number {
+        left: clamp(91.5%, 90vw, 50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4px;
+  }
+}
+
+.html-lesson-wrapper {
+  header {
+    .lesson-number {
+      left: clamp(91.5%, 90vw, 50%);
+    }
+  }
+}
+.html-lesson-wrapper footer .footer-text {
+  max-width: 30%;
+}

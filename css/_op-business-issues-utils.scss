@@ -1,0 +1,596 @@
+$trebuchet: 'Trebuchet MS';
+$title-font: 'Helvetica', 'Arial', sans-serif;
+$primary: #cc3366;
+$primary-second: #339999;
+$primary-light: #f0d4d4;
+$text-title: #cc3366;
+$left-pixel: clamp(70px, 15.2%, 126.5px);
+
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.html-lesson-wrapper {
+  max-width: 100%;
+  min-width: 320px;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg), url(#{$s3}/other-programs-footer-purple.svg);
+  background-position: top, -11.5px 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: $trebuchet;
+  header {
+    font-family: $title-font;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .i {
+    font-family: italic;
+  }
+  .u {
+    text-decoration: underline;
+  }
+  .b-purple {
+    color: $primary;
+  }
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    color: #ffffff;
+    font-size: 0px;
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $primary;
+      font-size: clamp(8px, 1.8vw, 15px);
+    }
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-image: linear-gradient(to right, #e46a63 25%, #9c6698);
+
+      font-size: clamp(8px, 1.8vw, 15px);
+      .add-space {
+        margin-left: clamp(5px, 2vw, 15px);
+      }
+    }
+    .phrases-word {
+      line-height: 2.8em;
+      display: block;
+    }
+  }
+  .line {
+    margin: 0 12px;
+  }
+  .hide {
+    display: none;
+  }
+  .title {
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
+  }
+  .lesson-number {
+    position: absolute;
+    left: clamp(91.5%, 93vw, 92%);
+    margin-top: 7.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .sub-text {
+    font-family: $title-font !important;
+    line-height: clamp(12px, 2.8vw, 22px);
+    margin: 0 auto;
+  }
+  .section {
+    position: absolute;
+    left: -10.3%;
+    color: $text-title;
+    font-weight: bold;
+    font-family: $title-font;
+  }
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(12px, 2vw, 15px);
+    position: relative;
+    left: 52%;
+    &.d1 {
+      margin-top: 50px;
+    }
+    &.d2 {
+      margin-top: 50px;
+    }
+  }
+  ul {
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+    li {
+      padding-left: 8px;
+    }
+  }
+  .see-content,
+  .act-content,
+  .try-content {
+    position: relative;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(12px, 2vw, 15px);
+    .sub-text {
+      line-height: 1.6;
+    }
+  }
+  .see-content {
+    .article {
+      margin-top: 5px;
+      line-height: 1.6;
+      margin-bottom: 29px;
+    }
+    .dialogue {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      line-height: 1.6;
+      margin-right: 1em;
+      margin-bottom: 29px;
+    }
+  }
+  .table {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .speaker {
+    width: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: clamp(12px, 2vw, 15px);
+    line-height: 1.6;
+    margin-right: 1em;
+  }
+  td {
+    height: clamp(10px, 2.5vw, 30px);
+    vertical-align: top;
+  }
+  .speaker-text {
+    width: 85%;
+    position: relative;
+    line-height: 1.8;
+    .underline {
+      border-bottom: 1px solid black;
+    }
+  }
+  .words-phrase-content {
+    position: relative;
+    margin-top: clamp(87px, 17.6%, 157px);
+    padding: 2px 0px 0px 47px;
+    height: fit-content;
+    padding-bottom: clamp(10px, 2vw, 20px);
+    padding-left: clamp(32px, 6vw, 47px);
+    background: $primary-light;
+    font-size: clamp(12px, 2vw, 15px);
+    .section {
+      left: clamp(46px, 3.1vw, 55px);
+      line-height: 1.6em;
+      margin-top: clamp(10px, 2.6vw, 18px) !important;
+    }
+    .words {
+      max-width: 100px !important;
+    }
+    .pointers {
+      margin-top: clamp(0.5px, 2vw, 20px) !important;
+      margin-left: clamp(90px, 14%, 126.5px);
+      line-height: normal !important;
+      max-width: 80% !important;
+      .text-header {
+        line-height: 1.6;
+        position: relative;
+        left: -17px;
+        margin-bottom: clamp(6px, 1vw, 10px);
+      }
+      .arrow-part {
+        padding-left: 7px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: -16px;
+          top: 5.5px !important;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 8px solid $primary;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .arrow-part-purple {
+        @extend .arrow-part;
+      }
+    }
+  }
+  .see-content {
+    margin-top: 36px;
+    .decimal {
+      list-style-type: decimal;
+    }
+  }
+  .try-content {
+    margin-top: 30px;
+    .decimal {
+      line-height: 1.6 !important;
+      list-style-type: decimal;
+    }
+    .bullet {
+      list-style-type: disc;
+      list-style-position: outside;
+    }
+    .space {
+      margin-top: 20px;
+    }
+  }
+  .act-content {
+    height: fit-content;
+    margin-bottom: clamp(50px, 13vw, 120px);
+    margin-top: 36px;
+    .author {
+      font-size: clamp(12px, 2vw, 15px);
+      margin-top: 35px;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .normal {
+      font-weight: normal;
+      margin-left: 5px;
+    }
+    .table-1 {
+      border-collapse: collapse;
+      width: 70%;
+      th {
+        height: clamp(20px, 4vw, 40px);
+        text-align: left;
+        font-weight: normal;
+      }
+    }
+    .article {
+      line-height: 1.6;
+    }
+    .table-2 {
+      display: none;
+    }
+  }
+  footer {
+    font-family: $title-font;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: 43px;
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      top: 1.8px;
+      bottom: 0;
+      max-width: 45%;
+      right: 2%;
+    }
+  }
+  .inline-block {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  .html-lesson-wrapper {
+    .program-rank .level {
+      padding: 3px 16px 3px 13px !important;
+    }
+    .section.words {
+      left: calc(-22.3% + 248px);
+    }
+    .words-phrase-content .pointers {
+      margin-top: clamp(0.5px, 2vw, 20px) !important;
+      margin-left: clamp(90px, 14%, 113.5px);
+    }
+    .see,
+    .try,
+    .act {
+      left: -78px;
+    }
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1180px) {
+  .html-lesson-wrapper .section {
+    left: calc(-16% + 43.5px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    .section {
+      left: calc(-22.3% + 77px);
+    }
+    .section.words {
+      left: calc(-22.3% + 231px);
+    }
+  }
+}
+@media screen and (max-width: 821px) {
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-top: clamp(0.5px, 2vw, 20px) !important;
+    margin-left: clamp(102px, 14.4%, 140.5px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper {
+    background-position: top, -11px 100% !important;
+    .section {
+      left: calc(-22.3% + 59.5px);
+    }
+    .section.words {
+      left: calc(-22.3% + 202px);
+    }
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: clamp(23px, 4vw, 48px);
+    }
+    .title {
+      top: clamp(45px, 8.4vw, 80px);
+      left: clamp(30px, 3.1vw, 55px);
+    }
+    .divider {
+      &.d1,
+      &.d2 {
+        margin-top: clamp(18px, 3.4vw, 28px);
+      }
+    }
+    .arrow-part-purple {
+      &:before {
+        left: -3% !important;
+        top: clamp(3px, 1vw, 1.2vw) !important;
+      }
+    }
+    .words-phrase-content {
+      .pointers {
+        margin-left: clamp(76px, 14.8%, 123.5px);
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .arrow-part {
+      &:before {
+        border-left: 3.5px solid transparent !important;
+        border-right: 3.5px solid transparent !important;
+        border-top: 5.5px solid $primary !important;
+      }
+    }
+    .arrow-part-purple {
+      &:before {
+        border-left: 3.5px solid transparent !important;
+        border-right: 3.5px solid transparent !important;
+        border-top: 5.5px solid $primary !important;
+      }
+    }
+    .act-content {
+      .table-1 {
+        width: 105%;
+      }
+    }
+    .title {
+      left: clamp(21px, 3.1vw, 55px);
+    }
+    .section {
+      left: calc(-22.3% + 39px);
+    }
+    .section.words {
+      margin-top: clamp(8px, 3vw, 1px) !important;
+      left: calc(-22.3% + 127px);
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .html-lesson-wrapper {
+    background-position: top, -1.5px 100% !important;
+    .title {
+      top: clamp(45px, 8.4vw, 80px);
+      left: clamp(22px, 3.1vw, 55px);
+      max-width: 70%;
+    }
+    .section {
+      left: calc(-22.3% + 36px);
+    }
+    .section.words {
+      left: calc(-22.3% + 125px);
+    }
+    .text-header {
+      left: -12px !important;
+    }
+    .try-content .sub-text {
+      margin-left: 10px;
+    }
+    .see-content .sub-text,
+    .see-content .article,
+    .see-content .dialogue {
+      margin-left: 10px;
+    }
+    .act-content {
+      .article {
+        margin-left: 10px;
+      }
+      .sub-text {
+        padding-top: 2.5px;
+        margin-left: 10px;
+      }
+    }
+    .inline-block {
+      display: block !important;
+    }
+    .decimal {
+      margin-left: 25px !important;
+    }
+    .text-header {
+      margin-top: -3px !important;
+    }
+    .hide {
+      display: inline;
+    }
+
+    .speaker {
+      width: 20%;
+    }
+    .speaker-text {
+      width: 78%;
+    }
+    .words-phrase-content .pointers {
+      padding-right: 5px;
+      margin-top: clamp(0.5px, 3vw, 20px) !important;
+      margin-left: 75px !important;
+    }
+    footer {
+      bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper {
+    .section {
+      left: calc(-22.3% + 33px);
+    }
+    .section.words {
+      left: calc(-22.3% + 118px);
+    }
+    .words-phrase-content .pointers {
+      margin-top: clamp(2.5px, 2vw, 20px) !important;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper {
+    .section {
+      left: calc(-22.3% + 32px);
+    }
+    .text-header {
+      left: -9px !important;
+      .arrow-part {
+        &:before {
+          left: -14.5% !important;
+          top: 0.6vw !important;
+        }
+      }
+      .arrow-part-purple {
+        &:before {
+          left: -14.5% !important;
+          top: 0.6vw !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 394px) {
+  .html-lesson-wrapper {
+    .section.words {
+      left: calc(-22.3% + 111px);
+    }
+    .section {
+      left: calc(-22.3% + 27px);
+    }
+  }
+}
+@media screen and (max-width: 391px) {
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 25px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 110px);
+  }
+}
+@media screen and (max-width: 376px) {
+  .html-lesson-wrapper .title {
+    top: clamp(45px, 8.4vw, 80px);
+    left: clamp(22px, 3.1vw, 55px);
+  }
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 20px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 106px);
+  }
+}
+@media screen and (max-width: 361px) {
+  .html-lesson-wrapper .section {
+    left: calc(-22.3% + 18px);
+  }
+  .html-lesson-wrapper .section.words {
+    left: calc(-22.3% + 104px);
+  }
+  .act-content .table-1 {
+    display: none !important;
+  }
+  .act-content .table-2 {
+    display: flex !important;
+    border-collapse: collapse;
+    width: 113%;
+    th {
+      height: clamp(20px, 4vw, 40px);
+      text-align: left;
+      font-weight: normal;
+      width: 120px;
+    }
+    .arrow-part {
+      &:before {
+        left: -12% !important;
+      }
+    }
+    .arrow-part-purple {
+      &:before {
+        left: -12% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper {
+    .section {
+      left: -27px !important;
+    }
+    .section.words {
+      left: -27px !important;
+    }
+    .words-phrase-content {
+      margin-top: 93px !important;
+    }
+    .words-phrase-content .pointers {
+      padding-right: 5px;
+    }
+    .arrow-part {
+      padding-left: 10px !important;
+    }
+  }
+}

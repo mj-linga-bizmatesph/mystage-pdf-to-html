@@ -1,0 +1,89 @@
+@import '../../css/op-teleconferencing-utils';
+
+.html-lesson-wrapper {
+  .title {
+    padding-bottom: 10% !important;
+    @media only screen and (max-device-width: 767px) {
+      padding-top: 4%;
+      padding-bottom: 3%;
+    }
+  }
+  .part-spacer {
+    padding-bottom: 15rem;
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+
+  .review-part-1 {
+    padding-right: clamp(15px, 7vw, 55px);
+    .review-box {
+      width: 100%;
+    }
+  }
+  .content-div {
+    font-family: 'Trebuchet MS';
+    font-size: clamp(12px, 2vw, 15px);
+    margin-bottom: 2px;
+    padding-left: 20px;
+
+    .content-div {
+      .header-text {
+        margin-bottom: 2px;
+        padding-left: 20px;
+      }
+
+      .lessons {
+        li {
+          padding-left: 0px;
+          margin-bottom: 50px;
+        }
+      }
+
+      .bullets {
+        li {
+          padding-left: 0px;
+          margin-left: 15%;
+        }
+      }
+    }
+
+    .header-text-content {
+      font-size: (11px, 1.8vw, 16px);
+      line-height: 1.8;
+    }
+  }
+  .header-content {
+    .title {
+      margin-bottom: 25%;
+    }
+  }
+  .header-text {
+    margin-bottom: 2px;
+    padding-left: 20px;
+  }
+
+  .lessons {
+    li {
+      padding-left: 0px;
+      margin-bottom: 50px;
+      list-style-type: none;
+    }
+  }
+
+  .bullets {
+    li {
+      padding-left: 0px;
+      margin-left: 15%;
+      line-height: 1.8em;
+      @media only screen and (max-width: 480px) {
+        margin-left: 20%;
+      }
+    }
+  }
+  .content-div {
+    .sides {
+      padding-left: 20px;
+    }
+  }
+}

@@ -2,6 +2,18 @@
 
 .html-lesson-wrapper {
   .review-content {
+    .sub-text {
+      margin-left: 4.4%;
+      @media only screen and (max-width: 390px) {
+        margin-left: 8%;
+      }
+      @media only screen and (max-width: 320px) {
+        margin-left: 10%;
+      }
+    }
+    ol {
+      list-style-type: none;
+    }
     li {
       line-height: 1.8em;
     }

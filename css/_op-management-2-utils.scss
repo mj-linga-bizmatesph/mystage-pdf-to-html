@@ -95,20 +95,25 @@ body {
     position: absolute;
     top: 1.5%;
     left: 5%;
-    color: #ffffff;
-    font-size: 0px;
+    color: #fff;
+    font-size: 0;
     white-space: nowrap;
-    font-size: clamp(8px, 1.8vw, 15px);
+    font-size: clamp(8px,1.8vw,15px);
 
     .type {
-      padding: 0.7% 3% 0.7% 3%;
-      background-color: $magenta;
+    padding: clamp(1px,1vw,2px) clamp(20px,4vw,17px) 
+      clamp(1px,1vw,2px) clamp(10px,3vw,17px);
+    font-size: clamp(7px,1.8vw,15px);
+    background-color: #c36;
     }
 
     .level {
-      margin-left: -1.1%;
-      padding: 0.7% 3% 0.7% 3%;
-      background-color: $blue-green;
+    padding: clamp(1px,1vw,2px) clamp(20px,4vw,17px) 
+      clamp(1px,1vw,2px) clamp(10px,3vw,17px);
+    font-size: clamp(7px,1.8vw,15px);
+    background: #399;
+    max-width: 100%;
+    margin-left: -2%;
     }
   }
 
@@ -120,9 +125,8 @@ body {
     position: absolute;
     top: 2.3em;
     left: 5%;
-    font-size: clamp(18px, 4vw, 27px);
+    font-size: clamp(18px,4vw,27px);
     width: 90%;
-    text-transform: uppercase;
   }
 
   .lesson-number {
@@ -136,6 +140,16 @@ body {
   .lesson-number-two {
     @extend .lesson-number;
     right: 6.5%;
+  }
+
+  .header-content{
+    font-family: "Helvetica","Arial",sans-serif;
+    position: relative;
+    top: clamp(30px,8vw,50px);
+    color: #000;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-top: clamp(10px,3vw,25px);
   }
 
   .row {
@@ -254,19 +268,6 @@ body {
       margin-top: 3% !important;
       margin-left: 12%;
       padding-right: 1.5em;
-    }
-
-    .grid {
-      display: grid;
-    }
-
-    .grid-cols-2 {
-      grid-template-columns: 1fr 1fr;
-      gap: 1em;
-
-      .arrow-part {
-        margin-left: 1.8em;
-      }
     }
 
     p {

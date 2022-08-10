@@ -21,105 +21,86 @@ body {
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
-
 .html-lesson-wrapper header {
   font-family: "Helvetica", "Arial", sans-serif;
 }
-
 .html-lesson-wrapper .u {
   text-decoration: underline;
 }
-
 .html-lesson-wrapper .b, .html-lesson-wrapper .see-content table td:first-child {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .fw-normal {
   font-weight: normal !important;
 }
-
 .html-lesson-wrapper .i {
   font-family: italic;
 }
-
 .html-lesson-wrapper .no-wrap {
   white-space: nowrap;
 }
-
 .html-lesson-wrapper .table-responsive {
   overflow-x: auto;
   width: 100%;
 }
-
 .html-lesson-wrapper .sub-color {
   color: #7f7f7f;
 }
-
 .html-lesson-wrapper .paper {
   padding: 1%;
   border-color: #d8d8d8;
   border-style: solid;
   border-width: 2.25px;
 }
-
 .html-lesson-wrapper .paper:not(:last-child) {
   margin-bottom: 1.8em;
 }
-
 .html-lesson-wrapper .paper p {
   margin: 0;
 }
-
 .html-lesson-wrapper .paper p:not(:last-child) {
   margin-bottom: 1.8em;
 }
-
 .html-lesson-wrapper .paper .mb-0 {
   margin-bottom: 0 !important;
 }
-
 .html-lesson-wrapper .paper .mb-1_8em {
   margin-bottom: 1.8em !important;
 }
-
 .html-lesson-wrapper .paper .arrow-part {
   margin-left: 1.5em;
 }
-
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 1.5%;
   left: 5%;
-  color: #ffffff;
-  font-size: 0px;
+  color: #fff;
+  font-size: 0;
   white-space: nowrap;
   font-size: clamp(8px, 1.8vw, 15px);
 }
-
 .html-lesson-wrapper .program-rank .type {
-  padding: 0.7% 3% 0.7% 3%;
-  background-color: #cc3366;
+  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+  font-size: clamp(7px, 1.8vw, 15px);
+  background-color: #c36;
 }
-
 .html-lesson-wrapper .program-rank .level {
-  margin-left: -1.1%;
-  padding: 0.7% 3% 0.7% 3%;
-  background-color: #339999;
+  padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+  font-size: clamp(7px, 1.8vw, 15px);
+  background: #399;
+  max-width: 100%;
+  margin-left: -2%;
 }
-
 .html-lesson-wrapper .line {
   margin: 0 0.8em;
 }
-
 .html-lesson-wrapper .title {
   position: absolute;
   top: 2.3em;
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
   width: 90%;
-  text-transform: uppercase;
 }
-
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
   right: 6.9%;
@@ -127,11 +108,18 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
 .html-lesson-wrapper .lesson-number-two {
   right: 6.5%;
 }
-
+.html-lesson-wrapper .header-content {
+  font-family: "Helvetica", "Arial", sans-serif;
+  position: relative;
+  top: clamp(30px, 8vw, 50px);
+  color: #000;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-top: clamp(10px, 3vw, 25px);
+}
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,21 +129,17 @@ body {
   -ms-flex-direction: row;
   flex-direction: row;
 }
-
 .html-lesson-wrapper .sub-text {
   font-family: "Helvetica", "Arial", sans-serif !important;
   line-height: 1.8em;
   margin: 0 auto;
 }
-
 .html-lesson-wrapper .magenta-color {
   color: #cc3366;
 }
-
 .html-lesson-wrapper .sub-color {
   color: #7f7f7f;
 }
-
 .html-lesson-wrapper .section {
   position: absolute;
   color: #cc3366;
@@ -164,28 +148,23 @@ body {
   top: 2px;
   left: -10.5%;
 }
-
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
   font-size: clamp(12px, 2vw, 15px);
   position: relative;
   left: 52%;
 }
-
 .html-lesson-wrapper .divider.d1 {
   margin: 4% 0;
 }
-
 .html-lesson-wrapper .divider.d2 {
   margin: 4% 0;
 }
-
 .html-lesson-wrapper .divider ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
-
 .html-lesson-wrapper .see-content,
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content,
@@ -196,7 +175,6 @@ body {
   padding-right: 1.5em;
   font-size: clamp(12px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .biz-tip-content {
   position: relative;
   margin-top: clamp(87px, 18%, 160px);
@@ -209,14 +187,12 @@ body {
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .biz-tip-content .arrow-part {
   position: relative;
   margin-left: 1.5em;
 }
-
 .html-lesson-wrapper .biz-tip-content .arrow-part:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -1.5em;
   top: 0.3em;
@@ -228,16 +204,13 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-
 .html-lesson-wrapper .biz-tip-content .arrow-part span {
   color: #cc3366;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .biz-tip-content .no-arrow {
   margin-bottom: 1em;
 }
-
 .html-lesson-wrapper .biz-tip-content .section {
   left: 0;
   margin-left: 5%;
@@ -245,36 +218,17 @@ body {
   margin-top: 3% !important;
   width: clamp(20px, 8vw, 52px);
 }
-
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;
   margin-left: 12%;
   padding-right: 1.5em;
 }
-
-.html-lesson-wrapper .biz-tip-content .grid {
-  display: -ms-grid;
-  display: grid;
-}
-
-.html-lesson-wrapper .biz-tip-content .grid-cols-2 {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 1em;
-}
-
-.html-lesson-wrapper .biz-tip-content .grid-cols-2 .arrow-part {
-  margin-left: 1.8em;
-}
-
 .html-lesson-wrapper .biz-tip-content p {
   margin: 0;
 }
-
 .html-lesson-wrapper .see-content {
   margin-top: 36px;
 }
-
 .html-lesson-wrapper .see-content ul {
   margin: 0;
   margin-left: 1.2em;
@@ -282,18 +236,15 @@ body {
   margin-block: 0;
   padding-inline: 0;
 }
-
 .html-lesson-wrapper .see-content ul li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
 }
-
 .html-lesson-wrapper .see-content ul li::before {
-  content: '';
+  content: "";
   width: 1em;
   display: inline-block;
 }
-
 .html-lesson-wrapper .see-content ol {
   list-style-type: decimal;
   margin: 0;
@@ -302,59 +253,48 @@ body {
   margin-block: 0;
   padding-inline: 0;
 }
-
 .html-lesson-wrapper .see-content ol li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
 }
-
 .html-lesson-wrapper .see-content ol li::before {
-  content: '';
+  content: "";
   width: 1em;
   display: inline-block;
 }
-
 .html-lesson-wrapper .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
-
 .html-lesson-wrapper .see-content .article span.highlight {
   color: #cc3366;
   font-weight: bold;
 }
-
 .html-lesson-wrapper .see-content table {
   border-collapse: collapse;
 }
-
 .html-lesson-wrapper .see-content table p {
   margin: 0;
   line-height: 1.8em;
   top: -0.3em;
   position: relative;
 }
-
 .html-lesson-wrapper .see-content table p:not(:last-child) {
   margin-bottom: 1.8em;
 }
-
 .html-lesson-wrapper .see-content table td {
   padding: 0;
   vertical-align: top;
   line-height: 1.8em;
 }
-
 .html-lesson-wrapper .see-content table td:first-child {
   padding-right: 1em;
   width: 10%;
 }
-
 .html-lesson-wrapper .see-content table:not(:last-child) {
   margin-bottom: 1.8em;
 }
-
 .html-lesson-wrapper .try-content ol {
   list-style-type: decimal;
   margin: 0;
@@ -363,23 +303,19 @@ body {
   margin-block: 0;
   padding-inline: 0;
 }
-
 .html-lesson-wrapper .try-content ol li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
   line-height: 1.8em;
 }
-
 .html-lesson-wrapper .try-content ol li::before {
-  content: '';
+  content: "";
   width: 1em;
   display: inline-block;
 }
-
 .html-lesson-wrapper .try-content ol .alphabet {
   margin-left: 2.3em;
 }
-
 .html-lesson-wrapper .try-content table {
   border-collapse: collapse;
   margin-top: 5px;
@@ -388,7 +324,6 @@ body {
   padding-bottom: 5px;
   width: 100%;
 }
-
 .html-lesson-wrapper .try-content table th,
 .html-lesson-wrapper .try-content table td {
   max-width: 120px;
@@ -396,32 +331,27 @@ body {
   word-wrap: break-word;
   border: 1px solid #d9d9d9;
 }
-
 .html-lesson-wrapper .try-content table th {
   background-color: #cc3366;
   color: #ffffff;
   padding: 5px;
 }
-
 .html-lesson-wrapper .try-content table td {
   text-align: left;
   padding: 1% 1% 1.5% 1%;
   background-color: #fff;
   vertical-align: top;
 }
-
 .html-lesson-wrapper .try-content ul {
   -webkit-padding-start: 1.2em;
           padding-inline-start: 1.2em;
   margin: 0;
 }
-
 .html-lesson-wrapper .act-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-
 .html-lesson-wrapper .act-content ol {
   list-style-type: decimal;
   margin: 0;
@@ -430,31 +360,25 @@ body {
   margin-block: 0;
   padding-inline: 0;
 }
-
 .html-lesson-wrapper .act-content ol li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
   line-height: 1.8em;
 }
-
 .html-lesson-wrapper .act-content ol li::before {
-  content: '';
+  content: "";
   width: 1em;
   display: inline-block;
 }
-
 .html-lesson-wrapper .alphabet {
   list-style-type: lower-alpha !important;
 }
-
 .html-lesson-wrapper .review-content {
   margin-top: 28%;
 }
-
 .html-lesson-wrapper .review-content .sub-text {
   margin-bottom: 2em;
 }
-
 .html-lesson-wrapper .review-content ol {
   list-style-type: decimal;
   margin: 0;
@@ -462,26 +386,21 @@ body {
   margin-block: 0;
   padding-inline: 0;
 }
-
 .html-lesson-wrapper .review-content ol li {
   margin-bottom: 1.5em;
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
   line-height: 1.8em;
 }
-
 .html-lesson-wrapper .review-content ol li p {
   margin: 0;
 }
-
 .html-lesson-wrapper .review-content ol li p:first-child {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .review-content ol .alphabet {
   margin-left: 1.3em;
 }
-
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -494,7 +413,6 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   max-width: 39%;
 }
-
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .see-content {
     margin-top: clamp(22px, 3.8vw, 36px);
@@ -509,7 +427,6 @@ body {
     margin-top: clamp(20px, 3.8vw, 36px);
   }
 }
-
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .arrow-part:before {
     border-left: 3.5px solid transparent !important;
@@ -518,6 +435,22 @@ body {
   }
 }
 
+.html-lesson-wrapper .review-content .sub-text {
+  margin-left: 4.4%;
+}
+@media only screen and (max-width: 390px) {
+  .html-lesson-wrapper .review-content .sub-text {
+    margin-left: 8%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .html-lesson-wrapper .review-content .sub-text {
+    margin-left: 10%;
+  }
+}
+.html-lesson-wrapper .review-content ol {
+  list-style-type: none;
+}
 .html-lesson-wrapper .review-content li {
   line-height: 1.8em;
 }

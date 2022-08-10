@@ -78,6 +78,7 @@ body {
   font-size: 0;
   white-space: nowrap;
   font-size: clamp(8px, 1.8vw, 15px);
+  margin-top: 4%;
 }
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
@@ -133,6 +134,23 @@ body {
   font-family: "Helvetica", "Arial", sans-serif !important;
   line-height: 1.8em;
   margin: 0 auto;
+}
+.html-lesson-wrapper .dialogue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: clamp(12px, 2vw, 15px);
+  line-height: clamp(19px, 3vw, 24px);
+}
+.html-lesson-wrapper .dialogue .speaker {
+  width: 12%;
+  font-weight: bold;
+}
+.html-lesson-wrapper .dialogue .message {
+  width: 88%;
+}
+.html-lesson-wrapper .dialogue.first {
+  margin-bottom: 5%;
 }
 .html-lesson-wrapper .magenta-color {
   color: #cc3366;
@@ -222,6 +240,7 @@ body {
   margin-top: 3% !important;
   margin-left: 12%;
   padding-right: 1.5em;
+  line-height: normal;
 }
 .html-lesson-wrapper .biz-tip-content p {
   margin: 0;

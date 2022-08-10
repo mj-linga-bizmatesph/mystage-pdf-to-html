@@ -99,6 +99,7 @@ body {
     font-size: 0;
     white-space: nowrap;
     font-size: clamp(8px,1.8vw,15px);
+    margin-top: 4%;
 
     .type {
     padding: clamp(1px,1vw,2px) clamp(20px,4vw,17px) 
@@ -166,6 +167,22 @@ body {
     font-family: $helvetica !important;
     line-height: 1.8em;
     margin: 0 auto;
+  }
+
+  .dialogue {
+    display: flex;
+    font-size: clamp(12px, 2vw, 15px);
+    line-height: clamp(19px, 3vw, 24px);
+    .speaker {
+      width: 12%;
+      font-weight: bold;
+    }
+    .message {
+      width: 88%;
+    }
+    &.first {
+      margin-bottom: 5%;
+    }
   }
 
   .magenta-color {
@@ -268,6 +285,7 @@ body {
       margin-top: 3% !important;
       margin-left: 12%;
       padding-right: 1.5em;
+      line-height: normal;
     }
 
     p {

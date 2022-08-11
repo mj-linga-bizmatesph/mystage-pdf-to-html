@@ -195,7 +195,6 @@ body {
 }
 .html-lesson-wrapper .see-content .sub-text {
   line-height: 1.8em;
-  margin-left: 2px;
 }
 .html-lesson-wrapper .see-content .table {
   margin-top: 20px;
@@ -491,7 +490,7 @@ body {
     margin-left: 0px !important;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) and (max-width: 1800px) {
   .html-lesson-wrapper .title {
     top: 70px !important;
     width: 80%;

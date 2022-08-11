@@ -101,6 +101,7 @@ body {
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
   width: 90%;
+  margin-top: 3%;
 }
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
@@ -165,6 +166,9 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
   left: -10.5%;
+}
+.html-lesson-wrapper .section.words {
+  margin-top: 1%;
 }
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
@@ -233,12 +237,12 @@ body {
   left: 0;
   margin-left: 5%;
   line-height: 1.8em;
-  margin-top: 3% !important;
+  margin-top: 2.5% !important;
   width: clamp(20px, 8vw, 52px);
 }
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;
-  margin-left: 12%;
+  margin-left: 11%;
   padding-right: 1.5em;
   line-height: normal;
 }

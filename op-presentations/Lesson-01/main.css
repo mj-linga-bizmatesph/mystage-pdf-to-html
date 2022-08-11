@@ -52,6 +52,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1680px) {
+  .html-lesson-wrapper .program-rank {
+    left: 5%;
+  }
+}
+
 @media screen and (max-width: 959px) {
   .html-lesson-wrapper .program-rank {
     left: 6.5%;
@@ -93,6 +99,12 @@ body {
 @media screen and (max-width: 1920px) {
   .html-lesson-wrapper .title {
     left: 58px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .html-lesson-wrapper .title {
+    left: 35px;
   }
 }
 
@@ -295,6 +307,7 @@ body {
   position: relative;
   right: clamp(16px, 2vw, 20px);
   margin-bottom: clamp(6px, 1vw, 10px);
+  line-height: normal;
 }
 
 @media screen and (max-width: 769px) {
@@ -348,12 +361,12 @@ body {
 
 .html-lesson-wrapper .biz-tip-content .pointers .biz-ul {
   margin-left: -1%;
+  line-height: normal;
 }
 
 @media screen and (max-width: 401px) {
   .html-lesson-wrapper .biz-tip-content .pointers .biz-ul {
     margin-left: -1.8%;
-    line-height: normal;
   }
 }
 

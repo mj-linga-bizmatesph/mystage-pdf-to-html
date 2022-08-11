@@ -52,6 +52,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1680px) {
+  .html-lesson-wrapper .program-rank {
+    left: 5%;
+  }
+}
+
 @media screen and (max-width: 959px) {
   .html-lesson-wrapper .program-rank {
     left: 6.5%;
@@ -93,6 +99,12 @@ body {
 @media screen and (max-width: 1920px) {
   .html-lesson-wrapper .title {
     left: 58px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .html-lesson-wrapper .title {
+    left: 35px;
   }
 }
 

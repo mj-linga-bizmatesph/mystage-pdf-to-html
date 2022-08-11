@@ -1,0 +1,22 @@
+@import '../../css/_op-meetings-utils.scss';
+
+.html-lesson-wrapper {
+  .see-content {
+    .row {
+      margin-bottom: 0px !important;
+
+      .number {
+        margin-right: 5px !important;
+      }
+    }
+    .content {
+      @media only screen and (max-width: 460px) {
+        width: 95% !important;
+        overflow-x: auto !important;
+        .see-table-content {
+          width: 150% !important;
+        }
+      }
+    }
+  }
+}

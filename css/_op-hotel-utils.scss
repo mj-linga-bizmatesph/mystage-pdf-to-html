@@ -128,6 +128,7 @@ body {
   .see-content {
     .sub-text.extra-text-red {
       margin-left: 1px !important;
+      color: red !important;
     }
   }
   .table {
@@ -215,7 +216,6 @@ body {
       margin-top: -12px;
     }
     .table-2 {
-      // margin-top: -16px;
       margin-left: 3.8px;
     }
     .table {
@@ -309,6 +309,9 @@ body {
     margin-top: 36px;
     .act {
       margin-top: 4px;
+    }
+    .sub-text {
+      font-family: $text-font !important;
     }
     p,
     .act-content-div {

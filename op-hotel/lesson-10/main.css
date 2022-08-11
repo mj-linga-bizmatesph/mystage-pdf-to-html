@@ -125,6 +125,7 @@ body {
 }
 .html-lesson-wrapper .see-content .sub-text.extra-text-red {
   margin-left: 1px !important;
+  color: red !important;
 }
 .html-lesson-wrapper .table {
   width: 100%;
@@ -307,6 +308,9 @@ body {
 }
 .html-lesson-wrapper .act-content .act {
   margin-top: 4px;
+}
+.html-lesson-wrapper .act-content .sub-text {
+  font-family: "Trebuchet MS" !important;
 }
 .html-lesson-wrapper .act-content p,
 .html-lesson-wrapper .act-content .act-content-div {

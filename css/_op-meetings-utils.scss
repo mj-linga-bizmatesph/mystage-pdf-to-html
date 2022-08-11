@@ -398,7 +398,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
     .person {
       font-weight: bold;
-      width: clamp(2.2rem, 17%, 5.5rem);
+      width: clamp(2.2rem, 17%, 8.5rem);
       font-size: clamp(12px, 2vw, 15px);
     }
 
@@ -448,13 +448,13 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
+    // display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
 
     &:not(.no-mb) {
-      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
+      // grid-gap: clamp(0.1rem, 1vw, 0.4rem);
     }
 
     li::before {
@@ -463,9 +463,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
 
     li {
-      display: grid;
-      grid-template-columns: 1% 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 0.1rem);
+      // display: grid;
+      // grid-template-columns: 1% 1fr;
+      // grid-gap: clamp(1rem, 1.5vw, 0.1rem);
 
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -477,13 +477,13 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
+    // display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
 
     &:not(.no-mb) {
-      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
+      // grid-gap: clamp(0.1rem, 1vw, 0.4rem);
     }
 
     li::before {
@@ -492,9 +492,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
 
     li {
-      display: grid;
-      grid-template-columns: 0 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
+      // display: grid;
+      // grid-template-columns: 0 1fr;
+      // grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -593,7 +593,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       margin: 0;
       padding: 0;
       list-style: none;
-      display: grid;
+      // display: grid;
       counter-reset: orderedlist;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
@@ -602,7 +602,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       }
 
       &:not(.no-mb) {
-        grid-gap: clamp(0.1rem, 1vw, 0.4rem);
+        // grid-gap: clamp(0.1rem, 1vw, 0.4rem);
       }
 
       li::before {
@@ -611,9 +611,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       }
 
       li {
-        display: grid;
-        grid-template-columns: 1% 1fr;
-        grid-gap: clamp(1rem, 1.5vw, 2.1rem);
+        // display: grid;
+        // grid-template-columns: 1% 1fr;
+        // grid-gap: clamp(1rem, 1.5vw, 2.1rem);
         margin: 12.5px 0px;
 
         &:first-child {
@@ -659,14 +659,14 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       margin: 0;
       padding: 0;
       list-style: none;
-      display: grid;
+      // display: grid;
       counter-reset: orderedlist;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
       line-height: 1.8em;
 
       &:not(.no-mb) {
-        grid-gap: clamp(0.1rem, 1vw, 0.4rem);
+        // grid-gap: clamp(0.1rem, 1vw, 0.4rem);
       }
 
       li::before {
@@ -675,9 +675,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       }
 
       li {
-        display: grid;
-        grid-template-columns: 1% 1fr;
-        grid-gap: clamp(1rem, 1.5vw, 2.1rem);
+        // display: grid;
+        // grid-template-columns: 1% 1fr;
+        // grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 
         div:not(:last-child) {
           margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -693,7 +693,11 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .numbers {
       line-height: 1.8;
     }
-
+    .content{
+      .sub-text{
+        margin: 0;
+      }
+    }
     ul {
       list-style-type: decimal;
     }

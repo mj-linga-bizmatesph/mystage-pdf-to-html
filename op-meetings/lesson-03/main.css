@@ -353,7 +353,7 @@ body {
 }
 .html-lesson-wrapper .see-content .person {
   font-weight: bold;
-  width: clamp(2.2rem, 17%, 5.5rem);
+  width: clamp(2.2rem, 17%, 8.5rem);
   font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .see-content .speech {
@@ -396,22 +396,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }
-.html-lesson-wrapper ol.numbers:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper ol.numbers li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist) ". ";
-}
-.html-lesson-wrapper ol.numbers li {
-  display: grid;
-  grid-template-columns: 1% 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 0.1rem);
 }
 .html-lesson-wrapper ol.numbers li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -420,22 +411,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }
-.html-lesson-wrapper ol.bullets:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper ol.bullets li::before {
   counter-increment: orderedlist;
   content: "■ ";
-}
-.html-lesson-wrapper ol.bullets li {
-  display: grid;
-  grid-template-columns: 0 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 .html-lesson-wrapper ol.bullets li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -519,7 +501,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
@@ -529,17 +510,11 @@ body {
     padding-right: 10px;
   }
 }
-.html-lesson-wrapper .part-content ol.numbers:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper .part-content ol.numbers li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist) ". ";
 }
 .html-lesson-wrapper .part-content ol.numbers li {
-  display: grid;
-  grid-template-columns: 1% 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
   margin: 12.5px 0px;
 }
 .html-lesson-wrapper .part-content ol.numbers li:first-child {
@@ -583,23 +558,14 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   counter-reset: orderedlist;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
   line-height: 1.8em;
 }
-.html-lesson-wrapper .part-content ol:not(.no-mb) {
-  grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-}
 .html-lesson-wrapper .part-content ol li::before {
   counter-increment: orderedlist;
   content: counter(orderedlist) ". ";
-}
-.html-lesson-wrapper .part-content ol li {
-  display: grid;
-  grid-template-columns: 1% 1fr;
-  grid-gap: clamp(1rem, 1.5vw, 2.1rem);
 }
 .html-lesson-wrapper .part-content ol li div:not(:last-child) {
   margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
@@ -609,6 +575,9 @@ body {
 }
 .html-lesson-wrapper .try-content .numbers {
   line-height: 1.8;
+}
+.html-lesson-wrapper .try-content .content .sub-text {
+  margin: 0;
 }
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;

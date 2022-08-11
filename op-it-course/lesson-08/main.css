@@ -742,41 +742,6 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
-.html-lesson-wrapper .content-item .try-ul .f-li li .ul-section {
-  border: 2px solid;
-}
-
-.html-lesson-wrapper .content-item .try-ul .f-li li .ul-section .content-text {
-  margin-left: 4.3%;
-  margin-top: 0.5%;
-}
-
-.html-lesson-wrapper .content-item .try-ul .f-li li .ul-section .content-text div {
-  margin-left: -3%;
-}
-
-.html-lesson-wrapper .content-item .try-ul .f-li li .ul-section li {
-  margin-left: 0.5%;
-}
-
-@media screen and (max-width: 501px) {
-  .html-lesson-wrapper .content-item .try-ul .f-li li .ul-section li {
-    margin-left: 1.5%;
-  }
-}
-
-@media screen and (max-width: 401px) {
-  .html-lesson-wrapper .content-item .try-ul .f-li li .ul-section li {
-    margin-left: 2.5%;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .html-lesson-wrapper .content-item .try-ul .f-li li .ul-section li {
-    margin-left: 3.5%;
-  }
-}
-
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
   margin-left: 3.3%;
 }

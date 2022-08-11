@@ -248,10 +248,10 @@ body {
         }
         .content-header {
           margin-bottom: 1.5%;
-          width: 135%;
+          width: 114%;
 
           @media screen and (max-width: 501px) {
-            width: 125%;
+            width: 100%;
           }
         }
         p {
@@ -484,6 +484,7 @@ body {
             margin-left: 0%;
             width: 100%;
             font-weight: bold;
+            color: red;
 
             @media screen and (max-width: 451px) {
               width: 80%;
@@ -492,7 +493,7 @@ body {
 
           div {
             width: 48%;
-            margin-left: 3%;
+            margin-left: 0%;
           }
         }
         .name {

@@ -2,34 +2,6 @@
 .html-lesson-wrapper {
   .content-item {
     .try-ul {
-      .f-li {
-        li {
-          .ul-section {
-            border: 2px solid;
-            .content-text {
-              margin-left: 4.3%;
-              margin-top: 0.5%;
-              div {
-                margin-left: -3%;
-              }
-            }
-            li {
-              margin-left: 0.5%;
-
-              @media screen and (max-width: 501px) {
-                margin-left: 1.5%;
-              }
-              @media screen and (max-width: 401px) {
-                margin-left: 2.5%;
-              }
-              @media screen and (max-width: 321px) {
-                margin-left: 3.5%;
-              }
-            }
-          }
-        }
-      }
-
       .try-content-ul {
         .content-text {
           margin-left: 3.3%;

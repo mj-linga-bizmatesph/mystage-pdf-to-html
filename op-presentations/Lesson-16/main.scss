@@ -1,0 +1,35 @@
+@import '../../css/op-presentations-utils';
+
+.html-lesson-wrapper {
+  .lesson-number {
+    left: clamp(91.5%, 93vw, 91%);
+  }
+  .see-content {
+    .see-section {
+      .convo-text {
+        margin-left: 2.5%;
+
+        @media screen and (max-width: 401px) {
+          margin-left: 6%;
+        }
+        li {
+          color: black;
+          div {
+            font-weight: bold;
+            margin-left: -1%;
+          }
+        }
+        ul {
+          list-style: none;
+          margin-top: -1%;
+          li {
+            div {
+              color: black;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

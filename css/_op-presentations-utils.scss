@@ -1,0 +1,642 @@
+$text-font: 'Trebuchet MS';
+$title-font: Helvetica, Arial, 'Sans-serif';
+$magenta: #cc3366;
+$green: #339999;
+$pink: #f0d4d4;
+$gray: #d9d9d9;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.html-lesson-wrapper {
+  min-width: 320px;
+  max-width: 100%;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
+  background-position: top, -11.5px 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: $text-font;
+
+  header {
+    font-family: $title-font;
+    margin-top: 3%;
+  }
+  .ml {
+    margin-bottom: 1%;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .ls {
+    list-style: decimal !important;
+    line-height: 1.8 !important;
+  }
+  .program-rank {
+    position: absolute;
+    top: 3.05%;
+    left: 5%;
+    color: #ffffff;
+    font-size: 0px;
+
+    @media screen and (max-width: 1920px) {
+      left: 6.5%;
+    }
+    @media screen and (max-width: 1680px) {
+      left: 5%;
+    }
+    @media screen and (max-width: 959px) {
+      left: 6.5%;
+    }
+    @media screen and (max-width: 901px) {
+      left: 5%;
+    }
+    @media screen and (max-width: 801px) {
+      left: 5.8%;
+    }
+
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $magenta;
+      font-size: clamp(8px, 1.8vw, 15px);
+    }
+    .level {
+      padding: 3px 20px 3px 13px;
+      background-color: $green;
+      font-size: clamp(8px, 1.8vw, 15px);
+    }
+  }
+  .title {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1920px) {
+      left: 58px;
+    }
+    @media screen and (max-width: 1680px) {
+      left: 35px;
+    }
+    @media screen and (max-width: 959px) {
+      left: 58px;
+    }
+    @media screen and (max-width: 901px) {
+      left: 42px;
+    }
+  }
+  .lesson-number {
+    position: absolute;
+    left: clamp(91.5%, 93vw, 92%);
+    margin-top: 4.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
+  .instruction {
+    font-family: $title-font !important;
+    line-height: clamp(12px, 2.8vw, 22px);
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding-top: 0.5%;
+
+    @media screen and (max-width: 701px) {
+      padding-top: 1%;
+    }
+    @media screen and (max-width: 601px) {
+      padding-top: 1.1%;
+    }
+    @media screen and (max-width: 501px) {
+      padding-top: 1.6%;
+    }
+  }
+  .sub-text {
+    font-family: $text-font !important;
+    line-height: clamp(12px, 2.8vw, 22px);
+    margin: 0 auto;
+
+    @media screen and (max-width: 401px) {
+      margin-left: 1%;
+      line-height: 1.8;
+    }
+  }
+  .section {
+    position: absolute;
+    left: -66px;
+    color: $magenta;
+    font-weight: bold;
+    font-family: $title-font;
+    top: 2px;
+  }
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(12px, 2vw, 15px);
+    position: relative;
+    left: 52%;
+    margin-top: 50px;
+  }
+  ul {
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+
+    @media screen and (max-width: 900px) {
+      margin: 3px 0px 0px 22px;
+    }
+    li {
+      padding-left: 8px;
+    }
+  }
+  .highlight {
+    color: black;
+    font-weight: bold;
+  }
+  .see-content,
+  .act-content,
+  .try-content {
+    position: relative;
+    margin-left: clamp(50px, 14%, 126.5px);
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(12px, 2vw, 15px);
+  }
+  .table {
+    width: 100%;
+  }
+  .speaker {
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+  td {
+    height: clamp(10px, 2.5vw, 30px);
+    vertical-align: top;
+    padding-right: 5px;
+  }
+  .dialogue {
+    position: relative;
+    line-height: 1.8;
+    padding-right: clamp(8px, 2vw, 19px) !important;
+    margin-bottom: 2%;
+    .underline {
+      border-bottom: 1px solid black;
+    }
+  }
+  .biz-tip-content {
+    position: relative;
+    height: fit-content;
+    margin-top: clamp(87px, 17.6%, 157px);
+    padding: 2px 0px 0px 47px;
+    padding-bottom: clamp(10px, 2vw, 20px);
+    padding-left: clamp(32px, 6vw, 47px);
+    background: $pink;
+    font-size: clamp(12px, 2vw, 15px);
+    .section {
+      margin-left: 14%;
+      margin-top: clamp(12px, 2.8vw, 21px) !important;
+    }
+    .pointers {
+      margin-top: clamp(14px, 2.8vw, 20px) !important;
+      margin-left: 14.2%;
+      line-height: normal;
+
+      @media screen and (max-width: 900px) {
+        margin-left: 13.6%;
+      }
+      @media screen and (max-width: 769px) {
+        margin-left: 14%;
+      }
+      @media screen and (max-width: 601px) {
+        margin-left: 15%;
+      }
+      @media screen and (max-width: 461px) {
+        margin-left: 16.5%;
+      }
+      @media screen and (max-width: 401px) {
+        margin-left: 17%;
+      }
+      @media screen and (max-width: 351px) {
+        margin-left: 18%;
+      }
+      .biz-tip-header {
+        position: relative;
+        right: clamp(16px, 2vw, 20px);
+        margin-bottom: clamp(6px, 1vw, 10px);
+        line-height: normal;
+
+        @media screen and (max-width: 769px) {
+          right: clamp(16px, 3vw, 20px);
+        }
+        @media screen and (max-width: 601px) {
+          right: clamp(12px, 2.5vw, 20px);
+        }
+        @media screen and (max-width: 461px) {
+          right: clamp(18px, 2.5vw, 20px);
+        }
+        @media screen and (max-width: 401px) {
+          right: clamp(16px, 2.5vw, 20px);
+        }
+        @media screen and (max-width: 321px) {
+          right: clamp(13px, 2.5vw, 20px);
+        }
+      }
+      .arrow-part {
+        padding-left: 7px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: -16px;
+          top: 4px;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 8px solid black;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .biz-ul {
+        margin-left: -1%;
+        line-height: normal;
+
+        @media screen and (max-width: 401px) {
+          margin-left: -1.8%;
+        }
+
+        li {
+          list-style-type: '\25BC';
+          margin-top: -0.5%;
+        }
+      }
+    }
+  }
+  .see-content {
+    margin-top: 36px;
+    .see {
+      margin-top: 2px;
+    }
+    .sub-text {
+      line-height: 1.8em;
+      margin-left: 2px;
+
+      @media screen and (max-width: 401px) {
+        margin-left: 3px;
+      }
+    }
+    .table {
+      margin-top: 20px;
+      width: 100%;
+    }
+    td {
+      height: clamp(10px, 2.5vw, 30px);
+      vertical-align: top;
+    }
+
+    .see-section {
+      font-size: clamp(12px, 2vw, 15px);
+      padding-top: 0.4%;
+
+      @media screen and (max-width: 600px) {
+        padding-top: 1%;
+      }
+      @media screen and (max-width: 400px) {
+        padding-top: 2%;
+      }
+      @media screen and (max-width: 361px) {
+        padding-top: 2.5%;
+      }
+      .instruction-text {
+        font-weight: bold;
+      }
+      ul {
+        margin-left: -1%;
+
+        @media screen and (max-width: 401px) {
+          margin-left: -2%;
+        }
+        li {
+          line-height: 1.8;
+          div {
+            width: clamp(100px, 68vw, 500px);
+            margin-left: 2%;
+
+            @media screen and (max-width: 401px) {
+              margin-left: 4%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .try-content {
+    margin-top: 30px;
+    .sub-text {
+      line-height: 1.8em;
+    }
+    .try {
+      margin-top: 4px;
+    }
+    .decimal {
+      list-style-type: decimal;
+      line-height: 1.8;
+      margin-left: 3.5% !important;
+
+      @media screen and (max-width: 501px) {
+        margin-left: 4% !important;
+      }
+      @media screen and (max-width: 451px) {
+        margin-left: 4.5% !important;
+      }
+      @media screen and (max-width: 401px) {
+        margin-left: 7.5% !important;
+      }
+      @media screen and (max-width: 371px) {
+        margin-left: 7% !important;
+      }
+      @media screen and (max-width: 321px) {
+        margin-left: 8% !important;
+      }
+    }
+    .bullet {
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: decimal;
+      li {
+        line-height: 1.8;
+      }
+    }
+  }
+  .act-content {
+    height: fit-content;
+    margin-bottom: clamp(50px, 13vw, 120px);
+    margin-top: 36px;
+    .act {
+      margin-top: 4px;
+    }
+    p {
+      line-height: 1.8;
+    }
+    .decimal {
+      list-style-type: decimal;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: decimal;
+      li {
+        line-height: 1.8;
+      }
+    }
+  }
+  footer {
+    font-family: $title-font;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: 33px;
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      max-width: 45%;
+      right: 2%;
+
+      @media screen and (max-width: 551px) {
+        max-width: 40%;
+      }
+    }
+  }
+  .inline-block {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper {
+    min-height: unset;
+    .biz-tip-content {
+      .section {
+        left: calc(-15% + 54px);
+      }
+    }
+    .see-content {
+      margin-top: clamp(22px, 3.8vw, 36px);
+    }
+    .try-content {
+      margin-top: clamp(20px, 3.7vw, 30px);
+      ul {
+        @media screen and (max-width: 501px) {
+          margin-left: 4%;
+        }
+        @media screen and (max-width: 401px) {
+          margin-left: 17px;
+        }
+        @media screen and (max-width: 346px) {
+          margin-left: 7.5%;
+        }
+      }
+      li {
+        padding-left: clamp(9px, 1.8vw, 13px);
+      }
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
+
+      ul {
+        @media screen and (max-width: 501px) {
+          margin-left: 4%;
+        }
+        @media screen and (max-width: 401px) {
+          margin-left: 7%;
+        }
+        @media screen and (max-width: 346px) {
+          margin-left: 8%;
+        }
+      }
+    }
+    footer {
+      bottom: clamp(16px, 4.8vw, 43px);
+      right: 5% !important;
+    }
+    .section {
+      left: calc(-16% + 42px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper {
+    .biz-tip-content {
+      .section {
+        left: calc(-15% + 37px);
+      }
+    }
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: clamp(23px, 4vw, 48px);
+    }
+    .title {
+      top: clamp(40px, 8.4vw, 80px);
+      left: clamp(22.5px, 3.8vw, 55px);
+    }
+    .divider {
+      &.d1,
+      &.d2 {
+        margin-top: clamp(18px, 3.4vw, 28px);
+      }
+    }
+    .section {
+      left: calc(-15% + 20px);
+    }
+    .arrow-part {
+      &:before {
+        left: -3% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .html-lesson-wrapper {
+    background-position: top, -11px 100% !important;
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .arrow-part {
+      &:before {
+        border-left: 3.5px solid transparent !important;
+        border-right: 3.5px solid transparent !important;
+        border-top: 5.5px solid black !important;
+      }
+    }
+    .act-content {
+      .table-1 {
+        width: 105%;
+      }
+    }
+    .biz-tip-content {
+      .section {
+        left: calc(-15% + 29px);
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .html-lesson-wrapper {
+    background-position: top, -1.5px 100% !important;
+    .pointers {
+      padding-right: 6px;
+    }
+    .instruction {
+      padding-top: 7px;
+      margin-left: 0%;
+
+      @media screen and (max-width: 401px) {
+        margin-left: 1%;
+      }
+    }
+    .inline-block {
+      display: block !important;
+    }
+    .decimal {
+      margin-left: 14px !important;
+    }
+    .biz-tip-content {
+      .section {
+        left: calc(-15% + 28px);
+        display: flex;
+        column-gap: 10%;
+
+        @media screen and (max-width: 321px) {
+          left: calc(-15% + 26px) !important;
+        }
+      }
+    }
+    .arrow-part {
+      margin-left: -5px;
+    }
+    .section {
+      left: calc(-15% + 17px);
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper {
+    .title {
+      width: 350px !important;
+
+      @media screen and (max-width: 371px) {
+        width: 200px !important;
+      }
+    }
+    .biz-tip-header {
+      top: -2px !important;
+      .arrow-part {
+        &:before {
+          left: -14.5% !important;
+          top: 0.6vw !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 358px) {
+  .act-content .table-1 {
+    display: none !important;
+  }
+  .act-content .table-2 {
+    display: flex !important;
+    border-collapse: collapse;
+    width: 113%;
+    th {
+      height: clamp(20px, 4vw, 40px);
+      text-align: left;
+      font-weight: normal;
+      width: 120px;
+    }
+    .arrow-part {
+      &:before {
+        left: -12% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .html-lesson-wrapper {
+    .section {
+      left: -27px !important;
+    }
+    .section.words {
+      left: -27px !important;
+    }
+    .words-phrase-content {
+      margin-top: 93px;
+    }
+    .words-phrase-content .pointers {
+      padding-right: 5px;
+    }
+    .arrow-part {
+      padding-left: 10px !important;
+    }
+  }
+}

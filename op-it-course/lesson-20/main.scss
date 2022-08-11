@@ -1,6 +1,70 @@
 @import '../../css/op-it-course-utils';
+
+$magenta: #cc3366;
 .html-lesson-wrapper {
   .content-item {
+    .see-ul {
+      .table-ul {
+        list-style: none;
+        margin-top: 1%;
+        .tbl-r1 {
+          margin-left: -5%;
+          .email-window {
+            background: $magenta;
+            padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);
+            display: grid;
+            row-gap: clamp(4px, 1vw, 7px);
+            border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
+            width: 58%;
+          }
+          .email-header {
+            display: grid;
+            grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+            font-size: clamp(9px, 2vw, 13px);
+            column-gap: clamp(0.2rem, 1vw, 1rem);
+          }
+
+          .email-header-label {
+            row-gap: clamp(4px, 1vw, 7px);
+            display: grid;
+          }
+
+          .email-header-label-to {
+            width: 100%;
+            background: #d8d8d8;
+            border-radius: 3px;
+            height: clamp(15px, 2vw, 22px);
+            place-items: center;
+            display: grid;
+          }
+          .email-header-label-subject {
+            font-style: italic;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: clamp(15px, 2vw, 22px);
+          }
+          .email-header-textfield {
+            display: grid;
+            row-gap: clamp(4px, 1vw, 7px);
+          }
+          .email-textfield {
+            background: white;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            min-height: clamp(15px, 2vw, 22px);
+          }
+          .email-content {
+            background: white;
+            padding: 5px;
+            font-size: clamp(8px, 2vw, 12px);
+          }
+        }
+      }
+    }
     .try-ul {
       .try-content-ul {
         .content-text {

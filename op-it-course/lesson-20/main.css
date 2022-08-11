@@ -340,12 +340,12 @@ body {
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
   margin-bottom: 1.5%;
-  width: 135%;
+  width: 114%;
 }
 
 @media screen and (max-width: 501px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .content-header {
-    width: 125%;
+    width: 100%;
   }
 }
 
@@ -637,7 +637,7 @@ body {
 .html-lesson-wrapper .content-item .see-ul .see-content-ul .see-content-ul2 .p {
   margin-left: 0%;
   width: 100%;
-  font-weight: bold;
+  color: red;
 }
 
 @media screen and (max-width: 451px) {
@@ -648,7 +648,7 @@ body {
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul .see-content-ul2 div {
   width: 48%;
-  margin-left: 3%;
+  margin-left: 0%;
 }
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul .name {
@@ -740,6 +740,91 @@ body {
 
 .html-lesson-wrapper .content-item-divider::after {
   content: '\25BC\25BC\25BC';
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul {
+  list-style: none;
+  margin-top: 1%;
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 {
+  margin-left: -5%;
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-window {
+  background: #cc3366;
+  padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);
+  display: -ms-grid;
+  display: grid;
+  row-gap: clamp(4px, 1vw, 7px);
+  border: clamp(2px, 0.5vw, 3px) solid #a5a5a5;
+  width: 58%;
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+      grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+  font-size: clamp(9px, 2vw, 13px);
+  -webkit-column-gap: clamp(0.2rem, 1vw, 1rem);
+          column-gap: clamp(0.2rem, 1vw, 1rem);
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-header-label {
+  row-gap: clamp(4px, 1vw, 7px);
+  display: -ms-grid;
+  display: grid;
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-header-label-to {
+  width: 100%;
+  background: #d8d8d8;
+  border-radius: 3px;
+  height: clamp(15px, 2vw, 22px);
+  place-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-header-label-subject {
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: clamp(15px, 2vw, 22px);
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-header-textfield {
+  display: -ms-grid;
+  display: grid;
+  row-gap: clamp(4px, 1vw, 7px);
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-textfield {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  min-height: clamp(15px, 2vw, 22px);
+}
+
+.html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-content {
+  background: white;
+  padding: 5px;
+  font-size: clamp(8px, 2vw, 12px);
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {

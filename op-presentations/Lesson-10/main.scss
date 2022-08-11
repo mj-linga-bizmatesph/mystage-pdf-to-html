@@ -83,7 +83,7 @@ body {
     top: 6.5px;
   }
   .p1 {
-    top: 3px;
+    top: 6px;
   }
   .divider {
     color: #d9d9d9;
@@ -124,7 +124,7 @@ body {
   }
   .instruction {
     font-family: $title-font !important;
-    line-height: clamp(12px, 2.8vw, 22px);
+    line-height: 1.8;
     margin: 0 auto;
   }
 

@@ -147,6 +147,7 @@ body {
 
 .html-lesson-wrapper .part-content .part2-ul {
   list-style: decimal;
+  line-height: normal;
 }
 
 @media screen and (max-width: 461px) {
@@ -205,7 +206,7 @@ body {
 
 .html-lesson-wrapper .instruction {
   font-family: Helvetica, Arial, "Sans-serif" !important;
-  line-height: clamp(12px, 2.8vw, 22px);
+  line-height: 1.8;
   margin: 0 auto;
   font-weight: bold;
   padding-top: 0.3%;

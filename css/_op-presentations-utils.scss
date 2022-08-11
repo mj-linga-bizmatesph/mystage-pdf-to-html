@@ -36,6 +36,7 @@ body {
   }
   .ls {
     list-style: decimal !important;
+    line-height: 1.8 !important;
   }
   .program-rank {
     position: absolute;
@@ -198,6 +199,7 @@ body {
     .pointers {
       margin-top: clamp(14px, 2.8vw, 20px) !important;
       margin-left: 14.2%;
+      line-height: normal;
 
       @media screen and (max-width: 900px) {
         margin-left: 13.6%;
@@ -221,6 +223,7 @@ body {
         position: relative;
         right: clamp(16px, 2vw, 20px);
         margin-bottom: clamp(6px, 1vw, 10px);
+        line-height: normal;
 
         @media screen and (max-width: 769px) {
           right: clamp(16px, 3vw, 20px);
@@ -257,10 +260,10 @@ body {
       }
       .biz-ul {
         margin-left: -1%;
+        line-height: normal;
 
         @media screen and (max-width: 401px) {
           margin-left: -1.8%;
-          line-height: normal;
         }
 
         li {
@@ -274,17 +277,6 @@ body {
     margin-top: 36px;
     .see {
       margin-top: 2px;
-      // margin-left: 3%;
-
-      // @media screen and (max-width: 769px) {
-      //   margin-left: -2.7%;
-      // }
-      // @media screen and (max-width: 631px) {
-      //   margin-left: -4%;
-      // }
-      // @media screen and (max-width: 401px) {
-      //   margin-left: -1.5%;
-      // }
     }
     .sub-text {
       line-height: 1.8em;
@@ -346,11 +338,6 @@ body {
     }
     .try {
       margin-top: 4px;
-      // margin-left: 3%;
-
-      // @media screen and (max-width: 401px) {
-      //   margin-left: -1.5%;
-      // }
     }
     .decimal {
       list-style-type: decimal;
@@ -390,11 +377,6 @@ body {
     margin-top: 36px;
     .act {
       margin-top: 4px;
-      // margin-left: 3%;
-
-      // @media screen and (max-width: 401px) {
-      //   margin-left: -1.5%;
-      // }
     }
     p {
       line-height: 1.8;
@@ -558,9 +540,6 @@ body {
     .pointers {
       padding-right: 6px;
     }
-    // .try-content .instruction {
-    //   margin-left: 10px;
-    // }
     .instruction {
       padding-top: 7px;
       margin-left: 0%;
@@ -575,11 +554,6 @@ body {
     .decimal {
       margin-left: 14px !important;
     }
-    // .see-content {
-    //   .see {
-    //     margin-top: 4px !important;
-    //   }
-    // }
     .biz-tip-content {
       .section {
         left: calc(-15% + 28px);

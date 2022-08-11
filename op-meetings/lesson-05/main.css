@@ -376,7 +376,7 @@ body {
 }
 .html-lesson-wrapper .see-content .example ul li {
   list-style-position: outside;
-  margin-left: 0.8em;
+  margin-left: 1em;
   padding-left: 0.5em;
   margin-bottom: -0.4em;
 }
@@ -752,8 +752,7 @@ body {
 }
 
 .try-content p {
-  line-height: 0.4em !important;
-  margin-bottom: clamp(5px, 1vw, 7px);
+  line-height: normal !important;
 }
 @media screen and (max-width: 768px) {
   .try-content p {

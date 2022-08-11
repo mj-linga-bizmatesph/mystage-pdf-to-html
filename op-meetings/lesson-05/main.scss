@@ -6,8 +6,8 @@
 
 .try-content {
   p {
-    line-height: 0.4em !important;
-    margin-bottom: clamp(5px, 1vw, 7px);
+    line-height: normal !important;
+    // margin-bottom: clamp(5px, 1vw, 7px);
 
     @media screen and (max-width: 768px) {
       line-height: 1.2em !important;

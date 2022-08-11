@@ -720,3 +720,8 @@ body {
     margin-top: clamp(5px, 2vw, 10px) !important;
   }
 }
+
+.see-content ul {
+  line-height: 1.8 !important;
+  padding-left: 16px;
+}

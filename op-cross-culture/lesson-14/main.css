@@ -88,7 +88,7 @@ body {
 }
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -78px;
+  left: -55px;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -157,12 +157,13 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .words-phrase-content .section {
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: clamp(43px, 14.1%, 163.5px) !important;
   margin-top: clamp(12px, 2.8vw, 21px) !important;
 }
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(14px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
+  line-height: normal;
 }
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
   position: relative;
@@ -302,7 +303,7 @@ body {
   text-align: right;
   position: absolute;
   bottom: 0;
-  max-width: 45%;
+  max-width: 35%;
   right: 2%;
 }
 .html-lesson-wrapper .inline-block {
@@ -488,5 +489,8 @@ body {
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .inline-block {
     display: block !important;
+  }
+  .html-lesson-wrapper .see-content .sub-text {
+    margin-left: 0px !important;
   }
 }

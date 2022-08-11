@@ -89,7 +89,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -78px;
+    left: -55px;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -155,12 +155,13 @@ body {
     background: $primary-light;
     font-size: clamp(12px, 2vw, 15px);
     .section {
-      margin-left: $left-pixel;
+      margin-left: clamp(43px, 14.1%, 163.5px) !important;
       margin-top: clamp(12px, 2.8vw, 21px) !important;
     }
     .pointers {
       margin-top: clamp(14px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
+      line-height: normal;
       .text-header {
         position: relative;
         left: -17px;
@@ -299,7 +300,7 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 35%;
       right: 2%;
     }
   }

@@ -2,7 +2,6 @@
 .html-lesson-wrapper {
   .lesson-number {
     left: clamp(91%, 91.5vw, 91.7%) !important;
-    color: red !important;
   }
   .decimal {
     list-style-type: none !important;
@@ -34,6 +33,20 @@
       table {
         margin-left: 8px !important;
       }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .title {
+      top: 70px !important;
+      width: 80%;
+    }
+  }
+  .speaker-text-try {
+    padding-left: 5px;
+  }
+  @media screen and (max-width: 900px) {
+    .see-content .sub-text {
+      margin-left: 0px !important;
     }
   }
 }

@@ -18,5 +18,14 @@
     .hide {
       display: inline !important;
     }
+    .see-content .sub-text {
+      margin-left: 0px !important;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .title {
+      top: 70px !important;
+      width: 80%;
+    }
   }
 }

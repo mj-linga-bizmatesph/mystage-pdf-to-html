@@ -3,6 +3,12 @@
   .see-content .see {
     margin-top: 7px;
   }
+  @media screen and (min-width: 900px) {
+    .title {
+      top: 70px !important;
+      width: 80%;
+    }
+  }
 }
 @media screen and (max-width: 320px) {
   .html-lesson-wrapper {

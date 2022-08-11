@@ -11,4 +11,10 @@
       display: inline !important;
     }
   }
+  @media screen and (min-width: 900px) {
+    .title {
+      top: 70px !important;
+      width: 80%;
+    }
+  }
 }

@@ -1,0 +1,46 @@
+@import '../../css/op-it-course-utils';
+.html-lesson-wrapper {
+  .content-item {
+    .see-ul {
+      .see-content-ul {
+        li {
+          div {
+            div {
+              margin-bottom: 2%;
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+    .try-ul {
+      .try-content-ul {
+        .content-text {
+          margin-left: 3.3%;
+
+          @media screen and (max-width: 959px) {
+            margin-left: 2.5%;
+          }
+          @media screen and (max-width: 769px) {
+            margin-left: 3%;
+          }
+          @media screen and (max-width: 531px) {
+            margin-left: 3.3%;
+          }
+          @media screen and (max-width: 461px) {
+            margin-left: 4%;
+          }
+          @media screen and (max-width: 401px) {
+            margin-left: 4.5%;
+          }
+          @media screen and (max-width: 371px) {
+            margin-left: 5%;
+          }
+          @media screen and (max-width: 321px) {
+            margin-left: 5.8%;
+          }
+        }
+      }
+    }
+  }
+}

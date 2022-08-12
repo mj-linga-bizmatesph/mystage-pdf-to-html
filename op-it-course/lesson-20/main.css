@@ -742,13 +742,30 @@ body {
   content: '\25BC\25BC\25BC';
 }
 
+.html-lesson-wrapper .bl {
+  list-style: disc !important;
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 601px) {
+  .html-lesson-wrapper .bl {
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .html-lesson-wrapper .bl {
+    margin-left: 4.5%;
+  }
+}
+
 .html-lesson-wrapper .content-item .see-ul .table-ul {
   list-style: none;
   margin-top: 1%;
 }
 
 .html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 {
-  margin-left: -5%;
+  margin-left: 0%;
 }
 
 .html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-window {

@@ -761,11 +761,17 @@ body {
   width: 58%;
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-window {
+    width: 61.5%;
+  }
+}
+
 .html-lesson-wrapper .content-item .see-ul .table-ul .tbl-r1 .email-header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
-      grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+  -ms-grid-columns: clamp(1rem, 12vw, 5.5rem) 1fr;
+      grid-template-columns: clamp(1rem, 12vw, 5.5rem) 1fr;
   font-size: clamp(9px, 2vw, 13px);
   -webkit-column-gap: clamp(0.2rem, 1vw, 1rem);
           column-gap: clamp(0.2rem, 1vw, 1rem);
@@ -857,7 +863,7 @@ body {
 
 @media screen and (max-width: 401px) {
   .html-lesson-wrapper .content-item .try-ul .try-content-ul .content-text {
-    margin-left: 4.5%;
+    margin-left: 5.5%;
   }
 }
 

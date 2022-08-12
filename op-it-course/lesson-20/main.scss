@@ -16,10 +16,14 @@ $magenta: #cc3366;
             row-gap: clamp(4px, 1vw, 7px);
             border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
             width: 58%;
+
+            @media screen and (max-width: 401px) {
+              width: 61.5%;
+            }
           }
           .email-header {
             display: grid;
-            grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+            grid-template-columns: clamp(1rem, 12vw, 5.5rem) 1fr;
             font-size: clamp(9px, 2vw, 13px);
             column-gap: clamp(0.2rem, 1vw, 1rem);
           }
@@ -83,7 +87,7 @@ $magenta: #cc3366;
             margin-left: 4%;
           }
           @media screen and (max-width: 401px) {
-            margin-left: 4.5%;
+            margin-left: 5.5%;
           }
           @media screen and (max-width: 371px) {
             margin-left: 5%;

@@ -98,7 +98,7 @@ body {
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
-    top: 0.8%;
+    top: 1.11%;
   }
   .divider {
     color: #d9d9d9;
@@ -149,7 +149,7 @@ body {
     }
   }
   .see-content {
-    margin-top: 25%;
+    margin-top: 35%;
     .see-margin {
       p {
         margin-block-start: 0em;
@@ -157,7 +157,11 @@ body {
       }
       line-height: 1.8;
       ul {
+        margin-left: 1em;
         line-height: 1.8;
+        @media screen and (max-width: 900px){
+          margin-left: 1.3em;
+        }
       }
       .instruction {
         margin-block-end: 0em !important;
@@ -201,21 +205,40 @@ body {
     }
   }
   .try-content {
+    .mb{
+      margin-top: 0.5%;
+    }
     margin-top: 30px;
     .sub-text {
       line-height: 1.8em;
     }
     .bullet {
+      margin-left: 1.1em;
       list-style: decimal;
       line-height: 1.8;
       list-style-position: outside;
+      @media screen and (max-width: 500px){
+        margin-left: 2.2em !important;
+      }
+      @media screen and (max-width: 900px){
+        margin-left: 1.5em;
+      }
       .nested-ul {
         line-height: 1.8;
         list-style: lower-alpha;
+        margin-left: 1.3em;
+        @media screen and (max-width: 900px){
+          margin-left: 2.6em;
+        }
       }
+      
+      
     }
   }
   .act-content {
+    .mb{
+      margin-top: 0.5%;
+    }
     p {
       margin-block-start: 0em;
     }
@@ -346,12 +369,12 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: 43px;
+    bottom: 4em;
     .footer-text {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 33%;
       right: 5%;
       @media screen and (max-width: 900px){
         right: 2%;
@@ -376,7 +399,7 @@ body {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 3vw, 18px);
       ul {
-        margin-left: clamp(19px, 2vw, 25px);
+        margin-left: clamp(25px, vw, 25px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);

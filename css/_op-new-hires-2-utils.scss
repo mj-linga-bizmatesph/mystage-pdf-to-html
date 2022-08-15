@@ -56,7 +56,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -20px;
+    bottom: -4em;
     @media only screen and (max-width: 767px) {
       bottom: -45px;
     }
@@ -64,8 +64,8 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
-      right: 2%;
+      max-width: 33%;
+      right: 6%;
       @media only screen and (max-width: 769px) {
         bottom: -10px !important;
       }
@@ -221,10 +221,11 @@ body {
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
-        margin-top: clamp(10px, 3vw, 20px);
+        margin-top: clamp(10px, 3vw, 22px);
         padding-left: clamp(10px, 6vw, 60px);
       }
       .biz-tip-content {
+        line-height: normal !important;
         font-family: $trebuchet;
         width: 75%;
         font-size: clamp(12px, 2vw, 15px);
@@ -305,14 +306,14 @@ body {
       width: 89%;
       margin-bottom: 15px;
       box-sizing: content-box;
-      padding-left: clamp(10px, 3vw, 25px);
+      padding-left: clamp(10px, 2.5vw, 25px);
       .header-text {
         margin: 0;
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
         line-height: 1.6;
-        margin-top: clamp(-2px, -1vw, -3px);
+        margin-top: -1%;
         margin-left: 0em;
       }
       .header-text-2 {
@@ -320,38 +321,14 @@ body {
         font-size: clamp(12px, 2vw, 15px);
       }
       .content-text-b {
-        line-height: 150%;
-        margin-left: -3%;
+        line-height: 1.8;
+        margin-left: 2.8%;
         font-family: $trebuchet;
         font-size: clamp(12px, 2vw, 15px);
-
-        @media only screen and (max-width: 800px) {
-          margin-left: -3.3%;
-        }
-        @media only screen and (max-width: 725px) {
-          margin-left: -3.8%;
-        }
-        @media only screen and (max-width: 601px) {
-          margin-left: -5%;
-        }
-        @media only screen and (max-width: 426px) {
-          margin-left: -7%;
-        }
-        @media only screen and (max-width: 376px) {
-          margin-left: -8%;
-        }
-        @media only screen and (max-width: 321px) {
-          margin-left: -9%;
-        }
-      }
-      .mt {
-        margin-top: -2%;
-        @media only screen and (max-width: 391px) {
-          margin-top: -4%;
-        }
       }
       .mt-2 {
-        margin-top: -0.8%;
+        list-style: decimal;
+        margin-left: 3%;
       }
       .see-text-content {
         font-size: clamp(12px, 2vw, 15px);
@@ -359,6 +336,9 @@ body {
         line-height: 1.8;
       }
       &.see {
+        .red-text{
+          color: red;
+        }
         .dialogue {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
@@ -506,8 +486,6 @@ body {
   }
   .act-text {
     font-size: clamp(12px, 2vw, 15px);
-    max-width: 72%;
-    margin-top: 0%;
     font-family: $trebuchet;
     line-height: 1.8;
     @media only screen and (max-width: 550px) {

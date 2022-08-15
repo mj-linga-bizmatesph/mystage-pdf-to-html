@@ -32,7 +32,8 @@
     border-radius: 3px;
     height: clamp(15px, 2vw, 22px);
     place-items: center;
-    display: grid;
+    display: flex;
+    justify-content: center;
   }
   .email-header-label-subject {
     font-style: italic;
@@ -44,7 +45,9 @@
   }
   .email-header-textfield {
     display: grid;
-    row-gap: clamp(4px, 1vw, 7px);
+    row-gap: 11%;
+    width: 98%;
+    margin-left: 2%;
   }
   .email-textfield {
     background: white;

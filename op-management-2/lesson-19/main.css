@@ -343,6 +343,7 @@ body {
   text-indent: -1em;
   margin-left: 0.9em;
   padding-left: 0.5em;
+  width: 100%;
 }
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
   content: "";
@@ -503,6 +504,11 @@ body {
 }
 .html-lesson-wrapper .content-item .content-div.try .try-list .alpha {
   list-style-type: lower-alpha;
+}
+@media only screen and (max-width: 920px) {
+  .html-lesson-wrapper .content-item .content-div.try .try-list .alpha {
+    padding-left: 40px;
+  }
 }
 .html-lesson-wrapper .content-item .content-div.act p {
   line-height: 1.8em;

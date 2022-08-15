@@ -332,6 +332,7 @@ body {
             text-indent: -1em;
             margin-left: 0.9em;
             padding-left: 0.5em;
+            width: 100%;
           }
           li::before {
             content: '';
@@ -483,6 +484,9 @@ body {
           }
           .alpha {
             list-style-type: lower-alpha;
+            @media only screen and (max-width: 920px) {
+              padding-left: 40px;              
+            }
           }
         }
       }

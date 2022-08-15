@@ -1,0 +1,29 @@
+@import '../../css/op-presentations-utils';
+
+.html-lesson-wrapper {
+  .w {
+    width: 85%;
+  }
+  .title {
+    @media screen and (max-width: 371px) {
+      width: 250px !important;
+    }
+  }
+  .biz-tip-content {
+    .pointers {
+      .biz-tip-header {
+        width: 84%;
+      }
+    }
+  }
+  table,
+  td {
+    border-collapse: collapse;
+    border: solid $gray;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 10px;
+    line-height: clamp(12px, 2.8vw, 22px);
+    column-width: 300px;
+  }
+}

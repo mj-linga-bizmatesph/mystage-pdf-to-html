@@ -1,0 +1,13 @@
+@import '../../css/_op-meetings-utils.scss';
+
+.biz-tip-content {
+  margin-top: clamp(95px, 18%, 160px) !important;
+}
+
+.see-content {
+  .person {
+    @media screen and (max-width: 900px) {
+      width: clamp(2.2rem, 29%, 5.5rem) !important;
+    }
+  }
+}

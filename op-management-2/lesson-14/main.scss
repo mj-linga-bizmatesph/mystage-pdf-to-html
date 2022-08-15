@@ -1,1 +1,20 @@
 @import '../../css/op-management-2-utils';
+
+.biz-tip-content {
+  .col-header-1 {
+    list-style-type: none;
+    font-weight: bold;
+  }
+  .col-header-2 {
+    list-style-type: none;
+    font-weight: bold;
+  }
+  .bullet-one {
+    width: 42%;
+    float: left;
+  }
+  .bullet-two {
+    width: 30%;
+    float: left;
+  }
+}

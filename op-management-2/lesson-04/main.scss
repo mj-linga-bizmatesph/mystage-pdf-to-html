@@ -1,1 +1,9 @@
 @import '../../css/op-management-2-utils';
+
+.html-lesson-wrapper {
+    .title {
+        @media only screen and (max-width: 400px) {
+           width: 65%;
+        }
+    }
+}

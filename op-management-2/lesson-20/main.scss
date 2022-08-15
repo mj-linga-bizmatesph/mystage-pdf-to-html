@@ -1,26 +1,25 @@
 @import '../../css/op-management-2-utils';
 
 .html-lesson-wrapper {
-  .review-content {
-    .sub-text {
-      margin-left: 4.4%;
-      @media only screen and (max-width: 390px) {
-        margin-left: 8%;
-      }
-      @media only screen and (max-width: 320px) {
-        margin-left: 10%;
-      }
+  .header {
+    margin-bottom: 0px;
+  }
+  .lessons {
+    line-height: 1.8em;
+  }
+  .content-div {
+    .header {
+      font-weight: bold;
+    }
+    .lower-alpha {
+      list-style-type: lower-alpha;
+      padding-left: 20px;
     }
     ol {
       list-style-type: none;
     }
     li {
       line-height: 1.8em;
-    }
-    .alphabet {
-      li {
-        margin-bottom: 0;
-      }
     }
   }
 }

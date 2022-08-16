@@ -1,0 +1,837 @@
+$helvetica: 'Helvetica', 'Arial', sans-serif;
+$trebuchet: 'Trebuchet MS';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+$magenta: #cc3366;
+$magenta-light: #f0d4d4;
+$blue-green: #339999;
+
+$fs-8: clamp(4px, 1.5vw, 8px);
+$fs-10: clamp(6.48px, 1.8vw, 10pt);
+$fs-12: clamp(10px, 1vw, 12px);
+
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
+.html-lesson-wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 11%;
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: $trebuchet;
+
+  header {
+    font-family: $helvetica;
+  }
+
+  .u {
+    text-decoration: underline;
+  }
+
+  .b {
+    font-weight: bold;
+  }
+
+  .i {
+    font-family: italic;
+  }
+
+  .small-mt {
+    margin-top: clamp(5px, 2vw, 10px);
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .fc-magenta {
+    color: $magenta;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .program-rank {
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    color: #ffffff;
+    font-size: 0px;
+    font-size: clamp(8px, 1.8vw, 15px);
+
+    .type {
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      background-color: $magenta;
+    }
+
+    .level {
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      background-color: $blue-green;
+      margin-left: -2%;
+      &.two {
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      }
+      text-transform: uppercase;
+    }
+  }
+
+  .line {
+    margin: 0 12px;
+  }
+
+  .title {
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
+    padding-right: 5%;
+  }
+
+  .lesson-number {
+    position: absolute;
+    left: 92.2%;
+    margin-top: 7.8%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
+
+  .floating-number {
+    color: red;
+    font-size: 10px;
+    position: absolute;
+  }
+
+  .lesson-number-two {
+    @extend .lesson-number;
+
+    left: 91.5%;
+  }
+
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .sub-text {
+    font-family: $helvetica !important;
+    font-size: clamp(12px, 2vw, 15px);
+    font-weight: bold;
+    margin: 0 0 0.3rem 0;
+  }
+
+  .sub-text-2 {
+    font-family: $helvetica !important;
+    font-size: clamp(12px, 2vw, 15px);
+    font-weight: bold;
+    margin: 0 0 0.3rem 0;
+  }
+
+  .sub-text-1 {
+    color: red;
+    font-family: $helvetica !important;
+    font-size: clamp(12px, 2vw, 15px);
+    margin: 0 0 0.3rem 0;
+    font-style: italic;
+  }
+
+  .magenta-color {
+    color: $magenta;
+  }
+
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(6px, 1.8vw, 15px);
+    position: relative;
+    left: 52%;
+  }
+
+  .divider {
+    &.d1 {
+      margin: 4% 0;
+    }
+    &.d2 {
+      margin: 4% 0;
+    }
+    ul {
+      margin: 3px 0px 0px 18px;
+      padding: 0;
+      line-height: clamp(12px, 3vw, 26px);
+    }
+  }
+
+  ul li {
+    padding-left: 8px;
+    padding-bottom: 1.5%;
+  }
+
+  .small-texts {
+    font-size: $fs-8;
+  }
+
+  .see-content,
+  .act-content,
+  .try-content,
+  .part-content {
+    display: flex;
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .section {
+    padding-left: 5%;
+    width: clamp(3.1rem, 15%, 6rem);
+    color: $magenta;
+    font-weight: bold;
+    font-family: $helvetica;
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .content {
+    font-family: $trebuchet;
+    width: 85%;
+    min-width: 75%;
+    padding-right: 5%;
+  }
+
+  .dialogue {
+    font-size: $fs-10;
+    font-family: $trebuchet;
+    line-height: 1.8;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    margin-bottom: clamp(5px, 1vw, 7px);
+  }
+
+  .person {
+    font-weight: bold;
+    width: clamp(2.2rem, 17%, 5.5rem);
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .speech {
+    width: 90%;
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .biz-tip-content {
+    margin-top: clamp(70px, 18%, 160px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 4%;
+    background: $magenta-light;
+    font-size: clamp(12px, 2vw, 15px);
+    display: flex;
+
+    .section {
+      margin-top: 3% !important;
+    }
+
+    .pointers {
+      margin-top: 3% !important;
+    }
+
+    .biz-tip-flexbox {
+      display: flex;
+      justify-content: space-between;
+
+      ul.arrow-part-list {
+        width: 50%;
+      }
+
+      .biz-tip-box {
+        background: white;
+        width: 49.5%;
+        border-radius: 7px;
+        border: 1px solid black;
+
+        .ma {
+          margin: 0.3vw 0.8vw;
+        }
+      }
+    }
+  }
+
+  .arrow-part {
+    position: relative;
+    &:before {
+      content: '';
+      left: -1.5em;
+      top: 0.3em;
+      width: 0;
+      height: 0;
+      border-left: clamp(2px, 1vw, 5px) solid transparent;
+      border-right: clamp(2px, 1vw, 5px) solid transparent;
+      border-top: clamp(4px, 1vw, 8px) solid;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: clamp(5px, 1vw, 8px);
+    }
+
+    span {
+      color: $magenta;
+      font-weight: bold;
+    }
+
+    &.black-arrow:before {
+      border-top: 8px solid black;
+    }
+  }
+
+  .arrow-part-1 {
+    position: relative;
+    &:before {
+      content: '';
+      left: -1.5em;
+      top: 0.3em;
+      width: 0;
+      height: 0;
+      border-left: clamp(2px, 1vw, 5px) solid transparent;
+      border-right: clamp(2px, 1vw, 5px) solid transparent;
+      border-top: clamp(4px, 1vw, 8px) solid;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: clamp(5px, 1vw, 8px);
+    }
+
+    span {
+      color: $magenta;
+      font-weight: bold;
+    }
+
+    &.black-arrow:before {
+      border-top: 8px solid black;
+    }
+  }
+
+  .see-content {
+    margin-top: 36px;
+
+    .article {
+      margin-top: 5px;
+      line-height: 1.7em;
+      margin-bottom: 29px;
+
+      span.highlight {
+        color: $magenta;
+        font-weight: bold;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: $trebuchet;
+      font-size: clamp(12px, 2vw, 15px);
+    }
+
+    th,
+    td {
+      border: 1.5px solid #ffffff;
+    }
+
+    th {
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      background-color: $magenta;
+      padding: 0.3vw 0.2vw;
+    }
+    td {
+      vertical-align: top;
+      padding: 0.3vw 0.5vw 2.5vw;
+    }
+
+    .see-border-box {
+      border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
+      font-family: $trebuchet;
+      font-size: $fs-10;
+      padding: 0.5vw;
+
+      ol {
+        margin: 0;
+
+        &:not(.bullet) {
+          padding-left: clamp(0.8rem, 2vw, 1.5rem);
+        }
+      }
+
+      ol.bullet {
+        list-style-type: disc;
+        padding-left: clamp(1.5rem, 5vw, 3rem);
+      }
+    }
+
+    .see-narration {
+      text-align: center;
+      color: #7f7f7f;
+      width: 100%;
+      margin-bottom: clamp(2px, 1vw, 7px);
+      font-size: clamp(12px, 2vw, 15px);
+    }
+
+    .email-text-settings {
+      position: absolute;
+      font-size: $fs-12;
+      font-family: calibri;
+    }
+
+    .email-container {
+      position: absolute;
+      margin: clamp(0px, 1vw, 3px) 0 0 clamp(85px, 15vw, 105px);
+      width: clamp(400px, 55vw, 480px);
+    }
+    .email-lesson-2-1-text {
+      
+      margin: clamp(12px, 1%, 50px) 0 0 clamp(305px, 46vw, 363px);
+      @extend .email-text-settings;
+    }
+    .email-lesson-2-2-text {
+      margin: clamp(60px, 8%, 70px) 0 0 clamp(195px, 32vw, 230px);
+      @extend .email-text-settings;
+    }
+    .email-lesson-2-3-text {
+      margin: clamp(75px, 10.5%, 90px) 0 0 clamp(195px, 32vw, 230px);
+      @extend .email-text-settings;
+    }
+    .email-lesson-2-4-text {
+      margin: clamp(115px, 16%, 138px) 0 0 clamp(195px, 32vw, 230px);
+      @extend .email-text-settings;
+    }
+    .email-lesson-2-5-text {
+      margin: clamp(143px, 19.8%, 170px) 0 0 clamp(195px, 32vw, 230px);
+      @extend .email-text-settings;
+    }
+    .email-lesson-2-6-text {
+      margin: clamp(173px, 23.5%, 205px) 0 0 clamp(195px, 32vw, 230px);
+      @extend .email-text-settings;
+    }
+    .email-lesson-2-7-text {
+      margin: clamp(190px, 26%, 227px) 0 0 clamp(195px, 32vw, 230px);
+      @extend .email-text-settings;
+    }
+
+    #second-line {
+      margin-top: clamp(13px, 2.5vw, 15px);
+    }
+    #third-line {
+      margin-top: clamp(13px, 2.5vw, 15px);
+    }
+    #fifth-line {
+      margin-top: clamp(9px, 2vw, 20px);
+    }
+    #fourth-line {
+      margin-top: clamp(13px, 2.5vw, 27px);
+    }
+  }
+
+  .email-window {
+    background: $magenta;
+    padding: clamp(3px, 1vw, 6px) clamp(2px, 1vw, 4px);
+    display: grid;
+    row-gap: clamp(4px, 1vw, 7px);
+    border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
+  }
+  .email-header {
+    display: grid;
+    grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
+    font-size: clamp(9px, 2vw, 13px);
+    column-gap: clamp(0.2rem, 1vw, 1rem);
+  }
+
+  .email-header-label {
+    row-gap: clamp(4px, 1vw, 7px);
+    display: grid;
+  }
+
+  .email-header-label-to {
+    width: 100%;
+    background: #d8d8d8;
+    border-radius: 3px;
+    height: clamp(15px, 2vw, 22px);
+    place-items: center;
+    display: grid;
+  }
+  .email-header-label-subject {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: clamp(15px, 2vw, 22px);
+  }
+  .email-header-textfield {
+    display: grid;
+    row-gap: clamp(4px, 1vw, 7px);
+  }
+  .email-textfield {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    min-height: clamp(15px, 2vw, 22px);
+  }
+  .email-content {
+    background: white;
+    padding: 5px;
+    font-size: clamp(8px, 2vw, 12px);
+  }
+
+  .text-12 {
+    font-size: clamp(8px, 2vw, 12px);
+  }
+
+  ol.numbers {
+    margin: -4px 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: orderedlist;
+    font-family: $trebuchet;
+    font-size: clamp(12px, 2vw, 15px);
+    line-height: 1.8;
+
+    li::before {
+      counter-increment: orderedlist;
+      content: counter(orderedlist) '. ';
+    }
+
+    li {
+      div:not(:last-child) {
+        margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
+      }
+    }
+  }
+
+  ol.bullets {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: orderedlist;
+    font-family: $trebuchet;
+    font-size: clamp(12px, 2vw, 15px);
+
+    li::before {
+      counter-increment: orderedlist;
+      content: '■ ';
+    }
+
+    li {
+      div:not(:last-child) {
+        margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
+      }
+    }
+  }
+
+  ol.circle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: orderedlist;
+    font-family: $trebuchet;
+    font-size: clamp(12px, 2vw, 15px);
+
+    li::before {
+      counter-increment: orderedlist;
+      content: '• ' !important;
+    }
+
+    li {
+      div:not(:last-child) {
+        margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
+      }
+    }
+  }
+
+  ul.arrow-part-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: '\25BC';
+    box-sizing: content-box;
+    list-style-position: inside;
+    li {
+      list-style-position: outside;
+      text-indent: -1em;
+      margin-left: 0.8em;
+      padding-left: 0.5em;
+      margin-bottom: -0.4em;
+    }
+    li::before {
+      content: '';
+      display: block;
+      width: 0.5em;
+    }
+    li::marker {
+      font-size: clamp(9px, 2vw, 13px);
+    }
+  }
+
+  .part-content {
+    &.part-1 {
+      margin-top: clamp(70px, 25%, 250px);
+    }
+
+    .article {
+      margin-top: 5px;
+      line-height: 1.7em;
+      margin-bottom: 29px;
+
+      span.highlight {
+        color: $magenta;
+        font-weight: bold;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+
+      p {
+        margin: 0;
+        line-height: 1.8em;
+        top: -0.3em;
+        position: relative;
+
+        &:not(:last-child) {
+          margin-bottom: 5%;
+        }
+      }
+
+      td {
+        padding: 0;
+        vertical-align: top;
+
+        &:first-child {
+          @extend .b;
+          width: 10%;
+        }
+      }
+    }
+
+    .see-border-box {
+      border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
+      font-family: $trebuchet;
+      font-size: clamp(10px, 2vw, 13.5px);
+      padding: 0.5vw;
+    }
+
+    ol.numbers {
+      li {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .try-content {
+    ul {
+      list-style-type: decimal;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: $trebuchet;
+      font-size: clamp(12px, 2vw, 15px);
+    }
+
+    th,
+    td {
+      border: 1.5px solid #d8d8d8;
+    }
+
+    th {
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      background-color: $magenta;
+      padding: 0.3vw 0.2vw;
+    }
+    td {
+      vertical-align: top;
+      padding: 0.3vw 0.5vw;
+    }
+  }
+
+  .act-content {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: clamp(12px, 2vw, 15px);
+
+    table {
+      margin-top: 5px;
+      font-size: clamp(12px, 2vw, 15px);
+      border-spacing: 0px;
+      padding-bottom: 5px;
+      width: 100%;
+
+      th,
+      td {
+        max-width: 120px;
+        min-width: 80px;
+        word-wrap: break-word;
+        border: 1px solid #ffffff;
+      }
+
+      th {
+        background-color: $magenta;
+        color: #ffffff;
+        font-size: clamp(7px, 1.8vw, 15px);
+        padding: 5px;
+      }
+
+      td {
+        text-align: left;
+        padding: 4px;
+        background-color: #f2f2f2;
+      }
+    }
+
+    .person {
+      width: clamp(3rem, 9%, 6rem);
+    }
+  }
+
+  footer {
+    font-family: $helvetica;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    padding-right: 10%;
+
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 4%;
+      max-width: 42%;
+      right: 5%;
+
+      @media only screen and (max-width: 460px) {
+        bottom: 2.5%;
+      }
+
+      @media only screen and (max-width: 375px) {
+        bottom: 2.2%;
+      }
+
+      @media only screen and (max-width: 320px) {
+        bottom: 1.5%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    & {
+      min-height: unset;
+    }
+    .see-content {
+      margin-top: clamp(22px, 3.8vw, 36px);
+
+      .article {
+        margin-bottom: clamp(20px, 3.7vw, 29px);
+      }
+    }
+    .try-content {
+      ul {
+        margin-left: clamp(11px, 2.4vw, 18px);
+      }
+    }
+    .act-content {
+      margin-top: clamp(20px, 3.8vw, 36px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: 5%;
+    }
+    .title {
+      top: clamp(45px, 8.4vw, 80px);
+      left: 5%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .type {
+      padding: 2px 8px 2px 7px !important;
+    }
+    .level {
+      padding: 2px 6px 2px 7px !important;
+    }
+    .line {
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .arrow-part:before {
+      left: -0.6rem;
+      border-left: 3.5px solid transparent !important;
+      border-right: 3.5px solid transparent !important;
+      border-top: 5.5px solid !important;
+    }
+
+    .biz-tip-box {
+      width: 49% !important;
+    }
+
+    .email-lesson-2-1,
+    .email-lesson-2-2,
+    .email-lesson-2-3,
+    .email-lesson-2-4,
+    .email-lesson-2-5,
+    .email-lesson-2-6,
+    .email-lesson-2-7,
+    .email-container,
+    .email-lesson-2-1-text,
+    .email-lesson-2-2-text,
+    .email-lesson-2-3-text,
+    .email-lesson-2-4-text,
+    .email-lesson-2-5-text,
+    .email-lesson-2-6-text,
+    .email-lesson-2-7-text {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .biz-tip-flexbox {
+      flex-direction: column !important;
+
+      .biz-tip-box,
+      ul {
+        width: 100% !important;
+      }
+    }
+
+    .biz-tip-box:nth-child(2),
+    .mv-mt {
+      margin-top: clamp(5px, 2vw, 10px) !important;
+    }
+  }
+}

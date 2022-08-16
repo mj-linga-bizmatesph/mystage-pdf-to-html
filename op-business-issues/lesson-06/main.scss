@@ -1,0 +1,31 @@
+@import '../../css/op-business-issues-utils';
+
+@media only screen and (min-width: 1000px) and (max-width: 1576px) {
+  .html-lesson-wrapper {
+    .title {
+      top: 70px !important;
+      max-width: 80%;
+    }
+  }
+}
+.see,
+.try,
+.act {
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 460px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4.9px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .see,
+  .try,
+  .act {
+    margin-top: 4px;
+  }
+}

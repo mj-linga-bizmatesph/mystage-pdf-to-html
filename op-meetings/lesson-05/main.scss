@@ -1,0 +1,17 @@
+@import '../../css/_op-meetings-utils.scss';
+
+.biz-tip-content {
+  margin-top: clamp(95px, 18%, 160px) !important;
+}
+
+.try-content {
+  p {
+    line-height: normal !important;
+    @media screen and (max-width: 768px) {
+      line-height: 1.2em !important;
+    }
+  }
+  .second {
+    margin-left: 5px;
+  }
+}

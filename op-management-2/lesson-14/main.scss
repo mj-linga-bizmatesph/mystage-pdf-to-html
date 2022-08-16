@@ -12,30 +12,24 @@
   .bullet-one {
     float: left;
     @media only screen and (max-width: 495px) {
-      
       width: 50%;
     }
     @media only screen and (max-width: 400px) {
-      
-      width: 50%;
+      width: 45%;
     }
     @media only screen and (max-width: 320px) {
-      
       width: 35%;
     }
   }
   .bullet-two {
     float: left;
     @media only screen and (max-width: 495px) {
-      
       width: 50%;
     }
     @media only screen and (max-width: 400px) {
-      
       width: 50%;
     }
     @media only screen and (max-width: 320px) {
-      
       width: 65%;
     }
   }

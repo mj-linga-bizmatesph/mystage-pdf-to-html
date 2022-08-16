@@ -21,5 +21,12 @@
     li {
       line-height: 1.8em;
     }
+    &.see {
+      .header-text {
+        @media only screen and (max-width: 400px) {
+          padding-left: 4%;
+        }
+      }
+    }
   }
 }

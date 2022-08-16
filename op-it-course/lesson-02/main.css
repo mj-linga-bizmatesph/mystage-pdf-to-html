@@ -444,7 +444,7 @@ body {
   margin-bottom: 15%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(19px, 2.8vw, 38px);
+  padding-left: clamp(19px, 2.3vw, 38px);
   font-size: clamp(12px, 2vw, 15px);
   margin-top: -0.3%;
 }
@@ -743,7 +743,7 @@ body {
 }
 
 .html-lesson-wrapper .title {
-  max-width: 84% !important;
+  max-width: 83% !important;
 }
 
 @media screen and (max-width: 431px) {

@@ -44,6 +44,7 @@ body {
   color: #ffffff;
   font-size: 0px;
   font-size: clamp(8px, 1.8vw, 15px);
+  width: 100%;
 }
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
@@ -133,7 +134,7 @@ body {
 .html-lesson-wrapper .sub-text {
   font-family: "Helvetica", "Arial", sans-serif !important;
   font-size: clamp(12px, 2vw, 15px);
-  line-height: normal;
+  line-height: 1.8;
   font-weight: bold;
   margin: 0 0 0.3rem 0;
 }
@@ -188,7 +189,7 @@ body {
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 2vw, 15px);
-  line-height: normal;
+  line-height: 1.8;
 }
 @media only screen and (max-width: 425px) {
   .html-lesson-wrapper .section {
@@ -226,6 +227,7 @@ body {
 }
 .html-lesson-wrapper .biz-tip-content .section {
   margin-top: 3% !important;
+  line-height: normal !important;
 }
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;
@@ -423,11 +425,6 @@ body {
   margin-left: 1em;
   padding-left: 0.5em;
 }
-.html-lesson-wrapper .see-content .example ul li::before {
-  content: "";
-  display: block;
-  width: 0.5em;
-}
 .html-lesson-wrapper .see-content .example ul li::marker {
   font-size: clamp(9px, 2vw, 13px);
 }
@@ -481,7 +478,7 @@ body {
 }
 .html-lesson-wrapper ul.arrow-part-list li::before {
   content: "";
-  display: block;
+  padding-right: 1em;
   width: 0.5em;
 }
 .html-lesson-wrapper ul.arrow-part-list li::marker {
@@ -724,17 +721,17 @@ body {
 }
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper footer .footer-text {
-    bottom: 2.5%;
+    bottom: 35px;
   }
 }
 @media only screen and (max-width: 375px) {
   .html-lesson-wrapper footer .footer-text {
-    bottom: 2.2%;
+    bottom: 35px;
   }
 }
 @media only screen and (max-width: 320px) {
   .html-lesson-wrapper footer .footer-text {
-    bottom: 1.5%;
+    bottom: 35px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -750,7 +747,7 @@ body {
 }
 @media screen and (max-width: 900px) and (max-width: 900px) {
   .html-lesson-wrapper .see-content .person {
-    width: clamp(2.2rem, 29%, 5.5rem) !important;
+    width: clamp(7.2rem, 29%, 5.5rem) !important;
   }
 }
 @media screen and (max-width: 900px) {

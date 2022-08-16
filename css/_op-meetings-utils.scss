@@ -57,6 +57,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     color: #ffffff;
     font-size: 0px;
     font-size: clamp(8px, 1.8vw, 15px);
+    width: 100%;
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
@@ -135,7 +136,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   .sub-text {
     font-family: $helvetica !important;
     font-size: clamp(12px, 2vw, 15px);
-    line-height: normal;
+    line-height: 1.8;
     font-weight: bold;
     margin: 0 0 0.3rem 0;
   }
@@ -198,7 +199,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-weight: bold;
     font-family: $helvetica;
     font-size: clamp(12px, 2vw, 15px);
-    line-height: normal;
+    line-height: 1.8;
     @media only screen and (max-width: 425px) {
       width: 11%;
     }
@@ -230,6 +231,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
     .section {
       margin-top: 3% !important;
+      line-height: normal !important;
     }
 
     .pointers {
@@ -451,11 +453,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
           margin-left: 1em;
           padding-left: 0.5em;
         }
-        li::before {
-          content: '';
-          display: block;
-          width: 0.5em;
-        }
+        
         li::marker {
           font-size: clamp(9px, 2vw, 13px);
         }
@@ -540,7 +538,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
     li::before {
       content: '';
-      display: block;
+      padding-right: 1em;
       width: 0.5em;
     }
     li::marker {
@@ -836,15 +834,15 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       right: 5%;
 
       @media only screen and (max-width: 460px) {
-        bottom: 2.5%;
+        bottom: 35px;
       }
 
       @media only screen and (max-width: 375px) {
-        bottom: 2.2%;
+        bottom: 35px;
       }
 
       @media only screen and (max-width: 320px) {
-        bottom: 1.5%;
+        bottom: 35px;
       }
     }
   }
@@ -861,7 +859,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       }
       .person {
         @media screen and (max-width: 900px) {
-          width: clamp(2.2rem, 29%, 5.5rem) !important;
+          width: clamp(7.2rem, 29%, 5.5rem) !important;
         }
       }
     }

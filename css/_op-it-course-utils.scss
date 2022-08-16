@@ -323,6 +323,9 @@ body {
       }
     }
     .content-div {
+      @media screen and (max-width: 1920px) and (min-width: 1800px) {
+        padding-left: clamp(19px, 2.3vw, 24px);
+      }
       width: 89%;
       margin-bottom: 15%;
       box-sizing: content-box;

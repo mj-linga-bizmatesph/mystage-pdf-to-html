@@ -75,7 +75,7 @@ body {
 
   .title {
     position: absolute;
-    top: clamp(4.5%, 18vw, 6.1%);
+    top: clamp(15px, 4vw, 30px);
     left: 5%;
     font-size: clamp(9.3px, 3vw, 27px);
   }
@@ -179,16 +179,18 @@ body {
       left: 0;
       margin-left: 5%;
       line-height: 1.8em;
-      margin-top: 3% !important;
+      margin-top: 2.4% !important;
     }
 
     .pointers {
       margin-top: 3% !important;
       margin-left: clamp(50px, 14%, 126.5px);
+      line-height: normal;
 
       .no-arrow {
-        margin-left: -3.2%;
+        margin-left: -4.2%;
         margin-right: 16%;
+        margin-bottom: 1.5%;
       }
     }
   }

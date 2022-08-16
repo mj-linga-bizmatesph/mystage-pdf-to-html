@@ -505,7 +505,7 @@ body {
 .html-lesson-wrapper .content-item .content-div.try .try-list .alpha {
   list-style-type: lower-alpha;
 }
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div.try .try-list .alpha {
     padding-left: 40px;
   }
@@ -586,10 +586,41 @@ body {
   font-weight: bold;
 }
 .biz-tip-content .bullet-one {
-  width: 42%;
   float: left;
 }
+@media only screen and (max-width: 495px) {
+  .biz-tip-content .bullet-one {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .biz-tip-content .bullet-one {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .biz-tip-content .bullet-one {
+    width: 35%;
+  }
+}
 .biz-tip-content .bullet-two {
-  width: 30%;
   float: left;
+}
+@media only screen and (max-width: 495px) {
+  .biz-tip-content .bullet-two {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .biz-tip-content .bullet-two {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .biz-tip-content .bullet-two {
+    width: 65%;
+  }
+}
+.biz-tip-content ul {
+  margin-left: 2%;
 }

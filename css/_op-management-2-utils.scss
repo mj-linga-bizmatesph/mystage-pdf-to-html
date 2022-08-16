@@ -484,7 +484,7 @@ body {
           }
           .alpha {
             list-style-type: lower-alpha;
-            @media only screen and (max-width: 920px) {
+            @media only screen and (max-width: 400px) {
               padding-left: 40px;              
             }
           }

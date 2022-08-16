@@ -10,11 +10,36 @@
     font-weight: bold;
   }
   .bullet-one {
-    width: 42%;
     float: left;
+    @media only screen and (max-width: 495px) {
+      
+      width: 50%;
+    }
+    @media only screen and (max-width: 400px) {
+      
+      width: 50%;
+    }
+    @media only screen and (max-width: 320px) {
+      
+      width: 35%;
+    }
   }
   .bullet-two {
-    width: 30%;
     float: left;
+    @media only screen and (max-width: 495px) {
+      
+      width: 50%;
+    }
+    @media only screen and (max-width: 400px) {
+      
+      width: 50%;
+    }
+    @media only screen and (max-width: 320px) {
+      
+      width: 65%;
+    }
+  }
+  ul {
+    margin-left: 2%;
   }
 }

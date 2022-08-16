@@ -619,7 +619,7 @@ body {
 
 .html-lesson-wrapper .content-item .see-ul .see-content-ul {
   list-style: none;
-  width: 100%;
+  width: 84%;
   margin-left: 6.5%;
 }
 
@@ -804,6 +804,19 @@ body {
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .f div .div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  width: 100%;
+}
+
+.html-lesson-wrapper .content-item .try-ul .try-content-ul .f div .div2 b {
+  width: 17%;
+}
+
+.html-lesson-wrapper .content-item .try-ul .try-content-ul .f div .div2 div {
+  width: 54%;
   font-weight: normal;
 }
 

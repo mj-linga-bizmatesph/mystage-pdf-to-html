@@ -37,7 +37,16 @@
           div {
             display: flex;
             .div2 {
+              display: flex;
               font-weight: normal;
+              width: 100%;
+              b {
+                width: 17%;
+              }
+              div {
+                width: 54%;
+                font-weight: normal;
+              }
             }
           }
         }

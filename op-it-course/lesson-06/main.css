@@ -444,7 +444,7 @@ body {
   margin-bottom: 15%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(19px, 3.5vw, 38px);
+  padding-left: clamp(19px, 2.8vw, 38px);
   font-size: clamp(12px, 2vw, 15px);
   margin-top: -0.3%;
 }
@@ -797,12 +797,6 @@ body {
   list-style: disc;
 }
 
-.html-lesson-wrapper .content-item .try-ul .try-content-ul .f div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .f div .div2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,11 +806,11 @@ body {
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .f div .div2 b {
-  width: 17%;
+  width: clamp(81px, 14vw, 110px);
 }
 
 .html-lesson-wrapper .content-item .try-ul .try-content-ul .f div .div2 div {
-  width: 54%;
+  width: 61%;
   font-weight: normal;
 }
 

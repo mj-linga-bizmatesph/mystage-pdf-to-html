@@ -35,16 +35,15 @@
         .f {
           list-style: disc;
           div {
-            display: flex;
             .div2 {
               display: flex;
               font-weight: normal;
               width: 100%;
               b {
-                width: 17%;
+                width: clamp(81px, 14vw, 110px);
               }
               div {
-                width: 54%;
+                width: 61%;
                 font-weight: normal;
               }
             }

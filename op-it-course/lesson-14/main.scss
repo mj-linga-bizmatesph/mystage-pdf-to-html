@@ -1,5 +1,10 @@
 @import '../../css/op-it-course-utils';
 .html-lesson-wrapper {
+  .title {
+    @media screen and (max-width: 418px) {
+      width: 80% !important;
+    }
+  }
   .content-item {
     .see-ul {
       .see-content-ul {

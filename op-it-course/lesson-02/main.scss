@@ -1,5 +1,18 @@
 @import '../../css/op-it-course-utils';
 .html-lesson-wrapper {
+  .title {
+    max-width: 84% !important;
+
+    @media screen and (max-width: 431px) {
+      width: 83% !important;
+    }
+    @media screen and (max-width: 431px) {
+      width: 80% !important;
+    }
+    @media screen and (max-width: 341px) {
+      width: 240px !important;
+    }
+  }
   .content-item {
     .try-ul {
       .try-content-ul {

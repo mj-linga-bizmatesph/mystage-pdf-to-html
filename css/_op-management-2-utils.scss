@@ -404,7 +404,7 @@ body {
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
       font-size: clamp(12px, 2vw, 15px);
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 500px) {
         margin-left: 5%;
       }
       .header-text {
@@ -490,8 +490,8 @@ body {
         }
         .try-list {
           line-height: 1.8em;
-          @media only screen and (max-width: 400px) {
-            padding-left: 0px;
+          @media only screen and (max-width: 500px) {
+            margin-left: 10px;
           }
           li {
             padding-left: 20px;
@@ -499,7 +499,7 @@ body {
           .alpha {
             list-style-type: lower-alpha;
             padding-left: 40px;
-            @media only screen and (max-width: 400px) {
+            @media only screen and (max-width: 500px) {
               padding-left: 40px;              
             }
           }
@@ -509,11 +509,17 @@ body {
         p {
           line-height: 1.8em;
         }
+        .try-list {
+          line-height: 1.8em;
+          @media only screen and (max-width: 500px) {
+            margin-left: 10px;
+          }
+        }
       }
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
         margin-left: 1%;
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 500px) {
           margin-left: 5%;
         }
         .review-box {

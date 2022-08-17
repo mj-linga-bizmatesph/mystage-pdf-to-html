@@ -91,6 +91,8 @@ body {
     font-weight: bold;
     font-family: $title-font;
     top: 2px;
+    position: absolute;
+    left: -9%;
   }
   .divider {
     color: #d9d9d9;
@@ -157,11 +159,13 @@ body {
       margin-left: $left-pixel;
       line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
+      position: absolute;
+      left: -7.5%;
     }
     .pointers {
       margin-top: clamp(14px, 2.8vw, 20px) !important;
       margin-left: $left-pixel;
-      line-height: 1.8;
+      line-height: normal;
       .text-header {
         line-height: 1.8;
         position: relative;

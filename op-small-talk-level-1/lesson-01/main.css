@@ -92,6 +92,8 @@ body {
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
+  position: absolute;
+  left: -9%;
 }
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
@@ -163,11 +165,13 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: 1.8em;
   margin-top: clamp(10px, 2.6vw, 18px) !important;
+  position: absolute;
+  left: -7.5%;
 }
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(14px, 2.8vw, 20px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
-  line-height: 1.8;
+  line-height: normal;
 }
 .html-lesson-wrapper .words-phrase-content .pointers .text-header {
   line-height: 1.8;

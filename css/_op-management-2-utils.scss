@@ -490,7 +490,9 @@ body {
         }
         .try-list {
           line-height: 1.8em;
-          padding-left: 20px;
+          @media only screen and (max-width: 400px) {
+            padding-left: 0px;
+          }
           li {
             padding-left: 20px;
           }

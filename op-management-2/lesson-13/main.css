@@ -517,7 +517,11 @@ body {
 }
 .html-lesson-wrapper .content-item .content-div.try .try-list {
   line-height: 1.8em;
-  padding-left: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-item .content-div.try .try-list {
+    padding-left: 0px;
+  }
 }
 .html-lesson-wrapper .content-item .content-div.try .try-list li {
   padding-left: 20px;

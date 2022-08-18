@@ -30,6 +30,7 @@ body {
   font-family: $text-font;
 
   header {
+    margin-left: -1%;
     font-family: $title-font;
     margin-bottom: clamp(110px, 30vw, 270px);
   }
@@ -46,19 +47,18 @@ body {
   .program-rank {
     position: absolute;
     top: 40px;
-    left: 58px;
+    left: 8%;
     color: #ffffff;
     font-size: 0px;
-
     .type {
       padding: 3px 16px 3px 14px;
       background-color: #cc3366;
-      font-size: clamp(7px, 1.8vw, 15px);
+      font-size: clamp(8px, 1.8vw, 15px);
     }
     .level {
       padding: 3px 12px 3px 13px;
-      background-color: #339999;
-      font-size: clamp(7px, 1.8vw, 15px);
+      background-color:#339999;
+      font-size: clamp(8px, 1.8vw, 15px);
       .add-space {
         margin-left: clamp(5px, 2vw, 15px);
       }
@@ -67,15 +67,18 @@ body {
   .line {
     margin: 0 12px;
   }
+  .hide {
+    display: none;
+  }
   .title {
     position: absolute;
     top: 80px;
-    left: 59px;
-    font-size: clamp(12px, 3vw, 27px);
+    left: 7.6%;
+    font-size: clamp(18px, 4vw, 27px);
   }
   .lesson-number {
     position: absolute;
-    left: 92.2%;
+    left: 93%;
     top: 0px;
     margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
@@ -92,15 +95,15 @@ body {
   }
   .section {
     position: absolute;
-    left: -66px;
+    left: -3.6em;
     color: #cc3366;
     font-weight: bold;
     font-family: $title-font;
-    top: 2px;
+    top: -1%;
   }
   .divider {
     color: #d9d9d9;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
     position: relative;
     left: 52%;
 
@@ -114,7 +117,7 @@ body {
   ul {
     margin: 3px 0px 0px 18px;
     padding: 0;
-    line-height: clamp(12px, 3vw, 26px);
+    line-height: 1.8;
 
     li {
       padding-left: 8px;
@@ -128,7 +131,7 @@ body {
     margin-left: $left-pixel;
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
   }
   // See
   .see-content {
@@ -166,6 +169,7 @@ body {
 
   // Act
   .act-content {
+    margin-bottom: 2em;
     margin-top: 36px;
     height: fit-content;
     .column {
@@ -174,15 +178,59 @@ body {
     }
   }
 
+    // Review Content
+    .review-content {
+      position: relative;
+      margin-left: $left-pixel;
+      padding-left: 18.5px;
+      padding-right: 42px;
+      font-size: clamp(6px, 1.8vw, 15px);
+    }
+  
+    // Review Content
+    .review-content {
+      margin-top: clamp(70px, 35%, 220px);
+      ul {
+        list-style: none;
+        margin-top: 12px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+  
+        li {
+          margin-bottom: 1.1em;
+          margin-left: -4.5%;
+          p {
+            margin-block-start: 0 !important;
+            margin-block-end: 0 !important;
+  
+            &:last-child {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+
   footer {
-    font-size: clamp(4.5px, 1.1vw, 9px);
-    position: absolute;
-    width: fit-content;
-    text-align: right;
-    bottom: 43px;
-    right: 6.2%;
     font-family: $title-font;
-    max-width: 35%;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: -4em;
+    .footer-text {
+      line-height: normal;
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      max-width: 33%;
+      right: 6%;
+    }
+  }
+  .inline-block {
+    display: inline-block;
   }
 }
 
@@ -190,11 +238,11 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
     padding-bottom: clamp(20px, 21vw, 177px);
-  .try-content {
+    .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 2.4vw, 18px);
       ul {
-        margin-left: clamp(11px, 2.4vw, 18px);
+        margin-left: clamp(16px, 2.7vw, 23px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -204,8 +252,7 @@ body {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
     footer {
-      bottom: clamp(16px, 4.8vw, 43px);
-      right: 5% !important;
+      bottom: -16em;
     }
   }
 }

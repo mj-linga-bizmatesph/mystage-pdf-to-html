@@ -14,7 +14,7 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: clamp(3em, 12vw, 9em);
+  padding-bottom: clamp(6em, 22vw, 14em);
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg");
   background-position: top, clamp(-15px, -2vw, -8px) bottom;
   background-size: contain;
@@ -290,11 +290,13 @@ body {
   text-align: left;
   padding: 1% 1% 5% 1%;
   background-color: #fff;
+  vertical-align: middle;
 }
 
 .html-lesson-wrapper .try-content .example {
   padding-left: 1%;
   margin-bottom: 0.5%;
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .act-content {

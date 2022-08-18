@@ -55,11 +55,21 @@ body {
       bottom: -45px;
     }
     .footer-text {
+      font-size: clamp(4.5px, 1.1vw, 9px);
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 43%;
       right: 2%;
+      @media only screen and (max-width: 767px) {
+        max-width: 115px;
+      }
+      .footer-text-1 {
+        display: inline-block;
+      }
+      .footer-text-2 {
+        display: inline-block;
+      }
     }
   }
   .inline-block {
@@ -195,8 +205,8 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 6vw, 60px);
-        @media only screen and (max-device-width: 460px) {
-          width: 12%;
+        @media only screen and (max-device-width: 400px) {
+          width: 15%;
         }
       }
       .biz-tip-content {
@@ -207,8 +217,10 @@ body {
         padding-right: clamp(15px, 14vw, 175px);
         padding-bottom: 1rem;
         margin-right: 1em;
+        line-height: normal;
         p {
           margin: 0;
+          width: 145%;
         }
         ul {
           margin: 0;
@@ -260,11 +272,13 @@ body {
       width: 15%;
       color: $text-pink;
       .content-label-text {
+        width: 60%;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
         font-family: $helvetica;
+        margin-top: 2%;
       }
     }
     &.review {
@@ -280,6 +294,10 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
+      line-height: 1.8em;
+      @media only screen and (max-width: 400px) {
+        margin-left: 3%;
+      }
       .header-text {
         margin: 0;
         font-family: $helvetica;
@@ -362,8 +380,11 @@ body {
           padding: clamp(2px, 1vw, 5px) clamp(5px, 2vw, 10px);
           border: 3px solid $tertiary-gray;
           margin-bottom: 3%;
+          line-height: normal;
           &:last-child {
             margin-bottom: 0;
+            line-height: normal;
+            padding: 2%;
           }
           p {
             margin: 0;

@@ -63,19 +63,16 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-size: clamp(8px, 1.8vw, 15px);
 
     .type {
-      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-color: $magenta;
     }
 
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-color: $blue-green;
       margin-left: -2%;
       &.two {
-        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px)
-          clamp(10px, 3vw, 17px);
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       }
     }
   }
@@ -120,6 +117,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-size: clamp(12px, 2vw, 15px);
     line-height: clamp(12px, 2.8vw, 22px);
     font-weight: bold;
+    line-height: 1.8;
     margin: 0 0 0.3rem 0;
   }
 
@@ -150,65 +148,85 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
   ul li {
     padding-left: 8px;
-    padding-bottom: 1.5%;
   }
 
   .see-content,
   .act-content,
   .try-content,
   .part-content {
-    display: flex;
+    position: relative;
+    margin-left: clamp(50px, 14%, 126.5px);
+    padding-left: 18.5px;
+    padding-right: 1.5em;
+    font-size: clamp(12px, 2vw, 15px);
   }
 
   .section {
-    padding-left: 5%;
-    width: clamp(3.1rem, 15%, 6rem);
+    position: absolute;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
-    font-size: clamp(12px, 2vw, 15px);
+    left: -10.5%;
+    top: 5px;
   }
 
   .content {
     font-family: $trebuchet;
     width: 85%;
     min-width: 75%;
+    line-height: 1.8;
     padding-right: 5%;
   }
 
   .biz-tip-content {
-    margin-top: clamp(70px, 18%, 160px);
+    position: relative;
+    margin-top: clamp(78px, 18%, 160px);
+    padding: 2px 0px 0px 47px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding-bottom: 4%;
+    padding-left: clamp(32px, 6vw, 47px);
     background: $magenta-light;
     font-size: clamp(12px, 2vw, 15px);
-    display: flex;
 
     .section {
+      left: 0;
+      margin-left: 5%;
+      top: 5px;
       margin-top: 3% !important;
     }
 
     .pointers {
-      margin-top: 3% !important;
+      margin-top: 3.3% !important;
+      margin-left: clamp(50px, 14.2%, 85px);
+      padding-right: 1.5em;
+      line-height: normal;
+
+      .no-arrow {
+        margin-left: -0.7em;
+        margin-bottom: clamp(6px, 1vw, 10px);
+      }
     }
   }
 
   .arrow-part {
     position: relative;
+    padding-left: 7px;
+    margin-left: 5px;
+
     &:before {
       content: '';
-      left: -1.5em;
-      top: 0.3em;
+      position: absolute;
+      left: -16px;
+      top: 4px;
       width: 0;
       height: 0;
-      border-left: clamp(2px, 1vw, 5px) solid transparent;
-      border-right: clamp(2px, 1vw, 5px) solid transparent;
-      border-top: clamp(4px, 1vw, 8px) solid;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 8px solid black;
       display: inline-block;
       vertical-align: middle;
-      margin-right: clamp(5px, 1vw, 8px);
     }
 
     span {
@@ -301,7 +319,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .row {
       display: flex;
       width: 100%;
-      margin-bottom: clamp(5px, 1vw, 7px);
     }
 
     .person {
@@ -328,14 +345,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
     counter-reset: orderedlist;
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
-
-    &:not(.no-mb) {
-      grid-gap: clamp(0.1rem, 1vw, 0.4rem);
-    }
 
     li::before {
       counter-increment: orderedlist;
@@ -343,10 +355,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
 
     li {
-      display: grid;
-      grid-template-columns: 0 1fr;
-      grid-gap: clamp(1rem, 1.5vw, 2.1rem);
-
       div:not(:last-child) {
         margin-bottom: clamp(0.1rem, 1vw, 0.4rem);
       }
@@ -361,10 +369,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     list-style-position: inside;
     li {
       list-style-position: outside;
-      text-indent: -1em;
-      margin-left: 0.8em;
-      padding-left: 0.5em;
-      margin-bottom: -0.4em;
     }
     li::before {
       content: '';
@@ -378,7 +382,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
   .part-content {
     &.part-1 {
-      margin-top: clamp(70px, 25%, 250px);
+      margin-top: clamp(60px, 24.2%, 250px);
     }
 
     .article {
@@ -422,6 +426,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       font-family: $trebuchet;
       font-size: clamp(10px, 2vw, 13.5px);
       padding: 0.5vw;
+      line-height: normal;
     }
 
     .dialogue {
@@ -451,6 +456,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       width: 100%;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
+      line-height: normal;
     }
 
     th,
@@ -465,9 +471,26 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       background-color: $magenta;
       padding: 0.3vw 0.2vw;
     }
+    .table {
+      th {
+        width: 33%;
+      }
+    }
     td {
       vertical-align: top;
       padding: 0.3vw 0.5vw;
+    }
+    .th-20 {
+      width: 20% !important;
+    }
+    .th-25 {
+      width: 25% !important;
+    }
+    .th-40 {
+      width: 40% !important;
+    }
+    .th-50 {
+      width: 50% !important;
     }
   }
 
@@ -476,6 +499,19 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     height: -moz-fit-content;
     height: fit-content;
     font-size: clamp(12px, 2vw, 15px);
+
+    .numbers {
+      list-style: decimal;
+    }
+
+    ul {
+      margin-left: 17px;
+      list-style: unset;
+
+      li {
+        padding-left: 8px;
+      }
+    }
 
     table {
       margin-top: 5px;
@@ -515,20 +551,15 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     .footer-text {
       text-align: right;
       position: absolute;
-      bottom: 4%;
+      bottom: 2.6%;
       max-width: 42%;
       right: 5%;
 
+      @media only screen and (max-width: 820px) {
+        bottom: 3%;
+      }
       @media only screen and (max-width: 460px) {
-        bottom: 2.5%;
-      }
-
-      @media only screen and (max-width: 375px) {
-        bottom: 2.2%;
-      }
-
-      @media only screen and (max-width: 320px) {
-        bottom: 1.5%;
+        bottom: 1.9%;
       }
     }
   }
@@ -586,6 +617,38 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       border-left: 3.5px solid transparent !important;
       border-right: 3.5px solid transparent !important;
       border-top: 5.5px solid !important;
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .biz-tip-content {
+      .pointers {
+        margin-left: clamp(50px, 14%, 85px);
+      }
+      .arrow-part {
+        margin-left: -3px;
+      }
+      .section {
+        top: 3px;
+      }
+    }
+  }
+  .biz-tip-content .pointers {
+    @media screen and (min-width: 1800px) and (max-width: 1920px) {
+      margin-left: clamp(50px, 14.2%, 110px);
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1800px) {
+      margin-left: clamp(50px, 14.2%, 90px);
+    }
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+      margin-left: clamp(45px, 13%, 98px);
+    }
+    @media screen and (max-width: 360px) {
+      margin-left: clamp(45px, 13%, 98px);
+    }
+  }
+  @media screen and (min-width: 1800px) and (max-width: 1920px) {
+    footer .footer-text {
+      bottom: 3.2%;
     }
   }
 }

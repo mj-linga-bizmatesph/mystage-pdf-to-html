@@ -12,9 +12,6 @@
   .part-content {
     .arrow-part {
       margin-left: 15px;
-      &.black-arrow:before {
-        margin-top: -3px;
-      }
     }
   }
 
@@ -29,9 +26,6 @@
     .part-content {
       .arrow-part {
         margin-left: 6px;
-        &.black-arrow:before {
-          margin-top: 3px !important;
-        }
       }
     }
   }

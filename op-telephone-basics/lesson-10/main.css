@@ -568,9 +568,6 @@ body {
 .html-lesson-wrapper .part-content .arrow-part {
   margin-left: 15px;
 }
-.html-lesson-wrapper .part-content .arrow-part.black-arrow:before {
-  margin-top: -3px;
-}
 .html-lesson-wrapper .section {
   top: 6px;
 }
@@ -580,8 +577,5 @@ body {
   }
   .html-lesson-wrapper .part-content .arrow-part {
     margin-left: 6px;
-  }
-  .html-lesson-wrapper .part-content .arrow-part.black-arrow:before {
-    margin-top: 3px !important;
   }
 }

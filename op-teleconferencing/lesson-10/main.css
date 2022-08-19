@@ -302,14 +302,12 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
-    width: 13%;
-    padding-right: 4%;
+    width: 15%;
   }
 }
 @media only screen and (max-width: 375px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
     width: 10%;
-    padding-right: 4%;
   }
 }
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
@@ -321,19 +319,9 @@ body {
   margin-left: -1.5%;
   line-height: normal;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
-    margin-left: 1%;
-  }
-}
-@media only screen and (max-width: 820px) {
-  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
-    margin-left: 2.5%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
-    margin-left: 5%;
+    margin-left: 3%;
   }
 }
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
@@ -348,11 +336,21 @@ body {
           box-sizing: content-box;
   list-style-position: inside;
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul {
+    margin-right: 5%;
+  }
+}
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 0.9em;
   padding-left: 0.5em;
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
+    width: 100%;
+  }
 }
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
   content: "";
@@ -410,6 +408,7 @@ body {
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 60px);
   width: 100%;
+  margin-top: 1%;
 }
 .html-lesson-wrapper .content-item .content-label .content-label-text-act {
   font-weight: bold;
@@ -441,6 +440,11 @@ body {
   padding-left: clamp(10px, 3vw, 25px);
   font-size: clamp(12px, 2vw, 15px);
 }
+@media only screen and (max-width: 500px) {
+  .html-lesson-wrapper .content-item .content-div {
+    margin-left: 3%;
+  }
+}
 .html-lesson-wrapper .content-item .content-div .header-text {
   margin: 0;
   width: 104%;
@@ -471,11 +475,6 @@ body {
 .html-lesson-wrapper .content-item .content-div .content {
   line-height: 1.8em;
 }
-@media only screen and (max-width: 400px) {
-  .html-lesson-wrapper .content-item .content-div.see {
-    margin-left: 7%;
-  }
-}
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,11 +495,6 @@ body {
   color: #7f7f7f;
   font-size: clamp(12px, 2vw, 15px);
   line-height: clamp(14px, 3vw, 28px);
-}
-@media only screen and (max-width: 400px) {
-  .html-lesson-wrapper .content-item .content-div.try {
-    margin-left: 7%;
-  }
 }
 .html-lesson-wrapper .content-item .content-div.try .content-table {
   font-size: clamp(12px, 2vw, 15px);
@@ -527,11 +521,6 @@ body {
   margin-top: clamp(5px, 2vw, 10px);
   font-size: clamp(12px, 2vw, 15px);
 }
-@media only screen and (max-width: 400px) {
-  .html-lesson-wrapper .content-item .content-div.act {
-    margin-left: 7%;
-  }
-}
 .html-lesson-wrapper .content-item .content-div.act p {
   line-height: 1.8em;
 }
@@ -539,9 +528,9 @@ body {
   padding-right: clamp(15px, 7vw, 55px);
   margin-left: 1%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .html-lesson-wrapper .content-item .content-div.review-part-1 {
-    margin-left: 8%;
+    margin-left: 3%;
   }
 }
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box {
@@ -604,7 +593,7 @@ body {
 }
 
 .html-lesson-wrapper .title {
-  padding-bottom: 10% !important;
+  padding-bottom: 5% !important;
 }
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .title {
@@ -630,7 +619,6 @@ body {
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
   margin-bottom: 2px;
-  padding-left: 20px;
 }
 .html-lesson-wrapper .content-div .content-div .header-text {
   margin-bottom: 2px;
@@ -645,16 +633,11 @@ body {
   margin-left: 10%;
   line-height: 1.8em;
 }
-.html-lesson-wrapper .content-div .header-text-content {
-  font-size: 11px, 1.8vw, 16px;
-  line-height: 1.8;
-}
 .html-lesson-wrapper .header-content .title {
-  margin-bottom: 25%;
+  margin-bottom: 15%;
 }
 .html-lesson-wrapper .header-text {
   margin-bottom: 2px;
-  padding-left: 20px;
 }
 .html-lesson-wrapper .lessons li {
   padding-left: 0px;
@@ -670,7 +653,4 @@ body {
   .html-lesson-wrapper .bullets li {
     margin-left: 20%;
   }
-}
-.html-lesson-wrapper .content-div .sides {
-  padding-left: 20px;
 }

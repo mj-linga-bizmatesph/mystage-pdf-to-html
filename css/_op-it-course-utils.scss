@@ -216,6 +216,9 @@ body {
         }
       }
       .biz-tip-content {
+        @media screen and (max-width: 1921px) and (min-width: 1800px) {
+          margin-left: 1%;
+        }
         font-family: $trebuchet;
         width: 75%;
         font-size: clamp(12px, 2vw, 15px);

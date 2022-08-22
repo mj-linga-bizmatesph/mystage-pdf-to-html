@@ -296,6 +296,12 @@ body {
   margin-left: 2.2%;
 }
 
+@media screen and (max-width: 1921px) and (min-width: 1800px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1%;
+  }
+}
+
 @media screen and (max-width: 959px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
     margin-left: 0.2%;

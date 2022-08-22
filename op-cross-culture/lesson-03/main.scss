@@ -1,8 +1,5 @@
 @import '../../css/_op-cross-culture-utils.scss';
 .html-lesson-wrapper {
-  .see-content .see {
-    margin-top: 7px;
-  }
   .sub-text {
     margin-bottom: 20px !important;
   }
@@ -17,11 +14,27 @@
       overflow-x: auto !important;
     }
     .content-table {
-      width: 95%;
+      width: 100%;
+      @media only screen and (max-width: 900px) {
+        width: 95%;
+      }
       p {
         line-height: 1.8 !important;
         padding: 5px !important;
       }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .html-lesson-wrapper {
+    .see-content {
+      .see {
+        margin-top: 2.5px !important;
+      }
+    }
+    .try-content .try,
+    .act-content .act {
+      margin-top: 4.5px !important;
     }
   }
 }

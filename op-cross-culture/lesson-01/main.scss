@@ -11,3 +11,12 @@
     margin-left: 0px !important;
   }
 }
+@media screen and (max-width: 390px) {
+  .html-lesson-wrapper {
+    .see-content {
+      .see {
+        margin-top: 4.5px !important;
+      }
+    }
+  }
+}

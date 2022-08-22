@@ -1,0 +1,30 @@
+@import '../../css/op-restaurant-english-utils';
+
+.html-lesson-wrapper ul {
+    margin-left: 3%;
+    padding: 0%;
+    line-height: 1.8;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    margin-block-start: 0em;
+      @media screen and (max-width: 500px){
+        margin-left: 6.5%;
+    }
+}
+
+.html-lesson-wrapper .lesson-number {
+    position: absolute;
+    left: 91.5%;
+    margin-top: 7.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+}
+
+.html-lesson-wrapper .title {
+    width: 21em;
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
+}

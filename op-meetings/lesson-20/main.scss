@@ -1,0 +1,14 @@
+@import '../../css/_op-meetings-utils.scss';
+
+.part-content {
+  ul {
+    @media only screen and (max-width: 460px) {
+      padding: 0px 5px 0px 0px;
+    }
+  }
+  .content {
+    @media only screen and (max-width: 460px) {
+      padding: 0px 5px 0px 0px;
+    }
+  }
+}

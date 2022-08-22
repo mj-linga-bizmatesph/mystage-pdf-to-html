@@ -44,6 +44,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-family: italic;
   }
 
+  a{
+    color: black;
+  }
+
   .small-mt {
     margin-top: clamp(5px, 2vw, 10px);
   }
@@ -84,6 +88,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     top: 80px;
     left: 5%;
     font-size: clamp(18px, 4vw, 27px);
+    width: 73%;
   }
 
   .lesson-number {
@@ -620,13 +625,13 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   footer {
     font-family: $helvetica;
     font-size: clamp(4.5px, 1.1vw, 9px);
-    bottom: 3em;
     position: absolute;
-    display: flex;
-    width: 30%;
-    justify-content: end;
-    right: 0;
-    flex-wrap: wrap;
+    right: 4em;
+    bottom: 4.5em;
+    text-align: right;
+    .footer-text{
+      width: 90%;
+    }
   }
 
   @media screen and (max-width: 900px) {

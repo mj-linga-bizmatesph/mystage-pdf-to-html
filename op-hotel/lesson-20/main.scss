@@ -2,7 +2,7 @@
 
 .html-lesson-wrapper {
   header {
-    margin-bottom: clamp(110px, 30vw, 270px);
+    margin-bottom: 25%;
   }
   table {
     margin-left: 8px;
@@ -75,6 +75,14 @@
     }
   }
 }
+.html-lesson-wrapper footer .footer-text {
+  bottom: -106px;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1921px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: -90px;
+  }
+}
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
@@ -88,7 +96,4 @@
       }
     }
   }
-}
-.html-lesson-wrapper footer .footer-text {
-  bottom: -28px;
 }

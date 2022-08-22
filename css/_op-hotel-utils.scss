@@ -171,11 +171,11 @@ body {
     }
     .pointers {
       margin-top: clamp(9px, 2.9vw, 18px) !important;
-      margin-left: $left-pixel;
+      margin-left: clamp(50px, 14%, 123.5px);
       line-height: normal !important;
       .text-header {
         position: relative;
-        left: -17px;
+        left: -16px;
         margin-bottom: clamp(6px, 1vw, 10px);
       }
       .arrow-part {
@@ -330,7 +330,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: 43px;
+    bottom: 31px;
     .footer-text {
       text-align: right;
       position: absolute;
@@ -351,6 +351,9 @@ body {
   }
   .html-lesson-wrapper .section {
     left: -75px !important;
+  }
+  .html-lesson-wrapper footer {
+    bottom: 43px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1180px) {
@@ -399,7 +402,7 @@ body {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
     footer {
-      bottom: clamp(16px, 4.8vw, 43px);
+      bottom: clamp(16px, 3.8vw, 43px);
       right: 5% !important;
     }
     .section {

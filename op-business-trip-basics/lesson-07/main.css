@@ -143,6 +143,7 @@ body {
   padding-left: clamp(17px, 6.5vw, 47px);
   background: #f0d4d4;
   font-size: clamp(6px, 1.8vw, 10pt);
+  line-height: normal;
 }
 .html-lesson-wrapper .biz-tip-content .section {
   margin-left: clamp(40px, 14vw, 126.5px);
@@ -180,6 +181,29 @@ body {
 .html-lesson-wrapper .arrow-part.black-arrow:before {
   border-top: 8px solid black;
 }
+.html-lesson-wrapper .arrow-part-1 {
+  position: relative;
+}
+.html-lesson-wrapper .arrow-part-1:before {
+  content: "";
+  left: -1.5em;
+  top: 0.3em;
+  width: 0;
+  height: 0;
+  border-left: clamp(2px, 1vw, 5px) solid transparent;
+  border-right: clamp(2px, 1vw, 5px) solid transparent;
+  border-top: clamp(4px, 1vw, 8px) solid;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: clamp(5px, 1vw, 8px);
+}
+.html-lesson-wrapper .arrow-part-1 span {
+  color: #cc3366;
+  font-weight: bold;
+}
+.html-lesson-wrapper .arrow-part-1.black-arrow:before {
+  border-top: 8px solid black;
+}
 .html-lesson-wrapper .see-content {
   margin-top: 36px;
 }
@@ -212,7 +236,7 @@ body {
   vertical-align: top;
 }
 .html-lesson-wrapper .see-content table td:first-child {
-  width: 10%;
+  width: 2%;
 }
 .html-lesson-wrapper .see-content .see-border-box {
   border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
@@ -311,6 +335,9 @@ body {
 }
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;
+  padding-left: 15px;
+  margin-top: auto;
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .try-content table {
   border-collapse: collapse;
@@ -320,12 +347,7 @@ body {
 }
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {
-  border-left: 1.5px solid #d8d8d8;
-  border-right: 1.5px solid #d8d8d8;
-}
-.html-lesson-wrapper .try-content th:not(.no-border),
-.html-lesson-wrapper .try-content td:not(.no-border) {
-  border-bottom: 1.5px solid #d8d8d8;
+  border: 1.5px solid #d8d8d8;
 }
 .html-lesson-wrapper .try-content th {
   font-weight: bold;
@@ -335,10 +357,8 @@ body {
   padding: 0.3vw 0;
 }
 .html-lesson-wrapper .try-content td {
-  padding: 0.3vw 0.5vw;
-}
-.html-lesson-wrapper .try-content td:not(.not-vertical-center) {
   vertical-align: top;
+  padding: 0.3vw 0.5vw;
 }
 .html-lesson-wrapper .act-content {
   height: -webkit-fit-content;
@@ -404,10 +424,21 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 4%;
-  right: 6.2%;
+  bottom: 3.5%;
+  right: 2%;
   font-family: "Helvetica", "Arial", sans-serif;
   max-width: 44%;
+}
+@media only screen and (max-width: 767px) {
+  .html-lesson-wrapper footer {
+    max-width: 117px;
+  }
+}
+.html-lesson-wrapper footer .footer-text-1 {
+  display: inline-block;
+}
+.html-lesson-wrapper footer .footer-text-2 {
+  display: inline-block;
 }
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {

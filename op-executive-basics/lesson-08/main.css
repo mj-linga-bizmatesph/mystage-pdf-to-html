@@ -150,12 +150,12 @@ body {
   margin-top: 3% !important;
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: normal !important;
-  max-width: 82%;
 }
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
   margin-left: -3.6%;
   margin-bottom: clamp(6px, 1vw, 10px);
   margin-right: 16%;
+  width: 97%;
 }
 .html-lesson-wrapper .arrow-part {
   position: relative;
@@ -294,13 +294,21 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 3.5%;
+  bottom: 2.5%;
   right: 6.2%;
   font-family: Helvetica, Arial, "Sans-serif";
   max-width: 41%;
 }
 .html-lesson-wrapper footer .inline-block {
   display: inline-block;
+}
+@media screen and (min-width: 1600px) and (max-width: 1921px) {
+  .html-lesson-wrapper footer {
+    bottom: 3%;
+  }
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -3.2%;
+  }
 }
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .biz-tip-content .section {
@@ -322,6 +330,14 @@ body {
   }
   .html-lesson-wrapper .lesson-number-two {
     left: 91.4%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .html-lesson-wrapper .biz-tip-content .pointers {
+    margin-left: clamp(52px, 14.3%, 132.5px);
+  }
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -3.5%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -348,7 +364,7 @@ body {
 }
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper footer {
-    bottom: 25px !important;
+    bottom: 1.5% !important;
   }
   .html-lesson-wrapper .biz-tip-content .section {
     margin-left: 6%;
@@ -363,6 +379,9 @@ body {
   }
   .html-lesson-wrapper .arrow-part {
     margin-left: 9px;
+  }
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -3.2%;
   }
   .html-lesson-wrapper .try-content .sub-text {
     margin-left: 8px;

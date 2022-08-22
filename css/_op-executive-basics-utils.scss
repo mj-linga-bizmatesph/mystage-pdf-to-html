@@ -181,12 +181,12 @@ body {
       margin-top: 3% !important;
       margin-left: clamp(50px, 14%, 126.5px);
       line-height: normal !important;
-      max-width: 82%;
 
       .no-arrow {
         margin-left: -3.6%;
         margin-bottom: clamp(6px, 1vw, 10px);
         margin-right: 16%;
+        width: 97%;
       }
     }
   }
@@ -361,7 +361,7 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     text-align: right;
-    bottom: 3.5%;
+    bottom: 2.5%;
     right: 6.2%;
     font-family: $helvetica;
     max-width: 41%;
@@ -369,7 +369,14 @@ body {
       display: inline-block;
     }
   }
-
+  @media screen and (min-width: 1600px) and (max-width: 1921px) {
+    footer {
+      bottom: 3%;
+    }
+    .biz-tip-content .pointers .no-arrow {
+      margin-left: -3.2%;
+    }
+  }
   @media screen and (max-width: 900px) {
     .biz-tip-content .section {
       margin-top: 2% !important;
@@ -391,6 +398,16 @@ body {
     }
     .lesson-number-two {
       left: 91.4%;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 900px) {
+    .biz-tip-content {
+      .pointers {
+        margin-left: clamp(52px, 14.3%, 132.5px);
+      }
+    }
+    .biz-tip-content .pointers .no-arrow {
+      margin-left: -3.5%;
     }
   }
   @media screen and (max-width: 768px) {
@@ -417,7 +434,7 @@ body {
   }
   @media screen and (max-width: 460px) {
     footer {
-      bottom: 25px !important;
+      bottom: 1.5% !important;
     }
     .biz-tip-content .section {
       margin-left: 6%;
@@ -432,6 +449,9 @@ body {
     }
     .arrow-part {
       margin-left: 9px;
+    }
+    .biz-tip-content .pointers .no-arrow {
+      margin-left: -3.2%;
     }
     .try-content {
       .sub-text {

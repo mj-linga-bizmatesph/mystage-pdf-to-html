@@ -135,8 +135,11 @@ body {
   }
   // See
   .see-content {
-    margin-top: 25%;
+    margin-top: -12.4%;
     width: 72%;
+    @media screen and (max-width: 900px){
+      margin-top: -5.4%;
+    }
     .row {
       .You {
         font-family: $title-font;
@@ -189,7 +192,7 @@ body {
   
     // Review Content
     .review-content {
-      margin-top: clamp(70px, 35%, 220px);
+      margin-top: -12%;
       ul {
         list-style: none;
         margin-top: 12px;
@@ -219,7 +222,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -4em;
+    bottom: -10em;
     .footer-text {
       line-height: normal;
       text-align: right;

@@ -1,1 +1,10 @@
 @import '../../css/op-management-1-utils';
+.html-lesson-wrapper footer {
+    font-family: "Helvetica","Arial",san-serif;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: -14em;
+}

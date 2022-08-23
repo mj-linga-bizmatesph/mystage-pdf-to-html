@@ -1,8 +1,11 @@
 @import '../../css/op-negotiation-basics-utils';
 
 .html-lesson-wrapper {
-  .section {
+  .section .see {
     top: 6px;
+    @media screen and (max-width: 428px) {
+      top: 4px;
+    }
   }
   .see-content {
     &.part-1 {
@@ -38,6 +41,10 @@
         width: 0.6em;
         display: inline-block;
       }
+    }
+    ul.decimal {
+      list-style: decimal;
+      margin-left: 17px;
     }
   }
 }

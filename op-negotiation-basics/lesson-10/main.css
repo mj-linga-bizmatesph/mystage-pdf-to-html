@@ -410,8 +410,13 @@ body {
   }
 }
 
-.html-lesson-wrapper .section {
+.html-lesson-wrapper .section .see {
   top: 6px;
+}
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .section .see {
+    top: 4px;
+  }
 }
 .html-lesson-wrapper .see-content.part-1 {
   margin-top: 25%;
@@ -439,4 +444,8 @@ body {
   content: "";
   width: 0.6em;
   display: inline-block;
+}
+.html-lesson-wrapper .see-content ul.decimal {
+  list-style: decimal;
+  margin-left: 17px;
 }

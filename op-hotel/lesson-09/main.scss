@@ -1,0 +1,12 @@
+@import '../../css/op-hotel-utils';
+
+.html-lesson-wrapper {
+  .words-phrase-content {
+    margin-top: clamp(75px, 17%, 157px);
+  }
+  @media screen and (max-width: 320px) {
+    .words-phrase-content {
+      margin-top: 80px !important;
+    }
+  }
+}

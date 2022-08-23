@@ -19,14 +19,14 @@ body {
   position: relative;
   background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
     url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
-    background-position: top, -11.5px 100%;
+  background-position: top, -11.5px 100%;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: $text-font;
 
   header {
     font-family: $title-font;
-    margin-bottom: clamp(110px, 30vw, 270px);
+    margin-bottom: clamp(110px, 30vw, 181px);
   }
   .b {
     font-weight: bold;
@@ -85,7 +85,7 @@ body {
   }
   .section {
     position: absolute;
-    left: -78px;
+    left: -55px;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -118,7 +118,7 @@ body {
   .part-content {
     position: relative;
     margin-left: $left-pixel;
-    padding-left: 18.5px;
+    padding-left: 43px;
     padding-right: 42px;
     font-size: clamp(6px, 1.8vw, 15px);
 
@@ -146,7 +146,7 @@ body {
     position: absolute;
     width: fit-content;
     text-align: right;
-    bottom: 43px;
+    bottom: 34px;
     right: 6.2%;
     font-family: $title-font;
     max-width: 64%;

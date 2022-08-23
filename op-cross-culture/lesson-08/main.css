@@ -37,6 +37,7 @@ body {
   left: 48px;
   color: #ffffff;
   font-size: 0px;
+  width: 100%;
 }
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
@@ -509,8 +510,11 @@ body {
 }
 @media screen and (min-width: 900px) and (max-width: 1800px) {
   .html-lesson-wrapper .title {
-    top: 70px !important;
+    top: 80px !important;
     width: 80%;
+  }
+  .html-lesson-wrapper .words-phrase-content {
+    margin-top: clamp(90px, 19.6%, 157px);
   }
 }
 

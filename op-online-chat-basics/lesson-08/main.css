@@ -63,13 +63,7 @@ body {
 }
 
 .html-lesson-wrapper .pt-1, .html-lesson-wrapper .content-item .content-div.review-part-1 {
-  padding-top: 1rem !important;
-}
-
-@media only screen and (max-width: 460px) {
-  .html-lesson-wrapper .pt-1, .html-lesson-wrapper .content-item .content-div.review-part-1 {
-    padding-top: 0px !important;
-  }
+  padding-top: 5rem !important;
 }
 
 .html-lesson-wrapper .pt-2 {
@@ -310,6 +304,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div {
+  margin-left: 5%;
   margin-top: 0.7%;
   width: 89%;
   margin-bottom: 15px;
@@ -432,6 +427,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.try .content-table td {
+  line-height: normal;
   padding: 0.5%;
   padding-left: clamp(5px, 1vw, 10px);
 }
@@ -448,6 +444,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box {
+  line-height: normal;
   font-family: "Trebuchet MS";
   font-size: clamp(10px, 2vw, 13.5px);
   padding: clamp(2px, 1vw, 5px) clamp(5px, 2vw, 10px);

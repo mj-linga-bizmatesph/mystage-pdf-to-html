@@ -66,10 +66,10 @@ body {
     display: inline-block;
   }
   .pt-1 {
-    padding-top: 1rem !important;
-    @media only screen and (max-width: 460px) {
-      padding-top: 0px !important;
-    }
+    padding-top: 5rem !important;
+    // @media only screen and (max-width: 460px) {
+    //   padding-top: 0px !important;
+    // }
   }
   .pt-2 {
     padding-top: 1.9rem !important;
@@ -255,6 +255,7 @@ body {
       }
     }
     .content-div {
+      margin-left: 5%;
       margin-top: 0.7%;
       width: 89%;
       margin-bottom: 15px;
@@ -347,6 +348,7 @@ body {
             padding: 0.7% 0.5%;
           }
           td {
+            line-height: normal;
             padding: 0.5%;
             padding-left: clamp(5px, 1vw, 10px);
             @media screen and (max-width: 460px) {
@@ -360,6 +362,7 @@ body {
         padding-right: clamp(15px, 7vw, 43px);
         width: 100% !important;
         .review-box {
+          line-height: normal;
           font-family: $trebuchet;
           font-size: clamp(10px, 2vw, 13.5px);
           padding: clamp(2px, 1vw, 5px) clamp(5px, 2vw, 10px);

@@ -1,9 +1,29 @@
 @import '../../css/_op-cross-culture-utils.scss';
 .html-lesson-wrapper {
-  .see-content .see {
-    margin-top: 7px;
+  @media screen and (min-width: 900px) and (max-width: 1800px) {
+    .title {
+      top: 80px !important;
+      width: 80%;
+    }
+    .words-phrase-content {
+      margin-top: clamp(90px, 19.6%, 157px);
+    }
   }
 }
+@media screen and (max-width: 390px) {
+  .html-lesson-wrapper {
+    .see-content {
+      .see {
+        margin-top: 2.5px !important;
+      }
+    }
+    .try-content .try,
+    .act-content .act {
+      margin-top: 4.5px !important;
+    }
+  }
+}
+
 @media screen and (max-width: 320px) {
   .html-lesson-wrapper {
     .words-phrase-content {

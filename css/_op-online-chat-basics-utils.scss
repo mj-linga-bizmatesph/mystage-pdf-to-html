@@ -58,8 +58,8 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
-      right: 2%;
+      max-width: 33%;
+      right: 6%;
     }
   }
   .inline-block {
@@ -226,6 +226,7 @@ body {
   }
 
   .content-item {
+    line-height: 1.8;
     padding-top: clamp(5px, 2vw, 10px);
     padding-right: clamp(10px, 3vw, 25px);
     box-sizing: border-box;
@@ -237,6 +238,8 @@ body {
       width: 15%;
       color: $text-pink;
       .content-label-text {
+        line-height: 1.8;
+        font-family: $helvetica;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
@@ -252,6 +255,7 @@ body {
       }
     }
     .content-div {
+      margin-top: 0.7%;
       width: 89%;
       margin-bottom: 15px;
       box-sizing: content-box;

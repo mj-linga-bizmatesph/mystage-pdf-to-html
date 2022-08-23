@@ -54,8 +54,8 @@ body {
   text-align: right;
   position: absolute;
   bottom: 0;
-  max-width: 45%;
-  right: 2%;
+  max-width: 33%;
+  right: 6%;
 }
 
 .html-lesson-wrapper .inline-block {
@@ -268,6 +268,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item {
+  line-height: 1.8;
   padding-top: clamp(5px, 2vw, 10px);
   padding-right: clamp(10px, 3vw, 25px);
   -webkit-box-sizing: border-box;
@@ -290,6 +291,8 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-label .content-label-text {
+  line-height: 1.8;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
@@ -307,6 +310,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div {
+  margin-top: 0.7%;
   width: 89%;
   margin-bottom: 15px;
   -webkit-box-sizing: content-box;

@@ -101,7 +101,7 @@ body {
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
-  top: 2px;
+  top: 4px;
 }
 
 .html-lesson-wrapper .divider {
@@ -200,7 +200,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .pointers {
-  margin-top: clamp(12px, 2.8vw, 20px) !important;
+  margin-top: clamp(12px, 3.2vw, 23px) !important;
   margin-left: clamp(50px, 14%, 126.5px);
   line-height: normal;
 }

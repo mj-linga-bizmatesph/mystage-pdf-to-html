@@ -72,6 +72,7 @@ body {
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
   width: 73%;
+  margin-bottom: 10%;
 }
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
@@ -141,7 +142,7 @@ body {
   padding-bottom: 1.5%;
 }
 .html-lesson-wrapper main {
-  margin-top: clamp(70px, 18%, 160px);
+  margin-top: clamp(70px, 21%, 160px);
 }
 .html-lesson-wrapper .biz-tip-content,
 .html-lesson-wrapper .see-content,

@@ -66,6 +66,11 @@ body {
   left: 55px;
   font-size: clamp(9.3pt, 3vw, 18pt);
 }
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .title {
+    margin-left: 2%;
+  }
+}
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
   left: 92.2%;
@@ -166,8 +171,18 @@ body {
   margin-left: -4.2%;
   margin-right: 16%;
 }
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -1%;
+  }
+}
 .html-lesson-wrapper .arrow-part {
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .arrow-part {
+    margin-left: 5%;
+  }
 }
 .html-lesson-wrapper .arrow-part:before {
   content: "";
@@ -218,6 +233,11 @@ body {
 .html-lesson-wrapper .see-content .sub-text {
   margin-bottom: 1.5%;
 }
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .see-content .sub-text {
+    margin-left: 7%;
+  }
+}
 .html-lesson-wrapper .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
@@ -258,6 +278,11 @@ body {
   font-family: "Trebuchet MS";
   line-height: 1.8em;
 }
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .see-content .dialogue {
+    margin-left: 7%;
+  }
+}
 .html-lesson-wrapper .see-content .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,7 +294,15 @@ body {
 }
 .html-lesson-wrapper .see-content .person {
   font-weight: bold;
-  width: 10%;
+  width: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .see-content .person {
+    width: 40px;
+  }
+}
+.html-lesson-wrapper .see-content .speech {
+  width: inherit;
 }
 .html-lesson-wrapper .part-content.part-1 {
   margin-top: clamp(70px, 25%, 250px);
@@ -350,10 +383,16 @@ body {
 }
 .html-lesson-wrapper .try-content table {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
   line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .try-content table {
+    margin-left: 4%;
+    width: 90%;
+  }
 }
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {
@@ -429,6 +468,9 @@ body {
 .html-lesson-wrapper .review-content .lsn .arrows .arrow-part::before {
   left: -25px;
 }
+.html-lesson-wrapper .divider.see {
+  margin-left: -20%;
+}
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -444,6 +486,7 @@ body {
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper footer {
     max-width: 117px;
+    bottom: 1.8%;
   }
 }
 .html-lesson-wrapper footer .footer-text-1 {
@@ -457,6 +500,12 @@ body {
 }
 .html-lesson-wrapper .act-content {
   padding-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .html-lesson-wrapper .act-para {
+    margin-left: 7%;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
@@ -497,6 +546,50 @@ body {
   }
   .html-lesson-wrapper .section.words {
     left: calc(-14% + 30px);
+    top: 0%;
+  }
+  .html-lesson-wrapper .speech {
+    margin-left: 5%;
+    width: 80%;
+  }
+  .html-lesson-wrapper .see-border-box {
+    margin-left: 7%;
+    width: 85%;
+  }
+  .html-lesson-wrapper .see-border-box.review {
+    margin-left: 10%;
+  }
+  .html-lesson-wrapper .sub-text {
+    margin-left: 7%;
+  }
+  .html-lesson-wrapper .sub-text.review {
+    margin-left: 10%;
+    width: 85%;
+  }
+  .html-lesson-wrapper .sub-text.try {
+    margin-left: 4%;
+  }
+  .html-lesson-wrapper ul {
+    position: relative;
+    left: 2%;
+  }
+  .html-lesson-wrapper ol.review {
+    margin-left: 11%;
+    width: 88%;
+  }
+  .html-lesson-wrapper .word-break {
+    word-break: break-word;
+  }
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 0%;
+    word-break: break-word;
+  }
+  .html-lesson-wrapper .b, .html-lesson-wrapper .see-content table td:first-child, .html-lesson-wrapper .part-content table td:first-child, .html-lesson-wrapper .review-content .lsn {
+    margin-left: 7%;
+  }
+  .html-lesson-wrapper .divider.see {
+    font-size: 12px;
+    margin-left: -35%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -511,9 +604,9 @@ body {
     vertical-align: middle;
   }
   .html-lesson-wrapper .arrow-part:before {
-    border-left: clamp(2px, 0.5vw, 3.5px) solid transparent !important;
-    border-right: clamp(2px, 0.5vw, 3.5px) solid transparent !important;
-    border-top: clamp(3.5px, 0.5vw, 5.5px) solid !important;
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important;
+    border-top: 8px solid !important;
   }
 }
 

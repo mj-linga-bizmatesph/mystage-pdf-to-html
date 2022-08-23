@@ -83,6 +83,9 @@ $fs-10: clamp(12px, 2vw, 15px);
     top: 80px;
     left: 55px;
     font-size: clamp(9.3pt, 3vw, 18pt);
+    @media only screen and (max-width: 768px) {
+      margin-left: 2%;
+    }
   }
 
   .lesson-number {
@@ -199,12 +202,18 @@ $fs-10: clamp(12px, 2vw, 15px);
       .no-arrow {
         margin-left: -4.2%;
         margin-right: 16%;
+        @media only screen and (max-width: 768px) {
+          margin-left: -1%;
+        }
       }
     }
   }
 
   .arrow-part {
     position: relative;
+    @media only screen and (max-width: 768px) {
+      margin-left: 5%;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -260,6 +269,9 @@ $fs-10: clamp(12px, 2vw, 15px);
 
     .sub-text {
       margin-bottom: 1.5%;
+      @media only screen and (max-width: 768px) {
+        margin-left: 7%;
+      }
     }
 
     .article {
@@ -310,6 +322,9 @@ $fs-10: clamp(12px, 2vw, 15px);
       font-size: $fs-10;
       font-family: $trebuchet;
       line-height: 1.8em;
+      @media only screen and (max-width: 768px) {
+        margin-left: 7%;
+      }
     }
 
     .row {
@@ -322,7 +337,13 @@ $fs-10: clamp(12px, 2vw, 15px);
 
     .person {
       font-weight: bold;
-      width: 10%;
+      width: 80px;
+      @media only screen and (max-width: 768px) {
+        width: 40px;
+      }
+    }
+    .speech {
+      width: inherit;
     }
   }
 
@@ -423,10 +444,14 @@ $fs-10: clamp(12px, 2vw, 15px);
 
     table {
       border-collapse: collapse;
-      width: 100%;
+      width: 95%;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
       line-height: normal;
+      @media only screen and (max-width: 768px) {
+        margin-left: 4%;
+        width: 90%;
+      }
     }
 
     th,
@@ -522,6 +547,12 @@ $fs-10: clamp(12px, 2vw, 15px);
     }
   }
 
+  .divider {
+    &.see {
+      margin-left: -20%;
+    }
+  }
+
   footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;
@@ -536,6 +567,7 @@ $fs-10: clamp(12px, 2vw, 15px);
     max-width: 44%;
     @media only screen and (max-width: 767px) {
       max-width: 117px;
+      bottom: 1.8%;
     }
     .footer-text-1 {
       display: inline-block;
@@ -551,6 +583,13 @@ $fs-10: clamp(12px, 2vw, 15px);
   
   .act-content {
     padding-bottom: 8rem;
+  }
+
+  .act-para {
+    @media only screen and (max-width: 768px) {
+      margin-left: 7%;
+      width: 90%;
+    }
   }
 
   @media screen and (max-width: 900px) {
@@ -595,6 +634,54 @@ $fs-10: clamp(12px, 2vw, 15px);
       left: calc(-16% + 30px);
       &.words {
         left: calc(-14% + 30px);
+        top: 0%;
+      }
+    }
+    .speech {
+      margin-left: 5%;
+      width: 80%;
+    }
+    .see-border-box {
+      margin-left: 7%;
+      width: 85%;
+      &.review {
+       margin-left: 10%;
+      }
+    }
+    .sub-text {
+      margin-left: 7%;
+      &.review {
+        margin-left: 10%;
+        width: 85%;
+      }
+      &.try {
+        margin-left: 4%;
+      }
+    }
+    ul {
+      position: relative;
+      left: 2%;
+    }
+    ol.review {
+      margin-left: 11%;
+      width: 88%;
+    }
+    .word-break {
+      word-break: break-word;
+    }
+    .try-content {
+      ul {
+        margin-left: 0%;
+        word-break: break-word;
+      }
+    }
+    .b {
+      margin-left: 7%;
+    }
+    .divider {
+      &.see {
+        font-size: 12px;
+        margin-left: -35%;
       }
     }
   }
@@ -611,9 +698,9 @@ $fs-10: clamp(12px, 2vw, 15px);
       vertical-align: middle;
     }
     .arrow-part:before {
-      border-left: clamp(2px, 0.5vw, 3.5px) solid transparent !important;
-      border-right: clamp(2px, 0.5vw, 3.5px) solid transparent !important;
-      border-top: clamp(3.5px, 0.5vw, 5.5px) solid !important;
+      border-left: 5px solid transparent !important;
+      border-right: 5px solid transparent !important;
+      border-top: 8px solid !important;
     }
   }
 }

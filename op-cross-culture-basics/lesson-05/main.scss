@@ -83,11 +83,11 @@ body {
   }
   .section {
     position: absolute;
-    left: -78px;
+    left: -55px;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
-    top: 2px;
+    top: 4px;
   }
   .divider {
     color: #d9d9d9;
@@ -112,6 +112,9 @@ body {
   .see-content,
   .act-content,
   .try-content {
+    @media screen and (max-width: 1921px) and (min-width: 1800px) {
+      margin-left: clamp(50px, 14%, 103.5px);
+    }
     position: relative;
     margin-left: $left-pixel;
     padding-left: 18.5px;
@@ -151,17 +154,31 @@ body {
     background: $primary-light;
     font-size: clamp(6px, 1.8vw, 15px);
     .section {
+      @media screen and (max-width: 1921px) and (min-width: 1800px) {
+        margin-left: clamp(50px, 14%, 103.5px);
+      }
       margin-left: $left-pixel;
       line-height: 1.8em;
       margin-top: clamp(10px, 2.6vw, 18px) !important;
     }
     .pointers {
-      margin-top: clamp(12px, 2.8vw, 20px) !important;
+      @media screen and (max-width: 1921px) and (min-width: 1800px) {
+        margin-left: clamp(50px, 14%, 100.5px);
+      }
+      margin-top: clamp(12px, 3.2vw, 23px) !important;
       margin-left: $left-pixel;
+      line-height: normal;
       .text-header {
         position: relative;
-        left: -17px;
+        left: -23px;
         margin-bottom: clamp(6px, 2vw, 20px);
+
+        @media screen and (max-width: 768px) {
+          left: -20px;
+        }
+        @media screen and (max-width: 601px) {
+          left: -16px;
+        }
       }
       .arrow-part {
         position: relative;
@@ -194,6 +211,7 @@ body {
     margin-top: 30px;
     ul {
       list-style-type: decimal;
+      line-height: 1.8;
     }
   }
   // Act
@@ -208,7 +226,7 @@ body {
     position: absolute;
     width: fit-content;
     text-align: right;
-    bottom: 43px;
+    bottom: 34px;
     right: 6.2%;
     font-family: $title-font;
     max-width: 64%;

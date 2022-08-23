@@ -190,7 +190,7 @@ body {
   padding-bottom: 1.5%;
 }
 .html-lesson-wrapper .small-texts {
-  font-size: clamp(4px, 1.5vw, 8px);
+  font-size: clamp(10px, 1vw, 12px);
 }
 .html-lesson-wrapper .see-content,
 .html-lesson-wrapper .act-content,
@@ -218,6 +218,8 @@ body {
 .html-lesson-wrapper .dialogue {
   font-size: clamp(6.48px, 1.8vw, 10pt);
   font-family: "Trebuchet MS";
+}
+.html-lesson-wrapper .dialogue .row {
   line-height: 1.8;
 }
 .html-lesson-wrapper .row {
@@ -247,6 +249,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  line-height: normal;
 }
 .html-lesson-wrapper .biz-tip-content .section {
   margin-top: 3% !important;
@@ -359,8 +362,8 @@ body {
 .html-lesson-wrapper .see-content .see-border-box {
   border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
   font-family: "Trebuchet MS";
-  font-size: clamp(6.48px, 1.8vw, 10pt);
-  padding: 0.5vw;
+  font-size: clamp(10px, 2vw, 15px);
+  padding: 0.7vw;
   line-height: normal;
 }
 .html-lesson-wrapper .see-content .see-border-box ol {
@@ -479,11 +482,12 @@ body {
           align-items: center;
   padding: 0 10px;
   min-height: clamp(15px, 2vw, 22px);
+  font-size: clamp(8px, 2vw, 15px);
 }
 .html-lesson-wrapper .email-content {
   background: white;
   padding: 5px;
-  font-size: clamp(8px, 2vw, 12px);
+  font-size: clamp(8px, 2vw, 15px);
   line-height: normal;
 }
 .html-lesson-wrapper .text-12 {
@@ -593,7 +597,7 @@ body {
 .html-lesson-wrapper .part-content .see-border-box {
   border: clamp(1.5px, 0.5vw, 3.5px) solid #d8d8d8;
   font-family: "Trebuchet MS";
-  font-size: clamp(10px, 2vw, 13.5px);
+  font-size: clamp(10px, 2vw, 15px);
   padding: 0.5vw;
   line-height: normal;
 }
@@ -767,4 +771,8 @@ body {
 .html-lesson-wrapper .mv-mt {
     margin-top: clamp(5px, 2vw, 10px) !important;
   }
+}
+
+.section.act {
+  line-height: 1.8;
 }

@@ -1,8 +1,7 @@
 @import '../../css/op-management-3-utils';
 .html-lesson-wrapper .lesson-number {
-    left: clamp(91.5%, 93vw, 91.7%);
+  left: clamp(91.5%, 93vw, 91.7%);
 }
-
 
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .see-content {

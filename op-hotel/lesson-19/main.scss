@@ -3,14 +3,13 @@
 .html-lesson-wrapper {
   .title {
     max-width: 70%;
-    @media screen and (min-width: 900px) {
-      top: 71px !important;
-    }
     @media screen and (min-width: 1600px) {
       top: 80px !important;
     }
   }
-
+  .words-phrase-content {
+    margin-top: clamp(97px, 19%, 157px);
+  }
   .lesson-number {
     left: 91.6% !important;
   }

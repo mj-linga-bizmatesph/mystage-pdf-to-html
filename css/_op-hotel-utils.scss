@@ -313,6 +313,9 @@ body {
     .sub-text {
       font-family: $text-font !important;
     }
+    .sub-text.b {
+      font-family: $title-font !important;
+    }
     p,
     .act-content-div {
       line-height: 1.8;

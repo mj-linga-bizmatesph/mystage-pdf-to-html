@@ -44,6 +44,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-family: italic;
   }
 
+  a{
+    color: black;
+  }
+
   .small-mt {
     margin-top: clamp(5px, 2vw, 10px);
   }
@@ -84,6 +88,8 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     top: 80px;
     left: 5%;
     font-size: clamp(18px, 4vw, 27px);
+    width: 73%;
+    margin-bottom: 10%;
   }
 
   .lesson-number {
@@ -169,7 +175,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   }
 
   main {
-    margin-top: clamp(70px, 18%, 160px);
+    margin-top: clamp(70px, 21%, 160px);
   }
 
   .biz-tip-content,
@@ -215,14 +221,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-size: clamp(12px, 2vw, 15px);
     padding-bottom: 4%;
     padding-top: 3%;
-
-    // .section {
-    //   margin-top: 3% !important;
-    // }
-
-    // .pointers {
-    //   margin-top: 3% !important;
-    // }
+    .no-arrow{
+      margin-bottom: 1%;
+    }
   }
 
   .arrow-part {
@@ -364,7 +365,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       display: grid;
       grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
       font-size: clamp(9px, 2vw, 13px);
-      column-gap: clamp(0.2rem, 1vw, 1rem);
+      column-gap: clamp(.2rem,2vw,2.5rem);
     }
 
     .email-header-label {
@@ -386,6 +387,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      color: white;
       height: clamp(15px, 2vw, 22px);
     }
     .email-header-textfield {
@@ -482,7 +484,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
     li::before {
       content: '';
-      display: block;
+      padding-right: 1em;
       width: 0.5em;
     }
     li::marker {
@@ -624,14 +626,13 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   footer {
     font-family: $helvetica;
     font-size: clamp(4.5px, 1.1vw, 9px);
-    padding-right: 10%;
-    bottom: 3em;
     position: absolute;
-    display: flex;
-    width: 23%;
-    justify-content: end;
-    right: 3.5rem;
-    flex-wrap: wrap;
+    right: 4em;
+    bottom: 4.5em;
+    text-align: right;
+    .footer-text{
+      width: 90%;
+    }
   }
 
   @media screen and (max-width: 900px) {
@@ -656,6 +657,9 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   }
 
   @media screen and (max-width: 768px) {
+    br{
+      display: none !important;
+    }
     .program-rank {
       position: absolute;
       top: clamp(20px, 4vw, 40px);

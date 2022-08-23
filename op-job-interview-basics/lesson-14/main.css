@@ -24,6 +24,7 @@ body {
 
 .html-lesson-wrapper header {
   font-family: Helvetica, Arial, "Sans-serif";
+  margin-top: 1.3%;
 }
 
 .html-lesson-wrapper .u {
@@ -71,19 +72,20 @@ body {
   position: absolute;
   top: clamp(15px, 4vw, 30px);
   left: 5%;
-  font-size: clamp(9.3px, 3vw, 27px);
+  font-size: clamp(18px, 4vw, 27px);
+  width: 81%;
 }
 
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
-  left: 92.2%;
-  margin-top: 7.8%;
+  left: 92%;
+  margin-top: 6.2%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
 .html-lesson-wrapper .lesson-number-two {
-  left: 91.5%;
+  left: 91.3%;
 }
 
 .html-lesson-wrapper .row {
@@ -153,7 +155,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .biz-tip-content {
@@ -166,7 +168,7 @@ body {
   padding-bottom: 4%;
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .biz-tip-content .section {
@@ -183,9 +185,15 @@ body {
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  margin-left: -4.2%;
+  margin-left: -3.5%;
   margin-right: 16%;
   margin-bottom: 1.5%;
+}
+
+@media screen and (max-width: 1921px) and (min-width: 1800px) {
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -3.2%;
+  }
 }
 
 .html-lesson-wrapper .arrow-part {
@@ -195,7 +203,7 @@ body {
 .html-lesson-wrapper .arrow-part:before {
   content: '';
   position: absolute;
-  left: -1.5em;
+  left: -1.4em;
   top: 0.3em;
   width: 0;
   height: 0;
@@ -364,7 +372,7 @@ body {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    padding-left: clamp(11px, 2.4vw, 18px);
+    padding-left: clamp(18px, 4.4vw, 18px);
   }
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);

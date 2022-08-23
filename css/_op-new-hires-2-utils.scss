@@ -90,7 +90,7 @@ body {
     }
   }
   .pt-2 {
-    padding-top: 2.3rem !important;
+    padding-top: 3.6rem !important;
     @media only screen and (max-width: 460px) {
       padding-top: 0px !important;
     }
@@ -216,12 +216,12 @@ body {
         margin-bottom: 0 !important;
       }
       .biz-tip-label {
-        width: 11%;
+        width: 15%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
-        margin-top: clamp(10px, 3vw, 22px);
+        margin-top: clamp(14px, 3vw, 22px);
         padding-left: clamp(10px, 6vw, 60px);
       }
       .biz-tip-content {
@@ -306,7 +306,7 @@ body {
       width: 89%;
       margin-bottom: 15px;
       box-sizing: content-box;
-      padding-left: clamp(10px, 2.5vw, 25px);
+      padding-left: clamp(10px, 5.8vw, 47px);
       .header-text {
         margin: 0;
         font-family: $helvetica;
@@ -321,6 +321,7 @@ body {
         font-size: clamp(12px, 2vw, 15px);
       }
       .content-text-b {
+        list-style: decimal;
         line-height: 1.8;
         margin-left: 2.8%;
         font-family: $trebuchet;

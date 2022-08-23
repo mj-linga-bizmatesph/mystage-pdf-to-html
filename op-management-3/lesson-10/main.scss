@@ -3,7 +3,10 @@
   left: clamp(91.5%, 93vw, 91%);
 }
 
-.html-lesson-wrapper .see-content, .html-lesson-wrapper .act-content, .html-lesson-wrapper .try-content, .html-lesson-wrapper .review-content {
+.html-lesson-wrapper .see-content,
+.html-lesson-wrapper .act-content,
+.html-lesson-wrapper .try-content,
+.html-lesson-wrapper .review-content {
   position: relative;
   margin-left: clamp(50px, 14.3%, 126.5px);
   padding-left: 18.5px;
@@ -16,9 +19,9 @@
   left: -9%;
   color: #c36;
   font-weight: bold;
-  font-family: "Helvetica","Arial",sans-serif;
-  top: 0.8%;
-  @media screen and (max-width: 500px){
-    top: 0.6%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  top: 0%;
+  @media screen and (max-width: 500px) {
+    top: 0% !important;
   }
 }

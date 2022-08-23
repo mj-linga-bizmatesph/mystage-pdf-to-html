@@ -101,12 +101,13 @@ body {
 }
 
 .html-lesson-wrapper .section {
+  line-height: 1.8;
   position: absolute;
   left: -9%;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
-  top: 1.11%;
+  top: 0.11%;
 }
 
 .html-lesson-wrapper .divider {
@@ -244,7 +245,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content .mb {
-  margin-top: 0.5%;
+  margin-top: -0.1%;
 }
 
 .html-lesson-wrapper .try-content .sub-text {
@@ -291,7 +292,7 @@ body {
 }
 
 .html-lesson-wrapper .act-content .mb {
-  margin-top: 0.5%;
+  margin-top: -0.2%;
 }
 
 .html-lesson-wrapper .act-content p {
@@ -543,7 +544,7 @@ body {
     padding: 2px 6px 2px 7px !important;
   }
   .html-lesson-wrapper .section {
-    top: 5px;
+    top: 0px;
     left: calc(-15% + 20px);
   }
   .html-lesson-wrapper .line {

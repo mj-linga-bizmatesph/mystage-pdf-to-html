@@ -211,6 +211,18 @@ body {
   padding-bottom: 1rem;
 }
 
+@media only screen and (max-device-width: 500px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1em;
+  }
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
 }
@@ -314,7 +326,7 @@ body {
 
 @media only screen and (max-device-width: 400px) {
   .html-lesson-wrapper .content-item .content-div {
-    padding-left: 10px;
+    padding-left: 1%;
   }
 }
 

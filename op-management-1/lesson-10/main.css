@@ -211,6 +211,10 @@ body {
       grid-template-columns: 40% 60%;
 }
 
+.html-lesson-wrapper .act-content ul {
+  list-style: decimal;
+}
+
 .html-lesson-wrapper .review-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
@@ -369,4 +373,13 @@ body {
   box-sizing: border-box;
   padding-right: 10%;
   bottom: -15.4em;
+}
+
+.html-lesson-wrapper .section {
+  position: absolute;
+  left: -3.6em;
+  color: #cc3366;
+  font-weight: bold;
+  font-family: "Helvetica","Arial",san-serif;
+  top: -0.4%;
 }

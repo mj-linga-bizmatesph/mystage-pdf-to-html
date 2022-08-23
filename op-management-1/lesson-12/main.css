@@ -211,6 +211,10 @@ body {
       grid-template-columns: 40% 60%;
 }
 
+.html-lesson-wrapper .act-content ul {
+  list-style: decimal;
+}
+
 .html-lesson-wrapper .review-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);

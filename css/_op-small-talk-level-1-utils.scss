@@ -187,15 +187,15 @@ body {
         position: relative;
         line-height: normal;
         &:before {
-          content: '';
+          content: '\25BC';
           position: absolute;
           left: -16px;
-          top: 8px;
+          top: 0px;
           width: 0;
           height: 0;
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-          border-top: 8px solid black;
+          // border-left: 5px solid transparent;
+          // border-right: 5px solid transparent;
+          // border-top: 8px solid black;
           display: inline-block;
           vertical-align: middle;
         }
@@ -209,7 +209,7 @@ body {
       line-height: 1.8;
       margin-left: 3.5%;
       @media only screen and (max-width: 820px) {
-        margin-left: 4%;
+        margin-left: 3%;
       }
     }
   }
@@ -219,6 +219,9 @@ body {
       list-style-type: decimal;
       line-height: 1.8;
       margin-left: 3.5%;
+      @media only screen and (max-width: 820px) {
+        margin-left: 3%;
+      }
     }
     .bullet {
       list-style-type: disc;
@@ -346,7 +349,6 @@ body {
     .arrow-part {
       &:before {
         left: -3% !important;
-        top: clamp(8px, 1vw, 1.2vw) !important;
       }
     }
   }
@@ -363,13 +365,6 @@ body {
     .line {
       margin: 0 6px;
       vertical-align: middle;
-    }
-    .arrow-part {
-      &:before {
-        border-left: 3.5px solid transparent !important;
-        border-right: 3.5px solid transparent !important;
-        border-top: 5.5px solid black !important;
-      }
     }
     .act-content {
       .table-1 {

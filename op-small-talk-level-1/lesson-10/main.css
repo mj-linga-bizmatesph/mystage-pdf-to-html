@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -194,15 +195,12 @@ body {
   line-height: normal;
 }
 .html-lesson-wrapper .words-phrase-content .pointers .arrow-part:before {
-  content: "";
+  content: "▼";
   position: absolute;
   left: -16px;
-  top: 8px;
+  top: 0px;
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 8px solid black;
   display: inline-block;
   vertical-align: middle;
 }
@@ -216,7 +214,7 @@ body {
 }
 @media only screen and (max-width: 820px) {
   .html-lesson-wrapper .see-content .decimal {
-    margin-left: 4%;
+    margin-left: 3%;
   }
 }
 .html-lesson-wrapper .try-content {
@@ -226,6 +224,11 @@ body {
   list-style-type: decimal;
   line-height: 1.8;
   margin-left: 3.5%;
+}
+@media only screen and (max-width: 820px) {
+  .html-lesson-wrapper .try-content .decimal {
+    margin-left: 3%;
+  }
 }
 .html-lesson-wrapper .try-content .bullet {
   list-style-type: disc;
@@ -358,7 +361,6 @@ body {
   }
   .html-lesson-wrapper .arrow-part:before {
     left: -3% !important;
-    top: clamp(8px, 1vw, 1.2vw) !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -374,11 +376,6 @@ body {
   .html-lesson-wrapper .line {
     margin: 0 6px;
     vertical-align: middle;
-  }
-  .html-lesson-wrapper .arrow-part:before {
-    border-left: 3.5px solid transparent !important;
-    border-right: 3.5px solid transparent !important;
-    border-top: 5.5px solid black !important;
   }
   .html-lesson-wrapper .act-content .table-1 {
     width: 105%;

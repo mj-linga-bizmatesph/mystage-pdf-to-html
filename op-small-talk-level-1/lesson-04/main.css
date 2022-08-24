@@ -214,6 +214,11 @@ body {
   line-height: 1.8;
   margin-left: 3.5%;
 }
+@media only screen and (max-width: 820px) {
+  .html-lesson-wrapper .see-content .decimal {
+    margin-left: 4%;
+  }
+}
 .html-lesson-wrapper .try-content {
   margin-top: 30px;
 }
@@ -312,7 +317,7 @@ body {
   }
   .html-lesson-wrapper .try-content ul,
 .html-lesson-wrapper .see-content ul {
-    margin-left: clamp(15px, 2.4vw, 18px);
+    margin-left: clamp(25px, 2.4vw, 18px);
   }
   .html-lesson-wrapper .try-content li,
 .html-lesson-wrapper .see-content li {

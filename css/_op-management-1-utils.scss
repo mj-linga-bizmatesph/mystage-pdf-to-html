@@ -93,12 +93,13 @@ body {
     margin: 0 auto;
   }
   .section {
+    line-height: 1.8;
     position: absolute;
     left: -9%;
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
-    top: 0.8%;
+    top: 0.11%;
   }
   .divider {
     color: #d9d9d9;
@@ -113,7 +114,6 @@ body {
     }
   }
   ul {
-    // margin: 0px 0px 0px 16px;
     padding: 0;
     line-height: clamp(12px, 3vw, 26px);
   }
@@ -121,6 +121,7 @@ body {
   .act-content,
   .try-content,
   .review-content {
+    line-height: 1.8;
     position: relative;
     margin-left: $left-pixel;
     padding-left: 18.5px;
@@ -149,210 +150,89 @@ body {
     }
   }
   .see-content {
-    margin-top: 25%;
-    .see-margin {
+    margin-top:  25%;
+    width: 72%;
+    @media screen and (max-width: 900px){
+      margin-top: -5.4%;
+    }
+    .row {
+      .You {
+        font-family: $title-font;
+      }
       p {
-        margin-block-start: 0em;
-        margin-block-end: 1em !important;
-      }
-      line-height: 1.8;
-      ul {
-        line-height: 1.8;
-      }
-      .instruction {
-        margin-block-end: 0em !important;
-        font-weight: bold;
-      }
-      .tbl-container {
-        margin-top: 10px;
-
-        .content-table {
-          width: 100%;
-          border-collapse: collapse;
-          font-size: clamp(12px, 2vw, 15px);
-
-          .table-header {
-            color: white;
-            background-color: $primary-pink;
-          }
-          .table-header1 {
-            width: 16%;
-            color: white;
-            background-color: $primary-pink;
-          }
-          .table-header2 {
-            color: white;
-            background-color: $primary-pink;
-          }
-          th {
-            vertical-align: middle !important;
-          }
-          td,
-          th {
-            border: 2px solid $tertiary-gray;
-            padding: 7px;
-            vertical-align: middle;
-          }
+        display: block;
+        margin: 0px 0px;
+        &:first-child {
+          min-width: 48px;
+          max-width: 100px;
+          word-wrap: break-word;
+          font-weight: bold;
+        }
+        &:last-child {
+          width: fit-content;
+          font-weight: normal;
         }
       }
     }
-    .sub-text {
-      line-height: 1.8em;
-    }
   }
+
   .try-content {
+    .mb{
+      margin-top: -0.2%;
+    } 
     margin-top: 30px;
-    .sub-text {
-      line-height: 1.8em;
-    }
-    .bullet {
-      list-style: decimal;
-      line-height: 1.8;
-      list-style-position: outside;
-      .nested-ul {
-        line-height: 1.8;
-        list-style: lower-alpha;
-      }
+
+    ul {
+      margin-left: 2.8%;
+      list-style-type: decimal;
     }
   }
+  
   .act-content {
-    p {
-      margin-block-start: 0em;
+    .mb{
+      margin-top: -0.2%;
     }
-    height: fit-content;
-    margin-bottom: clamp(50px, 13vw, 120px);
     margin-top: 36px;
-    p {
-      line-height: 1.8;
+    height: fit-content;
+    .column {
+      display: grid;
+      grid-template-columns: 40% 60%;
     }
-    .tbl-container {
-      margin-top: 10px;
-
-      .content-table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: clamp(12px, 2vw, 15px);
-
-        .table-header {
-          color: white;
-          background-color: $primary-pink;
-        }
-        .table-header1 {
-          width: 32%;
-          color: white;
-          background-color: $primary-pink;
-        }
-        .table-header2 {
-          width: 15%;
-          color: white;
-          background-color: $primary-pink;
-        }
-        .table-header3 {
-          width: 20%;
-          color: white;
-          background-color: $primary-pink;
-        }
-        th {
-          vertical-align: middle !important;
-        }
-        td,
-        th {
-          border: 2px solid $tertiary-gray;
-          padding: 7px;
-          vertical-align: middle;
-        }
-      }
+    ol{
+      list-style: decimal;
+      margin-left: 1.3em;
+      margin-top: 0.2em;
     }
-    .tbl-container1 {
-      margin-top: 10px;
 
-      .content-table {
-        border-bottom: 2px solid $tertiary-gray;
-        width: 100%;
-        border-collapse: collapse;
-        font-size: clamp(12px, 2vw, 15px);
-        p {
-          margin-block-start: 0em !important;
-          margin-block-end: 0em !important;
-        }
-
-        .table-header {
-          color: white;
-          background-color: $primary-pink;
-        }
-        .table-header1 {
-          width: 16%;
-          color: white;
-          background-color: $primary-pink;
-        }
-        .table-header2 {
-          color: white;
-          background-color: $primary-pink;
-        }
-        th {
-          vertical-align: middle !important;
-        }
-        th {
-          border: 2px solid $tertiary-gray;
-          padding: 7px;
-          vertical-align: middle;
-        }
-        td {
-          border-left: 2px solid $tertiary-gray;
-          border-right: 2px solid $tertiary-gray;
-          padding-left: 5px;
-          vertical-align: middle;
-          .row {
-            p {
-              display: inline-block;
-              margin: 0px 0px;
-              &:first-child {
-                margin-right: 4px;
-                max-width: 100px;
-                word-wrap: break-word;
-              }
-            }
-          }
-        }
-      }
-    }
   }
   .review-content {
     margin-top: 25%;
-    padding-bottom: 10%;
-    .sub-text {
-      line-height: 1.8em;
-    }
-    ul {
-      line-height: 1.8 !important;
-      list-style: none;
-      li {
-        margin: 12.5px 1px;
-
-        p {
-          margin-block-start: 0 !important;
-          margin-block-end: 0 !important;
-
-          &:last-child {
-            font-weight: normal;
-          }
-        }
+    position: relative;
+    margin-left: $left-pixel;
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(6px, 1.8vw, 15px);
+    ul{
+      list-style: none !important;
+      li{
+        margin-bottom: 1em;
       }
     }
   }
+
   footer {
     font-family: $title-font;
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: 43px;
+    bottom: -9em;
     .footer-text {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
-      right: 5%;
+      max-width: 33%;
+      right: 6%;
       @media screen and (max-width: 900px){
         right: 2%;
       }
@@ -367,7 +247,7 @@ body {
   .html-lesson-wrapper {
     min-height: unset;
     .see-content {
-      margin-top: 30%;
+      margin-top: 24.5%;
       .article {
         margin-bottom: clamp(20px, 3.7vw, 29px);
       }
@@ -376,7 +256,7 @@ body {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 3vw, 18px);
       ul {
-        margin-left: clamp(19px, 2vw, 25px);
+        margin-left: clamp(25px, vw, 25px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -386,7 +266,7 @@ body {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
     .review-content {
-      margin-top: 31%;
+      margin-top: 24%;
     }
     footer {
       bottom: clamp(16px, 4.8vw, 43px);
@@ -446,7 +326,7 @@ body {
       padding: 2px 6px 2px 7px !important;
     }
     .section {
-      top: 5px;
+      top: 0px;
       left: calc(-15% + 20px);
     }
     .line {

@@ -172,7 +172,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
 
   .content {
     font-family: $trebuchet;
-    width: 85%;
+    width: 97%;
     min-width: 75%;
     line-height: 1.8;
     padding-right: 5%;
@@ -202,6 +202,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       margin-left: clamp(50px, 14.2%, 85px);
       padding-right: 1.5em;
       line-height: normal;
+
+      &.content {
+        width: 84% !important;
+      }
 
       .no-arrow {
         margin-left: -0.7em;
@@ -328,7 +332,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     }
 
     .speech {
-      width: 90%;
+      width: 97%;
       font-size: clamp(12px, 2vw, 15px);
     }
 
@@ -621,7 +625,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   @media screen and (max-width: 428px) {
     .biz-tip-content {
       .pointers {
-        margin-left: clamp(50px, 14%, 85px);
+        margin-left: clamp(48px, 14%, 85px);
       }
       .arrow-part {
         margin-left: -3px;

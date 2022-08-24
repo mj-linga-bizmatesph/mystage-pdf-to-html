@@ -139,7 +139,7 @@ body {
 }
 .html-lesson-wrapper .content {
   font-family: "Trebuchet MS";
-  width: 85%;
+  width: 97%;
   min-width: 75%;
   line-height: 1.8;
   padding-right: 5%;
@@ -167,6 +167,9 @@ body {
   margin-left: clamp(50px, 14.2%, 85px);
   padding-right: 1.5em;
   line-height: normal;
+}
+.html-lesson-wrapper .biz-tip-content .pointers.content {
+  width: 84% !important;
 }
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
   margin-left: -0.7em;
@@ -273,7 +276,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .see-content .speech {
-  width: 90%;
+  width: 97%;
   font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .see-content .see-narration {
@@ -523,7 +526,7 @@ body {
 }
 @media screen and (max-width: 428px) {
   .html-lesson-wrapper .biz-tip-content .pointers {
-    margin-left: clamp(50px, 14%, 85px);
+    margin-left: clamp(48px, 14%, 85px);
   }
   .html-lesson-wrapper .biz-tip-content .arrow-part {
     margin-left: -3px;

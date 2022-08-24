@@ -7,5 +7,11 @@
         width: 21%;
       }
     }
+    ul {
+      margin-left: -1.5px;
+      @media screen and (max-width: 428px) {
+        margin-left: 0px;
+      }
+    }
   }
 }

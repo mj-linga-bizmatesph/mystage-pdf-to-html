@@ -16,7 +16,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
-  min-height: 960px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -825,7 +824,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -60px;
+    bottom: -3vw;
 
     .footer-text {
       text-align: right;

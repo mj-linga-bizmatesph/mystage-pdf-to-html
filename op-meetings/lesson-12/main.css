@@ -9,7 +9,6 @@ body {
   min-width: 320px;
   max-width: 100%;
   max-width: 892.75px;
-  min-height: 960px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -710,7 +709,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: 10%;
-  bottom: -60px;
+  bottom: -3vw;
 }
 .html-lesson-wrapper footer .footer-text {
   text-align: right;

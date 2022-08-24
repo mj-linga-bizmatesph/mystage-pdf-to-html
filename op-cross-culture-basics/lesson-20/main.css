@@ -19,19 +19,24 @@ body {
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
+
 .html-lesson-wrapper header {
   font-family: "Helvetica", "Arial", sans-serif;
-  margin-bottom: clamp(110px, 30vw, 270px);
+  margin-bottom: clamp(110px, 30vw, 181px);
 }
+
 .html-lesson-wrapper .b {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .i {
   font-family: italic;
 }
+
 .html-lesson-wrapper .u {
   text-decoration: underline;
 }
+
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 40px;
@@ -39,28 +44,34 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
+
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #cc3366;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 .html-lesson-wrapper .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
   font-size: clamp(7px, 1.8vw, 15px);
 }
+
 .html-lesson-wrapper .program-rank .level .add-space {
   margin-left: clamp(5px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .line {
   margin: 0 12px;
 }
+
 .html-lesson-wrapper .title {
   position: absolute;
   top: 80px;
   left: 48px;
   font-size: clamp(12px, 3vw, 27px);
 }
+
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   left: 91.5%;
@@ -68,6 +79,7 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
+
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,62 +89,76 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
 .html-lesson-wrapper .sub-text {
   font-family: "Helvetica", "Arial", sans-serif !important;
   line-height: clamp(12px, 2.8vw, 22px);
   margin: 0 auto;
 }
+
 .html-lesson-wrapper .section {
   position: absolute;
-  left: -78px;
+  left: -55px;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
 }
+
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 52%;
 }
+
 .html-lesson-wrapper .divider.d1 {
   margin-top: 50px;
 }
+
 .html-lesson-wrapper .divider.d2 {
   margin-top: 50px;
 }
+
 .html-lesson-wrapper ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
+
 .html-lesson-wrapper ul li {
   margin-bottom: clamp(20px, 8vw, 30px);
   padding-left: 8px;
 }
+
 .html-lesson-wrapper .part-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
-  padding-left: 18.5px;
+  padding-left: 43px;
   padding-right: 42px;
   font-size: clamp(6px, 1.8vw, 15px);
 }
+
 .html-lesson-wrapper .part-content .part-1 {
   margin-bottom: 30px;
 }
+
 .html-lesson-wrapper .part-content-3 {
   margin-bottom: clamp(50px, 13vw, 120px);
 }
+
 .html-lesson-wrapper .part-content-2 {
   margin-bottom: clamp(50px, 13vw, 120px);
 }
+
 .html-lesson-wrapper .part-content {
   margin-top: 30px;
 }
+
 .html-lesson-wrapper .part-content ul {
   list-style-type: decimal;
 }
+
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -140,7 +166,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 43px;
+  bottom: 34px;
   right: 6.2%;
   font-family: "Helvetica", "Arial", sans-serif;
   max-width: 64%;
@@ -155,8 +181,8 @@ body {
     padding-left: clamp(11px, 2.4vw, 18px);
   }
   .html-lesson-wrapper .part-content .part-1,
-.html-lesson-wrapper .part-content .part-2,
-.html-lesson-wrapper .part-content .part-3 {
+  .html-lesson-wrapper .part-content .part-2,
+  .html-lesson-wrapper .part-content .part-3 {
     margin-left: clamp(16px, 2.6vw, 18px);
   }
   .html-lesson-wrapper .part-content ul {
@@ -173,6 +199,7 @@ body {
     left: calc(-16% + 44.3px);
   }
 }
+
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper .program-rank {
     position: absolute;
@@ -193,6 +220,7 @@ body {
     left: calc(-14% + 30px);
   }
 }
+
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper {
     background-position: top, -11px 100% !important;
@@ -208,6 +236,7 @@ body {
     vertical-align: middle;
   }
 }
+
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper {
     background-position: top, -1.5px 100% !important;

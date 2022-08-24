@@ -34,6 +34,9 @@ body {
 .html-lesson-wrapper .i {
   font-family: italic;
 }
+.html-lesson-wrapper a {
+  color: black;
+}
 .html-lesson-wrapper .small-mt {
   margin-top: clamp(5px, 2vw, 10px);
 }
@@ -68,6 +71,8 @@ body {
   top: 80px;
   left: 5%;
   font-size: clamp(18px, 4vw, 27px);
+  width: 73%;
+  margin-bottom: 10%;
 }
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
@@ -137,7 +142,7 @@ body {
   padding-bottom: 1.5%;
 }
 .html-lesson-wrapper main {
-  margin-top: clamp(70px, 18%, 160px);
+  margin-top: clamp(70px, 21%, 160px);
 }
 .html-lesson-wrapper .biz-tip-content,
 .html-lesson-wrapper .see-content,
@@ -179,6 +184,9 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   padding-bottom: 4%;
   padding-top: 3%;
+}
+.html-lesson-wrapper .biz-tip-content .no-arrow {
+  margin-bottom: 1%;
 }
 .html-lesson-wrapper .arrow-part {
   position: relative;
@@ -301,9 +309,9 @@ body {
   display: grid;
   grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
   font-size: clamp(9px, 2vw, 13px);
-  -webkit-column-gap: clamp(0.2rem, 1vw, 1rem);
-     -moz-column-gap: clamp(0.2rem, 1vw, 1rem);
-          column-gap: clamp(0.2rem, 1vw, 1rem);
+  -webkit-column-gap: clamp(0.2rem, 2vw, 2.5rem);
+     -moz-column-gap: clamp(0.2rem, 2vw, 2.5rem);
+          column-gap: clamp(0.2rem, 2vw, 2.5rem);
 }
 .html-lesson-wrapper .see-content .email-header-label {
   row-gap: clamp(4px, 1vw, 7px);
@@ -329,6 +337,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
   height: clamp(15px, 2vw, 22px);
 }
 .html-lesson-wrapper .see-content .email-header-textfield {
@@ -417,7 +426,7 @@ body {
 }
 .html-lesson-wrapper ul.arrow-part-list li::before {
   content: "";
-  display: block;
+  padding-right: 1em;
   width: 0.5em;
 }
 .html-lesson-wrapper ul.arrow-part-list li::marker {
@@ -533,19 +542,13 @@ body {
 .html-lesson-wrapper footer {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(4.5px, 1.1vw, 9px);
-  padding-right: 10%;
-  bottom: 3em;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 23%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  right: 3.5rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  right: 4em;
+  bottom: 4.5em;
+  text-align: right;
+}
+.html-lesson-wrapper footer .footer-text {
+  width: 90%;
 }
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
@@ -565,6 +568,9 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .html-lesson-wrapper br {
+    display: none !important;
+  }
   .html-lesson-wrapper .program-rank {
     position: absolute;
     top: clamp(20px, 4vw, 40px);

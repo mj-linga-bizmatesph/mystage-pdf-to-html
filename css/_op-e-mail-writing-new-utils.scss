@@ -403,7 +403,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       font-family: $trebuchet;
       font-size: clamp(10px, 2vw, 15px);
       padding: 0.7vw;
-      line-height: normal;
+      line-height: 1.8;
       ol {
         margin: 0;
 
@@ -533,7 +533,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     background: white;
     padding: 5px;
     font-size: clamp(8px, 2vw, 15px);
-    line-height: normal;
+    line-height: 1.8;
   }
 
   .text-12 {
@@ -691,6 +691,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       width: 100%;
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
+      line-height: 1.8;
     }
 
     th,

@@ -364,7 +364,7 @@ body {
   font-family: "Trebuchet MS";
   font-size: clamp(10px, 2vw, 15px);
   padding: 0.7vw;
-  line-height: normal;
+  line-height: 1.8;
 }
 .html-lesson-wrapper .see-content .see-border-box ol {
   margin: 0;
@@ -488,7 +488,7 @@ body {
   background: white;
   padding: 5px;
   font-size: clamp(8px, 2vw, 15px);
-  line-height: normal;
+  line-height: 1.8;
 }
 .html-lesson-wrapper .text-12 {
   font-size: clamp(8px, 2vw, 12px);
@@ -612,6 +612,7 @@ body {
   width: 100%;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
+  line-height: 1.8;
 }
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {

@@ -369,6 +369,9 @@ body {
 .html-lesson-wrapper .see-content .see-border-box div {
   line-height: 2;
 }
+.html-lesson-wrapper .see-content .see-border-box p {
+  margin-bottom: 10px;
+}
 .html-lesson-wrapper .see-content .see-border-box ol {
   margin: 0;
 }
@@ -491,7 +494,13 @@ body {
   background: white;
   padding: 5px;
   font-size: clamp(8px, 2vw, 15px);
-  line-height: 1.8;
+  line-height: normal;
+}
+.html-lesson-wrapper .email-content div:first-child {
+  line-height: 2;
+}
+.html-lesson-wrapper .email-content p {
+  margin-bottom: 10px;
 }
 .html-lesson-wrapper .text-12 {
   font-size: clamp(8px, 2vw, 12px);

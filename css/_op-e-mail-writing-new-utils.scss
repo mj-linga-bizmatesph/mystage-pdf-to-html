@@ -407,6 +407,9 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       div{
         line-height: 2;
       }
+      p{
+        margin-bottom: 10px;
+      }
       ol {
         margin: 0;
 
@@ -536,7 +539,13 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     background: white;
     padding: 5px;
     font-size: clamp(8px, 2vw, 15px);
-    line-height: 1.8;
+    line-height: normal;
+    div:first-child{
+      line-height: 2;
+    }
+    p{
+      margin-bottom: 10px;
+    }
   }
 
   .text-12 {

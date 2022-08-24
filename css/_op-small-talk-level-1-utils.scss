@@ -413,6 +413,21 @@ body {
         }
       }
     }
+    .section {
+      &.see {
+        &.words {
+          margin-top: 0;
+        }
+      }
+    }
+    .section {
+      &.see {
+        margin-top: 3.8%;
+      }
+      &.act {
+        margin-top: 0%;
+      }
+    }
   }
 }
 @media screen and (max-width: 358px) {

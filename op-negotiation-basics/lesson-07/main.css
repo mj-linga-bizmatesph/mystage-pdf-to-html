@@ -413,6 +413,7 @@ body {
 .html-lesson-wrapper .try-content ol,
 .html-lesson-wrapper .try-content ul {
   margin-left: 1.5em;
+  line-height: normal !important;
 }
 .html-lesson-wrapper .try-content ol li,
 .html-lesson-wrapper .try-content ul li {

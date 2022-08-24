@@ -204,7 +204,7 @@ body {
 }
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper .content {
-    margin-left: clamp(0px, 3.8vw, 36px);
+    margin-left: clamp(0px, 2.5vw, 36px);
   }
 }
 .html-lesson-wrapper .biz-tip-content {
@@ -718,19 +718,9 @@ body {
   max-width: 42%;
   right: 5%;
 }
-@media only screen and (max-width: 460px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 35px;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 35px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .html-lesson-wrapper footer .footer-text {
-    bottom: 35px;
+@media screen and (max-width: 820px) {
+  .html-lesson-wrapper footer {
+    bottom: -6.5vw;
   }
 }
 @media screen and (max-width: 900px) {

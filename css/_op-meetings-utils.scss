@@ -211,7 +211,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     padding-right: 5%;
     font-size: clamp(12px, 2vw, 15px);
     @media only screen and (max-width: 460px) {
-      margin-left: clamp(0px, 3.8vw, 36px);
+      margin-left: clamp(0px,2.5vw,36px);
     }
   }
 
@@ -833,19 +833,16 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       max-width: 42%;
       right: 5%;
 
-      @media only screen and (max-width: 460px) {
-        bottom: 35px;
-      }
-
-      @media only screen and (max-width: 375px) {
-        bottom: 35px;
-      }
-
-      @media only screen and (max-width: 320px) {
-        bottom: 35px;
-      }
     }
   }
+
+  
+  @media screen and (max-width: 820px) {
+    footer{
+      bottom: -6.5vw;
+    }
+  }
+
 
   @media screen and (max-width: 900px) {
     & {

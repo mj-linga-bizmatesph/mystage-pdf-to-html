@@ -364,13 +364,16 @@ body {
   font-family: "Trebuchet MS";
   font-size: clamp(10px, 2vw, 15px);
   padding: 0.7vw;
-  line-height: 1.8;
+  line-height: normal;
+}
+.html-lesson-wrapper .see-content .see-border-box div {
+  line-height: 2;
 }
 .html-lesson-wrapper .see-content .see-border-box ol {
   margin: 0;
 }
 .html-lesson-wrapper .see-content .see-border-box ol:not(.bullet) {
-  padding-left: clamp(0.8rem, 2vw, 1.5rem);
+  padding-left: clamp(0.8rem, 2vw, 2.5rem);
 }
 .html-lesson-wrapper .see-content .see-border-box ol.bullet {
   list-style-type: disc;
@@ -612,7 +615,7 @@ body {
   width: 100%;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
-  line-height: 1.8;
+  line-height: normal;
 }
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {

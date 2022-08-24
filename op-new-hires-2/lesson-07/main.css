@@ -303,10 +303,10 @@ body {
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
   line-height: normal !important;
   font-family: "Trebuchet MS";
-  width: 75%;
+  width: 100%;
   font-size: clamp(12px, 2vw, 15px);
   margin-top: clamp(10px, 3vw, 20px);
-  padding-right: clamp(15px, 14vw, 175px);
+  padding-right: clamp(6px, 3vw, 50px);
   padding-bottom: 1rem;
   margin-right: 0em;
 }
@@ -407,7 +407,7 @@ body {
   margin-bottom: 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(10px, 5.8vw, 47px);
+  padding-left: clamp(10px, 4.5vw, 47px);
 }
 
 .html-lesson-wrapper .content-item .content-div .header-text {
@@ -421,7 +421,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .header-text-2 {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }
 
@@ -823,13 +823,14 @@ body {
 
 @media only screen and (max-width: 500px) {
   .table-container {
+    -webkit-overflow-scrolling-x: touch;
     overflow-x: scroll;
   }
 }
 
 .table-container .content-table {
   border-collapse: collapse;
-  font-size: clamp(12px, 2vw, 15px);
+  font-size: clamp(8px, 2vw, 15px);
   width: 100%;
 }
 
@@ -841,7 +842,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .table-container .content-table {
-    width: 150% !important;
+    width: 99% !important;
   }
 }
 
@@ -906,7 +907,7 @@ body {
 .table-container .content-table .table-header2 {
   background-color: #bd3762;
   color: white;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   width: 16%;
 }
@@ -937,6 +938,11 @@ body {
   padding: 1%;
 }
 
+.table-container .content-table td {
+  white-space: nowrap;
+}
+
 .table-container .content-table .al {
+  white-space: nowrap;
   text-align: left;
 }

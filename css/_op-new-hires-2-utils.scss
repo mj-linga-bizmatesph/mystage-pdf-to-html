@@ -227,10 +227,10 @@ body {
       .biz-tip-content {
         line-height: normal !important;
         font-family: $trebuchet;
-        width: 75%;
+        width: 100%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
-        padding-right: clamp(15px, 14vw, 175px);
+        padding-right: clamp(6px, 3vw, 50px);
         padding-bottom: 1rem;
         margin-right: 0em;
         p {
@@ -306,7 +306,7 @@ body {
       width: 89%;
       margin-bottom: 15px;
       box-sizing: content-box;
-      padding-left: clamp(10px, 5.8vw, 47px);
+      padding-left: clamp(10px, 4.5vw, 47px);
       .header-text {
         margin: 0;
         font-family: $helvetica;
@@ -317,7 +317,7 @@ body {
         margin-left: 0em;
       }
       .header-text-2 {
-        font-family: $helvetica;
+        font-family: $trebuchet;
         font-size: clamp(12px, 2vw, 15px);
       }
       .content-text-b {

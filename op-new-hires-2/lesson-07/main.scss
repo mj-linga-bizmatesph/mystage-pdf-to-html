@@ -110,17 +110,18 @@
 .table-container {
   width: 95%;
   @media only screen and (max-width: 500px) {
+    -webkit-overflow-scrolling-x: touch;
     overflow-x: scroll;
   }
   .content-table {
     border-collapse: collapse;
-    font-size: clamp(12px, 2vw, 15px);
+    font-size: clamp(8px, 2vw, 15px);
     width: 100%;
     @media only screen and (max-width: 800px) {
       width: 105% !important;
     }
     @media only screen and (max-width: 500px) {
-      width: 150% !important;
+      width: 99% !important;
     }
     @media only screen and (max-width: 360px) {
       width: 180% !important;
@@ -160,7 +161,7 @@
     .table-header2 {
       background-color: #bd3762;
       color: white;
-      text-align: left;
+      text-align: center;
       vertical-align: top;
       width: 16%;
       @media only screen and (max-width: 800px) {
@@ -180,7 +181,11 @@
       height: 25px;
       padding: 1%;
     }
+    td{
+      white-space: nowrap;
+    }
     .al {
+      white-space: nowrap;
       text-align: left;
     }
   }

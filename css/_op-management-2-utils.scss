@@ -324,7 +324,7 @@ body {
           margin-left: 20.5px;
         }
         @media only screen and (max-width: 400px) {
-          margin-left: 1%;
+          margin-left: 3%;
         }
         @media only screen and (max-width: 376px) {
           margin-left: 0.08%;          
@@ -502,8 +502,8 @@ body {
         .try-list {
           line-height: 1.8em;
           margin-left: 3%;
-          @media only screen and (max-width: 500px) {
-            margin-left: 10px;
+          @media only screen and (max-width: 400px) {
+            margin-left: 15px;
           }
           li {
             padding-left: 20px;

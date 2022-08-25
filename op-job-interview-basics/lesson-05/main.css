@@ -100,7 +100,7 @@ body {
 
 .html-lesson-wrapper .sub-text {
   font-family: Helvetica, Arial, "Sans-serif" !important;
-  line-height: clamp(12px, 2.8vw, 22px);
+  line-height: 1.8;
   margin: 0 auto;
 }
 
@@ -129,7 +129,7 @@ body {
 
 @media screen and (max-width: 401px) {
   .html-lesson-wrapper .section {
-    top: 0px;
+    top: 5px;
   }
 }
 
@@ -261,6 +261,7 @@ body {
 
 .html-lesson-wrapper .see-content .sub-text {
   margin-bottom: 1.5%;
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .see-content .article {
@@ -349,6 +350,7 @@ body {
 .html-lesson-wrapper .review-content .sub-text {
   font-family: "Trebuchet MS" !important;
   margin-bottom: 2%;
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .review-content ol {
@@ -439,6 +441,7 @@ body {
   text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .see-content ol li {

@@ -107,7 +107,7 @@ body {
 
   .sub-text {
     font-family: $helvetica !important;
-    line-height: clamp(12px, 2.8vw, 22px);
+    line-height: 1.8;
     margin: 0 auto;
   }
 
@@ -131,7 +131,7 @@ body {
       top: 2px;
     }
     @media screen and (max-width: 401px) {
-      top: 0px;
+      top: 5px;
     }
   }
 
@@ -250,6 +250,7 @@ body {
 
     .sub-text {
       margin-bottom: 1.5%;
+      line-height: 1.8;
     }
 
     .article {
@@ -344,6 +345,7 @@ body {
     .sub-text {
       font-family: $trebuchet !important;
       margin-bottom: 2%;
+      line-height: 1.8;
     }
 
     ol {

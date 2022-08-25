@@ -24,7 +24,7 @@ body {
 
 .html-lesson-wrapper header {
   font-family: Helvetica, Arial, "Sans-serif";
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .html-lesson-wrapper .u {
@@ -79,7 +79,7 @@ body {
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
   left: 92%;
-  margin-top: 6.2%;
+  margin-top: 3.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
@@ -117,8 +117,20 @@ body {
   color: #cc3366;
   font-weight: bold;
   font-family: Helvetica, Arial, "Sans-serif";
-  top: 2px;
+  top: 4px;
   left: -10.5%;
+}
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .section {
+    top: 2px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .section {
+    top: 0px;
+  }
 }
 
 .html-lesson-wrapper .divider {
@@ -175,7 +187,7 @@ body {
   left: 0;
   margin-left: 5%;
   line-height: 1.8em;
-  margin-top: 2.4% !important;
+  margin-top: 2% !important;
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers {
@@ -185,7 +197,7 @@ body {
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  width: 90%;
+  width: 96%;
   margin-left: -3.5%;
   margin-right: 16%;
   margin-bottom: 1.5%;

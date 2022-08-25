@@ -16,10 +16,14 @@
     .no-wrap {
       white-space: nowrap;
     }
-
-    table {
-      td {
-        padding: 1%;
+    .scroll {
+      @media screen and (max-width: 501px) {
+        overflow: scroll;
+      }
+      table {
+        td {
+          padding: 1%;
+        }
       }
     }
   }

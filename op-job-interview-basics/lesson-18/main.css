@@ -228,6 +228,24 @@ body {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 571px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -1.1em;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -0.8em;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -0.7em;
+  }
+}
+
 .html-lesson-wrapper .arrow-part span {
   color: #cc3366;
   font-weight: bold;
@@ -286,6 +304,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content table {
+  line-height: normal;
   margin-top: 5px;
   font-size: clamp(12px, 2vw, 15px);
   border-spacing: 0px;

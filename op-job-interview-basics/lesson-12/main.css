@@ -197,7 +197,7 @@ body {
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  width: 95%;
+  width: 96%;
   margin-left: -3.5%;
   margin-right: 16%;
   margin-bottom: 1.5%;
@@ -226,6 +226,24 @@ body {
   border-top: 8px solid #cc3366;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 571px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -1.1em;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -0.8em;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -0.7em;
+  }
 }
 
 .html-lesson-wrapper .arrow-part span {
@@ -286,6 +304,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content table {
+  line-height: normal;
   margin-top: 5px;
   font-size: clamp(12px, 2vw, 15px);
   border-spacing: 0px;

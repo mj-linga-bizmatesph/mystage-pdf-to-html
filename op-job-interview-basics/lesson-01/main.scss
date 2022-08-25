@@ -60,9 +60,14 @@
   }
 
   .try-content {
-    table {
-      tr.blank td {
-        padding: 4%;
+    .scroll {
+      @media screen and (max-width: 571px) {
+        overflow: scroll;
+      }
+      table {
+        tr.blank td {
+          padding: 4%;
+        }
       }
     }
   }

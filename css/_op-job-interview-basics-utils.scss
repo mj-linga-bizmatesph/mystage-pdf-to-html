@@ -223,6 +223,16 @@ body {
       border-top: 8px solid $magenta;
       display: inline-block;
       vertical-align: middle;
+
+      @media screen and (max-width: 571px) {
+        left: -1.1em;
+      }
+      @media screen and (max-width: 421px) {
+        left: -0.8em;
+      }
+      @media screen and (max-width: 321px) {
+        left: -0.7em;
+      }
     }
 
     span {
@@ -286,6 +296,7 @@ body {
     }
 
     table {
+      line-height: normal;
       margin-top: 5px;
       font-size: clamp(12px, 2vw, 15px);
       border-spacing: 0px;

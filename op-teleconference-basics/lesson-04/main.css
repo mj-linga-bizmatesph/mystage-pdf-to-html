@@ -226,7 +226,7 @@ body {
   position: absolute;
   color: #ffffff;
   margin-top: clamp(10px, 3vw, 25px);
-  margin-left: clamp(10px, 4vw, 60px);
+  margin-left: clamp(10px, 4vw, 48px);
   font-size: clamp(8px, 1.8vw, 15px);
 }
 
@@ -251,20 +251,29 @@ body {
 
 .html-lesson-wrapper .lesson-number {
   position: absolute;
-  right: 6.4%;
+  right: 6.6%;
   width: 1.5%;
   text-align: center;
-  margin-top: 7.8%;
+  margin-top: 7%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
 
+@media screen and (max-width: 850px) {
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 7.7%;
+  }
+}
+
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .lesson-number {
-    margin-top: 7%;
+    margin-top: 7.5%;
   }
   .html-lesson-wrapper .lesson-number.two {
     right: 7.4% !important;
+  }
+  .html-lesson-wrapper .lesson-number.one {
+    right: 7%;
   }
 }
 
@@ -286,7 +295,7 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(18px, 4vw, 27px);
   margin-right: clamp(10px, 3vw, 25px);
-  margin-left: clamp(10px, 4vw, 60px);
+  margin-left: clamp(10px, 4vw, 48px);
   padding-top: 2%;
   padding-bottom: 7%;
 }
@@ -338,17 +347,48 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
-  margin-top: clamp(10px, 3vw, 20px);
-  padding-left: clamp(10px, 4vw, 60px);
+  margin-top: clamp(10px, 3vw, 23px);
+  padding-left: clamp(10px, 4vw, 48px);
+}
+
+@media screen and (max-width: 340px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 13%;
+  }
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
   font-family: "Trebuchet MS";
-  width: 89%;
-  margin-top: clamp(10px, 3vw, 20px);
+  width: 75%;
+  margin-top: clamp(8px, 2.4vw, 18px);
   padding-right: clamp(10px, 2vw, 20px);
   padding-bottom: 1rem;
   line-height: normal;
+  margin-left: -1.5%;
+}
+
+@media screen and (max-width: 959px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: -2%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 4.5%;
+  }
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
@@ -430,21 +470,28 @@ body {
   }
 }
 
+@media only screen and (max-device-width: 431px) {
+  .html-lesson-wrapper .content-item .content-label {
+    width: 22% !important;
+  }
+}
+
 .html-lesson-wrapper .content-item .content-label .content-label-text {
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
-  padding-left: clamp(10px, 4vw, 60px);
+  padding-left: clamp(10px, 4vw, 48px);
+  padding-top: 5%;
 }
 
 .html-lesson-wrapper .content-item.review .content-label {
-  width: 17%;
+  width: 18%;
 }
 
 @media only screen and (max-device-width: 767px) {
   .html-lesson-wrapper .content-item.review .content-label {
-    width: 19% !important;
+    width: 24% !important;
   }
 }
 
@@ -531,6 +578,13 @@ body {
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 {
   padding-right: clamp(15px, 7vw, 55px);
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 340px) {
+  .html-lesson-wrapper .content-item .content-div.review-part-1 {
+    padding-left: 4.5%;
+  }
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box {
@@ -552,6 +606,7 @@ body {
   list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  padding-left: 0%;
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li {
@@ -573,7 +628,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-2 {
-  padding-right: clamp(15px, 7vw, 55px);
+  padding-right: clamp(6px, 1vw, 16px);
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-2 p.part-2-content {
@@ -616,7 +671,7 @@ body {
 
 .html-lesson-wrapper .biz-tip-content p {
   margin: 0;
-  width: 100%;
+  width: 89%;
 }
 
 .html-lesson-wrapper .biz-tip-content ul {

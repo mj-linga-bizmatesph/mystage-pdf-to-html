@@ -199,7 +199,7 @@ body {
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 3vw, 25px);
-    margin-left: clamp(10px, 4vw, 60px);
+    margin-left: clamp(10px, 4vw, 48px);
     font-size: clamp(8px, 1.8vw, 15px);
 
     .type {
@@ -221,16 +221,22 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6.4%;
+    right: 6.6%;
     width: 1.5%;
     text-align: center;
-    margin-top: 7.8%;
+    margin-top: 7%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
+    @media screen and (max-width: 850px) {
+      margin-top: 7.7%;
+    }
     @media only screen and (max-device-width: 767px) {
-      margin-top: 7%;
+      margin-top: 7.5%;
       &.two {
         right: 7.4% !important;
+      }
+      &.one {
+        right: 7%;
       }
     }
     &.two {
@@ -250,7 +256,7 @@ body {
       font-family: $helvetica;
       font-size: clamp(18px, 4vw, 27px);
       margin-right: clamp(10px, 3vw, 25px);
-      margin-left: clamp(10px, 4vw, 60px);
+      margin-left: clamp(10px, 4vw, 48px);
       padding-top: 2%;
       padding-bottom: 7%;
       @media only screen and (max-device-width: 767px) {
@@ -283,16 +289,34 @@ body {
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
-        margin-top: clamp(10px, 3vw, 20px);
-        padding-left: clamp(10px, 4vw, 60px);
+        margin-top: clamp(10px, 3vw, 23px);
+        padding-left: clamp(10px, 4vw, 48px);
+
+        @media screen and (max-width: 340px) {
+          width: 13%;
+        }
       }
       .biz-tip-content {
         font-family: $trebuchet;
-        width: 89%;
-        margin-top: clamp(10px, 3vw, 20px);
+        width: 75%;
+        margin-top: clamp(8px, 2.4vw, 18px);
         padding-right: clamp(10px, 2vw, 20px);
         padding-bottom: 1rem;
         line-height: normal;
+        margin-left: -1.5%;
+
+        @media screen and (max-width: 959px) {
+          margin-left: 1%;
+        }
+        @media screen and (max-width: 768px) {
+          margin-left: -2%;
+        }
+        @media screen and (max-width: 431px) {
+          margin-left: 6%;
+        }
+        @media screen and (max-width: 340px) {
+          margin-left: 4.5%;
+        }
         p {
           margin: 0;
         }
@@ -350,19 +374,23 @@ body {
       @media only screen and (max-device-width: 767px) {
         width: 11% !important;
       }
+      @media only screen and (max-device-width: 431px) {
+        width: 22% !important;
+      }
       .content-label-text {
         font-weight: bold;
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
-        padding-left: clamp(10px, 4vw, 60px);
+        padding-left: clamp(10px, 4vw, 48px);
+        padding-top: 5%;
       }
     }
     &.review {
       .content-label {
-        width: 17%;
+        width: 18%;
         @media only screen and (max-device-width: 767px) {
-          width: 19% !important;
+          width: 24% !important;
         }
       }
     }
@@ -437,6 +465,11 @@ body {
       }
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
+        padding-left: 5%;
+
+        @media screen and (max-width: 340px) {
+          padding-left: 4.5%;
+        }
         .review-box {
           font-family: $trebuchet;
           font-size: clamp(12px, 2vw, 15px);
@@ -452,6 +485,7 @@ body {
             padding: 0;
             list-style-type: '\25BC';
             box-sizing: content-box;
+            padding-left: 0%;
             li {
               list-style-position: outside;
               text-indent: -1em;
@@ -472,7 +506,7 @@ body {
         }
       }
       &.review-part-2 {
-        padding-right: clamp(15px, 7vw, 55px);
+        padding-right: clamp(6px, 1vw, 16px);
         p.part-2-content {
           margin: 0;
           font-family: $trebuchet;

@@ -141,6 +141,10 @@ $fs-10: clamp(12px, 2vw, 15px);
     &.see {
     margin-left: clamp(40px,15.5vw,125.5px);
     line-height: 1.8em;
+    @media only screen and (max-width: 820px) {
+      margin-left: 1.5%;
+      margin-top: -0.5%;
+    }
     @media only screen and (max-width: 400px) {
       margin-left: 26%;
     }
@@ -200,7 +204,7 @@ $fs-10: clamp(12px, 2vw, 15px);
     .section {
       margin-left: clamp(40px, 15.5vw, 125.5px);
       line-height: 1.8em;
-      margin-top: 2.3% !important;
+      margin-top: 2.3%;
     }
 
     .pointers {
@@ -740,6 +744,7 @@ $fs-10: clamp(12px, 2vw, 15px);
     .section {
       &.words {
         margin-left: 26%;
+        margin-top: 1.5%;
       }
       &.review {
         margin-left: 14%;

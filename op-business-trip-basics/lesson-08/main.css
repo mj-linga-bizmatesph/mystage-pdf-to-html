@@ -553,16 +553,16 @@ body {
   }
 }
 @media only screen and (max-width: 820px) {
-  .html-lesson-wrapper .section.words {
+  .html-lesson-wrapper .see-content .section.words {
     margin-left: 15.5%;
   }
-  .html-lesson-wrapper .section.see {
+  .html-lesson-wrapper .see-content .section.see {
     margin-left: 1.6%;
   }
-  .html-lesson-wrapper .section.try {
+  .html-lesson-wrapper .see-content .section.try {
     margin-left: 1.6%;
   }
-  .html-lesson-wrapper .section.act {
+  .html-lesson-wrapper .see-content .section.act {
     margin-left: 1.6%;
   }
   .html-lesson-wrapper .sub-text.try {
@@ -666,16 +666,19 @@ body {
   }
 }
 @media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .section.words {
+    margin-left: 26%;
+  }
   .html-lesson-wrapper .section.review {
     margin-left: 14%;
   }
   .html-lesson-wrapper .section.see {
-    margin-left: 13%;
+    margin-left: 13.6%;
   }
   .html-lesson-wrapper .section.try {
-    margin-left: 13%;
+    margin-left: 13.6%;
   }
   .html-lesson-wrapper .section.act {
-    margin-left: 13%;
+    margin-left: 13.6%;
   }
 }

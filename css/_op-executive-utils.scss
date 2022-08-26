@@ -51,7 +51,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -20px;
+    bottom: -30px;
     @media only screen and (max-width: 767px) {
       bottom: -45px;
     }
@@ -59,7 +59,7 @@ body {
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 42%;
       right: 2%;
       @media only screen and (max-width: 769px) {
         bottom: -10px !important;
@@ -124,6 +124,7 @@ body {
     color: #ffffff;
     margin-top: clamp(10px, 5vw, 43px);
     margin-left: clamp(10px, 6vw, 60px);
+    width: 100%;
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
@@ -158,7 +159,7 @@ body {
       }
     }
     @media only screen and (max-width: 400px) {
-      margin-top: 7%;
+      margin-top: 7.5%;
       &.two {
         right: 6.7% !important;
       }
@@ -183,16 +184,10 @@ body {
       margin-left: clamp(10px, 6vw, 60px);
       padding-top: 2%;
       padding-bottom: 5.4%;
-      max-width: 90%;
+      max-width: 82%;
       @media only screen and (max-width: 767px) {
-        padding-top: 1%;
+        padding-top: 2%;
         padding-bottom: 5%;
-      }
-      @media only screen and (max-width: 690px) {
-        max-width: 86% !important;
-      }
-      @media only screen and (max-width: 390px) {
-        max-width: 86% !important;
       }
     }
     .biz-tips {
@@ -206,25 +201,31 @@ body {
         margin-bottom: 0 !important;
       }
       .biz-tip-label {
-        width: 11%;
+        width: 100px;
+        @media screen and (max-width: 428px) {
+          width: 65px;
+          margin-top: 13.65px;
+        }
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
-        margin-top: clamp(10px, 3vw, 20px);
+        margin-top: clamp(10px, 3vw, 22px);
         padding-left: clamp(10px, 6vw, 60px);
       }
       .biz-tip-content {
         font-family: $trebuchet;
-        width: 75%;
+        width: 100%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
-        padding-right: clamp(15px, 14vw, 175px);
         padding-bottom: 1rem;
         margin-right: 1em;
+        line-height: normal;
         p {
           margin: 0;
-          width: 120%;
+          &.content-header {
+            margin-bottom: clamp(6px, 1vw, 10px);
+          }
         }
         ul {
           margin: 0;
@@ -281,6 +282,10 @@ body {
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
         font-family: $helvetica;
+        margin-top: 4px;
+        @media screen and (max-width: 428px) {
+          margin-top: 2.5px;
+        }
       }
     }
     &.review {
@@ -295,13 +300,22 @@ body {
       width: 89%;
       margin-bottom: 15px;
       box-sizing: content-box;
-      padding-left: clamp(10px, 3vw, 25px);
+      padding-left: clamp(23px, 3vw, 42px);
+      @media screen and (min-width: 1024px) {
+        padding-left: clamp(44px, 3vw, 38px);
+      }
+      @media screen and (width: 820px) {
+        padding-left: clamp(2px, 3vw, 19px);
+      }
+      @media screen and (min-width: 1850px) and (max-width: 1920px) {
+        padding-left: clamp(18px, 2vw, 20px);
+      }
       .header-text {
         margin: 0;
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
-        line-height: 1.6;
+        line-height: 1.8;
         margin-top: clamp(-2px, -1vw, -3px);
         margin-right: 1em;
       }
@@ -309,12 +323,13 @@ body {
         .dialogue {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
-          line-height: 1.6;
+          line-height: 1.8;
           margin-right: 1em;
           .speaker {
             width: 12%;
             font-weight: bold;
             font-family: $trebuchet;
+            margin-right: 20px;
 
             @media only screen and (max-width: 480px) {
               width: 16% !important;
@@ -330,7 +345,7 @@ body {
             }
           }
           .message {
-            width: 88%;
+            width: 85%;
             font-family: $trebuchet;
 
             @media only screen and (max-width: 480px) {
@@ -360,20 +375,11 @@ body {
           font-size: clamp(12px, 2vw, 15px);
           line-height: 25px;
           margin-top: 0%;
+          line-height: 1.8;
           li {
-            margin-left: -3%;
-
-            @media only screen and (max-width: 850px) {
-              margin-left: -3.5%;
-            }
-            @media only screen and (max-width: 430px) {
-              margin-left: -8%;
-            }
-            @media only screen and (max-width: 375px) {
-              margin-left: -9%;
-            }
-            @media only screen and (max-width: 320px) {
-              margin-left: -12%;
+            margin-left: 3%;
+            @media screen and (max-width: 428px) {
+              margin-left: 4.5%;
             }
           }
         }
@@ -381,7 +387,7 @@ body {
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
         .header-text {
-          line-height: 1.6;
+          line-height: 1.8;
         }
         .review-box {
           font-family: $trebuchet;

@@ -238,6 +238,9 @@ body {
             margin-left: 0.8em;
             padding-left: 0.5em;
             width: 130%;
+            @media only screen and (max-width: 400px) {
+              width: 110%;
+            }
           }
           li::before {
             content: '';
@@ -308,7 +311,7 @@ body {
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
-        line-height: 1.6;
+        line-height: 1.8em;
         margin-top: clamp(-2px, -1vw, -3px);
         margin-right: 1em;
       }

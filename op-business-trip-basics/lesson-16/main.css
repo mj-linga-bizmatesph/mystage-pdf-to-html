@@ -130,7 +130,7 @@ body {
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .section.see {
     margin-left: 26%;
-    top: 0%;
+    top: -4px;
   }
 }
 .html-lesson-wrapper .section.try {
@@ -146,7 +146,7 @@ body {
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .section.try {
     margin-left: 26%;
-    top: 0%;
+    top: -5px;
   }
 }
 .html-lesson-wrapper .section.act {
@@ -162,7 +162,7 @@ body {
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .section.act {
     margin-left: 26%;
-    top: 0%;
+    top: -4px;
   }
 }
 .html-lesson-wrapper .divider {
@@ -705,5 +705,33 @@ body {
   }
   .html-lesson-wrapper .section.act {
     margin-left: 13.6%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .html-lesson-wrapper ol.review-list {
+    margin-left: 8%;
+  }
+  .html-lesson-wrapper .see-border-box.review {
+    margin-left: 13%;
+  }
+  .html-lesson-wrapper .section.words {
+    margin-left: 32%;
+    margin-top: 1.5%;
+    width: 12%;
+  }
+  .html-lesson-wrapper .section.review {
+    margin-left: 14%;
+  }
+  .html-lesson-wrapper .section.see {
+    margin-left: 20.6%;
+  }
+  .html-lesson-wrapper .section.try {
+    margin-left: 20.6%;
+  }
+  .html-lesson-wrapper .section.act {
+    margin-left: 20.6%;
+  }
+  .html-lesson-wrapper .section .sub-text.review {
+    margin-left: 13%;
   }
 }

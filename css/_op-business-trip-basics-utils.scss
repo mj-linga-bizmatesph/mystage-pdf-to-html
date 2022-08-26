@@ -147,7 +147,7 @@ $fs-10: clamp(12px, 2vw, 15px);
       }
       @media only screen and (max-width: 400px) {
         margin-left: 26%;
-        top: 0%;
+        top: -4px;
       }
     }
     &.try {
@@ -159,7 +159,7 @@ $fs-10: clamp(12px, 2vw, 15px);
       }
       @media only screen and (max-width: 400px) {
         margin-left: 26%;
-        top: 0%;
+        top: -5px;
       }
     }
     &.act {
@@ -171,7 +171,7 @@ $fs-10: clamp(12px, 2vw, 15px);
       }
       @media only screen and (max-width: 400px) {
         margin-left: 26%;
-        top: 0%;
+        top: -4px;
       }
     }
   }
@@ -782,6 +782,40 @@ $fs-10: clamp(12px, 2vw, 15px);
       }
       &.act {
         margin-left: 13.6%;
+      }
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    ol.review-list {
+      margin-left: 8%;
+    }
+    .see-border-box {
+      &.review {
+        margin-left: 13%;
+      }
+    }
+    .section {
+      &.words {
+        margin-left: 32%;
+        margin-top: 1.5%;
+        width: 12%;
+      }
+      &.review {
+        margin-left: 14%;
+      }
+      &.see {
+        margin-left: 20.6%;
+      }
+      &.try {
+        margin-left: 20.6%;
+      }
+      &.act {
+        margin-left: 20.6%;
+      }
+      .sub-text {
+        &.review {
+          margin-left: 13%;
+        }
       }
     }
   }

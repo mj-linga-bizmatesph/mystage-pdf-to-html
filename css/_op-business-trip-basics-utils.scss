@@ -638,6 +638,15 @@ $fs-10: clamp(12px, 2vw, 15px);
       &.words {
         margin-left: 15.5%;
       }
+      &.see {
+        margin-left: 1.6%;
+      }
+      &.try {
+        margin-left: 1.6%;
+      }
+      &.act {
+        margin-left: 1.6%;
+      }
     }
     .sub-text {
       &.try {
@@ -647,6 +656,9 @@ $fs-10: clamp(12px, 2vw, 15px);
     .section {
       &.review {
         margin-left: 1.5%;
+        @media only screen and (max-width: 820px) {
+          margin-left: 1.5%;
+        }
       }
     }
     footer {
@@ -749,6 +761,9 @@ $fs-10: clamp(12px, 2vw, 15px);
   
   @media only screen and (max-width: 400px) {
     .section {
+      &.review {
+        margin-left: 14%;
+      }
       &.see {
         margin-left: 13%;
       }

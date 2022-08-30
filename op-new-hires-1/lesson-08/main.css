@@ -44,6 +44,12 @@ body {
   font-size: 0px;
 }
 
+@media screen and (max-width: 1920px) and (min-width: 1801px) {
+  .html-lesson-wrapper .program-rank {
+    left: 70px;
+  }
+}
+
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #cc3366;
@@ -75,6 +81,12 @@ body {
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
   width: 90%;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1801px) {
+  .html-lesson-wrapper .title {
+    left: 70px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -277,6 +289,12 @@ body {
   border-collapse: collapse;
   width: 100%;
   margin-top: 2%;
+}
+
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .act-content .table-1 {
+    width: 115% !important;
+  }
 }
 
 .html-lesson-wrapper .act-content .table-1 th {

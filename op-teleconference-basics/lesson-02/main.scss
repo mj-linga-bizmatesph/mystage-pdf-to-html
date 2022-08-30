@@ -40,6 +40,11 @@
             font-size: clamp(11px, 2vw, 13px);
           }
         }
+        li {
+          div {
+            margin-left: 2%;
+          }
+        }
       }
     }
   }

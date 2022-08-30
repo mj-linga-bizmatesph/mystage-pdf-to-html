@@ -482,7 +482,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
   padding-left: clamp(10px, 4vw, 48px);
-  padding-top: 5%;
+  padding-top: clamp(3px, 0.5vw, 5px);
 }
 
 .html-lesson-wrapper .content-item.review .content-label {

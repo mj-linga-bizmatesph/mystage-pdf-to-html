@@ -736,6 +736,11 @@ body {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
+    margin-left: -0.5%;
+  }
+}
 .html-lesson-wrapper .see-content ul {
   list-style-type: decimal;
   margin-left: -3%;

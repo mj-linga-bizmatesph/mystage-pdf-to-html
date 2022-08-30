@@ -1,1 +1,9 @@
 @import "../../css/op-business-trip-basics-utils";
+
+.html-lesson-wrapper {
+    .lesson-number {
+        @media only screen and (max-width: 400px){
+            margin-left: -0.5%;
+        }
+    }
+}

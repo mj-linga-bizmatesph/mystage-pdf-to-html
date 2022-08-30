@@ -1,10 +1,15 @@
-@import "../../css/op-business-trip-basics-utils";
+@import '../../css/op-business-trip-basics-utils';
 
 .html-lesson-wrapper {
-    .see-content {
-        ul {
-            list-style-type: decimal;
-            margin-left: -3%;
-        }
+  .lesson-number {
+    @media only screen and (max-width: 400px) {
+      margin-left: -0.5%;
     }
+  }
+  .see-content {
+    ul {
+      list-style-type: decimal;
+      margin-left: -3%;
+    }
+  }
 }

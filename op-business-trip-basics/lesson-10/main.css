@@ -735,3 +735,9 @@ body {
     margin-left: 13%;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
+    margin-left: -0.5%;
+  }
+}

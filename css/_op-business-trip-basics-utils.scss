@@ -784,6 +784,9 @@ $fs-10: clamp(12px, 2vw, 15px);
         margin-left: 13.6%;
       }
     }
+    footer {
+      bottom: 18px;
+    }
   }
   @media only screen and (max-width: 320px) {
     ol.review-list {

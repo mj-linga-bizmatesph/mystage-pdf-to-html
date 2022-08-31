@@ -76,4 +76,14 @@
       }
     }
   }
+  @media screen and (max-width: 428px) {
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .biz-tip-content {
+      .arrow-part:before {
+        left: -9% !important;
+      }
+    }
+  }
 }

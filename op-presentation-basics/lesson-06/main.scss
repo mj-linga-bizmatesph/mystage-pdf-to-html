@@ -3,7 +3,7 @@
 .html-lesson-wrapper {
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
   }
   .biz-tip-content {
     table {
@@ -19,7 +19,7 @@
       tr td {
         width: 47%;
         .arrow-part {
-          width: 90%;
+          width: 100%;
         }
         vertical-align: top;
       }
@@ -71,6 +71,16 @@
     @media screen and (max-width: 360px) {
       table {
         font-size: clamp(8.7px, 2vw, 13.5px);
+      }
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .biz-tip-content {
+      .arrow-part:before {
+        left: -7.5% !important;
       }
     }
   }

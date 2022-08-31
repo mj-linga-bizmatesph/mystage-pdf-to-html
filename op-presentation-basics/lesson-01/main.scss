@@ -1,6 +1,9 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  td div.arrow-part::before {
+    margin-top: -2.5px;
+  }
   table {
     border-collapse: collapse;
   }
@@ -157,19 +160,55 @@
     .arrow-part:before {
       left: 0em;
     }
-    .arrow-part {
-      padding-left: 10px;
-    }
-    .biz-tip-content {
-      .arrow-part {
-        margin-left: -3.2%;
-      }
+    .html-lesson-wrapper td div.arrow-part {
+      padding-left: 8px;
+      margin-left: 3px;
     }
     .see-content,
     .try-content {
       font-size: clamp(8px, 2vw, 13.5px);
     }
   }
+  @media screen and (max-width: 428px) {
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .biz-tip-content {
+      .arrow-part {
+        margin-left: 0px;
+      }
+      .arrow-part:before {
+        left: -4% !important;
+      }
+    }
+    table {
+      .arrow-part {
+        margin-left: 5px;
+        padding-left: 5px;
+      }
+    }
+    td div.arrow-part::before {
+      margin-top: 0px !important;
+    }
+    .th-45 {
+      width: 45% !important;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .arrow-part {
+      margin-left: 8px;
+      padding-left: 4px !important;
+    }
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .biz-tip-content {
+      .arrow-part:before {
+        left: -3.5% !important;
+      }
+    }
+  }
+
   @media screen and (max-width: 360px) {
     .biz-tip-content {
       .arrow-part:before {

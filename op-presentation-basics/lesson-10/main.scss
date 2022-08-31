@@ -1,14 +1,27 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  span.part-2-2 {
+    display: inline-block;
+  }
+
+  section.try-content {
+    margin-bottom: 100px;
+  }
+
   table {
     border-collapse: collapse;
   }
   .lesson-number {
-    left: 94.2% !important;
+    left: 91.5% !important;
   }
   .review-content {
-    margin-top: clamp(70px, 25%, 160px);
+    margin-top: 25% !important;
+    line-height: normal !important;
+    .arrow-part:before {
+      left: -1em !important;
+    }
+
     table {
       tr th {
         text-align: left;
@@ -47,6 +60,7 @@
         height: 20px;
       }
     }
+
     table.tbl-3 {
       border: 2.1px solid #d8d8d8;
       padding: 10px;
@@ -79,7 +93,7 @@
             }
             margin-left: 10%;
             .part-2-2 {
-              display: block;
+              display: inline-block;
             }
           }
         }
@@ -91,6 +105,10 @@
         margin-bottom: 0;
       }
     }
+
+    p b {
+      line-height: 1.8 !important;
+    }
   }
   @media screen and (max-width: 600px) {
     .review-content {
@@ -98,6 +116,7 @@
     }
   }
   .try-content {
+    line-height: 1.8 !important;
     table {
       tr th {
         text-align: center;
@@ -115,15 +134,26 @@
       }
     }
     ol {
-      margin-left: -4%;
+      margin-left: 3%;
       li {
         p {
-          line-height: 1.8rem;
+          line-height: 1.8;
         }
       }
     }
     p {
-      line-height: 1.8rem;
+      line-height: 1.8;
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .sub-text {
+      margin-left: 8px;
+    }
+    .try-content p {
+      margin-left: 8px;
+    }
+    .arrow-part.part-3 {
+      margin-left: 4px;
     }
   }
 }

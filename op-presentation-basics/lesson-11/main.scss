@@ -1,12 +1,15 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  .try-content table tr td ol {
+    margin-left: 20px;
+  }
   .lesson-number {
-    left: 94.4% !important;
+    left: 91.5% !important;
   }
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
   }
   .biz-tip-content {
     table {
@@ -69,6 +72,20 @@
       table tr td ol {
         margin-top: 0%;
         margin-left: -25%;
+      }
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .arrow-part:before {
+      left: -7% !important;
+    }
+
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .try-content {
+      table tr td ol {
+        margin-left: 15px;
       }
     }
   }

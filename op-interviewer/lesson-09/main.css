@@ -49,7 +49,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper footer {
-    bottom: -43%;
+    bottom: 0%;
   }
 }
 .html-lesson-wrapper footer .footer-text {
@@ -480,6 +480,11 @@ body {
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-item .content-div .header-text {
+    width: 95%;
+  }
 }
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
   display: -webkit-box;

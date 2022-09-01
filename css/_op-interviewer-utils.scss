@@ -56,7 +56,7 @@ body {
       bottom: -25px;
     }
     @media only screen and (max-width: 400px) {
-      bottom: -43%;
+      bottom: 0%;
     }
     .footer-text {
       text-align: right;
@@ -442,6 +442,9 @@ body {
         font-weight: bold;
         line-height: clamp(12px, 4vw, 22px);
         margin-top: clamp(-2px, -1vw, -3px);
+        @media only screen and (max-width: 400px) {
+          width: 95%;
+        }
       }
       &.see {
         .dialogue {

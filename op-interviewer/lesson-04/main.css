@@ -49,7 +49,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper footer {
-    bottom: -43%;
+    bottom: 0%;
   }
 }
 .html-lesson-wrapper footer .footer-text {
@@ -481,6 +481,11 @@ body {
   line-height: clamp(12px, 4vw, 22px);
   margin-top: clamp(-2px, -1vw, -3px);
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-item .content-div .header-text {
+    width: 95%;
+  }
+}
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,6 +710,15 @@ body {
 
 .html-lesson-wrapper .content-header {
   margin-bottom: 10px !important;
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-div.try {
+    margin-left: 3.5%;
+  }
+}
+.html-lesson-wrapper .content-div.try .content-table {
+  display: block;
+  overflow-x: auto;
 }
 @media only screen and (max-width: 360px) {
   .html-lesson-wrapper .try .tbl-container {

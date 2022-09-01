@@ -711,6 +711,15 @@ body {
 .html-lesson-wrapper .content-header {
   margin-bottom: 10px !important;
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-div.try {
+    margin-left: 3.5%;
+  }
+}
+.html-lesson-wrapper .content-div.try .content-table {
+  display: block;
+  overflow-x: auto;
+}
 @media only screen and (max-width: 401px) {
   .html-lesson-wrapper .try .tbl-container {
     width: 95%;

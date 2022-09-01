@@ -346,10 +346,15 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
-  bottom: 4em;
+  bottom: 3.3em;
   right: 6.2%;
   font-family: "Helvetica", "Arial", sans-serif;
   max-width: 39%;
+}
+@media screen and (min-width: 1800px) {
+  .html-lesson-wrapper footer {
+    bottom: 4em;
+  }
 }
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {

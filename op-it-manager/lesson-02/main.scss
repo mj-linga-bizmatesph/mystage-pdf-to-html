@@ -4,11 +4,6 @@
   table {
     border-collapse: collapse;
   }
-  .see-content table tr {
-    td {
-      line-height: 1.8em;
-    }
-  }
   .try-content {
     table {
       margin-top: -2%;
@@ -20,14 +15,6 @@
           vertical-align: top;
         }
       }
-    }
-  }
-  .act-content {
-    p {
-      line-height: 1.8em;
-    }
-    p.content {
-      margin-top: -2%;
     }
   }
 
@@ -42,12 +29,6 @@
       .arrow-part {
         margin-left: -3.2%;
       }
-    }
-    .biz-tip-content,
-    .see-content,
-    .try-content,
-    .act-content {
-      font-size: clamp(9px, 2vw, 13.5px);
     }
   }
   @media screen and (max-width: 360px) {

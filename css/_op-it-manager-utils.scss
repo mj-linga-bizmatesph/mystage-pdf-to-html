@@ -83,7 +83,7 @@ body {
     font-family: Helvetica,Arial,"Sans-serif";
     position: absolute;
     margin-top: 10%;
-    margin-left: 6.5%;
+    margin-left: 5.8%;
     font-size: clamp(18px, 4vw, 27px);
   }
 
@@ -149,6 +149,9 @@ body {
       top: 0px;
       margin-left: -15%;
     }
+    @media screen and (max-width: 900px){
+      top: 0px;
+    }
   }
 
   .divider {
@@ -182,7 +185,7 @@ body {
   .review-content {
     line-height: 1.8;
     position: relative;
-    margin-left: clamp(50px, 14%, 126.5px);
+    margin-left: clamp(50px, 13.3%, 126.5px);
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
@@ -224,7 +227,7 @@ body {
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: 4%;
-    padding-left: clamp(32px, 6vw, 47px);
+    padding-left: clamp(32px, 4.5vw, 47px);
     background: $magenta-light;
     font-size: clamp(12px, 2vw, 15px);
 
@@ -244,6 +247,9 @@ body {
       @media screen and (max-width: 600px){
         margin-top: 3%;
         margin-left: -2%;
+      }
+      @media screen and (max-width: 900px){
+        margin-top: 3.1%;
       }
     }
   }
@@ -417,6 +423,9 @@ body {
     box-sizing: border-box;
     padding-right: 10%;
     bottom: -10em;
+    @media screen and (max-width: 900px){
+      bottom: -8em;
+    }
     .footer-text {
       text-align: right;
       position: absolute;
@@ -424,7 +433,7 @@ body {
       max-width: 33%;
       right: 5%;
       @media screen and (max-width: 900px){
-        right: 2%;
+        right: 5%;
       }
     }
   }

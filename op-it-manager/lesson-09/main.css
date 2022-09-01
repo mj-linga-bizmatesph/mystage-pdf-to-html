@@ -75,7 +75,7 @@ body {
   font-family: Helvetica,Arial,"Sans-serif";
   position: absolute;
   margin-top: 10%;
-  margin-left: 6.5%;
+  margin-left: 5.8%;
   font-size: clamp(18px, 4vw, 27px);
 }
 
@@ -151,6 +151,12 @@ body {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .section {
+    top: 0px;
+  }
+}
+
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
   font-size: clamp(12px, 2vw, 15px);
@@ -182,7 +188,7 @@ body {
 .html-lesson-wrapper .review-content {
   line-height: 1.8;
   position: relative;
-  margin-left: clamp(50px, 14%, 126.5px);
+  margin-left: clamp(50px, 13.3%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
@@ -198,7 +204,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 4%;
-  padding-left: clamp(32px, 6vw, 47px);
+  padding-left: clamp(32px, 4.5vw, 47px);
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
 }
@@ -250,6 +256,12 @@ body {
   .html-lesson-wrapper .biz-tip-content .words {
     margin-top: 3%;
     margin-left: -2%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper .biz-tip-content .words {
+    margin-top: 3.1%;
   }
 }
 
@@ -422,6 +434,12 @@ body {
   bottom: -10em;
 }
 
+@media screen and (max-width: 900px) {
+  .html-lesson-wrapper footer {
+    bottom: -8em;
+  }
+}
+
 .html-lesson-wrapper footer .footer-text {
   text-align: right;
   position: absolute;
@@ -432,7 +450,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper footer .footer-text {
-    right: 2%;
+    right: 5%;
   }
 }
 

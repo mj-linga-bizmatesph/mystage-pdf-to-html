@@ -140,6 +140,11 @@ body {
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
 }
+@media screen and (min-width: 960px) {
+  .html-lesson-wrapper .biz-tip-content {
+    margin-top: clamp(70px, 28%, 140px) !important;
+  }
+}
 .html-lesson-wrapper .biz-tip-content .section {
   left: 0;
   margin-left: 5%;

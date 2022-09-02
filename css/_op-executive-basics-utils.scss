@@ -161,6 +161,9 @@ body {
   .biz-tip-content {
     position: relative;
     margin-top: clamp(70px, 20%, 160px);
+    @media screen and (min-width: 960px) {
+      margin-top: clamp(70px, 28%, 140px) !important;
+    }
     padding: 2px 0px 0px 47px;
     height: -webkit-fit-content;
     height: -moz-fit-content;

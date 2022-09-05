@@ -1,5 +1,8 @@
 @import '../../css/_op-cross-culture-utils.scss';
 .html-lesson-wrapper {
+  .speaker-text {
+    padding-left: clamp(8px, 2vw, 19px) !important;
+  }
   .lesson-number {
     left: clamp(91%, 91.5vw, 91.7%) !important;
   }

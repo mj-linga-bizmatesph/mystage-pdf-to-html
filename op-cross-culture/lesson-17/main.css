@@ -505,6 +505,9 @@ body {
     left: -18px;
   }
 }
+.html-lesson-wrapper .speaker-text {
+  padding-left: clamp(8px, 2vw, 19px) !important;
+}
 .html-lesson-wrapper .lesson-number {
   left: clamp(91%, 91.5vw, 91.7%) !important;
 }

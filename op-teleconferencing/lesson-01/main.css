@@ -698,6 +698,14 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   border-bottom: 10px solid #cc3366;
 }
+.html-lesson-wrapper footer .footer-text {
+  bottom: -10px;
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper footer .footer-text {
+    bottom: 0%;
+  }
+}
 .html-lesson-wrapper .extension {
   margin-bottom: 1% !important;
   width: 70% !important;

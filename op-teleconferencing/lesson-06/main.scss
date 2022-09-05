@@ -55,4 +55,12 @@
       }
     }
   }
+  footer {
+    .footer-text {
+      bottom: -10px;
+      @media only screen and (max-width: 400px) {
+        bottom: 0%;
+      }
+    }
+  }
 }

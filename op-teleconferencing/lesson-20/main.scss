@@ -2,7 +2,7 @@
 
 .html-lesson-wrapper {
   .title {
-    padding-bottom: 10% !important;
+    padding-bottom: 5% !important;
     @media only screen and (max-device-width: 767px) {
       padding-top: 4%;
       padding-bottom: 3%;
@@ -30,7 +30,6 @@
     .content-div {
       .header-text {
         margin-bottom: 2px;
-        padding-left: 20px;
       }
 
       .lessons {
@@ -55,12 +54,11 @@
   }
   .header-content {
     .title {
-      margin-bottom: 25%;
+      margin-bottom: 15%;
     }
   }
   .header-text {
     margin-bottom: 2px;
-    padding-left: 20px;
   }
 
   .lessons {
@@ -79,11 +77,6 @@
       @media only screen and (max-width: 480px) {
         margin-left: 20%;
       }
-    }
-  }
-  .content-div {
-    .sides {
-      padding-left: 20px;
     }
   }
 }

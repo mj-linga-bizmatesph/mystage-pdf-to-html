@@ -208,7 +208,7 @@ body {
     font-size: clamp(8px, 1.8vw, 15px);
     position: absolute;
     color: #ffffff;
-    margin-top: clamp(10px, 5vw, 43px);
+    margin-top: clamp(10px, 3vw, 25px);
     margin-left: clamp(10px, 6vw, 60px);
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
@@ -413,11 +413,12 @@ body {
         padding-left: clamp(10px, 6vw, 60px);
         font-family: $helvetica;
         line-height: 1.8em;
-        margin-top: -5%;
+        margin-top: -3%;
         width: 55%;
       }
     }
     &.review {
+      margin-top: 13%;
       .content-label {
         width: 17%;
         @media only screen and (max-device-width: 767px) {
@@ -440,7 +441,7 @@ body {
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
-        line-height: clamp(12px, 4vw, 22px);
+        line-height: 1.8em;
         margin-top: clamp(-2px, -1vw, -3px);
         @media only screen and (max-width: 400px) {
           width: 95%;
@@ -560,6 +561,7 @@ body {
           font-size: clamp(12px, 2vw, 15px);
           width: 100%;
           border-collapse: collapse;
+          line-height: normal;
           .table-header {
             width: 50%;
             color: white;
@@ -614,6 +616,7 @@ body {
           font-size: clamp(12px, 2vw, 15px);
           width: 100%;
           border-collapse: collapse;
+          line-height: normal;
           .table-header {
             width: 45%;
             color: white;

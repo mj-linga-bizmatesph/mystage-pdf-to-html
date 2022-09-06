@@ -1,6 +1,10 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  .see-content table {
+    border-collapse: collapse;
+    margin-left: -11px;
+  }
   table {
     border-collapse: collapse;
     width: 100%;
@@ -59,6 +63,11 @@
       }
     }
   }
+  @media screen and (min-width: 960px) {
+    .section.see {
+      margin-top: 5px;
+    }
+  }
   @media screen and (max-width: 428px) {
     .arrow-part:before {
       left: -4% !important;
@@ -70,6 +79,24 @@
       .arrow-part:before {
         left: -4% !important;
       }
+    }
+    .see-content table {
+      margin-left: -4px;
+    }
+    .try-content table {
+      margin-left: 2px;
+    }
+    .try-content .sub-text {
+      margin-left: 4px;
+    }
+    .act-content .sub-text {
+      margin-left: -4px;
+    }
+    .try-content .p-1,
+    .try-content .p-2,
+    .try-content .p-3 {
+      line-height: 1.8;
+      margin-left: 4px;
     }
   }
   @media screen and (max-width: 360px) {

@@ -179,7 +179,7 @@ body {
 }
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
   margin-left: -3.6%;
-  margin-right: 16%;
+  margin-right: 8%;
   margin-bottom: clamp(6px, 1vw, 10px);
 }
 .html-lesson-wrapper .arrow-part {
@@ -417,6 +417,10 @@ body {
   }
 }
 
+.html-lesson-wrapper .see-content table {
+  border-collapse: collapse;
+  margin-left: -11px;
+}
 .html-lesson-wrapper table {
   border-collapse: collapse;
   width: 100%;
@@ -463,6 +467,11 @@ body {
   border: 1px solid #d8d8d8;
   border-collapse: collapse;
 }
+@media screen and (min-width: 960px) {
+  .html-lesson-wrapper .section.see {
+    margin-top: 5px;
+  }
+}
 @media screen and (max-width: 428px) {
   .html-lesson-wrapper .arrow-part:before {
     left: -4% !important;
@@ -472,6 +481,24 @@ body {
   }
   .html-lesson-wrapper .biz-tip-content .arrow-part:before {
     left: -4% !important;
+  }
+  .html-lesson-wrapper .see-content table {
+    margin-left: -4px;
+  }
+  .html-lesson-wrapper .try-content table {
+    margin-left: 2px;
+  }
+  .html-lesson-wrapper .try-content .sub-text {
+    margin-left: 4px;
+  }
+  .html-lesson-wrapper .act-content .sub-text {
+    margin-left: -4px;
+  }
+  .html-lesson-wrapper .try-content .p-1,
+.html-lesson-wrapper .try-content .p-2,
+.html-lesson-wrapper .try-content .p-3 {
+    line-height: 1.8;
+    margin-left: 4px;
   }
 }
 @media screen and (max-width: 360px) {

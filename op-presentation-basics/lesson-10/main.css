@@ -179,7 +179,7 @@ body {
 }
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
   margin-left: -3.6%;
-  margin-right: 16%;
+  margin-right: 8%;
   margin-bottom: clamp(6px, 1vw, 10px);
 }
 .html-lesson-wrapper .arrow-part {
@@ -417,8 +417,19 @@ body {
   }
 }
 
+.html-lesson-wrapper .div-1 .arrow-part,
+.html-lesson-wrapper .div-2 .arrow-part {
+  margin-left: -3px;
+}
+.html-lesson-wrapper .arrow-part {
+  margin-left: -3px;
+}
 .html-lesson-wrapper span.part-2-2 {
   display: inline-block;
+}
+.html-lesson-wrapper .arrow-part span {
+  font-weight: normal !important;
+  color: #2d3139;
 }
 .html-lesson-wrapper section.try-content {
   margin-bottom: 100px;
@@ -489,8 +500,8 @@ body {
   margin-left: -10%;
 }
 .html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 span {
-  color: #000000 !important;
-  font-weight: normal;
+  color: #2d3139 !important;
+  font-weight: normal !important;
 }
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .review-content table.tbl-3 tr td .part-3 {
@@ -500,8 +511,8 @@ body {
     margin-left: 10%;
   }
   .html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 span {
-    color: #000000 !important;
-    font-weight: normal;
+    color: #2d3139 !important;
+    font-weight: normal !important;
   }
   .html-lesson-wrapper .review-content table.tbl-3 tr td .part-2 .part-2-2 {
     display: inline-block;
@@ -556,5 +567,8 @@ body {
   }
   .html-lesson-wrapper .arrow-part.part-3 {
     margin-left: 4px;
+  }
+  .html-lesson-wrapper .arrow-part {
+    margin-left: 4px !important;
   }
 }

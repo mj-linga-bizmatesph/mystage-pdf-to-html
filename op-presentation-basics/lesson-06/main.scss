@@ -83,5 +83,20 @@
         left: -7.5% !important;
       }
     }
+    .try-content table {
+      margin-left: 2px;
+    }
+    .try-content .sub-text {
+      margin-left: 4px;
+    }
+    .act-content .sub-text {
+      margin-left: -4px;
+    }
+    .try-content .p-1,
+    .try-content .p-2,
+    .try-content .p-3 {
+      line-height: 1.8;
+      margin-left: 4px;
+    }
   }
 }

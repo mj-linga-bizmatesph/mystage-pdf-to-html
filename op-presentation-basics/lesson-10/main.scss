@@ -1,10 +1,20 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  .div-1 .arrow-part,
+  .div-2 .arrow-part {
+    margin-left: -3px;
+  }
+  .arrow-part {
+    margin-left: -3px;
+  }
   span.part-2-2 {
     display: inline-block;
   }
-
+  .arrow-part span {
+    font-weight: normal !important;
+    color: #2d3139;
+  }
   section.try-content {
     margin-bottom: 100px;
   }
@@ -77,8 +87,8 @@
         padding: 0px !important;
         .part-2 {
           span {
-            color: #000000 !important;
-            font-weight: normal;
+            color: #2d3139 !important;
+            font-weight: normal !important;
           }
           margin-left: -10%;
         }
@@ -88,8 +98,8 @@
           }
           .part-2 {
             span {
-              color: #000000 !important;
-              font-weight: normal;
+              color: #2d3139 !important;
+              font-weight: normal !important;
             }
             margin-left: 10%;
             .part-2-2 {
@@ -154,6 +164,9 @@
     }
     .arrow-part.part-3 {
       margin-left: 4px;
+    }
+    .arrow-part {
+      margin-left: 4px !important;
     }
   }
 }

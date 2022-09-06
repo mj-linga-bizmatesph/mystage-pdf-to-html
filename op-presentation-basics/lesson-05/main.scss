@@ -2,9 +2,11 @@
 
 .html-lesson-wrapper {
   .arrow-part {
-    margin-left: 7px;
+    margin-left: 1px;
+    @media screen and (min-width: 1800px) {
+      margin-left: -3px;
+    }
   }
-
   section.try-content {
     margin-bottom: 100px;
   }
@@ -102,6 +104,9 @@
   }
 
   @media screen and (max-width: 428px) {
+    .arrow-part {
+      margin-left: 7px;
+    }
     .sub-text {
       margin-left: 8px;
     }

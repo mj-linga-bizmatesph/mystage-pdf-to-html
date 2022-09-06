@@ -453,7 +453,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.see .dialogue .speaker {
-  width: 12%;
+  width: 15%;
   font-weight: bold;
   font-family: "Trebuchet MS";
 }
@@ -482,31 +482,31 @@ body {
   }
 }
 
-.html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+.html-lesson-wrapper .content-item .content-div.see .dialogue .context {
   width: 88%;
   font-family: "Trebuchet MS";
 }
 
 @media only screen and (max-width: 480px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .context {
     width: 80% !important;
   }
 }
 
 @media only screen and (max-width: 435px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .context {
     width: 77% !important;
   }
 }
 
 @media only screen and (max-width: 385px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .context {
     width: 74% !important;
   }
 }
 
 @media only screen and (max-width: 335px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .context {
     width: 68% !important;
   }
 }

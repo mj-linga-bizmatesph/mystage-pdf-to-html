@@ -790,6 +790,18 @@ body {
   line-height: 1.8 !important;
   padding-left: 16px;
 }
+
 .section.act {
   line-height: 1.8;
+}
+
+.try-content .text-indent {
+  text-indent: -18px;
+  margin-left: 3%;
+}
+@media only screen and (max-width: 820px) {
+  .try-content .text-indent {
+    text-indent: 0%;
+    margin-left: 0%;
+  }
 }

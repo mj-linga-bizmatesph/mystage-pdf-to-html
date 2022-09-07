@@ -19,23 +19,19 @@ body {
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
-
 .html-lesson-wrapper header {
   font-family: Helvetica, Arial, "Sans-serif";
-  margin-bottom: clamp(110px, 30vw, 270px);
+  margin-bottom: 25%;
   margin-top: 3%;
 }
-
 @media screen and (max-width: 325px) {
   .html-lesson-wrapper .pd {
     padding-top: 6%;
   }
 }
-
 .html-lesson-wrapper .b {
   font-weight: bold;
 }
-
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 3.05%;
@@ -43,19 +39,16 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
-
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #cc3366;
   font-size: clamp(8px, 1.8vw, 15px);
 }
-
 .html-lesson-wrapper .program-rank .level {
   padding: 3px 12px 3px 13px;
   background-color: #339999;
   font-size: clamp(8px, 1.8vw, 15px);
 }
-
 .html-lesson-wrapper .title {
   position: absolute;
   top: 35px;
@@ -63,13 +56,11 @@ body {
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
 }
-
 @media screen and (max-width: 959px) {
   .html-lesson-wrapper .title {
     left: 43px;
   }
 }
-
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   left: clamp(91.5%, 93vw, 91%);
@@ -77,7 +68,6 @@ body {
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
-
 .html-lesson-wrapper .section {
   position: absolute;
   left: -66px;
@@ -86,14 +76,12 @@ body {
   font-family: Helvetica, Arial, "Sans-serif";
   top: 5px;
 }
-
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .section {
     left: -10.5%;
     top: 5px;
   }
 }
-
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
   font-size: clamp(12px, 2vw, 15px);
@@ -102,41 +90,34 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 .html-lesson-wrapper ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
-
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper ul {
     margin: 3px 0px 0px 19px;
   }
 }
-
 @media screen and (max-width: 401px) {
   .html-lesson-wrapper ul {
     margin: 3px 0px 0px 40px;
   }
 }
-
 .html-lesson-wrapper ul li {
   margin-bottom: clamp(20px, 8vw, 30px);
   padding-left: 8px;
 }
-
 .html-lesson-wrapper .decimal {
   list-style-type: none;
   line-height: 1.8;
 }
-
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .decimal {
     margin-left: -1%;
   }
 }
-
 .html-lesson-wrapper .part-content {
   position: relative;
   margin-left: clamp(50px, 14%, 126.5px);
@@ -144,66 +125,54 @@ body {
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
 }
-
 .html-lesson-wrapper .part-content .part2-ul {
   list-style: decimal;
   line-height: normal;
 }
-
 @media screen and (max-width: 461px) {
   .html-lesson-wrapper .part-content .part2-ul {
     margin-left: 11%;
   }
 }
-
 @media screen and (max-width: 401px) {
   .html-lesson-wrapper .part-content .part2-ul {
     margin-left: 13%;
   }
 }
-
 @media screen and (max-width: 381px) {
   .html-lesson-wrapper .part-content .part2-ul {
     margin-left: 14%;
   }
 }
-
 @media screen and (max-width: 351px) {
   .html-lesson-wrapper .part-content .part2-ul {
     margin-left: 15%;
   }
 }
-
 @media screen and (max-width: 341px) {
   .html-lesson-wrapper .part-content .part2-ul {
     margin-left: 16%;
   }
 }
-
 @media screen and (max-width: 321px) {
   .html-lesson-wrapper .part-content .part2-ul {
     margin-left: 17.5%;
   }
 }
-
 .html-lesson-wrapper .part-content .part2-ul li {
   margin-top: 3%;
 }
-
 @media screen and (max-width: 401px) {
   .html-lesson-wrapper .part-content .part2-ul li {
     height: 5px;
   }
 }
-
 .html-lesson-wrapper .part-content .part-1 .part-2 {
   margin-bottom: 30px;
 }
-
 .html-lesson-wrapper .part-content-2 {
   margin-bottom: clamp(50px, 13vw, 120px);
 }
-
 .html-lesson-wrapper .instruction {
   font-family: Helvetica, Arial, "Sans-serif" !important;
   line-height: 1.8;
@@ -211,13 +180,11 @@ body {
   font-weight: bold;
   padding-top: 0.3%;
 }
-
 @media screen and (max-width: 491px) {
   .html-lesson-wrapper .instruction {
     padding-top: 1.3%;
   }
 }
-
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -230,7 +197,6 @@ body {
   font-family: Helvetica, Arial, "Sans-serif";
   max-width: 64%;
 }
-
 .html-lesson-wrapper footer .footer-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,30 +224,28 @@ body {
     right: 5% !important;
   }
 }
-
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .part-1 {
     margin-top: -1px;
     margin-left: -0.5%;
   }
 }
-
 @media screen and (max-width: 460px) and (max-width: 321px) {
   .html-lesson-wrapper .part-1 {
     margin-left: -2%;
   }
 }
-
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .decimal {
     margin-left: 16px;
   }
+}
+@media screen and (max-width: 460px) {
   .html-lesson-wrapper .instruction {
     margin-left: 22px;
     padding-top: 1%;
   }
 }
-
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper .part-2 {
     margin-top: -5px;

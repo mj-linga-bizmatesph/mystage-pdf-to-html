@@ -48,6 +48,9 @@
             }
             .dv-top {
               margin-left: -3.5%;
+              @media screen and (max-width: 900px){
+                margin-left: -2.5%;
+              }
             }
             .dv-6 {
               p {
@@ -60,14 +63,14 @@
               height: 120px;
               margin-right: 0%;
               line-height: 1.2em;
-              padding: 10px 10px 10px 0px;
+              padding: 10px 3px 10px 8px;
               position: relative;
               z-index: 1;
               @media screen and (max-width: 600px){
                 padding: 10px 1px 10px 13px;
               }
               ul {
-                margin-left: 41%;
+                margin-left: 35%;
                 li span {
                   position: relative;
                   left: -10px;
@@ -89,26 +92,11 @@
       }
     }
   }
-  .try-content {
-    table {
-      margin-top: -2%;
-      tr {
-        td {
-          line-height: 1.8em;
-        }
-        td:first-child {
-          vertical-align: top;
-        }
-      }
-    }
-  }
   .act-content {
     p {
       line-height: 1.8em;
     }
-    p.content {
-      margin-top: -2%;
-    }
+
   }
 
   @media screen and (max-width: 600px) {
@@ -143,12 +131,12 @@
         width: 245px;
         .dv-content {
           flex: 0 0 auto;
-          width: 25% !important;
+          width: 15% !important;
           height: 70px !important;
-          margin-right: -2% !important;
+          margin-right: 2% !important;
           padding: 10px 10px 10px 5px !important;
           ul {
-            margin-left: -20%;
+            margin-left: -44% !important;
           }
         }
         .triangle-right.dv-dark {

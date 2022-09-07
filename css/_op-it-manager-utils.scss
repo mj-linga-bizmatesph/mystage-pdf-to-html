@@ -82,9 +82,12 @@ body {
   .title {
     font-family: Helvetica,Arial,"Sans-serif";
     position: absolute;
-    margin-top: 10%;
-    margin-left: 5.8%;
+    margin-top: 11.4%;
+    margin-left: 8%;
     font-size: clamp(18px, 4vw, 27px);
+    @media screen and (max-width: 900px){
+      margin-left: 5.8%;
+    }
   }
 
   .lesson-number {
@@ -129,6 +132,7 @@ body {
   }
 
   .sub-text {
+    line-height: 1.8;
     font-family: $helvetica !important;
     font-size: clamp(12px, 2vw, 15px);
   }
@@ -138,16 +142,17 @@ body {
   }
 
   .section {
+    line-height: 1.8;
     font-size: clamp(12px, 2vw, 15px);
     position: absolute;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
-    top: -2px;
-    margin-left: -11%;
-    @media screen and (max-width: 600px){
+    top: 0px;
+    margin-left: -7%;
+    @media screen and (max-width: 500px){
       top: 0px;
-      margin-left: -15%;
+      margin-left: -11.4%;
     }
     @media screen and (max-width: 900px){
       top: 0px;
@@ -185,7 +190,7 @@ body {
   .review-content {
     line-height: 1.8;
     position: relative;
-    margin-left: clamp(50px, 13.3%, 126.5px);
+    margin-left: clamp(45px, 11.7%, 126.5px);
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
@@ -237,19 +242,20 @@ body {
       margin-left: clamp(50px, 14%, 126.5px);
 
       .no-arrow {
+        margin-bottom: 1em;
         margin-left: -3.6%;
         margin-right: 16%;
       }
     }
     .words {
-      margin-top: 3.5%;
-      margin-left: 1.4%;
+      margin-top: 2.5%;
+      margin-left: 1.6%;
       @media screen and (max-width: 600px){
         margin-top: 3%;
         margin-left: -2%;
       }
       @media screen and (max-width: 900px){
-        margin-top: 3.1%;
+        margin-top: 2.6%;
       }
     }
   }
@@ -279,17 +285,25 @@ body {
     }
   }
 
-  .sub-text {
-    margin-bottom: 1.5%;
-  }
-
   .context {
-    margin-left: -0.6%;
+    margin-left: 2.8%;
     font-size: clamp(12px, 2vw, 15px);
+    @media screen and (max-width: 900px){
+      margin-left: 3%;
+    }
+    @media screen and (max-width: 600px){
+      margin-left: 3%;
+    }
   }
 
   .see-content {
     margin-top: 4.1%;
+    @media screen and (max-width: 900px){
+      margin-left: 5.5em;
+    }
+    @media screen and (max-width: 500px){
+      margin-left: 3.7em;
+    }
 
     .article {
       margin-top: 5px;
@@ -326,10 +340,13 @@ body {
     ul {
       list-style-type: decimal;
       margin: 0;
-      margin-left: 1em;
+      margin-left: 1.1em;
       text-indent: -1em;
       margin-block: 0;
       padding-inline: 0;
+      @media screen and (max-width: 900px){
+        margin-left: 1.4em;
+      }
 
       li {
         padding-inline-start: 1em;
@@ -380,7 +397,7 @@ body {
 
   .review-content {
     .mg{
-      margin-top: 14.7em;
+      margin-top: 11.7em;
     }
     .sub-text {
       font-family: $trebuchet !important;

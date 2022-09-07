@@ -4,19 +4,6 @@
   table {
     border-collapse: collapse;
   }
-  .try-content {
-    table {
-      margin-top: -2%;
-      tr {
-        td {
-          line-height: 1.8em;
-        }
-        td:first-child {
-          vertical-align: top;
-        }
-      }
-    }
-  }
 
   @media screen and (max-width: 600px) {
     .arrow-part:before {

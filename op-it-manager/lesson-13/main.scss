@@ -23,7 +23,6 @@
   }
   .try-content {
     table {
-      margin-top: -2%;
       tr {
         td {
           line-height: 1.8em;
@@ -38,9 +37,7 @@
     p {
       line-height: 1.8em;
     }
-    p.content {
-      margin-top: -2%;
-    }
+
   }
 
   @media screen and (max-width: 600px) {

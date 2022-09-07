@@ -13,8 +13,10 @@
       padding: 1%;
       margin-top: 2%;
       ol {
-        margin-left: 2.5%;
-        line-height: 1.8;
+        margin-left: 3.4%;
+        line-height: normal;
+        margin-top: 1em;
+        margin-bottom: 1em;
       }
       .btn-red {
         background-color: #cc3366;
@@ -72,26 +74,11 @@
       }
     }
   }
-  .try-content {
-    table {
-      margin-top: -2%;
-      tr {
-        td {
-          line-height: 1.8em;
-        }
-        td:first-child {
-          vertical-align: top;
-        }
-      }
-    }
-  }
   .act-content {
     p {
       line-height: 1.8em;
     }
-    p.content {
-      margin-top: -2%;
-    }
+
   }
 
   @media screen and (max-width: 600px) {

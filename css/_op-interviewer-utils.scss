@@ -559,9 +559,11 @@ body {
         }
         .content-table {
           font-size: clamp(12px, 2vw, 15px);
-          width: 90%;
+          width: 100%;
           border-collapse: collapse;
           line-height: normal;
+          display: block;
+          overflow-x: auto;
           .table-header {
             width: 50%;
             color: white;

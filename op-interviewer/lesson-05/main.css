@@ -600,9 +600,11 @@ body {
 }
 .html-lesson-wrapper .content-item .content-div.review-part-1 .content-table {
   font-size: clamp(12px, 2vw, 15px);
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   line-height: normal;
+  display: block;
+  overflow-x: auto;
 }
 .html-lesson-wrapper .content-item .content-div.review-part-1 .content-table .table-header {
   width: 50%;

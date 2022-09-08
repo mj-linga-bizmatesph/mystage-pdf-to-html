@@ -302,7 +302,7 @@ body {
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
         font-family: $helvetica;
-        padding-top: 1px;
+        padding-top: 3px;
       }
     }
 
@@ -375,7 +375,7 @@ body {
         .content-table {
           line-height: normal;
           border-collapse: collapse;
-          font-size: clamp(12px, 2vw, 14px);
+          font-size: clamp(12px, 2vw, 15px);
 
           p {
             margin: 0;
@@ -663,7 +663,7 @@ body {
       }
 
       &.act {
-        font-size: clamp(12px, 2vw, 14px);
+        font-size: clamp(12px, 2vw, 15px);
 
         p {
           margin: 0;

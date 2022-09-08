@@ -1,5 +1,5 @@
 $text-font: 'Trebuchet MS';
-$noto-sans: 'Noto Sans', sans-serif;
+$noto-sans: "NotoSansJP", "Noto Sans",sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -108,7 +108,7 @@ body {
     position: absolute;
     color: #ffffff;
     font-size: 0px;
-    margin-top: clamp(1px, 1vw, 3px);
+    margin-top: clamp(1px, 1vw, 5px);
     width: 69%;
     .type {
       padding: clamp(1px, 1vw, 4px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 4px)
@@ -163,6 +163,7 @@ body {
     text-align: center;
     font-size: clamp(14px, 4vw, 26px);
     color: #ffffff;
+    top: 5px;
   }
 
   .title-section {
@@ -181,7 +182,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      
     }
   }
   .arrow {
@@ -200,13 +201,13 @@ body {
     left: 27%;
 
     .title {
-      font-size: clamp(9px, 2.9vw, 18px);
+      font-size: clamp(9px, 2.9vw, 18px) !important;
       color: #141821;
     }
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      
     }
   }
 
@@ -416,11 +417,13 @@ body {
         flex-direction: row;
         position: relative;
         .conversation-number{
+line-height: 1.5em;
           color: $primary-blue;
           font-weight: bold;
           min-width: 1em;
         }
         .letter-answer{
+             line-height:1.5em;
           font-weight: bold;
           width: 15%;
           text-align: center;
@@ -432,6 +435,7 @@ body {
             display: inline-flex;
             margin-bottom: 1em;
             .speaker{
+             line-height:1.5em;
               font-weight: bold;
               min-width: 5em;
               text-align: right;
@@ -449,15 +453,17 @@ body {
             .text{
               .dialogue{
                 word-wrap: break-word;
+                line-height: 1.5em;
               }
               .japanese{
                 word-wrap: break-word;
                 font-size: clamp(8px,1.7vw,13px);
                 color: #7f8288;
-                letter-spacing: -1px;
+                
                 margin-top: 0.5em;
               }
               .answer{
+             line-height:1.5em;
                 word-wrap: break-word;
               }
               
@@ -641,7 +647,7 @@ body {
       .eng {
         font-family: $text-font;
         font-weight: bold;
-        font-size: clamp(10px, 2.3vw, 15px);
+        font-size: clamp(10px, 2.3vw, 14px);
       }
 
       .jap {
@@ -670,7 +676,7 @@ body {
       .eng {
         font-family: $text-font;
         font-weight: bold;
-        font-size: clamp(10px, 2.3vw, 15px);
+        font-size: clamp(10px, 2.3vw, 14px);
         .option-item {
           display: grid;
           grid-template-columns: min-content 1fr;
@@ -684,10 +690,10 @@ body {
     &.item-1 {
       .akiko {
         margin-top: clamp(9%, 12%, 14%);
-        left: 24%;
+        left: 30%;
       }
       .option-item {
-        width: 20rem;
+        width: 18rem;
         
       }
     }
@@ -698,9 +704,7 @@ body {
       }
       .option-item {
         width: 40rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
     &.item-3 {
@@ -710,9 +714,7 @@ body {
       }
       .option-item {
         width: 40rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
     &.item-4 {
@@ -722,9 +724,7 @@ body {
       }
       .option-item {
         width: 30rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
     &.item-5 {
@@ -734,10 +734,13 @@ body {
       }
       .option-item {
         width: 30rem;
-        .content{
-          font-size: clamp(5px,1.6vw,14px) !important;
-        }
+        
       }
     }
   }
+}
+.choice-jap,.japanese,.jap,.sub-title,.text-1 {
+  line-height: 1.5em;
+  letter-spacing: 0;
+  margin-top: 0.2em !important;
 }

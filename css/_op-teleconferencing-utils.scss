@@ -1,0 +1,576 @@
+$trebuchet: 'Trebuchet MS';
+$helvetica: 'Helvetica', 'Arial', sans-serif;
+
+$primary-blue: #1287cd;
+$primary-pink: #bd3762;
+$text-pink: #cc3366;
+$rank-green: #339999;
+$primary-gray: #9fa0a0;
+$secondary-gray: #7f7f7f;
+$tertiary-gray: #d9d9d9;
+$primary-light: #cce0ea;
+
+$subtext-color: #7f8288;
+
+$s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.html-lesson-wrapper {
+  font-family: $trebuchet;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: fit-content;
+  overflow: hidden;
+  padding-bottom: 62px;
+  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg), url(#{$s3}/other-programs-footer-logo.svg);
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 767px) {
+    min-height: 800px;
+  }
+
+  header {
+    top: 0;
+    margin-bottom: clamp(50px, 15vw, 65px);
+    margin-top: -3%;
+    position: relative;
+  }
+
+  footer {
+    font-family: $helvetica;
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: -20px;
+    @media only screen and (max-width: 767px) {
+      bottom: -45px;
+    }
+
+    .footer-text {
+      font-size: clamp(4.5px, 1.1vw, 9px);
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      max-width: 45%;
+      right: 2%;
+      @media only screen and (max-width: 767px) {
+        max-width: 117px;
+      }
+      .footer-text-1 {
+        display: inline-block;
+      }
+      .footer-text-2 {
+        display: inline-block;
+      }
+    }
+  }
+
+  .jp {
+    @extend .gray-text;
+  }
+
+  // Global classes
+  .img-responsive-clamp {
+    max-width: clamp(44%, 25vw, 100%);
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-right {
+    justify-content: right;
+  }
+  .flex-center {
+    justify-content: center;
+  }
+  .flex-vertical-middle {
+    justify-items: center;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .mt-2 {
+    margin-top: 1rem;
+  }
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  .mt-5 {
+    margin-top: 2.5rem;
+  }
+  .mt-7 {
+    margin-top: 3.5rem;
+  }
+  .mt-8 {
+    margin-top: 4rem;
+  }
+  .pb-1 {
+    padding-bottom: 0.25rem;
+  }
+  .gray-text {
+    color: #9fa0a0;
+  }
+  .white-text {
+    color: #fff;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .text-middle {
+    vertical-align: middle !important;
+  }
+  .flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .middle-dot {
+    font-family: $helvetica;
+    position: absolute;
+  }
+
+  [class*='col-'] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+  }
+
+  .exclude-letter-spacing {
+    letter-spacing: normal;
+  }
+  .b {
+    font-weight: bold;
+    font-size: clamp(12px, 2vw, 15px);
+    font-family: $trebuchet;
+  }
+  .u-blue {
+    text-decoration: underline;
+    color: $primary-blue;
+  }
+  .primary-blue {
+    color: $primary-blue;
+  }
+  .program-rank {
+    font-family: $helvetica;
+    position: absolute;
+    color: #ffffff;
+    margin-top: clamp(10px, 3vw, 25px);
+    margin-left: clamp(10px, 4vw, 60px);
+    font-size: clamp(8px, 1.8vw, 15px);
+
+    .type {
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 15px);
+      background-color: $text-pink;
+    }
+    .level {
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      font-size: clamp(7px, 1.8vw, 15px);
+      background: $rank-green;
+      max-width: 100%;
+      margin-left: -2%;
+      &.two {
+        padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      }
+    }
+    .separator {
+      font-family: $helvetica;
+      position: relative;
+      display: inline;
+      margin: 0 6px;
+    }
+  }
+
+  .lesson-number {
+    position: absolute;
+    right: 6.4%;
+    width: 1.5%;
+    text-align: center;
+    margin-top: 7.8%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+
+    @media only screen and (max-device-width: 767px) {
+      margin-top: 7%;
+      &.two {
+        right: 7.1% !important; /* previously 7.4% */
+      }
+    }
+    &.two {
+      right: 6.9%;
+    }
+  }
+
+  .header-content {
+    font-family: $helvetica;
+    position: relative;
+    top: clamp(30px, 8vw, 50px);
+    color: black;
+    box-sizing: content-box;
+    margin-top: clamp(10px, 3vw, 25px);
+
+    .title {
+      font-family: $helvetica;
+      font-size: clamp(18px, 4vw, 27px);
+      margin-right: clamp(10px, 3vw, 25px);
+      margin-left: clamp(10px, 4vw, 60px);
+      padding-top: 2%;
+      padding-bottom: 7%;
+      @media only screen and (max-device-width: 767px) {
+        padding-top: 1%;
+        padding-bottom: 5%;
+      }
+      @media only screen and (max-device-width: 320px) {
+        padding-top: 0%;
+        padding-bottom: 8%;
+      }
+    }
+
+    .biz-tips {
+      background-color: #f0d4d4;
+      min-height: 140px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 4rem;
+      font-size: clamp(12px, 2vw, 15px);
+
+      @media only screen and (max-width: 700px) {
+        min-height: 120px !important;
+        margin-bottom: 2rem !important;
+      }
+      @media only screen and (max-width: 612px) {
+        min-height: 100px !important;
+        margin-bottom: 1rem !important;
+      }
+      .biz-tip-label {
+        width: 11%;
+        font-family: $helvetica;
+        color: $text-pink;
+        font-weight: bold;
+        margin-top: clamp(10px, 3vw, 20px);
+        padding-left: clamp(10px, 4vw, 60px);
+
+        @media only screen and (max-width: 500px) {
+          width: 15%;
+        }
+        @media only screen and (max-width: 375px) {
+          width: 10%;
+        }
+      }
+      .biz-tip-content {
+        font-family: $trebuchet;
+        width: 89%;
+        margin-top: clamp(10px, 3vw, 20px);
+        padding-right: clamp(10px, 2vw, 20px);
+        padding-bottom: 1rem;
+        margin-left: -1.5%;
+        line-height: normal;
+        @media only screen and (max-width: 820px) {
+          margin-left: 2.5%;
+        }
+        @media only screen and (max-width: 360px) {
+          margin-left: 3%;
+        }
+        p {
+          margin: 0;
+          margin-bottom: 2%;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: '\25BC';
+          box-sizing: content-box;
+          list-style-position: inside;
+          @media only screen and (max-width: 400px) {
+            margin-right: 5%;
+          }
+          li {
+            list-style-position: outside;
+            text-indent: -1em;
+            margin-left: 0.9em;
+            padding-left: 0.5em;
+            @media only screen and (max-width: 400px) {
+              width: 100%;
+            }
+          }
+          li::before {
+            content: '';
+            display: block;
+            width: 0.5em;
+            height: 0px;
+          }
+          li::marker {
+            font-size: clamp(11px, 2vw, 13px);
+          }
+        }
+        .all-tips {
+          display: flex;
+          margin-top: 2%;
+          .start-div {
+            max-width: 50%;
+          }
+          .end-div {
+            margin-left: 4%;
+          }
+          .tip-label {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .content-item {
+    padding-top: clamp(10px, 1vw, 20px);
+    padding-right: clamp(10px, 3vw, 25px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    width: 100%;
+    .content-label {
+      width: 15%;
+      color: $text-pink;
+      @media only screen and (max-device-width: 767px) {
+        width: 11% !important;
+      }
+      .content-label-text {
+        font-weight: bold;
+        font-family: $helvetica;
+        font-size: clamp(12px, 2vw, 15px);
+        vertical-align: middle;
+        padding-left: clamp(10px, 4vw, 60px);
+        width: 100%;
+        margin-top: 1%;
+      }
+      .content-label-text-act {
+        font-weight: bold;
+        font-family: $helvetica;
+        font-size: clamp(12px, 2vw, 15px);
+        vertical-align: middle;
+        padding-left: clamp(10px, 4vw, 60px);
+        width: 100%;
+        margin-top: 4%;
+        @media only screen and (max-width: 375px) {
+          margin-top: 6%;
+        }
+      }
+    }
+    &.review {
+      .content-label {
+        width: 17%;
+        @media only screen and (max-device-width: 767px) {
+          width: 19% !important;
+        }
+      }
+    }
+    .content-div {
+      width: 89%;
+      margin-bottom: 15px;
+      box-sizing: content-box;
+      padding-left: clamp(10px, 3vw, 25px);
+      font-size: clamp(12px, 2vw, 15px);
+      @media only screen and (max-width: 500px) {
+        margin-left: 3%;
+      }
+      .header-text {
+        margin: 0;
+        width: 104%;
+        font-family: $helvetica;
+        font-size: clamp(12px, 2vw, 15px);
+        font-weight: bold;
+        line-height: clamp(12px, 4vw, 22px);
+        margin-top: clamp(-2px, -1vw, -3px);
+        margin-bottom: 7px;
+      }
+      .second-header {
+        margin: 0;
+        width: 104%;
+        font-family: $helvetica;
+        font-size: clamp(12px, 2vw, 15px);
+        font-weight: bold;
+        line-height: clamp(12px, 4vw, 22px);
+        margin-top: clamp(-2px, -1vw, -3px);
+        p {
+          margin-top: 30px;
+          margin-bottom: 5px;
+        }
+      }
+      .content-header {
+        font-size: clamp(12px, 2vw, 15px);
+        font-weight: bold;
+      }
+      .content {
+        line-height: 1.8em;
+      }
+      &.see {
+        .dialogue {
+          display: flex;
+          font-size: clamp(12px, 2vw, 15px);
+          line-height: clamp(19px, 3vw, 24px);
+          .speaker {
+            width: 12%;
+            font-weight: bold;
+          }
+          .message {
+            width: 88%;
+          }
+        }
+        .dialogue-spacer {
+          width: 100%;
+          text-align: center;
+          color: $secondary-gray;
+          font-size: clamp(12px, 2vw, 15px);
+          line-height: clamp(14px, 3vw, 28px);
+        }
+      }
+      &.try {
+        .content-table {
+          font-size: clamp(12px, 2vw, 15px);
+          width: 100%;
+          border-collapse: collapse;
+          .table-header {
+            width: 33.3%;
+            color: white;
+            background-color: $primary-pink;
+          }
+          th {
+            vertical-align: middle !important;
+          }
+          td,
+          th {
+            border: 2px solid $tertiary-gray;
+            padding: 0.5%;
+            vertical-align: baseline;
+          }
+        }
+        .example-gray {
+          font-family: $trebuchet;
+          color: $secondary-gray;
+          margin-top: clamp(5px, 2vw, 10px);
+          font-size: clamp(12px, 2vw, 15px);
+        }
+      }
+      &.act {
+        p {
+          line-height: 1.8em;
+        }
+      }
+      &.review-part-1 {
+        padding-right: clamp(15px, 7vw, 55px);
+        margin-left: 1%;
+        @media only screen and (max-width: 500px) {
+          margin-left: 3%;
+        }
+        .review-box {
+          font-family: $trebuchet;
+          font-size: clamp(12px, 2vw, 15px);
+          line-height: clamp(12px, 4vw, 20px);
+          padding: clamp(5px, 2vw, 10px);
+          border: 5px solid $tertiary-gray;
+          margin-bottom: 2%;
+          p {
+            margin: 0;
+          }
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: '\25BC';
+            box-sizing: content-box;
+            li {
+              list-style-position: outside;
+              text-indent: -1em;
+              margin-left: 1em;
+              padding-left: 0.5em;
+            }
+
+            li::before {
+              content: '';
+              display: block;
+              width: 0.5em;
+            }
+            li::marker {
+              font-size: clamp(11px, 2vw, 13px);
+            }
+          }
+        }
+      }
+      &.review-part-2 {
+        padding-right: clamp(15px, 7vw, 55px);
+        p.part-2-content {
+          margin: 0;
+          font-family: $trebuchet;
+          font-size: clamp(12px, 3vw, 16px);
+          line-height: clamp(12px, 4vw, 25px);
+        }
+      }
+    }
+  }
+  .content-item-divider {
+    width: 100%;
+    text-align: center;
+    color: $tertiary-gray;
+    margin-top: clamp(10px, 2vw, 20px);
+    margin-bottom: clamp(15px, 3vw, 25px);
+    font-size: clamp(12px, 2vw, 15px);
+    &::after {
+      content: '\25BC\25BC\25BC';
+    }
+  }
+  /* table alignment */
+  .sides {
+    .num {
+      @media only screen and (max-width: 500px) {
+        margin: 0px;
+        vertical-align: top;
+      }
+    }
+  }
+}

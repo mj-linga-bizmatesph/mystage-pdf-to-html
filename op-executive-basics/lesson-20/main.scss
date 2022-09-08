@@ -2,6 +2,7 @@
 .html-lesson-wrapper {
   .review-content {
     margin-top: 26%;
+    line-height: normal;
     .lsn {
       li:before {
         content: 'Lsn 1' counter(item, decimal) ': ';
@@ -11,5 +12,16 @@
         margin: 1% 0 2% 5.3em;
       }
     }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .title {
+    top: clamp(32px, 1.4vw, 85px);
+    left: clamp(23px, 3.1vw, 55px);
+  }
+  .biz-tip-content {
+    top: 20px;
+    margin-bottom: 40px;
   }
 }

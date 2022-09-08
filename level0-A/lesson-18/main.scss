@@ -1,5 +1,5 @@
 $text-font: 'Trebuchet MS';
-$noto-sans: 'Noto Sans', sans-serif;
+$noto-sans: "NotoSansJP", "Noto Sans",sans-serif;
 
 $primary-blue: #1287cd;
 $rank-green: #009c9a;
@@ -15,6 +15,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.3;
 }
 
 .html-lesson-wrapper {
@@ -127,7 +128,7 @@ body {
     font-size: clamp(8px, 2.3vw, 14px);
   }
   .jap {
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     color: $subtext-color;
     font-family: $noto-sans;
     font-size: clamp(7px, 1.8vw, 11px);
@@ -135,6 +136,7 @@ body {
   .lesson-number {
     position: absolute;
     right: 5%;
+    margin-top: 0.2%;
     text-align: center;
     font-size: clamp(12px, 3vw, 25px);
     color: #ffffff;
@@ -161,7 +163,7 @@ body {
     }
     .sub-title {
       font-size: clamp(10px, 2.5vw, 15px);
-      letter-spacing: -1.3px;
+      letter-spacing: 0px;
     }
   }
   .arrow {
@@ -186,7 +188,7 @@ body {
     .sub-title {
       font-size: clamp(7px, 2vw, 13px);
       color: $subtext-color;
-      letter-spacing: -1.3px;
+      letter-spacing: 0px;
     }
   }
 
@@ -641,7 +643,7 @@ body {
           font-size: clamp(9px, 2vw, 15px);
         }
         .choice-jap {
-          letter-spacing: 1.5px;
+          letter-spacing: 0px;
           line-height: clamp(0.9rem, 2vw, 1.9rem);
         }
       }
@@ -717,16 +719,12 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: 5px;
+          padding-top: 3px;
           padding-left: 10px;
           padding-right: 8px;
 
-          @media screen and (max-width: 451px) {
-            padding-top: 4px;
-          }
-
           @media screen and (max-width: 551px) {
-            padding-top: 4px;
+            padding-top: 2px;
           }
         }
         .table-img {
@@ -804,11 +802,11 @@ body {
         .table-number {
           @extend .b, .primary-blue;
           font-size: clamp(10px, 3vw, 16px);
-          padding-top: 4px;
+          padding-top: 3px;
           padding-right: clamp(9px, 2.9vw, 15px);
 
           @media screen and (max-width: 451px) {
-            padding-top: 1px;
+            padding-top: 0px;
           }
         }
         .table-img {
@@ -868,7 +866,7 @@ body {
     }
 
     p.jap {
-      letter-spacing: -2px;
+      letter-spacing: 0px;
     }
     .office-act-1 {
       margin-top: 6%;
@@ -884,8 +882,8 @@ body {
           }
 
           .jap {
-            letter-spacing: -1px;
-            line-height: clamp(10px, 2.8vw, 1rem);
+            letter-spacing: 0px;
+            line-height: clamp(10px, 2.8vw, 1.3rem);
           }
         }
         &.helen {

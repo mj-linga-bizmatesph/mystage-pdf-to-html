@@ -63,7 +63,7 @@ body {
   }
   .title {
     position: absolute;
-    top: 80px;
+    top: 69px;
     left: 48px;
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
@@ -176,7 +176,7 @@ body {
       margin-left: 4.2em;
     }
     .words {
-      margin-top: 2.5%;
+      margin-top: 3% !important;
       white-space: nowrap;
       @media screen and (max-width: 500px) {
         margin-left: -2%;
@@ -185,7 +185,7 @@ body {
     .pointers {
       line-height: normal;
       margin-right: 4em;
-      margin-top: clamp(14px, 2.8vw, 23px) !important;
+      margin-top: clamp(14px, 1.7vw, 23px) !important;
       margin-left: 6.5%;
       .text-header {
         margin-bottom: 0.8em;
@@ -236,7 +236,7 @@ body {
       .row {
         line-height: 1.8;
         .person {
-          width: 10%;
+          width: 13%;
           @media screen and (max-width: 900px) {
             width: 25%;
           }

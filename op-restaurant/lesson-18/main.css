@@ -70,7 +70,7 @@ body {
 
 .html-lesson-wrapper .title {
   position: absolute;
-  top: 80px;
+  top: 69px;
   left: 48px;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
@@ -233,7 +233,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .words {
-  margin-top: 2.5%;
+  margin-top: 3% !important;
   white-space: nowrap;
 }
 
@@ -246,7 +246,7 @@ body {
 .html-lesson-wrapper .words-phrase-content .pointers {
   line-height: normal;
   margin-right: 4em;
-  margin-top: clamp(14px, 2.8vw, 23px) !important;
+  margin-top: clamp(14px, 1.7vw, 23px) !important;
   margin-left: 6.5%;
 }
 
@@ -317,7 +317,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .convo .row .person {
-  width: 10%;
+  width: 13%;
 }
 
 @media screen and (max-width: 900px) {

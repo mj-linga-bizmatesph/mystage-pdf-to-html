@@ -371,11 +371,13 @@ body {
               background-color: #b5d2d2;
               background-color: rgba($color: #339999, $alpha: 0.35);
               max-width: 80%;
+              padding: 3% 2%;
 
             }
 
             &.right {
               background-color: #f0d4d4;
+              padding: 3% 2%;
 
               @media screen and (max-width: 460px) {
                 max-width: 80% !important;
@@ -385,7 +387,6 @@ body {
             .chat-text {
               line-height: clamp(19px, 3vw, 24px);
               text-align: left;
-              padding: 5% 0 5% 0;
 
 
               sup {

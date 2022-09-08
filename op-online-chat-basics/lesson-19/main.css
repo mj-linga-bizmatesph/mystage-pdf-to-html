@@ -405,10 +405,12 @@ body {
   background-color: #b5d2d2;
   background-color: rgba(51, 153, 153, 0.35);
   max-width: 80%;
+  padding: 3% 2%;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .chat-box .chat-message.right {
   background-color: #f0d4d4;
+  padding: 3% 2%;
 }
 
 @media screen and (max-width: 460px) {
@@ -420,7 +422,6 @@ body {
 .html-lesson-wrapper .content-item .content-div.see .chat-box .chat-message .chat-text {
   line-height: clamp(19px, 3vw, 24px);
   text-align: left;
-  padding: 5% 0 5% 0;
 }
 
 .html-lesson-wrapper .content-item .content-div.see .chat-box .chat-message .chat-text sup {

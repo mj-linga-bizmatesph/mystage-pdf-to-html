@@ -164,7 +164,7 @@ body {
   }
   .words-phrase-content {
     position: relative;
-    margin-top: clamp(87px, 17.6%, 157px);
+    margin-top: clamp(70px,28%,140px) !important;
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
@@ -185,7 +185,7 @@ body {
     .pointers {
       line-height: normal;
       margin-right: 4em;
-      margin-top: clamp(14px, 1.7vw, 23px) !important;
+      margin-top: clamp(14px, 1.5vw, 23px) !important;
       margin-left: 6.5%;
       .text-header {
         margin-bottom: 0.8em;

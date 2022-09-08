@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .html-lesson-wrapper {
   min-width: 320px;
   max-width: 100%;
@@ -29,9 +30,11 @@ body {
     margin-bottom: 25%;
     margin-top: 3%;
   }
+
   .b {
     font-weight: bold;
   }
+
   .program-rank {
     position: absolute;
     top: 3.05%;
@@ -42,20 +45,24 @@ body {
     @media screen and (max-width: 959px) {
       left: 4%;
     }
+
     @media screen and (max-width: 901px) {
       left: 5%;
     }
+
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $magenta;
       font-size: clamp(8px, 1.8vw, 15px);
     }
+
     .level {
       padding: 3px 12px 3px 13px;
       background-color: $green;
       font-size: clamp(8px, 1.8vw, 15px);
     }
   }
+
   .title {
     position: absolute;
     top: 35px;
@@ -67,6 +74,7 @@ body {
       left: 44px;
     }
   }
+
   .lesson-number {
     position: absolute;
     left: clamp(91.5%, 93vw, 91%);
@@ -74,6 +82,7 @@ body {
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
+
   .section {
     position: absolute;
     left: -82px;
@@ -82,9 +91,11 @@ body {
     font-family: $title-font;
     top: 6.5px;
   }
+
   .p1 {
     top: 6px;
   }
+
   .divider {
     color: #d9d9d9;
     font-size: clamp(12px, 2vw, 15px);
@@ -93,6 +104,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
   ul {
     margin: 3px 0px 0px -8px;
     padding: 0;
@@ -103,10 +115,16 @@ body {
       padding-left: 8px;
     }
   }
+
   .decimal {
     list-style-type: none;
     line-height: 1.8;
   }
+
+  main {
+    min-width: 677px;
+  }
+
   .part-content {
     position: relative;
     margin-left: clamp(50px, 16%, 126.5px);
@@ -122,8 +140,9 @@ body {
   .part-content-2 {
     margin-bottom: clamp(50px, 13vw, 120px);
   }
+
   .instruction {
-    font-family: $title-font !important;
+    font-family: $title-font  !important;
     line-height: 1.8;
     margin: 0 auto;
   }
@@ -143,6 +162,7 @@ body {
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .html-lesson-wrapper {
     .program-rank {
@@ -150,19 +170,24 @@ body {
       top: clamp(20px, 4vw, 40px);
       // left: clamp(23px, 4vw, 48px);
     }
+
     .title {
       top: clamp(45px, 8.4vw, 80px);
       left: clamp(16px, 4.7vw, 55px);
     }
+
     .divider {
+
       &.d1,
       &.d2 {
         margin-top: clamp(18px, 3.4vw, 28px);
       }
     }
+
     .section {
       left: calc(-15% + 12px);
     }
+
     footer {
       bottom: clamp(16px, 4.8vw, 43px);
       right: 5% !important;
@@ -176,19 +201,23 @@ body {
       margin-top: -1px;
       margin-left: -1%;
     }
+
     .decimal {
       margin-left: 15px;
     }
+
     .instruction {
       margin-left: 22px;
     }
   }
 }
+
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper {
     .part-1 {
       margin-left: -2%;
     }
+
     .part-2 {
       margin-top: -2px;
       margin-left: -2%;

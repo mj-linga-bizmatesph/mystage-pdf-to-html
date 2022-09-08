@@ -128,6 +128,11 @@ body {
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
 }
+.html-lesson-wrapper .see-content .see,
+.html-lesson-wrapper .act-content .act,
+.html-lesson-wrapper .try-content .try {
+  top: 3px !important;
+}
 .html-lesson-wrapper .biz-tip-content {
   position: relative;
   margin-top: clamp(70px, 20%, 160px);
@@ -161,6 +166,11 @@ body {
   margin-bottom: clamp(6px, 1vw, 10px);
   margin-right: 16%;
   width: 97%;
+}
+@media screen and (min-width: 960px) {
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -22.7px !important;
+  }
 }
 .html-lesson-wrapper .arrow-part {
   position: relative;
@@ -223,7 +233,6 @@ body {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1em;
-  text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
   line-height: 1.8;
@@ -234,7 +243,6 @@ body {
 }
 .html-lesson-wrapper .try-content ul li::before {
   content: "";
-  width: 2%;
   display: inline-block;
 }
 .html-lesson-wrapper .act-content {
@@ -396,6 +404,9 @@ body {
   }
 }
 
+.html-lesson-wrapper .try-content ul li::before {
+  display: block !important;
+}
 .html-lesson-wrapper .try-content .arrows {
   margin-left: 5%;
 }

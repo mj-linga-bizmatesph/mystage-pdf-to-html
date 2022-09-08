@@ -74,8 +74,8 @@ body {
 .html-lesson-wrapper .title {
   font-family: Helvetica,Arial,"Sans-serif";
   position: absolute;
-  margin-top: 11.4%;
-  margin-left: 8%;
+  margin-top: clamp(18px, 7vw, 80px);
+  margin-left: clamp(18px, 6.5vw, 58px);
   font-size: clamp(18px, 4vw, 27px);
 }
 
@@ -330,7 +330,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .html-lesson-wrapper .see-content {
-    margin-left: 3.7em;
+    margin-left: 5.2em;
   }
 }
 

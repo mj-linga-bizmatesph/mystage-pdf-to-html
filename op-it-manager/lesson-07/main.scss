@@ -118,6 +118,9 @@
       font-size: clamp(9px, 2vw, 13.5px);
     }
     .see-content {
+      .partition{
+        width: 70%;
+      }
       .ctr-proj {
         margin-bottom: -2.2%;
       }
@@ -136,7 +139,7 @@
           margin-right: 2% !important;
           padding: 10px 10px 10px 5px !important;
           ul {
-            margin-left: -44% !important;
+            margin-left: 41% !important;
           }
         }
         .triangle-right.dv-dark {
@@ -157,6 +160,7 @@
       }
     }
   }
+
   @media screen and (max-width: 360px) {
     .biz-tip-content {
       .arrow-part:before {

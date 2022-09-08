@@ -266,7 +266,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
   }
 
   .biz-tip-content {
-    margin-top: clamp(70px, 18%, 160px);
+    margin-top: clamp(70px, 28%, 140px) !important;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

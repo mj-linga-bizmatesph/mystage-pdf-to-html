@@ -487,31 +487,31 @@ body {
   }
 }
 
-.html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+.html-lesson-wrapper .content-item .content-div.see .dialogue .messages {
   width: 88%;
   font-family: "Trebuchet MS";
 }
 
 @media only screen and (max-width: 480px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .messages {
     width: 80% !important;
   }
 }
 
 @media only screen and (max-width: 435px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .messages {
     width: 77% !important;
   }
 }
 
 @media only screen and (max-width: 385px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .messages {
     width: 74% !important;
   }
 }
 
 @media only screen and (max-width: 335px) {
-  .html-lesson-wrapper .content-item .content-div.see .dialogue .message {
+  .html-lesson-wrapper .content-item .content-div.see .dialogue .messages {
     width: 68% !important;
   }
 }
@@ -749,7 +749,8 @@ body {
 
 .html-lesson-wrapper .biz-tip-content ul li ul .text-under {
   font-size: clamp(6.5px, 1.1vw, 8px);
-  margin-left: 24%;
+  margin-left: 25%;
+  display: inline;
 }
 
 @media only screen and (max-width: 769px) {
@@ -804,8 +805,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 5%;
-          column-gap: 5%;
+  -webkit-column-gap: 25%;
+          column-gap: 25%;
 }
 
 .try-content ol {
@@ -818,7 +819,7 @@ body {
 }
 
 .table-container {
-  width: 95%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -832,6 +833,12 @@ body {
   border-collapse: collapse;
   font-size: clamp(8px, 2vw, 15px);
   width: 100%;
+}
+
+@media only screen and (max-width: 1280) {
+  .table-container .content-table {
+    width: 112%;
+  }
 }
 
 @media only screen and (max-width: 800px) {

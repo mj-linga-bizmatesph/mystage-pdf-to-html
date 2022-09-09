@@ -1,6 +1,12 @@
 @import '../../css/op-executive-basics-utils';
-.html-lesson-wrapper {
+
+@media screen and (max-width: 460px) {
   .title {
-    font-size: clamp(9.36px, 2.7vw, 24px);
+    top: clamp(32px, 1.4vw, 85px);
+    left: clamp(23px, 3.1vw, 55px);
+  }
+  .biz-tip-content {
+    top: 20px;
+    margin-bottom: 40px;
   }
 }

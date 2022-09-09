@@ -51,7 +51,7 @@
   }
   .email-textfield {
     background: white;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 0 10px;
     height: clamp(15px, 2vw, 22px);

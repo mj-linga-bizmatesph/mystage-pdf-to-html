@@ -421,6 +421,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .header-text-2 {
+  margin-top: 1em;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }
@@ -724,9 +725,9 @@ body {
 
 .html-lesson-wrapper .email-textfield {
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

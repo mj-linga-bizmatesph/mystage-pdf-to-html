@@ -110,6 +110,8 @@
 }
 .table-container {
   width: 100%;
+  overflow-x: auto !important;
+  overflow-y:hidden !important;
   @media only screen and (max-width: 500px) {
     -webkit-overflow-scrolling-x: touch;
     overflow-x: scroll;
@@ -118,9 +120,6 @@
     border-collapse: collapse;
     font-size: clamp(8px, 2vw, 15px);
     width: 100%;
-    @media only screen and (max-width: 1280){
-      width: 112%;
-    }
     @media only screen and (max-width: 800px) {
       width: 105% !important;
     }
@@ -195,3 +194,10 @@
   }
 }
 
+.table-container .content-table {
+  @media only screen and (max-width: 1280){
+  border-collapse: collapse;
+  font-size: clamp(8px, 2vw, 15px);
+  width: 117%;
+}
+}

@@ -532,5 +532,7 @@ body {
   width: 100%;
 }
 .html-lesson-wrapper .content-div.review-part-2 .part-2-content {
-  color: red;
+  list-style-type: decimal;
+  font-size: clamp(12px, 2vw, 15px);
+  margin-left: 3.5%;
 }

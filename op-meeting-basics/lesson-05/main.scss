@@ -20,4 +20,11 @@
       width: 100%;
     }
   }
+  .content-div {
+    &.review-part-2 {
+      .part-2-content {
+        color: red;
+      }
+    }
+  }
 }

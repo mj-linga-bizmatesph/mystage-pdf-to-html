@@ -54,7 +54,10 @@ body {
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 5vw, 49px);
-    margin-left: clamp(10px, 6vw, 60px);
+    margin-left: clamp(10px, 6vw, 59px);
+    @media only screen and (max-width: 1280px){
+      margin-left: clamp(10px, 6vw, 58px);
+    }
 
     .type {
       padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
@@ -190,7 +193,7 @@ body {
   .review-content {
     line-height: 1.8;
     position: relative;
-    margin-left: clamp(45px, 12.5%, 86.5px);
+    margin-left: clamp(45px, 12.5%, 85.5px);
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
@@ -239,7 +242,7 @@ body {
     .pointers {
       font-size: clamp(12px, 2vw, 15px);
       margin-top: 3% !important;
-      margin-left: clamp(50px, 15%, 126.5px);
+      margin-left: clamp(50px, 15%, 96.5px);
 
       .no-arrow {
         margin-bottom: 1em;
@@ -286,7 +289,7 @@ body {
   }
 
   .context {
-    margin-left: clamp(4px, 3vw, 24px);
+    margin-left: clamp(6px, 10vw, 18px);
     font-size: clamp(12px, 2vw, 15px);
     @media screen and (max-width: 900px){
       margin-left: 3%;

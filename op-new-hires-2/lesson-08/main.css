@@ -706,3 +706,10 @@ body {
   margin-top: -4%;
   margin-left: 1em;
 }
+
+@media only screen and (max-width: 1280px) {
+  .html-lesson-wrapper .content-div .content-container .img-graph {
+    width: 13em;
+    height: 11em;
+  }
+}

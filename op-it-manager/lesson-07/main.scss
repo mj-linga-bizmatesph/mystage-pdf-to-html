@@ -15,7 +15,7 @@
       margin-top: -3.8%;
     }
     .line-img {
-      width: 85%;
+      width: 100%;
     }
     table {
       tr {
@@ -118,11 +118,16 @@
       font-size: clamp(9px, 2vw, 13.5px);
     }
     .see-content {
+      margin-left: 5em;
       .partition{
         width: 70%;
       }
       .ctr-proj {
+        margin-right: 29%;
         margin-bottom: -2.2%;
+      }
+      .ctr-total {
+        margin-right: 29%;
       }
       .dv-wrapper {
         .dv-top {
@@ -137,7 +142,7 @@
           width: 15% !important;
           height: 70px !important;
           margin-right: 2% !important;
-          padding: 10px 10px 10px 5px !important;
+          padding: 10px 5px 10px 10px !important;
           ul {
             margin-left: 41% !important;
           }
@@ -156,7 +161,7 @@
         }
       }
       .line-img {
-        width: 100%;
+        width: 70%;
       }
     }
   }
@@ -211,5 +216,11 @@
         width: 100%;
       }
     }
+  }
+}
+
+.html-lesson-wrapper .context {
+  @media screen and (max-width: 600px){
+  margin-left: 4.2%;
   }
 }

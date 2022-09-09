@@ -82,7 +82,7 @@ body {
   .title {
     font-family: Helvetica,Arial,"Sans-serif";
     position: absolute;
-    margin-top: clamp(18px, 7vw, 80px);
+    margin-top: clamp(54px, 7vw, 80px);
     margin-left: clamp(18px, 6.5vw, 58px);
     font-size: clamp(18px, 4vw, 27px);
     @media screen and (max-width: 900px){
@@ -190,7 +190,7 @@ body {
   .review-content {
     line-height: 1.8;
     position: relative;
-    margin-left: clamp(45px, 11.7%, 126.5px);
+    margin-left: clamp(45px, 12.5%, 86.5px);
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
@@ -228,7 +228,7 @@ body {
       align-items: flex-start;
     }
     position: relative;
-    margin-top: clamp(64px, 23%, 151px);
+    margin-top: clamp(70px,28%,140px) !important;
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: 4%;
@@ -239,7 +239,7 @@ body {
     .pointers {
       font-size: clamp(12px, 2vw, 15px);
       margin-top: 3% !important;
-      margin-left: clamp(50px, 14%, 126.5px);
+      margin-left: clamp(50px, 15%, 126.5px);
 
       .no-arrow {
         margin-bottom: 1em;
@@ -264,7 +264,7 @@ body {
     &:before {
       content: '';
       position: absolute;
-      left: -1.5em;
+      left: -1.2em;
       top: 0.3em;
       width: 0;
       height: 0;
@@ -286,7 +286,7 @@ body {
   }
 
   .context {
-    margin-left: 2.8%;
+    margin-left: clamp(4px, 3vw, 24px);
     font-size: clamp(12px, 2vw, 15px);
     @media screen and (max-width: 900px){
       margin-left: 3%;
@@ -302,7 +302,7 @@ body {
       margin-left: 5.5em;
     }
     @media screen and (max-width: 500px){
-      margin-left: 5.2em;
+      margin-left: 4em;
     }
 
     .article {

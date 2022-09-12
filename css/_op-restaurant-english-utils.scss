@@ -63,10 +63,13 @@ body {
   }
   .title {
     position: absolute;
-    top: 69px;
+    top: 75px;
     left: 48px;
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
+    @media screen and (max-width: 1280px){
+      top: 81px;
+    }
   }
   .lesson-number {
     position: absolute;
@@ -185,7 +188,7 @@ body {
     .pointers {
       line-height: normal;
       margin-right: 4em;
-      margin-top: clamp(14px, 1.5vw, 23px) !important;
+      margin-top: clamp(14px, 1.6vw, 23px) !important;
       margin-left: 6.5%;
       .text-header {
         margin-bottom: 0.8em;

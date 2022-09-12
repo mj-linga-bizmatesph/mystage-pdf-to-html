@@ -70,10 +70,16 @@ body {
 
 .html-lesson-wrapper .title {
   position: absolute;
-  top: 69px;
+  top: 75px;
   left: 48px;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1280px) {
+  .html-lesson-wrapper .title {
+    top: 81px;
+  }
 }
 
 .html-lesson-wrapper .lesson-number {
@@ -246,7 +252,7 @@ body {
 .html-lesson-wrapper .words-phrase-content .pointers {
   line-height: normal;
   margin-right: 4em;
-  margin-top: clamp(14px, 1.5vw, 23px) !important;
+  margin-top: clamp(14px, 1.6vw, 23px) !important;
   margin-left: 6.5%;
 }
 

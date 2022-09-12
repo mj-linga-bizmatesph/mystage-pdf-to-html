@@ -748,9 +748,9 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .content-text-b {
-  list-style: unset;
+  list-style: none;
   line-height: 1.8;
-  margin-left: 2.8%;
+  margin-left: 0%;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
 }

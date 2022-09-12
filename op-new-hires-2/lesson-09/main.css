@@ -362,6 +362,10 @@ body {
   font-weight: bold;
 }
 
+.html-lesson-wrapper .header-content .biz-tips .Hboutu {
+  margin-left: 4.5%;
+}
+
 .html-lesson-wrapper .content-item {
   padding-top: clamp(5px, 2vw, 10px);
   padding-right: clamp(10px, 3vw, 25px);
@@ -725,13 +729,11 @@ body {
 
 .html-lesson-wrapper .email-textfield {
   background: white;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 2px 10px 0px 5px;
   height: clamp(15px, 2vw, 22px);
 }
 

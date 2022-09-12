@@ -183,10 +183,6 @@ body {
     }
   }
 
-  ul li {
-    padding-bottom: 1.5%;
-  }
-
   .see-content,
   .act-content,
   .try-content,
@@ -201,6 +197,9 @@ body {
   .biz-tip-content {
     position: relative;
     margin-top: clamp(87px, 18%, 160px);
+    @media screen and (min-width: 960px) {
+      margin-top: clamp(70px, 28%, 122px) !important;
+    }
     padding: 2px 0px 0px 47px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -215,7 +214,7 @@ body {
       margin-left: 5%;
       margin-top: 3% !important;
       width: 100px;
-      top: 2.2px !important;
+      top: 3.2px !important;
     }
 
     .pointers {
@@ -360,9 +359,9 @@ body {
 
       td {
         text-align: left;
-        padding: 1% 1% 1.5% 1%;
+        padding: 1%;
         background-color: #fff;
-        vertical-align: top;
+        vertical-align: middle;
       }
     }
 

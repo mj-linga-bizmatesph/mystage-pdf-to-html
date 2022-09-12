@@ -6,11 +6,17 @@
       th:first-child {
         width: 21%;
       }
+      td {
+        padding: 1% !important;
+      }
     }
     ul {
       margin-left: -1.5px;
       @media screen and (max-width: 428px) {
         margin-left: 0px;
+      }
+      li {
+        padding-bottom: 0%;
       }
     }
   }

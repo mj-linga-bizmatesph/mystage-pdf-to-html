@@ -103,7 +103,7 @@ body {
 .html-lesson-wrapper .section {
   line-height: 1.8;
   position: absolute;
-  left: -9%;
+  left: -8.2%;
   color: #cc3366;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -208,6 +208,7 @@ body {
 
 .html-lesson-wrapper .try-content .mb {
   margin-top: -0.5%;
+  margin-left: 0.7%;
 }
 
 @media screen and (max-width: 600px) {
@@ -218,7 +219,7 @@ body {
 
 .html-lesson-wrapper .try-content ul {
   line-height: 1.8;
-  margin-left: 2.3%;
+  margin-left: 3%;
   list-style-type: decimal;
 }
 
@@ -243,8 +244,8 @@ body {
 .html-lesson-wrapper .act-content .column {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
 }
 
 .html-lesson-wrapper .act-content ol {

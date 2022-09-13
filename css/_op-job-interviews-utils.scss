@@ -513,7 +513,7 @@ body {
       &.try {
         .content-table {
           line-height: normal;
-          font-size: clamp(12px, 2vw, 14px);
+          font-size: clamp(12px, 2vw, 15px);
           width: 96%;
           border-collapse: collapse;
           margin-right: 1.5em;
@@ -536,7 +536,7 @@ body {
           }
 
           td {
-            padding: 0.5%;
+            padding: 1%;
             padding-left: clamp(5px, 1vw, 10px);
 
             @media screen and (max-width: 460px) {
@@ -658,7 +658,7 @@ body {
           margin: 0;
           font-family: $trebuchet;
           font-size: clamp(12px, 3vw, 16px);
-          line-height: clamp(12px, 4vw, 25px);
+          line-height: 1.8;
         }
       }
 
@@ -667,7 +667,7 @@ body {
 
         p {
           margin: 0;
-          line-height: 1.8em;
+          line-height: 1.8;
           top: -0.3em;
           position: relative;
 
@@ -702,7 +702,7 @@ body {
         }
 
         td {
-          padding: 0.5%;
+          padding: 1%;
           padding-left: clamp(5px, 1vw, 10px);
           width: 70%;
 
@@ -721,8 +721,20 @@ body {
               max-width: 100px;
               word-wrap: break-word;
 
-              @media screen and (max-width: 320px) {
-                min-width: 17%;
+              @media screen and (max-width: 768px) {
+                min-width: 6%;
+              }
+
+              @media screen and (max-width: 563px) {
+                min-width: 9%;
+              }
+
+              @media screen and (max-width: 423px) {
+                min-width: 12%;
+              }
+
+              @media screen and (max-width: 351px) {
+                min-width: 15%;
               }
             }
           }

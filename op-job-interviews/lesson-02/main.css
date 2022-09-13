@@ -325,7 +325,7 @@ body {
   vertical-align: middle;
   padding-left: clamp(10px, 6vw, 60px);
   font-family: "Helvetica", "Arial", sans-serif;
-  padding-top: 1px;
+  padding-top: 3px;
 }
 
 .html-lesson-wrapper .content-item.review {
@@ -540,7 +540,7 @@ body {
 
 .html-lesson-wrapper .content-item .content-div.try .content-table {
   line-height: normal;
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
   width: 96%;
   border-collapse: collapse;
   margin-right: 1.5em;
@@ -564,7 +564,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.try .content-table td {
-  padding: 0.5%;
+  padding: 1%;
   padding-left: clamp(5px, 1vw, 10px);
 }
 
@@ -692,7 +692,7 @@ body {
   margin: 0;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 3vw, 16px);
-  line-height: clamp(12px, 4vw, 25px);
+  line-height: 1.8;
 }
 
 .html-lesson-wrapper .content-item .content-div.act {
@@ -701,7 +701,7 @@ body {
 
 .html-lesson-wrapper .content-item .content-div.act p {
   margin: 0;
-  line-height: 1.8em;
+  line-height: 1.8;
   top: -0.3em;
   position: relative;
 }
@@ -736,7 +736,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .interview-table td {
-  padding: 0.5%;
+  padding: 1%;
   padding-left: clamp(5px, 1vw, 10px);
   width: 70%;
 }
@@ -758,9 +758,27 @@ body {
   word-wrap: break-word;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
-    min-width: 17%;
+    min-width: 6%;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
+    min-width: 9%;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
+    min-width: 12%;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
+    min-width: 15%;
   }
 }
 
@@ -796,6 +814,20 @@ body {
   line-height: normal;
 }
 
+.html-lesson-wrapper .w32 {
+  width: 32% !important;
+}
+
+@media only screen and (max-width: 451px) {
+  .html-lesson-wrapper .try .content-table-div {
+    width: 95%;
+    overflow-x: auto !important;
+  }
+  .html-lesson-wrapper .try .content-table-div .content-table {
+    width: 190% !important;
+  }
+}
+
 .html-lesson-wrapper .try .content-table td {
   padding: 1%;
 }
@@ -806,9 +838,15 @@ body {
 }
 
 .html-lesson-wrapper .try .content-table .row p:first-child {
-  min-width: 9%;
+  min-width: 10% !important;
   max-width: 100px;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 456px) and (min-width: 451px) {
+  .html-lesson-wrapper .try .content-table .row p:first-child {
+    min-width: 13% !important;
+  }
 }
 
 .html-lesson-wrapper .try ol {

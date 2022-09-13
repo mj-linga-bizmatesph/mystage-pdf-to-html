@@ -298,12 +298,10 @@ body {
         padding-left: clamp(10px, 4vw, 60px);
 
         @media only screen and (max-width: 500px) {
-          width: 13%;
-          padding-right: 4%;
+          width: 15%;
         }
         @media only screen and (max-width: 375px) {
           width: 10%;
-          padding-right: 4%;
         }
       }
       .biz-tip-content {
@@ -314,14 +312,11 @@ body {
         padding-bottom: 1rem;
         margin-left: -1.5%;
         line-height: normal;
-        @media only screen and (max-width: 480px) {
-          margin-left: 1%;
-        }
         @media only screen and (max-width: 820px) {
           margin-left: 2.5%;
         }
-        @media only screen and (max-width: 375px) {
-          margin-left: 5%;
+        @media only screen and (max-width: 360px) {
+          margin-left: 3%;
         }
         p {
           margin: 0;
@@ -333,11 +328,17 @@ body {
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
+          @media only screen and (max-width: 400px) {
+            margin-right: 5%;
+          }
           li {
             list-style-position: outside;
             text-indent: -1em;
             margin-left: 0.9em;
             padding-left: 0.5em;
+            @media only screen and (max-width: 400px) {
+              width: 100%;
+            }
           }
           li::before {
             content: '';
@@ -387,6 +388,7 @@ body {
         vertical-align: middle;
         padding-left: clamp(10px, 4vw, 60px);
         width: 100%;
+        margin-top: 1%;
       }
       .content-label-text-act {
         font-weight: bold;
@@ -415,6 +417,9 @@ body {
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
       font-size: clamp(12px, 2vw, 15px);
+      @media only screen and (max-width: 500px) {
+        margin-left: 3%;
+      }
       .header-text {
         margin: 0;
         width: 104%;
@@ -446,9 +451,6 @@ body {
         line-height: 1.8em;
       }
       &.see {
-        @media only screen and (max-width: 400px) {
-          margin-left: 7%;          
-        }
         .dialogue {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
@@ -470,9 +472,6 @@ body {
         }
       }
       &.try {
-        @media only screen and (max-width: 400px) {
-          margin-left: 7%;          
-        }
         .content-table {
           font-size: clamp(12px, 2vw, 15px);
           width: 100%;
@@ -500,9 +499,6 @@ body {
         }
       }
       &.act {
-        @media only screen and (max-width: 400px) {
-          margin-left: 7%;          
-        }
         p {
           line-height: 1.8em;
         }
@@ -510,8 +506,8 @@ body {
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
         margin-left: 1%;
-        @media only screen and (max-width: 400px) {
-          margin-left: 8%;          
+        @media only screen and (max-width: 500px) {
+          margin-left: 3%;
         }
         .review-box {
           font-family: $trebuchet;

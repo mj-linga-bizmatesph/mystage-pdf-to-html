@@ -666,6 +666,14 @@ body {
   text-align: center;
 }
 
+.html-lesson-wrapper .w4 {
+  width: 40% !important;
+}
+
+.html-lesson-wrapper .w2 {
+  width: 20% !important;
+}
+
 .html-lesson-wrapper .try .content-table {
   font-size: clamp(12px, 3vw, 16px);
   width: 100%;
@@ -673,7 +681,6 @@ body {
 }
 
 .html-lesson-wrapper .try .content-table .table-header {
-  width: 25% !important;
   color: white;
   background-color: #bd3762;
 }

@@ -516,8 +516,13 @@ body::after {
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .grid-section {
   display: -ms-grid;
   display: grid;
+  margin-top: 2%;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+}
+
+.html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .grid-section .left-section {
+  padding-right: 4%;
 }
 
 .html-lesson-wrapper .content-item .content-div.review-part-2 {

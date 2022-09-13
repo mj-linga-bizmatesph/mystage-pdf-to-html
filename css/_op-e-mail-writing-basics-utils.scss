@@ -437,8 +437,11 @@ body::after {
           }
           .grid-section {
             display: grid;
-            
+            margin-top: 2%;
             grid-template-columns: 50% 50%;
+            .left-section{
+              padding-right: 4%;
+            }
           }
         }
       }

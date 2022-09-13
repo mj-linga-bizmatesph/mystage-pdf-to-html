@@ -215,7 +215,7 @@ body {
       margin-left: clamp(50px, 14%, 126.5px);
 
       .no-arrow {
-        margin-left: -3.6%;
+        margin-left: -3.8%;
         margin-right: 8%;
         margin-bottom: clamp(6px, 1vw, 10px);
       }
@@ -278,10 +278,20 @@ body {
       tr th {
         line-height: 1.8;
       }
+      .arrow-part p {
+        margin: 0;
+        position: relative;
+        padding: 0 !important;
+
+        &:not(:last-child) {
+          margin-bottom: 5%;
+        }
+      }
+
       p {
         margin: 0;
-        top: -0.3em;
         position: relative;
+        padding: 1%;
 
         &:not(:last-child) {
           margin-bottom: 5%;

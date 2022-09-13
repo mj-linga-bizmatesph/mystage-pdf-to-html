@@ -178,7 +178,7 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
 }
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  margin-left: -3.6%;
+  margin-left: -3.8%;
   margin-right: 8%;
   margin-bottom: clamp(6px, 1vw, 10px);
 }
@@ -232,10 +232,18 @@ body {
 .html-lesson-wrapper .see-content table tr th {
   line-height: 1.8;
 }
+.html-lesson-wrapper .see-content table .arrow-part p {
+  margin: 0;
+  position: relative;
+  padding: 0 !important;
+}
+.html-lesson-wrapper .see-content table .arrow-part p:not(:last-child) {
+  margin-bottom: 5%;
+}
 .html-lesson-wrapper .see-content table p {
   margin: 0;
-  top: -0.3em;
   position: relative;
+  padding: 1%;
 }
 .html-lesson-wrapper .see-content table p:not(:last-child) {
   margin-bottom: 5%;
@@ -460,7 +468,7 @@ body {
 .html-lesson-wrapper .review-content table tr td p {
   margin-left: -3%;
   margin-top: -5px;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 .html-lesson-wrapper .review-content table tr td div.div-1 {
   float: left;

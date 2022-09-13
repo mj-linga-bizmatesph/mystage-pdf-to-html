@@ -2,6 +2,7 @@
 
 .html-lesson-wrapper {
   .see-content table p {
+    padding: 0 !important;
     top: 0 !important;
   }
   .lesson-number {
@@ -42,10 +43,10 @@
       }
       tr td {
         border: 2.1px solid #d8d8d8;
-        padding: 10px;
         min-height: 150px;
         margin-bottom: 5%;
         margin-right: 5%;
+        padding: 1.5% 1.5% 1.5% 2% !important;
         .tbl-inner {
           width: 100% !important;
           tr td {

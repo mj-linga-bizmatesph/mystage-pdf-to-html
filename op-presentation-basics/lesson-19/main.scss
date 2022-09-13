@@ -33,6 +33,9 @@
     }
   }
   .see-content {
+    table p {
+      padding: 0 !important;
+    }
     table {
       margin-left: -1.8%;
       @media screen and (max-width: 428px) {

@@ -4,6 +4,12 @@
   .content-header {
     margin-bottom: 10px !important;
   }
+  .respo {
+    width: 135%;
+    @media only screen and (max-width: 400px) {
+      width: 120%;
+    }
+  }
   .content-div {
     &.try {
       @media only screen and (max-width: 400px) {

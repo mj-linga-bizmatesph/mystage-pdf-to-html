@@ -75,7 +75,7 @@
 }
 
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
-  content: attr(data-value) " ";
+  content: attr(data-value) ' ';
   display: block;
   width: 0.5em;
   height: 0px;

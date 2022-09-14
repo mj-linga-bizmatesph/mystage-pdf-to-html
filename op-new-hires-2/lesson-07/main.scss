@@ -111,7 +111,7 @@
 .table-container {
   width: 100%;
   overflow-x: auto !important;
-  overflow-y:hidden !important;
+  overflow-y: hidden !important;
   @media only screen and (max-width: 500px) {
     -webkit-overflow-scrolling-x: touch;
     overflow-x: scroll;
@@ -187,7 +187,7 @@
       height: 25px;
       padding: 1%;
     }
-    td{
+    td {
       white-space: nowrap;
     }
     .al {

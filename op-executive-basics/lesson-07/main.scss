@@ -1,5 +1,8 @@
 @import '../../css/op-executive-basics-utils';
 
+.html-lesson-wrapper .arrow-part {
+  width: 95% !important;
+}
 @media screen and (max-width: 460px) {
   .title {
     top: clamp(32px, 1.4vw, 85px);

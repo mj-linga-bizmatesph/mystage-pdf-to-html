@@ -158,6 +158,12 @@ body {
     font-size: clamp(12px, 2vw, 15px);
   }
 
+  .see-content .see,
+  .act-content .act,
+  .try-content .try {
+    top: 3px !important;
+  }
+
   .biz-tip-content {
     position: relative;
     margin-top: clamp(70px, 20%, 160px);
@@ -187,6 +193,9 @@ body {
 
       .no-arrow {
         margin-left: -3.6%;
+        @media screen and (min-width: 960px) {
+          margin-left: -22.7px !important;
+        }
         margin-bottom: clamp(6px, 1vw, 10px);
         margin-right: 16%;
         width: 97%;
@@ -269,7 +278,6 @@ body {
       list-style-type: decimal;
       margin: 0;
       margin-left: 1em;
-      text-indent: -1em;
       margin-block: 0;
       padding-inline: 0;
       line-height: 1.8;
@@ -280,7 +288,6 @@ body {
 
       li::before {
         content: '';
-        width: 2%;
         display: inline-block;
       }
     }

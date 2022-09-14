@@ -74,6 +74,10 @@ body {
     display: inline-block;
   }
 
+  .pl2 {
+    padding-left: 2% !important;
+  }
+
   .pt-1 {
 
     // padding-top: 1rem !important;
@@ -201,7 +205,7 @@ body {
         color: $text-pink;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
-        margin-top: clamp(10px, 3vw, 20px);
+        margin-top: clamp(10px, 3vw, 22px);
         padding-left: clamp(10px, 6vw, 60px);
 
         @media screen and (max-width: 461px) {
@@ -353,9 +357,8 @@ body {
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
-        line-height: clamp(12px, 4vw, 22px);
+        line-height: 1.8;
         margin-top: clamp(-2px, -1vw, -3px);
-        margin-bottom: 12px;
         max-width: 96%;
 
         @media only screen and (max-width: 400px) {
@@ -403,7 +406,7 @@ body {
         .response-table {
           width: 96%;
           border-collapse: collapse;
-          font-size: clamp(12px, 2vw, 14px);
+          font-size: clamp(12px, 2vw, 15px);
 
           p {
             margin: 5px 0px;
@@ -678,7 +681,7 @@ body {
       }
 
       .interview-table {
-        font-size: clamp(12px, 2vw, 14px);
+        font-size: clamp(12px, 2vw, 15px);
         width: 96%;
         border-collapse: collapse;
         margin-right: 1.5em;

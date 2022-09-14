@@ -63,6 +63,10 @@ body {
   display: inline-block;
 }
 
+.html-lesson-wrapper .pl2 {
+  padding-left: 2% !important;
+}
+
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper .pt-1, .html-lesson-wrapper .content-item .content-div.review-part-1 {
     padding-top: 0px !important;
@@ -206,7 +210,7 @@ body {
   color: #cc3366;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 15px);
-  margin-top: clamp(10px, 3vw, 20px);
+  margin-top: clamp(10px, 3vw, 22px);
   padding-left: clamp(10px, 6vw, 60px);
 }
 
@@ -385,9 +389,8 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
-  line-height: clamp(12px, 4vw, 22px);
+  line-height: 1.8;
   margin-top: clamp(-2px, -1vw, -3px);
-  margin-bottom: 12px;
   max-width: 96%;
 }
 
@@ -438,7 +441,7 @@ body {
 .html-lesson-wrapper .content-item .content-div.see .response-table {
   width: 96%;
   border-collapse: collapse;
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .html-lesson-wrapper .content-item .content-div.see .response-table p {
@@ -711,7 +714,7 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div .interview-table {
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
   width: 96%;
   border-collapse: collapse;
   margin-right: 1.5em;

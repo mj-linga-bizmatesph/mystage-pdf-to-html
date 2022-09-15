@@ -1,1 +1,39 @@
 @import '../../css/op-management-2-utils';
+
+.biz-tip-content {
+  .col-header-1 {
+    list-style-type: none;
+    font-weight: bold;
+  }
+  .col-header-2 {
+    list-style-type: none;
+    font-weight: bold;
+  }
+  .bullet-one {
+    float: left;
+    @media only screen and (max-width: 495px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 45%;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 35%;
+    }
+  }
+  .bullet-two {
+    float: left;
+    @media only screen and (max-width: 495px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 65%;
+    }
+  }
+  ul {
+    margin-left: 2%;
+  }
+}

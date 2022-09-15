@@ -39,6 +39,9 @@ body {
     position: absolute;
     top: 40px;
     left: 48px;
+    @media screen and (min-width: 1024px) {
+      left: 5% !important;
+    }
     color: #ffffff;
     font-size: 0px;
     .type {
@@ -65,6 +68,10 @@ body {
     position: absolute;
     top: 80px;
     left: 48px;
+    @media screen and (min-width: 1024px) {
+      left: 5% !important;
+      top: 75px;
+    }
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
   }
@@ -87,6 +94,9 @@ body {
   .section {
     position: absolute;
     left: -51px;
+    @media screen and (min-width: 1024px) {
+      left: -10.5% !important;
+    }
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
@@ -155,6 +165,10 @@ body {
     line-height: normal;
     .section {
       margin-left: $left-pixel;
+      @media screen and (min-width: 1024px) {
+        margin-left: 0px;
+        left: 5% !important;
+      }
       margin-top: clamp(10px, 2.6vw, 18.5px) !important;
     }
     .pointers {
@@ -264,9 +278,6 @@ body {
   .html-lesson-wrapper .words-phrase-content .pointers {
     margin-top: clamp(15px, 2.8vw, 18px) !important;
     margin-left: clamp(100px, 13%, 200.5px);
-  }
-  .html-lesson-wrapper .section {
-    left: -75px !important;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1180px) {

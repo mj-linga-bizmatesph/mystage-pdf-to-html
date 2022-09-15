@@ -38,6 +38,11 @@ body {
   color: #ffffff;
   font-size: 0px;
 }
+@media screen and (min-width: 1024px) {
+  .html-lesson-wrapper .program-rank {
+    left: 5% !important;
+  }
+}
 .html-lesson-wrapper .program-rank .type {
   padding: 3px 16px 3px 14px;
   background-color: #cc3366;
@@ -63,6 +68,12 @@ body {
   left: 48px;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .html-lesson-wrapper .title {
+    left: 5% !important;
+    top: 75px;
+  }
 }
 .html-lesson-wrapper .lesson-number {
   position: absolute;
@@ -92,6 +103,11 @@ body {
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   top: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .html-lesson-wrapper .section {
+    left: -10.5% !important;
+  }
 }
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
@@ -162,6 +178,12 @@ body {
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(50px, 14%, 126.5px);
   margin-top: clamp(10px, 2.6vw, 18.5px) !important;
+}
+@media screen and (min-width: 1024px) {
+  .html-lesson-wrapper .words-phrase-content .section {
+    margin-left: 0px;
+    left: 5% !important;
+  }
 }
 .html-lesson-wrapper .words-phrase-content .pointers {
   margin-top: clamp(14px, 2.8vw, 18px) !important;
@@ -276,9 +298,6 @@ body {
   .html-lesson-wrapper .words-phrase-content .pointers {
     margin-top: clamp(15px, 2.8vw, 18px) !important;
     margin-left: clamp(100px, 13%, 200.5px);
-  }
-  .html-lesson-wrapper .section {
-    left: -75px !important;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1180px) {

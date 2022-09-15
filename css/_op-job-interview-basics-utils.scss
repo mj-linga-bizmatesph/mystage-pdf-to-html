@@ -20,7 +20,7 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: clamp(3em, 12vw, 9em);
+  padding-bottom: clamp(6em, 22vw, 14em);
   background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
     url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
   background-position: top, clamp(-15px, -2vw, -8px) bottom;
@@ -30,6 +30,7 @@ body {
 
   header {
     font-family: $helvetica;
+    margin-top: 4%;
   }
 
   .u {
@@ -75,22 +76,23 @@ body {
 
   .title {
     position: absolute;
-    top: clamp(4.5%, 18vw, 6.1%);
+    top: clamp(15px, 4vw, 30px);
     left: 5%;
-    font-size: clamp(9.3px, 3vw, 27px);
+    font-size: clamp(18px, 4vw, 27px);
+    width: 81%;
   }
 
   .lesson-number {
     position: absolute;
-    left: 92.2%;
-    margin-top: 7.8%;
+    left: 92%;
+    margin-top: 3.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
 
   .lesson-number-two {
     @extend .lesson-number;
-    left: 91.5%;
+    left: 91.3%;
   }
 
   .row {
@@ -105,7 +107,7 @@ body {
 
   .sub-text {
     font-family: $helvetica !important;
-    line-height: clamp(12px, 2.8vw, 22px);
+    line-height: 1.8;
     margin: 0 auto;
   }
 
@@ -122,8 +124,15 @@ body {
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
-    top: 2px;
+    top: 4px;
     left: -10.5%;
+
+    @media screen and (max-width: 551px) {
+      top: 2px;
+    }
+    @media screen and (max-width: 401px) {
+      top: 5px;
+    }
   }
 
   .divider {
@@ -160,7 +169,7 @@ body {
     margin-left: clamp(50px, 14%, 126.5px);
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
   }
 
   .biz-tip-content {
@@ -173,32 +182,39 @@ body {
     padding-bottom: 4%;
     padding-left: clamp(32px, 6vw, 47px);
     background: $magenta-light;
-    font-size: clamp(6px, 1.8vw, 15px);
+    font-size: clamp(12px, 2vw, 15px);
 
     .section {
       left: 0;
       margin-left: 5%;
       line-height: 1.8em;
-      margin-top: 3% !important;
+      margin-top: 2% !important;
     }
 
     .pointers {
       margin-top: 3% !important;
       margin-left: clamp(50px, 14%, 126.5px);
+      line-height: normal;
 
       .no-arrow {
-        margin-left: -3.2%;
+        width: 96%;
+        @media screen and (max-width: 1921px) and (min-width: 1800px) {
+          margin-left: -3.2%;
+        }
+        margin-left: -3.5%;
         margin-right: 16%;
+        margin-bottom: 1.5%;
       }
     }
   }
 
   .arrow-part {
     position: relative;
+    width: 90%;
     &:before {
       content: '';
       position: absolute;
-      left: -1.5em;
+      left: -1.4em;
       top: 0.3em;
       width: 0;
       height: 0;
@@ -207,6 +223,16 @@ body {
       border-top: 8px solid $magenta;
       display: inline-block;
       vertical-align: middle;
+
+      @media screen and (max-width: 571px) {
+        left: -1.1em;
+      }
+      @media screen and (max-width: 421px) {
+        left: -0.8em;
+      }
+      @media screen and (max-width: 321px) {
+        left: -0.7em;
+      }
     }
 
     span {
@@ -224,6 +250,7 @@ body {
 
     .sub-text {
       margin-bottom: 1.5%;
+      line-height: 1.8;
     }
 
     .article {
@@ -270,8 +297,9 @@ body {
     }
 
     table {
+      line-height: normal;
       margin-top: 5px;
-      font-size: clamp(1px, 1.5vw, 15px);
+      font-size: clamp(12px, 2vw, 15px);
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
@@ -287,7 +315,7 @@ body {
       th {
         background-color: $magenta;
         color: #ffffff;
-        font-size: clamp(7px, 1.8vw, 15px);
+        font-size: clamp(12px, 2vw, 15px);
         padding: 5px;
       }
 
@@ -295,6 +323,7 @@ body {
         text-align: left;
         padding: 1% 1% 5% 1%;
         background-color: #fff;
+        vertical-align: middle;
       }
     }
 
@@ -302,6 +331,7 @@ body {
       @extend .sub-color;
       padding-left: 1%;
       margin-bottom: 0.5%;
+      line-height: 1.8;
     }
   }
 
@@ -315,6 +345,7 @@ body {
     .sub-text {
       font-family: $trebuchet !important;
       margin-bottom: 2%;
+      line-height: 1.8;
     }
 
     ol {
@@ -375,7 +406,7 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
+      padding-left: clamp(18px, 4.4vw, 18px);
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);

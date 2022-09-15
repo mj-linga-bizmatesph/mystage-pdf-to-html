@@ -1,1 +1,12 @@
 @import '../../css/op-management-2-utils';
+
+.content-table {
+  .margin {
+    width: 10%;
+  }
+  td {
+    ul {
+      padding-left: 30px;
+    }
+  }
+}

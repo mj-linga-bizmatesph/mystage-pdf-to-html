@@ -321,7 +321,7 @@ body {
         font-size: clamp(12px, 2vw, 15px) !important;
         font-weight: bold;
         line-height: 1.6;
-        margin-top: clamp(-2px, -1vw, -3px);
+        margin-top: -1%;
         margin-right: 1em;
       }
       &.see {
@@ -341,7 +341,7 @@ body {
           line-height: 1.8;
           margin-right: 1em;
           .speaker {
-            width: 12%;
+            width: 15%;
             font-weight: bold;
             font-family: $trebuchet;
 
@@ -358,7 +358,7 @@ body {
               width: 28% !important;
             }
           }
-          .message {
+          .context {
             width: 88%;
             font-family: $trebuchet;
 
@@ -392,7 +392,7 @@ body {
           li {
             margin-left: 3%;
             @media screen and (max-width: 900px) {
-              margin-left: 4%;
+              margin-left: 3.3%;
             }
             @media screen and (max-width: 500px) {
               margin-left: 6%;

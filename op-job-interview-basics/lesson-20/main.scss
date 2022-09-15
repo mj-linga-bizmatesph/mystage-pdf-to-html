@@ -18,12 +18,14 @@
         width: 9em;
       }
     }
-    ol {
+    ul {
       margin: 0;
       margin-block: 0;
       padding-inline: 0;
       counter-reset: list;
       list-style-position: inside;
+      line-height: 1.8;
+      margin-left: clamp(8px, 4vw, 20px);
     }
 
     li {
@@ -34,6 +36,7 @@
       }
     }
     .paper {
+      line-height: normal;
       padding: 1%;
       border-color: #d8d8d8;
       border-style: solid;

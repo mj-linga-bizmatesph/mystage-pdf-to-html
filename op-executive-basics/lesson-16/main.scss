@@ -1,6 +1,11 @@
 @import '../../css/op-executive-basics-utils';
 .html-lesson-wrapper {
   .try-content {
+    ul {
+      li::before {
+        display: block !important;
+      }
+    }
     .arrows {
       margin-left: 5%;
       .arrow-part {

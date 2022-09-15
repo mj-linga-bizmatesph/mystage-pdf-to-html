@@ -63,7 +63,8 @@
           }
           .text-under {
             font-size: clamp(6.5px, 1.1vw, 8px);
-            margin-left: 24%;
+            margin-left: 25%;
+            display: inline;
 
             @media only screen and (max-width: 769px) {
               margin-left: 25% !important;
@@ -97,30 +98,36 @@
 }
 .try-content {
   display: flex;
-  column-gap: 5%;
+  column-gap: 25%;
   ol {
     font-size: clamp(12px, 2vw, 15px);
     list-style-type: none;
 
     li {
-      margin-left: -28.5% !important;
+      margin-left: -0.5% !important;
     }
   }
 }
 .table-container {
-  width: 95%;
+  width: 100%;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
   @media only screen and (max-width: 500px) {
+    -webkit-overflow-scrolling-x: touch;
     overflow-x: scroll;
   }
   .content-table {
     border-collapse: collapse;
-    font-size: clamp(12px, 2vw, 15px);
+    font-size: clamp(8px, 2vw, 15px);
     width: 100%;
+    @media only screen and (max-width: 1280px) {
+      width: 117% !important;
+    }
     @media only screen and (max-width: 800px) {
       width: 105% !important;
     }
     @media only screen and (max-width: 500px) {
-      width: 150% !important;
+      width: 99% !important;
     }
     @media only screen and (max-width: 360px) {
       width: 180% !important;
@@ -130,7 +137,39 @@
       color: white;
       text-align: center;
       vertical-align: top;
-      width: 16.67%;
+      width: 14%;
+      @media only screen and (max-width: 800px) {
+        width: 14% !important;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 11% !important;
+      }
+      @media only screen and (max-width: 360px) {
+        width: 14% !important;
+      }
+    }
+    .table-header1 {
+      background-color: #bd3762;
+      color: white;
+      text-align: center;
+      vertical-align: top;
+      width: 16%;
+      @media only screen and (max-width: 800px) {
+        width: 14% !important;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 11% !important;
+      }
+      @media only screen and (max-width: 360px) {
+        width: 14% !important;
+      }
+    }
+    .table-header2 {
+      background-color: #bd3762;
+      color: white;
+      text-align: center;
+      vertical-align: top;
+      width: 16%;
       @media only screen and (max-width: 800px) {
         width: 14% !important;
       }
@@ -146,9 +185,13 @@
       border: 2px solid rgb(211, 211, 211);
       text-align: right;
       height: 25px;
-      padding: 1.5%;
+      padding: 1%;
+    }
+    td {
+      white-space: nowrap;
     }
     .al {
+      white-space: nowrap;
       text-align: left;
     }
   }

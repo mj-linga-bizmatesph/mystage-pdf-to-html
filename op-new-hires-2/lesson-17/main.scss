@@ -66,3 +66,17 @@
     font-size: clamp(8px, 2vw, 12px);
   }
 }
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
+  list-style-position: outside;
+  text-indent: -1.6em;
+  margin-left: 0.8em;
+  padding-left: 2em;
+}
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
+  content: attr(data-value) ' ';
+  display: block;
+  width: 0.5em;
+  height: 0px;
+}

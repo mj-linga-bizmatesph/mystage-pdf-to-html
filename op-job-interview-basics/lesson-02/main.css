@@ -14,28 +14,35 @@ body {
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: clamp(3em, 12vw, 9em);
+  padding-bottom: clamp(6em, 22vw, 14em);
   background-image: url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg"), url("https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg");
   background-position: top, clamp(-15px, -2vw, -8px) bottom;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
+
 .html-lesson-wrapper header {
   font-family: Helvetica, Arial, "Sans-serif";
+  margin-top: 4%;
 }
+
 .html-lesson-wrapper .u {
   text-decoration: underline;
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper .review-content .lsn, .html-lesson-wrapper .see-content table td:first-child {
+
+.html-lesson-wrapper .b, .html-lesson-wrapper .see-content table td:first-child, .html-lesson-wrapper .review-content .lsn {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .i {
   font-family: italic;
 }
+
 .html-lesson-wrapper .no-wrap {
   white-space: nowrap;
 }
+
 .html-lesson-wrapper .program-rank {
   position: absolute;
   top: 3.05%;
@@ -44,35 +51,43 @@ body {
   font-size: 0px;
   white-space: nowrap;
 }
+
 .html-lesson-wrapper .program-rank .type {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #cc3366;
   font-size: clamp(6.48px, 1.8vw, 15px);
 }
+
 .html-lesson-wrapper .program-rank .level {
   padding: 0.7% 3% 0.7% 3%;
   background-color: #339999;
   font-size: clamp(6.48px, 1.8vw, 15px);
 }
+
 .html-lesson-wrapper .line {
   margin: 0 12px;
 }
+
 .html-lesson-wrapper .title {
   position: absolute;
-  top: clamp(4.5%, 18vw, 6.1%);
+  top: clamp(15px, 4vw, 30px);
   left: 5%;
-  font-size: clamp(9.3px, 3vw, 27px);
+  font-size: clamp(18px, 4vw, 27px);
+  width: 81%;
 }
+
 .html-lesson-wrapper .lesson-number, .html-lesson-wrapper .lesson-number-two {
   position: absolute;
-  left: 92.2%;
-  margin-top: 7.8%;
+  left: 92%;
+  margin-top: 3.4%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
+
 .html-lesson-wrapper .lesson-number-two {
-  left: 91.5%;
+  left: 91.3%;
 }
+
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,46 +97,68 @@ body {
   -ms-flex-direction: row;
   flex-direction: row;
 }
+
 .html-lesson-wrapper .sub-text {
   font-family: Helvetica, Arial, "Sans-serif" !important;
-  line-height: clamp(12px, 2.8vw, 22px);
+  line-height: 1.8;
   margin: 0 auto;
 }
+
 .html-lesson-wrapper .magenta-color {
   color: #cc3366;
 }
+
 .html-lesson-wrapper .sub-color, .html-lesson-wrapper .try-content .example {
   color: #7f7f7f;
 }
+
 .html-lesson-wrapper .section {
   position: absolute;
   color: #cc3366;
   font-weight: bold;
   font-family: Helvetica, Arial, "Sans-serif";
-  top: 2px;
+  top: 4px;
   left: -10.5%;
 }
+
+@media screen and (max-width: 551px) {
+  .html-lesson-wrapper .section {
+    top: 2px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .section {
+    top: 5px;
+  }
+}
+
 .html-lesson-wrapper .divider {
   color: #d9d9d9;
   font-size: clamp(6px, 1.8vw, 15px);
   position: relative;
   left: 52%;
 }
+
 .html-lesson-wrapper .divider.d1 {
   margin: 4% 0;
 }
+
 .html-lesson-wrapper .divider.d2 {
   margin: 4% 0;
 }
+
 .html-lesson-wrapper .divider ul {
   margin: 3px 0px 0px 18px;
   padding: 0;
   line-height: clamp(12px, 3vw, 26px);
 }
+
 .html-lesson-wrapper ul li {
   padding-left: 8px;
   padding-bottom: 1.5%;
 }
+
 .html-lesson-wrapper .see-content,
 .html-lesson-wrapper .act-content,
 .html-lesson-wrapper .try-content,
@@ -130,8 +167,9 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .biz-tip-content {
   position: relative;
   margin-top: clamp(70px, 18%, 160px);
@@ -142,29 +180,44 @@ body {
   padding-bottom: 4%;
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
-  font-size: clamp(6px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .biz-tip-content .section {
   left: 0;
   margin-left: 5%;
   line-height: 1.8em;
-  margin-top: 3% !important;
+  margin-top: 2% !important;
 }
+
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;
   margin-left: clamp(50px, 14%, 126.5px);
+  line-height: normal;
 }
+
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
-  margin-left: -3.2%;
+  width: 96%;
+  margin-left: -3.5%;
   margin-right: 16%;
+  margin-bottom: 1.5%;
 }
+
+@media screen and (max-width: 1921px) and (min-width: 1800px) {
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-left: -3.2%;
+  }
+}
+
 .html-lesson-wrapper .arrow-part {
   position: relative;
+  width: 90%;
 }
+
 .html-lesson-wrapper .arrow-part:before {
-  content: "";
+  content: '';
   position: absolute;
-  left: -1.5em;
+  left: -1.4em;
   top: 0.3em;
   width: 0;
   height: 0;
@@ -174,58 +227,92 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 571px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -1.1em;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -0.8em;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .html-lesson-wrapper .arrow-part:before {
+    left: -0.7em;
+  }
+}
+
 .html-lesson-wrapper .arrow-part span {
   color: #cc3366;
   font-weight: bold;
 }
+
 .html-lesson-wrapper .arrow-part.black-arrow:before {
   border-top: 8px solid black;
 }
+
 .html-lesson-wrapper .see-content {
   margin-top: 36px;
 }
+
 .html-lesson-wrapper .see-content .sub-text {
   margin-bottom: 1.5%;
+  line-height: 1.8;
 }
+
 .html-lesson-wrapper .see-content .article {
   margin-top: 5px;
   line-height: 1.7em;
   margin-bottom: 29px;
 }
+
 .html-lesson-wrapper .see-content .article span.highlight {
   color: #cc3366;
   font-weight: bold;
 }
+
 .html-lesson-wrapper .see-content table {
   border-collapse: collapse;
 }
+
 .html-lesson-wrapper .see-content table p {
   margin: 0;
   line-height: 1.8em;
   top: -0.3em;
   position: relative;
 }
+
 .html-lesson-wrapper .see-content table p:not(:last-child) {
   margin-bottom: 5%;
 }
+
 .html-lesson-wrapper .see-content table td {
   padding: 0;
   vertical-align: top;
   line-height: 1.8em;
 }
+
 .html-lesson-wrapper .see-content table td:first-child {
   width: 10%;
 }
+
 .html-lesson-wrapper .try-content ul {
   list-style-type: decimal;
 }
+
 .html-lesson-wrapper .try-content table {
+  line-height: normal;
   margin-top: 5px;
-  font-size: clamp(1px, 1.5vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
   border-spacing: 0px;
   padding-bottom: 5px;
   width: 100%;
 }
+
 .html-lesson-wrapper .try-content table th,
 .html-lesson-wrapper .try-content table td {
   max-width: 120px;
@@ -233,53 +320,68 @@ body {
   word-wrap: break-word;
   border: 1px solid #f2f2f2;
 }
+
 .html-lesson-wrapper .try-content table th {
   background-color: #cc3366;
   color: #ffffff;
-  font-size: clamp(7px, 1.8vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
   padding: 5px;
 }
+
 .html-lesson-wrapper .try-content table td {
   text-align: left;
   padding: 1% 1% 5% 1%;
   background-color: #fff;
+  vertical-align: middle;
 }
+
 .html-lesson-wrapper .try-content .example {
   padding-left: 1%;
   margin-bottom: 0.5%;
+  line-height: 1.8;
 }
+
 .html-lesson-wrapper .act-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
+
 .html-lesson-wrapper .review-content .sub-text {
   font-family: "Trebuchet MS" !important;
   margin-bottom: 2%;
+  line-height: 1.8;
 }
+
 .html-lesson-wrapper .review-content ol {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
 }
+
 .html-lesson-wrapper .review-content .lsn {
   counter-reset: item;
   list-style-type: none;
 }
+
 .html-lesson-wrapper .review-content .lsn li:before {
   content: "Lsn " counter(item, decimal) ": ";
   counter-increment: item;
 }
+
 .html-lesson-wrapper .review-content .lsn .arrows {
   margin: 2% 0 2% 9%;
   font-weight: normal;
 }
+
 .html-lesson-wrapper .review-content .lsn .arrows .arrow-part span {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .review-content .lsn .arrows .arrow-part::before {
   left: -25px;
 }
+
 .html-lesson-wrapper footer {
   font-size: clamp(4.5px, 1.1vw, 9px);
   position: absolute;
@@ -292,6 +394,7 @@ body {
   font-family: Helvetica, Arial, "Sans-serif";
   max-width: 41%;
 }
+
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper {
     min-height: unset;
@@ -304,12 +407,13 @@ body {
   }
   .html-lesson-wrapper .try-content {
     margin-top: clamp(20px, 3.7vw, 30px);
-    padding-left: clamp(11px, 2.4vw, 18px);
+    padding-left: clamp(18px, 4.4vw, 18px);
   }
   .html-lesson-wrapper .act-content {
     margin-top: clamp(20px, 3.8vw, 36px);
   }
 }
+
 @media screen and (max-width: 600px) {
   .html-lesson-wrapper .line {
     margin: 0 6px;
@@ -323,26 +427,34 @@ body {
 }
 
 .html-lesson-wrapper .half {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 1em;
   width: 88%;
 }
+
 .html-lesson-wrapper .see-content table td:first-child {
   width: 9em;
 }
+
 .html-lesson-wrapper .see-content .paper {
+  line-height: normal;
   padding: 2%;
   border-color: #d8d8d8;
   border-style: solid;
   border-width: 2.25px;
 }
+
 .html-lesson-wrapper .see-content .paper p {
   margin: 0;
 }
+
 .html-lesson-wrapper .see-content .paper p:not(:last-child) {
   margin-bottom: 5%;
 }
+
 .html-lesson-wrapper .see-content .paper ol {
   margin: 0;
   margin-block: 0;
@@ -351,14 +463,17 @@ body {
   list-style-position: inside;
   margin-bottom: 5%;
 }
+
 .html-lesson-wrapper .see-content .paper ol > li {
   list-style: none;
 }
+
 .html-lesson-wrapper .see-content .paper ol > li:before {
   margin-right: 2%;
   content: counter(list, number) ") ";
   counter-increment: list;
 }
+
 .html-lesson-wrapper .try-content table tr.blank td {
   padding: 4%;
 }

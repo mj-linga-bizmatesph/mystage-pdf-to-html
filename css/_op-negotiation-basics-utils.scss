@@ -61,6 +61,7 @@ body {
     border-color: #d8d8d8;
     border-style: solid;
     border-width: 2.25px;
+    line-height: normal !important;
 
     &:not(:last-child) {
       margin-bottom: 3%;
@@ -78,7 +79,7 @@ body {
 
   .program-rank {
     position: absolute;
-    top: 1.5%;
+    top: 2em;
     left: 5%;
     color: #ffffff;
     font-size: 0px;
@@ -103,7 +104,7 @@ body {
 
   .title {
     position: absolute;
-    top: 2.3em;
+    top: 2.5em;
     left: 5%;
     font-size: clamp(18px, 4vw, 27px);
   }
@@ -133,7 +134,7 @@ body {
 
   .sub-text {
     font-family: $helvetica !important;
-    line-height: clamp(12px, 2.8vw, 22px);
+    line-height: 1.8;
     margin: 0 auto;
   }
 
@@ -150,7 +151,7 @@ body {
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
-    top: 2px;
+    top: 5px;
     left: -10.5%;
   }
 
@@ -206,18 +207,18 @@ body {
     .section {
       left: 0;
       margin-left: 5%;
-      line-height: 1.8em;
       margin-top: 3% !important;
-      width: clamp(20px, 8vw, 52px);
     }
 
     .pointers {
-      margin-top: 3% !important;
-      margin-left: clamp(50px, 14%, 126.5px);
+      margin-top: 3.3% !important;
+      margin-left: clamp(55px, 14.2%, 126.5px);
       padding-right: 1.5em;
+      line-height: normal;
 
       .no-arrow {
-        margin-left: -1.8em;
+        margin-left: -1.5em;
+        margin-bottom: clamp(6px, 1vw, 10px);
       }
     }
   }
@@ -317,6 +318,7 @@ body {
       text-indent: -1em;
       margin-block: 0;
       padding-inline: 0;
+      line-height: 1.8;
 
       li {
         padding-inline-start: 1em;
@@ -328,7 +330,14 @@ body {
         display: inline-block;
       }
     }
-
+    ul {
+      list-style-type: decimal;
+      margin: 0;
+      margin-left: 1em;
+      margin-block: 0;
+      padding-inline: 0;
+      line-height: 1.8;
+    }
     table {
       border-collapse: collapse;
       margin-top: 5px;
@@ -336,6 +345,7 @@ body {
       border-spacing: 0px;
       padding-bottom: 5px;
       width: 100%;
+      line-height: normal;
 
       th,
       td {
@@ -356,6 +366,7 @@ body {
         padding: 1% 1% 1.5% 1%;
         background-color: #fff;
         vertical-align: top;
+        line-height: normal;
       }
     }
 
@@ -364,6 +375,19 @@ body {
       padding-left: 1%;
       margin-top: 1%;
       margin-bottom: 0.5%;
+    }
+
+    .th-15 {
+      width: 15% !important;
+    }
+    .th-25 {
+      width: 25% !important;
+    }
+    .th-40 {
+      width: 40% !important;
+    }
+    .th-20 {
+      width: 20% !important;
     }
   }
 
@@ -437,7 +461,6 @@ body {
     }
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
@@ -449,6 +472,18 @@ body {
       border-left: 3.5px solid transparent !important;
       border-right: 3.5px solid transparent !important;
       border-top-width: 5.5px !important;
+    }
+  }
+
+  .biz-tip-content .pointers {
+    @media screen and (max-width: 429px) {
+      margin-left: clamp(65px, 14.2%, 126.5px);
+    }
+    @media screen and (max-width: 391px) {
+      margin-left: clamp(60px, 14.2%, 126.5px);
+    }
+    @media screen and (max-width: 376px) {
+      margin-left: clamp(58px, 14.2%, 126.5px);
     }
   }
 }

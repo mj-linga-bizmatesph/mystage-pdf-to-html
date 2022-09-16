@@ -2,8 +2,13 @@
 
 .html-lesson-wrapper {
   .try-content {
-    ol {
+    ol,
+    ul {
       margin-left: 1.5em;
+      line-height: normal !important;
+      li {
+        padding-left: 5px !important;
+      }
     }
   }
 }

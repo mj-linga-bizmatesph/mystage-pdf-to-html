@@ -563,6 +563,14 @@ body {
     padding-left: 10px !important;
   }
 }
+@media screen and (min-width: 960px) {
+  .html-lesson-wrapper .words-phrase-content {
+    margin-top: clamp(87px, 25%, 131px);
+  }
+  .html-lesson-wrapper .speaker {
+    width: 18%;
+  }
+}
 @media only screen and (min-width: 1000px) and (max-width: 1576px) {
   .html-lesson-wrapper .title {
     top: 70px !important;

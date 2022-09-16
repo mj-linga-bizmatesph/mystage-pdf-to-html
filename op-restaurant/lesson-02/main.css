@@ -70,10 +70,16 @@ body {
 
 .html-lesson-wrapper .title {
   position: absolute;
-  top: 80px;
+  top: 75px;
   left: 48px;
   font-size: clamp(18px, 4vw, 27px);
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1280px) {
+  .html-lesson-wrapper .title {
+    top: 81px;
+  }
 }
 
 .html-lesson-wrapper .lesson-number {
@@ -217,7 +223,7 @@ body {
 
 .html-lesson-wrapper .words-phrase-content {
   position: relative;
-  margin-top: clamp(87px, 17.6%, 157px);
+  margin-top: clamp(70px, 28%, 140px) !important;
   padding: 2px 0px 0px 47px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -233,7 +239,7 @@ body {
 }
 
 .html-lesson-wrapper .words-phrase-content .words {
-  margin-top: 2.5%;
+  margin-top: 3% !important;
   white-space: nowrap;
 }
 
@@ -246,7 +252,7 @@ body {
 .html-lesson-wrapper .words-phrase-content .pointers {
   line-height: normal;
   margin-right: 4em;
-  margin-top: clamp(14px, 2.8vw, 23px) !important;
+  margin-top: clamp(14px, 1.6vw, 23px) !important;
   margin-left: 6.5%;
 }
 
@@ -317,7 +323,7 @@ body {
 }
 
 .html-lesson-wrapper .see-content .convo .row .person {
-  width: 10%;
+  width: 13%;
 }
 
 @media screen and (max-width: 900px) {
@@ -571,4 +577,12 @@ body {
   .html-lesson-wrapper .arrow-part {
     padding-left: 10px !important;
   }
+}
+
+.html-lesson-wrapper footer .footer-text {
+  text-align: right;
+  position: absolute;
+  bottom: -9px;
+  max-width: 42%;
+  right: 6.2%;
 }

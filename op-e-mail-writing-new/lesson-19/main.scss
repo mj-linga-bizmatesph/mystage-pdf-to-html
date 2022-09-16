@@ -5,11 +5,21 @@
 }
 .see-content{
   ul{
-    // list-style-position: inside;
+    
     line-height: 1.8 !important;
     padding-left: 16px;
     li{
-      // padding-left: 0;
+      
     }
+  }
+}
+.section.act{
+  line-height: 1.8;
+}
+
+.try-content {
+  .numbers {
+    margin-left: 3%;
+    width: 90%;
   }
 }

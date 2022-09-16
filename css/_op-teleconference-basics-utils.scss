@@ -29,8 +29,7 @@ body {
   height: fit-content;
   overflow: hidden;
   padding-bottom: 62px;
-  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg),
-    url(#{$s3}/other-programs-footer-logo.svg);
+  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg), url(#{$s3}/other-programs-footer-logo.svg);
   background-position: top, bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -49,9 +48,9 @@ body {
     position: relative;
     box-sizing: border-box;
     padding-right: 10%;
-    bottom: -20px;
+    bottom: -30px;
     @media only screen and (max-width: 767px) {
-      bottom: -45px;
+      bottom: -40px;
     }
     .footer-text {
       font-size: clamp(4.5px, 1.1vw, 9px);
@@ -200,17 +199,15 @@ body {
     position: absolute;
     color: #ffffff;
     margin-top: clamp(10px, 3vw, 25px);
-    margin-left: clamp(10px, 4vw, 60px);
+    margin-left: clamp(10px, 4vw, 48px);
     font-size: clamp(8px, 1.8vw, 15px);
 
     .type {
-      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background-color: $text-pink;
     }
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
-        clamp(10px, 3vw, 17px);
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
       background: $rank-green;
       max-width: 100%;
       margin-left: -2%;
@@ -224,17 +221,22 @@ body {
   }
   .lesson-number {
     position: absolute;
-    right: 6.4%;
+    right: 6.6%;
     width: 1.5%;
     text-align: center;
-    margin-top: 7.8%;
+    margin-top: 7%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
-    font-weight: bold;
+    @media screen and (max-width: 850px) {
+      margin-top: 7.7%;
+    }
     @media only screen and (max-device-width: 767px) {
-      margin-top: 7%;
+      margin-top: 7.5%;
       &.two {
         right: 7.4% !important;
+      }
+      &.one {
+        right: 7%;
       }
     }
     &.two {
@@ -254,7 +256,7 @@ body {
       font-family: $helvetica;
       font-size: clamp(18px, 4vw, 27px);
       margin-right: clamp(10px, 3vw, 25px);
-      margin-left: clamp(10px, 4vw, 60px);
+      margin-left: clamp(10px, 4vw, 48px);
       padding-top: 2%;
       padding-bottom: 7%;
       @media only screen and (max-device-width: 767px) {
@@ -283,19 +285,38 @@ body {
         margin-bottom: 1rem !important;
       }
       .biz-tip-label {
-        width: 11%;
+        width: 12%;
         font-family: $helvetica;
         color: $text-pink;
         font-weight: bold;
         margin-top: clamp(10px, 3vw, 20px);
-        padding-left: clamp(10px, 4vw, 60px);
+        padding-left: clamp(10px, 4vw, 48px);
+
+        @media screen and (max-width: 340px) {
+          width: 13%;
+        }
       }
       .biz-tip-content {
         font-family: $trebuchet;
-        width: 89%;
-        margin-top: clamp(10px, 3vw, 20px);
+        width: 75%;
+        margin-top: clamp(8px, 2.4vw, 18px);
         padding-right: clamp(10px, 2vw, 20px);
         padding-bottom: 1rem;
+        line-height: normal;
+        margin-left: -1.5%;
+
+        @media screen and (max-width: 959px) {
+          margin-left: 1%;
+        }
+        @media screen and (max-width: 768px) {
+          margin-left: -2%;
+        }
+        @media screen and (max-width: 431px) {
+          margin-left: 6%;
+        }
+        @media screen and (max-width: 340px) {
+          margin-left: 4.5%;
+        }
         p {
           margin: 0;
         }
@@ -305,6 +326,7 @@ body {
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
+          margin-top: 1%;
           li {
             list-style-position: outside;
             text-indent: -1em;
@@ -315,6 +337,7 @@ body {
             content: '';
             display: block;
             width: 0.5em;
+            height: 0;
           }
           li::marker {
             font-size: clamp(11px, 2vw, 13px);
@@ -351,19 +374,23 @@ body {
       @media only screen and (max-device-width: 767px) {
         width: 11% !important;
       }
+      @media only screen and (max-device-width: 431px) {
+        width: 22% !important;
+      }
       .content-label-text {
         font-weight: bold;
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
-        padding-left: clamp(10px, 4vw, 60px);
+        padding-left: clamp(10px, 4vw, 48px);
+        padding-top: clamp(3px, 0.5vw, 5px);
       }
     }
     &.review {
       .content-label {
-        width: 17%;
+        width: 18%;
         @media only screen and (max-device-width: 767px) {
-          width: 19% !important;
+          width: 24% !important;
         }
       }
     }
@@ -372,13 +399,14 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
+      line-height: 1.8;
       .header-text {
         margin: 0;
-        width: 104%;
+        width: 102%;
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
-        line-height: clamp(12px, 4vw, 22px);
+        line-height: 1.8;
         margin-top: clamp(-2px, -1vw, -3px);
       }
       .content-header {
@@ -389,13 +417,14 @@ body {
         .dialogue {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
-          line-height: clamp(19px, 3vw, 24px);
+          line-height: 1.8;
           .speaker {
             width: 12%;
             font-weight: bold;
           }
           .message {
             width: 88%;
+            max-width: 480px !important;
           }
         }
         .dialogue-spacer {
@@ -411,6 +440,7 @@ body {
           font-size: clamp(12px, 2vw, 15px);
           width: 100%;
           border-collapse: collapse;
+          line-height: normal;
           .table-header {
             width: 33.3%;
             color: white;
@@ -435,10 +465,15 @@ body {
       }
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
+        padding-left: 5%;
+
+        @media screen and (max-width: 340px) {
+          padding-left: 4.5%;
+        }
         .review-box {
           font-family: $trebuchet;
           font-size: clamp(12px, 2vw, 15px);
-          line-height: clamp(12px, 4vw, 20px);
+          line-height: normal;
           padding: clamp(5px, 2vw, 10px);
           border: 5px solid $tertiary-gray;
           margin-bottom: 2%;
@@ -450,6 +485,7 @@ body {
             padding: 0;
             list-style-type: '\25BC';
             box-sizing: content-box;
+            padding-left: 0%;
             li {
               list-style-position: outside;
               text-indent: -1em;
@@ -461,6 +497,7 @@ body {
               content: '';
               display: block;
               width: 0.5em;
+              height: 0;
             }
             li::marker {
               font-size: clamp(11px, 2vw, 13px);
@@ -469,7 +506,7 @@ body {
         }
       }
       &.review-part-2 {
-        padding-right: clamp(15px, 7vw, 55px);
+        padding-right: clamp(6px, 1vw, 16px);
         p.part-2-content {
           margin: 0;
           font-family: $trebuchet;

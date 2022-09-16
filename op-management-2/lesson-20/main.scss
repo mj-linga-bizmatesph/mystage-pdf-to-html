@@ -1,10 +1,31 @@
 @import '../../css/op-management-2-utils';
 
 .html-lesson-wrapper {
-  .review-content {
-    .alphabet {
-      li {
-        margin-bottom: 0;
+  .header {
+    margin-bottom: 0px;
+  }
+  .lessons {
+    line-height: 1.8em;
+  }
+  .content-div {
+    .header {
+      font-weight: bold;
+    }
+    .lower-alpha {
+      list-style-type: lower-alpha;
+      padding-left: 20px;
+    }
+    ol {
+      list-style-type: none;
+    }
+    li {
+      line-height: 1.8em;
+    }
+    &.see {
+      .header-text {
+        @media only screen and (max-width: 400px) {
+          padding-left: 4%;
+        }
       }
     }
   }

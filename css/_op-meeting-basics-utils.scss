@@ -55,11 +55,21 @@ body {
       bottom: -45px;
     }
     .footer-text {
+      font-size: clamp(4.5px, 1.1vw, 9px);
       text-align: right;
       position: absolute;
       bottom: 0;
-      max-width: 45%;
+      max-width: 43%;
       right: 2%;
+      @media only screen and (max-width: 767px) {
+        max-width: 115px;
+      }
+      .footer-text-1 {
+        display: inline-block;
+      }
+      .footer-text-2 {
+        display: inline-block;
+      }
     }
   }
   .inline-block {
@@ -118,7 +128,7 @@ body {
       background-color: $text-pink;
     }
     .level {
-      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px)
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 8px) clamp(1px, 1vw, 2px)
         clamp(10px, 3vw, 17px);
       background: $rank-green;
       width: 100%;
@@ -195,8 +205,8 @@ body {
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
         padding-left: clamp(10px, 6vw, 60px);
-        @media only screen and (max-device-width: 460px) {
-          width: 12%;
+        @media only screen and (max-device-width: 400px) {
+          width: 15%;
         }
       }
       .biz-tip-content {
@@ -207,8 +217,14 @@ body {
         padding-right: clamp(15px, 14vw, 175px);
         padding-bottom: 1rem;
         margin-right: 1em;
+        line-height: normal;
         p {
           margin: 0;
+          width: 145%;
+          line-height: normal;
+          @media only screen and (max-width:400px) {
+            width: 115%;
+          }
         }
         ul {
           margin: 0;
@@ -221,6 +237,10 @@ body {
             text-indent: -1em;
             margin-left: 0.8em;
             padding-left: 0.5em;
+            width: 130%;
+            @media only screen and (max-width: 400px) {
+              width: 110%;
+            }
           }
           li::before {
             content: '';
@@ -260,11 +280,13 @@ body {
       width: 15%;
       color: $text-pink;
       .content-label-text {
+        width: 60%;
         font-weight: bold;
         font-size: clamp(12px, 2vw, 15px);
         vertical-align: middle;
         padding-left: clamp(10px, 6vw, 60px);
         font-family: $helvetica;
+        margin-top: 2%;
       }
     }
     &.review {
@@ -280,12 +302,16 @@ body {
       margin-bottom: 15px;
       box-sizing: content-box;
       padding-left: clamp(10px, 3vw, 25px);
+      line-height: 1.8em;
+      @media only screen and (max-width: 400px) {
+        margin-left: 3%;
+      }
       .header-text {
         margin: 0;
         font-family: $helvetica;
         font-size: clamp(12px, 2vw, 15px);
         font-weight: bold;
-        line-height: 1.6;
+        line-height: 1.8em;
         margin-top: clamp(-2px, -1vw, -3px);
         margin-right: 1em;
       }
@@ -294,7 +320,7 @@ body {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
           line-height: 1.6;
-          margin-right: 1em;
+          margin-right: 1.8em;
           .speaker {
             width: 12%;
             font-weight: bold;
@@ -302,6 +328,7 @@ body {
           }
           .message {
             width: 88%;
+            line-height: 1.8em;
             @media only screen and (max-device-width: 400px) {
               padding-left: 0.8em;
               font-family: $trebuchet;
@@ -317,11 +344,27 @@ body {
         }
       }
       &.try {
+        .review-box {
+          &.try {
+            font-family: "Trebuchet MS";
+            font-size: clamp(12px,2vw,15px);
+            padding: clamp(2px,1vw,5px) clamp(5px,2vw,10px);
+            border: 3px solid #d9d9d9;
+            margin-bottom: 3%;
+            line-height: normal;
+            &:last-child {
+              margin-bottom: 0;
+              line-height: normal;
+              padding: clamp(2px,1vw,5px) clamp(5px,2vw,10px);
+            }
+          }
+        }
         .content-table {
           font-size: clamp(12px, 2vw, 15px);
           width: 96%;
           border-collapse: collapse;
           margin-right: 1.5em;
+          line-height: normal;
           .table-header {
             width: 50%;
             color: white;
@@ -339,6 +382,7 @@ body {
           td {
             padding: 0.5%;
             padding-left: clamp(5px, 1vw, 10px);
+            line-height: normal;
             @media screen and (max-width: 460px) {
               padding-bottom: 1%;
             }
@@ -354,7 +398,10 @@ body {
       &.review-part-1 {
         padding-right: clamp(15px, 7vw, 55px);
         .header-text {
-          line-height: 1.6;
+          line-height: 1.8em;
+          @media only screen and (max-width: 400px) {
+            width: 110%;
+          }
         }
         .review-box {
           font-family: $trebuchet;
@@ -362,8 +409,11 @@ body {
           padding: clamp(2px, 1vw, 5px) clamp(5px, 2vw, 10px);
           border: 3px solid $tertiary-gray;
           margin-bottom: 3%;
+          line-height: normal;
           &:last-child {
             margin-bottom: 0;
+            line-height: normal;
+            padding: 2%;
           }
           p {
             margin: 0;
@@ -398,13 +448,13 @@ body {
       &.review-part-2 {
         padding-right: clamp(15px, 7vw, 55px);
         .header-text {
-          line-height: 1.6;
+          line-height: 1.8em;
         }
         p.part-2-content {
           margin: 0;
           font-family: $trebuchet;
           font-size: clamp(12px, 2vw, 15px);
-          line-height: 1.6;
+          line-height: 1.8em;
         }
       }
     }

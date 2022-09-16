@@ -14,6 +14,7 @@
     }
 
     .paper {
+      line-height: normal;
       padding: 1%;
       border-color: black;
       border-style: solid;
@@ -59,9 +60,14 @@
   }
 
   .try-content {
-    table {
-      tr.blank td {
-        padding: 4%;
+    .scroll {
+      @media screen and (max-width: 571px) {
+        overflow: scroll;
+      }
+      table {
+        tr.blank td {
+          padding: 4%;
+        }
       }
     }
   }

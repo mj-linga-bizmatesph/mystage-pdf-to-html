@@ -3,6 +3,9 @@
   .lesson-number {
     left: clamp(91%, 91.5vw, 91.7%) !important;
   }
+  .speaker-text {
+    padding-left: clamp(8px, 2vw, 19px) !important;
+  }
   .sub-text-wrapper {
     margin-top: -13px !important;
   }

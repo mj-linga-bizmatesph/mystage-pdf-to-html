@@ -198,16 +198,10 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-weight: bold;
     font-family: $helvetica;
     font-size: clamp(12px, 2vw, 15px);
-<<<<<<< HEAD
-    line-height: 1.8;
-    @media only screen and (max-width: 425px) {
-      width: 50%;
-=======
     margin-top: 0.5%;
 
     @media only screen and (max-width: 425px) {
       width: 14%;
->>>>>>> a10081bdae2602d16134d15d171529ae950d7357
     }
   }
 
@@ -217,12 +211,6 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     min-width: 75%;
     padding-right: 5%;
     font-size: clamp(12px, 2vw, 15px);
-<<<<<<< HEAD
-    @media only screen and (max-width: 460px) {
-      margin-left: clamp(0px,2.5vw,36px);
-    }
-=======
->>>>>>> a10081bdae2602d16134d15d171529ae950d7357
   }
 
   .biz-tip-content {

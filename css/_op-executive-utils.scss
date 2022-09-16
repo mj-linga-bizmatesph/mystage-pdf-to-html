@@ -149,7 +149,7 @@ body {
     right: 6.5%;
     width: 1.9%;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 7.2%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
     @media only screen and (max-width: 767px) {
@@ -218,7 +218,7 @@ body {
         width: 100%;
         font-size: clamp(12px, 2vw, 15px);
         margin-top: clamp(10px, 3vw, 20px);
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         margin-right: 1em;
         line-height: normal;
         p {
@@ -347,7 +347,9 @@ body {
           .message {
             width: 85%;
             font-family: $trebuchet;
-
+            @media only screen and (min-width: 959px) {
+              max-width: 85% !important;
+            }
             @media only screen and (max-width: 480px) {
               width: 80% !important;
             }

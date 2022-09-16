@@ -188,19 +188,11 @@ body {
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 2vw, 15px);
-<<<<<<< HEAD
-  line-height: 1.8;
-}
-@media only screen and (max-width: 425px) {
-  .html-lesson-wrapper .section {
-    width: 50%;
-=======
   margin-top: 0.5%;
 }
 @media only screen and (max-width: 425px) {
   .html-lesson-wrapper .section {
     width: 14%;
->>>>>>> a10081bdae2602d16134d15d171529ae950d7357
   }
 }
 .html-lesson-wrapper .content {
@@ -210,14 +202,6 @@ body {
   padding-right: 5%;
   font-size: clamp(12px, 2vw, 15px);
 }
-<<<<<<< HEAD
-@media only screen and (max-width: 460px) {
-  .html-lesson-wrapper .content {
-    margin-left: clamp(0px, 2.5vw, 36px);
-  }
-}
-=======
->>>>>>> a10081bdae2602d16134d15d171529ae950d7357
 .html-lesson-wrapper .biz-tip-content {
   margin-top: clamp(70px, 28%, 140px);
   height: -webkit-fit-content;
@@ -434,8 +418,6 @@ body {
   list-style-position: outside;
   margin-left: 1em;
   padding-left: 0.5em;
-<<<<<<< HEAD
-=======
   margin-bottom: -0.4em;
   line-height: 1.8em;
 }
@@ -443,7 +425,6 @@ body {
   content: "";
   display: block;
   width: 0.5em;
->>>>>>> a10081bdae2602d16134d15d171529ae950d7357
 }
 .html-lesson-wrapper .see-content .example ul li::marker {
   font-size: clamp(9px, 2vw, 13px);

@@ -242,7 +242,7 @@ body {
     .pointers {
       font-size: clamp(12px, 2vw, 15px);
       margin-top: 3% !important;
-      margin-left: clamp(50px, 15%, 96.5px);
+      margin-left: clamp(50px, 20%, 126.5px);
 
       .no-arrow {
         margin-bottom: 1em;
@@ -289,7 +289,7 @@ body {
   }
 
   .context {
-    margin-left: clamp(6px, 10vw, 18px);
+    margin-left: clamp(6px, 10vw, 50px);
     font-size: clamp(12px, 2vw, 15px);
     @media screen and (max-width: 900px){
       margin-left: 3%;

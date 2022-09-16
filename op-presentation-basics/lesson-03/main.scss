@@ -3,7 +3,7 @@
 .html-lesson-wrapper {
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
   }
   .biz-tip-content {
     table {
@@ -20,7 +20,7 @@
         td {
           width: 47%;
           .arrow-part {
-            width: 90%;
+            width: 100%;
           }
         }
         @media screen and (max-width: 600px) {
@@ -73,6 +73,31 @@
       table {
         font-size: clamp(8.7px, 2vw, 13.5px);
       }
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .biz-tip-content {
+      .arrow-part:before {
+        left: -7.5% !important;
+      }
+    }
+    .try-content table {
+      margin-left: 2px;
+    }
+    .try-content .sub-text {
+      margin-left: 4px;
+    }
+    .act-content .sub-text {
+      margin-left: -4px;
+    }
+    .try-content .p-1,
+    .try-content .p-2,
+    .try-content .p-3 {
+      line-height: 1.8;
+      margin-left: 4px;
     }
   }
 }

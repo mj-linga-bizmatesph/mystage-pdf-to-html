@@ -1,11 +1,14 @@
 @import '../../css/_op-e-mail-writing-new-utils.scss';
 .see-content{
-    ul{
-      // list-style-position: inside;
-      line-height: 1.8 !important;
-      padding-left: 16px;
-      li{
-        // padding-left: 0;
-      }
+  ul{
+    
+    line-height: 1.8 !important;
+    padding-left: 16px;
+    li{
+      
     }
   }
+}
+.section.act{
+  line-height: 1.8;
+}

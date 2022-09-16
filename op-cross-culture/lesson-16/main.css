@@ -160,6 +160,11 @@ body {
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
 }
+@media screen and (min-width: 960px) {
+  .html-lesson-wrapper .words-phrase-content {
+    margin-top: clamp(87px, 28%, 138px) !important;
+  }
+}
 .html-lesson-wrapper .words-phrase-content .section {
   margin-left: clamp(43px, 14.1%, 163.5px) !important;
   margin-top: clamp(12px, 2.8vw, 21px) !important;
@@ -502,6 +507,9 @@ body {
 }
 .html-lesson-wrapper .lesson-number {
   left: clamp(91%, 91.5vw, 91.7%) !important;
+}
+.html-lesson-wrapper .speaker-text {
+  padding-left: clamp(8px, 2vw, 19px) !important;
 }
 .html-lesson-wrapper .sub-text-wrapper {
   margin-top: -13px !important;

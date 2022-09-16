@@ -19,6 +19,12 @@
 
   .see-content {
     ol {
+      @media screen and (max-width: 828px) {
+        margin-left: 1.3em;
+      }
+      @media screen and (max-width: 600px) {
+        margin-left: 1.5em;
+      }
       li {
         line-height: 1.8em;
       }

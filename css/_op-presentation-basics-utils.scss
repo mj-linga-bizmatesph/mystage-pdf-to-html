@@ -14,20 +14,16 @@ body {
 }
 
 .html-lesson-wrapper {
-  width: 100%;
-  min-width: 320px;
   max-width: 100%;
+  min-width: 320px;
   max-width: 892.75px;
   min-height: 960px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   position: relative;
-  padding-bottom: clamp(3em, 12vw, 9em);
-  background-image: url(#{$s3}/OP-Starter-bg-header.svg),
-    url(#{$s3}/other-programs-footer-logo-bare.svg);
-  background-position: top, clamp(-15px, -2vw, -8px) bottom;
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
+  background-position: top, -11.5px 100%;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: $trebuchet;
@@ -50,22 +46,22 @@ body {
 
   .program-rank {
     position: absolute;
-    top: 3.05%;
-    left: 5%;
+    top: 40px;
+    left: 48px;
     color: #ffffff;
     font-size: 0px;
-    white-space: nowrap;
-
     .type {
-      padding: 0.7% 3% 0.7% 3%;
+      padding: 3px 16px 3px 14px;
       background-color: $magenta;
       font-size: clamp(8px, 1.8vw, 15px);
     }
-
     .level {
-      padding: 0.7% 3% 0.7% 3%;
+      padding: 3px 12px 3px 13px;
       background-color: $blue-green;
       font-size: clamp(8px, 1.8vw, 15px);
+      .add-space {
+        margin-left: clamp(5px, 2vw, 15px);
+      }
     }
   }
 
@@ -75,15 +71,16 @@ body {
 
   .title {
     position: absolute;
-    top: clamp(4.5%, 18vw, 6.1%);
-    left: 5%;
+    width: 85%;
+    top: 80px;
+    left: 48px;
     font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
   }
-
   .lesson-number {
     position: absolute;
-    left: 94.8%;
-    margin-top: 4.8%;
+    left: clamp(91.5%, 93vw, 92%);
+    margin-top: 7.4%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
   }
@@ -108,6 +105,7 @@ body {
     font-family: $helvetica !important;
     line-height: clamp(12px, 2.8vw, 22px);
     margin: 0 auto;
+    line-height: 1.8 !important;
   }
 
   .magenta-color {
@@ -119,8 +117,8 @@ body {
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
-    top: 2px;
-    left: -10.5%;
+    left: -8.8%;
+    line-height: 1.8;
   }
 
   .divider {
@@ -148,6 +146,10 @@ body {
     padding-bottom: 1.5%;
   }
 
+  .th-20 {
+    width: 20% !important;
+  }
+
   .see-content,
   .act-content,
   .try-content,
@@ -156,15 +158,18 @@ body {
     margin-left: clamp(50px, 14%, 126.5px);
     padding-left: 18.5px;
     padding-right: 42px;
-    font-size: clamp(10px, 2vw, 13.5px);
+    font-size: clamp(12px, 2vw, 15px) !important;
   }
 
   .biz-tip-content {
+    margin-top: clamp(75px, 25%, 165px) !important;
+    line-height: normal !important;
     table {
       tr {
         td {
           vertical-align: top;
           .arrow-part {
+            margin-top: 2px !important;
             margin-right: 5%;
           }
         }
@@ -177,7 +182,6 @@ body {
         tr {
           td {
             height: 10px;
-            line-height: 1em;
           }
         }
       }
@@ -201,9 +205,9 @@ body {
 
     .section {
       left: 0;
-      margin-left: 5%;
+      margin-left: 6.5%;
       line-height: 1.8em;
-      margin-top: 3% !important;
+      margin-top: 2.2% !important;
     }
 
     .pointers {
@@ -211,8 +215,9 @@ body {
       margin-left: clamp(50px, 14%, 126.5px);
 
       .no-arrow {
-        margin-left: -3.6%;
-        margin-right: 16%;
+        margin-left: -3.8%;
+        margin-right: 8%;
+        margin-bottom: clamp(6px, 1vw, 10px);
       }
     }
   }
@@ -246,12 +251,20 @@ body {
     margin-bottom: 1.5%;
   }
 
+  .lh-1-8 {
+    line-height: 1.8 !important;
+  }
+
+  .lh-normal {
+    line-height: normal !important;
+  }
+
   .see-content {
     margin-top: 4.1%;
 
     .article {
       margin-top: 5px;
-      line-height: 1.7em;
+      line-height: 1.8em;
       margin-bottom: 29px;
 
       span.highlight {
@@ -262,12 +275,23 @@ body {
 
     table {
       border-collapse: collapse;
+      tr th {
+        line-height: 1.8;
+      }
+      .arrow-part p {
+        margin: 0;
+        position: relative;
+        padding: 0 !important;
+
+        &:not(:last-child) {
+          margin-bottom: 5%;
+        }
+      }
 
       p {
         margin: 0;
-        line-height: 1.8em;
-        top: -0.3em;
         position: relative;
+        padding: 1%;
 
         &:not(:last-child) {
           margin-bottom: 5%;
@@ -282,6 +306,9 @@ body {
   }
 
   .try-content {
+    table {
+      line-height: normal !important;
+    }
     ul {
       list-style-type: decimal;
       margin: 0;
@@ -306,6 +333,7 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    margin-bottom: clamp(50px, 13vw, 120px);
 
     table {
       margin-top: 5px;
@@ -379,10 +407,18 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     text-align: right;
-    bottom: 1.5%;
+    bottom: 2.8%;
     right: 6.2%;
     font-family: $helvetica;
     max-width: 41%;
+
+    @media screen and (max-width: 428px) {
+      bottom: 1.7%;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
   }
 
   @media screen and (max-width: 900px) {
@@ -398,7 +434,35 @@ body {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
   }
-
+  @media screen and (max-width: 768px) {
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: clamp(23px, 4vw, 48px);
+    }
+    .title {
+      top: clamp(45px, 8.4vw, 80px);
+      left: clamp(23px, 3.1vw, 55px);
+    }
+    .divider {
+      &.d1,
+      &.d2 {
+        margin-top: clamp(18px, 3.4vw, 28px);
+      }
+    }
+    .section {
+      left: calc(-15% + 20px);
+    }
+    .section.words {
+      left: calc(-13.3% + 22px);
+    }
+    .arrow-part {
+      &:before {
+        left: -10% !important;
+        top: clamp(4px, 0vw, 1.2vw) !important;
+      }
+    }
+  }
   @media screen and (max-width: 600px) {
     .biz-tip-content {
       margin-top: 30%;
@@ -421,15 +485,8 @@ body {
     }
     .review-content {
       .arrow-part:before {
-        left: -1em;
+        left: -1.2em !important;
       }
-
-      p {
-        line-height: 1em !important;
-      }
-    }
-    p {
-      line-height: 1rem !important;
     }
     .see-content {
       table tr td {
@@ -437,35 +494,17 @@ body {
       }
     }
   }
+  @media screen and (max-width: 428px) {
+    .offset {
+      margin-left: -3px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+  }
   @media screen and (max-width: 360px) {
-    .title {
-      position: absolute;
-      top: clamp(4.5%, 18vw, 6.1%);
-      left: 5%;
-      right: 5%;
-      font-size: clamp(18px, 4vw, 27px);
-    }
-    .biz-tip-content {
-      .no-arrow {
-        line-height: 1em;
-      }
-      .arrow-part:before {
-        left: -1.1em;
-      }
-      margin-top: 35%;
-      table {
-        tr {
-          td {
-            .arrow-part {
-              margin-right: 7%;
-            }
-          }
-          th {
-            padding-bottom: 10px !important;
-          }
-        }
-      }
-    }
     .biz-tip-content,
     .see-content,
     .try-content,

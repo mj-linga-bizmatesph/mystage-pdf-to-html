@@ -2,11 +2,15 @@
 
 .html-lesson-wrapper {
   .lesson-number {
-    left: 94.4% !important;
+    left: 91.5% !important;
+  }
+  .see-content table p {
+    padding: 0 !important;
+    top: 0 !important;
   }
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
   }
   .biz-tip-content {
     table {
@@ -39,10 +43,10 @@
       }
       tr td {
         border: 2.1px solid #d8d8d8;
-        padding: 10px;
         min-height: 150px;
         margin-bottom: 5%;
         margin-right: 5%;
+        padding: 1.5% 1.5% 1.5% 2% !important;
         .tbl-inner {
           width: 100% !important;
           tr td {
@@ -79,6 +83,22 @@
         ol {
           margin-top: 0%;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .arrow-part:before {
+      left: -8% !important;
+    }
+
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .try-content {
+      .tbl-footer,
+      table,
+      p.sub-text.b {
+        margin-left: 4.5px;
       }
     }
   }

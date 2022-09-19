@@ -3,7 +3,7 @@
 .html-lesson-wrapper {
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 95%;
   }
   .see-img {
     width: 100%;
@@ -12,7 +12,7 @@
     z-index: 0;
   }
   p {
-    line-height: 1.8rem;
+    line-height: 1.8;
   }
   .biz-tip-content {
     table {
@@ -76,6 +76,17 @@
       padding-bottom: 1%;
       position: relative;
       z-index: 1;
+      margin-bottom: 7px;
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .biz-tip-content {
+      .arrow-part:before {
+        left: -4% !important;
+      }
     }
   }
   @media screen and (max-width: 360px) {

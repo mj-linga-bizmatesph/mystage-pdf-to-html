@@ -1,1 +1,15 @@
 @import '../../css/_op-e-mail-writing-new-utils.scss';
+
+.part-1{
+    .dialogue{
+        font-size: clamp(12px,2vw,15px) !important;
+    }
+    .section{
+        line-height: 1.8 !important;
+    }
+}
+.part-content{
+    .section{
+        width: clamp(3.1rem,16%,8rem);
+    }
+}

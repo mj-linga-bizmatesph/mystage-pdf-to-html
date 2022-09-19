@@ -6,4 +6,16 @@
       line-height: 1.8em;
     }
   }
+  ul {
+    line-height: 1.8;
+    margin-left: 17px;
+
+    &.decimal {
+      list-style: decimal;
+    }
+
+    li {
+      padding-left: 15px;
+    }
+  }
 }

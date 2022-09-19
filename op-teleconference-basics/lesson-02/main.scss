@@ -34,9 +34,15 @@
             content: '';
             display: block;
             width: 0.5em;
+            height: 0;
           }
           li::marker {
             font-size: clamp(11px, 2vw, 13px);
+          }
+        }
+        li {
+          div {
+            margin-left: 2%;
           }
         }
       }

@@ -9,4 +9,19 @@
   .arrow-part {
     margin-left: 1.5em;
   }
+  ul {
+    line-height: 1.8 !important;
+    margin-left: 17px;
+
+    &.decimal {
+      list-style: decimal;
+    }
+
+    li {
+      padding-left: 15px;
+    }
+  }
+  .arrow-part:before {
+    margin-top: 8px;
+  }
 }

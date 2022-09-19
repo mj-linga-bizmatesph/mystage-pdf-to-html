@@ -20,4 +20,13 @@
       width: 100%;
     }
   }
+  .content-div {
+    &.review-part-2 {
+      .part-2-content {
+        list-style-type: decimal;
+        font-size: clamp(12px, 2vw, 15px);
+        margin-left: 3.5%;
+      }
+    }
+  }
 }

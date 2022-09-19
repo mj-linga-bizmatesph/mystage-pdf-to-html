@@ -1,12 +1,18 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  .see-content table p {
+    top: 0em;
+  }
+  .see-content table p {
+    padding: 1% !important;
+  }
   .lesson-number {
-    left: 94.4% !important;
+    left: 91.5% !important;
   }
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
   }
   .biz-tip-content {
     table {
@@ -79,6 +85,22 @@
         ol {
           margin-top: 0%;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .arrow-part:before {
+      left: -8% !important;
+    }
+
+    .section.words {
+      left: calc(-13.3% + 49px);
+    }
+    .try-content {
+      .tbl-footer,
+      table,
+      p.sub-text.b {
+        margin-left: 4.5px;
       }
     }
   }

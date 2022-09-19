@@ -63,10 +63,13 @@ body {
   }
   .title {
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: 48px;
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
+    @media screen and (max-width: 1280px){
+      top: 81px;
+    }
   }
   .lesson-number {
     position: absolute;
@@ -164,7 +167,7 @@ body {
   }
   .words-phrase-content {
     position: relative;
-    margin-top: clamp(87px, 17.6%, 157px);
+    margin-top: clamp(70px,28%,140px) !important;
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
@@ -176,7 +179,7 @@ body {
       margin-left: 4.2em;
     }
     .words {
-      margin-top: 2.5%;
+      margin-top: 3% !important;
       white-space: nowrap;
       @media screen and (max-width: 500px) {
         margin-left: -2%;
@@ -185,7 +188,7 @@ body {
     .pointers {
       line-height: normal;
       margin-right: 4em;
-      margin-top: clamp(14px, 2.8vw, 23px) !important;
+      margin-top: clamp(14px, 1.6vw, 23px) !important;
       margin-left: 6.5%;
       .text-header {
         margin-bottom: 0.8em;
@@ -236,7 +239,7 @@ body {
       .row {
         line-height: 1.8;
         .person {
-          width: 10%;
+          width: 13%;
           @media screen and (max-width: 900px) {
             width: 25%;
           }

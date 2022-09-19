@@ -1,5 +1,12 @@
 @import '../../css/op-teleconference-basics-utils';
 .html-lesson-wrapper {
+  .see {
+    .dialogue {
+      .message {
+        margin-left: 2%;
+      }
+    }
+  }
   .act-spacer {
     padding-bottom: 10rem;
     @media only screen and (max-width: 767px) {

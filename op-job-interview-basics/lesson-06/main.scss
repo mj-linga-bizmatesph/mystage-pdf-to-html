@@ -1,10 +1,15 @@
 @import '../../css/op-job-interview-basics-utils';
 
 .html-lesson-wrapper {
+  .m0 {
+    margin-bottom: 0 !important;
+  }
+
   .see-content {
     .sub-text {
       margin-bottom: 5%;
     }
+
     table {
       td:first-child {
         width: 13%;
@@ -16,19 +21,23 @@
     .sub-text {
       margin-bottom: 2%;
     }
+
     table {
       td {
         padding: 1%;
       }
     }
+
     ol {
       margin: 0;
       margin-block: 0;
       padding-inline: 0;
       list-style-position: inside;
+
       li::marker {
         color: $magenta;
       }
+
       li {
         margin-bottom: 2%;
       }

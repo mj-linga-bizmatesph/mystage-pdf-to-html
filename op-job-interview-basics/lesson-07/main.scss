@@ -28,14 +28,14 @@
       table {
         width: 120%;
 
+        th {
+          vertical-align: middle;
+        }
+
         td {
           padding: 1%;
         }
       }
-    }
-
-    ::-webkit-scrollbar {
-      width: 0;
     }
 
     ol {
@@ -45,7 +45,7 @@
       list-style-position: inside;
 
       li::marker {
-        color: $magenta;
+        color: black;
       }
 
       li {

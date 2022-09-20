@@ -450,12 +450,12 @@ body {
   width: 120%;
 }
 
-.html-lesson-wrapper .try-content .o-scroll table td {
-  padding: 1%;
+.html-lesson-wrapper .try-content .o-scroll table th {
+  vertical-align: middle;
 }
 
-.html-lesson-wrapper .try-content ::-webkit-scrollbar {
-  width: 0;
+.html-lesson-wrapper .try-content .o-scroll table td {
+  padding: 1%;
 }
 
 .html-lesson-wrapper .try-content ol {
@@ -466,7 +466,7 @@ body {
 }
 
 .html-lesson-wrapper .try-content ol li::marker {
-  color: #cc3366;
+  color: black;
 }
 
 .html-lesson-wrapper .try-content ol li {

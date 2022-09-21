@@ -4,6 +4,17 @@
   .content-header {
     margin-bottom: 10px !important;
   }
+  .content-div {
+    &.try {
+      @media only screen and (max-width: 400px) {
+        margin-left: 3.5%;
+      }
+      .content-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  }
   .try {
     .tbl-container {
       @media only screen and (max-width: 360px) {

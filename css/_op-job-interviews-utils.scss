@@ -70,6 +70,10 @@ body {
     }
   }
 
+  .m2 {
+    margin-left: 2% !important;
+  }
+
   .inline-block {
     display: inline-block;
   }
@@ -426,7 +430,11 @@ body {
 
             &:first-child {
               @extend .b;
-              width: 15%;
+              width: 23%;
+
+              @media screen and (max-width: 491px) {
+                width: 25%;
+              }
 
               @media screen and (max-width: 430px) {
                 min-width: 36%;

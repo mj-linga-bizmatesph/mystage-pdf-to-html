@@ -213,6 +213,7 @@ body {
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
+  min-width: 616px;
 }
 
 .html-lesson-wrapper .table {
@@ -254,6 +255,7 @@ body {
   padding-left: clamp(32px, 6vw, 47px);
   background: #f0d4d4;
   font-size: clamp(12px, 2vw, 15px);
+  min-width: 616px;
 }
 
 .html-lesson-wrapper .biz-tip-content .section {

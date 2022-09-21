@@ -1,17 +1,17 @@
 @import '../../css/op-telephoning-utils';
 .html-lesson-wrapper {
-  .words-phrase-content{
+  .words-phrase-content {
     background-color: transparent;
   }
-  .conversation-wrapper{
-    .row:not(:last-child){
+  .conversation-wrapper {
+    .row:not(:last-child) {
       margin-bottom: 2em;
-      line-height: normal;     
+      line-height: normal;
     }
   }
   .see-content {
-    .section{
-      top: 0;
+    .section {
+      top: 3px;
     }
     li {
       line-height: 1.8;
@@ -39,11 +39,13 @@
         top: 7px;
       }
     }
-    .see-content, .try-content, .act-content{
-.section {
-      top: 2.5px;
+    .see-content,
+    .try-content,
+    .act-content {
+      .section {
+        top: 2.5px;
+      }
     }
-}
   }
 }
 
@@ -58,11 +60,12 @@
         top: 7px;
       }
     }
-    .see-content, .try-content, .act-content{
-.section {
-      top: 2.5px;
+    .see-content,
+    .try-content,
+    .act-content {
+      .section {
+        top: 2.5px;
+      }
     }
-}
   }
 }
-

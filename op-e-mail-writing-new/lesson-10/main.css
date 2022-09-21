@@ -212,7 +212,8 @@ body {
   font-family: "Trebuchet MS";
   width: 85%;
   min-width: 75%;
-  padding-right: 5%;
+  padding-right: 0%;
+  margin-left: 5px;
 }
 .html-lesson-wrapper .dialogue {
   font-size: clamp(6.48px, 1.8vw, 10pt);
@@ -251,7 +252,7 @@ body {
   line-height: normal;
 }
 .html-lesson-wrapper .biz-tip-content .section {
-  margin-top: 3% !important;
+  margin-top: 23px !important;
 }
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;

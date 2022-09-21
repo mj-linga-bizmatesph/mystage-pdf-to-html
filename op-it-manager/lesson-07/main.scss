@@ -48,7 +48,7 @@
             }
             .dv-top {
               margin-left: -3.5%;
-              @media screen and (max-width: 900px){
+              @media screen and (max-width: 900px) {
                 margin-left: -2.5%;
               }
             }
@@ -66,7 +66,7 @@
               padding: 10px 3px 10px 8px;
               position: relative;
               z-index: 1;
-              @media screen and (max-width: 600px){
+              @media screen and (max-width: 600px) {
                 padding: 10px 1px 10px 13px;
               }
               ul {
@@ -97,7 +97,6 @@
     p {
       line-height: 1.8em;
     }
-
   }
 
   @media screen and (max-width: 600px) {
@@ -120,7 +119,7 @@
     }
     .see-content {
       margin-left: 5em;
-      .partition{
+      .partition {
         width: 70%;
       }
       .ctr-proj {
@@ -221,7 +220,7 @@
 }
 
 .html-lesson-wrapper .context {
-  @media screen and (max-width: 600px){
-  margin-left: 4.2%;
+  @media screen and (max-width: 600px) {
+    margin-left: 4.2%;
   }
 }

@@ -26,7 +26,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   font-family: $text-font;
-  
+
   header {
     font-family: $title-font;
   }
@@ -34,28 +34,31 @@ body {
     font-weight: bold;
   }
   .i {
-    font-style:italic;
+    font-style: italic;
   }
   .u {
     text-decoration: underline;
   }
-  .normal{
+  .normal {
     font-style: normal;
     font-weight: normal;
   }
-  .text-red{
+  .text-red {
     color: #ff0000;
   }
-  .margin-0{
+  .margin-0 {
     margin: 0 !important;
   }
   .program-rank {
     position: absolute;
     top: 40px;
     left: 48px;
+    @media screen and (min-width: 1024px) {
+      left: 5% !important;
+    }
     color: #ffffff;
     font-size: 0px;
-    width:100%;
+    width: 100%;
     .type {
       padding: 3px 16px 3px 14px;
       background-color: $primary;
@@ -70,7 +73,7 @@ body {
       }
     }
   }
-  .highlight-phrase{
+  .highlight-phrase {
     @extend .b;
     color: $highlight-phrase;
   }
@@ -84,6 +87,10 @@ body {
     position: absolute;
     top: 80px;
     left: 48px;
+    @media screen and (min-width: 1024px) {
+      left: 5% !important;
+      top: 75px;
+    }
     font-size: clamp(18px, 4vw, 27px);
     text-transform: uppercase;
     width: 80%;
@@ -107,10 +114,13 @@ body {
   .section {
     position: absolute;
     left: -78px;
+    @media screen and (min-width: 1024px) {
+      left: -10.5% !important;
+    }
     color: $text-title;
     font-weight: bold;
     font-family: $title-font;
-    top: 2px;
+    top: 4px;
   }
   .divider {
     color: #d9d9d9;
@@ -140,9 +150,6 @@ body {
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
-    .sub-text {
-      
-    }
   }
   .table {
     width: 100%;
@@ -151,7 +158,6 @@ body {
     white-space: nowrap;
     text-align: left;
     font-weight: bold;
-    
   }
   td {
     height: clamp(10px, 2.5vw, 30px);
@@ -166,7 +172,7 @@ body {
   }
   .words-phrase-content {
     position: relative;
-    margin-top: clamp(87px, 17.6%, 157px);
+    margin-top: clamp(87px, 30.6%, 130px);
     padding: 2px 0px 0px 47px;
     height: fit-content;
     padding-bottom: clamp(10px, 2vw, 20px);
@@ -176,15 +182,18 @@ body {
     line-height: normal;
     .section {
       margin-left: $left-pixel;
-      
+      @media screen and (min-width: 1024px) {
+        margin-left: 0px;
+        left: 5% !important;
+      }
       margin-top: clamp(10px, 2.6vw, 18px) !important;
+      top: 5px;
     }
     .pointers {
       margin-top: clamp(14px, 2.8vw, 20px) !important;
       margin-left: $left-pixel2;
-      
+
       .text-header {
-        
         position: relative;
         left: -17px;
         margin-bottom: clamp(6px, 1vw, 10px);
@@ -206,25 +215,25 @@ body {
           display: inline-block;
           vertical-align: middle;
         }
-        span:nth-child(1){
+        span:nth-child(1) {
           font-style: normal;
         }
       }
-      .no-arrow{
+      .no-arrow {
         position: relative;
         width: 95%;
         left: -17px;
       }
     }
   }
-  .conversation-wrapper{
+  .conversation-wrapper {
     display: flex;
     flex-direction: column;
-    .col{
-      display:inherit;
+    .col {
+      display: inherit;
       flex-direction: column;
     }
-    .row{
+    .row {
       display: inherit;
       flex-direction: row;
       align-items: center;
@@ -232,11 +241,11 @@ body {
       align-items: stretch;
       line-height: 1.8;
     }
-    .speaker{
+    .speaker {
       min-width: 5em;
       align-items: start;
     }
-    .dialogue{
+    .dialogue {
       width: 100%;
     }
   }
@@ -252,7 +261,7 @@ body {
   }
   .try-content {
     margin-top: 30px;
-    .sub-text{
+    .sub-text {
       font-family: $text-font !important;
     }
     .decimal {
@@ -272,7 +281,7 @@ body {
     height: fit-content;
     margin-bottom: clamp(50px, 13vw, 120px);
     margin-top: 36px;
-    .sub-text{
+    .sub-text {
       font-family: $text-font !important;
     }
     .decimal {
@@ -296,7 +305,7 @@ body {
       margin-left: 5px;
     }
     .act {
-      margin-top: 4px;
+      margin-top: 3px;
     }
     p {
       line-height: 1.8;
@@ -334,26 +343,26 @@ body {
   }
 }
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
-  .section{
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section {
     left: -55px !important;
   }
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)and (min-resolution: 192dpi) { 
-  .section{
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .section {
     left: -55px !important;
   }
 }
-@media only screen and (min-width: 820px) and (max-width: 1180px)  { 
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
   .html-lesson-wrapper {
     br {
       display: none;
     }
     min-height: unset;
-    .no-arrow{
-      position: relative  !important;
+    .no-arrow {
+      position: relative !important;
       width: 95% !important;
       left: -22px !important;
     }
@@ -362,7 +371,7 @@ body {
         left: -22px !important;
       }
     }
-    .text-header{
+    .text-header {
       left: -22px !important;
     }
     .see-content {
@@ -376,8 +385,7 @@ body {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 2.4vw, 18px);
       ul {
-        margin-left: clamp(23px,2.4vw,18px);
-        
+        margin-left: clamp(23px, 2.4vw, 18px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -396,7 +404,6 @@ body {
     .section.words {
       left: calc(-14% + 48px);
     }
-    
   }
 }
 @media screen and (max-width: 819px) {
@@ -405,8 +412,8 @@ body {
     br {
       display: none;
     }
-    .no-arrow{
-      position: relative  !important;
+    .no-arrow {
+      position: relative !important;
       width: 95% !important;
       left: -22px !important;
     }
@@ -415,7 +422,7 @@ body {
         left: -22px !important;
       }
     }
-    .text-header{
+    .text-header {
       left: -9px !important;
     }
     .see-content {
@@ -429,8 +436,7 @@ body {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 2.4vw, 18px);
       ul {
-        margin-left: clamp(23px,2.4vw,18px);
-        
+        margin-left: clamp(23px, 2.4vw, 18px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -449,7 +455,6 @@ body {
     .section.words {
       left: calc(-14% + 48px);
     }
-    
   }
 }
 @media screen and (max-width: 768px) {
@@ -457,17 +462,16 @@ body {
     br {
       display: none;
     }
-    .no-arrow{
-      position: relative  !important;
+    .no-arrow {
+      position: relative !important;
       width: 95% !important;
       left: -12px !important;
     }
-    .text-header{
+    .text-header {
       left: -9px;
     }
-    .pointers{
+    .pointers {
       margin-left: $left-pixel3 !important;
-      
     }
     .program-rank {
       position: absolute;
@@ -495,8 +499,7 @@ body {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(11px, 2.4vw, 18px);
       ul {
-        margin-left: clamp(26px,2.4vw,18px);
-        
+        margin-left: clamp(26px, 2.4vw, 18px);
       }
       li {
         padding-left: clamp(9px, 1.8vw, 13px);
@@ -505,10 +508,9 @@ body {
     .arrow-part {
       &:before {
         left: -3% !important;
-        top: clamp(3px,1vw,1.2vw) !important;
+        top: clamp(3px, 1vw, 1.2vw) !important;
       }
     }
-    
   }
 }
 @media screen and (max-width: 600px) {
@@ -539,7 +541,7 @@ body {
         width: 105%;
       }
     }
-    .no-arrow{
+    .no-arrow {
       position: relative !important;
       width: 95% !important;
       left: -9px !important;
@@ -549,7 +551,7 @@ body {
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper {
     background-position: top, -1.5px 100% !important;
-    .conversation-wrapper{
+    .conversation-wrapper {
       margin-left: 10px;
     }
     br {

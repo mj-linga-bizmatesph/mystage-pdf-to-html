@@ -1,23 +1,5 @@
 @import '../../css/_op-executive-utils.scss';
 .html-lesson-wrapper {
-  .act-spacer {
-    padding-bottom: 37rem;
-    @media only screen and (max-width: 767px) {
-      margin-bottom: 4%;
-    }
-    @media only screen and (max-width: 767px) {
-      margin-bottom: 4%;
-    }
-    @media only screen and (max-width: 490px) {
-      margin-bottom: 25%;
-    }
-    @media only screen and (max-width: 377px) {
-      margin-bottom: 35% !important;
-    }
-    @media only screen and (max-width: 335px) {
-      margin-bottom: 60% !important;
-    }
-  }
   .pt-2 {
     padding-top: 4.5rem !important;
     @media only screen and (max-width: 460px) {
@@ -26,51 +8,38 @@
   }
   .see-content-text {
     margin-top: 5%;
-    line-height: 25px;
+    line-height: 1.8;
     font-size: clamp(12px, 2vw, 15px);
-    height: 0px;
+    margin-left: 14px;
+    @media screen and (max-width: 428px) {
+      margin-left: 15px;
+    }
     li {
-      margin-left: -3%;
-      @media only screen and (max-width: 650px) {
-        margin-left: -5% !important;
-      }
-      @media only screen and (max-width: 450px) {
-        margin-left: -7% !important;
-        width: 320px;
-      }
-      @media only screen and (max-width: 376px) {
-        margin-left: -8% !important;
-        width: 300px;
-      }
-      @media only screen and (max-width: 335px) {
-        margin-left: -8% !important;
-        width: 250px;
-      }
+      padding-left: 10px;
     }
   }
-  footer {
-    .footer-text {
-      @media only screen and (max-width: 796px) {
-        bottom: -6px;
-      }
-      @media only screen and (max-width: 767px) {
-        bottom: 19px !important;
-      }
-      @media only screen and (max-width: 520px) {
-        bottom: 8px !important;
-      }
-      @media only screen and (max-width: 426px) {
-        bottom: 3px !important;
-      }
-      @media only screen and (max-width: 391px) {
-        bottom: 2px !important;
-      }
-      @media only screen and (max-width: 351px) {
-        bottom: -1px !important;
-      }
-      @media only screen and (max-width: 321px) {
-        bottom: -4px !important;
-      }
+  footer .footer-text {
+    bottom: -102px;
+    @media screen and (min-width: 1850px) and (max-width: 1920px) {
+      bottom: -161px;
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1849px) {
+      bottom: -131px;
+    }
+    @media screen and (min-width: 821px) and (max-width: 900px) {
+      bottom: -161px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 820px) {
+      bottom: -118px;
+    }
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      bottom: -121px;
+    }
+    @media only screen and (max-width: 391px) {
+      bottom: -14px !important;
+    }
+    @media only screen and (max-width: 376px) {
+      bottom: -14px !important;
     }
   }
 }

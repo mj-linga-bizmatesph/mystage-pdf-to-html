@@ -1,20 +1,26 @@
 @import '../../css/op-job-interviews-utils';
+
 .html-lesson-wrapper {
   header {
     margin-bottom: clamp(19px, 10vw, 34px);
   }
+
   .header-text {
     line-height: clamp(12px, 4vw, 24px) !important;
     padding-bottom: clamp(10px, 2vw, 15px);
   }
+
   .part-spacer {
     padding-bottom: 1.5rem;
+
     @media only screen and (max-width: 767px) {
       padding-bottom: 0;
     }
   }
+
   .part-spacer-2 {
     padding-bottom: 3.5rem;
+
     @media only screen and (max-width: 767px) {
       padding-bottom: 0;
     }

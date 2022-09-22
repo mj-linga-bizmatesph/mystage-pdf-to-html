@@ -59,6 +59,10 @@ body {
   right: 2%;
 }
 
+.html-lesson-wrapper .m2 {
+  margin-left: 2% !important;
+}
+
 .html-lesson-wrapper .inline-block {
   display: inline-block;
 }
@@ -241,7 +245,6 @@ body {
   padding-right: clamp(11px, 2vw, 20px);
   padding-bottom: 1rem;
   margin-right: 12%;
-  margin-left: 5px;
 }
 
 @media only screen and (max-width: 460px) {
@@ -462,7 +465,13 @@ body {
 }
 
 .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
-  width: 15%;
+  width: 23%;
+}
+
+@media screen and (max-width: 491px) {
+  .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 430px) {

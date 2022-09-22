@@ -70,6 +70,10 @@ body {
     }
   }
 
+  .m2 {
+    margin-left: 2% !important;
+  }
+
   .inline-block {
     display: inline-block;
   }
@@ -80,7 +84,6 @@ body {
 
   .pt-1 {
 
-    // padding-top: 1rem !important;
     @media only screen and (max-width: 460px) {
       padding-top: 0px !important;
     }
@@ -230,7 +233,6 @@ body {
         padding-right: clamp(11px, 2vw, 20px);
         padding-bottom: 1rem;
         margin-right: 12%;
-        margin-left: 5px;
 
         @media only screen and (max-width: 460px) {
           padding-left: clamp(4px, 1.5vw, 20px);
@@ -426,7 +428,11 @@ body {
 
             &:first-child {
               @extend .b;
-              width: 15%;
+              width: 23%;
+
+              @media screen and (max-width: 491px) {
+                width: 25%;
+              }
 
               @media screen and (max-width: 430px) {
                 min-width: 36%;

@@ -2,7 +2,7 @@
 
 .html-lesson-wrapper {
   .lesson-number {
-    left: 94.4%;
+    left: 91.6%;
   }
   table {
     border-collapse: collapse;
@@ -13,8 +13,10 @@
       padding: 1%;
       margin-top: 2%;
       ol {
-        margin-left: -4%;
-        line-height: 1.5em;
+        margin-left: 3.4%;
+        line-height: normal;
+        margin-top: 1em;
+        margin-bottom: 1em;
       }
       .btn-red {
         background-color: #cc3366;
@@ -50,11 +52,11 @@
             }
             .to-value {
               border-bottom: 4px solid #d9d9d9;
-              margin-top: -2px;
+              margin-top: 1.1px;
             }
             .sub-value {
               border-top: 4px solid #d9d9d9;
-              margin-top: -2px;
+              margin-top: -4px;
             }
             .to-value {
               font-size: clamp(8px, 2vw, 13.5px);
@@ -72,25 +74,9 @@
       }
     }
   }
-  .try-content {
-    table {
-      margin-top: -2%;
-      tr {
-        td {
-          line-height: 1.8em;
-        }
-        td:first-child {
-          vertical-align: top;
-        }
-      }
-    }
-  }
   .act-content {
     p {
       line-height: 1.8em;
-    }
-    p.content {
-      margin-top: -2%;
     }
   }
 

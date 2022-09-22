@@ -14,41 +14,57 @@
     }
   }
 
+  .w32 {
+    width: 32% !important;
+  }
+
   .try {
     .content-table-div {
-      @media only screen and (max-width: 401px) {
+      @media only screen and (max-width: 451px) {
         width: 95%;
         overflow-x: auto !important;
+
         .content-table {
           width: 190% !important;
         }
       }
     }
+
     .content-table {
       td {
         padding: 1%;
         vertical-align: top !important;
       }
+
       .row {
         p {
           display: inline-block;
           margin: 0px 0px;
+
           &:first-child {
-            min-width: 9%;
+            min-width: 10% !important;
             max-width: 100px;
             word-wrap: break-word;
+
+            @media screen and (max-width: 456px) and (min-width: 451px) {
+              min-width: 13% !important;
+            }
+
           }
         }
       }
     }
+
     ol {
       margin: 0;
       margin-block: 0;
       padding-inline: 0;
       list-style-position: inside;
+
       li::marker {
         color: $magenta;
       }
+
       li {
         margin-bottom: 2%;
       }

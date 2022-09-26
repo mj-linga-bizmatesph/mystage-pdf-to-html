@@ -5,6 +5,7 @@
     .sub-text {
       margin-bottom: 5%;
     }
+
     table {
       td:first-child {
         width: 13%;
@@ -12,15 +13,33 @@
     }
   }
 
+  .w30 {
+    width: 15%;
+  }
+
   .try-content {
     .no-wrap {
       white-space: nowrap;
     }
 
-    table {
-      td {
-        padding: 1%;
+    .o-scroll {
+      overflow-x: scroll;
+
+      table {
+        width: 120% !important;
+
+        tr {
+          th {
+            vertical-align: middle;
+          }
+
+          td {
+            padding: 1%;
+          }
+        }
       }
     }
+
+
   }
 }

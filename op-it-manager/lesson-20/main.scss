@@ -2,7 +2,7 @@
 
 .html-lesson-wrapper {
   .lesson-number {
-    left: 94.4%;
+    left: 91.6%;
   }
   .title {
     top: clamp(7.5%, 18vw, 6.1%);
@@ -13,44 +13,14 @@
   .biz-tip-content {
     background: hsl(0, 0%, 100%);
   }
-  .see-content {
-    table {
-      tr {
-        td.breaker {
-          padding: 2%;
-          text-align: center;
-          padding-right: 17%;
-        }
-        td {
-          line-height: 1.8em;
-        }
-      }
-    }
-  }
-  .try-content {
-    table {
-      margin-top: -2%;
-      tr {
-        td {
-          line-height: 1.8em;
-        }
-        td:first-child {
-          vertical-align: top;
-        }
-      }
-    }
-  }
-  .act-content {
-    p {
-      line-height: 1.8em;
-    }
-    p.content {
-      margin-top: -2%;
-    }
-  }
+
   .review-content {
+    margin-top: 11.7em;
+    @media screen and (max-width: 600px) {
+      margin-top: 7.8em;
+    }
     table {
-      margin-bottom: 20%;
+      margin-bottom: 58%;
       margin-top: 0%;
       tr {
         td {
@@ -62,7 +32,6 @@
       }
     }
   }
-
   @media screen and (max-width: 600px) {
     .arrow-part:before {
       left: 0em;

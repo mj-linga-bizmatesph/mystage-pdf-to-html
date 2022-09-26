@@ -22,7 +22,7 @@ body {
 
 .html-lesson-wrapper header {
   font-family: "Helvetica", "Arial", sans-serif;
-  margin-bottom: clamp(110px, 30vw, 270px);
+  margin-bottom: 25%;
 }
 
 .html-lesson-wrapper .b {
@@ -96,6 +96,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .sub-text {
+    margin-left: 10px;
+  }
+}
+
 .html-lesson-wrapper .section {
   position: absolute;
   left: -78px;
@@ -121,8 +127,13 @@ body {
 }
 
 .html-lesson-wrapper ul {
-  margin-left: -0.5em;
   padding: 0;
+}
+
+@media screen and (min-width: 428px) {
+  .html-lesson-wrapper ul {
+    margin-left: -0.5em;
+  }
 }
 
 .html-lesson-wrapper ul li {
@@ -132,7 +143,7 @@ body {
 
 .html-lesson-wrapper .part-content {
   position: relative;
-  margin-left: 17%;
+  margin-left: clamp(10px, 21.5%, 127px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);

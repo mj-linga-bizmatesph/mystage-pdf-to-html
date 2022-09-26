@@ -26,8 +26,7 @@ body {
   overflow: hidden;
   position: relative;
   padding-bottom: clamp(3em, 12vw, 9em);
-  background-image: url(#{$s3}/OP-Starter-bg-header.svg),
-    url(#{$s3}/other-programs-footer-level2.svg);
+  background-image: url(#{$s3}/other-programs-bg-header-magenta.svg), url(#{$s3}/other-programs-footer-level2.svg);
   background-position: top, clamp(-15px, -2vw, -8px) bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -50,23 +49,32 @@ body {
   }
 
   .program-rank {
+    font-family: Helvetica, Arial, 'Sans-serif';
+    font-size: clamp(8px, 1.8vw, 15px);
     position: absolute;
-    top: 3.05%;
-    left: 5%;
     color: #ffffff;
-    font-size: 0px;
-    white-space: nowrap;
-
-    .type {
-      padding: 0.7% 3% 0.7% 3%;
-      background-color: $magenta;
-      font-size: clamp(8px, 1.8vw, 15px);
+    margin-top: clamp(10px, 5vw, 49px);
+    margin-left: clamp(10px, 6vw, 59px);
+    @media only screen and (max-width: 1280px){
+      margin-left: clamp(10px, 6vw, 58px);
     }
 
+    .type {
+      padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      background-color: #cc3366;
+    }
     .level {
-      padding: 0.7% 3% 0.7% 3%;
-      background-image: $linear-gradient;
-      font-size: clamp(8px, 1.8vw, 15px);
+      padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
+      background-image: linear-gradient(to right, #cdca23 25%, #db8536);
+      //background-repeat: no-repeat;
+      width: 100%;
+      margin-left: -2%;
+    }
+    .separator {
+      font-family: $helvetica;
+      position: relative;
+      display: inline;
+      margin: 0 6px;
     }
   }
 
@@ -75,18 +83,39 @@ body {
   }
 
   .title {
+    font-family: Helvetica,Arial,"Sans-serif";
     position: absolute;
-    top: clamp(4.5%, 18vw, 6.1%);
-    left: 5%;
+    margin-top: clamp(54px, 7vw, 80px);
+    margin-left: clamp(18px, 6.5vw, 58px);
     font-size: clamp(18px, 4vw, 27px);
+    @media screen and (max-width: 900px){
+      margin-left: 5.8%;
+    }
   }
 
   .lesson-number {
     position: absolute;
-    left: 94.8%;
-    margin-top: 4.8%;
+    right: 6.5%;
+    width: 1.9%;
+    text-align: center;
+    margin-top: 8%;
     font-size: clamp(7px, 1.8vw, 13px);
     color: #ffffff;
+    @media only screen and (max-width: 767px) {
+      margin-top: 7.4%;
+      &.two {
+        right: 6.4% !important;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      margin-top: 7%;
+      &.two {
+        right: 6.7% !important;
+      }
+    }
+    &.two {
+      right: 6.6%;
+    }
   }
 
   .lesson-number-two {
@@ -106,9 +135,9 @@ body {
   }
 
   .sub-text {
+    line-height: 1.8;
     font-family: $helvetica !important;
-    line-height: clamp(12px, 2.8vw, 22px);
-    margin: 0 auto;
+    font-size: clamp(12px, 2vw, 15px);
   }
 
   .magenta-color {
@@ -116,12 +145,21 @@ body {
   }
 
   .section {
+    line-height: 1.8;
+    font-size: clamp(12px, 2vw, 15px);
     position: absolute;
     color: $magenta;
     font-weight: bold;
     font-family: $helvetica;
-    top: 2px;
-    left: -10.5%;
+    top: 0px;
+    margin-left: -7%;
+    @media screen and (max-width: 500px){
+      top: 0px;
+      margin-left: -11.4%;
+    }
+    @media screen and (max-width: 900px){
+      top: 0px;
+    }
   }
 
   .divider {
@@ -153,14 +191,17 @@ body {
   .act-content,
   .try-content,
   .review-content {
+    line-height: 1.8;
     position: relative;
-    margin-left: clamp(50px, 14%, 126.5px);
+    margin-left: clamp(45px, 12.5%, 85.5px);
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
   }
 
   .biz-tip-content {
+    font-size: clamp(12px, 2vw, 15px);
+    line-height: normal;
     table {
       tr {
         td {
@@ -190,30 +231,34 @@ body {
       align-items: flex-start;
     }
     position: relative;
-    margin-top: clamp(70px, 18%, 160px);
+    margin-top: clamp(70px,28%,140px) !important;
     padding: 2px 0px 0px 47px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     padding-bottom: 4%;
-    padding-left: clamp(32px, 6vw, 47px);
+    padding-left: clamp(32px, 4.5vw, 47px);
     background: $magenta-light;
     font-size: clamp(12px, 2vw, 15px);
 
-    .section {
-      left: 0;
-      margin-left: 5%;
-      line-height: 1.8em;
-      margin-top: 3% !important;
-    }
-
     .pointers {
+      font-size: clamp(12px, 2vw, 15px);
       margin-top: 3% !important;
-      margin-left: clamp(50px, 14%, 126.5px);
+      margin-left: clamp(50px, 20%, 126.5px);
 
       .no-arrow {
+        margin-bottom: 1em;
         margin-left: -3.6%;
         margin-right: 16%;
+      }
+    }
+    .words {
+      margin-top: 2.5%;
+      margin-left: 1.6%;
+      @media screen and (max-width: 600px){
+        margin-top: 3%;
+        margin-left: -2%;
+      }
+      @media screen and (max-width: 900px){
+        margin-top: 2.6%;
       }
     }
   }
@@ -222,7 +267,7 @@ body {
     &:before {
       content: '';
       position: absolute;
-      left: -1.5em;
+      left: -1.2em;
       top: 0.3em;
       width: 0;
       height: 0;
@@ -243,12 +288,25 @@ body {
     }
   }
 
-  .sub-text {
-    margin-bottom: 1.5%;
+  .context {
+    margin-left: clamp(6px, 10vw, 50px);
+    font-size: clamp(12px, 2vw, 15px);
+    @media screen and (max-width: 900px){
+      margin-left: 3%;
+    }
+    @media screen and (max-width: 600px){
+      margin-left: 3%;
+    }
   }
 
   .see-content {
     margin-top: 4.1%;
+    @media screen and (max-width: 900px){
+      margin-left: 5.5em;
+    }
+    @media screen and (max-width: 500px){
+      margin-left: 4em;
+    }
 
     .article {
       margin-top: 5px;
@@ -266,7 +324,6 @@ body {
 
       p {
         margin: 0;
-        line-height: 1.8em;
         top: -0.3em;
         position: relative;
 
@@ -286,10 +343,13 @@ body {
     ul {
       list-style-type: decimal;
       margin: 0;
-      margin-left: 1em;
+      margin-left: 1.1em;
       text-indent: -1em;
       margin-block: 0;
       padding-inline: 0;
+      @media screen and (max-width: 900px){
+        margin-left: 1.4em;
+      }
 
       li {
         padding-inline-start: 1em;
@@ -339,6 +399,9 @@ body {
   }
 
   .review-content {
+    .mg{
+      margin-top: 11.7em;
+    }
     .sub-text {
       font-family: $trebuchet !important;
       margin-bottom: 2%;
@@ -374,16 +437,28 @@ body {
   }
 
   footer {
-    font-size: clamp(4.5px, 1.1vw, 9px);
-    position: absolute;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    text-align: right;
-    bottom: 3%;
-    right: 6.2%;
     font-family: $helvetica;
-    max-width: 41%;
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10%;
+    bottom: -10em;
+    @media screen and (max-width: 900px){
+      bottom: -8em;
+    }
+    .footer-text {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      max-width: 33%;
+      right: 5%;
+      @media screen and (max-width: 900px){
+        right: 5%;
+      }
+    }
+  }
+  .inline-block {
+    display: inline-block;
   }
 
   @media screen and (max-width: 900px) {
@@ -393,7 +468,7 @@ body {
 
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
-      padding-left: clamp(11px, 2.4vw, 18px);
+      padding-left: clamp(13px, 5.4vw, 19px);
     }
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
@@ -424,21 +499,15 @@ body {
       .arrow-part:before {
         left: -1em;
       }
+    }
 
-      p {
-        line-height: 1em !important;
-      }
-    }
-    p {
-      line-height: 1rem !important;
-    }
     .see-content {
       table tr td {
         padding: 3px !important;
       }
     }
     footer {
-      bottom: 1.5%;
+      bottom: -14.5%;
     }
   }
   @media screen and (max-width: 360px) {

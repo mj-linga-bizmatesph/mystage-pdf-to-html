@@ -1,5 +1,23 @@
 @import '../../css/_op-meeting-basics-utils.scss';
 .html-lesson-wrapper {
+  .content-item {
+    &.pt-2 {
+      .content-div {
+        &.l4 {
+          margin-left: 1%;
+          @media only screen and (max-width: 400px) {
+            margin-left: 4%;
+          }
+        }
+        .review-box {
+          width: 105.5%;
+          @media only screen and (max-width: 400px) {
+            width: 103.3%;
+          }
+        }
+      }
+    }
+  }
   .act-spacer {
     padding-bottom: 10rem;
     @media only screen and (max-width: 767px) {

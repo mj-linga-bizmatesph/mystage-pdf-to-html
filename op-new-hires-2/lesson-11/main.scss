@@ -8,10 +8,7 @@
   }
   .biz-tip-content {
     ul {
-      list-style-type: none !important;
-      li {
-        margin-left: -0.4em !important;
-      }
+      list-style-type: lower-alpha !important;
     }
   }
   .email-window {
@@ -65,4 +62,8 @@
     padding: 5px;
     font-size: clamp(8px, 2vw, 12px);
   }
+}
+
+.html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul {
+  margin-left: 1%;
 }

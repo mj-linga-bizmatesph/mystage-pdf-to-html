@@ -6,6 +6,7 @@
   max-width: 100%;
   max-width: 892.75px;
   min-height: 607px;
+
   @media screen and (max-width: 370px) {
     width: 100%;
     min-width: 360px;
@@ -13,10 +14,12 @@
     max-width: 892.75px;
     min-height: 457px;
   }
+
   .see-content {
     .sub-text {
       margin-bottom: 5%;
     }
+
     table {
       td:first-child {
         width: 13%;
@@ -28,24 +31,29 @@
     .sub-text {
       margin-bottom: 2%;
     }
+
     table {
       td {
         padding: 1%;
       }
     }
+
     ol {
       margin: 0;
       margin-block: 0;
       padding-inline: 0;
       list-style-position: inside;
+
       li::marker {
         color: $magenta;
       }
+
       li {
         margin-bottom: 2%;
       }
     }
   }
+
   footer {
     font-size: clamp(4.5px, 1.1vw, 9px);
     position: absolute;

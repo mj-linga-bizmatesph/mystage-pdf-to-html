@@ -1,11 +1,27 @@
 @import '../../css/_op-presentation-basics-utils';
 
 .html-lesson-wrapper {
+  .arrow-part {
+    margin-left: 1px;
+    @media screen and (min-width: 1800px) {
+      margin-left: -3px;
+    }
+  }
+  section.try-content {
+    margin-bottom: 100px;
+  }
+
   table {
     border-collapse: collapse;
   }
   .review-content {
-    margin-top: clamp(70px, 25%, 160px);
+    margin-top: 25% !important;
+    line-height: normal !important;
+
+    .arrow-part:before {
+      left: -1.2em !important;
+    }
+
     table {
       tr th {
         text-align: left;
@@ -25,7 +41,7 @@
         p {
           margin-left: -3%;
           margin-top: -5px;
-          margin-bottom: 3px;
+          margin-bottom: 10px;
         }
         div.div-1 {
           float: left;
@@ -54,8 +70,13 @@
         height: 20px;
       }
     }
+
+    p b {
+      line-height: 1.8 !important;
+    }
   }
   .try-content {
+    line-height: 1.8 !important;
     table {
       tr th {
         text-align: center;
@@ -73,12 +94,24 @@
       }
     }
     ol {
-      margin-left: -4%;
+      margin-left: 3%;
       li {
         p {
-          line-height: 1.8rem;
+          line-height: 1.8;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 428px) {
+    .arrow-part {
+      margin-left: 7px;
+    }
+    .sub-text {
+      margin-left: 8px;
+    }
+    .try-content ol {
+      margin-left: 8% !important;
     }
   }
 }

@@ -1,0 +1,286 @@
+$text-font: 'Trebuchet MS';
+$title-font: Helvetica, Arial, 'Sans-serif';
+$magenta: #cc3366;
+$green: #339999;
+$pink: #f0d4d4;
+$gray: #d9d9d9;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.html-lesson-wrapper {
+  min-width: 320px;
+  max-width: 100%;
+  max-width: 892.75px;
+  min-height: 960px;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  background-image: url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-bg-header-magenta.svg'),
+    url('https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images/other-programs-footer-logo.svg');
+  background-position: top, -11.5px 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: $text-font;
+
+  header {
+    font-family: $title-font;
+    margin-bottom: 25%;
+    margin-top: 3%;
+  }
+
+  .pd {
+    @media screen and (max-width: 325px) {
+      padding-top: 6%;
+    }
+  }
+
+  .b {
+    font-weight: bold;
+  }
+
+  .program-rank {
+    position: absolute;
+    top: 3.05%;
+    left: 5%;
+    color: #ffffff;
+    font-size: 0px;
+
+    .type {
+      padding: 3px 16px 3px 14px;
+      background-color: $magenta;
+      font-size: clamp(8px, 1.8vw, 15px);
+    }
+
+    .level {
+      padding: 3px 12px 3px 13px;
+      background-color: $green;
+      font-size: clamp(8px, 1.8vw, 15px);
+    }
+  }
+
+  .title {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: clamp(18px, 4vw, 27px);
+    text-transform: uppercase;
+
+    @media screen and (max-width: 959px) {
+      left: 43px;
+    }
+  }
+
+  .lesson-number {
+    position: absolute;
+    left: clamp(91.5%, 93vw, 91%);
+    margin-top: 4.4%;
+    font-size: clamp(7px, 1.8vw, 13px);
+    color: #ffffff;
+  }
+
+  .section {
+    position: absolute;
+    left: -66px;
+    color: $magenta;
+    font-weight: bold;
+    font-family: $title-font;
+    top: 5px;
+
+    @media screen and (max-width: 900px) {
+      left: -10.5%;
+      top: 5px;
+    }
+  }
+
+  .divider {
+    color: #d9d9d9;
+    font-size: clamp(12px, 2vw, 15px);
+    position: relative;
+    left: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  ul {
+    margin: 3px 0px 0px 18px;
+    padding: 0;
+    line-height: clamp(12px, 3vw, 26px);
+
+    @media screen and (max-width: 900px) {
+      margin: 3px 0px 0px 19px;
+    }
+
+    @media screen and (max-width: 401px) {
+      margin: 3px 0px 0px 40px;
+    }
+
+    li {
+      margin-bottom: clamp(20px, 8vw, 30px);
+      padding-left: 8px;
+    }
+  }
+
+  .decimal {
+    list-style-type: none;
+    line-height: 1.8;
+
+    @media screen and (max-width: 900px) {
+      margin-left: -1%;
+    }
+  }
+
+  main {
+    min-width: 677px;
+  }
+
+  .part-content {
+    position: relative;
+    margin-left: clamp(50px, 14%, 126.5px);
+    padding-left: 18.5px;
+    padding-right: 42px;
+    font-size: clamp(12px, 2vw, 15px);
+
+    .part2-ul {
+      list-style: decimal;
+      line-height: normal;
+
+      @media screen and (max-width: 461px) {
+        margin-left: 11%;
+      }
+
+      @media screen and (max-width: 401px) {
+        margin-left: 13%;
+      }
+
+      @media screen and (max-width: 381px) {
+        margin-left: 14%;
+      }
+
+      @media screen and (max-width: 351px) {
+        margin-left: 15%;
+      }
+
+      @media screen and (max-width: 341px) {
+        margin-left: 16%;
+      }
+
+      @media screen and (max-width: 321px) {
+        margin-left: 17.5%;
+      }
+
+      li {
+        margin-top: 3%;
+
+        @media screen and (max-width: 401px) {
+          height: 5px;
+        }
+      }
+    }
+
+    .part-1 .part-2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .part-content-2 {
+    margin-bottom: clamp(50px, 13vw, 120px);
+  }
+
+  .instruction {
+    font-family: $title-font  !important;
+    line-height: 1.8;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 0.3%;
+
+    @media screen and (max-width: 491px) {
+      padding-top: 1.3%;
+    }
+  }
+
+  footer {
+    font-size: clamp(4.5px, 1.1vw, 9px);
+    position: absolute;
+    width: fit-content;
+    text-align: right;
+    bottom: 33px;
+    right: 6.2%;
+    font-family: $title-font;
+    max-width: 64%;
+
+    .footer-text {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .html-lesson-wrapper {
+    .program-rank {
+      position: absolute;
+      top: clamp(20px, 4vw, 40px);
+      left: clamp(23px, 4vw, 48px);
+    }
+
+    .title {
+      top: clamp(45px, 8.4vw, 80px);
+      left: clamp(28px, 3.1vw, 55px);
+    }
+
+    .divider {
+
+      &.d1,
+      &.d2 {
+        margin-top: clamp(18px, 3.4vw, 28px);
+      }
+    }
+
+    .section {
+      left: calc(-15% + 22px);
+    }
+
+    footer {
+      bottom: clamp(16px, 4.8vw, 43px);
+      right: 5% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .html-lesson-wrapper {
+    .part-1 {
+      margin-top: -1px;
+      margin-left: -0.5%;
+
+      @media screen and (max-width: 321px) {
+        margin-left: -2%;
+      }
+    }
+
+    .decimal {
+      margin-left: 16px;
+    }
+
+    .instruction {
+      margin-left: 22px;
+      padding-top: 1%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper {
+    .part-2 {
+      margin-top: -5px;
+      margin-left: -1.5%;
+    }
+
+    .instruction {
+      margin-left: 22px;
+      padding-top: 0%;
+    }
+  }
+}

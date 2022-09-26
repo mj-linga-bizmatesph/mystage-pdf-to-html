@@ -16,6 +16,7 @@
     }
 
     .paper {
+      line-height: normal;
       padding: 2%;
       border-color: #d8d8d8;
       border-style: solid;
@@ -24,6 +25,7 @@
       p {
         margin: 0;
       }
+
       p:not(:last-child) {
         margin-bottom: 5%;
       }
@@ -37,10 +39,12 @@
 
         margin-bottom: 5%;
       }
-      ol > li {
+
+      ol>li {
         list-style: none;
       }
-      ol > li:before {
+
+      ol>li:before {
         margin-right: 2%;
         content: counter(list, number) ') ';
         counter-increment: list;

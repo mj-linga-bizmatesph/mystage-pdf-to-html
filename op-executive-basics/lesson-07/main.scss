@@ -1,6 +1,15 @@
 @import '../../css/op-executive-basics-utils';
-.html-lesson-wrapper {
+
+.html-lesson-wrapper .arrow-part {
+  width: 95% !important;
+}
+@media screen and (max-width: 460px) {
   .title {
-    font-size: clamp(10.8px, 2.7vw, 25px);
+    top: clamp(32px, 1.4vw, 85px);
+    left: clamp(23px, 3.1vw, 55px);
+  }
+  .biz-tip-content {
+    top: 40px;
+    margin-bottom: 60px;
   }
 }

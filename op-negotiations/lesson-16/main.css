@@ -396,6 +396,18 @@ body {
   .html-lesson-wrapper .biz-tip-content {
     margin-top: clamp(94px, 19%, 157px);
   }
+  .html-lesson-wrapper .try-content .table-responsive {
+    margin-left: 8px;
+  }
+  .html-lesson-wrapper .try-content ol {
+    margin-left: 1.9em;
+  }
+  .html-lesson-wrapper .try-content p.b.sub-text {
+    margin-left: 8px;
+  }
+  .html-lesson-wrapper .try-content img {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 390px) {
   .html-lesson-wrapper .biz-tip-content .pointers {
@@ -405,5 +417,11 @@ body {
 @media screen and (max-width: 375px) {
   .html-lesson-wrapper .biz-tip-content .pointers {
     margin-left: clamp(57px, 14.2%, 126.5px);
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .try-content table {
+    margin-left: 8px;
   }
 }

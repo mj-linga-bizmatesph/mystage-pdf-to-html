@@ -726,6 +726,7 @@ body {
   margin-left: clamp(3px, 1vw, 7px);
   margin-bottom: clamp(50px, 15vw, 120px);
   line-height: 1.8;
+  margin-top: 10px;
 }
 .html-lesson-wrapper .part-content ul {
   list-style-type: square;
@@ -758,7 +759,7 @@ body {
 }
 
 .html-lesson-wrapper footer .footer-text {
-  bottom: -106px;
+  bottom: -96px;
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1921px) {

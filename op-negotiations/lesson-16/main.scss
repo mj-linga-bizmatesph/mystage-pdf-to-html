@@ -1,1 +1,9 @@
 @import '../../css/op-negotiations-utils';
+
+@media screen and (max-width: 428px) {
+  .try-content {
+    table {
+      margin-left: 8px;
+    }
+  }
+}

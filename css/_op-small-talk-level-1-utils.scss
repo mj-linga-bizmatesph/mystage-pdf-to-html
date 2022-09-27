@@ -389,7 +389,7 @@ body {
       display: block !important;
     }
     .decimal {
-      margin-left: 25px !important;
+      margin-left: 30px !important;
     }
     .text-header {
       margin-top: -3px !important;
@@ -401,6 +401,11 @@ body {
 }
 @media screen and (max-width: 400px) {
   .html-lesson-wrapper {
+    .words-phrase-content {
+      .pointers {
+        margin-left: clamp(50px,14.5%,126.5px);
+      }
+    }
     .text-header {
       left: -9px !important;
       .arrow-part {

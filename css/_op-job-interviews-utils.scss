@@ -458,6 +458,10 @@ body {
                 width: 32%;
               }
 
+              @media screen and (max-width: 401px) {
+                width: 36%;
+              }
+
               @media screen and (max-width: 359px) {
                 width: 39%;
               }

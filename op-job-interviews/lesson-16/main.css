@@ -508,6 +508,12 @@ body {
   }
 }
 
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
+    width: 36%;
+  }
+}
+
 @media screen and (max-width: 359px) {
   .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
     width: 39%;

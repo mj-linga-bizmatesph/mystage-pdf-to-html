@@ -2,6 +2,12 @@
 
 .html-lesson-wrapper {
   .see-content {
+    table {
+      margin-left: 9px;
+      @media only screen and (max-width: 400px) {
+        margin-left: 4px;
+      }
+    }
     .row {
       margin-bottom: 0px !important;
 

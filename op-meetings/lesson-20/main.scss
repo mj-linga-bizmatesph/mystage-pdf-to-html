@@ -11,10 +11,31 @@
       padding: 0px 5px 0px 0px;
     }
   }
+  .sub-text {
+    @media only screen and (max-width: 400px) {
+      margin-left: 2%;
+    }
+  }
+  ol.numbers {
+    @media only screen and (max-width: 400px) {
+      margin-left: 2%;
+    }
+  }
 }
 .part-content {
   ul {
     list-style-type: none;
     margin-left: -1%;
+  }
+}
+.content {
+  ul {
+    .decimal {
+      list-style-type: decimal;
+      font-size: clamp(12px, 2vw, 15px);
+      @media only screen and (max-width: 400px) {
+        margin-left: 6%;
+      }
+    }
   }
 }

@@ -5,6 +5,11 @@
     border-collapse: collapse;
   }
   .see-content {
+    .overlap{
+      @media screen and (max-width: 500px){
+        width: 71%;
+      }
+    }
     .ctr {
       text-align: center;
     }

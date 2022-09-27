@@ -208,6 +208,15 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .review-content {
+    padding-right: 15px;
+  }
+}
+
 .html-lesson-wrapper .biz-tip-content {
   font-size: clamp(12px, 2vw, 15px);
   line-height: normal;
@@ -253,13 +262,19 @@ body {
 .html-lesson-wrapper .biz-tip-content .pointers {
   font-size: clamp(12px, 2vw, 15px);
   margin-top: 3% !important;
-  margin-left: clamp(50px, 20%, 126.5px);
+  margin-left: clamp(35px, 15.4%, 126.5px);
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
   margin-bottom: 1em;
   margin-left: -3.6%;
-  margin-right: 16%;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-right: 10%;
+  }
 }
 
 .html-lesson-wrapper .biz-tip-content .words {
@@ -308,7 +323,7 @@ body {
 }
 
 .html-lesson-wrapper .context {
-  margin-left: clamp(6px, 10vw, 50px);
+  margin-left: clamp(6px, 10vw, 28px);
   font-size: clamp(12px, 2vw, 15px);
 }
 
@@ -572,6 +587,12 @@ body {
 
 .html-lesson-wrapper table {
   border-collapse: collapse;
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .see-content .overlap {
+    width: 71%;
+  }
 }
 
 .html-lesson-wrapper .see-content .ctr {

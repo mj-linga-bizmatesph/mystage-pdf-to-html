@@ -27,6 +27,24 @@ body {
   margin-top: 4%;
 }
 
+@media screen and (max-width: 351px) {
+  .html-lesson-wrapper .mw {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+  .html-lesson-wrapper .mw {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .html-lesson-wrapper .mw {
+    width: 241px;
+  }
+}
+
 .html-lesson-wrapper .u {
   text-decoration: underline;
 }
@@ -433,6 +451,12 @@ body {
     max-width: 100%;
     max-width: 892.75px;
     min-height: 457px;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .html-lesson-wrapper .biz-tip-content {
+    margin-top: clamp(83px, 18%, 160px);
   }
 }
 

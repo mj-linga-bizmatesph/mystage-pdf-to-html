@@ -33,6 +33,20 @@ body {
     margin-top: 4%;
   }
 
+  .mw {
+    @media screen and (max-width: 351px) {
+      width: 270px;
+    }
+
+    @media screen and (max-width: 341px) {
+      width: 250px;
+    }
+
+    @media screen and (max-width: 326px) {
+      width: 241px;
+    }
+  }
+
   .u {
     text-decoration: underline;
   }
@@ -106,7 +120,7 @@ body {
   }
 
   .sub-text {
-    font-family: $helvetica !important;
+    font-family: $helvetica  !important;
     line-height: 1.8;
     margin: 0 auto;
   }
@@ -130,6 +144,7 @@ body {
     @media screen and (max-width: 551px) {
       top: 2px;
     }
+
     @media screen and (max-width: 401px) {
       top: 5px;
     }
@@ -146,9 +161,11 @@ body {
     &.d1 {
       margin: 4% 0;
     }
+
     &.d2 {
       margin: 4% 0;
     }
+
     ul {
       margin: 3px 0px 0px 18px;
       padding: 0;
@@ -198,9 +215,11 @@ body {
 
       .no-arrow {
         width: 96%;
+
         @media screen and (max-width: 1921px) and (min-width: 1800px) {
           margin-left: -3.2%;
         }
+
         margin-left: -3.5%;
         margin-right: 16%;
         margin-bottom: 1.5%;
@@ -211,6 +230,7 @@ body {
   .arrow-part {
     position: relative;
     width: 90%;
+
     &:before {
       content: '';
       position: absolute;
@@ -227,9 +247,11 @@ body {
       @media screen and (max-width: 571px) {
         left: -1.1em;
       }
+
       @media screen and (max-width: 421px) {
         left: -0.8em;
       }
+
       @media screen and (max-width: 321px) {
         left: -0.7em;
       }
@@ -343,7 +365,7 @@ body {
 
   .review-content {
     .sub-text {
-      font-family: $trebuchet !important;
+      font-family: $trebuchet  !important;
       margin-bottom: 2%;
       line-height: 1.8;
     }
@@ -364,6 +386,7 @@ body {
       }
 
       @extend .b;
+
       .arrows {
         margin: 2% 0 2% 9%;
         font-weight: normal;
@@ -373,6 +396,7 @@ body {
             font-weight: bold;
           }
         }
+
         .arrow-part::before {
           left: -25px;
         }
@@ -397,6 +421,7 @@ body {
     & {
       min-height: unset;
     }
+
     .see-content {
       margin-top: clamp(22px, 3.8vw, 36px);
 
@@ -404,10 +429,12 @@ body {
         margin-bottom: clamp(20px, 3.7vw, 29px);
       }
     }
+
     .try-content {
       margin-top: clamp(20px, 3.7vw, 30px);
       padding-left: clamp(18px, 4.4vw, 18px);
     }
+
     .act-content {
       margin-top: clamp(20px, 3.8vw, 36px);
     }
@@ -418,6 +445,7 @@ body {
       margin: 0 6px;
       vertical-align: middle;
     }
+
     .arrow-part:before {
       border-left: 3.5px solid transparent !important;
       border-right: 3.5px solid transparent !important;

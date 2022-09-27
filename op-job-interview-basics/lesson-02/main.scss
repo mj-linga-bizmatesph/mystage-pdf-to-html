@@ -1,6 +1,12 @@
 @import '../../css/op-job-interview-basics-utils';
 
 .html-lesson-wrapper {
+  .biz-tip-content {
+    @media screen and (max-width: 451px) {
+      margin-top: clamp(83px, 18%, 160px);
+    }
+  }
+
   .half {
     display: grid;
     grid-template-columns: 1fr 1fr;

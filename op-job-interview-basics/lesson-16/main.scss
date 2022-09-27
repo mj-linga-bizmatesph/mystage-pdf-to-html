@@ -15,6 +15,12 @@
     min-height: 457px;
   }
 
+  .biz-tip-content {
+    @media screen and (max-width: 451px) {
+      margin-top: clamp(83px, 18%, 160px);
+    }
+  }
+
   .see-content {
     .sub-text {
       margin-bottom: 5%;

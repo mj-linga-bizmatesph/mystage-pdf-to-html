@@ -389,7 +389,6 @@ body {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1.1em;
-  text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
 }
@@ -408,7 +407,6 @@ body {
 .html-lesson-wrapper .try-content ul li::before {
   content: '';
   width: 2%;
-  display: inline-block;
 }
 
 .html-lesson-wrapper .act-content {

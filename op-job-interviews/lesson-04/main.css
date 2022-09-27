@@ -422,7 +422,7 @@ body {
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
   .html-lesson-wrapper .content-item .content-div .sw {
     max-width: 90% !important;
   }
@@ -458,6 +458,12 @@ body {
 
 .html-lesson-wrapper .content-item .content-div.see .content-table td:first-child {
   width: 10%;
+}
+
+@media screen and (max-width: 401px) {
+  .html-lesson-wrapper .content-item .content-div.see .content-table td:first-child {
+    width: 15%;
+  }
 }
 
 .html-lesson-wrapper .content-item .content-div.see .response-table {

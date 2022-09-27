@@ -382,7 +382,7 @@ body {
           max-width: 100% !important;
         }
 
-        @media screen and (max-width: 340px) {
+        @media screen and (max-width: 360px) {
           max-width: 90% !important;
         }
       }
@@ -414,6 +414,10 @@ body {
             &:first-child {
               @extend .b;
               width: 10%;
+
+              @media screen and (max-width: 401px) {
+                width: 15%;
+              }
             }
           }
         }

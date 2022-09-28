@@ -70,14 +70,14 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     width: 100%;
     height: auto;
   }
-  .conversation-wrapper{
+  .conversation-wrapper {
     display: flex;
     flex-direction: column;
-    .col{
-      display:inherit;
+    .col {
+      display: inherit;
       flex-direction: column;
     }
-    .row{
+    .row {
       display: inherit;
       flex-direction: row;
       align-items: center;
@@ -85,11 +85,11 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       align-items: stretch;
       line-height: 1.8;
     }
-    .speaker{
+    .speaker {
       min-width: 5em;
       align-items: start;
     }
-    .dialogue{
+    .dialogue {
       width: 100%;
     }
   }
@@ -243,8 +243,9 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
   .dialogue {
     font-size: $fs-10;
     font-family: $trebuchet;
-    
-    .row{
+    width: 90%;
+
+    .row {
       line-height: 1.8;
     }
   }
@@ -264,6 +265,9 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
   .speech {
     width: 90%;
     font-size: clamp(12px, 2vw, 15px);
+    @media only screen and (max-width: 400px) {
+      width: 78%;
+    }
   }
 
   .biz-tip-content {
@@ -300,7 +304,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
 
         .ma {
           margin: 0.3vw 0.8vw;
-          .ma-title{
+          .ma-title {
             line-height: 1.8;
           }
         }
@@ -404,10 +408,11 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       font-size: clamp(10px, 2vw, 15px);
       padding: 0.7vw;
       line-height: normal;
-      div{
+      width: 86%;
+      div {
         line-height: 2;
       }
-      p{
+      p {
         margin-bottom: 10px;
       }
       ol {
@@ -444,7 +449,6 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       width: clamp(400px, 55vw, 480px);
     }
     .email-lesson-2-1-text {
-      
       margin: clamp(12px, 1%, 50px) 0 0 clamp(305px, 46vw, 363px);
       @extend .email-text-settings;
     }
@@ -493,12 +497,13 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     display: grid;
     row-gap: clamp(4px, 1vw, 7px);
     border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
+    width: 88%;
   }
   .email-header {
     display: grid;
     grid-template-columns: clamp(1rem, 12vw, 3.5rem) 1fr;
     font-size: clamp(9px, 2vw, 13px);
-    column-gap: clamp(.2rem,2vw,2.5rem);
+    column-gap: clamp(0.2rem, 2vw, 2.5rem);
   }
 
   .email-header-label {
@@ -540,10 +545,10 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     padding: 5px;
     font-size: clamp(8px, 2vw, 15px);
     line-height: normal;
-    div:first-child{
+    div:first-child {
       line-height: 2;
     }
-    p{
+    p {
       margin-bottom: 10px;
     }
   }
@@ -560,6 +565,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     font-family: $trebuchet;
     font-size: clamp(12px, 2vw, 15px);
     line-height: 1.8;
+    width: 90%;
 
     li::before {
       counter-increment: orderedlist;
@@ -704,6 +710,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
       font-family: $trebuchet;
       font-size: clamp(12px, 2vw, 15px);
       line-height: normal;
+      width: 90%;
     }
 
     th,

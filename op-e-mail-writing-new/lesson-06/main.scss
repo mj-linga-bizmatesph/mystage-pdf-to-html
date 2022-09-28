@@ -1,4 +1,9 @@
 @import '../../css/_op-e-mail-writing-new-utils.scss';
-.section.act{
-    line-height: 1.8;
+.section.act {
+  line-height: 1.8;
+}
+.dialogue {
+  &.content {
+    margin-left: 0;
+  }
 }

@@ -3,17 +3,13 @@
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
 }
-.see-content{
-  ul{
-    
+.see-content {
+  ul {
     line-height: 1.8 !important;
     padding-left: 16px;
-    li{
-      
-    }
   }
 }
-.section.act{
+.section.act {
   line-height: 1.8;
 }
 
@@ -21,5 +17,11 @@
   .numbers {
     margin-left: 3%;
     width: 90%;
+  }
+}
+
+.dialogue {
+  &.content {
+    margin-left: 0;
   }
 }

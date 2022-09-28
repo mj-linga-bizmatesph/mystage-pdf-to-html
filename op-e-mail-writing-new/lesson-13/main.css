@@ -218,6 +218,7 @@ body {
 .html-lesson-wrapper .dialogue {
   font-size: clamp(6.48px, 1.8vw, 10pt);
   font-family: "Trebuchet MS";
+  width: 90%;
 }
 .html-lesson-wrapper .dialogue .row {
   line-height: 1.8;
@@ -237,6 +238,11 @@ body {
 .html-lesson-wrapper .speech {
   width: 90%;
   font-size: clamp(12px, 2vw, 15px);
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .speech {
+    width: 78%;
+  }
 }
 .html-lesson-wrapper .biz-tip-content {
   margin-top: clamp(70px, 28%, 140px) !important;
@@ -365,6 +371,7 @@ body {
   font-size: clamp(10px, 2vw, 15px);
   padding: 0.7vw;
   line-height: normal;
+  width: 86%;
 }
 .html-lesson-wrapper .see-content .see-border-box div {
   line-height: 2;
@@ -438,6 +445,7 @@ body {
   display: grid;
   row-gap: clamp(4px, 1vw, 7px);
   border: clamp(2px, 0.5vw, 3px) solid rgb(165, 165, 165);
+  width: 88%;
 }
 .html-lesson-wrapper .email-header {
   display: grid;
@@ -513,6 +521,7 @@ body {
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
   line-height: 1.8;
+  width: 90%;
 }
 .html-lesson-wrapper ol.numbers li::before {
   counter-increment: orderedlist;
@@ -625,6 +634,7 @@ body {
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 2vw, 15px);
   line-height: normal;
+  width: 90%;
 }
 .html-lesson-wrapper .try-content th,
 .html-lesson-wrapper .try-content td {
@@ -790,6 +800,11 @@ body {
   line-height: 1.8 !important;
   padding-left: 16px;
 }
+
 .section.act {
   line-height: 1.8;
+}
+
+.dialogue.content {
+  margin-left: 0;
 }

@@ -4,6 +4,9 @@
     ul {
       li::before {
         display: block !important;
+        @media screen and (max-width: 428px) {
+          display: inline-block !important;
+        }
       }
     }
     .arrows {
@@ -29,5 +32,8 @@
   .biz-tip-content {
     top: 20px;
     margin-bottom: 40px;
+  }
+  .arrow-part {
+    margin-left: 9px !important;
   }
 }

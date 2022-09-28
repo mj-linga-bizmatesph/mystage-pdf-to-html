@@ -13,6 +13,10 @@
   left: -3.6em;
   color: #cc3366;
   font-weight: bold;
-  font-family: 'Helvetica', 'Arial', san-serif;
+  font-family: "Helvetica","Arial",san-serif;
   top: -0.4%;
+  @media screen and (max-width: 500px){
+    top: -1.4%;
+    left: -2.6em;
+  }
 }

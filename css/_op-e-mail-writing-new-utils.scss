@@ -236,7 +236,8 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     font-family: $trebuchet;
     width: 85%;
     min-width: 75%;
-    padding-right: 5%;
+    padding-right: 0%;
+    margin-left: 5px;
   }
 
   .dialogue {
@@ -276,7 +277,7 @@ $s3: 'https://lesson-materials.s3-ap-northeast-1.amazonaws.com/images';
     display: flex;
     line-height: normal;
     .section {
-      margin-top: 3% !important;
+      margin-top: 23px !important;
     }
 
     .pointers {

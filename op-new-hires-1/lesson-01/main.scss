@@ -1,1 +1,15 @@
- @import '../../css/_op-new-hires-1-utils.scss';
+@import '../../css/_op-new-hires-1-utils.scss';
+.html-lesson-wrapper {
+  .act-content {
+    .table-1 {
+      border-collapse: collapse;
+      width: 100%;
+      th {
+        height: clamp(20px, 4vw, 40px);
+        text-align: left;
+        font-weight: normal;
+        width: 25%;
+      }
+    }
+  }
+}

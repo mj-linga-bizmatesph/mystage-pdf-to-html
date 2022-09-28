@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -21,11 +20,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper {
     min-height: 800px;
   }
 }
+
 .html-lesson-wrapper header {
   top: 0;
   margin-bottom: clamp(50px, 15vw, 65px);
@@ -33,6 +34,7 @@ body {
   position: relative;
   font-family: "Helvetica", "Arial", sans-serif;
 }
+
 .html-lesson-wrapper footer {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(4.5px, 1.1vw, 9px);
@@ -42,11 +44,13 @@ body {
   padding-right: 10%;
   bottom: -20px;
 }
+
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper footer {
     bottom: -45px;
   }
 }
+
 .html-lesson-wrapper footer .footer-text {
   text-align: right;
   position: absolute;
@@ -54,25 +58,39 @@ body {
   max-width: 41%;
   right: 2%;
 }
+
+.html-lesson-wrapper .m2 {
+  margin-left: 2% !important;
+}
+
 .html-lesson-wrapper .inline-block {
   display: inline-block;
 }
+
+.html-lesson-wrapper .pl2 {
+  padding-left: 2% !important;
+}
+
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper .pt-1, .html-lesson-wrapper .content-item .content-div.review-part-1 {
     padding-top: 0px !important;
   }
 }
+
 .html-lesson-wrapper .pt-2 {
   padding-top: 1.9rem !important;
 }
+
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper .pt-2 {
     padding-top: 0px !important;
   }
 }
-.html-lesson-wrapper .b, .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child, .html-lesson-wrapper .content-item .content-div.see .content-table td:first-child {
+
+.html-lesson-wrapper .b, .html-lesson-wrapper .content-item .content-div.see .content-table td:first-child, .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .program-rank {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(8px, 1.8vw, 15px);
@@ -81,10 +99,12 @@ body {
   margin-top: clamp(10px, 5vw, 43px);
   margin-left: clamp(10px, 6vw, 60px);
 }
+
 .html-lesson-wrapper .program-rank .type {
   padding: clamp(1px, 1vw, 2px) clamp(20px, 4vw, 17px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-color: #cc3366;
 }
+
 .html-lesson-wrapper .program-rank .level {
   padding: clamp(1px, 1vw, 2px) clamp(7px, 2vw, 15px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
   background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #cdca23), to(#db8536));
@@ -92,24 +112,34 @@ body {
   width: 100%;
   margin-left: -2%;
 }
+
 .html-lesson-wrapper .program-rank .level.two {
   padding: clamp(1px, 1vw, 2px) clamp(4px, 1vw, 8px) clamp(1px, 1vw, 2px) clamp(10px, 3vw, 17px);
 }
+
 .html-lesson-wrapper .program-rank .separator {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
   display: inline;
   margin: 0 6px;
 }
+
 .html-lesson-wrapper .lesson-number {
   position: absolute;
   right: 6.5%;
   width: 1.9%;
   text-align: center;
-  margin-top: 8%;
+  margin-top: 7%;
   font-size: clamp(7px, 1.8vw, 13px);
   color: #ffffff;
 }
+
+@media screen and (max-width: 959px) {
+  .html-lesson-wrapper .lesson-number {
+    margin-top: 7.8%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 7.4%;
@@ -118,6 +148,7 @@ body {
     right: 6.4% !important;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .lesson-number {
     margin-top: 7%;
@@ -126,9 +157,11 @@ body {
     right: 6.7% !important;
   }
 }
+
 .html-lesson-wrapper .lesson-number.two {
   right: 6.6%;
 }
+
 .html-lesson-wrapper .header-content {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
@@ -138,6 +171,7 @@ body {
           box-sizing: content-box;
   margin-top: clamp(10px, 3vw, 25px);
 }
+
 .html-lesson-wrapper .header-content .title {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(18px, 4vw, 27px);
@@ -145,13 +179,16 @@ body {
   margin-left: clamp(10px, 6vw, 60px);
   padding-top: 2%;
   padding-bottom: 5.4%;
+  width: 80%;
 }
+
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .header-content .title {
     padding-top: 1%;
     padding-bottom: 5%;
   }
 }
+
 .html-lesson-wrapper .header-content .biz-tips {
   background-color: #f0d4d4;
   min-height: 140px;
@@ -164,21 +201,43 @@ body {
           justify-content: flex-start;
   margin-bottom: 4rem;
 }
+
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper .header-content .biz-tips {
     margin-bottom: 0 !important;
   }
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
   width: 12%;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #cc3366;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 15px);
-  margin-top: clamp(10px, 3vw, 20px);
+  margin-top: clamp(10px, 3vw, 22px);
   padding-left: clamp(10px, 6vw, 60px);
 }
+
+@media screen and (max-width: 461px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 14%;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-label {
+    width: 19.5%;
+  }
+}
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+  line-height: normal;
   font-family: "Trebuchet MS";
   width: 90%;
   font-size: clamp(12px, 2vw, 15px);
@@ -186,53 +245,65 @@ body {
   padding-right: clamp(11px, 2vw, 20px);
   padding-bottom: 1rem;
   margin-right: 12%;
-  margin-left: 5px;
 }
+
 @media only screen and (max-width: 460px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
-    padding-left: clamp(11px, 2vw, 20px);
+    padding-left: clamp(4px, 1.5vw, 20px);
+    margin-left: 0px;
   }
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content p {
   margin: 0;
+  width: 115%;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul {
   margin: 0;
   padding: 0;
-  list-style-type: "▼";
+  list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   list-style-position: inside;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 0.8em;
   padding-left: 0.5em;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::before {
-  content: "";
+  content: '';
   display: block;
   width: 0.5em;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li::marker {
   font-size: clamp(11px, 2vw, 13px);
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 2%;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips .start-div {
   max-width: 50%;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips .end-div {
   margin-left: 4%;
 }
+
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content .all-tips .tip-label {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .content-item {
   padding-top: clamp(5px, 2vw, 10px);
   padding-right: clamp(10px, 3vw, 25px);
@@ -249,36 +320,57 @@ body {
           align-items: flex-start;
   width: 100%;
 }
+
 .html-lesson-wrapper .content-item .content-label {
   width: 15%;
   color: #cc3366;
 }
+
 .html-lesson-wrapper .content-item .content-label .content-label-text {
   font-weight: bold;
   font-size: clamp(12px, 2vw, 15px);
   vertical-align: middle;
   padding-left: clamp(10px, 6vw, 60px);
   font-family: "Helvetica", "Arial", sans-serif;
+  padding-top: 3px;
 }
+
 .html-lesson-wrapper .content-item.review {
   margin-top: 13% !important;
 }
+
 .html-lesson-wrapper .content-item.review .content-label {
-  width: 17%;
+  width: 22%;
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 431px) {
   .html-lesson-wrapper .content-item.review .content-label {
-    width: 19% !important;
+    width: 25% !important;
   }
 }
+
+@media only screen and (max-width: 383px) {
+  .html-lesson-wrapper .content-item.review .content-label {
+    width: 30% !important;
+  }
+}
+
 .html-lesson-wrapper .content-item.review-2 .content-label {
-  width: 17%;
+  width: 22%;
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 431px) {
   .html-lesson-wrapper .content-item.review-2 .content-label {
-    width: 19% !important;
+    width: 25% !important;
   }
 }
+
+@media only screen and (max-width: 383px) {
+  .html-lesson-wrapper .content-item.review-2 .content-label {
+    width: 30% !important;
+  }
+}
+
 .html-lesson-wrapper .content-item .content-div {
   width: 89%;
   margin-bottom: 15px;
@@ -286,74 +378,102 @@ body {
           box-sizing: content-box;
   font-size: clamp(12px, 2vw, 15px);
   padding-left: clamp(10px, 3vw, 25px);
+  line-height: 1.8;
 }
+
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div {
-    padding-left: 10px;
+    padding-left: 21px;
   }
 }
+
 .html-lesson-wrapper .content-item .content-div .header-text {
   margin: 0;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
-  line-height: clamp(12px, 4vw, 22px);
+  line-height: 1.8;
   margin-top: clamp(-2px, -1vw, -3px);
-  margin-bottom: 12px;
   max-width: 96%;
 }
+
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div .header-text {
     padding-top: 2px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-item .content-div .sw {
+    max-width: 90% !important;
+  }
+}
+
 .html-lesson-wrapper .content-item .content-div.see {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-table {
+  line-height: normal;
   border-collapse: collapse;
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-table p {
   margin: 0;
   line-height: 1.8em;
   top: -0.3em;
   position: relative;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-table p:not(:last-child) {
   margin-bottom: 5%;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-table td {
   padding: 0;
   vertical-align: top;
   line-height: 1.8em;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-table td:first-child {
   width: 10%;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .response-table {
   width: 96%;
   border-collapse: collapse;
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .content-item .content-div.see .response-table p {
   margin: 5px 0px;
   line-height: 1.8em;
   top: -0.3em;
   position: relative;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .response-table p:not(:last-child) {
   margin-bottom: 2%;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .response-table td {
   padding: 0;
   vertical-align: top;
   line-height: 1.8em;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
-  width: 15%;
+  width: 23%;
 }
+
+@media screen and (max-width: 491px) {
+  .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
+    width: 25%;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .html-lesson-wrapper .content-item .content-div.see .response-table td:first-child {
     min-width: 36%;
@@ -361,12 +481,14 @@ body {
     padding-right: 20px;
   }
 }
+
 .html-lesson-wrapper .content-item .content-div.see .response-table .text-red {
   color: #bd3762;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .table-text {
   margin: 0px;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
@@ -374,9 +496,10 @@ body {
   margin-bottom: 12px;
   max-width: 96%;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .bizmates-text {
   margin: 0px;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
   line-height: clamp(12px, 4vw, 22px);
@@ -384,85 +507,108 @@ body {
   margin-bottom: 12px;
   max-width: 96%;
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-list {
   background-color: #f0d4d4;
   padding: 10px;
   font-size: clamp(12px, 2vw, 15px);
   margin: 0px 0px 20px 0px;
 }
+
+.html-lesson-wrapper .content-item .content-div.see .content-list table tbody tr .b, .html-lesson-wrapper .content-item .content-div.see .content-list table tbody tr .content-table td:first-child, .html-lesson-wrapper .content-item .content-div.see .content-table .content-list table tbody tr td:first-child, .html-lesson-wrapper .content-item .content-div.see .content-list table tbody tr .response-table td:first-child, .html-lesson-wrapper .content-item .content-div.see .response-table .content-list table tbody tr td:first-child {
+  width: clamp(96px, 17vw, 129px);
+}
+
 .html-lesson-wrapper .content-item .content-div.see ul {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
 }
+
 .html-lesson-wrapper .content-item .content-div.see ul li {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 0.9em;
   padding-left: 0.5em;
 }
+
 .html-lesson-wrapper .content-item .content-div.see ul li::before {
-  content: "";
+  content: '';
   display: block;
   width: 0.5em;
 }
+
 .html-lesson-wrapper .content-item .content-div.see ul li::marker {
   font-size: clamp(11px, 2vw, 13px);
 }
+
 .html-lesson-wrapper .content-item .content-div.see .content-message {
   padding: 5px;
   font-size: clamp(12px, 2vw, 15px);
   margin: 0px 0px 20px 0px;
   border: 4px solid #d9d9d9;
+  line-height: normal;
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table {
-  font-size: clamp(12px, 2vw, 14px);
+  line-height: normal;
+  font-size: clamp(12px, 2vw, 15px);
   width: 96%;
   border-collapse: collapse;
   margin-right: 1.5em;
   padding-right: 42px;
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table .table-header {
   color: white;
   background-color: #bd3762;
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table td,
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   border: 1px solid #d9d9d9;
   vertical-align: top;
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table th {
   vertical-align: middle !important;
   padding: 0.7% 0.5%;
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table td {
-  padding: 0.5%;
+  padding: 1%;
   padding-left: clamp(5px, 1vw, 10px);
 }
+
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .content-item .content-div.try .content-table td {
     padding-bottom: 1%;
     vertical-align: top !important;
   }
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table .row p {
   display: inline-block;
   margin: 0px 0px;
 }
+
 .html-lesson-wrapper .content-item .content-div.try .content-table .row p:first-child {
   min-width: 9%;
   max-width: 100px;
   word-wrap: break-word;
 }
+
 @media screen and (max-width: 320px) {
   .html-lesson-wrapper .content-item .content-div.try .content-table .row p:first-child {
     min-width: 17%;
   }
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 {
   padding-right: clamp(15px, 7vw, 43px);
   width: 100% !important;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box {
   font-family: "Trebuchet MS";
   font-size: clamp(10px, 2vw, 13.5px);
@@ -470,136 +616,184 @@ body {
   border: 3px solid #d9d9d9;
   margin-bottom: 3%;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box p {
   margin: 0;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .review-box-title {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul {
   margin: 0;
   padding: 0;
-  list-style-type: "▼";
+  list-style-type: '\25BC';
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 0.8em;
   padding-left: 0.5em;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::before {
-  content: "";
+  content: '';
   display: block;
   width: 0.5em;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box ul li::marker {
   font-size: clamp(11px, 2vw, 13px);
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .all-tips {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1em;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .all-tips .start-div {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 45%;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .all-tips .end-div {
   margin-left: 4%;
   width: 50%;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .all-tips .tip-label {
   font-weight: bold;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box .content-footer {
   margin-top: 0.3rem;
   margin-left: -0.5%;
   margin-right: -0.5%;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-sub-text {
   display: inline-block;
   margin: 5px 0px;
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-sub-text:first-child {
   min-width: 9%;
   max-width: 100px;
   word-wrap: break-word;
 }
+
 @media screen and (max-width: 320px) {
   .html-lesson-wrapper .content-item .content-div.review-part-1 .review-sub-text:first-child {
     min-width: 17%;
     margin: 5px 0px;
   }
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-2 {
   padding-right: clamp(15px, 7vw, 55px);
 }
+
 .html-lesson-wrapper .content-item .content-div.review-part-2 p.part-2-content {
   margin: 0;
   font-family: "Trebuchet MS";
   font-size: clamp(12px, 3vw, 16px);
-  line-height: clamp(12px, 4vw, 25px);
+  line-height: 1.8;
 }
+
 .html-lesson-wrapper .content-item .content-div.act {
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .content-item .content-div.act p {
   margin: 0;
-  line-height: 1.8em;
+  line-height: 1.8;
   top: -0.3em;
   position: relative;
 }
+
 .html-lesson-wrapper .content-item .content-div.act p:last-child {
   margin-bottom: 5%;
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table {
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 2vw, 15px);
   width: 96%;
   border-collapse: collapse;
   margin-right: 1.5em;
   padding-right: 42px;
+  line-height: normal;
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table .table-header {
   color: white;
   background-color: #bd3762;
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table td,
 .html-lesson-wrapper .content-item .content-div .interview-table th {
   border: 1px solid #d9d9d9;
   vertical-align: baseline;
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table th {
   vertical-align: middle !important;
   padding: 0.7% 0.5%;
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table td {
-  padding: 0.5%;
+  padding: 1%;
   padding-left: clamp(5px, 1vw, 10px);
   width: 70%;
 }
+
 @media screen and (max-width: 460px) {
   .html-lesson-wrapper .content-item .content-div .interview-table td {
     padding-bottom: 1%;
   }
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table .row p {
   display: inline-block;
   margin: 0px 0px;
 }
+
 .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
   min-width: 5%;
   max-width: 100px;
   word-wrap: break-word;
 }
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 768px) {
   .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
-    min-width: 17%;
+    min-width: 6%;
   }
 }
+
+@media screen and (max-width: 563px) {
+  .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
+    min-width: 9%;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
+    min-width: 12%;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .html-lesson-wrapper .content-item .content-div .interview-table .row p:first-child {
+    min-width: 15%;
+  }
+}
+
 .html-lesson-wrapper .content-item-divider {
   width: 100%;
   text-align: center;
@@ -607,10 +801,12 @@ body {
   margin-top: clamp(10px, 2vw, 20px);
   margin-bottom: clamp(15px, 3vw, 25px);
 }
+
 .html-lesson-wrapper .content-item-divider::after {
-  content: "▼▼▼";
+  content: '\25BC\25BC\25BC';
   font-size: clamp(12px, 2vw, 15px);
 }
+
 .html-lesson-wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,47 +820,58 @@ body {
 .html-lesson-wrapper .see-content table td:first-child {
   width: 9em;
 }
+
 .html-lesson-wrapper .see-content table td {
   padding: 0;
   line-height: normal;
 }
+
 .html-lesson-wrapper .see .content-list ol {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
   list-style-position: inside;
 }
+
 .html-lesson-wrapper .see .content-list ol li::marker {
   color: black;
 }
+
 .html-lesson-wrapper .see .content-list p {
   display: inline-block;
   margin: 0px 0px;
 }
+
 .html-lesson-wrapper .try .content-table td {
   padding: 1%;
 }
+
 .html-lesson-wrapper .try .content-table .with-rowspan {
   width: 10%;
 }
+
 .html-lesson-wrapper .try .content-table .row p {
   display: inline-block;
   margin: 0px 0px;
 }
+
 .html-lesson-wrapper .try .content-table .row p:first-child {
   min-width: 9%;
   max-width: 100px;
   word-wrap: break-word;
 }
+
 .html-lesson-wrapper .try ul {
   margin: 0;
   margin-block: 0;
   padding-inline: 0;
   list-style-position: inside;
 }
+
 .html-lesson-wrapper .try ul li::marker {
   color: black;
 }
+
 .html-lesson-wrapper .try ul li {
   margin-bottom: 2%;
 }

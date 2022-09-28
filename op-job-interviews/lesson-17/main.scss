@@ -13,6 +13,7 @@
       }
     }
   }
+
   .see {
     .content-list {
       ol {
@@ -20,28 +21,34 @@
         margin-block: 0;
         padding-inline: 0;
         list-style-position: inside;
+
         li::marker {
           color: black;
         }
       }
+
       p {
         display: inline-block;
         margin: 0px 0px;
       }
     }
   }
+
   .try {
     .content-table {
       td {
         padding: 1%;
       }
+
       .with-rowspan {
         width: 10%;
       }
+
       .row {
         p {
           display: inline-block;
           margin: 0px 0px;
+
           &:first-child {
             min-width: 9%;
             max-width: 100px;
@@ -50,14 +57,17 @@
         }
       }
     }
+
     ul {
       margin: 0;
       margin-block: 0;
       padding-inline: 0;
       list-style-position: inside;
+
       li::marker {
         color: black;
       }
+
       li {
         margin-bottom: 2%;
       }

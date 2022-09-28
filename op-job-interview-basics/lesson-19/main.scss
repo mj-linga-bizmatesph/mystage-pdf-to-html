@@ -4,6 +4,7 @@
   @media screen and (max-width: 370px) {
     min-height: 457px;
   }
+
   .half {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,6 +16,7 @@
     .red {
       color: red;
     }
+
     table {
       td:first-child {
         width: 9em;
@@ -31,6 +33,7 @@
       p {
         margin: 0;
       }
+
       p:not(:last-child) {
         margin-bottom: 5%;
       }
@@ -44,10 +47,12 @@
 
         margin-bottom: 5%;
       }
-      ol > li {
+
+      ol>li {
         list-style: none;
       }
-      ol > li:before {
+
+      ol>li:before {
         margin-right: 2%;
         content: counter(list, number) ') ';
         counter-increment: list;

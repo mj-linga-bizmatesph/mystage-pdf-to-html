@@ -21,6 +21,7 @@
           min-width: 5%;
           max-width: 70px;
           word-wrap: break-word;
+
           @media screen and (max-width: 320px) {
             min-width: 17%;
           }
@@ -34,13 +35,16 @@
       td {
         padding: 1%;
       }
+
       .with-rowspan {
         width: 10%;
       }
+
       .row {
         p {
           display: inline-block;
           margin: 0px 0px;
+
           &:first-child {
             min-width: 9%;
             max-width: 100px;
@@ -49,14 +53,17 @@
         }
       }
     }
+
     ul {
       margin: 0;
       margin-block: 0;
       padding-inline: 0;
       list-style-position: inside;
+
       li::marker {
         color: black;
       }
+
       li {
         margin-bottom: 2%;
       }

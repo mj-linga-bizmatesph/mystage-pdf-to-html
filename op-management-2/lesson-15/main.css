@@ -359,6 +359,11 @@ body {
           box-sizing: content-box;
   list-style-position: inside;
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul {
+    width: 95%;
+  }
+}
 .html-lesson-wrapper .header-content .biz-tips .biz-tip-content ul li {
   list-style-position: outside;
   text-indent: -1em;
@@ -537,6 +542,7 @@ body {
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div.try .try-list {
     margin-left: 15px;
+    width: 90%;
   }
 }
 .html-lesson-wrapper .content-item .content-div.try .try-list li {

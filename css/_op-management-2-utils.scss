@@ -340,6 +340,9 @@ body {
           list-style-type: '\25BC';
           box-sizing: content-box;
           list-style-position: inside;
+          @media only screen and (max-width: 400px) {
+            width: 95%;
+          }
           li {
             list-style-position: outside;
             text-indent: -1em;
@@ -504,6 +507,7 @@ body {
           margin-left: 3%;
           @media only screen and (max-width: 400px) {
             margin-left: 15px;
+            width: 90%;
           }
           li {
             padding-left: 20px;

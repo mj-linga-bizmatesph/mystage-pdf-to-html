@@ -456,6 +456,7 @@ body {
           display: flex;
           font-size: clamp(12px, 2vw, 15px);
           line-height: clamp(19px, 3vw, 24px);
+          width: 110%;
           .speaker {
             width: 12%;
             font-weight: bold;
@@ -507,10 +508,11 @@ body {
           margin-left: 3%;
           @media only screen and (max-width: 400px) {
             margin-left: 15px;
-            width: 90%;
+            width: 95%;
           }
           li {
             padding-left: 20px;
+            width: 95%;
           }
           .alpha {
             list-style-type: lower-alpha;
@@ -524,7 +526,7 @@ body {
       &.act {
         p {
           line-height: 1.8em;
-          width: 95%;
+          width: 100%;
         }
         .try-list {
           line-height: 1.8em;

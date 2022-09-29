@@ -489,6 +489,7 @@ body {
   display: flex;
   font-size: clamp(12px, 2vw, 15px);
   line-height: clamp(19px, 3vw, 24px);
+  width: 110%;
 }
 .html-lesson-wrapper .content-item .content-div.see .dialogue .speaker {
   width: 12%;
@@ -542,11 +543,12 @@ body {
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div.try .try-list {
     margin-left: 15px;
-    width: 90%;
+    width: 95%;
   }
 }
 .html-lesson-wrapper .content-item .content-div.try .try-list li {
   padding-left: 20px;
+  width: 95%;
 }
 .html-lesson-wrapper .content-item .content-div.try .try-list .alpha {
   list-style-type: lower-alpha;
@@ -559,7 +561,7 @@ body {
 }
 .html-lesson-wrapper .content-item .content-div.act p {
   line-height: 1.8em;
-  width: 95%;
+  width: 100%;
 }
 .html-lesson-wrapper .content-item .content-div.act .try-list {
   line-height: 1.8em;

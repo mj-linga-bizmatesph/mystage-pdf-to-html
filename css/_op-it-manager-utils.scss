@@ -252,7 +252,7 @@ body {
         margin-left: -3.6%;
         margin-right: 10%;
       @media screen and (max-width: 500px){
-        margin-right: 10%;
+        margin-right: 5%;
       }
       }
     }
@@ -292,6 +292,9 @@ body {
     &.black-arrow:before {
       border-top: 8px solid black;
     }
+    @media screen and (max-width: 500px){
+      margin-right: 5%;
+    }
   }
 
   .context {
@@ -309,9 +312,6 @@ body {
     margin-top: 4.1%;
     @media screen and (max-width: 900px){
       margin-left: 5.5em;
-    }
-    @media screen and (max-width: 500px){
-      margin-left: 4em;
     }
 
     .article {

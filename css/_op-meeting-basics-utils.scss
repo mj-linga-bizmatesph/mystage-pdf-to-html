@@ -207,6 +207,7 @@ body {
         padding-left: clamp(10px, 6vw, 60px);
         @media only screen and (max-device-width: 400px) {
           width: 15%;
+          margin-top: 14px;
         }
       }
       .biz-tip-content {

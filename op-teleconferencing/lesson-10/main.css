@@ -636,7 +636,8 @@ body {
 }
 .html-lesson-wrapper .content-div .content-div .lessons li {
   padding-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 0.3em;
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .content-div .content-div .bullets li {
   padding-left: 0px;
@@ -651,8 +652,9 @@ body {
 }
 .html-lesson-wrapper .lessons li {
   padding-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 0.3em;
   list-style: none;
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .bullets li {
   padding-left: 0px;
@@ -663,4 +665,8 @@ body {
   .html-lesson-wrapper .bullets li {
     margin-left: 20%;
   }
+}
+
+section.content-item.review {
+  padding-top: 0;
 }

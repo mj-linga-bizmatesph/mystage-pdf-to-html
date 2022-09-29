@@ -202,7 +202,7 @@ body {
 .html-lesson-wrapper .review-content {
   line-height: 1.8;
   position: relative;
-  margin-left: clamp(45px, 12.5%, 85.5px);
+  margin-left: clamp(45px, 12.5%, 95.5px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
@@ -329,7 +329,7 @@ body {
 }
 
 .html-lesson-wrapper .context {
-  margin-left: clamp(6px, 10vw, 28px);
+  margin-left: clamp(6px, 10vw, 33px);
   font-size: clamp(12px, 2vw, 15px);
 }
 

@@ -214,7 +214,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
   }
 
   .biz-tip-content {
-    margin-top: clamp(70px, 28%, 140px);
+    margin-top: clamp(70px, 15%, 140px);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -537,6 +537,7 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
       margin-top: clamp(70px, 25%, 250px);
       ul {
         list-style: none;
+        line-height: 1.8em;
       }
     }
 
@@ -641,7 +642,8 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
         list-style-position: outside;
         text-indent: -1em;
         margin-left: 1em;
-        margin-bottom: -0.4em;
+        margin-bottom: 0.8em;
+        font-size: clamp(12px, 2vw, 15px);
       }
     }
 

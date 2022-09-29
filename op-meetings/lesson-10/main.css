@@ -203,7 +203,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .biz-tip-content {
-  margin-top: clamp(70px, 28%, 140px);
+  margin-top: clamp(70px, 15%, 140px);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -484,6 +484,7 @@ body {
 }
 .html-lesson-wrapper .part-content.part-1 ul {
   list-style: none;
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .part-content .article {
   margin-top: 5px;
@@ -575,7 +576,8 @@ body {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 1em;
-  margin-bottom: -0.4em;
+  margin-bottom: 0.8em;
+  font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .part-content ol {
   margin: 0;
@@ -792,7 +794,7 @@ body {
   }
 }
 
-.circle .b, .circle .html-lesson-wrapper .part-content table td:first-child, .html-lesson-wrapper .part-content table .circle td:first-child {
+.circle b {
   font-size: clamp(12px, 2vw, 15px);
 }
 

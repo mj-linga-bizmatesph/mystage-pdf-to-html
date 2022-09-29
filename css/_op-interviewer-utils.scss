@@ -435,6 +435,9 @@ body {
       @media only screen and (max-width: 400px) {
         padding-left: 4.5%;
       }
+      p.header-text {
+        width: 95%;
+      }
       .header-text {
         margin-bottom: 15%;
         margin: 1px;
@@ -443,9 +446,6 @@ body {
         font-weight: bold;
         line-height: 1.8em;
         margin-top: clamp(-2px, -1vw, -3px);
-        // @media only screen and (max-width: 400px) {
-        //   width: 95%;
-        // }
       }
       &.see {
         .dialogue {

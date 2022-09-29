@@ -1,15 +1,33 @@
 @import '../../css/_op-e-mail-writing-new-utils.scss';
 
-.part-1{
-    .dialogue{
-        font-size: clamp(12px,2vw,15px) !important;
-    }
+.part-1 {
+  .dialogue {
+    font-size: clamp(12px, 2vw, 15px) !important;
+  }
 }
-.part-content{
-    .section{
-        width: clamp(3.1rem,16%,8rem);
+.part-content {
+  .section {
+    width: clamp(3.1rem, 16%, 8rem);
+  }
+  .section,
+  .sub-text {
+    line-height: 1.8 !important;
+  }
+}
+.section {
+  &.see {
+    margin-top: 6px;
+  }
+  &.try {
+    margin-top: 7px;
+    @media only screen and (max-width: 400px) {
+      margin-top: 6px;
     }
-    .section,.sub-text{
-        line-height: 1.8 !important;
+  }
+  &.act {
+    margin-top: -6px;
+    @media only screen and (max-width: 400px) {
+      margin-top: -4px;
     }
+  }
 }

@@ -150,6 +150,11 @@ body {
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
   margin: 0 0 0.3rem 0;
+  line-height: 1.8em;
+}
+.html-lesson-wrapper .no-arrow {
+  width: 90%;
+  margin-bottom: 2%;
 }
 .html-lesson-wrapper .sub-text-2 {
   font-family: "Helvetica", "Arial", sans-serif !important;
@@ -258,7 +263,12 @@ body {
   line-height: normal;
 }
 .html-lesson-wrapper .biz-tip-content .section {
-  margin-top: 23px !important;
+  margin-top: 23px;
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .biz-tip-content .section {
+    margin-top: 13px;
+  }
 }
 .html-lesson-wrapper .biz-tip-content .pointers {
   margin-top: 3% !important;
@@ -569,6 +579,11 @@ body {
   list-style-position: inside;
   line-height: normal;
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper ul.arrow-part-list {
+    width: 90%;
+  }
+}
 .html-lesson-wrapper ul.arrow-part-list li {
   list-style-position: outside;
   text-indent: -1em;
@@ -779,22 +794,6 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 425px) {
-  .html-lesson-wrapper .biz-tip-flexbox {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-  }
-  .html-lesson-wrapper .biz-tip-flexbox .biz-tip-box,
-.html-lesson-wrapper .biz-tip-flexbox ul {
-    width: 100% !important;
-  }
-  .html-lesson-wrapper .biz-tip-box:nth-child(2),
-.html-lesson-wrapper .mv-mt {
-    margin-top: clamp(5px, 2vw, 10px) !important;
-  }
-}
 
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
@@ -802,4 +801,24 @@ body {
 
 .dialogue.content {
   margin-left: 0;
+}
+
+.section.see {
+  margin-top: 6px;
+}
+.section.try {
+  margin-top: 7px;
+}
+@media only screen and (max-width: 400px) {
+  .section.try {
+    margin-top: 6px;
+  }
+}
+.section.act {
+  margin-top: -6px;
+}
+@media only screen and (max-width: 400px) {
+  .section.act {
+    margin-top: -4px;
+  }
 }

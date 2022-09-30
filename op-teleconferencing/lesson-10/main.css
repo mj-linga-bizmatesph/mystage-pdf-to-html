@@ -27,6 +27,11 @@ body {
     min-height: 800px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper {
+    min-height: 650px;
+  }
+}
 .html-lesson-wrapper header {
   top: 0;
   margin-bottom: clamp(50px, 15vw, 65px);
@@ -612,7 +617,7 @@ body {
   }
 }
 .html-lesson-wrapper .part-spacer {
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 @media only screen and (max-width: 767px) {
   .html-lesson-wrapper .part-spacer {

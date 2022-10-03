@@ -1,6 +1,10 @@
 @import '../../css/op-job-interview-basics-utils';
 
 .html-lesson-wrapper {
+  .w {
+    width: 100% !important;
+  }
+
   .biz-tip-content {
     @media screen and (max-width: 451px) {
       margin-top: clamp(83px, 18%, 160px);

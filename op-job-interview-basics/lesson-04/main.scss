@@ -1,6 +1,10 @@
 @import '../../css/op-job-interview-basics-utils';
 
 .html-lesson-wrapper {
+  .w {
+    width: 100% !important;
+  }
+
   .see-content {
     .sub-text {
       margin-bottom: 5%;

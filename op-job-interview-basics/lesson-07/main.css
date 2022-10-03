@@ -444,6 +444,10 @@ body {
   }
 }
 
+.html-lesson-wrapper .w {
+  width: 100% !important;
+}
+
 @media screen and (max-width: 451px) {
   .html-lesson-wrapper .biz-tip-content {
     margin-top: clamp(83px, 18%, 160px);

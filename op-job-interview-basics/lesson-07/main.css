@@ -466,19 +466,22 @@ body {
   margin-bottom: 2%;
 }
 
-.html-lesson-wrapper .try-content .o-scroll {
-  overflow-x: scroll;
+.html-lesson-wrapper .try-content div table {
+  width: 120% !important;
 }
 
-.html-lesson-wrapper .try-content .o-scroll table {
-  width: 120%;
+@media screen and (max-width: 450px) {
+  .html-lesson-wrapper .try-content div table {
+    width: 250% !important;
+  }
 }
 
-.html-lesson-wrapper .try-content .o-scroll table th {
+.html-lesson-wrapper .try-content div table th {
   vertical-align: middle;
+  width: 15%;
 }
 
-.html-lesson-wrapper .try-content .o-scroll table td {
+.html-lesson-wrapper .try-content div table td {
   padding: 1%;
 }
 

@@ -28,14 +28,18 @@
       margin-bottom: 2%;
     }
 
-    .o-scroll {
-      overflow-x: scroll;
+    div {
 
       table {
-        width: 120%;
+        width: 120% !important;
+
+        @media screen and (max-width: 450px) {
+          width: 250% !important;
+        }
 
         th {
           vertical-align: middle;
+          width: 15%;
         }
 
         td {

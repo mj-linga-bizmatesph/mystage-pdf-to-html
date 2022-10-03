@@ -22,15 +22,19 @@
       white-space: nowrap;
     }
 
-    .o-scroll {
-      overflow-x: scroll;
+    div {
 
       table {
-        width: 120% !important;
+        width: 150% !important;
+
+        @media screen and (max-width: 450px) {
+          width: 250% !important;
+        }
 
         tr {
           th {
             vertical-align: middle;
+            width: 15%;
           }
 
           td {

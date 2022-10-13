@@ -142,6 +142,15 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .review-content {
+    padding-right: 15px;
+  }
+}
+
 .html-lesson-wrapper .table {
   width: 100%;
 }
@@ -176,6 +185,12 @@ body {
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .see-content {
     margin-top: -5.4%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .see-content {
+    width: 75%;
   }
 }
 
@@ -262,7 +277,6 @@ body {
   margin-left: clamp(50px, 14%, 126.5px);
   padding-left: 18.5px;
   padding-right: 42px;
-  font-size: clamp(6px, 1.8vw, 15px);
 }
 
 .html-lesson-wrapper .review-content ul {
@@ -342,7 +356,6 @@ body {
   }
   .html-lesson-wrapper footer {
     bottom: clamp(16px, 4.8vw, 43px);
-    right: 5% !important;
   }
   .html-lesson-wrapper .section {
     left: calc(-16% + 45px);
@@ -528,6 +541,13 @@ body {
   left: -3.6em;
   color: #cc3366;
   font-weight: bold;
-  font-family: 'Helvetica', 'Arial', san-serif;
+  font-family: "Helvetica","Arial",san-serif;
   top: -0.4%;
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .section {
+    top: -1.4%;
+    left: -2.6em;
+  }
 }

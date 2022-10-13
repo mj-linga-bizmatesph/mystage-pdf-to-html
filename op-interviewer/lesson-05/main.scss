@@ -10,6 +10,22 @@
 }
 
 .html-lesson-wrapper {
+  .content-label {
+    .content-label-text {
+      &.part {
+        @media only screen and (max-width: 400px) {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .header-text {
+    &.part {
+      @media only screen and (max-width: 400px) {
+        width: 110%;
+      }
+    }
+  }
   .review-part-2 {
     .tbl-container {
       @media only screen and (max-width: 400px) {

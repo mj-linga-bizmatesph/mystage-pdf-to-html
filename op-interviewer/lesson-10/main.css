@@ -314,7 +314,7 @@ body {
   color: #cc3366;
   font-weight: bold;
   font-size: clamp(12px, 2vw, 15px);
-  margin-top: clamp(10px, 3vw, 14px);
+  margin-top: clamp(16px, 3vw, 14px);
   padding-left: clamp(10px, 6vw, 60px);
   line-height: 1.8em;
 }
@@ -467,13 +467,16 @@ body {
   margin-bottom: 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: clamp(8px, 1vw, 25px);
+  padding-left: clamp(20px, 1vw, 25px);
   line-height: 1.8em;
 }
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div {
-    margin-left: 2%;
+    padding-left: 4.5%;
   }
+}
+.html-lesson-wrapper .content-item .content-div p.header-text {
+  width: 95%;
 }
 .html-lesson-wrapper .content-item .content-div .header-text {
   margin-bottom: 15%;
@@ -483,11 +486,6 @@ body {
   font-weight: bold;
   line-height: 1.8em;
   margin-top: clamp(-2px, -1vw, -3px);
-}
-@media only screen and (max-width: 400px) {
-  .html-lesson-wrapper .content-item .content-div .header-text {
-    width: 95%;
-  }
 }
 .html-lesson-wrapper .content-item .content-div.see .dialogue {
   display: -webkit-box;
@@ -715,6 +713,16 @@ body {
   content: "▼▼▼";
 }
 
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .content-label .content-label-text.part {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .header-text.part {
+    width: 110%;
+  }
+}
 @media only screen and (max-width: 400px) {
   .html-lesson-wrapper .review-part-2 .tbl-container {
     width: 95%;

@@ -396,6 +396,18 @@ body {
   .html-lesson-wrapper .biz-tip-content {
     margin-top: clamp(94px, 19%, 157px);
   }
+  .html-lesson-wrapper .try-content .table-responsive {
+    margin-left: 8px;
+  }
+  .html-lesson-wrapper .try-content ol {
+    margin-left: 1.9em;
+  }
+  .html-lesson-wrapper .try-content p.b.sub-text {
+    margin-left: 8px;
+  }
+  .html-lesson-wrapper .try-content img {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 390px) {
   .html-lesson-wrapper .biz-tip-content .pointers {
@@ -433,5 +445,5 @@ body {
   padding-bottom: 0;
 }
 .html-lesson-wrapper .try-content ol {
-  margin-left: 1.5em;
+  margin-left: 1.9em !important;
 }

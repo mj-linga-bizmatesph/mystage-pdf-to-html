@@ -462,6 +462,20 @@ body {
     .biz-tip-content {
       margin-top: clamp(94px, 19%, 157px);
     }
+    .try-content {
+      .table-responsive {
+        margin-left: 8px;
+      }
+      ol {
+        margin-left: 1.9em;
+      }
+      p.b.sub-text {
+        margin-left: 8px;
+      }
+      img {
+        margin-left: 10px;
+      }
+    }
   }
   @media screen and (max-width: 390px) {
     .biz-tip-content .pointers {

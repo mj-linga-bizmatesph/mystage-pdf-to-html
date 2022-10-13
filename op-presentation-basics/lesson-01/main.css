@@ -583,7 +583,11 @@ body {
     left: -4% !important;
   }
   .html-lesson-wrapper table .arrow-part {
-    margin-left: 5px;
+    margin-left: 7px;
+    padding-left: 5px;
+  }
+  .html-lesson-wrapper table .td-content-4b .arrow-part {
+    margin-left: 9px;
     padding-left: 5px;
   }
   .html-lesson-wrapper td div.arrow-part::before {

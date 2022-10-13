@@ -3,3 +3,21 @@
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
 }
+
+.section {
+  &.see {
+    margin-top: 6px;
+  }
+  &.try {
+    margin-top: 7px;
+    @media only screen and (max-width: 400px) {
+      margin-top: 6px;
+    }
+  }
+  &.act {
+    margin-top: -6px;
+    @media only screen and (max-width: 400px) {
+      margin-top: -4px;
+    }
+  }
+}

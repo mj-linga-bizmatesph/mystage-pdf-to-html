@@ -1,11 +1,11 @@
 @import '../../css/_op-e-mail-writing-new-utils.scss';
-.see-content{
-  ul{
+.see-content {
+  ul {
     line-height: 1.8 !important;
     padding-left: 16px;
   }
 }
-.section.act{
+.section.act {
   line-height: 1.8;
 }
 
@@ -16,6 +16,28 @@
     @media only screen and (max-width: 820px) {
       text-indent: 0%;
       margin-left: 0%;
+    }
+  }
+}
+.dialogue {
+  &.content {
+    margin-left: 0;
+  }
+}
+.section {
+  &.see {
+    margin-top: 6px;
+  }
+  &.try {
+    margin-top: 7px;
+    @media only screen and (max-width: 400px) {
+      margin-top: 6px;
+    }
+  }
+  &.act {
+    margin-top: -6px;
+    @media only screen and (max-width: 400px) {
+      margin-top: -4px;
     }
   }
 }

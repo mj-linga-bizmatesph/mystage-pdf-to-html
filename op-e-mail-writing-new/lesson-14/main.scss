@@ -5,12 +5,31 @@
       
       line-height: 1.8 !important;
       padding-left: 16px;
-      li{
-        
-      }
     }
   }
 
 .section.act{
     line-height: 1.8;
+}
+.dialogue {
+  &.content {
+    margin-left: 0;
+  }
+}
+.section {
+  &.see {
+    margin-top: 6px;
+  }
+  &.try {
+    margin-top: 7px;
+    @media only screen and (max-width: 400px) {
+      margin-top: 6px;
+    }
+  }
+  &.act {
+    margin-top: -6px;
+    @media only screen and (max-width: 400px) {
+      margin-top: -4px;
+    }
+  }
 }

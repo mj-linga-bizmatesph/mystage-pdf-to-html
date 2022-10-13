@@ -3,17 +3,13 @@
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
 }
-.see-content{
-  ul{
-    
+.see-content {
+  ul {
     line-height: 1.8 !important;
     padding-left: 16px;
-    li{
-      
-    }
   }
 }
-.section.act{
+.section.act {
   line-height: 1.8;
 }
 
@@ -22,4 +18,31 @@
     margin-left: 3%;
     width: 90%;
   }
+}
+
+.dialogue {
+  &.content {
+    margin-left: 0;
+  }
+}
+.section {
+  &.see {
+    margin-top: 6px;
+  }
+  &.try {
+    margin-top: 7px;
+    @media only screen and (max-width: 400px) {
+      margin-top: 6px;
+    }
+  }
+  &.act {
+    margin-top: -6px;
+    @media only screen and (max-width: 400px) {
+      margin-top: -4px;
+    }
+  }
+}
+
+.biz-tip-flexbox {
+  width: 90%;
 }

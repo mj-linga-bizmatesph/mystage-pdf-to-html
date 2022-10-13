@@ -237,6 +237,11 @@ body {
   padding-inline: 0;
   line-height: 1.8;
 }
+@media screen and (min-width: 960px) {
+  .html-lesson-wrapper .try-content ul {
+    margin-left: 1.1em;
+  }
+}
 .html-lesson-wrapper .try-content ul li {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
@@ -407,6 +412,11 @@ body {
 .html-lesson-wrapper .try-content ul li::before {
   display: block !important;
 }
+@media screen and (max-width: 428px) {
+  .html-lesson-wrapper .try-content ul li::before {
+    display: inline-block !important;
+  }
+}
 .html-lesson-wrapper .try-content .arrows {
   margin-left: 5%;
 }
@@ -426,5 +436,8 @@ body {
   .biz-tip-content {
     top: 20px;
     margin-bottom: 40px;
+  }
+  .arrow-part {
+    margin-left: 9px !important;
   }
 }

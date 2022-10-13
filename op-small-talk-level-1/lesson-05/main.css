@@ -401,7 +401,7 @@ body {
     display: block !important;
   }
   .html-lesson-wrapper .decimal {
-    margin-left: 25px !important;
+    margin-left: 30px !important;
   }
   .html-lesson-wrapper .text-header {
     margin-top: -3px !important;
@@ -411,6 +411,9 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  .html-lesson-wrapper .words-phrase-content .pointers {
+    margin-left: clamp(50px, 14.5%, 126.5px);
+  }
   .html-lesson-wrapper .text-header {
     left: -9px !important;
   }
@@ -492,7 +495,7 @@ body {
     left: clamp(25px, 2vw, 48px);
   }
   .html-lesson-wrapper .words-phrase-content .section {
-    margin-top: clamp(6px, 1.6vw, 18px) !important;
+    margin-top: clamp(9px, 1.6vw, 18px) !important;
   }
   .html-lesson-wrapper .section {
     top: 7px;

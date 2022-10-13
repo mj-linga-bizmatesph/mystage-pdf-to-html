@@ -1,6 +1,10 @@
 @import '../../css/op-job-interviews-utils';
 
 .html-lesson-wrapper {
+  .h {
+    height: 0;
+  }
+
   .see-content {
     table {
       td:first-child {
@@ -176,6 +180,7 @@
               content: '';
               display: block;
               width: 0.5em;
+              height: 0;
             }
 
             li::marker {
@@ -222,6 +227,7 @@
               content: '';
               display: block;
               width: 0.5em;
+              height: 0;
             }
 
             li::marker {

@@ -27,6 +27,24 @@ body {
   margin-top: 4%;
 }
 
+@media screen and (max-width: 351px) {
+  .html-lesson-wrapper .mw {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+  .html-lesson-wrapper .mw {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .html-lesson-wrapper .mw {
+    width: 241px;
+  }
+}
+
 .html-lesson-wrapper .u {
   text-decoration: underline;
 }
@@ -426,6 +444,10 @@ body {
   }
 }
 
+.html-lesson-wrapper .w {
+  width: 100% !important;
+}
+
 .html-lesson-wrapper .see-content .sub-text {
   margin-bottom: 5%;
 }
@@ -442,18 +464,21 @@ body {
   white-space: nowrap;
 }
 
-.html-lesson-wrapper .try-content .o-scroll {
-  overflow-x: scroll;
+.html-lesson-wrapper .try-content div table {
+  width: 150% !important;
 }
 
-.html-lesson-wrapper .try-content .o-scroll table {
-  width: 120% !important;
+@media screen and (max-width: 450px) {
+  .html-lesson-wrapper .try-content div table {
+    width: 250% !important;
+  }
 }
 
-.html-lesson-wrapper .try-content .o-scroll table tr th {
+.html-lesson-wrapper .try-content div table tr th {
   vertical-align: middle;
+  width: 15%;
 }
 
-.html-lesson-wrapper .try-content .o-scroll table tr td {
+.html-lesson-wrapper .try-content div table tr td {
   padding: 1%;
 }

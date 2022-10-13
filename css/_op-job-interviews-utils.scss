@@ -80,6 +80,10 @@ body {
 
   .pl2 {
     padding-left: 2% !important;
+
+    @media screen and (max-width: 401px) {
+      padding-left: 0% !important;
+    }
   }
 
   .pt-1 {
@@ -186,6 +190,11 @@ body {
 
       @media only screen and (max-width: 767px) {
         padding-top: 1%;
+        padding-bottom: 5%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        padding-top: 2%;
         padding-bottom: 5%;
       }
     }
@@ -370,6 +379,10 @@ body {
 
       .sw {
         @media screen and (max-width: 400px) {
+          max-width: 100% !important;
+        }
+
+        @media screen and (max-width: 360px) {
           max-width: 90% !important;
         }
       }
@@ -401,6 +414,10 @@ body {
             &:first-child {
               @extend .b;
               width: 10%;
+
+              @media screen and (max-width: 401px) {
+                width: 15%;
+              }
             }
           }
         }
@@ -438,6 +455,19 @@ body {
                 min-width: 36%;
                 margin: 5px 0px;
                 padding-right: 20px;
+                width: 32%;
+              }
+
+              @media screen and (max-width: 401px) {
+                width: 36%;
+              }
+
+              @media screen and (max-width: 359px) {
+                width: 39%;
+              }
+
+              @media screen and (max-width: 334px) {
+                width: 41%;
               }
             }
           }

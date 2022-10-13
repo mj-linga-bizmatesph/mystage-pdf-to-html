@@ -201,12 +201,16 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     font-weight: bold;
     font-family: $helvetica;
     font-size: clamp(12px, 2vw, 15px);
+    &.words {
+      margin-top: 3px;
+    }
   }
 
   .content {
     font-family: $trebuchet;
     width: 85%;
     min-width: 75%;
+    margin-left: 2%;
 
     div {
       padding-right: 5%;
@@ -222,7 +226,8 @@ $fs-10: clamp(6.48px, 1.8vw, 10pt);
     padding-bottom: 4%;
     padding-top: 3%;
     .no-arrow{
-      margin-bottom: 1%;
+      margin-bottom: 2%;
+      line-height: normal;
     }
   }
 

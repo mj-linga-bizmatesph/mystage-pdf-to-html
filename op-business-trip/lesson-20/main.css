@@ -168,10 +168,14 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: clamp(12px, 2vw, 15px);
 }
+.html-lesson-wrapper .section.words {
+  margin-top: 3px;
+}
 .html-lesson-wrapper .content {
   font-family: "Trebuchet MS";
   width: 85%;
   min-width: 75%;
+  margin-left: 2%;
 }
 .html-lesson-wrapper .content div {
   padding-right: 5%;
@@ -186,7 +190,8 @@ body {
   padding-top: 3%;
 }
 .html-lesson-wrapper .biz-tip-content .no-arrow {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
+  line-height: normal;
 }
 .html-lesson-wrapper .arrow-part {
   position: relative;

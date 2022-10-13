@@ -27,6 +27,11 @@ body {
     min-height: 800px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper {
+    min-height: 650px;
+  }
+}
 .html-lesson-wrapper header {
   top: 0;
   margin-bottom: clamp(50px, 15vw, 65px);
@@ -324,6 +329,11 @@ body {
     margin-left: 2.5%;
   }
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
+    margin-left: 0;
+  }
+}
 @media only screen and (max-width: 360px) {
   .html-lesson-wrapper .header-content .biz-tips .biz-tip-content {
     margin-left: 3%;
@@ -445,9 +455,9 @@ body {
   padding-left: clamp(10px, 3vw, 25px);
   font-size: clamp(12px, 2vw, 15px);
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div {
-    margin-left: 3%;
+    margin-left: 4%;
   }
 }
 .html-lesson-wrapper .content-item .content-div .header-text {
@@ -533,9 +543,9 @@ body {
   padding-right: clamp(15px, 7vw, 55px);
   margin-left: 1%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .html-lesson-wrapper .content-item .content-div.review-part-1 {
-    margin-left: 3%;
+    margin-left: 4%;
   }
 }
 .html-lesson-wrapper .content-item .content-div.review-part-1 .review-box {

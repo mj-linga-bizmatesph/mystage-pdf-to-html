@@ -126,6 +126,9 @@ body {
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
+    @media screen and (max-width: 500px){
+      padding-right: 20px;
+    }
   }
   .table {
     width: 100%;

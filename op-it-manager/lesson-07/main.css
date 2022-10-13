@@ -202,10 +202,19 @@ body {
 .html-lesson-wrapper .review-content {
   line-height: 1.8;
   position: relative;
-  margin-left: clamp(45px, 12.5%, 85.5px);
+  margin-left: clamp(45px, 12.5%, 95.5px);
   padding-left: 18.5px;
   padding-right: 42px;
   font-size: clamp(12px, 2vw, 15px);
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .see-content,
+  .html-lesson-wrapper .act-content,
+  .html-lesson-wrapper .try-content,
+  .html-lesson-wrapper .review-content {
+    padding-right: 15px;
+  }
 }
 
 .html-lesson-wrapper .biz-tip-content {
@@ -253,13 +262,19 @@ body {
 .html-lesson-wrapper .biz-tip-content .pointers {
   font-size: clamp(12px, 2vw, 15px);
   margin-top: 3% !important;
-  margin-left: clamp(50px, 20%, 126.5px);
+  margin-left: clamp(35px, 15.4%, 126.5px);
 }
 
 .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
   margin-bottom: 1em;
   margin-left: -3.6%;
-  margin-right: 16%;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .biz-tip-content .pointers .no-arrow {
+    margin-right: 5%;
+  }
 }
 
 .html-lesson-wrapper .biz-tip-content .words {
@@ -307,8 +322,14 @@ body {
   border-top: 8px solid black;
 }
 
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .arrow-part {
+    margin-right: 5%;
+  }
+}
+
 .html-lesson-wrapper .context {
-  margin-left: clamp(6px, 10vw, 50px);
+  margin-left: clamp(6px, 10vw, 33px);
   font-size: clamp(12px, 2vw, 15px);
 }
 
@@ -326,18 +347,6 @@ body {
 
 .html-lesson-wrapper .see-content {
   margin-top: 4.1%;
-}
-
-@media screen and (max-width: 900px) {
-  .html-lesson-wrapper .see-content {
-    margin-left: 5.5em;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .html-lesson-wrapper .see-content {
-    margin-left: 4em;
-  }
 }
 
 .html-lesson-wrapper .see-content .article {
@@ -374,7 +383,6 @@ body {
   list-style-type: decimal;
   margin: 0;
   margin-left: 1.1em;
-  text-indent: -1em;
   margin-block: 0;
   padding-inline: 0;
 }
@@ -393,7 +401,6 @@ body {
 .html-lesson-wrapper .try-content ul li::before {
   content: '';
   width: 2%;
-  display: inline-block;
 }
 
 .html-lesson-wrapper .act-content {
@@ -572,6 +579,12 @@ body {
 
 .html-lesson-wrapper table {
   border-collapse: collapse;
+}
+
+@media screen and (max-width: 500px) {
+  .html-lesson-wrapper .see-content .overlap {
+    width: 71%;
+  }
 }
 
 .html-lesson-wrapper .see-content .ctr {

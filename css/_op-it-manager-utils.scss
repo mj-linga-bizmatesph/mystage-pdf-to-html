@@ -193,10 +193,13 @@ body {
   .review-content {
     line-height: 1.8;
     position: relative;
-    margin-left: clamp(45px, 12.5%, 85.5px);
+    margin-left: clamp(45px, 12.5%, 95.5px);
     padding-left: 18.5px;
     padding-right: 42px;
     font-size: clamp(12px, 2vw, 15px);
+    @media screen and (max-width: 500px){
+      padding-right: 15px;
+    }
   }
 
   .biz-tip-content {
@@ -242,12 +245,15 @@ body {
     .pointers {
       font-size: clamp(12px, 2vw, 15px);
       margin-top: 3% !important;
-      margin-left: clamp(50px, 20%, 126.5px);
+      margin-left: clamp(35px, 15.4%, 126.5px);
 
       .no-arrow {
         margin-bottom: 1em;
         margin-left: -3.6%;
-        margin-right: 16%;
+        margin-right: 10%;
+      @media screen and (max-width: 500px){
+        margin-right: 5%;
+      }
       }
     }
     .words {
@@ -286,10 +292,13 @@ body {
     &.black-arrow:before {
       border-top: 8px solid black;
     }
+    @media screen and (max-width: 500px){
+      margin-right: 5%;
+    }
   }
 
   .context {
-    margin-left: clamp(6px, 10vw, 50px);
+    margin-left: clamp(6px, 10vw, 33px);
     font-size: clamp(12px, 2vw, 15px);
     @media screen and (max-width: 900px){
       margin-left: 3%;
@@ -301,12 +310,6 @@ body {
 
   .see-content {
     margin-top: 4.1%;
-    @media screen and (max-width: 900px){
-      margin-left: 5.5em;
-    }
-    @media screen and (max-width: 500px){
-      margin-left: 4em;
-    }
 
     .article {
       margin-top: 5px;
@@ -344,7 +347,6 @@ body {
       list-style-type: decimal;
       margin: 0;
       margin-left: 1.1em;
-      text-indent: -1em;
       margin-block: 0;
       padding-inline: 0;
       @media screen and (max-width: 900px){
@@ -358,7 +360,6 @@ body {
       li::before {
         content: '';
         width: 2%;
-        display: inline-block;
       }
     }
   }

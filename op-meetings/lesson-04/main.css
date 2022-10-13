@@ -203,7 +203,7 @@ body {
   font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .biz-tip-content {
-  margin-top: clamp(70px, 28%, 140px);
+  margin-top: clamp(70px, 15%, 140px);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -414,6 +414,11 @@ body {
           box-sizing: content-box;
   list-style-position: inside;
 }
+@media only screen and (max-width: 400px) {
+  .html-lesson-wrapper .see-content .example ul {
+    margin-left: 2%;
+  }
+}
 .html-lesson-wrapper .see-content .example ul li {
   list-style-position: outside;
   margin-left: 1em;
@@ -421,19 +426,10 @@ body {
   margin-bottom: -0.4em;
   line-height: 1.8em;
 }
-.html-lesson-wrapper .see-content .example ul li::before {
-  content: "";
-  display: block;
-  width: 0.5em;
-}
-.html-lesson-wrapper .see-content .example ul li::marker {
-  font-size: clamp(9px, 2vw, 13px);
-}
 .html-lesson-wrapper .see-content .example ul p {
   display: block;
 }
 .html-lesson-wrapper ol.numbers {
-  margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: orderedlist;
@@ -483,14 +479,12 @@ body {
   padding-right: 1em;
   width: 0.5em;
 }
-.html-lesson-wrapper ul.arrow-part-list li::marker {
-  font-size: clamp(9px, 2vw, 13px);
-}
 .html-lesson-wrapper .part-content.part-1 {
-  margin-top: clamp(70px, 25%, 250px);
+  margin-top: clamp(70px, 20%, 250px);
 }
 .html-lesson-wrapper .part-content.part-1 ul {
   list-style: none;
+  line-height: 1.8em;
 }
 .html-lesson-wrapper .part-content .article {
   margin-top: 5px;
@@ -539,7 +533,6 @@ body {
   width: 10%;
 }
 .html-lesson-wrapper .part-content ol.numbers {
-  margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: orderedlist;
@@ -574,7 +567,7 @@ body {
   list-style-position: inside;
   line-height: 1.8em;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 400px) {
   .html-lesson-wrapper .part-content ul {
     padding-right: 5px;
   }
@@ -583,16 +576,8 @@ body {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 1em;
-  padding-left: 0.5em;
-  margin-bottom: -0.4em;
-}
-.html-lesson-wrapper .part-content ul li::before {
-  content: "";
-  display: block;
-  width: 0.5em;
-}
-.html-lesson-wrapper .part-content ul li::marker {
-  font-size: clamp(9px, 2vw, 13px);
+  margin-bottom: 0.8em;
+  font-size: clamp(12px, 2vw, 15px);
 }
 .html-lesson-wrapper .part-content ol {
   margin: 0;
@@ -692,16 +677,12 @@ body {
   list-style-position: outside;
   text-indent: -1em;
   margin-left: 1em;
-  padding-left: 0.5em;
   margin-bottom: -0.4em;
 }
 .html-lesson-wrapper .act-content ul li::before {
   content: "";
   display: block;
   width: 0.5em;
-}
-.html-lesson-wrapper .act-content ul li::marker {
-  font-size: clamp(9px, 2vw, 13px);
 }
 .html-lesson-wrapper .act-content ol {
   margin: 7px 0px;
@@ -745,7 +726,7 @@ body {
 }
 @media screen and (max-width: 900px) {
   .html-lesson-wrapper .try-content ul {
-    margin-left: clamp(11px, 2.4vw, 18px);
+    margin-left: clamp(11px, 3.4vw, 18px);
   }
 }
 @media screen and (max-width: 900px) {
@@ -789,6 +770,15 @@ body {
 
 .biz-tip-content {
   margin-top: clamp(95px, 18%, 160px) !important;
+}
+
+.numbers {
+  margin-left: 3%;
+}
+@media only screen and (max-width: 400px) {
+  .numbers {
+    margin-left: 5%;
+  }
 }
 
 @media screen and (max-width: 900px) {

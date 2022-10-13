@@ -4,6 +4,13 @@
   margin-top: clamp(95px, 18%, 160px) !important;
 }
 
+.numbers {
+  margin-left: 3%;
+  @media only screen and (max-width: 400px) {
+    margin-left: 5%;
+  }
+}
+
 .see-content {
   .person {
     @media screen and (max-width: 900px) {

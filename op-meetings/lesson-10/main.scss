@@ -7,8 +7,25 @@
   @media only screen and (max-width: 460px) {
     margin-right: 5px;
   }
+  .sub-text {
+    margin-left: 0.5%;
+    @media only screen and (max-width: 400px) {
+      margin-left: 2%;
+    }
+  }
+  ol.numbers {
+    margin-left: 1%;
+    @media only screen and (max-width: 400px) {
+      margin-left: 2%;
+    }
+  }
 }
 
+.circle {
+  b {
+    font-size: clamp(12px, 2vw, 15px);
+  }
+}
 .part-content {
   ul {
     list-style-type: none;
